@@ -1,0 +1,5280 @@
+{
+  "batch_id": "initial-water-technology-2026-11-05",
+  "summary": "Connected curation of all 31 selected water, restoration-monitoring and drone pages, preserving source contexts.",
+  "topics": [
+    {
+      "id": "monitoring",
+      "label": "Restoration monitoring",
+      "kind": "activity",
+      "domain": "technology",
+      "group_id": "monitoring",
+      "description": "Following vegetation, tree growth, survival and conditions to understand restoration progress.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Vegetation characterization"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Monitoring"
+        }
+      ],
+      "aliases": [
+        "monitoreo",
+        "seguimiento",
+        "vegetation monitoring"
+      ]
+    },
+    {
+      "id": "drones",
+      "label": "Drones",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Aircraft described for restoration imagery or a separate citrus water-spraying experiment; these uses have different evidence and purposes.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Remote sensing"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Introduction"
+        }
+      ],
+      "aliases": [
+        "drone",
+        "UAV",
+        "dron",
+        "watering drones",
+        "drones de riego"
+      ]
+    },
+    {
+      "id": "cocoon",
+      "label": "Cocoon planting reservoir",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Buried biodegradable reservoir and shelter for seedling establishment. Capacity and additional watering depend on source and trial.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 92,
+          "locator": "Cocoons"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Annex I"
+        }
+      ],
+      "aliases": [
+        "Cocoons",
+        "irrigation cocoon",
+        "Cocoon irrigation"
+      ],
+      "aspects": {
+        "Water at planting": "LIFE NIEBLAS: 20 L reservoir plus settlement water; MENAQUA:about 25 L.",
+        "Reuse": "Single-use biodegradable reservoir.",
+        "Trial conditions": "Soil, climate, timing and additional water matter.",
+        "Water per surviving tree": "57.4 L in LIFE table dated 26 July 2023.",
+        "Reported survival": "0.87 in that dated LIFE table; Maysara carob performed poorly."
+      }
+    },
+    {
+      "id": "life-nieblas",
+      "label": "LIFE NIEBLAS",
+      "kind": "programme",
+      "domain": "technology",
+      "group_id": "organizations",
+      "description": "Restoration project documenting fog collection, planting methods, irrigation and monitoring.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": [
+        "Life Nieblas"
+      ]
+    },
+    {
+      "id": "vegetation-characterization",
+      "label": "Vegetation characterization",
+      "kind": "method",
+      "domain": "ecosystem",
+      "group_id": "monitoring",
+      "description": "Vegetation structure, composition and cover indicate habitat regeneration.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Vegetation characterization"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "point-transects",
+      "label": "Fixed point transects",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "monitoring",
+      "description": "Repeatable cover observations; the source has an unresolved transect-length wording issue.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Point transect paragraphs"
+        }
+      ],
+      "aliases": [
+        "transect"
+      ]
+    },
+    {
+      "id": "cover-types",
+      "label": "Vegetation and soil cover types",
+      "kind": "aspect",
+      "domain": "ecosystem",
+      "group_id": "habitats",
+      "description": "Herbaceous and woody cover, plant remains/rocks and bare soil are distinguished.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Structure"
+        }
+      ],
+      "aliases": [
+        "bare soil",
+        "ground cover",
+        "litter"
+      ]
+    },
+    {
+      "id": "satellite-monitoring",
+      "label": "Satellite vegetation monitoring",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "monitoring",
+      "description": "Satellite imagery and vegetation indices can describe land-cover patterns.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Remote sensing"
+        }
+      ],
+      "aliases": [
+        "Sentinel2",
+        "remote sensing"
+      ]
+    },
+    {
+      "id": "drone-imagery",
+      "label": "Drone restoration imagery",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "High-resolution imagery is suggested to improve vegetation monitoring, not for water delivery.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Remote sensing"
+        }
+      ],
+      "aliases": [
+        "drone monitoring",
+        "aerial imagery"
+      ]
+    },
+    {
+      "id": "carregal-do-sal",
+      "label": "Carregal do Sal",
+      "kind": "place",
+      "domain": "ecosystem",
+      "group_id": "places",
+      "description": "Portuguese area illustrated with a 2021 Sentinel 2 classification.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Land-cover caption"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "portugal"
+      ]
+    },
+    {
+      "id": "portugal",
+      "label": "Portugal",
+      "kind": "place",
+      "domain": "ecosystem",
+      "group_id": "places",
+      "description": "Country of the Carregal do Sal illustration.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Land-cover caption"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "fog-water-collection",
+      "label": "Fog water collection",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Fog collection can supply remote restoration work when local fog conditions are suitable.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 94,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": [
+        "fog harvesting",
+        "captación de niebla"
+      ]
+    },
+    {
+      "id": "organic-amendments",
+      "label": "Organic soil amendments",
+      "kind": "method",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "Suitable organic materials improve nourishment, biological activity and water holding.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Organic amendments"
+        }
+      ],
+      "aliases": [
+        "soil improvement",
+        "enmiendas orgánicas"
+      ]
+    },
+    {
+      "id": "compost",
+      "label": "Compost",
+      "kind": "method",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "Amendment described in restoration guidance and Maysara fall soil improvement.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "composting"
+      ]
+    },
+    {
+      "id": "amendment-quality",
+      "label": "Suitable amendment quality and dose",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Low pollutants, stable material and appropriate doses are required.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Organic amendments"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "species-site-fit",
+      "label": "Species suited to the site",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Climate and soil determine tree choice; a planting device cannot compensate for an unsuitable species.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 88,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "tree choice",
+        "site suitability"
+      ]
+    },
+    {
+      "id": "soil-water-retention",
+      "label": "Soil water retention",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Water retention affects establishment and performance of watering methods.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 88,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "water retention",
+        "retención de agua"
+      ]
+    },
+    {
+      "id": "planting-season",
+      "label": "Planting timing",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Root establishment before severe heat, drought or cold depends on local conditions.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 89,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "seasonality",
+        "planting time"
+      ]
+    },
+    {
+      "id": "land-access",
+      "label": "Access for watering and maintenance",
+      "kind": "condition",
+      "domain": "technology",
+      "group_id": "requirements",
+      "description": "Access affects selection and maintenance of restoration methods.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 89,
+          "locator": "Access to land"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "climate-resilience",
+      "label": "Plantation climate resilience",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Restoration planning should consider future climatic conditions.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 89,
+          "locator": "Adaptability to climate change"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "traditional-reforestation",
+      "label": "Traditional planting with pipe watering",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "LIFE control method: individual planting holes and PE pipe watering, adapted to site conditions.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": [
+        "traditional irrigation",
+        "traditional reforestation"
+      ],
+      "aspects": {
+        "Water at planting": "Usually 10–15 L/seedling in LIFE NIEBLAS.",
+        "Reuse": "No additional reservoir.",
+        "Trial conditions": "LIFE control; holes adapted for shallow/stony soils.",
+        "Water per surviving tree": "133.5 L in table dated 26 July 2023.",
+        "Reported survival": "0.43 in table dated 26 July 2023."
+      }
+    },
+    {
+      "id": "individual-fog-water-collector",
+      "label": "Individual fog water collector",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Steel mesh and PE Russell mesh collect moisture and shelter seedlings; suitable fog exposure is essential.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 94,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": [
+        "IFWC",
+        "i-FWC",
+        "IND"
+      ],
+      "aspects": {
+        "Water at planting": "10–15 L settlement water for IND in LIFE.",
+        "Reuse": "Not recorded on selected pages.",
+        "Trial conditions": "Good fog conditions; first-year watering still described.",
+        "Water per surviving tree": "35.3 L in table dated 26 July 2023.",
+        "Reported survival": "0.89 in table dated 26 July 2023."
+      }
+    },
+    {
+      "id": "afds",
+      "label": "AFDS (LIFE comparator)",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Source acronym in the water-use table; full method description is outside selected scope.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": [
+        "AFDS"
+      ],
+      "aspects": {
+        "Water at planting": "10–15 L settlement water mentioned.",
+        "Trial conditions": "LIFE comparator; full description unprocessed.",
+        "Water per surviving tree": "101.4 L in table dated 26 July 2023.",
+        "Reported survival": "0.83 in table dated 26 July 2023."
+      }
+    },
+    {
+      "id": "pe-pipe-network",
+      "label": "PE irrigation pipe network",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Branching pipes, valves and hoses serving traditional, IFWC and Cocoon zones.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Step8"
+        }
+      ],
+      "aliases": [
+        "PE pipes",
+        "polyethylene pipes"
+      ]
+    },
+    {
+      "id": "irrigation-valves",
+      "label": "Irrigation branch valves",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Valves connect watering hoses to the branching network.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Step8"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "watering-hose",
+      "label": "Watering hose",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Hoses occur in the restoration network and separate wired-drone experiment. Shared components do not establish whole-system compatibility.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "hose",
+        "water hose",
+        "manguera"
+      ]
+    },
+    {
+      "id": "settlement-irrigation",
+      "label": "Settlement watering",
+      "kind": "activity",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "First watering immediately after planting.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": [
+        "establishment water",
+        "riego de asiento"
+      ]
+    },
+    {
+      "id": "support-irrigation",
+      "label": "Support watering during stress",
+      "kind": "activity",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Additional water considered under unusual heat, dry periods or visible stress.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": [
+        "emergency watering"
+      ]
+    },
+    {
+      "id": "maintenance-irrigation",
+      "label": "Summer maintenance watering",
+      "kind": "activity",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Regular summer watering, distinct from initial and emergency water.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "nursery-irrigation",
+      "label": "Nursery watering",
+      "kind": "activity",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Regular watering before field planting.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "soil-moisture-monitoring",
+      "label": "Soil moisture monitoring",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "monitoring",
+      "description": "Checking moisture guides site/species-specific watering.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "seedling-drought-stress",
+      "label": "Seedling drought stress",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Plant symptoms and weather help inform support watering.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "fog-exposure",
+      "label": "Suitable fog exposure",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Fog collection conditions determine suitability of individual collectors.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Location"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "cocoon-site-limitations",
+      "label": "Cocoon site limitations",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Humidity can accelerate deterioration; steep placement can incline reservoirs and spill water.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Location"
+        }
+      ],
+      "aliases": [
+        "humid sites",
+        "steep slopes"
+      ]
+    },
+    {
+      "id": "cocoon-biodegradation",
+      "label": "Cocoon biodegradation",
+      "kind": "condition",
+      "domain": "technology",
+      "group_id": "requirements",
+      "description": "The reservoir is intended to degrade; rate and durability vary with conditions.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "single-use",
+        "biodegradable"
+      ]
+    },
+    {
+      "id": "cocoon-refill",
+      "label": "Cocoon reservoir refilling",
+      "kind": "activity",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Additional fills described in dry summers and pilot emergencies.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "refill",
+        "re-fill",
+        "recarga"
+      ]
+    },
+    {
+      "id": "cocoon-lid",
+      "label": "Cocoon lid",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Lid limiting losses; snow and harsh conditions can damage it.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "cocoon-reservoir",
+      "label": "Cocoon water reservoir",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Donut-shaped pulp/cardboard reservoir with natural-wax sealing in the supplier annex.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "tree-shelter",
+      "label": "Seedling shelter",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Paper shelter against strong irradiation, drying winds and small grazers.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "maysara",
+      "label": "Maysara pilot site",
+      "kind": "place",
+      "domain": "ecosystem",
+      "group_id": "places",
+      "description": "Jordanian pilot with sandy soil and poor late-spring carob establishment.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "jordan"
+      ]
+    },
+    {
+      "id": "al-faisal",
+      "label": "Al Faisal pilot site",
+      "kind": "place",
+      "domain": "ecosystem",
+      "group_id": "places",
+      "description": "Jordanian pilot disrupted by canal flooding.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "Faisal",
+        "Al-Faisal"
+      ],
+      "place_ids": [
+        "jordan"
+      ]
+    },
+    {
+      "id": "jordan",
+      "label": "Jordan",
+      "kind": "place",
+      "domain": "ecosystem",
+      "group_id": "places",
+      "description": "Country of the Al Faisal and Maysara pilots.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "Jordania"
+      ]
+    },
+    {
+      "id": "gran-canaria",
+      "label": "Gran Canaria",
+      "kind": "place",
+      "domain": "ecosystem",
+      "group_id": "places",
+      "description": "Earlier Cocoon testing in drought-risk southern areas is described by LIFE.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 92,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "maysara-carob-trial",
+      "label": "Maysara carob establishment trial",
+      "kind": "event",
+      "domain": "ecosystem",
+      "group_id": "dates",
+      "description": "May 2019 carob planting assessed with May 2020 data after emergency water and severe soil-water limitations.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 81,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "maysara"
+      ],
+      "dates": [
+        {
+          "value": "2019-05",
+          "meaning": "planting"
+        },
+        {
+          "value": "2020-05",
+          "meaning": "monitoring"
+        }
+      ]
+    },
+    {
+      "id": "al-faisal-pilot",
+      "label": "Al Faisal planting pilot",
+      "kind": "event",
+      "domain": "ecosystem",
+      "group_id": "dates",
+      "description": "2019 spring/fall plantings with treatments altered after floods and replacement planting.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "al-faisal"
+      ],
+      "dates": [
+        {
+          "value": "2019-05",
+          "meaning": "spring planting"
+        },
+        {
+          "value": "2019-12",
+          "meaning": "fall planting"
+        },
+        {
+          "value": "2020-01",
+          "meaning": "replacement planting"
+        },
+        {
+          "value": "2020-05",
+          "meaning": "monitoring"
+        }
+      ]
+    },
+    {
+      "id": "poor-sandy-soil",
+      "label": "Poor water retention in sandy soil",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Maysara spring losses were attributed mainly to summer dryness and poor sandy-soil water retention.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "late-spring-planting",
+      "label": "Late spring planting before summer drought",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "The report describes Maysara spring planting as too late.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "canal-flooding",
+      "label": "Canal flooding at Al Faisal",
+      "kind": "event",
+      "domain": "ecosystem",
+      "group_id": "dates",
+      "description": "Floods in December 2019 and January 2020 destroyed trees and disrupted comparison.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "al-faisal"
+      ],
+      "dates": [
+        {
+          "value": "2019-12",
+          "meaning": "flood"
+        },
+        {
+          "value": "2020-01",
+          "meaning": "flood"
+        }
+      ]
+    },
+    {
+      "id": "almond-menaqua",
+      "label": "Almond in the Al Faisal pilot",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Almond identified by the report as Prunus amygdalus; outcomes remain pilot-specific.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "almond",
+        "Prunus amygdalus"
+      ],
+      "scientific_name": "Prunus amygdalus",
+      "identification": "Name as used in MENAQUA; no naming authority inferred."
+    },
+    {
+      "id": "pine-menaqua",
+      "label": "Pine in the MENAQUA trials",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Trial pine uses source spelling Pinus halapensis; correspondence to checked Aleppo pine remains unresolved.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "Pinus halapensis",
+        "pinus"
+      ],
+      "scientific_name": "Pinus halapensis [source spelling]",
+      "identification": "Do not merge solely by apparent spelling correction."
+    },
+    {
+      "id": "acacia-menaqua",
+      "label": "Acacia in the Maysara pilot",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Source identifies Acacia tortilis; fall outcomes cover only its initial five-month period.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "Acacia tortilis",
+        "acacia"
+      ],
+      "scientific_name": "Acacia tortilis"
+    },
+    {
+      "id": "seedling-quality",
+      "label": "Healthy planting material",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Suitable healthy roots/shoots are essential; Cocoon cannot compensate for poor planting material.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "nursery quality"
+      ]
+    },
+    {
+      "id": "mycorrhiza",
+      "label": "Mycorrhizal root inoculation",
+      "kind": "method",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "Supplier suggests nursery/planting inoculation; selected pages do not experimentally establish its benefit.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "soil microorganisms",
+        "mycorrhizal fungi",
+        "micorrizas"
+      ]
+    },
+    {
+      "id": "cocoon-soil-depth",
+      "label": "Sufficient soil depth for Cocoon",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Supplier specifies at least 30 cm topsoil and preferably deep medium-textured subsoil.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "cocoon-rock-clearance",
+      "label": "Remove piercing rocks near reservoir",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Supplier asks that small rocks in top 25 cm be removed to prevent puncture.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "root-health",
+      "label": "Healthy, non-circling roots",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Supplier rejects damaged/circling/J-rooted material and describes air-root pruning.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": [
+        "J-rooting",
+        "air-root pruning"
+      ]
+    },
+    {
+      "id": "soil-salinity",
+      "label": "Check soil salinity",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Soil chemistry must suit the selected species.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "snow-frost-damage",
+      "label": "Snow and frost damage to Cocoons",
+      "kind": "condition",
+      "domain": "technology",
+      "group_id": "requirements",
+      "description": "Snow can damage lids; freezing/ice can damage pulp walls.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "cocoon-root-development",
+      "label": "Root development beneath Cocoon",
+      "kind": "aspect",
+      "domain": "ecosystem",
+      "group_id": "requirements",
+      "description": "Observed horizontal roots and supplier deep-rooting claims have different source contexts.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "wire-supplied-drone",
+      "label": "Wire-supplied citrus spraying drone",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Experimental hexacopter receiving continuous ground power/water, with RTK-GNSS and a tilt mechanism.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "wired drone",
+        "tethered watering drone"
+      ],
+      "aspects": {
+        "Water at planting": "Not measured: canopy spraying, not seedling irrigation.",
+        "Reuse": "Powered aircraft, not a planting reservoir.",
+        "Trial conditions": "Citrus in Japan, September 2023; water substituted for pesticides.",
+        "Reported result": "Spray adhesion and flight control; no carob/Cocoon result."
+      }
+    },
+    {
+      "id": "drone-water-delivery",
+      "label": "Drone water delivery by spraying",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Water supplied continuously to an aircraft for citrus canopy spraying; root-zone establishment watering was not tested.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "drone watering",
+        "water spraying",
+        "riego con drones"
+      ]
+    },
+    {
+      "id": "rtk-gnss",
+      "label": "RTK-GNSS positioning",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Base/rover GNSS positioning used in the experiment.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "RTK",
+        "GNSS"
+      ]
+    },
+    {
+      "id": "gnss-base",
+      "label": "Ground GNSS base station",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Ground-side component of the reported RTK system.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "gnss-rover",
+      "label": "Aircraft GNSS rover",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "RTK rover mounted on the aircraft.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "tilt-mechanism",
+      "label": "Spray-recoil tilt mechanism",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Tilting propeller surfaces generate horizontal thrust to cancel spray recoil while keeping the aircraft horizontal.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "reaction force cancellation",
+        "tilt rotor"
+      ]
+    },
+    {
+      "id": "drone-flight-controller",
+      "label": "Cube Black flight controller",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "CubePilot Cube Black with customized ArduCopter in the experimental aircraft.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "Cube Black",
+        "ArduCopter",
+        "CubePilot"
+      ]
+    },
+    {
+      "id": "mission-planner",
+      "label": "Mission Planner ground control",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Open-source ground control software used by the experimenters.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "GCS"
+      ]
+    },
+    {
+      "id": "wired-power-supply",
+      "label": "Wired ground-to-air power supply",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Reported conversion chain: 200 V three-phase AC to 300 V DC transmission, then 48 V aboard the aircraft.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "power cable",
+        "AC/DC converter",
+        "DC/DC converter"
+      ]
+    },
+    {
+      "id": "engine-pump",
+      "label": "Ground water pump",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Engine pump supplying continuous water.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "Maruyama MS417EA",
+        "pump",
+        "bomba"
+      ]
+    },
+    {
+      "id": "spray-nozzle",
+      "label": "Citrus spray nozzle",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "Yamaho N-KZV-20, the type used by citrus farmers, was selected.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "Yamaho N-KZV-20",
+        "nozzle",
+        "boquilla"
+      ]
+    },
+    {
+      "id": "hose-cable-entanglement",
+      "label": "Hose and cable entanglement",
+      "kind": "condition",
+      "domain": "technology",
+      "group_id": "requirements",
+      "description": "Manual takeoff/landing avoided entanglement at a fence between staging and spraying areas.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": []
+    },
+    {
+      "id": "crawler-ugv",
+      "label": "Crawler vehicle for hose and cable",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "In the manual trial a crawler UGV transported hose/cable and followed when separation exceeded 5 m.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "UGV",
+        "ground robot"
+      ]
+    },
+    {
+      "id": "water-sensitive-paper",
+      "label": "Water-sensitive spray paper",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "monitoring",
+      "description": "Paper in citrus trees assessed spray deposition, not root watering.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "spray deposition",
+        "adhesion index"
+      ]
+    },
+    {
+      "id": "citrus",
+      "label": "Citrus trees in the drone study",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Crop context of the spraying study; not every tested tree is identified to species.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "citrus fruits",
+        "cítricos"
+      ]
+    },
+    {
+      "id": "innoshima",
+      "label": "Innoshima Island",
+      "kind": "place",
+      "domain": "technology",
+      "group_id": "places",
+      "description": "Island of the automatic spraying trial.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "hiroshima",
+        "japan"
+      ]
+    },
+    {
+      "id": "ikuchijima",
+      "label": "Ikuchijima Island",
+      "kind": "place",
+      "domain": "technology",
+      "group_id": "places",
+      "description": "Island of the manual spraying trial; also spelled Ikuchishima in the article.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "Ikuchishima"
+      ],
+      "place_ids": [
+        "hiroshima",
+        "japan"
+      ]
+    },
+    {
+      "id": "hiroshima",
+      "label": "Hiroshima Prefecture",
+      "kind": "place",
+      "domain": "technology",
+      "group_id": "places",
+      "description": "Prefecture of the trials and named smart-agriculture project.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "japan"
+      ]
+    },
+    {
+      "id": "japan",
+      "label": "Japan",
+      "kind": "place",
+      "domain": "technology",
+      "group_id": "places",
+      "description": "Country of the citrus spraying study.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [
+        "Japón"
+      ]
+    },
+    {
+      "id": "sanwa-farm",
+      "label": "Sanwa Farm",
+      "kind": "organization",
+      "domain": "technology",
+      "group_id": "organizations",
+      "description": "Cooperating farm for automatic spraying on Innoshima.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "innoshima"
+      ]
+    },
+    {
+      "id": "harada-farm",
+      "label": "Harada Farm",
+      "kind": "organization",
+      "domain": "technology",
+      "group_id": "organizations",
+      "description": "Cooperating farm for manual spraying on Ikuchijima.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "ikuchijima"
+      ]
+    },
+    {
+      "id": "tokushima-university",
+      "label": "Tokushima University",
+      "kind": "organization",
+      "domain": "technology",
+      "group_id": "organizations",
+      "description": "University affiliation of Miwa and developer of the described tilt mechanism.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [],
+      "place_ids": [
+        "japan"
+      ]
+    },
+    {
+      "id": "hiroshima-smart-agriculture",
+      "label": "2023 Hiroshima Smart Agriculture Project",
+      "kind": "programme",
+      "domain": "technology",
+      "group_id": "organizations",
+      "description": "Acknowledged framework for the research; no funding eligibility is inferred.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Acknowledgments"
+        }
+      ],
+      "aliases": [],
+      "dates": [
+        {
+          "value": "2023",
+          "meaning": "project year"
+        }
+      ],
+      "place_ids": [
+        "hiroshima"
+      ]
+    },
+    {
+      "id": "citrus-spray-trial",
+      "label": "Citrus drone spraying experiment",
+      "kind": "event",
+      "domain": "technology",
+      "group_id": "dates",
+      "description": "Water-only automatic/manual experiments in September 2023, published March 2024. Outcomes concern spray deposition and aircraft control.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [],
+      "dates": [
+        {
+          "value": "2023-09-19",
+          "meaning": "automatic experiment"
+        },
+        {
+          "value": "2023-09-20",
+          "meaning": "manual experiment"
+        },
+        {
+          "value": "2024-03-21",
+          "meaning": "publication"
+        }
+      ],
+      "place_ids": [
+        "innoshima",
+        "ikuchijima"
+      ]
+    },
+    {
+      "id": "innoshima-autopilot-trial",
+      "label": "Innoshima automatic spraying trial",
+      "kind": "event",
+      "domain": "technology",
+      "group_id": "dates",
+      "description": "Automatic route following with manual takeoff/landing.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [],
+      "dates": [
+        {
+          "value": "2023-09-19",
+          "meaning": "experiment"
+        }
+      ],
+      "place_ids": [
+        "innoshima"
+      ]
+    },
+    {
+      "id": "ikuchijima-manual-trial",
+      "label": "Ikuchijima manual spraying trial",
+      "kind": "event",
+      "domain": "technology",
+      "group_id": "dates",
+      "description": "Manual PosHold flight, UGV hose handling and spray-paper evaluation.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "aliases": [],
+      "dates": [
+        {
+          "value": "2023-09-20",
+          "meaning": "experiment"
+        }
+      ],
+      "place_ids": [
+        "ikuchijima"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "restoration-monitoring",
+      "source": "restoration",
+      "target": "monitoring",
+      "label": "is followed through",
+      "explanation": "Vegetation structure/composition indicate regeneration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "monitoring-vegetation",
+      "source": "monitoring",
+      "target": "vegetation-characterization",
+      "label": "includes",
+      "explanation": "Characterization records vegetation structure and composition.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "vegetation-transects",
+      "source": "vegetation-characterization",
+      "target": "point-transects",
+      "label": "can use",
+      "explanation": "The source proposes repeatable fixed transects.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "transects-cover",
+      "source": "point-transects",
+      "target": "cover-types",
+      "label": "records",
+      "explanation": "Transects distinguish vegetation, litter/rocks and bare soil.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "monitoring-satellite",
+      "source": "monitoring",
+      "target": "satellite-monitoring",
+      "label": "can use",
+      "explanation": "Satellite images/indices can describe main land covers.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "monitoring-drone-imagery",
+      "source": "monitoring",
+      "target": "drone-imagery",
+      "label": "can use",
+      "explanation": "High-resolution drone imagery is suggested for monitoring.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "drone-imagery-aircraft",
+      "source": "drone-imagery",
+      "target": "drones",
+      "label": "is acquired using",
+      "explanation": "This is the observation use, separate from water spraying.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "satellite-carregal",
+      "source": "satellite-monitoring",
+      "target": "carregal-do-sal",
+      "label": "is illustrated in",
+      "explanation": "A 2021 Sentinel 2 classification is pictured.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Land-cover caption"
+        }
+      ]
+    },
+    {
+      "id": "carregal-portugal",
+      "source": "carregal-do-sal",
+      "target": "portugal",
+      "label": "is in",
+      "explanation": "The caption identifies Portugal.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Land-cover caption"
+        }
+      ]
+    },
+    {
+      "id": "restoration-fog-water",
+      "source": "restoration",
+      "target": "fog-water-collection",
+      "label": "can obtain water through",
+      "explanation": "The manual discusses fog collection in isolated areas.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-amendments",
+      "source": "restoration",
+      "target": "organic-amendments",
+      "label": "may use",
+      "explanation": "Amendments can support nourishment, biological activity and retained water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "amendments-compost",
+      "source": "organic-amendments",
+      "target": "compost",
+      "label": "includes",
+      "explanation": "Compost is a named amendment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "amendments-quality",
+      "source": "organic-amendments",
+      "target": "amendment-quality",
+      "label": "requires",
+      "explanation": "Quality and dose conditions apply.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "amendments-retention",
+      "source": "organic-amendments",
+      "target": "soil-water-retention",
+      "label": "can improve",
+      "explanation": "Water holding around roots is an intended benefit.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-species-fit",
+      "source": "restoration",
+      "target": "species-site-fit",
+      "label": "depends on",
+      "explanation": "Species must suit climate and soil.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 88,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-season",
+      "source": "restoration",
+      "target": "planting-season",
+      "label": "depends on",
+      "explanation": "Roots need establishment before climatic stress.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 89,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-access",
+      "source": "restoration",
+      "target": "land-access",
+      "label": "requires considering",
+      "explanation": "Access affects maintenance and watering.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 89,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-resilience",
+      "source": "restoration",
+      "target": "climate-resilience",
+      "label": "should consider",
+      "explanation": "Future climate resilience is a selection factor.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 89,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-traditional",
+      "source": "restoration",
+      "target": "traditional-reforestation",
+      "label": "has a control method",
+      "explanation": "Traditional planting is the LIFE comparison control.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-cocoon",
+      "source": "restoration",
+      "target": "cocoon",
+      "label": "can use a planting reservoir",
+      "explanation": "Cocoon is a source-described method with conditional suitability.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 92,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-ifwc",
+      "source": "restoration",
+      "target": "individual-fog-water-collector",
+      "label": "can use fog collectors",
+      "explanation": "IFWC is a tested method in LIFE.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 94,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "traditional-network",
+      "source": "traditional-reforestation",
+      "target": "pe-pipe-network",
+      "label": "is watered through",
+      "explanation": "PE pipes supply individually planted trees.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-network",
+      "source": "cocoon",
+      "target": "pe-pipe-network",
+      "label": "received additional water through",
+      "explanation": "LIFE pipes/hoses served Cocoon zones; this is not a universal Cocoon installation requirement.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "context": {
+        "project": "LIFE NIEBLAS"
+      }
+    },
+    {
+      "id": "ifwc-network",
+      "source": "individual-fog-water-collector",
+      "target": "pe-pipe-network",
+      "label": "received additional water through",
+      "explanation": "The network served IFWC zones.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "context": {
+        "project": "LIFE NIEBLAS"
+      }
+    },
+    {
+      "id": "network-valves",
+      "source": "pe-pipe-network",
+      "target": "irrigation-valves",
+      "label": "has branches with",
+      "explanation": "Valves run along branching pipes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "valves-hose",
+      "source": "irrigation-valves",
+      "target": "watering-hose",
+      "label": "connect",
+      "explanation": "Workers connect/disconnect hoses at valves.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "network-hose",
+      "source": "pe-pipe-network",
+      "target": "watering-hose",
+      "label": "delivers through",
+      "explanation": "The described network supplies 19 mm hoses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-settlement",
+      "source": "cocoon",
+      "target": "settlement-irrigation",
+      "label": "starts with",
+      "explanation": "Settlement water is additional to filling the reservoir.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-maintenance",
+      "source": "cocoon",
+      "target": "maintenance-irrigation",
+      "label": "received in LIFE NIEBLAS",
+      "explanation": "The management section includes summer maintenance water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "context": {
+        "project": "LIFE NIEBLAS"
+      }
+    },
+    {
+      "id": "traditional-settlement",
+      "source": "traditional-reforestation",
+      "target": "settlement-irrigation",
+      "label": "starts with",
+      "explanation": "The source gives 10–15 L settlement water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "traditional-maintenance",
+      "source": "traditional-reforestation",
+      "target": "maintenance-irrigation",
+      "label": "received in LIFE NIEBLAS",
+      "explanation": "Monthly summer water is described.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "ifwc-fog",
+      "source": "individual-fog-water-collector",
+      "target": "fog-exposure",
+      "label": "depends on",
+      "explanation": "Good fog collection is the primary site condition.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "ifwc-water",
+      "source": "individual-fog-water-collector",
+      "target": "fog-water-collection",
+      "label": "uses",
+      "explanation": "Condensation and impact collect moisture.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 94,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-support",
+      "source": "restoration",
+      "target": "support-irrigation",
+      "label": "may need",
+      "explanation": "Stress can require additional water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "support-monitoring",
+      "source": "support-irrigation",
+      "target": "monitoring",
+      "label": "is informed by",
+      "explanation": "Inspect weather and plant condition before watering.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "support-stress",
+      "source": "support-irrigation",
+      "target": "seedling-drought-stress",
+      "label": "responds to",
+      "explanation": "Dry forecasts and symptoms may trigger consideration of water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "monitoring-moisture",
+      "source": "monitoring",
+      "target": "soil-moisture-monitoring",
+      "label": "includes",
+      "explanation": "Moisture checks guide quantities.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "restoration-nursery",
+      "source": "restoration",
+      "target": "nursery-irrigation",
+      "label": "prepares seedlings with",
+      "explanation": "Nursery water is distinct from field water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-limits",
+      "source": "cocoon",
+      "target": "cocoon-site-limitations",
+      "label": "has site limitations",
+      "explanation": "Humidity and inclined placement are cautions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-degradation",
+      "source": "cocoon",
+      "target": "cocoon-biodegradation",
+      "label": "is designed for",
+      "explanation": "The LIFE system is described as single-use.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-reservoir-part",
+      "source": "cocoon",
+      "target": "cocoon-reservoir",
+      "label": "has component",
+      "explanation": "The annex describes a donut-shaped reservoir.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-lid-part",
+      "source": "cocoon",
+      "target": "cocoon-lid",
+      "label": "has component",
+      "explanation": "A lid covers the reservoir.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-shelter-part",
+      "source": "cocoon",
+      "target": "tree-shelter",
+      "label": "has component",
+      "explanation": "The shelter protects the shoot.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-refill-need",
+      "source": "cocoon",
+      "target": "cocoon-refill",
+      "label": "may need in dry summers",
+      "explanation": "MENAQUA suggests additional summer water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-site-fit",
+      "source": "cocoon",
+      "target": "species-site-fit",
+      "label": "does not replace",
+      "explanation": "A planting tool cannot make an unsuitable species locally adapted.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-retention",
+      "source": "cocoon",
+      "target": "soil-water-retention",
+      "label": "depends on",
+      "explanation": "Pilot interpretation and guidance emphasize retained water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-seedling-quality",
+      "source": "cocoon",
+      "target": "seedling-quality",
+      "label": "depends on",
+      "explanation": "Poor planting material cannot be compensated by the device.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-depth",
+      "source": "cocoon",
+      "target": "cocoon-soil-depth",
+      "label": "requires according to supplier",
+      "explanation": "Soil depth and subsoil conditions apply.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-rocks",
+      "source": "cocoon",
+      "target": "cocoon-rock-clearance",
+      "label": "requires according to supplier",
+      "explanation": "Clearing rocks avoids puncture.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-salinity",
+      "source": "cocoon",
+      "target": "soil-salinity",
+      "label": "requires checking",
+      "explanation": "Soil chemistry must suit the tree.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "seedling-roots",
+      "source": "seedling-quality",
+      "target": "root-health",
+      "label": "includes",
+      "explanation": "Healthy non-circling roots are supplier criteria.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "seedling-mycorrhiza",
+      "source": "seedling-quality",
+      "target": "mycorrhiza",
+      "label": "may include according to supplier",
+      "explanation": "Inoculation is suggested, not demonstrated as a controlled treatment here.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-frost",
+      "source": "cocoon",
+      "target": "snow-frost-damage",
+      "label": "can be damaged by",
+      "explanation": "Snow loading and freezing damage are described.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-root-pattern",
+      "source": "cocoon",
+      "target": "cocoon-root-development",
+      "label": "has reported uncertainty about",
+      "explanation": "Horizontal rooting observations differ from intended deep-rooting descriptions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "maysara-jordan",
+      "source": "maysara",
+      "target": "jordan",
+      "label": "is in",
+      "explanation": "Maysara is a Jordanian pilot.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "faisal-jordan",
+      "source": "al-faisal",
+      "target": "jordan",
+      "label": "is in",
+      "explanation": "Al Faisal is a Jordanian pilot.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "carob-maysara-trial",
+      "source": "carob",
+      "target": "maysara-carob-trial",
+      "label": "was planted in",
+      "explanation": "The source explicitly identifies carob among May 2019 seedlings, using Ceratonia silique.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "maysara-trial-cocoon",
+      "source": "maysara-carob-trial",
+      "target": "cocoon",
+      "label": "compared use of",
+      "explanation": "The spring trial compared Cocoon refill with no-Cocoon irrigation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Table5.4"
+        }
+      ]
+    },
+    {
+      "id": "maysara-trial-site",
+      "source": "maysara-carob-trial",
+      "target": "maysara",
+      "label": "was at",
+      "explanation": "The trial belongs to the Maysara pilot.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "maysara-sand",
+      "source": "maysara-carob-trial",
+      "target": "poor-sandy-soil",
+      "label": "was limited by",
+      "explanation": "The source attributes poor survival mainly to dry summer and sandy-soil water losses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "maysara-timing",
+      "source": "maysara-carob-trial",
+      "target": "late-spring-planting",
+      "label": "was affected by",
+      "explanation": "The report describes spring planting as too late.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "maysara-refill",
+      "source": "maysara-carob-trial",
+      "target": "cocoon-refill",
+      "label": "included emergency",
+      "explanation": "Spring Cocoon treatments were refilled twice.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "maysara-compost",
+      "source": "maysara",
+      "target": "compost",
+      "label": "used for fall soil improvement",
+      "explanation": "Composting is part of the fall pine/acacia context, not a carob treatment result.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "maysara-pine",
+      "source": "maysara",
+      "target": "pine-menaqua",
+      "label": "hosted trial plantings of",
+      "explanation": "Pine was planted in spring and fall.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "maysara-acacia",
+      "source": "maysara",
+      "target": "acacia-menaqua",
+      "label": "hosted fall plantings of",
+      "explanation": "Acacia was fall planted.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "faisal-pilot-site",
+      "source": "al-faisal-pilot",
+      "target": "al-faisal",
+      "label": "was at",
+      "explanation": "The section describes Al Faisal results.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "faisal-cocoon",
+      "source": "al-faisal-pilot",
+      "target": "cocoon",
+      "label": "compared",
+      "explanation": "Cocoon/no-Cocoon treatments had different water supplies.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "faisal-carob",
+      "source": "carob",
+      "target": "al-faisal-pilot",
+      "label": "was planted in",
+      "explanation": "All carob plants were lost in floods; no efficacy result is filled in.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "faisal-flood",
+      "source": "al-faisal-pilot",
+      "target": "canal-flooding",
+      "label": "was disrupted by",
+      "explanation": "Flooding led to exclusions and replacement plants.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "faisal-olive",
+      "source": "al-faisal-pilot",
+      "target": "olive",
+      "label": "included",
+      "explanation": "The report identifies olive using source spelling Oleo europaea.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "faisal-almond",
+      "source": "al-faisal-pilot",
+      "target": "almond-menaqua",
+      "label": "included",
+      "explanation": "Almond was a spring-planted species.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "faisal-pine",
+      "source": "al-faisal-pilot",
+      "target": "pine-menaqua",
+      "label": "included",
+      "explanation": "Pine was fall planted, partly replaced after floods.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ]
+    },
+    {
+      "id": "cocoon-gran-canaria",
+      "source": "cocoon",
+      "target": "gran-canaria",
+      "label": "had earlier testing in",
+      "explanation": "LIFE Green Link had tested Cocoon in drought-risk areas.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 92,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "life-cocoon",
+      "source": "life-nieblas",
+      "target": "cocoon",
+      "label": "compared",
+      "explanation": "Cocoon appears in project performance comparisons.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "life-traditional",
+      "source": "life-nieblas",
+      "target": "traditional-reforestation",
+      "label": "used as control",
+      "explanation": "Traditional planting provided the control.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "life-ifwc",
+      "source": "life-nieblas",
+      "target": "individual-fog-water-collector",
+      "label": "tested",
+      "explanation": "Mesh variants were tested.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 94,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "life-afds",
+      "source": "life-nieblas",
+      "target": "afds",
+      "label": "compared",
+      "explanation": "AFDS appears in the dated table.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Habitat restoration"
+        }
+      ]
+    },
+    {
+      "id": "drones-wired-example",
+      "source": "drones",
+      "target": "wire-supplied-drone",
+      "label": "has a reported water-spraying example",
+      "explanation": "The citrus paper describes one experimental aircraft, not a general capability guarantee.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-water",
+      "source": "wire-supplied-drone",
+      "target": "drone-water-delivery",
+      "label": "was used for",
+      "explanation": "The aircraft continuously received and sprayed water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-rtk",
+      "source": "wire-supplied-drone",
+      "target": "rtk-gnss",
+      "label": "uses",
+      "explanation": "RTK-GNSS provided positioning.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "rtk-base",
+      "source": "rtk-gnss",
+      "target": "gnss-base",
+      "label": "has ground component",
+      "explanation": "The base was on the ground.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "rtk-rover",
+      "source": "rtk-gnss",
+      "target": "gnss-rover",
+      "label": "has aircraft component",
+      "explanation": "The rover was aboard.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-tilt",
+      "source": "wire-supplied-drone",
+      "target": "tilt-mechanism",
+      "label": "uses",
+      "explanation": "Tilting propellers counter spray recoil.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-controller",
+      "source": "wire-supplied-drone",
+      "target": "drone-flight-controller",
+      "label": "uses",
+      "explanation": "Cube Black with customized ArduCopter controlled the craft.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-gcs",
+      "source": "wire-supplied-drone",
+      "target": "mission-planner",
+      "label": "uses ground control",
+      "explanation": "Mission Planner was the GCS.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-power",
+      "source": "wire-supplied-drone",
+      "target": "wired-power-supply",
+      "label": "receives power through",
+      "explanation": "The reported ground-to-air conversion chain provided power.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-pump",
+      "source": "wire-supplied-drone",
+      "target": "engine-pump",
+      "label": "receives water from",
+      "explanation": "A ground engine pump supplied continuous water.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-hose",
+      "source": "wire-supplied-drone",
+      "target": "watering-hose",
+      "label": "receives water through",
+      "explanation": "A hose supplied water; its management was a constraint.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-nozzle",
+      "source": "wire-supplied-drone",
+      "target": "spray-nozzle",
+      "label": "sprays through",
+      "explanation": "The selected nozzle was used by citrus farmers.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-entanglement",
+      "source": "wire-supplied-drone",
+      "target": "hose-cable-entanglement",
+      "label": "has an operating constraint",
+      "explanation": "Manual staging avoided fence entanglement.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "wired-drone-ugv",
+      "source": "wire-supplied-drone",
+      "target": "crawler-ugv",
+      "label": "was supported by",
+      "explanation": "A UGV carried hose and cable in the manual trial.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "ugv-hose",
+      "source": "crawler-ugv",
+      "target": "watering-hose",
+      "label": "transports",
+      "explanation": "The UGV carried hose and power cable.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "drone-trial-equipment",
+      "source": "citrus-spray-trial",
+      "target": "wire-supplied-drone",
+      "label": "tested",
+      "explanation": "Both experiments tested the wired aircraft.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "drone-trial-citrus",
+      "source": "citrus-spray-trial",
+      "target": "citrus",
+      "label": "sprayed water onto",
+      "explanation": "The crop context is citrus; carob/Cocoon were not tested.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "drone-trial-auto",
+      "source": "citrus-spray-trial",
+      "target": "innoshima-autopilot-trial",
+      "label": "includes",
+      "explanation": "Automatic trial on 19 September 2023.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "drone-trial-manual",
+      "source": "citrus-spray-trial",
+      "target": "ikuchijima-manual-trial",
+      "label": "includes",
+      "explanation": "Manual trial on 20 September 2023.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "auto-innoshima",
+      "source": "innoshima-autopilot-trial",
+      "target": "innoshima",
+      "label": "was at",
+      "explanation": "The automatic experiment was on Innoshima.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "manual-ikuchijima",
+      "source": "ikuchijima-manual-trial",
+      "target": "ikuchijima",
+      "label": "was at",
+      "explanation": "The manual experiment was on Ikuchijima.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "auto-sanwa",
+      "source": "innoshima-autopilot-trial",
+      "target": "sanwa-farm",
+      "label": "worked with",
+      "explanation": "Sanwa Farm cooperated.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "manual-harada",
+      "source": "ikuchijima-manual-trial",
+      "target": "harada-farm",
+      "label": "worked with",
+      "explanation": "Harada Farm cooperated.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "manual-paper",
+      "source": "ikuchijima-manual-trial",
+      "target": "water-sensitive-paper",
+      "label": "was evaluated with",
+      "explanation": "Paper was placed in trees before spraying.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "innoshima-hiroshima",
+      "source": "innoshima",
+      "target": "hiroshima",
+      "label": "is in",
+      "explanation": "The source locates Innoshima in Hiroshima Prefecture.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "ikuchijima-hiroshima",
+      "source": "ikuchijima",
+      "target": "hiroshima",
+      "label": "is in",
+      "explanation": "The source locates Ikuchijima in Hiroshima Prefecture.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "hiroshima-japan",
+      "source": "hiroshima",
+      "target": "japan",
+      "label": "is in",
+      "explanation": "The source describes Japanese agriculture and Hiroshima trials.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "tilt-tokushima",
+      "source": "tilt-mechanism",
+      "target": "tokushima-university",
+      "label": "was developed at",
+      "explanation": "The paper attributes development to Tokushima University.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ]
+    },
+    {
+      "id": "trial-smart-agri",
+      "source": "citrus-spray-trial",
+      "target": "hiroshima-smart-agriculture",
+      "label": "was carried out under",
+      "explanation": "The acknowledgment records the project framework, not eligibility or an award amount.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Acknowledgments"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "monitoring-drone-finding",
+      "label": "Drones can support restoration monitoring",
+      "text": "The manual suggests high-resolution drone imagery to improve vegetation monitoring. This concerns observation, not irrigation delivery.",
+      "topic_ids": [
+        "restoration",
+        "monitoring",
+        "drones",
+        "drone-imagery"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Remote sensing"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "monitoring-ground-covers",
+      "label": "Monitor several kinds of ground cover",
+      "text": "Distinguish herbaceous cover, woody cover, remains/rocks and bare soil. Fixed transects and location records support repeat measurements.",
+      "topic_ids": [
+        "monitoring",
+        "point-transects",
+        "cover-types"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "monitoring-satellite-example",
+      "label": "A dated land-cover example in Portugal",
+      "text": "A pictured example uses KNN classification on 2021 Sentinel 2 imagery around Carregal do Sal.",
+      "topic_ids": [
+        "satellite-monitoring",
+        "carregal-do-sal"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Land-cover caption"
+        }
+      ],
+      "kind": "finding",
+      "dates": [
+        {
+          "value": "2021",
+          "meaning": "imagery"
+        }
+      ],
+      "place_ids": [
+        "carregal-do-sal"
+      ]
+    },
+    {
+      "id": "restoration-plan-water",
+      "label": "Plan supply and water-harvesting effects together",
+      "text": "Water availability affects methods, quantities and frequency. The manual also considers runoff captured by planting techniques, naming Cocoon and microbasins.",
+      "topic_ids": [
+        "restoration",
+        "cocoon",
+        "water-harvesting",
+        "settlement-irrigation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "recommendation",
+      "conditions": [
+        "Water availability",
+        "Site conditions"
+      ]
+    },
+    {
+      "id": "amendment-guidance",
+      "label": "Use suitable amendments in suitable amounts",
+      "text": "The manual suggests organic amendments for nourishment, biological activity and water holding. It calls for low pollutants, no impurities, stable material and avoiding excessive doses; examples are 1–2 L/planting hole or 50 Mg/ha surface application, retaining those different application contexts.",
+      "topic_ids": [
+        "organic-amendments",
+        "compost",
+        "amendment-quality",
+        "soil-water-retention"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 87,
+          "locator": "Organic amendments"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "restoration-method-choice",
+      "label": "Choose the method for the actual site",
+      "text": "Species, climate, soil, water availability/quality, topography, costs, resources, access and environmental effects matter. Biodiversity, monitoring and future resilience are also included, without selecting one universal best technique.",
+      "topic_ids": [
+        "restoration",
+        "species-site-fit",
+        "soil-water-retention",
+        "land-access",
+        "climate-resilience"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 88,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 89,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "restoration-native-combinations",
+      "label": "Choose native combinations for habitat objectives",
+      "text": "Where restoration aims to recover habitat and biodiversity, the manual advises techniques and species combinations that encourage native species and diverse habitat for local flora and fauna. It does not prescribe a particular beneficial carob companion combination.",
+      "topic_ids": [
+        "restoration",
+        "species-site-fit"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 89,
+          "locator": "Restoring habitat and biodiversity"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "restoration-objectives",
+      "label": "Restoration methods should follow explicit objectives",
+      "text": "The manual names protecting soils/ecosystems, stabilizing pollution, carbon sequestration, timber production and leisure among possible reforestation objectives. It calls for explicit project objectives and suitable species/methods rather than assuming the same purpose everywhere.",
+      "topic_ids": [
+        "restoration",
+        "species-site-fit"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 88,
+          "locator": "Reforestation methodology introduction"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "planting-timing-context",
+      "label": "Allow establishment before severe weather",
+      "text": "The manual discusses moderate temperatures and adequate rainfall, with generic early-spring/monsoon examples. Local Mediterranean dates are not computed from these generic examples.",
+      "topic_ids": [
+        "planting-season",
+        "restoration"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 89,
+          "locator": "Seasonality"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "traditional-method-description",
+      "label": "The LIFE control used holes and pipe watering",
+      "text": "The method uses 40×40×40 cm holes, no additional tillage and a stated minimum 1.50 m spacing. Shallow/stony areas need adaptation. These are project-method details, not a planting layout for a new site.",
+      "topic_ids": [
+        "traditional-reforestation",
+        "pe-pipe-network"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "finding",
+      "conditions": [
+        "LIFE control method",
+        "Site adaptations"
+      ]
+    },
+    {
+      "id": "traditional-summary-performance",
+      "label": "Traditional-method summary has its own scope",
+      "text": "The summary reports 3,002 planted trees,33% survival,53 L/tree and €136/surviving tree. It remains distinct from the dated July 2023 table, whose denominators and values differ.",
+      "topic_ids": [
+        "traditional-reforestation",
+        "life-nieblas"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 91,
+          "locator": "Traditional Performance"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "Planted trees": "3,002",
+        "Survival": "33%",
+        "Water per tree": "53 L",
+        "Cost per surviving tree": "€136",
+        "Scope": "Method summary, distinct from dated table"
+      }
+    },
+    {
+      "id": "cocoon-life-description",
+      "label": "LIFE describes a 20 L Cocoon",
+      "text": "The manual describes a buried biodegradable reservoir initially filled with 20 L, near-root delivery and shelter. These are source-described functions; trial outcomes and additional watering remain separate.",
+      "topic_ids": [
+        "cocoon",
+        "cocoon-reservoir",
+        "tree-shelter"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 92,
+          "locator": "Presentation and diagram"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "Reservoir capacity": "20 L in LIFE manual"
+      }
+    },
+    {
+      "id": "cocoon-water-caution",
+      "label": "Cocoon is not a no-watering guarantee",
+      "text": "An introductory passage describes reduced regular watering, but the next page includes initial base water,20 L reservoir fill and further irrigation if necessary; management guidance also describes summer watering.",
+      "topic_ids": [
+        "cocoon",
+        "maintenance-irrigation",
+        "support-irrigation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 92,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "finding",
+      "conditions": [
+        "LIFE implementation",
+        "Moisture and plant condition"
+      ]
+    },
+    {
+      "id": "cocoon-site-guidance",
+      "label": "Humidity and slope can limit placement",
+      "text": "The manual advises against very humid sites because deterioration can accelerate; steep placement can incline reservoirs and spill water.",
+      "topic_ids": [
+        "cocoon",
+        "cocoon-site-limitations"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Location"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "cocoon-single-use",
+      "label": "Cocoon is described as single-use",
+      "text": "The source says no reuse is possible and describes degradation in soil. It reports €7.80 per unit for LIFE; this is a historical source-stated cost, not a current quote.",
+      "topic_ids": [
+        "cocoon",
+        "cocoon-biodegradation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Cost and End-of-life"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "Reuse": "No; single-use",
+        "Historical project unit cost": "€7.80"
+      }
+    },
+    {
+      "id": "cocoon-summary-performance",
+      "label": "Cocoon summary has its own scope",
+      "text": "The method summary reports 1,993 planted trees,68% survival,49 L/tree and €109/surviving tree. It is preserved separately from the later dated results table.",
+      "topic_ids": [
+        "cocoon",
+        "life-nieblas"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Cocoon Performance"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "Planted trees": "1,993",
+        "Survival": "68%",
+        "Water per tree": "49 L",
+        "Cost per surviving tree": "€109",
+        "Scope": "Method summary, distinct from dated table"
+      }
+    },
+    {
+      "id": "ifwc-construction",
+      "label": "Fog collectors combine moisture collection and shelter",
+      "text": "The manual describes 25×25 mm steel mesh and 3×3 mm PE Russell mesh, collecting water by condensation/impact and providing shade/wind cover. It reports qualitatively better survival with PE mesh; no numeric rate is given on this page.",
+      "topic_ids": [
+        "individual-fog-water-collector",
+        "fog-water-collection"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 94,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "ifwc-condition-guidance",
+      "label": "Fog collectors still need suitable sites and water",
+      "text": "Good fog collection conditions are primary. First-year watering and moisture checks are still described, with quantities dependent on site and species.",
+      "topic_ids": [
+        "individual-fog-water-collector",
+        "fog-exposure",
+        "soil-moisture-monitoring"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "life-pipe-layout",
+      "label": "A source-described pipe and hose network",
+      "text": "The installation example describes 32-diameter branches,19 mm valve connections every 25 m and 19 mm hoses with quick connections. The source explicitly says project requirements, topography and equipment change details.",
+      "topic_ids": [
+        "pe-pipe-network",
+        "irrigation-valves",
+        "watering-hose"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 141,
+          "locator": "Step8"
+        }
+      ],
+      "kind": "finding",
+      "conditions": [
+        "Example network",
+        "Project/site adaptation"
+      ]
+    },
+    {
+      "id": "irrigation-types-distinct",
+      "label": "Keep four types of water distinct",
+      "text": "Nursery, settlement, maintenance and support water have different purposes. Soil, rainfall and species affect quantity/frequency.",
+      "topic_ids": [
+        "nursery-irrigation",
+        "settlement-irrigation",
+        "maintenance-irrigation",
+        "support-irrigation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "life-settlement-water",
+      "label": "Settlement water is additional to the reservoir fill",
+      "text": "The LIFE choices describe roughly 10–15 L settlement water per seedling across methods, with a further 20 L reservoir fill for Cocoon.",
+      "topic_ids": [
+        "settlement-irrigation",
+        "cocoon",
+        "traditional-reforestation",
+        "individual-fog-water-collector",
+        "afds"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Settlement"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "Settlement": "Usually 10–15 L/seedling",
+        "Cocoon additional fill": "20 L"
+      }
+    },
+    {
+      "id": "life-maintenance-water",
+      "label": "LIFE summer schedules are project-specific",
+      "text": "The manual describes 15 L/plant monthly July–September for traditional/Cocoon and 10 L for IND. These are project schedules, not universal requirements.",
+      "topic_ids": [
+        "maintenance-irrigation",
+        "cocoon",
+        "traditional-reforestation",
+        "individual-fog-water-collector"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Maintenance"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "Cocoon/traditional": "15 L/plant/month, July–September",
+        "IND": "10 L/plant/month, July–September"
+      }
+    },
+    {
+      "id": "support-water-guidance",
+      "label": "Use weather and plant condition to consider support water",
+      "text": "Inspect forecasts and plants: prolonged dryness or widespread yellow/dry symptoms may justify additional watering.",
+      "topic_ids": [
+        "support-irrigation",
+        "monitoring",
+        "seedling-drought-stress"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "life-july2023-comparison",
+      "label": "Dated LIFE water-use comparison",
+      "text": "On 26 July 2023 the table gives water/surviving tree: traditional 133.5 L, Cocoon 57.4 L, i-FWC 35.3 L, AFDS 101.4 L; survival proportions 0.43,0.87,0.89,0.83 respectively. This project snapshot is not a prediction for Maysara or another site.",
+      "topic_ids": [
+        "life-nieblas",
+        "traditional-reforestation",
+        "cocoon",
+        "individual-fog-water-collector",
+        "afds"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Statistics table, visually checked"
+        }
+      ],
+      "kind": "finding",
+      "dates": [
+        {
+          "value": "2023-07-26",
+          "meaning": "data snapshot"
+        }
+      ],
+      "aspects": {
+        "Traditional water/survivor": "133.5 L",
+        "Cocoon water/survivor": "57.4 L",
+        "i-FWC water/survivor": "35.3 L",
+        "AFDS water/survivor": "101.4 L"
+      }
+    },
+    {
+      "id": "life-reported-water-savings",
+      "label": "The manual reports savings against a control estimate",
+      "text": "The manual reports 509,495 L overall reduction against a traditional-method counterfactual. This is a source indicator, not a new-project forecast; component values have a one-litre sum discrepancy.",
+      "topic_ids": [
+        "life-nieblas",
+        "cocoon",
+        "individual-fog-water-collector",
+        "afds"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 156,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "kind": "finding",
+      "conditions": [
+        "Control-based estimate",
+        "Dated project context"
+      ]
+    },
+    {
+      "id": "menaqua-trial-interpretation",
+      "label": "Interpret pilots with disturbances and conditions",
+      "text": "The report evaluates survival/growth alongside rain, irrigation, soil texture/rockiness, seedling quality, soil preparation, management, weeds and reservoir damage. Some datasets were corrected or excluded.",
+      "topic_ids": [
+        "al-faisal-pilot",
+        "maysara-carob-trial",
+        "monitoring",
+        "soil-water-retention"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "faisal-flood-loss",
+      "label": "Al Faisal carob was lost to flooding",
+      "text": "All fall carob plants were destroyed by canal floods and not replanted. Empty carob cells are missing results following disturbance, not a measured zero-survival Cocoon efficacy comparison.",
+      "topic_ids": [
+        "carob",
+        "al-faisal-pilot",
+        "canal-flooding"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Exclusions and Table5.1"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "al-faisal"
+      ],
+      "dates": [
+        {
+          "value": "2019-12",
+          "meaning": "planting/flood period"
+        },
+        {
+          "value": "2020-01",
+          "meaning": "flood period"
+        }
+      ]
+    },
+    {
+      "id": "faisal-olive-survival",
+      "label": "Al Faisal olive refill was comparable to irrigation",
+      "text": "At May 2020 monitoring, olive survival was 93.9% with Cocoon refill,92.0% without Cocoon/with irrigation and 72.9% Cocoon/no-refill. The source regards refill/irrigation performance as similar and the no-refill deficit as significant.",
+      "topic_ids": [
+        "olive",
+        "cocoon",
+        "al-faisal-pilot"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Table5.1, visually checked"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 76,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "al-faisal"
+      ],
+      "dates": [
+        {
+          "value": "2019-05",
+          "meaning": "planting"
+        },
+        {
+          "value": "2020-05",
+          "meaning": "monitoring"
+        }
+      ],
+      "aspects": {
+        "Cocoon refill": "93.9% (95% CI 83.5–97.9)",
+        "No-Cocoon irrigation": "92.0% (95% CI 81.2–96.8)",
+        "Cocoon no-refill": "72.9% (95% CI 59.0–83.4)"
+      }
+    },
+    {
+      "id": "faisal-olive-water",
+      "label": "Al Faisal olive water schedules differ",
+      "text": "Table 5.2 reports 50 L Cocoon refill water (initial/emergency) versus 1,080 L no-Cocoon irrigation (initial/emergency/weekly-to-biweekly summer water) over May 2019–May 2020. Preserve schedule and site when comparing volumes.",
+      "topic_ids": [
+        "olive",
+        "cocoon",
+        "cocoon-refill",
+        "al-faisal-pilot"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 77,
+          "locator": "Table5.2, visually checked"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "al-faisal"
+      ],
+      "aspects": {
+        "Cocoon refill supply": "50 L/seedling over stated period",
+        "No-Cocoon irrigation": "1,080 L/seedling over stated period"
+      }
+    },
+    {
+      "id": "faisal-almond-result",
+      "label": "Al Faisal almond survival remained low",
+      "text": "Both reported almond comparison treatments had 36.0% survival. The authors discuss dry-summer sensitivity and better-planned water supply; this is not universal device failure.",
+      "topic_ids": [
+        "almond-menaqua",
+        "al-faisal-pilot",
+        "cocoon",
+        "planting-season"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Table5.1"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 76,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "al-faisal"
+      ],
+      "dates": [
+        {
+          "value": "2020-05",
+          "meaning": "monitoring"
+        }
+      ]
+    },
+    {
+      "id": "faisal-tree-height",
+      "label": "Growth comparisons depend on species and period",
+      "text": "May 2020 mean olive heights: 98.0 cm Cocoon refill,86.3 cm no-refill,85.1 cm no-Cocoon irrigation. Olive refill differences were significant; almond/pine height differences were not. Pine had only 3–4 months growth after replacement.",
+      "topic_ids": [
+        "olive",
+        "almond-menaqua",
+        "pine-menaqua",
+        "al-faisal-pilot",
+        "cocoon"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 77,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 78,
+          "locator": "Table5.3 and interpretation, visually checked"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "al-faisal"
+      ],
+      "dates": [
+        {
+          "value": "2020-05",
+          "meaning": "monitoring"
+        }
+      ]
+    },
+    {
+      "id": "maysara-scenarios-changed",
+      "label": "Emergency water changed Maysara comparisons",
+      "text": "Spring Cocoon scenarios were refilled twice in unexpectedly hot summer 2019; no-Cocoon/no-irrigation seedlings also received water. Those original comparison labels were excluded. January 2021 monitoring was not used because watering information was incomplete.",
+      "topic_ids": [
+        "maysara-carob-trial",
+        "cocoon-refill",
+        "monitoring"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "maysara"
+      ],
+      "dates": [
+        {
+          "value": "2019",
+          "meaning": "summer emergency watering"
+        },
+        {
+          "value": "2021-01",
+          "meaning": "monitoring not used"
+        }
+      ]
+    },
+    {
+      "id": "maysara-carob-poor-survival",
+      "label": "Carob survival was poor in the Maysara spring trial",
+      "text": "May 2019 planting assessed May 2020: 1.0% carob survival with Cocoon refill (95% CI 0.2–5.5),2.0% no-Cocoon irrigation (95% CI 0.6–7.1). No significant treatment difference was found. Poor results were attributed mainly to summer dryness and very poor sandy-soil water retention.",
+      "topic_ids": [
+        "carob",
+        "cocoon",
+        "maysara-carob-trial",
+        "poor-sandy-soil",
+        "late-spring-planting"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Table5.4 and interpretation, visually checked"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 81,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "maysara"
+      ],
+      "dates": [
+        {
+          "value": "2019-05",
+          "meaning": "planting"
+        },
+        {
+          "value": "2020-05",
+          "meaning": "monitoring"
+        }
+      ],
+      "aspects": {
+        "Cocoon refill": "1.0% (95% CI 0.2–5.5)",
+        "No-Cocoon irrigation": "2.0% (95% CI 0.6–7.1)",
+        "Conditions": "Late spring; hot summer; poor sandy-soil retention"
+      }
+    },
+    {
+      "id": "maysara-carob-water",
+      "label": "Water totals did not guarantee Maysara survival",
+      "text": "Table 5.5 reports 75 L initial/emergency Cocoon fills and 510 L initial/follow-up no-Cocoon irrigation for carob during May 2019–May 2020. Survival remained poor under the reported conditions.",
+      "topic_ids": [
+        "carob",
+        "maysara-carob-trial",
+        "cocoon-refill",
+        "poor-sandy-soil"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 81,
+          "locator": "Table5.5, visually checked"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "maysara"
+      ],
+      "aspects": {
+        "Cocoon supply": "75 L/seedling",
+        "No-Cocoon irrigation": "510 L/seedling",
+        "Period": "May 2019–May 2020"
+      }
+    },
+    {
+      "id": "maysara-fall-context",
+      "label": "Fall results concern other species and a short period",
+      "text": "Fall pine/acacia performed better with winter rain and composting. Cocoon/no-refill survival was 100% for both; no-Cocoon/no-irrigation 94.4% pine and 72.5% acacia. The period since December 2019 was only five months. These are not fall carob results.",
+      "topic_ids": [
+        "pine-menaqua",
+        "acacia-menaqua",
+        "maysara",
+        "cocoon",
+        "compost",
+        "planting-season"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Table5.4"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 81,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "maysara"
+      ],
+      "dates": [
+        {
+          "value": "2019-12",
+          "meaning": "planting"
+        },
+        {
+          "value": "2020-05",
+          "meaning": "monitoring"
+        }
+      ]
+    },
+    {
+      "id": "menaqua-original-carob-spelling",
+      "label": "Retain original carob spellings with one checked identity",
+      "text": "Several passages/tables use Ceratonia silique, while Table 5.1 prints Ceratonia siliqua and labels it carob. Preserve the original wording linked to checked carob; infer no naming authority from a variant spelling.",
+      "topic_ids": [
+        "carob",
+        "maysara-carob-trial",
+        "al-faisal-pilot"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Table5.1"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Table5.4"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "cocoon-menaqua-design",
+      "label": "The supplier annex describes about 25 L",
+      "text": "The Land Life Company annex describes wax-sealed recycled pulp/cardboard reservoir/lid and shelter; approximate 25 L fill and 1–3 months discharge depend on soil/climate. Rain/runoff can recharge it. This differs from LIFE 20 L wording.",
+      "topic_ids": [
+        "cocoon",
+        "cocoon-reservoir",
+        "cocoon-lid",
+        "tree-shelter"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Annex I"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "Fill": "Approximately 25 L in supplier annex",
+        "Discharge": "1–3 months depending on soil/climate"
+      }
+    },
+    {
+      "id": "cocoon-refill-guidance",
+      "label": "Dry summers can require additional Cocoon water",
+      "text": "MENAQUA suggests refilling at an appropriate summer time and a removable access cover. This regional guidance does not promise one fill is sufficient.",
+      "topic_ids": [
+        "cocoon",
+        "cocoon-refill"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "recommendation",
+      "conditions": [
+        "Long dry summer",
+        "Reservoir/plant condition"
+      ]
+    },
+    {
+      "id": "cocoon-damage-guidance",
+      "label": "Inspect reservoir condition after planting",
+      "text": "Monitor damage/degradation. Snow can damage lids and freezing can damage pulp walls; seasonal lid removal/replacement is a source suggestion for snow conditions.",
+      "topic_ids": [
+        "cocoon",
+        "monitoring",
+        "cocoon-lid",
+        "snow-frost-damage"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "cocoon-rooting-uncertainty",
+      "label": "Observed roots differ from intended deep rooting",
+      "text": "The report notes roots tending horizontally below reservoirs and identifies downward rooting as an open issue. The supplier annex describes deep rooting as intended function. Preserve these as different statements.",
+      "topic_ids": [
+        "cocoon",
+        "cocoon-root-development"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 110,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "cocoon-degradation-context",
+      "label": "Degradation time depends on environment",
+      "text": "The report says experience with moderate rainfall was breakup in 1.5–2 years, but leaves semi-arid duration open. It suggests reservoir strengthening for wind, runoff, soil pressure and frost.",
+      "topic_ids": [
+        "cocoon",
+        "cocoon-biodegradation",
+        "snow-frost-damage"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "cocoon-soil-guidance",
+      "label": "Cocoon requires suitable soil and species",
+      "text": "Supplier guidance: at least 30 cm topsoil; clear piercing rocks from top 25 cm; preferably deep medium-textured subsoil with replenished water; check salinity/chemistry for the species. A planting tool cannot make an unsuitable tree locally adapted.",
+      "topic_ids": [
+        "cocoon",
+        "species-site-fit",
+        "cocoon-soil-depth",
+        "cocoon-rock-clearance",
+        "soil-water-retention",
+        "soil-salinity"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "cocoon-seedling-guidance",
+      "label": "Healthy roots and planting material remain essential",
+      "text": "Supplier prefers trees under one year, containers at most 4 L and diameter under 15 cm, healthy shoots/roots and no serious circling/J-rooting. Shoots preferably under 40 cm; avoid voids around the root ball. These are supplier criteria, not independent efficacy results.",
+      "topic_ids": [
+        "cocoon",
+        "seedling-quality",
+        "root-health"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "cocoon-mycorrhiza-guidance",
+      "label": "Mycorrhiza is a supplier-described option",
+      "text": "The annex suggests nursery/planting inoculation to improve access to moisture/nutrients; selected pages do not report a controlled inoculation result.",
+      "topic_ids": [
+        "mycorrhiza",
+        "seedling-quality",
+        "cocoon"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 111,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "cocoon-monitoring-measures",
+      "label": "Monitor growth and vigor with their limitations",
+      "text": "The annex describes height, base stem diameter and vigor. Grazing can cause apparent negative height growth; shelters obstruct diameter measurement. First-year establishment is distinguished from later drought, grazing/fire effects.",
+      "topic_ids": [
+        "monitoring",
+        "cocoon",
+        "seedling-quality"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "menaqua-conclusion-date",
+      "label": "Keep the printed conclusion date distinct",
+      "text": "The selected conclusion page is signed The Hague,11 January 2022; the library filename uses 2021-12. Retain each date with its meaning.",
+      "topic_ids": [
+        "cocoon"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Conclusion signature"
+        }
+      ],
+      "kind": "finding",
+      "dates": [
+        {
+          "value": "2022-01-11",
+          "meaning": "conclusion signature"
+        }
+      ]
+    },
+    {
+      "id": "citrus-drone-purpose",
+      "label": "The study sprayed citrus canopies with water",
+      "text": "The study sought orchard spray delivery from continuous ground supplies. Tests used water; pesticide tests were future work. It did not measure seedling establishment, root-zone irrigation or carob survival.",
+      "topic_ids": [
+        "drones",
+        "wire-supplied-drone",
+        "drone-water-delivery",
+        "citrus",
+        "citrus-spray-trial"
+      ],
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "drone-specifications",
+      "label": "Reported experimental aircraft specifications",
+      "text": "Table 1 describes a 2100×2100×450 mm hexacopter,12 kg airframe,24 kg maximum takeoff mass and six 24-inch propellers. These describe the experiment, not a purchase recommendation or operating authorization.",
+      "topic_ids": [
+        "wire-supplied-drone"
+      ],
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Table1"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "Airframe mass": "12 kg",
+        "Maximum takeoff mass": "24 kg",
+        "Dimensions": "2100×2100×450 mm",
+        "Propellers": "Six,24-inch"
+      }
+    },
+    {
+      "id": "drone-component-chain",
+      "label": "The drone has a concrete supply chain",
+      "text": "The setup combines Cube Black/custom ArduCopter, RTK base/rover, Mission Planner, ground engine pump, hose/nozzle and 200 V AC→300 V DC transmission→48 V aircraft supply. These are browsable source-described components.",
+      "topic_ids": [
+        "wire-supplied-drone",
+        "drone-flight-controller",
+        "rtk-gnss",
+        "mission-planner",
+        "engine-pump",
+        "watering-hose",
+        "spray-nozzle",
+        "wired-power-supply"
+      ],
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "drone-recoil-control",
+      "label": "Tilting propellers counter spray recoil",
+      "text": "Propeller surfaces tilt instead of the entire aircraft to produce horizontal thrust. The study reports stable posture and positioning during spraying.",
+      "topic_ids": [
+        "wire-supplied-drone",
+        "tilt-mechanism",
+        "rtk-gnss"
+      ],
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "drone-auto-date-place",
+      "label": "Automatic trial: Innoshima,19 September 2023",
+      "text": "With Sanwa Farm the aircraft followed an automatic route on sloping orchard terrain; takeoff/landing were manual to avoid fence/hose/cable entanglement.",
+      "topic_ids": [
+        "innoshima-autopilot-trial",
+        "innoshima",
+        "sanwa-farm",
+        "hose-cable-entanglement"
+      ],
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "innoshima"
+      ],
+      "dates": [
+        {
+          "value": "2023-09-19",
+          "meaning": "experiment"
+        }
+      ]
+    },
+    {
+      "id": "drone-manual-date-place",
+      "label": "Manual trial: Ikuchijima,20 September 2023",
+      "text": "With Harada Farm, manual PosHold flight sprayed trees. A crawler UGV carried cable/hose and was designed to follow beyond 5 m separation.",
+      "topic_ids": [
+        "ikuchijima-manual-trial",
+        "ikuchijima",
+        "harada-farm",
+        "crawler-ugv"
+      ],
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "ikuchijima"
+      ],
+      "dates": [
+        {
+          "value": "2023-09-20",
+          "meaning": "experiment"
+        }
+      ]
+    },
+    {
+      "id": "drone-deposition-result",
+      "label": "Water-sensitive paper showed spray adhesion",
+      "text": "Paper in the trees recorded spray deposition with several adhesion indices of 10; the authors conclude water adhered well. This does not establish soil wetting, irrigation efficiency or tree survival.",
+      "topic_ids": [
+        "water-sensitive-paper",
+        "ikuchijima-manual-trial",
+        "citrus",
+        "drone-water-delivery"
+      ],
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Evaluation and Figures10–12"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Table2 and Conclusion"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "drone-report-dates",
+      "label": "Experiment and publication dates differ",
+      "text": "Experiments occurred September 2023. The article records receipt 6 March 2024 and publication 21 March 2024.",
+      "topic_ids": [
+        "citrus-spray-trial"
+      ],
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Metadata"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Experimental method"
+        }
+      ],
+      "kind": "finding",
+      "dates": [
+        {
+          "value": "2023-09-19",
+          "meaning": "automatic experiment"
+        },
+        {
+          "value": "2023-09-20",
+          "meaning": "manual experiment"
+        },
+        {
+          "value": "2024-03-06",
+          "meaning": "received"
+        },
+        {
+          "value": "2024-03-21",
+          "meaning": "publication"
+        }
+      ]
+    },
+    {
+      "id": "drone-project-context",
+      "label": "The authors identify a project framework",
+      "text": "The research was carried out under the 2023 Hiroshima Smart Agriculture Project for an integrated large-scale lemon/other-crop system. This is context, not funding eligibility for another project.",
+      "topic_ids": [
+        "citrus-spray-trial",
+        "hiroshima-smart-agriculture",
+        "hiroshima"
+      ],
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Acknowledgments"
+        }
+      ],
+      "kind": "finding",
+      "dates": [
+        {
+          "value": "2023",
+          "meaning": "project year"
+        }
+      ],
+      "place_ids": [
+        "hiroshima"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "IRR-003",
+      "page": 84,
+      "status": "inspected",
+      "note": "Vegetation characterization, remote sensing and diagrams visually checked; transect wording issue retained."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 87,
+      "status": "inspected",
+      "note": "Water access, runoff capture and amendments read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 88,
+      "status": "inspected",
+      "note": "Species/site fit and method-selection requirements read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 89,
+      "status": "inspected",
+      "note": "Access, costs, biodiversity, monitoring, seasonality and climate resilience read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 90,
+      "status": "inspected",
+      "note": "Traditional control method, site limits and watering read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 91,
+      "status": "inspected",
+      "note": "Traditional performance/cost/carbon summary read, retained separately from dated table."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 92,
+      "status": "inspected",
+      "note": "Cocoon presentation/capacity/functions read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 93,
+      "status": "inspected",
+      "note": "Cocoon location limits, watering, cost, reuse and performance read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 94,
+      "status": "inspected",
+      "note": "IFWC mesh construction/functions/qualitative comparison read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 95,
+      "status": "inspected",
+      "note": "IFWC fog conditions and watering read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 141,
+      "status": "inspected",
+      "note": "Pipe/valve/hose example and site caveat read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 142,
+      "status": "inspected",
+      "note": "Four irrigation types and soil/rainfall/species dependence read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 143,
+      "status": "inspected",
+      "note": "Nursery, settlement, maintenance and support examples read."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 155,
+      "status": "inspected",
+      "note": "Dated comparison table visually checked, units and denominators retained."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 156,
+      "status": "inspected",
+      "note": "Control-based savings read; one-litre sum discrepancy recorded."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 74,
+      "status": "inspected",
+      "note": "Pilot interpretation framework, species and exclusions read."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 75,
+      "status": "inspected",
+      "note": "Table 5.1 and flood exclusions visually checked; empty carob cells retained."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 76,
+      "status": "inspected",
+      "note": "Survival interpretation and short pine growth period read."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 77,
+      "status": "inspected",
+      "note": "Table 5.2 visually checked; date-label inconsistency recorded."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 78,
+      "status": "inspected",
+      "note": "Table 5.3 visually checked; height/significance interpretation read."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 79,
+      "status": "inspected",
+      "note": "Emergency water and changed comparison scenarios read."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 80,
+      "status": "inspected",
+      "note": "Table 5.4 visually checked including confidence intervals and poor carob survival context."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 81,
+      "status": "inspected",
+      "note": "Table 5.5 visually checked; five-month caution and weed measurement limitations read."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 109,
+      "status": "inspected",
+      "note": "Refill, damage, degradation/rooting issues and printed conclusion date read."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 110,
+      "status": "inspected",
+      "note": "Supplier reservoir design, approx 25 L, discharge duration/functions read."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 111,
+      "status": "inspected",
+      "note": "Environmental/soil/species/material conditions and mycorrhiza read."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 112,
+      "status": "inspected",
+      "note": "Planting-material/root criteria, ambiguous collar wording and monitoring read."
+    },
+    {
+      "source_id": "DRONE-004",
+      "page": 1,
+      "status": "inspected",
+      "note": "Purpose, metadata, specifications and complete component setup read."
+    },
+    {
+      "source_id": "DRONE-004",
+      "page": 2,
+      "status": "inspected",
+      "note": "Tilt/flight diagrams visually checked; automatic trial/date/place/entanglement read."
+    },
+    {
+      "source_id": "DRONE-004",
+      "page": 3,
+      "status": "inspected",
+      "note": "Manual trial/UGV and spray-paper diagrams visually checked."
+    },
+    {
+      "source_id": "DRONE-004",
+      "page": 4,
+      "status": "inspected",
+      "note": "Adhesion scale, conclusion/future-work boundary and project context read. Cited external references not ingested."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "life-point-transect-length",
+      "text": "PDF 84 visibly prints every 20 cm in a 25 cm transect. Do not silently repair the awkward length or adopt it as a field protocol.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Point transect paragraph"
+        }
+      ],
+      "topic_ids": [
+        "point-transects"
+      ]
+    },
+    {
+      "id": "life-summary-vs-dated-table",
+      "text": "PDF 91/93 method summaries and PDF 155 dated results have different counts/survival/water values; selected pages do not fully reconcile their scopes.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 91,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "topic_ids": [
+        "life-nieblas",
+        "traditional-reforestation",
+        "cocoon"
+      ]
+    },
+    {
+      "id": "life-savings-total",
+      "text": "PDF 156 component savings 334,402+55,478+119,614 sum 509,494 L; printed total 509,495 L. Preserve the one-litre discrepancy.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 156,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "topic_ids": [
+        "life-nieblas"
+      ]
+    },
+    {
+      "id": "menaqua-pine-name",
+      "text": "Resolve Pinus halapensis correspondence to existing Aleppo pine before merging identities.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "topic_ids": [
+        "pine-menaqua"
+      ]
+    },
+    {
+      "id": "menaqua-table52-date",
+      "text": "Table 5.2 spring planting label says May 2020 while water period says May 2019–May 2020 and surrounding text says May 2019. Retain the inconsistency.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 77,
+          "locator": "Table5.2"
+        }
+      ],
+      "topic_ids": [
+        "al-faisal-pilot"
+      ]
+    },
+    {
+      "id": "menaqua-root-collar-guidance",
+      "text": "Supplier PDF 112 says root collar around 10 cm below soil level and not covered by soil. Clarify this wording before general planting advice.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 112,
+          "locator": "Planting"
+        }
+      ],
+      "topic_ids": [
+        "cocoon",
+        "seedling-quality"
+      ]
+    },
+    {
+      "id": "cocoon-semiarid-degradation",
+      "text": "Semi-arid degradation duration and procedures to favor downward roots remain open source issues.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "topic_ids": [
+        "cocoon-biodegradation",
+        "cocoon-root-development"
+      ]
+    },
+    {
+      "id": "afds-definition-scope",
+      "text": "Selected pages mention AFDS without full technical description; retain source acronym until an explicit later page-scope task.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "topic_ids": [
+        "afds"
+      ]
+    }
+  ]
+}

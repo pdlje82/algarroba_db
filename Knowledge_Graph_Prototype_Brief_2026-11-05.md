@@ -23,7 +23,7 @@ The initial knowledge area is dryland and Mediterranean restoration, especially 
 - One graphical frontend, one backend application and one chosen database.
 - One connected source collection, the same stable topic identities across all perspectives, and persistent imported knowledge.
 - Overview-first exploration, contextual search, perspective changes, abbreviated and full connections, source inspection, orientation aids and reversible navigation.
-- Codex Desktop ingestion and a manual, graph-guided handoff of research tasks to Codex.
+- Codex Desktop ingestion and a small **Research this area** panel that captures the exploration, offers suggested and custom research areas, and prepares a static prompt for manual use in Codex.
 - Free/community software with no required software licence fees or separately integrated AI API. Codex checks the actual licences of the chosen dependencies.
 
 ### Outside this demonstrator
@@ -184,13 +184,34 @@ Choose one authoritative knowledge representation during Plan. If repository fil
 
 Use normal repository history, a short batch record and a recoverable import. Do not transplant the old simulator's registry, approval machinery or operational-rule adoption process into this new project. The old repository is a read-only source library for this task.
 
+### Mandatory rule: the task directs research; discoveries enrich the shared graph
+
+The centre, search term, perspective and selected research areas determine where Codex starts and what it prioritizes. They must not become filters that discard useful discoveries from the inspected material.
+
+Within the agreed knowledge domain, capture all useful, supported topics, findings, conditions and relationships encountered in the material actually read, including discoveries outside the original question. Inspect relevant existing records across the wider graph, including records absent from the current view. Wire new topics to existing topics and to one another wherever the sources or an explicit curated-topic association justify it. Keep source findings and broader discovery associations distinguishable through meaningful labels.
+
+The initial 68-page selection limits which material is read first, not which relevant aspects of those pages can be captured. For later tasks, record the material actually inspected and any unfinished coverage. A focused task answer and a broader knowledge update are complementary outputs. Do not create isolated per-task knowledge graphs.
+
+Think of research as a flashlight exploring an unmapped city. The question points the light, but all useful streets seen within the illuminated area can be mapped. Overlapping sources connect and refine the existing map. Missing connections mean **No connection recorded**, not that the connection is impossible. Conflicting or incomplete descriptions keep their source context; no claim of exhaustive knowledge is required.
+
+Keep the stored map broad and the visible view manageable. A short import result should separate the task answer, additional useful discoveries, links added to existing knowledge, and unresolved areas. Routine new topics within the agreed domain do not require permission for each addition. A material extension of the domain follows the scope-expansion procedure below.
+
 ## 10. Ingestion method B: graph-guided user indication
 
 The graph is also a way for a non-expert to point out what Codex should research or add.
 
-Provide **Ask Codex to research here** from the current view and from a selected topic, relationship or path. For a gap, allow the user to select two existing endpoints or keep the centre plus an unmatched search term. This creates a research request, not a factual graph connection.
+Provide **Research this area** from the current view and from a selected topic, relationship or path. For a gap, allow the user to select two existing endpoints or keep the centre plus an unmatched search term. This creates a research request, not a factual graph connection.
 
-The user adds one short instruction: find more information, explain this connection, check this finding, or connect a named document. Offer source scope **Library only** by default; **Library and web** is explicit. Browser search and research handoff remain separate actions.
+### The small research panel
+
+1. Show the captured centre, optional search term, perspective, connection detail and selected topics or routes. Make the context readable before generating the task.
+2. Offer suggested research areas: **Ecosystem conditions**, **Irrigation**, **Drone technology**, **Funding**, **Requirements** and **Sources**. The current perspective can suggest selections, which remain editable. Permit several selections.
+3. Provide **Add another topic** with a plain text field. The suggested areas are starting points, not a closed list of what the graph can contain.
+4. Let the user choose or write a short instruction: find more information, explain this connection, check this finding, or connect a named document. **Find more information** is the documented initial choice.
+5. Offer source scope **Library only** by default; **Library and web** is explicit.
+6. Generate a static, editable prompt from a fixed template. Provide **Preview prompt** and **Copy prompt**, and save the prompt and its context together in the new project for Codex to read. Prompt generation itself needs no AI call.
+
+Browser search and research handoff remain separate actions. The generated prompt must contain enough readable context to understand the task without seeing the live browser. The saved context retains the exact references and view state. A screenshot alone is insufficient.
 
 Prepare a readable task brief plus structured context in the new project. Include:
 
@@ -200,13 +221,28 @@ Prepare a readable task brief plus structured context in the new project. Includ
 - Selected topic IDs, real relationship IDs and the constituent routes behind shortened connections.
 - Relevant existing findings, source IDs and page references.
 - The requested outcome, source boundary and any selected library filenames.
+- Suggested areas selected by the user, custom topics, and any proposed domain extension.
 - The knowledge revision and enough view state to return to the same exploration.
 
-The user asks Codex Desktop to perform that task. The app does not dispatch another agent or call an AI API. Codex checks the current records, uses the relevant existing knowledge, reads the indicated sources and follows method A from extraction onward. If the graph changed after the brief was created, Codex reconciles the stable IDs against the current version rather than applying a stale view blindly.
+Every generated prompt must instruct Codex to prioritize the requested areas while capturing and connecting other useful, supported discoveries within the agreed domain. It must direct Codex to inspect the wider existing graph, reuse identities, preserve sources, follow method A and return the short task/import summary. Research-area selections prioritize the work; they do not narrow the permitted ingestion coverage within inspected material.
+
+The user asks Codex Desktop to perform that task. The app does not dispatch another agent or call an AI API. Codex checks the current records, uses the relevant existing knowledge, reads the indicated sources and follows method A from extraction onward. If the graph changed after the brief was created, Codex reconciles the stable IDs against the current version rather than applying a stale view blindly. If the user edits the prompt, save that edited version with the task context.
+
+### Additional areas discovered during exploration or research
+
+| Situation | Required behaviour |
+|---|---|
+| An existing topic needs more knowledge | Anchor the request to its existing identity and source connections. |
+| A new topic fits within the agreed ecosystem, technology or funding domain | Accept it through **Add another topic**, or capture it when found during research. Reuse the existing ingestion and classification procedure; no separate approval for each ordinary topic. |
+| A proposed area materially extends the agreed domain | Record a proposed extension with its reason and relevant sources. Ask the user whether to include that area before expanding research and factual ingestion into it. Continue useful work within the existing boundary. |
+
+For an unresearched topic or suggested connection, show an optional outlined **To research** marker attached to the current context. Suggested links are labelled **Investigate connection** and are stored as research indications, separate from supported knowledge. These markers can be hidden to keep the graph readable. Once sources support an addition, refresh with the supported topics and connections highlighted; preserve unresolved questions when necessary.
+
+A new topic normally uses the existing perspectives. For example, soil microorganisms can join ecosystem, place, time and source views without a new application feature. Create useful groups or aliases as knowledge grows; do not add a research preset for every node. Reusable new areas can become suggestions. A new perspective or project function remains a separately defined feature request.
 
 For web-authorized work, use relevant primary sources and offer verifiable document links. New source files receive library IDs and metadata under the chosen new-project convention; do not modify the old library automatically. External material joins the graph through the same ingestion procedure.
 
-After ingestion, provide a short task result and let the user refresh the original view with additions highlighted. Task tracking needs only clear statuses such as Prepared, Completed and Needs an answer, not a task-management platform.
+After ingestion, provide a short task result covering both the requested answer and additional discoveries, and let the user refresh the original view with additions highlighted. Task tracking needs only clear statuses such as Prepared, Completed and Needs an answer, not a task-management platform.
 
 ## 11. Architecture decisions belong in the Plan session
 
@@ -246,9 +282,11 @@ Use a compact practical walkthrough and necessary automated integrity checks. Do
 7. Zoom out works from each state; Back/Forward restore it; the overview map and trail remain coherent.
 8. A result, connection or recommendation opens its exact source page or shows a useful locator if the viewer cannot jump directly.
 9. An unknown term, disconnected result, absent perspective content or missing source gives a clear message while preserving the current exploration.
-10. The user can prepare a research task from a selected connection or gap and hand it to Codex Desktop.
-11. Reimporting the same material produces no duplicates. A failed import preserves accepted knowledge and reports the problem.
-12. Knowledge survives restart; a saved exploration reopens with its context intact.
+10. The research panel captures the current exploration, offers suggested areas and a custom topic, and previews/copies a static prompt with saved context that Codex Desktop can use without seeing the live browser.
+11. A task focused on one subject also captures useful discoveries from the inspected material in other agreed areas and connects them to relevant existing records outside the visible neighbourhood.
+12. A new in-domain topic can start as a **To research** marker and become supported knowledge through ingestion. A material domain extension is recorded for a simple user decision. Neither requires a new perspective automatically.
+13. Reimporting the same material produces no duplicates. A failed import preserves accepted knowledge and reports the problem.
+14. Knowledge survives restart; a saved exploration reopens with its context intact. A task made from an older view is reconciled against current topic identities.
 
 User acceptance concerns comfort and understanding: can someone without a search question discover a topic, find a connection, recognize a pattern through a perspective change and return to the bigger picture?
 

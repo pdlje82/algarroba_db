@@ -1,0 +1,4520 @@
+{
+  "batch_id": "initial-ecology-2026-11-05",
+  "summary": "All 18 selected ecology pages: checked plant identities, source-described communities, establishment conditions, runoff-harvesting restoration, local demonstrations and botanical context. Accompaniment is not treated as proven planting benefit.",
+  "topics": [
+    {
+      "id": "carob",
+      "label": "Carob tree",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Evergreen Mediterranean tree identified by the handbook description as Ceratonia siliqua. Community associations, cultivation observations, restoration guidance and trial findings retain separate scopes.",
+      "aliases": [
+        "carob",
+        "algarrobo",
+        "algarroba",
+        "garrofa",
+        "Ceratonia siliqua",
+        "C. siliqua",
+        "Ceratonia silique"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 13,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Ceratonia siliqua",
+      "identification": "FOREST-002 PDF 13–21 species description. Printed authority/year retained as source usage only. MENAQUA Ceratonia silique is a checked spelling variant, not another species or naming authority.",
+      "place_ids": [
+        "mediterranean",
+        "andalusia"
+      ],
+      "aspects": {
+        "water": "Adult drought tolerance differs from establishment requirements",
+        "soil": "Well-drained sites; preserve soil and age context",
+        "companions": "Source-described accompaniment, not universal mutual benefit"
+      }
+    },
+    {
+      "id": "kermes-oak",
+      "label": "Kermes oak",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Quercus coccifera as described by the Andalusian factsheet; usually a Mediterranean shrub, sometimes a small tree. Common names alone do not merge it with another oak.",
+      "aliases": [
+        "coscoja",
+        "maraña",
+        "matarrubia",
+        "carrasca",
+        "chaparra",
+        "chaparro",
+        "Quercus coccifera",
+        "Quercus coccifera L."
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 1,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Quercus coccifera",
+      "identification": "FOREST-003 PDF 1 description and source common names.",
+      "place_ids": [
+        "andalusia",
+        "mediterranean"
+      ],
+      "aspects": {
+        "water": "Favourable annual rainfall 400–800 mm, with wider occurrence",
+        "soil": "Acidic or basic substrates, often stony"
+      }
+    },
+    {
+      "id": "fabaceae",
+      "label": "Fabaceae",
+      "kind": "family",
+      "domain": "ecosystem",
+      "description": "Carob family as assigned by the handbook.",
+      "aliases": [
+        "legumes",
+        "Fabáceas"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 13,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "fagaceae",
+      "label": "Fagaceae",
+      "kind": "family",
+      "domain": "ecosystem",
+      "description": "Kermes-oak family as assigned by the factsheet.",
+      "aliases": [
+        "Fagáceas"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 1,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "wild-olive",
+      "label": "Wild olive",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Handbook identity; factsheet spelling variant and less specific MR 2 usage retained in source context.",
+      "aliases": [
+        "acebuche",
+        "Olea europea var. sylvestris",
+        "Olea europaea var. sylvestris"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Olea europaea var. sylvestris"
+    },
+    {
+      "id": "dwarf-palm",
+      "label": "Mediterranean dwarf palm",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the carob ecology account.",
+      "aliases": [
+        "palmito",
+        "Chamaerops humilis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Chamaerops humilis"
+    },
+    {
+      "id": "holm-oak",
+      "label": "Holm oak (Q. ilex source concept)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Handbook Q.ilex usage; correspondence with factsheet Q.rotundifolia remains unresolved.",
+      "aliases": [
+        "encina",
+        "Quercus ilex"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Quercus ilex"
+    },
+    {
+      "id": "phillyrea-angustifolia",
+      "label": "Narrow-leaved phillyrea",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the carob account.",
+      "aliases": [
+        "labiérnago",
+        "Phillyrea angustifolia"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Phillyrea angustifolia"
+    },
+    {
+      "id": "myrtle",
+      "label": "Myrtle",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the carob account.",
+      "aliases": [
+        "mirto",
+        "Myrtus communis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Myrtus communis"
+    },
+    {
+      "id": "terebinth",
+      "label": "Terebinth",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the handbook; preserve its source ecology context.",
+      "aliases": [
+        "cornicabra",
+        "Pistacia terebinthus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pistacia terebinthus"
+    },
+    {
+      "id": "mastic",
+      "label": "Mastic",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion shared by carob and kermes-oak accounts.",
+      "aliases": [
+        "lentisco",
+        "Pistacia lentiscus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pistacia lentiscus"
+    },
+    {
+      "id": "cork-oak",
+      "label": "Cork oak",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Less frequent carob companion; cork woodland is also a kermes-oak habitat.",
+      "aliases": [
+        "alcornoque",
+        "Quercus suber"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Quercus suber"
+    },
+    {
+      "id": "aleppo-pine",
+      "label": "Aleppo pine",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Named in the MR 2 restoration assemblage.",
+      "aliases": [
+        "pino carrasco",
+        "P. halepensis",
+        "Pinus halepensis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pinus halepensis"
+    },
+    {
+      "id": "fig",
+      "label": "Fig",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Named in MR 2, with possible later introduction as soil conditions improve.",
+      "aliases": [
+        "higuera",
+        "Ficus carica"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Ficus carica"
+    },
+    {
+      "id": "olive",
+      "label": "Olive",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Cultivated olive named as a possible later MR 2 introduction, separate from source wild-olive usage.",
+      "aliases": [
+        "olivo"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "almond",
+      "label": "Almond",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Observed mixture at El Rano; no measured mutual planting benefit is reported.",
+      "aliases": [
+        "almendro"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "holm-oak-rotundifolia",
+      "label": "Holm oak (Q. rotundifolia source concept)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "encina",
+        "Quercus rotundifolia"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 3,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Quercus rotundifolia",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "maritime-pine",
+      "label": "Maritime pine",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "pino resinero",
+        "Pinus pinaster"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pinus pinaster",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "stone-pine",
+      "label": "Stone pine",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "pino piñonero",
+        "Pinus pinea"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pinus pinea",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "rhamnus-alaternus",
+      "label": "Rhamnus alaternus",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Rhamnus alaternus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Rhamnus alaternus",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "rhamnus-lycioides",
+      "label": "Rhamnus lycioides",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Rhamnus lycioides"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Rhamnus lycioides",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "phillyrea-latifolia",
+      "label": "Phillyrea latifolia",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Phillyrea latifolia"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Phillyrea latifolia",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "osyris-quadripartita",
+      "label": "Osyris quadripartita",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Osyris quadripartita"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Osyris quadripartita",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "periploca-laevigata",
+      "label": "Periploca laevigata",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Periploca laevigata"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Periploca laevigata",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "maytenus-senegalensis",
+      "label": "Maytenus senegalensis",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Maytenus senegalensis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Maytenus senegalensis",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "whitania-frutescens-source",
+      "label": "Whitania frutescens (source spelling)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Whitania frutescens"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Whitania frutescens",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "cistus-ladanifer",
+      "label": "Cistus ladanifer",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Cistus ladanifer"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Cistus ladanifer",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "cistus-crispus",
+      "label": "Cistus crispus",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Cistus crispus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Cistus crispus",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "erica-australis",
+      "label": "Erica australis",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Erica australis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Erica australis",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "erica-scoparia",
+      "label": "Erica scoparia",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Erica scoparia"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Erica scoparia",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "lavandula-stoechas",
+      "label": "Lavandula stoechas",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Lavandula stoechas"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Lavandula stoechas",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "chamaespartium-source",
+      "label": "Chamaespartium tridentantum (source spelling)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Chamaespartium tridentantum"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Chamaespartium tridentantum",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred."
+    },
+    {
+      "id": "carob-community",
+      "label": "Carob plant communities",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Source-described carob combinations; ecological accompaniment and supported practical guidance stay distinct.",
+      "aliases": [
+        "carob societies",
+        "plant companions",
+        "associated vegetation",
+        "comunidades de algarrobo"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "mediterranean-dryland",
+      "label": "Mediterranean drylands",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Arid/semi-arid environments addressed by MR 2.",
+      "aliases": [
+        "drylands",
+        "secano",
+        "Mediterráneo árido",
+        "semiárido"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "mastic-scrub",
+      "label": "Mastic scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Potential vegetation in the arid coastal restoration setting.",
+      "aliases": [
+        "lentiscares"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "wild-olive-scrub",
+      "label": "Wild-olive scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Potential vegetation in the restoration setting.",
+      "aliases": [
+        "acebuchales",
+        "acebuchares"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "jujube-thorn-scrub",
+      "label": "Jujube thorn scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Named in the arid MR 2 setting and La Alcantarilla potential vegetation.",
+      "aliases": [
+        "espinal de azufaifo",
+        "azufaifos"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "esparto-grassland",
+      "label": "Esparto grassland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Current La Alcantarilla landscape, distinct from potential vegetation.",
+      "aliases": [
+        "espartales"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "kermes-oak-scrub",
+      "label": "Kermes-oak scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Communities dominated by Quercus coccifera.",
+      "aliases": [
+        "coscojares",
+        "coscojar"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "warm-woodland",
+      "label": "Warm Mediterranean woodland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Warm woodland settings described in the factsheet.",
+      "aliases": [
+        "bosque termófilo",
+        "termomediterráneo"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "cork-oak-woodland",
+      "label": "Cork-oak woodland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Kermes oak may be a companion or become prominent in regressive management stages.",
+      "aliases": [
+        "alcornocal",
+        "alcornocales"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "pine-woodland",
+      "label": "Mediterranean pine woodland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Factsheet pine communities containing kermes oak.",
+      "aliases": [
+        "pinar",
+        "pinares"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "xerothermic-scrub",
+      "label": "Arid warm scrub communities",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Most-arid kermes-oak companion setting.",
+      "aliases": [
+        "cortejos xerotérmicos"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "acidic-scrub",
+      "label": "Acid-substrate scrub companions",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Separate acidic cork-woodland companion setting.",
+      "aliases": [
+        "sustrato ácido",
+        "jarales"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "restoration",
+      "label": "Dryland restoration",
+      "kind": "activity",
+      "domain": "ecosystem",
+      "description": "Restoring vegetation and ecohydrological functions in degraded Mediterranean settings. Carob MR 2 is one documented model.",
+      "aliases": [
+        "habitat restoration",
+        "restauración",
+        "ecohydrological restoration"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "water-harvesting",
+      "label": "Runoff water harvesting",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Collect and infiltrate runoff at planting points using appropriately designed retention structures; called oasificación in the handbook.",
+      "aliases": [
+        "oasificación",
+        "recolección de agua",
+        "runoff harvesting",
+        "rainwater harvesting"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ],
+      "aspects": {
+        "water delivery": "Runoff captured and infiltrated at planting points",
+        "reuse": "Site structures, not a replaceable reservoir",
+        "conditions": "Dimensions/siting depend on drainage and favourable microhabitats"
+      }
+    },
+    {
+      "id": "carob-oasification",
+      "label": "Carob oasis restoration model",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "MR 2 low-density carob stands integrated with runoff-retention structures in arid/semi-arid settings; conditional source guidance, not a universal design.",
+      "aliases": [
+        "Modelo MR 2",
+        "oasification",
+        "plantaciones de oasificación"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ],
+      "aspects": {
+        "water delivery": "Runoff harvesting plus establishment support water",
+        "planting density": "Below 100 plants/ha overall with locally denser patches",
+        "conditions": "Moister/deeper microsites; autumn planting without frost risk"
+      }
+    },
+    {
+      "id": "establishment-water",
+      "label": "Establishment water",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Water during young-plant establishment; mature drought tolerance is not a guarantee of dry-planting success.",
+      "aliases": [
+        "riego de apoyo",
+        "support irrigation"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "frost-risk",
+      "label": "Frost risk",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Carob is frost-sensitive, especially when young; autumn MR 2 planting assumes no frost risk.",
+      "aliases": [
+        "heladas",
+        "cold"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 19,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "summer-drought",
+      "label": "Summer drought",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Prolonged dryness tolerated particularly by adult carob; establishment needs separate context.",
+      "aliases": [
+        "sequía",
+        "drought"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "well-drained-soil",
+      "label": "Well-drained soil",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Carob guidance warns against poorly drained/clay soils.",
+      "aliases": [
+        "drenaje",
+        "soil drainage"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "soil-depth",
+      "label": "Effective soil depth",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "MR 2 favours deeper-soil, moister microhabitats.",
+      "aliases": [
+        "profundidad de suelo"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "soil-infiltration",
+      "label": "Soil infiltration",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Water entering soil, supported by retention works and soil structure.",
+      "aliases": [
+        "infiltración"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "soil-erosion",
+      "label": "Water erosion",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Soil loss addressed by sediment-retaining runoff works.",
+      "aliases": [
+        "erosión hídrica"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "runoff",
+      "label": "Runoff water",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Surface-flow water that can be retained near planting points.",
+      "aliases": [
+        "escorrentía"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "local-provenance",
+      "label": "Local seed provenance",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Appropriate provenance and genetically diverse forest reproductive material for protection plantings.",
+      "aliases": [
+        "procedencia local",
+        "genetic diversity"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "autumn-planting",
+      "label": "Autumn planting window",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "MR 2 autumn planting without frost risk; table specifies November–December, narrative warns against delay beyond January.",
+      "aliases": [
+        "época de plantación",
+        "planting time"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "soil-biota",
+      "label": "Soil organisms",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Carob interactions with soil organisms are described as little studied; no microorganism treatment is established here.",
+      "aliases": [
+        "soil microorganisms",
+        "microorganismos del suelo"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "nitrogen-fixation",
+      "label": "Nitrogen fixation",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "The handbook says carob cannot perform this despite belonging to the legume family.",
+      "aliases": [
+        "fijación de nitrógeno"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "microcatchment",
+      "label": "Planting microcatchments",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Small plant-centred catchments to optimize local infiltration.",
+      "aliases": [
+        "microcuenca",
+        "microcuencas"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "retention-structures",
+      "label": "Runoff-retention structures",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Dimensioned dry-stone, gabion or earth works capturing runoff, soil and nutrients.",
+      "aliases": [
+        "microembalses",
+        "hydrological structures"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "dry-stone-check-dam",
+      "label": "Dry-stone check dams",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Small albarradas/masonry dams used in torrential drainage.",
+      "aliases": [
+        "albarradas",
+        "mampostería en seco"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "gabions",
+      "label": "Gabions",
+      "kind": "equipment",
+      "domain": "ecosystem",
+      "description": "A source-named retention-structure option.",
+      "aliases": [
+        "gaviones"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "stone-mulch",
+      "label": "Stone mulch",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Stone surface cover recommended with a microcatchment in MR 2.",
+      "aliases": [
+        "mulch de piedra"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "tree-shelters",
+      "label": "Perforated tree shelters",
+      "kind": "equipment",
+      "domain": "ecosystem",
+      "description": "Protective tubes specified in table 5.19.",
+      "aliases": [
+        "tubos invernadero",
+        "tubos protectores"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "planting-holes",
+      "label": "Planting holes",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "MR 2 gives 60×60×60 cm holes; preparation depends on site and soil.",
+      "aliases": [
+        "ahoyado",
+        "hoyos"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "manual-planting",
+      "label": "Manual planting",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "MR 2 planting method recommendation; soil preparation may still use small machinery.",
+      "aliases": [
+        "plantación manual"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "low-density-patches",
+      "label": "Low-density planting patches",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Below 100 trees/ha overall, clustered on favourable structures and microsites.",
+      "aliases": [
+        "bosques islas",
+        "bosquetes"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "grafting",
+      "label": "Carob grafting",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Cultivation method in the El Rano case; table compares grafted/natural fruit.",
+      "aliases": [
+        "injerto",
+        "injertada"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "carob-pollination",
+      "label": "Carob pollination",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Insect/wind pollination and other controls on fruit production.",
+      "aliases": [
+        "polinización",
+        "pollinators",
+        "flies",
+        "bees",
+        "moths"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 15,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "carob-reproduction",
+      "label": "Carob flowering and fruiting",
+      "kind": "aspect",
+      "domain": "ecosystem",
+      "description": "Male/female/hermaphrodite flowers, variable flowering, long fruit maturation and resource competition.",
+      "aliases": [
+        "floración",
+        "fructificación",
+        "vecería"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 14,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "carob-seeds",
+      "label": "Carob seeds",
+      "kind": "aspect",
+      "domain": "ecosystem",
+      "description": "Hard impermeable garrofines with prolonged germination and persistence.",
+      "aliases": [
+        "garrofín",
+        "garrofines",
+        "semillas"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 16,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "carob-seed-dispersal",
+      "label": "Mammal seed dispersal",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Mammals can disperse viable seeds; small-mammal effectiveness remains a source suggestion.",
+      "aliases": [
+        "dispersión de semillas",
+        "fauna"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 17,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "carob-resprouting",
+      "label": "Carob resprouting",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "Stump/root resprouting after cutting or crown loss.",
+      "aliases": [
+        "rebrote",
+        "cepa",
+        "raíz"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 17,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "carob-cultivars",
+      "label": "Carob cultivars",
+      "kind": "aspect",
+      "domain": "ecosystem",
+      "description": "Selected cultivated forms; morphological variation does not automatically define another species.",
+      "aliases": [
+        "cultivares",
+        "varieties"
+      ],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 21,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "mediterranean",
+      "label": "Mediterranean basin",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "General carob distribution; exact native origin remains uncertain.",
+      "aliases": [
+        "Mediterráneo"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "andalusia",
+      "label": "Andalusia",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Region addressed by both sources.",
+      "aliases": [
+        "Andalucía"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "almeria",
+      "label": "Almería",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Province emphasized in MR 2 and illustrated restoration plots.",
+      "aliases": [
+        "Almeria"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "granada",
+      "label": "Granada",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Province occasionally identified for MR 2 potential.",
+      "aliases": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "malaga",
+      "label": "Málaga",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Carob low-mountain occurrence and occasional MR 2 potential.",
+      "aliases": [
+        "Malaga"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "mojacar",
+      "label": "Mojácar",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Municipality containing La Alcantarilla.",
+      "aliases": [
+        "Mojacar"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "israel",
+      "label": "Israel",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Illustrated arid carob oasis planting and general distribution.",
+      "aliases": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "el-rano",
+      "label": "El Rano farm",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Existing cultivation case; municipality not assigned from uninspected pages.",
+      "aliases": [
+        "finca El Rano"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "la-alcantarilla",
+      "label": "La Alcantarilla demonstration parcel",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "MR 2 example in Mojácar; only the start of characterization is in scope.",
+      "aliases": [
+        "finca La Alcantarilla",
+        "Parcela demostrativa MR 2"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "cabo-de-gata",
+      "label": "Cabo de Gata",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Dry kermes-oak occurrence example.",
+      "aliases": [
+        "Cabo de Gata (Al)"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "grazalema",
+      "label": "Grazalema",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Wet kermes-oak occurrence example.",
+      "aliases": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "la-sagra",
+      "label": "La Sagra",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Kermes-oak high-altitude occurrence example, not normal community altitude.",
+      "aliases": [
+        "Huéscar",
+        "Huescar"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "eco-carob-family",
+      "source": "carob",
+      "target": "fabaceae",
+      "label": "belongs to family",
+      "explanation": "Sourced classification, not a route shortcut through every legume.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 13,
+          "locator": "Selected passage"
+        }
+      ],
+      "traversable": false
+    },
+    {
+      "id": "eco-oak-family",
+      "source": "kermes-oak",
+      "target": "fagaceae",
+      "label": "belongs to family",
+      "explanation": "Sourced classification, not an ecological association.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 1,
+          "locator": "Selected passage"
+        }
+      ],
+      "traversable": false
+    },
+    {
+      "id": "eco-carob-community",
+      "source": "carob",
+      "target": "carob-community",
+      "label": "occurs in",
+      "explanation": "Source-described Mediterranean assemblage, not a mixed-planting trial.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-companion-wild-olive",
+      "source": "carob-community",
+      "target": "wild-olive",
+      "label": "includes companion",
+      "explanation": "Named alongside carob in FOREST-002 PDF 18; no quantified mutual planting benefit is established.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "context": {
+        "meaning": "ecological accompaniment"
+      }
+    },
+    {
+      "id": "eco-carob-companion-dwarf-palm",
+      "source": "carob-community",
+      "target": "dwarf-palm",
+      "label": "includes companion",
+      "explanation": "Named alongside carob in FOREST-002 PDF 18; no quantified mutual planting benefit is established.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "context": {
+        "meaning": "ecological accompaniment"
+      }
+    },
+    {
+      "id": "eco-carob-companion-holm-oak",
+      "source": "carob-community",
+      "target": "holm-oak",
+      "label": "includes companion",
+      "explanation": "Named alongside carob in FOREST-002 PDF 18; no quantified mutual planting benefit is established.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "context": {
+        "meaning": "ecological accompaniment"
+      }
+    },
+    {
+      "id": "eco-carob-companion-phillyrea-angustifolia",
+      "source": "carob-community",
+      "target": "phillyrea-angustifolia",
+      "label": "includes companion",
+      "explanation": "Named alongside carob in FOREST-002 PDF 18; no quantified mutual planting benefit is established.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "context": {
+        "meaning": "ecological accompaniment"
+      }
+    },
+    {
+      "id": "eco-carob-companion-myrtle",
+      "source": "carob-community",
+      "target": "myrtle",
+      "label": "includes companion",
+      "explanation": "Named alongside carob in FOREST-002 PDF 18; no quantified mutual planting benefit is established.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "context": {
+        "meaning": "ecological accompaniment"
+      }
+    },
+    {
+      "id": "eco-carob-companion-terebinth",
+      "source": "carob-community",
+      "target": "terebinth",
+      "label": "includes companion",
+      "explanation": "Named alongside carob in FOREST-002 PDF 18; no quantified mutual planting benefit is established.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "context": {
+        "meaning": "ecological accompaniment"
+      }
+    },
+    {
+      "id": "eco-carob-companion-mastic",
+      "source": "carob-community",
+      "target": "mastic",
+      "label": "includes companion",
+      "explanation": "Named alongside carob in FOREST-002 PDF 18; no quantified mutual planting benefit is established.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "context": {
+        "meaning": "ecological accompaniment"
+      }
+    },
+    {
+      "id": "eco-carob-companion-cork-oak",
+      "source": "carob-community",
+      "target": "cork-oak",
+      "label": "includes companion",
+      "explanation": "Named alongside carob in FOREST-002 PDF 18; no quantified mutual planting benefit is established.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "context": {
+        "meaning": "ecological accompaniment"
+      }
+    },
+    {
+      "id": "eco-carob-kermes",
+      "source": "carob",
+      "target": "kermes-oak",
+      "label": "reported together",
+      "explanation": "FOREST-003 PDF 2 explicitly names Ceratonia siliqua among warm-climate plants accompanying kermes oak. This is a described community link, not document co-occurrence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "context": {
+        "meaning": "vegetation accompaniment, not planting recommendation"
+      }
+    },
+    {
+      "id": "eco-kermes-community",
+      "source": "kermes-oak",
+      "target": "kermes-oak-scrub",
+      "label": "dominates",
+      "explanation": "The factsheet defines coscojares as dominated by kermes oak.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-companion-mastic",
+      "source": "kermes-oak",
+      "target": "mastic",
+      "label": "occurs with",
+      "explanation": "Named thermophilous companion in the vegetation section; not measured mixed-planting improvement.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-companion-dwarf-palm",
+      "source": "kermes-oak",
+      "target": "dwarf-palm",
+      "label": "occurs with",
+      "explanation": "Named thermophilous companion in the vegetation section; not measured mixed-planting improvement.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-companion-wild-olive",
+      "source": "kermes-oak",
+      "target": "wild-olive",
+      "label": "occurs with",
+      "explanation": "Named thermophilous companion in the vegetation section; not measured mixed-planting improvement.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-companion-rhamnus-alaternus",
+      "source": "kermes-oak",
+      "target": "rhamnus-alaternus",
+      "label": "occurs with",
+      "explanation": "Named thermophilous companion in the vegetation section; not measured mixed-planting improvement.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-companion-rhamnus-lycioides",
+      "source": "kermes-oak",
+      "target": "rhamnus-lycioides",
+      "label": "occurs with",
+      "explanation": "Named thermophilous companion in the vegetation section; not measured mixed-planting improvement.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-companion-phillyrea-latifolia",
+      "source": "kermes-oak",
+      "target": "phillyrea-latifolia",
+      "label": "occurs with",
+      "explanation": "Named thermophilous companion in the vegetation section; not measured mixed-planting improvement.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-companion-osyris-quadripartita",
+      "source": "kermes-oak",
+      "target": "osyris-quadripartita",
+      "label": "occurs with",
+      "explanation": "Named thermophilous companion in the vegetation section; not measured mixed-planting improvement.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-habitat-warm-woodland",
+      "source": "kermes-oak",
+      "target": "warm-woodland",
+      "label": "occurs in",
+      "explanation": "The factsheet places kermes oak in this vegetation setting.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-habitat-cork-oak-woodland",
+      "source": "kermes-oak",
+      "target": "cork-oak-woodland",
+      "label": "occurs in",
+      "explanation": "The factsheet places kermes oak in this vegetation setting.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-habitat-pine-woodland",
+      "source": "kermes-oak",
+      "target": "pine-woodland",
+      "label": "occurs in",
+      "explanation": "The factsheet places kermes oak in this vegetation setting.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-habitat-xerothermic-scrub",
+      "source": "kermes-oak",
+      "target": "xerothermic-scrub",
+      "label": "occurs in",
+      "explanation": "The factsheet places kermes oak in this vegetation setting.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-pine-woodland-maritime-pine",
+      "source": "pine-woodland",
+      "target": "maritime-pine",
+      "label": "has named dominant",
+      "explanation": "Named pine community containing kermes oak.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-pine-woodland-stone-pine",
+      "source": "pine-woodland",
+      "target": "stone-pine",
+      "label": "has named dominant",
+      "explanation": "Named pine community containing kermes oak.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-pine-woodland-aleppo-pine",
+      "source": "pine-woodland",
+      "target": "aleppo-pine",
+      "label": "has named dominant",
+      "explanation": "Named pine community containing kermes oak.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-cork-habitat",
+      "source": "cork-oak",
+      "target": "cork-oak-woodland",
+      "label": "forms woodland",
+      "explanation": "The factsheet discusses kermes oak in cork woodland.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-cork-acidic",
+      "source": "cork-oak-woodland",
+      "target": "acidic-scrub",
+      "label": "has described companions",
+      "explanation": "The acidic companion list belongs to this source-specific setting.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-acidic-companion-cistus-ladanifer",
+      "source": "acidic-scrub",
+      "target": "cistus-ladanifer",
+      "label": "includes companion",
+      "explanation": "Named in the factsheet acid-substrate companion list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-acidic-companion-cistus-crispus",
+      "source": "acidic-scrub",
+      "target": "cistus-crispus",
+      "label": "includes companion",
+      "explanation": "Named in the factsheet acid-substrate companion list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-acidic-companion-erica-australis",
+      "source": "acidic-scrub",
+      "target": "erica-australis",
+      "label": "includes companion",
+      "explanation": "Named in the factsheet acid-substrate companion list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-acidic-companion-erica-scoparia",
+      "source": "acidic-scrub",
+      "target": "erica-scoparia",
+      "label": "includes companion",
+      "explanation": "Named in the factsheet acid-substrate companion list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-acidic-companion-lavandula-stoechas",
+      "source": "acidic-scrub",
+      "target": "lavandula-stoechas",
+      "label": "includes companion",
+      "explanation": "Named in the factsheet acid-substrate companion list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-acidic-companion-chamaespartium-source",
+      "source": "acidic-scrub",
+      "target": "chamaespartium-source",
+      "label": "includes companion",
+      "explanation": "Named in the factsheet acid-substrate companion list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-arid-companion-periploca-laevigata",
+      "source": "xerothermic-scrub",
+      "target": "periploca-laevigata",
+      "label": "includes companion",
+      "explanation": "Named in the most-arid community list; source spelling retained.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-arid-companion-maytenus-senegalensis",
+      "source": "xerothermic-scrub",
+      "target": "maytenus-senegalensis",
+      "label": "includes companion",
+      "explanation": "Named in the most-arid community list; source spelling retained.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-arid-companion-whitania-frutescens-source",
+      "source": "xerothermic-scrub",
+      "target": "whitania-frutescens-source",
+      "label": "includes companion",
+      "explanation": "Named in the most-arid community list; source spelling retained.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-mastic-dominant",
+      "source": "mastic",
+      "target": "mastic-scrub",
+      "label": "forms scrub",
+      "explanation": "Lentiscares are named in MR 2 potential vegetation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-wildolive-dominant",
+      "source": "wild-olive",
+      "target": "wild-olive-scrub",
+      "label": "forms scrub",
+      "explanation": "Acebuchales are named in MR 2 potential vegetation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-restoration",
+      "source": "carob",
+      "target": "restoration",
+      "label": "used in restoration",
+      "explanation": "MR 2 uses carob for ecohydrological restoration in arid/semi-arid Mediterranean settings.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-restoration-harvesting",
+      "source": "restoration",
+      "target": "water-harvesting",
+      "label": "uses runoff harvesting",
+      "explanation": "The documented carob restoration model captures and infiltrates runoff near plants.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-model",
+      "source": "carob",
+      "target": "carob-oasification",
+      "label": "used in model",
+      "explanation": "The handbook defines a carob planting model for oasificación.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-harvesting",
+      "source": "carob-oasification",
+      "target": "water-harvesting",
+      "label": "uses",
+      "explanation": "Runoff harvesting defines the model water-management approach.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-dryland",
+      "source": "carob-oasification",
+      "target": "mediterranean-dryland",
+      "label": "described for",
+      "explanation": "Arid/semi-arid setting, particularly below 300 mm annual rainfall.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-harvesting-runoff",
+      "source": "water-harvesting",
+      "target": "runoff",
+      "label": "captures",
+      "explanation": "Retention captures existing runoff, not a new water source.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-harvesting-soil-infiltration",
+      "source": "water-harvesting",
+      "target": "soil-infiltration",
+      "label": "supports",
+      "explanation": "Retained runoff infiltrates to improve soil moisture.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-harvesting-soil-erosion",
+      "source": "water-harvesting",
+      "target": "soil-erosion",
+      "label": "helps control",
+      "explanation": "Captured soil and nutrients help control water erosion.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-harvesting-retention-structures",
+      "source": "water-harvesting",
+      "target": "retention-structures",
+      "label": "uses",
+      "explanation": "Dry stone, gabions and earth are source-named options.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-structure-dry-stone-check-dam",
+      "source": "retention-structures",
+      "target": "dry-stone-check-dam",
+      "label": "includes option",
+      "explanation": "Source-named structure/material, not a construction calculation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-structure-gabions",
+      "source": "retention-structures",
+      "target": "gabions",
+      "label": "includes option",
+      "explanation": "Source-named structure/material, not a construction calculation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-establishment-water",
+      "source": "carob-oasification",
+      "target": "establishment-water",
+      "label": "may need",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-soil-depth",
+      "source": "carob-oasification",
+      "target": "soil-depth",
+      "label": "depends on",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-local-provenance",
+      "source": "carob-oasification",
+      "target": "local-provenance",
+      "label": "requires appropriate",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-autumn-planting",
+      "source": "carob-oasification",
+      "target": "autumn-planting",
+      "label": "uses planting window",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-stone-mulch",
+      "source": "carob-oasification",
+      "target": "stone-mulch",
+      "label": "uses",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-tree-shelters",
+      "source": "carob-oasification",
+      "target": "tree-shelters",
+      "label": "uses",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-planting-holes",
+      "source": "carob-oasification",
+      "target": "planting-holes",
+      "label": "uses",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-manual-planting",
+      "source": "carob-oasification",
+      "target": "manual-planting",
+      "label": "recommends",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-low-density-patches",
+      "source": "carob-oasification",
+      "target": "low-density-patches",
+      "label": "uses",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-microcatchment",
+      "source": "carob-oasification",
+      "target": "microcatchment",
+      "label": "uses",
+      "explanation": "Explicit MR 2 model condition or method. Keep its restoration context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-microcatchment-infiltration",
+      "source": "microcatchment",
+      "target": "soil-infiltration",
+      "label": "improves local capture",
+      "explanation": "MR 2 recommends a microcatchment to optimize infiltration around the plant.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-frost-risk",
+      "source": "carob",
+      "target": "frost-risk",
+      "label": "sensitive to",
+      "explanation": "Low temperature/frost constrain distribution and establishment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 19,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-summer-drought",
+      "source": "carob",
+      "target": "summer-drought",
+      "label": "adult trees tolerate",
+      "explanation": "The source emphasizes adult tolerance, not guaranteed dry establishment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-establishment-water",
+      "source": "carob",
+      "target": "establishment-water",
+      "label": "establishment depends on",
+      "explanation": "Recommended establishment rainfall/irrigation differs from adult drought survival.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-well-drained-soil",
+      "source": "carob",
+      "target": "well-drained-soil",
+      "label": "prefers",
+      "explanation": "Source warns against poor drainage/clay soils.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-soil-biota",
+      "source": "carob",
+      "target": "soil-biota",
+      "label": "interaction understudied",
+      "explanation": "Explicit source knowledge gap; not a treatment recommendation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-nitrogen-fixation",
+      "source": "carob",
+      "target": "nitrogen-fixation",
+      "label": "does not perform",
+      "explanation": "The source states carob cannot fix nitrogen despite being a legume.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-planting-frost",
+      "source": "autumn-planting",
+      "target": "frost-risk",
+      "label": "depends on absence of",
+      "explanation": "MR 2 expressly assumes no frost risk for autumn planting.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-companion-aleppo-pine",
+      "source": "carob-oasification",
+      "target": "aleppo-pine",
+      "label": "includes associated species",
+      "explanation": "Named with carob in MR 2; does not quantify mutual benefit.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-companion-wild-olive",
+      "source": "carob-oasification",
+      "target": "wild-olive",
+      "label": "includes associated species",
+      "explanation": "Named with carob in MR 2; does not quantify mutual benefit.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-companion-fig",
+      "source": "carob-oasification",
+      "target": "fig",
+      "label": "includes associated species",
+      "explanation": "Named with carob in MR 2; does not quantify mutual benefit.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-later-olive",
+      "source": "carob-oasification",
+      "target": "olive",
+      "label": "can later introduce",
+      "explanation": "Conditional model guidance as soil structure and infiltration improve.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-later-fig",
+      "source": "carob-oasification",
+      "target": "fig",
+      "label": "can later introduce",
+      "explanation": "Conditional model guidance as soil structure and infiltration improve.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-biology-carob-pollination",
+      "source": "carob",
+      "target": "carob-pollination",
+      "label": "depends on for fruiting",
+      "explanation": "Source biological description, separate from planting prescriptions or trial outcomes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 15,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-biology-carob-reproduction",
+      "source": "carob",
+      "target": "carob-reproduction",
+      "label": "has reproductive cycle",
+      "explanation": "Source biological description, separate from planting prescriptions or trial outcomes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 14,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-biology-carob-seeds",
+      "source": "carob",
+      "target": "carob-seeds",
+      "label": "produces",
+      "explanation": "Source biological description, separate from planting prescriptions or trial outcomes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 16,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-biology-carob-resprouting",
+      "source": "carob",
+      "target": "carob-resprouting",
+      "label": "capable of",
+      "explanation": "Source biological description, separate from planting prescriptions or trial outcomes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 17,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-biology-carob-cultivars",
+      "source": "carob",
+      "target": "carob-cultivars",
+      "label": "has selected cultivars",
+      "explanation": "Source biological description, separate from planting prescriptions or trial outcomes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 21,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-reproduction-pollination",
+      "source": "carob-reproduction",
+      "target": "carob-pollination",
+      "label": "uses",
+      "explanation": "Limited pollination contributes to fruit losses in the account.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 15,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-seed-dispersal",
+      "source": "carob-seeds",
+      "target": "carob-seed-dispersal",
+      "label": "dispersed through",
+      "explanation": "Mammals consume fruit and can disperse viable seeds.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 17,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-cultivar-grafting",
+      "source": "carob-cultivars",
+      "target": "grafting",
+      "label": "managed using",
+      "explanation": "El Rano includes grafted trees and intended grafting of natural regeneration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-carob-mediterranean",
+      "source": "carob",
+      "target": "mediterranean",
+      "label": "reported across",
+      "explanation": "Distribution with explicitly uncertain origin.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "traversable": false
+    },
+    {
+      "id": "eco-carob-andalusia",
+      "source": "carob",
+      "target": "andalusia",
+      "label": "reported in",
+      "explanation": "Source Andalusian distribution account and maps.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "traversable": false
+    },
+    {
+      "id": "eco-kermes-andalusia",
+      "source": "kermes-oak",
+      "target": "andalusia",
+      "label": "reported across",
+      "explanation": "All Andalusian provinces reported; use-region map is not universal site suitability.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 1,
+          "locator": "Selected passage"
+        }
+      ],
+      "traversable": false
+    },
+    {
+      "id": "eco-model-area-almeria",
+      "source": "carob-oasification",
+      "target": "almeria",
+      "label": "potential area named",
+      "explanation": "Source regional MR 2 potential, not a site suitability result.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-area-granada",
+      "source": "carob-oasification",
+      "target": "granada",
+      "label": "potential area named",
+      "explanation": "Source regional MR 2 potential, not a site suitability result.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-area-malaga",
+      "source": "carob-oasification",
+      "target": "malaga",
+      "label": "potential area named",
+      "explanation": "Source regional MR 2 potential, not a site suitability result.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-israel",
+      "source": "carob-oasification",
+      "target": "israel",
+      "label": "illustrated in",
+      "explanation": "Figure 5.42 shows an arid carob oasis plantation, attributed to Ashkenazi etal 2020.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-model-alcantarilla",
+      "source": "carob-oasification",
+      "target": "la-alcantarilla",
+      "label": "demonstrated at",
+      "explanation": "Named MR 2 demonstration parcel.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-alcantarilla-mojacar",
+      "source": "la-alcantarilla",
+      "target": "mojacar",
+      "label": "located in",
+      "explanation": "The selected page explicitly gives Mojácar municipality.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-mojacar-almeria",
+      "source": "mojacar",
+      "target": "almeria",
+      "label": "within province",
+      "explanation": "The selected page gives Mojácar, Almería.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ],
+      "traversable": false
+    },
+    {
+      "id": "eco-elrano-carob",
+      "source": "carob",
+      "target": "el-rano",
+      "label": "cultivated at",
+      "explanation": "Existing cultivation case, distinct from MR 2 beginning lower on the page.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-elrano-grafting",
+      "source": "el-rano",
+      "target": "grafting",
+      "label": "uses",
+      "explanation": "Grafted adults and planned grafting of naturally dispersed young plants.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-elrano-mixture-olive",
+      "source": "el-rano",
+      "target": "olive",
+      "label": "reported in mixture",
+      "explanation": "Figure 5.40 describes a carob/almond/olive mixture, without a mutual-benefit trial.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-elrano-mixture-almond",
+      "source": "el-rano",
+      "target": "almond",
+      "label": "reported in mixture",
+      "explanation": "Figure 5.40 describes a carob/almond/olive mixture, without a mutual-benefit trial.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-place-cabo-de-gata",
+      "source": "kermes-oak",
+      "target": "cabo-de-gata",
+      "label": "occurrence example",
+      "explanation": "Illustrates the wider environmental range; not an optimal-planting assertion.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-place-grazalema",
+      "source": "kermes-oak",
+      "target": "grazalema",
+      "label": "occurrence example",
+      "explanation": "Illustrates the wider environmental range; not an optimal-planting assertion.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-place-la-sagra",
+      "source": "kermes-oak",
+      "target": "la-sagra",
+      "label": "occurrence example",
+      "explanation": "Illustrates the wider environmental range; not an optimal-planting assertion.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-alcantarilla-potential-mastic-scrub",
+      "source": "la-alcantarilla",
+      "target": "mastic-scrub",
+      "label": "potential vegetation named",
+      "explanation": "The source distinguishes potential vegetation from current landscape.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-alcantarilla-potential-kermes-oak-scrub",
+      "source": "la-alcantarilla",
+      "target": "kermes-oak-scrub",
+      "label": "potential vegetation named",
+      "explanation": "The source distinguishes potential vegetation from current landscape.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-alcantarilla-potential-wild-olive-scrub",
+      "source": "la-alcantarilla",
+      "target": "wild-olive-scrub",
+      "label": "potential vegetation named",
+      "explanation": "The source distinguishes potential vegetation from current landscape.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-alcantarilla-potential-jujube-thorn-scrub",
+      "source": "la-alcantarilla",
+      "target": "jujube-thorn-scrub",
+      "label": "potential vegetation named",
+      "explanation": "The source distinguishes potential vegetation from current landscape.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-alcantarilla-current",
+      "source": "la-alcantarilla",
+      "target": "esparto-grassland",
+      "label": "current landscape includes",
+      "explanation": "Espartales and lower-area greenhouse crops are described as current landscape.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-series-rotundifolia",
+      "source": "kermes-oak",
+      "target": "holm-oak-rotundifolia",
+      "label": "shares vegetation series",
+      "explanation": "The factsheet places kermes oak in several vegetation series named for Quercus rotundifolia; the oak source concepts are not automatically merged.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 3,
+          "locator": "Selected passage"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "eco-identity",
+      "label": "Carob identity and form",
+      "text": "The handbook identifies Ceratonia siliqua in Fabaceae: evergreen, generally 5–6 m tall, reaching 10 m in its botanical account. Roots extend beyond the crown and penetrate rock fissures. These are source descriptions, not guaranteed dimensions for a particular planting.",
+      "topic_ids": [
+        "carob",
+        "fabaceae"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 13,
+          "locator": "1.1 Descripción botánica y biología reproductiva"
+        }
+      ]
+    },
+    {
+      "id": "eco-leaves",
+      "label": "Evergreen leaves and seasonal renewal",
+      "text": "The source describes leathery compound leaves, renewal in April–May and persistence around 15–18 months. Its reproductive account includes male, female and hermaphrodite flowers; most cultivars are described as dioecious.",
+      "topic_ids": [
+        "carob",
+        "carob-reproduction"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 14,
+          "locator": "1.1, leaf and flower descriptions"
+        }
+      ]
+    },
+    {
+      "id": "eco-pollination",
+      "label": "Fruit production depends on more than flower count",
+      "text": "Flowering is reported from July to late November, sometimes January. Both insects and wind pollinate carob. Climate, nutrients, soil and male-tree proportion also affect fruit production; limited pollination can contribute to fruit losses.",
+      "topic_ids": [
+        "carob",
+        "carob-pollination",
+        "carob-reproduction"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 15,
+          "locator": "1.1 flowering and pollination"
+        }
+      ],
+      "conditions": [
+        "Season and genotype alter flowering",
+        "Species presence alone does not establish fruit yield"
+      ]
+    },
+    {
+      "id": "eco-fruit-cycle",
+      "label": "Long fruit cycle and alternate bearing",
+      "text": "The handbook describes development after spring fertilization and maturation in August–September of the following year. Maturation overlaps flowering; resource competition is associated with alternate bearing.",
+      "topic_ids": [
+        "carob",
+        "carob-reproduction"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 15,
+          "locator": "1.1 fruit development"
+        }
+      ]
+    },
+    {
+      "id": "eco-germination",
+      "label": "Hard seed coat delays germination",
+      "text": "An impermeable coat slows and spreads germination over time. Once broken, water uptake becomes faster. This describes a mechanism, without prescribing a particular seed-treatment procedure.",
+      "topic_ids": [
+        "carob",
+        "carob-seeds"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 16,
+          "locator": "1.1 seed description"
+        }
+      ]
+    },
+    {
+      "id": "eco-seed-persistence",
+      "label": "Seed persistence and mammal dispersal",
+      "text": "The cited account reports similar viability after 4 years while the seed coat remains intact. Mammals can disperse viable seeds, but many consumers expel seeds before digestion. Small mammals such as foxes are suggested as potentially effective dispersers, not a measured universal ranking.",
+      "topic_ids": [
+        "carob",
+        "carob-seeds",
+        "carob-seed-dispersal"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 17,
+          "locator": "1.1 seed persistence and dispersal"
+        }
+      ]
+    },
+    {
+      "id": "eco-fire-resprout",
+      "label": "Resprouting and a tentative fire-related interpretation",
+      "text": "Vigorous stump/root resprouting after crown loss or cutting is described. The account suggests seed-coat responses to high temperature may delay germination until post-fire conditions improve; keep that interpretation tentative.",
+      "topic_ids": [
+        "carob",
+        "carob-resprouting",
+        "carob-seeds"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 17,
+          "locator": "1.1 fire and regeneration"
+        }
+      ]
+    },
+    {
+      "id": "eco-distribution",
+      "label": "Mediterranean distribution with uncertain native limits",
+      "text": "The handbook lists broad Mediterranean distribution and cultivated occurrences elsewhere. It says the exact origin and natural Iberian limits are difficult to establish because of long cultivation; native Iberian status is questioned rather than settled.",
+      "topic_ids": [
+        "carob",
+        "mediterranean",
+        "andalusia"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "1.2 Distribución y ecología"
+        }
+      ]
+    },
+    {
+      "id": "eco-community",
+      "label": "Carob companions are ecological associations",
+      "text": "The handbook names wild olive and dwarf palm alongside carob, with Quercus ilex, Phillyrea angustifolia, myrtle, terebinth, mastic and less often cork oak. These are source-described communities, not controlled evidence that planting every member together improves growth.",
+      "topic_ids": [
+        "carob",
+        "carob-community",
+        "wild-olive",
+        "dwarf-palm",
+        "holm-oak",
+        "phillyrea-angustifolia",
+        "myrtle",
+        "terebinth",
+        "mastic",
+        "cork-oak"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "1.2 companion vegetation"
+        }
+      ],
+      "conditions": [
+        "Keep habitat/locality context",
+        "Accompaniment does not establish mutual benefit"
+      ]
+    },
+    {
+      "id": "eco-temperature",
+      "label": "Carob distribution is temperature-sensitive",
+      "text": "Good vegetative/fruiting performance is associated with mean winter temperature around 10°C and summer means at least 20°C for four or more months. Frost sensitivity is emphasized. These are source ecology descriptors, not an automated threshold test.",
+      "topic_ids": [
+        "carob",
+        "frost-risk"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 19,
+          "locator": "1.2 temperature"
+        }
+      ],
+      "aspects": {
+        "winter mean": "around 10°C",
+        "summer mean": "at least 20°C for at least 4 months"
+      }
+    },
+    {
+      "id": "eco-young-cold",
+      "label": "Young carob is particularly cold-sensitive",
+      "text": "The source says young plants may be damaged below 4°C and gives low-temperature intolerance in the ambiguous wording below 0°C(-4°C). Adults are described as tolerating summer temperatures above 40°C without apparent stress. The lower wording is not reduced to one decisive cutoff.",
+      "topic_ids": [
+        "carob",
+        "frost-risk",
+        "summer-drought"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "1.2 temperature continuation"
+        }
+      ],
+      "conditions": [
+        "Age matters",
+        "Source lower-temperature threshold remains ambiguous"
+      ]
+    },
+    {
+      "id": "eco-rainfall",
+      "label": "Drought tolerance differs from establishment guidance",
+      "text": "The account describes adaptation to 250–300 mm annual rainfall while recommending establishment above 500–550 mm or with irrigation options. Adult survival in long dry periods does not guarantee unaided young-plant establishment. Autumn/winter rain matters.",
+      "topic_ids": [
+        "carob",
+        "establishment-water",
+        "summer-drought"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "1.2 rainfall and drought"
+        }
+      ],
+      "conditions": [
+        "Distinguish adult survival from establishment"
+      ],
+      "aspects": {
+        "adaptation rainfall": "250–300 mm/year",
+        "establishment guidance": "> 500–550 mm/year or irrigation options"
+      }
+    },
+    {
+      "id": "eco-dew",
+      "label": "Dew uptake does not offset daily losses",
+      "text": "Carob can increase atmospheric-water uptake as soil water decreases, but the volume described is insufficient to compensate daily transpiration. Dew capture should not become a substitute for establishment water.",
+      "topic_ids": [
+        "carob",
+        "establishment-water"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "1.2 water physiology"
+        }
+      ]
+    },
+    {
+      "id": "eco-altitude",
+      "label": "Altitude depends on exposure and regional conditions",
+      "text": "The handbook gives an optimum 0–500 m and Andalusian occurrences up to 900–1000 m depending on latitude, slope and exposure. It reports stronger growth and fruiting on south-facing slopes.",
+      "topic_ids": [
+        "carob",
+        "andalusia",
+        "malaga"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "1.2 terrain and altitude"
+        }
+      ]
+    },
+    {
+      "id": "eco-soil",
+      "label": "Carob soil preferences and drainage warning",
+      "text": "The source describes shallow calcareous/rocky occurrences, preferences for calcareous sandy or sandy-loam soil, and adaptation to some sandy, moderately acidic or stony soils. It warns against poor drainage/clay soils and qualifies salt tolerance as apparent.",
+      "topic_ids": [
+        "carob",
+        "well-drained-soil"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "1.2 soils"
+        }
+      ],
+      "conditions": [
+        "Drainage and effective depth still affect establishment",
+        "Salt tolerance is qualified in the source"
+      ]
+    },
+    {
+      "id": "eco-soil-biota-gap",
+      "label": "Soil biology remains incompletely described",
+      "text": "Carob interactions with soil organisms are described as little studied. The handbook explicitly says carob cannot fix nitrogen despite being a legume. These passages do not support a microorganism-treatment recommendation.",
+      "topic_ids": [
+        "carob",
+        "soil-biota",
+        "nitrogen-fixation",
+        "fabaceae"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "1.2 soil biological interactions"
+        }
+      ]
+    },
+    {
+      "id": "eco-cultivars",
+      "label": "Cultivar variation remains within the checked species",
+      "text": "The source mentions more than 50 cultivars worldwide, traditionally selected for pod size, pulp/sugar and seed output. It describes large morphological/agronomic variation but limited genetic differentiation from naturalized individuals in cited work.",
+      "topic_ids": [
+        "carob",
+        "carob-cultivars"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 21,
+          "locator": "1.2 domestication and cultivars"
+        }
+      ]
+    },
+    {
+      "id": "eco-fauna",
+      "label": "Food and regeneration connect carob to fauna",
+      "text": "The account describes wildlife fruit use, palatable young leaves and easy resprouting as ecological relationships. It does not establish that browsing pressure is harmless during establishment.",
+      "topic_ids": [
+        "carob",
+        "carob-resprouting",
+        "carob-seed-dispersal"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 21,
+          "locator": "1.2 ecological interactions"
+        }
+      ]
+    },
+    {
+      "id": "eco-el-rano-stand",
+      "label": "El Rano is a cultivation case, distinct from MR 2",
+      "text": "The selected page describes an irregular adult stand, including centenarian grafted carob and planned grafting of naturally dispersed young trees. Reported tree crop loads range 50–300 kg, with some alternate-bearing years. The municipality is not assigned from uninspected pages.",
+      "topic_ids": [
+        "carob",
+        "el-rano",
+        "grafting"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Estado actual, preceding MR2 heading"
+        }
+      ],
+      "aspects": {
+        "reported fruit load": "50–300 kg/tree"
+      },
+      "conditions": [
+        "Existing El Rano stand",
+        "Do not transfer to young restoration plants"
+      ]
+    },
+    {
+      "id": "eco-el-rano-comparison",
+      "label": "Grafted/natural fruit at El Rano, summer 2023",
+      "text": "Table 5.18 gives grafted versus natural fruit: pod length 15.6 vs 9.8 cm; pod weight 7.74 vs 6.56 g; seed yield 14.68 vs 23.95%;100-seed weight 18.09 vs 11.22 g. These are farm/harvest observations, not universal benefits or a controlled causal result.",
+      "topic_ids": [
+        "carob",
+        "el-rano",
+        "grafting",
+        "carob-cultivars"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Table5.18, visually checked"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2023",
+          "meaning": "harvest"
+        }
+      ],
+      "aspects": {
+        "pod length": "grafted 15.6 cm; natural 9.8 cm",
+        "pod weight": "grafted 7.74 g; natural 6.56 g",
+        "seed yield": "grafted 14.68%; natural 23.95%",
+        "100-seed weight": "grafted 18.09 g; natural 11.22 g"
+      }
+    },
+    {
+      "id": "eco-el-rano-mixture",
+      "label": "Almond and olive in an observed mixture",
+      "text": "Figure 5.40 describes carob mixed with almond and olive in easier-to-cultivate parts of El Rano. Harder-to-cultivate areas are dominated by adult carob. The caption does not establish a growth benefit from mixing.",
+      "topic_ids": [
+        "carob",
+        "el-rano",
+        "almond",
+        "olive"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Figure5.40 caption"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2024",
+          "meaning": "figure attribution"
+        }
+      ]
+    },
+    {
+      "id": "eco-oasification",
+      "label": "Water harvesting is central to MR 2",
+      "text": "For arid/semi-arid restoration, MR 2 collects runoff at planting points using suitably dimensioned dry-stone, gabion or earth micro-reservoirs. Water infiltrates near plants; retained soil and nutrients also help address water erosion.",
+      "topic_ids": [
+        "carob",
+        "carob-oasification",
+        "water-harvesting",
+        "retention-structures",
+        "runoff",
+        "soil-infiltration",
+        "soil-erosion"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "5.6.2 MR2 objectives"
+        }
+      ]
+    },
+    {
+      "id": "eco-oasification-conditions",
+      "label": "A dryland use case rather than universal suitability",
+      "text": "The model emphasizes Almería and occasionally Granada/Málaga, often below 300 mm annual rainfall. Establishment is complex and associated with water harvesting. Mild winters and a long warm season are part of its source setting.",
+      "topic_ids": [
+        "carob-oasification",
+        "mediterranean-dryland",
+        "almeria",
+        "granada",
+        "malaga",
+        "water-harvesting"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Área potencial de implantación"
+        }
+      ],
+      "conditions": [
+        "Establishment is complex",
+        "Site design is outside the browser"
+      ],
+      "aspects": {
+        "source rainfall setting": "below 300 mm/year"
+      }
+    },
+    {
+      "id": "eco-oasification-associates",
+      "label": "Restoration assemblage and biodiversity",
+      "text": "MR 2 names Aleppo pine, wild olive and fig with carob. The source says these plantings diversify landscape and can contribute to biodiversity and control of torrential processes at microcatchment scale. These are model-level benefits, not quantified benefits for every species pair.",
+      "topic_ids": [
+        "carob-oasification",
+        "carob",
+        "aleppo-pine",
+        "wild-olive",
+        "fig",
+        "microcatchment"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "MR2 associated species"
+        }
+      ]
+    },
+    {
+      "id": "eco-density",
+      "label": "Favour moister and deeper MR 2 microsites",
+      "text": "The handbook recommends below 100 trees/ha overall with clustered stands on hydrological structures. In torrential drainage, abandon regularity and favour water-retaining/deeper microsites. It describes around 50 trees/ha in one design and locally denser spacing examples.",
+      "topic_ids": [
+        "carob-oasification",
+        "low-density-patches",
+        "soil-depth",
+        "water-harvesting"
+      ],
+      "kind": "recommendation",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Establecimiento"
+        }
+      ],
+      "conditions": [
+        "MR 2 dryland restoration",
+        "Density depends on objective and drainage",
+        "Source examples, not a generated planting plan"
+      ],
+      "aspects": {
+        "landscape density": "<100 trees/ha; around 50 trees/ha in described design",
+        "local spacing examples": "6×6 m;6×4 m;9×4.5 m"
+      }
+    },
+    {
+      "id": "eco-support-care",
+      "label": "Water harvesting may still need establishment care",
+      "text": "MR 2 mentions small establishment irrigations, protective tubes and stone mulch alongside water compensation. Its statement about generally low losses depends on favourable establishment conditions and care; it promises no survival at arbitrary sites.",
+      "topic_ids": [
+        "carob-oasification",
+        "establishment-water",
+        "tree-shelters",
+        "stone-mulch"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Establecimiento, care/survival"
+        }
+      ],
+      "conditions": [
+        "Water/soil microhabitat selection",
+        "Appropriate support care"
+      ]
+    },
+    {
+      "id": "eco-successive-species",
+      "label": "Olive and fig can follow improved soil conditions",
+      "text": "The source says carob can improve soil physicochemical properties and infiltration, allowing simultaneous or progressive olive/fig introduction in this model. Retain the condition and rationale rather than a universal companion rule.",
+      "topic_ids": [
+        "carob-oasification",
+        "soil-infiltration",
+        "olive",
+        "fig"
+      ],
+      "kind": "recommendation",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "MR2 continuation"
+        }
+      ],
+      "conditions": [
+        "Degraded dryland setting",
+        "Improved soil conditions are part of the rationale"
+      ]
+    },
+    {
+      "id": "eco-provenance",
+      "label": "Choose appropriate and diverse material",
+      "text": "For protection plantings, MR 2 recommends manual planting, appropriate seed provenance and genetically diverse forest reproductive material.",
+      "topic_ids": [
+        "carob-oasification",
+        "manual-planting",
+        "local-provenance"
+      ],
+      "kind": "recommendation",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "MR2 establishment method"
+        }
+      ],
+      "conditions": [
+        "Protection/restoration objective"
+      ]
+    },
+    {
+      "id": "eco-planting-window",
+      "label": "Autumn advice assumes no frost risk",
+      "text": "The narrative recommends autumn, warns against delay beyond January and highlights risk on very stony/shallow soils. Table 5.19 specifies November–December. The narrative expressly assumes no frost risk.",
+      "topic_ids": [
+        "carob-oasification",
+        "autumn-planting",
+        "frost-risk",
+        "soil-depth"
+      ],
+      "kind": "recommendation",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "MR2 planting date"
+        }
+      ],
+      "conditions": [
+        "No frost risk",
+        "Avoid late planting, especially shallow/stony soils"
+      ]
+    },
+    {
+      "id": "eco-stock-size",
+      "label": "Narrative and table give different stock formats",
+      "text": "Page 133 allows one-year forest stock above 200 cm³ but considers formats above 1000 cm³ more recommendable. Table 5.19 gives one-year 200–300 cm³,8–10 cm-high stock. The selected text does not explain this difference; retain both.",
+      "topic_ids": [
+        "carob-oasification",
+        "carob"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "MR2 stock narrative"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Table5.19, visually checked"
+        }
+      ],
+      "aspects": {
+        "narrative preference": "> 1000 cm³",
+        "table5.19 summary": "200–300 cm³;8–10 cm high"
+      }
+    },
+    {
+      "id": "eco-site-preparation",
+      "label": "MR 2 planting preparation and support",
+      "text": "The handbook gives 60×60×60 cm holes, small-excavator or auger preparation (auger if soil is not very clayey), or manual work at low density. It recommends a plant-centred microcatchment and stone mulch; table 5.19 specifies perforated shelters and support watering.",
+      "topic_ids": [
+        "carob-oasification",
+        "planting-holes",
+        "microcatchment",
+        "stone-mulch",
+        "tree-shelters",
+        "establishment-water"
+      ],
+      "kind": "recommendation",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Soil preparation and Table5.19, visually checked"
+        }
+      ],
+      "conditions": [
+        "MR 2 model",
+        "Auger advice excludes very clayey soil"
+      ],
+      "aspects": {
+        "hole dimensions": "60×60×60 cm",
+        "support": "perforated shelters; support watering"
+      }
+    },
+    {
+      "id": "eco-low-input",
+      "label": "Modest routine management after establishment",
+      "text": "The source generally describes no competition control, fertilization or formative pruning in this model. Table 5.19 also specifies first-year replacement of losses and occasional manual weeding. These statements stay attached to MR 2, not all cultivation.",
+      "topic_ids": [
+        "carob-oasification",
+        "restoration"
+      ],
+      "kind": "recommendation",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Table5.19, visually checked"
+        }
+      ],
+      "conditions": [
+        "Described restoration model after establishment"
+      ]
+    },
+    {
+      "id": "eco-local-region",
+      "label": "Table 5.19 specifies provenance region 38",
+      "text": "The summary names local origin from identification/use region Litoral suroriental andaluz(38), below 100 plants/ha and November–December planting. This is source guidance, not a legal nursery-procurement determination.",
+      "topic_ids": [
+        "carob-oasification",
+        "local-provenance",
+        "autumn-planting"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Table5.19, visually checked"
+        }
+      ]
+    },
+    {
+      "id": "eco-alcantarilla",
+      "label": "La Alcantarilla connects MR 2 to Mojácar",
+      "text": "The selected page introduces La Alcantarilla in Mojácar, Almería, with mean annual rainfall 200–300 mm. Potential vegetation includes mastic/kermes-oak/wild-olive scrub and jujube thorn scrub. The current landscape includes esparto and lower-area greenhouse crops.",
+      "topic_ids": [
+        "la-alcantarilla",
+        "mojacar",
+        "almeria",
+        "carob-oasification",
+        "mastic-scrub",
+        "kermes-oak-scrub",
+        "wild-olive-scrub",
+        "jujube-thorn-scrub",
+        "esparto-grassland"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Parcela demostrativa MR2, initial characterization"
+        }
+      ],
+      "place_ids": [
+        "la-alcantarilla",
+        "mojacar",
+        "almeria"
+      ],
+      "aspects": {
+        "mean annual rainfall": "200–300 mm/year"
+      }
+    },
+    {
+      "id": "eco-kermes-identity",
+      "label": "Kermes oak is a distinct checked identity",
+      "text": "The factsheet identifies Quercus coccifera L.in Fagaceae, usually a shrub up to 2 m and occasionally a small tree 6 m or higher. It retains coscoja, maraña, matarrubia, carrasca, chaparra and chaparro. Shared common names do not resolve another oak identity.",
+      "topic_ids": [
+        "kermes-oak",
+        "fagaceae"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 1,
+          "locator": "Variación taxonómica y genética"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-range",
+      "label": "Kermes oak is widely represented in Andalusia",
+      "text": "The factsheet reports Mediterranean distribution, especially in the western basin, and every Andalusian province. It commonly inhabits dry stony ground, often calcareous but also siliceous. Paleobotanical dates in the text are not its publication date.",
+      "topic_ids": [
+        "kermes-oak",
+        "andalusia",
+        "mediterranean"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 1,
+          "locator": "Distribución y autoecología"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-climate",
+      "label": "A broad reported climate range",
+      "text": "Warm/temperate-warm climates are preferred, with cold-area occurrences on sunny exposures. Most favourable rainfall is 400–800 mm/year; examples extend to around 200 mm at Cabo de Gata and above 1000 mm at Grazalema. Occurrence is not optimal establishment.",
+      "topic_ids": [
+        "kermes-oak",
+        "cabo-de-gata",
+        "grazalema"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Variación climática"
+        }
+      ],
+      "aspects": {
+        "favourable rainfall": "400–800 mm/year",
+        "dry example": "around 200 mm/year, Cabo de Gata",
+        "wet example": "> 1000 mm/year, Grazalema"
+      }
+    },
+    {
+      "id": "eco-kermes-altitude",
+      "label": "Occurrence and community altitude differ",
+      "text": "The normal community range reaches about 1000–1100 m, while occurrence up to 1500 m is reported at La Sagra, Huéscar. Do not collapse these different descriptions into one decisive altitude limit.",
+      "topic_ids": [
+        "kermes-oak",
+        "la-sagra"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Variación climática"
+        }
+      ],
+      "aspects": {
+        "community range": "to 1000–1100 m",
+        "occurrence example": "1500 m at La Sagra"
+      }
+    },
+    {
+      "id": "eco-kermes-growth",
+      "label": "Growth pauses in drought or winter cooling",
+      "text": "The account describes rapid cambial-growth interruption under summer drought and winter cooling, resuming when limiting conditions disappear. It compares this with other oaks without quantifying a mixed-planting benefit.",
+      "topic_ids": [
+        "kermes-oak",
+        "summer-drought"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Variación climática, growth response"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-soils",
+      "label": "Varied stony substrates",
+      "text": "The source describes acidic/basic substrates and multiple soil types, often stony or shallow: lithosols, cambisols, vertisols and xerosols. This breadth is descriptive, not proof that any degraded site is suitable.",
+      "topic_ids": [
+        "kermes-oak",
+        "soil-depth"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Variación edáfica"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-companions",
+      "label": "The factsheet explicitly connects kermes oak and carob",
+      "text": "Its vegetation section names carob with warm-climate companions mastic, dwarf palm, wild olive, Rhamnus alaternus,R.lycioides,Phillyrea latifolia and Osyris quadripartita. This is a sourced co-community link, not mere co-occurrence in a PDF.",
+      "topic_ids": [
+        "kermes-oak",
+        "carob",
+        "mastic",
+        "dwarf-palm",
+        "wild-olive",
+        "rhamnus-alaternus",
+        "rhamnus-lycioides",
+        "phillyrea-latifolia",
+        "osyris-quadripartita"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Vegetación"
+        }
+      ],
+      "conditions": [
+        "Vegetation accompaniment",
+        "No measured facilitation established"
+      ]
+    },
+    {
+      "id": "eco-kermes-habitats",
+      "label": "One species has multiple community memberships",
+      "text": "Kermes oak occurs in holm-oak, cork-oak and pine communities and can dominate coscojares. Its most-arid and acidic cork-woodland companion lists are separate source contexts, not one universal planting list.",
+      "topic_ids": [
+        "kermes-oak",
+        "kermes-oak-scrub",
+        "cork-oak-woodland",
+        "pine-woodland",
+        "xerothermic-scrub",
+        "acidic-scrub"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Vegetación"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-series",
+      "label": "Sourced classifications permit several memberships",
+      "text": "Pages 2–3 enumerate luso-extremaduran and bético/marianense/araceno-pacense mesomediterranean Quercus rotundifolia series; bético-algarvian thermomediterranean Q.rotundifolia; bético-gaditan wild-olive series; semi-arid mesomediterranean Q.coccifera; warm murciano-almerian lower semi-arid/dry kermes-oak series; and bermejense serpentinite Pinus pinaster series. These are source vegetation classifications, not single-parent plant identities.",
+      "topic_ids": [
+        "kermes-oak",
+        "holm-oak-rotundifolia",
+        "wild-olive",
+        "maritime-pine"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 3,
+          "locator": "Series de vegetación, continued from PDF2"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-provenance",
+      "label": "Factsheet defines one regional provenance",
+      "text": "The description defines one provenance covering warm terrain below 1100 m on varied soils/substrates, based on population continuity. Its regional narrative follows Sierra Morena, Guadalquivir, Huelva/Cádiz coasts, eastern ranges and dry Almería areas. This does not make every location suitable.",
+      "topic_ids": [
+        "kermes-oak",
+        "andalusia",
+        "almeria"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 3,
+          "locator": "Descripción"
+        }
+      ]
+    },
+    {
+      "id": "eco-kermes-map",
+      "label": "Use-region map labels Andalusia",
+      "text": "The full fourth page is a Regiones de uso map with Andalucía as one yellow region. It is source regional context; no municipality-specific suitability or funding eligibility is inferred.",
+      "topic_ids": [
+        "kermes-oak",
+        "andalusia"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 4,
+          "locator": "Regiones de uso map, visually inspected"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "FOREST-002",
+      "page": 13,
+      "status": "inspected",
+      "note": "Read botanical identity/morphology; visually checked printed naming usage and apparent authority/year issue."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 14,
+      "status": "inspected",
+      "note": "Read leaf renewal, leaf/flower descriptions and sex variation."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 15,
+      "status": "inspected",
+      "note": "Read full flowering/pollination/fruit-development and alternate-bearing account."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 16,
+      "status": "inspected",
+      "note": "Read fruit/seed descriptions and seed-coat germination mechanism."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 17,
+      "status": "inspected",
+      "note": "Read seed persistence, mammal dispersal, tentative fire interpretation and resprouting."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 18,
+      "status": "inspected",
+      "note": "Read distribution, origin uncertainty and all named carob companions."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 19,
+      "status": "inspected",
+      "note": "Read temperature and source distribution-map captions; no site suitability inferred."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 20,
+      "status": "inspected",
+      "note": "Read all water/climate/altitude/soil guidance, dew limitation, soil-biota gap and nitrogen statement."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 21,
+      "status": "inspected",
+      "note": "Read fauna, cultivar variation and selection context."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 130,
+      "status": "inspected",
+      "note": "Read El Rano ending and MR 2 beginning; visually checked figure 5.40 and all table 5.18 values."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 131,
+      "status": "inspected",
+      "note": "Read full MR 2 runoff rationale, structures, companions, geography and climate."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 132,
+      "status": "inspected",
+      "note": "Read density, microhabitats, retention works and establishment support."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 133,
+      "status": "inspected",
+      "note": "Read later species introduction, provenance, planting window and stock preference."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 134,
+      "status": "inspected",
+      "note": "Read full table 5.19/management and start of La Alcantarilla; table visually checked."
+    },
+    {
+      "source_id": "FOREST-003",
+      "page": 1,
+      "status": "inspected",
+      "note": "Read identity/morphology/common names, distribution and autoecology."
+    },
+    {
+      "source_id": "FOREST-003",
+      "page": 2,
+      "status": "inspected",
+      "note": "Read full climate/soil/vegetation accounts and all companion lists; start of vegetation series."
+    },
+    {
+      "source_id": "FOREST-003",
+      "page": 3,
+      "status": "inspected",
+      "note": "Read full vegetation-series continuation and provenance description."
+    },
+    {
+      "source_id": "FOREST-003",
+      "page": 4,
+      "status": "inspected",
+      "note": "Visually inspected complete Regiones de uso map labelled Andalucía; no suitability inference."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "eco-carob-authority",
+      "text": "PDF 13 prints Ceratonia siliqua Linnaeus,1953. Preserve apparent authority/year problem as source text; do not adopt it as verified nomenclatural authority. Identity uses description and binomial.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 13,
+          "locator": "1.1",
+          "source_text": "Ceratonia siliqua Linnaeus, 1953"
+        }
+      ],
+      "topic_ids": [
+        "carob"
+      ]
+    },
+    {
+      "id": "eco-oak-correspondence",
+      "text": "Handbook Q.ilex and factsheet Q.rotundifolia source concepts are not merged from encina alone. Correspondence is unresolved within selected scope.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "companion list"
+        },
+        {
+          "source_id": "FOREST-003",
+          "page": 3,
+          "locator": "vegetation series"
+        }
+      ],
+      "topic_ids": [
+        "holm-oak",
+        "holm-oak-rotundifolia"
+      ]
+    },
+    {
+      "id": "eco-source-spellings",
+      "text": "Whitania frutescens and Chamaespartium tridentantum retain the factsheet spellings. External nomenclatural correspondence is not checked.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Vegetación"
+        }
+      ],
+      "topic_ids": [
+        "whitania-frutescens-source",
+        "chamaespartium-source"
+      ]
+    },
+    {
+      "id": "eco-stock-size-difference",
+      "text": "MR 2 narrative prefers > 1000 cm³ stock, table 5.19 summarizes 200–300 cm³. Preserve both, without silently choosing universal guidance.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "stock narrative"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Table5.19"
+        }
+      ],
+      "topic_ids": [
+        "carob-oasification"
+      ]
+    },
+    {
+      "id": "eco-carob-cold-threshold",
+      "text": "Source lower-temperature wording below 0°C(-4°C) is ambiguous. Keep context and separate young-plant damage statement; no decisive calculator threshold.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 20,
+          "locator": "temperature continuation"
+        }
+      ],
+      "topic_ids": [
+        "carob",
+        "frost-risk"
+      ]
+    },
+    {
+      "id": "eco-forest003-date",
+      "text": "No verified publication date is present in the inspected four-page factsheet. Keep publication date unknown.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 1,
+          "locator": "species factsheet"
+        }
+      ],
+      "topic_ids": [
+        "kermes-oak"
+      ]
+    },
+    {
+      "id": "eco-partial-cases",
+      "text": "Selected scope contains the El Rano ending and only La Alcantarilla introduction. Further case details require explicit later page coverage.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "El Rano ending"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla beginning"
+        }
+      ],
+      "topic_ids": [
+        "el-rano",
+        "la-alcantarilla"
+      ]
+    }
+  ]
+}

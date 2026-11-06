@@ -1,0 +1,5218 @@
+{
+  "batch_id": "initial-funding-2026-11-05",
+  "summary": "All 19 selected funding pages inspected, including visual reading of all seven image-table pages. Dated rules are discovery knowledge, not an eligibility decision or current availability check.",
+  "topics": [
+    {
+      "id": "leader",
+      "label": "LEADER local development",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Community-led local development implemented through rural development groups and local strategies. These sources concern Andalusia and the 2023–2027 framework.",
+      "aliases": [
+        "LEADER",
+        "Desarrollo Local LEADER"
+      ],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "pepac",
+      "label": "Spain CAP Strategic Plan 2023–2027",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The Spanish Common Agricultural Policy Strategic Plan includes cooperation intervention 7119 LEADER.",
+      "aliases": [
+        "PEPAC",
+        "Plan Estrategico de la Politica Agricola Comun"
+      ],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2023",
+          "meaning": "period start"
+        },
+        {
+          "value": "2027",
+          "meaning": "period end"
+        }
+      ]
+    },
+    {
+      "id": "feader",
+      "label": "European Agricultural Fund for Rural Development",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "FEADER rural-development fund: the preamble cites a minimum 5% reservation of its CAP-plan contribution for LEADER.",
+      "aliases": [
+        "FEADER",
+        "EAFRD"
+      ],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "leader-7119-2",
+      "label": "LEADER strategy implementation · 7119.2",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Implementation of selected local-development operations; cooperation is assigned separately to 7119.3.",
+      "aliases": [
+        "7119.2"
+      ],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        }
+      ]
+    },
+    {
+      "id": "leader-7119-3",
+      "label": "LEADER cooperation · 7119.3",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Cooperation intervention distinguished from the 7119.2 operations governed by the selected order.",
+      "aliases": [
+        "7119.3"
+      ],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        },
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "leader-7119-4",
+      "label": "LEADER management and animation · 7119.4",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Separate support for strategy management, monitoring, evaluation and animation.",
+      "aliases": [
+        "7119.4"
+      ],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        },
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "gdr",
+      "label": "Rural development groups",
+      "kind": "organization",
+      "domain": "funding",
+      "description": "Andalusian Grupos de Desarrollo Rural implement local strategies. The source distinguishes GDR applicants from other applicants.",
+      "aliases": [
+        "GDR",
+        "Grupos de Desarrollo Rural",
+        "local action groups"
+      ],
+      "group_id": "organizations",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        }
+      ]
+    },
+    {
+      "id": "edll",
+      "label": "Local development strategy",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Territory-based strategy prepared through local participation; operations and criteria refer to the selected local strategy.",
+      "aliases": [
+        "EDLL",
+        "EDL",
+        "Estrategia de Desarrollo Local LEADER"
+      ],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        }
+      ]
+    },
+    {
+      "id": "junta-agriculture",
+      "label": "Andalusian Agriculture and Rural Development Department",
+      "kind": "organization",
+      "domain": "funding",
+      "description": "Issuer of the governing order and recognized-group resolution.",
+      "aliases": [
+        "Consejeria de Agricultura, Pesca, Agua y Desarrollo Rural",
+        "Junta de Andalucia"
+      ],
+      "group_id": "organizations",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        },
+        {
+          "source_id": "FUND-012",
+          "page": 1,
+          "locator": "Issuing department"
+        }
+      ]
+    },
+    {
+      "id": "leader-rules-2026",
+      "label": "LEADER governing order · February 2026",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Order dated 3 February, published in BOJA 29 on 12 February 2026. Current call availability has not been checked.",
+      "aliases": [],
+      "group_id": "dates",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2026-02-03",
+          "meaning": "order date"
+        },
+        {
+          "value": "2026-02-12",
+          "meaning": "publication"
+        }
+      ]
+    },
+    {
+      "id": "leader-recognition-2025",
+      "label": "GDR recognition publication · 2025",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Resolution dated 13 February and published 27 February 2025 lists groups, territories and indicative allocations.",
+      "aliases": [],
+      "group_id": "dates",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 1,
+          "locator": "Title and BOJA publication header"
+        },
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2025-02-13",
+          "meaning": "resolution date"
+        },
+        {
+          "value": "2025-02-27",
+          "meaning": "publication"
+        }
+      ]
+    },
+    {
+      "id": "al20",
+      "label": "AL20 · Alpujarra–Sierra Nevada",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Local LEADER framework linking its recognized group, territory, selected activities and dated budgets.",
+      "aliases": [
+        "AL20",
+        "Alpujarra Sierra Nevada Almeriense",
+        "Alpujarra-Sierra Nevada de Almeria"
+      ],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "place_ids": [
+        "al20-territory"
+      ],
+      "dates": [
+        {
+          "value": "2025-02-13",
+          "meaning": "recognition resolution"
+        },
+        {
+          "value": "2026-02-16",
+          "meaning": "local-table signature"
+        }
+      ]
+    },
+    {
+      "id": "al20-gdr",
+      "label": "Alpujarra–Sierra Nevada rural development group",
+      "kind": "organization",
+      "domain": "funding",
+      "description": "Asociacion para la Promocion Economica y el Desarrollo Rural de la Alpujarra-Sierra Nevada de Almeria is the recognized GDR.",
+      "aliases": [
+        "GDR Alpujarra-Sierra Nevada Almeriense",
+        "Asociacion para la Promocion Economica y el Desarrollo Rural de la Alpujarra-Sierra Nevada de Almeria"
+      ],
+      "group_id": "organizations",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "al20-territory",
+      "label": "Alpujarra–Sierra Nevada territory",
+      "kind": "place",
+      "domain": "funding",
+      "description": "AL20 rural LEADER territory in Almeria, with its municipalities listed in the resolution.",
+      "aliases": [
+        "Zona Rural Leader AL20",
+        "ZRL AL20"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "al30",
+      "label": "AL30 · Filabres–Alhamilla",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Additional Almeria LEADER framework encountered on the same inspected page.",
+      "aliases": [
+        "AL30",
+        "Filabres-Alhamilla"
+      ],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ],
+      "place_ids": [
+        "al30-territory"
+      ]
+    },
+    {
+      "id": "al30-gdr",
+      "label": "Filabres–Alhamilla rural development group",
+      "kind": "organization",
+      "domain": "funding",
+      "description": "Asociacion para el Desarrollo Rural de la Comarca de Filabres-Alhamilla is the recognized GDR.",
+      "aliases": [
+        "Asociacion para el Desarrollo Rural de la Comarca de Filabres-Alhamilla"
+      ],
+      "group_id": "organizations",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "al30-territory",
+      "label": "Filabres–Alhamilla territory",
+      "kind": "place",
+      "domain": "funding",
+      "description": "AL30 rural LEADER territory with municipalities listed on the inspected page.",
+      "aliases": [
+        "Zona Rural Leader AL30",
+        "ZRL AL30"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "abla",
+      "label": "Abla",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Abla"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "alboloduy",
+      "label": "Alboloduy",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Alboloduy"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "abrucena",
+      "label": "Abrucena",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Abrucena"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "alcolea",
+      "label": "Alcolea",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Alcolea"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "alhabia",
+      "label": "Alhabia",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Alhabia"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "alhama-de-almeria",
+      "label": "Alhama de Almería",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Alhama de Almeria"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "alicun",
+      "label": "Alicún",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Alicun"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "almocita",
+      "label": "Almócita",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Almocita"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "alsodux",
+      "label": "Alsodux",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Alsodux"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "bayarcal",
+      "label": "Bayárcal",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Bayarcal"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "beires",
+      "label": "Beires",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Beires"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "bentarique",
+      "label": "Bentarique",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Bentarique"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "berja",
+      "label": "Berja",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Berja"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "canjayar",
+      "label": "Canjáyar",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Canjayar"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "dalias",
+      "label": "Dalías",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Dalias"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "enix",
+      "label": "Enix",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Enix"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "felix",
+      "label": "Felix",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Felix"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "finana",
+      "label": "Fiñana",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Finana"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fondon",
+      "label": "Fondón",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Fondon"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "huecija",
+      "label": "Huécija",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Huecija"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "illar",
+      "label": "Íllar",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Illar"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "instincion",
+      "label": "Instinción",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Instincion"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "las-tres-villas",
+      "label": "Las Tres Villas",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Las Tres Villas"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "laujar-de-andarax",
+      "label": "Laujar de Andarax",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Laujar de Andarax"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "nacimiento",
+      "label": "Nacimiento",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Nacimiento"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "ohanes",
+      "label": "Ohanes",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Ohanes"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "padules",
+      "label": "Padules",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Padules"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "paterna-del-rio",
+      "label": "Paterna del Río",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Paterna del Rio"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "ragol",
+      "label": "Rágol",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Ragol"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "santa-cruz-de-marchena",
+      "label": "Santa Cruz de Marchena",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Santa Cruz de Marchena"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "santa-fe-de-mondujar",
+      "label": "Santa Fe de Mondújar",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Santa Fe de Mondujar"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "terque",
+      "label": "Terque",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 20-territory in the 2025 resolution.",
+      "aliases": [
+        "Terque"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "alcudia-de-monteagud",
+      "label": "Alcudia de Monteagud",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Alcudia de Monteagud"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "benitagla",
+      "label": "Benitagla",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Benitagla"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "benizalon",
+      "label": "Benizalón",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Benizalon"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "castro-de-filabres",
+      "label": "Castro de Filabres",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Castro de Filabres"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "gador",
+      "label": "Gádor",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Gador"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "gergal",
+      "label": "Gérgal",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Gergal"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "lubrin",
+      "label": "Lubrín",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Lubrin"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "lucainena-de-las-torres",
+      "label": "Lucainena de las Torres",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Lucainena de las Torres"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "olula-de-castro",
+      "label": "Olula de Castro",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Olula de Castro"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "rioja",
+      "label": "Rioja",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Rioja"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "senes",
+      "label": "Senés",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Senes"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "sorbas",
+      "label": "Sorbas",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Sorbas"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "tabernas",
+      "label": "Tabernas",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Tabernas"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "tahal",
+      "label": "Tahal",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Tahal"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "turrillas",
+      "label": "Turrillas",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Turrillas"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "uleila-del-campo",
+      "label": "Uleila del Campo",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Uleila del Campo"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "velefique",
+      "label": "Velefique",
+      "kind": "place",
+      "domain": "funding",
+      "description": "Municipality listed within al 30-territory in the 2025 resolution.",
+      "aliases": [
+        "Velefique"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "al20-line-1",
+      "label": "AL20 Line 1 · agriculture and forestry",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Agricultural/forestry development. Marked types concern business competitiveness and services.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2026-02-16",
+          "meaning": "table signature"
+        }
+      ],
+      "aspects": {
+        "source-stated line budget": "EUR 330,052.59"
+      }
+    },
+    {
+      "id": "al20-line-2",
+      "label": "AL20 Line 2 · rural diversification",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Selected business competitiveness and business-plan start-up/development.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2026-02-16",
+          "meaning": "table signature"
+        }
+      ],
+      "aspects": {
+        "source-stated line budget": "EUR 989,725.78"
+      }
+    },
+    {
+      "id": "al20-line-3",
+      "label": "AL20 Line 3 · rural heritage and quality of life",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Rural conservation, quality of life, social/sustainable development; local selected operations are non-productive.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2026-02-16",
+          "meaning": "table signature"
+        }
+      ],
+      "aspects": {
+        "source-stated line budget": "EUR 710,649.89"
+      }
+    },
+    {
+      "id": "rural-studies",
+      "label": "Rural heritage studies and plans",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Studies/plans/programmes linked to heritage conservation, quality of life and social/sustainable development.",
+      "aliases": [
+        "3.1",
+        "Tipologia 3.1"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "aspects": {
+        "AL20 local selection": "Marked selected"
+      }
+    },
+    {
+      "id": "rural-training",
+      "label": "Rural heritage training",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Training linked to heritage conservation and quality of life. Its local selection cell is blank in both inspected tables.",
+      "aliases": [
+        "3.2",
+        "Tipologia 3.2"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "aspects": {
+        "AL20 local selection": "Selection cell blank"
+      }
+    },
+    {
+      "id": "rural-awareness",
+      "label": "Rural heritage information and awareness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Promotion/information/awareness linked to rural heritage, quality of life and social/sustainable development.",
+      "aliases": [
+        "3.3",
+        "Tipologia 3.3"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "aspects": {
+        "AL20 local selection": "Marked selected"
+      }
+    },
+    {
+      "id": "demonstration",
+      "label": "Demonstration activities",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Testing/evaluating locally new or unknown technologies, processes, methods or approaches linked to rural heritage, quality of life or social development. A conditional category, not approval of a technology.",
+      "aliases": [
+        "3.4",
+        "Tipologia 3.4"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "locator": "Section 3.4.1: demonstration definition and exclusions"
+        }
+      ],
+      "aspects": {
+        "AL20 local selection": "Marked selected"
+      }
+    },
+    {
+      "id": "heritage-conservation",
+      "label": "Rural and environmental heritage conservation",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Conservation/protection/rehabilitation/recovery of rural including environmental heritage, subject to stated scope/exclusions.",
+      "aliases": [
+        "3.5",
+        "Tipologia 3.5"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "Section 3.5.1–3: heritage operations, exclusions and non-productive character"
+        }
+      ],
+      "aspects": {
+        "AL20 local selection": "Marked selected"
+      }
+    },
+    {
+      "id": "rural-services",
+      "label": "Rural social infrastructure and services",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Infrastructure/equipment/tools/services for social/sustainable development and quality of life.",
+      "aliases": [
+        "3.6",
+        "Tipologia 3.6"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "aspects": {
+        "AL20 local selection": "Marked selected"
+      }
+    },
+    {
+      "id": "agricultural-holding-competitiveness",
+      "label": "Agricultural holding competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.7; other governing conditions are outside this row.",
+      "aliases": [
+        "1.7"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "forestry-holding-competitiveness",
+      "label": "Forestry holding competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.8; other governing conditions are outside this row.",
+      "aliases": [
+        "1.8"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "agri-food-business-competitiveness",
+      "label": "Agricultural processing and marketing competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.9; other governing conditions are outside this row.",
+      "aliases": [
+        "1.9"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "forest-products-competitiveness",
+      "label": "Forest-products processing and marketing competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.10; other governing conditions are outside this row.",
+      "aliases": [
+        "1.10"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "agri-forestry-business-services",
+      "label": "Agriculture and forestry business services",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.11; other governing conditions are outside this row.",
+      "aliases": [
+        "1.11"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "rural-business-competitiveness",
+      "label": "Rural business competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 2.6; other governing conditions are outside this row.",
+      "aliases": [
+        "2.6"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "rural-business-start-up",
+      "label": "Rural business start-up and development",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 2.7; other governing conditions are outside this row.",
+      "aliases": [
+        "2.7"
+      ],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "nonproductive-demonstration",
+      "label": "Non-productive demonstration",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "The activity may not give the beneficiary an economic benefit; business participation may not become direct and exclusive modernization of those firms.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        }
+      ]
+    },
+    {
+      "id": "open-participation",
+      "label": "Open and transparent participation",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Participation must be open to entitled entities. Limited places require objective transparent selection documented in the operation report; membership of the beneficiary cannot be an entry condition.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        }
+      ]
+    },
+    {
+      "id": "public-results",
+      "label": "Publish demonstration and results",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Publish activity information online from its start and results as they emerge; retain the information at least three years after final aid payment.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        }
+      ]
+    },
+    {
+      "id": "territory-link",
+      "label": "Clear link to the LEADER territory",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "The demonstration needs a clear unequivocal link to the zone; an application/study area larger than its territory is excluded.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        }
+      ]
+    },
+    {
+      "id": "complete-operation",
+      "label": "Usable results on completion",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Partial or phased operations are excluded if results cannot be applied or disseminated when the funded operation finishes.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ]
+    },
+    {
+      "id": "relevant-competence",
+      "label": "Applicant knowledge or competence",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Applicants must be related to the subject or hold the competence needed to execute the operation when applying.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ]
+    },
+    {
+      "id": "nonprofit-public-applicants",
+      "label": "Public or nonprofit applicants",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Sections 3.4/3.5 name public/private nonprofit legal persons and public-law bodies, plus publicly participated companies subject to Article 7.5.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ]
+    },
+    {
+      "id": "travel-justification",
+      "label": "Travel participation and justification",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Required travel needs expected participants and justification in the report; if names are unknown, give numbers and participant requirements.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ]
+    },
+    {
+      "id": "demonstration-novelty",
+      "label": "New or locally unknown method",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Demonstration tests technology/processes/methods/approaches new or unknown in the zone, with possible application elsewhere in similar circumstances.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "locator": "Section 3.4.1: demonstration definition and exclusions"
+        }
+      ]
+    },
+    {
+      "id": "heritage-public-use",
+      "label": "Heritage dissemination and public use",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Heritage operations need dissemination and/or public use among their objectives. Bounded premises require an opening/use plan with days/hours or another access mechanism.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ]
+    },
+    {
+      "id": "forest-management-plan",
+      "label": "Current forest-management plan where required",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Where a natural area requires a forest-management plan or equivalent, the operation must be consistent with it and it must be in force at application.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ]
+    },
+    {
+      "id": "nonproductive-heritage",
+      "label": "Non-productive heritage operation",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Operations must not support activity distorting/threatening competition. Public concessions need open transparent nondiscriminatory processes and market-price consideration where needed to preserve non-productive character.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "Section 3.5.1–3: heritage operations, exclusions and non-productive character"
+        }
+      ]
+    },
+    {
+      "id": "heritage-purchase-exclusion",
+      "label": "No purchase of heritage elements",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Section 3.5 excludes buying rural-heritage elements alongside general Article 11 expenditure exclusions.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ]
+    },
+    {
+      "id": "al20-population",
+      "label": "Settlement population",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion AT.3 for non-productive Line 3 operations. AT.3.1: settlement population below median municipal population of its LEADER zone, using INE 2023 data (10 points). AT.3.2: below median municipal population of Andalusia, using INE 2023 (8).",
+      "aliases": [
+        "AT.3"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: AT.3"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "10 points"
+      }
+    },
+    {
+      "id": "al20-local-needs",
+      "label": "Prioritized local-strategy needs",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion CO.1 for non-productive Line 3 operations. CO.1.1: one prioritized EDLL need (10 points); CO.1.2: two (12); CO.1.3: three or more (15). Starred needs depend on the strategy.",
+      "aliases": [
+        "CO.1"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: CO.1"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "15 points"
+      }
+    },
+    {
+      "id": "al20-territorial-balance",
+      "label": "Territorial and economic balance",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion RD.5 for non-productive Line 3 operations. RD.5.1: support to municipalities with fewer businesses than the mean of the LEADER zone (15 points).",
+      "aliases": [
+        "RD.5"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: RD.5"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "15 points"
+      }
+    },
+    {
+      "id": "al20-renewable-energy",
+      "label": "Renewable-energy equipment",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion CC.2 for non-productive Line 3 operations. CC.2.1 lists solar collectors, photovoltaic panels, thermosiphons, wind turbines, biomass boilers, heat accumulators, aerothermal equipment, biofuels, blue hydrogen, liquefied natural gas or similar (5 points). These source examples are not an independent environmental endorsement.",
+      "aliases": [
+        "CC.2"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: CC.2"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "5 points"
+      }
+    },
+    {
+      "id": "al20-sustainable-mobility",
+      "label": "Sustainable mobility",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion CC.7 for non-productive Line 3 operations. CC.7.1: green-energy collective transport (1 point); CC.7.2: electric-vehicle charging points (4); CC.7.3: municipal pedestrianization, cycle lanes/parking, park-and-ride parking, high-occupancy vehicle encouragement or other measures in a sustainable-mobility plan (4). Family maximum 5.",
+      "aliases": [
+        "CC.7"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: CC.7"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "5 points"
+      }
+    },
+    {
+      "id": "al20-gender-leisure",
+      "label": "Leisure with a gender perspective",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion IG.8 for non-productive Line 3 operations. IG.8.1: spaces/infrastructure for women (2 points); IG.8.2: activities demanded by women in EDLL (2); IG.8.3: sociocultural activities fostering women creativity (2); IG.8.4: sport with a gender perspective (2). Family maximum 2.",
+      "aliases": [
+        "IG.8"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: IG.8"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "2 points"
+      }
+    },
+    {
+      "id": "al20-womens-associations",
+      "label": "Participation and associations among women",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion IG.11 for non-productive Line 3 operations. IG.11.1: rural women associations/federations (2 points); IG.11.2: association maintenance/equipment (2); IG.11.3: association activities (2); IG.11.4: association networks (2); IG.11.5: dissemination about associations, especially young women/women with disabilities (1); IG.11.6: women participation in underrepresented sectors (1). Family maximum 2. IG.11.7 continues on PDFpage 18.",
+      "aliases": [
+        "IG.11"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: IG.11"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "2 points"
+      }
+    },
+    {
+      "id": "al20-accessibility",
+      "label": "Adaptive and inclusive structures",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion DRI.3 for non-productive Line 3 operations. DRI.3.1: facilities/processes adapted to disability limitations beyond statutory minima, or adapted by the operation (3 points); DRI.3.2: staff training for vulnerable groups/people at risk of exclusion, including training by the operation (2); DRI.3.3: addresses related specific EDLL needs (1). Family maximum 4.",
+      "aliases": [
+        "DRI.3"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "locator": "Line 3 selection table: DRI.3"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "4 points"
+      }
+    },
+    {
+      "id": "al20-rural-youth",
+      "label": "Positive action for rural youth",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion JR.3 for non-productive Line 3 operations. JR.3.1: courses for youth skills/employability (4 points); JR.3.2: dual vocational education or official youth placements (4); JR.3.3: return of recently qualified young people within 12 months of completing medium/higher education and labour-market incorporation in the zone (3); JR.3.4: awareness/training on youth contribution to local development (2); JR.3.5: rural youth leisure (4); JR.3.6: associations/participation and quality of life (4). Family maximum 4. Further rows continue on PDFpage 19.",
+      "aliases": [
+        "JR.3"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "locator": "Line 3 selection table: JR.3"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "4 points"
+      }
+    },
+    {
+      "id": "al20-innovation",
+      "label": "Local-strategy innovation",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion IN.1 for non-productive Line 3 operations. IN.1.1: sector considered innovative in EDLL (0.02 points); IN.1.2: innovative theme (2.49); IN.1.3: innovative aspect (2.49). Family maximum 5. All refer to starred strategy definitions.",
+      "aliases": [
+        "IN.1"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: IN.1"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "5 points"
+      }
+    },
+    {
+      "id": "al20-heritage-value",
+      "label": "Enhancement of rural heritage",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion PT.1 for non-productive Line 3 operations. PT.1.1: natural/monumental/architectural/artistic heritage enhanced for subsequent use through physical work, training, dissemination or awareness (13 points); PT.1.2: traditional trades/gastronomic specialties identified in EDLL (7); PT.1.3: other heritage action identified as of interest in EDLL (2). Family maximum 15.",
+      "aliases": [
+        "PT.1"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: PT.1"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "15 points"
+      }
+    },
+    {
+      "id": "al20-cooperation",
+      "label": "Promoter cooperation and associations",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion PS.1 for non-productive Line 3 operations. PS.1.1: first/second-level cooperative membership (4 points); PS.1.2: associations/entities with an EDLL cross-cutting objective (4); PS.1.3: associations/entities promoting rural/endogenous development in the zone (8). Family maximum 12.",
+      "aliases": [
+        "PS.1"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: PS.1"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "12 points"
+      }
+    },
+    {
+      "id": "al20-new-beneficiary",
+      "label": "Previous LEADER beneficiary status",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion PS.3 for non-productive Line 3 operations. PS.3.1: natural/legal persons who have never received aid in previous LEADER calls (1 point).",
+      "aliases": [
+        "PS.3"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 20,
+          "locator": "Line 3 selection table: PS.3"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "1 points"
+      }
+    },
+    {
+      "id": "al20-local-services",
+      "label": "Access to quality local services",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion SP.1 for non-productive Line 3 operations. SP.1.1: new proximity services for the general population (5 points); SP.1.2: improved existing services (4); SP.1.3: proximity services for dependent people (1). Family maximum 5.",
+      "aliases": [
+        "SP.1"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 20,
+          "locator": "Line 3 selection table: SP.1"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "5 points"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "fund-rel-001",
+      "source": "pepac",
+      "target": "leader",
+      "label": "includes",
+      "explanation": "Intervention 7119 LEADER appears in the plan.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-002",
+      "source": "feader",
+      "target": "leader",
+      "label": "reserves funding for",
+      "explanation": "Source minimum 5% reservation, not a project award.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-003",
+      "source": "leader",
+      "target": "leader-7119-2",
+      "label": "includes intervention",
+      "explanation": "The order governs implementation operations.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-004",
+      "source": "leader",
+      "target": "leader-7119-3",
+      "label": "includes cooperation",
+      "explanation": "Cooperation is separate from 7119.2.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-005",
+      "source": "leader",
+      "target": "leader-7119-4",
+      "label": "includes management support",
+      "explanation": "Separate support for management, monitoring, evaluation and animation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-006",
+      "source": "gdr",
+      "target": "edll",
+      "label": "implements",
+      "explanation": "Groups implement selected territory strategies.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-007",
+      "source": "leader-7119-2",
+      "target": "edll",
+      "label": "implements operations in",
+      "explanation": "The order concerns selected local-strategy operations.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 5,
+          "locator": "Article 1.1"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-008",
+      "source": "junta-agriculture",
+      "target": "leader-rules-2026",
+      "label": "issued",
+      "explanation": "Named issuing department.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-009",
+      "source": "leader",
+      "target": "leader-rules-2026",
+      "label": "governed by",
+      "explanation": "Order establishes Andalusian 7119.2 aid framework.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-010",
+      "source": "leader",
+      "target": "al20",
+      "label": "implemented locally through",
+      "explanation": "The resolution identifies this LEADER zone.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-011",
+      "source": "al20",
+      "target": "al20-gdr",
+      "label": "served by",
+      "explanation": "The resolution identifies its recognized GDR.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-012",
+      "source": "al20-gdr",
+      "target": "al20-territory",
+      "label": "assigned territory",
+      "explanation": "Named rural LEADER territory assigned to this GDR.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-013",
+      "source": "al20",
+      "target": "al20-territory",
+      "label": "covers territory",
+      "explanation": "The code identifies this named rural zone.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-014",
+      "source": "al20-territory",
+      "target": "almeria",
+      "label": "in province",
+      "explanation": "The annex groups it under Almeria.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-015",
+      "source": "leader",
+      "target": "al30",
+      "label": "implemented locally through",
+      "explanation": "The resolution identifies this LEADER zone.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-016",
+      "source": "al30",
+      "target": "al30-gdr",
+      "label": "served by",
+      "explanation": "The resolution identifies its recognized GDR.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-017",
+      "source": "al30-gdr",
+      "target": "al30-territory",
+      "label": "assigned territory",
+      "explanation": "Named rural LEADER territory assigned to this GDR.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-018",
+      "source": "al30",
+      "target": "al30-territory",
+      "label": "covers territory",
+      "explanation": "The code identifies this named rural zone.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-019",
+      "source": "al30-territory",
+      "target": "almeria",
+      "label": "in province",
+      "explanation": "The annex groups it under Almeria.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-020",
+      "source": "al20-territory",
+      "target": "abla",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-021",
+      "source": "al20-territory",
+      "target": "alboloduy",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-022",
+      "source": "al20-territory",
+      "target": "abrucena",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-023",
+      "source": "al20-territory",
+      "target": "alcolea",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-024",
+      "source": "al20-territory",
+      "target": "alhabia",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-025",
+      "source": "al20-territory",
+      "target": "alhama-de-almeria",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-026",
+      "source": "al20-territory",
+      "target": "alicun",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-027",
+      "source": "al20-territory",
+      "target": "almocita",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-028",
+      "source": "al20-territory",
+      "target": "alsodux",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-029",
+      "source": "al20-territory",
+      "target": "bayarcal",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-030",
+      "source": "al20-territory",
+      "target": "beires",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-031",
+      "source": "al20-territory",
+      "target": "bentarique",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-032",
+      "source": "al20-territory",
+      "target": "berja",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-033",
+      "source": "al20-territory",
+      "target": "canjayar",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-034",
+      "source": "al20-territory",
+      "target": "dalias",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-035",
+      "source": "al20-territory",
+      "target": "enix",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-036",
+      "source": "al20-territory",
+      "target": "felix",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-037",
+      "source": "al20-territory",
+      "target": "finana",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-038",
+      "source": "al20-territory",
+      "target": "fondon",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-039",
+      "source": "al20-territory",
+      "target": "huecija",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-040",
+      "source": "al20-territory",
+      "target": "illar",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-041",
+      "source": "al20-territory",
+      "target": "instincion",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-042",
+      "source": "al20-territory",
+      "target": "las-tres-villas",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-043",
+      "source": "al20-territory",
+      "target": "laujar-de-andarax",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-044",
+      "source": "al20-territory",
+      "target": "nacimiento",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-045",
+      "source": "al20-territory",
+      "target": "ohanes",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-046",
+      "source": "al20-territory",
+      "target": "padules",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-047",
+      "source": "al20-territory",
+      "target": "paterna-del-rio",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-048",
+      "source": "al20-territory",
+      "target": "ragol",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-049",
+      "source": "al20-territory",
+      "target": "santa-cruz-de-marchena",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-050",
+      "source": "al20-territory",
+      "target": "santa-fe-de-mondujar",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-051",
+      "source": "al20-territory",
+      "target": "terque",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-052",
+      "source": "al30-territory",
+      "target": "alcudia-de-monteagud",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-053",
+      "source": "al30-territory",
+      "target": "benitagla",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-054",
+      "source": "al30-territory",
+      "target": "benizalon",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-055",
+      "source": "al30-territory",
+      "target": "castro-de-filabres",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-056",
+      "source": "al30-territory",
+      "target": "gador",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-057",
+      "source": "al30-territory",
+      "target": "gergal",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-058",
+      "source": "al30-territory",
+      "target": "lubrin",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-059",
+      "source": "al30-territory",
+      "target": "lucainena-de-las-torres",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-060",
+      "source": "al30-territory",
+      "target": "olula-de-castro",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-061",
+      "source": "al30-territory",
+      "target": "rioja",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-062",
+      "source": "al30-territory",
+      "target": "senes",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-063",
+      "source": "al30-territory",
+      "target": "sorbas",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-064",
+      "source": "al30-territory",
+      "target": "tabernas",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-065",
+      "source": "al30-territory",
+      "target": "tahal",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-066",
+      "source": "al30-territory",
+      "target": "turrillas",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-067",
+      "source": "al30-territory",
+      "target": "uleila-del-campo",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-068",
+      "source": "al30-territory",
+      "target": "velefique",
+      "label": "includes municipality",
+      "explanation": "Named in the territory list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-069",
+      "source": "al20",
+      "target": "al20-line-1",
+      "label": "includes funding line",
+      "explanation": "Dated local table identifies this line and budget.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-070",
+      "source": "al20",
+      "target": "al20-line-2",
+      "label": "includes funding line",
+      "explanation": "Dated local table identifies this line and budget.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-071",
+      "source": "al20",
+      "target": "al20-line-3",
+      "label": "includes funding line",
+      "explanation": "Dated local table identifies this line and budget.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-072",
+      "source": "al20-line-3",
+      "target": "rural-studies",
+      "label": "selects activity",
+      "explanation": "Row 3.1: marked SI in FUND-004 and x in FUND-005.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "3.1",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-073",
+      "source": "al20-line-3",
+      "target": "rural-training",
+      "label": "lists an unselected activity",
+      "explanation": "Row 3.2: no selection mark; do not infer selection.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "3.2",
+        "selected": false
+      }
+    },
+    {
+      "id": "fund-rel-074",
+      "source": "al20-line-3",
+      "target": "rural-awareness",
+      "label": "selects activity",
+      "explanation": "Row 3.3: marked SI in FUND-004 and x in FUND-005.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "3.3",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-075",
+      "source": "al20-line-3",
+      "target": "demonstration",
+      "label": "selects activity",
+      "explanation": "Row 3.4: marked SI in FUND-004 and x in FUND-005.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "3.4",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-076",
+      "source": "al20-line-3",
+      "target": "heritage-conservation",
+      "label": "selects activity",
+      "explanation": "Row 3.5: marked SI in FUND-004 and x in FUND-005.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "3.5",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-077",
+      "source": "al20-line-3",
+      "target": "rural-services",
+      "label": "selects activity",
+      "explanation": "Row 3.6: marked SI in FUND-004 and x in FUND-005.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "3.6",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-078",
+      "source": "al20-line-1",
+      "target": "agricultural-holding-competitiveness",
+      "label": "selects activity",
+      "explanation": "Source row marked x.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "1.7",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-079",
+      "source": "al20-line-1",
+      "target": "forestry-holding-competitiveness",
+      "label": "selects activity",
+      "explanation": "Source row marked x.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "1.8",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-080",
+      "source": "al20-line-1",
+      "target": "agri-food-business-competitiveness",
+      "label": "selects activity",
+      "explanation": "Source row marked x.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "1.9",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-081",
+      "source": "al20-line-1",
+      "target": "forest-products-competitiveness",
+      "label": "selects activity",
+      "explanation": "Source row marked x.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "1.10",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-082",
+      "source": "al20-line-1",
+      "target": "agri-forestry-business-services",
+      "label": "selects activity",
+      "explanation": "Source row marked x.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "1.11",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-083",
+      "source": "al20-line-2",
+      "target": "rural-business-competitiveness",
+      "label": "selects activity",
+      "explanation": "Source row marked x.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "2.6",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-084",
+      "source": "al20-line-2",
+      "target": "rural-business-start-up",
+      "label": "selects activity",
+      "explanation": "Source row marked x.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "context": {
+        "operation_type": "2.7",
+        "selected": true
+      }
+    },
+    {
+      "id": "fund-rel-085",
+      "source": "demonstration",
+      "target": "nonproductive-demonstration",
+      "label": "requires",
+      "explanation": "The activity may not give the beneficiary an economic benefit; business participation may not become direct and exclusive modernization of those firms.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        }
+      ],
+      "context": {
+        "section": "3.4"
+      }
+    },
+    {
+      "id": "fund-rel-086",
+      "source": "demonstration",
+      "target": "open-participation",
+      "label": "requires",
+      "explanation": "Participation must be open to entitled entities. Limited places require objective transparent selection documented in the operation report; membership of the beneficiary cannot be an entry condition.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        }
+      ],
+      "context": {
+        "section": "3.4"
+      }
+    },
+    {
+      "id": "fund-rel-087",
+      "source": "demonstration",
+      "target": "public-results",
+      "label": "requires",
+      "explanation": "Publish activity information online from its start and results as they emerge; retain the information at least three years after final aid payment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        }
+      ],
+      "context": {
+        "section": "3.4"
+      }
+    },
+    {
+      "id": "fund-rel-088",
+      "source": "demonstration",
+      "target": "territory-link",
+      "label": "requires",
+      "explanation": "The demonstration needs a clear unequivocal link to the zone; an application/study area larger than its territory is excluded.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        }
+      ],
+      "context": {
+        "section": "3.4"
+      }
+    },
+    {
+      "id": "fund-rel-089",
+      "source": "demonstration",
+      "target": "complete-operation",
+      "label": "requires",
+      "explanation": "Partial or phased operations are excluded if results cannot be applied or disseminated when the funded operation finishes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ],
+      "context": {
+        "section": "3.4"
+      }
+    },
+    {
+      "id": "fund-rel-090",
+      "source": "demonstration",
+      "target": "relevant-competence",
+      "label": "requires",
+      "explanation": "Applicants must be related to the subject or hold the competence needed to execute the operation when applying.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ],
+      "context": {
+        "section": "3.4"
+      }
+    },
+    {
+      "id": "fund-rel-091",
+      "source": "demonstration",
+      "target": "nonprofit-public-applicants",
+      "label": "requires",
+      "explanation": "Sections 3.4/3.5 name public/private nonprofit legal persons and public-law bodies, plus publicly participated companies subject to Article 7.5.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ],
+      "context": {
+        "section": "3.4"
+      }
+    },
+    {
+      "id": "fund-rel-092",
+      "source": "demonstration",
+      "target": "travel-justification",
+      "label": "requires",
+      "explanation": "Required travel needs expected participants and justification in the report; if names are unknown, give numbers and participant requirements.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ],
+      "context": {
+        "section": "3.4"
+      }
+    },
+    {
+      "id": "fund-rel-093",
+      "source": "demonstration",
+      "target": "demonstration-novelty",
+      "label": "requires",
+      "explanation": "Demonstration tests technology/processes/methods/approaches new or unknown in the zone, with possible application elsewhere in similar circumstances.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "locator": "Section 3.4.1: demonstration definition and exclusions"
+        }
+      ],
+      "context": {
+        "section": "3.4"
+      }
+    },
+    {
+      "id": "fund-rel-094",
+      "source": "heritage-conservation",
+      "target": "heritage-public-use",
+      "label": "requires or limits",
+      "explanation": "Heritage operations need dissemination and/or public use among their objectives. Bounded premises require an opening/use plan with days/hours or another access mechanism.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ],
+      "context": {
+        "section": "3.5"
+      }
+    },
+    {
+      "id": "fund-rel-095",
+      "source": "heritage-conservation",
+      "target": "forest-management-plan",
+      "label": "requires or limits",
+      "explanation": "Where a natural area requires a forest-management plan or equivalent, the operation must be consistent with it and it must be in force at application.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ],
+      "context": {
+        "section": "3.5"
+      }
+    },
+    {
+      "id": "fund-rel-096",
+      "source": "heritage-conservation",
+      "target": "nonproductive-heritage",
+      "label": "requires or limits",
+      "explanation": "Operations must not support activity distorting/threatening competition. Public concessions need open transparent nondiscriminatory processes and market-price consideration where needed to preserve non-productive character.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "Section 3.5.1–3: heritage operations, exclusions and non-productive character"
+        }
+      ],
+      "context": {
+        "section": "3.5"
+      }
+    },
+    {
+      "id": "fund-rel-097",
+      "source": "heritage-conservation",
+      "target": "heritage-purchase-exclusion",
+      "label": "requires or limits",
+      "explanation": "Section 3.5 excludes buying rural-heritage elements alongside general Article 11 expenditure exclusions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ],
+      "context": {
+        "section": "3.5"
+      }
+    },
+    {
+      "id": "fund-rel-098",
+      "source": "heritage-conservation",
+      "target": "relevant-competence",
+      "label": "requires or limits",
+      "explanation": "Applicants must be related to the subject or hold the competence needed to execute the operation when applying.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ],
+      "context": {
+        "section": "3.5"
+      }
+    },
+    {
+      "id": "fund-rel-099",
+      "source": "heritage-conservation",
+      "target": "nonprofit-public-applicants",
+      "label": "requires or limits",
+      "explanation": "Sections 3.4/3.5 name public/private nonprofit legal persons and public-law bodies, plus publicly participated companies subject to Article 7.5.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ],
+      "context": {
+        "section": "3.5"
+      }
+    },
+    {
+      "id": "fund-rel-100",
+      "source": "territory-link",
+      "target": "al20-territory",
+      "label": "applies to the selected local zone",
+      "explanation": "Curated application of the general territorial condition to the AL20 zone; not an eligibility assessment.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        },
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-101",
+      "source": "heritage-conservation",
+      "target": "restoration",
+      "label": "explore environmental conservation alongside",
+      "explanation": "Curated discovery association: the source discusses natural-heritage and forest-area conservation. This links the conservation subject to restoration knowledge, without establishing eligibility for a species, site or method.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "Section 3.5.1–3: heritage operations, exclusions and non-productive character"
+        }
+      ],
+      "context": {
+        "scope": "Discovery association only; no eligibility determination"
+      }
+    },
+    {
+      "id": "fund-rel-102",
+      "source": "demonstration",
+      "target": "heritage-conservation",
+      "label": "can concern the subject of",
+      "explanation": "Demonstration explicitly concerns heritage conservation, while one-off demonstrations and conservation operations use distinct categories.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "locator": "Section 3.4.1: demonstration definition and exclusions"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "Section 3.5.1–3: heritage operations, exclusions and non-productive character"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-103",
+      "source": "al20-line-3",
+      "target": "al20-population",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion AT.3; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: AT.3"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "AT.3"
+      }
+    },
+    {
+      "id": "fund-rel-104",
+      "source": "al20-line-3",
+      "target": "al20-local-needs",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion CO.1; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: CO.1"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "CO.1"
+      }
+    },
+    {
+      "id": "fund-rel-105",
+      "source": "al20-line-3",
+      "target": "al20-territorial-balance",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion RD.5; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: RD.5"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "RD.5"
+      }
+    },
+    {
+      "id": "fund-rel-106",
+      "source": "al20-line-3",
+      "target": "al20-renewable-energy",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion CC.2; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: CC.2"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "CC.2"
+      }
+    },
+    {
+      "id": "fund-rel-107",
+      "source": "al20-line-3",
+      "target": "al20-sustainable-mobility",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion CC.7; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: CC.7"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "CC.7"
+      }
+    },
+    {
+      "id": "fund-rel-108",
+      "source": "al20-line-3",
+      "target": "al20-gender-leisure",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion IG.8; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: IG.8"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "IG.8"
+      }
+    },
+    {
+      "id": "fund-rel-109",
+      "source": "al20-line-3",
+      "target": "al20-womens-associations",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion IG.11; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: IG.11"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "IG.11"
+      }
+    },
+    {
+      "id": "fund-rel-110",
+      "source": "al20-line-3",
+      "target": "al20-accessibility",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion DRI.3; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "locator": "Line 3 selection table: DRI.3"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "DRI.3"
+      }
+    },
+    {
+      "id": "fund-rel-111",
+      "source": "al20-line-3",
+      "target": "al20-rural-youth",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion JR.3; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "locator": "Line 3 selection table: JR.3"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "JR.3"
+      }
+    },
+    {
+      "id": "fund-rel-112",
+      "source": "al20-line-3",
+      "target": "al20-innovation",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion IN.1; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: IN.1"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "IN.1"
+      }
+    },
+    {
+      "id": "fund-rel-113",
+      "source": "al20-line-3",
+      "target": "al20-heritage-value",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion PT.1; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: PT.1"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "PT.1"
+      }
+    },
+    {
+      "id": "fund-rel-114",
+      "source": "al20-line-3",
+      "target": "al20-cooperation",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion PS.1; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: PS.1"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "PS.1"
+      }
+    },
+    {
+      "id": "fund-rel-115",
+      "source": "al20-line-3",
+      "target": "al20-new-beneficiary",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion PS.3; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 20,
+          "locator": "Line 3 selection table: PS.3"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "PS.3"
+      }
+    },
+    {
+      "id": "fund-rel-116",
+      "source": "al20-line-3",
+      "target": "al20-local-services",
+      "label": "has selection criterion",
+      "explanation": "Local table criterion SP.1; this browser does not compute scores.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 20,
+          "locator": "Line 3 selection table: SP.1"
+        }
+      ],
+      "context": {
+        "line": "3",
+        "criterion": "SP.1"
+      }
+    },
+    {
+      "id": "fund-rel-117",
+      "source": "al20-heritage-value",
+      "target": "heritage-conservation",
+      "label": "evaluates heritage contribution",
+      "explanation": "Curated association linking the heritage-value criterion with the selected heritage category, within the broader Line 3 criteria.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "PT.1"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        }
+      ]
+    },
+    {
+      "id": "fund-rel-118",
+      "source": "al20-innovation",
+      "target": "demonstration",
+      "label": "explore local novelty alongside",
+      "explanation": "Curated association between local innovation criteria and demonstration local novelty. No technology is deemed to satisfy the criterion.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "IN.1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "locator": "Section 3.4.1: demonstration definition and exclusions"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "fund-noncompetitive",
+      "label": "A non-competitive procedure still needs a call",
+      "text": "The preamble says non-GDR applications start at the interested person/entity request after a call. Applications are not ranked against each other; stated requirements still apply.",
+      "topic_ids": [
+        "leader",
+        "leader-rules-2026"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 3,
+          "locator": "ChapterII procedure"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 4,
+          "locator": "Non-competitive procedure rationale"
+        }
+      ]
+    },
+    {
+      "id": "fund-gdr-governance",
+      "label": "Groups and strategies provide local governance",
+      "text": "The preamble reports 48 recognized GDR entities. Four requested two adjacent zones and implement a unified strategy; it links recognition to the 2025 resolution.",
+      "topic_ids": [
+        "gdr",
+        "edll",
+        "leader-recognition-2025"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        }
+      ]
+    },
+    {
+      "id": "fund-admin-procedures",
+      "label": "Two administration procedure references",
+      "text": "Article 1 lists 25647 for non-GDR applicants and 25649 for GDR applicants. These references do not establish a currently open call.",
+      "topic_ids": [
+        "gdr",
+        "leader-rules-2026"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 5,
+          "locator": "Article 1.2 table"
+        }
+      ]
+    },
+    {
+      "id": "fund-de-minimis",
+      "label": "State-aid context depends on the operation",
+      "text": "The preamble refers state-aid operations to Regulation(EU)2023/2831 de minimis rules. Sections 3.4/3.5 separately state their non-productive operations are outside Article 107.1 TFEU.",
+      "topic_ids": [
+        "leader-rules-2026"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 4,
+          "locator": "State-aid context"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ]
+    },
+    {
+      "id": "fund-al20-indicative",
+      "label": "AL20 indicative 2025 allocations",
+      "text": "The resolution lists EUR 2,095,229.16 for 7119.2; EUR 64,800.91 for 7119.3; EUR 720,010.02 for 7119.4; total EUR 2,880,040.09. The governing preamble distinguishes indicative allocation from granted aid.",
+      "topic_ids": [
+        "al20",
+        "leader-7119-2",
+        "leader-7119-3",
+        "leader-7119-4"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "locator": "Preamble: recognition of GDRs and implementation of local strategies"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2025-02-13",
+          "meaning": "resolution date"
+        }
+      ],
+      "aspects": {
+        "7119.2 indicative allocation": "EUR 2,095,229.16",
+        "7119.3 indicative allocation": "EUR 64,800.91",
+        "7119.4 indicative allocation": "EUR 720,010.02",
+        "indicative total": "EUR 2,880,040.09"
+      }
+    },
+    {
+      "id": "fund-al30-indicative",
+      "label": "AL30 indicative 2025 allocations",
+      "text": "The page lists EUR 1,892,329.43 for 7119.2; EUR 58,525.66 for 7119.3; EUR 650,285.03 for 7119.4; total EUR 2,601,140.12. These indicative territory allocations are not individual awards.",
+      "topic_ids": [
+        "al30"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "locator": "Annex: Province of Almeria, AL20 and AL30"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2025-02-13",
+          "meaning": "resolution date"
+        }
+      ],
+      "aspects": {
+        "7119.2 indicative allocation": "EUR 1,892,329.43",
+        "7119.3 indicative allocation": "EUR 58,525.66",
+        "7119.4 indicative allocation": "EUR 650,285.03",
+        "indicative total": "EUR 2,601,140.12"
+      }
+    },
+    {
+      "id": "fund-local-budgets",
+      "label": "Dated local table budgets",
+      "text": "The signed 16 February 2026 table states EUR 330,052.59 forLine 1; EUR 989,725.78 forLine 2; EUR 710,649.89 forLine 3; total to be called EUR 2,030,428.26. These differ in date/scope from 2025 indicative intervention allocations. No present remaining balance is established.",
+      "topic_ids": [
+        "al20",
+        "al20-line-1",
+        "al20-line-2",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2026-02-16",
+          "meaning": "signature"
+        }
+      ],
+      "aspects": {
+        "total to be called": "EUR 2,030,428.26"
+      }
+    },
+    {
+      "id": "fund-line3-nonproductive",
+      "label": "Local Line 3 is non-productive",
+      "text": "The local document states that all selected Line 3 operations are non-productive and the following criteria apply to them. Row 3.2 training is blank;3.1 and 3.3–3.6 are marked.",
+      "topic_ids": [
+        "al20-line-3",
+        "rural-training"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-unmarked-local-activities",
+      "label": "Similar activity names do not mean the same local selection",
+      "text": "The local budget table leaves Line 1 rows 1.1–1.6 unmarked: studies/plans; agricultural/forestry training; information/promotion; quality-scheme information; sector demonstration; and sector infrastructure/tools. It also leaves Line 2 rows 2.1–2.5 unmarked: diversification studies/plans, training, information/promotion, demonstration and infrastructure/tools. In particular, the marked heritage demonstration 3.4 must not be confused with unmarked agricultural demonstration 1.5 or diversification demonstration 2.4.",
+      "topic_ids": [
+        "al20-line-1",
+        "al20-line-2",
+        "demonstration"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        }
+      ]
+    },
+    {
+      "id": "fund-proximity-service-meaning",
+      "label": "Proximity services address local residents needs",
+      "text": "The local Line 3 note describes proximity services as satisfying a need of people resident in a territory. It says the 3.4 section examines these services and notes that action on cultural heritage can improve cultural leisure services demanded by the population. This is source context, not a finding that every heritage operation qualifies.",
+      "topic_ids": [
+        "rural-services",
+        "demonstration",
+        "heritage-conservation"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "Note under Line 3 operation choices"
+        }
+      ]
+    },
+    {
+      "id": "fund-demo-definition",
+      "label": "Demonstration has local novelty and a public purpose",
+      "text": "The category tests/evaluates locally new or unknown technology/processes/methods/approaches linked to heritage, quality of life and social development, potentially applicable elsewhere in similar conditions. Operations whose final aim is improved competitiveness of productive rural sectors are excluded.",
+      "topic_ids": [
+        "demonstration",
+        "demonstration-novelty"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "locator": "Section 3.4.1: demonstration definition and exclusions"
+        }
+      ],
+      "conditions": [
+        "Section3.4",
+        "Public-purpose and non-productive scope"
+      ]
+    },
+    {
+      "id": "fund-demo-repeat",
+      "label": "Repeated demonstrations need added value",
+      "text": "Periodically repeated activity already supported by LEADER needs justified added value. Source alternatives: different topics; deeper coverage; different target groups; participating entities increased/changed by more than 30%; different methods; or a different municipality for an in-person activity.",
+      "topic_ids": [
+        "demonstration"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "locator": "Section 3.4.1: demonstration definition and exclusions"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.1(b): six alternatives"
+        }
+      ]
+    },
+    {
+      "id": "fund-demo-participation",
+      "label": "Participation differs from beneficiary eligibility",
+      "text": "Any public/private natural or legal person may participate if their activity or purpose relates to the operation objectives. This broader participation rule is separate from the narrower potential-beneficiary list.",
+      "topic_ids": [
+        "demonstration",
+        "open-participation",
+        "nonprofit-public-applicants"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.3: operation requirements"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ]
+    },
+    {
+      "id": "fund-demo-reimbursement",
+      "label": "Demonstration costs are reimbursed",
+      "text": "Eligible costs must actually be incurred and paid during execution, subject to stated rules. This is not a promise of advance payment or an award.",
+      "topic_ids": [
+        "demonstration"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "locator": "Section 3.4.2"
+        }
+      ],
+      "aspects": {
+        "payment form": "Reimbursement of eligible incurred and paid costs"
+      }
+    },
+    {
+      "id": "fund-demo-costs",
+      "label": "Demonstration cost categories",
+      "text": "Section 3.4 lists staff/contracted services including organization and results dissemination; publicity; necessary digital tools/platforms/apps; physical/digital material; consumables; required travel/accommodation/subsistence; and other strictly necessary costs. General Article 11 exclusions apply.",
+      "topic_ids": [
+        "demonstration",
+        "public-results"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ]
+    },
+    {
+      "id": "fund-demo-immovable",
+      "label": "Demonstration buildings have a special restriction",
+      "text": "Immovable investment is potentially eligible only for exclusive demonstration use. Necessary dismantling or return to original state may be eligible; these cases are exempt from the ordinary investment-maintenance period in Article 10.3(g).",
+      "topic_ids": [
+        "demonstration"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ],
+      "conditions": [
+        "Exclusive demonstration use",
+        "Other requirements apply"
+      ]
+    },
+    {
+      "id": "fund-demo-maximum",
+      "label": "Section 3.4 source intensity and maximum",
+      "text": "The source states 100% of total eligible costs and maximum EUR 28,000 per demonstration operation. This dated conditional rule is not an eligibility calculation or confirmation of an open call.",
+      "topic_ids": [
+        "demonstration"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        }
+      ],
+      "aspects": {
+        "source aid intensity": "100% of eligible expenditure",
+        "source maximum": "EUR 28,000 per operation"
+      }
+    },
+    {
+      "id": "fund-heritage-scope",
+      "label": "Heritage can include supporting assets",
+      "text": "Section 3.5 covers maintenance/conservation/recovery/protection/rehabilitation/enhancement of rural heritage, including other assets/infrastructure/equipment clearly contributing to conservation, protection, dissemination or improvement. The referenced Article 3.5 heritage definition is outside this extraction.",
+      "topic_ids": [
+        "heritage-conservation"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "Section 3.5.1–3: heritage operations, exclusions and non-productive character"
+        }
+      ]
+    },
+    {
+      "id": "fund-heritage-exclusions",
+      "label": "Conservation differs from one-off activities and production support",
+      "text": "Section 3.5 excludes one-off studies/plans; one-off training/information/promotion/demonstration; agricultural production/processing/marketing support; and direct forestry production/processing/marketing. Agrarian-heritage infrastructure may qualify only when final use is not that production. Natural-heritage forest operations must not principally increase forest economic value or forestry productivity.",
+      "topic_ids": [
+        "heritage-conservation",
+        "demonstration",
+        "rural-studies",
+        "rural-training",
+        "rural-awareness"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "Section 3.5.1–3: heritage operations, exclusions and non-productive character"
+        }
+      ],
+      "conditions": [
+        "Section3.5 scope",
+        "No project-specific eligibility determination"
+      ]
+    },
+    {
+      "id": "fund-heritage-costs",
+      "label": "Heritage costs and exclusions",
+      "text": "Section 3.5 refers to tangible/intangible investment under Article 10.3 and other necessary costs. General Article 11 costs and purchase of heritage elements are excluded. Full Articles 10/11 are outside the selected pages.",
+      "topic_ids": [
+        "heritage-conservation",
+        "heritage-purchase-exclusion"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ]
+    },
+    {
+      "id": "fund-heritage-maximum",
+      "label": "Section 3.5 source intensity and maximum",
+      "text": "The source states 100% of eligible costs and maximum EUR 200,000 per heritage operation, subject to scope, applicants, costs and other conditions. Current availability is unverified.",
+      "topic_ids": [
+        "heritage-conservation"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ],
+      "aspects": {
+        "source aid intensity": "100% of eligible expenditure",
+        "source maximum": "EUR 200,000 per operation",
+        "public access": "Dissemination and/or public use required"
+      }
+    },
+    {
+      "id": "fund-heritage-reimbursement",
+      "label": "Heritage costs are reimbursed",
+      "text": "Section 3.5 describes reimbursement of eligible costs actually incurred and paid during operation execution.",
+      "topic_ids": [
+        "heritage-conservation"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "Section 3.5.2"
+        }
+      ],
+      "aspects": {
+        "payment form": "Reimbursement of eligible incurred and paid costs"
+      }
+    },
+    {
+      "id": "fund-awareness-tail",
+      "label": "Awareness expenses: a continuation page",
+      "text": "The end of 3.3 on PDFpage 120 includes temporary venues/spaces, material, transport/setup, necessary activity services and publications. Permanent immovable investment and individual business promotion are excluded; other investment needs strict justification and is capped at 10% of aid. This continuation gives 100% intensity and EUR 28,000 maximum; preceding 3.3 requirements are outside extraction.",
+      "topic_ids": [
+        "rural-awareness"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "locator": "Section 3.3 continuation:6–8"
+        }
+      ]
+    },
+    {
+      "id": "fund-criterion-at-3",
+      "label": "AT.3 · Settlement population",
+      "text": "AT.3.1: settlement population below median municipal population of its LEADER zone, using INE 2023 data (10 points). AT.3.2: below median municipal population of Andalusia, using INE 2023 (8).",
+      "topic_ids": [
+        "al20-population",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: AT.3"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "10 points"
+      }
+    },
+    {
+      "id": "fund-criterion-co-1",
+      "label": "CO.1 · Prioritized local-strategy needs",
+      "text": "CO.1.1: one prioritized EDLL need (10 points); CO.1.2: two (12); CO.1.3: three or more (15). Starred needs depend on the strategy.",
+      "topic_ids": [
+        "al20-local-needs",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: CO.1"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "15 points"
+      }
+    },
+    {
+      "id": "fund-criterion-rd-5",
+      "label": "RD.5 · Territorial and economic balance",
+      "text": "RD.5.1: support to municipalities with fewer businesses than the mean of the LEADER zone (15 points).",
+      "topic_ids": [
+        "al20-territorial-balance",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: RD.5"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "15 points"
+      }
+    },
+    {
+      "id": "fund-criterion-cc-2",
+      "label": "CC.2 · Renewable-energy equipment",
+      "text": "CC.2.1 lists solar collectors, photovoltaic panels, thermosiphons, wind turbines, biomass boilers, heat accumulators, aerothermal equipment, biofuels, blue hydrogen, liquefied natural gas or similar (5 points). These source examples are not an independent environmental endorsement.",
+      "topic_ids": [
+        "al20-renewable-energy",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: CC.2"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "5 points"
+      }
+    },
+    {
+      "id": "fund-criterion-cc-7",
+      "label": "CC.7 · Sustainable mobility",
+      "text": "CC.7.1: green-energy collective transport (1 point); CC.7.2: electric-vehicle charging points (4); CC.7.3: municipal pedestrianization, cycle lanes/parking, park-and-ride parking, high-occupancy vehicle encouragement or other measures in a sustainable-mobility plan (4). Family maximum 5.",
+      "topic_ids": [
+        "al20-sustainable-mobility",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: CC.7"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "5 points"
+      }
+    },
+    {
+      "id": "fund-criterion-ig-8",
+      "label": "IG.8 · Leisure with a gender perspective",
+      "text": "IG.8.1: spaces/infrastructure for women (2 points); IG.8.2: activities demanded by women in EDLL (2); IG.8.3: sociocultural activities fostering women creativity (2); IG.8.4: sport with a gender perspective (2). Family maximum 2.",
+      "topic_ids": [
+        "al20-gender-leisure",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: IG.8"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "2 points"
+      }
+    },
+    {
+      "id": "fund-criterion-ig-11",
+      "label": "IG.11 · Participation and associations among women",
+      "text": "IG.11.1: rural women associations/federations (2 points); IG.11.2: association maintenance/equipment (2); IG.11.3: association activities (2); IG.11.4: association networks (2); IG.11.5: dissemination about associations, especially young women/women with disabilities (1); IG.11.6: women participation in underrepresented sectors (1). Family maximum 2. IG.11.7 continues on PDFpage 18.",
+      "topic_ids": [
+        "al20-womens-associations",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: IG.11"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "2 points"
+      }
+    },
+    {
+      "id": "fund-criterion-dri-3",
+      "label": "DRI.3 · Adaptive and inclusive structures",
+      "text": "DRI.3.1: facilities/processes adapted to disability limitations beyond statutory minima, or adapted by the operation (3 points); DRI.3.2: staff training for vulnerable groups/people at risk of exclusion, including training by the operation (2); DRI.3.3: addresses related specific EDLL needs (1). Family maximum 4.",
+      "topic_ids": [
+        "al20-accessibility",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "locator": "Line 3 selection table: DRI.3"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "4 points"
+      }
+    },
+    {
+      "id": "fund-criterion-jr-3",
+      "label": "JR.3 · Positive action for rural youth",
+      "text": "JR.3.1: courses for youth skills/employability (4 points); JR.3.2: dual vocational education or official youth placements (4); JR.3.3: return of recently qualified young people within 12 months of completing medium/higher education and labour-market incorporation in the zone (3); JR.3.4: awareness/training on youth contribution to local development (2); JR.3.5: rural youth leisure (4); JR.3.6: associations/participation and quality of life (4). Family maximum 4. Further rows continue on PDFpage 19.",
+      "topic_ids": [
+        "al20-rural-youth",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "locator": "Line 3 selection table: JR.3"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "4 points"
+      }
+    },
+    {
+      "id": "fund-criterion-in-1",
+      "label": "IN.1 · Local-strategy innovation",
+      "text": "IN.1.1: sector considered innovative in EDLL (0.02 points); IN.1.2: innovative theme (2.49); IN.1.3: innovative aspect (2.49). Family maximum 5. All refer to starred strategy definitions.",
+      "topic_ids": [
+        "al20-innovation",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: IN.1"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "5 points"
+      }
+    },
+    {
+      "id": "fund-criterion-pt-1",
+      "label": "PT.1 · Enhancement of rural heritage",
+      "text": "PT.1.1: natural/monumental/architectural/artistic heritage enhanced for subsequent use through physical work, training, dissemination or awareness (13 points); PT.1.2: traditional trades/gastronomic specialties identified in EDLL (7); PT.1.3: other heritage action identified as of interest in EDLL (2). Family maximum 15.",
+      "topic_ids": [
+        "al20-heritage-value",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: PT.1"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "15 points"
+      }
+    },
+    {
+      "id": "fund-criterion-ps-1",
+      "label": "PS.1 · Promoter cooperation and associations",
+      "text": "PS.1.1: first/second-level cooperative membership (4 points); PS.1.2: associations/entities with an EDLL cross-cutting objective (4); PS.1.3: associations/entities promoting rural/endogenous development in the zone (8). Family maximum 12.",
+      "topic_ids": [
+        "al20-cooperation",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: PS.1"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "12 points"
+      }
+    },
+    {
+      "id": "fund-criterion-ps-3",
+      "label": "PS.3 · Previous LEADER beneficiary status",
+      "text": "PS.3.1: natural/legal persons who have never received aid in previous LEADER calls (1 point).",
+      "topic_ids": [
+        "al20-new-beneficiary",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 20,
+          "locator": "Line 3 selection table: PS.3"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "1 points"
+      }
+    },
+    {
+      "id": "fund-criterion-sp-1",
+      "label": "SP.1 · Access to quality local services",
+      "text": "SP.1.1: new proximity services for the general population (5 points); SP.1.2: improved existing services (4); SP.1.3: proximity services for dependent people (1). Family maximum 5.",
+      "topic_ids": [
+        "al20-local-services",
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 20,
+          "locator": "Line 3 selection table: SP.1"
+        }
+      ],
+      "conditions": [
+        "Source criteria, not a calculated score"
+      ],
+      "aspects": {
+        "source family maximum": "5 points"
+      }
+    },
+    {
+      "id": "fund-ig11-continuation",
+      "label": "Women association events continuation",
+      "text": "IG.11.7: meetings, sessions, forums or webinars on themes of interest to women included in the strategy (1 point), within IG.11 maximum 2.",
+      "topic_ids": [
+        "al20-womens-associations"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "locator": "Top continuation: IG.11.7"
+        }
+      ]
+    },
+    {
+      "id": "fund-jr3-continuation",
+      "label": "Youth criterion continuation",
+      "text": "JR.3.7: businesses diversifying into youth products/services (4 points). JR.3.8: specific EDLL youth needs (2). Both remain in JR.3 family maximum 4.",
+      "topic_ids": [
+        "al20-rural-youth"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Top continuation: JR.3.7–8"
+        }
+      ]
+    },
+    {
+      "id": "fund-selection-total",
+      "label": "Local selection table total",
+      "text": "The table ends at 100 points. Family caps and subcriteria are source knowledge; the app does not sum them or determine a project score.",
+      "topic_ids": [
+        "al20-line-3"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 20,
+          "locator": "Puntuacion total"
+        }
+      ],
+      "aspects": {
+        "source table total": "100 points"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "FUND-004",
+      "page": 15,
+      "status": "inspected",
+      "note": "Visually read rotated Line 3 operation choices:3.1,3.3–3.6 selected;3.2 blank. Non-productive statement and proximity-service note."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 16,
+      "status": "inspected",
+      "note": "Visually read AT.3,CO.1,RD.5,CC.2 and CC.7 heading, family maxima/subcriteria."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 17,
+      "status": "inspected",
+      "note": "Visually read CC.7.1–3,IG.8,IG.11.1–6; points/caps retained."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 18,
+      "status": "inspected",
+      "note": "Visually read IG.11.7,DRI.3,JR.3.1–6: women, disability/inclusion and youth conditions."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 19,
+      "status": "inspected",
+      "note": "Visually read JR.3.7–8,IN.1 (including 0.02/2.49/2.49),PT.1,PS.1."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 20,
+      "status": "inspected",
+      "note": "Visually read PS.3,SP.1 and 100-point total; signature date retained."
+    },
+    {
+      "source_id": "FUND-005",
+      "page": 1,
+      "status": "inspected",
+      "note": "Visually read all marked/blank choices, three budgets and total, and signature date."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 1,
+      "status": "inspected",
+      "note": "Read order title/publication date, participatory development, EU fund and CAP/LEADER framework."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 2,
+      "status": "inspected",
+      "note": "Read group recognition,48 GDRs/unified strategies, intervention distinctions and indicative allocation caveat."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 3,
+      "status": "inspected",
+      "note": "Read non-GDR procedure, prior-call requirement and non-competitive rationale."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 4,
+      "status": "inspected",
+      "note": "Read simplification, state-aid/de-minimis and governance context."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 5,
+      "status": "inspected",
+      "note": "Read Article 1 object and procedures 25647/25649; beginning general legal framework."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 120,
+      "status": "inspected",
+      "note": "Read 3.3 tail costs/cap; incomplete preceding scope noted. Read 3.4 definition/exclusions."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 121,
+      "status": "inspected",
+      "note": "Read repeated-activity alternatives, reimbursement, non-productive participation/publication/territory requirements."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 122,
+      "status": "inspected",
+      "note": "Read completion/travel/applicants/competence/costs, exclusive-use immovables and 28000 EUR cap."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 123,
+      "status": "inspected",
+      "note": "Read 3.5 scope/exclusions, reimbursement and non-productive/competition conditions."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 124,
+      "status": "inspected",
+      "note": "Read public use, current forest plans, applicants/costs and 200000 EUR cap.3.6 starts without substantive detail."
+    },
+    {
+      "source_id": "FUND-012",
+      "page": 1,
+      "status": "inspected",
+      "note": "Read resolution/publication dates and GDR/LEADER/CAP governance context."
+    },
+    {
+      "source_id": "FUND-012",
+      "page": 3,
+      "status": "inspected",
+      "note": "Read AL20/AL30 organizations/territories, all 49 municipalities and indicative intervention allocations."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "fund-current-availability",
+      "text": "No current call, remaining balance or individual eligibility has been verified. These dated sources are a discovery starting point.",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Title and preamble: Order of 3 February 2026, BOJA 29, 12 February 2026"
+        }
+      ],
+      "topic_ids": [
+        "al20",
+        "leader"
+      ]
+    },
+    {
+      "id": "fund-referenced-general-rules",
+      "text": "Article 3.5 heritage definition, Article 7.5 company conditions and full Articles 10/11 costs are outside selected coverage. A later explicit source task is needed before using their details.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "locator": "Section 3.4.4–8: applicants, costs, intensity and maximum"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "Section 3.5.1–3: heritage operations, exclusions and non-productive character"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Section 3.5.3–8: public access, forest plans, applicants, costs and maximum"
+        }
+      ],
+      "topic_ids": [
+        "demonstration",
+        "heritage-conservation"
+      ]
+    },
+    {
+      "id": "fund-edll-definitions",
+      "text": "Starred prioritized needs, innovative sectors/themes/aspects and heritage interests refer to EDLL definitions outside selected passages. Do not assume those definitions.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "CO.1"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "IN.1/PT.1"
+        }
+      ],
+      "topic_ids": [
+        "al20-local-needs",
+        "al20-innovation",
+        "al20-heritage-value"
+      ]
+    },
+    {
+      "id": "fund-awareness-prior-scope",
+      "text": "PDFpage 120 is only the continuation/end of 3.3; preceding applicant/operation requirements are not ingested.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "locator": "Section 3.3 continuation"
+        }
+      ],
+      "topic_ids": [
+        "rural-awareness"
+      ]
+    }
+  ]
+}

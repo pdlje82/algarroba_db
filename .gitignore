@@ -1,0 +1,14 @@
+.venv/
+node_modules/
+dist/
+public/pdf-assets/
+data/
+backups/
+research/
+__pycache__/
+.pytest_cache/
+test-results/
+playwright-report/
+*.log
+.idea/
+
