@@ -100,7 +100,9 @@ an existing view. It preserves the pane's manual position and can be undone with
 saved views keep their coordinates until you compact or reopen them. Ordinary selection keeps
 the arrangement stable. Flat view keeps its own layout and packs panes beside each other.
 All pane borders fit their visible nodes and location links with small side/bottom margins and
-room for the heading and controls. Connection layers keep their circular ordering. Window
+room for the heading. Layer menus float slightly above the pane border and remain available
+while their controls have keyboard focus. Layer headings are larger than node text, with long
+names wrapping inside the pane. Connection layers keep their circular ordering. Window
 proportions guide the overview's node arrangement; pane borders wrap the resulting content.
 Each layer has a faint, stable surface and border colour in both themes. These colours help
 distinguish surfaces; they do not encode evidence or subject categories.
@@ -115,8 +117,9 @@ their original colours while the viewer controls follow the chosen theme.
 
 **Background effects** offers independent Blur, Darken and Transparency switches. The initial
 setting is **Blur off, Darken on at 25%, Transparency on at 50%**. Darkening adjusts from 0–60%.
-Each older layer is composited at half opacity; cards remain opaque within that layer, so its own
-connections cannot show through its labels. All effects are disabled in Flat view and the base
+Darkening covers background pane areas, borders, headings and content, including what shows
+through their faint surface tint. Each older layer is composited once at half opacity; cards
+remain opaque within that layer, so its own connections cannot show through its labels. All effects are disabled in Flat view and the base
 overview. Preferences are local and separate from exploration history.
 
 With Blur enabled, background cards and connections between older planes receive depth blur,
@@ -256,6 +259,8 @@ separate future work.
 
 Development: `npm run build`; `.venv\Scripts\python.exe -m uvicorn backend.app:app --host 127.0.0.1 --port8765`.
 Checks: `.venv\Scripts\python.exe -m pytest -q` and `npm test`.
+For isolated GPU opacity/colour checks, run `npm run dev -- --port 8776` and open
+`http://127.0.0.1:8776/tests/effects-gpu.html`. It uses synthetic graphics without knowledge/API writes.
 Dependency versions are locked in `package-lock.json` and `requirements-lock.txt`.
 See `THIRD_PARTY_NOTICES.md` and `third_party/` for actual installed licences.
 

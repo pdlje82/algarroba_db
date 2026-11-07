@@ -1,0 +1,103 @@
+PASS dark baseline surface actual 0.243,0.129,0.067 expected 0.245,0.129,0.067
+PASS dark dark surface actual 0.184,0.098,0.051 expected 0.183,0.096,0.050
+PASS dark alpha surface actual 0.125,0.071,0.039 expected 0.126,0.070,0.039
+PASS dark both surface actual 0.094,0.055,0.031 expected 0.095,0.054,0.030
+PASS dark baseline border actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark dark border actual 0.600,0.298,0.149 expected 0.600,0.300,0.150
+PASS dark alpha border actual 0.404,0.208,0.106 expected 0.403,0.206,0.105
+PASS dark both border actual 0.302,0.157,0.078 expected 0.303,0.156,0.080
+PASS dark baseline title actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark dark title actual 0.600,0.298,0.149 expected 0.600,0.300,0.150
+PASS dark alpha title actual 0.404,0.208,0.106 expected 0.403,0.206,0.105
+PASS dark both title actual 0.302,0.157,0.078 expected 0.303,0.156,0.080
+PASS dark baseline card actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark dark card actual 0.600,0.298,0.149 expected 0.600,0.300,0.150
+PASS dark alpha card actual 0.404,0.208,0.106 expected 0.403,0.206,0.105
+PASS dark both card actual 0.302,0.157,0.078 expected 0.303,0.156,0.080
+PASS dark baseline foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark baseline overlapping panes actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark dark foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark dark overlapping panes actual 0.494,0.247,0.125 expected 0.495,0.248,0.124
+PASS dark alpha foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark alpha overlapping panes actual 0.463,0.235,0.118 expected 0.463,0.235,0.119
+PASS dark both foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark both overlapping panes actual 0.322,0.165,0.082 expected 0.321,0.164,0.084
+PASS dark blur baseline surface actual 0.243,0.129,0.067 expected 0.245,0.129,0.067
+PASS dark blur dark surface actual 0.184,0.098,0.051 expected 0.183,0.096,0.050
+PASS dark blur alpha surface actual 0.125,0.071,0.039 expected 0.126,0.070,0.039
+PASS dark blur both surface actual 0.094,0.055,0.031 expected 0.095,0.054,0.030
+PASS dark blur baseline border actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark blur dark border actual 0.600,0.298,0.149 expected 0.600,0.300,0.150
+PASS dark blur alpha border actual 0.404,0.208,0.106 expected 0.403,0.206,0.105
+PASS dark blur both border actual 0.302,0.157,0.078 expected 0.303,0.156,0.080
+PASS dark blur baseline title actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark blur dark title actual 0.600,0.298,0.149 expected 0.600,0.300,0.150
+PASS dark blur alpha title actual 0.404,0.208,0.106 expected 0.403,0.206,0.105
+PASS dark blur both title actual 0.302,0.157,0.078 expected 0.303,0.156,0.080
+PASS dark blur baseline card actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark blur dark card actual 0.600,0.298,0.149 expected 0.600,0.300,0.150
+PASS dark blur alpha card actual 0.404,0.208,0.106 expected 0.403,0.206,0.105
+PASS dark blur both card actual 0.302,0.157,0.078 expected 0.303,0.156,0.080
+PASS dark blur baseline foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark blur baseline overlapping panes actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark blur dark foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark blur dark overlapping panes actual 0.494,0.247,0.125 expected 0.495,0.248,0.124
+PASS dark blur alpha foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark blur alpha overlapping panes actual 0.463,0.235,0.118 expected 0.463,0.235,0.119
+PASS dark blur both foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS dark blur both overlapping panes actual 0.322,0.165,0.082 expected 0.321,0.164,0.084
+PASS light baseline surface actual 0.922,0.796,0.710 expected 0.921,0.795,0.711
+PASS light dark surface actual 0.690,0.596,0.533 expected 0.691,0.596,0.533
+PASS light alpha surface actual 0.949,0.878,0.820 expected 0.947,0.880,0.821
+PASS light both surface actual 0.831,0.780,0.733 expected 0.832,0.781,0.732
+PASS light baseline border actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light dark border actual 0.600,0.298,0.149 expected 0.600,0.300,0.150
+PASS light alpha border actual 0.886,0.682,0.565 expected 0.887,0.682,0.565
+PASS light both border actual 0.788,0.631,0.541 expected 0.787,0.632,0.540
+PASS light baseline title actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light dark title actual 0.600,0.298,0.149 expected 0.600,0.300,0.150
+PASS light alpha title actual 0.886,0.682,0.565 expected 0.887,0.682,0.565
+PASS light both title actual 0.788,0.631,0.541 expected 0.787,0.632,0.540
+PASS light baseline card actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light dark card actual 0.600,0.298,0.149 expected 0.600,0.300,0.150
+PASS light alpha card actual 0.886,0.682,0.565 expected 0.887,0.682,0.565
+PASS light both card actual 0.788,0.631,0.541 expected 0.787,0.632,0.540
+PASS light baseline foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light baseline overlapping panes actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light dark foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light dark overlapping panes actual 0.494,0.247,0.125 expected 0.495,0.248,0.124
+PASS light alpha foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light alpha overlapping panes actual 0.875,0.639,0.510 expected 0.874,0.640,0.510
+PASS light both foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light both overlapping panes actual 0.690,0.525,0.435 expected 0.690,0.527,0.434
+PASS light blur baseline surface actual 0.922,0.796,0.710 expected 0.921,0.795,0.711
+PASS light blur dark surface actual 0.690,0.596,0.533 expected 0.691,0.596,0.533
+PASS light blur alpha surface actual 0.949,0.878,0.820 expected 0.947,0.880,0.821
+PASS light blur both surface actual 0.831,0.780,0.733 expected 0.832,0.781,0.732
+PASS light blur baseline border actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light blur dark border actual 0.600,0.302,0.149 expected 0.600,0.300,0.150
+PASS light blur alpha border actual 0.886,0.682,0.565 expected 0.887,0.682,0.565
+PASS light blur both border actual 0.788,0.631,0.541 expected 0.787,0.632,0.540
+PASS light blur baseline title actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light blur dark title actual 0.600,0.302,0.149 expected 0.600,0.300,0.150
+PASS light blur alpha title actual 0.886,0.682,0.565 expected 0.887,0.682,0.565
+PASS light blur both title actual 0.788,0.631,0.541 expected 0.787,0.632,0.540
+PASS light blur baseline card actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light blur dark card actual 0.600,0.302,0.149 expected 0.600,0.300,0.150
+PASS light blur alpha card actual 0.886,0.682,0.565 expected 0.887,0.682,0.565
+PASS light blur both card actual 0.788,0.631,0.541 expected 0.787,0.632,0.540
+PASS light blur baseline foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light blur baseline overlapping panes actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light blur dark foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light blur dark overlapping panes actual 0.494,0.247,0.125 expected 0.495,0.248,0.124
+PASS light blur alpha foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light blur alpha overlapping panes actual 0.875,0.639,0.510 expected 0.874,0.640,0.510
+PASS light blur both foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS light blur both overlapping panes actual 0.690,0.529,0.435 expected 0.690,0.527,0.434
+PASS updated hover surface colour/opacity actual 0.678,0.784,0.808 expected 0.678,0.785,0.807
+PASS updated hover border colour actual 0.635,0.706,0.765 expected 0.637,0.707,0.765
+PASS selection alpha multiplies layer alpha once actual 0.878,0.800,0.733 expected 0.880,0.799,0.735
+PASS flat keeps background cards unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS flat keeps foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS overview keeps background cards unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200
+PASS overview keeps foreground unchanged actual 0.800,0.400,0.200 expected 0.800,0.400,0.200

@@ -50,7 +50,10 @@ label-sized grids; direct neighbours use elliptical rings. Native result arrange
 comparison columns, classifications, source groupings, dates including Undated, places and
 conditions/components. Large categories use several reading columns. All panes wrap their own
 visible cards, location references and optional research cards with32-unit side/bottom margins,
-a100-unit heading/control band and a300x240 minimum. No pane stretches to match the viewport ratio.
+a100-unit heading band and a300x240 minimum. No pane stretches to match the viewport ratio.
+Layer titles use30-world-unit bold text (larger than card body text), wrapping to two lines in
+the available header width. Position menus10 CSS pixels above the highest projected pane edge,
+including during turning/resizing. Keep menu hover and keyboard focus stable across the gap.
 New/changed scopes use compact reading slots with24-unit card clearance. Connections use complete
 elliptical rings with checked rectangular-card clearance; collisions never scatter nodes into a
 grid. Comparison columns, classifications, dates/Undated, places and source groupings retain their
@@ -97,6 +100,12 @@ movement reuses card textures and line objects without another layout.
 
 Background effects remain independent: Blur off, Darken on25% (0–60), Transparency on50% initially.
 Background layers use reusable half-float buffers with opaque interiors before layer alpha.
+Apply darkening to pane tint/area, border, headings and content. For faint background surfaces,
+include a black shadow coverage of the selected strength while retaining premultiplied tint
+colour; do not leave the area below the tint undarkened. Surface coverage and RGB then receive
+the layer's50% opacity once. Keep own-card interiors opaque before that operation. Cached frame
+materials follow hover colour/opacity updates without changing source materials or textures.
+Surface shading does not punch holes over cards hosted in older layers.
 Depth blur grows1.25 CSS pixels per older plane, capped4. Surface blur has sigma2 and is clipped
 to the finite current surface using a separate world-Z test. Selected and background-to-front
 segments skip depth blur but still receive frosting physically behind the surface. Foreground

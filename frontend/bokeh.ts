@@ -27,7 +27,7 @@ export function packedMaskDepth(layerDifference:number){
  const distance=FOCUS+Math.max(0,layerDifference)*PLANE_GAP;
  return ((MASK_NEAR-distance)*MASK_FAR)/((MASK_FAR-MASK_NEAR)*-distance);
 }
-export type BokehItem={muted?:boolean;highlighted?:boolean;layerKey?:string;object:THREE.Object3D;behind:number;order:number;sharp?:boolean;card?:boolean;gradient?:boolean;depth?:boolean;plane?:number;edge?:boolean};
+export type BokehItem={surface?:boolean;muted?:boolean;highlighted?:boolean;layerKey?:string;object:THREE.Object3D;behind:number;order:number;sharp?:boolean;card?:boolean;gradient?:boolean;depth?:boolean;plane?:number;edge?:boolean};
 export type BokehFrame={selectionFocus?:boolean;effects?:BackgroundEffects;preference:BokehPreference;mode:string;level:number;width:number;reducedMotion:boolean;items:BokehItem[];glass?:THREE.Mesh; tint?:string};
 type Entry={source:THREE.Object3D;proxy:THREE.Object3D;material:THREE.ShaderMaterial;depth:{value:number};from:number;to:number;current:number;start:number};
 const depthVertex=`varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`;
@@ -183,10 +183,24 @@ export class FrostedGraphPass extends Pass{
   try{render()}finally{for(const entry of saved)entry.object.visible=entry.visible}
  }
  private material(object:THREE.Object3D):THREE.Material{return (object as any).material}
- private materials(object:THREE.Object3D,card:boolean):Variants{
-  const original=this.material(object);let variants=this.variants.get(original);if(variants){variants.back.userData.kgbMuted.value=object.userData.kgbMuted?1:0;return variants}const muted={value:object.userData.kgbMuted?1:0};
+ private materials(object:THREE.Object3D,card:boolean,surface=false):Variants{
+  const original=this.material(object) as THREE.Material&{color?:THREE.Color};let variants=this.variants.get(original);
+  const sync=(value:Variants)=>{
+   const f=this.frameNow,effects=this.effects(f),older=surface&&object.matrixWorld.elements[14]<this.surfaceZ.value-.5;
+   for(const [mode,variant] of [['back',value.back],['front',value.front]] as const){
+    const material=variant as THREE.Material&{color?:THREE.Color},darken=older&&mode==='back'&&f.mode==='layered'&&f.level>0&&effects.darken?effects.darkenAmount:0;
+    // A faint pane must darken what shows through its area as well as its tint. Increase
+    // shadow coverage, preserving the tint's premultiplied colour; layer brightness/alpha
+    // are then applied once to the complete pane. Transparency still reduces coverage.
+    const opacity=original.opacity+(1-original.opacity)*darken;
+    if(material.color&&original.color)material.color.copy(original.color).multiplyScalar(opacity?original.opacity/opacity:0);
+    material.opacity=opacity;material.userData.kgbMuted.value=object.userData.kgbMuted?1:0;
+   }
+   return value
+  };
+  if(variants)return sync(variants);const muted={value:object.userData.kgbMuted?1:0};
   const make=(mode:number)=>{
-   const material=original.clone();material.userData.kgbMuted=muted;material.stencilWrite=!card;material.stencilRef=1;material.stencilFunc=THREE.NotEqualStencilFunc;
+   const material=original.clone();material.userData.kgbMuted=muted;material.stencilWrite=!card&&!surface;material.stencilRef=1;material.stencilFunc=THREE.NotEqualStencilFunc;
    const previous=original.onBeforeCompile.bind(original);material.onBeforeCompile=(shader,renderer)=>{
     previous(shader,renderer);shader.uniforms.kgbSurfaceZ=this.surfaceZ;shader.uniforms.kgbMuted=muted;
     const position=(object as Line2).isLine2?'(position.y<0.5?instanceStart:instanceEnd)':object instanceof THREE.Sprite?'vec3(0.0)':'position';
@@ -194,21 +208,21 @@ export class FrostedGraphPass extends Pass{
     shader.fragmentShader='uniform float kgbMuted;varying float vKgbWorldZ;uniform float kgbSurfaceZ;\n'+shader.fragmentShader.replace('void main() {',`void main() {if(${mode<0?'vKgbWorldZ>kgbSurfaceZ':'vKgbWorldZ<=kgbSurfaceZ'})discard;`);
     if(card)shader.fragmentShader=shader.fragmentShader.replace('#include <opaque_fragment>','#include <opaque_fragment>\nif(kgbMuted>0.5){gl_FragColor.rgb*=0.375;gl_FragColor.a*=0.5;}');
    };
-   material.customProgramCacheKey=()=>original.customProgramCacheKey()+'-physical-plane-'+mode+'-'+!!(object as Line2).isLine2;return material;
+   material.customProgramCacheKey=()=>original.customProgramCacheKey()+'-physical-plane-'+mode+'-'+!!(object as Line2).isLine2+'-'+card+'-'+surface;return material;
   };
   const mask=original.clone();mask.colorWrite=false;mask.depthTest=false;mask.depthWrite=false;mask.stencilWrite=true;mask.stencilRef=1;mask.stencilFunc=THREE.AlwaysStencilFunc;mask.stencilZPass=THREE.ReplaceStencilOp;
-  variants={back:make(-1),front:make(1),mask};this.variants.set(original,variants);return variants;
+  variants={back:make(-1),front:make(1),mask};this.variants.set(original,variants);return sync(variants);
  }
  private renderItems(renderer:THREE.WebGLRenderer,target:THREE.WebGLRenderTarget,items:BokehItem[],mode:'back'|'front',clear=true,highlight=false){
   renderer.setRenderTarget(target);if(clear){renderer.setClearColor(0,0);renderer.clear(true,true,true)}else renderer.clear(false,true,true);
   const cards=this.frameNow.items.filter(item=>item.card&&(!highlight||!this.frameNow.selectionFocus||!item.muted)),saved:{object:any;material:THREE.Material}[]=[];
-  const apply=(selected:BokehItem[],mask:boolean)=>{for(const item of selected){const object=item.object as any;if(!object.material||Array.isArray(object.material))continue;saved.push({object,material:object.material});object.material=this.materials(object,!!item.card)[mask?'mask':mode]}};
+  const apply=(selected:BokehItem[],mask:boolean)=>{for(const item of selected){const object=item.object as any;if(!object.material||Array.isArray(object.material))continue;saved.push({object,material:object.material});object.material=this.materials(object,!!item.card,!!item.surface)[mask?'mask':mode]}};
   const restore=()=>{for(const entry of saved)entry.object.material=entry.material;saved.length=0};
   try{apply(cards,true);this.visibleOnly(cards.map(i=>i.object),()=>renderer.render(this.source,this.camera));restore();apply(items,false);this.visibleOnly(items.map(i=>i.object),()=>renderer.render(this.source,this.camera))}finally{restore()}
  }
  private key(frame:BokehFrame){
-  const values:any[]=[this.effects(frame),frame.selectionFocus,this.width,this.height,...this.camera.matrixWorld.elements,...this.camera.projectionMatrix.elements];
-  for(const item of frame.items){const o=item.object as any;o.updateWorldMatrix(true,false);const m=o.material;values.push(o.uuid,o.visible,...o.matrixWorld.elements,m?.color?.getHex(),m?.opacity,o.geometry?.id,o.geometry?.attributes?.instanceStart?.data?.uuid,item.sharp,item.plane,item.muted,item.highlighted,item.layerKey)}
+  const values:any[]=[this.effects(frame),frame.mode,frame.level,frame.tint,frame.selectionFocus,this.width,this.height,...this.camera.matrixWorld.elements,...this.camera.projectionMatrix.elements];
+  for(const item of frame.items){const o=item.object as any;o.updateWorldMatrix(true,false);const m=o.material;values.push(o.uuid,o.visible,...o.matrixWorld.elements,m?.color?.getHex(),m?.opacity,o.geometry?.id,o.geometry?.attributes?.instanceStart?.data?.uuid,item.sharp,item.plane,item.muted,item.highlighted,item.layerKey,item.surface)}
   if(frame.glass){frame.glass.updateWorldMatrix(true,false);const material=frame.glass.material as THREE.MeshBasicMaterial;values.push(...frame.glass.matrixWorld.elements,material.opacity,material.color.getHex(),frame.glass.geometry.id)}return JSON.stringify(values);
  }
  private compose(renderer:THREE.WebGLRenderer,frame:BokehFrame,delta:number){

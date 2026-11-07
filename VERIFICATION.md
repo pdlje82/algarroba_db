@@ -730,3 +730,49 @@ v5 spacing without changing XY/cameras/Flat, repeat restoration without compound
 correct legacy fallback band numbers. Browser verification retained34 cards/four panes at depth
 level2: the overview moved fromZ=-1040 toZ=-3120, exactly threefold, without displayed graph
 errors. Screenshot: docs/screenshots/tripled-layer-spacing.png. No knowledge/backend changes.
+
+
+### Layer menu clearance and readable headings — 7 November 2026
+
+Dynamic pane menus now sit10 CSS pixels above the highest projected pane border rather than
+inside its heading band. Their bottom anchor follows camera changes and frame resizing;
+wrapping does not push them down over titles. Hover retention and focus capture keep controls
+available while moving into the toolbar or using the keyboard. Existing Layers-menu access remains.
+
+Plane-aligned titles use a dedicated30-world-unit bold font, exceeding the largest current card
+body font (about26 world units). Titles wrap to two lines within their pane rather than shrinking
+or using the small connection-label texture. Title positioning follows animated frame changes,
+and the compositor protects title surfaces from highlighted lines.
+
+Production build and all118 scene/render checks passed. Browser checks covered the existing
+34-card/four-layer route view, the longer Establishment water title, All topics/Group nodes,
+turning, fullscreen and Tab access from grouping to Compact. Measured menu clearance was10.00–10.02
+CSS pixels before/after grouping and turning. Screenshot: docs/screenshots/layer-title-menu.png.
+The original route exploration was restored after checks. No backend, database, factual or source
+changes; no additional tests were added for this presentation-only adjustment.
+
+
+### Background frame darkening and transparency — 7 November 2026
+
+Darkening now includes the finite area behind a background pane's faint tint, alongside its
+border, heading and content. Surface shading preserves premultiplied tint colour while adding
+the selected dark shadow coverage. The existing layer compositor then applies RGB darkening
+and50% opacity once to each layer. Transparency reduces the whole rendered layer's coverage;
+it does not expose that layer's own lines through opaque card interiors. Surfaces no longer
+use the global card stencil to punch holes over cards in older layers. Current-plane content,
+HTML/PDF colours, Flat and the bare overview retain their intended behaviour.
+
+Cached material variants now refresh source colours and opacity on hover without allocating
+new geometry/textures, and shader keys distinguish cards from surface shading. Added a headless
+regression for material reuse, source preservation, layer alpha and disabling effects in Flat.
+Production build and119 scene/render checks passed. The separate tests/effects-gpu.html harness
+passed103 actual WebGL pixel checks: both themes, all eight effect combinations, mapped heading
+text, borders, surfaces, unchanged foreground, overlapping older planes, selection alpha, hover
+updates, Flat and bare overview. Samples use linear RGB with a0.014 tolerance. The probe performs
+no API calls, imports or browser-storage writes. Results: output/effects-gpu-checks.txt.
+
+Browser comparison images at fixed camera/geometry: docs/screenshots/background-effects-50.png
+and docs/screenshots/background-effects-opacity-off.png (extra selection dimming temporarily off).
+Final restored preferences: Blur off, Darken25%, Transparency50%, Selection focus on, System theme.
+Screenshot: docs/screenshots/background-effects-updated.png. The original34-card route exploration
+was restored and the isolated GPU tab closed. No backend, knowledge, organization or source changes.
