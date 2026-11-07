@@ -64,17 +64,17 @@ class Graph:
                     queue.append(other)
         return paths
 
-    def view(self, centre=None, search="", perspective="combined", limit=12, depth=6, compare=None, branches=None):
+    def view(self, centre=None, search="", perspective="combined", limit=12, depth=6, compare=None, branches=None, all_results=False):
         if perspective not in dict(PERSPECTIVES):
             raise ValueError("Unknown perspective")
-        limit=max(12,min(48,limit)); depth=max(1,min(8,depth))
+        limit=len(self.topics) if all_results else max(12,min(48,limit)); depth=max(1,min(8,depth))
         notices=[]
         if centre:
             centre=self.store.resolve(centre)
             if centre not in self.topics:
                 notices.append("The previous centre is no longer available. The overview is preserved.")
                 centre=None
-        hits=self.store.search(search) if search.strip() else []
+        hits=self.store.search(search,limit=None if all_results else 100) if search.strip() else []
         matches=[]
         hit_findings={h["id"] for h in hits if h["kind"]=="finding"}
         matched={h["id"] for h in hits if h["kind"]=="topic"}
@@ -94,7 +94,7 @@ class Graph:
             candidates=[]
             if search.strip():
                 corridor={centre}
-                for match in matches[:48]:
+                for match in (matches if all_results else matches[:48]):
                     if match["id"] in tree:
                         path=tree[match["id"]]
                         corridor.update(path[0])
@@ -133,7 +133,7 @@ class Graph:
                 seen.add(endpoint); total+=1
                 if len(routes)>=limit: continue
                 # Reserve all intermediate records even while the interface abbreviates them.
-                if len(selected | set(ns))>96 or len(selected_edges | set(es))>210:
+                if not all_results and (len(selected | set(ns))>96 or len(selected_edges | set(es))>210):
                     continue
                 selected.update(ns); selected_edges.update(es)
                 routes.append({"id":f"route:{endpoint}","endpoint":endpoint,"nodes":ns,"edges":es,"why":reason})
@@ -142,25 +142,25 @@ class Graph:
             if not routes and not search:
                 notices.append(f"No {domain or 'further'} connection recorded within {depth} steps.")
         else:
-            selected=set(self.topics)
-            selected_edges=set(self.edges)
+            selected=(matched if search.strip() else {i for i,t in self.topics.items() if not domain or t['domain']==domain}) if all_results else set(self.topics)
+            selected_edges={i for i,e in self.edges.items() if e['source'] in selected and e['target'] in selected}
             total=len(selected)
         nodes=[dict(self.topics[i],record_type="topic",matched=i in matched,missing=False) for i in sorted(selected)]
         if centre:
-            for i in missing[:12]:
+            for i in (missing if all_results else missing[:12]):
                 nodes.append(dict(self.topics[i],record_type="topic",matched=True,missing=True))
         edges=[dict(self.edges[i],record_type="relationship") for i in sorted(selected_edges)]
         if centre and perspective!="comparison":
-            for branch in (branches or [])[-6:]:
+            for branch in ((branches or []) if all_results else (branches or [])[-6:]):
                 branch=self.store.resolve(branch)
                 if branch not in self.topics: continue
                 if branch not in tree:
-                    if len(nodes)<96 and not any(n["id"]==branch for n in nodes):nodes.append(dict(self.topics[branch],record_type="topic",missing=True,perspective_support=True))
+                    if (all_results or len(nodes)<96) and not any(n["id"]==branch for n in nodes):nodes.append(dict(self.topics[branch],record_type="topic",missing=True,perspective_support=True))
                     notices.append(f"{self.topics[branch]['label']} can be inspected, but no connecting route is recorded within {depth} steps.")
                     continue
                 path_nodes,path_edges=tree[branch]
                 new_ids=set(path_nodes)-{n["id"] for n in nodes}
-                if len(nodes)+len(new_ids)>96:
+                if not all_results and len(nodes)+len(new_ids)>96:
                     notices.append("Collapse displayed connections before opening more branch detail.");continue
                 for i in path_nodes:
                     if not any(n["id"]==i for n in nodes):nodes.append(dict(self.topics[i],record_type="topic",perspective_support=True))
@@ -169,8 +169,8 @@ class Graph:
                     existing_edge=next((item for item in edges if item["id"]==e),None)
                     if existing_edge:existing_edge["record_type"]="branch"
                     else:edges.append(dict(self.edges[e],record_type="branch"))
-                for other,edge_id in self.adj[branch][:8]:
-                    if len(nodes)>=96 or len(edges)>=210:break
+                for other,edge_id in (self.adj[branch] if all_results else self.adj[branch][:8]):
+                    if not all_results and (len(nodes)>=96 or len(edges)>=210):break
                     if not any(n["id"]==other for n in nodes):nodes.append(dict(self.topics[other],record_type="topic",perspective_support=True))
                     else:next(n for n in nodes if n["id"]==other)["perspective_support"]=True
                     existing_edge=next((item for item in edges if item["id"]==edge_id),None)
@@ -180,7 +180,7 @@ class Graph:
             kinds={"hierarchy":{"family"},"places":{"place"},"conditions":{"condition","equipment"}}[perspective]
             for edge in self.edges.values():
                 for a,b in ((edge["source"],edge["target"]),(edge["target"],edge["source"])):
-                    if a in selected and self.topics[b]["kind"] in kinds and len(nodes)<100 and len(edges)<220:
+                    if a in selected and self.topics[b]["kind"] in kinds and (all_results or (len(nodes)<100 and len(edges)<220)):
                         if not any(n["id"]==b for n in nodes): nodes.append(dict(self.topics[b],record_type="topic",perspective_support=True))
                         if not any(e["id"]==edge["id"] for e in edges): edges.append(dict(edge,record_type="relationship"))
         if perspective=="time":
@@ -188,22 +188,22 @@ class Graph:
             for source in self.snapshot["sources"]:
                 if source["id"] not in refs: continue
                 for i,date in enumerate(source.get("dates",[])):
-                    if len(nodes)>=108 or len(edges)>=220: continue
+                    if not all_results and (len(nodes)>=108 or len(edges)>=220): continue
                     sid=f"date:{source['id']}:{i}"
                     nodes.append({"id":sid,"label":f"{date['value']} · {source['id']}\n{date['meaning']}","kind":"event","domain":"source","record_type":"event","description":"A source date with its original meaning; it is not the date of every finding in that document.","dates":[date],"source_refs":[{"source_id":source["id"],"page":source["initial_pdf_page_ranges"][0][0],"locator":"Edition metadata; opening the selected scope. The exact date location is not asserted on this page."}]})
                     for node in nodes[:]:
-                        if len(edges)>=230: break
+                        if not all_results and len(edges)>=230: break
                         if node["id"]!=sid and any(r["source_id"]==source["id"] for r in node.get("source_refs",[])) and node.get("record_type")=="topic":
                             edges.append({"id":sid+":"+node["id"],"source":node["id"],"target":sid,"label":"documented in this source","record_type":"evidence","source_refs":node.get("source_refs",[])})
         # Source evidence is a representation, and is explicitly absent from domain-route traversal.
         if perspective=="sources":
             relevant=[f for f in self.findings if set(f["topic_ids"]) & selected]
             admitted=0
-            for f in relevant[:8]:
+            for f in (relevant if all_results else relevant[:8]):
                 source_ids={"source:"+r["source_id"] for r in f["source_refs"]}
                 extra_sources=source_ids-{n["id"] for n in nodes}
                 extra_edges=len(set(f["topic_ids"]) & selected)+len(f["source_refs"])
-                if len(nodes)+len(extra_sources)+1>108 or len(edges)+extra_edges>230: break
+                if not all_results and (len(nodes)+len(extra_sources)+1>108 or len(edges)+extra_edges>230): break
                 admitted+=1
                 fid="finding:"+f["id"]
                 nodes.append(dict(f,id=fid,record_id=f["id"],record_type="finding",domain="source",kind=f["kind"],description=f["text"],group_id="findings"))
@@ -230,7 +230,7 @@ class Graph:
             default=sorted(methods,key=lambda t:(preferred.index(t["id"]) if t["id"] in preferred else 99,t["label"]))[:3]
             chosen=[self.topics[x] for x in (compare or []) if x in self.topics][:4] or default
             if not chosen: notices.append("No comparison information recorded for this search context. The centre and search have been kept.")
-            facets=sorted({k for t in chosen for k in t.get("aspects",{})})[:8]
+            facets=sorted({k for t in chosen for k in t.get("aspects",{})}); facets=facets if all_results else facets[:8]
             nodes=[dict(t,record_type="topic") for t in chosen]
             if centre and centre not in {t["id"] for t in nodes}: nodes.append(dict(self.topics[centre],record_type="topic"))
             edges=[]
@@ -244,16 +244,37 @@ class Graph:
                     else:
                         edges.append({"id":f"missing:{t['id']}:{facet}","source":t["id"],"target":aid,"label":"Not recorded","record_type":"gap","source_refs":[]})
             notices.append("Comparison retains each trial's conditions. Different contexts are not a controlled head-to-head comparison. Use Compare in a topic's inspector to choose up to four items.")
+        topic_count=sum(n.get('record_type')=='topic' for n in nodes)
+        complete_endpoints=(len(routes)+len(missing)) if centre and perspective!='comparison' else topic_count
+        counts={'topics':topic_count,'findings':sum(n.get('record_type')=='finding' for n in nodes),
+                'sources':sum(n.get('record_type')=='source' for n in nodes),'items':len(nodes),'relationships':len(edges),'unrouted_matches':len(missing)}
         return {"revision":self.snapshot["revision"],"centre":centre,"search":search,"perspective":perspective,
-                "nodes":nodes,"edges":edges,"routes":routes,"matches":matches[:48],"passages":[h for h in hits if h["kind"]=="passage"][:10],
-                "notices":notices,"total_results":total,"shown_results":len(routes) if centre else len(nodes),"limits":LIMITS,"depth":depth}
+                "scope_counts":counts,"nodes":nodes,"edges":edges,"routes":routes,"complete":all_results,"matches":matches if all_results else matches[:48],"passages":[h for h in hits if h["kind"]=="passage"] if all_results else [h for h in hits if h["kind"]=="passage"][:10],
+                "notices":notices,"total_results":complete_endpoints if all_results else total,"shown_results":complete_endpoints if all_results else (len(routes) if centre else len(nodes)),"limits":LIMITS,"depth":depth}
 
     def inspect(self, record_id):
         record_id=self.store.resolve(record_id)
         if record_id in self.topics:
             return {"record":self.topics[record_id],"relationships":[e for e in self.edges.values() if record_id in {e["source"],e["target"]}],
                     "findings":[f for f in self.findings if record_id in f["topic_ids"]],
-                    "unresolved":[u for u in self.snapshot["unresolved"] if record_id in u.get("topic_ids",[])]}
+                    "unresolved":[u for u in self.snapshot["unresolved"] if record_id in u.get("topic_ids",[])],"organization":self.organization(record_id)}
         edge=self.edges.get(record_id)
         finding=next((f for f in self.findings if f["id"]==record_id.removeprefix("finding:")),None)
         return {"record":edge or finding,"relationships":[],"findings":[],"unresolved":[]}
+
+
+    def organization(self, topic_id):
+        groups={g['id']:g for g in self.snapshot.get('browse_groups',[])}
+        def entry(group, role=None):
+            path=[];at=group['parent_id'];seen=set()
+            while at not in seen:
+                seen.add(at)
+                parent=groups.get(at)
+                labels={'species':'Species & companions','habitats':'Habitats & conditions','restoration-methods':'Restoration methods','irrigation':'Establishment water','drones':'Drones & components','monitoring':'Monitoring','programmes':'Funding programmes','activities':'Activities','requirements':'Requirements'}
+                path.append({'id':at,'label':parent['label'] if parent else labels.get(at.split(':')[-1],at)})
+                if not parent:break
+                at=parent['parent_id']
+            return dict(group,role=role,parent_path=list(reversed(path)))
+        return {'revision':self.snapshot['revision'],
+                'memberships':[entry(g,m['role']) for g in groups.values() for m in g['members'] if m['topic_id']==topic_id],
+                'anchored_groups':[entry(g) for g in groups.values() if g['anchor_topic_id']==topic_id]}

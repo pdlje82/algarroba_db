@@ -1,14 +1,14 @@
-import {GROUP_LABELS,landscapeGroup,initialState,type State,type Catalog,type View,type Item,type Route,type Vec3,type SceneContext,type CameraPose,type SceneReference} from './types.ts';
+import {GROUP_LABELS,landscapeGroup,initialState,type State,type Catalog,type View,type Item,type Route,type Vec3,type SceneContext,type CameraPose,type SceneReference,type SceneLayer,type LayerExploration} from './types.ts';
 import {projectKnowledge} from './projection.ts';
 import {PLANE_GAP,FOCUS_OFFSET} from './depth.ts';
 import {browseGroups,primaryGroup,rootGroup,directNeighbours} from './organization.ts';
 import {layerReturns} from './layerNavigation.ts';
 export {PLANE_GAP,FOCUS_OFFSET} from './depth.ts';
 export const MAX_ITEMS=120,MAX_LINKS=240;
-export type SceneCard={id:string;record:Item;home:Vec3;position:Vec3;plane:number;owners:string[];width:number;height:number;internal?:InternalSummary};
+export type SceneCard={id:string;record:Item;home:Vec3;position:Vec3;plane:number;owners:string[];width:number;height:number;internal?:InternalSummary;layerId?:string;dimmed?:boolean};
 export type SceneLink={id:string;source:string;target:string;record:any;relationshipIds:string[];active:boolean};
 export type InternalSummary={id:string;cardId:string;relationshipIds:string[];record:any};
-export type Scene={cards:SceneCard[];links:SceneLink[];internalSummaries:InternalSummary[];retainedLayers?:State['retainedLayers'];references?:SceneReference[];context:SceneContext;key:string;signature:string;notice:string;level:number;mode:'layered'|'flat';focused:string|null;homeMarker?:{id:string;label:string;home:Vec3};revision:number};
+export type Scene={layers?:SceneLayer[];layerView?:LayerExploration;activeCardIds?:string[];cards:SceneCard[];links:SceneLink[];internalSummaries:InternalSummary[];retainedLayers?:State['retainedLayers'];references?:SceneReference[];context:SceneContext;key:string;signature:string;notice:string;level:number;mode:'layered'|'flat';focused:string|null;homeMarker?:{id:string;label:string;home:Vec3};revision:number};
 const copy=<T,>(value:T):T=>JSON.parse(JSON.stringify(value));
 const empty=():SceneContext=>({homes:{},flat:{},owners:{},planes:{},cameras:{}});
 export function sceneKey(s:State){return s.perspective+':'+(s.centre||'overview')+':'+s.search}
@@ -16,7 +16,8 @@ export function normalizeExploration(value:Partial<State>|null):State{
  const next={...copy(initialState),...copy(value||{})};
  for(const key of ['expandedGroups','expandedRoutes','branches','selectedEdges','compare'] as const)next[key]=[...new Set(next[key]||[])];
  next.positions=next.positions||{};next.groupLimits=next.groupLimits||{};next.alternatives=next.alternatives||[];
- if(!next.scene||![3,4].includes(next.scene.version))next.scene={version:4,mode:'layered',contexts:{}};
+ if(!next.scene||![3,4,5].includes(next.scene.version))next.scene={version:4,mode:'layered',contexts:{}};
+ if(next.scene?.version===5){next.layoutVersion=5;return next}
  const memory=next.scene!;memory.version=4;
  const oldGap=typeof memory.planeGap==='number'&&memory.planeGap>0?memory.planeGap:260;
  const oldOffset=typeof memory.focusOffset==='number'&&memory.focusOffset>=0?memory.focusOffset:24;
@@ -43,6 +44,7 @@ export function normalizeExploration(value:Partial<State>|null):State{
 export function rememberScene(s:State,scene:Scene,pose?:CameraPose):State{
  // A pending request still paints the last working scene; it must not overwrite new controls/caches.
  if(scene.key!==sceneKey(s))return copy(s);
+ if(scene.layerView){if(s.layerView&&(s.layerView.change||0)!==(scene.layerView.change||0))return s;const context=copy(scene.context);if(pose)context.cameras[scene.mode]=copy(pose);return {...s,layoutVersion:5,layerView:copy(scene.layerView),scene:{...s.scene!,version:5,presentation:'foreground',planeGap:PLANE_GAP,focusOffset:0,revision:scene.revision,contexts:{...s.scene?.contexts,[scene.key]:context}}}}
  const memory={...(s.scene||{version:4 as const,mode:'layered' as const,contexts:{}})};
  const context=copy(scene.context);context.cameras={...context.cameras,...copy(memory.contexts[scene.key]?.cameras||{})};if(pose)context.cameras[scene.mode]=copy(pose);
  context.signature=scene.signature;context.signatures={...context.signatures,[scene.mode]:scene.signature};context.laidOut={...context.laidOut,[scene.mode]:scene.cards.map(c=>c.id)};

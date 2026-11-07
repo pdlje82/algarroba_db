@@ -484,3 +484,249 @@ and perspective foreshortening remain visible limits; selected routes are inspec
 cards mask internal lines. Half-opacity/darkening and blur can be independently disabled. Human
 pointer/reading comfort remains the user's gate for additional ingestion; no library expansion
 was performed.
+
+
+## 7 November 2026 — Independent layers and complete contents
+
+This is the current implementation. Earlier entries describe historical prototypes, including
+pagination, camera-facing cards and obstacle detours that are no longer used by the v5 frontend.
+
+Before editing, retained backups/pre-independent-layers-20261107T101700Z.zip with497 source/build
+files, including uncommitted work. SHA256:
+461123ac7b2008db3c7e99f0c6e55e70991fecd173fb3b8fc55fa93614dc345f.
+
+Automated checks:
+
+- Production build passed. The existing large bundled-renderer warning remains; dependencies
+  remain pinned. npm ls three confirms one shared Three.js0.187.0 installation.
+- npm test passed116 checks:17 layout/legacy,75 compatibility/render and24 v5 independent-layer
+  regressions. New checks cover populated source recovery, co-front contents/connections,
+  independent branches, complete scopes beyond120/240, exact relationship accounting, shared
+  rehosting, grouped scopes, all ten result perspectives, viewport ratios, movements, cached mode
+  restore, route completeness, batched Expand all, stable ForceGraph bindings, real fCoSE slots,
+  research markers and legacy route/evidence/source migration.
+- Backend suite:23 passed. Complete mode returns all281 topics/329 facts and all140 findings/nine
+  sources. A150-topic synthetic search proves removal of the100/48/12 limits in complete mode.
+  Legacy calls retain their bounded response. Organization discovery and pooled v5 saved histories
+  are tested additively alongside old list histories and existing integrity/import regressions.
+- Browser GPU fixture passed all16 combinations of Blur/Darken/Transparency in both themes.
+  Colour samples were within1/255 of expected values. The same background region had edge-energy
+  2721.18 sharp,397.80 depth-blurred,2.64 frosted. Selected/inter-layer lines stayed sharp outside
+  the finite surface and softened behind it. Selected-line visibility over a muted card changed
+  by128.67/255 in the sampled region; active-card protection differed by0. No compositor warnings.
+
+Browser checks used isolated data/independent-layers-qa.sqlite, never production writes:
+
+- Establishment water shows its13 direct browsing members, including the Cocoon anchor; the
+  overview count22 includes its nine organized descendants. Making Cocoon centre keeps source
+  cards/coordinates and opens22 recorded neighbours. Organized contents have their own co-front
+  surface and nine labelled location references because those members already have cards in
+  the connections surface. One Cocoon card remains. Returning restores the populated source
+  immediately. Layer labels and four corner controls remain attached after fitting/turning.
+- All four corner controls were exercised using arrow keys; grouping toggles and layer controls
+  worked. Combined60-degree tilt/60-degree sideways limit was reached without collapse; Reset
+  returned25/0. Native pointer-drag testing was stopped by the Windows browser automation policy
+  because URL-policy enforcement is unsupported for that browser. Native mouse drags therefore
+  remain a hands-on verification item; keyboard movement and ray/plane/cache behavior were checked.
+- All ten perspectives were exercised in both Layered and Flat with centre preserved. Focused
+  Sources reached428 visible cards. The running normal server also returned430 semantic records
+  in an uncentred complete Sources response. No More nodes or display admission caps were used.
+- Carob plant communities retained source-specific ecological wording. Offline PDF inspection
+  rendered FOREST-002 page18. The complete Carob → Dryland restoration → Restoration monitoring
+  → Drone restoration imagery → Drones route exposed all steps/evidence. Alternatives and the
+  combined complete-route expansion worked. Expand all creates one complete combined scope.
+- Cocoon and AL20 were explored; original source IRR-003 page92 opened above the fullscreen
+  inspector. One inspector remained after topic changes; keyboard movement/resize worked,
+  and bounds stayed reachable across fullscreen size changes. Light/dark and Blur controls
+  preserved the exploration. Fullscreen was temporary and was not restored after reload.
+- Saved exploration “QA · independent Cocoon layers” reopened with its independent surfaces,
+  grouping/offsets, selected knowledge and pooled full history. Reload restored the v5 session.
+- Static handoff KGB-2026-11-07-e81d0ca6 was saved only in the isolated database. It captured AL20,
+  Library only, revision3, seven layer definitions, full v5 state/history and current organization
+  rules. Its editable prompt explicitly retained wider supported discoveries. No research or
+  AI API was executed. Synthetic-group tests prove new stored rules are discovered generically.
+- A task marker is excluded from factual placement and cannot attach another task to the current
+  centre. Saving a task no longer breaks subsequent scene preparation.
+- The normal application at127.0.0.1:8765 was restarted through its project-checked launcher.
+  Its existing Carob/drone exploration migrated successfully with the selected route and no
+  displayed errors. The existing normal application tab was retained.
+
+Integrity and boundaries:
+
+Raw production topics, relationships, findings, sources, coverage, page_text, browse_groups and
+meta rows equal the pre-change baseline. Revision remains3; factual counts281/329/140, nine
+originals and68 curated pages are unchanged. All nine source hashes match the registered
+manifest. No organization import, schema migration or source-library write occurred.
+Project maintenance instructions now require inspecting current stored organization generically;
+specific Cocoon guidance remains in its existing database definition.
+
+Artifacts: docs/screenshots/independent-layers/before.png and after-carob-route.png show the old
+and migrated Carob/drone views. paired-cocoon.png shows independent co-front surfaces;
+after-source-return.png shows the populated source and CENTRE anchor after return.
+light-frosted.png and camera-60-degrees.png record appearance/turning checks. The user's original
+empty-source screenshot, when available, is retained as before-empty-source.png.
+Detailed local test metrics are in data/independent-layers-*-check.json and
+independent-layers-gpu-metrics.json; source/table integrity is in independent-layers-integrity.json.
+
+Remaining practical limits: complete broad scopes are dense. Global fitting can make labels small;
+use Fit this layer, zoom, Group nodes, individual relationship inspection and Flat view. Initial
+large scene/theme renders may pause while GPU resources compile. Crossings remain in general
+context. Human comfort, including native handle dragging, is still the gate before more ingestion.
+
+QA browser tabs and the three project-owned QA services were closed after verification. The normal
+8765 service remains available. Its source counts distinguish281 topic endpoints from430 complete
+source-perspective records (including140 findings and9 source documents); comparison counts reflect
+the explicitly chosen methods. Background test processes did not remain active.
+
+
+### Remove centre control
+
+Added a visible × button beside Centre, with the accessible name Remove centre. The No centre
+menu option uses the same action. It clears the designation/badge without closing layers,
+rerunning their layout, changing search/perspective or restoring an older camera. Other inspected
+records remain selected; Back restores the centre. The25 v5 regressions and production build
+passed. Browser verification kept34 cards/four layers, search drone, Technology and25/0 camera
+through removal; Back restored Carob and the button. No displayed errors. Screenshot:
+docs/screenshots/remove-centre.png. No database or source changes were required.
+
+
+### Adaptive overview format
+
+The overview frame now uses the same content-bounds and viewport-aspect calculation as detail
+frames, rather than a fixed2160×1200 rectangle. All nine overview cards keep their coordinates.
+The26 v5 checks and production build passed. The new regression covers16:9,4:3,9:16 and2.6:1
+in Layered and Flat, checking complete card containment and unchanged node positions. Browser
+checks showed all nine overview cards with no displayed errors in normal/fullscreen workspace
+sizes; the preceding exploration was restored afterward. Screenshot:
+docs/screenshots/adaptive-overview.png. No backend or knowledge changes.
+
+### Topic counts on separate lines
+
+The shared card renderer preserves explicit label line breaks and reserves a separate line for
+the topic count, including when a long title needs truncation. Production build and diff checks
+passed. Browser inspection confirmed separate count lines on overview cards and no displayed
+errors; the preceding 34-card/four-layer exploration was restored afterward. Screenshot:
+docs/screenshots/topic-count-newline.png. No backend, knowledge or layout changes.
+
+### Group-dependent frame sizing and layer colours
+
+Group nodes uses compact reading slots and frames use only visible content bounds. Switching
+back restores factual slots, offsets and full frame size. Frames resize over300ms (immediate
+with reduced motion); picking, corner controls and frosting follow the same animated geometry.
+Each stable layer ID supplies a faint surface/border hue, with theme-specific strength. The
+current surface colour is composited independently of the empty canvas, including co-front layers.
+
+All105 scene/render checks and the production build passed. New regressions cover shrinking and
+restoring frames in Layered/Flat, unchanged other layers/offsets, complete relationship accounting,
+cached coordinates away from the origin, stable theme hues and compositor resize invalidation.
+Browser checks showed Establishment water changing1514x658 to1007x438 when grouped and restoring
+on Back, with no displayed errors. Checked dark Layered, light Flat and fullscreen. The prior
+34-card/four-layer exploration, Layered mode and System appearance were restored. Screenshots:
+docs/screenshots/grouped-layer-colour.png and docs/screenshots/grouped-layer-colour-light.png.
+No backend, database, organization or original-source changes.
+
+### Grouping availability on leaf layers
+
+Reproduced the screenshot path: Species & companions -> Group nodes -> Species (34 topics).
+That leaf has no additional subgroup headings, so Group nodes was deliberately disabled to
+prevent opening Species recursively. Both the surface controls and Layers menu now replace the
+misleading dropdown with No further groups and offer Parent groups where its parent is grouped.
+The action folds the leaf and returns to the existing Families/Species cards.
+
+Production build and all30 v5 checks passed, including the leaf/parent return regression with
+complete relationship accounting. Browser verification confirmed no disabled Group nodes options
+in that leaf, a working parent return (11 cards/two layers), and no displayed errors. The prior
+34-card/four-layer exploration was restored. Screenshot: docs/screenshots/leaf-layer-grouping.png.
+No knowledge, organization, source or backend changes.
+
+### Responsive overview card arrangement
+
+The overview now rearranges its nine area cards as well as its frame. A deterministic reading
+grid chooses rows/columns using card sizes and clearances, then spreads cards across the frame.
+At three columns the ecosystem/technology/funding columns remain familiar; other grids keep
+domain order. Opened detail slots/offsets, membership and cameras remain independent of this
+overview-only reflow. Existing300ms/reduced-motion transitions update attached lines and minimap.
+
+All106 scene/render checks and the production build passed. The responsive regression covers
+Layered/Flat at ratios0.3,9:16,1:1,4:3,16:9,2.6:1 and4:1: nine identities, containment, clearances,
+use of frame area, exact relationship accounting, unchanged detail positions and deterministic
+return to earlier proportions. Browser checks showed2x5 in a750x1100 portrait fullscreen viewport
+and5x2 in a wide1800x800 viewport, with no displayed graph errors. The temporary viewport override
+was reset and the original34-card/four-layer exploration restored. Portrait screenshot:
+docs/screenshots/responsive-overview-portrait.png. No backend, database or source changes.
+
+### Tight grouped-layer bounds
+
+Grouped frames now wrap visible nodes without the window-aspect stretch. They use32-unit side/
+bottom margins,100 units above for the heading/controls and a300x240 minimum. Headings remain
+inside the compact frame, including during resizing. Overview/ordinary-topic proportions and
+cached factual positions/manual offsets stay intact.
+
+Production build and all107 scene/render checks passed. The new two-group regression covers
+very tall through very wide aspects in both modes, bounded margins, full relationship accounting,
+unchanged offsets and exact return to All topics. The Families/Species frame is300x380 for the
+portrait case; the live normal-window check showed558x240, with no displayed graph errors.
+Screenshot: docs/screenshots/tight-grouped-frame.png. The preceding34-card/four-layer exploration
+was restored. No backend, database, organization or source changes.
+
+### Tight bounds for every pane
+
+The same content-bounds policy now applies to overview, ordinary topics, connections, centres,
+results, routes and grouped views. Margins are32 at the sides/bottom and100 above; empty/minimal
+panes keep300x240 for controls. Actual reference heights and optional research cards are included.
+No viewport-aspect padding is added. Circular connection slots, existing card/reference positions,
+manual offsets and cameras are preserved. Finite frosting surfaces, borders and handles use the
+same bounds and existing transitions.
+
+All109 scene/render checks and the production build passed. Every v5 ledger check now also
+checks tight pane containment across all perspectives and expansion types. New checks cover
+unchanged circular slots/reference positions/cameras across five tall-to-wide ratios in both
+modes, plus moving an empty pane without losing its position. Browser comparison retained34
+cards/four layers: the Carob origin shrank from640x450 to300x240, its connections from1794x1262
+to1678x1120, and the route frame from1063x748 to718x680. No displayed graph errors. Screenshot:
+docs/screenshots/tight-all-layer-panes.png. No backend, factual, organization or source changes.
+
+### Compact contents and source-aligned opening
+
+New/reopened scopes and changed memberships use compact grids or complete, collision-checked
+elliptical rings. Clearance is24 world units around rectangular cards; native comparison, date,
+classification, place and source groupings retain their order. Compact is available on each pane
+and in Layers; it preserves manual pane position, affects only the active mode and is one Back
+step. Older cached coordinates are adopted intact until reopening or explicit compaction.
+
+New Layered panes align their area centre to their source card's actual XY position, including
+overview cards and temporary group cards. Separate expansions get separate front depth bands;
+source cards remain at home. Flat retains side-by-side placement and its own caches. Additive v5
+packing/source/manual-position metadata is saved with history and perspective arrangements.
+
+The17 layout and114 scene/render checks passed; two additional targeted checks passed for moving
+a source before reopening its automatic child and restoring per-perspective manual positions.
+That covers133 frontend checks. All23 backend tests and the production build passed. Tests cover
+the watering-hose outlier, tight bounds, card clearance, all ten perspectives, stable selection,
+history round trips, exact source alignment, shared identities and research-card bounds. Ring
+packing took2-17ms for14-281 cards in the local Node check.
+
+Browser checks showed Establishment water at992x666 with Watering hose close to the other topics.
+Its pane centre and overview source were both(0,-142). The newly opened Cocoon pane centre and
+its source card were both(-119,-316). Compact preserved the parent pane's position, and the
+normal/angled views showed no displayed graph errors. Screenshots:
+docs/screenshots/compact-establishment-water.png and docs/screenshots/source-aligned-cocoon.png.
+The original34-card/four-layer route exploration was restored. No backend/API, database,
+organization, factual records or source-file changes.
+
+Pre-change source/build snapshot, including uncommitted work:251 files in
+backups/pre-compact-alignment-20261107T143708Z.zip. Earlier snapshots remain available.
+
+### Tripled layer spacing
+
+PLANE_GAP increased from520 to1560. The shared camera zoom-out range increased from20000 to60000
+to accommodate the deeper scene. Legacy route/result band recovery and migrated scene metadata
+use the shared gap instead of hardcoded520 values. Current v5 bands, compact XY slots, source
+alignment, manual offsets, cameras and Flat caches remain intact; the foremost plane stays at
+the reading distance and earlier planes recede three times as far.
+
+Production build and all118 scene/render checks passed. New regressions cover restoring old
+v5 spacing without changing XY/cameras/Flat, repeat restoration without compounding depth, and
+correct legacy fallback band numbers. Browser verification retained34 cards/four panes at depth
+level2: the overview moved fromZ=-1040 toZ=-3120, exactly threefold, without displayed graph
+errors. Screenshot: docs/screenshots/tripled-layer-spacing.png. No knowledge/backend changes.

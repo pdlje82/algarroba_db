@@ -22,7 +22,7 @@ DOMAIN = "Dryland and Mediterranean restoration, especially carob and associated
 class Exploration(BaseModel):
     label: str = Field(min_length=1,max_length=160)
     state: dict
-    history: list[dict] = []
+    history: list[dict] | dict = []
     history_index: int = 0
 
 
@@ -72,9 +72,9 @@ def create_app(store: Store | None = None):
         return dict(snap,perspectives=[{"id":i,"label":l} for i,l in PERSPECTIVES],limits=LIMITS,domain=DOMAIN,batches=imported)
 
     @app.get("/api/view")
-    def view(centre: str | None=None, search: str="", perspective: str="combined", limit:int=12,depth:int=6,compare:str="",branches:str=""):
+    def view(centre: str | None=None, search: str="", perspective: str="combined", limit:int=12,depth:int=6,compare:str="",branches:str="",all_results:bool=False):
         try:
-            return graph().view(centre,search,perspective,limit,depth,[x for x in compare.split(",") if x],[x for x in branches.split(",") if x])
+            return graph().view(centre,search,perspective,limit,depth,[x for x in compare.split(",") if x],[x for x in branches.split(",") if x],all_results=all_results)
         except ValueError as e:
             raise HTTPException(400,str(e)) from e
 
@@ -129,7 +129,7 @@ def create_app(store: Store | None = None):
     @app.post("/api/explorations")
     def save_exploration(value:Exploration):
         eid=uuid.uuid4().hex
-        payload=dict(id=eid,label=value.label,revision=store.revision(),state=value.state,history=value.history[-100:],history_index=value.history_index)
+        payload=dict(id=eid,label=value.label,revision=store.revision(),state=value.state,history=value.history if isinstance(value.history,dict) else value.history[-100:],history_index=value.history_index)
         with store.connect() as c:
             c.execute("INSERT INTO explorations VALUES (?,?,?,?)",(eid,value.label,now(),json.dumps(payload)))
         return payload
@@ -153,6 +153,7 @@ def create_app(store: Store | None = None):
         context["identity_reconciliation_required"]=original_revision is not None and original_revision!=store.revision()
         context["browse_groups"]=store.records("browse_groups")
         context["browse_group_revision"]=store.revision()
+        context["topic_organization"]={i:g.organization(i) for i in ids if i in g.topics}
         context["selected_relationships"]=[g.edges[e] for e in context.get("selected_relationship_ids",[]) if e in g.edges]
         text=f"""# Research task {task_id}
 Created: {now()}
@@ -177,6 +178,8 @@ Captured knowledge revision: {original_revision}; current revision: {store.revis
 Read this brief AND context.json; the live browser is not required. Inspect current records with
 python -m backend.cli search / inspect / export. Reconcile all stable IDs and older view state
 against the current knowledge before preparing mutations. SQLite is authoritative; exports are not editable masters.
+Version-five view_history may use pooled format5; frontend/explorationStorage.ts decodeHistory restores
+its complete entries and caches. Pool indices are presentation references, never knowledge IDs.
 
 Persistent browsing groups and maintenance rules:
 {json.dumps(context['browse_groups'],ensure_ascii=False)}

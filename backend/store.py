@@ -289,13 +289,13 @@ class Store:
         for p in c.execute("SELECT * FROM page_text").fetchall():
             c.execute("INSERT INTO search VALUES (?,?,?,?,?)", (f"{p['source_id']}:{p['page']}","passage",p["source_id"],"",p["text"]))
 
-    def search(self, term: str) -> list[dict]:
+    def search(self, term: str, limit: int | None = 100) -> list[dict]:
         tokens = re.findall(r"\w+", term, re.UNICODE)
         if not tokens:
             return []
         expression = " AND ".join('"'+t.replace('"','')+'"*' for t in tokens[:12])
         with self.connect() as c:
-            return [dict(r) for r in c.execute("SELECT id,kind,label,snippet(search,4,'[',']',' … ',18) AS excerpt,bm25(search,0,0,8,6,1) AS rank FROM search WHERE search MATCH ? ORDER BY rank,id LIMIT 100",(expression,))]
+            return [dict(r) for r in c.execute("SELECT id,kind,label,snippet(search,4,'[',']',' … ',18) AS excerpt,bm25(search,0,0,8,6,1) AS rank FROM search WHERE search MATCH ? ORDER BY rank,id"+(" LIMIT ?" if limit is not None else ""),(expression,limit) if limit is not None else (expression,))]
 
     def resolve(self, topic_id: str) -> str:
         with self.connect() as c:

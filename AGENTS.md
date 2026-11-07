@@ -44,80 +44,79 @@ Run proportionate backend integrity and headless graph checks plus browser check
 Do not overwrite the user's existing brief or EPUB edits. Do not publish or expand the corpus
 before the user's separate confirmation of demonstrator comfort.
 
-## Prototype two rendering
+## Independent layers and renderer contracts (v5)
 
-Read PROTOTYPE_TWO.md for state and renderer contracts. The overview is a stable XY base map;
-Z means opened detail, never evidence strength or subject category. Keep application-owned
-coordinates, ownership and route IDs authoritative. Disable continuous forces and node dragging.
-Layered and Flat use the same Three renderer with independent cached layouts and cameras.
-Logical homes stay stable; the layered display subtracts the foremost ordinary plane's depth,
-keeping new detail at the reading plane while the overview recedes. Cameras use this foreground
-frame. Preserve the idempotent presentation migration and expansion return steps in snapshots.
-Back to parent/Earlier layers close ownership contributions, never delete knowledge or shared
-cards still needed by an earlier expansion. Minimap rays intersect the actual receded base plane.
-Clicking/expanding a topic or group pans it toward the usable graph centre, excluding actual
-inspector/control bounds. Keep homes, angle and zoom intact; do not recenter on history/mode
-restoration, theme changes, resizing or click-to-collapse.
-Empty layer surfaces/borders highlight on hover and return to that depth on click, folding all
-deeper expansions. Preserve card/link picking priority, drag-to-pan and keyboard Layers controls.
-Keep cached deeper members folded under layerCeiling until an explicit new reveal; summaries
-must still account for hidden members, and displayed routes must remain complete.
-Internal same-representative relationships use inspectable card badges, not aggregate self-loops.
-Count real IDs exactly once across links and internal summaries; preserve aggregate IDs on restore.
-Replace complete LineGeometry atomically when segment counts change. Render/depth proxies must
-follow replacements; do not modify Three's private capacity cache. Clip at actual card borders,
-keep routing clearance separate, and interpolate inter-layer depth by distance along the path.
-Draw one labelled frame per real plane; group headings must not introduce competing rectangles.
-Layer hover uses its own plane-only hit path (100ms entry/150ms exit/120ms fade), independent of
-card/link click priority. Hover never changes blur, camera or exploration. Clear it during dragging.
-Cards/badges/headings are XY-oriented plane meshes. Route/pick/project the same actual card
-quadrilaterals, using separate padded obstacles. Keep intra-layer links on their plane.
-Depth effects use per-layer half-float buffers, depth blur, independent darkness/half opacity,
-then physical world-Z clipping and a finite-plane frosting mask. Selected and front-leading
-connections skip depth blur but receive frosting behind the surface. Foreground stays sharp.
-Empty surfaces never stamp focus depth; stencil lines behind card shapes. Preserve averaged RGBA
-in the Bokeh shader; its stock forced alpha one is unsuitable for transparent layer buffers.
-Blur/Darken/Transparency are independent preferences (default off/on25%/on50%). Flat and the base
-overview stay sharp. Dispose owned resources without disposing shared graph assets.
-Pass disposable data to the renderer. A card, group, tether, plane, evidence projection or research
-marker is a view object, never permission to invent a factual topic or relationship.
-Keep unrelated connections faint on selection and all card backgrounds opaque. Use 300 ms
-transitions or immediate reduced-motion updates. Resize, theme, fitting and state restoration
-must never cause semantic zoom/collapse. Preserve original v1 browser storage during migration.
-Before replacing this architecture, retain the local prototype-one snapshot listed in
-PROTOTYPE_TWO.md. Do not alter the authoritative database to accommodate a renderer change.
+Read PROTOTYPE_TWO.md. Keep semantic records separate from surfaces, cards, references, handles
+and summaries. The nine-area overview stays on Plane0 and reflows its grid/spacing with usable
+viewport proportions. Its coordinates stay stable through navigation at the same proportions;
+window resizing must not move manually positioned detail layers or collapse branches. Stable layer IDs
+identify expansions; dependency parents determine collapse, and presentation bands determine Z.
+Keep the selected anchor in its source layer. Connections and permanent-group contents are
+separate expansions. New Layered panes use separate front bands and centre their area on the
+source card's XY position; Flat packs panes beside one another. Children open at the next band.
+Use the shared1560-unit PLANE_GAP in rendering and legacy band recovery; do not hardcode old gaps.
+Returning folds only descendants; unrelated branches survive. Return to overview closes all.
+One canonical card per identity; shared members use labelled navigation references. When a host
+closes, surviving memberships rehost into reserved slots. Never leave an apparently empty layer
+when it has references or cached source members. Group mode is local to each layer.
 
+Every pane wraps its own visible cards/references with small margins and a heading/control band;
+do not stretch pane bounds to the window ratio. Compact new/changed contents with readable card
+clearance, keeping rings, native perspective groups and manual pane offsets. Compact this layer
+is a reversible action for existing/saved arrangements. Ordinary selection must not repack.
+Adopt older saved coordinates until reopening, changing their contents or explicit compaction;
+complete new packing snapshots restore directly. Empty panes retain controls.
 
-## Permanent browsing organization and v4 centre views
+All scopes are complete, without More nodes, endpoint pagination or 120/240 display caps.
+The frontend requests all_results=true. Route reach remains six/eight steps, up to three
+alternatives; comparison still uses explicitly chosen methods. Admit candidates atomically,
+cancel superseded workers and apply a 20-second deadline. Never silently truncate a layer.
+Deterministic reading slots and native perspective groups are fixed fCoSE constraints; completed
+v5 snapshots skip layout. Preserve offsets committed while requests are pending.
 
-- Read `python -m backend.cli groups` and current rules before importing knowledge. Reuse the
-  Cocoon identity/group for specific components, operation/refill, limitations, requirements and
-  findings. Shared equipment/general methods keep their wider context. Capture other useful
-  in-domain discoveries too; membership never implies a factual relationship or route shortcut.
-- Optional `browse_groups` changes use the same checked batch, base_revision, transaction and
-  backup process. Keep stable IDs, primary/shared membership, valid anchors/parents and an
-  acyclic hierarchy. The approved metadata migration is intentionally an organization change;
-  renderer work alone must not change facts. Never edit the old source library.
-- Make centre collapses child expansions but RETAINS named layer surfaces and cached contents;
-  open the clean direct-neighbour star ahead of them from the selected topic's ordinary layer.
-  Preserve full Back history. Immediate repeats reuse the current clean centre plane. Reopen
-  retained layers explicitly. Search/perspective results occupy separate arrangements.
-- Shared topics keep one factual card; thin Shared labels are orientation aids, excluded from
-  factual IDs. Root XY caches remain independent of search/perspective. Keep endpoint/scene
-  budgets, route ownership and meaningful perspective ordering.
-- State v4 uses a new browser key, preserving v3/v1. Legacy geometry remains until explicit
-  Make/Rebuild centre. Effects/hover/fullscreen remain outside exploration history. Camera
-  limits are tilt15–60 degrees, sideways +/-60; default25/0; Flat perpendicular. Ctrl/Shift-drag
-  gestures and angle buttons use the same limits. No roll or continuous force simulation.
+Cards/badges/headings follow their XY plane. Connections are straight 3D segments, attached at
+actual projected quadrilateral edges using ray/plane intersections. No obstacle detours. Render
+all constituent facts exactly once as links, summaries or internal badges. Replaced geometry
+must update drawing, picking and blur proxies together. Use only public Three APIs.
 
-Centre sessions invalidate stale owner/visit/depth caches across search/perspective contexts while
-retaining usable XY homes. Returning to overview starts a fresh phase; a closed centre plane stays
-closed during new child expansion until Show/Make centre. Include centre visibility/session and
-retained surfaces in scene invalidation dependencies. Keep inspected evidence when Make centre
-uses the already selected identity; resetting it without a refetch would lose findings/actions.
+Four corner handles translate an opened layer in XY, never resize or change depth. Pointer
+capture, four-pixel threshold and ray/plane movement suspend camera controls; cancel restores
+the starting offset and release commits one history step. Keyboard arrows move 20 projected
+pixels, Shift-arrows 60. The overview has no handles. Preserve stabilized independent hover
+(100ms entry,150ms exit,120ms fade). Hover never changes focus, blur, camera or exploration.
 
-## Pending user preference — 7 November 2026
+Selection focus adds 25% darkening and half opacity only to unrelated cards/labels. Active lines
+can cross muted cards; protected active cards hide lines under labels. This selection effect
+also works in Flat. Keep background effects independent (default Blur off, Darken25%, alpha50%).
+Render each background layer into reusable half-float targets, then physical world-Z clipping and
+finite-surface frosting. Selected/background-to-front lines skip depth blur, never frosting.
+Empty planes must not stamp focus depth. Preserve averaged RGBA in the Bokeh shader. Restore a
+sharp usable view if effects fail; PDF/HTML colours stay outside graph effects.
 
-For the next interaction revision, opening a group/detail layer should show all its topics at
-once, without a More topics node, pagination or a replacement Show more button. See the pending
-revision in PROTOTYPE_TWO.md. This note does not itself authorize implementation now.
+Keep disposable renderer data AND root GPU objects stable when reusing ForceGraph objects;
+rebinding a reused object to a new data identity before the old mapping is removed corrupts its
+mapper. Swap changed child assets, dispose retired resources, and reuse textures/lines during
+layer movement. Disable continuous forces and node dragging. Camera limits: tilt15–60 degrees,
+sideways +/-60, default25/0; Ctrl/Shift-drag and angle buttons share limits, with no roll/rear view.
+Flat is perpendicular and has independent positions/cameras. Fit, resizing, theme and restore
+must never invoke semantic collapse. Keep 300ms transitions or immediate reduced-motion changes.
+
+State/history v5 uses kgb:exploration:v5 and preserves original v4/v3/v1 keys. Pool repeated scopes
+and layout caches; mirror sessions in local IndexedDB so a full localStorage does not lose a
+working exploration. Fullscreen, appearance, effects, selection focus and inspector bounds stay
+outside exploration history. Saved-view/research payloads include full structured scene state.
+
+## Self-describing knowledge organization
+
+Before maintenance, inspect current stored organization using backend.cli groups, inspect and
+export. Read memberships, primary/shared roles, parent paths, anchored groups, member IDs and
+maintenance rules at the current revision. Follow those definitions generically; do not add
+hardcoded topic-specific rules to application code or this file. The rules belong to the database
+and are included automatically in research handoffs. Distinguish permanent groups from temporary
+perspective headings. Membership is organization, never a factual edge or route shortcut.
+
+Optional browse_groups changes use checked import batches, base_revision, preview, transactions,
+duplicate checks and backups. Preserve unique primary memberships and acyclic parents. Capture
+all useful supported discoveries across the agreed domain, including outside the task and visible
+layers. This rendering revision must not change factual records, organization definitions,
+knowledge revision or original source hashes. Browser writes use isolated QA databases.

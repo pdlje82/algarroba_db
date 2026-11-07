@@ -1,180 +1,160 @@
-# Prototype two: layered knowledge browser
+# Prototype two: independent layered browser
 
-Approved 6 November 2026, including clearer exploration, persistent organization and independent
-background effects. The updated brief and user corrections govern this implementation.
+Current interaction revision approved 7 November 2026. README.md describes user controls;
+this file describes implementation contracts. The updated prototype brief remains authoritative.
 
-## Architecture
+## Architecture and boundaries
 
-One offline React/TypeScript frontend, one FastAPI application and one authoritative SQLite store.
-Pinned react-force-graph-3d 1.29.2 / shared Three.js 0.187.0 render the scene; fCoSE 2.2.0 calculates
-candidate XY positions in disposable workers. PDF.js handles local sources; react-rnd 10.5.3
-supplies the single fullscreen inspector. Continuous forces and node dragging are disabled.
+One React/TypeScript frontend, react-force-graph-3d1.29.2, one Three.js0.187.0 installation,
+fCoSE2.2.0 in a disposable XY worker, PDF.js6.5.438, react-rnd10.5.3, FastAPI and SQLite.
+Dependencies remain pinned and bundled for offline use. The original nine sources and selected
+68 PDF positions are unchanged. Original library files remain read-only. No AI API, autonomous
+researcher, new ingestion, hosting, new schema or knowledge/organization import is part of this revision.
 
-Application code owns identities, expansion ownership, geometry, routes and history. The renderer
-receives disposable copies. Failed/superseded layout never replaces a working scene. There is no
-AI API, autonomous classification/research, browser group editor, new backend service or hosting.
+## Layers, ownership and contents
 
-Current official references: [PlaneGeometry](https://threejs.org/docs/pages/PlaneGeometry.html),
-[Mesh](https://threejs.org/docs/pages/Mesh.html),
-[OrbitControls](https://threejs.org/docs/pages/OrbitControls.html),
-[LineMaterial](https://threejs.org/docs/pages/LineMaterial.html),
-[EffectComposer](https://threejs.org/docs/pages/EffectComposer.html),
-[BokehPass](https://threejs.org/docs/pages/BokehPass.html),
-[react-force-graph](https://github.com/vasturiano/react-force-graph),
-[fCoSE](https://github.com/iVis-at-Bilkent/cytoscape.js-fcose).
-Installed APIs and official references verified 6 November 2026.
+The overview always contains nine stable knowledge areas on the base plane. Its grid and spacing
+adapt to the usable viewport; at unchanged proportions navigation preserves the map. An opened
+expansion has a stable ID, kind, anchor, dependency parent, scope, resolved membership, band,
+local grouping mode and independent mode offsets/slots. Depth is presentation order, not layer
+identity or evidence strength. Bands are 1560 units apart (three times the earlier520-unit gap).
+New detail opens at the next front band.
 
-## Centre, layers and knowledge ownership
+Opening a centre preserves source cards/slots/membership. The centre retains its source card and
+CENTRE badge; its connections layer contains neighbours, not a duplicate centre. An unseen centre
+gets a small named origin. Permanent-group contents and connections are separate expansions with
+independent front bands in Layered mode, each with its area centre at the source card's XY.
+Flat mode packs panes side by side with a100-unit margin. Repeats reuse an expansion and do
+not accumulate depth. Ordinary clicks open a group anchor's contents or a topic's neighbours.
+Explicit Open connected topics bypasses the organized-contents default.
 
-The base map is nine stable knowledge areas independent of centre/search/perspective. Depth means
-opened detail only. Logical homes are positive multiples of 520; rendering subtracts the foremost
-plane's Z so new detail stays at reading distance and older planes recede. Focus normally moves
-120 units ahead, with a home label/tether. Those aids are not factual connections.
+Dependency parents determine which descendants close. Returning brings the chosen layer forward,
+folds its descendants and keeps unrelated branches in place. Zoom out follows the current branch;
+at the overview it closes remaining branches. Return to overview closes all in one history step.
+A single full card represents each factual identity. Existing hosts are retained when another
+layer opens. Other memberships get compact dashed location links with their host name. All-shared
+layers have a complete reference list/explanation; genuinely empty scopes have a research action.
+Closing a host rehosts still-required cards into surviving reserved member slots.
 
-Make centre collapses child groups/branches/routes and returns focus home, but KEEPS the existing
-named surfaces and cached contents. A clean Centre plane opens ahead of them from the chosen
-card's ordinary source layer. Back restores the complete prior exploration. Layers/Reopen restores
-a retained layer's cached topics explicitly. Repeating Make centre on the current clean star reuses
-its plane. A new child exploration followed by Make centre retains that child surface too.
+All scopes are complete. No More nodes, pagination, endpoint48 cap or120/240 admission caps remain.
+Nested permanent groups remain anchors. Per-layer All topics/Group nodes is saved independently;
+the overview stays grouped. Display-only groups never recursively represent themselves.
+Summaries and internal badges retain exact IDs and count factual relationships once. Group
+membership is organization and never a route shortcut. Routes retain six/eight-step reach, up to
+three alternatives, and every included intermediate. Existing endpoints stay fixed on route reveal.
 
-Only recorded direct neighbours enter the centre star: 12 initially, +12, stable label-sized rings.
-One spoke per neighbour retains every applicable relationship ID. Other connections among these
-neighbours are initially an inspectable badge. Nursery watering has one direct neighbour, Dryland
-restoration. Indirect irrigation/query results must not become direct spokes.
+## Layout, navigation and handles
 
-Search/perspective/detail keep their values during centre changes. Show results opens a separate
-arrangement; changing search/perspective explicitly opens/updates it. All ten perspectives retain
-meaningful native arrangements: comparison columns, multiple classifications, places, dated order,
-provenance, dependency chains, ecological/technology/funding families. Centre caches are shared
-across search/perspective; Flat results have independent arrangements.
+Usable viewport aspect accounts for interface/inspector bounds. New ordinary scopes use balanced
+label-sized grids; direct neighbours use elliptical rings. Native result arrangements retain
+comparison columns, classifications, source groupings, dates including Undated, places and
+conditions/components. Large categories use several reading columns. All panes wrap their own
+visible cards, location references and optional research cards with32-unit side/bottom margins,
+a100-unit heading/control band and a300x240 minimum. No pane stretches to match the viewport ratio.
+New/changed scopes use compact reading slots with24-unit card clearance. Connections use complete
+elliptical rings with checked rectangular-card clearance; collisions never scatter nodes into a
+grid. Comparison columns, classifications, dates/Undated, places and source groupings retain their
+native order. Compact this layer explicitly repacks the active mode while retaining the pane's
+position; ordinary selection and resizing preserve completed slots. Manual offsets survive.
+The overview chooses dense rows/columns for the viewport proportions and places its
+nine cards across that frame. Three-column views retain ecosystem/technology/funding columns;
+narrower or wider layouts retain deterministic domain order. Resizing animates cards and their
+attached lines together, never invokes automatic fitting, and preserves exploration/camera state.
 
-Ordinary clicks inspect/focus without changing centre. Open connected topics opens detail; declared
-group anchors expose Open/Collapse group. First six group members, +6 through More. Clicking an
-expanded anchor closes its own contribution; shared topics needed elsewhere remain. One factual
-card per identity. Thin Shared labels preserve membership/reading slots in another arrangement;
-they select the same canonical card and never enter factual routes/imports.
+Grouping toggles recompute bounds from visible cards/reference slots, excluding hidden cached
+slots and the empty local origin. Group cards use compact grids rather than connection rings;
+factual slots and manual layer offsets survive toggling. Frames animate their bounds over300ms,
+or change immediately with reduced motion. Stable layer-ID hues tint both surface and border in
+both themes; compositing keeps the finite surface tint separate from the empty canvas colour.
 
-Every relationship is accounted once: individual/route edge, inter-group aggregate or internal badge.
-Unrevealed members use More or their anchor. Summaries retain constituent IDs. Complete/alternative
-routes preserve existing endpoints and shared intermediates, revealing every admitted step.
+Each opened layer has four corner handles. Pointer capture plus ray/plane intersection translates
+all its geometry in XY. Four pixels start a drag; controls are suspended; cancellation restores
+the initial offset. Release commits one action. Arrow keys move20 projected pixels; Shift60.
+Layers menu movement, Fit this layer, Reset position and Collapse remain reachable off screen.
+The overview has no handles. Hover is independent of edge/card picking: exposed borders first,
+otherwise nearest surface,100ms activation,150ms exit grace,120ms fade. Protected cards/active
+connections retain click priority. Hover changes outline/tint only.
 
-Limits: direct and result endpoints share maximum48, first/+12; routes6 or explicitly8 steps,
-up to3 alternatives;120 factual/display cards and240 links. Complete expansions are admitted or a
-working view is retained with an explanation. Orientation labels are not factual endpoint cards.
+Ctrl/Shift-drag and angle buttons turn between15–60 degrees tilt and +/-60 sideways; default25/0,
+no roll/rear viewing. Background drag pans. Flat uses a perpendicular camera, independent XY
+slots/camera and the same identities. Restoring complete snapshots skips layout. Fit, theme,
+resize and restoration never trigger zoom-out collapse. Exploration transitions take300ms,
+or are immediate with reduced motion. Handle movement follows the pointer immediately.
 
-Names: Overview / Centre · [topic] / Detail · [owner] / Results · [search] · [perspective]. One frame
-per actual plane; shared headings show two names plus a count, full names in Layers/accessibility.
-Numeric depths stay internal. Return to parent/earlier plane closes deeper ownership contributions,
-not knowledge. Hover is plane-only (100ms entry,150ms exit,120ms fade), independent of edge picking;
-cards/links take click priority, exposed borders precede nearest surfaces. Hover never changes blur,
-camera, exploration or focus. Clear it during dragging/leaving.
+## Rendering and compositing
 
-## Geometry and camera
+Camera-facing sprites are not used for cards. Textured XY meshes/badges/headings stay aligned
+with their plane. Project actual corners to quadrilaterals. Straight lines attach to their screen
+boundary and intersect camera rays with each owning plane; arrows meet the target. Routes are
+multiple straight factual steps. No obstacle detours remain. Complete LineGeometry replacements
+update render/pick/depth proxies together and dispose retired geometry.
 
-Cards, badges, labels, home markers and collapse ghosts are textured XY plane meshes, not
-camera-facing sprites. Project the actual four corners for picking, attachment and occlusion.
-Separate padded convex polygons provide route clearance. Screen rays intersect actual card planes
-for world endpoints. Intra-layer paths remain on their plane; inter-layer depth follows travelled
-distance. Ordinary paths use stable shallow curves; selected paths round clear detours. Full paths
-replace LineGeometry atomically when capacity changes; render/picking/depth share the replacement.
+Selection focus defaults on, independently saved. Inactive cards/labels receive extra25% darkness
+and half alpha, also in Flat. Active lines overlay muted cards; protected active cards mask their
+labels. Context lines stay faint with suppressed labels. GPU cache entries retain BOTH disposable
+ForceGraph data identities and root Object3D identities. Changed visual children are replaced;
+movement reuses card textures and line objects without another layout.
 
-Camera:25° default tilt,0° sideways;15–60° tilt,±60° sideways;upright,no rear viewing. Background drag
-pans;Ctrl/Shift-drag turns; angle buttons use identical constraints. Flat is perpendicular. Fit
-frames at the current angle;Reset restores default and frames. Expansion pans only enough to reveal
-focus around actual HTML overlays. Resize preserves target/focal scale. Fitting, restoring, resizing,
-theme changes and mode switches do not trigger semantic zoom. Zoom out closes deepest displayed
-detail, then broader context. Back/Forward restore complete geometry/camera, with300ms transitions
-or immediate reduced-motion updates. The minimap intersects the actual receded base plane.
+Background effects remain independent: Blur off, Darken on25% (0–60), Transparency on50% initially.
+Background layers use reusable half-float buffers with opaque interiors before layer alpha.
+Depth blur grows1.25 CSS pixels per older plane, capped4. Surface blur has sigma2 and is clipped
+to the finite current surface using a separate world-Z test. Selected and background-to-front
+segments skip depth blur but still receive frosting physically behind the surface. Foreground
+content stays sharp. Empty surfaces never overwrite focus depth. Flat and the bare overview
+have no background effects; selection focus remains available. Preserve averaged RGBA in Bokeh,
+linear composition and OutputPass colour management. Dispose targets/material variants/workers;
+fall back to a sharp usable graph on failure. PDF pages and HTML panels remain outside effects.
 
-## Independent background effects
+## State, requests and maintenance
 
-`backgroundEffects.ts` stores Blur/Darken/Transparency under `kgb:background-effects:v1`, separately
-from exploration. Initial values:Blur false,Darken true/.25,Transparency true/.5. Darkness0–60%.
-The old bokeh preference key is preserved. Flat/unexpanded overview disable every effect.
+Version5 state and history use kgb:exploration:v5. Original v4/v3/v1 keys remain untouched. Migration
+recovers retained source memberships, anchor homes and usable XY/cameras into independent owner
+surfaces; obsolete More selection resolves to its group. Named descriptors, modes, hosts,
+references, parents/bands, slots/offsets/grouping, cameras, routes, selected facts and revision are
+saved. Additive v5 metadata stores source-card IDs, packing stamps, compact requests, local pane
+centres and per-mode manual-position flags, including perspective arrangement caches. Old saved
+coordinates are adopted intact; opening a cached pane or Compact applies the new packing policy.
+New automatic Layered placements align the final pane bounds, including references/research
+cards, to the actual source card. Reopening automatic panes realigns to a moved source; explicit
+manual positions stay put. Unseen centres get a separate origin plane. Scene commit generations
+prevent stale frames from overwriting a move. Scope/layout
+pooling keeps history compact; a local IndexedDB mirror covers localStorage capacity failures.
+Appearance/effects/selection focus/hover/fullscreen/panel bounds remain separate preferences;
+fullscreen never restores automatically. Saved-view and research payloads capture full v5 state.
 
-`FrostedGraphPass` uses the existing composer and reusable half-float targets:
+The frontend always requests /api/view?all_results=true. This additive mode removes match,
+endpoint, branch, finding, provenance and display-count truncation. Legacy callers retain bounded
+responses. Prepare the full candidate off screen; cancel superseded work and commit only success.
+A20-second overall placement deadline terminates the worker and preserves the last working view.
+Fixed semantic reading slots are fCoSE constraints; completed caches do not rerun placement.
 
-1. Render each older plane's content into transparent scratch buffers. An all-card alpha stencil
-   masks its connections beneath labels; cards stay opaque within the layer.
-2. Background cards/background-only links receive depth blur when enabled. Selected and
-   background-to-front links skip that pass. Apply darkening and half layer opacity after drawing
-   the whole layer; each older layer uses the same50%, never progressively multiplied by depth.
-3. Composite in plane/depth order. Shader world-Z clipping compares actual displayed geometry
-   against the physical front surface; focused card positions matter. Inter-layer paths interpolate
-   actual depth. The finite projected plane polygon limits frosting, with antialiased boundaries.
-4. Behind that finite surface, apply the extra Gaussian blur. Selected routes ALSO receive it.
-   Physically foreground content is drawn last, fully sharp. HTML/PDF/inspector stay outside effects.
+Topic inspection includes current organization revision, primary/shared memberships, parent paths,
+anchored groups, member IDs and maintenance rules. CLI inspect and exports expose the same context;
+research handoffs capture current definitions/rules automatically. Maintenance instructions require
+reading current stored organization generically. Specific rules belong in group definitions, not
+hardcoded topic-specific project instructions. Distinguish permanent organization from temporary
+perspective groupings. Capture useful supported discoveries across the agreed domain, including
+outside the question and visible scene. Keep validated transactional imports, reconciliation,
+duplicate prevention, backups and the manual Codex Desktop handoff.
 
-Depth blur1.25CSSpx per older plane,capped4; surface sigma2,6px kernel radius. Background-only
-connections are blurred once outside/twice behind. Front-leading and selected links are sharp
-outside, frosted behind. Empty planes never overwrite focus depth. Preserve averaged RGBA in the
-Bokeh shader: the stock forced alpha1 would make transparent layer buffers opaque. Linear clear,
-linear composition and OutputPass retain theme colours. Reuse/resize targets; dispose owned clones,
-targets/workers/geometries/textures, never shared source assets. Failures retain a usable sharp graph.
+## Modules and recovery
 
-## State and modules
+- layerState.ts: v5 migration, complete scopes, independent commands, dependency returns and moves.
+- layerScene.ts: canonical hosting/references, complete ledger, native reading slots and candidates.
+- compactLayout.ts / overviewLayout.ts: dense grids and non-overlapping rings, with responsive overview ordering.
+- scene.ts: shared types/snapshot capture and retained legacy projection regressions.
+- SceneView.tsx / rendererCache.ts: Three objects, stable disposable bindings, picking and controls.
+- cardGeometry.ts / connectionGeometry.ts: card-plane projection, ports and complete GPU paths.
+- bokeh.ts / backgroundEffects.ts: depth/surface composition, selection focus and preferences.
+- explorationStorage.ts: pooled history and local storage/IndexedDB session recovery.
+- main.tsx / workspace.tsx: independent controls, shared inspector, fullscreen, PDFs and research.
 
-Version4 state/new browser key `kgb:exploration:v4` preserves original v3/v1 storage. Contexts retain
-XYZ homes, Flat XY positions, owners/planes, named descriptors, centre-session ownership, route records, visits, focus, both
-camera poses, signatures, laid-out IDs, retained layer bounds/members and centre pagination/cache.
-Research context includes the complete state/history and real knowledge IDs. Full matching snapshots
-restore without a worker. Older saved geometry/cameras remain until explicit Make/Rebuild centre.
-Centre visibility is explicit after a layer return; new child expansions do not reopen a closed
-centre plane. Show centre view opens it deliberately. Returning to overview begins a fresh
-organization phase so old centre depth does not leak into nested overview groups.
-A new centre session invalidates old visit/owner/depth caches when another perspective/search is
-revisited, retaining usable XY coordinates. The foreground-frame/depth-spacing migration is idempotent. Effect preferences/hover/fullscreen are
-not exploration history; fullscreen never restores automatically.
+Pre-revision source/build snapshot, including uncommitted files:
+backups/pre-independent-layers-20261107T101700Z.zip (497 files), SHA256
+461123ac7b2008db3c7e99f0c6e55e70991fecd173fb3b8fc55fa93614dc345f.
+Earlier snapshots remain in data/prototype1-backups, documented in VERIFICATION.md.
 
-- scene.ts: pure semantic projection, ledger, owners, named layers and direct/result separation.
-- centreView.ts / organization.ts: centre transition and persistent organization projection.
-- sceneLayout.ts / layoutRequest.ts / layout.worker.ts: isolated candidate placement/cancellation.
-- layers.ts / layerNavigation.ts / layerHover.ts: finite surfaces, ownership returns and hover.
-- cardGeometry.ts / polygonRouting.ts / connectionGeometry.ts: consistent geometry/ports/routes.
-- SceneView.tsx / cameraFocus.ts / bokeh.ts: GPU objects, picking, camera and composition.
-- explorationStorage.ts: pooled complete history; main.tsx/workspace.tsx: shared details/dialogs,
-  independent controls, appearance/fullscreen, floating bounds and static research UI.
-
-## Persistent groups and maintenance
-
-The same SQLite store now has organization metadata `browse_groups`. It is not a second graph and
-does not limit editing factual records. `BrowseGroup` has stable browse:ID,label,parent,anchor,
-primary/shared members and maintenance_rule. Import validates IDs, references, unique primary
-membership, duplicate entries and acyclic parents. Definition updates replace the whole group.
-Optional browse_groups in existing batches use preview/current revision/transaction/backups;
-existing batch digests remain unchanged. Migration creates a backup before DDL.
-
-The approved seed is browse:cocoon beneath technology:irrigation, anchor cocoon, nine specific
-members. Their primary browsing location is Cocoon, not duplicated flat parent entries; counts use
-unique descendants. General equipment/methods/species/trials retain wider factual context. Group
-membership is organizational and cannot create a factual edge or route shortcut.
-
-Catalog/export/read-only CLI groups and research context/prompts expose current definitions/rules.
-Codex Desktop must review/reconcile them before imports and reuse Cocoon for specific components,
-operation/refill, limitations, requirements and findings. Still capture ALL useful supported
-discoveries from inspected material across the agreed domain, including outside the task and
-visible neighbourhood. Preserve checked plant identities, source spellings, conditions, units,
-dates, conflicting evidence and unresolved items. Never classify/research autonomously.
-
-Nine originals/68 selected PDF positions remain the entire ingestion scope. The original library
-is read-only. No additional ingestion, project assembly, simulations, eligibility calculations or
-hosting is included. User comfort approval still gates later library expansion.
-
-## Recovery and verification
-
-Prototype-one snapshot: data/prototype1-backups/prototype-one-20261106T121303Z.zip (376 files,
-SHA256 b6af66f9c1dfc3be70317c41141d638f013503271d6fffd1e31ac532cead0889).
-Before the organization/centre change: data/prototype1-backups/pre-centre-groups-20261106T212750.zip,
-plus data/pre-centre-groups-20261106T212750.sqlite and the raw factual-table baseline.
-Existing uncommitted work was retained in the same checkout. See VERIFICATION.md for current
-checks, isolated browser data, source/fact comparisons and visual artifacts. The comfort walkthrough
-covers carob communities,Cocoon,drones,AL20 and a manual research handoff with wider discoveries.
-
-## Pending interaction revision — preference recorded 7 November 2026
-
-When opening a group or detail layer, display all its topics at once. Remove the "More topics
-remaining" node and the six-at-a-time pagination. The user chose showing all members instead of
-the suggested replacement Show more button. Preserve overview-first discovery and one factual
-card per shared identity. Reconcile scene-limit handling explicitly during implementation;
-do not silently truncate the group or restore pagination. This is a recorded preference for the
-next revision, not a change already implemented.
+See VERIFICATION.md for actual test results and browser limitations. Before/after examples live
+in docs/screenshots/independent-layers. Dense complete scopes can still have crossings/overlap;
+use layer movement, Group nodes, filtering, Flat view, zoom and individual relationship inspection.
+Human comfort with carob communities, Cocoon, drones and AL20 gates any additional ingestion.

@@ -41,10 +41,12 @@ members/definitions and own-anchor membership are rejected. Definitions are repl
 include the full intended membership list when updating one.
 
 Run `python -m backend.cli groups`, inspect the catalog/export, and read applicable maintenance
-rules before imports. Research context captures the definitions and revision; reconcile them
-with the current database. The permanent Cocoon group is `browse:cocoon`, parent
-`technology:irrigation`, anchor `cocoon`. Reuse it for specific Cocoon discoveries and retain
-shared/general context elsewhere. Do not invent factual relationships from organization.
+rules before imports. `inspect <topic-id>` returns memberships, parent paths, anchored groups,
+member IDs, rules and current revision; export includes `topic_organization` plus all definitions.
+Research context captures the current definitions automatically. Discover and follow the stored
+organization generically, reusing existing identities and distinguishing permanent groups from
+perspective-only headings. Keep shared/general context accessible and preserve wider discoveries.
+Do not invent factual relationships from organization.
 
 A batch may contain only browse_groups, or organization plus supported factual discoveries.
 Use current `base_revision`, `--check`, then import. Existing accepted batch digests remain

@@ -2,7 +2,7 @@ import {contextKey} from './layerNavigation.ts';
 import {PLANE_GAP} from './depth.ts';
 import type {Scene} from './scene.ts';
 import type {Point,State} from './types.ts';
-export const layerLabel=(level:number,scene?:Scene)=>level===0?'Overview':scene?.context.layers?.[String(level)]?.label||'Detail';
+export const layerLabel=(level:number|string,scene?:Scene)=>{if(scene?.layers)return scene.layers.find(l=>l.id===level)?.label||scene.layers.find(l=>l.id===scene.layerView?.currentId)?.label||'Overview';return level===0?'Overview':scene?.context.layers?.[String(level)]?.label||'Detail'};
 /** A visible border identifies a rear plane even where a nearer transparent plane overlaps it. */
 export function layerBorderAt(point:Point,frames:{level:number;corners:Point[]}[],tolerance=9):number|null{
  let selected:number|null=null,best=tolerance;
@@ -14,12 +14,13 @@ export function layerBorderAt(point:Point,frames:{level:number;corners:Point[]}[
 }
 /** Finite clickable surfaces follow ordinary homes, not a card temporarily popped forward. */
 export function sceneLayers(scene:Scene){
+ if(scene.layers)return scene.layers;
  return [...new Set([0,...scene.cards.map(c=>c.plane),...Object.keys(scene.context.layers||{}).map(Number)])].sort((a,b)=>a-b).map(level=>{
   const cards=[...scene.cards.filter(c=>c.plane===level),...(scene.references||[]).filter(r=>Math.round(r.position.z/PLANE_GAP)===level).map(r=>({home:r.position,width:r.width,height:r.height}))],minW=level?640:2160,minH=level?360:1200;
   const x1=Math.min(...cards.map(c=>c.home.x-c.width/2))-100,x2=Math.max(...cards.map(c=>c.home.x+c.width/2))+100,y1=Math.min(...cards.map(c=>c.home.y-c.height/2))-100,y2=Math.max(...cards.map(c=>c.home.y+c.height/2))+100;
   const x=cards.length?(x1+x2)/2:0,y=cards.length?(y1+y2)/2:0,width=cards.length?Math.max(minW,x2-x1):minW,height=cards.length?Math.max(minH,y2-y1):minH;
   const retained=(scene as Scene&{retainedLayers?:any[]}).retainedLayers?.find(l=>l.level===level),descriptor=scene.context.layers?.[String(level)];
-  return {level,label:layerLabel(level,scene),shortLabel:descriptor?.shortLabel||layerLabel(level,scene),kind:descriptor?.kind||(level===0?'overview':'detail') as 'overview'|'detail',anchorIds:descriptor?.anchorIds||[],x:cards.length?x:retained?.x||x,y:cards.length?y:retained?.y||y,width:cards.length?width:retained?.width||width,height:cards.length?height:retained?.height||height};
+  return {id:String(level),subtitle:'',parentId:'',display:'topics' as const,memberIds:[] as string[],groups:[] as {key:string;label:string;ids:string[]}[],emptyMessage:undefined as string|undefined,level,label:layerLabel(level,scene),shortLabel:descriptor?.shortLabel||layerLabel(level,scene),kind:descriptor?.kind||(level===0?'overview':'detail') as 'overview'|'detail',anchorIds:descriptor?.anchorIds||[],x:cards.length?x:retained?.x||x,y:cards.length?y:retained?.y||y,width:cards.length?width:retained?.width||width,height:cards.length?height:retained?.height||height};
  });
 }
 /** Fold expansions above the clicked plane, retaining the controls, homes and mode cameras. */

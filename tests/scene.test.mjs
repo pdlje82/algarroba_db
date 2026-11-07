@@ -446,6 +446,15 @@ test('failed frosted compositing restores visibility, materials and the working 
  assert.equal(pass.enabled,false);assert.equal(sprite.visible,true);assert.equal(sprite.material,material);assert.equal(warnings.length,1);assert.ok(renderer.captured.some(r=>r.scene.isMesh));assert.equal(renderer.target,null);assert.equal(renderer.autoClear,true);pass.dispose();read.dispose();write.dispose();material.dispose();
 });
 
+test('a tinted current surface keeps the canvas colour independent and invalidates its resize cache',()=>{
+ const scene=new ThreeScene(),glass=new Mesh(new PlaneGeometry(640,360),new MeshBasicMaterial({color:'#b58ac8',opacity:.045,transparent:true}));scene.add(glass);
+ const frame={preference:'off',effects:{blur:false,darken:true,darkenAmount:.25,transparency:true},mode:'layered',level:1,width:800,reducedMotion:true,items:[],glass,tint:'#131d1a'},renderer=fakeBlurRenderer(),pass=new FrostedGraphPass(scene,new PerspectiveCamera(),()=>frame,()=>assert.fail('unexpected rendering failure'));
+ const read=new WebGLRenderTarget(4,4),write=new WebGLRenderTarget(4,4);pass.render(renderer,write,read);assert.ok(pass.composite.uniforms.tint.value.equals(new Color(frame.tint)));assert.ok(pass.composite.uniforms.surfaceTint.value.equals(glass.material.color));assert.equal(pass.composite.uniforms.tintOpacity.value,.045);
+ const oldKey=pass.lastKey,oldGeometry=glass.geometry;glass.geometry=new PlaneGeometry(320,180);pass.render(renderer,write,read);assert.notEqual(pass.lastKey,oldKey);assert.equal(pass.glassProxy.geometry,glass.geometry);
+ glass.material.color.set('#70b9c4');pass.render(renderer,write,read);assert.ok(pass.composite.uniforms.surfaceTint.value.equals(glass.material.color));assert.ok(pass.composite.uniforms.tint.value.equals(new Color(frame.tint)));
+ pass.dispose();oldGeometry.dispose();glass.geometry.dispose();glass.material.dispose();read.dispose();write.dispose();
+});
+
 
 test('centre changes collapse child expansions but retain named surfaces and source context',()=>{
  let s=state({expandedGroups:['technology:irrigation'],branches:['cocoon']});const old=build(s);s=rememberScene(s,old);const before=structuredClone(s),patch=centrePatch(s,old,'nursery-irrigation',catalog);s={...s,...patch};const next=build(s,overview,old);check(next);

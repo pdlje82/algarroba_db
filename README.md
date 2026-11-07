@@ -13,26 +13,32 @@ Double-click **Stop Knowledge Browser.cmd** to stop the local server; knowledge 
 On a fresh checkout, run **Setup Knowledge Browser.cmd** once (Python, Node.js and internet are
 needed for installation). The nine original PDFs must remain at the paths in the source manifest.
 
-Start with an overview group. Choose a topic to inspect it. The first topic becomes your centre;
-later topics can be inspected without moving that centre. **Make this the centre** deliberately
-changes it. Search narrows stored knowledge; it does not start research. A dashed connection
-represents a shortened route. Selecting it reveals every included step. The
-inspector's **Displayed connections** list provides the same actions without needing to hit a line.
+Open an overview group to show its complete contents in its own named layer. Clicking an
+ordinary topic opens its complete recorded neighbourhood at the next front step. Clicking a
+permanent group anchor opens its organized contents; **Open connected topics** explicitly opens
+its factual neighbourhood. Clicking an already expanded anchor collapses that expansion and its
+descendants. Relationships inspect without opening a topic layer; abbreviated routes unfold all steps.
 
-**Make this the centre** returns popped-out cards home and collapses child groups, branches and
-routes, while keeping their named layer surfaces open. It then opens a new **Centre · [topic]**
-plane in front of those retained layers, remembering the chosen topic's ordinary source layer.
-Only recorded direct neighbours appear: twelve initially, then twelve through **More direct
-connections**. Nursery watering currently has just one: Dryland restoration. Repeating Make
-centre on the current clean centre reuses its plane. Back restores the full preceding exploration.
-Use **Layers → Reopen [name]** to restore a retained layer's cached topics. After returning to an
-earlier layer, **Show centre view** deliberately reopens the direct-neighbour star.
+**Make this the centre** keeps the topic's card, source membership and positions in place, and
+opens or reuses **Centre · [topic]**, containing connected topics. Connections and **Detail · [topic]**
+group contents have separate front depth steps, both centred over their source card. Closing
+either leaves the other open. Nursery
+watering has one recorded direct neighbour: Dryland restoration. Previous source layers remain
+populated, including after returning from a centre view. Back restores the previous exploration.
 
-Search and perspective keep their values when the centre changes. **Show results** opens a
-separate **Results · [search] · [perspective]** arrangement; changing search or perspective opens
-or updates it explicitly. **Open connected topics** opens a named detail branch. A centre's
-**Other connections** badge exposes relationships among its neighbours without crowding the
-initial star. One spoke can retain several actual relationship IDs for the same neighbour.
+**Remove centre (×)** beside the Centre dropdown removes the designation and badge, keeping
+open layers, search, perspective and viewpoint. The dropdown’s **No centre** option does the same.
+Back restores the preceding centre.
+
+Search and perspective remain independent of centre. Changing either opens or updates a separate
+**Results · [search] · [perspective]** arrangement. Shared topics keep one full card in their existing
+layer; dashed location links identify where they are already visible. A fully shared layer shows
+all references instead of an empty frame. The **Layers** menu also lists these links accessibly.
+
+Every layer offers **All topics / Group nodes**, initially All topics. Group nodes opens subordinate
+headings as counted cards; opening one shows its whole scope. Nested permanent groups remain
+anchors. No More topics nodes or display pagination remain. Each displayed relationship retains
+its real constituent IDs and exact evidence, including internal-connection badges.
 
 The ten perspectives share topic identities: Combined overview, Ecosystems, Technology, Funding,
 Sources and findings, Hierarchy, Comparison, Places, Time, Conditions and dependencies. The
@@ -45,37 +51,18 @@ Save view keeps positions, expanded routes, search, perspective and camera toget
 
 ### Layered 3D and Flat view
 
-The browser opens in **Layered 3D**. Opening a group reveals six topics at a steady reading
-distance. Opening deeper detail moves the overview and older layers backward, so they appear
-smaller while the newest layer stays in the foreground. Depth only means opened detail.
-It does not mean that a topic is more important,
-more certain, or a different kind of knowledge.
+The browser opens in **Layered 3D**. New detail stays at the reading distance while older layers
+recede and appear smaller. Depth means opened detail, not importance, certainty or subject.
+Anchors stay in their original layers. A new pane's area centre has the same X–Y position as
+its source card, opening directly in front of it along depth. Opening a layer pans toward the usable reading area,
+retaining angle and magnification; Fit this layer is available when a whole scope should be framed.
 
-Click a topic to bring its card forward and inspect it. The view pans smoothly to place the
-clicked or expanded card near the centre of the usable graph area, clear of controls and the
-floating inspector. This keeps the camera angle, zoom and saved topic homes. Expanding an
-already selected topic also centres it; history restoration and mode switches retain their views.
-Its small **Home** label/tether shows
-where it belongs; these orientation cues are not factual connections. An already visible topic
-is shared across branches, with one card. **Open connected topics** adds a branch; its **− topic**
-control closes it. **Click an expanded topic or open group again to collapse its own detail.**
-A second click on a popped-out topic card returns it to its home layer. Its inspector stays
-available. Other branches keep the topics they still need; clicking a child keeps its parent
-open. The keyboard-accessible Visible topics list uses the same click behaviour.
-
-**Back to [parent topic/group]**, at the upper left of the graph, folds the last expansion
-back into its parent and brings the earlier layer forward. **Earlier layers** lets you return
-further in one action, closing that expansion and those opened after it. Shared topics remain
-when an earlier branch still needs them. These actions keep your camera angle; the separate
-history Back/Forward controls restore a previous complete view. Expanding all routes counts
-as one return step. These controls also work in full screen and Flat view.
-
-In Layered 3D, **hover over an empty part or border of a layer** to highlight it slightly.
-**Click that layer to make it current:** deeper node expansions fold back and the chosen plane
-comes forward. Its topics and shared knowledge remain available. Cards and connections retain
-their own click actions, and dragging still pans. The **Layers** menu provides the same action
-with keyboard controls. Clicking Overview folds all detail back to the base map. Back/Forward
-can undo and restore a layer return. Flat view hides these depth controls.
+**Back to [parent layer]** folds descendants and returns to the populated parent. Other branches
+remain open. Cards and relationships retain their own click actions; empty surfaces or exposed
+borders provide layer returns. The Layers menu offers the same actions, grouping, movement,
+shared-topic navigation and fitting in both modes. The explicit **Return to overview** closes
+all branches. History Back/Forward restores complete preceding explorations. Expand all routes
+is one combined expansion and one reversible action, retaining every actual intermediate.
 
 Drag empty space to pan. **Ctrl-drag or Shift-drag** turns the view; the visible angle buttons do the same.
 The view starts at 25° tilt, limited to 15–60° tilt and 60° left/right. **Reset view** restores the
@@ -89,12 +76,38 @@ positions and viewpoint; additional items opened in Flat are placed without movi
 
 ### Graph clarity and workspace controls
 
-Topic cards are opaque. Open a group to reveal six topics, use **More topics** for another six,
-and use its **− group name** control to collapse it. Expansion keeps the current zoom and makes
-room locally. Selecting a topic or connection emphasizes its connections; surrounding connections
-remain faint. Highlighted connections detour around unrelated cards where space permits.
-Click empty canvas to clear that emphasis. **Fit current context** explicitly fits
-the displayed graph without collapsing it; **Zoom out** progressively restores broader context.
+Cards follow their layer's orientation. All intra-layer and inter-layer connections are straight,
+with arrow tips at actual card edges. Selection focus is on by default: unrelated cards and labels
+receive extra 25% darkening and 50% opacity, multiplied with background effects. Active connections
+remain visible over muted cards, while active cards protect their labels. Clearing selection removes
+this emphasis without closing layers. **Fit current context** explicitly frames the whole scene.
+
+Use any of a layer's four corner handles to move it in XY; depth and dimensions stay fixed.
+Handles appear on hover/current selection/keyboard focus. Arrow keys move 20 projected pixels,
+Shift-arrows 60. The Layers menu provides keyboard movement, **Fit this layer**, **Reset position**
+and **Collapse layer**. Escape cancels a handle move. The overview frame and its nine cards adapt
+to the usable viewport: tall windows use fewer columns, wide windows use more, and spacing fills
+the layer area. At the same window shape the arrangement stays stable as you navigate. Opened
+detail layers retain their positions when the window changes. Returning to an
+earlier layer folds descendants and brings it forward, preserving unrelated branches. Zoom out
+follows the active branch, then closes remaining branches; **Return to overview** closes all.
+
+Switching **All topics / Group nodes** resizes that layer around its visible cards and location
+links. Group cards use a compact arrangement; switching back restores the topic positions.
+Newly opened layers and changed contents pack nodes closely, keeping circles and meaningful
+perspective arrangements. **Compact** on the pane, or **Compact this layer** in Layers, tidies
+an existing view. It preserves the pane's manual position and can be undone with Back. Older
+saved views keep their coordinates until you compact or reopen them. Ordinary selection keeps
+the arrangement stable. Flat view keeps its own layout and packs panes beside each other.
+All pane borders fit their visible nodes and location links with small side/bottom margins and
+room for the heading and controls. Connection layers keep their circular ordering. Window
+proportions guide the overview's node arrangement; pane borders wrap the resulting content.
+Each layer has a faint, stable surface and border colour in both themes. These colours help
+distinguish surfaces; they do not encode evidence or subject categories.
+
+If a layer is already inside a group with no further subgroup headings, its controls show
+**No further groups** instead of an unavailable dropdown choice. **Parent groups** returns to
+the parent's grouped view when available.
 
 **Appearance** offers System, Light and Dark. System follows the Windows/browser setting.
 Your choice is saved in this browser, independently of saved explorations. PDF pages retain
@@ -129,10 +142,11 @@ uses react-rnd 10.5.3. Every dependency and PDF asset is bundled locally; no onl
 required. WebGL 2 must be available in the browser. If graphics initialization fails, the HTML
 controls and inspector retain the exploration and offer a retry.
 
-Version-four explorations retain named layers, centre pagination, shared memberships, XYZ homes,
-independent Flat/Layered layouts and cameras, routes and history. New browser storage uses
-`kgb:exploration:v4`, preserving original v3/v1 keys. Older views retain their positions and
-camera; **Rebuild centre view** or Make this the centre applies the clean arrangement.
+Version-five explorations store stable layer identities, complete memberships, presentation bands,
+canonical hosts/references, per-layer offsets/grouping, independent Flat/Layered layouts and cameras,
+routes and full history. Browser storage uses `kgb:exploration:v5`, preserving original v4/v3/v1 keys;
+older source memberships/homes migrate to populated layers. Compact history and a local IndexedDB
+mirror preserve sessions when localStorage is full. Full saved snapshots reopen without layout.
 See [PROTOTYPE_TWO.md](PROTOTYPE_TWO.md) for the state, renderer and backup contracts.
 
 Depth does not remove all overlap or crossings. Use gentle turning, zoom, Flat view and the
@@ -232,8 +246,8 @@ separate future work.
 - Backend: one Python/FastAPI application with Uvicorn; CLI imports reuse its store/model code.
 - Database: one SQLite store with FTS5 indexed labels, aliases, findings and inspected page text.
 - Local-only binding: `127.0.0.1:8765`. No cloud, AI API, agent framework or background researcher.
-- Display rules: 12 initial result endpoints, +12 through More connections, up to48; 6 route steps
-  initially, explicit extension to8; up to3 alternatives; 120 visible items and240 relationships.
+- Display rules: complete current scopes with no endpoint/display caps; 6 route steps initially,
+  explicit extension to8, up to3 alternatives and explicitly selected comparison methods.
   Routes reserve all intermediate detail before admission. Classification roots/provenance are
   excluded from domain traversal. A route is a view object, not a new factual relationship.
 - Stable per-perspective positions, explicit local reveal, reduced-motion handling, saved camera
@@ -269,7 +283,7 @@ Codex can update existing topics/relationships when a supported correction is ne
 membership alone never creates a factual connection or a route shortcut.
 
 **Cocoon**, under **Establishment water**, uses the existing `cocoon` anchor and nine Cocoon-specific
-members. Its group opens six members, then six more. Primary members appear beneath Cocoon rather
+members. Its group opens all nine members. Primary members appear beneath Cocoon rather
 than repeating in the parent's flat list; broader equipment, species and trial sites keep their
 existing factual context. Shared membership is labelled and retains one actual card. Thin Shared
 labels in a detail arrangement lead to that same card; they are orientation aids.

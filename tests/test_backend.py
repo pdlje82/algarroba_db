@@ -205,3 +205,61 @@ def test_original_editions_unchanged(store):
     s,_=store
     for source in s.records('sources'):
         with Path(source['path']).open('rb') as f:assert hashlib.file_digest(f,'sha256').hexdigest()==source['sha256']
+
+
+def test_complete_mode_removes_scope_and_evidence_truncation(store):
+    s,_=store;g=Graph(s);client=TestClient(create_app(s))
+    complete=client.get('/api/view?all_results=true').json()
+    assert complete['complete'] and len(complete['nodes'])==281 and len(complete['edges'])==329
+    sources=g.view(perspective='sources',all_results=True)
+    assert sum(n['record_type']=='finding' for n in sources['nodes'])==140
+    assert sum(n['record_type']=='source' for n in sources['nodes'])==9
+    assert len(sources['edges'])>240
+    assert sources['shown_results']==sources['total_results']==281
+    assert sources['scope_counts']['items']==430 and sources['scope_counts']['findings']==140
+    comparison=g.view(perspective='comparison',all_results=True)
+    assert comparison['shown_results']==comparison['total_results']==sum(n['record_type']=='topic' for n in comparison['nodes'])
+    assert len({n['id'] for n in sources['nodes']})==len(sources['nodes'])
+    technology=g.view(perspective='technology',all_results=True)
+    assert all(n['domain']=='technology' for n in technology['nodes'])
+    unknown=g.view(search='zzzz-unknown',all_results=True)
+    assert not unknown['nodes'] and unknown['notices']
+    assert client.get('/api/view').json()['complete'] is False
+
+
+def test_complete_search_and_neighbours_exceed_legacy_limits(store):
+    s,_=store;original=s.snapshot()['topics'][0]
+    topics=[dict(copy.deepcopy(original),id=f'complete-synthetic-{i}',label=f'Synthetic completeness {i}',aliases=[]) for i in range(150)]
+    edges=[dict(id=f'complete-edge-{i}',source='carob',target=t['id'],label='Test fixture',explanation='Isolated synthetic relationship',basis='source',source_refs=original['source_refs']) for i,t in enumerate(topics)]
+    s.import_batch(dict(batch_id='synthetic-completeness',base_revision=s.revision(),summary='Isolated completeness test',topics=topics,relationships=edges))
+    g=Graph(s)
+    assert len(s.search('synthetic',None))==150
+    assert len(s.search('synthetic'))==100
+    all_hits=g.view('carob','synthetic',all_results=True)
+    assert len(all_hits['matches'])==150 and len(all_hits['routes'])==150
+    assert all_hits['shown_results']==all_hits['total_results']==150
+    assert len(g.view('carob','synthetic')['routes'])==12
+    assert len(g.view(search='synthetic',all_results=True)['nodes'])==150
+
+
+def test_dynamic_organization_is_discovered_without_topic_specific_instructions(store):
+    s,_=store;group=json.loads((ROOT/'imports/cocoon-browse-group.json').read_text())['browse_groups'][0]
+    group=dict(group,id='browse:synthetic-organization',label='Synthetic organization',maintenance_rule='Reuse this stored synthetic organization; keep wider discoveries.')
+    before=s.snapshot();s.import_batch(dict(batch_id='synthetic-organization',base_revision=s.revision(),summary='Isolated organization',browse_groups=[group]))
+    client=TestClient(create_app(s));anchor=client.get('/api/inspect/cocoon').json()['organization']
+    assert anchor['revision']==s.revision() and anchor['anchored_groups'][0]['id']==group['id']
+    member=client.get('/api/inspect/cocoon-reservoir').json()['organization']['memberships'][0]
+    assert member['role']=='primary' and member['parent_path'][0]['id']=='technology:irrigation'
+    assert len(member['members'])==9 and member['maintenance_rule']==group['maintenance_rule']
+    handoff=client.post('/api/research/preview',json={'context':{'centre':'cocoon-reservoir'},'instruction':'Inspect fixture material','areas':['Irrigation']}).json()
+    assert handoff['context']['topic_organization']['cocoon-reservoir']['memberships'][0]['id']==group['id']
+    assert group['maintenance_rule'] in handoff['prompt']
+    for key in ['topics','relationships','findings','coverage','sources']:assert s.snapshot()[key]==before[key]
+
+
+def test_saved_views_preserve_pooled_v5_history_and_legacy_lists(store):
+    s,_=store;client=TestClient(create_app(s));history={'format':5,'index':0,'entries':[{'layoutVersion':5,'positionsRef':0}],'pool':[{}]}
+    saved=client.post('/api/explorations',json={'label':'Pooled v5','state':{'layoutVersion':5,'centre':'carob'},'history':history}).json()
+    assert client.get('/api/explorations/'+saved['id']).json()['history']==history
+    legacy=client.post('/api/explorations',json={'label':'Legacy','state':{},'history':[{'centre':'carob'}]}).json()
+    assert legacy['history']==[{'centre':'carob'}]

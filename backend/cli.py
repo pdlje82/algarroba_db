@@ -61,7 +61,7 @@ def main():
     elif args.command=="search": result=store.search(args.term)
     elif args.command=="inspect": result=Graph(store).inspect(args.id)
     elif args.command=="export":
-        result=store.snapshot()
+        result=store.snapshot();graph=Graph(store);result['topic_organization']={t['id']:graph.organization(t['id']) for t in result['topics']}
         if args.output: Path(args.output).write_text(json.dumps(result,indent=2,ensure_ascii=False),encoding="utf-8");result={"saved":args.output,"revision":result["revision"]}
     elif args.command=="groups": result=store.records("browse_groups")
     elif args.command=="backup": result={"backup":str(store.backup())}
