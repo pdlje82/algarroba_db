@@ -1,0 +1,52 @@
+{
+  "batch_id": "browse-cocoon-2026-11-06",
+  "summary": "User-approved permanent Cocoon browsing organization; factual records unchanged.",
+  "base_revision": 2,
+  "browse_groups": [
+    {
+      "id": "browse:cocoon",
+      "label": "Cocoon",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": "cocoon",
+      "members": [
+        {
+          "topic_id": "cocoon-reservoir",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon-lid",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon-refill",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon-biodegradation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon-site-limitations",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon-soil-depth",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon-rock-clearance",
+          "role": "primary"
+        },
+        {
+          "topic_id": "snow-frost-damage",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon-root-development",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Reuse the existing Cocoon identity. Organize Cocoon-specific components, operation, refilling, limitations, requirements and findings here. Keep shared equipment and general methods available in their broader context. Add factual connections only when supported."
+    }
+  ]
+}

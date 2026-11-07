@@ -1,0 +1,61 @@
+{
+  "production_sha256": "0965bdc61ac0d2405e27380304009341ad813884a4b0f9a1e7c2424b812b978b",
+  "integrity": "ok",
+  "foreign_key_errors": 0,
+  "counts": {
+    "sources": 9,
+    "coverage": 68,
+    "topics": 281,
+    "relationships": 329,
+    "findings": 140,
+    "explorations": 0,
+    "tasks": 0
+  },
+  "source_checks": [
+    {
+      "id": "FOREST-002",
+      "accessible": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "FOREST-003",
+      "accessible": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "IRR-003",
+      "accessible": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "IRR-005",
+      "accessible": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "DRONE-004",
+      "accessible": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "FUND-004",
+      "accessible": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "FUND-005",
+      "accessible": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "FUND-008",
+      "accessible": true,
+      "sha256_matches": true
+    },
+    {
+      "id": "FUND-012",
+      "accessible": true,
+      "sha256_matches": true
+    }
+  ]
+}

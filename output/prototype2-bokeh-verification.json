@@ -1,0 +1,34 @@
+{
+  "change": "BokehPass background blur",
+  "date": "2026-11-06",
+  "checks": {
+    "graph": 75,
+    "backend": 13,
+    "production_build": "passed",
+    "shared_three": "0.187.0"
+  },
+  "comparison": {
+    "mean_rgb_difference_0_to_255": {
+      "active_card_interior": 0.298,
+      "background_technology_card": 12.971,
+      "empty_graph_background": 0.0,
+      "html_inspector": 0.0
+    },
+    "maximum_css_blur_radius": 2,
+    "angle": "25 degree tilt / 10 degree turn"
+  },
+  "artifacts": {
+    "output\\prototype2-bokeh-off.jpg": {
+      "bytes": 131563,
+      "sha256": "3c6b7d3ffa8e51dd66704eb94cca0304b33aa016534cc0ec822ff15b6eb5a3af"
+    },
+    "output\\prototype2-bokeh-subtle.jpg": {
+      "bytes": 128009,
+      "sha256": "76fb827e1f3f0a20b98911c898d4ef805772a8c7b71ddfe2b20ce276bc336b82"
+    },
+    "output\\prototype2-bokeh-route.jpg": {
+      "bytes": 134661,
+      "sha256": "3c170a97913c6b1f372e6f11052d1fde19f2d29133185611f70bf0071de52d97"
+    }
+  }
+}

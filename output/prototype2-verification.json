@@ -1,0 +1,64 @@
+{
+  "prototype": 2,
+  "date": "2026-11-06",
+  "architecture": {
+    "renderer": "react-force-graph-3d 1.29.2",
+    "three": "0.187.0",
+    "layout": "cytoscape-fcose 2.2.0",
+    "inspector": "react-rnd 10.5.3"
+  },
+  "automated": {
+    "graph": 42,
+    "backend": 13,
+    "production_build": "passed"
+  },
+  "corpus": {
+    "documents": 9,
+    "selected_pages": 68,
+    "topics": 281,
+    "relationships": 329,
+    "findings": 140,
+    "original_sha256_verified": true
+  },
+  "qa_database": "data/prototype2-ui-qa.sqlite",
+  "forced_context_loss_tested": false,
+  "artifacts": {
+    "output\\prototype2-layered-route.jpg": {
+      "bytes": 153621,
+      "sha256": "244358c774d1ae0267ddd9e19db80bf8199bd44857a703bd5488c979dabf8bd5"
+    },
+    "output\\prototype2-foreground-focus.jpg": {
+      "bytes": 161677,
+      "sha256": "f61895f1f7e952de347042522516be454f69cb52b2bd0680b57fc5506a75ea6f"
+    },
+    "output\\prototype2-flat-view.jpg": {
+      "bytes": 180038,
+      "sha256": "87f0612cd45a8a86ae94cc6e72d137765a3ae57648719e01759890a5aa12caec"
+    },
+    "output\\prototype2-dark-source.jpg": {
+      "bytes": 140223,
+      "sha256": "8e86d0db0291ad0ed8430cc5b0bf1483bb36b93a2721573ef066ef3a25401f3c"
+    },
+    "output\\prototype2-overview.jpg": {
+      "bytes": 163657,
+      "sha256": "7ac74d004594d934f3f70359b3e94105a35eb480072f27293c3d91dad01d2f49"
+    }
+  },
+  "restoration": {
+    "mode_homes_equal": true,
+    "mode_camera_equal": true,
+    "homes_unchanged_after_flat_additions": true,
+    "new_homes": 9,
+    "saved_view_homes_equal": true,
+    "saved_view_camera_equal": true
+  },
+  "browser_final": {
+    "search_draft_survives_refresh": true,
+    "panel_bounds_preserved_through_source": true,
+    "source_page_fully_rendered": true,
+    "console_errors": 0,
+    "production_saved_explorations": 0,
+    "production_research_tasks": 0,
+    "main_app": "http://127.0.0.1:8765"
+  }
+}

@@ -1,13 +1,17 @@
 # Third-party software
 
-Installed dependencies were checked on 5 November 2026. The application requires no software
+Installed dependencies were checked on 6 November 2026. The application requires no software
 licence fee for its chosen components. This does not include the user's existing Codex service.
 Retain the upstream licence notices when distributing source or compiled application assets.
 
 | Component | Installed version | Licence |
 | --- | --- | --- |
 | React / React DOM | 19.3.1 | MIT |
-| Cytoscape.js | 3.34.4 | MIT |
+| react-force-graph-3d | 1.29.2 | MIT |
+| Three.js (one shared runtime) | 0.187.0 | MIT |
+| Cytoscape.js (worker layout) | 3.34.4 | MIT |
+| Cytoscape fCoSE | 2.2.0 | MIT |
+| react-rnd | 10.5.3 | MIT |
 | TypeScript | 6.0.3 | Apache-2.0 |
 | Vite | 8.3.6 | MIT |
 | PDF.js | 6.5.438 | Apache-2.0, with separately licensed bundled fonts/decoders |
@@ -28,9 +32,22 @@ assets with their licence files. These include Foxit, Liberation, OpenJPEG, QCMS
 QuickJS notices. No remote font/decoder service is needed. The original source PDFs remain in
 the user's existing library and retain their own rights; they are not redistributed in Git.
 
+Prototype two pins all direct npm versions and its lockfile. `npm ls three` confirms that
+3d-force-graph, three-forcegraph and three-render-objects share Three.js 0.187.0. The current
+inventory contains 131 installed npm package entries. Three.js addons (sprites, OrbitControls,
+Line2/LineMaterial) are imported from that same local installation.
+
 Official references checked:
 
+- https://github.com/vasturiano/react-force-graph
+- https://github.com/vasturiano/3d-force-graph
+- https://threejs.org/docs/pages/OrbitControls.html
+- https://threejs.org/docs/pages/Sprite.html
+- https://threejs.org/docs/pages/LineMaterial.html
+- https://github.com/mrdoob/three.js/blob/dev/LICENSE
 - https://js.cytoscape.org/ and https://github.com/cytoscape/cytoscape.js/releases
+- https://github.com/iVis-at-Bilkent/cytoscape.js-fcose
+- https://github.com/bokuweb/react-rnd
 - https://react.dev/versions and https://github.com/react/react/blob/main/LICENSE
 - https://fastapi.tiangolo.com/release-notes/ and https://fastapi.tiangolo.com/#license
 - https://sqlite.org/fts5.html and https://sqlite.org/copyright.html

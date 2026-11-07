@@ -1,0 +1,33 @@
+{
+  "factual_tables_unchanged": {
+    "topics": true,
+    "relationships": true,
+    "findings": true,
+    "sources": true,
+    "coverage": true,
+    "page_text": true
+  },
+  "source_hashes": {
+    "FOREST-002": true,
+    "FOREST-003": true,
+    "IRR-003": true,
+    "IRR-005": true,
+    "DRONE-004": true,
+    "FUND-004": true,
+    "FUND-005": true,
+    "FUND-008": true,
+    "FUND-012": true
+  },
+  "integrity": "ok",
+  "foreign_key_errors": [],
+  "counts": {
+    "topics": 281,
+    "relationships": 329,
+    "findings": 140,
+    "sources": 9,
+    "coverage": 68,
+    "browse_groups": 1,
+    "tasks": 0,
+    "explorations": 0
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "frontend_checks": {
+    "baseline": 17,
+    "scene_state_render": 75
+  },
+  "backend_checks": 19,
+  "centre_walkthrough": {
+    "parent": "Detail \u00b7 Establishment water",
+    "retained": [
+      "Detail \u00b7 Establishment water",
+      "Detail \u00b7 Cocoon"
+    ],
+    "centre": "Nursery watering",
+    "direct_neighbours": [
+      "Dryland restoration"
+    ],
+    "scene_items_including_qa_marker": 12
+  },
+  "all_ten_perspectives_both_modes_exercised": true,
+  "final_result_depth": 2,
+  "zoom_out_levels": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "tested_camera_limits": {
+    "upper_tilt_sideways": [
+      60,
+      60
+    ],
+    "lower_tilt_sideways": [
+      15,
+      -60
+    ]
+  },
+  "inspector": {
+    "count": 1,
+    "before": {
+      "x": 1475,
+      "height": 560
+    },
+    "after_keyboard": {
+      "x": 1455,
+      "height": 580
+    }
+  },
+  "qa_database": "data/centre-ui-qa.sqlite",
+  "qa_saved_views": 1,
+  "qa_task": "KGB-2026-11-06-1f247ccc",
+  "production_revision": 3,
+  "production_organization_groups": 1,
+  "production_facts_unchanged": true,
+  "source_hashes_unchanged": 9,
+  "manual_pointer_comfort_still_needed": true
+}

@@ -27,3 +27,26 @@ demonstration, heritage-conservation. Other batches may reference those IDs.
 Use group_id: species, habitats, restoration-methods, irrigation, drones, monitoring,
 programmes, activities, requirements, places, organizations, dates. These are view groups,
 not factual relationship hubs. Keep source-specific context and all useful in-domain discoveries.
+
+
+## Persistent browsing organization
+
+Optional `browse_groups[]` in an import batch updates organization in the same SQLite store.
+A definition has `id` (stable `browse:` namespace), `label`, `parent_id` (one of the nine root
+view-group IDs or another custom group), `anchor_topic_id`, `members` and `maintenance_rule`.
+Members are `{topic_id, role: "primary" | "shared"}`. A topic has at most one primary custom
+membership; shared membership is allowed. All anchors/members must resolve to existing or
+same-batch topic IDs, parents must exist, and the group hierarchy must be acyclic. Duplicate
+members/definitions and own-anchor membership are rejected. Definitions are replaced as a whole;
+include the full intended membership list when updating one.
+
+Run `python -m backend.cli groups`, inspect the catalog/export, and read applicable maintenance
+rules before imports. Research context captures the definitions and revision; reconcile them
+with the current database. The permanent Cocoon group is `browse:cocoon`, parent
+`technology:irrigation`, anchor `cocoon`. Reuse it for specific Cocoon discoveries and retain
+shared/general context elsewhere. Do not invent factual relationships from organization.
+
+A batch may contain only browse_groups, or organization plus supported factual discoveries.
+Use current `base_revision`, `--check`, then import. Existing accepted batch digests remain
+unchanged. Migration/import backups and stale-revision protection apply. Browser controls
+cannot modify these definitions. Group rules do not narrow the wider discovery obligation.

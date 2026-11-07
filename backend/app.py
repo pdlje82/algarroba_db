@@ -151,6 +151,8 @@ def create_app(store: Store | None = None):
         context["knowledge_revision"]=store.revision()
         context["captured_revision"]=original_revision
         context["identity_reconciliation_required"]=original_revision is not None and original_revision!=store.revision()
+        context["browse_groups"]=store.records("browse_groups")
+        context["browse_group_revision"]=store.revision()
         context["selected_relationships"]=[g.edges[e] for e in context.get("selected_relationship_ids",[]) if e in g.edges]
         text=f"""# Research task {task_id}
 Created: {now()}
@@ -175,6 +177,12 @@ Captured knowledge revision: {original_revision}; current revision: {store.revis
 Read this brief AND context.json; the live browser is not required. Inspect current records with
 python -m backend.cli search / inspect / export. Reconcile all stable IDs and older view state
 against the current knowledge before preparing mutations. SQLite is authoritative; exports are not editable masters.
+
+Persistent browsing groups and maintenance rules:
+{json.dumps(context['browse_groups'],ensure_ascii=False)}
+Review the current group definitions before imports. Reuse their anchors and update primary/shared
+memberships with supported discoveries in the same validated batch. Grouping never creates a factual
+relationship. Reconcile older captured groups with the current revision; keep wider discoveries.
 
 Agreed domain: {DOMAIN}
 Prioritize the requested areas, but capture ALL useful supported discoveries within the agreed
@@ -248,10 +256,10 @@ The user can reopen/refresh the original exploration with additions highlighted.
     def changes(since:int=0):
         with store.connect() as c:
             rows=c.execute("SELECT data FROM batches WHERE revision>? ORDER BY revision",(since,)).fetchall()
-            ids=set()
+            ids=set();groups=set()
             for row in rows:
-                batch=json.loads(row[0]);ids.update(batch.get("_changes",{}).get("added_topic_ids",[t["id"] for t in batch.get("topics",[])]))
-        return {"revision":store.revision(),"added_topic_ids":sorted(ids)}
+                batch=json.loads(row[0]);groups.update(batch.get("_changes",{}).get("browse_group_ids",[]));ids.update(batch.get("_changes",{}).get("added_topic_ids",[t["id"] for t in batch.get("topics",[])]))
+        return {"revision":store.revision(),"added_topic_ids":sorted(ids),"browse_group_ids":sorted(groups)}
 
     if (ROOT/"dist").exists():
         app.mount("/",StaticFiles(directory=ROOT/"dist",html=True),name="frontend")

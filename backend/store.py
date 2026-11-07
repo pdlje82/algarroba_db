@@ -73,6 +73,21 @@ class Coverage(BaseModel):
     note: str = Field(min_length=1)
 
 
+ROOT_BROWSE_GROUPS = {"ecosystem:species", "ecosystem:habitats", "ecosystem:restoration-methods", "technology:irrigation", "technology:drones", "technology:monitoring", "funding:programmes", "funding:activities", "funding:requirements"}
+
+class BrowseMember(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    topic_id: str
+    role: Literal["primary", "shared"] = "primary"
+
+class BrowseGroup(Record):
+    model_config = ConfigDict(extra="forbid")
+    label: str = Field(min_length=1)
+    parent_id: str
+    anchor_topic_id: str
+    members: list[BrowseMember] = []
+    maintenance_rule: str = Field(min_length=1)
+
 class Batch(BaseModel):
     model_config = ConfigDict(extra="forbid")
     batch_id: str = Field(min_length=1)
@@ -84,12 +99,18 @@ class Batch(BaseModel):
     coverage: list[Coverage] = []
     unresolved: list[dict] = []
     redirects: dict[str, str] = {}
+    browse_groups: list[BrowseGroup] = []
 
 
 class Store:
     def __init__(self, path: Path = DB_PATH):
         self.path = Path(path)
         self.path.parent.mkdir(parents=True, exist_ok=True)
+        if self.path.exists() and self.path.stat().st_size:
+            with sqlite3.connect(self.path) as migration:
+                tables={row[0] for row in migration.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+            if "meta" in tables and "browse_groups" not in tables:
+                self.backup()
         with self.connect() as c:
             c.executescript("""
                 CREATE TABLE IF NOT EXISTS meta(key TEXT PRIMARY KEY, value TEXT NOT NULL);
@@ -112,6 +133,7 @@ class Store:
                     tokenize='unicode61 remove_diacritics 2');
                 CREATE TABLE IF NOT EXISTS explorations(id TEXT PRIMARY KEY,label TEXT,updated TEXT,data TEXT);
                 CREATE TABLE IF NOT EXISTS tasks(id TEXT PRIMARY KEY,status TEXT,created TEXT,data TEXT);
+                CREATE TABLE IF NOT EXISTS browse_groups(id TEXT PRIMARY KEY,data TEXT NOT NULL);
             """)
 
     @contextmanager
@@ -135,7 +157,7 @@ class Store:
             return self.revision(connection)
 
     def records(self, table: str, c=None) -> list[dict]:
-        if table not in {"sources", "topics", "relationships", "findings", "unresolved"}:
+        if table not in {"sources", "topics", "relationships", "findings", "unresolved", "browse_groups"}:
             raise ValueError("Unknown record collection")
         if c is not None:
             return [json.loads(r[0]) for r in c.execute(f"SELECT data FROM {table} ORDER BY id")]
@@ -200,7 +222,31 @@ class Store:
             for old, new in batch.redirects.items():
                 if new not in ids or old == new:
                     raise ValueError("Invalid identity redirect")
-            changes = {k: len(getattr(batch, k)) for k in ("topics", "relationships", "findings", "coverage", "unresolved")}
+            groups={g["id"]:g for g in self.records("browse_groups",c)}
+            if len({g.id for g in batch.browse_groups}) != len(batch.browse_groups):
+                raise ValueError("Duplicate browsing group IDs")
+            groups.update({g.id:g.model_dump() for g in batch.browse_groups})
+            primary={}
+            for gid,group in groups.items():
+                if not gid.startswith("browse:") or gid in ids:
+                    raise ValueError("Browsing group IDs must use the browse: namespace")
+                if group["anchor_topic_id"] not in ids:
+                    raise ValueError("Unknown browsing group anchor")
+                if group["parent_id"] not in ROOT_BROWSE_GROUPS | groups.keys():
+                    raise ValueError("Unknown browsing group parent")
+                members=[m["topic_id"] for m in group["members"]]
+                if len(set(members))!=len(members) or not set(members)<=ids or group["anchor_topic_id"] in members:
+                    raise ValueError("Invalid or duplicate browsing group members")
+                for member in group["members"]:
+                    if member["role"]=="primary":
+                        if member["topic_id"] in primary:
+                            raise ValueError("A topic has more than one primary browsing group")
+                        primary[member["topic_id"]]=gid
+                visited=set();at=gid
+                while at in groups:
+                    if at in visited:raise ValueError("Cyclic browsing group hierarchy")
+                    visited.add(at);at=groups[at]["parent_id"]
+            changes = {k: len(getattr(batch, k)) for k in ("topics", "relationships", "findings", "coverage", "unresolved", "browse_groups")}
             if dry_run:
                 return {"status": "validated", "revision": self.revision(c), **changes}
         if self.revision():
@@ -223,11 +269,13 @@ class Store:
                           (page.source_id, page.page, page.status, page.note))
             for item in batch.unresolved:
                 c.execute("INSERT INTO unresolved VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (item["id"], json.dumps(item)))
+            for group in batch.browse_groups:
+                c.execute("INSERT INTO browse_groups VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (group.id,group.model_dump_json()))
             for old, new in batch.redirects.items():
                 c.execute("INSERT INTO redirects VALUES (?,?) ON CONFLICT(old_id) DO UPDATE SET new_id=excluded.new_id", (old, new))
             revision += 1
             c.execute("UPDATE meta SET value=? WHERE key='revision'", (str(revision),))
-            accepted=dict(raw,_changes={"added_topic_ids":[t.id for t in batch.topics if t.id not in existing],"relationship_ids":[e.id for e in batch.relationships],"finding_ids":[f.id for f in batch.findings]})
+            accepted=dict(raw,_changes={"added_topic_ids":[t.id for t in batch.topics if t.id not in existing],"relationship_ids":[e.id for e in batch.relationships],"finding_ids":[f.id for f in batch.findings],"browse_group_ids":[g.id for g in batch.browse_groups]})
             c.execute("INSERT INTO batches VALUES (?,?,?,?,?)", (batch.batch_id,digest,revision,now(),json.dumps(accepted,ensure_ascii=False)))
             self.reindex(c)
         return {"status": "accepted", "revision": revision, **changes}
@@ -263,5 +311,5 @@ class Store:
     def snapshot(self) -> dict:
         with self.connect() as c:
             c.execute("BEGIN")
-            return {"revision": self.revision(c), **{t:self.records(t,c) for t in ("topics","relationships","findings","sources","unresolved")},
+            return {"revision": self.revision(c), **{t:self.records(t,c) for t in ("topics","relationships","findings","sources","unresolved","browse_groups")},
                     "coverage": [dict(r) for r in c.execute("SELECT * FROM coverage ORDER BY source_id,page")]}

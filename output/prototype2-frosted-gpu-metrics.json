@@ -1,0 +1,13 @@
+{
+  "background": {
+    "off": 2721.1804570527975,
+    "depthOnly": 397.799332498957,
+    "frosted": 2.6411254809252305
+  },
+  "foregroundMeanDifference": 0,
+  "selectedRouteMeanDifference": 0,
+  "selectedRoutePixels": 1869,
+  "emptyMeanDifference": 0,
+  "warnings": [],
+  "passed": true
+}

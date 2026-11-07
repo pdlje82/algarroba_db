@@ -35,6 +35,41 @@ def test_exact_scope_evidence_and_safe_repeat(store):
     assert s.snapshot()==snap
 
 
+def test_browsing_groups_are_transactional_organization_not_factual_edges(store):
+    s,_=store;before=s.snapshot()
+    batch=json.loads((ROOT/'imports/cocoon-browse-group.json').read_text())
+    batch['base_revision']=s.revision()
+    assert s.import_batch(batch,True)['status']=='validated'
+    assert s.snapshot()==before
+    assert s.import_batch(batch)['status']=='accepted'
+    assert s.import_batch(batch)['status']=='unchanged'
+    after=s.snapshot()
+    for key in ['topics','relationships','findings','sources','coverage']:
+        assert after[key]==before[key]
+    assert len(after['browse_groups'])==1
+    assert len(after['browse_groups'][0]['members'])==9
+    client=TestClient(create_app(s))
+    assert client.get('/api/catalog').json()['browse_groups']==after['browse_groups']
+    response=client.post('/api/research/preview',json={'context':{'centre':'cocoon','knowledge_revision':1},'instruction':'Inspect Cocoon','areas':['Irrigation']})
+    assert response.status_code==200
+    assert response.json()['context']['browse_groups']==after['browse_groups']
+    assert 'Reuse the existing Cocoon identity' in response.json()['prompt']
+
+
+@pytest.mark.parametrize('error',['cycle','missing','primary','anchor','duplicate'])
+def test_invalid_browsing_groups_preserve_accepted_records(store,error):
+    s,_=store;before=s.snapshot()
+    batch=json.loads((ROOT/'imports/cocoon-browse-group.json').read_text());batch['base_revision']=s.revision()
+    group=batch['browse_groups'][0]
+    if error=='cycle':group['parent_id']=group['id']
+    if error=='missing':group['members'][0]['topic_id']='unknown'
+    if error=='anchor':group['anchor_topic_id']='unknown'
+    if error=='duplicate':group['members'].append(copy.deepcopy(group['members'][0]))
+    if error=='primary':batch['browse_groups'].append(dict(copy.deepcopy(group),id='browse:conflicting'))
+    with pytest.raises(ValueError):s.import_batch(batch)
+    assert s.snapshot()==before
+
+
 def test_invalid_and_stale_import_leave_accepted_knowledge_intact(store):
     s,batch=store;before=s.snapshot()
     bad={'batch_id':'invalid','summary':'invalid','relationships':[dict(batch['relationships'][0],id='invalid-edge',target='missing-topic')]}

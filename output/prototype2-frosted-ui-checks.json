@@ -1,0 +1,598 @@
+{
+  "checks": [
+    {
+      "check": "keyboard-layer-highlight",
+      "state": {
+        "bokeh": "subtle",
+        "hoveredLayer": "1",
+        "overviewZ": "-520",
+        "sceneItems": "16",
+        "sceneLevel": "1",
+        "sceneMode": "layered",
+        "sceneRelationships": "23"
+      }
+    },
+    {
+      "check": "exposed-overview-click",
+      "passed": true,
+      "level": 0
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "combined",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "26",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "53"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "ecosystems",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "25",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "49"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "technology",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "27",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "54"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "funding",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "25",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "46"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "sources",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "40",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "76"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "hierarchy",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "33",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "54"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "comparison",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "34",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "77"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "places",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "37",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "62"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "time",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "39",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "83"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "layered",
+      "perspective": "conditions",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "58",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "85"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "combined",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "26",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "53"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "ecosystems",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "25",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "49"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "technology",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "27",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "54"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "funding",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "25",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "46"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "sources",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "40",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "76"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "hierarchy",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "33",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "54"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "comparison",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "34",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "77"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "places",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "37",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "62"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "time",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "39",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "83"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "perspective",
+      "mode": "flat",
+      "perspective": "conditions",
+      "result": {
+        "centre": "carob",
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "58",
+          "sceneLevel": "2",
+          "sceneMode": "flat",
+          "sceneRelationships": "85"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "floating-panel-keyboard",
+      "before": {
+        "angle": "25° tilt · 0° turn",
+        "bounds": {
+          "bottom": 820,
+          "height": 560,
+          "left": 1055,
+          "right": 1475,
+          "top": 260,
+          "width": 420,
+          "x": 1055,
+          "y": 260
+        },
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "27",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "54"
+        }
+      },
+      "after": {
+        "angle": "25° tilt · 0° turn",
+        "bounds": {
+          "bottom": 800,
+          "height": 540,
+          "left": 1035,
+          "right": 1455,
+          "top": 260,
+          "width": 420,
+          "x": 1035,
+          "y": 260
+        },
+        "count": 1,
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "27",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "54"
+        }
+      }
+    },
+    {
+      "check": "offline-source-fullscreen",
+      "dialog": "ORIGINAL SOURCE · IRR-003\nIRR-003 - LIFE NIEBLAS - Technical Manual - 2025.pdf\n×\n←\nPDF page  / 224\n→\nRotate ↻\n−\n+\nOpen PDF ↗\nLIFE NIEBLAS project · legal-deposit: 2024 · filename / hosting collection: 2025\nRemote sensing · Curated page · Vegetation characterization, remote sensing and diagrams visually checked; transect wording issue retained.\nPDF positions are one-based and can differ from printed page labels. Viewing a page does not import it."
+    },
+    {
+      "check": "research-preview",
+      "result": {
+        "manual": true,
+        "outsideView": true,
+        "route": true,
+        "widerDiscoveries": true
+      }
+    },
+    {
+      "check": "closed-inspector",
+      "count": 0
+    },
+    {
+      "check": "one-updating-inspector",
+      "result": {
+        "bounds": {
+          "bottom": 800,
+          "height": 540,
+          "left": 1035,
+          "right": 1455,
+          "top": 260,
+          "width": 420,
+          "x": 1035,
+          "y": 260
+        },
+        "count": 1,
+        "title": "⠿ Drone water delivery by spraying↺×"
+      }
+    },
+    {
+      "check": "restart-restore",
+      "result": {
+        "centre": "carob",
+        "fullscreen": false,
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "27",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "54"
+        },
+        "search": "drone"
+      }
+    },
+    {
+      "check": "saved-view-reopen",
+      "result": {
+        "bokeh": "subtle",
+        "hoveredLayer": "",
+        "overviewZ": "-1040",
+        "sceneItems": "28",
+        "sceneLevel": "2",
+        "sceneMode": "layered",
+        "sceneRelationships": "55"
+      }
+    },
+    {
+      "check": "cocoon-walkthrough",
+      "result": {
+        "centre": "cocoon",
+        "perspective": "technology",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "24",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "40"
+        }
+      }
+    },
+    {
+      "check": "al20-walkthrough",
+      "result": {
+        "centre": "al20",
+        "perspective": "technology",
+        "scene": {
+          "bokeh": "subtle",
+          "hoveredLayer": "",
+          "overviewZ": "-1040",
+          "sceneItems": "26",
+          "sceneLevel": "2",
+          "sceneMode": "layered",
+          "sceneRelationships": "54"
+        }
+      }
+    },
+    {
+      "check": "back",
+      "centre": "cocoon"
+    },
+    {
+      "check": "forward",
+      "centre": "al20"
+    },
+    {
+      "check": "al20-funding",
+      "state": {
+        "bokeh": "subtle",
+        "hoveredLayer": "",
+        "overviewZ": "-520",
+        "sceneItems": "23",
+        "sceneLevel": "1",
+        "sceneMode": "layered",
+        "sceneRelationships": "41"
+      }
+    },
+    {
+      "check": "progressive-zoom-out",
+      "state": {
+        "bokeh": "off",
+        "hoveredLayer": "",
+        "overviewZ": "0",
+        "sceneItems": "10",
+        "sceneLevel": "0",
+        "sceneMode": "layered",
+        "sceneRelationships": "18"
+      }
+    },
+    {
+      "check": "responsive-fullscreen",
+      "result": {
+        "panel": {
+          "bottom": 585,
+          "height": 364,
+          "left": 555,
+          "right": 975,
+          "top": 221,
+          "width": 420,
+          "x": 555,
+          "y": 221
+        },
+        "scene": {
+          "bokeh": "off",
+          "hoveredLayer": "",
+          "overviewZ": "0",
+          "sceneItems": "10",
+          "sceneLevel": "0",
+          "sceneMode": "layered",
+          "sceneRelationships": "18"
+        },
+        "viewport": {
+          "height": 720,
+          "width": 1000
+        },
+        "workspace": {
+          "bottom": 593,
+          "height": 380,
+          "left": 17,
+          "right": 983,
+          "top": 213,
+          "width": 966,
+          "x": 17,
+          "y": 213
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Pointer-only hovering is covered by the independent hit path and timed unit tests; browser input supports click/drag/wheel, without a pointer-move command. Keyboard highlighting and exposed-plane click were verified.",
+    "Fullscreen uses the display size; the browser viewport override was also tested at 1000×720 outside fullscreen."
+  ]
+}

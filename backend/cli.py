@@ -51,6 +51,7 @@ def main():
     p=sub.add_parser("inspect");p.add_argument("id")
     p=sub.add_parser("export");p.add_argument("--output")
     sub.add_parser("backup")
+    sub.add_parser("groups")
     p=sub.add_parser("register-sources");p.add_argument("manifest")
     p=sub.add_parser("task-complete");p.add_argument("id");p.add_argument("--summary",required=True);p.add_argument("--needs-answer",action="store_true")
     p=sub.add_parser("task-files");p.add_argument("id")
@@ -62,6 +63,7 @@ def main():
     elif args.command=="export":
         result=store.snapshot()
         if args.output: Path(args.output).write_text(json.dumps(result,indent=2,ensure_ascii=False),encoding="utf-8");result={"saved":args.output,"revision":result["revision"]}
+    elif args.command=="groups": result=store.records("browse_groups")
     elif args.command=="backup": result={"backup":str(store.backup())}
     elif args.command=="register-sources": store.register_sources(read(args.manifest));result={"status":"registered"}
     else:

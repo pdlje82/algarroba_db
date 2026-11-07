@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-06",
+  "change": "foreground workspace and parent returns",
+  "automated": {
+    "graph": 52,
+    "backend": 13,
+    "production_build": "passed"
+  },
+  "browser": {
+    "levels": [
+      0,
+      1,
+      2
+    ],
+    "overview_z": [
+      0,
+      -520,
+      -1040
+    ],
+    "parent_return": "passed",
+    "earlier_layers_and_history": "passed",
+    "flat_layered_and_reload": "passed",
+    "fullscreen_single_inspector": "passed",
+    "retained_angle": "25 degree tilt / 10 degree turn",
+    "console_warnings_errors": []
+  },
+  "artifacts": {
+    "output\\prototype2-receding-overview.jpg": {
+      "bytes": 131788,
+      "sha256": "71debf0af4cab66d54b21ad6bb38d567509b6ea2fb3e15ac6e4d6acf419b9285"
+    },
+    "output\\prototype2-return-parent.jpg": {
+      "bytes": 133101,
+      "sha256": "aea0108835268c93692e069826df352bbcc10e24a27be164727d26a379a46125"
+    }
+  },
+  "production": {
+    "integrity": "ok",
+    "foreign_key_errors": [],
+    "counts": {
+      "sources": 9,
+      "coverage": 68,
+      "topics": 281,
+      "relationships": 329,
+      "findings": 140,
+      "explorations": 0,
+      "tasks": 0
+    }
+  }
+}

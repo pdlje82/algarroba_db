@@ -1,0 +1,395 @@
+{
+  "background": {
+    "off": 2721.1804570527975,
+    "depthOnly": 397.799332498957,
+    "frosted": 2.6414963148379917
+  },
+  "foregroundMeanDifference": 0,
+  "selectedRoute": {
+    "insidePixels": 2367,
+    "outsidePixels": 449,
+    "depthOnly": 0,
+    "frostedInside": 39.971130826644135,
+    "frostedOutside": 0
+  },
+  "interLayer": {
+    "insidePixels": 2021,
+    "outsidePixels": 1187,
+    "depthOnly": 0,
+    "frostedInside": 39.757050964868874,
+    "frostedOutside": 0
+  },
+  "emptyMeanDifference": 0,
+  "combinations": [
+    {
+      "theme": "dark",
+      "bits": 0,
+      "effects": {
+        "blur": false,
+        "darken": false,
+        "transparency": false,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        35,
+        71,
+        63
+      ],
+      "actual": [
+        35,
+        71,
+        63
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "dark",
+      "bits": 1,
+      "effects": {
+        "blur": true,
+        "darken": false,
+        "transparency": false,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        35,
+        71,
+        63
+      ],
+      "actual": [
+        35,
+        71,
+        63
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "dark",
+      "bits": 2,
+      "effects": {
+        "blur": false,
+        "darken": true,
+        "transparency": false,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        29,
+        61,
+        54
+      ],
+      "actual": [
+        29,
+        61,
+        54
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "dark",
+      "bits": 3,
+      "effects": {
+        "blur": true,
+        "darken": true,
+        "transparency": false,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        29,
+        61,
+        54
+      ],
+      "actual": [
+        29,
+        61,
+        54
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "dark",
+      "bits": 4,
+      "effects": {
+        "blur": false,
+        "darken": false,
+        "transparency": true,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        28,
+        55,
+        48
+      ],
+      "actual": [
+        28,
+        55,
+        48
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "dark",
+      "bits": 5,
+      "effects": {
+        "blur": true,
+        "darken": false,
+        "transparency": true,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        28,
+        55,
+        48
+      ],
+      "actual": [
+        28,
+        55,
+        48
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "dark",
+      "bits": 6,
+      "effects": {
+        "blur": false,
+        "darken": true,
+        "transparency": true,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        25,
+        48,
+        43
+      ],
+      "actual": [
+        25,
+        48,
+        43
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "dark",
+      "bits": 7,
+      "effects": {
+        "blur": true,
+        "darken": true,
+        "transparency": true,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        25,
+        48,
+        43
+      ],
+      "actual": [
+        25,
+        48,
+        43
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "light",
+      "bits": 0,
+      "effects": {
+        "blur": false,
+        "darken": false,
+        "transparency": false,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        35,
+        71,
+        63
+      ],
+      "actual": [
+        35,
+        71,
+        63
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "light",
+      "bits": 1,
+      "effects": {
+        "blur": true,
+        "darken": false,
+        "transparency": false,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        35,
+        71,
+        63
+      ],
+      "actual": [
+        35,
+        71,
+        63
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "light",
+      "bits": 2,
+      "effects": {
+        "blur": false,
+        "darken": true,
+        "transparency": false,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        29,
+        61,
+        54
+      ],
+      "actual": [
+        29,
+        61,
+        54
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "light",
+      "bits": 3,
+      "effects": {
+        "blur": true,
+        "darken": true,
+        "transparency": false,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        29,
+        61,
+        54
+      ],
+      "actual": [
+        30,
+        62,
+        54
+      ],
+      "error": 1,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "light",
+      "bits": 4,
+      "effects": {
+        "blur": false,
+        "darken": false,
+        "transparency": true,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        180,
+        185,
+        179
+      ],
+      "actual": [
+        180,
+        185,
+        178
+      ],
+      "error": 1,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "light",
+      "bits": 5,
+      "effects": {
+        "blur": true,
+        "darken": false,
+        "transparency": true,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        180,
+        185,
+        179
+      ],
+      "actual": [
+        180,
+        186,
+        179
+      ],
+      "error": 1,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "light",
+      "bits": 6,
+      "effects": {
+        "blur": false,
+        "darken": true,
+        "transparency": true,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        180,
+        184,
+        177
+      ],
+      "actual": [
+        180,
+        184,
+        177
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    },
+    {
+      "theme": "light",
+      "bits": 7,
+      "effects": {
+        "blur": true,
+        "darken": true,
+        "transparency": true,
+        "darkenAmount": 0.25
+      },
+      "expected": [
+        180,
+        184,
+        177
+      ],
+      "actual": [
+        180,
+        184,
+        177
+      ],
+      "error": 0,
+      "foregroundMeanDifference": 0,
+      "emptyMeanDifference": 0
+    }
+  ],
+  "warnings": [],
+  "passed": true
+}

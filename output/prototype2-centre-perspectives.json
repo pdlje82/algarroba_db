@@ -1,0 +1,142 @@
+[
+  {
+    "mode": "layered",
+    "p": "combined",
+    "level": "6",
+    "items": "35",
+    "links": "59"
+  },
+  {
+    "mode": "layered",
+    "p": "ecosystems",
+    "level": "6",
+    "items": "27",
+    "links": "51"
+  },
+  {
+    "mode": "layered",
+    "p": "technology",
+    "level": "6",
+    "items": "36",
+    "links": "60"
+  },
+  {
+    "mode": "layered",
+    "p": "funding",
+    "level": "6",
+    "items": "35",
+    "links": "62"
+  },
+  {
+    "mode": "layered",
+    "p": "sources",
+    "level": "6",
+    "items": "51",
+    "links": "87"
+  },
+  {
+    "mode": "layered",
+    "p": "hierarchy",
+    "level": "6",
+    "items": "41",
+    "links": "60"
+  },
+  {
+    "mode": "layered",
+    "p": "comparison",
+    "level": "6",
+    "items": "44",
+    "links": "85"
+  },
+  {
+    "mode": "layered",
+    "p": "places",
+    "level": "6",
+    "items": "44",
+    "links": "63"
+  },
+  {
+    "mode": "layered",
+    "p": "time",
+    "level": "6",
+    "items": "47",
+    "links": "83"
+  },
+  {
+    "mode": "layered",
+    "p": "conditions",
+    "level": "6",
+    "items": "64",
+    "links": "87"
+  },
+  {
+    "mode": "flat",
+    "p": "combined",
+    "level": "6",
+    "items": "35",
+    "links": "59"
+  },
+  {
+    "mode": "flat",
+    "p": "ecosystems",
+    "level": "6",
+    "items": "27",
+    "links": "51"
+  },
+  {
+    "mode": "flat",
+    "p": "technology",
+    "level": "6",
+    "items": "36",
+    "links": "60"
+  },
+  {
+    "mode": "flat",
+    "p": "funding",
+    "level": "6",
+    "items": "35",
+    "links": "62"
+  },
+  {
+    "mode": "flat",
+    "p": "sources",
+    "level": "6",
+    "items": "51",
+    "links": "87"
+  },
+  {
+    "mode": "flat",
+    "p": "hierarchy",
+    "level": "6",
+    "items": "41",
+    "links": "60"
+  },
+  {
+    "mode": "flat",
+    "p": "comparison",
+    "level": "6",
+    "items": "44",
+    "links": "85"
+  },
+  {
+    "mode": "flat",
+    "p": "places",
+    "level": "6",
+    "items": "44",
+    "links": "63"
+  },
+  {
+    "mode": "flat",
+    "p": "time",
+    "level": "6",
+    "items": "47",
+    "links": "83"
+  },
+  {
+    "mode": "flat",
+    "p": "conditions",
+    "level": "6",
+    "items": "64",
+    "links": "87"
+  }
+]
