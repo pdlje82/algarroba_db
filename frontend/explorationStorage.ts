@@ -1,24 +1,104 @@
-import type {State,SceneContext} from './types.ts';
-/** Deduplicate immutable layout caches in browser history; keep complete reversible snapshots. */
-export function encodeHistory(entries:State[],index:number){
- const pool:unknown[]=[],keys=new Map<string,number>();
- const intern=(value:unknown)=>{const json=JSON.stringify(value);let id=keys.get(json);if(id===undefined){id=pool.length;keys.set(json,id);pool.push(value)}return id};
- const packFields=(object:any,fields:string[])=>{const next={...object},refs:Record<string,number>={};for(const field of fields)if(next[field]!==undefined){refs[field]=intern(next[field]);delete next[field]}return {...next,poolFields:refs}};
- const packed=entries.map(s=>({...s,layerView:s.layerView?{...packFields(s.layerView,['hosts']),layers:Object.fromEntries(Object.entries(s.layerView.layers).map(([key,layer])=>[key,intern(packFields(layer,['scope','slots','offsets','arrangements']))]))}:undefined,positionsRef:intern(s.positions),positions:undefined,scene:s.scene?{...s.scene,contexts:Object.fromEntries(Object.entries(s.scene.contexts).map(([key,value])=>[key,intern(packFields(value,['homes','flat','owners','planes','routes','layers','references','laidOut']))]))}:undefined}));
- return JSON.stringify({format:5,index,entries:packed,pool});
+import { initialState, type History } from "./exploration.ts";
+import {
+  LEGACY_KEYS,
+  migrate,
+  migrateHistory,
+  legacyTab,
+} from "./migration.ts";
+export const STATE_KEY = "kgb:exploration:v6";
+export type Session = {
+  savedAt: number;
+  history: History;
+  selection?: string | null;
+  tab?: string;
+};
+let dbPromise: Promise<IDBDatabase> | undefined;
+function database() {
+  return (dbPromise ??= new Promise<IDBDatabase>((resolve, reject) => {
+    const r = indexedDB.open("kgb-exploration", 1);
+    r.onupgradeneeded = () => {
+      if (!r.result.objectStoreNames.contains("sessions"))
+        r.result.createObjectStore("sessions");
+    };
+    r.onsuccess = () => resolve(r.result);
+    r.onerror = () => reject(r.error);
+  }));
 }
-export function decodeHistory(raw:string|null):{entries:State[];index:number}|null{
- if(!raw)return null;const value=JSON.parse(raw);if(value.format!==3&&value.format!==4&&value.format!==5)return value;
- const unpack=(object:any)=>{if(!object?.poolFields)return object;const next={...object};for(const [key,id] of Object.entries(object.poolFields))next[key]=value.pool[id as number];delete next.poolFields;return next};
- return {index:value.index,entries:value.entries.map((s:any)=>{const result={...s,layerView:s.layerView?{...unpack(s.layerView),layers:Object.fromEntries(Object.entries(s.layerView.layers).map(([key,layer])=>[key,unpack(typeof layer==='number'?value.pool[layer]:layer)]))}:undefined,positions:value.pool[s.positionsRef]||{},scene:s.scene?{...s.scene,contexts:Object.fromEntries(Object.entries(s.scene.contexts).map(([key,id])=>[key,unpack(value.pool[id as number]) as SceneContext]))}:undefined};delete result.positionsRef;if(!s.layerView)delete result.layerView;return result})};
+async function readIdb(key: string) {
+  try {
+    const db = await database();
+    return await new Promise<any>((resolve, reject) => {
+      const r = db.transaction("sessions").objectStore("sessions").get(key);
+      r.onsuccess = () => resolve(r.result);
+      r.onerror = () => reject(r.error);
+    });
+  } catch {
+    return null;
+  }
 }
-
-type BrowserSession={savedAt:number;state:State;history:string};
-let sessionDatabase:Promise<IDBDatabase>|undefined;
-function database(){return sessionDatabase??=new Promise<IDBDatabase>((resolve,reject)=>{const request=indexedDB.open('kgb-exploration',1);request.onupgradeneeded=()=>request.result.createObjectStore('sessions');request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error)})}
-export async function saveBrowserSession(key:string,state:State,entries:State[],index:number){
- const value:BrowserSession={savedAt:Date.now(),state,history:encodeHistory(entries,index)};let local=false;
- try{localStorage.setItem(key,JSON.stringify(state));localStorage.setItem(key+':history',value.history);localStorage.setItem(key+':saved-at',String(value.savedAt));local=true}catch{}
- try{const db=await database();await new Promise<void>((resolve,reject)=>{const transaction=db.transaction('sessions','readwrite');transaction.objectStore('sessions').put(value,key);transaction.oncomplete=()=>resolve();transaction.onerror=()=>reject(transaction.error)})}catch{if(!local)throw new Error('Browser storage could not save this session. Use Save view to keep it in the local application.')}
+function readLocal(key: string) {
+  try {
+    return JSON.parse(localStorage.getItem(key) || "null");
+  } catch {
+    return null;
+  }
 }
-export async function restoreBrowserSession(key:string):Promise<BrowserSession|null>{try{const db=await database(),value=await new Promise<BrowserSession|undefined>((resolve,reject)=>{const request=db.transaction('sessions').objectStore('sessions').get(key);request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error)});return value&&value.savedAt>Number(localStorage.getItem(key+':saved-at')||0)?value:null}catch{return null}}
+export async function saveBrowserSession(history: History) {
+  const session: Session = { savedAt: Date.now(), history };
+  let local = false,
+    idb = false;
+  try {
+    localStorage.setItem(STATE_KEY, JSON.stringify(session));
+    local = true;
+  } catch {}
+  try {
+    const db = await database();
+    await new Promise<void>((resolve, reject) => {
+      const t = db.transaction("sessions", "readwrite");
+      t.objectStore("sessions").put(session, STATE_KEY);
+      t.oncomplete = () => resolve();
+      t.onerror = () => reject(t.error);
+      t.onabort = () => reject(t.error);
+    });
+    idb = true;
+  } catch {}
+  if (!local && !idb)
+    throw new Error(
+      "Browser storage is unavailable. Use Save view to preserve this exploration in the local application.",
+    );
+}
+export async function restoreBrowserSession(): Promise<Session> {
+  const local = readLocal(STATE_KEY),
+    mirror = await readIdb(STATE_KEY),
+    newest = [local, mirror]
+      .filter((v) => v?.history?.entries?.length)
+      .sort((a, b) => b.savedAt - a.savedAt)[0];
+  if (newest) {
+    const h = newest.history;
+    return {
+      ...newest,
+      history: migrateHistory(h, h.entries[h.index], h.index),
+    };
+  }
+  for (const key of LEGACY_KEYS) {
+    const l = readLocal(key),
+      m = await readIdb(key);
+    if (!l && !m) continue;
+    const timestamp = Number(readLocal(key + ":saved-at") || 0),
+      state = m && m.savedAt > timestamp ? m.state : l || m?.state;
+    const rawHistory =
+      m && m.savedAt > timestamp
+        ? m.history
+        : readLocal(key + ":history") || m?.history;
+    return {
+      savedAt: Date.now(),
+      history: migrateHistory(rawHistory, state),
+      selection: state?.selected || null,
+      tab: legacyTab(state),
+    };
+  }
+  return {
+    savedAt: Date.now(),
+    history: { entries: [initialState()], index: 0 },
+  };
+}

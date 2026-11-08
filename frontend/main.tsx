@@ -1,253 +1,1662 @@
-import React,{useEffect,useRef,useState} from 'react';
-import {createRoot} from 'react-dom/client';
-import {GlobalWorkerOptions,getDocument,type PDFDocumentProxy} from 'pdfjs-dist';
-import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
-import {api,COLORS,GROUP_LABELS,landscapeGroup,initialState,type Catalog,type Item,type Ref,type Route,type State,type View} from './types';
-import {PLANE_GAP,FOCUS_OFFSET,buildScene,sceneKey,rememberScene,normalizeExploration,deepestCollapse,type Scene} from './scene';
-import {prepareScene} from './sceneLayout';
-import {trackLayerReturns,collapseLayerReturn,collapseExpandedCard} from './layerNavigation';
-import {SceneView,type SceneHandle} from './SceneView';
-import {cameraPoseForScene,type CameraFrame} from './cameraFocus';
-import {collapseToLayer,layerLabel} from './layers';
-import {encodeHistory,decodeHistory,saveBrowserSession,restoreBrowserSession} from './explorationStorage';
-import {useAppearance,useBackgroundEffects,useFullScreen,FloatingDetails} from './workspace';
-import {ensureLayers,openGroupLayer,openTopicLayer,centreLayer,withoutCentre,resultLayer,routeLayer,routesLayer,memberLayer,closeLayer,closeRouteLayers,returnLayer,overviewLayers,zoomLayer,moveLayer,layerDisplay,compactLayer,ROOT_GROUPS} from './layerState';
-import {buildLayerScene,prepareLayerScene} from './layerScene';
-import {browseGroups,groupLabel,directNeighbours,rootGroup} from './organization';
-import './style.css';
-import './appearance.css';
-import './scene.css';
+import React, {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  lazy,
+  Suspense,
+} from "react";
+import { createRoot } from "react-dom/client";
+import {
+  api,
+  ROOT_GROUPS,
+  GROUP_LABELS,
+  type Catalog,
+  type State,
+  type ExploreView,
+  type Ref,
+} from "./types";
+import {
+  initialState,
+  reduceExploration,
+  isInPlaceAction,
+  groupOpeningAction,
+  moveLayer,
+  query,
+  allRoutes,
+  reconcile,
+  commitHistory,
+  contextLabel,
+  type Action,
+  type History,
+} from "./exploration";
+import {
+  migrateHistory,
+  legacyTab,
+  reconcileIdentities,
+  migrateExpandedGroup,
+} from "./migration";
+import {
+  restoreBrowserSession,
+  saveBrowserSession,
+} from "./explorationStorage";
+import { openingSource } from "./opening";
+import { closeLayer } from "./layerClosing";
+import { buildScene, previousScenes, isInteractiveRecord } from "./scene";
+import { SceneView, GraphBoundary, type SceneHandle } from "./SceneView";
+import { useAppearance, useFullScreen } from "./workspace";
+import { ResearchPanel, Refs } from "./dialogs";
+import { rootGroup } from "./organization";
+import "./style.css";
 
-GlobalWorkerOptions.workerSrc=pdfWorker;
-const clone=<T,>(x:T):T=>JSON.parse(JSON.stringify(x));
-const perspectiveNames:Record<string,string>={combined:'Combined overview',ecosystems:'Ecosystems',technology:'Technology',funding:'Funding',sources:'Sources and findings',hierarchy:'Hierarchy',comparison:'Comparison',places:'Places',time:'Time',conditions:'Conditions and dependencies'};
-const STATE_KEY='kgb:exploration:v5';
-const V4_KEY='kgb:exploration:v4';
-const PREVIOUS_KEY='kgb:exploration:v3';
-const LEGACY_KEY='kgb:exploration:v1';
-const normalizeState=normalizeExploration;
-function startingState(){try{return normalizeState(JSON.parse(localStorage.getItem(STATE_KEY)||localStorage.getItem(V4_KEY)||localStorage.getItem(PREVIOUS_KEY)||localStorage.getItem(LEGACY_KEY)||'null'))}catch{return normalizeState(null)}}
-function startingHistory(state:State){try{const v=decodeHistory(localStorage.getItem(STATE_KEY+':history')||localStorage.getItem(V4_KEY+':history')||localStorage.getItem(PREVIOUS_KEY+':history')||localStorage.getItem(LEGACY_KEY+':history'));if(v?.entries?.length&&v.index>=0&&v.index<v.entries.length)return {...v,entries:v.entries.map(normalizeState)}}catch{}return {entries:[clone(state)],index:0}}
+const PdfPanel = lazy(() => import("./PdfPanel"));
 
-function App(){
- const [state,setState]=useState<State>(startingState);const current=useRef(state);
- const [catalog,setCatalog]=useState<Catalog|null>(null),[view,setView]=useState<View|null>(null);
- const [loading,setLoading]=useState(true),[error,setError]=useState(''),[toast,setToast]=useState(''),[retry,setRetry]=useState(0);
- const [searchInput,setSearchInput]=useState(state.search),[inspected,setInspected]=useState<any>(null),[selectedData,setSelectedData]=useState<any>(null);
- const [source,setSource]=useState<Ref|null>(null),[research,setResearch]=useState(false),[library,setLibrary]=useState(false),[saved,setSaved]=useState(false);
- const [savingView,setSavingView]=useState(false),[saveName,setSaveName]=useState('');
- const [tasks,setTasks]=useState<any[]>([]),[savedViews,setSavedViews]=useState<any[]>([]),[budget,setBudget]=useState('');
- const [additions,setAdditions]=useState<string[]>([]);
- const workspace=useRef<HTMLDivElement>(null),dockedDetails=useRef<HTMLElement>(null);
- const [panelOpen,setPanelOpen]=useState(false),[layoutBusy,setLayoutBusy]=useState(false);
- const appearance=useAppearance(),background=useBackgroundEffects();
- const canvas=useRef<HTMLDivElement>(null),graph=useRef<SceneHandle>(null);
- const [viewportAspect,setViewportAspect]=useState(16/9),[selectionFocus,setSelectionFocus]=useState(()=>localStorage.getItem('kgb:selection-focus:v1')!=='off');
- const [scene,setScene]=useState<Scene|null>(null),[restoreToken,setRestoreToken]=useState(0),[restoreRequest,setRestoreRequest]=useState(0);const sceneRef=useRef<Scene|undefined>(undefined);
- const boot=useRef<any>(null);if(!boot.current)boot.current=startingHistory(state);
- const history=useRef<State[]>(boot.current.entries),historyIndex=useRef(boot.current.index),[historyTick,setHistoryTick]=useState(0);
- const restoring=useRef(true),storageReady=useRef(false);
- const persistSession=(s:State)=>{if(storageReady.current&&sceneRef.current?.key===sceneKey(s)&&(sceneRef.current.layerView?.change||0)===(s.layerView?.change||0))saveBrowserSession(STATE_KEY,s,history.current,historyIndex.current).catch(e=>setError(e.message))};
- useEffect(()=>{let alive=true;restoreBrowserSession(STATE_KEY).then(saved=>{if(!alive)return;if(saved){const next=normalizeState(saved.state),stack=decodeHistory(saved.history);if(stack){history.current=stack.entries.map(normalizeState);historyIndex.current=stack.index}current.current=next;setState(next);setSearchInput(next.search);restoring.current=true}storageReady.current=true;setRestoreRequest(x=>x+1)});return()=>{alive=false}},[]);
- const message=(text:string)=>{setToast(text);setTimeout(()=>setToast(''),4500)};
- const {fullscreen,toggle:toggleFullscreen}=useFullScreen(message);
- const snapshot=()=>sceneRef.current?rememberScene(current.current,sceneRef.current,cameraPoseForScene(graph.current?.pose(),sceneRef.current)):clone(current.current);
- const commit=(patch:Partial<State>,label?:string)=>{
-  const before=snapshot();history.current[historyIndex.current]=clone(before);
-  let next={...before,...patch};
-  if((patch.search!==undefined&&patch.search!==before.search)||(patch.perspective!==undefined&&patch.perspective!==before.perspective)){next.resultsOpen=true;next.overview=false}
-  if(catalog)next=ensureLayers(next,catalog);
-  if(label)next.trail=[...before.trail,{label,index:historyIndex.current+1}].slice(-24);
-  history.current=history.current.slice(0,historyIndex.current+1);history.current.push(clone(next));
-  if(history.current.length>100){history.current.shift();next.trail=next.trail.map(t=>({...t,index:t.index-1})).filter(t=>t.index>=0)}
-  historyIndex.current=history.current.length-1;current.current=next;setState(next);setHistoryTick(x=>x+1);
- };
- const travel=(index:number)=>{if(index<0||index>=history.current.length)return;history.current[historyIndex.current]=snapshot();historyIndex.current=index;restoring.current=true;const next=normalizeState(history.current[index]);current.current=next;setState(next);setRestoreRequest(x=>x+1);setSearchInput(next.search);setSelectedData(null);setHistoryTick(x=>x+1)};
- const locateTopic=(id:string)=>{setPanelOpen(true);setSelectedData(null);if(current.current.selected!==id)setInspected(null);commit({selected:id,selectedEdges:[]});graph.current?.reveal(id)};
- const focusTopic=(id:string)=>{if(!catalog)return;setPanelOpen(true);setSelectedData(null);if(current.current.selected!==id)setInspected(null);const source=sceneRef.current?.cards.find(c=>c.id===id)?.layerId;commit(openTopicLayer(snapshot(),catalog,id,source),`Open ${catalog.topics.find(t=>t.id===id)?.label||id}`)};
- const expandTopic=(id:string)=>{if(catalog)commit(openTopicLayer(snapshot(),catalog,id,sceneRef.current?.cards.find(c=>c.id===id)?.layerId,true),'Open connected topics')};
- const makeCentre=(id:string)=>{if(!catalog)return;setPanelOpen(true);setSelectedData(null);if(current.current.selected!==id)setInspected(null);commit(centreLayer(snapshot(),catalog,id),`Explore ${catalog.topics.find(t=>t.id===id)?.label||id}`)};
- const removeCentre=()=>{const next=withoutCentre(snapshot());if(!next.selected){setInspected(null);setSelectedData(null);setPanelOpen(false)}commit(next,'Remove centre')};
- const openGroup=(gid:string,_more=false,collapse=false)=>{if(!catalog)return;const id=(catalog.browse_groups?.some(g=>g.id===gid)?'group:':'root:')+gid;if(collapse)commit(closeLayer(snapshot(),id),'Close '+(groupLabel(gid,catalog)||gid));else commit(openGroupLayer(snapshot(),catalog,gid,sceneRef.current?.cards.find(c=>c.id===catalog.browse_groups?.find(g=>g.id===gid)?.anchor_topic_id)?.layerId),'Open '+(groupLabel(gid,catalog)||GROUP_LABELS[gid.split(':').at(-1)!]||gid))};
- const selectRecord=(data:any)=>{setPanelOpen(true);setInspected(null);setSelectedData(data);const route=[...(view?.routes||[]),...current.current.alternatives,...Object.values(sceneRef.current?.context.routes||{})].find(r=>r.id===data.route_id||r.id===data.id);const patch={selected:data.id,selectedEdges:route?.edges||(data.record_type==='relationship'?[data.id]:data.constituent_ids||[])};if(route&&catalog){const n=routeLayer(snapshot(),catalog,route);commit({...n,...patch,expandedRoutes:[...new Set([...n.expandedRoutes,route.id])]})}else commit(patch)};
- const inspectRoute=(route:Route)=>selectRecord({...route,route_id:route.id,record_type:'abbreviated'});
- const returnToParent=(id:string)=>{if(current.current.layerView){commit(returnLayer(snapshot(),id),'Return to parent');return}};
- const reopenLayer=(_level:number)=>{};
- const returnToLayer=(id:string|number)=>{if(typeof id==='string'&&current.current.layerView){if(id.startsWith('close:'))commit(closeLayer(snapshot(),id.slice(6)),'Close layer');else commit(returnLayer(snapshot(),id),'Return to '+current.current.layerView.layers[id]?.label)}};
- const fitCurrent=()=>graph.current?.fit();
- const clearSelection=()=>{setSelectedData(null);setPanelOpen(false);commit({selected:null,selectedEdges:[]})};
- const broadenContext=()=>{if(current.current.layerView){const patch=zoomLayer(snapshot());if(patch)commit(patch,'Zoom out to parent')}};
- const zoomOut=()=>{if(current.current.layerView){const n=zoomLayer(snapshot());if(n){commit(n,'Close active detail');return}}graph.current?.zoom(1.3)};
- const selectCard=(data:any)=>{if(!catalog)return;if(data.groupScope){commit(memberLayer(snapshot(),catalog,data.groupScope,'Detail · '+data.label.split('\n')[0],data.sourceLayerId,data.id),'Open '+data.label.split('\n')[0]);return}if(data.kind==='group'){openGroup(data.groupKey);return}if(data.kind==='source'){const id=data.id.replace('source:','');setSource({source_id:id,page:catalog.sources.find(s=>s.id===id)?.initial_pdf_page_ranges?.[0]?.[0]||1});return}if(data.kind==='research'){setResearch(true);return}if(catalog.topics.some(t=>t.id===data.id))focusTopic(data.id);else selectRecord(data)};
- const moveGraphLayer=(id:string,point:{x:number;y:number})=>commit(moveLayer(snapshot(),id,point),'Move '+current.current.layerView?.layers[id]?.label);
- const compactGraphLayer=(id:string)=>commit(compactLayer(snapshot(),id),'Compact '+current.current.layerView?.layers[id]?.label);
- const displayGraphLayer=(id:string,display:'topics'|'groups')=>commit(layerDisplay(snapshot(),id,display),'Change layer grouping');
- const resetGraphLayer=(id:string)=>{const n=snapshot();if(n.layerView?.layers[id]){delete n.layerView.layers[id].offsets[n.scene?.mode||'layered'];n.layerView.change=(n.layerView.change||0)+1;commit(n,'Reset layer position')}};
- const updatePose=(frame:CameraFrame)=>{const displayed=sceneRef.current;if(!displayed)return;const pose=cameraPoseForScene(frame,displayed);if(!pose)return;const completed=rememberScene(current.current,displayed,pose);current.current=completed;history.current[historyIndex.current]=clone(completed);persistSession(completed)};
- useEffect(()=>setSearchInput(state.search),[state.search]);
- useEffect(()=>{current.current=state;persistSession(state)},[state]);
- useEffect(()=>{const save=()=>{try{const s=snapshot();history.current[historyIndex.current]=s;persistSession(s)}catch{}};window.addEventListener('beforeunload',save);return()=>window.removeEventListener('beforeunload',save)},[]);
- const refresh=async()=>{try{const changes=await api('/api/changes?since='+(view?.revision||catalog?.revision||0));setAdditions(changes.added_topic_ids);const c=await api<Catalog>('/api/catalog');setCatalog(c);setTasks(await api('/api/research'));setRetry(x=>x+1);message(changes.added_topic_ids.length?`${changes.added_topic_ids.length} additions highlighted. Your exploration is preserved.`:'Knowledge refreshed. Your exploration is preserved.')}catch(e){setError(String(e))}};
- useEffect(()=>{api<Catalog>('/api/catalog').then(setCatalog).catch(e=>setError(e.message));api('/api/research').then(setTasks).catch(()=>{});},[]);
- useEffect(()=>{
-  if(!catalog)return;const controller=new AbortController();setLoading(true);setError('');
-  const params=new URLSearchParams({search:state.search,perspective:state.perspective,limit:String(state.limit),depth:String(state.depth),compare:state.compare.join(','),all_results:'true',branches:(state.branches||[]).join(',')});
-  if(state.centre&&!state.overview)params.set('centre',state.centre);
-  api<View>('/api/view?'+params,{signal:controller.signal}).then(v=>{setView(v);setLoading(false);if(!state.overview&&v.centre!==state.centre){setState(s=>({...s,centre:v.centre,overview:!v.centre}));message('The saved identity was reconciled against current knowledge.')}}).catch(e=>{if(e.name!=='AbortError'){setError(e.message);setLoading(false)}});
-  return()=>controller.abort();
- },[catalog,state.centre,state.search,state.perspective,state.overview,state.limit,state.depth,state.compare.join(','),(state.branches||[]).join(','),retry]);
- useEffect(()=>{if(fullscreen&&current.current.selected)setPanelOpen(true)},[fullscreen]);
- useEffect(()=>{const el=workspace.current;if(!el)return;const measure=()=>{const r=el.getBoundingClientRect(),panel=el.querySelector('.floating-details')?.getBoundingClientRect();setViewportAspect(Math.max(1,r.width-(panel?.width||0)-(panel?24:0))/Math.max(1,r.height))};const observer=new ResizeObserver(measure);observer.observe(el);const panel=el.querySelector('.floating-details');if(panel)observer.observe(panel);measure();return()=>observer.disconnect()},[fullscreen,panelOpen]);
- useEffect(()=>{if(dockedDetails.current)dockedDetails.current.scrollTop=0},[state.selected]);
- useEffect(()=>{
-  if(!view||!catalog||view.perspective!==state.perspective||view.search!==state.search||(!state.overview&&view.centre!==state.centre))return;
-  const controller=new AbortController();setLayoutBusy(true);
-  const run=async()=>{try{
-   let base=ensureLayers(current.current,catalog);
-   if(base.resultsOpen&&!base.overview){const existing=base.layerView?.layers['results:'+(base.centre||'overview')];if(!existing?.open||existing.scope.search!==base.search||existing.scope.perspective!==base.perspective||existing.scope.revision!==view.revision||(existing.scope as any).detail!==base.detail){base=resultLayer(base,catalog,view);base.layerView!.layers['results:'+(base.centre||'overview')].scope.revision=view.revision}}
-   const candidate=buildLayerScene(view,base,catalog,tasks,viewportAspect);const result=await prepareLayerScene(candidate,sceneRef.current,controller.signal);
-   if(controller.signal.aborted)return;
-   setBudget(result.notice);sceneRef.current=result;setScene(result);
-   if(restoring.current){setRestoreToken(x=>x+1);restoring.current=false}
-   const complete=rememberScene(base,result);current.current=complete;history.current[historyIndex.current]=clone(complete);setState(complete);setLayoutBusy(false);
-   if(canvas.current){canvas.current.dataset.renderedPerspective=state.perspective;canvas.current.dataset.renderedCentre=state.centre||''}
-  }catch(e){if(controller.signal.aborted)return;setLayoutBusy(false);setError(String(e))}};
-  run();return()=>controller.abort();
- },[view,catalog,state.overview,state.centre,state.perspective,state.detail,state.expandedGroups.join('|'),JSON.stringify(state.groupLimits),state.expandedRoutes.join('|'),state.branches.join('|'),state.alternatives,state.selected,state.selectedEdges.join('|'),state.markers,state.scene?.mode,state.scene?.focus,state.centreFirst,state.centreVisible,state.centreSession,JSON.stringify(state.retainedLayers),state.resultsOpen,state.directLimit,state.otherConnections,state.centreLevel,JSON.stringify(state.layerView),viewportAspect,tasks,retry,restoreRequest]);
- useEffect(()=>{
-  setInspected(null);if(!state.selected)return;
-  if(state.selected.startsWith('viewgroup:')||state.selected.startsWith('group:')||state.selected.startsWith('centre-other:')||state.selected.startsWith('route:')||state.selected.startsWith('aggregate:')||state.selected.startsWith('aspect:')||state.selected.startsWith('compare:')||state.selected.startsWith('missing:')||state.selected.startsWith('lane:')){setInspected(null);return}
-  let active=true;api('/api/inspect/'+encodeURIComponent(state.selected)).then(x=>{if(active)setInspected(x)}).catch(()=>{if(active)setInspected(null)});return()=>{active=false};
- },[state.selected,catalog?.revision]);
- const displayRoutes=[...new Map([...(view?.routes||[]),...state.alternatives,...Object.values(scene?.context.routes||{}).filter(r=>state.expandedRoutes.includes(r.id))].map(r=>[r.id,r])).values()];
- const selectedRoute=displayRoutes.find(r=>r.id===state.selected||r.id===selectedData?.route_id);
- const selectedRecord=(inspected?.record?.id===state.selected?inspected.record:null)||scene?.internalSummaries.find(e=>e.id===state.selected)?.record||scene?.links.find(e=>e.id===state.selected)?.record||(selectedData?.id===state.selected?selectedData:null)||catalog?.topics.find(t=>t.id===state.selected)||scene?.cards.find(c=>c.id===state.selected)?.record;
- const centreLabel=catalog?.topics.find(t=>t.id===state.centre)?.label||'No centre';
- const getContext=()=>{
-  const s=snapshot();const selectedTopic=catalog?.topics.some(t=>t.id===s.selected)?[s.selected]:[];
-  return {centre:s.centre,centre_label:centreLabel,search:s.search,raw_search_term:s.search,matched_topic_ids:view?.matches.map(t=>t.id)||[],perspective:s.perspective,detail:s.detail,selected_topic_ids:selectedTopic,
-   selected_relationship_ids:(selectedRoute?.edges||s.selectedEdges).filter(id=>catalog?.relationships.some(e=>e.id===id)),routes:selectedRoute?[selectedRoute]:view?.routes||[],knowledge_revision:view?.revision||catalog?.revision,view_state:s,view_history:JSON.parse(encodeHistory(history.current,historyIndex.current)),history_index:historyIndex.current};
- };
- const expandRoute=(route:Route)=>{if(catalog){const n=routeLayer(snapshot(),catalog,route);commit({...n,expandedRoutes:[...new Set([...n.expandedRoutes,route.id])]},'Expand connection')}};
- const expandAll=()=>{if(!catalog)return;let n=routesLayer(snapshot(),catalog,allRoutes);n.expandedRoutes=[...new Set([...n.expandedRoutes,...allRoutes.map(r=>r.id)])];commit(n,'Expand all connections')};
- const collapseRoute=(route:Route)=>{const n=current.current.layerView?.layers['route-layer:'+route.id]?.open?closeLayer(snapshot(),'route-layer:'+route.id):snapshot();commit({...n,detail:'abbreviated',expandedRoutes:n.expandedRoutes.filter(id=>id!==route.id)},'Collapse connection')};
- const collapseAll=()=>commit(closeRouteLayers(snapshot()),'Collapse routes');
- const alternatives=async()=>{
-  if(!selectedRoute||!state.centre)return;
-  try{const result=await api('/api/routes?'+new URLSearchParams({centre:state.centre,target:selectedRoute.endpoint,depth:String(state.depth)}));const candidates:Route[]=result.routes.filter((r:Route)=>r.edges.join('|')!==selectedRoute.edges.join('|'));
-   const retained=state.alternatives.filter(r=>r.endpoint!==selectedRoute.endpoint),routes=candidates.slice(0,3);if(!catalog)return;let n=routesLayer(snapshot(),catalog,routes,'alternatives:'+selectedRoute.endpoint);
-   commit({...n,alternatives:[...retained,...routes],expandedRoutes:[...new Set([...n.expandedRoutes,...routes.map(r=>r.id)])]},'Alternative routes');message(routes.length?`${routes.length} additional complete route(s) shown`:'No additional route recorded within the current limit.');
-  }catch(e){setError(String(e))}
- };
- const saveView=()=>{setSaveName(state.search?`${centreLabel} · ${state.search} · ${perspectiveNames[state.perspective]}`:`${centreLabel} · ${perspectiveNames[state.perspective]}`);setSavingView(true)};
- const persistView=async()=>{if(!saveName.trim())return;try{const s=snapshot();history.current[historyIndex.current]=s;await api('/api/explorations',{method:'POST',body:JSON.stringify({label:saveName,state:s,history:JSON.parse(encodeHistory(history.current,historyIndex.current)),history_index:historyIndex.current})});setSavingView(false);message('Exploration saved.')}catch(e){setError(String(e))}};
- const restoreView=(value:State,entries?:State[]|Record<string,any>,index?:number)=>{if(entries&&!Array.isArray(entries)){const decoded=decodeHistory(JSON.stringify(entries));entries=decoded?.entries;index=decoded?.index??index}restoring.current=true;const next=normalizeState(value);if(entries?.length){history.current=entries.map(normalizeState);historyIndex.current=Math.max(0,Math.min(entries.length-1,index||0));history.current[historyIndex.current]=next}else{next.trail=[{label:'Reopened exploration',index:0}];history.current=[next];historyIndex.current=0}current.current=next;setState(next);setRestoreRequest(x=>x+1);setSearchInput(next.search);setHistoryTick(x=>x+1);setSelectedData(null)};
- const openSaved=async()=>{try{setSavedViews(await api('/api/explorations'));setSaved(true)}catch(e){setError(String(e))}};
- const stats=catalog?{sources:catalog.sources.length,pages:catalog.coverage.length,topics:catalog.topics.length,connections:catalog.relationships.length}:null;
- const allRoutes=displayRoutes;
-
- const details=<DetailsContents {...{selectedRoute,selectedRecord,inspected,catalog,view,state,tasks,allRoutes,commit,makeCentre,focusTopic,expandTopic,expandRoute,collapseRoute,alternatives,restoreView,setResearch,setSource,selectRecord,inspectRoute,openGroup}}/>;
- const panelTitle=selectedRoute?(catalog?.topics.find(t=>t.id===selectedRoute.endpoint)?.label||'Connecting route'):selectedRecord?.label||'Explore connections';
- return <div className={'application'+(fullscreen?' is-fullscreen':'')}>
-
-  <header className="masthead"><button className="brand" onClick={()=>commit(overviewLayers(snapshot()),'Return to overview')} aria-label="Algarroba home"><span className="brand-icon">❧</span><span>algarroba<small>KNOWLEDGE BROWSER</small></span></button><div className="masthead-note">A connected landscape for restoration</div><div className="header-actions"><span className="local-badge"><i/> LOCAL · OFFLINE READY</span><button onClick={openSaved}>Saved explorations</button><button onClick={saveView} className="outline">Save view</button></div></header>
-  <aside className="sidebar">
-   <div className="eyebrow">YOUR KNOWLEDGE LANDSCAPE</div><p className="sidebar-intro">Start with an area.<br/>Follow what catches your eye.</p>
-   <nav className="overview-nav" aria-label="Opening overviews">{[['combined','◈','All connected knowledge'],['ecosystems','♧','Ecosystems'],['technology','⌘','Technology'],['funding','◇','Funding']].map(([id,icon,label])=><button key={id} className={state.overview&&state.perspective===id?'active':''} onClick={()=>id==='combined'?commit(overviewLayers(snapshot()),label):commit({overview:false,perspective:id,resultsOpen:true},label)}><span>{icon}</span>{label}<b>↗</b></button>)}</nav>
-   <div className="sidebar-divider"/><div className="eyebrow">OPEN A GROUP</div>
-   <div className="group-list">{catalog&&ROOT_GROUPS.map(gid=><button key={gid} onClick={()=>openGroup(gid)}><i style={{background:COLORS[gid.split(':')[0]]}}/>{GROUP_LABELS[gid.split(':')[1]]}<span>{catalog.topics.filter(t=>rootGroup(t.id,catalog)===gid).length}</span></button>)}</div>
-   <div className="sidebar-divider"/><div className="eyebrow">PLACES TO BEGIN</div><div className="starting-points">{[['carob','Carob & its plant communities'],['cocoon','Cocoons & establishment water'],['drones','Drones & water delivery'],['al20','AL20 activities & requirements']].map(([id,label])=><button key={id} onClick={()=>makeCentre(id)}>{label}<span>→</span></button>)}</div>
-   <div className="sidebar-bottom"><button className="library-button" onClick={()=>setLibrary(true)}>▤ Source library <span>{stats?.sources||9}</span></button><p>{stats?.pages||68} selected pages · {stats?.topics||'…'} topics<br/>One shared, source-backed collection</p></div>
-  </aside>
-  <main>
-   <section className="control-bar" aria-label="Exploration controls">
-    <div className="control centre-control"><label htmlFor="centre">CENTRE</label><div className="centre-picker"><select id="centre" aria-label="Centre" value={state.centre||''} onChange={e=>e.target.value?makeCentre(e.target.value):removeCentre()}><option value="">No centre</option>{catalog?.topics.map(t=><option key={t.id} value={t.id}>{t.label}</option>)}</select>{state.centre&&<button className="remove-centre" type="button" aria-label="Remove centre" title="Remove centre, keeping open layers" onClick={removeCentre}>×</button>}</div></div>
-    <form className="control search-control" onSubmit={e=>{e.preventDefault();commit({search:searchInput,resultsOpen:true,overview:false,alternatives:[],expandedRoutes:[],branches:[]},searchInput?`Search ${searchInput}`:'Clear search')}}><label htmlFor="search">OPTIONAL SEARCH</label><div><input id="search" aria-label="Optional search" value={searchInput} onChange={e=>setSearchInput(e.target.value)} placeholder="A topic to explore…"/><button type="submit" aria-label="Search stored knowledge">⌕</button>{state.search&&<button type="button" aria-label="Clear search" onClick={()=>commit({search:'',alternatives:[],expandedRoutes:[],branches:[]},'Clear search')}>×</button>}</div></form>
-    <label className="control"><span>PERSPECTIVE</span><select aria-label="Perspective" value={state.perspective} onChange={e=>commit({perspective:e.target.value,expandedRoutes:[],alternatives:[]},perspectiveNames[e.target.value])}>{Object.entries(perspectiveNames).map(([id,label])=><option key={id} value={id}>{label}</option>)}</select></label>
-    <label className="control detail-control"><span>CONNECTION DETAIL</span><select aria-label="Connection detail" value={state.detail} onChange={e=>commit({detail:e.target.value as State['detail']},e.target.value==='full'?'Full connecting routes':'Abbreviated connections')}><option value="abbreviated">Abbreviated</option><option value="full">Full routes</option></select></label>
-   </section>
-   <div className="context-line"><span>{state.overview?'Landscape':'Exploring'} <strong>{state.centre?centreLabel:'the available knowledge'}</strong>{state.search&&<> · search <strong>{state.search}</strong></>} · {perspectiveNames[state.perspective]}{additions.length>0&&<> · {additions.length} additions highlighted</>}</span><button className="research-primary" onClick={()=>setResearch(true)}>✧ Research this area</button></div>
-   <section className="workspace">
-    <div className="canvas-column">
-     <div className="graph-toolbar"><div className="history-controls"><button aria-label="Back" title="Back" disabled={historyIndex.current===0} onClick={()=>travel(historyIndex.current-1)}>←</button><button aria-label="Forward" title="Forward" disabled={historyIndex.current>=history.current.length-1} onClick={()=>travel(historyIndex.current+1)}>→</button><span/><button onClick={()=>{commit(overviewLayers(snapshot()),'Return to overview');setRetry(x=>x+1)}}>◈ Return to overview</button></div><div className="connection-actions">{!state.overview&&<><button onClick={expandAll}>Expand all</button><button onClick={collapseAll}>Collapse all</button></>}<button onClick={refresh} title="Refresh stored knowledge">↻</button></div></div>
-     {error&&<div className="notice error" role="alert">{error} {view&&<>Showing the last working {perspectiveNames[view.perspective]} view. </>}<button onClick={()=>setRetry(x=>x+1)}>Retry</button></div>}
-     {view?.notices.map((n,i)=><div className="notice" key={i}>{n}</div>)}{budget&&<div className="notice">{budget}</div>}
-     <div className="workspace-options"><label>View <select aria-label="Display mode" value={state.scene?.mode||'layered'} onChange={e=>{const s=snapshot();commit({scene:{...s.scene!,mode:e.target.value as 'layered'|'flat'}},e.target.value==='flat'?'Flat view':'Layered 3D')}}><option value="layered">Layered 3D</option><option value="flat">Flat view</option></select></label><button onClick={()=>graph.current?.reset()}>Reset view</button><label>Appearance <select aria-label="Appearance" value={appearance.preference} onChange={e=>appearance.setPreference(e.target.value as 'system'|'light'|'dark')}><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label><details className="background-effects"><summary>Background effects</summary><div><label><input type="checkbox" aria-label="Blur background" checked={background.effects.blur} onChange={e=>background.setEffects({...background.effects,blur:e.target.checked})}/> Blur</label><label><input type="checkbox" aria-label="Darken background" checked={background.effects.darken} onChange={e=>background.setEffects({...background.effects,darken:e.target.checked})}/> Darken</label><label>Darkening · {Math.round(background.effects.darkenAmount*100)}%<input aria-label="Darkening strength" type="range" min="0" max="60" step="5" disabled={!background.effects.darken} value={Math.round(background.effects.darkenAmount*100)} onChange={e=>background.setEffects({...background.effects,darkenAmount:Number(e.target.value)/100})}/></label><label><input type="checkbox" aria-label="Background transparency 50%" checked={background.effects.transparency} onChange={e=>background.setEffects({...background.effects,transparency:e.target.checked})}/> Transparency · 50%</label></div></details><button onClick={toggleFullscreen} aria-label={fullscreen?'Exit full screen':'Full screen'}>{fullscreen?'↙ Exit full screen':'⛶ Full screen'}</button>{fullscreen&&<button onClick={()=>setPanelOpen(true)}>Show details</button>}{fullscreen&&<><button onClick={saveView}>Save view</button><button onClick={openSaved}>Saved explorations</button></>}</div>
-     {<div className="centre-controls">{state.centre&&<><strong>Complete recorded connections</strong><button onClick={()=>makeCentre(state.centre!)}>Show centre view</button><button onClick={()=>{if(!catalog||!view)return;commit(resultLayer(snapshot(),catalog,view),'Show results')}}>Show results</button></>}<label><input type="checkbox" aria-label="Selection focus" checked={selectionFocus} onChange={e=>{setSelectionFocus(e.target.checked);localStorage.setItem('kgb:selection-focus:v1',e.target.checked?'on':'off')}}/> Selection focus</label></div>}
-     <div ref={workspace} className={'canvas-wrap'+(!state.centre&&(scene?.layers?.length||1)===1?' has-intro':'')}><div ref={canvas} className="graph-canvas" aria-busy={loading||layoutBusy} aria-label="Interactive knowledge landscape">{scene&&<SceneView ref={graph} scene={scene} theme={appearance.theme} effects={background.effects} selected={state.selected} additions={additions} panel={fullscreen&&panelOpen} restoreToken={restoreToken} collapse={state.scene?.collapse} onCard={selectCard} onGroup={gid=>openGroup(gid)} onReopen={reopenLayer} onLink={selectRecord} onClear={clearSelection} onReturn={returnToParent} onLayer={returnToLayer} onBroaden={broadenContext} onPose={updatePose} onError={setError} selectionFocus={selectionFocus} onResearchLayer={()=>setResearch(true)} onLocate={locateTopic} onMoveLayer={moveGraphLayer} onCompactLayer={compactGraphLayer} onDisplayLayer={displayGraphLayer} onResetLayer={resetGraphLayer}/>}</div>{(loading||layoutBusy)&&<div className="loading-indicator" role="status">{layoutBusy?'Making room for detail…':'Loading connected knowledge…'}</div>}
-      {!state.centre&&(scene?.layers?.length||1)===1&&<div className="canvas-title"><div className="eyebrow">BEGIN WITH THE BIGGER PICTURE</div><h1>See how the knowledge connects.</h1><p>Open a group. Discover a topic. Follow a connection.</p></div>}
-      <div className="angle-controls" aria-label="View angle"><button aria-label="Turn left" disabled={state.scene?.mode==='flat'} onClick={()=>graph.current?.turn(-10,0)}>↶</button><button aria-label="Turn right" disabled={state.scene?.mode==='flat'} onClick={()=>graph.current?.turn(10,0)}>↷</button><button aria-label="Tilt up" disabled={state.scene?.mode==='flat'} onClick={()=>graph.current?.turn(0,5)}>↑</button><button aria-label="Tilt down" disabled={state.scene?.mode==='flat'} onClick={()=>graph.current?.turn(0,-5)}>↓</button><small>Drag to pan · Ctrl/Shift-drag to turn</small></div>
-      <div className="zoom-controls"><button aria-label="Zoom in" onClick={()=>graph.current?.zoom(1/1.3)}>+</button><button aria-label="Zoom out" onClick={zoomOut}>−</button><button aria-label="Fit current context" disabled={loading||layoutBusy} onClick={fitCurrent}>⤢</button></div>
-      {fullscreen&&panelOpen&&<FloatingDetails workspace={workspace} title={panelTitle} contentKey={state.selected||''} close={()=>setPanelOpen(false)}>{details}</FloatingDetails>}
-      <div className="graph-legend"><span><i style={{background:COLORS.ecosystem}}/>Ecosystems</span><span><i style={{background:COLORS.technology}}/>Technology</span><span><i style={{background:COLORS.funding}}/>Funding</span><span>┄ shortened route</span><span>·· curated association</span></div>
-     </div>
-     <div className="canvas-footer"><span>{scene?.cards.length||0} cards · complete scope · {scene?.links.length||0} connections<small>Six/eight-step route reach · up to three alternative routes</small></span><div>{state.depth<8&&<button onClick={()=>commit({depth:8,resultsOpen:true,overview:false},'Look up to 8 steps')}>Look farther</button>}<label><input type="checkbox" checked={state.markers} onChange={e=>commit({markers:e.target.checked})}/> Research markers</label></div></div>
-     <div className="browsing-trail"><span>YOUR TRAIL</span>{state.trail.length?state.trail.map((t,i)=><React.Fragment key={i}><button onClick={()=>travel(t.index)} disabled={t.index<0||t.index>=history.current.length}>{t.label.replace(/detail layer\s*\d+/gi,'earlier detail')}</button>{i<state.trail.length-1&&<i>›</i>}</React.Fragment>):<small>Your route through the knowledge will appear here.</small>}</div>
+function App() {
+  const [catalog, setCatalog] = useState<Catalog | null>(null),
+    [history, setHistory] = useState<History>({
+      entries: [initialState()],
+      index: 0,
+    }),
+    historyRef = useRef(history),
+    intent = useRef<State | null>(null);
+  const [selected, setSelected] = useState<any>(null),
+    [tab, setTab] = useState("details"),
+    [source, setSource] = useState<Ref | null>(null),
+    [research, setResearch] = useState(false),
+    [tasks, setTasks] = useState<any[]>([]),
+    [library, setLibrary] = useState(false),
+    [saved, setSaved] = useState<any[] | null>(null),
+    [saving, setSaving] = useState(false),
+    [saveName, setSaveName] = useState("");
+  const [loading, setLoading] = useState(true),
+    [error, setError] = useState(""),
+    [toast, setToast] = useState(""),
+    [searchInput, setSearchInput] = useState(""),
+    [restore, setRestore] = useState(0),
+    [aspect, setAspect] = useState(1.6),
+    [comparison, setComparison] = useState<any>(null),
+    [additions, setAdditions] = useState<string[]>([]);
+  const graph = useRef<SceneHandle>(null),
+    canvas = useRef<HTMLDivElement>(null),
+    generation = useRef(0),
+    controller = useRef<AbortController | null>(null),
+    ready = useRef(false),
+    retry = useRef<(() => void) | null>(null),
+    persistTimer = useRef<any>(null),
+    state = history.entries[history.index],
+    view = state.view;
+  const appearance = useAppearance(),
+    message = (s: string) => setToast(s),
+    fullscreen = useFullScreen(message);
+  const publish = (h: History) => {
+    historyRef.current = h;
+    setHistory(h);
+  };
+  const persist = (_h: History) => {
+    if (persistTimer.current) return;
+    persistTimer.current = setTimeout(() => {
+      persistTimer.current = null;
+      void saveBrowserSession(historyRef.current).catch((e) =>
+        setError(String(e)),
+      );
+    }, 150);
+  };
+  const snapshot = () => {
+    const h = historyRef.current,
+      p = graph.current?.pose();
+    if (!p) return h;
+    const entries = [...h.entries];
+    entries[h.index] = { ...entries[h.index], camera: p };
+    const next = { entries, index: h.index };
+    historyRef.current = next;
+    return next;
+  };
+  const prepare = async (
+    s: State,
+    c: Catalog,
+    signal: AbortSignal,
+    force = false,
+    presentationOffset?: { x: number; y: number },
+  ) => {
+    s = reconcileIdentities(s, c);
+    let v = s.view;
+    if (!v || force) v = await api<ExploreView>(query(s), { signal });
+    const bounds = canvas.current?.getBoundingClientRect();
+    const layoutAspect =
+      bounds && bounds.width > 0 && bounds.height > 0
+        ? Math.max(0.5, bounds.width / bounds.height)
+        : aspect;
+    let migratedOffset;
+    const focused = migrateExpandedGroup({ ...s, view: v }, c, layoutAspect);
+    if (focused) {
+      migratedOffset = buildScene(s, v, c, layoutAspect).offset;
+      s = focused;
+      v = await api<ExploreView>(query(s), { signal });
+    }
+    const offset =
+      presentationOffset ||
+      migratedOffset ||
+      (s.view && Object.keys(s.positions).length
+        ? buildScene(s, s.view, c, layoutAspect).offset
+        : undefined);
+    const n = reconcile(s, v);
+    const scene = buildScene(n, v, c, layoutAspect);
+    return {
+      ...n,
+      positions: scene.positions,
+      closedLayers: n.closedLayers?.filter((key) => key !== scene.key),
+      ...(offset
+        ? {
+            layerOffsets: {
+              ...n.layerOffsets,
+              [scene.key]: offset,
+            },
+          }
+        : {}),
+    };
+  };
+  const perform = async (
+    candidate: State,
+    c: Catalog,
+    base: History,
+    mode: "commit" | "travel" | "replace" = "commit",
+    at = base.index,
+    force = false,
+    presentationOffset?: { x: number; y: number },
+  ) => {
+    controller.current?.abort();
+    const ctrl = new AbortController();
+    controller.current = ctrl;
+    const token = ++generation.current;
+    setLoading(true);
+    setError("");
+    intent.current = candidate;
+    retry.current = () => {
+      void perform(candidate, c, base, mode, at, force, presentationOffset);
+    };
+    try {
+      const completed = await prepare(
+        candidate,
+        c,
+        ctrl.signal,
+        force,
+        presentationOffset,
+      );
+      if (ctrl.signal.aborted || token !== generation.current) return;
+      let h: History;
+      if (mode === "commit") h = commitHistory(base, completed);
+      else {
+        const entries = [...base.entries];
+        entries[at] = completed;
+        h = { entries, index: at };
+      }
+      // Old saved histories may have no query snapshots. Hydrate only the two background views.
+      const missing = [h.index - 1, h.index - 2].filter(
+        (i) => i >= 0 && !h.entries[i].view,
+      );
+      for (const i of missing) {
+        try {
+          h.entries[i] = await prepare(h.entries[i], c, ctrl.signal);
+        } catch (e) {
+          if (ctrl.signal.aborted) throw e;
+        }
+      }
+      if (ctrl.signal.aborted || token !== generation.current) return;
+      intent.current = null;
+      setCatalog(c);
+      publish(h);
+      setSearchInput(completed.search);
+      setSelected((prev: any) => {
+        if (!prev) return null;
+        const scene = buildScene(completed, completed.view!, c, aspect);
+        if (!isInteractiveRecord(scene, prev.id)) return null;
+        return scene.cards.some((card) => card.id === prev.id) ||
+          scene.links.some((link) => link.id === prev.id) ||
+          allRoutes(completed, completed.view!).some((r) => r.id === prev.id)
+          ? prev
+          : null;
+      });
+      setRestore((x) => x + 1);
+      setLoading(false);
+      ready.current = true;
+      void saveBrowserSession(h).catch((e) => setError(String(e)));
+      return true;
+    } catch (e) {
+      if (ctrl.signal.aborted || token !== generation.current) return;
+      intent.current = null;
+      setLoading(false);
+      setError(String(e));
+      return false;
+    }
+  };
+  const dispatch = (action: Action) => {
+    if (!catalog) return;
+    const base = snapshot(),
+      previous =
+        action.type === "previewDomain"
+          ? base.entries[base.index]
+          : intent.current || base.entries[base.index],
+      candidate = reduceExploration(previous, action);
+    if (
+      previous.view &&
+      ["explore", "group", "openMembers"].includes(action.type)
+    ) {
+      candidate.openedFrom = openingSource(
+        action,
+        buildScene(previous, previous.view, catalog, aspect),
+        catalog,
+      );
+    }
+    if (isInPlaceAction(action)) {
+      const offset = previous.view
+        ? buildScene(previous, previous.view, catalog, aspect).offset
+        : undefined;
+      void perform(
+        candidate,
+        catalog,
+        { ...base, entries: base.entries.slice(0, base.index + 1) },
+        "replace",
+        base.index,
+        false,
+        offset,
+      );
+    } else void perform(candidate, catalog, base);
+  };
+  const closeGraphLayer = (key: string) => {
+    if (!catalog || loading) return;
+    const base = snapshot(),
+      result = closeLayer(base, key, catalog, aspect);
+    if (!result) return;
+    if (result.kind === "background") {
+      const entries = [...base.entries];
+      entries[base.index] = result.state;
+      const next = { entries, index: base.index };
+      publish(next);
+      void saveBrowserSession(next).catch((e) => setError(String(e)));
+    } else void perform(result.state, catalog, base);
+  };
+  const travel = (index: number) => {
+    if (!catalog || index < 0 || index >= historyRef.current.entries.length)
+      return;
+    const base = snapshot();
+    void perform(base.entries[index], catalog, base, "travel", index);
+  };
+  const reopen = (payload: any) => {
+    if (!catalog) return;
+    const raw = payload.state || payload.view_state || payload,
+      h = migrateHistory(
+        payload.history || payload.view_history,
+        raw,
+        payload.history_index,
+      );
+    h.entries[h.index] = {
+      ...h.entries[h.index],
+      ...migrateHistory(null, raw).entries[0],
+    };
+    setTab(legacyTab(raw));
+    void perform(h.entries[h.index], catalog, h, "replace", h.index, true).then(
+      () => {
+        if (raw.selected) {
+          const id = catalog.identity_redirects?.[raw.selected] || raw.selected;
+          setSelected(
+            catalog.topics.find((t) => t.id === id) ||
+              catalog.relationships.find((e) => e.id === id) ||
+              null,
+          );
+        }
+      },
+    );
+  };
+  useEffect(() => {
+    let alive = true;
+    Promise.all([
+      api<Catalog>("/api/catalog"),
+      restoreBrowserSession(),
+      api("/api/research"),
+    ])
+      .then(([c, session, t]) => {
+        if (!alive) return;
+        setCatalog(c);
+        setTasks(t);
+        setTab(session.tab || "details");
+        void perform(
+          session.history.entries[session.history.index],
+          c,
+          session.history,
+          "replace",
+          session.history.index,
+          true,
+        ).then(() => {
+          if (session.selection)
+            setSelected(
+              c.topics.find((t) => t.id === session.selection) ||
+                c.relationships.find((e) => e.id === session.selection) ||
+                null,
+            );
+        });
+      })
+      .catch((e) => {
+        setError(String(e));
+        setLoading(false);
+        retry.current = () => location.reload();
+      });
+    return () => {
+      alive = false;
+      controller.current?.abort();
+      clearTimeout(persistTimer.current);
+    };
+  }, []);
+  useEffect(() => {
+    const el = canvas.current;
+    if (!el) return;
+    const observer = new ResizeObserver(() => {
+      const r = el.getBoundingClientRect();
+      setAspect(Math.max(0.5, r.width / Math.max(1, r.height)));
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [!!catalog]);
+  useEffect(() => {
+    const save = () => {
+      if (ready.current) void saveBrowserSession(snapshot());
+    };
+    window.addEventListener("beforeunload", save);
+    return () => window.removeEventListener("beforeunload", save);
+  }, []);
+  useEffect(() => {
+    if (!catalog) return;
+    const ctrl = new AbortController();
+    api(
+      "/api/comparison?" +
+        new URLSearchParams({ topics: state.compare.join(",") }),
+      { signal: ctrl.signal },
+    )
+      .then(setComparison)
+      .catch((e) => {
+        if (!ctrl.signal.aborted) setError(String(e));
+      });
+    return () => ctrl.abort();
+  }, [state.compare.join(","), catalog?.revision]);
+  const scene = useMemo(
+    () => (catalog && view ? buildScene(state, view, catalog, aspect) : null),
+    [
+      catalog,
+      view,
+      state.positions,
+      state.layerOffsets,
+      state.centre,
+      state.groupId,
+      state.groupMembers,
+      state.grouping,
+      state.expandedGroups,
+      state.expandedRoutes,
+      state.alternatives,
+      state.openedFrom,
+      state.pendingDomain,
+      aspect,
+    ],
+  );
+  const graphHistoryKey = JSON.stringify(
+    history.entries.map((s) => [
+      s.scope,
+      s.centre,
+      s.groupId,
+      s.groupMembers,
+      s.search,
+      s.domain,
+      s.pendingDomain,
+      s.kinds,
+      s.grouping,
+      s.positions,
+      s.expandedRoutes,
+      s.expandedGroups,
+      s.openedFrom,
+      s.layerRoot,
+    ]),
+  );
+  const previous = useMemo(
+    () =>
+      catalog
+        ? previousScenes(history.entries, history.index, catalog, aspect)
+        : [],
+    [
+      catalog,
+      history.index,
+      graphHistoryKey,
+      aspect,
+      state.layerOffsets,
+      state.closedLayers,
+    ],
+  );
+  const routes = view ? allRoutes(state, view) : [],
+    selectedRoute = routes.find((r) => r.id === selected?.id),
+    selectedTopic = catalog?.topics.find((t) => t.id === selected?.id),
+    selectedEdge = catalog?.relationships.find((e) => e.id === selected?.id),
+    selectedCard = scene?.cards.find((c) => c.id === selected?.id);
+  const relationshipIds =
+    selectedRoute?.edges ||
+    selected?.constituent_ids ||
+    (selectedEdge ? [selectedEdge.id] : []);
+  const activeEdges = relationshipIds.length
+    ? relationshipIds
+    : selectedTopic
+      ? catalog!.relationships
+          .filter((e) => [e.source, e.target].includes(selectedTopic.id))
+          .map((e) => e.id)
+      : [];
+  const visibleIds = scene?.cards.flatMap((c) => c.members) || [],
+    scopeIds =
+      selectedRoute?.nodes ||
+      selectedCard?.members ||
+      (selectedEdge
+        ? [selectedEdge.source, selectedEdge.target]
+        : relationshipIds.length
+          ? catalog!.relationships
+              .filter((e) => relationshipIds.includes(e.id))
+              .flatMap((e) => [e.source, e.target])
+          : selectedTopic
+            ? [selectedTopic.id]
+            : visibleIds),
+    scopeSet = new Set(scopeIds);
+  const findings =
+      catalog?.findings.filter((f) =>
+        f.topic_ids.some((id: string) => scopeSet.has(id)),
+      ) || [],
+    relatedSources = new Set<string>(
+      [
+        ...(catalog?.topics
+          .filter((t) => scopeSet.has(t.id))
+          .flatMap((t) => t.source_refs || []) || []),
+        ...findings.flatMap((f) => f.source_refs || []),
+        ...(catalog?.relationships
+          .filter((e) => relationshipIds.includes(e.id))
+          .flatMap((e) => e.source_refs || []) || []),
+      ].map((r) => r.source_id),
+    );
+  const pending = [
+    ...new Set(
+      tasks
+        .filter((t) => t.status !== "Completed")
+        .flatMap((t) => [
+          t.context?.centre,
+          ...(t.context?.selected_topic_ids || []),
+        ])
+        .filter(Boolean),
+    ),
+  ] as string[];
+  const getContext = () => {
+    const h = snapshot(),
+      s = h.entries[h.index],
+      selectedIds = selectedTopic
+        ? [selectedTopic.id]
+        : selectedRoute
+          ? selectedRoute.nodes
+          : relationshipIds.length
+            ? scopeIds
+            : selectedCard?.members || [];
+    return {
+      version: 6,
+      scope: s.scope,
+      group_id: s.groupId,
+      group_member_ids: s.groupMembers,
+      group_label: s.scope === "group" ? contextLabel(s, catalog) : undefined,
+      centre: s.centre,
+      centre_label:
+        catalog?.topics.find((t) => t.id === s.centre)?.label || "No centre",
+      search: s.search,
+      raw_search_term: s.search,
+      matched_topic_ids: view?.matches.map((t) => t.id) || [],
+      filters: {
+        domain: s.domain,
+        kinds: s.kinds,
+        pending_domain: s.pendingDomain,
+      },
+      grouping: s.grouping,
+      expanded_route_ids: s.expandedRoutes,
+      selected_topic_ids: selectedIds,
+      selected_relationship_ids: relationshipIds,
+      routes: selectedRoute ? [selectedRoute] : routes,
+      visible_topic_ids: visibleIds,
+      knowledge_revision: catalog?.revision,
+      view_state: s,
+      view_history: h,
+      history_index: h.index,
+    };
+  };
+  const refresh = async () => {
+    try {
+      const changes = await api("/api/changes?since=" + state.revision);
+      const c = await api<Catalog>("/api/catalog");
+      const updatedTasks = await api("/api/research");
+      const h = snapshot();
+      if (await perform(h.entries[h.index], c, h, "replace", h.index, true)) {
+        setTasks(updatedTasks);
+        setAdditions(changes.added_topic_ids);
+        message(
+          changes.added_topic_ids.length +
+            " additions highlighted. Exploration retained.",
+        );
+      }
+    } catch (e) {
+      setError(String(e));
+    }
+  };
+  const alternatives = async () => {
+    if (!selectedRoute || !state.centre) return;
+    try {
+      const result = await api(
+          "/api/routes?" +
+            new URLSearchParams({
+              centre: state.centre,
+              target: selectedRoute.endpoint,
+              depth: String(state.depth),
+            }),
+        ),
+        extra = result.routes.filter((r: any) => r.id !== selectedRoute.id);
+      if (result.route_search.budget_exhausted)
+        message(
+          "Route search reached its work limit; alternatives may be incomplete.",
+        );
+      else message(extra.length + " alternative route(s) recorded.");
+      if (extra.length) dispatch({ type: "alternatives", routes: extra });
+    } catch (e) {
+      setError(String(e));
+    }
+  };
+  const save = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const h = snapshot(),
+        s = h.entries[h.index];
+      await api("/api/explorations", {
+        method: "POST",
+        body: JSON.stringify({
+          label: saveName.trim(),
+          state: s,
+          history: h,
+          history_index: h.index,
+        }),
+      });
+      setSaving(false);
+      message("Exploration saved.");
+    } catch (e) {
+      setError(String(e));
+    }
+  };
+  const select = (r: any) => {
+    if (!r || (scene && !isInteractiveRecord(scene, r.id))) return;
+    setSelected(r);
+    setTab("details");
+  };
+  const openGroup = (record: any) => {
+    if (!scene || loading) return;
+    const card = scene.cards.find((c) => c.id === record.id);
+    if (!card || !isInteractiveRecord(scene, card.id)) return;
+    const action = groupOpeningAction(state, card.record, card.members);
+    if (action) dispatch(action);
+  };
+  const topicButton = (id: string) => {
+    const t = catalog?.topics.find((t) => t.id === id);
+    return (
+      <button
+        key={id}
+        disabled={!!scene && !isInteractiveRecord(scene, id)}
+        onClick={() => select(t)}
+      >
+        {t?.label || id}
+      </button>
+    );
+  };
+  if (!catalog)
+    return (
+      <main className="boot">
+        <h1>Algarroba</h1>
+        <p>{loading ? "Opening your knowledge browser…" : error}</p>
+        {!loading && <button onClick={() => retry.current?.()}>Retry</button>}
+      </main>
+    );
+  return (
+    <div className="app-shell">
+      <header className="masthead">
+        <button
+          className="brand"
+          onClick={() => dispatch({ type: "overview" })}
+        >
+          ❧ algarroba <small>KNOWLEDGE BROWSER</small>
+        </button>
+        <span>One connected landscape</span>
+        <div className="actions">
+          <button
+            onClick={async () => {
+              try {
+                setSaved(await api("/api/explorations"));
+              } catch (e) {
+                setError(String(e));
+              }
+            }}
+          >
+            Saved explorations
+          </button>
+          <button
+            onClick={() => {
+              setSaveName(
+                state.search ||
+                  catalog.topics.find((t) => t.id === state.centre)?.label ||
+                  contextLabel(state, catalog),
+              );
+              setSaving(true);
+            }}
+          >
+            Save view
+          </button>
+          <button onClick={fullscreen.toggle}>
+            {fullscreen.fullscreen ? "Exit full screen" : "Full screen"}
+          </button>
+        </div>
+      </header>
+      <div className="app-body">
+        <aside className="sidebar">
+          <p className="eyebrow">START WITH AN AREA</p>
+          {ROOT_GROUPS.map((id) => (
+            <button key={id} onClick={() => dispatch({ type: "group", id })}>
+              {GROUP_LABELS[id.split(":")[1]]}
+              <small>
+                {
+                  catalog.topics.filter((t) => rootGroup(t.id, catalog) === id)
+                    .length
+                }
+              </small>
+            </button>
+          ))}
+          <hr />
+          <button onClick={() => setLibrary(true)}>
+            Source library · {catalog.sources.length}
+          </button>
+          <p>
+            {catalog.coverage.length} curated pages · {catalog.topics.length}{" "}
+            topics
+          </p>
+          <details>
+            <summary>Research tasks · {tasks.length}</summary>
+            {tasks.map((t) => (
+              <article key={t.id}>
+                <strong>{t.custom_topics || t.instruction}</strong>
+                <small>{t.status}</small>
+                {t.summary && <p>{t.summary}</p>}
+                <button onClick={() => reopen(t.context)}>
+                  Reopen context
+                </button>
+              </article>
+            ))}
+          </details>
+        </aside>
+        <main className="main-workspace">
+          <section className="controls" aria-label="Exploration controls">
+            <label>
+              Centre
+              <div className="centre-input">
+                <select
+                  aria-label="Centre"
+                  value={state.centre || ""}
+                  onChange={(e) =>
+                    dispatch(
+                      e.target.value
+                        ? { type: "explore", id: e.target.value }
+                        : { type: "clearCentre" },
+                    )
+                  }
+                >
+                  <option value="">No centre</option>
+                  {catalog.topics.map((t) => (
+                    <option key={t.id} value={t.id}>
+                      {t.label}
+                    </option>
+                  ))}
+                </select>
+                {state.centre && (
+                  <button
+                    aria-label="Remove centre"
+                    onClick={() => dispatch({ type: "clearCentre" })}
+                  >
+                    ×
+                  </button>
+                )}
+              </div>
+            </label>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                dispatch({ type: "search", text: searchInput });
+              }}
+            >
+              <label>
+                Search stored knowledge
+                <div className="search-input">
+                  <input
+                    aria-label="Search stored knowledge"
+                    value={searchInput}
+                    onChange={(e) => setSearchInput(e.target.value)}
+                  />
+                  <button type="submit">Search</button>
+                  {state.search && (
+                    <button
+                      type="button"
+                      aria-label="Clear search"
+                      onClick={() => dispatch({ type: "search", text: "" })}
+                    >
+                      ×
+                    </button>
+                  )}
+                </div>
+              </label>
+            </form>
+            <label>
+              Domain
+              <select
+                aria-label="Domain"
+                value={state.pendingDomain ?? state.domain}
+                onChange={(e) =>
+                  dispatch({ type: "previewDomain", domain: e.target.value })
+                }
+              >
+                <option value="all">All</option>
+                <option value="ecosystem">Ecosystems</option>
+                <option value="technology">Technology</option>
+                <option value="funding">Funding</option>
+              </select>
+            </label>
+            <details className="type-filter">
+              <summary>Topic type · {state.kinds.length || "All"}</summary>
+              <div>
+                {catalog.topic_kinds.map((kind) => (
+                  <label key={kind}>
+                    <input
+                      type="checkbox"
+                      checked={state.kinds.includes(kind)}
+                      onChange={(e) =>
+                        dispatch({
+                          type: "filters",
+                          kinds: e.target.checked
+                            ? [...state.kinds, kind]
+                            : state.kinds.filter((k) => k !== kind),
+                        })
+                      }
+                    />
+                    {kind}
+                  </label>
+                ))}
+                <button
+                  onClick={() => dispatch({ type: "filters", kinds: [] })}
+                >
+                  All types
+                </button>
+              </div>
+            </details>
+            <label>
+              Group by
+              <select
+                aria-label="Group by"
+                value={state.grouping}
+                onChange={(e) =>
+                  dispatch({ type: "grouping", value: e.target.value as any })
+                }
+              >
+                <option value="none">None</option>
+                <option value="family">Browsing family</option>
+                <option value="type">Topic type</option>
+                <option value="place">Place</option>
+              </select>
+            </label>
+          </section>
+          <div className="context-strip">
+            <span>
+              {contextLabel(state, catalog)}
+              {state.centre && (
+                <>
+                  {" "}
+                  · Centre:{" "}
+                  <strong>
+                    {catalog.topics.find((t) => t.id === state.centre)?.label}
+                  </strong>
+                </>
+              )}
+              {state.search && (
+                <>
+                  {" "}
+                  · Search: <strong>{state.search}</strong>
+                </>
+              )}
+              {(state.pendingDomain || state.domain !== "all") && (
+                <>
+                  {" "}
+                  · {state.pendingDomain ?? state.domain}
+                  {state.pendingDomain ? " (preview)" : ""}
+                </>
+              )}
+            </span>
+            <button className="primary" onClick={() => setResearch(true)}>
+              Research
+            </button>
+          </div>
+          <div className="graph-toolbar">
+            <div className="actions">
+              <button
+                aria-label="Back"
+                disabled={history.index === 0}
+                onClick={() => travel(history.index - 1)}
+              >
+                ← Back
+              </button>
+              <button
+                aria-label="Forward"
+                disabled={history.index === history.entries.length - 1}
+                onClick={() => travel(history.index + 1)}
+              >
+                Forward →
+              </button>
+              <button onClick={() => dispatch({ type: "overview" })}>
+                Return to overview
+              </button>
+              <button onClick={refresh}>Refresh</button>
+              <button
+                disabled={loading || state.scope === "overview" || !scene}
+                onClick={() => scene && closeGraphLayer(scene.key)}
+              >
+                Close layer
+              </button>
+              {state.pendingDomain && (
+                <button
+                  disabled={loading}
+                  onClick={() => dispatch({ type: "updateDomain" })}
+                  aria-label="Update layer domain"
+                >
+                  Update layer
+                </button>
+              )}
+            </div>
+            <div className="actions">
+              <label>
+                Appearance
+                <select
+                  aria-label="Appearance"
+                  value={appearance.preference}
+                  onChange={(e) =>
+                    appearance.setPreference(e.target.value as any)
+                  }
+                >
+                  <option value="system">System</option>
+                  <option value="light">Light</option>
+                  <option value="dark">Dark</option>
+                </select>
+              </label>
+              <button onClick={() => dispatch({ type: "tidy" })}>
+                Tidy graph
+              </button>
+            </div>
+          </div>
+          {error && (
+            <div role="alert" className="notice error">
+              {error} Your last working exploration is retained.{" "}
+              <button onClick={() => retry.current?.()}>Retry</button>
+            </div>
+          )}
+          {view?.notices.map((n) => (
+            <div className="notice" key={n}>
+              {n}
+            </div>
+          ))}
+          {state.pendingDomain && (
+            <div className="notice" role="status">
+              Domain preview: topics outside the selected domain are darkened.{" "}
+              Update the layer to remove them. Centres and required route steps
+              remain as connecting context.
+            </div>
+          )}
+          <div className="graph-and-details">
+            <section className="graph-region">
+              <div ref={canvas} className="canvas-wrap">
+                {scene && (
+                  <GraphBoundary onError={setError}>
+                    <SceneView
+                      ref={graph}
+                      scene={scene}
+                      previous={previous}
+                      theme={appearance.theme}
+                      selected={selected?.id || null}
+                      activeEdges={activeEdges}
+                      pending={pending}
+                      additions={additions}
+                      camera={state.camera}
+                      restore={restore}
+                      onSelect={select}
+                      onOpenGroup={openGroup}
+                      busy={loading}
+                      baseLayer={state.scope === "overview"}
+                      onCloseLayer={closeGraphLayer}
+                      domainUpdatePending={!!state.pendingDomain}
+                      onUpdateDomain={() => dispatch({ type: "updateDomain" })}
+                      onLayerMove={(key, point) => {
+                        const h = historyRef.current,
+                          entries = [...h.entries];
+                        entries[h.index] = moveLayer(
+                          entries[h.index],
+                          key,
+                          point,
+                        );
+                        const next = { entries, index: h.index };
+                        publish(next);
+                        void saveBrowserSession(next).catch((e) =>
+                          setError(String(e)),
+                        );
+                      }}
+                      onClear={() => setSelected(null)}
+                      onPose={(p) => {
+                        if (!ready.current || loading) return;
+                        const h = historyRef.current,
+                          entries = [...h.entries];
+                        entries[h.index] = { ...entries[h.index], camera: p };
+                        const next = { entries, index: h.index };
+                        publish(next);
+                        persist(next);
+                      }}
+                      onError={setError}
+                    />
+                  </GraphBoundary>
+                )}
+                {loading && (
+                  <div className="loading" role="status">
+                    Preparing the complete graph…
+                  </div>
+                )}
+                <div className="camera-controls">
+                  <button
+                    aria-label="Turn left"
+                    onClick={() => graph.current?.turn(-10, 0)}
+                  >
+                    ↶
+                  </button>
+                  <button
+                    aria-label="Turn right"
+                    onClick={() => graph.current?.turn(10, 0)}
+                  >
+                    ↷
+                  </button>
+                  <button
+                    aria-label="Tilt up"
+                    onClick={() => graph.current?.turn(0, 5)}
+                  >
+                    ↑
+                  </button>
+                  <button
+                    aria-label="Tilt down"
+                    onClick={() => graph.current?.turn(0, -5)}
+                  >
+                    ↓
+                  </button>
+                  <button
+                    aria-label="Zoom in"
+                    onClick={() => graph.current?.zoom(1 / 1.3)}
+                  >
+                    +
+                  </button>
+                  <button
+                    aria-label="Zoom out"
+                    onClick={() => graph.current?.zoom(1.3)}
+                  >
+                    −
+                  </button>
+                  <button onClick={() => graph.current?.fit()}>Fit</button>
+                  <button onClick={() => graph.current?.reset()}>
+                    Reset view
+                  </button>
+                </div>
+                <p className="canvas-hint">
+                  Drag a label to move its layer · Ctrl-drag to rotate ±60° ·
+                  Previous views are read-only
+                </p>
+              </div>
+              <div className="graph-footer">
+                <span>
+                  {scene?.cards.length || 0} foreground cards ·{" "}
+                  {visibleIds.length} represented topics ·{" "}
+                  {scene?.links.length || 0} displayed connections
+                </span>
+                {state.depth === 6 && state.scope === "search" && (
+                  <button onClick={() => dispatch({ type: "depth" })}>
+                    Look farther · 8 steps
+                  </button>
+                )}
+              </div>
+              {routes.length > 0 && (
+                <div className="route-controls">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={routes.every((r) =>
+                        state.expandedRoutes.includes(r.id),
+                      )}
+                      onChange={(e) =>
+                        dispatch({
+                          type: "allRoutes",
+                          routes,
+                          show: e.target.checked,
+                        })
+                      }
+                    />
+                    Show all route steps
+                  </label>
+                  <details>
+                    <summary>Connecting routes · {routes.length}</summary>
+                    {routes.map((r) => (
+                      <button
+                        key={r.id}
+                        onClick={() =>
+                          select({
+                            ...r,
+                            kind: "route",
+                            label: catalog.topics.find(
+                              (t) => t.id === r.endpoint,
+                            )?.label,
+                          })
+                        }
+                      >
+                        {catalog.topics.find((t) => t.id === r.endpoint)?.label}{" "}
+                        ·{" "}
+                        {r.nodes.length - 2 > 0
+                          ? "via " + (r.nodes.length - 2) + " topics"
+                          : "direct"}
+                      </button>
+                    ))}
+                  </details>
+                </div>
+              )}
+              <details className="visible-topics">
+                <summary>Visible topics · {scene?.cards.length || 0}</summary>
+                <div>
+                  {scene?.cards.map((c) => (
+                    <article key={c.id}>
+                      <button
+                        aria-label={"Inspect " + c.record.label}
+                        disabled={c.outOfDomain}
+                        onClick={() => select(c.record)}
+                      >
+                        {c.record.label}
+                        {c.outOfDomain ? " · Outside selected domain" : ""}
+                        {pending.includes(c.id) ? " · To research" : ""}
+                      </button>
+                      {c.record.displayGroup && (
+                        <button
+                          disabled={c.outOfDomain}
+                          onClick={() => openGroup(c.record)}
+                        >
+                          Open group
+                        </button>
+                      )}
+                      {scene.internal.find((i) => i.cardId === c.id) && (
+                        <button
+                          disabled={c.outOfDomain}
+                          onClick={() =>
+                            select({
+                              id: "internal:" + c.id,
+                              label: "Internal recorded connections",
+                              constituent_ids: scene.internal.find(
+                                (i) => i.cardId === c.id,
+                              )!.ids,
+                            })
+                          }
+                        >
+                          Inspect internal connections
+                        </button>
+                      )}
+                    </article>
+                  ))}
+                </div>
+              </details>
+            </section>
+            <aside
+              className="inspector"
+              aria-label="Topic and connection details"
+            >
+              <nav className="inspector-tabs">
+                {["details", "evidence", "dates", "comparison"].map((name) => (
+                  <button
+                    key={name}
+                    aria-pressed={tab === name}
+                    onClick={() => setTab(name)}
+                  >
+                    {name[0].toUpperCase() + name.slice(1)}
+                  </button>
+                ))}
+              </nav>
+              {tab === "details" && (
+                <>
+                  <p className="eyebrow">
+                    {selectedRoute
+                      ? "CONNECTING ROUTE"
+                      : selected?.kind || "EXPLORE THE KNOWLEDGE"}
+                  </p>
+                  <h2>
+                    {selectedTopic?.label ||
+                      selected?.label ||
+                      "Start with a group or topic."}
+                  </h2>
+                  <p>
+                    {selectedTopic?.description ||
+                      selected?.explanation ||
+                      selected?.description ||
+                      "Select a card to inspect it. Use Explore this topic to follow its direct connections."}
+                  </p>
+                  {selected && (
+                    <button onClick={() => setSelected(null)}>
+                      Clear selection
+                    </button>
+                  )}
+                  {selectedTopic && (
+                    <>
+                      <div className="actions">
+                        <button
+                          className="primary"
+                          onClick={() =>
+                            dispatch({ type: "explore", id: selectedTopic.id })
+                          }
+                        >
+                          Explore this topic
+                        </button>
+                        <button
+                          disabled={
+                            state.compare.length >= 4 &&
+                            !state.compare.includes(selectedTopic.id)
+                          }
+                          onClick={() => {
+                            dispatch({ type: "compare", id: selectedTopic.id });
+                            setTab("comparison");
+                          }}
+                        >
+                          {state.compare.includes(selectedTopic.id)
+                            ? "Remove from comparison"
+                            : "Compare"}
+                        </button>
+                      </div>
+                      {selectedTopic.scientific_name && (
+                        <p>
+                          <em>{selectedTopic.scientific_name}</em>
+                        </p>
+                      )}
+                      {(selectedTopic.aliases?.length || 0) > 0 && (
+                        <p>
+                          Also searchable: {selectedTopic.aliases?.join(" · ")}
+                        </p>
+                      )}
+                      <Refs
+                        refs={selectedTopic.source_refs || []}
+                        open={setSource}
+                      />
+                      {catalog.browse_groups
+                        .filter((g) => g.anchor_topic_id === selectedTopic.id)
+                        .map((g) => (
+                          <article key={g.id}>
+                            <h3>{g.label}</h3>
+                            <p>
+                              {g.members.length} organized members. Membership
+                              is not a factual connection.
+                            </p>
+                            <div className="actions">
+                              <button
+                                onClick={() =>
+                                  dispatch({ type: "group", id: g.id })
+                                }
+                              >
+                                Members
+                              </button>
+                              <button
+                                onClick={() =>
+                                  dispatch({
+                                    type: "explore",
+                                    id: selectedTopic.id,
+                                  })
+                                }
+                              >
+                                Connections
+                              </button>
+                            </div>
+                          </article>
+                        ))}
+                      <h3>Recorded connections</h3>
+                      {catalog.relationships
+                        .filter((e) =>
+                          [e.source, e.target].includes(selectedTopic.id),
+                        )
+                        .map((e) => (
+                          <article key={e.id}>
+                            <button onClick={() => select(e)}>{e.label}</button>
+                            <div>
+                              {topicButton(
+                                e.source === selectedTopic.id
+                                  ? e.target
+                                  : e.source,
+                              )}
+                            </div>
+                          </article>
+                        ))}
+                      {catalog.unresolved
+                        .filter((u) => u.topic_ids?.includes(selectedTopic.id))
+                        .map((u) => (
+                          <p className="notice" key={u.id}>
+                            {u.text}
+                          </p>
+                        ))}
+                    </>
+                  )}
+                  {selected?.displayGroup && (
+                    <button
+                      className="primary"
+                      onClick={() => openGroup(selected)}
+                    >
+                      Open group
+                    </button>
+                  )}
+                  {selectedRoute && (
+                    <>
+                      <p>{selectedRoute.why}</p>
+                      <div className="actions">
+                        <button
+                          onClick={() =>
+                            dispatch({
+                              type: "toggleRoute",
+                              id: selectedRoute.id,
+                            })
+                          }
+                        >
+                          {state.expandedRoutes.includes(selectedRoute.id)
+                            ? "Hide steps"
+                            : "Show steps"}
+                        </button>
+                        <button onClick={alternatives}>
+                          Alternative routes
+                        </button>
+                      </div>
+                      <ol>
+                        {selectedRoute.nodes.map((id, i) => (
+                          <li key={id}>
+                            {topicButton(id)}
+                            {i < selectedRoute.edges.length &&
+                              (() => {
+                                const e = catalog.relationships.find(
+                                  (e) => e.id === selectedRoute.edges[i],
+                                );
+                                return (
+                                  e && (
+                                    <>
+                                      <p>
+                                        {e.source === id ? "→" : "←"} {e.label}
+                                      </p>
+                                      <p>{e.explanation}</p>
+                                      <Refs
+                                        refs={e.source_refs || []}
+                                        open={setSource}
+                                      />
+                                    </>
+                                  )
+                                );
+                              })()}
+                          </li>
+                        ))}
+                      </ol>
+                    </>
+                  )}
+                  {selectedEdge && (
+                    <>
+                      <p>
+                        {selectedEdge.basis === "curated"
+                          ? "Curated discovery association"
+                          : "Recorded source relationship"}
+                      </p>
+                      {topicButton(selectedEdge.source)} →{" "}
+                      {topicButton(selectedEdge.target)}
+                      <Refs
+                        refs={selectedEdge.source_refs || []}
+                        open={setSource}
+                      />
+                    </>
+                  )}
+                  {selected?.constituent_ids?.map((id: string) => {
+                    const e = catalog.relationships.find((e) => e.id === id);
+                    return (
+                      e && (
+                        <article key={id}>
+                          <button onClick={() => select(e)}>{e.label}</button>
+                          <p>
+                            {
+                              catalog.topics.find((t) => t.id === e.source)
+                                ?.label
+                            }{" "}
+                            →{" "}
+                            {
+                              catalog.topics.find((t) => t.id === e.target)
+                                ?.label
+                            }
+                          </p>
+                          <p>{e.explanation}</p>
+                          <Refs refs={e.source_refs || []} open={setSource} />
+                        </article>
+                      )
+                    );
+                  })}
+                  {state.search && (
+                    <>
+                      <h3>Search matches · {view?.matches.length}</h3>
+                      {view?.matches.map((t) => topicButton(t.id))}
+                      <h3>Matching source passages</h3>
+                      {view?.passages.map((p) => {
+                        const [id, page] = p.id.split(":");
+                        return (
+                          <article key={p.id}>
+                            <button
+                              onClick={() =>
+                                setSource({ source_id: id, page: Number(page) })
+                              }
+                            >
+                              {id} · PDF p{page}
+                            </button>
+                            <p>{p.excerpt}</p>
+                          </article>
+                        );
+                      })}
+                    </>
+                  )}
+                </>
+              )}
+              {tab === "evidence" && (
+                <>
+                  <h2>Evidence</h2>
+                  <p>
+                    {selected
+                      ? "For the selected topic or connection."
+                      : "For the current foreground graph."}
+                  </p>
+                  {findings.length === 0 && (
+                    <p>No findings recorded for this selection.</p>
+                  )}
+                  {findings.map((f) => (
+                    <article key={f.id}>
+                      <small>
+                        {f.kind === "recommendation"
+                          ? "Source guidance"
+                          : "Source finding"}
+                      </small>
+                      <h3>{f.label}</h3>
+                      <p>{f.text}</p>
+                      {f.conditions?.map((c: any, i: number) => (
+                        <p key={i}>
+                          Condition:{" "}
+                          {typeof c === "string" ? c : JSON.stringify(c)}
+                        </p>
+                      ))}
+                      <Refs refs={f.source_refs || []} open={setSource} />
+                    </article>
+                  ))}
+                  {catalog.sources
+                    .filter((s) => relatedSources.has(s.id))
+                    .map((s) => (
+                      <article key={s.id}>
+                        <h3>{s.id}</h3>
+                        <p>{s.filename}</p>
+                        <button
+                          onClick={() =>
+                            setSource({
+                              source_id: s.id,
+                              page: s.initial_pdf_page_ranges[0][0],
+                            })
+                          }
+                        >
+                          Open document
+                        </button>
+                      </article>
+                    ))}
+                </>
+              )}
+              {tab === "dates" && (
+                <>
+                  <h2>Recorded dates</h2>
+                  <p>
+                    Topic and event dates retain their meaning. Source dates
+                    describe their document.
+                  </p>
+                  {catalog.topics
+                    .filter((t) => scopeSet.has(t.id))
+                    .map((t) => (
+                      <article key={t.id}>
+                        <strong>{t.label}</strong>
+                        {t.dates?.length ? (
+                          t.dates.map((d: any, i: number) => (
+                            <p key={i}>
+                              {d.meaning}: {d.value}
+                            </p>
+                          ))
+                        ) : (
+                          <p>Date not recorded</p>
+                        )}
+                      </article>
+                    ))}
+                  <h3>Source dates</h3>
+                  {catalog.sources
+                    .filter((s) => relatedSources.has(s.id))
+                    .map((s) => (
+                      <article key={s.id}>
+                        <strong>{s.id}</strong>
+                        {s.dates?.length ? (
+                          s.dates.map((d: any, i: number) => (
+                            <p key={i}>
+                              {d.meaning}: {d.value}
+                            </p>
+                          ))
+                        ) : (
+                          <p>Publication date unknown</p>
+                        )}
+                      </article>
+                    ))}
+                </>
+              )}
+              {tab === "comparison" && (
+                <>
+                  <h2>Compare topics</h2>
+                  <p>Select a topic and choose Compare. Up to four topics.</p>
+                  {state.compare.map((id) => (
+                    <div className="actions" key={id}>
+                      {topicButton(id)}
+                      <button
+                        aria-label={"Remove " + id + " from comparison"}
+                        onClick={() => dispatch({ type: "compare", id })}
+                      >
+                        ×
+                      </button>
+                    </div>
+                  ))}
+                  {comparison && (
+                    <>
+                      <p>{comparison.notice}</p>
+                      {comparison.topics.length > 0 && (
+                        <div className="comparison-scroll">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th>Aspect</th>
+                                {comparison.topics.map((t: any) => (
+                                  <th key={t.id}>{t.label}</th>
+                                ))}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {comparison.aspects.map((a: string) => (
+                                <tr key={a}>
+                                  <th>{a.replaceAll("_", " ")}</th>
+                                  {comparison.topics.map((t: any) => (
+                                    <td key={t.id}>
+                                      {a in (t.aspects || {})
+                                        ? typeof t.aspects[a] === "object"
+                                          ? JSON.stringify(t.aspects[a])
+                                          : String(t.aspects[a])
+                                        : "Not recorded"}
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                              <tr>
+                                <th>Context and sources</th>
+                                {comparison.topics.map((t: any) => (
+                                  <td key={t.id}>
+                                    <p>{t.description}</p>
+                                    <Refs
+                                      refs={t.source_refs || []}
+                                      open={setSource}
+                                    />
+                                  </td>
+                                ))}
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      )}
+                    </>
+                  )}
+                </>
+              )}
+            </aside>
+          </div>
+        </main>
+      </div>
+      {toast && (
+        <div className="toast" role="status">
+          {toast}
+          <button aria-label="Dismiss message" onClick={() => setToast("")}>
+            ×
+          </button>
+        </div>
+      )}
+      {source && (
+        <Suspense
+          fallback={
+            <div className="loading" role="status">
+              Opening source viewer…
+            </div>
+          }
+        >
+          <PdfPanel
+            source={source}
+            catalog={catalog}
+            close={() => setSource(null)}
+          />
+        </Suspense>
+      )}
+      {research && (
+        <ResearchPanel
+          context={getContext()}
+          catalog={catalog}
+          close={() => setResearch(false)}
+          complete={(task) => {
+            setTasks((t) => [task, ...t.filter((x) => x.id !== task.id)]);
+            setResearch(false);
+            message(
+              "Research task saved. Paste its prompt into Codex Desktop.",
+            );
+          }}
+        />
+      )}
+      {library && (
+        <div className="modal-shade">
+          <section className="modal" role="dialog" aria-label="Source library">
+            <button className="close" onClick={() => setLibrary(false)}>
+              ×
+            </button>
+            <h2>Source library</h2>
+            <p>
+              {catalog.coverage.length} curated PDF positions. Viewing other
+              pages does not import them.
+            </p>
+            {catalog.sources.map((s) => (
+              <article key={s.id}>
+                <h3>{s.id}</h3>
+                <p>{s.filename}</p>
+                <button
+                  onClick={() =>
+                    setSource({
+                      source_id: s.id,
+                      page: s.initial_pdf_page_ranges[0][0],
+                    })
+                  }
+                >
+                  Open source
+                </button>
+              </article>
+            ))}
+          </section>
+        </div>
+      )}
+      {saved && (
+        <div className="modal-shade">
+          <section
+            className="modal"
+            role="dialog"
+            aria-label="Saved explorations"
+          >
+            <button className="close" onClick={() => setSaved(null)}>
+              ×
+            </button>
+            <h2>Saved explorations</h2>
+            {saved.length === 0 && <p>No saved explorations yet.</p>}
+            {saved.map((s) => (
+              <button
+                key={s.id}
+                className="saved-view"
+                onClick={async () => {
+                  try {
+                    const value = await api("/api/explorations/" + s.id);
+                    reopen(value);
+                    setSaved(null);
+                  } catch (e) {
+                    setError(String(e));
+                  }
+                }}
+              >
+                {s.label}
+              </button>
+            ))}
+          </section>
+        </div>
+      )}
+      {saving && (
+        <div className="modal-shade">
+          <form
+            className="modal"
+            role="dialog"
+            aria-label="Save exploration"
+            onSubmit={save}
+          >
+            <button
+              className="close"
+              type="button"
+              onClick={() => setSaving(false)}
+            >
+              ×
+            </button>
+            <h2>Save exploration</h2>
+            <label>
+              Name
+              <input
+                autoFocus
+                required
+                maxLength={160}
+                value={saveName}
+                onChange={(e) => setSaveName(e.target.value)}
+              />
+            </label>
+            <button type="submit" disabled={!saveName.trim()}>
+              Save exploration
+            </button>
+          </form>
+        </div>
+      )}
     </div>
-    {!fullscreen&&<aside ref={dockedDetails} className="inspector" aria-label="Topic and connection details">{details}</aside>}
-
-   </section>
-  </main>
-  {toast&&<div className="toast" role="status">{toast}</div>}
-  {source&&catalog&&<PdfPanel source={source} catalog={catalog} close={()=>setSource(null)}/>}
-  {research&&<ResearchPanel context={getContext()} catalog={catalog} close={()=>setResearch(false)} complete={task=>{setTasks(ts=>[task,...ts]);setResearch(false);message('Prompt and context saved. Paste the prompt into Codex Desktop when ready.')}}/>}
-  {library&&catalog&&<div className="modal-shade" onClick={()=>setLibrary(false)}><section className="modal library-modal" role="dialog" aria-modal="true" aria-label="Source library" onClick={e=>e.stopPropagation()}><button className="close" onClick={()=>setLibrary(false)} aria-label="Close library">×</button><div className="eyebrow">THE STARTING COLLECTION</div><h2>Nine documents. One connected landscape.</h2><p>68 selected PDF pages are curated. Other pages can be opened for inspection and are not imported automatically.</p>{catalog.sources.map(s=><article key={s.id}><div><span className="source-id">{s.id}</span><h3>{s.filename}</h3><p>{catalog.coverage.filter(c=>c.source_id===s.id).length} curated / {s.pdf_pages} PDF pages · edition verified by SHA-256</p></div><button onClick={()=>setSource({source_id:s.id,page:s.initial_pdf_page_ranges[0][0]})}>Open source ↗</button></article>)}<p className="small-note">The original library remains read-only. Funding availability has not been checked.</p></section></div>}
-  {savingView&&<div className="modal-shade"><form className="modal" role="dialog" aria-modal="true" aria-label="Save exploration" onSubmit={e=>{e.preventDefault();persistView()}}><button type="button" className="close" aria-label="Cancel saving" onClick={()=>setSavingView(false)}>×</button><div className="eyebrow">KEEP YOUR PLACE</div><h2>Save this exploration</h2><label className="field">Exploration name<input autoFocus aria-label="Exploration name" maxLength={160} value={saveName} onChange={e=>setSaveName(e.target.value)}/></label><p>The centre, search, perspective, routes, positions, camera and browsing history will reopen together.</p><div className="modal-actions"><button type="button" onClick={()=>setSavingView(false)}>Cancel</button><button type="submit" className="solid">Save exploration</button></div></form></div>}
-  {saved&&<div className="modal-shade" onClick={()=>setSaved(false)}><section className="modal" role="dialog" aria-modal="true" aria-label="Saved explorations" onClick={e=>e.stopPropagation()}><button className="close" aria-label="Close saved explorations" onClick={()=>setSaved(false)}>×</button><div className="eyebrow">PICK UP WHERE YOU LEFT OFF</div><h2>Saved explorations</h2>{savedViews.length?savedViews.map(s=><button className="saved-view" key={s.id} onClick={async()=>{try{const value=await api('/api/explorations/'+s.id);restoreView(value.state,value.history,value.history_index);setSaved(false)}catch(e){setError(String(e))}}}><strong>{s.label}</strong><small>{new Date(s.updated).toLocaleString()}</small><span>↗</span></button>):<p>No saved explorations yet. Use Save view to keep this exact context.</p>}</section></div>}
- </div>;
+  );
 }
-
-type DetailsProps={selectedRoute?:Route;selectedRecord:any;inspected:any;catalog:Catalog|null;view:View|null;state:State;tasks:any[];allRoutes:Route[];commit:(patch:Partial<State>,label?:string)=>void;makeCentre:(id:string)=>void;focusTopic:(id:string)=>void;expandTopic:(id:string)=>void;expandRoute:(route:Route)=>void;collapseRoute:(route:Route)=>void;alternatives:()=>void;restoreView:(value:State,entries?:State[]|Record<string,any>,index?:number)=>void;setResearch:(v:boolean)=>void;setSource:(ref:Ref)=>void;selectRecord:(data:any)=>void;inspectRoute:(route:Route)=>void;openGroup:(gid:string)=>void};
-function DetailsContents({selectedRoute,selectedRecord,inspected,catalog,view,state,tasks,allRoutes,commit,makeCentre,focusTopic,expandTopic,expandRoute,collapseRoute,alternatives,restoreView,setResearch,setSource,selectRecord,inspectRoute,openGroup}:DetailsProps){return <div className="details-content">
-
-     {selectedRoute?<><div className="eyebrow">A CONNECTING ROUTE</div><h2>{catalog?.topics.find(t=>t.id===selectedRoute.endpoint)?.label}</h2><p>{selectedRoute.why}. This route joins recorded steps; it is not a recommendation.</p><div className="inspector-actions"><button className="solid" onClick={()=>expandRoute(selectedRoute)}>Expand this connection</button><button onClick={()=>collapseRoute(selectedRoute)}>Collapse</button><button onClick={alternatives}>Alternative routes</button></div><ol className="route-list">{selectedRoute.nodes.map((id,i)=><li key={i}><button onClick={()=>focusTopic(id)}>{catalog?.topics.find(t=>t.id===id)?.label||id}</button>{i<selectedRoute.edges.length&&<div className="route-step">{(()=>{const edge=catalog?.relationships.find(e=>e.id===selectedRoute.edges[i]);return <><strong>{edge?.source===id?'→':'←'} {edge?.label}</strong><p>{edge?.explanation}</p><Refs refs={edge?.source_refs||[]} open={setSource}/>{edge?.basis==='curated'&&<small>Curated discovery association</small>}</>})()}</div>}</li>)}</ol></>:
-     selectedRecord?<><div className="eyebrow">{selectedRecord.record_type==='aggregate'?'GROUPED CONNECTIONS':selectedRecord.kind||selectedRecord.basis||'RECORDED CONNECTION'}</div><h2>{selectedRecord.label}</h2>{selectedRecord.scientific_name&&<p className="scientific">{selectedRecord.scientific_name}</p>}<p>{selectedRecord.description||selectedRecord.text||selectedRecord.explanation}</p>{selectedRecord.aliases?.length>0&&<p className="aliases">Also searchable: {selectedRecord.aliases.join(' · ')}</p>}
-      {catalog?.topics.some(t=>t.id===selectedRecord.id)&&<div className="inspector-actions"><button className="solid" onClick={()=>makeCentre(selectedRecord.id)}>Make this the centre</button><button onClick={()=>{const next=state.compare.includes(selectedRecord.id)?state.compare.filter(x=>x!==selectedRecord.id):[...state.compare,selectedRecord.id].slice(-4);commit({compare:next,perspective:'comparison',overview:false},'Compare selected topics')}}>{state.compare.includes(selectedRecord.id)?'Remove from comparison':'Compare'}</button><button onClick={()=>expandTopic(selectedRecord.id)}>Open connected topics</button><button onClick={()=>setResearch(true)}>Research this topic</button></div>}
-      <Refs refs={selectedRecord.source_refs||[]} open={setSource}/>
-      {selectedRecord.identification&&<div className="small-note">Species identification: {typeof selectedRecord.identification==='string'?selectedRecord.identification:JSON.stringify(selectedRecord.identification)}</div>}
-      {selectedRecord.dates?.map((d:any,i:number)=><div className="date-pill" key={i}>{d.meaning}: {d.value}</div>)}
-      {selectedRecord.constituent_ids?.map((id:string)=>{const e=catalog?.relationships.find(e=>e.id===id);return e&&<div className="finding-card" key={id}><button onClick={()=>{selectRecord(e)}}>{e.label}: {catalog?.topics.find(t=>t.id===e.source)?.label} → {catalog?.topics.find(t=>t.id===e.target)?.label}</button><p>{e.explanation}</p></div>})}
-      {selectedRecord.evidence_finding_ids?.map((id:string)=>{const f=catalog?.findings.find(f=>f.id===id);return f&&<article className="finding-card" key={id}><h4>{f.label}</h4><p>{f.text}</p><Refs refs={f.source_refs||[]} open={setSource}/></article>})}
-      {inspected?.findings?.length>0&&<h3>Findings & practical conditions <span>{inspected.findings.length}</span></h3>}{inspected?.findings?.map((f:any)=><article className="finding-card" key={f.id}><span className={'record-badge '+f.kind}>{f.kind==='recommendation'?'Source guidance':'Source finding'}</span><h4>{f.label}</h4><p>{f.text}</p>{f.conditions?.length>0&&<div className="conditions">{f.conditions.map((c:any,i:number)=><p key={i}>↳ {typeof c==='string'?c:JSON.stringify(c)}</p>)}</div>}<Refs refs={f.source_refs||[]} open={setSource}/></article>)}
-      {catalog?.browse_groups?.filter(g=>g.anchor_topic_id===selectedRecord.id).map(g=><div className="browse-actions" key={g.id}><p><strong>Browse group · {g.label}</strong></p><button onClick={()=>openGroup(g.id)}>{state.layerView?.layers['group:'+g.id]?.open?'Collapse group':'Open group'} · {g.label}</button><p>{g.members.length} topics · {g.maintenance_rule}</p></div>)}{inspected?.organization?.memberships?.map((g:any)=><section className="browse-actions" key={g.id}><h3>Organized in {g.label}</h3><p>{g.parent_path.map((p:any)=>p.label).join(' › ')} · {g.role==='primary'?'Primary browsing location':'Shared membership'}</p><p>{g.maintenance_rule}</p><button onClick={()=>openGroup(g.id)}>Open {g.label}</button><small>Organization revision {inspected.organization.revision} · {g.members.length} members</small></section>)}{inspected?.relationships?.length>0&&<h3>Connected topics</h3>}<div className="neighbor-list">{inspected?.relationships?.map((e:any)=>{const id=e.source===selectedRecord.id?e.target:e.source;return <button key={e.id} onClick={()=>focusTopic(id)}><small>{e.label}</small>{catalog?.topics.find(t=>t.id===id)?.label||id}<span>→</span></button>})}</div>
-      {inspected?.unresolved?.map((u:any)=><div className="notice" key={u.id}>{u.text}</div>)}
-     </>:<><div className="eyebrow">ROOM FOR DISCOVERY</div><h2>Follow a useful connection.</h2><p>You can begin without a search question. Open a group, then select a species, method or activity.</p><div className="intro-example"><span>TRY A FIRST EXPLORATION</span><h3>Who grows alongside carob?</h3><p>Explore accompanying plants and their habitats. Each connection keeps its source close by.</p><button className="solid" onClick={()=>makeCentre('carob')}>Explore carob <b>→</b></button></div><div className="small-note">A line can describe an observation, a requirement or a curated association. Open it to see which.</div></>}
-     {state.search&&<><h3>Search matches <span>{view?.matches.length||0}</span></h3><div className="neighbor-list">{view?.matches.map(t=><button key={t.id} onClick={()=>focusTopic(t.id)}>{t.label}<span>↗</span></button>)}</div>{view?.passages.length!>0&&<h3>Matching source passages</h3>}{view?.passages.map(p=><button className="passage" key={p.id} onClick={()=>{const [id,page]=p.id.split(':');setSource({source_id:id,page:Number(page)})}}><strong>{p.id.replace(':',' · PDF p')}</strong><p>{p.excerpt}</p></button>)}</>}
-     {!state.overview&&allRoutes.length>0&&<details className="route-index"><summary>Displayed connections · {allRoutes.length}</summary><div className="neighbor-list">{allRoutes.map(r=><button key={r.id} aria-label={'Inspect connection to '+(catalog?.topics.find(t=>t.id===r.endpoint)?.label||r.endpoint)} onClick={()=>{inspectRoute(r)}}><small>{r.nodes.length>2?`via ${r.nodes.length-2} topics`:'Direct recorded relationship'}</small>{catalog?.topics.find(t=>t.id===r.endpoint)?.label||r.endpoint}<span>→</span></button>)}</div></details>}
-     {tasks.length>0&&<><h3>Research handoffs</h3>{tasks.slice(0,5).map(t=><div className="task-card" key={t.id}><span>{t.status}</span><strong>{t.custom_topics||t.instruction}</strong>{t.summary&&<p>{t.summary}</p>}<button onClick={()=>{if(t.context?.view_state)restoreView(t.context.view_state,t.context.view_history,t.context.history_index);else setResearch(true)}}>Reopen context</button></div>)}</>}
-
-</div>}
-
-function Refs({refs,open}:{refs:Ref[];open:(ref:Ref)=>void}){return <div className="refs">{refs.map((ref,i)=><button key={i} onClick={()=>open(ref)} title={ref.locator||'Open exact PDF page'}>{ref.source_id} <span>p{ref.page} ↗</span></button>)}</div>}
-
-function PdfPanel({source,catalog,close}:{source:Ref;catalog:Catalog;close:()=>void}){
- const record=catalog.sources.find(s=>s.id===source.source_id);const [page,setPage]=useState(source.page),[rotation,setRotation]=useState(0),[scale,setScale]=useState(1.2),[error,setError]=useState(''),[busy,setBusy]=useState(true),[pages,setPages]=useState(record?.pdf_pages||1),[painting,setPainting]=useState(false),[renderedPage,setRenderedPage]=useState(0);
- const doc=useRef<PDFDocumentProxy|null>(null),canvas=useRef<HTMLCanvasElement>(null);const render=useRef<any>(null);
- useEffect(()=>{setPage(source.page);setBusy(true);setError('');const loading=getDocument({url:'/api/sources/'+source.source_id+'/file',standardFontDataUrl:'/pdf-assets/standard_fonts/',cMapUrl:'/pdf-assets/cmaps/',cMapPacked:true,wasmUrl:'/pdf-assets/wasm/'});loading.promise.then(pdf=>{doc.current=pdf;setPages(pdf.numPages);setPage(source.page);setBusy(false);setScale(1.2)}).catch(async e=>{let message=String(e);try{const response=await fetch('/api/sources/'+source.source_id+'/file');if(!response.ok)message=(await response.json()).detail}catch{}setError(message);setBusy(false)});return()=>{render.current?.cancel();loading.destroy();doc.current=null}},[source.source_id]);
- useEffect(()=>{setPage(source.page)},[source.page]);
- useEffect(()=>{if(!doc.current||busy||!canvas.current)return;let active=true;setPainting(true);render.current?.cancel();doc.current.getPage(page).then(p=>{if(!active||!canvas.current)return;const viewport=p.getViewport({scale,rotation:(p.rotate+rotation)%360});const ctx=canvas.current.getContext('2d')!;canvas.current.width=viewport.width;canvas.current.height=viewport.height;render.current=p.render({canvas:canvas.current,canvasContext:ctx,viewport,background:'rgb(255,255,255)'});return render.current.promise.then(()=>{if(active)setRenderedPage(page)})}).catch(e=>{if(active&&e.name!=='RenderingCancelledException')setError(String(e))}).finally(()=>{if(active)setPainting(false)});return()=>{active=false;render.current?.cancel()}},[page,rotation,scale,busy]);
- const processed=catalog.coverage.find(c=>c.source_id===source.source_id&&c.page===page);
- return <div className="source-shade"><section className="source-panel" role="dialog" aria-modal="true" aria-label="Source inspection"><header><div><span className="eyebrow">ORIGINAL SOURCE · {source.source_id}</span><h2>{record?.filename||source.source_id}</h2></div><button onClick={close} className="close" aria-label="Close source">×</button></header><div className="pdf-controls"><button disabled={page<=1} onClick={()=>setPage(p=>p-1)}>←</button><label>PDF page <input aria-label="PDF page" type="number" min={1} max={pages} value={page} onChange={e=>setPage(Math.max(1,Math.min(pages,Number(e.target.value)||1)))}/> / {pages}</label><button disabled={page>=pages} onClick={()=>setPage(p=>p+1)}>→</button><button onClick={()=>setRotation(r=>(r+90)%360)}>Rotate ↻</button><button aria-label="Zoom source out" onClick={()=>setScale(s=>Math.max(.4,s-.2))}>−</button><button aria-label="Zoom source in" onClick={()=>setScale(s=>Math.min(3,s+.2))}>+</button><a href={'/api/sources/'+source.source_id+'/file#page='+page} target="_blank" rel="noreferrer">Open PDF ↗</a></div><div className="source-locator">{record?.author_issuer&&<div>{record.author_issuer} · {record.dates?.map((d:any)=>d.meaning+': '+d.value).join(' · ')||'Publication date unknown'}</div>}{source.locator&&<strong>{source.locator} · </strong>}{processed?`Curated page · ${processed.note}`:'Source material only · this page has not been curated.'}<small>PDF positions are one-based and can differ from printed page labels. Viewing a page does not import it.</small></div><div className="pdf-scroll" aria-busy={busy||painting} data-rendered-page={renderedPage}>{(busy||painting)&&<p role="status">{busy?'Opening the registered edition…':'Drawing PDF page…'}</p>}{error&&<div className="notice error">{error}<p>Locator: {source.source_id}, PDF page {page}. {record?.filename}</p></div>}<canvas ref={canvas}/></div></section></div>
-}
-
-function ResearchPanel({context,catalog,close,complete}:{context:any;catalog:Catalog|null;close:()=>void;complete:(task:any)=>void}){
- const defaults=context.perspective==='funding'?['Funding','Requirements','Sources']:context.perspective==='ecosystems'?['Ecosystem conditions','Sources']:context.perspective==='technology'?['Irrigation','Drone technology','Sources']:['Sources'];
- const [areas,setAreas]=useState<string[]>(defaults),[custom,setCustom]=useState(''),[instruction,setInstruction]=useState('Find more information'),[scope,setScope]=useState('Library only'),[extension,setExtension]=useState(''),[files,setFiles]=useState<string[]>([]),[prompt,setPrompt]=useState(''),[previewId,setPreviewId]=useState(''),[busy,setBusy]=useState(false),[error,setError]=useState('');
- const [gapMode,setGapMode]=useState('area'),[gapFrom,setGapFrom]=useState(context.centre||context.selected_topic_ids[0]||''),[gapTo,setGapTo]=useState(context.selected_topic_ids.find((id:string)=>id!==context.centre)||''),[gapTerm,setGapTerm]=useState(context.search||'');
- const gap=gapMode==='topics'?{kind:'existing-topics',from_id:gapFrom,to_id:gapTo}:gapMode==='term'?{kind:'unmatched-term',from_id:gapFrom,term:gapTerm.trim()}:null;
- const gapError=gap&&(!gapFrom||(gapMode==='topics'?(!gapTo||gapTo===gapFrom):!gapTerm.trim()))?'Choose two different topics, or a starting topic and a new term.':'';
- const gapLabel=gap?'Investigate connection: '+(catalog?.topics.find(t=>t.id===gapFrom)?.label||gapFrom)+' → '+(gapMode==='topics'?(catalog?.topics.find(t=>t.id===gapTo)?.label||gapTo):gapTerm.trim()):'';
- const draft=()=>({context:{...context,...(gap?{gap,selected_topic_ids:[...new Set([gapFrom,...(gapMode==='topics'?[gapTo]:[])])]}:{})},areas,custom_topics:[custom,gapLabel].filter(Boolean).join('\n'),instruction,source_scope:scope,library_files:files,proposed_extension:extension,task_id:previewId||undefined});
- const preview=async()=>{if(gapError){setError(gapError);return}setBusy(true);setError('');try{const result=await api('/api/research/preview',{method:'POST',body:JSON.stringify(draft())});setPrompt(result.prompt);setPreviewId(result.task_id)}catch(e){setError(String(e))}setBusy(false)};
- const save=async(copy=false)=>{if(gapError){setError(gapError);return}setBusy(true);setError('');try{const task=await api('/api/research',{method:'POST',body:JSON.stringify({...draft(),prompt:prompt||undefined})});if(copy){try{await navigator.clipboard.writeText(task.prompt)}catch{setError('Task saved. Select the preview text and press Ctrl+C to copy it.');setPrompt(task.prompt);setBusy(false);return}}complete(task)}catch(e){setError(String(e))}setBusy(false)};
- const changed=()=>{setPrompt('');setPreviewId('')};
- return <div className="modal-shade"><section className="modal research-modal" role="dialog" aria-modal="true" aria-label="Research this area"><button className="close" aria-label="Close research panel" onClick={close}>×</button><div className="eyebrow">CONTINUE THE DISCOVERY IN CODEX</div><h2>Research this area</h2><p>Keep the question attached to the knowledge you were exploring.</p><div className="research-context"><div><span>CENTRE</span><strong>{context.centre_label}</strong></div><div><span>SEARCH</span><strong>{context.search||'No search term'}</strong></div><div><span>PERSPECTIVE</span><strong>{perspectiveNames[context.perspective]}</strong></div><div><span>CONNECTIONS</span><strong>{context.detail}</strong></div></div><p className="small-note">{context.selected_topic_ids.length} selected topic(s) · {context.routes.length} captured route(s) · revision {context.knowledge_revision}</p>
-  <label className="field">Research focus<select aria-label="Research focus" value={gapMode} onChange={e=>{setGapMode(e.target.value);changed()}}><option value="area">This area or selected route</option><option value="topics">A connection between two existing topics</option><option value="term">A connection to a new term</option></select></label>
-  {gap&&<div className="research-gap"><label className="field">Starting topic<select aria-label="Research starting topic" value={gapFrom} onChange={e=>{setGapFrom(e.target.value);changed()}}><option value="">Choose a topic</option>{catalog?.topics.map(t=><option key={t.id} value={t.id}>{t.label}</option>)}</select></label>{gapMode==='topics'?<label className="field">Other topic<select aria-label="Research other topic" value={gapTo} onChange={e=>{setGapTo(e.target.value);changed()}}><option value="">Choose a topic</option>{catalog?.topics.filter(t=>t.id!==gapFrom).map(t=><option key={t.id} value={t.id}>{t.label}</option>)}</select></label>:<label className="field">New term<input aria-label="Research new term" value={gapTerm} onChange={e=>{setGapTerm(e.target.value);changed()}}/></label>}<p className="small-note">This saves a question to investigate. It does not add an established connection.</p></div>}
-  <h3>Areas to explore</h3><div className="area-grid">{['Ecosystem conditions','Irrigation','Drone technology','Funding','Requirements','Sources'].map(a=><label key={a}><input type="checkbox" checked={areas.includes(a)} onChange={e=>{setAreas(e.target.checked?[...areas,a]:areas.filter(x=>x!==a));changed()}}/>{a}</label>)}</div><label className="field">Add another topic<input placeholder="For example, soil microorganisms" value={custom} onChange={e=>{setCustom(e.target.value);changed()}}/></label><label className="field">What should Codex find out?<input list="instructions" value={instruction} onChange={e=>{setInstruction(e.target.value);changed()}}/><datalist id="instructions"><option>Find more information</option><option>Explain this connection</option><option>Check this finding</option><option>Connect a named document</option></datalist></label><label className="field">Sources<select value={scope} onChange={e=>{setScope(e.target.value);changed()}}><option>Library only</option><option>Library and web</option></select></label>
-  <details><summary>Choose library documents (optional)</summary>{catalog?.sources.map(s=><label className="file-option" key={s.id}><input type="checkbox" checked={files.includes(s.filename)} onChange={e=>{setFiles(e.target.checked?[...files,s.filename]:files.filter(x=>x!==s.filename));changed()}}/>{s.id} · {s.filename}</label>)}</details><details><summary>Propose a substantial new knowledge area</summary><p className="small-note">Ordinary topics within restoration, water, drones and funding need no separate approval. A substantial extension is saved for a user decision.</p><input aria-label="Proposed domain extension" placeholder="New area and why it belongs" value={extension} onChange={e=>{setExtension(e.target.value);changed()}}/></details>
-  {error&&<div className="notice error">{error}</div>}{prompt&&<label className="field prompt-field">Editable Codex prompt<textarea aria-label="Editable Codex prompt" value={prompt} onChange={e=>setPrompt(e.target.value)}/></label>}<div className="modal-actions"><button onClick={preview} disabled={busy}>Preview prompt</button><button onClick={()=>save(false)} disabled={busy}>Save task</button><button className="solid" onClick={()=>save(true)} disabled={busy}>Copy prompt & save</button></div><p className="small-note">A fixed template prepares the prompt. You choose when to paste it into Codex Desktop. Useful discoveries outside this question still enrich the shared graph.</p>
- </section></div>
-}
-
-createRoot(document.getElementById('root')!).render(<App/>);
+createRoot(document.getElementById("root")!).render(<App />);

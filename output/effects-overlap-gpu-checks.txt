@@ -1,0 +1,7 @@
+PASS background internal badge cannot overwrite a foreground card {"point":{"x":400,"y":290},"clean":[5,12,17],"overlap":[5,12,17]}
+PASS ordinary renderer hides a background badge behind the front card 
+PASS background badge stays hidden beneath a muted foreground card {"clean":[3,6,8],"overlap":[3,6,8]}
+PASS nearer layer heading stays above farther nodes 0 changed pixels
+PASS ordinary renderer keeps nearer headings above farther nodes 0 changed pixels
+PASS depth blur changes pixels along a card edge 102 softened pixels
+PASS Blur does not add surface colour or darkness {"off":[8,8,4],"on":[8,8,4]}

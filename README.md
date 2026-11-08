@@ -1,196 +1,152 @@
 # Algarroba Knowledge Browser
 
 A local, offline browser for connected restoration, water, drone and LEADER knowledge.
-The updated prototype brief defines the scope. The user confirmed the initial implementation plan
-in Codex on 5 November 2026 and the layered 3D second prototype on 6 November: this Windows computer only, English controls, searchable
-English/Spanish names, all ten perspectives, with Codex Desktop maintaining the knowledge.
+The v6 workflow, approved 8 November 2026, replaces independent panes and ten perspectives
+with one active Layered 3D graph, filters, grouping and a docked inspector.
 
-## Start and use
+## Start
 
-Double-click **Start Knowledge Browser.cmd**. It opens http://127.0.0.1:8765 in your normal browser.
-No internet is needed for browsing after setup. Keep the local application running while using it.
-Double-click **Stop Knowledge Browser.cmd** to stop the local server; knowledge and saved views remain.
-On a fresh checkout, run **Setup Knowledge Browser.cmd** once (Python, Node.js and internet are
-needed for installation). The nine original PDFs must remain at the paths in the source manifest.
+Double-click **Start Knowledge Browser.cmd**. It opens http://127.0.0.1:8765.
+Use **Stop Knowledge Browser.cmd** to stop the local server. Knowledge and saved explorations persist.
+For a fresh checkout run **Setup Knowledge Browser.cmd** once. Existing source PDFs must remain
+at their registered paths. After this upgrade the backend must restart and the browser reload.
 
-Open an overview group to show its complete contents in its own named layer. Clicking an
-ordinary topic opens its complete recorded neighbourhood at the next front step. Clicking a
-permanent group anchor opens its organized contents; **Open connected topics** explicitly opens
-its factual neighbourhood. Clicking an already expanded anchor collapses that expansion and its
-descendants. Relationships inspect without opening a topic layer; abbreviated routes unfold all steps.
+## Explore
 
-**Make this the centre** keeps the topic's card, source membership and positions in place, and
-opens or reuses **Centre · [topic]**, containing connected topics. Connections and **Detail · [topic]**
-group contents have separate front depth steps, both centred over their source card. Closing
-either leaves the other open. Nursery
-watering has one recorded direct neighbour: Dryland restoration. Previous source layers remain
-populated, including after returning from a centre view. Back restores the previous exploration.
+1. Open one of the nine sidebar groups. Its complete organized contents open in the foreground; the original layer remains darkened behind.
+2. Click a card or line to inspect it. Selection never opens, closes, recentres or rearranges.
+3. Choose **Explore this topic** to make it the centre. Without search, all direct neighbours open.
+   The Centre dropdown invokes the same action. Anchored groups also offer Members / Connections.
+4. Enter a search to find stored matches and explainable routes from the centre. Names, aliases,
+   findings and curated page text are searched; no research starts automatically.
+5. Domain and Topic type filter endpoints. The centre and required connecting context remain visible.
+   Group by None, Browsing family, Topic type or Place. Changing Group by updates the current
+   layer in place, preserving its camera and position. Opening a group is separate: use Open group
+   (or Members) to bring its contents forward and retain the original layer darkened behind it.
+6. Select a route for its explanation; **Show steps / Hide steps** unfolds it. **Show all route steps**
+   uses the same mechanism. Shared intermediate topics appear once. Alternative routes retain
+   source evidence. Reach starts at six steps; **Look farther** extends to eight, with up to three
+   alternatives. Reaching the route work budget is explicitly reported, never treated as proof
+   that a connection does not exist.
 
-**Remove centre (×)** beside the Centre dropdown removes the designation and badge, keeping
-open layers, search, perspective and viewpoint. The dropdown’s **No centre** option does the same.
-Back restores the preceding centre.
+**Remove centre** removes its card and attached lines, then repacks the remaining cards to fill
+its space in the current layer. The surrounding neighbour/search results and captured query
+origin remain available; no extra layer is created. Camera and layer movement stay unchanged.
+The next explicit exploration uses the current centre choice. Opening a membership group clears
+the previous centre and shows only that group's members; an unrelated Drones centre cannot be
+injected into Species. Clearing search returns to direct neighbours,
+or to the overview when no centre exists. Return to overview shows a single layer, keeping the
+selected domain/type filters and centre/search marker. Other-domain centre cards are omitted
+from a domain-filtered overview. Closed layers stay closed when you start exploring again.
 
-Search and perspective remain independent of centre. Changing either opens or updates a separate
-**Results · [search] · [perspective]** arrangement. Shared topics keep one full card in their existing
-layer; dashed location links identify where they are already visible. A fully shared layer shows
-all references instead of an empty frame. The **Layers** menu also lists these links accessibly.
+**Place not recorded** means no explicit primary place annotation is stored on that topic.
+Place entries belong to their own place group; other topics use the first recorded place ID,
+with identity redirects resolved. Opening a place group validates its members again, so records
+assigned elsewhere cannot leak into the opened layer. Unknown referenced place IDs are labelled
+Place unavailable, separately from genuinely unrecorded places. Grouping does not infer or write
+geographic facts from a topic's name, source co-occurrence or arbitrary relationships.
 
-Every layer offers **All topics / Group nodes**, initially All topics. Group nodes opens subordinate
-headings as counted cards; opening one shows its whole scope. Nested permanent groups remain
-anchors. No More topics nodes or display pagination remain. Each displayed relationship retains
-its real constituent IDs and exact evidence, including internal-connection badges.
+Opening a grouped card creates a focused, compact member layer. It contains exactly the topics
+represented by that card, with Group by initially None. Other group cards and previously opened
+groups stay in history, outside the new layer. For example, Event in Habitats & conditions opens
+its three Event records; it does not retain the previously opened Aspect or the Condition/Habitat/
+Place browsing cards. Grouping and domain changes remain within that captured membership.
+Use Back or Close layer to return. Older cumulative group expansions reopen as the last focused
+group, without changing their original saved database payloads.
 
-The ten perspectives share topic identities: Combined overview, Ecosystems, Technology, Funding,
-Sources and findings, Hierarchy, Comparison, Places, Time, Conditions and dependencies. The
-comparison starts with Cocoon, traditional pipe watering and individual fog collection; choose
-other items using **Compare** in their inspectors. Missing values remain visible.
+**Double-click a group node** to run the same **Open group** action offered in the inspector
+and topic list. A single click still only shows details. Double-clicking an ordinary topic
+keeps inspection; it does not invent a group or change the centre. Darkened/read-only nodes,
+layer labels, modifiers and drag gestures cannot trigger this shortcut. Each double-click
+opens one exploration and retains the original layer behind it.
 
-Zoom out restores broader grouped context. Back and Forward restore a previous exploration.
-Return to overview restores the combined landscape and retains your centre/search marker.
-Save view keeps positions, expanded routes, search, perspective and camera together.
+Clickable foreground topic and group cards show an accent outline and pointer cursor on hover.
+Hovering only previews interaction; it does not select, navigate or enter browsing history.
+Domain-excluded darkened cards cannot be hovered, selected or opened, including through the
+Visible topics list. Cancelling the domain preview restores interaction. Previous-view cards
+remain read-only, including the bright source card of an open child.
 
-### Layered 3D and Flat view
+Changing **Domain** previews the choice in the current layer: topics outside that domain and
+links attached to them become dark, while all cards stay in place. Click **Update** beside the
+layer heading's X to remove those topics and repack the remaining nodes tightly in this same
+layer. The toolbar has an **Update layer** fallback. Returning to All domains rebuilds the
+complete overview as a compact grid. Older scattered overview layouts are repaired on reopening,
+while preserving the layer movement and camera. This never adds a view or background layer. Choosing the already-applied domain cancels
+the preview; choosing All and Update restores the scope's full membership. Centres and required
+route steps remain as connecting context. Mixed-domain group cards show how many members match.
+Pending choices survive reload and saving; a failed Update retains the working graph and preview.
 
-The browser opens in **Layered 3D**. New detail stays at the reading distance while older layers
-recede and appear smaller. Depth means opened detail, not importance, certainty or subject.
-Anchors stay in their original layers. A new pane's area centre has the same X–Y position as
-its source card, opening directly in front of it along depth. Opening a layer pans toward the usable reading area,
-retaining angle and magnification; Fit this layer is available when a whole scope should be framed.
+## Navigation and reading
 
-**Back to [parent layer]** folds descendants and returns to the populated parent. Other branches
-remain open. Cards and relationships retain their own click actions; empty surfaces or exposed
-borders provide layer returns. The Layers menu offers the same actions, grouping, movement,
-shared-topic navigation and fitting in both modes. The explicit **Return to overview** closes
-all branches. History Back/Forward restores complete preceding explorations. Expand all routes
-is one combined expansion and one reversible action, retaining every actual intermediate.
+Layer headings display the opened group/node name, such as Species & companions or Cocoon planting reservoir.
+The active heading has a subtly tinted background so it stands apart from the window in light and dark themes.
+Use the **× Close layer** button beside a layer heading to close it. The toolbar's **Close layer**
+button closes the foreground when its heading is off screen. Closing a previous-view snapshot
+hides only that snapshot; it does not replace it with an older one. Closing the foreground restores
+its nearest visible previous layer, or the selected-domain overview when none remain. The base
+overview stays open. Browsing history is retained; Back can restore a closed foreground view.
 
-Drag empty space to pan. **Ctrl-drag or Shift-drag** turns the view; the visible angle buttons do the same.
-The view starts at 25° tilt, limited to 15–60° tilt and 60° left/right. **Reset view** restores the
-initial angle and frames the current knowledge. The overview map shows the last topic's home,
-the active named layer and the camera's actual footprint on the base plane.
+One live foreground graph is accompanied by at most two **Previous view** snapshots behind it.
+These are read-only history, not additional live knowledge. Back/Forward restores complete views;
+a new exploration after Back replaces the forward branch. Up to100 history entries are retained.
 
-**Flat view** shows the same open knowledge with a perpendicular camera and its own arrangement.
-Changing modes preserves the centre, search and routes. Returning to Layered restores its
-positions and viewpoint; additional items opened in Flat are placed without moving old anchors.
-**Visible topics** is a keyboard-accessible alternative to clicking a card.
+Drag a layer label to move the entire layer in X–Y, including previous-view snapshots.
+Escape cancels a move. Placements are saved without adding an exploration-history step.
+Drag empty space to pan. Ctrl/Shift-drag or angle buttons turn up to60 degrees in either
+direction around both X and Y; the initial tilt is25 degrees. Zoom changes magnification only.
+Fit and Reset view frame the current graph. Every layer uses the same tight grid, including
+Explore topic, search routes, grouped cards and previous views. The explored topic keeps its
+centre marker in an ordinary grid slot. Adding/removing route steps or changing membership
+repacks cards to fill gaps. Already compact saved layouts stay stable during reload, turning,
+zoom, resize and fullscreen. Domain preview retains positions until **Update layer** succeeds;
+**Remove centre** and **Tidy graph** also repack. Older rings/scattered layouts repair on opening.
+Reduced motion removes camera animation. Dense graphs still benefit from
+filters, grouping, zoom and the keyboard-accessible **Visible topics** list.
 
-### Graph clarity and workspace controls
+Foreground cards and labels are opaque. Previous snapshots are darkened65%, except the source node of an open child layer: it stays
+at full brightness with a highlighted outline so the connection to the foreground is visible.
+The highlight follows the chain of open layers and disappears when its child closes; selecting
+another topic in the sidebar does not change it. Selected cards
+use an outline and active lines are stronger. Blur, frosting, transparency controls, Flat mode,
+independent panes, the miniature map and corner pane handles have been removed.
+Layer-label dragging is retained as a simple presentation control.
 
-Cards follow their layer's orientation. All intra-layer and inter-layer connections are straight,
-with arrow tips at actual card edges. Selection focus is on by default: unrelated cards and labels
-receive extra 25% darkening and 50% opacity, multiplied with background effects. Active connections
-remain visible over muted cards, while active cards protect their labels. Clearing selection removes
-this emphasis without closing layers. **Fit current context** explicitly frames the whole scene.
+The inspector stays docked in both normal and full screen. Appearance offers System/Light/Dark.
 
-Use any of a layer's four corner handles to move it in XY; depth and dimensions stay fixed.
-Handles appear on hover/current selection/keyboard focus. Arrow keys move 20 projected pixels,
-Shift-arrows 60. The Layers menu provides keyboard movement, **Fit this layer**, **Reset position**
-and **Collapse layer**. Escape cancels a handle move. The overview frame and its nine cards adapt
-to the usable viewport: tall windows use fewer columns, wide windows use more, and spacing fills
-the layer area. At the same window shape the arrangement stays stable as you navigate. Opened
-detail layers retain their positions when the window changes. Returning to an
-earlier layer folds descendants and brings it forward, preserving unrelated branches. Zoom out
-follows the active branch, then closes remaining branches; **Return to overview** closes all.
+## Evidence, dates and comparison
 
-Switching **All topics / Group nodes** resizes that layer around its visible cards and location
-links. Group cards use a compact arrangement; switching back restores the topic positions.
-Newly opened layers and changed contents pack nodes closely, keeping circles and meaningful
-perspective arrangements. **Compact** on the pane, or **Compact this layer** in Layers, tidies
-an existing view. It preserves the pane's manual position and can be undone with Back. Older
-saved views keep their coordinates until you compact or reopen them. Ordinary selection keeps
-the arrangement stable. Flat view keeps its own layout and packs panes beside each other.
-All pane borders fit their visible nodes and location links with small side/bottom margins and
-room for the heading. Layer menus float slightly above the pane border and remain available
-while their controls have keyboard focus. Layer headings are larger than node text, with long
-names wrapping inside the pane. Connection layers keep their circular ordering. Window
-proportions guide the overview's node arrangement; pane borders wrap the resulting content.
-Each layer has a faint, stable surface and border colour in both themes. These colours help
-distinguish surfaces; they do not encode evidence or subject categories.
+- **Details** explains the selection and its real relationships. Group summaries/internal lists
+  preserve the actual constituent IDs. Organizational membership does not establish a fact.
+- **Evidence** shows findings, guidance, conditions and sources for the selection, or the current
+  graph when nothing is selected. Source buttons open exact one-based PDF positions, which can
+  differ from printed page labels. PDF navigation, zoom and rotation remain available.
+- **Dates** distinguishes topic/event dates from source publication and edition dates. Unknown
+  dates stay unknown. A document date is never assigned to every finding in it.
+- **Comparison** displays up to four chosen topics as a table. Missing values say Not recorded;
+  each topic retains its source and trial context. It is not a controlled head-to-head trial.
 
-If a layer is already inside a group with no further subgroup headings, its controls show
-**No further groups** instead of an unavailable dropdown choice. **Parent groups** returns to
-the parent's grouped view when available.
+Exactly nine registered editions and68 selected PDF positions are curated. Other pages can be
+viewed without being imported. Source findings, source guidance and curated discovery associations
+remain distinct. Drone citrus spraying is not evidence for carob establishment watering, and
+funding connections are not eligibility decisions or awards. Current availability is unverified.
 
-**Appearance** offers System, Light and Dark. System follows the Windows/browser setting.
-Your choice is saved in this browser, independently of saved explorations. PDF pages retain
-their original colours while the viewer controls follow the chosen theme.
+## Save and research
 
-**Background effects** offers independent Blur, Darken and Transparency switches. The initial
-setting is **Blur off, Darken on at 25%, Transparency on at 50%**. Darkening adjusts from 0–60%.
-Darkening covers background pane areas, borders, headings and content, including what shows
-through their faint surface tint. Each older layer is composited once at half opacity; cards
-remain opaque within that layer, so its own connections cannot show through its labels. All effects are disabled in Flat view and the base
-overview. Preferences are local and separate from exploration history.
+**Save view** stores scope, centre, search, filters, grouping, route expansion, comparison, positions,
+camera and history. **Saved explorations** reopens them. Browser sessions also use IndexedDB when
+localStorage is full. Version1/3/4/5 explorations translate into v6 without modifying originals;
+old multi-pane geometry is not preserved exactly. Legacy evidence/date/comparison choices open
+in their corresponding inspector tabs.
 
-With Blur enabled, background cards and connections between older planes receive depth blur,
-then extra frosting where physically behind the finite front surface. Background-to-front
-connections and selected routes remain sharp outside that surface and receive frosting behind
-it. Content physically in front remains sharp. Hover only changes outline/tint. PDF pages and
-HTML controls remain outside these effects. Cards, badges and headings follow their layer's
-orientation; they no longer turn independently toward the camera.
+**Research** captures the selection or foreground graph, exact factual IDs and routes, filters,
+grouping, source context and revision. Choose research areas, optional custom topics/documents,
+and Library only (default) or Library and web. Preview/edit/copy/save a static prompt; ask Codex
+Desktop to perform it manually. The app does not dispatch work or call an AI API.
 
-**Full screen** gives the graph the available screen area and retains the exploration controls.
-Click a topic or connection to open one floating details panel; selecting another updates that
-same panel. Drag its title bar, resize its edges/corners, or focus its title and use arrow keys
-to move it (Shift + arrows resize). The bottom-right resize handle also accepts arrow keys.
-Close preserves the selection; click a topic or **Show details** to reopen it. **Reset position**
-restores its initial size and position. Panel bounds are remembered locally and kept inside the
-workspace. **Exit full screen** or Escape returns to the normal docked inspector. Source and
-research dialogs remain available in full screen. Unsupported browser windows explain how to
-open the local app in Edge or Chrome.
-
-The 3D renderer is react-force-graph-3d 1.29.2 with one shared Three.js 0.187.0 installation.
-The XY layout runs locally in a background worker using Cytoscape fCoSE 2.2.0. The floating panel
-uses react-rnd 10.5.3. Every dependency and PDF asset is bundled locally; no online service is
-required. WebGL 2 must be available in the browser. If graphics initialization fails, the HTML
-controls and inspector retain the exploration and offer a retry.
-
-Version-five explorations store stable layer identities, complete memberships, presentation bands,
-canonical hosts/references, per-layer offsets/grouping, independent Flat/Layered layouts and cameras,
-routes and full history. Browser storage uses `kgb:exploration:v5`, preserving original v4/v3/v1 keys;
-older source memberships/homes migrate to populated layers. Compact history and a local IndexedDB
-mirror preserve sessions when localStorage is full. Full saved snapshots reopen without layout.
-See [PROTOTYPE_TWO.md](PROTOTYPE_TWO.md) for the state, renderer and backup contracts.
-
-Depth does not remove all overlap or crossings. Use gentle turning, zoom, Flat view and the
-selected route's complete inspector when a dense view is hard to read. Source PDF colours remain
-unchanged. Comfort should be assessed with the walkthrough below before expanding the corpus.
-
-Useful walkthroughs:
-
-1. Open Species & companions and select Carob tree. Inspect Carob plant communities and Kermes oak.
-2. Keep carob as the centre, search Drone, and change Technology then Funding. Open the recorded
-   routes and their sources. A connection does not imply a carob drone-watering result or award.
-3. Explore Cocoon, compare water methods, and inspect the different trial conditions and dates.
-4. Explore AL20 activities, its territory and requirements. Source budgets/criteria are knowledge,
-   not an eligibility or scoring calculator. Current funding availability is unverified.
-
-## Sources and evidence
-
-Exactly nine registered editions and 68 selected one-based PDF positions are curated. The old
-`algarrobos/doc_library` is read-only. Metadata for the complete PDFs is registered; only inspected
-coverage is indexed. The source panel opens the exact PDF page, supports rotation, and explains
-which pages are curated. Opening other pages does not ingest them.
-
-Source findings, recommendations and curated discovery associations retain different meanings.
-Carob companion vegetation means reported accompaniment, not proof of planting benefit. The
-drone study concerns citrus canopy spraying, not carob root-zone establishment irrigation.
-Source contradictions and unfinished questions are retained in `unresolved` records.
-
-## Research handoff
-
-**Research this area** captures the centre, raw search, matched IDs, perspective, detail, selected
-topics/relationships, complete routes, relevant findings and the view state. Suggested areas and
-custom topics prioritize research. **Research focus** can also capture a question between two existing
-topics or a starting topic and a new term; this creates a research indication, not an established
-relationship. Library only is the default; web use is explicit. Preview the
-fixed-template prompt, edit it if needed, and copy/save it. The task's `brief.md`, `prompt.txt` and
-`context.json` are written under `research/<task-id>/` in this project. The app does not dispatch
-work or call an AI API. Ask Codex Desktop to read the task and perform it manually.
-
-Outlined To research markers and Investigate connection links are questions, not facts. A material
-domain extension is recorded as Needs an answer; ordinary in-domain discoveries require no
-separate permission. Refresh after ingestion to retain the exploration and highlight additions.
+Tasks save brief.md, prompt.txt and context.json under research/<task-id>/. Pending questions appear
+in the task list and topic badges. Reopen context uses the same migration/restore path as saved
+views. Refresh preserves the exploration and highlights added topics. Material domain extensions
+remain explicit questions; normal in-domain discoveries need no individual approval.
 
 ## Knowledge ownership and maintenance procedure
 
@@ -242,66 +198,56 @@ editions. It never migrates operational data or old application behaviour. Expan
 ingestion awaits the user's acceptance of demonstrator comfort. Project tools and hosting remain
 separate future work.
 
-## Architecture and implementation
+## Architecture and checks
 
-- Frontend: React/TypeScript, one Three.js graph viewer through react-force-graph-3d,
-  offscreen fCoSE placement, PDF.js source panel and Vite build.
-- Backend: one Python/FastAPI application with Uvicorn; CLI imports reuse its store/model code.
-- Database: one SQLite store with FTS5 indexed labels, aliases, findings and inspected page text.
-- Local-only binding: `127.0.0.1:8765`. No cloud, AI API, agent framework or background researcher.
-- Display rules: complete current scopes with no endpoint/display caps; 6 route steps initially,
-  explicit extension to8, up to3 alternatives and explicitly selected comparison methods.
-  Routes reserve all intermediate detail before admission. Classification roots/provenance are
-  excluded from domain traversal. A route is a view object, not a new factual relationship.
-- Stable per-perspective positions, explicit local reveal, reduced-motion handling, saved camera
-  and history. The miniature uses actual rendered coordinates and hides its viewport rectangle
-  while a layout changes. Grouped edges retain their constituent real connection IDs.
+React/TypeScript and a single Three.js scene through react-force-graph-3d; deterministic local
+packing; PDF.js loaded on demand; FastAPI/Uvicorn; authoritative SQLite/FTS5. All runtime assets
+are bundled. No cloud or AI API is required. WebGL2 must be available; the topic list and inspector
+remain available if graphics initialization fails.
 
-Development: `npm run build`; `.venv\Scripts\python.exe -m uvicorn backend.app:app --host 127.0.0.1 --port8765`.
-Checks: `.venv\Scripts\python.exe -m pytest -q` and `npm test`.
-For isolated GPU opacity/colour checks, run `npm run dev -- --port 8776` and open
-`http://127.0.0.1:8776/tests/effects-gpu.html`. It uses synthetic graphics without knowledge/API writes.
-Dependency versions are locked in `package-lock.json` and `requirements-lock.txt`.
-See `THIRD_PARTY_NOTICES.md` and `third_party/` for actual installed licences.
+The frontend uses /api/explore and /api/comparison. /api/routes shares the same bounded traversal.
+/api/view and its perspective branches are retired. Saved views, inspection, source files,
+research and refresh retain their existing endpoints. No database schema migration is required.
 
+Development: npm run build; .venv\Scripts\python.exe -m uvicorn backend.app:app --host 127.0.0.1 --port 8765
+Checks: npm test; .venv\Scripts\python.exe -m pytest -q.
+Browser scenarios: start .venv\Scripts\python.exe scripts/qa-server.py in a separate terminal,
+then run tests/browser-v6.mjs against that isolated QA database on port8769 only.
+Set KGB_PLAYWRIGHT_MODULE to an installed Playwright index.mjs, or make playwright importable,
+and run node tests/browser-v6.mjs with Microsoft Edge installed. This is test tooling, not an app dependency.
 
-## Connection and layer readability
+See PROTOTYPE_TWO.md for v6 contracts and VERIFICATION.md for actual results and backup details.
+Dependencies are pinned in package-lock.json / requirements-lock.txt; THIRD_PARTY_NOTICES.md
+and third_party/ preserve applicable upstream notices and historical licence archives.
 
-Collapsed cards show an **internal connections** badge instead of a loop. Click the badge, or
-use its Inspect button under Visible topics, to inspect its actual constituent relationships.
-Opening/closing groups transfers those facts between individual lines, inter-group summaries
-and badges without duplication. Selected connections use rounded detours around cards.
+Layer gesture checks: with the isolated QA server running and the same Playwright configuration,
+run npm run test:gestures. These exercise label dragging, cancellation, persistence and both
+Ctrl-drag rotation limits in the actual browser.
 
-Each depth plane has one labelled outline. Hovering identifies a plane without reacting to the
-edges crossing it; click an exposed earlier plane/border or use Layers to fold deeper detail back.
-Group headings identify branches within a plane. Clicking cards/lines retains its normal action.
+Layer closing checks: run npm run test:close-layers against the documented isolated QA server
+with the same Playwright configuration.
 
-Background effects follow the independent switches described above. Older-layer content stays
-soft behind the current surface; selected and inter-layer connections receive only surface
-frosting where physically behind it. Flat and the base overview stay sharp.
+Layer close-button depth checks: run npm run test:close-occlusion against the isolated QA server
+with the same Playwright configuration.
 
-### Permanent browsing groups
+Domain preview/update checks: run npm run test:domain-update against the isolated QA server
+with the same Playwright configuration.
 
-The same SQLite database holds `browse_groups` organization metadata alongside factual records.
-This is a browsing hierarchy, not another graph or a restriction on changing existing facts.
-Codex can update existing topics/relationships when a supported correction is needed. Group
-membership alone never creates a factual connection or a route shortcut.
+Centre removal and group-scope checks: run npm run test:remove-centre against the isolated QA
+server with the same Playwright configuration.
 
-**Cocoon**, under **Establishment water**, uses the existing `cocoon` anchor and nine Cocoon-specific
-members. Its group opens all nine members. Primary members appear beneath Cocoon rather
-than repeating in the parent's flat list; broader equipment, species and trial sites keep their
-existing factual context. Shared membership is labelled and retains one actual card. Thin Shared
-labels in a detail arrangement lead to that same card; they are orientation aids.
+Node hover/domain disabling checks: run npm run test:hover against the isolated QA server
+with the same Playwright configuration.
 
-The catalog, CLI export and `groups` listing expose definitions and maintenance rules. Static
-research prompts/context capture them. Follow their rules, reconcile revisions and propose
-optional `browse_groups` in the same validated import batch as factual discoveries. Organization-only
-batches are also supported. Review [imports/CONTRACT.md](imports/CONTRACT.md). A transactional
-metadata migration and each import have a backup. No browser group editor or autonomous
-classification/research system is included.
+All-domain overview layout checks: run npm run test:all-domain-layout against the isolated QA
+server with the same Playwright configuration.
 
-For local WebGL regression pages, run `node scripts/prepare-browser-qa.mjs`, then serve the project
-with `.venv\Scripts\python.exe -m http.server 8767 --bind 127.0.0.1`. Open
-`http://127.0.0.1:8767/tests/browser/line-geometry.html` and
-`http://127.0.0.1:8767/tests/browser/frosted-compositor.html`. These pages use the installed Three
-and actual production modules; they perform no database writes. Stop this test server afterward.
+Group double-click checks: run npm run test:double-click against the isolated QA server with
+the same Playwright configuration.
+
+Focused group membership checks: run npm run test:focused-group against the isolated QA server
+with the same Playwright configuration.
+
+All-layer packing checks: run `npm run test:tight-layers` against the isolated QA server.
+Unrecorded-place membership/layout checks: run `npm run test:unrecorded-place` against that
+same server with the documented Playwright configuration.

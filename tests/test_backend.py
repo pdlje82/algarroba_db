@@ -7,7 +7,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from backend.app import create_app
-from backend.graph import Graph,PERSPECTIVES
+from backend.graph import Graph,LIMITS
 from backend.store import ROOT,Store
 
 
@@ -90,64 +90,14 @@ def test_mid_transaction_failure_rolls_back_records_and_revision(store,monkeypat
     assert s.snapshot()==before
 
 
-def test_all_perspectives_share_anchor_and_search_and_have_content(store):
-    s,_=store;g=Graph(s)
-    for perspective,_ in PERSPECTIVES:
-        v=g.view('carob','drone',perspective)
-        assert v['centre']=='carob' and v['search']=='drone'
-        assert any(n['id']=='carob' for n in v['nodes'])
-        assert len(v['nodes'])>1
-    funding=g.view('carob','drone','funding')
-    assert any(n['domain']=='funding' for n in funding['nodes'])
-    hierarchy=g.view('carob','','hierarchy')
-    assert any(n['id']=='fabaceae' for n in hierarchy['nodes'])
-    places=g.view('carob','','places')
-    assert any(n['kind']=='place' for n in places['nodes'])
-    time=g.view('carob','','time')
-    assert any(n['record_type']=='event' for n in time['nodes'])
 
 
-def test_routes_are_complete_bounded_and_never_traverse_source_or_classification_hubs(store):
-    s,_=store;g=Graph(s);v=g.view('carob','drone','technology',48,8)
-    edges={e['id']:e for e in s.records('relationships')}
-    assert any(len(r['nodes'])>2 for r in v['routes'])
-    for route in v['routes']:
-        assert len(route['edges'])==len(route['nodes'])-1<=8
-        assert len(route['nodes'])==len(set(route['nodes']))
-        for a,b,e in zip(route['nodes'],route['nodes'][1:],route['edges']):
-            assert {a,b}=={edges[e]['source'],edges[e]['target']}
-            assert edges[e].get('traversable',True)
-    assert len(v['nodes'])<=120 and len(v['edges'])<=240
-    paths=g.paths('carob','drones',8,3)
-    assert 1<=len(paths)<=3
 
 
-def test_comparison_values_belong_to_each_method_and_keep_gaps(store):
-    s,_=store;g=Graph(s)
-    v=g.view('cocoon','','comparison')
-    assert {'cocoon','traditional-reforestation','individual-fog-water-collector'}<={n['id'] for n in v['nodes']}
-    assert any(e['source']=='cocoon' and '57.4' in e['label'] for e in v['edges'])
-    assert any(e['source']=='traditional-reforestation' and '133.5' in e['label'] for e in v['edges'])
-    v=g.view('carob','','comparison',compare=['cocoon','drones'])
-    assert any(e['source']=='drones' and e['record_type']=='gap' for e in v['edges'])
 
 
-def test_unmatched_term_and_missing_perspective_keep_context(store):
-    s,_=store;g=Graph(s)
-    v=g.view('carob','a-completely-unrecorded-topic','funding')
-    assert v['centre']=='carob' and v['search']=='a-completely-unrecorded-topic'
-    assert v['nodes'][0]['id']=='carob' and v['notices']
-    assert not v['routes']
-    comparison=g.view('carob','a-completely-unrecorded-topic','comparison')
-    assert {n['id'] for n in comparison['nodes']}=={'carob'}
 
 
-def test_inspecting_a_branch_reveals_real_neighbours_without_recentering(store):
-    s,_=store;g=Graph(s)
-    view=g.view('carob','drone','funding',branches=['kermes-oak'])
-    assert view['centre']=='carob' and view['search']=='drone'
-    assert any(n['id']=='kermes-oak' and n.get('perspective_support') for n in view['nodes'])
-    assert any(e['record_type']=='branch' and e['source_refs'] for e in view['edges'])
 
 
 def test_text_search_aliases_and_accents(store):
@@ -166,7 +116,7 @@ def test_saved_exploration_and_static_handoff_preserve_exact_context(store,tmp_p
     state={'centre':'carob','search':'drone','perspective':'funding','detail':'full','positions':{'carob':{'x':12,'y':9}},'camera':{'zoom':.75,'pan':{'x':3,'y':5},'reference':1}}
     saved=client.post('/api/explorations',json={'label':'Carob and drones','state':state}).json()
     assert client.get('/api/explorations/'+saved['id']).json()['state']==state
-    context={**state,'knowledge_revision':0,'selected_topic_ids':['carob','drones'],'selected_relationship_ids':[],'routes':Graph(s).view('carob','drone')['routes'][:1],'view_state':state}
+    context={**state,'knowledge_revision':0,'selected_topic_ids':['carob','drones'],'selected_relationship_ids':[],'routes':Graph(s).explore(scope='search',centre='carob',search='drone')['routes'][:1],'view_state':state}
     draft={'context':context,'areas':['Funding','Sources'],'custom_topics':'soil microorganisms','source_scope':'Library only','instruction':'Explain this connection'}
     preview=client.post('/api/research/preview',json=draft).json()
     assert preview['context']['identity_reconciliation_required']
@@ -188,8 +138,8 @@ def test_old_identity_is_reconciled_and_a_new_discovery_joins_wider_graph(store)
     edge=dict(batch['relationships'][0],id='new-supported-connection',source=topic['id'],target='cocoon',traversable=True)
     s.import_batch({'batch_id':'followup','summary':'Research adds a supported wider connection','base_revision':1,'topics':[topic],'relationships':[edge],'redirects':{'old-carob-id':'carob'}})
     assert s.resolve('old-carob-id')=='carob'
-    assert Graph(s).view('old-carob-id','drone')['centre']=='carob'
-    assert Graph(s).tree('carob',8).get('new-in-domain-discovery')
+    assert Graph(s).explore(scope='search',centre='old-carob-id',search='drone')['centre']=='carob'
+    assert Graph(s).routes('carob','new-in-domain-discovery',8)['routes']
 
 
 def test_source_page_access_and_missing_edition_are_explained(store,tmp_path):
@@ -207,39 +157,8 @@ def test_original_editions_unchanged(store):
         with Path(source['path']).open('rb') as f:assert hashlib.file_digest(f,'sha256').hexdigest()==source['sha256']
 
 
-def test_complete_mode_removes_scope_and_evidence_truncation(store):
-    s,_=store;g=Graph(s);client=TestClient(create_app(s))
-    complete=client.get('/api/view?all_results=true').json()
-    assert complete['complete'] and len(complete['nodes'])==281 and len(complete['edges'])==329
-    sources=g.view(perspective='sources',all_results=True)
-    assert sum(n['record_type']=='finding' for n in sources['nodes'])==140
-    assert sum(n['record_type']=='source' for n in sources['nodes'])==9
-    assert len(sources['edges'])>240
-    assert sources['shown_results']==sources['total_results']==281
-    assert sources['scope_counts']['items']==430 and sources['scope_counts']['findings']==140
-    comparison=g.view(perspective='comparison',all_results=True)
-    assert comparison['shown_results']==comparison['total_results']==sum(n['record_type']=='topic' for n in comparison['nodes'])
-    assert len({n['id'] for n in sources['nodes']})==len(sources['nodes'])
-    technology=g.view(perspective='technology',all_results=True)
-    assert all(n['domain']=='technology' for n in technology['nodes'])
-    unknown=g.view(search='zzzz-unknown',all_results=True)
-    assert not unknown['nodes'] and unknown['notices']
-    assert client.get('/api/view').json()['complete'] is False
 
 
-def test_complete_search_and_neighbours_exceed_legacy_limits(store):
-    s,_=store;original=s.snapshot()['topics'][0]
-    topics=[dict(copy.deepcopy(original),id=f'complete-synthetic-{i}',label=f'Synthetic completeness {i}',aliases=[]) for i in range(150)]
-    edges=[dict(id=f'complete-edge-{i}',source='carob',target=t['id'],label='Test fixture',explanation='Isolated synthetic relationship',basis='source',source_refs=original['source_refs']) for i,t in enumerate(topics)]
-    s.import_batch(dict(batch_id='synthetic-completeness',base_revision=s.revision(),summary='Isolated completeness test',topics=topics,relationships=edges))
-    g=Graph(s)
-    assert len(s.search('synthetic',None))==150
-    assert len(s.search('synthetic'))==100
-    all_hits=g.view('carob','synthetic',all_results=True)
-    assert len(all_hits['matches'])==150 and len(all_hits['routes'])==150
-    assert all_hits['shown_results']==all_hits['total_results']==150
-    assert len(g.view('carob','synthetic')['routes'])==12
-    assert len(g.view(search='synthetic',all_results=True)['nodes'])==150
 
 
 def test_dynamic_organization_is_discovered_without_topic_specific_instructions(store):
@@ -263,3 +182,136 @@ def test_saved_views_preserve_pooled_v5_history_and_legacy_lists(store):
     assert client.get('/api/explorations/'+saved['id']).json()['history']==history
     legacy=client.post('/api/explorations',json={'label':'Legacy','state':{},'history':[{'centre':'carob'}]}).json()
     assert legacy['history']==[{'centre':'carob'}]
+
+
+def test_v6_scopes_are_complete_and_membership_is_not_connectivity(store):
+    s,_=store;g=Graph(s);client=TestClient(create_app(s))
+    v=client.get('/api/explore').json()
+    assert len(v['nodes'])==281 and len(v['edges'])==329 and v['complete']
+    assert client.get('/api/view').status_code==404
+    direct=g.explore(scope='neighbors',centre='carob')
+    expected={e['target'] if e['source']=='carob' else e['source'] for e in g.edges.values() if 'carob' in {e['source'],e['target']}}
+    assert set(direct['endpoint_ids'])==expected
+    assert len(direct['nodes'])==len(expected|{'carob'})
+    group=json.loads((ROOT/'imports/cocoon-browse-group.json').read_text())
+    group['base_revision']=s.revision();s.import_batch(group);g=Graph(s)
+    members=g.explore(scope='group',group_id='browse:cocoon')
+    assert set(members['endpoint_ids'])=={m['topic_id'] for m in group['browse_groups'][0]['members']}
+    assert len(g.explore(scope='neighbors',centre='cocoon')['endpoint_ids'])>len(members['endpoint_ids'])
+    assert all(e['id'] in g.edges for e in members['edges'])
+    # An unrelated prior exploration centre cannot become an organizational member.
+    focused=g.explore(scope='group',group_id='browse:cocoon',centre='drones')
+    assert focused['centre'] is None
+    assert {n['id'] for n in focused['nodes']}==set(members['endpoint_ids'])
+    species=g.explore(scope='group',group_id='ecosystem:species',centre='drones')
+    assert species['centre'] is None and 'drones' not in {n['id'] for n in species['nodes']}
+    assert {n['id'] for n in species['nodes']}==set(species['endpoint_ids'])
+
+
+def test_v6_search_routes_context_filters_and_no_added_branches(store):
+    s,_=store;g=Graph(s)
+    v=g.explore(scope='search',centre='carob',search='drone',domain='technology')
+    assert v['centre']=='carob' and v['search']=='drone' and v['routes']
+    assert all(g.topics[i]['domain']=='technology' for i in v['endpoint_ids'])
+    allowed=set(v['endpoint_ids'])|{'carob'}|{i for r in v['routes'] for i in r['nodes']}
+    assert {n['id'] for n in v['nodes']}==allowed
+    for r in v['routes']:
+        assert len(r['edges'])==len(r['nodes'])-1<=6
+        assert len(set(r['nodes']))==len(r['nodes'])
+        for a,b,eid in zip(r['nodes'],r['nodes'][1:],r['edges']):
+            e=g.edges[eid];assert {a,b}=={e['source'],e['target']} and e.get('traversable',True)
+    assert any(n['context'] for n in v['nodes'] if n['domain']!='technology')
+    missing=g.explore(scope='search',centre='carob',search='zzzz-unrecorded')
+    assert missing['centre']=='carob' and missing['search']=='zzzz-unrecorded' and missing['notices']
+    assert {n['id'] for n in missing['nodes']}=={'carob'}
+    routes=g.routes('carob','drones',8)
+    assert 1<=len(routes['routes'])<=3
+    assert any(r['id']==v['routes'][0]['id'] for r in g.routes('carob',v['routes'][0]['endpoint'],6)['routes'])
+
+
+def test_v6_budget_exhaustion_is_explicit_and_not_false_disconnection(store,monkeypatch):
+    s,_=store;g=Graph(s);monkeypatch.setitem(LIMITS,'traversal_expansions',1)
+    v=g.explore(scope='search',centre='carob',search='drone')
+    assert v['route_search']['budget_exhausted'] and not v['complete']
+    assert any('not proof' in n for n in v['notices'])
+    result=g.routes('carob','drones',8)
+    assert result['route_search']['budget_exhausted']
+    assert g.explore(scope='search',centre='carob',search='zzzz')['complete']
+
+
+def test_v6_comparison_preserves_values_conditions_and_missing_aspects(store):
+    s,_=store;client=TestClient(create_app(s))
+    result=client.get('/api/comparison?topics=cocoon,traditional-reforestation,drones').json()
+    assert len(result['topics'])==3 and result['aspects']
+    values={t['id']:t.get('aspects',{}) for t in result['topics']}
+    assert '57.4' in str(values['cocoon']) and '133.5' in str(values['traditional-reforestation'])
+    assert not values['drones']
+    assert all(t['source_refs'] for t in result['topics'])
+    assert client.get('/api/comparison?topics=carob,drones,cocoon,kermes-oak,al20').status_code==400
+    assert client.get('/api/explore?scope=invalid').status_code==400
+    assert client.get('/api/explore?scope=neighbors').status_code==400
+    assert client.get('/api/explore?depth=7').status_code==400
+    assert client.get('/api/routes?centre=missing&target=carob').status_code==404
+
+
+def test_v6_large_complete_search_and_direct_neighborhood(store):
+    s,_=store;original=s.snapshot()['topics'][0]
+    topics=[dict(copy.deepcopy(original),id=f'synthetic-{i}',label=f'Synthetic completeness {i}',aliases=[]) for i in range(150)]
+    edges=[dict(id=f'synthetic-edge-{i}',source='carob',target=t['id'],label='Fixture',explanation='Isolated test',basis='source',source_refs=original['source_refs']) for i,t in enumerate(topics)]
+    s.import_batch(dict(batch_id='complete-v6',base_revision=s.revision(),summary='Isolated test',topics=topics,relationships=edges))
+    g=Graph(s);v=g.explore(scope='search',centre='carob',search='synthetic')
+    assert len(v['matches'])==len(v['routes'])==150 and v['complete']
+    assert len(g.explore(scope='neighbors',centre='carob')['endpoint_ids'])>=150
+    assert len(g.explore(scope='search',search='synthetic')['nodes'])==150
+
+
+def test_v6_saved_history_and_research_preserve_new_context(store,tmp_path,monkeypatch):
+    import backend.app as module
+    monkeypatch.setattr(module,'ROOT',tmp_path);s,_=store;client=TestClient(create_app(s));before=s.snapshot()
+    state={'version':6,'scope':'neighbors','centre':'carob','search':'','domain':'technology','kinds':['equipment'],'grouping':'place','expandedRoutes':[],'positions':{'carob':{'x':9,'y':12}}}
+    history={'entries':[state],'index':0}
+    saved=client.post('/api/explorations',json={'label':'v6','state':state,'history':history}).json()
+    assert client.get('/api/explorations/'+saved['id']).json()['history']==history
+    context={'version':6,'scope':'neighbors','centre':'carob','filters':{'domain':'technology','kinds':['equipment']},'grouping':'place','selected_topic_ids':['carob'],'visible_topic_ids':['carob','cocoon'],'selected_relationship_ids':[],'expanded_route_ids':[],'view_state':state,'view_history':history,'knowledge_revision':s.revision()}
+    draft={'context':context,'source_scope':'Library only'}
+    preview=client.post('/api/research/preview',json=draft).json()
+    assert 'technology' in preview['prompt'] and 'Grouping: place' in preview['prompt'] and 'Scope: neighbors' in preview['prompt']
+    task=client.post('/api/research',json={**draft,'prompt':preview['prompt']+' user edit'}).json()
+    assert task['context']['view_state']==state and task['prompt'].endswith('user edit')
+    assert s.snapshot()==before
+
+
+def test_display_group_members_are_exact_and_do_not_create_organization(store):
+    s,_=store;g=Graph(s);before=s.snapshot();revision=s.revision()
+    ids=['al-faisal-pilot','canal-flooding','maysara-carob-trial']
+    v=g.explore(scope='group',group_id='display-group:type:event',member_ids=ids,centre='drones')
+    assert v['scope']=='group' and v['centre'] is None and v['complete']
+    assert set(v['endpoint_ids'])==set(ids) and {n['id'] for n in v['nodes']}==set(ids)
+    assert {n['kind'] for n in v['nodes']}=={'event'}
+    assert all(e['source'] in ids and e['target'] in ids for e in v['edges'])
+    assert len([n for n in g.topics.values() if n['kind']=='event'])>len(ids)
+    client=TestClient(create_app(s))
+    response=client.get('/api/explore',params={'scope':'group','group_id':'display-group:type:event','member_ids':','.join(ids)})
+    assert response.status_code==200 and {n['id'] for n in response.json()['nodes']}==set(ids)
+    missing=g.explore(scope='group',group_id='display-group:type:event',member_ids=ids+['gone-topic'])
+    assert set(missing['endpoint_ids'])==set(ids) and any('unavailable' in n for n in missing['notices'])
+    filtered=g.explore(scope='group',group_id='display-group:type:event',member_ids=ids,domain='technology')
+    assert filtered['endpoint_ids']==[]
+    mixed=g.explore(scope='group',group_id='display-group:type:event',member_ids=ids+['cover-types'])
+    assert {n['kind'] for n in mixed['nodes']}=={'event'} and any('topic type' in n for n in mixed['notices'])
+    assert s.revision()==revision and s.snapshot()['browse_groups']==before['browse_groups']
+
+
+def test_unrecorded_place_scope_rejects_placed_topics_and_keeps_filter_universe(store):
+    s,_=store;g=Graph(s);parent=g.explore(scope='group',group_id='ecosystem:habitats')
+    all_ids=parent['endpoint_ids']
+    expected={n['id'] for n in parent['nodes'] if n['kind']!='place' and not n.get('place_ids')}
+    assert expected and not ({'al-faisal','al-faisal-pilot','canal-flooding','maysara-carob-trial'} & expected)
+    v=g.explore(scope='group',group_id='display-group:place:unrecorded',member_ids=all_ids)
+    assert set(v['endpoint_ids'])==expected and set(v['group_member_ids'])==expected
+    assert all(n['kind']!='place' and not n.get('place_ids') for n in v['nodes'])
+    assert any('place group' in n for n in v['notices'])
+    placed=g.explore(scope='group',group_id='display-group:place:al-faisal',member_ids=all_ids)
+    assert set(placed['endpoint_ids'])=={'al-faisal','al-faisal-pilot','canal-flooding'}
+    filtered=g.explore(scope='group',group_id='display-group:place:unrecorded',member_ids=all_ids,domain='technology')
+    assert filtered['endpoint_ids']==[] and set(filtered['group_member_ids'])==expected

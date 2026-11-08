@@ -1,23 +1,32 @@
 {
   "name": "algarroba-knowledge-browser",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "node scripts/prepare-assets.mjs && tsc --noEmit && vite build",
-    "test:layout": "node --experimental-strip-types --test tests/layout.test.mjs",
-    "test": "npm run test:layout && npm run test:scene",
-    "test:scene": "node --experimental-strip-types --test tests/scene.test.mjs tests/layers-v5.test.mjs"
+    "test": "node --experimental-strip-types --test tests/exploration.test.mjs",
+    "test:browser": "node tests/browser-v6.mjs",
+    "test:gestures": "node --experimental-strip-types tests/layer-gestures.mjs",
+    "test:overview": "node --experimental-strip-types tests/overview-grouping.mjs",
+    "test:close-layers": "node --experimental-strip-types tests/close-layers.mjs",
+    "test:opening-highlight": "node --experimental-strip-types tests/opening-highlight.mjs",
+    "test:close-occlusion": "node --experimental-strip-types tests/close-occlusion.mjs",
+    "test:domain-update": "node --experimental-strip-types tests/domain-update.mjs",
+    "test:remove-centre": "node --experimental-strip-types tests/remove-centre.mjs",
+    "test:hover": "node --experimental-strip-types tests/node-hover.mjs",
+    "test:all-domain-layout": "node --experimental-strip-types tests/all-domain-layout.mjs",
+    "test:double-click": "node --experimental-strip-types tests/double-click-group.mjs",
+    "test:focused-group": "node --experimental-strip-types tests/focused-group.mjs",
+    "test:tight-layers": "node --experimental-strip-types tests/tight-layers.mjs",
+    "test:unrecorded-place": "node --experimental-strip-types tests/unrecorded-place.mjs"
   },
   "dependencies": {
-    "cytoscape": "3.34.4",
-    "cytoscape-fcose": "2.2.0",
     "pdfjs-dist": "6.5.438",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "react-force-graph-3d": "1.29.2",
-    "react-rnd": "10.5.3",
     "three": "0.187.0"
   },
   "devDependencies": {

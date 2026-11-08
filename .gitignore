@@ -12,3 +12,7 @@ playwright-report/
 *.log
 .idea/
 
+
+# Isolated browser verification data and generated probes
+/output/consolidation-qa/
+/output/qa-probe.mjs

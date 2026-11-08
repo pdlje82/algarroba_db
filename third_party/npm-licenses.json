@@ -245,33 +245,13 @@
     "license": "CC-BY-4.0"
   },
   {
-    "name": "clsx",
-    "version": "2.1.1",
-    "license": "MIT"
-  },
-  {
     "name": "convert-source-map",
     "version": "2.0.0",
     "license": "MIT"
   },
   {
-    "name": "cose-base",
-    "version": "2.2.0",
-    "license": "MIT"
-  },
-  {
     "name": "csstype",
     "version": "3.2.3",
-    "license": "MIT"
-  },
-  {
-    "name": "cytoscape",
-    "version": "3.34.4",
-    "license": "MIT"
-  },
-  {
-    "name": "cytoscape-fcose",
-    "version": "2.2.0",
     "license": "MIT"
   },
   {
@@ -425,11 +405,6 @@
     "license": "MIT"
   },
   {
-    "name": "layout-base",
-    "version": "2.0.1",
-    "license": "MIT"
-  },
-  {
     "name": "lightningcss",
     "version": "1.33.0",
     "license": "MPL-2.0"
@@ -540,11 +515,6 @@
     "license": "MIT"
   },
   {
-    "name": "re-resizable",
-    "version": "6.11.2",
-    "license": "MIT"
-  },
-  {
     "name": "react",
     "version": "19.3.1",
     "license": "MIT"
@@ -552,11 +522,6 @@
   {
     "name": "react-dom",
     "version": "19.3.1",
-    "license": "MIT"
-  },
-  {
-    "name": "react-draggable",
-    "version": "4.7.2",
     "license": "MIT"
   },
   {
@@ -577,11 +542,6 @@
   {
     "name": "react-refresh",
     "version": "0.18.0",
-    "license": "MIT"
-  },
-  {
-    "name": "react-rnd",
-    "version": "10.5.3",
     "license": "MIT"
   },
   {
@@ -628,11 +588,6 @@
     "name": "tinyglobby",
     "version": "0.2.17",
     "license": "MIT"
-  },
-  {
-    "name": "tslib",
-    "version": "2.6.2",
-    "license": "0BSD"
   },
   {
     "name": "typescript",

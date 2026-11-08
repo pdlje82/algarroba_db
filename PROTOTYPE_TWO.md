@@ -1,169 +1,215 @@
-# Prototype two: independent layered browser
+# Consolidated Layered 3D browser — v6
 
-Current interaction revision approved 7 November 2026. README.md describes user controls;
-this file describes implementation contracts. The updated prototype brief remains authoritative.
+Approved8 November2026. This replaces the v5 independent-layer interaction contracts.
+Historical source/build files are preserved in the pre-consolidation backup recorded in VERIFICATION.md.
 
-## Architecture and boundaries
+## Canonical exploration
 
-One React/TypeScript frontend, react-force-graph-3d1.29.2, one Three.js0.187.0 installation,
-fCoSE2.2.0 in a disposable XY worker, PDF.js6.5.438, react-rnd10.5.3, FastAPI and SQLite.
-Dependencies remain pinned and bundled for offline use. The original nine sources and selected
-68 PDF positions are unchanged. Original library files remain read-only. No AI API, autonomous
-researcher, new ingestion, hosting, new schema or knowledge/organization import is part of this revision.
+State version6 holds scope (overview/group/neighbors/search), groupId, centre, captured query anchor,
+search, domain, kinds, grouping, expandedGroups/expandedRoutes, alternatives, depth, comparison IDs,
+positions, camera, revision and the accepted query snapshot. Remove centre removes its card and
+attached lines and repacks the remaining cards on a deterministic grid in the same history entry.
+Preserve camera, layer movement, opening source and backgrounds. The captured anchor retains the
+surrounding query results for refresh and serves as the omitted former centre while centre is
+null. Apply that omission after expanding routes and before grouping, so neither matching itself
+nor route reveal can reinsert it. All cards, including a designated centre, use ordinary grid slots. Reconcile older
+saved positions containing a removed centre by clearing those stale slots once. Explicit scope
+changes reset the query anchor to the current centre choice.
 
-## Layers, ownership and contents
+Membership opening clears inherited centre/anchor and positions, requesting complete organized
+membership without an unrelated centre. Backend group queries ignore centre; scene projection
+also avoids injecting it from cached old group views. Reconcile old group centre state and layout
+in memory. A legitimate member remains part of membership even if it was the old exploration
+centre. Historical snapshots and original saved payloads are preserved.
+Selection, hover, active inspector tab, theme and fullscreen remain outside history.
+An additive layerRoot flag marks a single-layer overview boundary. Return to overview keeps the
+selected domain/type filters but renders no previous planes. Subsequent browsing never looks
+past that boundary. A domain-filtered overview omits out-of-domain centre cards.
+Changing Group by replaces the current entry in place, preserving camera/layer offset and
+existing background snapshots. Opening group membership or a display group is instead an
+explicit foreground exploration: its original layer remains behind it, darkened. Selection
+alone still only inspects. Overview boundaries survive saved views/reloads; new group opening
+can retain the new overview but cannot resurrect layers from before that boundary.
 
-The overview always contains nine stable knowledge areas on the base plane. Its grid and spacing
-adapt to the usable viewport; at unchanged proportions navigation preserves the map. An opened
-expansion has a stable ID, kind, anchor, dependency parent, scope, resolved membership, band,
-local grouping mode and independent mode offsets/slots. Depth is presentation order, not layer
-identity or evidence strength. Bands are 1560 units apart (three times the earlier520-unit gap).
-New detail opens at the next front band.
+exploration.ts owns the reducer. scene.ts owns projection and deterministic packing. Only successful
+queries/layouts enter history. Requests use generations plus AbortController. Graph failures retain
+accepted state. History caps100, truncates its forward branch on new actions, and restores camera.
 
-Opening a centre preserves source cards/slots/membership. The centre retains its source card and
-CENTRE badge; its connections layer contains neighbours, not a duplicate centre. An unseen centre
-gets a small named origin. Permanent-group contents and connections are separate expansions with
-independent front bands in Layered mode, each with its area centre at the source card's XY.
-Flat mode packs panes side by side with a100-unit margin. Repeats reuse an expansion and do
-not accumulate depth. Ordinary clicks open a group anchor's contents or a topic's neighbours.
-Explicit Open connected topics bypasses the organized-contents default.
+## Domain preview and in-place Update
 
-Dependency parents determine which descendants close. Returning brings the chosen layer forward,
-folds its descendants and keeps unrelated branches in place. Zoom out follows the current branch;
-at the overview it closes remaining branches. Return to overview closes all in one history step.
-A single full card represents each factual identity. Existing hosts are retained when another
-layer opens. Other memberships get compact dashed location links with their host name. All-shared
-layers have a complete reference list/explanation; genuinely empty scopes have a research action.
-Closing a host rehosts still-required cards into surviving reserved member slots.
+State.pendingDomain is an optional staged choice; State.domain remains the applied query domain.
+previewDomain changes no accepted records or query, preserves geometry/source/camera and replaces
+the current history entry. Scene projection darkens only cards with no matching member or required
+context; mixed-domain cards show a matching-member count. Selecting the applied domain cancels.
+updateDomain accepts the staged domain, invalidates the query snapshot and clears old alternatives,
+then reuses the canonical /api/explore and scene builder. Commit by replacing the same history
+entry only after success. Clear old card positions and tightly repack the remaining cards using
+the canonical deterministic layout. Preserve expansions that survive reconciliation, camera,
+layer offset, source reference and original history snapshots. Preview/failure retain the last
+working positions; successful Update persists the newly packed arrangement. Every scope uses
+the same compact grid with actual card dimensions and clearance. No centre reservation, ring or
+scattered fallback layout remains. Failed requests retain
+preview and working graph; subsequent preview choices cancel in-flight updates and reject stale responses.
+In-place edits after Back discard forward history without appending a view. New explicit scope
+explorations and Return to overview consume the pending domain for their new query. Route reveal,
+selection and grouping do not silently apply it. Preview state is additive v6 data, retained by
+saved views/research and the existing browser-storage fallback. Research filters distinguish the
+applied domain from pending_domain; capture the currently displayed records.
 
-All scopes are complete. No More nodes, pagination, endpoint48 cap or120/240 admission caps remain.
-Nested permanent groups remain anchors. Per-layer All topics/Group nodes is saved independently;
-the overview stays grouped. Display-only groups never recursively represent themselves.
-Summaries and internal badges retain exact IDs and count factual relationships once. Group
-membership is organization and never a route shortcut. Routes retain six/eight-step reach, up to
-three alternatives, and every included intermediate. Existing endpoints stay fixed on route reveal.
+When an accepted overview has domain All, reconciliation rebuilds its complete deterministic
+grid rather than retaining slots from a smaller domain. This also repairs older scattered saved
+positions on reopen/refresh. Before normalizing, recover the prior scene's layer offset and carry
+it to the corrected geometry key. Preserve camera/history. Pending previews retain their current
+positions. Original saved database payloads are read and normalized only in memory.
 
-## Layout, navigation and handles
+The foreground Update control sits immediately beside X. Both use the same depth-aware projected
+HTML positioning/occlusion, pointer isolation and disabled/loading behaviour; a toolbar fallback
+covers off-screen headings. Remove Update when there is no pending domain.
 
-Usable viewport aspect accounts for interface/inspector bounds. New ordinary scopes use balanced
-label-sized grids; direct neighbours use elliptical rings. Native result arrangements retain
-comparison columns, classifications, source groupings, dates including Undated, places and
-conditions/components. Large categories use several reading columns. All panes wrap their own
-visible cards, location references and optional research cards with32-unit side/bottom margins,
-a100-unit heading band and a300x240 minimum. No pane stretches to match the viewport ratio.
-Layer titles use30-world-unit bold text (larger than card body text), wrapping to two lines in
-the available header width. Position menus10 CSS pixels above the highest projected pane edge,
-including during turning/resizing. Keep menu hover and keyboard focus stable across the gap.
-New/changed scopes use compact reading slots with24-unit card clearance. Connections use complete
-elliptical rings with checked rectangular-card clearance; collisions never scatter nodes into a
-grid. Comparison columns, classifications, dates/Undated, places and source groupings retain their
-native order. Compact this layer explicitly repacks the active mode while retaining the pane's
-position; ordinary selection and resizing preserve completed slots. Manual offsets survive.
-The overview chooses dense rows/columns for the viewport proportions and places its
-nine cards across that frame. Three-column views retain ecosystem/technology/funding columns;
-narrower or wider layouts retain deterministic domain order. Resizing animates cards and their
-attached lines together, never invokes automatic fitting, and preserves exploration/camera state.
+## Query model
 
-Grouping toggles recompute bounds from visible cards/reference slots, excluding hidden cached
-slots and the empty local origin. Group cards use compact grids rather than connection rings;
-factual slots and manual layer offsets survive toggling. Frames animate their bounds over300ms,
-or change immediately with reduced motion. Stable layer-ID hues tint both surface and border in
-both themes; compositing keeps the finite surface tint separate from the empty canvas colour.
+GET /api/explore accepts scope, group_id, centre, search, domain, comma-separated kinds, depth6/8.
+It returns canonical nodes/edges, endpoint_ids, matches, passages, routes, notices, revision and
+route_search completeness. Endpoints are filtered; centre/intermediates remain context. Searches
+never add unrelated domain support branches. Organization and non-traversable classification hubs
+never shorten factual routes. Direct-neighbour and membership scopes are complete without display caps.
 
-Each opened layer has four corner handles. Pointer capture plus ray/plane intersection translates
-all its geometry in XY. Four pixels start a drag; controls are suspended; cancellation restores
-the initial offset. Release commits one action. Arrow keys move20 projected pixels; Shift60.
-Layers menu movement, Fit this layer, Reset position and Collapse remain reachable off screen.
-The overview has no handles. Hover is independent of edge/card picking: exposed borders first,
-otherwise nearest surface,100ms activation,150ms exit grace,120ms fade. Protected cards/active
-connections retain click priority. Hover changes outline/tint only.
+GET /api/routes accepts centre/target/depth and returns at most3 bounded simple routes. It shares
+Graph.traverse with exploration. A10000-expansion work budget reports budget_exhausted explicitly.
+GET /api/comparison accepts up to4 topic IDs, returning original aspects and source/trial context.
+No legacy /api/view or old perspective-generation implementation remains.
 
-Ctrl/Shift-drag and angle buttons turn between15–60 degrees tilt and +/-60 sideways; default25/0,
-no roll/rear viewing. Background drag pans. Flat uses a perpendicular camera, independent XY
-slots/camera and the same identities. Restoring complete snapshots skips layout. Fit, theme,
-resize and restoration never trigger zoom-out collapse. Exploration transitions take300ms,
-or are immediate with reduced motion. Handle movement follows the pointer immediately.
+## Single scene and renderer
 
-## Rendering and compositing
+Foreground cards have one live representative per identity. Group summaries and internal lists
+retain real factual IDs; abbreviated routes remain display objects. One expanded-route set powers
+individual and all-route reveal. One grouping control governs foreground organization.
 
-Camera-facing sprites are not used for cards. Textured XY meshes/badges/headings stay aligned
-with their plane. Project actual corners to quadrilaterals. Straight lines attach to their screen
-boundary and intersect camera rays with each owning plane; arrows meet the target. Routes are
-multiple straight factual steps. No obstacle detours remain. Complete LineGeometry replacements
-update render/pick/depth proxies together and dispose retired geometry.
+At most2 previous distinct graph states are rebuilt from history as snapshots, separated by1560
+world units. Their cards are opaque and darkened65%, with Previous view labels. Background facts
+are excluded from picking and factual/research accounting. Labels alone support presentation-only
+XY dragging. An additive layerOffsets map in v6 state stores world-XY offsets by stable graph key;
+content identity, local card positions and plane Z do not change. Escape/cancel restores the move.
+Label drag captures the pointer and disables camera controls; Ctrl/Shift takes rotation priority.
 
-Selection focus defaults on, independently saved. Inactive cards/labels receive extra25% darkness
-and half alpha, also in Flat. Active lines overlay muted cards; protected active cards mask their
-labels. Context lines stay faint with suppressed labels. GPU cache entries retain BOTH disposable
-ForceGraph data identities and root Object3D identities. Changed visual children are replaced;
-movement reuses card textures and line objects without another layout.
+SceneView uses the existing react-force-graph-3d/Three renderer with an empty force dataset and one
+owned scene group. Ordinary meshes, straight Line2 segments and depth testing replace postprocessing.
+Textures use sRGB. Retired resources are disposed. Camera gestures are pan by default and rotation
+with Ctrl/Shift. Default tilt25; both tilt and sideways are allowed from -60 to +60. Zoom never invokes semantic changes.
+Transitions300ms, immediate with reduced motion. There is no Flat camera or automatic force solver.
 
-Background effects remain independent: Blur off, Darken on25% (0–60), Transparency on50% initially.
-Background layers use reusable half-float buffers with opaque interiors before layer alpha.
-Apply darkening to pane tint/area, border, headings and content. For faint background surfaces,
-include a black shadow coverage of the selected strength while retaining premultiplied tint
-colour; do not leave the area below the tint undarkened. Surface coverage and RGB then receive
-the layer's50% opacity once. Keep own-card interiors opaque before that operation. Cached frame
-materials follow hover colour/opacity updates without changing source materials or textures.
-Surface shading does not punch holes over cards hosted in older layers.
-Depth blur grows1.25 CSS pixels per older plane, capped4. Surface blur has sigma2 and is clipped
-to the finite current surface using a separate world-Z test. Selected and background-to-front
-segments skip depth blur but still receive frosting physically behind the surface. Foreground
-content stays sharp. Empty surfaces never overwrite focus depth. Flat and the bare overview
-have no background effects; selection focus remains available. Preserve averaged RGBA in Bokeh,
-linear composition and OutputPass colour management. Dispose targets/material variants/workers;
-fall back to a sharp usable graph on failure. PDF pages and HTML panels remain outside effects.
+## Highlighting opened source nodes
 
-## State, requests and maintenance
+openedFrom stores the source layer key/card ID as v6 presentation state when a topic/group
+opens. Visible child layers mark exactly those cards in their source background layers; legacy
+sessions infer a matching topic/group representative when no explicit reference exists. Only
+marked background cards retain full brightness and an accent outline. Other cards, lines and
+headings retain background darkening. This is independent of selection and never changes source
+geometry, factual identity, source picking, depth ordering, history count or research accounting.
+Closing a child removes its highlight; a visible multi-layer chain retains each surviving origin.
 
-Version5 state and history use kgb:exploration:v5. Original v4/v3/v1 keys remain untouched. Migration
-recovers retained source memberships, anchor homes and usable XY/cameras into independent owner
-surfaces; obsolete More selection resolves to its group. Named descriptors, modes, hosts,
-references, parents/bands, slots/offsets/grouping, cameras, routes, selected facts and revision are
-saved. Additive v5 metadata stores source-card IDs, packing stamps, compact requests, local pane
-centres and per-mode manual-position flags, including perspective arrangement caches. Old saved
-coordinates are adopted intact; opening a cached pane or Compact applies the new packing policy.
-New automatic Layered placements align the final pane bounds, including references/research
-cards, to the actual source card. Reopening automatic panes realigns to a moved source; explicit
-manual positions stay put. Unseen centres get a separate origin plane. Scene commit generations
-prevent stale frames from overwriting a move. Scope/layout
-pooling keeps history compact; a local IndexedDB mirror covers localStorage capacity failures.
-Appearance/effects/selection focus/hover/fullscreen/panel bounds remain separate preferences;
-fullscreen never restores automatically. Saved-view and research payloads capture full v5 state.
+## Focused member layers
 
-The frontend always requests /api/view?all_results=true. This additive mode removes match,
-endpoint, branch, finding, provenance and display-count truncation. Legacy callers retain bounded
-responses. Prepare the full candidate off screen; cancel superseded work and commit only success.
-A20-second overall placement deadline terminates the worker and preserves the last working view.
-Fixed semantic reading slots are fCoSE constraints; completed caches do not rerun placement.
+Group members may be a stored organization/root or the exact membership captured from a grouped
+view card. groupMembers stores that stable source set; domain/type filters select current
+endpoints within it. A virtual groupId records grouping dimension/key (display-group:type:event,
+family or place) and resolves its heading from stored names/kinds. Opening a grouped card clears
+old expansions, centre/search and local positions, defaults grouping to None, and queries exact
+members through the same GET /api/explore with member_ids. Return canonical topics and factual
+edges whose endpoints both belong to the selected result; never create organization/factual
+records for display membership. Type groups reject mismatched kinds; missing IDs produce notices.
+Grouping, domain Update, reload and research preserve captured member IDs and knowledge revision.
 
-Topic inspection includes current organization revision, primary/shared memberships, parent paths,
-anchored groups, member IDs and maintenance rules. CLI inspect and exports expose the same context;
-research handoffs capture current definitions/rules automatically. Maintenance instructions require
-reading current stored organization generically. Specific rules belong in group definitions, not
-hardcoded topic-specific project instructions. Distinguish permanent organization from temporary
-perspective groupings. Capture useful supported discoveries across the agreed domain, including
-outside the question and visible scene. Keep validated transactional imports, reconciliation,
-duplicate prevention, backups and the manual Codex Desktop handoff.
+The old cumulative toggleGroup and Collapse controls are removed. On activation, translate an old
+expandedGroups snapshot's last card into the focused scope using the parent grouping's actual
+member IDs, without mutating its original payload. Preserve source/camera/layer offset/history;
+repack the focused layer. Read-only historical snapshots can still represent their original
+mixed display with the shared scene builder. Back activates and translates those scopes in turn.
 
-## Modules and recovery
+## Place membership and restored layout validation
 
-- layerState.ts: v5 migration, complete scopes, independent commands, dependency returns and moves.
-- layerScene.ts: canonical hosting/references, complete ledger, native reading slots and candidates.
-- compactLayout.ts / overviewLayout.ts: dense grids and non-overlapping rings, with responsive overview ordering.
-- scene.ts: shared types/snapshot capture and retained legacy projection regressions.
-- SceneView.tsx / rendererCache.ts: Three objects, stable disposable bindings, picking and controls.
-- cardGeometry.ts / connectionGeometry.ts: card-plane projection, ports and complete GPU paths.
-- bokeh.ts / backgroundEffects.ts: depth/surface composition, selection focus and preferences.
-- explorationStorage.ts: pooled history and local storage/IndexedDB session recovery.
-- main.tsx / workspace.tsx: independent controls, shared inspector, fullscreen, PDFs and research.
+The place key is the place record's own ID or another topic's first explicit place_ids entry,
+resolved through identity redirects. Missing annotations map to unrecorded. Referenced IDs without
+a current place record display Place unavailable rather than falsely appearing unrecorded.
+Do not infer new geographic facts from labels, paths, document co-occurrence or generic links.
+The focused-place query applies this same rule to captured IDs, removing members assigned to a
+different place. Return group_member_ids before domain/type filtering; reconcile captured source
+membership to that validated set so stale IDs disappear without losing filtered-out valid members.
 
-Pre-revision source/build snapshot, including uncommitted files:
-backups/pre-independent-layers-20261107T101700Z.zip (497 files), SHA256
-461123ac7b2008db3c7e99f0c6e55e70991fecd173fb3b8fc55fa93614dc345f.
-Earlier snapshots remain in data/prototype1-backups, documented in VERIFICATION.md.
+Focused ungrouped member scopes validate their saved positions against complete compact grid
+geometry. Preserve a valid grid exactly, including across reload/Back; clear scattered, missing
+or mixed positions and repack with the shared layout. Preserve old camera/layer offset when the
+geometry key changes. Pending previews retain positions. Read current canvas dimensions after
+async loading for layout, avoiding a stale startup aspect ratio. Original saved payloads and
+factual data are not rewritten by these in-memory repairs.
 
-See VERIFICATION.md for actual test results and browser limitations. Before/after examples live
-in docs/screenshots/independent-layers. Dense complete scopes can still have crossings/overlap;
-use layer movement, Group nodes, filtering, Flat view, zoom and individual relationship inspection.
-Human comfort with carob communities, Cocoon, drones and AL20 gates any additional ingestion.
+## Group double-click shortcut
+
+Group nodes accept a native double-click as an explicit Open group action. Two valid unmoved
+clicks must hit the same eligible record in the same active scene. Track this transient click
+identity outside history; then use groupOpeningAction/openGroup, shared with inspector/topic-list
+buttons. Overview groups open complete stored membership; other grouped cards open an exact
+member-ID scope with Group by None. Single clicks still inspect immediately. Ordinary topics have no Open group
+action. Ignore darkened/history content, busy state, HTML controls, modifiers and invalid/draggable
+clicks. Clear the click sequence after opening so each gesture commits only one exploration.
+
+## Hover and domain-disabled nodes
+
+Clickable foreground cards have a transient accent hover frame and pointer cursor. A hollow
+rectangle mesh around the card preserves its entire text/body even at limited depth precision;
+ordinary depth testing still lets nearer content occlude it. Hover has no history or selection.
+The shared scene interaction policy disables cards marked outOfDomain and their attached links,
+and gates inspector/topic-list selections as well. Disabled list buttons have no hover style or
+keyboard focus. Clear a current selection if preview excludes its card. Cancellation restores
+eligibility. Preserve disabled/background surfaces in the nearest-hit raycast to block selecting
+or dragging content behind them. Frame updates follow pointer, camera, scene and theme changes;
+clear on leave, gestures, loading and scene disposal. Historical cards have no hover frames.
+
+## Closing layers
+
+Close controls respect layer depth. Project opaque card and text surfaces through the current
+camera, clipping to the camera frustum, and test their overlap with the entire 28px button. Hide
+the whole control on any overlap by a nearer layer, including partial edge overlaps. Hidden
+controls are excluded from pointer and keyboard targets. Process close buttons from front to back
+so nearer buttons also hide overlapping farther controls. Update during camera/layer movement,
+resize and fullscreen; retain the toolbar fallback.
+
+Keyboard-accessible HTML Close layer buttons follow the actual projected 3D headings during
+camera/layer movement. Their pointer events are separate from label dragging and node selection.
+The toolbar provides a foreground fallback for off-screen headings. Base overview close is disabled.
+
+closedLayers is additive v6 presentation state. Hide only the requested background snapshot after
+choosing the two historical candidates; do not pull an older view into its place. Foreground close
+restores the nearest visible predecessor (including offsets) in one history step, preserving the
+closed original entry. Without one, return to the selected-domain single-layer overview. Reopening
+an exploration explicitly clears its matching close marker. No factual or organization data changes.
+
+## Persistence and handoff
+
+Sessions use kgb:exploration:v6 and an IndexedDB mirror. Legacy keys remain untouched. migration.ts
+reads legacy pooled histories and last active scope/positions; it contains no executable old viewer.
+Old saved database payloads and research files remain immutable until the user explicitly saves a new
+view or edits a task. Evidence/Time/Comparison migrate to panels; other perspectives map to filters/grouping.
+
+New research captures foreground context only, including exact factual IDs, routes, sources, filters,
+grouping, revision and version6 state/history. The existing manual prompt workflow and ingestion
+boundaries remain. The consolidation changes no accepted knowledge or organization definitions.
+
+
+## One tight layout for every layer
+
+All overview, membership, direct-neighbour and search layers, including grouped cards and
+read-only history snapshots, share compactGrid. The centre is a semantic designation on an
+ordinary card, not a reserved coordinate or ring. The scene builder checks the complete visible
+card set: reuse an already compact saved grid exactly, otherwise repack all cards in deterministic
+order. Route reveal/hide, filtering and other membership changes therefore fill holes instead
+of appending scattered fallback slots. Turning, zoom, resizing and fullscreen do not move healthy
+local positions. Pending domain previews keep the complete working layout until Update succeeds.
+
+Older ring/scattered positions normalize on render/reopen without editing original saved database
+payloads. A previousKey presentation alias derives from the original complete saved geometry;
+use it when resolving prior layer offsets, closed history snapshots and opening-source references.
+Foreground preparation carries the old offset to its corrected geometry key while preserving
+camera/history. No extra state format, layout engine or API is introduced. compactRings and the
+collision-fallback placer are removed. Verify with npm run test:tight-layers plus the full browser
+walkthrough.

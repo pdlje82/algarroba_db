@@ -776,3 +776,641 @@ and docs/screenshots/background-effects-opacity-off.png (extra selection dimming
 Final restored preferences: Blur off, Darken25%, Transparency50%, Selection focus on, System theme.
 Screenshot: docs/screenshots/background-effects-updated.png. The original34-card route exploration
 was restored and the isolated GPU tab closed. No backend, knowledge, organization or source changes.
+
+
+### Follow-up: overlapping labels and independent switches — 7 November 2026
+
+The user reported failures missed by the preceding verification. The running8765 page loaded
+index-DZlxGhsB.js, matching dist; this was not stale code or a backend restart problem. The103
+previous GPU checks sampled solid colour areas and did not prove contrast-edge blur or nested
+badge occlusion. New probes reuse the application's actual sceneMeshes factories.
+
+Reproduced before the fix:
+- A background internal-connection badge changed a muted foreground-card sample from[3,6,8]
+  to[16,22,22] in linear-byte RGB.
+- Ordinary rendering let farther nodes overwrite437 pixels inside a nearer heading.
+- Enabling Blur changed an empty surface sample from[8,8,4] to[15,14,7], due to an extra6% tint.
+
+Fixed card/badge/heading depth testing in source meshes and the postprocessing prepass. This
+blocks background label bleed even under dimmed front cards while preserving the selected-line
+exception. Headings are slightly ahead of their own card plane. Removed the extra blur tint and
+the redundant current-plane hover hint. Extracted existing mesh factories for shared app/test use;
+no exploration, layout, camera, database or API-format changes.
+
+Production build and119 scene/render checks passed, with depth-mask/tint assertions added to
+existing regressions. Both GPU probes passed (103 colour/opacity checks plus7 actual-mesh,
+occlusion and contrast-edge checks). The blur test measures102 changed pixels along a known
+edge, rather than testing uniform colours. Fixed occlusion samples match the unobstructed card,
+ordinary heading changes are0, and empty-surface Blur off/on samples both read[8,8,4].
+Results: output/effects-overlap-gpu-checks.txt.
+
+A separate8776 browsing session opened Establishment water then Cocoon and kept camera/geometry
+fixed for individual Off/Transparency/Blur/Darken screenshots. In a215x94 exposed-background region,
+mean RGB changes versus Off were8.41/9.08/8.25 for Transparency,9.59/9.18/9.25 for Blur and
+5.21/6.05/5.52 for Darken25%. Foreground card, heading and empty-surface comparison regions had
+exactly0 changed pixels. Images: docs/screenshots/effects-repair-off.png and corresponding
+-transparency.png, -blur.png and -darken.png. Final view: effects-repair-fixed.png.
+
+The8765 user tab was reloaded to index-y9XkHqAm.js with its34 cards/four layers, route:drones
+selection and System/Blur off/Darken25%/Transparency50% preferences retained. No backend restart
+was required. Original sources, factual/organization data and knowledge revision were not changed.
+Source/build snapshot before repair: backups/pre-render-effects-repair-20261107T220458Z.zip.
+
+
+### Single opening links between layers — 7 November 2026
+
+Added renderer-neutral layerConnections projection and a straight source-edge/docking-point geometry
+helper. Each contents/connections pane gets one blue dashed navigation link; canonical scene facts,
+layouts, histories and knowledge remain unchanged. Uninspected cross-layer factual lines are hidden
+in drawing, picking and postprocessing together. Internal links, complete expanded routes,
+abbreviated entry points and research markers remain visible. Source anchors opening a pane keep
+their fan folded. Line/ring or Layer link controls inspect actual relationship IDs and reveal lines;
+selecting one fact traces its endpoints, and clearing selection folds again. Shared neighbours hosted
+elsewhere remain in the opening inspector. Hidden/grouped sources use a representative or parent
+origin ring. Movement/turning uses current card/frame geometry, including animated frame sizes.
+
+Production build and124 scene/render checks passed. Five added regressions cover once-only fact
+accounting and nonmutation, independent contents/neighbour links, shared/restarted inspection,
+source selection versus explicit inspection, routes, all ten perspectives, both modes, exact
+source-boundary attachment at60-degree limits, moving docks, grouping and closed-branch cleanup.
+The geometry tolerance is1e-8 for floating ray/plane arithmetic. Results: output/layer-link-scene-tests.log.
+
+Browser checks used a separate8776 session, without database writes. Establishment water then Cocoon
+showed31 cards, two opening links and26 folded strokes. Inspecting Cocoon exposed10 real relationships
+and reduced folded strokes to16. Reduce restored26; selecting cocoon-degradation revealed one real
+relationship and left25 folded. Native clicking on the docking ring opened the same inspector.
+A page reload restored aggregate:layer:group%3Abrowse%3Acocoon without an inspection API request.
+
+A Cocoon centre/Connected topics pane alongside its contents produced four panes, three opening
+links and45 folded strokes. Its inspector included52 related facts, including shared neighbours;
+clearing selection restored45. Flat/Layered and Back/Forward retained the three links, folded count
+and usable panels. No graphics/effects notices appeared. Screenshots: docs/screenshots/layer-links-reduced.png
+and docs/screenshots/layer-links-inspected.png. The original8765 route exploration is retained.
+
+No backend/API, database schema, knowledge/organization revision, ingestion scope or source changes.
+Source/build snapshot including earlier uncommitted rendering work:
+backups/pre-layer-links-20261107T222937Z.zip (259 files).
+
+Final124-check run also covers retiring an opening selection when its pane closes or navigation
+returns to an ancestor. Production reload verified index-zABb34Sk.js,34 cards/four layers and the
+original route:drones selection, with one opening link and41 folded strokes; no graphics notices.
+The isolated browser tab was closed afterward.
+
+A final dev-browser log also exposed an existing LayerHover default-timer receiver error (Illegal
+invocation) while moving across the new links. Bound setTimeout/clearTimeout to globalThis and
+added a regression that enforces the browser receiver contract. Final scene/render total:125 passed.
+
+
+## 8 November 2026 — Consolidated v6 workflow
+
+The user-approved consolidation replaces independent panes with one live Layered 3D graph
+and at most two read-only previous views. Selection only inspects; Explore is explicit.
+Domain/type filters, local grouping, one route-expansion set, docked Evidence/Dates/Comparison,
+and the existing manual research handoff replace the ten-perspective workflow.
+
+Removed Flat mode, pane ownership/rehosting/handles, legacy scene/navigation engines, blue
+pane links, blur/frosting/transparency postprocessing, the miniature map and floating inspector.
+Cytoscape/fCoSE and react-rnd were removed from dependencies and lockfile; deterministic grids,
+rings and grouped layouts replace the all-fixed-position layout worker. One Three0.187.0
+runtime remains. PDF.js loads on demand.
+
+Validation:
+- 22 backend checks pass, including import integrity/rollback, unchanged source hashes, complete
+  scopes, membership versus connectivity, exact routes, explicit traversal-budget exhaustion,
+  comparison gaps, redirects, saved histories and version6 research payloads. One pre-existing
+  Starlette/httpx deprecation warning remains.
+- 15 frontend checks pass: explicit actions, clear-centre retention, shared route intermediates,
+  position stability/collision clearance, grouping fact accounting, capped/branching history,
+  history snapshots, pooled v3/v4/v5 and v1 migration, redirected IDs, legacy-key preservation,
+  IndexedDB fallback and retired-source/dependency guards.
+- 37 real Microsoft Edge browser assertions pass, with zero JavaScript exceptions. They cover
+  actual canvas picking without navigation, Carob/direct neighbours, Drone search, route selection
+  and reveal, domain filters, grouping, Cocoon Members versus Connections, comparison, rendered
+  exact PDF pages/rotation, saving, remove-centre/reload, research preview/edit/save, failed and
+  superseded requests, Back/Forward, light/dark, turning, portrait/reduced motion, fullscreen,
+  and reopening a legacy v5 saved view without rewriting its original database payload.
+- Production TypeScript/Vite build succeeds; git diff --check passes. The main bundled graphics
+  chunk remains about1.76MB and triggers Vite's existing1.5MB size advisory; PDF code is a
+  separate on-demand chunk. The app remains locally bundled/offline.
+- All10 baseline factual/organization table signatures match after implementation and restart;
+  revision remains3. The nine source editions passed hash verification. No ingestion or source
+  mutation occurred. Browser writes used output/consolidation-qa/knowledge.sqlite and its own
+  research directory; the user database was not used for test saves/tasks.
+
+Recovery snapshot, including pre-existing uncommitted source/build work:
+C:\Users\JanEngelke\git_private\algarroba_db\backups\pre-consolidation-20261107T230542Z.zip
+SHA256 c6056936b8f1eafea25765a8da84074e439e6f5fcd96a983bd2978af4d7ab8ad
+Baseline signatures: backups/consolidation-baseline.json. Legacy storage keys and saved
+payloads remain untouched; old multi-pane geometry translates approximately into one active view.
+
+Browser artifacts: output/consolidation-qa/browser-results.json, routes.png, dark-angled.png
+and portrait.png. The repeatable isolated helper is scripts/qa-server.py; run npm run test:browser
+with Playwright importable or KGB_PLAYWRIGHT_MODULE pointing to its installed index.mjs.
+
+The normal local server was restarted and read-only smoke checks confirm /api/explore and
+/api/comparison are live at http://127.0.0.1:8765. Existing tabs need a reload.
+
+
+## 8 November 2026 — Layer-label movement, symmetric Ctrl rotation and darker history
+
+Restored dragging foreground and previous-view labels to translate their complete layer in
+world X–Y at fixed Z. Cards, lines, arrows, borders and headings move together; local card slots,
+semantic memberships and the camera stay unchanged. Separate drag-only label picking preserves
+read-only background facts. Pointer capture, a4px threshold and suspended camera controls
+prevent accidental panning/selection; Escape and cancellation restore the starting offset.
+An additive layerOffsets map in v6 state persists placements, including research/saved-view
+contexts, without adding exploration-history entries or migrating knowledge.
+
+Ctrl/Shift-left drag now has explicit bounded rotation handling, taking priority over label
+movement. Both X tilt and Y sideways rotation clamp symmetrically to[-60,+60] degrees, with
+no roll/rear view. Buttons use the same limits; Reset retains25-degree tilt/zero sideways.
+The actual browser test exposed a conflict in default native modifier handling; explicit
+rotation fixed it. Background card, line, arrow, border and title brightness is0.35 (formerly
+0.75), with opaque surfaces and ordinary depth testing retained.
+
+Validation:19 frontend checks,22 backend checks, 15 focused real-browser gesture assertions
+and 37 complete browser regression assertions pass. Gestures verify foreground/background
+movement, unchanged camera/local slots/memberships, cancellation, reload persistence, both
+rotation extremes and Reset. Zero JavaScript exceptions. TypeScript/Vite build and
+git diff --check pass; the existing bundle-size and Python deprecation advisories remain.
+All10 factual/organization table signatures still match the consolidation baseline; revision3
+and registered source editions remain unchanged. The normal8765 server serves the new build.
+
+Recovery snapshot: C:\Users\JanEngelke\git_private\algarroba_db\backups\pre-layer-gestures-20261108T073111Z.zip
+SHA256 4ab89fc86e52014af1777d6366eff6f1707c2b41f5e18930e556d6051a407607
+Artifacts: output/consolidation-qa/gesture-results.json and layer-gestures-dark.png.
+Reproduce with scripts/qa-server.py and npm run test:gestures using the documented Playwright
+configuration. Tests use the isolated QA store; existing browser tabs need a reload.
+
+
+## 8 November 2026 — Single-layer overview and in-place grouping
+
+Return to overview now establishes a single-layer boundary while preserving the selected
+domain/type filters and centre/search markers. An out-of-domain centre no longer adds an
+extra domain card to the overview. Previous planes are omitted, and earlier closed layers
+cannot reappear after group membership browsing or subsequent exploration. Back still restores
+prior explorations explicitly. The additive v6 layerRoot flag persists this boundary through
+saved views, reloads and in-place replacements; old v6 overviews infer the boundary on read.
+
+Changing Group by, opening Members/sidebar groups, and expanding/collapsing display groups
+replace the current entry instead of appending a new exploration. Camera, foreground layer
+offset and pre-existing background snapshots are retained. No new layer/view is created by
+grouping. Return to overview clears obsolete placements and frames only its own content.
+
+Validation:22 frontend checks,22 backend checks, 13 focused browser assertions and
+37 complete browser regression assertions pass, with zero JavaScript exceptions. The
+focused browser checks cover the single-domain overview, no extra centre group, no new
+history/layer on grouping or membership opening, preserved camera, no closed-layer leakage,
+Back, and reload persistence. Production build and git diff --check pass. Accepted knowledge
+and organization table signatures remain unchanged at revision3. The normal8765 server serves
+index-BNtBeGrV.js; existing tabs need a reload. Existing non-blocking build/deprecation
+advisories remain.
+
+Recovery snapshot: C:\Users\JanEngelke\git_private\algarroba_db\backups\pre-overview-grouping-20261108T073943Z.zip
+SHA256 d251128763f74f77210b7266191883b23ab6659dedc513bd445d9c28f4ffe3c8
+Artifacts: output/consolidation-qa/overview-grouping-results.json and single-domain-overview.png.
+Reproduce against scripts/qa-server.py with npm run test:overview and the documented Playwright
+configuration. Browser writes remain isolated from the accepted store.
+
+
+## 8 November 2026 — Close layer controls and clarified group opening
+
+Added keyboard-accessible × Close layer buttons beside every projected layer heading, plus
+a toolbar Close layer fallback for the foreground. Buttons follow camera/layer movement and
+do not initiate label dragging or node selection. The base overview close control is disabled.
+Background close hides only that snapshot, preserving the current graph/camera and not pulling
+an older snapshot into its place. Foreground close restores its nearest visible predecessor
+or the selected-domain single-layer overview, preserving the closed original in browsing
+history. Back can restore it. Additive closedLayers v6 presentation state survives reload/saving.
+
+The user clarified a prior misunderstanding: changing Group by is an in-place reorganization;
+OPENING a group is an explicit new foreground exploration that keeps the original layer visible
+and darkened behind it. Sidebar/Members and display-group opening now use that behaviour.
+Node clicks remain inspection-only. Return to overview still yields a single layer, retains
+the selected domain, and prevents closed earlier episodes reappearing. Snapshot selection now
+deduplicates against the active graph as well as other snapshots, preventing repeated-view
+keys and duplicate active/background layers when a close restores a previous exploration.
+
+Validation:26 frontend checks,22 backend checks and 41 focused real-browser assertions
+pass (13 layer-closing, 13 overview/group-opening and 15 gesture checks). Zero browser
+JavaScript exceptions. Checks cover heading/toolbar buttons, background persistence, foreground
+restoration without history deletion, node inspection, retained/darkened original group layers,
+in-place Group by, overview boundaries, drag cancellation/persistence and both rotation limits.
+Production build and git diff --check pass; existing non-blocking bundle/deprecation advisories
+remain. All10 baseline factual/organization table signatures still match at revision3. Normal
+8765 serves index-D1qcC-o9.js; existing tabs need a reload. Test writes use the isolated QA store.
+
+Recovery snapshot: C:\Users\JanEngelke\git_private\algarroba_db\backups\pre-close-layer-20261108T074533Z.zip
+SHA256 e1ff169d7f720a5810f9b056496f25bd0f1b9dcd863219e88d2773c5c63e72ee
+Artifacts: output/consolidation-qa/close-layer-results.json and close-layers-open.png.
+Reproduce with the isolated QA helper and npm run test:close-layers, test:overview, test:gestures
+using the documented Playwright configuration.
+
+
+## 8 November 2026 — Name opened layers after their source node
+
+Replaced generic Group members headings with the actual opened node/card label. Sidebar
+groups use their familiar labels; anchored membership layers use the anchor topic name;
+expanded display groups use the displayed category/place/family label. The context strip,
+suggested saved-view name and heading close-button accessibility labels use the same resolver.
+Names are derived from current stored records, so old sessions need no migration or data edit.
+
+Validation:26 existing frontend checks and the production build pass. A real Edge browser
+probe verified Species & companions, Cocoon planting reservoir and preserved naming after
+session reload. git diff --check passes. The normal8765 server serves index-B6LuxqlH.js.
+Screenshot: output/consolidation-qa/opened-node-title.png. No factual knowledge was modified.
+
+## 8 November 2026 — Keep opened source nodes highlighted in previous layers
+
+Opening a topic/group records its displayed source card and source-layer identity. Each visible
+child keeps that card at full brightness with an accent outline in its parent snapshot, while
+other background cards retain the existing 65% darkening. A chain of open layers can highlight
+each corresponding parent source. These highlights are independent of sidebar selection and
+are removed when their child is closed. Background cards remain read-only, excluded from picking
+and factual accounting. The reference survives v6 saving/reload; older sessions infer a usable
+source from their exploration scope. Geometry signatures, positions and factual records do not
+change. README, interaction documentation and project instructions describe the exception.
+
+Validation: 29 frontend tests and the TypeScript/production build pass. Eight focused real-Edge
+browser assertions pass with zero runtime exceptions, covering source identity, only-the-source
+highlighting, reload, unrelated selection, nested openings and closing. Actual screenshot pixel
+sampling confirms the source card interior RGB (229,238,229), versus (143,149,143) for an unrelated
+background card with the same original fill. Light and dark theme screenshots were inspected.
+All 10 baseline knowledge/organization table signatures remain unchanged. git diff --check passes.
+Normal port 8765 serves index-Cjdktx8t.js; existing tabs need a reload. Browser writes used the
+isolated QA store. Existing non-blocking bundle-size advisory remains.
+
+Recovery snapshot: backups/pre-source-highlight-20261108T075854Z.zip
+SHA256 5b97e76725052b2d2a6c4b236ecf1edf94ca10f6865bb68d3b5c2a06fec17c82
+Artifacts: output/consolidation-qa/opening-highlight-results.json, highlight-pixel-results.json,
+opening-highlight-light.png and opening-highlight-dark.png. Reproduce with the isolated QA
+helper and npm run test:opening-highlight using the documented Playwright configuration.
+
+## 8 November 2026 — Depth-aware layer close controls
+
+The HTML X controls now respect the opaque 3D surfaces in nearer layers instead of always
+painting above WebGL. Project current card/heading surfaces through the camera, clipping against
+the frustum before testing the full button footprint. Any overlap, including an edge overlap,
+hides the whole close target; it reappears when clear. Process controls front-to-back so nearer
+X buttons also take precedence. Hidden controls are excluded from pointer and keyboard targets.
+Visibility follows camera changes, live layer dragging, resize, themes and fullscreen. The
+foreground toolbar fallback and all existing closing/history behaviour remain available.
+Updated README, interaction documentation and project instructions; no state/schema migration.
+
+Validation: 31 frontend tests, 22 backend tests, production TypeScript/Vite build and git diff
+--check pass. Ten focused real-Edge occlusion assertions and all 13 existing layer-closing
+browser assertions pass with zero runtime exceptions. Browser checks physically drag a background
+button behind a foreground card, verify that clicking its old position selects the foreground
+card without closing the background, then move the foreground clear and close the revealed
+button. Dark theme/fullscreen were checked; screenshots inspected. Pure geometry coverage
+includes partial overlap, own/farther surfaces, all nine combinations of +/-60/0-degree X/Y
+turning and near/behind-camera clipping. All 10 baseline factual/organization signatures remain
+unchanged. Browser writes used the isolated QA store. Normal port 8765 serves index-D8yWqNw-.js;
+existing tabs need a reload. Existing non-blocking bundle-size and testclient advisories remain.
+
+Recovery snapshot: backups/pre-close-occlusion-20261108T080532Z.zip
+SHA256 32f764a2e04d0f41dd5e14071475a265ccb493dc8a8b636555590a998ad32644
+Artifacts: output/consolidation-qa/close-occlusion-results.json, close-occlusion-hidden.png,
+close-occlusion-revealed.png and close-layer-results.json. Reproduce with the isolated QA helper,
+npm run test:close-occlusion and npm run test:close-layers using the documented Playwright setup.
+
+## 8 November 2026 — Preview Domain and Update the current layer
+
+Domain changes now stage a pendingDomain on the current exploration rather than immediately
+querying or creating another history entry. Retain every current card, factual link and position;
+darken excluded cards and their attached links. Mixed-domain group cards show a matching member
+count. Keep centres and required expanded-route intermediates as connecting context. Selecting
+the applied domain cancels preview. Show an Update button beside the foreground X, using the
+same projected positioning, depth occlusion and input isolation, with a toolbar Update layer
+fallback. Update reuses /api/explore and the canonical scene builder, replacing the current
+history entry after success. It removes excluded endpoints, retains valid expansions, surviving
+positions, camera, layer offset, opening source and previous snapshots. No new view is appended.
+Old alternatives are cleared so they cannot restore excluded endpoints. In-place edits truncate
+forward history after Back. Topic-type filtering remains separate; removed the unused immediate
+domain path from its action. New explicit scope exploration/overview consumes pending domain;
+selection, route reveal and grouping do not apply it silently.
+
+Pending preview is additive v6 state: session/saved-view translation retains it, and research
+captures applied versus pending filters alongside the displayed graph. Failed Update retains the
+working graph and pending choice. A new domain preview cancels in-flight Update and rejects its
+stale response. README, project instructions and interaction documentation explain this workflow.
+
+Validation: 35 frontend checks, 22 backend checks, TypeScript/Vite production build and git diff
+--check pass. All 21 focused domain-browser assertions and the updated 37-check full walkthrough
+pass with zero JavaScript exceptions. Real Edge checks cover adjacent X/Update targets, unchanged
+history/backgrounds, no query on preview, cancelling preview, reload, failure/retry, expansion to
+All, stale Update cancellation, protected centre context and Back/Forward. The full walkthrough
+also covers routes, grouping, evidence/dates/PDF, comparison, saved/research views, legacy reading,
+resize/themes/fullscreen and request failures. Before/preview/applied screenshots were inspected.
+Actual GPU pixels: excluded card RGB (229,238,229) becomes (143,149,143); matching card remains
+(226,238,242). All 10 baseline factual/organization signatures remain unchanged. Browser writes
+used the isolated QA store. Port 8765 serves index-CsauJc0g.js; reload existing tabs. Existing
+non-blocking bundle-size and testclient deprecation advisories remain.
+
+Recovery snapshot: backups/pre-domain-update-20261108T081004Z.zip
+SHA256 9755ea7a961d2b27f4cb7bfd37be9986b95dc3cff39981627e0663622e04c3cd
+Artifacts: output/consolidation-qa/domain-update-results.json, domain-pixel-results.json,
+domain-before.png, domain-preview.png, domain-applied.png and browser-results.json.
+Reproduce using the isolated QA helper, npm run test:domain-update and npm run test:browser
+with the documented Playwright configuration.
+
+## 8 November 2026 — Membership-only layers and physical centre removal
+
+Opening Species or any other membership scope now clears the inherited centre/anchor and packs
+only its genuine members. The previous exploration remains in history/background. Group queries
+omit centre; backend group exploration ignores an unrelated centre parameter as well. Scene
+projection avoids injecting a centre into cached group views, and reconciliation normalizes old
+group state/layout in memory without rewriting saved database payloads.
+
+Remove centre now removes its card and attached lines and repacks remaining cards onto the
+existing deterministic grid, filling the former centre gap. It replaces the current exploration
+entry rather than appending a layer/view, preserving camera, layer offset, source and snapshots.
+The captured anchor retains surrounding query results and the omitted-origin identity while the
+centre is null. Apply omission after route expansion, so endpoint self-matches and Show all route
+steps cannot reinsert the removed card. With no centre there is no reserved centre ring/slot.
+Reload/Back/Forward preserve omission and arrangement; old stored centre slots are repacked once.
+README, project instructions, interaction documentation and obsolete centre-retention assertions
+were updated to this user-requested behaviour.
+
+Validation: 37 frontend tests, 22 backend tests, production TypeScript/Vite build and git diff
+--check pass. All 16 focused real-Edge assertions and the updated 37-check full browser walkthrough
+pass with zero runtime exceptions. Focused checks reproduce Drones -> Species (exactly 36 actual
+members), old v6 inherited centre restoration, Cocoon removal (23 cards -> 22 compactly packed
+neighbours), unchanged history/backgrounds/camera/offset, reload/Back/Forward and route expansion
+without resurrection. Screenshots of Species and the filled centre gap were inspected. Backend
+checks reinforce strict group membership even with a supplied unrelated centre. All 10 baseline
+factual/organization table signatures remain unchanged. Browser writes used the isolated QA
+store. The normal app backend was restarted without opening another browser; port 8765 serves
+index-H5QbKl7Y.js and its live group endpoint returns Species without Drones. Reload existing tabs.
+Existing non-blocking bundle-size and testclient deprecation advisories remain.
+
+Recovery snapshot: backups/pre-remove-centre-20261108T081812Z.zip
+SHA256 9350997ecbf52dcc6cccd73ae29589b5fda66e2951223634056f13873dec7ca2
+Artifacts: output/consolidation-qa/remove-centre-results.json, species-without-drones.png,
+centre-removed-packed.png and browser-results.json. Reproduce with the isolated QA helper and
+npm run test:remove-centre / npm run test:browser using the documented Playwright configuration.
+
+## 8 November 2026 — Update layer tightly repacks remaining nodes
+
+Applying Update now clears the old card positions before the accepted filtered graph is rebuilt.
+The canonical grid/ring layout closes gaps left by removed topics, while preserving camera,
+layer offset, opening source, valid route expansions and original background snapshots. Preview
+and failed Update still retain the working arrangement. Successful compact positions persist
+through reload and Back/Forward. Both heading and toolbar Update use this same reducer action.
+
+Fixed an exposed packing defect in fresh neighbour arrangements: reserve the centre before
+alphabetical placement, include its occupied slot when spacing rings, and use actual card
+width/height instead of undersized defaults. This prevents an early neighbour claiming the
+centre or collisions sending cards to distant fallback slots. The single-neighbour case also
+keeps distinct centre/neighbour positions. No new layout mode or rendering dependency was added.
+README, interaction documentation and project instructions reflect explicit repacking on Update.
+
+Validation: 38 frontend checks, 22 backend checks, TypeScript/Vite production build and git diff
+--check pass. All 24 focused real-Edge domain checks pass with zero runtime exceptions. They
+verify actual movement into a smaller footprint, centred neighbour packing, unchanged camera/
+layer offset/source/backgrounds/history, compact arrangement after reload, domain preview,
+cancellation, failed Update/retry and superseded responses. Unit coverage checks packed search
+cards, full-size card clearance and reserved centre placement even when the centre sorts after
+its neighbours. The applied screenshot was inspected. All 10 baseline factual/organization
+signatures remain unchanged; browser writes used the isolated QA store. Normal port 8765 serves
+index-CJxouo4A.js; reload existing tabs. Existing non-blocking build/testclient advisories remain.
+
+Recovery snapshot: backups/pre-update-tidy-20261108T082532Z.zip
+SHA256 95281522223bcd3d0b62883b6cf400a8a3732b250e3d3d4e1d3a0c9abda2d215
+Artifacts: output/consolidation-qa/domain-update-results.json and domain-applied.png.
+Reproduce with the isolated QA helper and npm run test:domain-update using the documented
+Playwright configuration.
+
+## 8 November 2026 — Distinct active layer heading background
+
+The active 3D layer heading uses a subtle green surface instead of the canvas colour:
+light #dce8df against #f5f4ee, dark #2c4538 against #131d1a. The shared text mesh accepts
+an optional background; only the foreground heading requests this surface. Historical headings
+retain their darkened background, and relationship captions retain their existing appearance.
+The heading remains opaque, depth tested and draggable; projected controls are unchanged.
+README describes the visual distinction. This is a visual-only adjustment with no state,
+knowledge, organization or schema changes.
+
+Validation: all 38 existing frontend checks, TypeScript/Vite production build and git diff
+--check pass. Real Edge light/dark screenshots were inspected. Actual label/window pixel samples
+are (220,232,223)/(245,244,238) in light and (44,69,56)/(19,29,26) in dark. A real pointer drag
+moves the heading/layer, and there are zero runtime exceptions. Browser verification used the
+isolated QA store. Normal port 8765 serves index-KSKTxptq.js; reload existing tabs. Existing
+non-blocking bundle-size advisory remains.
+
+Recovery snapshot: backups/pre-label-contrast-20261108T083032Z.zip
+Artifacts: output/consolidation-qa/label-contrast-light.png, label-contrast-dark.png,
+label-contrast-pixels.json and label-contrast-samples.json.
+
+## 8 November 2026 — Hover highlights and disabled domain-excluded nodes
+
+All clickable foreground topic/group cards now show an accent outline and pointer cursor on
+hover. The frame is hollow geometry, preserving text/body even at limited depth precision.
+Hover is transient: it does not select, navigate, add history or alter factual records. It
+updates on pointer/camera/scene/theme changes and clears on leave, gesture, loading or disposal.
+Historical cards have no hover frame, including the bright source of an open child.
+
+One shared scene interaction policy rejects domain-excluded cards, internal-group actions and
+links attached to excluded cards. Graph raycasts retain opaque disabled/background cards as
+nearest-hit blockers, preventing click-through to content behind. Darkened nodes neither hover
+nor select/open. Their keyboard topic-list actions are disabled and have no focus/hover style.
+Inspector reference selection uses the same eligibility check; a selection is cleared when
+preview excludes it. Cancelling preview restores normal interaction. README, project instructions
+and interaction documentation describe these semantics. No migration/schema/data edits.
+
+Validation: 40 frontend checks, 22 backend checks, production TypeScript/Vite build and git diff
+--check pass. All 20 focused real-Edge hover assertions and the 37-check full walkthrough pass
+with zero runtime exceptions. Focused checks cover clickable groups/topics, no selection/history
+from hover, domain preview clearing stale selection, disabled graph and keyboard actions, no
+click-through, cancellation and dark theme. Actual before/after GPU samples show hover outlines
+for groups/topics in both themes; disabled-node patches have zero pixel changes. Node-body
+patches also have zero changes, confirming hover never paints over names. Screenshots inspected.
+All 10 baseline factual/organization signatures remain unchanged. Browser writes used the isolated
+QA store. Port 8765 serves index-DBGIP9PI.js; reload existing tabs. Existing non-blocking bundle
+size and testclient deprecation advisories remain.
+
+Recovery snapshot: backups/pre-node-hover-20261108T083357Z.zip
+SHA256 0b22ec6ec7246c7f4977e902cfecd959b0a2cba88f6e85ce4fdb9726fe8ab8ee
+Artifacts: output/consolidation-qa/node-hover-results.json, node-hover-pixels.json,
+hover-group-on.png, hover-topic-on.png, hover-disabled-on.png, hover-dark-on.png and matching
+off screenshots. Reproduce using the isolated QA helper, npm run test:hover and the documented
+Playwright configuration.
+
+## 8 November 2026 — Compact overview when returning to All domains
+
+Accepted All-domain overviews now rebuild their complete deterministic grid rather than retaining
+partial/scattered card slots from a smaller domain view. This also repairs old saved/browser
+layouts reproducing the supplied L-shaped screenshot on reopen/refresh. Pending previews retain
+the currently displayed arrangement. Preserve the old layer offset across the corrected geometry
+key, along with camera/history; do not append another view or rewrite original saved database
+payloads. Other exploration layouts continue using the shared existing packing workflow.
+README, project instructions and interaction documentation explain restoration/repair semantics.
+
+Validation: 41 frontend checks, 22 backend checks, TypeScript/Vite production build and git diff
+--check pass. All 13 focused All-domain browser assertions and 24 existing domain-update browser
+assertions pass with zero runtime exceptions. Actual Edge scenarios cover Technology -> All via
+heading Update, Ecosystems -> All via toolbar Update, all nine cards in a tight 3x3 grid, unchanged
+history/camera, an old scattered v6 session, retained layer offset (190,110), and a second reload.
+The unit regression reproduces the old fallback layout before normalization and confirms a
+complete compact grid afterward without mutating original data. Tight/repaired dark screenshots
+were inspected. All 10 baseline factual/organization signatures remain unchanged. Browser writes
+used the isolated QA store. Port 8765 serves index-CTEk1-8J.js; reload existing tabs. Existing
+non-blocking bundle-size and testclient deprecation advisories remain.
+
+Recovery snapshot: backups/pre-all-domain-grid-20261108T084341Z.zip
+SHA256 157cd314e268a14a360e3247ad1273901e9e8cef73720580b5c25edc9ce90b1a
+Artifacts: output/consolidation-qa/all-domain-layout-results.json, domain-update-results.json,
+all-domain-tight-overview.png and all-domain-repaired-overview.png. Reproduce with the isolated
+QA helper, npm run test:all-domain-layout / npm run test:domain-update, and the documented
+Playwright configuration.
+
+## 8 November 2026 — Double-click group nodes to Open group
+
+Eligible foreground group cards now accept a native double-click shortcut for the existing
+Open group action. Single click still only selects/inspects immediately. Track two valid unmoved
+clicks on the same record and active scene, then invoke the same groupOpeningAction/openGroup
+used by inspector and topic-list buttons. Overview cards open membership; grouped cards use the
+existing toggleGroup expansion. Clear the click sequence after opening so one gesture creates
+exactly one exploration and retains the original layer behind it. Ignore disabled/background
+content, modifiers, layer-label gestures, HTML controls and busy state. Ordinary topics without
+Open group remain inspection-only. No additional state format, API or rendering workflow.
+README, project instructions and interaction documentation describe the shortcut.
+
+Validation: 42 frontend checks, 22 backend checks, TypeScript/Vite production build and git diff
+--check pass. All 11 focused real-Edge double-click assertions plus 13 existing overview/group
+browser assertions pass with zero runtime exceptions. Focused checks cover single-click details,
+Species membership (36 cards), exactly one request/history entry, retained source/background,
+ordinary topic inspection, grouped-card expansion, darkened group rejection, Ctrl-double-click
+rejection and restored opening after preview cancellation. Original button workflows still pass.
+All 10 baseline factual/organization signatures remain unchanged. Browser writes used the isolated
+QA store. Normal port 8765 serves index-DP2ovL15.js; reload existing tabs. Existing non-blocking
+bundle-size and testclient deprecation advisories remain.
+
+Recovery snapshot: backups/pre-double-click-group-20261108T085000Z.zip
+SHA256 8e55d3f2dc3f518e7071ca33f5ba096b947d739ed6c632e86c15ac21615be2ff
+Artifacts: output/consolidation-qa/double-click-results.json, double-click-expanded-group.png and
+overview-grouping-results.json. Reproduce with the isolated QA helper and npm run test:double-click
+/ npm run test:overview using the documented Playwright configuration.
+
+## 8 November 2026 — Focus grouped-card openings on their actual members
+
+Investigated the supplied Event screenshot against the accepted store. Habitats & conditions
+contains 58 topics: 3 events, 1 aspect, 24 conditions, 12 habitats and 18 places. The Event entries
+are Al Faisal planting pilot, Canal flooding at Al Faisal and Maysara carob establishment trial.
+Their stored types are correct. The UI was cumulatively expanding Aspect and Event inside the
+same broader query, retaining sibling browsing cards and survivor positions; this caused mixed
+content under an Event heading and large fallback-position gaps.
+
+Grouped-card Open group/double-click now captures that card's exact stable member IDs into an
+additive v6 groupMembers field and opens a Group members scope with a typed virtual group ID.
+Clear old expansions, centre/search and positions; default Group by to None and pack tightly.
+Stored/root overview groups still use their complete existing organization. GET /api/explore
+accepts member_ids for virtual display groups and returns canonical members/internal factual
+edges, subject to domain/type filters. Type groups reject mismatched record kinds; missing IDs
+produce explicit notices. These display groups never create database organization definitions.
+Grouping and domain changes stay within captured membership rather than broadening to unrelated
+records of the same type elsewhere in the database. Research captures group ID/label/member IDs.
+The old toggleGroup action and Collapse buttons were removed; all opening paths share openMembers.
+
+On activation, old cumulative expandedGroups data translates its last selected card into focused
+membership, preserving camera/offset/source/history and original saved database payloads. Read-only
+historical snapshots can still show their original mixed content with the shared scene builder.
+Event restores as exactly three compact Event cards; Back restores/normalizes Aspect to its one
+member. README, project instructions and interaction documentation describe the corrected scope.
+
+Validation: 43 frontend checks, 23 backend checks, production TypeScript/Vite build and git diff
+--check pass. All 18 focused membership browser assertions, 11 double-click assertions and the
+37-check full walkthrough pass with zero runtime exceptions. Focused Edge checks reproduce the
+reported mixed legacy scene, verify exact Event IDs/kinds, compact layout, factual-only internal
+links, retained parent/source, grouping/domain changes, reload and Back conversion without new
+history entries. Event screenshots were inspected. All 10 baseline factual/organization table
+signatures remain unchanged; browser writes used the isolated QA store. The normal backend was
+restarted without opening another tab; port 8765 serves index-CD_yT8FG.js and its live focused
+Event endpoint returns exactly the three canonical Event records. Reload existing tabs. Existing
+non-blocking bundle-size and testclient deprecation advisories remain.
+
+Recovery snapshot: backups/pre-focused-members-20261108T085856Z.zip
+SHA256 eb0de20578b4e17f1f94092a611ec8a616435715a1d174505c5909ba3c35746b
+Artifacts: output/consolidation-qa/focused-group-results.json, event-focused-layer.png,
+event-legacy-repaired.png, double-click-results.json and browser-results.json. Reproduce using
+the isolated QA helper, npm run test:focused-group / test:double-click / test:browser and the
+documented Playwright configuration.
+
+
+## 8 November 2026 — Validate place membership and repair scattered focused layouts
+
+Investigated Habitats & conditions -> Group by Place -> Place not recorded against the accepted
+store. Its 58 members partition into 18 place anchors, three explicitly placed events, and 37
+entries without an explicit place assignment (12 habitats, 24 conditions, one aspect). Place
+anchors group under their own identity; other entries use their first explicit place_ids value.
+No geographical inference from labels, related records or shared sources is made. Redirected
+place references resolve consistently; unavailable references are labelled Place unavailable,
+not mistaken for absent place assignments.
+
+The backend now validates captured virtual place membership, removing records that no longer
+match the selected place, with explicit notices. It returns the validated group_member_ids
+universe before domain/type filtering so an empty domain result cannot lose its source scope.
+The frontend reconciles captured membership to that universe. Opening remains one canonical
+members action, with the original source visible behind it. Existing cumulative group expansions
+translate through the same focused-members adapter.
+
+Focused ungrouped membership views detect incomplete/scattered saved slots and repack to the
+canonical compact grid. Healthy compact positions survive reload unchanged; pending domain
+previews retain all existing positions. Preserve camera, moved layer offset and history during
+repair. Asynchronous preparation uses the current mounted canvas dimensions for new layouts,
+avoiding stale initial aspect ratios. README, project instructions and interaction documentation
+record place semantics and restore behaviour. No factual or organization record was changed.
+
+Validation: 45 frontend checks, 24 backend checks, production TypeScript/Vite build and git diff
+--check pass. The 17 new place-scope browser assertions, 18 focused-group regression assertions
+and 37-check full walkthrough pass with zero runtime exceptions. Edge checks cover the exact
+37/21 partition, named Al Faisal membership, double-click opening, dense grids, source background,
+domain-empty/All restoration, unchanged healthy positions, old cumulative expansions, malformed
+focused memberships, reload stability, and preserved camera/offset/history. Both new screenshots
+were visually inspected. All 10 baseline factual/organization table signatures remain unchanged;
+browser writes used the isolated QA store. The normal backend was restarted without another tab;
+port 8765 serves index-DqWPO051.js and its live endpoint validates all 58 parent IDs down to exactly
+37 unrecorded-place members. Existing non-blocking bundle-size/testclient advisories remain.
+
+Recovery snapshot: backups/pre-unrecorded-place-20261108T091008Z.zip
+SHA256 88eb4e5571b29e8f596412114416af0b641929dbefebe1ccb4b5333f1d8679bc
+Artifacts: output/consolidation-qa/unrecorded-place-results.json, unrecorded-place-tight.png,
+unrecorded-place-repaired.png, focused-group-results.json and browser-results.json. Reproduce
+with the isolated QA helper, npm run test:unrecorded-place / test:focused-group / test:browser
+and the documented Playwright configuration.
+
+
+## 8 November 2026 — One tight layout for every layer
+
+Topic Explore previously used neighbour rings, while surviving positions and collision fallback
+slots could leave gaps during search route expansion/hiding. All scopes now use the same compact
+grid in the shared scene builder: overview, full/focused membership, direct neighbours, search,
+grouped cards and previous snapshots. The explored topic keeps its centre designation in an
+ordinary grid slot. Removed compactRings and the collision-fallback placer. Complete healthy grids
+are reused exactly; changed/incomplete/scattered layouts repack all visible cards to fill gaps.
+Pending domain previews preserve their working positions until Update succeeds.
+
+Older complete scattered/ring layouts retain a read-only previousKey alias for their original
+geometry. Resolve historical moved offsets, source highlights and closed-layer state through
+that alias; carry the old offset to the corrected foreground key during preparation. Original
+saved database payloads remain untouched. No new storage version, endpoint or layout engine.
+README, project instructions and interaction documentation describe the shared layout and replace
+obsolete survivor-position/ring requirements.
+
+Validation: 47 frontend checks, 24 backend checks, production TypeScript/Vite build and git diff
+--check pass. Replaced the obsolete ring/survivor tests with compact exploration/route checks;
+added all-scope/all-grouping/viewport cases and legacy background-presentation preservation.
+The 21 new actual Edge browser assertions and the existing 37-check full walkthrough pass with
+zero runtime exceptions. Browser checks cover overview, Species membership, Carob exploration
+(all 22 cards), background grids, old scattered topic restoration with camera/offset/history,
+route expansion/hiding with exact factual IDs, Back/Forward, grouping, staged domain Update,
+centre removal, reload and fullscreen/resize stability. Visually inspected topic-tight-grid.png.
+All 10 baseline factual/organization table signatures remain unchanged. Browser writes used the
+isolated QA database. Normal port 8765 serves index-B5NkiDdG.js; reload existing tabs. Existing
+non-blocking bundle-size and testclient deprecation advisories remain.
+
+Recovery snapshot: backups/pre-all-tight-layout-20261108T092243Z.zip
+SHA256 c0b28e6443a01be1f22fd75da5b1e9f0ce396bd79cda382855d22e1be5c393fd
+Artifacts: output/consolidation-qa/tight-layers-results.json, topic-tight-grid.png and
+browser-results.json. Reproduce with the isolated QA helper and npm run test:tight-layers /
+npm run test:browser using the documented Playwright configuration.

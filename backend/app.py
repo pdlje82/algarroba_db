@@ -13,7 +13,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from .graph import Graph, PERSPECTIVES, LIMITS
+from .graph import Graph, ROOT_GROUPS, LIMITS
 from .store import Store, ROOT, now
 
 DOMAIN = "Dryland and Mediterranean restoration, especially carob and associated vegetation; establishment water and irrigation; drone monitoring and water-delivery knowledge; selected Andalusian LEADER funding, with relevant places, organizations, findings, dates and requirements."
@@ -69,14 +69,18 @@ def create_app(store: Store | None = None):
             s.pop("path",None)
         with store.connect() as c:
             imported=[dict(r) for r in c.execute("SELECT id,revision,created FROM batches ORDER BY revision")]
-        return dict(snap,perspectives=[{"id":i,"label":l} for i,l in PERSPECTIVES],limits=LIMITS,domain=DOMAIN,batches=imported)
+            redirects={r["old_id"]:r["new_id"] for r in c.execute("SELECT old_id,new_id FROM redirects")}
+        return dict(snap,identity_redirects=redirects,root_groups=ROOT_GROUPS,topic_kinds=sorted({t["kind"] for t in snap["topics"]}),limits=LIMITS,domain=DOMAIN,batches=imported)
 
-    @app.get("/api/view")
-    def view(centre: str | None=None, search: str="", perspective: str="combined", limit:int=12,depth:int=6,compare:str="",branches:str="",all_results:bool=False):
-        try:
-            return graph().view(centre,search,perspective,limit,depth,[x for x in compare.split(",") if x],[x for x in branches.split(",") if x],all_results=all_results)
-        except ValueError as e:
-            raise HTTPException(400,str(e)) from e
+    @app.get("/api/explore")
+    def explore(scope:str="overview",group_id:str|None=None,centre:str|None=None,search:str="",domain:str="all",kinds:str="",depth:int=6,member_ids:str|None=None):
+        try:return graph().explore(scope,group_id,centre,search,domain,[k for k in kinds.split(',') if k],depth,None if member_ids is None else [i for i in member_ids.split(',') if i])
+        except ValueError as e:raise HTTPException(400,str(e)) from e
+
+    @app.get("/api/comparison")
+    def comparison(topics:str=""):
+        try:return graph().comparison([i for i in topics.split(',') if i])
+        except ValueError as e:raise HTTPException(400,str(e)) from e
 
     @app.get("/api/inspect/{record_id}")
     def inspect(record_id:str):
@@ -87,11 +91,8 @@ def create_app(store: Store | None = None):
 
     @app.get("/api/routes")
     def routes(centre:str,target:str,depth:int=6):
-        g=graph(); centre=store.resolve(centre); target=store.resolve(target)
-        if centre not in g.topics or target not in g.topics:
-            raise HTTPException(404,"An endpoint is no longer available. Refresh the exploration.")
-        paths=g.paths(centre,target,min(8,max(1,depth)),3)
-        return {"routes":[{"id":f"route:{target}:alt:{i}","endpoint":target,"nodes":ns,"edges":es,"why":"Alternative recorded route"} for i,(ns,es) in enumerate(paths)],"limits":LIMITS}
+        try:return graph().routes(centre,target,depth)
+        except ValueError as e:raise HTTPException(404,str(e)) from e
 
     @app.get("/api/sources/{source_id}/file")
     def source_file(source_id:str):
@@ -143,11 +144,12 @@ def create_app(store: Store | None = None):
         selection=context.get("selected_topic_ids",[])
         context["selected_topic_ids"]=[store.resolve(x) for x in selection]
         ids=set(context["selected_topic_ids"])
+        ids.update(context.get("visible_topic_ids",[]))
         if context.get("centre"): ids.add(context["centre"])
         for route in context.get("routes",[]): ids.update(route.get("nodes",[]))
         g=graph()
         context["topic_labels"]={i:g.topics[i]["label"] for i in ids if i in g.topics}
-        context["existing_findings"]=[f for f in g.findings if set(f["topic_ids"]) & ids][:30]
+        context["existing_findings"]=[f for f in g.findings if set(f["topic_ids"]) & ids]
         context["knowledge_revision"]=store.revision()
         context["captured_revision"]=original_revision
         context["identity_reconciliation_required"]=original_revision is not None and original_revision!=store.revision()
@@ -169,8 +171,10 @@ Proposed domain extension: {draft.proposed_extension or 'None'}
 
 Centre: {context.get('topic_labels',{}).get(context.get('centre'),context.get('centre') or 'Overview')}
 Raw search: {context.get('search') or '(empty)'}
-Perspective: {dict(PERSPECTIVES).get(context.get('perspective'),context.get('perspective'))}
-Connection detail: {context.get('detail','abbreviated')}
+Scope: {context.get('scope',context.get('view_state',{}).get('scope','legacy exploration'))}
+Filters: {json.dumps(context.get('filters',{}),ensure_ascii=False)}
+Grouping: {context.get('grouping','none')}
+Expanded routes: {json.dumps(context.get('expanded_route_ids',[]))}
 Selected topics: {json.dumps(context['topic_labels'],ensure_ascii=False)}
 Selected relationships and constituent routes: {json.dumps({'relationship_ids':context.get('selected_relationship_ids',[]),'routes':context.get('routes',[])},ensure_ascii=False)}
 Captured knowledge revision: {original_revision}; current revision: {store.revision()}.
@@ -178,8 +182,8 @@ Captured knowledge revision: {original_revision}; current revision: {store.revis
 Read this brief AND context.json; the live browser is not required. Inspect current records with
 python -m backend.cli search / inspect / export. Reconcile all stable IDs and older view state
 against the current knowledge before preparing mutations. SQLite is authoritative; exports are not editable masters.
-Version-five view_history may use pooled format5; frontend/explorationStorage.ts decodeHistory restores
-its complete entries and caches. Pool indices are presentation references, never knowledge IDs.
+Version-six view_state and view_history use one canonical exploration. Older pooled histories are
+read through frontend/migration.ts; pool indices are presentation references, never knowledge IDs.
 
 Persistent browsing groups and maintenance rules:
 {json.dumps(context['browse_groups'],ensure_ascii=False)}

@@ -1,256 +1,141 @@
-"""Bounded, explained view projections. A displayed route is never a new assertion."""
+"""Canonical v6 exploration queries. Presentation never becomes factual knowledge."""
 from __future__ import annotations
 from collections import defaultdict, deque
-from typing import Any
+import hashlib
 from .store import Store, normalized
 
-PERSPECTIVES = [
-    ("combined", "Combined overview"), ("ecosystems", "Ecosystems"),
-    ("technology", "Technology"), ("funding", "Funding"),
-    ("sources", "Sources and findings"), ("hierarchy", "Hierarchy"),
-    ("comparison", "Comparison"), ("places", "Places"), ("time", "Time"),
-    ("conditions", "Conditions and dependencies"),
-]
-DOMAINS = {"ecosystems":"ecosystem", "technology":"technology", "funding":"funding"}
-LIMITS = {"initial_results":12,"maximum_results":48,"route_steps":6,"extended_steps":8,
-          "alternatives":3,"nodes":120,"edges":240,"traversal_expansions":10000}
-
+LIMITS = {"route_steps":6,"extended_steps":8,"alternatives":3,"traversal_expansions":10000}
+ROOT_GROUPS = ["ecosystem:species","ecosystem:habitats","ecosystem:restoration-methods","technology:irrigation","technology:drones","technology:monitoring","funding:programmes","funding:activities","funding:requirements"]
 
 class Graph:
     def __init__(self, store: Store):
-        self.store = store
-        self.snapshot = store.snapshot()
-        self.topics = {t["id"]:t for t in self.snapshot["topics"]}
-        self.edges = {e["id"]:e for e in self.snapshot["relationships"]}
-        self.findings = self.snapshot["findings"]
-        self.adj = defaultdict(list)
+        self.store=store; self.snapshot=store.snapshot()
+        self.topics={t['id']:t for t in self.snapshot['topics']}
+        self.edges={e['id']:e for e in self.snapshot['relationships']}
+        self.findings=self.snapshot['findings']; self.groups={g['id']:g for g in self.snapshot.get('browse_groups',[])}
+        self.adj=defaultdict(list)
         for e in self.edges.values():
-            if e.get("traversable",True):
-                self.adj[e["source"]].append((e["target"],e["id"]))
-                self.adj[e["target"]].append((e["source"],e["id"]))
+            if e.get('traversable',True):
+                self.adj[e['source']].append((e['target'],e['id']))
+                self.adj[e['target']].append((e['source'],e['id']))
         for key in self.adj:
-            self.adj[key].sort(key=lambda pair:(self.edges[pair[1]].get("basis")=="curated",self.topics[pair[0]]["label"],pair[1]))
+            self.adj[key].sort(key=lambda pair:(self.edges[pair[1]].get('basis')=='curated',self.topics[pair[0]]['label'],pair[1]))
 
-    def paths(self, centre: str, target: str, depth=6, count=1):
-        queue = deque([([centre],[])])
-        found = []
-        expansions = 0
-        while queue and len(found)<count and expansions<LIMITS["traversal_expansions"]:
-            nodes, edges = queue.popleft()
-            if len(edges)>=depth:
-                continue
-            for neighbor, edge in self.adj[nodes[-1]]:
-                expansions += 1
-                if neighbor in nodes:
-                    continue
-                route = (nodes+[neighbor],edges+[edge])
-                if neighbor==target:
-                    found.append(route)
-                elif len(route[1])<depth:
-                    queue.append(route)
-        return found
+    def root_group(self, topic):
+        group=next((g for g in self.groups.values() if any(m['topic_id']==topic['id'] and m['role']=='primary' for m in g['members'])),None)
+        if group:
+            parent=group['parent_id'];seen=set()
+            while parent in self.groups and parent not in seen:
+                seen.add(parent);parent=self.groups[parent]['parent_id']
+            return parent
+        domain=topic['domain'];g=topic.get('group_id','other')
+        if domain=='ecosystem':return domain+':'+('species' if g=='species' else 'restoration-methods' if g in {'restoration-methods','monitoring'} else 'habitats')
+        if domain=='technology':return domain+':'+('irrigation' if g=='irrigation' else 'drones' if g in {'drones','requirements'} else 'monitoring')
+        return domain+':'+('activities' if g=='activities' else 'requirements' if g in {'requirements','places'} else 'programmes')
 
-    def tree(self, centre, depth):
-        paths = {centre:([centre],[])}
-        queue = deque([centre])
-        while queue:
-            node = queue.popleft()
-            ns, es = paths[node]
-            if len(es)>=depth:
-                continue
-            for other, edge in self.adj[node]:
-                if other not in paths:
-                    paths[other]=(ns+[other],es+[edge])
-                    queue.append(other)
-        return paths
+    def traverse(self, centre, targets, depth=6, count=1):
+        """One bounded traversal for shortest routes and alternative simple routes."""
+        depth=min(8,max(1,depth));targets=set(targets)-{centre};found={i:[] for i in targets}
+        queue=deque([([centre],[])]);visited={centre};expansions=0;exhausted=False
+        while queue and any(len(v)<count for v in found.values()):
+            ns,es=queue.popleft()
+            if len(es)>=depth:continue
+            for other,eid in self.adj[ns[-1]]:
+                if expansions>=LIMITS['traversal_expansions']:
+                    exhausted=True;break
+                expansions+=1
+                if other in ns:continue
+                route=(ns+[other],es+[eid])
+                if other in found and len(found[other])<count and route not in found[other]:found[other].append(route)
+                if len(route[1])<depth and (count>1 or other not in visited):
+                    visited.add(other);queue.append(route)
+            if exhausted:break
+        return found,{'complete':not exhausted,'budget_exhausted':exhausted,'expansions':expansions,'depth':depth}
 
-    def view(self, centre=None, search="", perspective="combined", limit=12, depth=6, compare=None, branches=None, all_results=False):
-        if perspective not in dict(PERSPECTIVES):
-            raise ValueError("Unknown perspective")
-        limit=len(self.topics) if all_results else max(12,min(48,limit)); depth=max(1,min(8,depth))
-        notices=[]
-        if centre:
-            centre=self.store.resolve(centre)
-            if centre not in self.topics:
-                notices.append("The previous centre is no longer available. The overview is preserved.")
-                centre=None
-        hits=self.store.search(search,limit=None if all_results else 100) if search.strip() else []
-        matches=[]
-        hit_findings={h["id"] for h in hits if h["kind"]=="finding"}
-        matched={h["id"] for h in hits if h["kind"]=="topic"}
-        for f in self.findings:
-            if f["id"] in hit_findings:
-                matched.update(f["topic_ids"])
-        matched.discard(centre)
-        for t in sorted(matched, key=lambda x:(normalized(self.topics[x]["label"])!=normalized(search),self.topics[x]["label"])):
-            matches.append(self.topics[t])
-        if search.strip() and not matched:
-            notices.append(f'No topic match recorded for “{search}”. Search has not changed the centre. Prepare a research task or inspect passage matches.')
-        routes=[]; selected=set(); selected_edges=set(); missing=[]; total=0
-        domain=DOMAINS.get(perspective)
-        tree=self.tree(centre,depth) if centre else {}
-        if centre:
-            selected.add(centre)
-            candidates=[]
-            if search.strip():
-                corridor={centre}
-                for match in (matches if all_results else matches[:48]):
-                    if match["id"] in tree:
-                        path=tree[match["id"]]
-                        corridor.update(path[0])
-                        candidates.append((match["id"],path,"Matches your search"))
-                    else:
-                        missing.append(match["id"])
-                # Supporting perspective branches must attach to the actual search corridor.
-                if domain and len(corridor)>1:
-                    attached={}
-                    for node in sorted(corridor):
-                        for other,(ns,es) in self.tree(node,2).items():
-                            if other!=centre and self.topics[other]["domain"]==domain and other not in matched:
-                                combined_ns=tree[node][0]+ns[1:]
-                                combined_es=tree[node][1]+es
-                                if len(set(combined_ns))==len(combined_ns) and len(combined_es)<=depth:
-                                    reason=f"Connected to the search route through {self.topics[node]['label']}"
-                                    if other not in attached or len(combined_es)<len(attached[other][0][1]):
-                                        attached[other]=((combined_ns,combined_es),reason)
-                    candidates += [(i,p,r) for i,(p,r) in attached.items()]
-                    if not attached and not any(self.topics[i]["domain"]==domain for i in corridor if i!=centre):
-                        notices.append(f"No {domain} connection recorded for this search context. The search matches remain visible.")
-            else:
-                candidates=[(i,p,"Connected to your centre") for i,p in tree.items() if i!=centre and (not domain or self.topics[i]["domain"]==domain)]
-            def rank(item):
-                topic,path,reason=item
-                t=self.topics[topic]
-                context_penalty=int(t["kind"] in {"place","event","organization","family"})
-                if perspective=="conditions":
-                    context_penalty=0 if t["kind"] in {"condition","equipment"} else 1
-                exact_match=normalized(search) in [normalized(t["label"]),*[normalized(a) for a in t.get("aliases",[])]] if search else False
-                return (not exact_match, bool(domain and t["domain"]!=domain),topic not in matched,context_penalty,len(path[1]),sum(self.edges[e].get("basis")=="curated" for e in path[1]),t["label"])
-            candidates.sort(key=rank)
-            seen=set()
-            for endpoint,(ns,es),reason in candidates:
-                if endpoint in seen: continue
-                seen.add(endpoint); total+=1
-                if len(routes)>=limit: continue
-                # Reserve all intermediate records even while the interface abbreviates them.
-                if not all_results and (len(selected | set(ns))>96 or len(selected_edges | set(es))>210):
-                    continue
-                selected.update(ns); selected_edges.update(es)
-                routes.append({"id":f"route:{endpoint}","endpoint":endpoint,"nodes":ns,"edges":es,"why":reason})
-            if search and missing:
-                notices.append(f"{len(missing)} matching topic(s) have no route within {depth} steps. They remain available below; this does not mean a connection is impossible.")
-            if not routes and not search:
-                notices.append(f"No {domain or 'further'} connection recorded within {depth} steps.")
-        else:
-            selected=(matched if search.strip() else {i for i,t in self.topics.items() if not domain or t['domain']==domain}) if all_results else set(self.topics)
-            selected_edges={i for i,e in self.edges.items() if e['source'] in selected and e['target'] in selected}
-            total=len(selected)
-        nodes=[dict(self.topics[i],record_type="topic",matched=i in matched,missing=False) for i in sorted(selected)]
-        if centre:
-            for i in (missing if all_results else missing[:12]):
-                nodes.append(dict(self.topics[i],record_type="topic",matched=True,missing=True))
-        edges=[dict(self.edges[i],record_type="relationship") for i in sorted(selected_edges)]
-        if centre and perspective!="comparison":
-            for branch in ((branches or []) if all_results else (branches or [])[-6:]):
-                branch=self.store.resolve(branch)
-                if branch not in self.topics: continue
-                if branch not in tree:
-                    if (all_results or len(nodes)<96) and not any(n["id"]==branch for n in nodes):nodes.append(dict(self.topics[branch],record_type="topic",missing=True,perspective_support=True))
-                    notices.append(f"{self.topics[branch]['label']} can be inspected, but no connecting route is recorded within {depth} steps.")
-                    continue
-                path_nodes,path_edges=tree[branch]
-                new_ids=set(path_nodes)-{n["id"] for n in nodes}
-                if not all_results and len(nodes)+len(new_ids)>96:
-                    notices.append("Collapse displayed connections before opening more branch detail.");continue
-                for i in path_nodes:
-                    if not any(n["id"]==i for n in nodes):nodes.append(dict(self.topics[i],record_type="topic",perspective_support=True))
-                    else:next(n for n in nodes if n["id"]==i)["perspective_support"]=True
-                for e in path_edges:
-                    existing_edge=next((item for item in edges if item["id"]==e),None)
-                    if existing_edge:existing_edge["record_type"]="branch"
-                    else:edges.append(dict(self.edges[e],record_type="branch"))
-                for other,edge_id in (self.adj[branch] if all_results else self.adj[branch][:8]):
-                    if not all_results and (len(nodes)>=96 or len(edges)>=210):break
-                    if not any(n["id"]==other for n in nodes):nodes.append(dict(self.topics[other],record_type="topic",perspective_support=True))
-                    else:next(n for n in nodes if n["id"]==other)["perspective_support"]=True
-                    existing_edge=next((item for item in edges if item["id"]==edge_id),None)
-                    if existing_edge:existing_edge["record_type"]="branch"
-                    else:edges.append(dict(self.edges[edge_id],record_type="branch"))
-        if perspective in {"hierarchy","places","conditions"} and centre:
-            kinds={"hierarchy":{"family"},"places":{"place"},"conditions":{"condition","equipment"}}[perspective]
-            for edge in self.edges.values():
-                for a,b in ((edge["source"],edge["target"]),(edge["target"],edge["source"])):
-                    if a in selected and self.topics[b]["kind"] in kinds and (all_results or (len(nodes)<100 and len(edges)<220)):
-                        if not any(n["id"]==b for n in nodes): nodes.append(dict(self.topics[b],record_type="topic",perspective_support=True))
-                        if not any(e["id"]==edge["id"] for e in edges): edges.append(dict(edge,record_type="relationship"))
-        if perspective=="time":
-            refs={ref["source_id"] for n in nodes for ref in n.get("source_refs",[])}
-            for source in self.snapshot["sources"]:
-                if source["id"] not in refs: continue
-                for i,date in enumerate(source.get("dates",[])):
-                    if not all_results and (len(nodes)>=108 or len(edges)>=220): continue
-                    sid=f"date:{source['id']}:{i}"
-                    nodes.append({"id":sid,"label":f"{date['value']} · {source['id']}\n{date['meaning']}","kind":"event","domain":"source","record_type":"event","description":"A source date with its original meaning; it is not the date of every finding in that document.","dates":[date],"source_refs":[{"source_id":source["id"],"page":source["initial_pdf_page_ranges"][0][0],"locator":"Edition metadata; opening the selected scope. The exact date location is not asserted on this page."}]})
-                    for node in nodes[:]:
-                        if not all_results and len(edges)>=230: break
-                        if node["id"]!=sid and any(r["source_id"]==source["id"] for r in node.get("source_refs",[])) and node.get("record_type")=="topic":
-                            edges.append({"id":sid+":"+node["id"],"source":node["id"],"target":sid,"label":"documented in this source","record_type":"evidence","source_refs":node.get("source_refs",[])})
-        # Source evidence is a representation, and is explicitly absent from domain-route traversal.
-        if perspective=="sources":
-            relevant=[f for f in self.findings if set(f["topic_ids"]) & selected]
-            admitted=0
-            for f in (relevant if all_results else relevant[:8]):
-                source_ids={"source:"+r["source_id"] for r in f["source_refs"]}
-                extra_sources=source_ids-{n["id"] for n in nodes}
-                extra_edges=len(set(f["topic_ids"]) & selected)+len(f["source_refs"])
-                if not all_results and (len(nodes)+len(extra_sources)+1>108 or len(edges)+extra_edges>230): break
-                admitted+=1
-                fid="finding:"+f["id"]
-                nodes.append(dict(f,id=fid,record_id=f["id"],record_type="finding",domain="source",kind=f["kind"],description=f["text"],group_id="findings"))
-                for t in f["topic_ids"]:
-                    if t in selected:
-                        edges.append({"id":fid+":"+t,"source":t,"target":fid,"label":"reported in" if f["kind"]=="finding" else "guidance in","record_type":"evidence","source_refs":f["source_refs"]})
-                for ref in f["source_refs"]:
-                    sid="source:"+ref["source_id"]
-                    if not any(n["id"]==sid for n in nodes):
-                        source=next(s for s in self.snapshot["sources"] if s["id"]==ref["source_id"])
-                        nodes.append(dict(source,id=sid,label=source["id"],description=source["filename"],record_type="source",domain="source",kind="source",group_id="sources"))
-                    edges.append({"id":fid+":"+sid+":"+str(ref["page"]),"source":fid,"target":sid,"label":f"PDF p{ref['page']}","record_type":"evidence","source_refs":[ref]})
-            if len(relevant)>admitted: notices.append(f"Showing {admitted} of {len(relevant)} findings on canvas. All findings remain available in the inspector.")
-        if perspective=="comparison":
-            methods=[t for t in self.topics.values() if t["kind"] in {"method","equipment"} and t.get("aspects")]
-            if centre:
-                if search.strip():
-                    allowed=set()
-                    if len(corridor)>1:
-                        for node in corridor: allowed.update(self.tree(node,2))
-                else: allowed=set(tree)
-                methods=[t for t in methods if t["id"] in allowed]
-            preferred=["cocoon","traditional-reforestation","individual-fog-water-collector","afds"]
-            default=sorted(methods,key=lambda t:(preferred.index(t["id"]) if t["id"] in preferred else 99,t["label"]))[:3]
-            chosen=[self.topics[x] for x in (compare or []) if x in self.topics][:4] or default
-            if not chosen: notices.append("No comparison information recorded for this search context. The centre and search have been kept.")
-            facets=sorted({k for t in chosen for k in t.get("aspects",{})}); facets=facets if all_results else facets[:8]
-            nodes=[dict(t,record_type="topic") for t in chosen]
-            if centre and centre not in {t["id"] for t in nodes}: nodes.append(dict(self.topics[centre],record_type="topic"))
-            edges=[]
-            for facet in facets:
-                aid="aspect:"+facet
-                nodes.append({"id":aid,"label":facet.replace("_"," ").capitalize(),"kind":"aspect","domain":"comparison","record_type":"aspect","description":"A comparison aspect. Values retain their source and trial context.","group_id":"comparison"})
-                for t in chosen:
-                    if facet in t.get("aspects",{}):
-                        value=t["aspects"][facet]
-                        edges.append({"id":f"compare:{t['id']}:{facet}","source":t["id"],"target":aid,"label":str(value) if not isinstance(value,dict) else str(value.get("value",value)),"explanation":t["description"]+" Value: "+str(value),"source_refs":t["source_refs"],"record_type":"comparison"})
-                    else:
-                        edges.append({"id":f"missing:{t['id']}:{facet}","source":t["id"],"target":aid,"label":"Not recorded","record_type":"gap","source_refs":[]})
-            notices.append("Comparison retains each trial's conditions. Different contexts are not a controlled head-to-head comparison. Use Compare in a topic's inspector to choose up to four items.")
-        topic_count=sum(n.get('record_type')=='topic' for n in nodes)
-        complete_endpoints=(len(routes)+len(missing)) if centre and perspective!='comparison' else topic_count
-        counts={'topics':topic_count,'findings':sum(n.get('record_type')=='finding' for n in nodes),
-                'sources':sum(n.get('record_type')=='source' for n in nodes),'items':len(nodes),'relationships':len(edges),'unrouted_matches':len(missing)}
-        return {"revision":self.snapshot["revision"],"centre":centre,"search":search,"perspective":perspective,
-                "scope_counts":counts,"nodes":nodes,"edges":edges,"routes":routes,"complete":all_results,"matches":matches if all_results else matches[:48],"passages":[h for h in hits if h["kind"]=="passage"] if all_results else [h for h in hits if h["kind"]=="passage"][:10],
-                "notices":notices,"total_results":complete_endpoints if all_results else total,"shown_results":complete_endpoints if all_results else (len(routes) if centre else len(nodes)),"limits":LIMITS,"depth":depth}
+    def route_record(self, endpoint, nodes, edges):
+        token=hashlib.sha256('|'.join(edges).encode()).hexdigest()[:16]
+        return {'id':f'route:{endpoint}:{token}','endpoint':endpoint,'nodes':nodes,'edges':edges,'why':'Recorded connecting steps; not a recommendation.'}
+
+    def routes(self, centre, target, depth=6):
+        centre=self.store.resolve(centre);target=self.store.resolve(target)
+        if centre not in self.topics or target not in self.topics:raise ValueError('A route endpoint is unavailable. Refresh the exploration.')
+        paths,status=self.traverse(centre,{target},depth,3)
+        return {'routes':[self.route_record(target,ns,es) for ns,es in paths.get(target,[])], 'route_search':status,'limits':LIMITS}
+
+    def explore(self, scope='overview', group_id=None, centre=None, search='', domain='all', kinds=None, depth=6, member_ids=None):
+        if scope not in {'overview','group','neighbors','search'}:raise ValueError('Unknown exploration scope.')
+        if domain not in {'all','ecosystem','technology','funding'}:raise ValueError('Unknown domain.')
+        if depth not in {6,8}:raise ValueError('Route depth must be 6 or 8.')
+        notices=[];kinds=set(kinds or []);centre=self.store.resolve(centre) if centre and scope!='group' else None
+        if centre and centre not in self.topics:
+            notices.append('The previous centre is unavailable. Showing the overview.');centre=None
+            if scope=='neighbors':scope='overview'
+        accepts=lambda t:(domain=='all' or t['domain']==domain) and (not kinds or t['kind'] in kinds)
+        matched=set();hits=[];routes=[];missing=set();status={'complete':True,'budget_exhausted':False,'expansions':0,'depth':depth}
+        if scope=='group':
+            if group_id and group_id.startswith('display-group:') and member_ids is not None:
+                requested={self.store.resolve(i) for i in member_ids}
+                endpoints=requested & self.topics.keys()
+                if requested-endpoints:notices.append(f'{len(requested-endpoints)} previously selected topic(s) are unavailable.')
+                if group_id.startswith('display-group:type:'):
+                    kind=group_id.removeprefix('display-group:type:')
+                    compatible={i for i in endpoints if self.topics[i]['kind']==kind}
+                    if endpoints-compatible:notices.append(f'{len(endpoints-compatible)} topic(s) no longer match this topic type.')
+                    endpoints=compatible
+                elif group_id.startswith('display-group:place:'):
+                    key=group_id.removeprefix('display-group:place:')
+                    key=None if key=='unrecorded' else self.store.resolve(key)
+                    def recorded_place(i):
+                        t=self.topics[i]
+                        place=t['id'] if t['kind']=='place' else next(iter(t.get('place_ids') or []),None)
+                        return self.store.resolve(place) if place else None
+                    compatible={i for i in endpoints if recorded_place(i)==key}
+                    if endpoints-compatible:notices.append(f'{len(endpoints-compatible)} topic(s) no longer match this place group.')
+                    endpoints=compatible
+            elif group_id in self.groups:endpoints={m['topic_id'] for m in self.groups[group_id]['members']}
+            elif group_id in ROOT_GROUPS:endpoints={i for i,t in self.topics.items() if self.root_group(t)==group_id}
+            else:raise ValueError('This browsing group is unavailable. Return to overview.')
+        elif scope=='neighbors':
+            if not centre:raise ValueError('Choose a centre to explore its direct connections.')
+            endpoints={e['target'] if e['source']==centre else e['source'] for e in self.edges.values() if centre in {e['source'],e['target']}}
+        elif scope=='search':
+            hits=self.store.search(search,limit=None) if search.strip() else []
+            matched={h['id'] for h in hits if h['kind']=='topic'}
+            finding_ids={h['id'] for h in hits if h['kind']=='finding'}
+            for f in self.findings:
+                if f['id'] in finding_ids:matched.update(f['topic_ids'])
+            endpoints=matched.copy()
+        else:endpoints=set(self.topics)
+        scope_members=sorted(endpoints) if scope=='group' and member_ids is not None and group_id and group_id.startswith('display-group:') else None
+        endpoints={i for i in endpoints if i in self.topics and accepts(self.topics[i])}
+        selected=set(endpoints)
+        if centre:selected.add(centre)
+        if scope=='search' and centre:
+            paths,status=self.traverse(centre,endpoints,depth)
+            for endpoint in sorted(endpoints):
+                if endpoint==centre:continue
+                if paths[endpoint]:
+                    ns,es=paths[endpoint][0];routes.append(self.route_record(endpoint,ns,es));selected.update(ns)
+                else:missing.add(endpoint)
+            edge_ids={i for r in routes for i in r['edges']}
+        else:edge_ids={i for i,e in self.edges.items() if e['source'] in selected and e['target'] in selected}
+        if scope=='search' and not endpoints:notices.append('No topic matches these search and filter choices. The centre and question are preserved; inspect source passages or prepare research.')
+        if status['budget_exhausted']:notices.append('Route search reached its work limit. Some matches have not been checked completely; this is not proof that no route exists.')
+        elif missing:notices.append(f'{len(missing)} matching topic(s) have no recorded route within {depth} steps. They remain visible.')
+        if not endpoints and scope!='search':notices.append('No topics match this scope and its filters.')
+        return {**({'group_member_ids':scope_members} if scope_members is not None else {}),'revision':self.snapshot['revision'],'scope':scope,'group_id':group_id,'centre':centre,'search':search,'domain':domain,'kinds':sorted(kinds),'depth':depth,
+            'nodes':[dict(self.topics[i],record_type='topic',context=i not in endpoints,missing=i in missing) for i in sorted(selected)],
+            'edges':[dict(self.edges[i],record_type='relationship') for i in sorted(edge_ids)],'endpoint_ids':sorted(endpoints),
+            'routes':routes,'matches':[self.topics[i] for i in sorted(endpoints) if i in matched],
+            'passages':[h for h in hits if h['kind']=='passage'],'notices':notices,'complete':status['complete'],'route_search':status,'limits':LIMITS}
+
+    def comparison(self, ids):
+        ids=list(dict.fromkeys(self.store.resolve(i) for i in ids))
+        if len(ids)>4:raise ValueError('Choose at most four comparison topics.')
+        if any(i not in self.topics for i in ids):raise ValueError('A comparison topic is unavailable. Refresh and choose another topic.')
+        topics=[self.topics[i] for i in ids]
+        return {'topics':topics,'aspects':sorted({k for t in topics for k in t.get('aspects',{})}),
+                'notice':"Each value retains its source and trial conditions; these are not controlled head-to-head trials."}
 
     def inspect(self, record_id):
         record_id=self.store.resolve(record_id)
