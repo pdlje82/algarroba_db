@@ -18,6 +18,7 @@ ROOT_LABELS = {
 DOMAINS = {'ecosystem', 'technology', 'funding'}
 STAGES = ('nursery', 'settlement', 'summer-maintenance', 'support')
 FIELDS = ('amount', 'frequency', 'period', 'notes')
+EVENT_AMOUNT_UNITS = {'L/plant/event', 'L/plant/watering'}
 TABLES = ('organization_roots', 'browse_groups', 'communities')
 
 
@@ -199,7 +200,7 @@ def validate_community(raw, groups, topics):
             for key, field in irrigation['fields'].items():
                 value = field['value']
                 if key == 'amount' and value is not None and (isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value < 0):
-                    raise ValueError('Amount must be a finite nonnegative number of liters per plant per watering')
+                    raise ValueError('Amount must be a finite nonnegative number of liters per plant per event')
                 if key != 'amount' and value is not None and not isinstance(value, str):
                     raise ValueError('Frequency, period and notes must be text')
                 if field['origin'] == 'not-set' and value is not None:
@@ -428,14 +429,14 @@ def apply_edit(store, edit: Edit, actor='Local user', dry_run=False):
                                 raise ValueError('Select compatible source evidence')
                             if baseline['species_id'] != plant['topic_id'] or baseline['value'] is None:
                                 raise ValueError('General guidance or unquantified evidence cannot supply a species-specific value')
-                            if key == 'amount' and (baseline['units'] != 'L/plant/watering' or not isinstance(baseline['value'], (int, float))):
+                            if key == 'amount' and (baseline['units'] not in EVENT_AMOUNT_UNITS or not isinstance(baseline['value'], (int, float))):
                                 raise ValueError('A range or incompatible unit requires an explicit user planning value')
                             field.update(value=baseline['value'], origin='source', baseline=copy.deepcopy(baseline))
                         elif mode == 'user':
                             if 'value' not in data or data['value'] is None:
                                 raise ValueError('Enter a value or use Clear value')
                             if key=='amount' and (type(data['value']) not in (int,float) or not math.isfinite(data['value']) or data['value']<0):
-                                raise ValueError('Amount must be a finite nonnegative number of liters per plant per watering')
+                                raise ValueError('Amount must be a finite nonnegative number of liters per plant per event')
                             field.update(value=data['value'], origin='user-adjusted' if field['baseline'] is not None else 'user-set')
                         else:
                             raise ValueError('Unknown field editing mode')

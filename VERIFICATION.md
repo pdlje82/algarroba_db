@@ -1645,3 +1645,131 @@ verified the editor, 15 stored root/folder choices, zero prefilled communities,
 four lifecycle nodes, the exact clicked folder's opening highlight, and no POST
 writes or JavaScript exceptions. The production bundle is `index-LHiDeG2S.js`.
 The existing non-blocking bundle-size and Starlette test-client advisories remain.
+# 8 November 2026 — Direct exploration with a tight relationship circle
+
+The user requested neighbouring topics arranged in a tight circle around the centre.
+Implemented that layout for direct-topic exploration in the shared scene builder.
+Card and label rectangles reserve clear space, with a stable clockwise order and
+the centre at the origin. Central relationships show wrapped labels without requiring
+selection. Larger label text, exact surface bounds, preserved incoming/outgoing arrows,
+and distinct directed relationship summaries replace overlapping midpoint captions.
+Parallel/secondary label callouts may have explicit leaders. Other scopes and removed-centre
+views keep the compact grid. Old snapshot geometry aliases retain offsets, closed layers
+and opening highlights, without rewriting saved payloads or changing factual records.
+
+Validation: 53 frontend tests and production TypeScript/Vite build passed; 34 backend
+integrity/planning tests passed. The focused browser test passed 13 assertions covering
+the reported carob-community view, all eight companion labels and the incoming occurrence
+label, canvas text bounds, grouping/direction, dark theme, rotation, zoom, reload, resizing,
+domain preview, larger carob/Cocoon circles and centre removal. Both theme screenshots were
+visually inspected. Artifacts: output/consolidation-qa/relationship-circle-*.png and
+relationship-circle-results.json. Browser writes were confined to the cloned circle QA store.
+Fingerprints confirm the live topics, relationships, findings, sources, coverage, browsing
+groups, plant images, communities and irrigation evidence remain unchanged at revision 6.
+The existing 37-check navigation walkthrough also passed with no JavaScript exceptions.
+A final read-only smoke test on the normal app at port 8765 confirmed the centre at the
+origin and all nine carob-community neighbours on the circle, without POST requests.
+The isolated circle QA server was stopped; the normal app serves the new production build.
+# 8 November 2026 — Gentler mouse dragging
+
+Reduced the shared drag sensitivity from 0.5 to 0.25, halving motion for camera
+panning, layer-label movement and Ctrl/Shift rotation. Rotation now travels
+45 degrees per viewport span while retaining the existing +/-60-degree bounds.
+Updated the current documentation and existing gesture expectations.
+All 53 frontend checks and the production TypeScript/Vite build passed.
+The isolated browser gesture suite passed all 17 checks, including measured
+quarter-distance layer movement, 4.5-degree rotation per tenth viewport,
+Escape cancellation, persisted layer offsets, both rotation bounds and reset.
+No browser runtime exceptions occurred. Current production bundle: index-CN3t857c.js.
+# 8 November 2026 — Window-format connection-layer frames
+
+Connection layers now use the current graph canvas aspect ratio for their outer frame,
+with the compact circle retained at the centre. The frame expands to contain all topic
+cards and reserved labels with clearance; the circle is not stretched. Shared frame
+bounds drive the border, heading and Fit. Frame changes on resize do not affect graph
+identity, saved offsets or topic/label positions. Updated gesture test geometry accordingly.
+
+Validation: 54 frontend tests, 26 backend integrity tests and the production build passed.
+The relationship-circle browser suite passed 15 checks, including interception of actual
+WebGL frame geometry to verify both original and resized window proportions. The 17-check
+gesture suite also passed, preserving gentler dragging, source-layer movement and rotation.
+Reviewed the resized frame screenshot. The normal app serves index-CiDK5nTt.js; QA mutations
+were confined to the isolated store. No knowledge or planning data migration was required.
+# 8 November 2026 — Further drag reduction and Trackball calibration
+
+Reduced shared drag sensitivity from 0.25 to 0.125. Explicitly retain Trackball controls,
+disable their post-release inertia with staticMoving=true, and refresh cached canvas
+dimensions after layout/resize. The old constructor dimensions amplified panning even
+with a reduced coefficient; the measured test pan fell from about 53 to 15 screen pixels
+for the same 120-by-60 pointer gesture after correcting that calibration.
+
+Validation: all 54 frontend checks and the production TypeScript/Vite build passed.
+The isolated real-browser gesture suite passed 20 checks, including measured eighth-scale
+layer movement, gentle plain panning, no drift after release, 2.25-degree rotation per
+tenth viewport, pan calibration after resize, cancellation, persistence, rotation bounds
+and reset. No runtime exceptions occurred. The normal app serves index-Cg5CDNHQ.js.
+# 8 November 2026 — Adaptive upper and lower relationship arcs
+
+Replaced fixed-radius neighbour placement with arcs fitted to the actual graph/layer
+aspect ratio. Floor(n/2) topics occupy the upper semicircle and ceil(n/2) the lower;
+the reported nine-member community now has four above and five below. The layout
+reserves topic/label clearance and uses the available frame dimensions, including
+tall windows. Incoming/outgoing directions and factual identities remain unchanged.
+
+Adaptive neighbour layers now use semantic keys independent of geometry. Legacy
+geometry aliases preserve old offsets/source/closed references. Resize reflow updates
+current presentation positions and the visible offset in place, with no added history
+entry. Domain previews retain their current safe arcs and labels until Update. Snapshot
+and pose capture use the displayed geometry. Other scopes retain compact grids.
+
+Validation: 54 frontend tests and production TypeScript/Vite build passed. The focused
+browser suite passed 18 checks, including the four/five split, tall-window occupancy,
+responsive reflow, deterministic return to the original window, reload, grouping,
+domain preview, large neighbourhoods, label text bounds and no runtime exceptions.
+Existing navigation passed 37 checks; gentler gestures passed 20. Visually reviewed
+output/consolidation-qa/relationship-circle-tall-arcs.png. Production bundle:
+index-BBM_rsAG.js. All browser writes used the isolated QA store.
+
+# 8 November 2026 — Foreground layer opacity
+
+Added a theme-matched surface at 70% opacity inside every active layer's shared
+sceneFrame, including direct connections, overview and membership layers. It moves
+with the layer and resizes with its frame. Foreground cards, labels, links and headings
+retain their existing materials. Historical layers retain their existing darkening.
+The translucent plane uses depth testing without depth writes, stays behind foreground
+content, and is excluded from picking and opaque HTML-control occlusion.
+
+Validation: all 54 frontend tests, 26 backend integrity tests, the production build,
+and 18 focused relationship-layout browser checks passed. An isolated WebGL smoke
+check verified actual 0.7-opacity blended draws with depth testing and depthWrite=false
+in overview/connection layers in both themes, plus reload and return to overview.
+Visually reviewed layer-opacity-light.png and layer-opacity-dark.png under
+output/consolidation-qa. The normal app serves index-YQhoSG2U.js. All browser mutations
+used the isolated QA store; this change includes no database migration.
+Existing navigation/browser suite also passed all 37 checks, including saved views, fullscreen, source viewing and research handoff isolation.
+
+# 8 November 2026 — Opacity and oblique-angle artifact correction
+
+Reproduced depth conflicts with the previous opacity implementation: zooming out
+and turning the view allowed the translucent background to alter 699 opaque card
+pixels and 518 label pixels in the regression fixture. Enabled logarithmic renderer
+depth precision, and composite the backplate first with foreground materials in the
+same blending queue. Foreground opacity stays 1; its depth testing/writes and picking
+remain intact. The backplate stays at 0.7 with no depth writes. Explicit composition
+also prevents screen-space thick-line fragments from being painted over at steep angles.
+
+Added npm run test:layer-opacity, which draws/omits only the real WebGL backplate and
+compares screenshots inside opaque cards/labels and fully covered connection-line
+pixels. Six scenarios passed with zero affected foreground pixels: dark default,
+dark/light angled, light zoomed-out, and light/dark steep views. It failed against the
+previous build and passed after the correction. No browser runtime errors. Visually
+reviewed output/consolidation-qa/opacity-fixed-steep.png.
+
+Validation: 54 frontend tests, 26 backend integrity tests, production TypeScript/Vite
+build, and 20 gesture/browser checks passed. The latest build is index-Bi5eHVwa.js.
+All mutation/browser checks used isolated QA data; no knowledge changes are part of
+this fix. Other concurrently edited group/content files were preserved.
+Final focused layout suite passed 18 checks on the corrected build. The optional
+legacy close-occlusion script could not run unchanged: it hardcodes 36 species,
+while the current fixture has 46, and assumes the older drag calibration. It was
+left unchanged rather than folding a fixture/gesture rewrite into the rendering fix.

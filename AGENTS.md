@@ -110,6 +110,17 @@ Flat view, blur/frosting, independent panes or autonomous research system remain
   closedLayers in v6 presentation state. Foreground close restores the nearest visible previous
   view as a reversible history action, falling back to the selected-domain overview. Keep the
   base overview open. Never delete history or knowledge; single node clicks remain inspection-only.
+- The active foreground layer has a theme-matched background at 70% opacity over its
+  full sceneFrame, including connection layers. Keep this surface behind foreground
+  cards/labels/links, depthWrite=false, and outside picking and opaque-control occluders.
+  Historical snapshots keep their existing treatment without an added backplate.
+  Use a logarithmic renderer depth buffer to distinguish the close layer elements at
+  oblique angles and across the zoom range. Keep the renderer configuration stable.
+  Composite the foreground in the same blending queue after its backplate (renderOrder=-1),
+  retaining opacity=1 and depth testing/writes for its cards, labels and lines. This keeps
+  screen-space thick-line fragments clear at steep angles; depth precision alone cannot.
+  test:layer-opacity compares actual foreground pixels with the backplate drawn/omitted;
+  it must never change opaque card, label or fully covered connection-line pixels.
 - Previous views are derived from at most two distinct earlier history entries. They are opaque,
   darkened 65%, with read-only content excluded from factual accounting and research capture.
   Their labels, like the foreground label, allow presentation-only XY dragging.
@@ -132,8 +143,11 @@ Flat view, blur/frosting, independent panes or autonomous research system remain
 - Prepare data/layout before committing history. Cancel stale requests; failures retain the last
   working view. Back/Forward restores complete states; new actions cut the forward branch; cap100.
 - Drag unmodified left-mouse on a label to translate its complete layer in XY at fixed Z.
-  Use shared DRAG_SENSITIVITY=0.5 for label XY deltas, Orbit panSpeed and Ctrl/Shift rotation
-  deltas (90 degrees per viewport span). Retain the +/-60-degree bounds and 25-degree reset.
+  Use shared DRAG_SENSITIVITY=0.125 for label XY deltas, Trackball panSpeed and Ctrl/Shift rotation
+  deltas (22.5 degrees per viewport span). Keep Trackball staticMoving=true so camera dragging
+  stops with the pointer. Refresh Trackball handleResize after the graph canvas lays out or
+  changes size; its constructor can cache the initial 300x150 canvas and amplify pointer motion.
+  Retain the +/-60-degree bounds and 25-degree reset.
   Ctrl/Shift-drag takes rotation priority. Suspend camera controls, use pointer capture and a
   4px threshold, and restore the original offset on Escape/cancel. Persist layerOffsets by stable
   graph key in the current exploration, without adding semantic history or moving local cards.
@@ -235,3 +249,29 @@ new research does not overwrite baselines or active planning decisions. No profi
 inherited values, scheduling or automatic research are introduced. Test browser
 mutations in isolation and verify factual/source/media/saved-exploration fingerprints
 across organization migrations. Preserve unrelated work.
+
+## Relationship-circle exploration (8 November 2026)
+
+The user explicitly requested a tight circle of connection topics around the centre,
+superseding the universal compact-grid rule for `neighbors` scope with a live centre.
+Use relationshipCircle.ts through the same scene builder. Keep unique topics and
+actual factual directions/IDs, stable clockwise order, and clear card/label rectangles.
+The user subsequently requested viewport-adaptive upper/lower arcs: floor(n/2) topics
+above and ceil(n/2) below the centre, fitted to the layer proportions. Preserve that
+member order while reflowing on resize; do not restore a fixed-radius circular ring.
+Spoke labels are visible without requiring selection and wrap without dropping words.
+Connection-layer frames use sceneFrame with the actual graph canvas aspect ratio. Keep
+the adaptive arcs centred inside that viewport-shaped frame. Resizing reflows their
+positions and labels, without changing logical layer identity or creating history entries.
+Adaptive layers use semantic keys with legacy geometry aliases. Persist responsive
+presentation positions and the visible layer offset in place. Staged domain previews
+retain their displayed arcs until Update. Share frame bounds between rendering, Fit,
+layer headings and gesture tests so controls cannot drift away from the drawn frame.
+Keep grouped relationship meanings and directions distinct. Parallel/secondary labels
+may have explicit leaders. Other scopes and Remove centre retain compact grids.
+Preserve saved cameras, offsets, closed layers and opening highlights via geometry aliases;
+translate old snapshots in memory without modifying saved DB payloads. Domain previews
+keep their positions. No knowledge, organization or community mutations are part of this change.
+Run the frontend suite, backend integrity checks, production build and isolated browser
+test:relationship-circle/test:browser. The circle fixture server and artifacts belong
+under output/consolidation-qa, never the accepted database.

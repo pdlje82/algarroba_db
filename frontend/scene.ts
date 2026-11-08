@@ -18,11 +18,13 @@ import {
 } from "./organization.ts";
 import { allRoutes, contextLabel } from "./exploration.ts";
 import { openingCandidates, highlightOpeningSources } from "./opening.ts";
+import { relationshipCircle, retainedRelationshipArc, samePositions, type ConnectionLabel } from './relationshipCircle.ts';
 import {
   compactGrid,
   hasCompactGridPositions,
   CARD_WIDTH,
   CARD_HEIGHT,
+  CARD_GAP,
 } from "./compactLayout.ts";
 export { CARD_WIDTH, CARD_HEIGHT } from "./compactLayout.ts";
 export const PLANE_GAP = 1560;
@@ -42,8 +44,11 @@ export type SceneLink = {
   target: string;
   record: any;
   relationshipIds: string[];
+  labelPlacement?: ConnectionLabel;
+  centreSpoke?: boolean;
 };
 export type Scene = {
+  layout?: 'circle' | 'grid';
   openedFrom?: State["openedFrom"];
   openingCandidates?: string[];
   openedCardIds?: string[];
@@ -57,6 +62,25 @@ export type Scene = {
   label: string;
   signature: string;
 };
+export function sceneRectangles(scene:Scene){
+  return [...scene.cards.map(c=>({position:c.position,width:c.width,height:c.height})),...scene.links.flatMap(e=>e.labelPlacement?[e.labelPlacement]:[])];
+}
+/** Window-shaped frame around a compact circle; independent of graph/history identity. */
+export function sceneFrame(scene:Scene,aspect:number){
+  if(!Number.isFinite(aspect)||aspect<=0)throw new Error('The graph window dimensions are unavailable. Resize the window and retry.');
+  const rectangles=sceneRectangles(scene);
+  if(!rectangles.length)throw new Error('An empty scene has no layer frame.');
+  let minX=Math.min(...rectangles.map(c=>c.position.x-c.width/2))-25;
+  let maxX=Math.max(...rectangles.map(c=>c.position.x+c.width/2))+25;
+  let minY=Math.min(...rectangles.map(c=>-c.position.y-c.height/2))-25;
+  let maxY=Math.max(...rectangles.map(c=>-c.position.y+c.height/2))+25;
+  if(scene.layout==='circle'){
+    const width=Math.max(2*Math.max(Math.abs(minX),Math.abs(maxX)),2*Math.max(Math.abs(minY),Math.abs(maxY))*aspect);
+    const height=width/aspect;
+    minX=-width/2;maxX=width/2;minY=-height/2;maxY=height/2;
+  }
+  return {minX,maxX,minY,maxY};
+}
 /** Displayed, domain-excluded cards and their attached links cannot be selected. */
 export function isInteractiveRecord(scene: Scene, id: string) {
   const card = scene.cards.find(
@@ -91,6 +115,8 @@ export function buildScene(
     visible = new Set(v.endpoint_ids),
     expanded = routes.filter((r) => s.expandedRoutes.includes(r.id)),
     factIds = new Set<string>();
+  const orderedGroup = v.scope==='group' ? c.browse_groups.find(g=>g.id===s.groupId && g.member_layout==='vertical') : undefined;
+  const memberOrder = orderedGroup ? groupMembers(orderedGroup.id,c) : [];
   const centre =
     v.scope === "neighbors" || v.scope === "search" ? s.centre : null;
   if (centre) visible.add(centre);
@@ -116,7 +142,7 @@ export function buildScene(
   for (const id of visible) {
     const t = records.get(id);
     if (!t) continue;
-    if (v.scope !== "overview" && (s.grouping === "none" || id === centre))
+    if (v.scope !== "overview" && (orderedGroup || s.grouping === "none" || id === centre))
       continue;
     const place = recordedPlaceId(t, c),
       g =
@@ -186,12 +212,13 @@ export function buildScene(
     g.ids.forEach((member) => {if(!representative.has(member)||primaryGroup(member,c)?.id===key)representative.set(member,id);});
   }
   for (const id of [...visible].sort((a, b) =>
-    (topicMap.get(a)?.label || a).localeCompare(topicMap.get(b)?.label || b),
+    orderedGroup ? (memberOrder.indexOf(a)<0?Infinity:memberOrder.indexOf(a))-(memberOrder.indexOf(b)<0?Infinity:memberOrder.indexOf(b)) || a.localeCompare(b) : (topicMap.get(a)?.label || a).localeCompare(topicMap.get(b)?.label || b),
   )) {
     if (representative.has(id) || !records.has(id)) continue;
     const record: Item = { ...records.get(id)!, viewCentre: id === centre };
     // History retains its membership/layout; names follow the canonical database ID.
     const canonical = topicMap.get(id);
+    if(canonical){record.label=canonical.label;record.description=canonical.description;}
     if (canonical?.kind === "species") {
       for (const key of ["spanish_name", "english_name", "scientific_name", "name_status", "plant_images"])
         record[key] = canonical[key];
@@ -226,19 +253,10 @@ export function buildScene(
         card.record.context = true;
     }
   }
-  // Every scope shares one dense layout. Reuse a complete healthy grid so camera
-  // changes/reloads do not rearrange cards; changed membership repacks without gaps.
   const saved = cards.map((card) => s.positions[card.id]);
   const complete = saved.every(
     (p) => p && Number.isFinite(p.x) && Number.isFinite(p.y),
   );
-  const preserve = complete && (s.pendingDomain || hasCompactGridPositions(saved));
-  const grid = compactGrid(cards.length, aspect, CARD_WIDTH, CARD_HEIGHT).points;
-  const positions: Record<string, Point> = {};
-  cards.forEach((card, i) => {
-    card.position = { ...(preserve ? saved[i] : grid[i]) };
-    positions[card.id] = card.position;
-  });
   const links: SceneLink[] = [],
     ledger = new Set<string>(),
     aggregates = new Map<string, SceneLink>(),
@@ -264,7 +282,8 @@ export function buildScene(
         relationshipIds: [e.id],
       });
     else {
-      const key = [a, b].sort().join("|") + ":" + (e.basis || "source");
+      const circleScope=v.scope==='neighbors'&&centre;
+      const key = circleScope ? JSON.stringify([a,b,e.label,e.basis]) : [a, b].sort().join("|") + ":" + (e.basis || "source");
       if (!aggregates.has(key))
         aggregates.set(key, {
           id: "summary:" + key,
@@ -272,10 +291,11 @@ export function buildScene(
           target: b,
           record: {
             id: "summary:" + key,
-            label: "",
+            label: circleScope ? e.label : "",
             kind: "summary",
             constituent_ids: [],
             basis: e.basis,
+            directed: !!circleScope,
           },
           relationshipIds: [],
         });
@@ -283,7 +303,7 @@ export function buildScene(
     }
   }
   for (const e of aggregates.values()) {
-    e.record.label = e.relationshipIds.length + " recorded connections";
+    e.record.label = e.record.directed ? e.record.label + (e.relationshipIds.length>1 ? ` (${e.relationshipIds.length})` : '') : e.relationshipIds.length + " recorded connections";
     e.record.constituent_ids = e.relationshipIds;
     links.push(e);
   }
@@ -304,20 +324,39 @@ export function buildScene(
       relationshipIds: [],
     });
   }
+  // Topic exploration uses a centred circle. Other scopes retain their compact grid.
+  // Translate old saved grids in memory and retain their geometry alias/offset.
+  const circle=v.scope==='neighbors' && centre && cards.some(card=>card.id===centre) ?
+    (s.pendingDomain&&complete?retainedRelationshipArc(cards,links,centre,s.positions):null)||relationshipCircle(cards,links,centre,aspect) : null;
+  const vertical = orderedGroup ? cards.map((_,i)=>({x:0,y:(i-(cards.length-1)/2)*(CARD_HEIGHT+CARD_GAP)})) : null;
+  const orderedPositions = vertical && Object.fromEntries(cards.map((card,i)=>[card.id,vertical[i]]));
+  const preserve=complete && (s.pendingDomain || (vertical ? samePositions(cards,s.positions,orderedPositions!) : circle ? samePositions(cards,s.positions,circle.positions) : hasCompactGridPositions(saved)));
+  const grid=vertical || (circle ? null : compactGrid(cards.length,aspect,CARD_WIDTH,CARD_HEIGHT).points);
+  const positions:Record<string,Point>={};
+  cards.forEach((card,i)=>{
+    card.position={...(preserve?saved[i]:circle?circle.positions[card.id]:grid![i])};
+    positions[card.id]=card.position;
+  });
+  const circleActive=!!circle && samePositions(cards,positions,circle.positions);
+  if(circleActive)for(const link of links){
+    link.labelPlacement=circle!.labels[link.id];
+    link.centreSpoke=link.source===centre||link.target===centre;
+  }
   const signature = JSON.stringify([
     cards.map((c) => [c.id, c.position]),
     links.map((e) => e.id),
   ]);
-  const key = scenePresentationKey(signature);
+  const key = scenePresentationKey(circleActive ? JSON.stringify(['adaptive-neighbours',centre,cards.map(c=>c.id),links.map(e=>e.id)]) : signature);
   // Older histories use geometry-based keys. Retain a read-only alias so packing
   // their rings/scattered slots cannot lose moved offsets, closed layers or sources.
-  const previousKey = complete && !preserve
+  const previousKey = complete && (!preserve || circleActive)
     ? scenePresentationKey(JSON.stringify([
         cards.map((card, i) => [card.id, saved[i]]),
         links.map((e) => e.id),
       ]))
     : undefined;
   return {
+    layout:circleActive?'circle':'grid',
     openedFrom: s.openedFrom,
     openingCandidates: openingCandidates(s, c),
     cards,

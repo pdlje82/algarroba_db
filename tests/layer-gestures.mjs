@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import * as THREE from "three";
 import { pathToFileURL } from "node:url";
 import { writeFileSync } from "node:fs";
-import { buildScene, previousScenes, PLANE_GAP } from "../frontend/scene.ts";
+import { buildScene, previousScenes, PLANE_GAP, sceneFrame } from "../frontend/scene.ts";
 const { chromium } = await import(
   pathToFileURL(process.env.KGB_PLAYWRIGHT_MODULE).href
 );
@@ -80,10 +80,11 @@ const display = async () => {
   };
 };
 const titlePoint = (scene, z, info, fraction = 0) => {
+  const frame=sceneFrame(scene,info.rect.width/info.rect.height);
   const min =
-      Math.min(...scene.cards.map((c) => c.position.x - c.width / 2)) - 25,
-    max = Math.max(...scene.cards.map((c) => c.position.x + c.width / 2)) + 25,
-    y = Math.max(...scene.cards.map((c) => -c.position.y + c.height / 2)) + 60,
+      frame.minX,
+    max = frame.maxX,
+    y = frame.maxY + 35,
     p = new THREE.Vector3(
       (min + max) / 2 + scene.offset.x + fraction * Math.min(700, max - min),
       y + scene.offset.y,
@@ -140,7 +141,7 @@ try {
   const moved = d.s.layerOffsets[d.scene.key];
   check(
     "foreground label drag moves layer in XY",
-    moved && Math.abs(moved.x) > 10 && Math.abs(moved.y) > 10,
+    moved && Math.abs(moved.x) > 2 && Math.abs(moved.y) > 2,
   );
   check(
     "label drag leaves camera and local card positions unchanged",
@@ -148,7 +149,7 @@ try {
       JSON.stringify(d.s.positions) === JSON.stringify(before.positions),
   );
   const oldTitle = titlePoint({ ...d.scene, offset: { x: 0, y: 0 } }, 0, d), newTitle = titlePoint(d.scene, 0, d);
-  check("label drag responds at half the pointer displacement", Math.abs(newTitle.x - oldTitle.x - 47.5) < 1 && Math.abs(newTitle.y - oldTitle.y - 27.5) < 1);
+  check("label drag responds at one eighth of the pointer displacement", Math.abs(newTitle.x - oldTitle.x - 11.875) < 1 && Math.abs(newTitle.y - oldTitle.y - 6.875) < 1);
   check("label drag does not add exploration history", d.h.index === 0);
   p = await label(d.scene, 0, d);
   await page.mouse.move(p.x, p.y);
@@ -175,7 +176,7 @@ try {
   check("previous view remains available", d.previous.length === 1);
   // Move foreground down to expose the history label before testing its own drag.
   p = await label(d.scene, 0, d);
-  await drag(p, -220, 300);
+  await drag(p, -880, 1200);
   d = await display();
   const previous = d.previous[0],
     oldOffset = { ...previous.offset };
@@ -204,20 +205,35 @@ try {
   const index = d.h.index,
     rect = d.rect,
     point = { x: rect.x + rect.width * 0.5, y: rect.y + rect.height * 0.6 };
+  const panPoint={x:rect.x+rect.width*0.12,y:rect.y+rect.height*0.84};
+  const marker=new THREE.Vector3(d.scene.offset.x,d.scene.offset.y,0);
+  const markerOnScreen=info=>{
+    const p=marker.clone().project(info.camera);
+    return {x:(p.x+1)*info.rect.width/2,y:(1-p.y)*info.rect.height/2};
+  };
+  const panBefore=markerOnScreen(d);
+  await drag(panPoint,120,60);d=await display();
+  const panAfter=markerOnScreen(d),panPixels=Math.hypot(panAfter.x-panBefore.x,panAfter.y-panBefore.y);
+  console.log('PAN',JSON.stringify({panPixels,panBefore,panAfter,point:panPoint}));
+  check('Plain mouse pan moves the graph gently relative to the pointer',panPixels>1&&panPixels<Math.hypot(120,60)*0.3);
+  const stopped=structuredClone(d.s.camera);
+  await page.waitForTimeout(600);d=await display();
+  check('Camera pan stops after release without inertial drift',new THREE.Vector3().copy(stopped.position).distanceTo(new THREE.Vector3().copy(d.s.camera.position))<0.000001&&new THREE.Vector3().copy(stopped.target).distanceTo(new THREE.Vector3().copy(d.s.camera.target))<0.000001);
+  await page.getByRole('button',{name:'Reset view',exact:true}).click();await page.waitForTimeout(400);d=await display();
   const initialAngles = angles(d.s);
   await page.keyboard.down("Control");
   await drag(point, rect.width / 10, rect.height / 10);
   await page.keyboard.up("Control");
   d = await display();
   const gentleAngles = angles(d.s);
-  check("Ctrl-drag rotates nine degrees per tenth viewport instead of eighteen", Math.abs(gentleAngles.x - initialAngles.x - 9) < 0.2 && Math.abs(gentleAngles.y - initialAngles.y + 9) < 0.2);
+  check("Ctrl-drag rotates 2.25 degrees per tenth viewport", Math.abs(gentleAngles.x - initialAngles.x - 2.25) < 0.2 && Math.abs(gentleAngles.y - initialAngles.y + 2.25) < 0.2);
   await page.getByRole("button", { name: "Reset view", exact: true }).click();
   await page.waitForTimeout(400);
   for (const sign of [1, -1]) {
     await page.keyboard.down("Control");
     await page.mouse.move(point.x, point.y);
     await page.mouse.down();
-    await page.mouse.move(point.x + sign * 2800, point.y + sign * 2400, {
+    await page.mouse.move(point.x + sign * 5600, point.y + sign * 4800, {
       steps: 18,
     });
     await page.mouse.up();
@@ -242,6 +258,11 @@ try {
     "Reset view restores 25 degree tilt and zero sideways turn",
     Math.abs(angles(d.s).x - 25) < 0.1 && Math.abs(angles(d.s).y) < 0.1,
   );
+  await page.setViewportSize({width:1100,height:900});await idle();
+  await page.getByRole('button',{name:'Reset view',exact:true}).click();await page.waitForTimeout(400);d=await display();
+  const resizedBefore=markerOnScreen(d),resizedPoint={x:d.rect.x+d.rect.width*0.12,y:d.rect.y+d.rect.height*0.84};
+  await drag(resizedPoint,120,60);d=await display();const resizedAfter=markerOnScreen(d);
+  check('Pan sensitivity stays gentle after resizing the graph window',Math.hypot(resizedAfter.x-resizedBefore.x,resizedAfter.y-resizedBefore.y)>1&&Math.hypot(resizedAfter.x-resizedBefore.x,resizedAfter.y-resizedBefore.y)<Math.hypot(120,60)*0.3);
   await page.getByLabel("Appearance", { exact: true }).selectOption("dark");
   await page.waitForTimeout(250);
   await page.screenshot({

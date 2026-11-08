@@ -1,5 +1,37 @@
 # Consolidated Layered 3D browser — v6
 
+## Direct-topic circle update
+
+The user's later circle request supersedes the original all-grid layout only for direct
+`neighbors` exploration with a live centre. The centre is at the origin; unique related cards
+are ordered clockwise on viewport-adaptive upper/lower arcs with clear card and label surfaces.
+Odd member counts place the extra topic below: nine means four above and five below.
+All central spoke labels are visible, use larger wrapped text, and preserve factual arrow
+direction. Group summaries distinguish relationship wording and direction. Parallel or
+secondary label callouts have explicit leader lines where needed. Labels and cards contribute
+to Fit and layer bounds. Selection, zoom and turn do not change arc geometry.
+The connection-layer frame and arcs match the current graph canvas proportions. Shared
+sceneFrame bounds drive its border, title and Fit. Resizing reflows topics and labels into
+the available width/height; semantic layer keys preserve offsets, closing and opening-source
+references while legacy geometry aliases support older saves. Current presentation positions
+are retained in the browser session without appending history or rewriting saved DB payloads.
+Pending domain previews retain their displayed arcs and labels until Update.
+Every active foreground layer has a theme-matched 70%-opaque background filling its
+sceneFrame bounds, behind all cards, links and labels. Historical snapshots retain their
+existing darkening. The surface follows layer movement and resize, does not write depth,
+and does not participate in topic/heading picking or opaque-control occlusion.
+The renderer uses logarithmic depth precision to prevent the translucent plane from
+painting over closely spaced cards, labels or lines when angled or zoomed out.
+Foreground content shares the blending queue with its backplate, which renders first;
+its cards, labels and lines retain opacity 1 and depth testing/writes. This also protects
+screen-space line widths at steep angles while preserving ordinary card occlusion.
+
+Overview, search and membership retain the compact grid; removing the centre returns its
+remaining neighbours to that grid. The shared builder translates saved old grids in memory,
+retaining old geometry aliases, moved offsets, closed-state keys and opening references.
+Pending domain previews preserve their current arrangement. No database migration or
+knowledge changes are involved. `npm run test:relationship-circle` verifies the real browser.
+
 Approved8 November2026. This replaces the v5 independent-layer interaction contracts.
 Historical source/build files are preserved in the pre-consolidation backup recorded in VERIFICATION.md.
 
@@ -12,7 +44,8 @@ attached lines and repacks the remaining cards on a deterministic grid in the sa
 Preserve camera, layer movement, opening source and backgrounds. The captured anchor retains the
 surrounding query results for refresh and serves as the omitted former centre while centre is
 null. Apply that omission after expanding routes and before grouping, so neither matching itself
-nor route reveal can reinsert it. All cards, including a designated centre, use ordinary grid slots. Reconcile older
+nor route reveal can reinsert it. Direct topic exploration uses the relationship circle described below;
+overview, membership and search use ordinary grid slots. Reconcile older
 saved positions containing a removed centre by clearing those stale slots once. Explicit scope
 changes reset the query anchor to the current centre choice.
 
@@ -46,9 +79,9 @@ then reuses the canonical /api/explore and scene builder. Commit by replacing th
 entry only after success. Clear old card positions and tightly repack the remaining cards using
 the canonical deterministic layout. Preserve expansions that survive reconciliation, camera,
 layer offset, source reference and original history snapshots. Preview/failure retain the last
-working positions; successful Update persists the newly packed arrangement. Every scope uses
-the same compact grid with actual card dimensions and clearance. No centre reservation, ring or
-scattered fallback layout remains. Failed requests retain
+working positions; successful Update persists the new arrangement. Direct neighbours use a
+centred relationship circle; other scopes use the compact grid. Both layouts reserve actual
+card dimensions and clearance. Failed requests retain
 preview and working graph; subsequent preview choices cancel in-flight updates and reject stale responses.
 In-place edits after Back discard forward history without appending a view. New explicit scope
 explorations and Return to overview consume the pending domain for their new query. Route reveal,
@@ -215,16 +248,18 @@ collision-fallback placer are removed. Verify with npm run test:tight-layers plu
 walkthrough.
 
 
-Mouse drag sensitivity is shared in interactions.ts as DRAG_SENSITIVITY=0.5. Apply it to
-ray-plane label displacement, OrbitControls panSpeed and custom Ctrl/Shift rotation deltas.
-A full viewport of custom rotation now means 90 degrees before the existing +/-60-degree clamps.
+Mouse drag sensitivity is shared in interactions.ts as DRAG_SENSITIVITY=0.125. Apply it to
+ray-plane label displacement, TrackballControls panSpeed and custom Ctrl/Shift rotation deltas.
+A full viewport of custom rotation now means 22.5 degrees before the existing +/-60-degree clamps.
 Keep the four-pixel drag threshold, pointer cancellation, saved offsets and 25-degree reset.
 
 
 Timed transitions use the common camera move helper: framing a new exploration without a saved
 pose, Fit, Reset view, zoom buttons and angle buttons take 600 ms (previously 300 ms). Reduced
-motion uses zero duration. Saved camera restoration stays immediate. Orbit pan damping is
-inertial smoothing, separate from this fixed duration and from the 50% mouse sensitivity.
+motion uses zero duration. Saved camera restoration stays immediate. Trackball controls use
+staticMoving=true to stop camera motion with the pointer rather than adding inertial drift.
+Refresh the Trackball canvas dimensions after layout/resize so pointer deltas are measured
+against the real graph viewport rather than the renderer's initial canvas dimensions.
 Layer content changes, grouping, route reveal/hide, hover, themes and panels have no timed
 fade/slide/layout animation; their updates are immediate. Do not introduce extra effects.
 

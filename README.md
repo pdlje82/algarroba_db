@@ -96,18 +96,28 @@ overview stays open. Browsing history is retained; Back can restore a closed for
 One live foreground graph is accompanied by at most two **Previous view** snapshots behind it.
 These are read-only history, not additional live knowledge. Back/Forward restores complete views;
 a new exploration after Back replaces the forward branch. Up to100 history entries are retained.
+The active layer has a theme-matched background at 70% opacity across its entire frame,
+including connection-layer gaps. Topic cards, headings and connection labels remain opaque.
 
 Drag a layer label to move the entire layer in X–Y, including previous-view snapshots.
 Escape cancels a move. Placements are saved without adding an exploration-history step.
-Mouse dragging uses 50% sensitivity for layer movement, panning and rotation.
+Mouse dragging uses 12.5% sensitivity for layer movement, panning and rotation,
+with no camera drift after release.
 Drag empty space to pan. Ctrl/Shift-drag or angle buttons turn up to60 degrees in either
 direction around both X and Y; the initial tilt is25 degrees. Zoom changes magnification only.
-Fit and Reset view frame the current graph. Every layer uses the same tight grid, including
-Explore topic, search routes, grouped cards and previous views. The explored topic keeps its
-centre marker in an ordinary grid slot. Adding/removing route steps or changing membership
-repacks cards to fill gaps. Already compact saved layouts stay stable during reload, turning,
-zoom, resize and fullscreen. Domain preview retains positions until **Update layer** succeeds;
-**Remove centre** and **Tidy graph** also repack. Older rings/scattered layouts repair on opening.
+Fit and Reset view frame the current graph. **Explore this topic** without a search places
+the centre in the middle, with its neighbours on upper and lower arcs fitted to the layer.
+Nine neighbours use four positions above and five below; other counts split as evenly
+as possible. The arcs reflow with the window proportions and reserve clear space for
+cards and readable, wrapped connection labels. Incoming/outgoing arrows
+retain their direction; grouping keeps different relationship meanings and directions
+separate. Parallel or secondary labels can have short leader lines into clear space.
+Overview, membership and search scopes retain the compact grid. Removing the centre repacks
+its remaining neighbours as a grid. Topic membership and order stay stable during reload,
+turning and zoom. Resizing and fullscreen adapt the arcs without adding a history entry
+or losing layer offsets. Domain preview retains positions until **Update layer** succeeds.
+Older direct-exploration grids translate to circles in memory while retaining layer offsets,
+opening highlights and closed-layer references; saved database payloads are not rewritten.
 Camera framing, Fit, Reset view, zoom buttons and angle buttons transition over 600 ms.
 Reduced motion removes camera animation. Dense graphs still benefit from
 filters, grouping, zoom and the keyboard-accessible **Visible topics** list.

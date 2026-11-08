@@ -7,8 +7,10 @@
     "test:planning": "node tests/planning-browser.mjs",
     "dev": "vite --host 127.0.0.1",
     "build": "node scripts/prepare-assets.mjs && tsc --noEmit && vite build",
-    "test": "node --experimental-strip-types --test tests/exploration.test.mjs",
+    "test": "node --experimental-strip-types --test tests/exploration.test.mjs tests/relationship-circle.test.mjs tests/irrigation-lifecycle.test.mjs",
     "test:browser": "node tests/browser-v6.mjs",
+    "test:relationship-circle": "node tests/relationship-circle-browser.mjs",
+    "test:layer-opacity": "node --experimental-strip-types tests/layer-opacity.mjs",
     "test:gestures": "node --experimental-strip-types tests/layer-gestures.mjs",
     "test:overview": "node --experimental-strip-types tests/overview-grouping.mjs",
     "test:close-layers": "node --experimental-strip-types tests/close-layers.mjs",
@@ -24,7 +26,8 @@
     "test:species-names": "node tests/species-names.mjs",
     "test:tight-layers": "node --experimental-strip-types tests/tight-layers.mjs",
     "test:unrecorded-place": "node --experimental-strip-types tests/unrecorded-place.mjs",
-    "test:plant-images": "node tests/plant-images.mjs"
+    "test:plant-images": "node tests/plant-images.mjs",
+    "test:irrigation-lifecycle": "node tests/irrigation-lifecycle-browser.mjs"
   },
   "dependencies": {
     "pdfjs-dist": "6.5.438",

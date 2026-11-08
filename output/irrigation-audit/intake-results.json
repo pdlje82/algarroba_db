@@ -1,0 +1,28 @@
+{
+  "accepted": {
+    "status": "accepted",
+    "revision": 7,
+    "topics": 27,
+    "relationships": 58,
+    "findings": 25,
+    "coverage": 41,
+    "unresolved": 4,
+    "browse_groups": 5,
+    "plant_images": 0,
+    "sources": 0,
+    "communities": 0,
+    "irrigation_evidence": 29
+  },
+  "checks": [
+    "Dry-run no mutation",
+    "Repeat no-op",
+    "Stale rejection",
+    "Species/source/media/working-plan preservation",
+    "Ordered guide and phase context",
+    "Two community topics and finca identities",
+    "No inherited cork-oak companion",
+    "Source dose versus seasonal/general safeguards",
+    "SQLite integrity"
+  ],
+  "qa_database": "C:\\Users\\JanEngelke\\git_private\\algarroba_db\\output\\irrigation-audit\\qa.sqlite"
+}

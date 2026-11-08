@@ -106,7 +106,9 @@ function App() {
       p = graph.current?.pose();
     if (!p) return h;
     const entries = [...h.entries];
-    entries[h.index] = { ...entries[h.index], camera: p };
+    const current=entries[h.index];
+    const positions=catalog&&current.view ? buildScene(current,current.view,catalog,aspect).positions : current.positions;
+    entries[h.index] = { ...current, camera: p,positions };
     const next = { entries, index: h.index };
     historyRef.current = next;
     return next;
@@ -119,12 +121,13 @@ function App() {
     presentationOffset?: { x: number; y: number },
   ) => {
     s = reconcileIdentities(s, c);
+    if(s.scope==='group' && c.browse_groups.find(g=>g.id===s.groupId)?.member_layout==='vertical')s={...s,grouping:"none"};
     let v = s.view;
     if (!v || force) v = await api<ExploreView>(query(s), { signal });
     const bounds = canvas.current?.getBoundingClientRect();
     const layoutAspect =
       bounds && bounds.width > 0 && bounds.height > 0
-        ? Math.max(0.5, bounds.width / bounds.height)
+        ? bounds.width / bounds.height
         : aspect;
     let migratedOffset;
     const focused = migrateExpandedGroup({ ...s, view: v }, c, layoutAspect);
@@ -236,7 +239,7 @@ function App() {
         action.type === "previewDomain"
           ? base.entries[base.index]
           : intent.current || base.entries[base.index],
-      candidate = reduceExploration(previous, action);
+      candidate = reduceExploration(previous, action, catalog);
     if (
       previous.view &&
       ["explore", "group", "openMembers"].includes(action.type)
@@ -351,7 +354,7 @@ function App() {
     if (!el) return;
     const observer = new ResizeObserver(() => {
       const r = el.getBoundingClientRect();
-      setAspect(Math.max(0.5, r.width / Math.max(1, r.height)));
+      if(r.width>0&&r.height>0)setAspect(r.width/r.height);
     });
     observer.observe(el);
     return () => observer.disconnect();
@@ -396,6 +399,17 @@ function App() {
       aspect,
     ],
   );
+  useEffect(()=>{
+    if(!ready.current||!scene||scene.layout!=='circle'||!view)return;
+    const h=historyRef.current,current=h.entries[h.index];
+    if(current.view!==view||current.scope!=='neighbors'||current.centre!==state.centre)return;
+    if(Object.keys(current.positions).length===scene.cards.length&&scene.cards.every(c=>current.positions[c.id]?.x===c.position.x&&current.positions[c.id]?.y===c.position.y))return;
+    // Responsive reflow updates presentation in place, without a new exploration.
+    // Capture the visible offset before replacing any legacy geometry-based alias.
+    const entries=[...h.entries];
+    entries[h.index]={...current,positions:scene.positions,layerOffsets:{...current.layerOffsets,[scene.key]:scene.offset}};
+    const next={entries,index:h.index};publish(next);persist(next);
+  },[scene?.signature,view,state.centre]);
   const graphHistoryKey = JSON.stringify(
     history.entries.map((s) => [
       s.scope,
@@ -431,6 +445,7 @@ function App() {
   const routes = view ? allRoutes(state, view) : [],
     selectedRoute = routes.find((r) => r.id === selected?.id),
     selectedTopic = catalog?.topics.find((t) => t.id === selected?.id),
+    inspectedGroup = catalog?.browse_groups.find(g=>g.id===(selected?.displayGroup ? selected.groupKey : !selected && state.scope==='group' ? state.groupId : null)),
     selectedEdge = catalog?.relationships.find((e) => e.id === selected?.id),
     selectedCard = scene?.cards.find((c) => c.id === selected?.id);
   const relationshipIds =
@@ -944,10 +959,10 @@ function App() {
                       }}
                       onClear={() => setSelected(null)}
                       onPose={(p) => {
-                        if (!ready.current || loading) return;
+                        if (!ready.current || loading || !scene) return;
                         const h = historyRef.current,
                           entries = [...h.entries];
-                        entries[h.index] = { ...entries[h.index], camera: p };
+                        entries[h.index] = { ...entries[h.index], camera: p,positions:scene.positions };
                         const next = { entries, index: h.index };
                         publish(next);
                         persist(next);
@@ -1065,7 +1080,7 @@ function App() {
               )}
               <details className="visible-topics">
                 <summary>Visible topics · {scene?.cards.length || 0}</summary>
-                <div>
+                <div style={state.scope==='group' && catalog.browse_groups.find(g=>g.id===state.groupId)?.member_layout==='vertical'?{gridTemplateColumns:'1fr'}:undefined}>
                   {scene?.cards.map((c) => (
                     <article key={c.id}>
                       <button
@@ -1137,15 +1152,20 @@ function App() {
                   </p>
                   <h2>
                     {(selected?.displayGroup && selected.groupKey ? groupLabel(selected.groupKey,catalog) : selectedTopic?.label) ||
-                      selected?.label ||
+                      selected?.label || inspectedGroup?.label ||
                       "Start with a group or topic."}
                   </h2>
-                  <p>
-                    {selectedTopic?.description ||
+                  <p style={{whiteSpace:"pre-line"}}>
+                    {inspectedGroup?.description || selectedTopic?.description ||
                       selected?.explanation ||
                       selected?.description ||
                       "Select a card to inspect it. Use Explore this topic to follow its direct connections."}
                   </p>
+                  {inspectedGroup && <section aria-label="Group guide">
+                    <Refs refs={inspectedGroup.source_refs || []} open={setSource}/>
+                    <ol>{inspectedGroup.members.map(m=><li key={m.topic_id}>{topicButton(m.topic_id)}</li>)}</ol>
+                  </section>}
+                  {selectedTopic?.aspects && <dl className="topic-context">{Object.entries(selectedTopic.aspects).map(([key,value])=><React.Fragment key={key}><dt>{key}</dt><dd style={{whiteSpace:'pre-line'}}>{String(value)}</dd></React.Fragment>)}</dl>}
                   {selected && (
                     <button onClick={() => setSelected(null)}>
                       Clear selection
@@ -1241,6 +1261,7 @@ function App() {
                             </div>
                           </article>
                         ))}
+                      {findings.length>0 && <details className="source-guidance"><summary>Source findings and guidance · {findings.length}</summary>{findings.map(f=><article key={f.id}><small>{f.kind==='recommendation'?'Source guidance':'Source finding'}</small><h3>{f.label}</h3><p>{f.text}</p>{f.conditions?.map((condition:string,i:number)=><p key={i}>Condition: {condition}</p>)}<Refs refs={f.source_refs || []} open={setSource}/></article>)}</details>}
                       <h3>Recorded connections</h3>
                       {catalog.relationships
                         .filter((e) =>

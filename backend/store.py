@@ -104,6 +104,9 @@ class BrowseGroup(Record):
     user_created: bool = False
     members: list[BrowseMember] = []
     maintenance_rule: str = Field(min_length=1)
+    description: str = ""
+    source_refs: list[SourceRef] = []
+    member_layout: Literal["grid", "vertical"] = "grid"
 
 class Batch(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -286,7 +289,7 @@ class Store:
                 sources[source['id']] = source
             existing = {t["id"] for t in self.records("topics", c)}
             ids = existing | {t.id for t in batch.topics}
-            for collection in (batch.topics, batch.relationships, batch.findings):
+            for collection in (batch.topics, batch.relationships, batch.findings, batch.browse_groups):
                 if len({x.id for x in collection}) != len(collection):
                     raise ValueError("Duplicate IDs within the candidate batch")
                 for record in collection:

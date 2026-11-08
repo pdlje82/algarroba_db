@@ -186,3 +186,40 @@ def test_intake_cannot_break_existing_plant_memberships(store):
     with pytest.raises(ValueError,match='species'):
         s.import_batch(dict(batch_id='invalid-species-change',summary='Must fail',base_revision=s.revision(),topics=[dict(carob,kind='method')]))
     assert s.snapshot()==before
+
+
+def test_event_units_and_legacy_baselines_remain_compatible(store):
+    s=store
+    id=community(s);edit(s,'plants-add',id=id,topic_ids=['carob'])
+    edit(s,'stage-set',id=id,topic_id='carob',stage='settlement',status='configured')
+    for suffix,units in [('canonical','L/plant/event'),('legacy','L/plant/watering')]:
+        eid='irrigation-evidence:'+suffix
+        evidence(s,eid,value=12,units=units)
+        edit(s,'field-set',id=id,topic_id='carob',stage='settlement',field='amount',mode='source',evidence_id=eid)
+        assert field(s,id)['value']==12
+        assert field(s,id)['baseline']['units']==units
+    evidence(s,'irrigation-evidence:season',value=400,units='L/plant/season')
+    with pytest.raises(ValueError,match='incompatible unit'):
+        edit(s,'field-set',id=id,topic_id='carob',stage='settlement',field='amount',mode='source',evidence_id='irrigation-evidence:season')
+
+
+def test_group_guidance_metadata_is_validated_inspected_and_preserved(store):
+    s=store
+    g=dict(id='browse:ordered',label='Guide',parent_id='technology:irrigation',anchor_topic_id=None,
+           members=[dict(topic_id='nursery-irrigation',role='primary')],maintenance_rule='Preserve context',
+           description='Before planting\n\nRead dose and timing separately.',member_layout='vertical',
+           source_refs=[dict(source_id='IRR-003',page=143,locator='Nursery')])
+    raw=dict(batch_id='ordered-guide',summary='Guide metadata',base_revision=s.revision(),browse_groups=[g])
+    before=s.snapshot();assert s.import_batch(raw,True)['status']=='validated';assert s.snapshot()==before
+    s.import_batch(raw)
+    assert s.import_batch(raw)['status']=='unchanged'
+    assert Graph(s).inspect(g['id'])['record']['description']==g['description']
+    edit(s,'group-rename',id=g['id'],label='Renamed guide')
+    stored=Graph(s).inspect(g['id'])['record']
+    assert stored['member_layout']=='vertical' and stored['source_refs']==g['source_refs']
+    assert stored['description']==g['description']
+    invalid=copy.deepcopy(raw);invalid.update(batch_id='invalid-guide',base_revision=s.revision())
+    invalid['browse_groups'][0]['source_refs'][0]['page']=999
+    before=s.snapshot()
+    with pytest.raises(ValueError,match='Invalid source page'):s.import_batch(invalid)
+    assert s.snapshot()==before

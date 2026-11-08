@@ -10,10 +10,11 @@ import * as THREE from "three";
 import { Line2 } from "three/addons/lines/Line2.js";
 import { LineGeometry } from "three/addons/lines/LineGeometry.js";
 import { LineMaterial } from "three/addons/lines/LineMaterial.js";
-import { type Scene, PLANE_GAP, isInteractiveRecord } from "./scene";
+import { type Scene, PLANE_GAP, isInteractiveRecord, sceneFrame } from "./scene";
 import {
   cardMesh,
   textMesh,
+  connectionTextMesh,
   disposeTree,
   hoverFrameGeometry,
 } from "./sceneMeshes";
@@ -51,7 +52,10 @@ type Props = {
   onError: (message: string) => void;
 };
 const rad = (n: number) => (n * Math.PI) / 180,
-  empty = { nodes: [], links: [] };
+  empty = { nodes: [], links: [] },
+  // Closely spaced cards, labels and the translucent layer must remain distinct
+  // throughout the wide zoom range, including oblique camera angles.
+  rendererConfig = { logarithmicDepthBuffer: true };
 export const SceneView = forwardRef<SceneHandle, Props>(
   function SceneView(props, ref) {
     const host = useRef<HTMLDivElement>(null),
@@ -136,22 +140,9 @@ export const SceneView = forwardRef<SceneHandle, Props>(
       const cards = live.current.scene.cards;
       if (!cards.length) return;
       const box = new THREE.Box3();
-      for (const c of cards) {
-        box.expandByPoint(
-          new THREE.Vector3(
-            c.position.x + live.current.scene.offset.x - c.width / 2,
-            -c.position.y + live.current.scene.offset.y - c.height / 2,
-            0,
-          ),
-        );
-        box.expandByPoint(
-          new THREE.Vector3(
-            c.position.x + live.current.scene.offset.x + c.width / 2,
-            -c.position.y + live.current.scene.offset.y + c.height / 2,
-            0,
-          ),
-        );
-      }
+      const frame=sceneFrame(live.current.scene,size.width/size.height),offset=live.current.scene.offset;
+      box.expandByPoint(new THREE.Vector3(frame.minX+offset.x,frame.minY+offset.y,0));
+      box.expandByPoint(new THREE.Vector3(frame.maxX+offset.x,frame.maxY+offset.y,0));
       const target = box.getCenter(new THREE.Vector3()),
         dimensions = box.getSize(new THREE.Vector3()),
         dir = reset
@@ -214,6 +205,13 @@ export const SceneView = forwardRef<SceneHandle, Props>(
       return () => clearTimeout(timer);
     }, []);
     useEffect(() => {
+      if(!ready)return;
+      // Trackball caches canvas dimensions at construction, before the graph has
+      // its final size. Refresh after layout so pointer deltas use the real canvas.
+      const frame=requestAnimationFrame(()=>get()?.controls.handleResize());
+      return ()=>cancelAnimationFrame(frame);
+    },[ready,size.width,size.height]);
+    useEffect(() => {
       if (!ready) return;
       const v = get();
       if (!v) return;
@@ -221,7 +219,7 @@ export const SceneView = forwardRef<SceneHandle, Props>(
       v.camera.far = 250000;
       v.camera.updateProjectionMatrix();
       Object.assign(v.controls, {
-        enableDamping: true,
+        staticMoving: true,
         enablePan: true,
         panSpeed: DRAG_SENSITIVITY,
         enableRotate: true,
@@ -345,8 +343,9 @@ export const SceneView = forwardRef<SceneHandle, Props>(
             line.userData.record = e.record;
             line.userData.interactive = isInteractiveRecord(scene, e.id);
             selectable.push(line);
-            if (active || e.record.kind === "route") {
-              const label = textMesh(
+            if (e.centreSpoke || active || e.record.kind === "route") {
+              const placement=e.labelPlacement;
+              const label = placement ? connectionTextMesh(placement.lines,placement.width,placement.height,props.theme) : textMesh(
                 e.record.label,
                 props.theme,
                 Math.min(
@@ -356,7 +355,15 @@ export const SceneView = forwardRef<SceneHandle, Props>(
                 32,
               );
               label.position.copy(start.clone().lerp(end, 0.5));
+              if(placement)label.position.set(placement.position.x,-placement.position.y,3);
               label.position.z = 3;
+              if(placement?.anchor){
+                const leader=new THREE.Line(new THREE.BufferGeometry().setFromPoints([
+                  new THREE.Vector3(placement.anchor.x,-placement.anchor.y,2),
+                  new THREE.Vector3(placement.position.x,-placement.position.y,2),
+                ]),new THREE.LineBasicMaterial({color}));
+                layer.add(leader);
+              }
               label.userData.record = e.record;
               label.userData.interactive = line.userData.interactive;
               if (dimmed)
@@ -366,7 +373,7 @@ export const SceneView = forwardRef<SceneHandle, Props>(
               selectable.push(label);
             }
           }
-          if (e.relationshipIds.length === 1) {
+          if (e.relationshipIds.length === 1 || e.record.directed) {
             const direction = end.clone().sub(start).normalize(),
               arrow = new THREE.Mesh(
                 new THREE.ConeGeometry(4, 12, 6),
@@ -381,20 +388,25 @@ export const SceneView = forwardRef<SceneHandle, Props>(
           }
         }
         if (scene.cards.length) {
-          const minX =
-              Math.min(...scene.cards.map((c) => c.position.x - c.width / 2)) -
-              25,
-            maxX =
-              Math.max(...scene.cards.map((c) => c.position.x + c.width / 2)) +
-              25,
-            minY =
-              Math.min(
-                ...scene.cards.map((c) => -c.position.y - c.height / 2),
-              ) - 25,
-            maxY =
-              Math.max(
-                ...scene.cards.map((c) => -c.position.y + c.height / 2),
-              ) + 25;
+          const {minX,maxX,minY,maxY}=sceneFrame(scene,size.width/size.height);
+          if (!historical) {
+            // The full layer surface softens previous views through the gaps.
+            // Keep it behind foreground content without masking the depth buffer.
+            const background = new THREE.Mesh(
+              new THREE.PlaneGeometry(maxX - minX, maxY - minY),
+              new THREE.MeshBasicMaterial({
+                color: p.canvas,
+                transparent: true,
+                opacity: 0.7,
+                depthWrite: false,
+                side: THREE.DoubleSide,
+                forceSinglePass: true,
+              }),
+            );
+            background.position.set((minX + maxX) / 2, (minY + maxY) / 2, -1);
+            background.renderOrder = -1;
+            layer.add(background);
+          }
           const geo = new THREE.BufferGeometry().setFromPoints([
               new THREE.Vector3(minX, minY, 0),
               new THREE.Vector3(maxX, minY, 0),
@@ -429,6 +441,19 @@ export const SceneView = forwardRef<SceneHandle, Props>(
           labels.push(title);
           layer.add(title);
           surfaces.push(title);
+        }
+        if (!historical) {
+          // Composite the backplate before foreground content in the same queue.
+          // Screen-space thick lines can extend behind its plane at steep angles;
+          // a late transparent pass would otherwise paint across those fragments.
+          // All foreground material opacities stay at 1 (fully opaque).
+          layer.traverse((object) => {
+            const material = (object as THREE.Mesh).material;
+            for (const m of Array.isArray(material) ? material : material ? [material] : []) {
+              m.transparent = true;
+              m.forceSinglePass = true;
+            }
+          });
         }
       };
       props.previous
@@ -890,6 +915,8 @@ export const SceneView = forwardRef<SceneHandle, Props>(
       >
         <ForceGraph3D
           ref={graph}
+          rendererConfig={rendererConfig}
+          controlType="trackball"
           width={size.width}
           height={size.height}
           graphData={empty}

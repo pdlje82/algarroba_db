@@ -82,6 +82,9 @@ export type BrowseGroup = {
   user_created?: boolean;
   members: { topic_id: string; role: "primary" | "shared" }[];
   maintenance_rule: string;
+  description?: string;
+  source_refs?: Ref[];
+  member_layout?: 'grid' | 'vertical';
 };
 export type Catalog = {
   revision: number;

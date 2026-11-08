@@ -45,7 +45,7 @@ export type Action =
   | { type: "depth" }
   | { type: "compare"; id: string }
   | { type: "tidy" };
-export function reduceExploration(s: State, a: Action): State {
+export function reduceExploration(s: State, a: Action, catalog?: Catalog): State {
   const n = structuredClone(s);
   delete n.camera;
   const createsView = [
@@ -92,6 +92,7 @@ export function reduceExploration(s: State, a: Action): State {
       n.positions = {};
       n.scope = "group";
       n.groupId = a.id;
+      if(catalog?.browse_groups.find(g=>g.id===a.id)?.member_layout==='vertical')n.grouping="none";
       n.search = "";
       break;
     case "openMembers":

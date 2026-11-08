@@ -1,0 +1,397 @@
+===== PDF PAGE 90 =====
+89
+II. Habitat restoration
+B
+Traditional reforestation
+Presentation
+Traditional reforestation is a reforestation 
+method used as a control group in the Life Nie­
+blas project, making it possible to establish a 
+database for comparing the results obtained 
+in the field with other reforestation method­
+ologies. This approach involves planting in­
+dividual plants in holes measuring 40x40x40 
+cm, without any additional tillage. A minimum 
+distance of 1.50 metres is maintained between 
+each plant to encourage their growth and de­
+velopment. Irrigation is provided by supplying 
+water to each plant using PE pipes.
+One of the main features of traditional re­
+forestation is that no additional equipment is 
+required for its implementation. This method is 
+widely considered to be suitable for reforest­
+ing degraded soils, despite its role as a control 
+method in the project. It allows the effects of 
+different reforestation approaches to be as­
+sessed and conclusions drawn about their re­
+spective effectiveness.
+Location
+Due to the nature of the soil, these measures must be adapted to the peculiarities of each area. 
+For example, there are areas where the soil is poor or very stony, which avoids the standard 40 
+cm deep planting hole.
+Amount of water
+Traditional reforestation requires regular irrigation in the first year to ensure the survival and 
+growth of the plants. Irrigation water is delivered individually to the base of each plant using PE 
+pipes. The amount of water required will depend on the specifics of the site and the water re­
+quirements of the plant species selected. It is essential to keep a close eye on soil moisture and 
+to provide an adequate amount of water to promote healthy growth.
+
+
+===== PDF PAGE 93 =====
+92
+Technical Manual. Life Nieblas
+B
+Location
+One advice is to avoid very humid areas, as the equipment is likely to deteriorate faster than in 
+arid areas due to insects and small vertebrate activity. In addition, a very sloping landscape is 
+not advantageous for cocoons, as they run the risk of being planted at an incline and spilling out 
+some of the water.
+Example of early degradation of the cocoon:
+Amount of water
+Reforestation with Cocoons requires irrigation during the first year to ensure the survival and 
+growth of the plants. Irrigation water is delivered individually to each plant using PE pipes. 
+The plant is initially irrigated on its base and the reservoir is filled with 20L. Afterwards, different 
+irrigations will be carried out if necessary during the first year of growth. It is essential to keep a 
+close eye on soil moisture and to provide an adequate amount of water to promote healthy growth.
+Cost
+The cocoon is a commercial system, so it can be bought from various companies. It costs be­
+tween €7 and €8 per unit, without shipping and handling. 
+For Life Nieblas, the cocoons cost 7.8 each.
+End-of-life
+No reuse is possible with a cocoon, it is a single use because the cocoon degrades in the soil 
+providing nutrients to the plant.
+Cocoon Performance in Life Nieblas
+Planted trees:
+1993 trees
+Survival rate:
+68%
+Cost per surviving tree:
+109 euros
+Need of water per trees:
+49 L
+Carbon footprint:
+with FWC: 12,2 kg CO2 eq.
+with tank truck: 1,5 kg CO2 eq.
+
+
+===== PDF PAGE 95 =====
+94
+Technical Manual. Life Nieblas
+B
+The Russel mesh type PE mesh is only 1m high 
+with 44.5cm in diameter too. The diameter of 
+the holes are 3 x 3mm:
+Location
+IFWC is a method directly dependent on fog 
+affection. However, any rain event or drizzle 
+will also result in higher humidity concentration 
+within its structure. Additionally this method pro­
+tects seedlings against excessive isolation and 
+wind gusts. Therefore the IFWC is significantly 
+more versatile than any other method tested in 
+Life Nieblas. Nevertheless, good fog collection 
+conditions should be the primary parameter to 
+consider when implementing this method.
+Amount of water
+Even though the IFWC condenses water for the 
+plant, this type of reforestation requires regular 
+irrigation in the first year to ensure the surviv­
+al and growth of the plants. Irrigation water is 
+delivered individually to each plant using PE 
+pipes. The amount of water required will de­
+pend on the specifics of the site and the water 
+requirements of the plant species selected. It is 
+essential to keep a close eye on soil moisture 
+and to provide an adequate amount of water to 
+promote healthy growth.
+
+
+===== PDF PAGE 97 =====
+96
+Technical Manual. Life Nieblas
+B
+Autonomous Fluid Discharge System
+Presentation and general system description
+The Autonomous Fluid Discharge System (AFDS) aims to grow plants that are difficult to access 
+autonomously, without energy or human intervention. It was invented from the original idea of a 
+farmer called Emilio Navarro Rosario. He has worked on the project collaborating in the develop­
+ment and monitoring of these systems together with ITC staff. As a farmer in remote places, with 
+difficult access and scarcity of water, Emilio had to overcome the difficulties of the environment 
+by making time compatible with other jobs. This intelligent solution has not only saved you time, 
+but has also given you autonomy and a considerable reduction in energy use.
+The AFDS reforestation systems will be aimed to supply water through a drip irrigation system. 
+For this purpose, reforestation systems with AFDS have been assigned to supply specific irriga­
+tion areas. The general reforestation system with AFDS and drip irrigation network consists of 
+the following main elements:
+
+
+===== PDF PAGE 98 =====
+97
+II. Habitat restoration
+B
+This reforestation technique or system works as follows:
+Water generated on an irregular basis by means of a fog collector, is hydraulically transferred into 
+a water tank where the AFDS will be installed. Once a certain water level is reached, the AFDS 
+Will start running automatically and discharging water from the tank through the drip irrigation 
+network and watering each plant.
+Once the tank will be empty, the AFDS returns to its initial state, waiting for the tank to fill up in 
+order to begin the cycle all over again.
+The amount of time needed for each irrigation cycle will depend on the amount of water gener­
+ated by the fog collector (or irregular source of water) and the amount of water to be stored in 
+the tank before the AFDS is activated and starts irrigating and de characteristics of the irrigation 
+network. For this reason, the AFDS system can be adjusted in height, so that irrigation can be 
+carried out with a smaller amount of water. In other words, by regulating the AFDS, the amount 
+of water needed for each irrigation is also adjusted. We suggest the regulation way because, 
+depending on the results obtained from the first tests, and in order to avoid water stress in the 
+plant, during low fog water collection periods, the system will allow us to shorten the irrigation 
+cycles, which will translate in reducing the amount of water supplied.
+Concept
+AFDS is a device that allows the fluid to be dis­
+charged from a tank automatically, controlled and 
+autonomous, without the need for any electrical 
+energy or electronic control device, joining effi­
+ciency, autonomy and regularity characteristics 
+without electrical consumption or CO2 emissions. 
+The device is designed based on the physical 
+laws of buoyancy of the Archimedes principle 
+and the geometric shapes of the Gauss bell.
+The AFDS device consists of the following ele­
+ments:
+	
+࡟Discharge pipe 
+	
+࡟Flotation vessel 
+	
+࡟Protection shell 
+	
+࡟Clamping base
+Diagram 2. AFDS schema
+
+
+===== PDF PAGE 99 =====
+98
+Technical Manual. Life Nieblas
+B
+AFDS operation steps are represented in Diagram 3 How does AFDS work?:
+1. Tank filling.
+2. Vessel floatation.
+3. Maximum level.
+4. Start of discharge.
+5. Tank discharge.
+6. End of discharge.
+The AFDS can be installed both inside and outside the tank. The advantages and disadvantages 
+of each option are described below.
+Installing an AFDS inside the tank:
+	
+Advantages:
+	
+࡟The AFDS is externally invisible.
+	
+࡟Easy to install in tanks with a capacity of less than 1 000 L.
+	
+࡟The system is more compact.
+	
+࡟Less manufacturing materials are needed, as no external support is required.
+	
+Disadvantages:
+	
+࡟As it is installed inside the tank, accessibility is worse and maintenance is more costly
+	
+࡟Anchoring systems inside the tank are needed.
+Installing an AFDS outside the tank:
+	
+Advantages:
+	
+࡟Faster installation.
+	
+࡟Easy installation in tanks with a capacity of more than 1.000 L.
+	
+࡟Adjustable tank water discharge level.
+	
+࡟More accessible maintenance.
+	
+Disadvantages:
+	
+࡟The system remains visible and in the open air and affected by temperature changes 
+and dilations that can unsettle the system.
+	
+࡟More manufacturing materials are needed, as it requires an external fixing and level 
+regulation casing.
+	
+࡟More regular maintenance.
+	
+࡟Greater chance of blockage.
+Diagram 3. How does AFDS work?
+
+
+===== PDF PAGE 103 =====
+102
+Technical Manual. Life Nieblas
+B
+Water network
+Presentation
+Water storage is essential for a reforestation project, as plants may need to be watered through­
+out the year. In order to facilitate access to water in the most remote areas, it is necessary to 
+have water tanks and to distribute them strategically. Different types of tank are available to meet 
+these needs.
+Material
+Consider specific needs when choosing a particular type of water tank:
+1. Flexible tank: 12,000 litres.
+a. This type of tank can be installed anywhere on a flat surface, but care must be 
+taken as erosion and sediment build-up could displace the tank.
+b. Sealed containers with a 70mm diameter filling valve.
+c. Discharge valve 50mm in diameter with Barcelona racor. 
+d. They will include protection mat, pick-up case and fixing kit.
+2. Polyethylene tanks: 5,000 litres / 1,000 litres.
+a. These tanks need a stable location to be installed.
+b. Material with UV protection and sufficiently opaque so as not to allow algal 
+growth.
+c. Top door-trap 400mm of minimum diameter.
+d. Water filling and discharge independent valves 40-50mm diameter.
+3. Double-shell metal tanks: 5,000 litres.
+a. These tanks require hard ground to prevent them sinking into the ground due to 
+their weight.
+The estimated number of reservoirs required is based on the number of plants present on the 
+project. It is assumed that sufficient water must be available for irrigation during the summer. 
+This means that 12.5 litres of water are needed for each plant planted during the year, over a 
+three-month period, giving a total around 40 litres.
+Water tanks
+
+
+===== PDF PAGE 104 =====
+103
+II. Habitat restoration
+B
+Location
+The location of the tanks must be carefully chosen to ensure an adequate supply of water:
+Tanks should be placed high up to allow water to flow by gravity, without the need for additional 
+energy.
+However, if they are too far from the irrigation areas, it is advisable to place tanks halfway up the 
+field to adapt the water pressure, ensure a continuous flow and reduce the effort required during 
+irrigation.
+The location of reservoirs should be consistent with the activity being carried out and the type of 
+land. In areas where irrigation is limited or where there is little vegetation, it is not necessary to 
+have too big tanks. However, installing a small tank for a plot with a big need of water would not 
+be very attractive either, as it would have to be constantly refilled.
+It is also advantageous to be able to connect tanks in series to increase storage capacity.
+The tanks must be compatible with the project’s general irrigation network, so that the stored 
+water can be used efficiently. 
+Amount of water
+It is necessary to calculate the amount of water required during the summer so as not to run 
+out, particularly for the three most important irrigations of the year. Based on the Life Nieblas 
+irrigation regime, an estimate of 40 litres per plant (around 12.5L per irrigation) for the first year is 
+considered. For example, for a project consisting of 3,000 plants planted over the course of the 
+year, water storage of at least 120,000 litres is required. These data may vary depending on the 
+project and water requirements ( part of the irrigation regime).
+
+
+===== PDF PAGE 142 =====
+141
+II. Habitat restoration
+C
+3. Management and maintenance 
+Irrigation frequency and quantity
+Reforestation helps to limit desertification. However, after planting, the roots of young plants 
+have difficulty in reaching the water in the soil, reducing their survival. Also, given the heat and 
+rapid evaporation of water and the long dry summer period, watering is essential in some parts 
+of the world.
+Therefore you need to think about an irrigation regime that is suited to the project, taking into 
+account the type of soil, rainfall and the type of tree planted. You need to think about the different 
+types of irrigation possible and identify the quantity of water required and their frequency (or the 
+parameter triggering irrigation).
+During Life Nieblas, there were 4 types of irrigation: nursery (very regular for young plants), main­
+tenance (at regular, continuous intervals and for the most difficult periods), settlement (when the 
+tree is planted) and support (when the tree is under stress).
+
+
+===== PDF PAGE 143 =====
+142
+Technical Manual. Life Nieblas
+C
+It is possible to set up different irrigation regimes in the same project, by varying the frequency 
+or period of irrigation, so as to compare the evolution of the trees and their development in order 
+to identify the best yield. Care must be taken to identify each plot according to each irrigation 
+regime, so that subsequent analysis can be carried out.
+Here are the choices made for the Life Nieblas project:
+	
+࡟Nursery: irrigation the plants before planting them. Using a classic hose, water twice a week 
+all the nursery with a amount around 30L for 100 plants..
+	
+࡟Settlement: the water used in every reforestation as the first watering provided to plants right 
+after they have been planted in the field (usually around 10-15L/seedling).
+- Traditional reforestation method settlement irrigation 10-15L.
+- IND 10-15 settlement irrigation.
+- AFDS: 10-15 of settlement.
+- Cocoon: settlement irrigation 10-15 and tank filling with 20L.
+	
+࡟Support irrigation refers to the amount of 
+water mostly used due to extreme weath­
+er conditions (i.e. heat waves, suspend­
+ed dust periods, lack of ‘normal pattern’ 
+weather, etc.).
+You need to check the weather regularly, as 
+well as the condition of the plants. If there 
+is no rain in the forecast for a long time, it 
+may be necessary to irrigate the plants to 
+avoid losing the effort invested in reforest­
+ation. Before deciding to water the trees, it 
+is advisable to monitor the condition of the 
+plants. If many of them start to show signs 
+of drought (yellow, dry...), irrigation may also 
+become necessary.
+- Maintenance  refers to the classic 
+irrigation during summer.
+- Traditional reforestationn meth­
+od: 15L watering per plant, once a 
+month from July to September (both 
+inclusive).
+- SAD: connected to the fog water 
+collectors, when the tank is full, the 
+irrigation will start, releasing about 
+15L per plant every 3 weeks.
+- Cocoon: 15L watering per plant, 
+once a month from July to Septem­
+ber (both inclusive).
+- IND: 10L watering per plant, once a 
+month from July to September (both 
+inclusive).
+
+
+===== PDF PAGE 152 =====
+151
+II. Habitat restoration
+D
+2. Irrigation water monitoring
+Objective
+To monitor water usage within the different reforestation methods as well as the purpose of each 
+irrigation event, technicians have divided water use in the following parameters: Nursery, Tradi­
+tional1, AFDS1, IFWC1, Cocoon1, and IFWC2 for reforestation methods during period 2021-22. 
+Purpose subdivisions are: settlement, maintenance, support, waste and other. This system al­
+lows technicians to better judge the amount of water required per reforestation system but also 
+to find out about possible losses, incidents and other activities that require the use of water.
+Material
+For traditional hose irrigation, the amount of water present before and after irrigation should be 
+noted, so that the amount of water used can be calculated by subtraction.
+In addition, to find out how many plants have been watered, the use of a tally counter is very 
+useful.
+For each AFDS reforestation system, water metres with pulse sensors will be installed, as well 
+as communication via Wi-Fi, with the data collection system located in the meteorological tower. 
+This is to determine the following:
+	
+࡟The number of discharges/irrigations performed in the system.
+	
+࡟The frequency of these irrigations.
+	
+࡟The quantity or volume of water (in m3) supplied in each irrigation.
+The water metres have to achieve a precise measure­
+ment result, even with difficult water quality (suspended 
+solids) or in difficult installation situations (outdoors). It 
+must be equipped with communication interface for:
+	
+࡟Electronic pulse.
+	
+࡟Wired M-bus.
+	
+࡟Radio via wireless M-bus.
+With these characteristics, the water metre selected is the multi-jet dry dial metre MTKD-M DN 
+32 model from ZENNER International GmbH & Co. KG.

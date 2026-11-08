@@ -1,0 +1,68 @@
+import assert from 'node:assert/strict';
+import {pathToFileURL} from 'node:url';
+import {writeFileSync} from 'node:fs';
+const {chromium}=await import(pathToFileURL(process.env.KGB_PLAYWRIGHT_MODULE).href);
+const url='http://127.0.0.1:8771';
+assert.ok((await(await fetch(url+'/api/health')).json()).project.replaceAll('\\','/').endsWith('/output/irrigation-audit'));
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const page=await browser.newPage({viewport:{width:1600,height:1100},reducedMotion:'reduce'});
+page.setDefaultTimeout(20000);
+const checks=[],errors=[];page.on('pageerror',e=>errors.push(e.message));
+const check=(name,ok=true)=>{assert.ok(ok,name);checks.push(name);console.log('PASS',name);};
+const idle=async()=>{await page.locator('.graph-canvas canvas').waitFor();await page.locator('.loading').waitFor({state:'hidden'});};
+const phaseNames=['Nursery watering','Settlement watering','Summer maintenance watering','Support watering during stress'];
+const current=async()=>page.evaluate(()=>{const p=JSON.parse(localStorage.getItem('kgb:exploration:v6'));return p.history.entries[p.history.index];});
+const painted=async(n)=>page.waitForFunction(n=>{const el=document.querySelector('.pdf-scroll');return el?.getAttribute('aria-busy')==='false'&&Number(el.dataset.renderedPage)===n;},n);
+try{
+ await page.goto(url);await idle();
+ await page.getByLabel('Group by',{exact:true}).selectOption('type');await idle();
+ await page.locator('.sidebar').getByRole('button',{name:/^Irrigation lifecycle/}).click();await idle();
+ await page.locator('.inspector').getByRole('heading',{name:'Irrigation lifecycle',exact:true}).waitFor();
+ check('Opening lifecycle shows the guide and resets grouping',await page.getByLabel('Group by',{exact:true}).inputValue()==='none'&&await page.locator('.inspector').innerText().then(t=>t.includes('L/plant/event')&&t.includes('Support can overlap')&&t.includes('AFDS')));
+ const visible=page.locator('.visible-topics');await visible.locator('summary').click();
+ assert.deepEqual(await visible.getByRole('button',{name:/^Inspect /}).allTextContents(),phaseNames);
+ const s=await current(),ids=['nursery-irrigation','settlement-irrigation','maintenance-irrigation','support-irrigation'];
+ check('Graph and accessible list have matching top-to-bottom order',ids.every(id=>s.positions[id].x===0)&&ids.slice(1).every((id,i)=>s.positions[id].y>s.positions[ids[i]].y));
+ await page.screenshot({path:'output/irrigation-audit/lifecycle-outline.png'});
+ for(const [i,name] of phaseNames.entries()){
+  await visible.getByRole('button',{name:'Inspect '+name,exact:true}).click();
+  const text=await page.locator('.inspector').innerText();
+  check(name+' exposes dose, timing, age and sources',['Amount','Frequency or trigger','Applicable period','Age and stock','Limitations'].every(k=>text.includes(k))&&await page.locator('.inspector .refs button').count()>0);
+  if(i===0)check('Nursery average and source batch quantity are traceable',text.includes('0.3 L/plant/event')&&text.includes('30 L for 100 plants'));
+  if(i===1)check('Settlement and reservoir fill are distinguished',text.includes('10–15 L/plant/event')&&text.includes('20 L reservoir fill'));
+  if(i===3)check('Support amount stays explicitly unspecified',text.includes('Not specified in this source'));
+ }
+ await visible.getByRole('button',{name:'Inspect Nursery watering',exact:true}).click();
+ await page.locator('.inspector .refs button').filter({hasText:/IRR-003.*p143/}).first().click();await painted(143);
+ check('LIFE citation opens PDF position 143 (printed 142)',await page.getByLabel('PDF page',{exact:true}).inputValue()==='143');
+ await page.getByRole('button',{name:'Close source',exact:true}).click();
+ await page.locator('.inspector .refs button').filter({hasText:/FOREST-002.*p72/}).first().click();await painted(72);
+ check('Carob nursery table citation renders at the exact position');
+ await page.getByRole('button',{name:'Close source',exact:true}).click();
+ await page.reload();await idle();
+ check('Ordered lifecycle survives reload',(await current()).groupId==='browse:irrigation-lifecycle');
+ await page.locator('.sidebar').getByRole('button',{name:/^Carob plant communities/}).click();await idle();
+ if(!(await visible.locator('summary').getAttribute('open')))await visible.evaluate(el=>el.open=true);
+ check('Community folder contains both topics',await visible.getByRole('button',{name:'Inspect Mediterranean carob associations',exact:true}).count()===1&&await visible.getByRole('button',{name:'Inspect Carob communities in Almería',exact:true}).count()===1);
+ await visible.getByRole('button',{name:'Inspect Carob communities in Almería',exact:true}).click();
+ await page.locator('.inspector').getByRole('button',{name:'Explore this topic',exact:true}).click();await idle();
+ const neighbours=(await current()).view.nodes.map(n=>n.id);check('Regional connections expose the three finca examples',['las-labores','la-tortola','la-alcantarilla'].every(id=>neighbours.includes(id)));check('General cork-oak evidence is not inherited by the region',!neighbours.includes('cork-oak'));
+ await page.screenshot({path:'output/irrigation-audit/almeria-examples.png'});
+ await page.getByRole('button',{name:'Groups & communities',exact:true}).click();
+ const panel=page.getByRole('dialog',{name:'Groups and communities'});
+ await panel.getByRole('button',{name:'Communities',exact:true}).click();
+ const catalog=await(await fetch(url+'/api/catalog')).json(),community=catalog.communities.find(c=>c.label==='QA unit compatibility');assert.ok(community);
+ await panel.getByLabel('Selected community',{exact:true}).selectOption(community.id);
+ await panel.locator('.planning-members').getByRole('button',{name:/Algarrobo/}).click();
+ await panel.getByLabel('Irrigation stage',{exact:true}).selectOption('summer-maintenance');
+ const amount=panel.locator('.irrigation-field').filter({has:page.getByLabel('Edit amount',{exact:true})});
+ check('Planning dose uses canonical event units',(await amount.innerText()).includes('L/plant/event'));
+ await panel.getByLabel('Source baseline for amount',{exact:true}).selectOption('irrigation-evidence:labores-season-total');
+ check('Seasonal total cannot auto-fill an event dose',await amount.getByRole('button',{name:'Use source value',exact:true}).isDisabled());
+ await panel.getByLabel('Source baseline for amount',{exact:true}).selectOption('irrigation-evidence:life-maintenance-ind');
+ check('Generic project quantity cannot auto-fill a species dose',await amount.getByRole('button',{name:'Use source value',exact:true}).isDisabled());
+ await panel.getByLabel('Source baseline for amount',{exact:true}).selectOption('irrigation-evidence:buenavista-dose');
+ check('Species-specific compatible event evidence remains selectable',await amount.getByRole('button',{name:'Use source value',exact:true}).isEnabled());
+ check('No browser exceptions',errors.length===0);
+}catch(e){await page.screenshot({path:'output/irrigation-audit/browser-failure.png'}).catch(()=>{});console.error(e.stack);process.exitCode=1;}
+finally{writeFileSync('output/irrigation-audit/browser-results.json',JSON.stringify({checks,errors},null,2));await Promise.race([browser.close(),new Promise(resolve=>setTimeout(resolve,2500))]);}

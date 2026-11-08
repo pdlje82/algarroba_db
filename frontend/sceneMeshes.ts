@@ -88,6 +88,16 @@ export function textMesh(
   );
   return mesh;
 }
+/** Same measured surface as the circle's collision boxes, without truncated words. */
+export function connectionTextMesh(lines: string[], width: number, height: number, theme: Theme) {
+  const canvas=document.createElement('canvas');
+  canvas.width=Math.ceil(width*3);canvas.height=Math.ceil(height*3);
+  const ctx=canvas.getContext('2d')!;
+  ctx.fillStyle=palettes[theme].canvas;ctx.fillRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle=palettes[theme].text;ctx.font='bold 60px Segoe UI';ctx.textBaseline='middle';ctx.textAlign='center';
+  lines.forEach((line,i)=>ctx.fillText(line,canvas.width/2,canvas.height/2+(i-(lines.length-1)/2)*72,canvas.width-30));
+  return new THREE.Mesh(new THREE.PlaneGeometry(width,height),new THREE.MeshBasicMaterial({map:texture(canvas),side:THREE.DoubleSide}));
+}
 // CPU image cache is bounded by the shipped collection; GPU textures belong to each mesh.
 const thumbnails = new Map<string, Promise<HTMLImageElement>>();
 function thumbnail(url: string) {

@@ -1,0 +1,25 @@
+{
+  "checks": [
+    "Opening lifecycle shows the guide and resets grouping",
+    "Graph and accessible list have matching top-to-bottom order",
+    "Nursery watering exposes dose, timing, age and sources",
+    "Nursery average and source batch quantity are traceable",
+    "Settlement watering exposes dose, timing, age and sources",
+    "Settlement and reservoir fill are distinguished",
+    "Summer maintenance watering exposes dose, timing, age and sources",
+    "Support watering during stress exposes dose, timing, age and sources",
+    "Support amount stays explicitly unspecified",
+    "LIFE citation opens PDF position 143 (printed 142)",
+    "Carob nursery table citation renders at the exact position",
+    "Ordered lifecycle survives reload",
+    "Community folder contains both topics",
+    "Regional connections expose the three finca examples",
+    "General cork-oak evidence is not inherited by the region",
+    "Planning dose uses canonical event units",
+    "Seasonal total cannot auto-fill an event dose",
+    "Generic project quantity cannot auto-fill a species dose",
+    "Species-specific compatible event evidence remains selectable",
+    "No browser exceptions"
+  ],
+  "errors": []
+}

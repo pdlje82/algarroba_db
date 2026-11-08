@@ -47,6 +47,7 @@ import {
 } from "../frontend/explorationStorage.ts";
 import { readFileSync } from "node:fs";
 import { compactGrid } from "../frontend/compactLayout.ts";
+import { relationshipCircle,boxesOverlap } from '../frontend/relationshipCircle.ts';
 const topics = [
   {
     id: "carob",
@@ -1247,7 +1248,7 @@ test("Remove centre uses a packed grid, does not create a layer, and routes cann
   );
 });
 
-test("topic exploration includes the marked centre in the same tight grid as its neighbours", () => {
+test("topic exploration places the marked centre inside a tight, clear neighbour circle", () => {
   for (const endpoint_ids of [
     ["carob"],
     ["carob", "restoration", "monitoring"],
@@ -1267,11 +1268,11 @@ test("topic exploration includes the marked centre in the same tight grid as its
       view: v,
     };
     const scene = buildScene(s, v, catalog);
-    assert.deepEqual(
-      scene.cards.map((c) => c.position),
-      compactGrid(scene.cards.length, 1.6, 234, 124).points,
-      "the centre gets an ordinary grid slot with no reserved gap",
-    );
+    assert.equal(scene.layout,'circle');
+    assert.deepEqual(scene.positions.drones,{x:0,y:0});
+    const neighbours=scene.cards.filter(c=>c.id!=='drones');
+    assert.equal(neighbours.filter(c=>c.position.y<0).length,Math.floor(neighbours.length/2));
+    assert.equal(neighbours.filter(c=>c.position.y>0).length,Math.ceil(neighbours.length/2));
     assert.equal(scene.cards.length, endpoint_ids.length + 1);
     assert.ok(scene.cards.find((c) => c.id === "drones").record.viewCentre);
     for (let i = 0; i < scene.cards.length; i++)
@@ -1279,8 +1280,7 @@ test("topic exploration includes the marked centre in the same tight grid as its
         const a = scene.cards[i],
           b = scene.cards[j];
         assert.ok(
-          Math.abs(a.position.x - b.position.x) >= a.width + 24 ||
-            Math.abs(a.position.y - b.position.y) >= a.height + 24,
+          !boxesOverlap({...a.position,width:a.width,height:a.height},{...b.position,width:b.width,height:b.height}),
           "cards including the centre have full-size clearance",
         );
       }
@@ -1677,7 +1677,7 @@ test("focused member restore clears scattered slots but preserves preview positi
 });
 
 
-test("all scopes and grouping choices repair scattered layouts and retain healthy grids", () => {
+test("all scopes and grouping choices repair scattered layouts and retain healthy circles or grids", () => {
   for (const scope of ["overview", "group", "neighbors", "search"])
     for (const grouping of ["none", "family", "type", "place"])
       for (const aspect of [0.6, 1.6, 3]) {
@@ -1686,9 +1686,15 @@ test("all scopes and grouping choices repair scattered layouts and retain health
         const fresh = buildScene(s, v, catalog, aspect);
         s.positions = Object.fromEntries(fresh.cards.map((c, i) => [c.id, { x: i * 888, y: i * 377 }]));
         const repaired = buildScene(s, v, catalog, aspect);
-        assert.deepEqual(repaired.cards.map((c) => c.position), compactGrid(repaired.cards.length, aspect, 234, 124).points);
+        assert.deepEqual(repaired.positions,fresh.positions);
+        if(scope!=='neighbors')assert.deepEqual(repaired.cards.map((c) => c.position), compactGrid(repaired.cards.length, aspect, 234, 124).points);
+        else assert.equal(repaired.layout,'circle');
         s.positions = repaired.positions;
-        assert.deepEqual(buildScene(s, v, catalog, 2.3).positions, repaired.positions, "camera/viewport changes retain a healthy layout");
+        const resized=buildScene(s,v,catalog,2.3);
+        if(scope==='neighbors'){
+          assert.equal(resized.key,repaired.key,'Viewport adaptation retains the same logical layer');
+          assert.deepEqual(resized.positions.carob,{x:0,y:0});
+        }else assert.deepEqual(resized.positions,repaired.positions,'Grid viewport changes retain a healthy layout');
       }
 });
 
