@@ -12,7 +12,7 @@ GlobalWorkerOptions.workerSrc = pdfWorker;
 /** A source-viewer failure must never unmount the working exploration. */
 export class PdfBoundary extends React.Component<{
   children: React.ReactNode;
-  source: Ref;
+  source: Ref & {page:number};
   close: () => void;
 }, { error: string | null }> {
   state: { error: string | null } = { error: null };
@@ -43,7 +43,7 @@ export default function PdfPanel({
   catalog,
   close,
 }: {
-  source: Ref;
+  source: Ref & {page:number};
   catalog: Catalog;
   close: () => void;
 }) {

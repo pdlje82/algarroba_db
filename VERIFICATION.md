@@ -1555,3 +1555,35 @@ source-viewer-results.json, source-viewer-working.png and browser-results.json. 
 script is reproduce-source-blank.mjs in that output folder. Reproduce the regression suite with
 the isolated QA helper, npm run test:source-viewer / test:browser and the documented Playwright
 configuration. Existing tabs need one reload to load this replacement main bundle.
+
+
+## Plant illustration intake — 8 November 2026
+
+Published checked batch plant-illustrations-and-focused-profiles-2026-11-08 at revision 5.
+The 46 original RGBA PNGs are linked to 23 canonical plants, with 69 WebP derivatives.
+Added 10 species, 4 habitat topics, 16 relationships, 7 findings, 12 sources and 3 factual
+PDF positions. All original factual fields/relationships/findings and browse groups remain
+intact; 13 existing topics gain illustration notes. Existing nine source files and all old-app
+images retain their original SHA-256 hashes. Registered source files now have portable copies.
+
+Validation: 43 backend tests, 48 frontend tests, 39 plant-image browser checks,
+20 PDF-viewer regression checks, production build and git diff --check passed.
+Image checks include all 23 pairs, canvas name bounds, original-size views, narrow screens,
+themes, persistence, missing-image/thumbnail errors, retry and PDF/image/web source handling.
+No browser JavaScript exceptions. The existing Vite main-chunk size advisory remains.
+
+A relocated copy served 136 image/source requests with an audit hook
+installed before backend import forbidding access to the old repository. Live revision-5
+Carob viewer also opened and decoded on the normal server (8765). Browser writes remain isolated.
+Artifacts/report: output/plant-images-qa/; PLANT_IMAGES.md.
+Recovery snapshot: backups/pre-plant-images-20261108-112805/. Post-import full backup:
+backups/knowledge-r5-20261108-114920-203462.sqlite and matching .media.zip.
+
+Fine Salsola morphology was not newly verified when its old detail PDF was rejected; Kew
+identity and UAL habitat evidence were used instead. Kew's archived record explicitly identifies
+a reviewed excerpt, since direct webpage archiving was denied. The report preserves all
+coverage limits and distinguishes old illustration-review notes from new botanical findings.
+
+Additional live-renderer regression: 22 hover/picking/domain checks passed against the
+isolated image-enabled store, including clicking artwork without navigation and rejecting
+domain-excluded artwork clicks. No runtime exceptions.

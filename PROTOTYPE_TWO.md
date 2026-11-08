@@ -264,3 +264,12 @@ cancelled render task to settle before assigning canvas dimensions or reusing th
 the active task commits rendered-page/status. The graph, camera, selection, saved exploration,
 knowledge revision and source/ingestion metadata remain unchanged. The focused browser suite
 covers exact citations, actual rendered pixels, all nine editions, retries and forced failures.
+
+
+## Plant media intake
+
+The 8 November plant intake extends the existing source registry with managed PDF/image/web
+records and a separate SQLite plant_images collection. Media never becomes factual graph edges.
+Catalog/inspection/exploration enrich species with current public image metadata; restored scenes
+resolve it from canonical topic IDs. Cards remain 234×124; async artwork changes only their canvas
+texture. See PLANT_IMAGES.md for storage, endpoints, source contracts, evidence scope and recovery.

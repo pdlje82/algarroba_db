@@ -6,12 +6,9 @@ import { buildScene, previousScenes, PLANE_GAP } from "../frontend/scene.ts";
 const { chromium } = await import(
     pathToFileURL(process.env.KGB_PLAYWRIGHT_MODULE).href
   ),
-  url = "http://127.0.0.1:8769";
-assert.ok(
-  (await (await fetch(url + "/api/health")).json()).project
-    .replaceAll("\\", "/")
-    .endsWith("/output/consolidation-qa"),
-);
+  url = process.env.KGB_TEST_URL || "http://127.0.0.1:8769";
+const qaProject=(await (await fetch(url + "/api/health")).json()).project.replaceAll("\\", "/");
+assert.ok(qaProject.endsWith("/output/consolidation-qa") || qaProject.endsWith("/output/plant-images-qa"));
 const browser = await chromium.launch({ channel: "msedge", headless: true }),
   page = await browser.newPage({
     viewport: { width: 1600, height: 1100 },
@@ -197,7 +194,7 @@ try {
   await idle();
   await primeCamera();
   d = await info();
-  const outside = d.scene.cards.find((c) => c.record.domain === "ecosystem"),
+  const outside = d.scene.cards.find((c) => c.record.plant_images?.length) || d.scene.cards.find((c) => c.record.domain === "ecosystem"),
     inside = d.scene.cards.find((c) => c.id === "cocoon");
   await hover(point(d, outside));
   check(
@@ -212,6 +209,11 @@ try {
       .getByRole("heading", { name: outside.record.label, exact: true })
       .isVisible(),
   );
+  if(outside.record.plant_images?.length){
+    const thumbnailPoint=point(d,outside,-80,0);
+    await page.mouse.click(thumbnailPoint.x,thumbnailPoint.y);await page.waitForTimeout(150);
+    check("clicking plant artwork selects the same card without navigation",await page.getByRole("heading",{name:outside.record.label,exact:true}).isVisible() && (await info()).h.index===d.h.index);
+  }
   await page.getByLabel("Domain", { exact: true }).selectOption("technology");
   await idle();
   d = await info();
@@ -337,6 +339,18 @@ try {
     (await cursor()) === "pointer",
   );
   await page.screenshot({ path: "output/consolidation-qa/hover-dark-on.png" });
+  if(catalog.plant_images?.length){
+    await page.getByLabel("Centre",{exact:true}).selectOption("carob");await idle();await primeCamera();d=await info();
+    const illustrated=d.scene.cards.find(c=>c.id==="carob"),portrait=point(d,illustrated,-80,0),beforeIndex=d.h.index;
+    await hover(portrait);await page.mouse.click(portrait.x,portrait.y);await page.waitForTimeout(200);
+    check("clicking the plant thumbnail selects its card without changing history",await page.getByRole("heading",{name:"Carob tree",exact:true}).isVisible()&&(await info()).h.index===beforeIndex);
+    const neighbour=d.scene.cards.find(c=>c.id==="kermes-oak"),neighbourPortrait=point(d,neighbour,-80,0);
+    await page.mouse.click(neighbourPortrait.x,neighbourPortrait.y);await page.waitForTimeout(150);
+    await page.getByLabel("Domain",{exact:true}).selectOption("technology");await idle();d=await info();
+    const disabledPortrait=point(d,d.scene.cards.find(c=>c.id==="kermes-oak"),-80,0);
+    await hover(disabledPortrait);await page.mouse.click(disabledPortrait.x,disabledPortrait.y);await page.waitForTimeout(150);
+    check("darkened plant artwork cannot select a topic through its card",(await cursor())!=="pointer"&&await page.getByRole("heading",{name:"Start with a group or topic.",exact:true}).isVisible());
+  }
   check("no runtime exceptions", errors.length === 0);
   writeFileSync(
     "output/consolidation-qa/node-hover-results.json",

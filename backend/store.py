@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
+from .plant_media import PlantImage, validate_image, managed_path
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = Path(os.environ.get("KGB_DATABASE", ROOT / "data" / "knowledge.sqlite"))
@@ -34,7 +35,7 @@ class Record(BaseModel):
 class SourceRef(BaseModel):
     model_config = ConfigDict(extra="allow")
     source_id: str
-    page: int = Field(ge=1)
+    page: int | None = Field(default=None, ge=1)
     locator: str = ""
 
 
@@ -115,16 +116,19 @@ class Batch(BaseModel):
     unresolved: list[dict] = []
     redirects: dict[str, str] = {}
     browse_groups: list[BrowseGroup] = []
+    plant_images: list[PlantImage] = []
+    sources: list[dict] = []
 
 
 class Store:
-    def __init__(self, path: Path = DB_PATH):
+    def __init__(self, path: Path = DB_PATH, media_root: Path = ROOT):
+        self.media_root = Path(media_root).resolve()
         self.path = Path(path)
         self.path.parent.mkdir(parents=True, exist_ok=True)
         if self.path.exists() and self.path.stat().st_size:
             with sqlite3.connect(self.path) as migration:
                 tables={row[0] for row in migration.execute("SELECT name FROM sqlite_master WHERE type='table'")}
-            if "meta" in tables and "browse_groups" not in tables:
+            if "meta" in tables and ("browse_groups" not in tables or "plant_images" not in tables):
                 self.backup()
         with self.connect() as c:
             c.executescript("""
@@ -149,6 +153,7 @@ class Store:
                 CREATE TABLE IF NOT EXISTS explorations(id TEXT PRIMARY KEY,label TEXT,updated TEXT,data TEXT);
                 CREATE TABLE IF NOT EXISTS tasks(id TEXT PRIMARY KEY,status TEXT,created TEXT,data TEXT);
                 CREATE TABLE IF NOT EXISTS browse_groups(id TEXT PRIMARY KEY,data TEXT NOT NULL);
+                CREATE TABLE IF NOT EXISTS plant_images(id TEXT PRIMARY KEY,topic_id TEXT NOT NULL REFERENCES topics(id),role TEXT NOT NULL CHECK(role IN ('whole','detail')),data TEXT NOT NULL,UNIQUE(topic_id,role));
             """)
 
     @contextmanager
@@ -172,7 +177,7 @@ class Store:
             return self.revision(connection)
 
     def records(self, table: str, c=None) -> list[dict]:
-        if table not in {"sources", "topics", "relationships", "findings", "unresolved", "browse_groups"}:
+        if table not in {"sources", "topics", "relationships", "findings", "unresolved", "browse_groups", "plant_images"}:
             raise ValueError("Unknown record collection")
         if c is not None:
             return [json.loads(r[0]) for r in c.execute(f"SELECT data FROM {table} ORDER BY id")]
@@ -183,7 +188,11 @@ class Store:
         with self.connect() as c:
             changed=False
             for source in manifest["sources"]:
-                source = dict(source, path=str(Path(manifest["source_root"]) / source["filename"]))
+                if 'managed_path' in source:
+                    self.validate_source(source)
+                else:
+                    if source.get('kind','pdf')!='pdf':raise ValueError('Image/web source registration requires a managed project copy')
+                    source = dict(source, path=str(Path(manifest["source_root"]) / source["filename"]))
                 previous = c.execute("SELECT data FROM sources WHERE id=?", (source["id"],)).fetchone()
                 if previous and json.loads(previous[0])["sha256"] != source["sha256"]:
                     raise ValueError(f"Edition update required for {source['id']}")
@@ -191,6 +200,57 @@ class Store:
                 c.execute("INSERT INTO sources VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (source["id"], json.dumps(source)))
             if changed and self.revision(c)>0:
                 c.execute("UPDATE meta SET value=CAST(value AS INTEGER)+1 WHERE key='revision'")
+
+    def validate_source(self, source: dict):
+        required={'id','title','kind','filename','sha256','managed_path'}
+        if not required <= source.keys() or source['kind'] not in {'pdf','image','web'}:
+            raise ValueError('Source requires id, title, kind, filename, sha256 and managed_path')
+        path=managed_path(self.media_root,source['managed_path'],'sources')
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=source['sha256']:
+            raise ValueError(f"Source file missing or checksum mismatch: {source['id']}")
+        if source['kind']=='pdf':
+            from pypdf import PdfReader
+            if len(PdfReader(path).pages)!=source.get('pdf_pages') or not source.get('initial_pdf_page_ranges'):
+                raise ValueError('PDF source requires verified pages and inspected ranges')
+        elif source['kind']=='image':
+            from PIL import Image
+            with Image.open(path) as im: im.verify()
+        elif not source.get('url','').startswith('https://') or not source.get('retrieved_on') or not source.get('excerpt'):
+            raise ValueError('Web source requires HTTPS URL, retrieval date and reviewed excerpt')
+
+    def source_path(self, source: dict):
+        return managed_path(self.media_root,source['managed_path'],'sources') if 'managed_path' in source else Path(source['path'])
+
+    def media_integrity(self):
+        images=self.records('plant_images');problems=[]
+        topics={t['id']:t for t in self.records('topics')};pairs={}
+        for raw in images:
+            try:
+                if topics.get(raw['topic_id'],{}).get('kind')!='species':raise ValueError('Image references a missing or non-species topic: '+raw['id'])
+                roles=pairs.setdefault(raw['topic_id'],set())
+                if raw['role'] in roles:raise ValueError('Duplicate image role: '+raw['id'])
+                roles.add(raw['role'])
+                validate_image(self.media_root,PlantImage.model_validate(raw))
+            except Exception as error:problems.append(str(error))
+        for source in self.records('sources'):
+            if 'managed_path' in source:
+                try:self.validate_source(source)
+                except Exception as error:problems.append(str(error))
+        for topic,roles in pairs.items():
+            if roles!={'whole','detail'}:problems.append('Incomplete image pair: '+topic)
+        if problems:raise ValueError('Media integrity failed: '+ '; '.join(problems))
+        return {'status':'verified','images':len(images),'topics':len({x['topic_id'] for x in images})}
+
+    def backup_media(self):
+        import zipfile
+        target=self.backup().with_suffix('.media.zip')
+        files={f['path'] for image in self.records('plant_images') for f in image['files'].values()}
+        files.update(s['managed_path'] for s in self.records('sources') if 'managed_path' in s)
+        provenance=self.media_root/'media/plants/provenance'
+        if provenance.is_dir():files.update(p.relative_to(self.media_root).as_posix() for p in provenance.rglob('*') if p.is_file())
+        with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as archive:
+            for name in sorted(files):archive.write(self.media_root/name,name)
+        return target
 
     def backup(self) -> Path:
         folder = ROOT / "backups"
@@ -209,7 +269,16 @@ class Store:
                 if prior["digest"] != digest:
                     raise ValueError("This batch ID is already accepted with different contents. Use a new batch ID.")
                 return {"status": "unchanged", "revision": self.revision(c), "batch_revision": prior["revision"]}
+            if batch.base_revision is not None and batch.base_revision != self.revision(c):
+                raise ValueError(f"Knowledge changed: batch expects revision {batch.base_revision}; current revision is {self.revision(c)}. Reconcile first.")
             sources = {s["id"]: s for s in self.records("sources", c)}
+            if len({x['id'] for x in batch.sources}) != len(batch.sources):
+                raise ValueError("Duplicate source IDs")
+            for source in batch.sources:
+                self.validate_source(source)
+                if source['id'] in sources and sources[source['id']]['sha256'] != source['sha256']:
+                    raise ValueError(f"Edition update required for {source['id']}")
+                sources[source['id']] = source
             existing = {t["id"] for t in self.records("topics", c)}
             ids = existing | {t.id for t in batch.topics}
             for collection in (batch.topics, batch.relationships, batch.findings):
@@ -217,14 +286,40 @@ class Store:
                     raise ValueError("Duplicate IDs within the candidate batch")
                 for record in collection:
                     for ref in record.source_refs:
-                        if ref.source_id not in sources or ref.page > sources[ref.source_id]["pdf_pages"]:
+                        if ref.source_id not in sources:
+                            raise ValueError(f"Unknown source for {record.id}: {ref.source_id}")
+                        source = sources[ref.source_id]
+                        if source.get('kind','pdf') != 'pdf':
+                            if ref.page is not None or not ref.locator.strip():
+                                raise ValueError(f"Non-PDF reference requires a locator and no page: {record.id}")
+                            continue
+                        if ref.page is None or ref.page > source['pdf_pages']:
                             raise ValueError(f"Invalid source page for {record.id}: {ref.source_id} p{ref.page}")
-                        # Coverage can expand only through an explicit later batch, never by source metadata alone.
-                        allowed = {p for a,b in sources[ref.source_id]["initial_pdf_page_ranges"] for p in range(a,b+1)}
-                        candidate = {(x.source_id,x.page) for x in batch.coverage}
-                        accepted = c.execute("SELECT 1 FROM coverage WHERE source_id=? AND page=?", (ref.source_id,ref.page)).fetchone()
+                        allowed = {p for a,b in source['initial_pdf_page_ranges'] for p in range(a,b+1)}
+                        candidate = {(x.source_id,x.page) for x in batch.coverage if x.status == 'inspected'}
+                        accepted = c.execute("SELECT 1 FROM coverage WHERE source_id=? AND page=? AND status='inspected'", (ref.source_id,ref.page)).fetchone()
                         if ref.page not in allowed and (ref.source_id,ref.page) not in candidate and not accepted:
                             raise ValueError(f"Explicit inspected coverage is required for {ref.source_id} p{ref.page}")
+            image_records={x['id']:x for x in self.records('plant_images',c)}
+            if len({x.id for x in batch.plant_images}) != len(batch.plant_images):
+                raise ValueError('Duplicate plant image IDs')
+            topic_records={t['id']:t for t in self.records('topics',c)}
+            topic_records.update({t.id:t.model_dump() for t in batch.topics})
+            for image in batch.plant_images:
+                if image.topic_id not in topic_records or topic_records[image.topic_id]['kind'] != 'species':
+                    raise ValueError(f'Image must reference an existing species: {image.id}')
+                validate_image(self.media_root,image)
+                image_records[image.id]=image.model_dump()
+            pairs={}
+            for image in image_records.values():
+                if image['topic_id'] not in topic_records or topic_records[image['topic_id']]['kind']!='species':
+                    raise ValueError('Registered image must retain a species topic')
+                role=(image['topic_id'],image['role'])
+                if role in pairs:raise ValueError('Duplicate image role for topic')
+                pairs[role]=image['id']
+            for tid in {x['topic_id'] for x in image_records.values()}:
+                if not all((tid,role) in pairs for role in ['whole','detail']):
+                    raise ValueError(f'Whole/detail image pair required: {tid}')
             for edge in batch.relationships:
                 if edge.source not in ids or edge.target not in ids:
                     raise ValueError(f"Unknown endpoint in {edge.id}: {edge.source} / {edge.target}")
@@ -232,7 +327,7 @@ class Store:
                 if not set(finding.topic_ids) <= ids:
                     raise ValueError(f"Unknown topic in finding {finding.id}")
             for page in batch.coverage:
-                if page.source_id not in sources or page.page > sources[page.source_id]["pdf_pages"]:
+                if page.source_id not in sources or sources[page.source_id].get("kind","pdf") != "pdf" or page.page > sources[page.source_id]["pdf_pages"]:
                     raise ValueError("Invalid coverage page")
             for old, new in batch.redirects.items():
                 if new not in ids or old == new:
@@ -261,7 +356,7 @@ class Store:
                 while at in groups:
                     if at in visited:raise ValueError("Cyclic browsing group hierarchy")
                     visited.add(at);at=groups[at]["parent_id"]
-            changes = {k: len(getattr(batch, k)) for k in ("topics", "relationships", "findings", "coverage", "unresolved", "browse_groups")}
+            changes = {k: len(getattr(batch, k)) for k in ("topics", "relationships", "findings", "coverage", "unresolved", "browse_groups", "plant_images", "sources")}
             if dry_run:
                 return {"status": "validated", "revision": self.revision(c), **changes}
         if self.revision():
@@ -271,6 +366,8 @@ class Store:
             revision = self.revision(c)
             if batch.base_revision is not None and batch.base_revision != revision:
                 raise ValueError(f"Knowledge changed: batch expects revision {batch.base_revision}; current revision is {revision}. Reconcile first.")
+            for source in batch.sources:
+                c.execute("INSERT INTO sources VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data",(source['id'],json.dumps(source,ensure_ascii=False)))
             # Topic rows go first so all connection endpoints can be checked by SQLite itself.
             for topic in batch.topics:
                 c.execute("INSERT INTO topics VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (topic.id, topic.model_dump_json()))
@@ -286,6 +383,8 @@ class Store:
                 c.execute("INSERT INTO unresolved VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (item["id"], json.dumps(item)))
             for group in batch.browse_groups:
                 c.execute("INSERT INTO browse_groups VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (group.id,group.model_dump_json()))
+            for image in batch.plant_images:
+                c.execute("INSERT INTO plant_images VALUES (?,?,?,?) ON CONFLICT(id) DO UPDATE SET topic_id=excluded.topic_id,role=excluded.role,data=excluded.data",(image.id,image.topic_id,image.role,image.model_dump_json()))
             for old, new in batch.redirects.items():
                 c.execute("INSERT INTO redirects VALUES (?,?) ON CONFLICT(old_id) DO UPDATE SET new_id=excluded.new_id", (old, new))
             revision += 1
@@ -327,5 +426,5 @@ class Store:
     def snapshot(self) -> dict:
         with self.connect() as c:
             c.execute("BEGIN")
-            return {"revision": self.revision(c), **{t:self.records(t,c) for t in ("topics","relationships","findings","sources","unresolved","browse_groups")},
+            return {"revision": self.revision(c), **{t:self.records(t,c) for t in ("topics","relationships","findings","sources","unresolved","browse_groups","plant_images")},
                     "coverage": [dict(r) for r in c.execute("SELECT * FROM coverage ORDER BY source_id,page")]}

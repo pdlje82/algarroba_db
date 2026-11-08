@@ -22,7 +22,8 @@
     "test:source-viewer": "node tests/source-viewer.mjs",
     "test:species-names": "node tests/species-names.mjs",
     "test:tight-layers": "node --experimental-strip-types tests/tight-layers.mjs",
-    "test:unrecorded-place": "node --experimental-strip-types tests/unrecorded-place.mjs"
+    "test:unrecorded-place": "node --experimental-strip-types tests/unrecorded-place.mjs",
+    "test:plant-images": "node tests/plant-images.mjs"
   },
   "dependencies": {
     "pdfjs-dist": "6.5.438",

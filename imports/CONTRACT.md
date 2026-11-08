@@ -59,3 +59,22 @@ A batch may contain only browse_groups, or organization plus supported factual d
 Use current `base_revision`, `--check`, then import. Existing accepted batch digests remain
 unchanged. Migration/import backups and stale-revision protection apply. Browser controls
 cannot modify these definitions. Group rules do not narrow the wider discovery obligation.
+
+
+## Plant media and non-PDF sources
+
+The plant-image intake authorizes new focused botanical knowledge beyond the original 68-page scope.
+Optional `sources[]` registers managed PDF/image/web sources atomically with their referenced records.
+Each source needs id, title, kind, filename, managed_path and SHA-256. Managed paths must remain under
+`sources/`. PDFs require verified page counts and inspected initial ranges; web sources require HTTPS
+URL, retrieval date and reviewed excerpt. Unknown publication dates stay unknown. Edition hashes are
+immutable for an existing ID. SourceRef.page is required for PDFs; other source kinds prohibit page and
+require a meaningful locator. Original undifferentiated sources are treated as PDFs.
+
+Optional `plant_images[]` registers PlantImage records: id, species topic_id, whole/detail role, alt,
+caption, provenance, botanical references and per-variant files. Each file has a path under
+`media/plants/`, SHA-256, width, height and PNG/WebP MIME. Original/preview are mandatory; only whole
+images also require thumbnail. Validate decoded pixels, dimensions, transparency, hashes, species
+association, unique role and complete whole/detail pairs before import. Existing images remain valid
+when later batches change unrelated facts; a species with artwork cannot become a non-species.
+Media records are not graph topics or factual relationships. See PLANT_IMAGES.md.

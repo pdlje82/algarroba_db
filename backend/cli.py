@@ -13,6 +13,8 @@ def read(path): return json.loads(Path(path).read_text(encoding="utf-8-sig"))
 
 
 def bootstrap(store):
+    if store.records('topics'):
+        return {'status':'unchanged','revision':store.revision(),'note':'Existing accepted collection retained; use checked imports for updates.'}
     manifest=read(ROOT/"imports/source-manifest.json")
     for s in manifest["sources"]:
         path=Path(manifest["source_root"])/s["filename"]
@@ -52,6 +54,8 @@ def main():
     p=sub.add_parser("export");p.add_argument("--output")
     sub.add_parser("backup")
     sub.add_parser("groups")
+    sub.add_parser("media-integrity")
+    sub.add_parser("backup-media")
     p=sub.add_parser("register-sources");p.add_argument("manifest")
     p=sub.add_parser("task-complete");p.add_argument("id");p.add_argument("--summary",required=True);p.add_argument("--needs-answer",action="store_true")
     p=sub.add_parser("task-files");p.add_argument("id")
@@ -63,6 +67,8 @@ def main():
     elif args.command=="export":
         result=store.snapshot();graph=Graph(store);result['topic_organization']={t['id']:graph.organization(t['id']) for t in result['topics']}
         if args.output: Path(args.output).write_text(json.dumps(result,indent=2,ensure_ascii=False),encoding="utf-8");result={"saved":args.output,"revision":result["revision"]}
+    elif args.command=="media-integrity": result=store.media_integrity()
+    elif args.command=="backup-media": result={"backup":str(store.backup_media())}
     elif args.command=="groups": result=store.records("browse_groups")
     elif args.command=="backup": result={"backup":str(store.backup())}
     elif args.command=="register-sources": store.register_sources(read(args.manifest));result={"status":"registered"}

@@ -194,3 +194,17 @@ handle destroy rejections, and wait for cancelled paints before reusing the same
 Keep exact one-based source pages, zoom/rotation and ingestion boundaries. Run the focused
 npm run test:source-viewer with isolated QA data, including missing old chunk URLs, first click,
 all registered documents, retry, rapid close/reopen/repaint and an injected viewer exception.
+
+
+## Plant images and focused profiles (8 November 2026)
+
+The user explicitly authorized the 46-image/23-plant intake, ten new species, focused profiles and
+supported community connections, superseding the rendering-only data freeze for this specific batch.
+Check the old app first; use primary external sources for remaining gaps. Preserve every original.
+SQLite plant_images owns associations; use the checked importer, not frontend filename mappings.
+Keep Quercus rotundifolia separate from Q. ilex, both Rhamnus species separate, Tamarix genus-level,
+and esparto species separate from its habitat. Artwork and poster groupings are not ecological proof.
+Keep compact card geometry, opaque depth/picking behavior, multilingual names and semantic history
+unchanged when artwork loads or retries. Cancel mesh image callbacks on disposal.
+Managed local sources/media travel with the SQLite backup; runtime must not read the old app.
+See PLANT_IMAGES.md for maintenance, evidence limits, integrity checks and recovery.

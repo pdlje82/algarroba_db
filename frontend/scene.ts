@@ -174,7 +174,7 @@ export function buildScene(
     // History retains its membership/layout; names follow the canonical database ID.
     const canonical = topicMap.get(id);
     if (canonical?.kind === "species") {
-      for (const key of ["spanish_name", "english_name", "scientific_name", "name_status"])
+      for (const key of ["spanish_name", "english_name", "scientific_name", "name_status", "plant_images"])
         record[key] = canonical[key];
     }
     cards.push({

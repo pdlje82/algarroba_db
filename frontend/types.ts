@@ -3,9 +3,36 @@ export type Vec3 = Point & { z: number };
 export type CameraPose = { position: Vec3; target: Vec3 };
 export type Ref = {
   source_id: string;
-  page: number;
+  page?: number | null;
   locator?: string;
   source_text?: string;
+};
+export type PlantImage = {
+  id: string;
+  topic_id: string;
+  role: "whole" | "detail";
+  alt: string;
+  caption: string;
+  provenance: {
+    tool: string;
+    source_asset: string;
+    generated_on?: string;
+    reviewed_on?: string;
+    [key: string]: unknown;
+  };
+  references: { label: string; url: string }[];
+  variants: Partial<
+    Record<
+      "original" | "preview" | "thumbnail",
+      {
+        url: string;
+        sha256: string;
+        width: number;
+        height: number;
+        mime: string;
+      }
+    >
+  >;
 };
 export type Item = {
   id: string;
@@ -18,8 +45,15 @@ export type Item = {
   english_name?: string | null;
   scientific_name?: string | null;
   name_note?: string;
+  plant_images?: PlantImage[];
   name_status?: "recorded" | "source-spelling" | "genus-only";
-  name_references?: { title: string; url: string; fields: string[]; accessed: string; note?: string }[];
+  name_references?: {
+    title: string;
+    url: string;
+    fields: string[];
+    accessed: string;
+    note?: string;
+  }[];
   source_refs?: Ref[];
   [key: string]: any;
 };
@@ -57,6 +91,7 @@ export type Catalog = {
   coverage: any[];
   unresolved: any[];
   browse_groups: BrowseGroup[];
+  plant_images?: PlantImage[];
   root_groups: string[];
   topic_kinds: string[];
   identity_redirects?: Record<string, string>;

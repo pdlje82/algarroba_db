@@ -130,8 +130,9 @@ The inspector stays docked in both normal and full screen. Appearance offers Sys
 - **Comparison** displays up to four chosen topics as a table. Missing values say Not recorded;
   each topic retains its source and trial context. It is not a controlled head-to-head trial.
 
-Exactly nine registered editions and68 selected PDF positions are curated. Other pages can be
-viewed without being imported. Source findings, source guidance and curated discovery associations
+The initial collection contains nine registered editions and68 selected PDF positions. The plant
+intake adds twelve sources and three curated PDF positions (21 sources and71 positions in total).
+Other pages can be viewed without being imported. Source findings, source guidance and curated discovery associations
 remain distinct. Drone citrus spraying is not evidence for carob establishment watering, and
 funding connections are not eligibility decisions or awards. Current availability is unverified.
 
@@ -269,3 +270,17 @@ same server with the documented Playwright configuration.
 
 Species naming verification: run `npm run test:species-names` against the isolated QA server
 with the accepted naming batch applied there and the documented Playwright configuration.
+
+
+## Plant illustrations
+
+Species cards show compact whole-plant portraits beside their Spanish, English and scientific names.
+Select an illustrated plant and choose **View plant images** for paired whole-plant and botanical-detail
+views, independent Original size/Fit controls and the original botanical references. Missing files show
+explicit errors and Retry controls. Artwork is AI-generated, representative and not to a common scale.
+
+The accepted collection has 46 images for 23 plant identities. The browser owns its media and source
+copies; the simulator is only an intake input. Preserve `media/`, `sources/` and `data/` together.
+Use `python -m backend.cli media-integrity` to verify files, and `python -m backend.cli backup-media`
+for a database snapshot plus companion media archive. See [Plant images](PLANT_IMAGES.md) for exact
+mappings, evidence coverage, source links, limitations and recovery instructions.

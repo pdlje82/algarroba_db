@@ -75,6 +75,11 @@
     "license": "Apache-2.0 OR BSD-2-Clause"
   },
   {
+    "name": "pillow",
+    "version": "13.0.0",
+    "license": "MIT-CMU"
+  },
+  {
     "name": "pip",
     "version": "25.0.1",
     "license": "MIT"

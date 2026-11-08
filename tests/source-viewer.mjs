@@ -76,7 +76,7 @@ try {
   await close();
   await page.getByRole("button", { name: /^Source library/ }).click();
   const catalog = await (await fetch(url + "/api/catalog")).json();
-  for (const source of catalog.sources) {
+  for (const source of catalog.sources.filter(s => (s.kind || "pdf") === "pdf")) {
     const article = page.getByRole("dialog", { name: "Source library", exact: true }).locator("article").filter({ has: page.getByRole("heading", { name: source.id, exact: true }) });
     await article.getByRole("button", { name: "Open source", exact: true }).click();
     await painted(source.initial_pdf_page_ranges[0][0]); await close();

@@ -736,3 +736,21 @@ a {
   font-size: 13px;
 }
 .layer-update-button:disabled { cursor: default; }
+
+/* Plant artwork is contained within existing opaque graph cards. */
+.plant-images{display:flex;align-items:center;gap:1rem;padding:.75rem 0;border-bottom:1px solid var(--border,#b8c8b8)}
+.plant-preview{padding:0;flex:0 0 112px;background:#f6f5ed}
+.plant-preview img{display:block;object-fit:contain}
+.plant-images p{margin:.35rem 0}.plant-images small{opacity:.75}
+.plant-image-viewer{box-sizing:border-box;width:min(1140px,94vw);max-height:92vh;padding:1.25rem;border:1px solid #8b998b;border-radius:14px;color:var(--text,#23322a);background:var(--panel,#f5f6ef);overflow:auto}
+.plant-image-viewer::backdrop{background:#102219b3}
+.plant-image-viewer header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+.plant-image-viewer h2{margin:0 0 .35rem;font-size:1.25rem}
+.plant-image-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.plant-image-panel{min-width:0;margin:0;padding:.75rem;border:1px solid #9ba99b;border-radius:9px}
+.plant-image-scroll{height:min(48vh,490px);overflow:auto;display:flex;align-items:center;justify-content:center;background:#f6f5ed;border-radius:6px;margin:.65rem 0}
+.plant-image-scroll img{display:block;width:100%;height:100%;object-fit:contain;max-width:100%}
+.natural-size .plant-image-scroll{display:block}.natural-size .plant-image-scroll img{width:auto;height:auto;max-width:none}
+.plant-image-panel p{font-size:.9rem;line-height:1.45}
+.source-document{padding:1rem;overflow:auto;min-height:0}.source-document img{display:block;max-width:100%;height:auto}.source-document p{white-space:pre-wrap}
+@media(max-width:700px){.plant-image-pair{grid-template-columns:1fr}.plant-image-viewer{padding:.8rem}.plant-image-scroll{height:42vh}}

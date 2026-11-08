@@ -88,6 +88,23 @@ export function textMesh(
   );
   return mesh;
 }
+// CPU image cache is bounded by the shipped collection; GPU textures belong to each mesh.
+const thumbnails = new Map<string, Promise<HTMLImageElement>>();
+function thumbnail(url: string) {
+  let task = thumbnails.get(url);
+  if (!task) {
+    task = new Promise<HTMLImageElement>((resolve, reject) => {
+      const im = new Image();
+      im.onload = () => resolve(im);
+      im.onerror = () => reject(new Error("Plant image unavailable"));
+      im.src = url;
+    });
+    thumbnails.set(url, task);
+    if (thumbnails.size > 64)
+      thumbnails.delete(thumbnails.keys().next().value!);
+  }
+  return task;
+}
 export function cardMesh(
   card: SceneCard,
   theme: Theme,
@@ -110,34 +127,47 @@ export function cardMesh(
   ctx.fillStyle = p.muted;
   ctx.font = "25px Segoe UI";
   ctx.fillText(
-    r.kind === "group" ? "BROWSING GROUP" : r.name_status === "source-spelling"
-      ? "SPECIES · SOURCE SPELLING"
-      : r.name_status === "genus-only" ? "SPECIES · GENUS ONLY" : r.kind.toUpperCase(),
+    r.kind === "group"
+      ? "BROWSING GROUP"
+      : r.name_status === "source-spelling"
+        ? "SPECIES · SOURCE SPELLING"
+        : r.name_status === "genus-only"
+          ? "SPECIES · GENUS ONLY"
+          : r.kind.toUpperCase(),
     24,
     44,
   );
   ctx.fillStyle = p.text;
+  const whole = r.plant_images?.find((image) => image.role === "whole");
+  const imageUrl = whole?.variants.thumbnail?.url;
+  const nameX = imageUrl ? 264 : 98,
+    nameWidth = imageUrl ? 414 : 576,
+    labelX = imageUrl ? 210 : 24;
   if (r.kind === "species") {
     speciesNames(r).forEach((name, i) => {
       const y = 88 + i * 74;
       ctx.fillStyle = p.muted;
       ctx.font = "24px Segoe UI";
-      ctx.fillText(name.label, 24, y);
+      ctx.fillText(name.label, labelX, y);
       ctx.fillStyle = p.text;
       let font = 36;
       let wrapped: string[];
       do {
         ctx.font = `${i === 2 ? "italic" : "bold"} ${font}px Segoe UI`;
-        wrapped = lines(ctx, name.value, 576);
+        wrapped = lines(ctx, name.value, nameWidth);
         if (wrapped.length <= 2) break;
         font -= 2;
       } while (font >= 22);
-      wrapped.slice(0, 2).forEach((line, j) => ctx.fillText(line, 98, y + j * 32, 576));
+      wrapped
+        .slice(0, 2)
+        .forEach((line, j) => ctx.fillText(line, nameX, y + j * 32, nameWidth));
     });
   } else {
     ctx.font = "bold 48px Segoe UI";
     const label = lines(ctx, r.label, 650);
-    label.slice(0, 4).forEach((line, i) => ctx.fillText(line, 24, 98 + i * 55, 650));
+    label
+      .slice(0, 4)
+      .forEach((line, i) => ctx.fillText(line, 24, 98 + i * 55, 650));
   }
   ctx.font = "25px Segoe UI";
   ctx.fillStyle = p.muted;
@@ -170,11 +200,53 @@ export function cardMesh(
       side: THREE.DoubleSide,
     }),
   );
+  if (imageUrl) {
+    let disposed = false;
+    const clear = () => {
+      ctx.fillStyle = r.viewCentre
+        ? p.centre
+        : (p.fills as any)[r.domain] || p.fills.other;
+      ctx.fillRect(20, 62, 182, 220);
+    };
+    const load = () => {
+      thumbnail(imageUrl).then(
+        (im) => {
+          if (disposed) return;
+          clear();
+          const ratio = Math.min(180 / im.width, 216 / im.height),
+            w = im.width * ratio,
+            h = im.height * ratio;
+          ctx.drawImage(im, 22 + (180 - w) / 2, 64 + (216 - h) / 2, w, h);
+          (mesh.material as THREE.MeshBasicMaterial).map!.needsUpdate = true;
+        },
+        () => {
+          if (disposed) return;
+          clear();
+          ctx.fillStyle = p.muted;
+          ctx.font = "22px Segoe UI";
+          ctx.fillText("Image unavailable", 22, 130, 178);
+          ctx.fillText("Retry in Details", 22, 160, 178);
+          (mesh.material as THREE.MeshBasicMaterial).map!.needsUpdate = true;
+        },
+      );
+    };
+    const retry = () => {
+      thumbnails.delete(imageUrl);
+      load();
+    };
+    load();
+    window.addEventListener("plant-images-retry", retry);
+    mesh.userData.disposeImage = () => {
+      disposed = true;
+      window.removeEventListener("plant-images-retry", retry);
+    };
+  }
   mesh.position.set(card.position.x, -card.position.y, 6);
   return mesh;
 }
 export function disposeTree(root: THREE.Object3D) {
   root.traverse((o: any) => {
+    o.userData.disposeImage?.();
     o.geometry?.dispose();
     for (const m of Array.isArray(o.material)
       ? o.material

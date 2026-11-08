@@ -1,0 +1,557 @@
+{
+  "reviewed_on": "2026-11-08",
+  "sources": [
+    {
+      "id": "KGB-SRC-0001",
+      "key": "retama",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/retama.html",
+      "title": "Retama sphaerocarpa — WEB_BIOCON",
+      "author_issuer": "University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Breve Descripción; Ecología",
+      "url": "https://nevada.ual.es/biocon/retama-sphaerocarpa.html",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Broom-form shrub; yellow axillary flowers; retama scrub and occasional rambla pioneers. The ecology section discusses Rhizobium and arbuscular mycorrhizal symbioses."
+    },
+    {
+      "id": "KGB-SRC-0002",
+      "key": "esparto",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/esparto.html",
+      "title": "Macrochloa tenacissima — WEB_BIOCON",
+      "author_issuer": "University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Breve Descripción; Ecología",
+      "url": "https://nevada.ual.es/biocon/macrochloa-tenacissima.html",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Macrochloa tenacissima is also called Stipa tenacissima. A tussock grass of dry espartales; leaves roll and unroll with water conditions."
+    },
+    {
+      "id": "KGB-SRC-0003",
+      "key": "thyme",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/thyme.html",
+      "title": "Thymus hyemalis subsp. hyemalis — WEB_BIOCON",
+      "author_issuer": "University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Breve Descripción; Distribución; Ecología",
+      "url": "https://nevada.ual.es/biocon/thymus-hyemalis-subsp.-hyemalis.html",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Aromatic low shrub with narrow rolled-margin leaves. Southeastern Iberian thyme scrub on varied substrates; the source distinguishes genus-level mycorrhizal evidence from species-specific evidence."
+    },
+    {
+      "id": "KGB-SRC-0004",
+      "key": "ephedra",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/ephedra.html",
+      "title": "Ephedra fragilis subsp. fragilis — WEB_BIOCON",
+      "author_issuer": "University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Breve Descripción; Ecología",
+      "url": "https://nevada.ual.es/biocon/ephedra-fragilis-desf.-subsp.-fragilis.html",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Dioecious shrub with articulated green shoots and reduced leaves. Arid scrub on varied substrates, often calcareous or gypsum; gymnosperm cones are not flowers or ordinary fruits."
+    },
+    {
+      "id": "KGB-SRC-0005",
+      "key": "lycium",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/lycium.html",
+      "title": "Lycium intricatum — Herbari Virtual",
+      "author_issuer": "University of the Balearic Islands",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Hábitats; Características",
+      "url": "https://herbarivirtual.uib.es/es/general/505/especie/arc-intricat",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Thorny shrub with tortuous branches, fleshy leaves and violet tubular flowers, associated with warm rocky coastal sites."
+    },
+    {
+      "id": "KGB-SRC-0006",
+      "key": "oleander",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/oleander.html",
+      "title": "Nerium oleander — Herbari Virtual",
+      "author_issuer": "University of the Balearic Islands",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Hábitats; Descripción; Observaciones",
+      "url": "https://herbarivirtual.uib.es/es/general/895/especie/nerium-oleander-l-",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Evergreen shrub with leathery narrow leaves and terminal flower clusters. Recorded in non-saline wet places including ramblas. The source explicitly notes toxicity if ingested."
+    },
+    {
+      "id": "KGB-SRC-0007",
+      "key": "communities",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/communities.html",
+      "title": "Jardín de la Sal — habitat descriptions",
+      "author_issuer": "University of Almería Herbarium",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS",
+      "url": "https://herbario.ual.es/jardin-de-la-sal/",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "The university describes oleander–tamarisk watercourses, jujube scrub at Torre García and rosemary scrub in Tabernas."
+    },
+    {
+      "id": "KGB-SRC-0008",
+      "key": "rosemary",
+      "kind": "pdf",
+      "managed_path": "sources/plant-intake/rosemary.pdf",
+      "title": "Rosmarinus officinalis — Herbario docente MA-UAM",
+      "author_issuer": "Autonomous University of Madrid",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "PDF 1: names, description, ecology",
+      "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Rosmarinus_officinalis.pdf",
+      "retrieved_on": "2026-11-08",
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "KGB-SRC-0009",
+      "key": "ziziphus",
+      "kind": "pdf",
+      "managed_path": "sources/plant-intake/ziziphus.pdf",
+      "title": "Ziziphus lotus — Herbario docente MA-UAM",
+      "author_issuer": "Autonomous University of Madrid",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "PDF 1: names, description, ecology and shelter/soil functions",
+      "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Ziziphus_lotus.pdf",
+      "retrieved_on": "2026-11-08",
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "id": "KGB-SRC-0010",
+      "key": "garden",
+      "kind": "pdf",
+      "managed_path": "sources/plant-intake/ual-garden.pdf",
+      "title": "Diseño de un Jardín Botánico en la Universidad de Almería",
+      "author_issuer": "Manuel Sánchez Robles; University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "PDF 66, printed 65: focused review of Salsola webbii and Thymus hyemalis rows; Tamarix species not generalized to an unidentified plant",
+      "url": "https://herbario.ual.es/wp-content/uploads/2016/04/JARDIN-SAL-FINALIZADO.pdf",
+      "retrieved_on": "2026-11-08",
+      "initial_pdf_page_ranges": [
+        [
+          66,
+          66
+        ]
+      ]
+    },
+    {
+      "id": "KGB-SRC-0011",
+      "key": "poster",
+      "kind": "image",
+      "managed_path": "sources/plant-intake/dryland-systems-poster.png",
+      "title": "Supplied vegetation systems for dryland restoration poster",
+      "author_issuer": "Author and original publication unverified",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Systems 2–5; illustrative planning context, not scientific planting evidence",
+      "note": "Supplied illustrative poster. Author, date and original source unverified; not ecological or planting-trial evidence."
+    },
+    {
+      "id": "KGB-SRC-0012",
+      "key": "salsola-kew",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/salsola-kew-excerpt.txt",
+      "title": "Salsola webbii — Plants of the World Online",
+      "author_issuer": "Royal Botanic Gardens, Kew",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Accepted name, native range, synonyms",
+      "url": "https://powo.science.kew.org/taxon/167159-1",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Salsola webbii is accepted; native to southern Spain and Morocco; a shrub. Listed synonyms include Salsola ericoides and Anabasis tamariscifolia with the source qualifications retained.",
+      "archive_kind": "reviewed excerpt; original website fetch was denied"
+    }
+  ],
+  "new_profiles": {
+    "retama": {
+      "description": "Broom-form shrub with slender green shoots and yellow axillary flower clusters. The UAL account places it in retama scrub, sometimes pioneering ramblas, across varied substrates.",
+      "sources": [
+        "retama"
+      ]
+    },
+    "esparto": {
+      "description": "Robust tussock grass with long leaves that can roll into tubes. It forms dry grasslands known as espartales or atochares; this species identity is distinct from the habitat topic.",
+      "sources": [
+        "esparto"
+      ],
+      "aliases": [
+        "Stipa tenacissima",
+        "Atocha"
+      ]
+    },
+    "thyme": {
+      "description": "Low aromatic woody thyme with narrow rolled-margin leaves and pink flowers. The cited account concerns subsp. hyemalis in southeastern Iberian scrub and thyme communities.",
+      "sources": [
+        "thyme"
+      ],
+      "aliases": [
+        "Thymus hyemalis subsp. hyemalis"
+      ],
+      "name_note": "Topic retains Thymus hyemalis; the principal detailed account is specifically subsp. hyemalis."
+    },
+    "rosemary": {
+      "description": "Evergreen upright aromatic shrub with opposite narrow leaves, recurved margins and pale felted undersides. UAM records Rosmarinus officinalis and Salvia rosmarinus as synonyms.",
+      "sources": [
+        "rosemary"
+      ],
+      "aliases": [
+        "Rosmarinus officinalis"
+      ]
+    },
+    "ephedra_fragilis": {
+      "description": "Much-branched shrub with articulated green shoots and tiny reduced leaves. Male and female plants are separate; the illustration depicts a female form. The UAL account concerns subsp. fragilis.",
+      "sources": [
+        "ephedra"
+      ],
+      "aliases": [
+        "Ephedra fragilis subsp. fragilis"
+      ]
+    },
+    "ziziphus": {
+      "description": "Strongly thorny deciduous shrub forming dense rounded masses, with zigzag branches and three-veined leaves. Distinct from cultivated Ziziphus jujuba.",
+      "sources": [
+        "ziziphus"
+      ]
+    },
+    "lycium": {
+      "description": "Thorny shrub with twisted branches, fleshy grey-green leaves and violet tubular flowers. The university account associates it with warm rocky coastal sites.",
+      "sources": [
+        "lycium"
+      ]
+    },
+    "salsola": {
+      "description": "Shrub of semi-arid scrub recorded in the UAL flora table for Almería and the Alpujarras. Kew accepts Salsola webbii and records southern Spain and Morocco as its native range.",
+      "sources": [
+        "garden",
+        "salsola-kew"
+      ],
+      "aliases": [
+        "Salsola ericoides",
+        "Anabasis tamariscifolia"
+      ],
+      "name_note": "Retain Salsola webbii. Kew qualifies Salsola ericoides as not validly published and Anabasis tamariscifolia as sensu auct.; these aliases do not establish unrestricted name equivalence."
+    },
+    "oleander": {
+      "description": "Evergreen shrub with narrow leathery leaves and terminal pink flower clusters. Occurs in non-saline wet places including ramblas; toxic if ingested.",
+      "sources": [
+        "oleander"
+      ]
+    },
+    "tamarix": {
+      "description": "Genus-level tamarisk topic. The university habitat account records several Tamarix species with oleander in warm Mediterranean watercourse vegetation; the pictured taxon is not identified to species.",
+      "sources": [
+        "communities"
+      ],
+      "name_note": "Tamarix spp. intentionally remains genus-level. A T. gallica botanical illustration reference is an example, not an identification."
+    }
+  },
+  "habitats": [
+    {
+      "id": "semi-arid-shrubland",
+      "label": "Semi-arid shrubland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "group_id": "habitats",
+      "description": "Semi-arid shrub vegetation; source-specific memberships retain their own context.",
+      "source_key": "retama"
+    },
+    {
+      "id": "seasonal-watercourse",
+      "label": "Mediterranean watercourse scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "group_id": "habitats",
+      "description": "Warm Mediterranean rambla vegetation described with oleander and several Tamarix species.",
+      "source_key": "communities"
+    },
+    {
+      "id": "coastal-rocky-scrub",
+      "label": "Warm rocky coastal scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "group_id": "habitats",
+      "description": "Rocky coastal habitat described for Lycium intricatum.",
+      "source_key": "lycium"
+    },
+    {
+      "id": "rosemary-scrub",
+      "label": "Rosemary scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "group_id": "habitats",
+      "description": "Romerales described in the Tabernas landscape.",
+      "source_key": "communities"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "plant-profile-retama-sphaerocarpa-semi-arid-shrubland",
+      "source": "retama-sphaerocarpa",
+      "target": "semi-arid-shrubland",
+      "label": "occurs in",
+      "source_key": "retama",
+      "explanation": "The ecology account describes retama communities across varied substrates, including semi-arid gypsum settings."
+    },
+    {
+      "id": "plant-profile-esparto-esparto-grassland",
+      "source": "esparto",
+      "target": "esparto-grassland",
+      "label": "forms tussock grassland",
+      "source_key": "esparto",
+      "explanation": "The source explicitly names espartales or atochares; species and habitat remain distinct identities."
+    },
+    {
+      "id": "plant-profile-thymus-hyemalis-semi-arid-shrubland",
+      "source": "thymus-hyemalis",
+      "target": "semi-arid-shrubland",
+      "label": "occurs in thyme scrub",
+      "source_key": "thyme",
+      "explanation": "The cited subsp. hyemalis account describes southeastern Iberian scrub and thyme communities."
+    },
+    {
+      "id": "plant-profile-ephedra-fragilis-xerothermic-scrub",
+      "source": "ephedra-fragilis",
+      "target": "xerothermic-scrub",
+      "label": "occurs in arid scrub",
+      "source_key": "ephedra",
+      "explanation": "Arid shrub formations include calcareous, gypsum and saline sandy substrates; no universal site recommendation follows."
+    },
+    {
+      "id": "plant-profile-salsola-webbii-semi-arid-shrubland",
+      "source": "salsola-webbii",
+      "target": "semi-arid-shrubland",
+      "label": "occurs in",
+      "source_key": "garden",
+      "explanation": "PDF 66, Salsola webbii row: matorrales semiáridos."
+    },
+    {
+      "id": "plant-profile-salsola-webbii-almeria",
+      "source": "salsola-webbii",
+      "target": "almeria",
+      "label": "regional occurrence recorded",
+      "source_key": "garden",
+      "explanation": "PDF 66 explicitly lists Almería in the Salsola webbii row."
+    },
+    {
+      "id": "plant-profile-lycium-intricatum-coastal-rocky-scrub",
+      "source": "lycium-intricatum",
+      "target": "coastal-rocky-scrub",
+      "label": "occurs in",
+      "source_key": "lycium",
+      "explanation": "The university habitat account names rocky coasts and warm sun-exposed coastal ground."
+    },
+    {
+      "id": "plant-profile-rosemary-rosemary-scrub",
+      "source": "rosemary",
+      "target": "rosemary-scrub",
+      "label": "forms scrub",
+      "source_key": "communities",
+      "explanation": "The university describes romerales in the Tabernas landscape; see the linked community finding."
+    },
+    {
+      "id": "plant-profile-rosemary-scrub-mediterranean-dryland",
+      "source": "rosemary-scrub",
+      "target": "mediterranean-dryland",
+      "label": "described dryland setting",
+      "source_key": "communities",
+      "explanation": "See the linked community finding; source-specific landscape context."
+    },
+    {
+      "id": "plant-profile-semi-arid-shrubland-mediterranean-dryland",
+      "source": "semi-arid-shrubland",
+      "target": "mediterranean-dryland",
+      "label": "dryland vegetation setting",
+      "source_key": "retama",
+      "explanation": "The source explicitly describes retama in semi-arid settings; a curated broad habitat organization is not a tested planting mix.",
+      "basis": "curated"
+    },
+    {
+      "id": "plant-profile-ziziphus-lotus-jujube-thorn-scrub",
+      "source": "ziziphus-lotus",
+      "target": "jujube-thorn-scrub",
+      "label": "dominates",
+      "source_key": "communities",
+      "explanation": "See the linked Torre García community finding."
+    },
+    {
+      "id": "plant-profile-lycium-intricatum-jujube-thorn-scrub",
+      "source": "lycium-intricatum",
+      "target": "jujube-thorn-scrub",
+      "label": "recorded companion",
+      "source_key": "communities",
+      "explanation": "See the linked Torre García community finding; accompaniment does not establish facilitation."
+    },
+    {
+      "id": "plant-profile-thymus-hyemalis-jujube-thorn-scrub",
+      "source": "thymus-hyemalis",
+      "target": "jujube-thorn-scrub",
+      "label": "occurs in openings",
+      "source_key": "communities",
+      "explanation": "See the linked Torre García community finding."
+    },
+    {
+      "id": "plant-profile-oleander-seasonal-watercourse",
+      "source": "oleander",
+      "target": "seasonal-watercourse",
+      "label": "recorded dominant",
+      "source_key": "communities",
+      "explanation": "See the linked warm Mediterranean watercourse finding."
+    },
+    {
+      "id": "plant-profile-tamarix-seasonal-watercourse",
+      "source": "tamarix",
+      "target": "seasonal-watercourse",
+      "label": "recorded genus",
+      "source_key": "communities",
+      "explanation": "Several species are named in the source; the illustrated identity remains genus-level."
+    },
+    {
+      "id": "plant-profile-seasonal-watercourse-almeria",
+      "source": "seasonal-watercourse",
+      "target": "almeria",
+      "label": "regional habitat context",
+      "source_key": "communities",
+      "explanation": "The university discusses this habitat in the Almería landscape."
+    }
+  ],
+  "findings": [
+    {
+      "id": "plant-profile-community-context",
+      "label": "Source-specific watercourse and jujube communities",
+      "text": "UAL describes warm Mediterranean watercourses with oleander and several Tamarix species. At Torre García, Ziziphus lotus dominates jujube scrub; Lycium intricatum is a companion and Thymus hyemalis occurs in openings. Its Tabernas discussion also names rosemary scrub. These are habitat descriptions, not mixed-planting trials.",
+      "topic_ids": [
+        "seasonal-watercourse",
+        "oleander",
+        "tamarix",
+        "ziziphus-lotus",
+        "jujube-thorn-scrub",
+        "lycium-intricatum",
+        "thymus-hyemalis",
+        "rosemary",
+        "rosemary-scrub",
+        "almeria"
+      ],
+      "source_keys": [
+        "communities"
+      ]
+    },
+    {
+      "id": "plant-profile-retama-symbiosis",
+      "label": "Retama ecology and symbiosis context",
+      "text": "The UAL Retama account describes photosynthetic green shoots, short-lived leaves, Rhizobium symbiosis and arbuscular mycorrhiza. It places the plant in retama scrub and sometimes as a rambla pioneer, from sea level to 1500 m. These species-specific observations do not imply that every legume fixes nitrogen or establish a treatment recommendation.",
+      "topic_ids": [
+        "retama-sphaerocarpa",
+        "soil-biota"
+      ],
+      "source_keys": [
+        "retama"
+      ]
+    },
+    {
+      "id": "plant-profile-esparto-leaves",
+      "label": "Esparto leaves respond to water conditions",
+      "text": "The UAL account describes rolled leaves that reduce water loss and can unfold in wetter conditions, arbuscular mycorrhiza, and regrowth from underground parts after fire. It describes dry tussock grasslands from sea level to 1500 m in southeastern Iberia; this is not a planting-success prediction.",
+      "topic_ids": [
+        "esparto",
+        "esparto-grassland"
+      ],
+      "source_keys": [
+        "esparto"
+      ]
+    },
+    {
+      "id": "plant-profile-thyme-context",
+      "label": "Winter thyme avoids summer drought through seasonal timing",
+      "text": "The cited subsp. hyemalis account describes reproduction before summer drought, subsequent summer rest and rolled hairy leaf margins. It explicitly lacks species-specific mycorrhizal evidence, although other Thymus species have been studied. No inoculation recommendation is established.",
+      "topic_ids": [
+        "thymus-hyemalis",
+        "soil-biota"
+      ],
+      "source_keys": [
+        "thyme"
+      ]
+    },
+    {
+      "id": "plant-profile-ephedra-context",
+      "label": "Ephedra cones and evidence limits",
+      "text": "Ephedra fragilis is dioecious; the female illustration shows fleshy cone structures, not ordinary fruit. The source describes green photosynthetic shoots and arid scrub membership, while noting that cited mycorrhizal evidence concerns other Ephedra species.",
+      "topic_ids": [
+        "ephedra-fragilis",
+        "soil-biota"
+      ],
+      "source_keys": [
+        "ephedra"
+      ]
+    },
+    {
+      "id": "plant-profile-ziziphus-functions",
+      "label": "Wild jujube provides shelter and supports soil formation",
+      "text": "The UAM factsheet describes the thorny deciduous shrub as shelter for animals and plants, with soil-formation and erosion-control functions. These are source descriptions, not quantified survival benefits for a proposed planting mixture.",
+      "topic_ids": [
+        "ziziphus-lotus",
+        "soil-erosion"
+      ],
+      "source_keys": [
+        "ziziphus"
+      ]
+    },
+    {
+      "id": "plant-profile-oleander-toxicity",
+      "label": "Oleander toxicity is part of its plant profile",
+      "text": "The university botanical entry explicitly describes oleander as toxic if ingested. Its presence in watercourse vegetation is not a recommendation for unrestricted planting or use.",
+      "topic_ids": [
+        "oleander"
+      ],
+      "source_keys": [
+        "oleander"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "plant-illustration-limitations",
+      "text": "All imported artwork is AI-generated and representative, not diagnostic or to a common biological scale. Original morphology-review notes are preserved; not every linked botanical website was re-reviewed in this intake.",
+      "topic_ids": [
+        "carob",
+        "tamarix",
+        "salsola-webbii"
+      ]
+    },
+    {
+      "id": "plant-profile-salsola-detail-gap",
+      "text": "The previously cited Flora de Almería detail PDF returned a request-rejection HTML page. Identity and semi-arid habitat were checked against Kew and the UAL thesis instead; fine-leaf depiction remains an archived illustration-review note, not newly verified diagnostic evidence.",
+      "topic_ids": [
+        "salsola-webbii"
+      ]
+    },
+    {
+      "id": "plant-profile-withania-correspondence",
+      "text": "UAL PDF 66 uses Withania frutescens whereas the existing topic preserves Whitania frutescens source spelling. No identity merge was made during image intake.",
+      "topic_ids": [
+        "whitania-frutescens-source"
+      ]
+    }
+  ]
+}

@@ -13,9 +13,10 @@ export function Refs({
         <button
           key={i}
           onClick={() => open(ref)}
-          title={ref.locator || "Open exact PDF page"}
+          title={ref.locator || "Open source"}
         >
-          {ref.source_id} <span>p{ref.page} ↗</span>
+          {ref.source_id}{" "}
+          <span>{ref.page != null ? "p" + ref.page : "Source"} ↗</span>
         </button>
       ))}
     </div>

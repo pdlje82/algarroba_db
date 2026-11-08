@@ -15,6 +15,7 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from .graph import Graph, ROOT_GROUPS, LIMITS
 from .store import Store, ROOT, now
+from .plant_media import enrich_topics, public_image, managed_path
 
 DOMAIN = "Dryland and Mediterranean restoration, especially carob and associated vegetation; establishment water and irrigation; drone monitoring and water-delivery knowledge; selected Andalusian LEADER funding, with relevant places, organizations, findings, dates and requirements."
 
@@ -65,6 +66,8 @@ def create_app(store: Store | None = None):
     @app.get("/api/catalog")
     def catalog():
         snap=store.snapshot()
+        snap["topics"]=enrich_topics(snap["topics"],snap["plant_images"],store.resolve)
+        snap["plant_images"]=[public_image(x) for x in snap["plant_images"]]
         for s in snap["sources"]:
             s.pop("path",None)
         with store.connect() as c:
@@ -99,7 +102,7 @@ def create_app(store: Store | None = None):
         s=next((s for s in store.records("sources") if s["id"]==source_id),None)
         if not s:
             raise HTTPException(404,"Source is not registered.")
-        path=Path(s["path"])
+        path=store.source_path(s)
         if not path.is_file():
             raise HTTPException(404,f"Source missing: {s['filename']}. Restore the original edition in the library. The page locator remains available.")
         stat=path.stat(); signature=(stat.st_size,stat.st_mtime_ns)
@@ -107,9 +110,31 @@ def create_app(store: Store | None = None):
             with path.open("rb") as f:
                 digest=hashlib.file_digest(f,"sha256").hexdigest()
             if digest!=s["sha256"]:
-                raise HTTPException(409,"This PDF differs from the registered edition. Ask Codex to check the edition before using its page references.")
+                raise HTTPException(409,"This source differs from the registered edition. Ask Codex to check the edition before using its references.")
             source_cache[source_id]=signature
-        return FileResponse(path,media_type="application/pdf",filename=s["filename"],content_disposition_type="inline")
+        kind=s.get('kind','pdf')
+        media_type='application/pdf' if kind=='pdf' else 'image/png' if kind=='image' else 'text/plain; charset=utf-8'
+        return FileResponse(path,media_type=media_type,filename=s["filename"],content_disposition_type="inline")
+
+    @app.get('/api/plant-images/{image_id}/{variant}')
+    def plant_image(image_id: str, variant: str, request: Request):
+        record=next((x for x in store.records('plant_images') if x['id']==image_id),None)
+        if not record or variant not in record['files']:
+            raise HTTPException(404,'This plant image or variant is not registered.')
+        spec=record['files'][variant]
+        try:path=managed_path(store.media_root,spec['path'])
+        except ValueError as error:raise HTTPException(409,str(error)) from error
+        if not path.is_file():raise HTTPException(404,'Plant image unavailable. Restore the managed media files and retry.')
+        stat=path.stat();signature=(str(path),stat.st_size,stat.st_mtime_ns)
+        if source_cache.get(('plant',image_id,variant))!=signature:
+            if hashlib.sha256(path.read_bytes()).hexdigest()!=spec['sha256']:
+                raise HTTPException(409,'Plant image checksum mismatch. Restore the registered image and retry.')
+            source_cache[('plant',image_id,variant)]=signature
+        etag='"'+spec['sha256']+'"'
+        from starlette.responses import Response
+        headers={'ETag':etag,'Cache-Control':'private, max-age=0, must-revalidate'}
+        if request.headers.get('if-none-match')==etag:return Response(status_code=304,headers=headers)
+        return FileResponse(path,media_type=spec['mime'],headers=headers,content_disposition_type='inline')
 
     @app.get("/api/explorations")
     def explorations():

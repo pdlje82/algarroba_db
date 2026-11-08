@@ -46,7 +46,8 @@ import { useAppearance, useFullScreen } from "./workspace";
 import { ResearchPanel, Refs } from "./dialogs";
 import { rootGroup } from "./organization";
 import { speciesNames } from "./speciesNames";
-import PdfPanel, { PdfBoundary } from "./PdfPanel";
+import { SourcePanel } from "./SourcePanel";
+import { PlantImages } from "./PlantImages";
 import "./style.css";
 
 function App() {
@@ -1182,6 +1183,7 @@ function App() {
                             : "Compare"}
                         </button>
                       </div>
+                      {selectedTopic.kind === "species" && <PlantImages key={selectedTopic.id} topic={selectedTopic}/>}
                       {selectedTopic.kind === "species" ? (
                         <div className="species-name-details">
                           <dl>
@@ -1204,6 +1206,7 @@ function App() {
                           )}
                         </div>
                       ) : selectedTopic.scientific_name && <p><em>{selectedTopic.scientific_name}</em></p>}
+                      {selectedTopic.plant_profile && <details className="plant-profile"><summary>Illustration notes</summary><p>{selectedTopic.plant_profile.identifying_features}</p><p>{selectedTopic.plant_profile.growth_form}</p><small>{selectedTopic.plant_profile.basis}</small></details>}
                       {(selectedTopic.aliases?.length || 0) > 0 && (
                         <p>
                           Also searchable: {selectedTopic.aliases?.join(" · ")}
@@ -1427,7 +1430,7 @@ function App() {
                           onClick={() =>
                             setSource({
                               source_id: s.id,
-                              page: s.initial_pdf_page_ranges[0][0],
+                              page: (s.kind === undefined || s.kind === "pdf") ? s.initial_pdf_page_ranges[0][0] : undefined,
                             })
                           }
                         >
@@ -1556,13 +1559,8 @@ function App() {
         </div>
       )}
       {source && (
-        <PdfBoundary key={source.source_id} source={source} close={() => setSource(null)}>
-          <PdfPanel
-            source={source}
-            catalog={catalog}
-            close={() => setSource(null)}
-          />
-        </PdfBoundary>
+        <SourcePanel key={source.source_id+":"+source.page} source={source} catalog={catalog} close={() => setSource(null)}/>
+
       )}
       {research && (
         <ResearchPanel
@@ -1597,7 +1595,7 @@ function App() {
                   onClick={() =>
                     setSource({
                       source_id: s.id,
-                      page: s.initial_pdf_page_ranges[0][0],
+                      page: (s.kind === undefined || s.kind === "pdf") ? s.initial_pdf_page_ranges[0][0] : undefined,
                     })
                   }
                 >

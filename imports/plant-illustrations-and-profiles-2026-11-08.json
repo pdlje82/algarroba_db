@@ -1,0 +1,3770 @@
+{
+  "batch_id": "plant-illustrations-and-focused-profiles-2026-11-08",
+  "summary": "46 reviewed local illustrations; 23 focused profiles and evidence-based community links. No simulator rules or prices imported.",
+  "base_revision": 4,
+  "topics": [
+    {
+      "id": "retama-sphaerocarpa",
+      "label": "Retama",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Broom-form shrub with slender green shoots and yellow axillary flower clusters. The UAL account places it in retama scrub, sometimes pioneering ramblas, across varied substrates.",
+      "spanish_name": "Retama amarilla",
+      "english_name": "Retama",
+      "scientific_name": "Retama sphaerocarpa",
+      "name_status": "recorded",
+      "aliases": [
+        "Retama amarilla",
+        "Retama sphaerocarpa"
+      ],
+      "name_note": "Names reconciled with the old-app catalogue and the cited botanical identity. Common names vary.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0001",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Slender, flexible grey-green shoots, losing their small leaves early; small yellow pea flowers in short lateral clusters. Yellow-flowered R. sphaerocarpa, rather than white-flowered R. monosperma.",
+        "growth_form": "Airy shrub with arching, nearly leafless green shoots and small yellow flower clusters.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "esparto",
+      "label": "Esparto",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Robust tussock grass with long leaves that can roll into tubes. It forms dry grasslands known as espartales or atochares; this species identity is distinct from the habitat topic.",
+      "spanish_name": "Esparto",
+      "english_name": "Esparto",
+      "scientific_name": "Macrochloa tenacissima",
+      "name_status": "recorded",
+      "aliases": [
+        "Esparto",
+        "atocha",
+        "Macrochloa tenacissima",
+        "Stipa tenacissima",
+        "Atocha"
+      ],
+      "name_note": "Names reconciled with the old-app catalogue and the cited botanical identity. Common names vary.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0002",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Also known as Stipa tenacissima. Dense basal tussock of long, tough rolled leaves. Shown without flowers; flowering plants have slender stems with narrow panicles and awned spikelets.",
+        "growth_form": "Dense basal tussock of rolled leaves with retained straw-coloured leaf bases; shown without flowers.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "thymus-hyemalis",
+      "label": "Thyme",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Low aromatic woody thyme with narrow rolled-margin leaves and pink flowers. The cited account concerns subsp. hyemalis in southeastern Iberian scrub and thyme communities.",
+      "spanish_name": "Tomillo de invierno",
+      "english_name": "Thyme",
+      "scientific_name": "Thymus hyemalis",
+      "name_status": "recorded",
+      "aliases": [
+        "Tomillo de invierno",
+        "Thymus hyemalis",
+        "Thymus hyemalis subsp. hyemalis"
+      ],
+      "name_note": "Topic retains Thymus hyemalis; the principal detailed account is specifically subsp. hyemalis.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0003",
+          "page": null,
+          "locator": "Breve Descripción; Distribución; Ecología"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Small woody stems with tiny opposite, narrow rolled-margin leaves; compact terminal heads of pink, two-lipped flowers. The poster specifies winter thyme.",
+        "growth_form": "Low woody subshrub forming a compact twiggy mound with small pink flower heads.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "rosemary",
+      "label": "Rosemary",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Evergreen upright aromatic shrub with opposite narrow leaves, recurved margins and pale felted undersides. UAM records Rosmarinus officinalis and Salvia rosmarinus as synonyms.",
+      "spanish_name": "Romero",
+      "english_name": "Rosemary",
+      "scientific_name": "Salvia rosmarinus",
+      "name_status": "recorded",
+      "aliases": [
+        "Romero",
+        "Salvia rosmarinus",
+        "Rosmarinus officinalis"
+      ],
+      "name_note": "Names reconciled with the old-app catalogue and the cited botanical identity. Common names vary.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0008",
+          "page": 1,
+          "locator": "PDF 1: names, description, ecology"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Also called Rosmarinus officinalis. Opposite narrow leaves have rolled-under edges, dark green upper surfaces and whitish undersides. Small pale blue-lavender, two-lipped flowers sit near the stems; this is rosemary, not lavender.",
+        "growth_form": "Upright branching evergreen shrub with narrow leaves; shown in an unpruned form.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "ephedra-fragilis",
+      "label": "Joint pine",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Much-branched shrub with articulated green shoots and tiny reduced leaves. Male and female plants are separate; the illustration depicts a female form. The UAL account concerns subsp. fragilis.",
+      "spanish_name": "Hierba de las coyunturas",
+      "english_name": "Joint pine",
+      "scientific_name": "Ephedra fragilis",
+      "name_status": "recorded",
+      "aliases": [
+        "Hierba de las coyunturas",
+        "Ephedra fragilis",
+        "Ephedra fragilis subsp. fragilis"
+      ],
+      "name_note": "Names reconciled with the old-app catalogue and the cited botanical identity. Common names vary.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0004",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Dense, slender green jointed stems with tiny scale-like leaves at the nodes and older grey woody branches. The depicted female sprig bears small red fleshy seed-cone bracts; these are not ordinary fruits or flowers. Male and female structures occur on separate plants.",
+        "growth_form": "Much-branched shrub with jointed green shoots, tiny scales and older woody stems; female form shown.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "ziziphus-lotus",
+      "label": "Ziziphus",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Strongly thorny deciduous shrub forming dense rounded masses, with zigzag branches and three-veined leaves. Distinct from cultivated Ziziphus jujuba.",
+      "spanish_name": "Azufaifo",
+      "english_name": "Ziziphus",
+      "scientific_name": "Ziziphus lotus",
+      "name_status": "recorded",
+      "aliases": [
+        "Azufaifo",
+        "arto",
+        "Ziziphus lotus"
+      ],
+      "name_note": "Names reconciled with the old-app catalogue and the cited botanical identity. Common names vary.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0009",
+          "page": 1,
+          "locator": "PDF 1: names, description, ecology and shelter/soil functions"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Zigzag thorny shoots; alternate small oval leaves with three strong veins from the base and a finely scalloped margin; small drupes. This is wild Z. lotus, not cultivated Z. jujuba.",
+        "growth_form": "Broad densely intertwined thorny shrub with a rounded, spreading crown.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "lycium-intricatum",
+      "label": "Lycium",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Thorny shrub with twisted branches, fleshy grey-green leaves and violet tubular flowers. The university account associates it with warm rocky coastal sites.",
+      "spanish_name": "Cambrón",
+      "english_name": "Lycium",
+      "scientific_name": "Lycium intricatum",
+      "name_status": "recorded",
+      "aliases": [
+        "Cambrón",
+        "cambronera",
+        "Lycium intricatum"
+      ],
+      "name_note": "Names reconciled with the old-app catalogue and the cited botanical identity. Common names vary.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0005",
+          "page": null,
+          "locator": "Hábitats; Características"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Tortuous thorny branches, small fleshy grey-green leaves and violet tubular flowers with a flared mouth. The illustration represents the poster’s Mediterranean boxthorn.",
+        "growth_form": "Low irregular shrub with tortuous thorny branches and small fleshy leaves.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "salsola-webbii",
+      "label": "Salsola",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Shrub of semi-arid scrub recorded in the UAL flora table for Almería and the Alpujarras. Kew accepts Salsola webbii and records southern Spain and Morocco as its native range.",
+      "spanish_name": "Mata conejera",
+      "english_name": "Salsola",
+      "scientific_name": "Salsola webbii",
+      "name_status": "recorded",
+      "aliases": [
+        "Mata conejera",
+        "Salsola webbii",
+        "Salsola ericoides",
+        "Anabasis tamariscifolia"
+      ],
+      "name_note": "Retain Salsola webbii. Kew qualifies Salsola ericoides as not validly published and Anabasis tamariscifolia as sensu auct.; these aliases do not establish unrestricted name equivalence.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0010",
+          "page": 66,
+          "locator": "PDF 66, printed 65: focused review of Salsola webbii and Thymus hyemalis rows; Tamarix species not generalized to an unidentified plant"
+        },
+        {
+          "source_id": "KGB-SRC-0012",
+          "page": null,
+          "locator": "Accepted name, native range, synonyms"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Pale woody branches with very slender, curved, cylindrical grey-green leaves, alternate or in small axillary tufts. Shown in non-flowering foliage state, without broad flat blades. The poster uses the name Salsola webbii.",
+        "growth_form": "Rounded to upright shrub with pale woody branches and very slender curved leaves; foliage state.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "oleander",
+      "label": "Oleander",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Evergreen shrub with narrow leathery leaves and terminal pink flower clusters. Occurs in non-saline wet places including ramblas; toxic if ingested.",
+      "spanish_name": "Adelfa",
+      "english_name": "Oleander",
+      "scientific_name": "Nerium oleander",
+      "name_status": "recorded",
+      "aliases": [
+        "Adelfa",
+        "Nerium oleander"
+      ],
+      "name_note": "Names reconciled with the old-app catalogue and the cited botanical identity. Common names vary.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0006",
+          "page": null,
+          "locator": "Hábitats; Descripción; Observaciones"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Long leathery lanceolate leaves, opposite or in whorls, with a strong midrib; terminal clusters of simple five-lobed pink flowers.",
+        "growth_form": "Upright multistem shrub with narrow evergreen leaves and terminal flower clusters.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "tamarix",
+      "label": "Tamarix (tree form)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "group_id": "species",
+      "description": "Genus-level tamarisk topic. The university habitat account records several Tamarix species with oleander in warm Mediterranean watercourse vegetation; the pictured taxon is not identified to species.",
+      "spanish_name": "Taray",
+      "english_name": "Tamarix (tree form)",
+      "scientific_name": "Tamarix spp.",
+      "name_status": "genus-only",
+      "aliases": [
+        "Taray",
+        "taraje",
+        "Tamarix spp."
+      ],
+      "name_note": "Tamarix spp. intentionally remains genus-level. A T. gallica botanical illustration reference is an example, not an identification.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Fine branching twigs with tiny overlapping scale leaves and slender racemes of minute pink flowers. Genus-level representation: the poster does not identify a Tamarix species. The linked T. gallica describes an example, not the confirmed planting identity.",
+        "growth_form": "Representative tree form with a loose crown and fine branchlets; Tamarix species can also be shrubby.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "semi-arid-shrubland",
+      "label": "Semi-arid shrubland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "group_id": "habitats",
+      "description": "Semi-arid shrub vegetation; source-specific memberships retain their own context.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0001",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ]
+    },
+    {
+      "id": "seasonal-watercourse",
+      "label": "Mediterranean watercourse scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "group_id": "habitats",
+      "description": "Warm Mediterranean rambla vegetation described with oleander and several Tamarix species.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ]
+    },
+    {
+      "id": "coastal-rocky-scrub",
+      "label": "Warm rocky coastal scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "group_id": "habitats",
+      "description": "Rocky coastal habitat described for Lycium intricatum.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0005",
+          "page": null,
+          "locator": "Hábitats; Características"
+        }
+      ]
+    },
+    {
+      "id": "rosemary-scrub",
+      "label": "Rosemary scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "group_id": "habitats",
+      "description": "Romerales described in the Tabernas landscape.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ]
+    },
+    {
+      "id": "carob",
+      "label": "Carob tree",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Evergreen Mediterranean tree identified by the handbook description as Ceratonia siliqua. Community associations, cultivation observations, restoration guidance and trial findings retain separate scopes.",
+      "aliases": [
+        "carob",
+        "algarrobo",
+        "algarroba",
+        "garrofa",
+        "Ceratonia siliqua",
+        "C. siliqua",
+        "Ceratonia silique"
+      ],
+      "spanish_name": "Algarrobo",
+      "english_name": "Carob tree",
+      "scientific_name": "Ceratonia siliqua",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — CEQSI",
+          "url": "https://gd.eppo.int/taxon/CEQSI",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 13,
+          "locator": "Selected passage"
+        }
+      ],
+      "identification": "FOREST-002 PDF 13–21 species description. Printed authority/year retained as source usage only. MENAQUA Ceratonia silique is a checked spelling variant, not another species or naming authority.",
+      "place_ids": [
+        "mediterranean",
+        "andalusia"
+      ],
+      "aspects": {
+        "water": "Adult drought tolerance differs from establishment requirements",
+        "soil": "Well-drained sites; preserve soil and age context",
+        "companions": "Source-described accompaniment, not universal mutual benefit"
+      },
+      "plant_profile": {
+        "identifying_features": "Broad, leathery oval leaflets in pairs without a terminal leaflet; long flattened brown pods.",
+        "growth_form": "Broad rounded evergreen crown on a short sturdy trunk with spreading limbs.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "wild-olive",
+      "label": "Wild olive",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Handbook identity; factsheet spelling variant and less specific MR 2 usage retained in source context.",
+      "aliases": [
+        "acebuche",
+        "Olea europea var. sylvestris",
+        "Olea europaea var. sylvestris"
+      ],
+      "spanish_name": "Acebuche",
+      "english_name": "Wild olive",
+      "scientific_name": "Olea europaea var. sylvestris",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Opposite, simple narrow leaves with a pale silvery underside; small olive drupes, dark when ripe.",
+        "growth_form": "Irregular evergreen crown; wild olive can form a large shrub or a small tree.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "mastic",
+      "label": "Mastic",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion shared by carob and kermes-oak accounts.",
+      "aliases": [
+        "lentisco",
+        "Pistacia lentiscus"
+      ],
+      "spanish_name": "Lentisco",
+      "english_name": "Mastic",
+      "scientific_name": "Pistacia lentiscus",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Pinnate leaves with paired leathery leaflets, a winged central stalk and no terminal leaflet; small red drupes turn dark at maturity.",
+        "growth_form": "Dense evergreen shrub with low branching; larger specimens can become small trees.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "rhamnus-alaternus",
+      "label": "Rhamnus alaternus",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Rhamnus alaternus"
+      ],
+      "spanish_name": "Aladierno",
+      "english_name": "Italian buckthorn",
+      "scientific_name": "Rhamnus alaternus",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — RHAAL",
+          "url": "https://gd.eppo.int/taxon/RHAAL",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "plant_profile": {
+        "identifying_features": "Alternate, simple leathery oval leaves with small marginal teeth; small round drupes darken at maturity. This entry represents the poster’s R. alaternus, not R. lycioides.",
+        "growth_form": "Upright to rounded evergreen shrub; can also grow as a small tree.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "dwarf-palm",
+      "label": "Mediterranean dwarf palm",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the carob ecology account.",
+      "aliases": [
+        "palmito",
+        "Chamaerops humilis"
+      ],
+      "spanish_name": "Palmito",
+      "english_name": "Mediterranean dwarf palm",
+      "scientific_name": "Chamaerops humilis",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Low, clumping palm with folded fan-shaped leaves divided into narrow segments; stiff spines along the leaf stalks.",
+        "growth_form": "Low clumping palm with several short fibrous stems and fan-shaped leaves.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "rhamnus-lycioides",
+      "label": "Rhamnus lycioides",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Rhamnus lycioides"
+      ],
+      "spanish_name": "Espino negro",
+      "english_name": "Black hawthorn",
+      "scientific_name": "Rhamnus lycioides",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — RHALY",
+          "url": "https://gd.eppo.int/taxon/RHALY",
+          "fields": [
+            "spanish_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        },
+        {
+          "title": "Catalan Ornithological Institute — Ringing Standards, English edition 3/23",
+          "url": "https://ornitologia.org/mm/file/quefem/anellament/estandards_2023_eng.pdf",
+          "fields": [
+            "english_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Plant-name table; Black hawthorn corresponds to Rhamnus lycioides."
+        }
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "plant_profile": {
+        "identifying_features": "Grey-brown woody branches end in thorns. Small narrow leathery leaves have entire margins, with little visible lateral venation; small globose drupes turn black. This is the poster’s R. lycioides, distinct from the broader-leaved R. alaternus (Aladierno) already listed.",
+        "growth_form": "Dense tangled shrub with thorn-tipped branches and small narrow leaves.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "kermes-oak",
+      "label": "Kermes oak",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Quercus coccifera as described by the Andalusian factsheet; usually a Mediterranean shrub, sometimes a small tree. Common names alone do not merge it with another oak.",
+      "aliases": [
+        "coscoja",
+        "maraña",
+        "matarrubia",
+        "carrasca",
+        "chaparra",
+        "chaparro",
+        "Quercus coccifera",
+        "Quercus coccifera L."
+      ],
+      "spanish_name": "Coscoja",
+      "english_name": "Kermes oak",
+      "scientific_name": "Quercus coccifera",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 1,
+          "locator": "Selected passage"
+        }
+      ],
+      "identification": "FOREST-003 PDF 1 description and source common names.",
+      "place_ids": [
+        "andalusia",
+        "mediterranean"
+      ],
+      "aspects": {
+        "water": "Favourable annual rainfall 400–800 mm, with wider occurrence",
+        "soil": "Acidic or basic substrates, often stony"
+      },
+      "plant_profile": {
+        "identifying_features": "Stiff glossy evergreen leaves with spiny teeth; prickly acorn cups.",
+        "growth_form": "Dense evergreen shrub, rarely a small tree.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "holm-oak-rotundifolia",
+      "label": "Holm oak (Q. rotundifolia source concept)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "encina",
+        "Quercus rotundifolia"
+      ],
+      "spanish_name": "Encina",
+      "english_name": "Holm oak",
+      "scientific_name": "Quercus rotundifolia",
+      "name_note": "The factsheet Quercus rotundifolia source concept remains separate from the handbook Quercus ilex concept, despite their shared common names.",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 3,
+          "locator": "Selected passage"
+        }
+      ],
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "plant_profile": {
+        "identifying_features": "Rounded leathery leaves, dark above, grey-white felt beneath; acorns in scaly cups.",
+        "growth_form": "Broad rounded evergreen crown on a sturdy trunk.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "phillyrea-angustifolia",
+      "label": "Narrow-leaved phillyrea",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the carob account.",
+      "aliases": [
+        "labiérnago",
+        "Phillyrea angustifolia"
+      ],
+      "spanish_name": "Labiérnago blanco",
+      "english_name": "Narrow-leaved phillyrea",
+      "scientific_name": "Phillyrea angustifolia",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — PLRAN",
+          "url": "https://gd.eppo.int/taxon/PLRAN",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Opposite narrow lanceolate leathery leaves with usually entire margins; small black drupes.",
+        "growth_form": "Dense evergreen shrub.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "phillyrea-latifolia",
+      "label": "Phillyrea latifolia",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Phillyrea latifolia"
+      ],
+      "spanish_name": "Labiérnago prieto",
+      "english_name": "Broad-leaved phillyrea",
+      "scientific_name": "Phillyrea latifolia",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — PLRLA",
+          "url": "https://gd.eppo.int/taxon/PLRLA",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "plant_profile": {
+        "identifying_features": "Opposite broad ovate leathery leaves with serrated margins; small black drupes.",
+        "growth_form": "Dense evergreen shrub or small tree.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "myrtle",
+      "label": "Myrtle",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the carob account.",
+      "aliases": [
+        "mirto",
+        "Myrtus communis"
+      ],
+      "spanish_name": "Mirto",
+      "english_name": "Myrtle",
+      "scientific_name": "Myrtus communis",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Opposite glossy entire ovate-lanceolate leaves; five white petals, many long stamens; blue-black berries.",
+        "growth_form": "Dense aromatic evergreen shrub.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "terebinth",
+      "label": "Terebinth",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the handbook; preserve its source ecology context.",
+      "aliases": [
+        "cornicabra",
+        "Pistacia terebinthus"
+      ],
+      "spanish_name": "Cornicabra",
+      "english_name": "Terebinth",
+      "scientific_name": "Pistacia terebinthus",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Alternate pinnate deciduous leaves with a terminal leaflet, unwinged rachis; reddish drupes in clusters.",
+        "growth_form": "Open branching deciduous shrub or small tree.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "cork-oak",
+      "label": "Cork oak",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Less frequent carob companion; cork woodland is also a kermes-oak habitat.",
+      "aliases": [
+        "alcornoque",
+        "Quercus suber"
+      ],
+      "spanish_name": "Alcornoque",
+      "english_name": "Cork oak",
+      "scientific_name": "Quercus suber",
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "plant_profile": {
+        "identifying_features": "Deep fissured cork bark; leathery ovate leaves with grey felt beneath; acorns in scaly cups.",
+        "growth_form": "Broad irregular evergreen tree with a rugged cork-covered trunk.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "plant-profile-retama-sphaerocarpa-semi-arid-shrubland",
+      "source": "retama-sphaerocarpa",
+      "target": "semi-arid-shrubland",
+      "label": "occurs in",
+      "explanation": "The ecology account describes retama communities across varied substrates, including semi-arid gypsum settings.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0001",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-esparto-esparto-grassland",
+      "source": "esparto",
+      "target": "esparto-grassland",
+      "label": "forms tussock grassland",
+      "explanation": "The source explicitly names espartales or atochares; species and habitat remain distinct identities.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0002",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-thymus-hyemalis-semi-arid-shrubland",
+      "source": "thymus-hyemalis",
+      "target": "semi-arid-shrubland",
+      "label": "occurs in thyme scrub",
+      "explanation": "The cited subsp. hyemalis account describes southeastern Iberian scrub and thyme communities.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0003",
+          "page": null,
+          "locator": "Breve Descripción; Distribución; Ecología"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-ephedra-fragilis-xerothermic-scrub",
+      "source": "ephedra-fragilis",
+      "target": "xerothermic-scrub",
+      "label": "occurs in arid scrub",
+      "explanation": "Arid shrub formations include calcareous, gypsum and saline sandy substrates; no universal site recommendation follows.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0004",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-salsola-webbii-semi-arid-shrubland",
+      "source": "salsola-webbii",
+      "target": "semi-arid-shrubland",
+      "label": "occurs in",
+      "explanation": "PDF 66, Salsola webbii row: matorrales semiáridos.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0010",
+          "page": 66,
+          "locator": "PDF 66, printed 65: focused review of Salsola webbii and Thymus hyemalis rows; Tamarix species not generalized to an unidentified plant"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-salsola-webbii-almeria",
+      "source": "salsola-webbii",
+      "target": "almeria",
+      "label": "regional occurrence recorded",
+      "explanation": "PDF 66 explicitly lists Almería in the Salsola webbii row.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0010",
+          "page": 66,
+          "locator": "PDF 66, printed 65: focused review of Salsola webbii and Thymus hyemalis rows; Tamarix species not generalized to an unidentified plant"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-lycium-intricatum-coastal-rocky-scrub",
+      "source": "lycium-intricatum",
+      "target": "coastal-rocky-scrub",
+      "label": "occurs in",
+      "explanation": "The university habitat account names rocky coasts and warm sun-exposed coastal ground.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0005",
+          "page": null,
+          "locator": "Hábitats; Características"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-rosemary-rosemary-scrub",
+      "source": "rosemary",
+      "target": "rosemary-scrub",
+      "label": "forms scrub",
+      "explanation": "The university describes romerales in the Tabernas landscape; see the linked community finding.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-rosemary-scrub-mediterranean-dryland",
+      "source": "rosemary-scrub",
+      "target": "mediterranean-dryland",
+      "label": "described dryland setting",
+      "explanation": "See the linked community finding; source-specific landscape context.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-semi-arid-shrubland-mediterranean-dryland",
+      "source": "semi-arid-shrubland",
+      "target": "mediterranean-dryland",
+      "label": "dryland vegetation setting",
+      "explanation": "The source explicitly describes retama in semi-arid settings; a curated broad habitat organization is not a tested planting mix.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0001",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-ziziphus-lotus-jujube-thorn-scrub",
+      "source": "ziziphus-lotus",
+      "target": "jujube-thorn-scrub",
+      "label": "dominates",
+      "explanation": "See the linked Torre García community finding.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-lycium-intricatum-jujube-thorn-scrub",
+      "source": "lycium-intricatum",
+      "target": "jujube-thorn-scrub",
+      "label": "recorded companion",
+      "explanation": "See the linked Torre García community finding; accompaniment does not establish facilitation.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-thymus-hyemalis-jujube-thorn-scrub",
+      "source": "thymus-hyemalis",
+      "target": "jujube-thorn-scrub",
+      "label": "occurs in openings",
+      "explanation": "See the linked Torre García community finding.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-oleander-seasonal-watercourse",
+      "source": "oleander",
+      "target": "seasonal-watercourse",
+      "label": "recorded dominant",
+      "explanation": "See the linked warm Mediterranean watercourse finding.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-tamarix-seasonal-watercourse",
+      "source": "tamarix",
+      "target": "seasonal-watercourse",
+      "label": "recorded genus",
+      "explanation": "Several species are named in the source; the illustrated identity remains genus-level.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    },
+    {
+      "id": "plant-profile-seasonal-watercourse-almeria",
+      "source": "seasonal-watercourse",
+      "target": "almeria",
+      "label": "regional habitat context",
+      "explanation": "The university discusses this habitat in the Almería landscape.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "basis": "source",
+      "traversable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "plant-profile-community-context",
+      "label": "Source-specific watercourse and jujube communities",
+      "text": "UAL describes warm Mediterranean watercourses with oleander and several Tamarix species. At Torre García, Ziziphus lotus dominates jujube scrub; Lycium intricatum is a companion and Thymus hyemalis occurs in openings. Its Tabernas discussion also names rosemary scrub. These are habitat descriptions, not mixed-planting trials.",
+      "topic_ids": [
+        "seasonal-watercourse",
+        "oleander",
+        "tamarix",
+        "ziziphus-lotus",
+        "jujube-thorn-scrub",
+        "lycium-intricatum",
+        "thymus-hyemalis",
+        "rosemary",
+        "rosemary-scrub",
+        "almeria"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "plant-profile-retama-symbiosis",
+      "label": "Retama ecology and symbiosis context",
+      "text": "The UAL Retama account describes photosynthetic green shoots, short-lived leaves, Rhizobium symbiosis and arbuscular mycorrhiza. It places the plant in retama scrub and sometimes as a rambla pioneer, from sea level to 1500 m. These species-specific observations do not imply that every legume fixes nitrogen or establish a treatment recommendation.",
+      "topic_ids": [
+        "retama-sphaerocarpa",
+        "soil-biota"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0001",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "plant-profile-esparto-leaves",
+      "label": "Esparto leaves respond to water conditions",
+      "text": "The UAL account describes rolled leaves that reduce water loss and can unfold in wetter conditions, arbuscular mycorrhiza, and regrowth from underground parts after fire. It describes dry tussock grasslands from sea level to 1500 m in southeastern Iberia; this is not a planting-success prediction.",
+      "topic_ids": [
+        "esparto",
+        "esparto-grassland"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0002",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "plant-profile-thyme-context",
+      "label": "Winter thyme avoids summer drought through seasonal timing",
+      "text": "The cited subsp. hyemalis account describes reproduction before summer drought, subsequent summer rest and rolled hairy leaf margins. It explicitly lacks species-specific mycorrhizal evidence, although other Thymus species have been studied. No inoculation recommendation is established.",
+      "topic_ids": [
+        "thymus-hyemalis",
+        "soil-biota"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0003",
+          "page": null,
+          "locator": "Breve Descripción; Distribución; Ecología"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "plant-profile-ephedra-context",
+      "label": "Ephedra cones and evidence limits",
+      "text": "Ephedra fragilis is dioecious; the female illustration shows fleshy cone structures, not ordinary fruit. The source describes green photosynthetic shoots and arid scrub membership, while noting that cited mycorrhizal evidence concerns other Ephedra species.",
+      "topic_ids": [
+        "ephedra-fragilis",
+        "soil-biota"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0004",
+          "page": null,
+          "locator": "Breve Descripción; Ecología"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "plant-profile-ziziphus-functions",
+      "label": "Wild jujube provides shelter and supports soil formation",
+      "text": "The UAM factsheet describes the thorny deciduous shrub as shelter for animals and plants, with soil-formation and erosion-control functions. These are source descriptions, not quantified survival benefits for a proposed planting mixture.",
+      "topic_ids": [
+        "ziziphus-lotus",
+        "soil-erosion"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0009",
+          "page": 1,
+          "locator": "PDF 1: names, description, ecology and shelter/soil functions"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "plant-profile-oleander-toxicity",
+      "label": "Oleander toxicity is part of its plant profile",
+      "text": "The university botanical entry explicitly describes oleander as toxic if ingested. Its presence in watercourse vegetation is not a recommendation for unrestricted planting or use.",
+      "topic_ids": [
+        "oleander"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0006",
+          "page": null,
+          "locator": "Hábitats; Descripción; Observaciones"
+        }
+      ],
+      "kind": "finding"
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0008",
+      "page": 1,
+      "status": "inspected",
+      "note": "PDF 1: names, description, ecology"
+    },
+    {
+      "source_id": "KGB-SRC-0009",
+      "page": 1,
+      "status": "inspected",
+      "note": "PDF 1: names, description, ecology and shelter/soil functions"
+    },
+    {
+      "source_id": "KGB-SRC-0010",
+      "page": 66,
+      "status": "inspected",
+      "note": "PDF 66, printed 65: focused review of Salsola webbii and Thymus hyemalis rows; Tamarix species not generalized to an unidentified plant"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "plant-illustration-limitations",
+      "text": "All imported artwork is AI-generated and representative, not diagnostic or to a common biological scale. Original morphology-review notes are preserved; not every linked botanical website was re-reviewed in this intake.",
+      "topic_ids": [
+        "carob",
+        "tamarix",
+        "salsola-webbii"
+      ]
+    },
+    {
+      "id": "plant-profile-salsola-detail-gap",
+      "text": "The previously cited Flora de Almería detail PDF returned a request-rejection HTML page. Identity and semi-arid habitat were checked against Kew and the UAL thesis instead; fine-leaf depiction remains an archived illustration-review note, not newly verified diagnostic evidence.",
+      "topic_ids": [
+        "salsola-webbii"
+      ]
+    },
+    {
+      "id": "plant-profile-withania-correspondence",
+      "text": "UAL PDF 66 uses Withania frutescens whereas the existing topic preserves Whitania frutescens source spelling. No identity merge was made during image intake.",
+      "topic_ids": [
+        "whitania-frutescens-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "KGB-SRC-0001",
+      "key": "retama",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/retama.html",
+      "title": "Retama sphaerocarpa — WEB_BIOCON",
+      "author_issuer": "University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Breve Descripción; Ecología",
+      "url": "https://nevada.ual.es/biocon/retama-sphaerocarpa.html",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Broom-form shrub; yellow axillary flowers; retama scrub and occasional rambla pioneers. The ecology section discusses Rhizobium and arbuscular mycorrhizal symbioses.",
+      "sha256": "129fd1be235f8ad6e8744381b6719a6da70468b27557e53276755b424d4a7eac",
+      "filename": "retama.html"
+    },
+    {
+      "id": "KGB-SRC-0002",
+      "key": "esparto",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/esparto.html",
+      "title": "Macrochloa tenacissima — WEB_BIOCON",
+      "author_issuer": "University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Breve Descripción; Ecología",
+      "url": "https://nevada.ual.es/biocon/macrochloa-tenacissima.html",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Macrochloa tenacissima is also called Stipa tenacissima. A tussock grass of dry espartales; leaves roll and unroll with water conditions.",
+      "sha256": "ab356482c728a92fa5666523980d4eca1c9c3a6998f804f1ee40f2c7ea7201fe",
+      "filename": "esparto.html"
+    },
+    {
+      "id": "KGB-SRC-0003",
+      "key": "thyme",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/thyme.html",
+      "title": "Thymus hyemalis subsp. hyemalis — WEB_BIOCON",
+      "author_issuer": "University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Breve Descripción; Distribución; Ecología",
+      "url": "https://nevada.ual.es/biocon/thymus-hyemalis-subsp.-hyemalis.html",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Aromatic low shrub with narrow rolled-margin leaves. Southeastern Iberian thyme scrub on varied substrates; the source distinguishes genus-level mycorrhizal evidence from species-specific evidence.",
+      "sha256": "ff4dd4e73f2af693610c5b20fb97447949e44d55c86ad573df003a227234b8f7",
+      "filename": "thyme.html"
+    },
+    {
+      "id": "KGB-SRC-0004",
+      "key": "ephedra",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/ephedra.html",
+      "title": "Ephedra fragilis subsp. fragilis — WEB_BIOCON",
+      "author_issuer": "University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Breve Descripción; Ecología",
+      "url": "https://nevada.ual.es/biocon/ephedra-fragilis-desf.-subsp.-fragilis.html",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Dioecious shrub with articulated green shoots and reduced leaves. Arid scrub on varied substrates, often calcareous or gypsum; gymnosperm cones are not flowers or ordinary fruits.",
+      "sha256": "b10c2dcc7a40f98bdcd5387897ae07b675abf0640cc1d55a7519679db634d537",
+      "filename": "ephedra.html"
+    },
+    {
+      "id": "KGB-SRC-0005",
+      "key": "lycium",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/lycium.html",
+      "title": "Lycium intricatum — Herbari Virtual",
+      "author_issuer": "University of the Balearic Islands",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Hábitats; Características",
+      "url": "https://herbarivirtual.uib.es/es/general/505/especie/arc-intricat",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Thorny shrub with tortuous branches, fleshy leaves and violet tubular flowers, associated with warm rocky coastal sites.",
+      "sha256": "f1c8e1117baa0ca74fe5e5875ab831221581b7620e86f7a17bd58f16b79d5b56",
+      "filename": "lycium.html"
+    },
+    {
+      "id": "KGB-SRC-0006",
+      "key": "oleander",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/oleander.html",
+      "title": "Nerium oleander — Herbari Virtual",
+      "author_issuer": "University of the Balearic Islands",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Hábitats; Descripción; Observaciones",
+      "url": "https://herbarivirtual.uib.es/es/general/895/especie/nerium-oleander-l-",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Evergreen shrub with leathery narrow leaves and terminal flower clusters. Recorded in non-saline wet places including ramblas. The source explicitly notes toxicity if ingested.",
+      "sha256": "172717802606e2e9e00605cf08623f658321d79a6f14eda23297ada5381c5a28",
+      "filename": "oleander.html"
+    },
+    {
+      "id": "KGB-SRC-0007",
+      "key": "communities",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/communities.html",
+      "title": "Jardín de la Sal — habitat descriptions",
+      "author_issuer": "University of Almería Herbarium",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS",
+      "url": "https://herbario.ual.es/jardin-de-la-sal/",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "The university describes oleander–tamarisk watercourses, jujube scrub at Torre García and rosemary scrub in Tabernas.",
+      "sha256": "2c096bcc816403b49e9935bb9b01673444ce113d112df89b0eded50b144bb657",
+      "filename": "communities.html"
+    },
+    {
+      "id": "KGB-SRC-0008",
+      "key": "rosemary",
+      "kind": "pdf",
+      "managed_path": "sources/plant-intake/rosemary.pdf",
+      "title": "Rosmarinus officinalis — Herbario docente MA-UAM",
+      "author_issuer": "Autonomous University of Madrid",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "PDF 1: names, description, ecology",
+      "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Rosmarinus_officinalis.pdf",
+      "retrieved_on": "2026-11-08",
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "sha256": "d09ceda6671a34f1408a7116dc8ca196cb8e90d81be4e0b9a421896d53983b14",
+      "filename": "rosemary.pdf",
+      "pdf_pages": 1
+    },
+    {
+      "id": "KGB-SRC-0009",
+      "key": "ziziphus",
+      "kind": "pdf",
+      "managed_path": "sources/plant-intake/ziziphus.pdf",
+      "title": "Ziziphus lotus — Herbario docente MA-UAM",
+      "author_issuer": "Autonomous University of Madrid",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "PDF 1: names, description, ecology and shelter/soil functions",
+      "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Ziziphus_lotus.pdf",
+      "retrieved_on": "2026-11-08",
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "sha256": "752a4fbcf7206af8ff95b31a00f25f483f312a92479a551aafa75b411675e266",
+      "filename": "ziziphus.pdf",
+      "pdf_pages": 1
+    },
+    {
+      "id": "KGB-SRC-0010",
+      "key": "garden",
+      "kind": "pdf",
+      "managed_path": "sources/plant-intake/ual-garden.pdf",
+      "title": "Diseño de un Jardín Botánico en la Universidad de Almería",
+      "author_issuer": "Manuel Sánchez Robles; University of Almería",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "PDF 66, printed 65: focused review of Salsola webbii and Thymus hyemalis rows; Tamarix species not generalized to an unidentified plant",
+      "url": "https://herbario.ual.es/wp-content/uploads/2016/04/JARDIN-SAL-FINALIZADO.pdf",
+      "retrieved_on": "2026-11-08",
+      "initial_pdf_page_ranges": [
+        [
+          66,
+          66
+        ]
+      ],
+      "sha256": "e2016c6c0af221a00e411e6cf3a69f023560bb1958ea09e2cd1d2a242592dbe4",
+      "filename": "ual-garden.pdf",
+      "pdf_pages": 77
+    },
+    {
+      "id": "KGB-SRC-0011",
+      "key": "poster",
+      "kind": "image",
+      "managed_path": "sources/plant-intake/dryland-systems-poster.png",
+      "title": "Supplied vegetation systems for dryland restoration poster",
+      "author_issuer": "Author and original publication unverified",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Systems 2–5; illustrative planning context, not scientific planting evidence",
+      "note": "Supplied illustrative poster. Author, date and original source unverified; not ecological or planting-trial evidence.",
+      "sha256": "ae144e8bba5408608d2613189779568667e46be4ce9e4e7a82a070bf356c5322",
+      "filename": "dryland-systems-poster.png"
+    },
+    {
+      "id": "KGB-SRC-0012",
+      "key": "salsola-kew",
+      "kind": "web",
+      "managed_path": "sources/plant-intake/salsola-kew-excerpt.txt",
+      "title": "Salsola webbii — Plants of the World Online",
+      "author_issuer": "Royal Botanic Gardens, Kew",
+      "dates": [],
+      "reviewed_on": "2026-11-08",
+      "reviewed_locator": "Accepted name, native range, synonyms",
+      "url": "https://powo.science.kew.org/taxon/167159-1",
+      "retrieved_on": "2026-11-08",
+      "excerpt": "Salsola webbii is accepted; native to southern Spain and Morocco; a shrub. Listed synonyms include Salsola ericoides and Anabasis tamariscifolia with the source qualifications retained.",
+      "archive_kind": "reviewed excerpt; original website fetch was denied",
+      "sha256": "1a1631cd0553c58e643c7bee2155d70a71dcef645a79653ae42695142c1f7634",
+      "filename": "salsola-kew-excerpt.txt"
+    },
+    {
+      "id": "DRONE-004",
+      "filename": "DRONE-004 - Miwa et al - Wire Supplied Drone Citrus Watering Experiment - 2024.pdf",
+      "pdf_pages": 4,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "sha256": "0fcab7afd8fa10cb4b2db1a614ab124e58f6d13a04cb9b0614172dbf83bd98e4",
+      "title": "Miwa et al - Wire Supplied Drone Citrus Watering Experiment - 2024",
+      "author_issuer": "Masafumi Miwa and colleagues",
+      "dates": [
+        {
+          "value": "2024-03",
+          "meaning": "publication"
+        }
+      ],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/Author": "Masafumi Miwa",
+        "/CreationDate": "D:20240321180341+05'30'",
+        "/Creator": "Adobe InDesign CC 2014 (Windows)",
+        "/ModDate": "D:20240321180345+05'30'",
+        "/Producer": "Adobe PDF Library 11.0",
+        "/Subject": "In Japanese agriculture, pesticide-spraying drones are becoming more widespread, with the aim of saving labor in pesticide spraying. ",
+        "/Title": "Experiments on watering citrus fruits with a wire-supplied drone using RTK-GNSS",
+        "/Trapped": "/False"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/DRONE-004 - Miwa et al - Wire Supplied Drone Citrus Watering Experiment - 2024.pdf"
+    },
+    {
+      "id": "FOREST-002",
+      "filename": "FOREST-002 - Andalusia - Carob Cultivation and Restoration Handbook - 2026.pdf",
+      "pdf_pages": 168,
+      "initial_pdf_page_ranges": [
+        [
+          13,
+          21
+        ],
+        [
+          130,
+          134
+        ]
+      ],
+      "sha256": "75262e343d4d1e2f1d981b08c9e36a73c9a2c5e9130d14af951124d4cc5d84b8",
+      "title": "Andalusia - Carob Cultivation and Restoration Handbook - 2026",
+      "author_issuer": "University of Córdoba",
+      "dates": [
+        {
+          "value": "2026",
+          "meaning": "edition"
+        }
+      ],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/CreationDate": "D:20260219080734+01'00'",
+        "/Creator": "Adobe InDesign 21.2 (Macintosh)",
+        "/ModDate": "D:20260219080746+01'00'",
+        "/Producer": "Adobe PDF Library 18.0",
+        "/Trapped": "/False"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/FOREST-002 - Andalusia - Carob Cultivation and Restoration Handbook - 2026.pdf"
+    },
+    {
+      "id": "FOREST-003",
+      "filename": "FOREST-003 - Andalusia - Kermes Oak Ecology and Restoration Factsheet - Quercus coccifera.pdf",
+      "pdf_pages": 4,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "sha256": "23c27119b7e701374383646e43069d0caa401f870833b5e4d6abea30c1da1f81",
+      "title": "Andalusia - Kermes Oak Ecology and Restoration Factsheet - Quercus coccifera",
+      "author_issuer": "Junta de Andalucía",
+      "dates": [],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/ModDate": "D:20030213152524+01'00'",
+        "/CreationDate": "D:20030213152513+01'00'",
+        "/Title": "Procedencias de las Especies Vegetales Autóctonas de Andalucía Utilizadas en Restauración de la Cubierta Vegetal",
+        "/Author": "",
+        "/Creator": "FrameMaker 6.0",
+        "/Producer": "Acrobat Distiller 4.05 for Windows"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/FOREST-003 - Andalusia - Kermes Oak Ecology and Restoration Factsheet - Quercus coccifera.pdf"
+    },
+    {
+      "id": "FUND-004",
+      "filename": "FUND-004 - Alpujarra Sierra Nevada Almeriense - LEADER AL20 Selection Criteria - 2026.pdf",
+      "pdf_pages": 20,
+      "initial_pdf_page_ranges": [
+        [
+          15,
+          20
+        ]
+      ],
+      "sha256": "a85c896fa800970f7bb611ab26b215db745ed26513dc30b87e509cc9da11ec64",
+      "title": "Alpujarra Sierra Nevada Almeriense - LEADER AL20 Selection Criteria - 2026",
+      "author_issuer": "Alpujarra–Sierra Nevada Almeriense rural development group",
+      "dates": [
+        {
+          "value": "2026-02-16",
+          "meaning": "signature"
+        }
+      ],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/Author": "Montero Cobo, Manuel",
+        "/CreationDate": "D:20260327141333+01'00'",
+        "/ModDate": "D:20260327141333+01'00'",
+        "/Producer": "Microsoft: Print To PDF",
+        "/Title": "Anexo I Tipol y crite.pdf.pdf"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/FUND-004 - Alpujarra Sierra Nevada Almeriense - LEADER AL20 Selection Criteria - 2026.pdf"
+    },
+    {
+      "id": "FUND-005",
+      "filename": "FUND-005 - Alpujarra Sierra Nevada Almeriense - LEADER AL20 Eligible Activities and Budgets - 2026.pdf",
+      "pdf_pages": 1,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "sha256": "2c22208485e0eec8cdddeefb382539432bb0d22279a04e25a5a364f0d1fd76dd",
+      "title": "Alpujarra Sierra Nevada Almeriense - LEADER AL20 Eligible Activities and Budgets - 2026",
+      "author_issuer": "Alpujarra–Sierra Nevada Almeriense rural development group",
+      "dates": [
+        {
+          "value": "2026-02-16",
+          "meaning": "signature"
+        }
+      ],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/Author": "Montero Cobo, Manuel",
+        "/CreationDate": "D:20260327141419+01'00'",
+        "/ModDate": "D:20260327141419+01'00'",
+        "/Producer": "Microsoft: Print To PDF",
+        "/Title": "Líneas ADR Alpujarra Sierra Neva.pdf"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/FUND-005 - Alpujarra Sierra Nevada Almeriense - LEADER AL20 Eligible Activities and Budgets - 2026.pdf"
+    },
+    {
+      "id": "FUND-008",
+      "filename": "FUND-008 - Andalusia - LEADER Governing Rules - BOJA 29 - 2026-02-03.pdf",
+      "pdf_pages": 163,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          5
+        ],
+        [
+          120,
+          124
+        ]
+      ],
+      "sha256": "48c3cc653a5f38bae9480009873bfdb35f26133f513e8d2894d872216ccf6399",
+      "title": "Andalusia - LEADER Governing Rules - BOJA 29 - 2026-02-03",
+      "author_issuer": "Junta de Andalucía, Agriculture and Rural Development Department",
+      "dates": [
+        {
+          "value": "2026-02-03",
+          "meaning": "order"
+        },
+        {
+          "value": "2026-02-12",
+          "meaning": "publication"
+        }
+      ],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/CreationDate": "D:20260210113531+01'00'",
+        "/Creator": "Adobe InDesign 16.0 (Windows)",
+        "/ModDate": "D:20260210113540+01'00'",
+        "/Producer": "Adobe PDF Library 15.0",
+        "/Trapped": "/False"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/FUND-008 - Andalusia - LEADER Governing Rules - BOJA 29 - 2026-02-03.pdf"
+    },
+    {
+      "id": "FUND-012",
+      "filename": "FUND-012 - Andalusia - Recognised LEADER Groups and Territories - 2025-02-13.pdf",
+      "pdf_pages": 15,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "sha256": "7a7501233f3e3d20b47f40b029be0b3ac5172c2c24720adb2ddcc79085dc8c28",
+      "title": "Andalusia - Recognised LEADER Groups and Territories - 2025-02-13",
+      "author_issuer": "Junta de Andalucía, Directorate-General for Industries, Innovation and Agri-food Chain",
+      "dates": [
+        {
+          "value": "2025-02-13",
+          "meaning": "resolution"
+        },
+        {
+          "value": "2025-02-27",
+          "meaning": "publication"
+        }
+      ],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/CreationDate": "D:20250225123432+01'00'",
+        "/Creator": "Adobe InDesign 16.0 (Windows)",
+        "/ModDate": "D:20250225123433+01'00'",
+        "/Producer": "Adobe PDF Library 15.0",
+        "/Trapped": "/False"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/FUND-012 - Andalusia - Recognised LEADER Groups and Territories - 2025-02-13.pdf"
+    },
+    {
+      "id": "IRR-003",
+      "filename": "IRR-003 - LIFE NIEBLAS - Technical Manual - 2025.pdf",
+      "pdf_pages": 224,
+      "initial_pdf_page_ranges": [
+        [
+          84,
+          84
+        ],
+        [
+          87,
+          95
+        ],
+        [
+          141,
+          143
+        ],
+        [
+          155,
+          156
+        ]
+      ],
+      "sha256": "90e6fa5730d2f3d17cc59c2e0bf3a2949ebaf65494ddbd20ed4f214dfda42ec2",
+      "title": "LIFE NIEBLAS - Technical Manual - 2025",
+      "author_issuer": "LIFE NIEBLAS project",
+      "dates": [
+        {
+          "value": "2024",
+          "meaning": "legal-deposit"
+        },
+        {
+          "value": "2025",
+          "meaning": "filename / hosting collection"
+        }
+      ],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/CreationDate": "D:20250325121442Z",
+        "/Creator": "Adobe InDesign 20.0 (Macintosh)",
+        "/ModDate": "D:20250325122659Z",
+        "/Producer": "Adobe PDF Library 17.0",
+        "/Trapped": "/False"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/IRR-003 - LIFE NIEBLAS - Technical Manual - 2025.pdf"
+    },
+    {
+      "id": "IRR-005",
+      "filename": "IRR-005 - MENAQUA - Cocoon Assessment in Jordan and Lebanon - 2021-12.pdf",
+      "pdf_pages": 121,
+      "initial_pdf_page_ranges": [
+        [
+          74,
+          81
+        ],
+        [
+          109,
+          112
+        ]
+      ],
+      "sha256": "c2028b3ccb69ba59890ae476c6562c3ef6cb2de82f213ad17302ae592399fc39",
+      "title": "MENAQUA - Cocoon Assessment in Jordan and Lebanon - 2021-12",
+      "author_issuer": "MENAQUA project; report authors not verified",
+      "dates": [
+        {
+          "value": "2021-12",
+          "meaning": "filename edition"
+        },
+        {
+          "value": "2022-01-11",
+          "meaning": "report conclusion date"
+        }
+      ],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/Title": "Microsoft Word - Memorandum of agreement -MQ_MoA Jordan_ Final",
+        "/Author": "jeroe",
+        "/Creator": "Microsoft® Word for Microsoft 365",
+        "/CreationDate": "D:20220216113702+01'00'",
+        "/ModDate": "D:20220216113702+01'00'",
+        "/Producer": "Microsoft® Word for Microsoft 365"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/IRR-005 - MENAQUA - Cocoon Assessment in Jordan and Lebanon - 2021-12.pdf"
+    }
+  ],
+  "plant_images": [
+    {
+      "id": "carob-whole",
+      "topic_id": "carob",
+      "role": "whole",
+      "alt": "Ceratonia siliqua — representative mature whole plant",
+      "caption": "Broad rounded evergreen crown on a short sturdy trunk with spreading limbs.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/carob.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · carob morphology",
+          "url": "https://www.ual.es/vida-universitaria/patrimonio-cultural/ciencias-naturales/obra/22483/ceratonia-siliqua-l"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/carob.png",
+          "sha256": "00780f18cfb27e356fd7cc3b4d9c6f4ad2e7f269b30b3644db97a2964bcf18be",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/carob-preview.webp",
+          "sha256": "063fed0bc833ffa533c992bce5e85ddd6872699931a9434bd934203e329fcc8b",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/carob-thumbnail.webp",
+          "sha256": "1af16aefb7c5233711301ad4c1e46569074740bb7eb5c4c19a90a4096b6f8938",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "carob-detail",
+      "topic_id": "carob",
+      "role": "detail",
+      "alt": "Ceratonia siliqua — botanical detail illustration",
+      "caption": "Broad, leathery oval leaflets in pairs without a terminal leaflet; long flattened brown pods.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "carob.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · carob morphology",
+          "url": "https://www.ual.es/vida-universitaria/patrimonio-cultural/ciencias-naturales/obra/22483/ceratonia-siliqua-l"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/carob.png",
+          "sha256": "8f19d835de0c9aed08ccce7c058917d313c637327ce3fce4f967a33c577d4ece",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/carob-preview.webp",
+          "sha256": "5a294cce61a427d345403965694bfc3e55e325227c73cf81536e7f99355ca9fc",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "wild-olive-whole",
+      "topic_id": "wild-olive",
+      "role": "whole",
+      "alt": "Olea europaea var. sylvestris — representative mature whole plant",
+      "caption": "Irregular evergreen crown; wild olive can form a large shrub or a small tree.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/wild_olive.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Porto · wild olive morphology",
+          "url": "https://mhnc.up.pt/pt/colecoes/colecao-botanica-viva/zambujeiro/"
+        },
+        {
+          "label": "Jardins de València · wild and cultivated olive",
+          "url": "https://jardins.valencia.es/es/especie/olea-europea"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/wild_olive.png",
+          "sha256": "226fd878e3eb37c5dd7e73b196fdfbd9519f95f6ba62f89a7a33bd226c0ad3b0",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/wild_olive-preview.webp",
+          "sha256": "b0bb16f02d0aa66f840b229e694dab49423e9b82f0b89a1f499655d87e718d16",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/wild_olive-thumbnail.webp",
+          "sha256": "4913fb0cbf34dcd840b17b2661e9ded57c0b2325ffd858d7ef96bc7bf38af6b3",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "wild-olive-detail",
+      "topic_id": "wild-olive",
+      "role": "detail",
+      "alt": "Olea europaea var. sylvestris — botanical detail illustration",
+      "caption": "Opposite, simple narrow leaves with a pale silvery underside; small olive drupes, dark when ripe.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "wild_olive.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Porto · wild olive morphology",
+          "url": "https://mhnc.up.pt/pt/colecoes/colecao-botanica-viva/zambujeiro/"
+        },
+        {
+          "label": "Jardins de València · wild and cultivated olive",
+          "url": "https://jardins.valencia.es/es/especie/olea-europea"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/wild_olive.png",
+          "sha256": "10e8fba88553cb10789dd7cf10c579af4d77d7fc9be1dd78ae657d30a68bde1c",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/wild_olive-preview.webp",
+          "sha256": "9893b672663a535d15b9512ab40a96841673ac775c75b762ee8af65fbf52b2cd",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "mastic-whole",
+      "topic_id": "mastic",
+      "role": "whole",
+      "alt": "Pistacia lentiscus — representative mature whole plant",
+      "caption": "Dense evergreen shrub with low branching; larger specimens can become small trees.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/lentisk.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · paired leaflets and winged rachis",
+          "url": "https://nevada.ual.es/biocon/pistacia-lentiscus.html"
+        },
+        {
+          "label": "University of Málaga Botanic Garden · lentisk",
+          "url": "https://jardinbotanico.uma.es/jb-43-01/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/lentisk.png",
+          "sha256": "2b73d79236fc701e53d0883427d53f9f9809bf9d08eab93e008915f5286d2f04",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/lentisk-preview.webp",
+          "sha256": "0e8382dcd5f88b032bb88cd00845ee20db1162f44e7b5ea2f60f73c79f1ea739",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/lentisk-thumbnail.webp",
+          "sha256": "917378e55c7033082179de0e8b31b7f666cb4c91f75dbe85ff673e1a5902b2e4",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "mastic-detail",
+      "topic_id": "mastic",
+      "role": "detail",
+      "alt": "Pistacia lentiscus — botanical detail illustration",
+      "caption": "Pinnate leaves with paired leathery leaflets, a winged central stalk and no terminal leaflet; small red drupes turn dark at maturity.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "lentisk.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · paired leaflets and winged rachis",
+          "url": "https://nevada.ual.es/biocon/pistacia-lentiscus.html"
+        },
+        {
+          "label": "University of Málaga Botanic Garden · lentisk",
+          "url": "https://jardinbotanico.uma.es/jb-43-01/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/lentisk.png",
+          "sha256": "0b3f5ea9da6d4bec327166867fd415e5381099420ab91e54e278c722240e925b",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/lentisk-preview.webp",
+          "sha256": "d7638f2f524f8c57c18cbfee858b62bc9924fd0920ee684f020b80a45c3b39ae",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "rhamnus-alaternus-whole",
+      "topic_id": "rhamnus-alaternus",
+      "role": "whole",
+      "alt": "Rhamnus alaternus — representative mature whole plant",
+      "caption": "Upright to rounded evergreen shrub; can also grow as a small tree.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/buckthorn.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of València Botanic Garden · Rhamnus alaternus",
+          "url": "https://www.jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&pid=2337"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/buckthorn.png",
+          "sha256": "4ddc5e13a9ed3e9668e52373dfe17fbc7abea6988c021671d67fa052134d2da6",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/buckthorn-preview.webp",
+          "sha256": "55ddda3053372f35a48a5118f5146bf47205212d604dd6e1252df24fc1e88c3a",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/buckthorn-thumbnail.webp",
+          "sha256": "fd3bf9596d25d90304c5ba8450a266ef1f59c3c3f2775fa1a2807517ddb2ad12",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "rhamnus-alaternus-detail",
+      "topic_id": "rhamnus-alaternus",
+      "role": "detail",
+      "alt": "Rhamnus alaternus — botanical detail illustration",
+      "caption": "Alternate, simple leathery oval leaves with small marginal teeth; small round drupes darken at maturity. This entry represents the poster’s R. alaternus, not R. lycioides.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "buckthorn.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of València Botanic Garden · Rhamnus alaternus",
+          "url": "https://www.jardibotanic.org/index.php?apid=cataleg_virtual_despecies-220&pid=2337"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/buckthorn.png",
+          "sha256": "865c6977f7aadf3ac4f1eae6a9ce19ee0c8dcf5eefc01ba45341cb59b1bd84a2",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/buckthorn-preview.webp",
+          "sha256": "bbf8855aaf819c48a492c67c8b9e35d17a76fde3e4d13153db657ccb08dd5aa2",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "dwarf-palm-whole",
+      "topic_id": "dwarf-palm",
+      "role": "whole",
+      "alt": "Chamaerops humilis — representative mature whole plant",
+      "caption": "Low clumping palm with several short fibrous stems and fan-shaped leaves.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/palmetto.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Autonomous University of Madrid · dwarf fan palm herbarium sheet",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Chamaerops_humilis.pdf"
+        },
+        {
+          "label": "CREAF / Autonomous University of Barcelona · dwarf fan palm",
+          "url": "https://www.creaf.uab.es/guiagarrafpol/esp/chamaerops_humilis.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/palmetto.png",
+          "sha256": "555f2d10261abefb63ba0991cc0f38256351308f04d5df63148598eba7e5fac3",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/palmetto-preview.webp",
+          "sha256": "59005d1b3cfbd1d081407304f67ef712b7b1cfd8d9c997c6ff5b0ba1df2fcb47",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/palmetto-thumbnail.webp",
+          "sha256": "4c0fb44ba3d78467da3bf7b41c488a59b5a5d54860fdb68ca1989fed29d8f48d",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "dwarf-palm-detail",
+      "topic_id": "dwarf-palm",
+      "role": "detail",
+      "alt": "Chamaerops humilis — botanical detail illustration",
+      "caption": "Low, clumping palm with folded fan-shaped leaves divided into narrow segments; stiff spines along the leaf stalks.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "palmetto.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Autonomous University of Madrid · dwarf fan palm herbarium sheet",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Chamaerops_humilis.pdf"
+        },
+        {
+          "label": "CREAF / Autonomous University of Barcelona · dwarf fan palm",
+          "url": "https://www.creaf.uab.es/guiagarrafpol/esp/chamaerops_humilis.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/palmetto.png",
+          "sha256": "cdebee5c6f14eda3925c0f6db7b02c01d1b9c8b00ba793c6db851853164b4c9c",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/palmetto-preview.webp",
+          "sha256": "73b6882714d0be5978c64dc565fc7adc957069ca5ec5d6696ee0e03cb3858eed",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "retama-sphaerocarpa-whole",
+      "topic_id": "retama-sphaerocarpa",
+      "role": "whole",
+      "alt": "Retama sphaerocarpa — representative mature whole plant",
+      "caption": "Airy shrub with arching, nearly leafless green shoots and small yellow flower clusters.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/retama.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · Retama sphaerocarpa morphology",
+          "url": "https://nevada.ual.es/biocon/retama-sphaerocarpa.html"
+        },
+        {
+          "label": "Autonomous University of Madrid · Retama herbarium sheet",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Retama_sphaerocarpa.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/retama.png",
+          "sha256": "fe6141dbda274701dca073605318c85d12b95203ea4c29a574d76a5f56d111c9",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/retama-preview.webp",
+          "sha256": "ebc57a50796f6a7412247f75e127caf621a3794b6ab4cd229995dbb2bfe33a0a",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/retama-thumbnail.webp",
+          "sha256": "cafd86cd364262eafc882b6874a8f36a8bad3dd7fffd354e3e86f2de0a0256a8",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "retama-sphaerocarpa-detail",
+      "topic_id": "retama-sphaerocarpa",
+      "role": "detail",
+      "alt": "Retama sphaerocarpa — botanical detail illustration",
+      "caption": "Slender, flexible grey-green shoots, losing their small leaves early; small yellow pea flowers in short lateral clusters. Yellow-flowered R. sphaerocarpa, rather than white-flowered R. monosperma.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "retama.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · Retama sphaerocarpa morphology",
+          "url": "https://nevada.ual.es/biocon/retama-sphaerocarpa.html"
+        },
+        {
+          "label": "Autonomous University of Madrid · Retama herbarium sheet",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Retama_sphaerocarpa.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/retama.png",
+          "sha256": "3aae84e6aad5d51416d0ef9035640b2ee6a1bbe8499d5d7dbe4f463797fe6b90",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/retama-preview.webp",
+          "sha256": "fe202b6d23175f5578ddc334a6016ba5757b0f30ff1b088183f89aab69263561",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "esparto-whole",
+      "topic_id": "esparto",
+      "role": "whole",
+      "alt": "Macrochloa tenacissima — representative mature whole plant",
+      "caption": "Dense basal tussock of rolled leaves with retained straw-coloured leaf bases; shown without flowers.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/esparto.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · esparto morphology",
+          "url": "https://nevada.ual.es/biocon/macrochloa-tenacissima.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/esparto.png",
+          "sha256": "5f55d71660bd155cab430b346ec3f0186053516b90f340e71f87c4544eca7423",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/esparto-preview.webp",
+          "sha256": "5caa28bf76d6465067903121512e31067a63dfd808be894e771d4db026bab565",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/esparto-thumbnail.webp",
+          "sha256": "030e9385f0734d14ee8ea00df47645c97e8a25ceea8f88d1127cbc4f1cd91501",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "esparto-detail",
+      "topic_id": "esparto",
+      "role": "detail",
+      "alt": "Macrochloa tenacissima — botanical detail illustration",
+      "caption": "Also known as Stipa tenacissima. Dense basal tussock of long, tough rolled leaves. Shown without flowers; flowering plants have slender stems with narrow panicles and awned spikelets.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "esparto.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · esparto morphology",
+          "url": "https://nevada.ual.es/biocon/macrochloa-tenacissima.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/esparto.png",
+          "sha256": "e59a8d1d78c2f4198f6290d1660536eb295599fa3623d0cfd122c840fe3d1891",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/esparto-preview.webp",
+          "sha256": "7184b612e6866a6d979084c36657b90c8c65c3bb415ed62f0be0bf1b687e60e6",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "thymus-hyemalis-whole",
+      "topic_id": "thymus-hyemalis",
+      "role": "whole",
+      "alt": "Thymus hyemalis — representative mature whole plant",
+      "caption": "Low woody subshrub forming a compact twiggy mound with small pink flower heads.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/thyme.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · winter thyme",
+          "url": "https://nevada.ual.es/biocon/thymus-hyemalis-subsp.-hyemalis.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/thyme.png",
+          "sha256": "0d9e28c0a503157f9934f925ebaebf22d5c79eccbc1d970f6864401ec5eacb27",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/thyme-preview.webp",
+          "sha256": "a489d7c2365af4e89c6d668e13b414f0e2463fb283bf786c0bf32c3c7094221c",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/thyme-thumbnail.webp",
+          "sha256": "94b88a96b5e4520cf03b2298828ea9c406f5ebf0dce2084b5d22243924cc2a05",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "thymus-hyemalis-detail",
+      "topic_id": "thymus-hyemalis",
+      "role": "detail",
+      "alt": "Thymus hyemalis — botanical detail illustration",
+      "caption": "Small woody stems with tiny opposite, narrow rolled-margin leaves; compact terminal heads of pink, two-lipped flowers. The poster specifies winter thyme.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "thyme.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · winter thyme",
+          "url": "https://nevada.ual.es/biocon/thymus-hyemalis-subsp.-hyemalis.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/thyme.png",
+          "sha256": "fa30a471dba9ea06c934ec66336a735c006804f8826f1d7f37fb765c57c48197",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/thyme-preview.webp",
+          "sha256": "5644a5cf7bbabdf1a62eddb7e27908d90f297b9d5b642f8f0fe1ac2d0a5a3704",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "rosemary-whole",
+      "topic_id": "rosemary",
+      "role": "whole",
+      "alt": "Salvia rosmarinus — representative mature whole plant",
+      "caption": "Upright branching evergreen shrub with narrow leaves; shown in an unpruned form.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/rosemary.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Autonomous University of Madrid · rosemary herbarium sheet and synonym",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Rosmarinus_officinalis.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/rosemary.png",
+          "sha256": "ebe237b14323f746075fb5b8c10cbbb0bd0c10ed8aaafbb895301b6bad2e86b0",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/rosemary-preview.webp",
+          "sha256": "28413beb5db78b168e3c7658448c29c905f6d299783e95f4d759c2ad5d3c25d9",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/rosemary-thumbnail.webp",
+          "sha256": "471472058e6184ab1d000b5d29192bfa09c2114cee75a4259d68fb06f8c1cbfd",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "rosemary-detail",
+      "topic_id": "rosemary",
+      "role": "detail",
+      "alt": "Salvia rosmarinus — botanical detail illustration",
+      "caption": "Also called Rosmarinus officinalis. Opposite narrow leaves have rolled-under edges, dark green upper surfaces and whitish undersides. Small pale blue-lavender, two-lipped flowers sit near the stems; this is rosemary, not lavender.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "rosemary.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Autonomous University of Madrid · rosemary herbarium sheet and synonym",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Rosmarinus_officinalis.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/rosemary.png",
+          "sha256": "b778b7770d943ecd663d185a751ac802a17d82fb9388636e9604144a59297450",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/rosemary-preview.webp",
+          "sha256": "b0967f7f45786c2a03dee4d5d597eea665332338a8a6d0c0028d326d06e2ad5a",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "rhamnus-lycioides-whole",
+      "topic_id": "rhamnus-lycioides",
+      "role": "whole",
+      "alt": "Rhamnus lycioides — representative mature whole plant",
+      "caption": "Dense tangled shrub with thorn-tipped branches and small narrow leaves.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/rhamnus_lycioides.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Málaga Botanic Garden · Rhamnus lycioides",
+          "url": "https://jardinbotanico.uma.es/jb-psa1-03/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/rhamnus_lycioides.png",
+          "sha256": "a93451ec8ff41a6c23bb75fd2b2e0d8afae52bbbc387bccfab7f059392c7b2ee",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/rhamnus_lycioides-preview.webp",
+          "sha256": "aca19e64971af7f59c6785b6b4e152c18848cb8ebe45d06535c06c809aacfc36",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/rhamnus_lycioides-thumbnail.webp",
+          "sha256": "6fa4140ea0e58e402b2dac61e642c7b67398c089dbdaa9dd6d8da6e23652e53b",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "rhamnus-lycioides-detail",
+      "topic_id": "rhamnus-lycioides",
+      "role": "detail",
+      "alt": "Rhamnus lycioides — botanical detail illustration",
+      "caption": "Grey-brown woody branches end in thorns. Small narrow leathery leaves have entire margins, with little visible lateral venation; small globose drupes turn black. This is the poster’s R. lycioides, distinct from the broader-leaved R. alaternus (Aladierno) already listed.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "rhamnus_lycioides.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Málaga Botanic Garden · Rhamnus lycioides",
+          "url": "https://jardinbotanico.uma.es/jb-psa1-03/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/rhamnus_lycioides.png",
+          "sha256": "97aec494ffa52fa5bf853efdffc75d9e9d6a6809bce396ff5676e6245c86c59f",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/rhamnus_lycioides-preview.webp",
+          "sha256": "7db77bbb128fbf960215f4bcb369c9d74d79553df3a94bb9e16ea6a4a3df9fcb",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "ephedra-fragilis-whole",
+      "topic_id": "ephedra-fragilis",
+      "role": "whole",
+      "alt": "Ephedra fragilis — representative mature whole plant",
+      "caption": "Much-branched shrub with jointed green shoots, tiny scales and older woody stems; female form shown.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/ephedra_fragilis.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · Ephedra fragilis morphology",
+          "url": "https://nevada.ual.es/biocon/ephedra-fragilis-desf.-subsp.-fragilis.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/ephedra_fragilis.png",
+          "sha256": "8a82b9cfb9f0914efdcc4d6d8c06f203f69cece41a05e5dac94e1414ed7f9fb3",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/ephedra_fragilis-preview.webp",
+          "sha256": "e43cb4f444b4c09193a4cbac8ce2ae47f6f79499e9efc3b4229c8a56364408b8",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/ephedra_fragilis-thumbnail.webp",
+          "sha256": "6ab68e2f87d3fc8e9bec10f68555d53c0790c0d09f8a3b9f097b2ebf5ee39d77",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "ephedra-fragilis-detail",
+      "topic_id": "ephedra-fragilis",
+      "role": "detail",
+      "alt": "Ephedra fragilis — botanical detail illustration",
+      "caption": "Dense, slender green jointed stems with tiny scale-like leaves at the nodes and older grey woody branches. The depicted female sprig bears small red fleshy seed-cone bracts; these are not ordinary fruits or flowers. Male and female structures occur on separate plants.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "ephedra_fragilis.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Almería · Ephedra fragilis morphology",
+          "url": "https://nevada.ual.es/biocon/ephedra-fragilis-desf.-subsp.-fragilis.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/ephedra_fragilis.png",
+          "sha256": "fcf477eb30b8aba79e9232701e20501cfaa4b6b08ac71a7b85811761a3336d97",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/ephedra_fragilis-preview.webp",
+          "sha256": "755f1b25092988cc808497181fe8d7ab5c8f00a6162383fb8cdf541722ee10c0",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "ziziphus-lotus-whole",
+      "topic_id": "ziziphus-lotus",
+      "role": "whole",
+      "alt": "Ziziphus lotus — representative mature whole plant",
+      "caption": "Broad densely intertwined thorny shrub with a rounded, spreading crown.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/ziziphus.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Autonomous University of Madrid · Ziziphus lotus herbarium sheet",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Ziziphus_lotus.pdf"
+        },
+        {
+          "label": "University of Málaga Botanic Garden · Ziziphus lotus",
+          "url": "https://jardinbotanico.uma.es/jb-alm-01/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/ziziphus.png",
+          "sha256": "6088f2e359928420330fbaf2af6a0886a01107d50f42981e10f9a1b4fe5fc525",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/ziziphus-preview.webp",
+          "sha256": "fc7a3df1e0820ba588dec25e34360ce3b95b44f4a2621749b5e4f68d5f13fa52",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/ziziphus-thumbnail.webp",
+          "sha256": "c2b889f2be44472f59a82d9fb5a292017d2754223198a75977fd1cf2ed27eeb8",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "ziziphus-lotus-detail",
+      "topic_id": "ziziphus-lotus",
+      "role": "detail",
+      "alt": "Ziziphus lotus — botanical detail illustration",
+      "caption": "Zigzag thorny shoots; alternate small oval leaves with three strong veins from the base and a finely scalloped margin; small drupes. This is wild Z. lotus, not cultivated Z. jujuba.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "ziziphus.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Autonomous University of Madrid · Ziziphus lotus herbarium sheet",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Ziziphus_lotus.pdf"
+        },
+        {
+          "label": "University of Málaga Botanic Garden · Ziziphus lotus",
+          "url": "https://jardinbotanico.uma.es/jb-alm-01/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/ziziphus.png",
+          "sha256": "1804a6f0dcb4ecbf5c4a5c1ec1f0bac9e96f3b392812460739f57bf3881b025d",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/ziziphus-preview.webp",
+          "sha256": "c99d3e19f970b4f1839c6bdd430944a4fe243a65a7aea59711c16df02f199a8a",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "lycium-intricatum-whole",
+      "topic_id": "lycium-intricatum",
+      "role": "whole",
+      "alt": "Lycium intricatum — representative mature whole plant",
+      "caption": "Low irregular shrub with tortuous thorny branches and small fleshy leaves.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/lycium.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of the Balearic Islands · Lycium intricatum",
+          "url": "https://herbarivirtual.uib.es/es/general/505/especie/arc-intricat"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/lycium.png",
+          "sha256": "a139edb84ca5402e9c5a56fd60ee2f8a2dfe0850da65dea516f4b59e8c9c9762",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/lycium-preview.webp",
+          "sha256": "03decac5ca4ff4d0c9dae0204659775b157e2ca715210d5375aab9556fe872f4",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/lycium-thumbnail.webp",
+          "sha256": "c3f8ca223025162fdbe38a1782e9c36567e431131d0a94a7d907e52fe7f54555",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "lycium-intricatum-detail",
+      "topic_id": "lycium-intricatum",
+      "role": "detail",
+      "alt": "Lycium intricatum — botanical detail illustration",
+      "caption": "Tortuous thorny branches, small fleshy grey-green leaves and violet tubular flowers with a flared mouth. The illustration represents the poster’s Mediterranean boxthorn.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "lycium.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of the Balearic Islands · Lycium intricatum",
+          "url": "https://herbarivirtual.uib.es/es/general/505/especie/arc-intricat"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/lycium.png",
+          "sha256": "3e98719e85e41595bb485cd8c51dc63849ed21175d1d8f73340492b44ebe4318",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/lycium-preview.webp",
+          "sha256": "e25bb38b2622559ab41a97e01e8fd71abdb034ffc215f19cb873a4aa2339e0da",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "salsola-webbii-whole",
+      "topic_id": "salsola-webbii",
+      "role": "whole",
+      "alt": "Salsola webbii — representative mature whole plant",
+      "caption": "Rounded to upright shrub with pale woody branches and very slender curved leaves; foliage state.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/salsola.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Flora de Almería · Salsola webbii diagnosis, p. 108",
+          "url": "https://www.dipalme.org/Servicios/Anexos/anexosiea.nsf/VAnexos/IEA-FA-f-c9/%24File/FA-f-c9.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/salsola.png",
+          "sha256": "3f6fd683b8844fa0a571593b0f7a718cf8f3c471c381008d06d7909443da1361",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/salsola-preview.webp",
+          "sha256": "afa0ebfd648386130e4d67e5a1f59b6f694f550c379d1b52c6689354485bf59e",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/salsola-thumbnail.webp",
+          "sha256": "0f0f01b197d99e796a23403b432341a947c1ee7d42fb934547a4f0b122410fb8",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "salsola-webbii-detail",
+      "topic_id": "salsola-webbii",
+      "role": "detail",
+      "alt": "Salsola webbii — botanical detail illustration",
+      "caption": "Pale woody branches with very slender, curved, cylindrical grey-green leaves, alternate or in small axillary tufts. Shown in non-flowering foliage state, without broad flat blades. The poster uses the name Salsola webbii.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "salsola.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Flora de Almería · Salsola webbii diagnosis, p. 108",
+          "url": "https://www.dipalme.org/Servicios/Anexos/anexosiea.nsf/VAnexos/IEA-FA-f-c9/%24File/FA-f-c9.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/salsola.png",
+          "sha256": "9ef7592d24448c71477ad7d30609788c4f67356ecb26545727566716fb4124fc",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/salsola-preview.webp",
+          "sha256": "3031873271c3de04552f461669e742f162b7e872c76312916f7cd070e99af3d3",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "oleander-whole",
+      "topic_id": "oleander",
+      "role": "whole",
+      "alt": "Nerium oleander — representative mature whole plant",
+      "caption": "Upright multistem shrub with narrow evergreen leaves and terminal flower clusters.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/oleander.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Barcelona · oleander morphology",
+          "url": "https://museuvirtual.ub.edu/objecte/cpvfs00041/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/oleander.png",
+          "sha256": "797bf0670f8bf213d165e17eeba7958bb966e0aeeae61381e9c04e400facdf0b",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/oleander-preview.webp",
+          "sha256": "9f5d92e94bd3eb4909545a3dfc49fb1b6369d782253360dc1bd39fdf56011760",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/oleander-thumbnail.webp",
+          "sha256": "34f75b668637dbca119c3a77eb2f35604add6c408d52fa8ae30c5911cfa539dd",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "oleander-detail",
+      "topic_id": "oleander",
+      "role": "detail",
+      "alt": "Nerium oleander — botanical detail illustration",
+      "caption": "Long leathery lanceolate leaves, opposite or in whorls, with a strong midrib; terminal clusters of simple five-lobed pink flowers.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "oleander.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of Barcelona · oleander morphology",
+          "url": "https://museuvirtual.ub.edu/objecte/cpvfs00041/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/oleander.png",
+          "sha256": "55dc35c6c9c4a6f9477c07bdeaa4ac2a6861dedd6837c17644e8f26492fb8993",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/oleander-preview.webp",
+          "sha256": "01581df414f47174142d7989fc06c2044464a3cd11f439248357d4d8f966b25a",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "tamarix-whole",
+      "topic_id": "tamarix",
+      "role": "whole",
+      "alt": "Tamarix spp. — representative mature whole plant",
+      "caption": "Representative tree form with a loose crown and fine branchlets; Tamarix species can also be shrubby.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/tamarix.png",
+        "manifest": "media/plants/provenance/whole/manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of València Botanic Garden · Tamarix example",
+          "url": "https://www.jardibotanic.org/?apid=cataleg_virtual_despecies-220&pid=2663"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/tamarix.png",
+          "sha256": "1d55e840a8596f4394215f20ecbf57685ad54cc6220a00fd063f50b84aad9f26",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/tamarix-preview.webp",
+          "sha256": "e5b89dbc81b2be76ed56b49b5cf81dd771966d71fa986caea3e0f90861661626",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/tamarix-thumbnail.webp",
+          "sha256": "00911c6de5e2524e82178a7025850629633b4942ffd991d5a85f82d895a1e21c",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "tamarix-detail",
+      "topic_id": "tamarix",
+      "role": "detail",
+      "alt": "Tamarix spp. — botanical detail illustration",
+      "caption": "Fine branching twigs with tiny overlapping scale leaves and slender racemes of minute pink flowers. Genus-level representation: the poster does not identify a Tamarix species. The linked T. gallica describes an example, not the confirmed planting identity.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "tamarix.png",
+        "manifest": "media/plants/provenance/high-resolution-manifest.json",
+        "generated_on": "2026-10-28",
+        "reviewed_on": "2026-10-28",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "University of València Botanic Garden · Tamarix example",
+          "url": "https://www.jardibotanic.org/?apid=cataleg_virtual_despecies-220&pid=2663"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/tamarix.png",
+          "sha256": "2b856afcd3add6283f0dbb29d366eb0f0a70403eb6b0aaf5b2764c155bc41d8d",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/tamarix-preview.webp",
+          "sha256": "9f6be2d522a141e08ec12ab5011cf465f9556ca8d97a0445f4ffb82bd93b4cdc",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "kermes-oak-whole",
+      "topic_id": "kermes-oak",
+      "role": "whole",
+      "alt": "Quercus coccifera — representative mature whole plant",
+      "caption": "Dense evergreen shrub, rarely a small tree.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/kermes_oak.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.juntadeandalucia.es/medioambiente/BIO/DOC/BIO-DOC-6120-003.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/kermes_oak.png",
+          "sha256": "11da4dcbf52d28c2fc9e2167dfd1e049f0449946736122a0d27eba38a9fb1c44",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/kermes_oak-preview.webp",
+          "sha256": "129556c783ddf3b432fdbf440f2be4e350c563c02fecbb0b9bc117fb117231c2",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/kermes_oak-thumbnail.webp",
+          "sha256": "7f09d058eaa17c4ddef3cb58eb491791713d14d32e2bf41c8f2e8c2dd977a497",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "kermes-oak-detail",
+      "topic_id": "kermes-oak",
+      "role": "detail",
+      "alt": "Quercus coccifera — botanical detail illustration",
+      "caption": "Stiff glossy evergreen leaves with spiny teeth; prickly acorn cups.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "kermes_oak.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.juntadeandalucia.es/medioambiente/BIO/DOC/BIO-DOC-6120-003.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/kermes_oak.png",
+          "sha256": "b9cc65730efd98d84d005f7ce22205d6802427ddf19c77913042cda97619854c",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/kermes_oak-preview.webp",
+          "sha256": "67863eceb1b91d6d2da3108d7108fe29c010809a134321721746cf82f1f391ea",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "holm-oak-rotundifolia-whole",
+      "topic_id": "holm-oak-rotundifolia",
+      "role": "whole",
+      "alt": "Quercus rotundifolia — representative mature whole plant",
+      "caption": "Broad rounded evergreen crown on a sturdy trunk.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/holm_oak.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.juntadeandalucia.es/medioambiente/portal/documents/20151/255221248/UMBRIA-ENE-2025.pdf/638e27d7-29a8-8718-0c4f-9ac034bbb20d?t=1745493497879"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/holm_oak.png",
+          "sha256": "7cbe0b37ce543950f49da196fbe8e57bed1859eba7e8cd1c8423d10351a8f1a5",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/holm_oak-preview.webp",
+          "sha256": "6b3bb817710e1823738457c13892942cde5e4ddd5545d1167141cbcd22f45354",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/holm_oak-thumbnail.webp",
+          "sha256": "7f83818e07d4690abc751f10b75e4e9820e1a86136cc7541c38f96e5302c4c4c",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "holm-oak-rotundifolia-detail",
+      "topic_id": "holm-oak-rotundifolia",
+      "role": "detail",
+      "alt": "Quercus rotundifolia — botanical detail illustration",
+      "caption": "Rounded leathery leaves, dark above, grey-white felt beneath; acorns in scaly cups.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "holm_oak.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.juntadeandalucia.es/medioambiente/portal/documents/20151/255221248/UMBRIA-ENE-2025.pdf/638e27d7-29a8-8718-0c4f-9ac034bbb20d?t=1745493497879"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/holm_oak.png",
+          "sha256": "7f810cdd138ea91275111db8aeae44499020af965baa5752bad15bdd1bbfba7f",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/holm_oak-preview.webp",
+          "sha256": "466dc1d502ab9c97e457b0f8a2309db902356b173047595675e3b1f099e24d48",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "phillyrea-angustifolia-whole",
+      "topic_id": "phillyrea-angustifolia",
+      "role": "whole",
+      "alt": "Phillyrea angustifolia — representative mature whole plant",
+      "caption": "Dense evergreen shrub.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/phillyrea_angustifolia.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.juntadeandalucia.es/medioambiente/portal/documents/20151/255221248/ODIEL_ABR_2025.pdf/af593fff-c306-0419-192d-6d8ea88c66c1?t=1752574806811"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/phillyrea_angustifolia.png",
+          "sha256": "d8f9b8f102ff7923bdb18131aa32ee6138d5243f54c23c4a43feb9c905056b82",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/phillyrea_angustifolia-preview.webp",
+          "sha256": "8df449f430bce2b79a5267ae64a8c9e4696307729cb1c51e4268e763ffaf2a7f",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/phillyrea_angustifolia-thumbnail.webp",
+          "sha256": "c1d52523eb421b0476914791229bf729647a3f75b2f941329a859bfae7a2fad1",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "phillyrea-angustifolia-detail",
+      "topic_id": "phillyrea-angustifolia",
+      "role": "detail",
+      "alt": "Phillyrea angustifolia — botanical detail illustration",
+      "caption": "Opposite narrow lanceolate leathery leaves with usually entire margins; small black drupes.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "phillyrea_angustifolia.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.juntadeandalucia.es/medioambiente/portal/documents/20151/255221248/ODIEL_ABR_2025.pdf/af593fff-c306-0419-192d-6d8ea88c66c1?t=1752574806811"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/phillyrea_angustifolia.png",
+          "sha256": "389532dafd8f27948d738c054663b8a3359d53b59ee2979050b3c3d73cf9aa70",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/phillyrea_angustifolia-preview.webp",
+          "sha256": "27ad568d0408081574f20ed01d68c72ba23e72ae6fdd47ddb248adcff2ccfbd2",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "phillyrea-latifolia-whole",
+      "topic_id": "phillyrea-latifolia",
+      "role": "whole",
+      "alt": "Phillyrea latifolia — representative mature whole plant",
+      "caption": "Dense evergreen shrub or small tree.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/phillyrea_latifolia.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Phillyrea_latifolia.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/phillyrea_latifolia.png",
+          "sha256": "4779438683fe425c9aea5ff765958a767a4dbcd2779258963bfd93cfd50a7d2c",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/phillyrea_latifolia-preview.webp",
+          "sha256": "8847c20b9474ef2e0314d68e380dbe6623ba8c37a69249e0551d185bb9460d85",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/phillyrea_latifolia-thumbnail.webp",
+          "sha256": "2b9b35d8c5afda2d62fa6c04230743c9e657aafde99dee082da1bb56930e2277",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "phillyrea-latifolia-detail",
+      "topic_id": "phillyrea-latifolia",
+      "role": "detail",
+      "alt": "Phillyrea latifolia — botanical detail illustration",
+      "caption": "Opposite broad ovate leathery leaves with serrated margins; small black drupes.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "phillyrea_latifolia.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://herbariodocenteuam.github.io/Paneles/paneles/fichas/Phillyrea_latifolia.pdf"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/phillyrea_latifolia.png",
+          "sha256": "900d3bedb44dc4c47479d2e647f812d6f93829285c1c7ab6bee9bce1e0ed8c1e",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/phillyrea_latifolia-preview.webp",
+          "sha256": "cb27f21eecd96a1e0509afc0152827adbf8b0fbb3fb019b3290e7af7774a3376",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "myrtle-whole",
+      "topic_id": "myrtle",
+      "role": "whole",
+      "alt": "Myrtus communis — representative mature whole plant",
+      "caption": "Dense aromatic evergreen shrub.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/myrtle.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://smantenimiento.us.es/uma/fichas_plantas.php?q=Myrtus+communis"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/myrtle.png",
+          "sha256": "59d728b71957b8829f3ab976bd75f74fcfcc54dcc36677eea3977ef9e461ef52",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/myrtle-preview.webp",
+          "sha256": "fe838e984cc5838ca68e5ad96889d8a22d5f7c859ac3f0c33db54bb8d37a4e9a",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/myrtle-thumbnail.webp",
+          "sha256": "b1dd3f3c63b85bd2beea49c4ce9706748dc8f57cc0974ade1d48b01104651631",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "myrtle-detail",
+      "topic_id": "myrtle",
+      "role": "detail",
+      "alt": "Myrtus communis — botanical detail illustration",
+      "caption": "Opposite glossy entire ovate-lanceolate leaves; five white petals, many long stamens; blue-black berries.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "myrtle.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://smantenimiento.us.es/uma/fichas_plantas.php?q=Myrtus+communis"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/myrtle.png",
+          "sha256": "619bd620727449c79fe1e0d66cfa2dd9799c84e2ffeca6eda50d0cefecdcb3d0",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/myrtle-preview.webp",
+          "sha256": "c0385366be9a0436221f3356e05a1ff52e1ceaf63e0c60053c6daac465c906ea",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "terebinth-whole",
+      "topic_id": "terebinth",
+      "role": "whole",
+      "alt": "Pistacia terebinthus — representative mature whole plant",
+      "caption": "Open branching deciduous shrub or small tree.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/terebinth.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.miteco.gob.es/es/parques-nacionales-oapn/centros-fincas/quintos/flora.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/terebinth.png",
+          "sha256": "ff5043d9b0e9ce61f50e1cccc79f8fb102ae7f33d70f9af596c07a16288eead5",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/terebinth-preview.webp",
+          "sha256": "29d0aaaf57eb11211242411066ef4a23217ef53b901e5f3465ccd630d1298b74",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/terebinth-thumbnail.webp",
+          "sha256": "fb4963953ed241db4802db063b1612470d3d46ca5288f226ce5c1df4bec51edd",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "terebinth-detail",
+      "topic_id": "terebinth",
+      "role": "detail",
+      "alt": "Pistacia terebinthus — botanical detail illustration",
+      "caption": "Alternate pinnate deciduous leaves with a terminal leaflet, unwinged rachis; reddish drupes in clusters.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "terebinth.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.miteco.gob.es/es/parques-nacionales-oapn/centros-fincas/quintos/flora.html"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/terebinth.png",
+          "sha256": "496abf00379223588ec94c75f62e2d01cacad2ba2e67e94d6cdfea0c7778fb9b",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/terebinth-preview.webp",
+          "sha256": "f8b829f6889c4835a733a965ec276faf566b813a12b4d3e884b033a7319f08df",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "cork-oak-whole",
+      "topic_id": "cork-oak",
+      "role": "whole",
+      "alt": "Quercus suber — representative mature whole plant",
+      "caption": "Broad irregular evergreen tree with a rugged cork-covered trunk.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "whole/cork_oak.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.juntadeandalucia.es/medioambiente/contenidoExterno/habitats/310/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/whole/cork_oak.png",
+          "sha256": "3c9773d0865764f2ae5c91fa36ce5d5c5ded3e1df9863eef828db39163b12dd5",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/whole/cork_oak-preview.webp",
+          "sha256": "2373e16944e1b07b5b0f592b77d692aa9b37b1924fb575147cee5a8893228983",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        },
+        "thumbnail": {
+          "path": "media/plants/derived/whole/cork_oak-thumbnail.webp",
+          "sha256": "cc8e86c6c02d58ae72f76fb53c043ae2ceb21c7059c616b3fa95b6c77628d55c",
+          "width": 256,
+          "height": 256,
+          "mime": "image/webp"
+        }
+      }
+    },
+    {
+      "id": "cork-oak-detail",
+      "topic_id": "cork-oak",
+      "role": "detail",
+      "alt": "Quercus suber — botanical detail illustration",
+      "caption": "Deep fissured cork bark; leathery ovate leaves with grey felt beneath; acorns in scaly cups.",
+      "provenance": {
+        "tool": "image_gen",
+        "source_asset": "cork_oak.png",
+        "manifest": "media/plants/provenance/designer-illustrations-manifest.json",
+        "generated_on": "2026-10-29",
+        "reviewed_on": "2026-10-29",
+        "copied_on": "2026-11-08",
+        "review_note": "Original app review preserved; illustration is not diagnostic evidence or a growth prediction."
+      },
+      "references": [
+        {
+          "label": "Botanical reference / official guidance",
+          "url": "https://www.juntadeandalucia.es/medioambiente/contenidoExterno/habitats/310/"
+        }
+      ],
+      "files": {
+        "original": {
+          "path": "media/plants/originals/cork_oak.png",
+          "sha256": "d65b7e7538bfaee79721d8c8a8b7db29fcbd94a4b1daa2aafbf7a43cf3a76961",
+          "width": 1254,
+          "height": 1254,
+          "mime": "image/png"
+        },
+        "preview": {
+          "path": "media/plants/derived/detail/cork_oak-preview.webp",
+          "sha256": "8dad80e5b3d3b6dc9f73c373115a5ae950ffcf4969b3a350db376c407d72eab4",
+          "width": 768,
+          "height": 768,
+          "mime": "image/webp"
+        }
+      }
+    }
+  ]
+}

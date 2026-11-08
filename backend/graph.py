@@ -3,6 +3,7 @@ from __future__ import annotations
 from collections import defaultdict, deque
 import hashlib
 from .store import Store, normalized
+from .plant_media import enrich_topics
 
 LIMITS = {"route_steps":6,"extended_steps":8,"alternatives":3,"traversal_expansions":10000}
 ROOT_GROUPS = ["ecosystem:species","ecosystem:habitats","ecosystem:restoration-methods","technology:irrigation","technology:drones","technology:monitoring","funding:programmes","funding:activities","funding:requirements"]
@@ -10,7 +11,7 @@ ROOT_GROUPS = ["ecosystem:species","ecosystem:habitats","ecosystem:restoration-m
 class Graph:
     def __init__(self, store: Store):
         self.store=store; self.snapshot=store.snapshot()
-        self.topics={t['id']:t for t in self.snapshot['topics']}
+        self.topics={t['id']:t for t in enrich_topics(self.snapshot['topics'],self.snapshot['plant_images'],store.resolve)}
         self.edges={e['id']:e for e in self.snapshot['relationships']}
         self.findings=self.snapshot['findings']; self.groups={g['id']:g for g in self.snapshot.get('browse_groups',[])}
         self.adj=defaultdict(list)
