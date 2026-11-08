@@ -13,6 +13,13 @@ at their registered paths. After this upgrade the backend must restart and the b
 
 ## Explore
 
+**Groups & communities** opens permanent group editing and the community planner.
+Create/rename folders, move or share topics, build communities from existing plants,
+and enter irrigation values per member and lifecycle stage. Source values and user
+adjustments retain separate origins and history. See [Community planning](COMMUNITY_PLANNING.md)
+for controls, maintenance, conflicts, Undo/Redo and recovery. Source-backed topic names
+remain under Codex maintenance; Group by still changes presentation only.
+
 1. Open one of the nine sidebar groups. Its complete organized contents open in the foreground; the original layer remains darkened behind.
 2. Click a card or line to inspect it. Selection never opens, closes, recentres or rearranges.
 3. Choose **Explore this topic** to make it the centre. Without search, all direct neighbours open.

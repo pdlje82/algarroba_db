@@ -105,7 +105,7 @@ try {
   );
   check("selection does not add history", (await state()).index === 0);
   await page
-    .getByRole("button", { name: /^Species & companions\s*36$/ })
+    .getByRole("button", { name: /^Species & companions\s*\d+$/ })
     .click();
   await idle();
   check(

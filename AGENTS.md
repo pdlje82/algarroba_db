@@ -220,3 +220,18 @@ Keep the old repository read-only and existing registered copies/citation paths 
 relative names, catalogue/history bytes and unrelated destination files. Do not execute copied
 scripts, unpack embedded archives, deduplicate files or infer reviewed coverage from ownership.
 Document bytes remain local/ignored; track inventory, tooling and docs. See DOCUMENT_LIBRARY.md.
+
+## Editable groups and community plans (8 November 2026)
+
+The user explicitly authorized permanent organization editing and working community
+plans with per-member irrigation and field-level provenance. This supersedes the
+historical rendering-only organization freeze and browser-write prohibition for
+organization and working plans only. Source topics, relationships, findings,
+source-described communities and irrigation evidence still use checked Codex intake.
+Read COMMUNITY_PLANNING.md. SQLite is authoritative; use revision-checked shared
+services, preserve factual identities and source editions, and never infer scientific
+relationships from organization or community membership. Evidence is immutable;
+new research does not overwrite baselines or active planning decisions. No profiles,
+inherited values, scheduling or automatic research are introduced. Test browser
+mutations in isolation and verify factual/source/media/saved-exploration fingerprints
+across organization migrations. Preserve unrelated work.

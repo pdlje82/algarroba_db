@@ -54,6 +54,7 @@ def main():
     p=sub.add_parser("export");p.add_argument("--output")
     sub.add_parser("backup")
     sub.add_parser("groups")
+    p=sub.add_parser('edit');p.add_argument('file');p.add_argument('--check',action='store_true')
     sub.add_parser("media-integrity")
     sub.add_parser("backup-media")
     p=sub.add_parser("register-sources");p.add_argument("manifest")
@@ -70,6 +71,9 @@ def main():
     elif args.command=="media-integrity": result=store.media_integrity()
     elif args.command=="backup-media": result={"backup":str(store.backup_media())}
     elif args.command=="groups": result=store.records("browse_groups")
+    elif args.command=='edit':
+        from .planning import Edit,apply_edit
+        result=apply_edit(store,Edit.model_validate(read(args.file)),actor='Codex',dry_run=args.check)
     elif args.command=="backup": result={"backup":str(store.backup())}
     elif args.command=="register-sources": store.register_sources(read(args.manifest));result={"status":"registered"}
     else:

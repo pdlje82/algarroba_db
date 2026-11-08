@@ -4,6 +4,7 @@
   "version": "0.3.0",
   "type": "module",
   "scripts": {
+    "test:planning": "node tests/planning-browser.mjs",
     "dev": "vite --host 127.0.0.1",
     "build": "node scripts/prepare-assets.mjs && tsc --noEmit && vite build",
     "test": "node --experimental-strip-types --test tests/exploration.test.mjs",

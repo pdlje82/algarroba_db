@@ -6,13 +6,15 @@ import {
   type Edge,
   type Point,
   ROOT_GROUPS,
-  GROUP_LABELS,
 } from "./types.ts";
 import {
   rootGroup,
   primaryGroup,
   recordedPlaceId,
   placeLabel,
+  groupLabel,
+  groupMembers,
+  groupDomain,
 } from "./organization.ts";
 import { allRoutes, contextLabel } from "./exploration.ts";
 import { openingCandidates, highlightOpeningSources } from "./opening.ts";
@@ -74,7 +76,7 @@ function family(t: Item, c: Catalog) {
   return {
     id: g?.id || rootGroup(t.id, c),
     label:
-      g?.label || GROUP_LABELS[rootGroup(t.id, c).split(":").at(-1)!] || t.kind,
+      g?.label || groupLabel(rootGroup(t.id,c),c),
   };
 }
 export function buildScene(
@@ -110,7 +112,7 @@ export function buildScene(
   else
     for (const r of routes)
       if (r.nodes.length === 2) r.edges.forEach((id) => factIds.add(id));
-  const groups = new Map<string, { label: string; ids: string[] }>();
+  const groups = new Map<string, { label: string; ids: string[]; permanent?:boolean; domain?:string }>();
   for (const id of visible) {
     const t = records.get(id);
     if (!t) continue;
@@ -122,7 +124,7 @@ export function buildScene(
           ? {
               id: rootGroup(id, c),
               label:
-                GROUP_LABELS[rootGroup(id, c).split(":").at(-1)!] || t.kind,
+                groupLabel(rootGroup(id,c),c),
             }
           : s.grouping === "family"
             ? family(t, c)
@@ -134,6 +136,22 @@ export function buildScene(
                 };
     if (!groups.has(g.id)) groups.set(g.id, { label: g.label, ids: [] });
     groups.get(g.id)!.ids.push(id);
+  }
+  if(v.scope==='group' && s.groupId && !s.groupId.startsWith('display-group:')) {
+    for(const child of c.browse_groups.filter(g=>g.parent_id===s.groupId)){
+      const ids=groupMembers(child.id,c).filter(id=>visible.has(id));
+      if(s.domain!=='all' && !ids.length && groupDomain(child.id,c)!==s.domain) continue;
+      for(const [key,existing] of groups){if(existing.permanent)continue;existing.ids=existing.ids.filter(id=>!ids.includes(id));if(!existing.ids.length)groups.delete(key);}
+      groups.set(child.id,{label:child.label,ids,permanent:true,domain:groupDomain(child.id,c)});
+    }
+    for(const community of (c.communities||[]).filter(g=>g.parent_id===s.groupId)){
+      if(s.domain!=='all' && s.domain!=='ecosystem')continue;
+      groups.set(community.id,{label:community.label,ids:community.plants.map(p=>p.topic_id),permanent:true,domain:'ecosystem'});
+    }
+  }
+  if(v.scope==='overview')for(const group of c.browse_groups.filter(g=>g.parent_id.startsWith('domain:'))){
+    const domain=group.parent_id.slice(7);
+    if(s.domain==='all'||s.domain===domain){const existing=groups.get(group.id);groups.set(group.id,{label:group.label,ids:existing?.ids||[],permanent:true,domain});}
   }
   const cards: SceneCard[] = [],
     representative = new Map<string, string>(),
@@ -150,10 +168,11 @@ export function buildScene(
       id,
       label: g.label,
       kind: "group",
-      domain: records.get(g.ids[0])?.domain || "other",
+      domain: g.domain || records.get(g.ids[0])?.domain || "other",
       count: g.ids.length,
       groupKey: key,
       displayGroup: true,
+      permanentGroup: g.permanent,
       context: false,
     };
     cards.push({
@@ -164,7 +183,7 @@ export function buildScene(
       height: CARD_HEIGHT,
       members: g.ids,
     });
-    g.ids.forEach((member) => representative.set(member, id));
+    g.ids.forEach((member) => {if(!representative.has(member)||primaryGroup(member,c)?.id===key)representative.set(member,id);});
   }
   for (const id of [...visible].sort((a, b) =>
     (topicMap.get(a)?.label || a).localeCompare(topicMap.get(b)?.label || b),
@@ -197,7 +216,7 @@ export function buildScene(
       const matching = card.members.filter(
         (id) => topicMap.get(id)?.domain === s.pendingDomain || context.has(id),
       );
-      card.outOfDomain = matching.length === 0;
+      card.outOfDomain = matching.length === 0 && card.record.domain!==s.pendingDomain;
       card.matchingDomainCount = matching.length;
       if (
         card.members.length === 1 &&

@@ -78,7 +78,8 @@ export type BrowseGroup = {
   id: string;
   label: string;
   parent_id: string;
-  anchor_topic_id: string;
+  anchor_topic_id: string | null;
+  user_created?: boolean;
   members: { topic_id: string; role: "primary" | "shared" }[];
   maintenance_rule: string;
 };
@@ -91,11 +92,18 @@ export type Catalog = {
   coverage: any[];
   unresolved: any[];
   browse_groups: BrowseGroup[];
+  organization_roots: {id: string; label: string; domain: string}[];
+  communities: Community[];
+  irrigation_evidence: IrrigationEvidence[];
   plant_images?: PlantImage[];
   root_groups: string[];
   topic_kinds: string[];
   identity_redirects?: Record<string, string>;
 };
+export type PlannedField = {value: number | string | null; origin: "not-set" | "source" | "user-set" | "user-adjusted"; baseline: IrrigationEvidence | null; rationale: string; actor: string; changed_at: string | null};
+export type IrrigationEvidence = {id:string;species_id:string|null;stage:string;field:string;value:number|string|null;units:string;wording:string;context:string;applicability:string;limitations:string;source_refs:Ref[]};
+export type CommunityPlant = {topic_id:string;count:number|null;notes:string;basis:Ref[];irrigation:Record<string,{status:"configured"|"not-applicable";fields:Record<string,PlannedField>}>};
+export type Community = {id:string;label:string;kind:"working"|"source";parent_id:string;description:string;region:string;context:string;basis:Ref[];origin:{id:string;label:string;revision:number;selection:string}|null;plants:CommunityPlant[]};
 export type RouteSearch = {
   complete: boolean;
   budget_exhausted: boolean;
@@ -219,5 +227,9 @@ export async function api<T = any>(
       typeof detail === "string" ? detail : JSON.stringify(detail),
     );
   }
-  return response.json();
+  const value=await response.json();
+  if(url==='/api/catalog' && (!Array.isArray(value.organization_roots)||!Array.isArray(value.communities)||!Array.isArray(value.irrigation_evidence)||!ROOT_GROUPS.every(id=>value.organization_roots.some((g:any)=>g.id===id&&typeof g.label==='string'&&g.label.trim())))){
+    throw new Error('The backend is incompatible with the community editor. Restart the Knowledge Browser and refresh; your saved data is preserved.');
+  }
+  return value;
 }

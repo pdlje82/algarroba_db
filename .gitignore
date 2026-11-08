@@ -21,6 +21,7 @@ playwright-report/
 /media/
 /sources/
 /output/plant-images-qa/
+/output/planning-qa/
 
 # Owned document-library bytes are local; inventory and tooling are versioned.
 /doc_library/

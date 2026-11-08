@@ -14,6 +14,7 @@ class Graph:
         self.topics={t['id']:t for t in enrich_topics(self.snapshot['topics'],self.snapshot['plant_images'],store.resolve)}
         self.edges={e['id']:e for e in self.snapshot['relationships']}
         self.findings=self.snapshot['findings']; self.groups={g['id']:g for g in self.snapshot.get('browse_groups',[])}
+        self.communities={g['id']:g for g in self.snapshot['communities']}
         self.adj=defaultdict(list)
         for e in self.edges.values():
             if e.get('traversable',True):
@@ -26,9 +27,10 @@ class Graph:
         group=next((g for g in self.groups.values() if any(m['topic_id']==topic['id'] and m['role']=='primary' for m in g['members'])),None)
         if group:
             parent=group['parent_id'];seen=set()
+            last=group['id']
             while parent in self.groups and parent not in seen:
-                seen.add(parent);parent=self.groups[parent]['parent_id']
-            return parent
+                seen.add(parent);last=parent;parent=self.groups[parent]['parent_id']
+            return last if parent.startswith('domain:') else parent
         domain=topic['domain'];g=topic.get('group_id','other')
         if domain=='ecosystem':return domain+':'+('species' if g=='species' else 'restoration-methods' if g in {'restoration-methods','monitoring'} else 'habitats')
         if domain=='technology':return domain+':'+('irrigation' if g=='irrigation' else 'drones' if g in {'drones','requirements'} else 'monitoring')
@@ -93,8 +95,11 @@ class Graph:
                     compatible={i for i in endpoints if recorded_place(i)==key}
                     if endpoints-compatible:notices.append(f'{len(endpoints-compatible)} topic(s) no longer match this place group.')
                     endpoints=compatible
-            elif group_id in self.groups:endpoints={m['topic_id'] for m in self.groups[group_id]['members']}
-            elif group_id in ROOT_GROUPS:endpoints={i for i,t in self.topics.items() if self.root_group(t)==group_id}
+            elif group_id in self.communities:endpoints={m['topic_id'] for m in self.communities[group_id]['plants']}
+            elif group_id in self.groups:endpoints=self.group_members(group_id)
+            elif group_id in ROOT_GROUPS:
+                endpoints={i for i,t in self.topics.items() if self.root_group(t)==group_id}
+                endpoints.update(self.group_members(group_id))
             else:raise ValueError('This browsing group is unavailable. Return to overview.')
         elif scope=='neighbors':
             if not centre:raise ValueError('Choose a centre to explore its direct connections.')
@@ -140,6 +145,15 @@ class Graph:
 
     def inspect(self, record_id):
         record_id=self.store.resolve(record_id)
+        if record_id in self.communities:
+            community=self.communities[record_id]
+            ids={p['topic_id'] for p in community['plants']}
+            return dict(record=community,relationships=[e for e in self.edges.values() if e['source'] in ids and e['target'] in ids],findings=[],unresolved=[])
+        if record_id in self.groups or record_id in ROOT_GROUPS:
+            record=self.groups.get(record_id) or next(g for g in self.snapshot['organization_roots'] if g['id']==record_id)
+            ids=self.group_members(record_id)
+            if record_id in ROOT_GROUPS:ids.update(i for i,t in self.topics.items() if self.root_group(t)==record_id)
+            return dict(record=record,relationships=[],findings=[],unresolved=[],member_ids=sorted(ids))
         if record_id in self.topics:
             return {"record":self.topics[record_id],"relationships":[e for e in self.edges.values() if record_id in {e["source"],e["target"]}],
                     "findings":[f for f in self.findings if record_id in f["topic_ids"]],
@@ -156,11 +170,20 @@ class Graph:
             while at not in seen:
                 seen.add(at)
                 parent=groups.get(at)
-                labels={'species':'Species & companions','habitats':'Habitats & conditions','restoration-methods':'Restoration methods','irrigation':'Establishment water','drones':'Drones & components','monitoring':'Monitoring','programmes':'Funding programmes','activities':'Activities','requirements':'Requirements'}
-                path.append({'id':at,'label':parent['label'] if parent else labels.get(at.split(':')[-1],at)})
+                roots={g['id']:g['label'] for g in self.snapshot['organization_roots']}
+                path.append({'id':at,'label':parent['label'] if parent else roots.get(at,at)})
                 if not parent:break
                 at=parent['parent_id']
             return dict(group,role=role,parent_path=list(reversed(path)))
         return {'revision':self.snapshot['revision'],
                 'memberships':[entry(g,m['role']) for g in groups.values() for m in g['members'] if m['topic_id']==topic_id],
                 'anchored_groups':[entry(g) for g in groups.values() if g['anchor_topic_id']==topic_id]}
+
+    def group_members(self, group_id):
+        result=set()
+        group=self.groups.get(group_id)
+        if group:
+            result.update(m['topic_id'] for m in group['members'])
+        for child in self.groups.values():
+            if child['parent_id']==group_id:result.update(self.group_members(child['id']))
+        return result

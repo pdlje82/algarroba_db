@@ -16,6 +16,7 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 from .graph import Graph, ROOT_GROUPS, LIMITS
 from .store import Store, ROOT, now
 from .plant_media import enrich_topics, public_image, managed_path
+from .planning import Edit, Conflict, apply_edit, field_history
 
 DOMAIN = "Dryland and Mediterranean restoration, especially carob and associated vegetation; establishment water and irrigation; drone monitoring and water-delivery knowledge; selected Andalusian LEADER funding, with relevant places, organizations, findings, dates and requirements."
 
@@ -74,6 +75,27 @@ def create_app(store: Store | None = None):
             imported=[dict(r) for r in c.execute("SELECT id,revision,created FROM batches ORDER BY revision")]
             redirects={r["old_id"]:r["new_id"] for r in c.execute("SELECT old_id,new_id FROM redirects")}
         return dict(snap,identity_redirects=redirects,root_groups=ROOT_GROUPS,topic_kinds=sorted({t["kind"] for t in snap["topics"]}),limits=LIMITS,domain=DOMAIN,batches=imported)
+
+    @app.post('/api/organization/edit')
+    def organization_edit(edit: Edit):
+        if not (edit.action.startswith('group-') or edit.action.startswith('members-') or edit.action=='revert'):
+            raise HTTPException(400,'This endpoint edits organization only.')
+        return save_edit(edit)
+
+    @app.post('/api/communities/edit')
+    def communities_edit(edit: Edit):
+        if not (edit.action.startswith('community-') or edit.action in {'plants-add','plant-remove','plant-edit','stage-set','field-set','revert'}):
+            raise HTTPException(400,'This endpoint edits working communities only.')
+        return save_edit(edit)
+
+    def save_edit(edit):
+        try:return apply_edit(store,edit)
+        except Conflict as error:raise HTTPException(409,str(error)) from error
+        except (ValueError,KeyError,TypeError) as error:raise HTTPException(400,str(error)) from error
+
+    @app.get('/api/communities/{community_id}/history')
+    def community_history(community_id:str,topic_id:str,stage:str,field:str):
+        return field_history(store,community_id,topic_id,stage,field)
 
     @app.get("/api/explore")
     def explore(scope:str="overview",group_id:str|None=None,centre:str|None=None,search:str="",domain:str="all",kinds:str="",depth:int=6,member_ids:str|None=None):
@@ -176,11 +198,14 @@ def create_app(store: Store | None = None):
         context["topic_labels"]={i:g.topics[i]["label"] for i in ids if i in g.topics}
         context["species_names"]={i:{k:g.topics[i].get(k) for k in ("spanish_name","english_name","scientific_name","name_status","name_note","name_references")} for i in sorted(ids) if i in g.topics and g.topics[i]["kind"]=="species"}
         context["existing_findings"]=[f for f in g.findings if set(f["topic_ids"]) & ids]
-        context["knowledge_revision"]=store.revision()
+        context["knowledge_revision"]=g.snapshot['revision']
         context["captured_revision"]=original_revision
-        context["identity_reconciliation_required"]=original_revision is not None and original_revision!=store.revision()
-        context["browse_groups"]=store.records("browse_groups")
-        context["browse_group_revision"]=store.revision()
+        context["identity_reconciliation_required"]=original_revision is not None and original_revision!=g.snapshot['revision']
+        context["browse_groups"]=g.snapshot['browse_groups']
+        context["browse_group_revision"]=g.snapshot['revision']
+        context['organization_roots']=g.snapshot['organization_roots']
+        context['communities']=g.snapshot['communities']
+        context['irrigation_evidence']=g.snapshot['irrigation_evidence']
         context["topic_organization"]={i:g.organization(i) for i in ids if i in g.topics}
         context["selected_relationships"]=[g.edges[e] for e in context.get("selected_relationship_ids",[]) if e in g.edges]
         text=f"""# Research task {task_id}
@@ -214,6 +239,9 @@ read through frontend/migration.ts; pool indices are presentation references, ne
 
 Persistent browsing groups and maintenance rules:
 {json.dumps(context['browse_groups'],ensure_ascii=False)}
+
+Root labels, community plans and irrigation candidates (user decisions are not scientific evidence):
+{json.dumps({k:context[k] for k in ('organization_roots','communities','irrigation_evidence')},ensure_ascii=False)}
 Review the current group definitions before imports. Reuse their anchors and update primary/shared
 memberships with supported discoveries in the same validated batch. Grouping never creates a factual
 relationship. Reconcile older captured groups with the current revision; keep wider discoveries.

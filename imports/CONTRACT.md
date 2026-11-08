@@ -57,8 +57,20 @@ Do not invent factual relationships from organization.
 
 A batch may contain only browse_groups, or organization plus supported factual discoveries.
 Use current `base_revision`, `--check`, then import. Existing accepted batch digests remain
-unchanged. Migration/import backups and stale-revision protection apply. Browser controls
-cannot modify these definitions. Group rules do not narrow the wider discovery obligation.
+unchanged. Migration/import backups and stale-revision protection apply. Browser organization
+controls now use the shared revision-checked service; source-backed knowledge remains checked
+Codex maintenance. Group rules do not narrow the wider discovery obligation.
+
+Anchors may be null for organizational folders. `user_created` defaults to false for legacy
+groups; only empty user-created folders can be deleted through browser controls. Root labels
+are stored in `organization_roots`, retaining the nine stable root IDs. Top-level custom folders
+use `parent_id: domain:ecosystem|domain:technology|domain:funding`.
+
+Checked batches may also include `communities[]` (kind source) and immutable
+`irrigation_evidence[]`. Community and member references need source-specific context;
+evidence refs must resolve to registered editions and inspected PDF positions. Do not prefill
+planning values through source-community intake, replace working plans, or overwrite an
+existing evidence ID. See COMMUNITY_PLANNING.md for interfaces and maintenance boundaries.
 
 
 ## Plant media and non-PDF sources

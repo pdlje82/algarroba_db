@@ -8,7 +8,6 @@ import { createRoot } from "react-dom/client";
 import {
   api,
   ROOT_GROUPS,
-  GROUP_LABELS,
   type Catalog,
   type State,
   type ExploreView,
@@ -44,7 +43,8 @@ import { buildScene, previousScenes, isInteractiveRecord } from "./scene";
 import { SceneView, GraphBoundary, type SceneHandle } from "./SceneView";
 import { useAppearance, useFullScreen } from "./workspace";
 import { ResearchPanel, Refs } from "./dialogs";
-import { rootGroup } from "./organization";
+import { rootGroup, groupLabel } from "./organization";
+import { PlanningPanel } from './PlanningPanel';
 import { speciesNames } from "./speciesNames";
 import { SourcePanel } from "./SourcePanel";
 import { PlantImages } from "./PlantImages";
@@ -67,6 +67,7 @@ function App() {
     [saved, setSaved] = useState<any[] | null>(null),
     [saving, setSaving] = useState(false),
     [saveName, setSaveName] = useState("");
+  const [planning,setPlanning]=useState(false),[planningTarget,setPlanningTarget]=useState<string|null>(null);
   const [loading, setLoading] = useState(true),
     [error, setError] = useState(""),
     [toast, setToast] = useState(""),
@@ -606,6 +607,7 @@ function App() {
       </button>
     );
   };
+  const groupNavigation=(id:string,depth=0):React.ReactNode=><React.Fragment key={id}><button style={{paddingLeft:12+depth*12}} onClick={()=>dispatch({type:'group',id})}>{groupLabel(id,catalog)}<small>{catalog?.topics.filter(t=>rootGroup(t.id,catalog)===id).length||''}</small></button>{catalog?.browse_groups.filter(g=>g.parent_id===id).map(g=>groupNavigation(g.id,depth+1))}{catalog?.communities?.filter(g=>g.parent_id===id).map(g=><button key={g.id} style={{paddingLeft:24+depth*12}} onClick={()=>dispatch({type:'group',id:g.id})}>{g.label}<small>{g.plants.length}</small></button>)}</React.Fragment>;
   if (!catalog)
     return (
       <main className="boot">
@@ -656,17 +658,9 @@ function App() {
       <div className="app-body">
         <aside className="sidebar">
           <p className="eyebrow">START WITH AN AREA</p>
-          {ROOT_GROUPS.map((id) => (
-            <button key={id} onClick={() => dispatch({ type: "group", id })}>
-              {GROUP_LABELS[id.split(":")[1]]}
-              <small>
-                {
-                  catalog.topics.filter((t) => rootGroup(t.id, catalog) === id)
-                    .length
-                }
-              </small>
-            </button>
-          ))}
+          <button className="primary planning-launch" onClick={()=>{setPlanningTarget(state.groupId);setPlanning(true);}}>Groups & communities</button>
+          {ROOT_GROUPS.map(id=>groupNavigation(id))}
+          {catalog.browse_groups.filter(g=>g.parent_id.startsWith('domain:')).map(g=>groupNavigation(g.id))}
           <hr />
           <button onClick={() => setLibrary(true)}>
             Source library · {catalog.sources.length}
@@ -1142,7 +1136,7 @@ function App() {
                       : selected?.kind || "EXPLORE THE KNOWLEDGE"}
                   </p>
                   <h2>
-                    {selectedTopic?.label ||
+                    {(selected?.displayGroup && selected.groupKey ? groupLabel(selected.groupKey,catalog) : selectedTopic?.label) ||
                       selected?.label ||
                       "Start with a group or topic."}
                   </h2>
@@ -1159,6 +1153,7 @@ function App() {
                   )}
                   {selectedTopic && (
                     <>
+                      {selectedTopic.kind==='habitat'&&<button onClick={()=>{setPlanningTarget(selectedTopic.id);setPlanning(true);}}>Create editable community from this</button>}
                       <div className="actions">
                         <button
                           className="primary"
@@ -1271,6 +1266,9 @@ function App() {
                           </p>
                         ))}
                     </>
+                  )}
+                  {selected?.displayGroup && (
+                    <button onClick={()=>{setPlanningTarget(selected.groupKey);setPlanning(true);}}>Edit group / community</button>
                   )}
                   {selected?.displayGroup && (
                     <button
@@ -1576,6 +1574,7 @@ function App() {
           }}
         />
       )}
+      <PlanningPanel open={planning} catalog={catalog} initialGroup={planningTarget} close={()=>setPlanning(false)} openSource={ref=>{setPlanning(false);setSource(ref);}} navigate={id=>{setPlanning(false);dispatch({type:'group',id});}} changed={async c=>{setCatalog(c);const h=snapshot();await perform(h.entries[h.index],c,h,'replace',h.index,true);}}/>
       {library && (
         <div className="modal-shade">
           <section className="modal" role="dialog" aria-label="Source library">

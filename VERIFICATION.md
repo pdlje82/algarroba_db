@@ -1607,3 +1607,41 @@ SHA256 5a0f30815699813992e47663a5307ec4594df3e158e7dab73e93a242b70aa8cd
 A full restore into an empty test root verified all 379 files and the identical inventory with
 old-repository access blocked by an audit hook. Full report: DOCUMENT_LIBRARY.md. Read-only
 baselines and verification receipts: backups/pre-document-library-20261108T111828Z/.
+# 8 November 2026 — Editable organization and community irrigation
+
+Implemented persistent root labels, anchorless folders, menu-based organization,
+primary/shared memberships and revision-checked session Undo/Redo. Added working
+communities, explicit source-association selection, multilingual plant picking,
+per-member lifecycle irrigation, immutable evidence candidates, retained baselines
+and independent per-field origins/history. Checked maintenance remains responsible
+for factual topics, source communities and evidence. Research capture includes the
+planning data from one consistent graph snapshot.
+
+Validation: 72 Python tests passed and one existing conditional test skipped; 50
+frontend tests passed; TypeScript and production build passed. Focused real-browser
+editing checks passed 18 assertions, the existing navigation walkthrough passed 37,
+and source-viewer checks passed 23, with no JavaScript exceptions. Two focused backend
+checks passed again after the root-inspection consistency fix. Final frontend checks
+also cover exact opening-card highlighting for new permanent folders. Screenshot
+review confirmed the editor, provenance details and graph; sidebar scrolling keeps
+growing organization from stretching the workspace.
+
+Applied the reviewed `imports/community-organization-2026-11-08.json` through the
+shared CLI service, advancing the live store from revision 5 to 6. Preserved original
+Cocoon anchor, all nine members and maintenance rule. Added the four lifecycle
+members and habitat organization. Working communities and numeric irrigation
+defaults remain empty. SQLite integrity and foreign-key checks passed. Pre/post
+table fingerprints prove topics, relationships, findings, sources, coverage, plant
+images, saved explorations and research tasks were unchanged.
+
+Recovery and acceptance records: `backups/community-editor-baseline.json`,
+`backups/community-editor-pre-apply.json`, and `backups/community-editor-accepted.json`.
+The pre-apply record identifies the fresh recovery SQLite backup. Test artifacts
+are under `output/planning-qa/` and the existing `output/consolidation-qa/` folders.
+Synthetic source amounts were confined to the isolated QA database.
+
+Restarted the normal app at port 8765. A final read-only real-browser smoke check
+verified the editor, 15 stored root/folder choices, zero prefilled communities,
+four lifecycle nodes, the exact clicked folder's opening highlight, and no POST
+writes or JavaScript exceptions. The production bundle is `index-LHiDeG2S.js`.
+The existing non-blocking bundle-size and Starlette test-client advisories remain.

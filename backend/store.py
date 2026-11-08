@@ -100,7 +100,8 @@ class BrowseGroup(Record):
     model_config = ConfigDict(extra="forbid")
     label: str = Field(min_length=1)
     parent_id: str
-    anchor_topic_id: str
+    anchor_topic_id: str | None = None
+    user_created: bool = False
     members: list[BrowseMember] = []
     maintenance_rule: str = Field(min_length=1)
 
@@ -118,6 +119,8 @@ class Batch(BaseModel):
     browse_groups: list[BrowseGroup] = []
     plant_images: list[PlantImage] = []
     sources: list[dict] = []
+    communities: list[dict] = []
+    irrigation_evidence: list[dict] = []
 
 
 class Store:
@@ -155,6 +158,8 @@ class Store:
                 CREATE TABLE IF NOT EXISTS browse_groups(id TEXT PRIMARY KEY,data TEXT NOT NULL);
                 CREATE TABLE IF NOT EXISTS plant_images(id TEXT PRIMARY KEY,topic_id TEXT NOT NULL REFERENCES topics(id),role TEXT NOT NULL CHECK(role IN ('whole','detail')),data TEXT NOT NULL,UNIQUE(topic_id,role));
             """)
+        from .planning import initialize
+        initialize(self)
 
     @contextmanager
     def connect(self):
@@ -336,27 +341,13 @@ class Store:
             if len({g.id for g in batch.browse_groups}) != len(batch.browse_groups):
                 raise ValueError("Duplicate browsing group IDs")
             groups.update({g.id:g.model_dump() for g in batch.browse_groups})
-            primary={}
-            for gid,group in groups.items():
-                if not gid.startswith("browse:") or gid in ids:
-                    raise ValueError("Browsing group IDs must use the browse: namespace")
-                if group["anchor_topic_id"] not in ids:
-                    raise ValueError("Unknown browsing group anchor")
-                if group["parent_id"] not in ROOT_BROWSE_GROUPS | groups.keys():
-                    raise ValueError("Unknown browsing group parent")
-                members=[m["topic_id"] for m in group["members"]]
-                if len(set(members))!=len(members) or not set(members)<=ids or group["anchor_topic_id"] in members:
-                    raise ValueError("Invalid or duplicate browsing group members")
-                for member in group["members"]:
-                    if member["role"]=="primary":
-                        if member["topic_id"] in primary:
-                            raise ValueError("A topic has more than one primary browsing group")
-                        primary[member["topic_id"]]=gid
-                visited=set();at=gid
-                while at in groups:
-                    if at in visited:raise ValueError("Cyclic browsing group hierarchy")
-                    visited.add(at);at=groups[at]["parent_id"]
-            changes = {k: len(getattr(batch, k)) for k in ("topics", "relationships", "findings", "coverage", "unresolved", "browse_groups", "plant_images", "sources")}
+            from .planning import validate_groups, validate_intake,validate_community,records as planning_records
+            validate_groups(groups, ids)
+            for community in planning_records(c,'communities'):validate_community(community,groups,topic_records)
+            inspected={(r['source_id'],r['page']) for r in c.execute("SELECT source_id,page FROM coverage WHERE status='inspected'")}
+            inspected.update((r.source_id,r.page) for r in batch.coverage if r.status=='inspected')
+            planned_communities, evidence=validate_intake(c,batch.communities,batch.irrigation_evidence,groups,topic_records,sources,inspected)
+            changes = {k: len(getattr(batch, k)) for k in ("topics", "relationships", "findings", "coverage", "unresolved", "browse_groups", "plant_images", "sources", "communities", "irrigation_evidence")}
             if dry_run:
                 return {"status": "validated", "revision": self.revision(c), **changes}
         if self.revision():
@@ -383,6 +374,9 @@ class Store:
                 c.execute("INSERT INTO unresolved VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (item["id"], json.dumps(item)))
             for group in batch.browse_groups:
                 c.execute("INSERT INTO browse_groups VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (group.id,group.model_dump_json()))
+            for table,items in [('communities',planned_communities),('irrigation_evidence',evidence)]:
+                for item in items:
+                    c.execute(f'INSERT INTO {table} VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data',(item['id'],json.dumps(item,ensure_ascii=False)))
             for image in batch.plant_images:
                 c.execute("INSERT INTO plant_images VALUES (?,?,?,?) ON CONFLICT(id) DO UPDATE SET topic_id=excluded.topic_id,role=excluded.role,data=excluded.data",(image.id,image.topic_id,image.role,image.model_dump_json()))
             for old, new in batch.redirects.items():
@@ -424,7 +418,9 @@ class Store:
             return topic_id
 
     def snapshot(self) -> dict:
+        from .planning import records
         with self.connect() as c:
             c.execute("BEGIN")
             return {"revision": self.revision(c), **{t:self.records(t,c) for t in ("topics","relationships","findings","sources","unresolved","browse_groups","plant_images")},
+                    **{t:records(c,t) for t in ('organization_roots','communities','irrigation_evidence')},
                     "coverage": [dict(r) for r in c.execute("SELECT * FROM coverage ORDER BY source_id,page")]}

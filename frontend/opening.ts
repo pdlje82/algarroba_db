@@ -6,7 +6,7 @@ function groupCandidates(id: string, c: Catalog) {
   if (focused) return ["display-group:" + focused[2]];
   const g = c.browse_groups.find((g) => g.id === id);
   return g
-    ? [g.anchor_topic_id, "display-group:" + id]
+    ? [...(g.anchor_topic_id?[g.anchor_topic_id]:[]), "display-group:" + id]
     : ["display-group:" + id];
 }
 function sourceCard(parent: Scene, ids: string[]) {
@@ -30,7 +30,7 @@ export function openingSource(
     action.type === "explore"
       ? [action.id]
       : action.type === "group"
-        ? groupCandidates(action.id, c)
+        ? action.sourceId ? [action.sourceId] : groupCandidates(action.id, c)
         : action.type === "openMembers"
           ? [action.sourceId]
           : [];

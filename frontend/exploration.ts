@@ -7,7 +7,7 @@ import {
   type Route,
   type Item,
 } from "./types.ts";
-import { placeLabel } from "./organization.ts";
+import { placeLabel, groupLabel } from "./organization.ts";
 import { hasCompactGridPositions } from "./compactLayout.ts";
 export const initialState = (): State => ({
   version: 6,
@@ -30,7 +30,7 @@ export const initialState = (): State => ({
 });
 export type Action =
   | { type: "explore"; id: string }
-  | { type: "group"; id: string }
+  | { type: "group"; id: string; sourceId?: string }
   | { type: "overview" }
   | { type: "clearCentre" }
   | { type: "search"; text: string }
@@ -202,6 +202,7 @@ export function groupOpeningAction(
   members: string[] = [],
 ): Action | null {
   if (!record.displayGroup || !record.groupKey) return null;
+  if(record.permanentGroup) return {type:'group',id:record.groupKey,sourceId:record.id};
   if (s.scope === "overview") return { type: "group", id: record.groupKey };
   if (s.grouping === "none" || !members.length) return null;
   return {
@@ -279,6 +280,7 @@ export function contextLabel(s: State, catalog?: Catalog | null) {
     const [, grouping, key] = focused;
     if (grouping === "type") return key;
     if (grouping === "place") return placeLabel(key, catalog);
+    if(catalog?.organization_roots?.some(g=>g.id===key))return groupLabel(key,catalog);
     return (
       catalog?.browse_groups.find((g) => g.id === key)?.label ||
       GROUP_LABELS[key.split(":").at(-1)!] ||
@@ -287,6 +289,7 @@ export function contextLabel(s: State, catalog?: Catalog | null) {
   }
   const expanded = s.expandedGroups.at(-1)?.replace(/^display-group:/, "");
   if (expanded) {
+    if(catalog?.organization_roots.some(g=>g.id===expanded))return groupLabel(expanded,catalog);
     const group = catalog?.browse_groups.find((g) => g.id === expanded);
     return (
       group?.label ||
@@ -296,6 +299,7 @@ export function contextLabel(s: State, catalog?: Catalog | null) {
     );
   }
   if (s.scope === "group") {
+    if(s.groupId && (catalog?.browse_groups.some(g=>g.id===s.groupId) || catalog?.organization_roots?.some(g=>g.id===s.groupId) || catalog?.communities?.some(g=>g.id===s.groupId))) return groupLabel(s.groupId,catalog);
     const group = catalog?.browse_groups.find((g) => g.id === s.groupId);
     return (
       catalog?.topics.find((t) => t.id === group?.anchor_topic_id)?.label ||

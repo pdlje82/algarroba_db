@@ -1,6 +1,6 @@
 import { recordedPlaceId, placeLabel } from "../frontend/organization.ts";
 import { speciesNames } from "../frontend/speciesNames.ts";
-import { ROOT_GROUPS } from "../frontend/types.ts";
+import { ROOT_GROUPS,GROUP_LABELS } from "../frontend/types.ts";
 import { hoverFrameGeometry } from "../frontend/sceneMeshes.ts";
 import { openingSource, highlightOpeningSources } from "../frontend/opening.ts";
 import { closeLayer } from "../frontend/layerClosing.ts";
@@ -22,6 +22,7 @@ import {
   reduceExploration,
   isInPlaceAction,
   groupOpeningAction,
+  contextLabel,
   commitHistory,
   query,
   reconcile,
@@ -90,6 +91,8 @@ const catalog = {
   topics,
   relationships,
   browse_groups: [],
+  organization_roots:ROOT_GROUPS.map(id=>({id,label:GROUP_LABELS[id.split(':')[1]],domain:id.split(':')[0]})),
+  communities:[],irrigation_evidence:[],
   findings: [],
   sources: [],
   coverage: [],
@@ -1722,4 +1725,32 @@ test("species cards share explicit Spanish, English and scientific names with ca
   assert.equal(scene.cards.find((card) => card.id === "carob").record.spanish_name, "Algarrobo");
   assert.equal(scene.cards.filter((card) => card.id === "carob").length, 1);
   assert.deepEqual(scene.links, buildScene(state(), view, catalog).links);
+});
+
+test('permanent folders keep shared references, empty folders and community openings without factual edges',()=>{
+  const folders=[
+    {id:'browse:primary',label:'Primary collection',parent_id:'ecosystem:species',anchor_topic_id:null,members:[{topic_id:'carob',role:'primary'}]},
+    {id:'browse:shared',label:'Shared collection',parent_id:'ecosystem:species',anchor_topic_id:null,members:[{topic_id:'carob',role:'shared'}]},
+    {id:'browse:empty',label:'Empty folder',parent_id:'ecosystem:species',anchor_topic_id:null,members:[]},
+  ];
+  const c={...catalog,browse_groups:folders,communities:[{id:'community:test',label:'Working community',parent_id:'ecosystem:species',plants:[{topic_id:'carob'}]}]};
+  const v={...view,scope:'group',centre:null,nodes:[topics[0]],edges:[],endpoint_ids:['carob'],routes:[]};
+  const s={...initialState(),scope:'group',groupId:'ecosystem:species',view:v};
+  const scene=buildScene(s,v,c);
+  for(const key of ['browse:primary','browse:shared','browse:empty','community:test']){
+    const card=scene.cards.find(card=>card.record.groupKey===key);
+    assert.ok(card,key+' must remain visible');
+    assert.deepEqual(groupOpeningAction(s,card.record,card.members),{type:'group',id:key,sourceId:card.id});
+    assert.deepEqual(openingSource(groupOpeningAction(s,card.record,card.members),scene,c),{layerKey:scene.key,cardId:card.id});
+  }
+  assert.deepEqual(scene.links,[]);
+  assert.equal(scene.cards.some(card=>card.id==='carob'),false);
+});
+
+test('root labels and historical headings resolve from authoritative organization metadata',()=>{
+  const c={...catalog,organization_roots:catalog.organization_roots.map(g=>g.id==='ecosystem:species'?{...g,label:'My plants'}:g)};
+  assert.equal(contextLabel({...initialState(),scope:'group',groupId:'ecosystem:species'},c),'My plants');
+  assert.equal(contextLabel({...initialState(),expandedGroups:['display-group:ecosystem:species']},c),'My plants');
+  const scene=buildScene({...initialState()}, {...view,scope:'overview',centre:null,endpoint_ids:topics.map(t=>t.id),routes:[]},c);
+  assert.equal(scene.cards.find(g=>g.record.groupKey==='ecosystem:species').record.label,'My plants');
 });
