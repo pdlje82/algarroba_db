@@ -1,0 +1,417 @@
+{
+  "expected_revision": 5,
+  "action": "organization-initialize",
+  "data": {
+    "root_labels": {
+      "technology:irrigation": "Irrigation"
+    },
+    "groups": [
+      {
+        "id": "browse:irrigation-lifecycle",
+        "label": "Irrigation lifecycle",
+        "parent_id": "technology:irrigation",
+        "anchor_topic_id": null,
+        "members": [
+          {
+            "topic_id": "maintenance-irrigation",
+            "role": "primary"
+          },
+          {
+            "topic_id": "nursery-irrigation",
+            "role": "primary"
+          },
+          {
+            "topic_id": "settlement-irrigation",
+            "role": "primary"
+          },
+          {
+            "topic_id": "support-irrigation",
+            "role": "primary"
+          }
+        ],
+        "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge."
+      },
+      {
+        "id": "browse:cocoon",
+        "label": "Cocoon irrigation",
+        "parent_id": "technology:irrigation",
+        "anchor_topic_id": "cocoon",
+        "members": [
+          {
+            "topic_id": "cocoon-reservoir",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cocoon-lid",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cocoon-refill",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cocoon-biodegradation",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cocoon-site-limitations",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cocoon-soil-depth",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cocoon-rock-clearance",
+            "role": "primary"
+          },
+          {
+            "topic_id": "snow-frost-damage",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cocoon-root-development",
+            "role": "primary"
+          }
+        ],
+        "maintenance_rule": "Reuse the existing Cocoon identity. Organize Cocoon-specific components, operation, refilling, limitations, requirements and findings here. Keep shared equipment and general methods available in their broader context. Add factual connections only when supported."
+      },
+      {
+        "id": "browse:plant-communities",
+        "label": "Plant communities",
+        "parent_id": "ecosystem:habitats",
+        "anchor_topic_id": null,
+        "members": [
+          {
+            "topic_id": "acidic-scrub",
+            "role": "primary"
+          },
+          {
+            "topic_id": "carob-community",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cork-oak-woodland",
+            "role": "primary"
+          },
+          {
+            "topic_id": "esparto-grassland",
+            "role": "primary"
+          },
+          {
+            "topic_id": "jujube-thorn-scrub",
+            "role": "primary"
+          },
+          {
+            "topic_id": "kermes-oak-scrub",
+            "role": "primary"
+          },
+          {
+            "topic_id": "mastic-scrub",
+            "role": "primary"
+          },
+          {
+            "topic_id": "pine-woodland",
+            "role": "primary"
+          },
+          {
+            "topic_id": "rosemary-scrub",
+            "role": "primary"
+          },
+          {
+            "topic_id": "seasonal-watercourse",
+            "role": "primary"
+          },
+          {
+            "topic_id": "warm-woodland",
+            "role": "primary"
+          },
+          {
+            "topic_id": "wild-olive-scrub",
+            "role": "primary"
+          },
+          {
+            "topic_id": "xerothermic-scrub",
+            "role": "primary"
+          }
+        ],
+        "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge."
+      },
+      {
+        "id": "browse:habitat-types",
+        "label": "Habitats & vegetation types",
+        "parent_id": "ecosystem:habitats",
+        "anchor_topic_id": null,
+        "members": [
+          {
+            "topic_id": "coastal-rocky-scrub",
+            "role": "primary"
+          },
+          {
+            "topic_id": "mediterranean-dryland",
+            "role": "primary"
+          },
+          {
+            "topic_id": "semi-arid-shrubland",
+            "role": "primary"
+          },
+          {
+            "topic_id": "acidic-scrub",
+            "role": "shared"
+          },
+          {
+            "topic_id": "carob-community",
+            "role": "shared"
+          },
+          {
+            "topic_id": "cork-oak-woodland",
+            "role": "shared"
+          },
+          {
+            "topic_id": "esparto-grassland",
+            "role": "shared"
+          },
+          {
+            "topic_id": "jujube-thorn-scrub",
+            "role": "shared"
+          },
+          {
+            "topic_id": "kermes-oak-scrub",
+            "role": "shared"
+          },
+          {
+            "topic_id": "mastic-scrub",
+            "role": "shared"
+          },
+          {
+            "topic_id": "pine-woodland",
+            "role": "shared"
+          },
+          {
+            "topic_id": "rosemary-scrub",
+            "role": "shared"
+          },
+          {
+            "topic_id": "seasonal-watercourse",
+            "role": "shared"
+          },
+          {
+            "topic_id": "warm-woodland",
+            "role": "shared"
+          },
+          {
+            "topic_id": "wild-olive-scrub",
+            "role": "shared"
+          },
+          {
+            "topic_id": "xerothermic-scrub",
+            "role": "shared"
+          }
+        ],
+        "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge."
+      },
+      {
+        "id": "browse:site-conditions",
+        "label": "Site & establishment conditions",
+        "parent_id": "ecosystem:habitats",
+        "anchor_topic_id": null,
+        "members": [
+          {
+            "topic_id": "amendment-quality",
+            "role": "primary"
+          },
+          {
+            "topic_id": "autumn-planting",
+            "role": "primary"
+          },
+          {
+            "topic_id": "climate-resilience",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cover-types",
+            "role": "primary"
+          },
+          {
+            "topic_id": "establishment-water",
+            "role": "primary"
+          },
+          {
+            "topic_id": "fog-exposure",
+            "role": "primary"
+          },
+          {
+            "topic_id": "frost-risk",
+            "role": "primary"
+          },
+          {
+            "topic_id": "late-spring-planting",
+            "role": "primary"
+          },
+          {
+            "topic_id": "local-provenance",
+            "role": "primary"
+          },
+          {
+            "topic_id": "nitrogen-fixation",
+            "role": "primary"
+          },
+          {
+            "topic_id": "planting-season",
+            "role": "primary"
+          },
+          {
+            "topic_id": "poor-sandy-soil",
+            "role": "primary"
+          },
+          {
+            "topic_id": "root-health",
+            "role": "primary"
+          },
+          {
+            "topic_id": "runoff",
+            "role": "primary"
+          },
+          {
+            "topic_id": "seedling-drought-stress",
+            "role": "primary"
+          },
+          {
+            "topic_id": "seedling-quality",
+            "role": "primary"
+          },
+          {
+            "topic_id": "soil-biota",
+            "role": "primary"
+          },
+          {
+            "topic_id": "soil-depth",
+            "role": "primary"
+          },
+          {
+            "topic_id": "soil-erosion",
+            "role": "primary"
+          },
+          {
+            "topic_id": "soil-infiltration",
+            "role": "primary"
+          },
+          {
+            "topic_id": "soil-salinity",
+            "role": "primary"
+          },
+          {
+            "topic_id": "soil-water-retention",
+            "role": "primary"
+          },
+          {
+            "topic_id": "species-site-fit",
+            "role": "primary"
+          },
+          {
+            "topic_id": "summer-drought",
+            "role": "primary"
+          },
+          {
+            "topic_id": "well-drained-soil",
+            "role": "primary"
+          }
+        ],
+        "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge."
+      },
+      {
+        "id": "browse:places-trials",
+        "label": "Places & field trials",
+        "parent_id": "ecosystem:habitats",
+        "anchor_topic_id": null,
+        "members": [
+          {
+            "topic_id": "al-faisal",
+            "role": "primary"
+          },
+          {
+            "topic_id": "al-faisal-pilot",
+            "role": "primary"
+          },
+          {
+            "topic_id": "almeria",
+            "role": "primary"
+          },
+          {
+            "topic_id": "andalusia",
+            "role": "primary"
+          },
+          {
+            "topic_id": "cabo-de-gata",
+            "role": "primary"
+          },
+          {
+            "topic_id": "canal-flooding",
+            "role": "primary"
+          },
+          {
+            "topic_id": "carregal-do-sal",
+            "role": "primary"
+          },
+          {
+            "topic_id": "el-rano",
+            "role": "primary"
+          },
+          {
+            "topic_id": "gran-canaria",
+            "role": "primary"
+          },
+          {
+            "topic_id": "granada",
+            "role": "primary"
+          },
+          {
+            "topic_id": "grazalema",
+            "role": "primary"
+          },
+          {
+            "topic_id": "israel",
+            "role": "primary"
+          },
+          {
+            "topic_id": "jordan",
+            "role": "primary"
+          },
+          {
+            "topic_id": "la-alcantarilla",
+            "role": "primary"
+          },
+          {
+            "topic_id": "la-sagra",
+            "role": "primary"
+          },
+          {
+            "topic_id": "malaga",
+            "role": "primary"
+          },
+          {
+            "topic_id": "maysara",
+            "role": "primary"
+          },
+          {
+            "topic_id": "maysara-carob-trial",
+            "role": "primary"
+          },
+          {
+            "topic_id": "mediterranean",
+            "role": "primary"
+          },
+          {
+            "topic_id": "mojacar",
+            "role": "primary"
+          },
+          {
+            "topic_id": "portugal",
+            "role": "primary"
+          }
+        ],
+        "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge."
+      }
+    ]
+  }
+}
