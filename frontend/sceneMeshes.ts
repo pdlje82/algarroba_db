@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { palettes, type Theme } from "./appearance.ts";
 import type { SceneCard } from "./scene";
+import { speciesNames } from "./speciesNames.ts";
 function texture(canvas: HTMLCanvasElement) {
   const t = new THREE.CanvasTexture(canvas);
   t.colorSpace = THREE.SRGBColorSpace;
@@ -109,16 +110,35 @@ export function cardMesh(
   ctx.fillStyle = p.muted;
   ctx.font = "25px Segoe UI";
   ctx.fillText(
-    r.kind === "group" ? "BROWSING GROUP" : r.kind.toUpperCase(),
+    r.kind === "group" ? "BROWSING GROUP" : r.name_status === "source-spelling"
+      ? "SPECIES · SOURCE SPELLING"
+      : r.name_status === "genus-only" ? "SPECIES · GENUS ONLY" : r.kind.toUpperCase(),
     24,
     44,
   );
   ctx.fillStyle = p.text;
-  ctx.font = "bold 48px Segoe UI";
-  const label = lines(ctx, r.label, 650);
-  label
-    .slice(0, 4)
-    .forEach((line, i) => ctx.fillText(line, 24, 98 + i * 55, 650));
+  if (r.kind === "species") {
+    speciesNames(r).forEach((name, i) => {
+      const y = 88 + i * 74;
+      ctx.fillStyle = p.muted;
+      ctx.font = "24px Segoe UI";
+      ctx.fillText(name.label, 24, y);
+      ctx.fillStyle = p.text;
+      let font = 36;
+      let wrapped: string[];
+      do {
+        ctx.font = `${i === 2 ? "italic" : "bold"} ${font}px Segoe UI`;
+        wrapped = lines(ctx, name.value, 576);
+        if (wrapped.length <= 2) break;
+        font -= 2;
+      } while (font >= 22);
+      wrapped.slice(0, 2).forEach((line, j) => ctx.fillText(line, 98, y + j * 32, 576));
+    });
+  } else {
+    ctx.font = "bold 48px Segoe UI";
+    const label = lines(ctx, r.label, 650);
+    label.slice(0, 4).forEach((line, i) => ctx.fillText(line, 24, 98 + i * 55, 650));
+  }
   ctx.font = "25px Segoe UI";
   ctx.fillStyle = p.muted;
   ctx.fillText(

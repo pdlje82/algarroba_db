@@ -1,0 +1,1160 @@
+{
+  "batch_id": "species-names-es-en-scientific-2026-11-08",
+  "base_revision": 3,
+  "summary": "Add Spanish, English and source scientific names to all 34 existing species IDs, preserving ambiguous source concepts and explicit unverified names; nomenclature only.",
+  "topics": [
+    {
+      "id": "acacia-menaqua",
+      "label": "Acacia in the Maysara pilot",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Source identifies Acacia tortilis; fall outcomes cover only its initial five-month period.",
+      "aliases": [
+        "Acacia tortilis",
+        "acacia"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "scientific_name": "Acacia tortilis",
+      "spanish_name": "Acacia",
+      "english_name": "Umbrella thorn",
+      "name_note": "Generic Spanish name Acacia; source Acacia tortilis and the Maysara pilot identity are preserved. EPPO uses Vachellia tortilis; no subspecies inferred.",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — ACATO",
+          "url": "https://gd.eppo.int/taxon/ACATO",
+          "fields": [
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        },
+        {
+          "title": "CSIC — Ruta Botánica La Hoya",
+          "url": "https://rutabotanica.eeza.csic.es/",
+          "fields": [
+            "spanish_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Acacia is a generic Spanish name; no subspecies assignment added."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "aleppo-pine",
+      "label": "Aleppo pine",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Named in the MR 2 restoration assemblage.",
+      "aliases": [
+        "pino carrasco",
+        "P. halepensis",
+        "Pinus halepensis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pinus halepensis",
+      "spanish_name": "Pino carrasco",
+      "english_name": "Aleppo pine",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "almond",
+      "label": "Almond",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Observed mixture at El Rano; no measured mutual planting benefit is reported.",
+      "aliases": [
+        "almendro"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage"
+        }
+      ],
+      "spanish_name": "Almendro",
+      "english_name": "Almond",
+      "name_note": "Scientific correspondence for the source common name almendro; not a merge with the separate Al Faisal pilot record.",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — PRNDU",
+          "url": "https://gd.eppo.int/taxon/PRNDU",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded",
+      "scientific_name": "Prunus dulcis"
+    },
+    {
+      "id": "almond-menaqua",
+      "label": "Almond in the Al Faisal pilot",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Almond identified by the report as Prunus amygdalus; outcomes remain pilot-specific.",
+      "aliases": [
+        "almond",
+        "Prunus amygdalus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "scientific_name": "Prunus amygdalus",
+      "identification": "Name as used in MENAQUA; no naming authority inferred.",
+      "spanish_name": "Almendro",
+      "english_name": "Almond",
+      "name_note": "Al Faisal pilot identity and source name Prunus amygdalus retained. EPPO lists it under Prunus dulcis; records are not merged.",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — PRNDU",
+          "url": "https://gd.eppo.int/taxon/PRNDU",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "carob",
+      "label": "Carob tree",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Evergreen Mediterranean tree identified by the handbook description as Ceratonia siliqua. Community associations, cultivation observations, restoration guidance and trial findings retain separate scopes.",
+      "aliases": [
+        "carob",
+        "algarrobo",
+        "algarroba",
+        "garrofa",
+        "Ceratonia siliqua",
+        "C. siliqua",
+        "Ceratonia silique"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 13,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Ceratonia siliqua",
+      "identification": "FOREST-002 PDF 13–21 species description. Printed authority/year retained as source usage only. MENAQUA Ceratonia silique is a checked spelling variant, not another species or naming authority.",
+      "place_ids": [
+        "mediterranean",
+        "andalusia"
+      ],
+      "aspects": {
+        "water": "Adult drought tolerance differs from establishment requirements",
+        "soil": "Well-drained sites; preserve soil and age context",
+        "companions": "Source-described accompaniment, not universal mutual benefit"
+      },
+      "spanish_name": "Algarrobo",
+      "english_name": "Carob tree",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — CEQSI",
+          "url": "https://gd.eppo.int/taxon/CEQSI",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "chamaespartium-source",
+      "label": "Chamaespartium tridentantum (source spelling)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Chamaespartium tridentantum"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Chamaespartium tridentantum",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": null,
+      "english_name": null,
+      "name_note": "Source spelling Chamaespartium tridentantum retained. Spanish/English common-name correspondence is unconfirmed; do not silently substitute another taxon.",
+      "name_references": [],
+      "name_status": "source-spelling"
+    },
+    {
+      "id": "cistus-crispus",
+      "label": "Cistus crispus",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Cistus crispus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Cistus crispus",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Jara rizada",
+      "english_name": "Wrinkle-leaved rockrose",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — CSTCR",
+          "url": "https://gd.eppo.int/taxon/CSTCR",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "cistus-ladanifer",
+      "label": "Cistus ladanifer",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Cistus ladanifer"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Cistus ladanifer",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Jara pringosa",
+      "english_name": "Gum rockrose",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — CSTLA",
+          "url": "https://gd.eppo.int/taxon/CSTLA",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "citrus",
+      "label": "Citrus trees in the drone study",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Crop context of the spraying study; not every tested tree is identified to species.",
+      "aliases": [
+        "citrus fruits",
+        "cítricos"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus watering experiment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment"
+        }
+      ],
+      "spanish_name": "Cítricos",
+      "english_name": "Citrus trees",
+      "name_note": "Citrus spp. denotes the recorded genus, not an identified species. The drone study does not identify every trial tree to species.",
+      "name_references": [],
+      "name_status": "genus-only",
+      "scientific_name": "Citrus spp."
+    },
+    {
+      "id": "cork-oak",
+      "label": "Cork oak",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Less frequent carob companion; cork woodland is also a kermes-oak habitat.",
+      "aliases": [
+        "alcornoque",
+        "Quercus suber"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Quercus suber",
+      "spanish_name": "Alcornoque",
+      "english_name": "Cork oak",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "dwarf-palm",
+      "label": "Mediterranean dwarf palm",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the carob ecology account.",
+      "aliases": [
+        "palmito",
+        "Chamaerops humilis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Chamaerops humilis",
+      "spanish_name": "Palmito",
+      "english_name": "Mediterranean dwarf palm",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "erica-australis",
+      "label": "Erica australis",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Erica australis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Erica australis",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Brezo rojo",
+      "english_name": "Spanish heath",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — EIAAU",
+          "url": "https://gd.eppo.int/taxon/EIAAU",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "erica-scoparia",
+      "label": "Erica scoparia",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Erica scoparia"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Erica scoparia",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Brezo de escobas",
+      "english_name": "Besom heath",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — EIASC",
+          "url": "https://gd.eppo.int/taxon/EIASC",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "fig",
+      "label": "Fig",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Named in MR 2, with possible later introduction as soil conditions improve.",
+      "aliases": [
+        "higuera",
+        "Ficus carica"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Ficus carica",
+      "spanish_name": "Higuera",
+      "english_name": "Fig",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "holm-oak",
+      "label": "Holm oak (Q. ilex source concept)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Handbook Q.ilex usage; correspondence with factsheet Q.rotundifolia remains unresolved.",
+      "aliases": [
+        "encina",
+        "Quercus ilex"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Quercus ilex",
+      "spanish_name": "Encina",
+      "english_name": "Holm oak",
+      "name_note": "The handbook Quercus ilex source concept remains separate from the factsheet Quercus rotundifolia concept, despite their shared common names.",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — QUEIL",
+          "url": "https://gd.eppo.int/taxon/QUEIL",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "holm-oak-rotundifolia",
+      "label": "Holm oak (Q. rotundifolia source concept)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "encina",
+        "Quercus rotundifolia"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 3,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Quercus rotundifolia",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Encina",
+      "english_name": "Holm oak",
+      "name_note": "The factsheet Quercus rotundifolia source concept remains separate from the handbook Quercus ilex concept, despite their shared common names.",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "kermes-oak",
+      "label": "Kermes oak",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Quercus coccifera as described by the Andalusian factsheet; usually a Mediterranean shrub, sometimes a small tree. Common names alone do not merge it with another oak.",
+      "aliases": [
+        "coscoja",
+        "maraña",
+        "matarrubia",
+        "carrasca",
+        "chaparra",
+        "chaparro",
+        "Quercus coccifera",
+        "Quercus coccifera L."
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 1,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Quercus coccifera",
+      "identification": "FOREST-003 PDF 1 description and source common names.",
+      "place_ids": [
+        "andalusia",
+        "mediterranean"
+      ],
+      "aspects": {
+        "water": "Favourable annual rainfall 400–800 mm, with wider occurrence",
+        "soil": "Acidic or basic substrates, often stony"
+      },
+      "spanish_name": "Coscoja",
+      "english_name": "Kermes oak",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "lavandula-stoechas",
+      "label": "Lavandula stoechas",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Lavandula stoechas"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Lavandula stoechas",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Cantueso",
+      "english_name": "French lavender",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — LAVST",
+          "url": "https://gd.eppo.int/taxon/LAVST",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "maritime-pine",
+      "label": "Maritime pine",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "pino resinero",
+        "Pinus pinaster"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pinus pinaster",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Pino resinero",
+      "english_name": "Maritime pine",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "mastic",
+      "label": "Mastic",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion shared by carob and kermes-oak accounts.",
+      "aliases": [
+        "lentisco",
+        "Pistacia lentiscus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pistacia lentiscus",
+      "spanish_name": "Lentisco",
+      "english_name": "Mastic",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "maytenus-senegalensis",
+      "label": "Maytenus senegalensis",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Maytenus senegalensis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Maytenus senegalensis",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Arto",
+      "english_name": "Red spike thorn",
+      "name_note": "Source scientific name Maytenus senegalensis retained; SANBI lists it as a synonym of Gymnosporia senegalensis. No subspecies or ecological claims added.",
+      "name_references": [
+        {
+          "title": "Junta de Andalucía — Arto, Espino Cambrón (Maytenus senegalensis)",
+          "url": "https://www.juntadeandalucia.es/medioambiente/portal/landing-page-%C3%ADndice/-/asset_publisher/zX2ouZa4r1Rf/content/arto-espino-cambr-c3-b3n-maytenus-senegalensis--2/20151",
+          "fields": [
+            "spanish_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": ""
+        },
+        {
+          "title": "SANBI — Swaziland Tree Atlas, Gymnosporia senegalensis",
+          "url": "https://www.sanbi.org/wp-content/uploads/2018/04/sabonet-report-no-35-swaziland-tree-atlas.pdf",
+          "fields": [
+            "english_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Red Spike-thorn; Maytenus senegalensis listed as synonym. Source scientific name retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "myrtle",
+      "label": "Myrtle",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the carob account.",
+      "aliases": [
+        "mirto",
+        "Myrtus communis"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Myrtus communis",
+      "spanish_name": "Mirto",
+      "english_name": "Myrtle",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "olive",
+      "label": "Olive",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Cultivated olive named as a possible later MR 2 introduction, separate from source wild-olive usage.",
+      "aliases": [
+        "olivo"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 133,
+          "locator": "Selected passage"
+        }
+      ],
+      "spanish_name": "Olivo",
+      "english_name": "Olive",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — OLVEU",
+          "url": "https://gd.eppo.int/taxon/OLVEU",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded",
+      "scientific_name": "Olea europaea"
+    },
+    {
+      "id": "osyris-quadripartita",
+      "label": "Osyris quadripartita",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Osyris quadripartita"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Osyris quadripartita",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Bayón",
+      "english_name": "Wild tea plant",
+      "name_note": "Source name Osyris quadripartita retained. EPPO lists it as a synonym of Osyris lanceolata; naming correspondence does not change factual identity.",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — OSYQU",
+          "url": "https://gd.eppo.int/taxon/OSYQU",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "periploca-laevigata",
+      "label": "Periploca laevigata",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Periploca laevigata"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Periploca laevigata",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Cornical",
+      "english_name": "Silk vine",
+      "name_note": "Source concept Periploca laevigata retained. Silk vine is recorded in an original Naturetrek botanical field report for that scientific name; do not silently merge it with Periploca angustifolia.",
+      "name_references": [
+        {
+          "title": "Ayuntamiento de La Laguna — Periploca laevigata",
+          "url": "https://www.aytolalaguna.es/servicios/medio-ambiente/guia-botanica-del-jardin-del-drago/Tabaibal-Cardonal/Periploca-laevigata/",
+          "fields": [
+            "spanish_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": ""
+        },
+        {
+          "title": "Naturetrek — The Canary Islands, 16–23 February 2022",
+          "url": "https://d11gbzngntg4t4.cloudfront.net/reports/ESP15_report_220216_The_Canary_Islands.pdf",
+          "fields": [
+            "english_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Original field report, PDF positions 5 and 16: Periploca laevigata is called Silk-vine / Silk Vine. Naming use only; no locality/ecology facts imported."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "phillyrea-angustifolia",
+      "label": "Narrow-leaved phillyrea",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the carob account.",
+      "aliases": [
+        "labiérnago",
+        "Phillyrea angustifolia"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Phillyrea angustifolia",
+      "spanish_name": "Labiérnago blanco",
+      "english_name": "Narrow-leaved phillyrea",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — PLRAN",
+          "url": "https://gd.eppo.int/taxon/PLRAN",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "phillyrea-latifolia",
+      "label": "Phillyrea latifolia",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Phillyrea latifolia"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Phillyrea latifolia",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Labiérnago prieto",
+      "english_name": "Broad-leaved phillyrea",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — PLRLA",
+          "url": "https://gd.eppo.int/taxon/PLRLA",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "pine-menaqua",
+      "label": "Pine in the MENAQUA trials",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Trial pine uses source spelling Pinus halapensis; correspondence to checked Aleppo pine remains unresolved.",
+      "aliases": [
+        "Pinus halapensis",
+        "pinus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots"
+        }
+      ],
+      "scientific_name": "Pinus halapensis [source spelling]",
+      "identification": "Do not merge solely by apparent spelling correction.",
+      "spanish_name": "Pino",
+      "english_name": "Pine",
+      "name_note": "Pino/Pine are generic names. Pinus halapensis is the source spelling; correspondence with Aleppo pine remains unconfirmed.",
+      "name_references": [],
+      "name_status": "source-spelling"
+    },
+    {
+      "id": "rhamnus-alaternus",
+      "label": "Rhamnus alaternus",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Rhamnus alaternus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Rhamnus alaternus",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Aladierno",
+      "english_name": "Italian buckthorn",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — RHAAL",
+          "url": "https://gd.eppo.int/taxon/RHAAL",
+          "fields": [
+            "spanish_name",
+            "english_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "rhamnus-lycioides",
+      "label": "Rhamnus lycioides",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Rhamnus lycioides"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Rhamnus lycioides",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Espino negro",
+      "english_name": "Black hawthorn",
+      "name_note": "",
+      "name_references": [
+        {
+          "title": "EPPO Global Database — RHALY",
+          "url": "https://gd.eppo.int/taxon/RHALY",
+          "fields": [
+            "spanish_name",
+            "scientific_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Naming correspondence only; original source identity and scientific spelling retained."
+        },
+        {
+          "title": "Catalan Ornithological Institute — Ringing Standards, English edition 3/23",
+          "url": "https://ornitologia.org/mm/file/quefem/anellament/estandards_2023_eng.pdf",
+          "fields": [
+            "english_name"
+          ],
+          "accessed": "2026-11-08",
+          "note": "Plant-name table; Black hawthorn corresponds to Rhamnus lycioides."
+        }
+      ],
+      "name_status": "recorded"
+    },
+    {
+      "id": "stone-pine",
+      "label": "Stone pine",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "pino piñonero",
+        "Pinus pinea"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pinus pinea",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": "Pino piñonero",
+      "english_name": "Stone pine",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "terebinth",
+      "label": "Terebinth",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Companion named in the handbook; preserve its source ecology context.",
+      "aliases": [
+        "cornicabra",
+        "Pistacia terebinthus"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Pistacia terebinthus",
+      "spanish_name": "Cornicabra",
+      "english_name": "Terebinth",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    },
+    {
+      "id": "whitania-frutescens-source",
+      "label": "Whitania frutescens (source spelling)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Name used in the kermes-oak factsheet. Community membership is source-specific, not proof of a beneficial planting combination.",
+      "aliases": [
+        "Whitania frutescens"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Whitania frutescens",
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "spanish_name": null,
+      "english_name": null,
+      "name_note": "Source spelling Whitania frutescens retained. Common-name correspondence is unconfirmed; no automatic replacement by Withania frutescens.",
+      "name_references": [],
+      "name_status": "source-spelling"
+    },
+    {
+      "id": "wild-olive",
+      "label": "Wild olive",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Handbook identity; factsheet spelling variant and less specific MR 2 usage retained in source context.",
+      "aliases": [
+        "acebuche",
+        "Olea europea var. sylvestris",
+        "Olea europaea var. sylvestris"
+      ],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "Selected passage"
+        }
+      ],
+      "scientific_name": "Olea europaea var. sylvestris",
+      "spanish_name": "Acebuche",
+      "english_name": "Wild olive",
+      "name_note": "",
+      "name_references": [],
+      "name_status": "recorded"
+    }
+  ]
+}

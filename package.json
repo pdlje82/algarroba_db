@@ -19,6 +19,8 @@
     "test:all-domain-layout": "node --experimental-strip-types tests/all-domain-layout.mjs",
     "test:double-click": "node --experimental-strip-types tests/double-click-group.mjs",
     "test:focused-group": "node --experimental-strip-types tests/focused-group.mjs",
+    "test:source-viewer": "node tests/source-viewer.mjs",
+    "test:species-names": "node tests/species-names.mjs",
     "test:tight-layers": "node --experimental-strip-types tests/tight-layers.mjs",
     "test:unrecorded-place": "node --experimental-strip-types tests/unrecorded-place.mjs"
   },

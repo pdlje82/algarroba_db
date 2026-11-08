@@ -3,8 +3,6 @@ import React, {
   useMemo,
   useRef,
   useState,
-  lazy,
-  Suspense,
 } from "react";
 import { createRoot } from "react-dom/client";
 import {
@@ -47,9 +45,9 @@ import { SceneView, GraphBoundary, type SceneHandle } from "./SceneView";
 import { useAppearance, useFullScreen } from "./workspace";
 import { ResearchPanel, Refs } from "./dialogs";
 import { rootGroup } from "./organization";
+import { speciesNames } from "./speciesNames";
+import PdfPanel, { PdfBoundary } from "./PdfPanel";
 import "./style.css";
-
-const PdfPanel = lazy(() => import("./PdfPanel"));
 
 function App() {
   const [catalog, setCatalog] = useState<Catalog | null>(null),
@@ -1084,6 +1082,13 @@ function App() {
                         {c.outOfDomain ? " · Outside selected domain" : ""}
                         {pending.includes(c.id) ? " · To research" : ""}
                       </button>
+                      {c.record.kind === "species" && (
+                        <div className="species-names">
+                          {speciesNames(c.record).map((name) => (
+                            <span key={name.label} lang={name.language}>{name.label}: {name.value}</span>
+                          ))}
+                        </div>
+                      )}
                       {c.record.displayGroup && (
                         <button
                           disabled={c.outOfDomain}
@@ -1177,11 +1182,28 @@ function App() {
                             : "Compare"}
                         </button>
                       </div>
-                      {selectedTopic.scientific_name && (
-                        <p>
-                          <em>{selectedTopic.scientific_name}</em>
-                        </p>
-                      )}
+                      {selectedTopic.kind === "species" ? (
+                        <div className="species-name-details">
+                          <dl>
+                            {speciesNames(selectedTopic).map((name) => (
+                              <React.Fragment key={name.label}>
+                                <dt>{name.label === "ES" ? "Spanish" : name.label === "EN" ? "English" : "Scientific name"}</dt>
+                                <dd lang={name.language}>{name.label === "Sci" ? <em>{name.value}</em> : name.value}</dd>
+                              </React.Fragment>
+                            ))}
+                          </dl>
+                          <small>Database ID: {selectedTopic.id}</small>
+                          {selectedTopic.name_note && <p>{selectedTopic.name_note}</p>}
+                          {!!selectedTopic.name_references?.length && (
+                            <details>
+                              <summary>Naming references</summary>
+                              {selectedTopic.name_references.map((ref) => (
+                                <p key={ref.url}><a href={ref.url} target="_blank" rel="noreferrer">{ref.title}</a>{ref.note && <small> · {ref.note}</small>}</p>
+                              ))}
+                            </details>
+                          )}
+                        </div>
+                      ) : selectedTopic.scientific_name && <p><em>{selectedTopic.scientific_name}</em></p>}
                       {(selectedTopic.aliases?.length || 0) > 0 && (
                         <p>
                           Also searchable: {selectedTopic.aliases?.join(" · ")}
@@ -1534,19 +1556,13 @@ function App() {
         </div>
       )}
       {source && (
-        <Suspense
-          fallback={
-            <div className="loading" role="status">
-              Opening source viewer…
-            </div>
-          }
-        >
+        <PdfBoundary key={source.source_id} source={source} close={() => setSource(null)}>
           <PdfPanel
             source={source}
             catalog={catalog}
             close={() => setSource(null)}
           />
-        </Suspense>
+        </PdfBoundary>
       )}
       {research && (
         <ResearchPanel

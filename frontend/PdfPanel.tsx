@@ -3,10 +3,41 @@ import {
   GlobalWorkerOptions,
   getDocument,
   type PDFDocumentProxy,
+  type PDFDocumentLoadingTask,
+  type RenderTask,
 } from "pdfjs-dist";
 import pdfWorker from "pdfjs-dist/build/pdf.worker.min.mjs?url";
-import { api, type Ref, type Catalog } from "./types";
+import { type Ref, type Catalog } from "./types";
 GlobalWorkerOptions.workerSrc = pdfWorker;
+/** A source-viewer failure must never unmount the working exploration. */
+export class PdfBoundary extends React.Component<{
+  children: React.ReactNode;
+  source: Ref;
+  close: () => void;
+}, { error: string | null }> {
+  state: { error: string | null } = { error: null };
+  static getDerivedStateFromError(error: unknown) { return { error: String(error) }; }
+  render() {
+    if (!this.state.error) return this.props.children;
+    const { source, close } = this.props;
+    return (
+      <div className="source-shade">
+        <section className="source-panel" role="dialog" aria-modal="true" aria-label="Source inspection">
+          <header><h2>Source viewer</h2><button onClick={close} className="close" aria-label="Close source">×</button></header>
+          <div className="notice error" role="alert">
+            <p>The source viewer could not open this document. Your graph is still available.</p>
+            <p>{source.source_id} · PDF page {source.page}</p>
+            <details><summary>Error details</summary>{this.state.error}</details>
+            <div className="actions">
+              <button onClick={() => this.setState({ error: null })}>Retry source</button>
+              <a href={`/api/sources/${source.source_id}/file#page=${source.page}`} target="_blank" rel="noreferrer">Open PDF ↗</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
+}
 export default function PdfPanel({
   source,
   catalog,
@@ -24,30 +55,38 @@ export default function PdfPanel({
     [busy, setBusy] = useState(true),
     [pages, setPages] = useState(record?.pdf_pages || 1),
     [painting, setPainting] = useState(false),
-    [renderedPage, setRenderedPage] = useState(0);
+    [renderedPage, setRenderedPage] = useState(0),
+    [attempt, setAttempt] = useState(0);
   const doc = useRef<PDFDocumentProxy | null>(null),
     canvas = useRef<HTMLCanvasElement>(null);
-  const render = useRef<any>(null);
+  const render = useRef<RenderTask | null>(null);
   useEffect(() => {
+    let active = true;
+    let loading: PDFDocumentLoadingTask | undefined;
+    doc.current = null;
     setPage(source.page);
     setBusy(true);
+    setPainting(false);
+    setRenderedPage(0);
     setError("");
-    const loading = getDocument({
-      url: "/api/sources/" + source.source_id + "/file",
-      standardFontDataUrl: "/pdf-assets/standard_fonts/",
-      cMapUrl: "/pdf-assets/cmaps/",
-      cMapPacked: true,
-      wasmUrl: "/pdf-assets/wasm/",
-    });
-    loading.promise
-      .then((pdf) => {
+    const load = async () => {
+      try {
+        loading = getDocument({
+          url: "/api/sources/" + source.source_id + "/file",
+          standardFontDataUrl: "/pdf-assets/standard_fonts/",
+          cMapUrl: "/pdf-assets/cmaps/",
+          cMapPacked: true,
+          wasmUrl: "/pdf-assets/wasm/",
+        });
+        const pdf = await loading.promise;
+        if (!active) return;
         doc.current = pdf;
         setPages(pdf.numPages);
         setPage(source.page);
         setBusy(false);
         setScale(1.2);
-      })
-      .catch(async (e) => {
+      } catch (e) {
+        if (!active) return;
         let message = String(e);
         try {
           const response = await fetch(
@@ -55,27 +94,35 @@ export default function PdfPanel({
           );
           if (!response.ok) message = (await response.json()).detail;
         } catch {}
+        if (!active) return;
         setError(message);
         setBusy(false);
-      });
+      }
+    };
+    void load();
     return () => {
+      active = false;
       render.current?.cancel();
-      loading.destroy();
+      void loading?.destroy().catch(() => {});
       doc.current = null;
     };
-  }, [source.source_id]);
+  }, [source.source_id, attempt]);
   useEffect(() => {
     setPage(source.page);
   }, [source.page]);
   useEffect(() => {
     if (!doc.current || busy || !canvas.current) return;
     let active = true;
+    let task: RenderTask | undefined;
+    const pdf = doc.current, previous = render.current;
     setPainting(true);
-    render.current?.cancel();
-    doc.current
-      .getPage(page)
+    setRenderedPage(0);
+    setError("");
+    previous?.cancel();
+    Promise.resolve(previous?.promise).catch(() => {})
+      .then(() => active ? pdf.getPage(page) : null)
       .then((p) => {
-        if (!active || !canvas.current) return;
+        if (!active || !p || !canvas.current) return;
         const viewport = p.getViewport({
           scale,
           rotation: (p.rotate + rotation) % 360,
@@ -83,13 +130,14 @@ export default function PdfPanel({
         const ctx = canvas.current.getContext("2d")!;
         canvas.current.width = viewport.width;
         canvas.current.height = viewport.height;
-        render.current = p.render({
+        task = p.render({
           canvas: canvas.current,
           canvasContext: ctx,
           viewport,
           background: "rgb(255,255,255)",
         });
-        return render.current.promise.then(() => {
+        render.current = task;
+        return task.promise.then(() => {
           if (active) setRenderedPage(page);
         });
       })
@@ -102,7 +150,7 @@ export default function PdfPanel({
       });
     return () => {
       active = false;
-      render.current?.cancel();
+      task?.cancel();
     };
   }, [page, rotation, scale, busy]);
   const processed = catalog.coverage.find(
@@ -205,11 +253,12 @@ export default function PdfPanel({
             </p>
           )}
           {error && (
-            <div className="notice error">
+            <div className="notice error" role="alert">
               {error}
               <p>
                 Locator: {source.source_id}, PDF page {page}. {record?.filename}
               </p>
+              <button onClick={() => setAttempt((n) => n + 1)}>Retry source</button>
             </div>
           )}
           <canvas ref={canvas} />

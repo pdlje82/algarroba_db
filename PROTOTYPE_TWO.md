@@ -213,3 +213,54 @@ Foreground preparation carries the old offset to its corrected geometry key whil
 camera/history. No extra state format, layout engine or API is introduced. compactRings and the
 collision-fallback placer are removed. Verify with npm run test:tight-layers plus the full browser
 walkthrough.
+
+
+Mouse drag sensitivity is shared in interactions.ts as DRAG_SENSITIVITY=0.5. Apply it to
+ray-plane label displacement, OrbitControls panSpeed and custom Ctrl/Shift rotation deltas.
+A full viewport of custom rotation now means 90 degrees before the existing +/-60-degree clamps.
+Keep the four-pixel drag threshold, pointer cancellation, saved offsets and 25-degree reset.
+
+
+Timed transitions use the common camera move helper: framing a new exploration without a saved
+pose, Fit, Reset view, zoom buttons and angle buttons take 600 ms (previously 300 ms). Reduced
+motion uses zero duration. Saved camera restoration stays immediate. Orbit pan damping is
+inertial smoothing, separate from this fixed duration and from the 50% mouse sensitivity.
+Layer content changes, grouping, route reveal/hide, hover, themes and panels have no timed
+fade/slide/layout animation; their updates are immediate. Do not introduce extra effects.
+
+
+## Species names on canonical topic records
+
+Species naming is stored in SQLite as separate nullable spanish_name, english_name and
+scientific_name fields. The checked naming-only batch updates the existing 34 topic IDs without
+relabeling/merging them or touching organization/relationships/trial claims. name_status marks
+recorded, source-spelling and genus-only concepts; name_note and HTTPS name_references preserve
+provenance and uncertainty. Two unresolved source-spelling records retain null common names.
+
+One speciesNames helper supplies ES/EN/Sci rows to the graph canvas, inspector and accessible
+list. Scientific text is italic; wrapping and font fitting keep all rows above status/research
+badges within unchanged card dimensions. Non-species cards retain their original layout. Cached
+history keeps its membership/positions while species name metadata resolves from current catalog
+IDs. FTS indexes the three stored fields alongside legacy aliases. Research contexts include
+names/status/notes/references by stable ID, and prompts include names/status. Original saved
+payloads/source files remain unchanged. Naming URLs supplement PDF citations without expanding
+the accepted PDF-page ingestion or adding ecological assertions. Verify with npm run test:species-names.
+
+
+## Source viewer isolation and rebuild resilience
+
+A delayed import of a hashed PdfPanel chunk failed after rebuilds removed the chunk referenced
+by an already open tab. The rejected React.lazy import had no error boundary and unmounted the
+whole app, producing an empty black window. Server logs showed the old-asset 404; a real-browser
+fault injection reproduced an empty root. PdfPanel/PDF.js now ship in the main bundle. The PDF
+worker/fonts/document still load only when a source is opened; no obsolete viewer chunk request
+is made on first source click. This trades an approximately 135-kB gzip startup increase for a
+single reliable viewer implementation.
+
+PdfBoundary contains unexpected viewer render/effect failures in a closable panel, with Retry
+source and an original-PDF link. Ordinary PDF errors also expose Retry source. Abort/destroy
+cleanup ignores late completions and expected cancellations. Repaint waits for the previous
+cancelled render task to settle before assigning canvas dimensions or reusing the canvas; only
+the active task commits rendered-page/status. The graph, camera, selection, saved exploration,
+knowledge revision and source/ingestion metadata remain unchanged. The focused browser suite
+covers exact citations, actual rendered pixels, all nine editions, retries and forced failures.

@@ -14,6 +14,12 @@ export type Item = {
   domain: string;
   description?: string;
   aliases?: string[];
+  spanish_name?: string | null;
+  english_name?: string | null;
+  scientific_name?: string | null;
+  name_note?: string;
+  name_status?: "recorded" | "source-spelling" | "genus-only";
+  name_references?: { title: string; url: string; fields: string[]; accessed: string; note?: string }[];
   source_refs?: Ref[];
   [key: string]: any;
 };

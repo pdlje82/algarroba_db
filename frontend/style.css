@@ -404,6 +404,11 @@ hr {
   align-items: start;
   gap: 5px;
 }
+.species-names { display: grid; gap: 4px; color: var(--muted); font-size: 12px; }
+.species-name-details dl { margin: 14px 0; }
+.species-name-details dt { font-size: 11px; color: var(--muted); margin-top: 8px; }
+.species-name-details dd { margin: 3px 0 0; }
+.species-name-details > p { margin-top: 12px; }
 .notice {
   padding: 12px 15px;
   background: var(--soft);

@@ -7,6 +7,13 @@ Each JSON batch: batch_id, summary, topics[], relationships[], findings[], cover
 
 Topic: id, label, kind, domain (ecosystem|technology|funding), description, aliases[], group_id,
 source_refs[]. Optional scientific_name, identification, place_ids[], dates[], aspects{}.
+Species names are separate nullable `spanish_name`, `english_name`, `scientific_name` fields on
+the same stable topic ID. Preserve `label`, source spellings, aliases and source-specific concepts.
+`name_status` is recorded|source-spelling|genus-only; `name_note` explains uncertainty/context.
+Missing names are null, never invented translations. Optional `name_references[]` contains
+`title`, HTTPS `url`, `fields` (spanish_name|english_name|scientific_name), `accessed` date and
+optional `note`. These naming-only citations supplement existing PDF source_refs; they do not
+authorize importing additional ecology, trial claims, PDF pages or geographic assignments.
 Kinds: species, habitat, method, equipment, place, organization, programme, activity, condition, aspect, event, family.
 Source reference: {source_id, page (one-based PDF position), locator, optional source_text}.
 Relationship: id, source (topic ID), target (topic ID), label, explanation,

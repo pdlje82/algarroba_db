@@ -120,7 +120,8 @@ Flat view, blur/frosting, independent panes or autonomous research system remain
 - Keep straight links attached to actual card edges. Opaque cards occlude labels and lines with
   ordinary Three depth testing. Only foreground facts participate in picking; all layer labels have separate drag-only picking.
 - Zoom, pan and turn never change semantic content. Keep 25-degree initial tilt and symmetric +/-60-degree limits
-  around both X (tilt) and Y (sideways). Respect reduced motion. All scopes and previous layers
+  around both X (tilt) and Y (sideways). Shared camera moves (framing/Fit/Reset/zoom/angle
+  buttons) take 600 ms, or zero with reduced motion. Saved camera restoration stays immediate. All scopes and previous layers
   use one compact grid: no neighbour rings, reserved centre slots or scattered fallback slots.
   The centre retains its semantic marker in an ordinary grid slot. Repack changed membership,
   including route reveal/hide, to fill gaps; reuse complete healthy grids exactly across reload,
@@ -131,6 +132,8 @@ Flat view, blur/frosting, independent panes or autonomous research system remain
 - Prepare data/layout before committing history. Cancel stale requests; failures retain the last
   working view. Back/Forward restores complete states; new actions cut the forward branch; cap100.
 - Drag unmodified left-mouse on a label to translate its complete layer in XY at fixed Z.
+  Use shared DRAG_SENSITIVITY=0.5 for label XY deltas, Orbit panSpeed and Ctrl/Shift rotation
+  deltas (90 degrees per viewport span). Retain the +/-60-degree bounds and 25-degree reset.
   Ctrl/Shift-drag takes rotation priority. Suspend camera controls, use pointer capture and a
   4px threshold, and restore the original offset on Escape/cancel. Persist layerOffsets by stable
   graph key in the current exploration, without adding semantic history or moving local cards.
@@ -157,3 +160,37 @@ duplicate checks and backups. Preserve unique primary memberships and acyclic pa
 all useful supported discoveries across the agreed domain, including outside the task and visible
 layers. This rendering revision must not change factual records, organization definitions,
 knowledge revision or original source hashes. Browser writes use isolated QA databases.
+
+
+## Species naming update (8 November 2026)
+
+The user explicitly authorized adding Spanish, English and scientific names to existing species
+records. This naming-only change is separate from the rendering consolidation's data freeze.
+Use nullable spanish_name/english_name/scientific_name, name_status, name_note and name_references
+on the same topic ID via a checked, revision-based batch. Original labels, aliases, source_refs,
+scientific source spellings and distinct trial/source concepts stay intact. Never infer a species
+from a typo/common name; preserve explicit unknowns, generic pine and genus-only Citrus.
+Name references are naming-only citations, not authorization to ingest additional PDF pages,
+ecological/geographic facts or trial outcomes. Current factual PDF scope remains unchanged.
+Species cards across every graph/history layer show ES/EN/Sci using canonical current name
+metadata; inspector, accessible lists, FTS search and research handoffs share those same fields.
+Use names stored in SQLite, never frontend species-name mappings. Non-species/group cards keep
+their existing labels. Keep all three rows within card bounds and existing grid geometry.
+
+The accepted naming batch advanced knowledge revision 3 to 4. Current integrity baseline is
+backups/species-names-r4-baseline.json; retain backups/consolidation-baseline.json as historical
+revision-3 evidence. Only the intended naming metadata/topics and batch/search/revision records
+changed. This does not authorize other factual/organization edits during rendering work.
+
+
+## Source viewer failure isolation
+
+Bundle PdfPanel/PDF.js with the main app, not a lazy import whose hashed chunk may disappear
+while an old tab stays open through rebuilds. PDF documents/worker/fonts still load on demand.
+Wrap only the source panel in PdfBoundary: render/effect errors must never unmount the graph.
+Keep Close source, Retry source and direct original-PDF access available on failure. Ordinary
+load/render errors stay inside the panel. Ignore superseded/unmounted document completions,
+handle destroy rejections, and wait for cancelled paints before reusing the same canvas.
+Keep exact one-based source pages, zoom/rotation and ingestion boundaries. Run the focused
+npm run test:source-viewer with isolated QA data, including missing old chunk URLs, first click,
+all registered documents, retry, rapid close/reopen/repaint and an injected viewer exception.

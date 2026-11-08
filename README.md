@@ -92,6 +92,7 @@ a new exploration after Back replaces the forward branch. Up to100 history entri
 
 Drag a layer label to move the entire layer in X–Y, including previous-view snapshots.
 Escape cancels a move. Placements are saved without adding an exploration-history step.
+Mouse dragging uses 50% sensitivity for layer movement, panning and rotation.
 Drag empty space to pan. Ctrl/Shift-drag or angle buttons turn up to60 degrees in either
 direction around both X and Y; the initial tilt is25 degrees. Zoom changes magnification only.
 Fit and Reset view frame the current graph. Every layer uses the same tight grid, including
@@ -100,6 +101,7 @@ centre marker in an ordinary grid slot. Adding/removing route steps or changing 
 repacks cards to fill gaps. Already compact saved layouts stay stable during reload, turning,
 zoom, resize and fullscreen. Domain preview retains positions until **Update layer** succeeds;
 **Remove centre** and **Tidy graph** also repack. Older rings/scattered layouts repair on opening.
+Camera framing, Fit, Reset view, zoom buttons and angle buttons transition over 600 ms.
 Reduced motion removes camera animation. Dense graphs still benefit from
 filters, grouping, zoom and the keyboard-accessible **Visible topics** list.
 
@@ -120,6 +122,9 @@ The inspector stays docked in both normal and full screen. Appearance offers Sys
 - **Evidence** shows findings, guidance, conditions and sources for the selection, or the current
   graph when nothing is selected. Source buttons open exact one-based PDF positions, which can
   differ from printed page labels. PDF navigation, zoom and rotation remain available.
+  The viewer is bundled with the app so an already open tab does not request an obsolete
+  viewer chunk after a rebuild. Loading/rendering errors stay in a closable source panel;
+  **Retry source** retries without refreshing the graph. The original-PDF link remains available.
 - **Dates** distinguishes topic/event dates from source publication and edition dates. Unknown
   dates stay unknown. A document date is never assigned to every finding in it.
 - **Comparison** displays up to four chosen topics as a table. Missing values say Not recorded;
@@ -149,6 +154,15 @@ views. Refresh preserves the exploration and highlights added topics. Material d
 remain explicit questions; normal in-domain discoveries need no individual approval.
 
 ## Knowledge ownership and maintenance procedure
+
+Species cards show three stored name rows: **ES** (Spanish), **EN** (English) and **Sci**
+(scientific/Latin). The inspector and keyboard topic list show the same names; all three are
+searchable and research handoffs include them keyed by stable database ID. Original topic
+labels, IDs, source spellings and distinct trial/source concepts remain intact. The 8 November
+2026 naming batch covers all 34 species records: 32 have all three names; the two unresolved
+Chamaespartium/Whitania source spellings show explicit unconfirmed common names. Pine trial
+names stay generic and Citrus is genus-only. Naming references are available in the inspector;
+these name correspondences add no ecology, trial outcomes or extra PDF ingestion.
 
 **SQLite is authoritative**, at `data/knowledge.sqlite`. JSON import batches are proposed changes;
 exports and backups are recovery copies, not independently editable masters. Code, schemas,
@@ -201,7 +215,7 @@ separate future work.
 ## Architecture and checks
 
 React/TypeScript and a single Three.js scene through react-force-graph-3d; deterministic local
-packing; PDF.js loaded on demand; FastAPI/Uvicorn; authoritative SQLite/FTS5. All runtime assets
+packing; bundled PDF.js with document/worker loading on demand; FastAPI/Uvicorn; authoritative SQLite/FTS5. All runtime assets
 are bundled. No cloud or AI API is required. WebGL2 must be available; the topic list and inspector
 remain available if graphics initialization fails.
 
@@ -251,3 +265,7 @@ with the same Playwright configuration.
 All-layer packing checks: run `npm run test:tight-layers` against the isolated QA server.
 Unrecorded-place membership/layout checks: run `npm run test:unrecorded-place` against that
 same server with the documented Playwright configuration.
+
+
+Species naming verification: run `npm run test:species-names` against the isolated QA server
+with the accepted naming batch applied there and the documented Playwright configuration.

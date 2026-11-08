@@ -18,7 +18,7 @@ import {
   hoverFrameGeometry,
 } from "./sceneMeshes";
 import { palettes, type Theme } from "./appearance";
-import { layerPoint, viewAngles, BACKGROUND_BRIGHTNESS } from "./interactions";
+import { layerPoint, viewAngles, BACKGROUND_BRIGHTNESS, DRAG_SENSITIVITY } from "./interactions";
 import { controlIsOccluded, projectControlOccluders } from "./layerControls";
 import type { CameraPose, Point } from "./types";
 export type SceneHandle = {
@@ -125,7 +125,7 @@ export const SceneView = forwardRef<SceneHandle, Props>(
         : undefined;
     };
     const duration = () =>
-      matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 300;
+      matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 600;
     const move = (position: THREE.Vector3, target: THREE.Vector3) => {
       const v = get();
       if (v) v.g.cameraPosition(position, target, duration());
@@ -223,6 +223,7 @@ export const SceneView = forwardRef<SceneHandle, Props>(
       Object.assign(v.controls, {
         enableDamping: true,
         enablePan: true,
+        panSpeed: DRAG_SENSITIVITY,
         enableRotate: true,
         minPolarAngle: rad(30),
         maxPolarAngle: rad(150),
@@ -746,9 +747,9 @@ export const SceneView = forwardRef<SceneHandle, Props>(
         if (!v || !rect) return;
         const angles = viewAngles(
             rotation.side -
-              ((e.clientX - rotation.screen.x) * 180) / rect.width,
+              ((e.clientX - rotation.screen.x) * 180 * DRAG_SENSITIVITY) / rect.width,
             rotation.tilt +
-              ((e.clientY - rotation.screen.y) * 180) / rect.height,
+              ((e.clientY - rotation.screen.y) * 180 * DRAG_SENSITIVITY) / rect.height,
           ),
           relative = new THREE.Vector3().setFromSpherical(
             new THREE.Spherical(
@@ -788,8 +789,8 @@ export const SceneView = forwardRef<SceneHandle, Props>(
       if (!current) return;
       d.moved = true;
       d.layer.position.set(
-        d.offset.x + current.x - d.start.x,
-        d.offset.y + current.y - d.start.y,
+        d.offset.x + (current.x - d.start.x) * DRAG_SENSITIVITY,
+        d.offset.y + (current.y - d.start.y) * DRAG_SENSITIVITY,
         d.layer.position.z,
       );
       d.layer.updateMatrixWorld(true);

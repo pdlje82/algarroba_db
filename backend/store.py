@@ -38,12 +38,27 @@ class SourceRef(BaseModel):
     locator: str = ""
 
 
+class NameReference(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    title: str = Field(min_length=1)
+    url: str = Field(pattern=r"^https://")
+    fields: list[Literal["spanish_name", "english_name", "scientific_name"]] = Field(min_length=1)
+    accessed: str
+    note: str = ""
+
+
 class Topic(Record):
     label: str = Field(min_length=1)
     kind: str
     domain: Literal["ecosystem", "technology", "funding"]
     description: str = Field(min_length=1)
     aliases: list[str] = []
+    spanish_name: str | None = Field(default=None, min_length=1)
+    english_name: str | None = Field(default=None, min_length=1)
+    scientific_name: str | None = Field(default=None, min_length=1)
+    name_note: str = ""
+    name_status: Literal["recorded", "source-spelling", "genus-only"] = "recorded"
+    name_references: list[NameReference] = []
     group_id: str = "other"
     source_refs: list[SourceRef] = Field(min_length=1)
 
@@ -283,7 +298,8 @@ class Store:
     def reindex(self, c):
         c.execute("DELETE FROM search")
         for t in self.records("topics", c):
-            c.execute("INSERT INTO search VALUES (?,?,?,?,?)", (t["id"],"topic",t["label"]," ".join(t.get("aliases",[])),t["description"]))
+            names=list(dict.fromkeys([*t.get("aliases",[]),*[t[k] for k in ("spanish_name","english_name","scientific_name") if t.get(k)]]))
+            c.execute("INSERT INTO search VALUES (?,?,?,?,?)", (t["id"],"topic",t["label"]," ".join(names),t["description"]))
         for f in self.records("findings", c):
             c.execute("INSERT INTO search VALUES (?,?,?,?,?)", (f["id"],"finding",f["label"],"",f["text"]))
         for p in c.execute("SELECT * FROM page_text").fetchall():

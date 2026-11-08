@@ -149,6 +149,7 @@ def create_app(store: Store | None = None):
         for route in context.get("routes",[]): ids.update(route.get("nodes",[]))
         g=graph()
         context["topic_labels"]={i:g.topics[i]["label"] for i in ids if i in g.topics}
+        context["species_names"]={i:{k:g.topics[i].get(k) for k in ("spanish_name","english_name","scientific_name","name_status","name_note","name_references")} for i in sorted(ids) if i in g.topics and g.topics[i]["kind"]=="species"}
         context["existing_findings"]=[f for f in g.findings if set(f["topic_ids"]) & ids]
         context["knowledge_revision"]=store.revision()
         context["captured_revision"]=original_revision
@@ -176,6 +177,7 @@ Filters: {json.dumps(context.get('filters',{}),ensure_ascii=False)}
 Grouping: {context.get('grouping','none')}
 Expanded routes: {json.dumps(context.get('expanded_route_ids',[]))}
 Selected topics: {json.dumps(context['topic_labels'],ensure_ascii=False)}
+Species names by stable database ID: {json.dumps({i:{k:n[k] for k in ('spanish_name','english_name','scientific_name','name_status')} for i,n in context['species_names'].items()},ensure_ascii=False)}
 Selected relationships and constituent routes: {json.dumps({'relationship_ids':context.get('selected_relationship_ids',[]),'routes':context.get('routes',[])},ensure_ascii=False)}
 Captured knowledge revision: {original_revision}; current revision: {store.revision()}.
 

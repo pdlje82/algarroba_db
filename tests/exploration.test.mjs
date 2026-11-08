@@ -1,4 +1,5 @@
 import { recordedPlaceId, placeLabel } from "../frontend/organization.ts";
+import { speciesNames } from "../frontend/speciesNames.ts";
 import { ROOT_GROUPS } from "../frontend/types.ts";
 import { hoverFrameGeometry } from "../frontend/sceneMeshes.ts";
 import { openingSource, highlightOpeningSources } from "../frontend/opening.ts";
@@ -1707,4 +1708,18 @@ test("packing old background layers preserves moved offsets, source highlights a
   const closed = closeLayer({ entries: [parent, child], index: 1 }, packed.key, catalog, 1.6);
   assert.equal(closed.kind, "background");
   assert.equal(previousScenes([parent, closed.state], 1, catalog, 1.6).length, 0);
+});
+
+
+test("species cards share explicit Spanish, English and scientific names with canonical IDs", () => {
+  const carob = { ...topics.find((t) => t.id === "carob"), spanish_name: "Algarrobo", english_name: "Carob tree", scientific_name: "Ceratonia siliqua" };
+  assert.deepEqual(speciesNames(carob).map((n) => n.value), ["Algarrobo", "Carob tree", "Ceratonia siliqua"]);
+  assert.deepEqual(speciesNames({ ...carob, spanish_name: null, english_name: null }).map((n) => n.value), ["Sin confirmar", "Not verified", "Ceratonia siliqua"]);
+  assert.deepEqual(speciesNames({ ...carob, kind: "group" }), []);
+  const c = { ...catalog, topics: catalog.topics.map((t) => t.id === carob.id ? carob : t) };
+  const stale = { ...view, nodes: view.nodes.map((t) => t.id === carob.id ? { ...t, spanish_name: "Old display name" } : t) };
+  const scene = buildScene(state(), stale, c);
+  assert.equal(scene.cards.find((card) => card.id === "carob").record.spanish_name, "Algarrobo");
+  assert.equal(scene.cards.filter((card) => card.id === "carob").length, 1);
+  assert.deepEqual(scene.links, buildScene(state(), view, catalog).links);
 });

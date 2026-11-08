@@ -1414,3 +1414,144 @@ SHA256 c0b28e6443a01be1f22fd75da5b1e9f0ce396bd79cda382855d22e1be5c393fd
 Artifacts: output/consolidation-qa/tight-layers-results.json, topic-tight-grid.png and
 browser-results.json. Reproduce with the isolated QA helper and npm run test:tight-layers /
 npm run test:browser using the documented Playwright configuration.
+
+
+## 8 November 2026 — Reduce mouse drag sensitivity
+
+Applied shared DRAG_SENSITIVITY=0.5 to layer-label ray-plane displacement, OrbitControls panSpeed
+and custom Ctrl/Shift rotation. Layer movement and panning respond at half strength; custom
+rotation now uses 90 rather than 180 degrees per viewport span. Retain +/-60-degree limits,
+25-degree Reset view, pointer capture, four-pixel drag threshold, cancellation and persistence.
+README, project instructions and interaction documentation describe the setting.
+
+Validation: all 47 frontend and 24 backend checks, production TypeScript/Vite build and git diff
+--check pass. All 17 targeted Edge gesture assertions pass with zero runtime exceptions,
+including measured half-pointer layer movement, nine-degree rotation for a tenth-viewport drag,
+both rotation limits, foreground/background movement, unchanged semantic scope/camera during
+label moves, Escape cancellation, reload persistence and Reset view. All 10 baseline factual/
+organization signatures remain unchanged; browser checks used the isolated QA store. Normal
+port 8765 serves index-DpxA_w6k.js. Existing non-blocking build/testclient advisories remain.
+
+Recovery snapshot: backups/pre-drag-sensitivity-20261108T100030Z.zip
+SHA256 cc91cf67ea096ad76a7ec547038da9129350270cff80ba656883c37787007e2a
+Artifacts: output/consolidation-qa/gesture-results.json and layer-gestures-dark.png.
+Reproduce using the isolated QA helper and npm run test:gestures with the documented Playwright
+configuration.
+
+
+## 8 November 2026 — Slow existing camera transitions
+
+Increased the shared camera-move duration from 300 to 600 ms. It covers framing a new exploration
+without a saved pose, Fit, Reset view, zoom buttons and angle buttons. Keep reduced-motion moves
+and saved camera restoration immediate. The renderer retains its existing easing and pan damping;
+mouse sensitivity remains 50%. Group/layer content, layout, route reveal, hover, themes and panels
+still update immediately; no additional animation pipeline was introduced. README, project
+instructions and interaction documentation describe the actual transition inventory.
+
+Validation: 47 frontend checks, 24 backend checks, production TypeScript/Vite build and git diff
+--check pass. Seven focused real-Edge checks pass with no runtime exceptions: sample projected
+heading controls during Zoom in, Fit, Turn left and Reset view; all four remain in motion after
+300 ms and settle by 750 ms. Camera moves add no exploration history; reduced-motion zoom is
+already settled at the first 100-ms sample. All 10 baseline factual/organization signatures remain
+unchanged. Browser checks used the isolated QA server. Normal port 8765 serves index-BUH78HH4.js.
+Existing non-blocking bundle-size and testclient advisories remain.
+
+Recovery snapshot: backups/pre-slower-transitions-20261108T100232Z.zip
+SHA256 1ea3f1ba58a27edca1812cca633a586ab1510574054540962f7431b378c9b95c
+Artifacts: output/consolidation-qa/transition-results.json and check-transitions.mjs. Reproduce by
+running that Node script against the isolated QA helper with KGB_PLAYWRIGHT_MODULE configured.
+
+
+## 8 November 2026 — Store and display Spanish, English and scientific species names
+
+The user explicitly authorized a naming-only database update, separate from the prior rendering
+consolidation's knowledge freeze. Read current organization/records/export and prepared the
+revision-based species-names-es-en-scientific-2026-11-08 batch. Validated/applied first in the
+isolated QA store, then validated/applied through backend.cli to the accepted store: revision 3
+-> 4, exactly 34 existing species topics updated, zero added/merged/deleted topics, relationships,
+findings, coverage, unresolved records or organization changes. Original labels, aliases, source
+refs, descriptions, place/date/aspect fields and every existing scientific spelling are intact.
+Added scientific correspondences only for previously unnamed almond/olive and genus-only Citrus.
+
+Separate nullable spanish_name/english_name/scientific_name fields are persisted on each stable
+ID, with name_status, name_note and naming-reference metadata. 32 records have all three names.
+Chamaespartium tridentantum and Whitania frutescens remain source-spelling concepts with explicit
+unconfirmed common names. Trial Pinus halapensis retains that spelling and generic Pine/Pino;
+Citrus spp. never implies species identification. The two Holm oak source concepts and the two
+almond records remain separate. Names already supported by aliases/labels are retained; new
+correspondences were checked against EPPO, CSIC, Junta de Andalucía, SANBI, the Catalan
+Ornithological Institute, La Laguna's botanical guide and an original Naturetrek botanical report
+for Silk vine. External citations concern names only, with field/date/context provenance. No new
+ecological/locality/trial claims or PDF pages were ingested. Nine source records and 68 selected
+PDF-page coverage stay unchanged; original source files were not modified.
+
+All species cards now render ES/EN/Sci rows, scientific text italic, wrapping/font fitting inside
+unchanged card geometry. Shared speciesNames supplies inspector/accessible lists and explicit
+missing values. Group/non-species cards keep their labels. Historical geometry/identities stay
+intact while name metadata follows the current canonical ID. FTS indexes all three fields beside
+legacy aliases. Research contexts capture names/status/notes/references and prompts include names
+by stable ID. Inspector exposes exact database ID and naming-reference links. README, import
+contract, project instructions and interaction documentation describe the fields and uncertainty.
+
+Validation: 48 frontend checks, 26 backend checks, production TypeScript/Vite build and git diff
+--check pass; the naming backend test passed again after adding prompt names. Fourteen focused
+Edge naming assertions and the full 37-check browser walkthrough pass with zero runtime
+exceptions. Canvas interception verifies all 34 actual card textures contain the three expected
+rows and no line exceeds available width/row bounds. Tests cover source/genus badges, unchanged
+IDs, search in each name form, provenance, inspector/list/exploration/reload and explicit missing
+values. Both new screenshots were visually inspected. Accepted-store pre/post comparison proves
+all unrelated tables and topic fields unchanged, all existing scientific spellings preserved,
+and SQLite integrity/foreign keys valid. New baseline: backups/species-names-r4-baseline.json;
+original revision-3 baseline retained. Normal backend restarted without another tab, serving
+revision 4 and index-BRl4BXkc.js. Existing non-blocking bundle-size/testclient advisories remain.
+
+Database recovery: backups/knowledge-r3-20261108-110730-477417.sqlite (plus automatic pre-import
+backup). Source/build recovery: backups/pre-species-names-20261108T100730Z.zip
+SHA256 7c3227daa7b5afd41ad804924fc4c5db7a31486b9121c1a48a0e0de2767b698f
+Pre-change export: data/pre-species-names-snapshot.json. Accepted input:
+imports/species-names-es-en-scientific-2026-11-08.json (immutable batch ID).
+Artifacts: output/consolidation-qa/species-names-results.json, species-names-grid.png,
+species-names-exploration.png and browser-results.json. Reproduce with the isolated QA helper,
+accepted naming batch in that QA store, npm run test:species-names / test:browser and the
+documented Playwright configuration.
+
+
+## 8 November 2026 — Prevent the source-document blank window
+
+Found a concrete matching failure in the normal server log: an open older main bundle requested
+/assets/PdfPanel-Bu3idKqY.js after a rebuild had removed that asset (404). Reload then fetched the
+new main/viewer bundle and opened the document. Reproduced the same path in actual Edge by
+returning 404 for the deferred PdfPanel asset: React reported Failed to fetch dynamically imported
+module and #root had zero children. The blank window follows the current background theme;
+the user's dark theme appears black. Baseline reproduction JSON/screenshot are retained.
+
+Removed the deferred React.lazy/Suspense viewer import and bundled the existing PdfPanel/PDF.js
+with the main app. Documents, worker, fonts and other PDF resources still load on demand; the
+first source click cannot request an obsolete PDF-viewer chunk. Added PdfBoundary around only
+the source panel so unexpected viewer render/effect errors cannot unmount the graph. Its error
+panel keeps Close source, Retry source and direct original-PDF access. Ordinary loading/rendering
+errors also have Retry source. PDF load cleanup rejects late/superseded completions, catches
+synchronous initialization/destroy failures and retains the last usable app. Repaints await
+cancellation completion before reusing the same canvas and only active tasks commit page/status.
+No alternate viewer, automatic page reload or knowledge change was introduced.
+
+Validation: all 48 frontend checks, 26 backend checks, production TypeScript/Vite build and git
+diff --check pass. The 20 focused real-Edge source checks and full 37-check browser walkthrough
+pass with zero normal-operation runtime exceptions. Focused checks block obsolete chunk URLs,
+verify first-click exact citation and actual nonblank PDF pixels, exercise page/zoom/rotation,
+503 failure + retry without refresh, rapid close/reopen and canvas repaint cancellation, and open
+all nine registered source editions. A deliberately malformed source metadata response triggers
+the viewer boundary while the graph survives; Close restores the same centre. Before/working
+screenshots were inspected. All 10 revision-4 baseline knowledge/organization signatures remain
+unchanged. Browser checks use the isolated QA database. Normal port 8765 serves index-8Bs1ZtCx.js,
+with no PdfPanel-*.js shipped. PDF worker asset remains pdf.worker.min-CIqJB0yW.mjs. The existing
+bundle-size advisory remains; startup gzip grows approximately 135 kB by bundling the viewer.
+README, project instructions and interaction documentation describe the loading/recovery model.
+
+Recovery snapshot: backups/pre-source-viewer-fix-20261108T101643Z.zip
+SHA256 d247abf0e81ccd8e1fb116a0c7087621bc97f6cd24d6a8b5a8e70c9fe364812a
+Artifacts: output/consolidation-qa/source-blank-before.json, source-blank-before.png,
+source-viewer-results.json, source-viewer-working.png and browser-results.json. Baseline repro
+script is reproduce-source-blank.mjs in that output folder. Reproduce the regression suite with
+the isolated QA helper, npm run test:source-viewer / test:browser and the documented Playwright
+configuration. Existing tabs need one reload to load this replacement main bundle.

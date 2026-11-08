@@ -2,6 +2,7 @@ import * as THREE from "three";
 import type { Point } from "./types.ts";
 export const radians = (n: number) => (n * Math.PI) / 180;
 export const VIEW_LIMIT = 60;
+export const DRAG_SENSITIVITY = 0.5;
 export const BACKGROUND_BRIGHTNESS = 0.35;
 export function viewAngles(side: number, tilt: number) {
   return {

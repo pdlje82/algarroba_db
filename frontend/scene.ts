@@ -170,7 +170,13 @@ export function buildScene(
     (topicMap.get(a)?.label || a).localeCompare(topicMap.get(b)?.label || b),
   )) {
     if (representative.has(id) || !records.has(id)) continue;
-    const record = { ...records.get(id)!, viewCentre: id === centre };
+    const record: Item = { ...records.get(id)!, viewCentre: id === centre };
+    // History retains its membership/layout; names follow the canonical database ID.
+    const canonical = topicMap.get(id);
+    if (canonical?.kind === "species") {
+      for (const key of ["spanish_name", "english_name", "scientific_name", "name_status"])
+        record[key] = canonical[key];
+    }
     cards.push({
       id,
       record,

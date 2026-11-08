@@ -147,6 +147,8 @@ try {
     JSON.stringify(d.s.camera) === JSON.stringify(before.camera) &&
       JSON.stringify(d.s.positions) === JSON.stringify(before.positions),
   );
+  const oldTitle = titlePoint({ ...d.scene, offset: { x: 0, y: 0 } }, 0, d), newTitle = titlePoint(d.scene, 0, d);
+  check("label drag responds at half the pointer displacement", Math.abs(newTitle.x - oldTitle.x - 47.5) < 1 && Math.abs(newTitle.y - oldTitle.y - 27.5) < 1);
   check("label drag does not add exploration history", d.h.index === 0);
   p = await label(d.scene, 0, d);
   await page.mouse.move(p.x, p.y);
@@ -173,7 +175,7 @@ try {
   check("previous view remains available", d.previous.length === 1);
   // Move foreground down to expose the history label before testing its own drag.
   p = await label(d.scene, 0, d);
-  await drag(p, -110, 150);
+  await drag(p, -220, 300);
   d = await display();
   const previous = d.previous[0],
     oldOffset = { ...previous.offset };
@@ -202,6 +204,15 @@ try {
   const index = d.h.index,
     rect = d.rect,
     point = { x: rect.x + rect.width * 0.5, y: rect.y + rect.height * 0.6 };
+  const initialAngles = angles(d.s);
+  await page.keyboard.down("Control");
+  await drag(point, rect.width / 10, rect.height / 10);
+  await page.keyboard.up("Control");
+  d = await display();
+  const gentleAngles = angles(d.s);
+  check("Ctrl-drag rotates nine degrees per tenth viewport instead of eighteen", Math.abs(gentleAngles.x - initialAngles.x - 9) < 0.2 && Math.abs(gentleAngles.y - initialAngles.y + 9) < 0.2);
+  await page.getByRole("button", { name: "Reset view", exact: true }).click();
+  await page.waitForTimeout(400);
   for (const sign of [1, -1]) {
     await page.keyboard.down("Control");
     await page.mouse.move(point.x, point.y);

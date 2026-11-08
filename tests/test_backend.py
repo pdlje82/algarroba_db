@@ -35,6 +35,53 @@ def test_exact_scope_evidence_and_safe_repeat(store):
     assert s.snapshot()==snap
 
 
+def test_species_names_are_stored_searchable_and_keep_source_identities(store):
+    s,_=store
+    before=s.snapshot()
+    batch=json.loads((ROOT/'imports/species-names-es-en-scientific-2026-11-08.json').read_text(encoding='utf-8'))
+    batch['base_revision']=s.revision()
+    assert s.import_batch(batch,True)['topics']==34
+    assert s.snapshot()==before
+    assert s.import_batch(batch)['status']=='accepted'
+    assert s.import_batch(batch)['status']=='unchanged'
+    after=s.snapshot()
+    for key in ['relationships','findings','sources','coverage','browse_groups','unresolved']:
+        assert after[key]==before[key]
+    old={t['id']:t for t in before['topics']};new={t['id']:t for t in after['topics']}
+    assert old.keys()==new.keys()
+    allowed={'spanish_name','english_name','scientific_name','name_status','name_note','name_references'}
+    for id,topic in old.items():
+        if topic['kind']!='species':assert new[id]==topic
+        assert {k:v for k,v in topic.items() if k not in allowed}=={k:v for k,v in new[id].items() if k not in allowed}
+    client=TestClient(create_app(s))
+    for term,id in [('Algarrobo','carob'),('Ceratonia siliqua','carob'),('Cantueso','lavandula-stoechas'),('French lavender','lavandula-stoechas'),('Bayón','osyris-quadripartita')]:
+        assert id in {x['id'] for x in s.search(term) if x['kind']=='topic'}
+        assert id in client.get('/api/explore',params={'scope':'search','search':term}).json()['endpoint_ids']
+    assert new['carob']['spanish_name']=='Algarrobo'
+    assert new['carob']['english_name']=='Carob tree'
+    assert new['carob']['scientific_name']=='Ceratonia siliqua'
+    assert new['whitania-frutescens-source']['spanish_name'] is None
+    assert new['chamaespartium-source']['english_name'] is None
+    assert new['pine-menaqua']['scientific_name']=='Pinus halapensis [source spelling]'
+    assert new['citrus']['scientific_name']=='Citrus spp.' and new['citrus']['name_status']=='genus-only'
+    assert {'holm-oak','holm-oak-rotundifolia'} <= new.keys()
+    result=client.post('/api/research/preview',json={'context':{'selected_topic_ids':['carob'],'knowledge_revision':s.revision()},'instruction':'Research Algarrobo'})
+    assert result.status_code==200
+    assert result.json()['context']['species_names']['carob']['spanish_name']=='Algarrobo'
+    assert 'Algarrobo' in result.json()['prompt'] and 'Ceratonia siliqua' in result.json()['prompt']
+
+
+def test_invalid_species_name_metadata_preserves_knowledge(store):
+    from pydantic import ValidationError
+    s,_=store;before=s.snapshot()
+    topic=next(t for t in before['topics'] if t['id']=='carob')
+    with pytest.raises(ValidationError):
+        s.import_batch({'batch_id':'invalid-naming','summary':'Invalid','topics':[{**topic,'spanish_name':''}]})
+    with pytest.raises(ValidationError):
+        s.import_batch({'batch_id':'invalid-ref','summary':'Invalid','topics':[{**topic,'name_references':[{'url':'javascript:alert(1)','title':'Invalid','fields':['spanish_name'],'accessed':'2026-11-08'}]}]})
+    assert s.snapshot()==before
+
+
 def test_browsing_groups_are_transactional_organization_not_factual_edges(store):
     s,_=store;before=s.snapshot()
     batch=json.loads((ROOT/'imports/cocoon-browse-group.json').read_text())
