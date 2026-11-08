@@ -1587,3 +1587,23 @@ coverage limits and distinguishes old illustration-review notes from new botanic
 Additional live-renderer regression: 22 hover/picking/domain checks passed against the
 isolated image-enabled store, including clicking artwork without navigation and rejecting
 domain-excluded artwork clicks. No runtime exceptions.
+
+
+## Complete document-library ownership — 8 November 2026
+
+Copied 378 opaque files recursively (601,507,644 bytes), preserving the tracked EPUB: 379 files,
+603,608,676 bytes total. Original bytes and all copied modification timestamps match. Identical
+rerun returned unchanged. Ten existing graph-source matches are metadata only, not new ingestion.
+The database file SHA-256, schema and accepted knowledge/source/search fingerprints remain unchanged
+at revision 5. All 21 registered citation-file endpoints still return their registered hashes.
+No importer, bootstrap, registration, text extraction or indexing ran; app code/server stayed intact.
+
+21 tool tests passed; one native symlink-creation check skipped for Windows privileges (mocked
+symlink and junction rejection both passed). Coverage includes partial-publication interruption,
+source mutation, collisions, preserved content, low space, corruption and archive restoration.
+
+Verified backup: backups/document-library-20261108T112426791307Z.zip
+SHA256 5a0f30815699813992e47663a5307ec4594df3e158e7dab73e93a242b70aa8cd
+A full restore into an empty test root verified all 379 files and the identical inventory with
+old-repository access blocked by an audit hook. Full report: DOCUMENT_LIBRARY.md. Read-only
+baselines and verification receipts: backups/pre-document-library-20261108T111828Z/.

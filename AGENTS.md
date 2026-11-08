@@ -208,3 +208,15 @@ Keep compact card geometry, opaque depth/picking behavior, multilingual names an
 unchanged when artwork loads or retries. Cancel mesh image callbacks on disposal.
 Managed local sources/media travel with the SQLite backup; runtime must not read the old app.
 See PLANT_IMAGES.md for maintenance, evidence limits, integrity checks and recovery.
+
+
+## Owned document library (8 November 2026)
+
+`doc_library/` now owns a byte-preserving copy of the old library plus the existing tracked EPUB.
+This ownership phase does not authorize ingestion, source registration, OCR, indexing or summaries.
+`imports/document-library-inventory.json` records file ownership only; it is not a graph batch.
+Use `scripts/document_library.py` for checked copying, verification and separate library backups.
+Keep the old repository read-only and existing registered copies/citation paths intact. Preserve
+relative names, catalogue/history bytes and unrelated destination files. Do not execute copied
+scripts, unpack embedded archives, deduplicate files or infer reviewed coverage from ownership.
+Document bytes remain local/ignored; track inventory, tooling and docs. See DOCUMENT_LIBRARY.md.

@@ -1,0 +1,3147 @@
+{
+  "schema_version": 1,
+  "destination": "doc_library",
+  "source_root": "C:\\Users\\JanEngelke\\git_private\\algarrobos\\doc_library",
+  "created_at": "2026-11-08T11:23:19.952795+00:00",
+  "verified_at": "2026-11-08T11:23:19.952795+00:00",
+  "ingestion_performed": false,
+  "knowledge_action": "none",
+  "knowledge_snapshot": {
+    "present": true,
+    "revision": "5",
+    "tables": {
+      "meta": {
+        "rows": 1,
+        "sha256": "903c6fff4c7225cef0199eda7b8b934bbe8af42a1897ed63bee42471a9540f05"
+      },
+      "sources": {
+        "rows": 21,
+        "sha256": "e34da9ca9a9a3557ac986e69be71007504584fff02c666b6a438e6b9d0b3881a"
+      },
+      "topics": {
+        "rows": 295,
+        "sha256": "fbdc073805ebb30fc38c3eeda9c08fb98840439ff2c2cc3193b7385c6ca7b2e5"
+      },
+      "relationships": {
+        "rows": 345,
+        "sha256": "95a3db5de4e2fa2899127c0c6ea11cde324f4b7806bcab91dd3ea48b828d2fca"
+      },
+      "findings": {
+        "rows": 147,
+        "sha256": "868fe8c838229e2ae8d366dd82865eea00b74d5c28f7c076009125ee56903395"
+      },
+      "coverage": {
+        "rows": 71,
+        "sha256": "5887de1ca1773ab78e4ec076b74dd8692d6cdf0a220b402ea9c309b170fa4e73"
+      },
+      "unresolved": {
+        "rows": 22,
+        "sha256": "ec089c0ca2b5db6eabf24922ce10b5c1f49776831be242a3e696e791f225ced6"
+      },
+      "browse_groups": {
+        "rows": 1,
+        "sha256": "d7ec4da331b296029c03b930909ba96d42fb44b1d5a8f17efb2478f3aed31498"
+      },
+      "plant_images": {
+        "rows": 46,
+        "sha256": "8c09250fd946cedabc788ed8cb95fd44c445187a8cf9fc50b5edf1a66c4ca4ca"
+      },
+      "batches": {
+        "rows": 5,
+        "sha256": "815c8693a3f99c5519698c423942b881f5cd4232ec8d6170e8e39bf117fd97f4"
+      },
+      "redirects": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "page_text": {
+        "rows": 68,
+        "sha256": "dac0ccd488eb7e621dec932285059a653994bcf80313ded85b91141ab5c24f6a"
+      },
+      "search": {
+        "rows": 510,
+        "sha256": "241bfa9461cb69f95b2de65d6085adfbe11991278da78089aaddfc56ed1b869a"
+      }
+    },
+    "schema_sha256": "5cbe17473043093e71de120b0c6a492d8905bee97981ce054ef67ac4abc2cdcb"
+  },
+  "file_count": 379,
+  "copied_file_count": 378,
+  "total_bytes": 603608676,
+  "files": [
+    {
+      "path": "4033da1d50147790d978b646b319874c1f83950c7c4db915d51131eabc57e6a6.png",
+      "size": 3173237,
+      "sha256": "ae144e8bba5408608d2613189779568667e46be4ce9e4e7a82a070bf356c5322",
+      "mtime_ns": 1793094523693000000,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "KGB-SRC-0011"
+      ]
+    },
+    {
+      "path": "ALJIBE-001 - Rambla del Aljibe - Restoration Project Design Tender Specification - 8572-2026.pdf",
+      "size": 2856200,
+      "sha256": "b2233e9f303743c525a353755ee7859acfd46a20a6beafb8e40dfdbd5e21f1a0",
+      "mtime_ns": 1793036336762748700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "ANDARAX-001 - Rio Andarax - Restoration Investment Justification - CONTR-2023-152183.pdf",
+      "size": 145028,
+      "sha256": "1edc497213a2a0744f7c8587aa7df7c42e4f7161fd78e55b8fc4dfcb0805b2da",
+      "mtime_ns": 1793036322334283700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "ANDARAX-002 - Rio Andarax - Download Link for BC3 Budget and GIS Layers.pdf",
+      "size": 128023,
+      "sha256": "bdb3ffa747b1bcb14b8d815908d39aae11deabdb7d7c3a7dff4a4c4f12071afa",
+      "mtime_ns": 1793036304830869300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "ANDARAX-003 - Rio Andarax - Tender Evaluation and Technical Scoring Report.pdf",
+      "size": 1809351,
+      "sha256": "6a9ae29f318bf20d0d8180daabb1c894f10a352d3081d20c31bc609716d7fdcc",
+      "mtime_ns": 1793036283923689200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "CATALOG.md",
+      "size": 51029,
+      "sha256": "b52555295dcf5bf956b1225467cd262c090c67cd47aa0d9913be49f7176f83c5",
+      "mtime_ns": 1793787104273493100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "COAST-001 - COASTRUST Nijar - Gunter Kunkel Park Stewardship Activities Tender Specification.pdf",
+      "size": 470036,
+      "sha256": "71041499c3feb1f95370344354e2885ef877131fea0d96a8f9d26f12b9c89b8d",
+      "mtime_ns": 1793036061777637000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "COAST-002 - COASTRUST Nijar - Sustainable Coastal Management and Land Stewardship Strategy - 2025.pdf",
+      "size": 827812,
+      "sha256": "b6737d57a6ed075c8051a20c46b12247e097bb874a949f89a8d2b55a3994dd49",
+      "mtime_ns": 1793036041271754800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "DRONE-001 - DJI - Matrice 350 RTK User Manual - Version 1.2 - 2024-08.pdf",
+      "size": 50476935,
+      "sha256": "6e1642a2a73185d7c1b379f27fda6221437c4b305f372e73782bc7d5340bcaa5",
+      "mtime_ns": 1793786352869557100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "DRONE-002 - DJI - Dock 4 and Matrice 5TD User Manual - Version 1.0 - 2026-10.pdf",
+      "size": 21976627,
+      "sha256": "1755b5201ecc4c2bfcc4bdfeb8c59ca819928ab464add461c986cd3aca27f92d",
+      "mtime_ns": 1793786352918224000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "DRONE-003 - DJI - Agras T50 and T25 Flight Manual - Version 1.0 - 2025-01.pdf",
+      "size": 57154670,
+      "sha256": "b2edf94fa1af54f44f717fa1048f960aeee3ba6432f3bea4c41b9ccacea12688",
+      "mtime_ns": 1793786353054674000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "DRONE-004 - Miwa et al - Wire Supplied Drone Citrus Watering Experiment - 2024.pdf",
+      "size": 979904,
+      "sha256": "0fcab7afd8fa10cb4b2db1a614ab124e58f6d13a04cb9b0614172dbf83bd98e4",
+      "mtime_ns": 1793786353059677900,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "DRONE-004"
+      ]
+    },
+    {
+      "path": "FOREST-001 - Ferreira Granada - Silvicultural Habitat Improvement Project - 2025-02.pdf",
+      "size": 47119147,
+      "sha256": "174bfafc0502bdc4dd88471c0c5587b36ac3f52f97dcfb9f8c46ce522a3e63cb",
+      "mtime_ns": 1793036054334552000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FOREST-002 - Andalusia - Carob Cultivation and Restoration Handbook - 2026.pdf",
+      "size": 44034674,
+      "sha256": "75262e343d4d1e2f1d981b08c9e36a73c9a2c5e9130d14af951124d4cc5d84b8",
+      "mtime_ns": 1793203692183332800,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "FOREST-002"
+      ]
+    },
+    {
+      "path": "FOREST-003 - Andalusia - Kermes Oak Ecology and Restoration Factsheet - Quercus coccifera.pdf",
+      "size": 748085,
+      "sha256": "23c27119b7e701374383646e43069d0caa401f870833b5e4d6abea30c1da1f81",
+      "mtime_ns": 1793262628004620600,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "FOREST-003"
+      ]
+    },
+    {
+      "path": "FOREST-004 - Almeria - Holm Oak Botanical Factsheet - Quercus rotundifolia - 2025-01.pdf",
+      "size": 328886,
+      "sha256": "701ca670ffafd20157f5ece7da051a2f099b9bcfafe1e038135e44986a906ee1",
+      "mtime_ns": 1793262628005623000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-001 - Fundacion Biodiversidad - Agricultural and Forest Restoration Grant Rules - TED-870-2025.pdf",
+      "size": 391154,
+      "sha256": "356fdb46031adb1185e90d5a125b92a1a107525d16e26ab14f1feef3b777fc35",
+      "mtime_ns": 1793036007126311900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-002 - Donana Restoration Grants - Provisional Award Proposal - 2026-10-13.pdf",
+      "size": 379614,
+      "sha256": "0238e73724e188a80247142b35137d36d52847185226c9147e3a95d590abf3dc",
+      "mtime_ns": 1793036017129860000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-003 - Nature Finance - Funding Instruments for Land Stewardship - 2025-11.pdf",
+      "size": 2797648,
+      "sha256": "4d772c4e57c0ab6ffaf80ed14dbfa53ea56fb09ba0dcc07b4988ac4d3aab08c1",
+      "mtime_ns": 1793035793312215600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-004 - Alpujarra Sierra Nevada Almeriense - LEADER AL20 Selection Criteria - 2026.pdf",
+      "size": 4216426,
+      "sha256": "a85c896fa800970f7bb611ab26b215db745ed26513dc30b87e509cc9da11ec64",
+      "mtime_ns": 1793035912792410000,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "FUND-004"
+      ]
+    },
+    {
+      "path": "FUND-005 - Alpujarra Sierra Nevada Almeriense - LEADER AL20 Eligible Activities and Budgets - 2026.pdf",
+      "size": 1536523,
+      "sha256": "2c22208485e0eec8cdddeefb382539432bb0d22279a04e25a5a364f0d1fd76dd",
+      "mtime_ns": 1793035946246906000,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "FUND-005"
+      ]
+    },
+    {
+      "path": "FUND-006 - Horizon Europe - Work Programme 2026-2027 - Part 14 Horizontal Activities.pdf",
+      "size": 1291898,
+      "sha256": "7c582d8f3ac719f7a7ed8909f86c19126011e5810d3c65ed44156c7ea4c7edde",
+      "mtime_ns": 1793036026909300000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-007 - Algarroba - Funding Navigator Reference Catalogue - 2026-10-30.md",
+      "size": 167785,
+      "sha256": "c048c84a90935479f4e7b2fe01f0d9e2b436cc672fb35e50fb1dc055570e8252",
+      "mtime_ns": 1793361885300219600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-008 - Andalusia - LEADER Governing Rules - BOJA 29 - 2026-02-03.pdf",
+      "size": 2579114,
+      "sha256": "48c3cc653a5f38bae9480009873bfdb35f26133f513e8d2894d872216ccf6399",
+      "mtime_ns": 1793364436977569800,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "FUND-008"
+      ]
+    },
+    {
+      "path": "FUND-009 - Andalusia - LEADER Call for Non-GDR Applicants - 2026-04-13.pdf",
+      "size": 5340965,
+      "sha256": "ea112609b74de7f24a7933541d2917dfa2b9f2ea61306f6c2dbc3e1099b1c11e",
+      "mtime_ns": 1793364441401934000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-010 - Andalusia - LEADER Selection Criteria Verification Guide - v2-4 - 2026-09.pdf",
+      "size": 2327481,
+      "sha256": "1d42e43cd509d13398431b431b91aeed154b601cc8279eabd405b4b9682fd326",
+      "mtime_ns": 1793364483498506200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-011 - Spain - Draft Municipal Wildfire Resilience Grant Rules - CIUDEN.pdf",
+      "size": 249636,
+      "sha256": "4df93473ebe5e2182591c942482d67b5d5c0e0084da4c8b07ec6dc3ff52da978",
+      "mtime_ns": 1793436940417716300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-012 - Andalusia - Recognised LEADER Groups and Territories - 2025-02-13.pdf",
+      "size": 343878,
+      "sha256": "7a7501233f3e3d20b47f40b029be0b3ac5172c2c24720adb2ddcc79085dc8c28",
+      "mtime_ns": 1793441755541229800,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "FUND-012"
+      ]
+    },
+    {
+      "path": "FUND-013 - Alpujarra Sierra Nevada Almeriense - EDLL 2023-2027 - v1.pdf",
+      "size": 31276275,
+      "sha256": "1c5b293d640dd3c8213aa314d6b791754ba8e82c3a0db32639236402adc4c796",
+      "mtime_ns": 1793486024807076800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-014 - European Commission - Roadmap towards Nature Credits - COM-2025-374 - 2025-07-07.pdf",
+      "size": 365628,
+      "sha256": "bc30e314e1ec0365859eb52067da8c942106bbb502684ca6ecaf54b8b1bdf402",
+      "mtime_ns": 1793488806072200700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-015 - MITECO - Carbon Absorption Project Registration Guide - v12 - 2026-04.pdf",
+      "size": 591666,
+      "sha256": "b7d04a3e29011029a2d243b9cf14693cf904d2e1d0593479f60e39418dfa89c5",
+      "mtime_ns": 1793488806089204700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-016 - European Commission - LIFE Multiannual Work Programme 2025-2027 - 2025-04-15.pdf",
+      "size": 527810,
+      "sha256": "1fd344396d9a760c033e9ea6be17198020f984f687268fb2a09b8bbc88cfcde5",
+      "mtime_ns": 1793488806112326600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-017 - EU CAP Network - EIP-AGRI Operational Groups Collaboration and Funding - 2024-04.pdf",
+      "size": 13265619,
+      "sha256": "39a01b98d0d2001581bd41eaeb0f2e77fca6a49821879b9094ce14b9909bd4f2",
+      "mtime_ns": 1793488806165143900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-018 - Spain - Nonprofit Tax Regime and Charitable Giving - Law 49-2002 - Consolidated.pdf",
+      "size": 278483,
+      "sha256": "862afb09f13ce76bc8040af2212f374d312b7bdc0cc3c1b48dbf7d003156e14f",
+      "mtime_ns": 1793488806184227100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-019 - Andalusia - Nonproductive Forestry Investment Rules - 6881-2 and 6881-4 - 2025-12-05.pdf",
+      "size": 879938,
+      "sha256": "cbef682d8f49a2e4b9054a5c8a7646c1b9784e5734f601a2919fc8f2ce6e1fb7",
+      "mtime_ns": 1793488806206759500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "FUND-020 - European Investment Bank - Investing in Nature-Based Solutions - 2023.pdf",
+      "size": 6662447,
+      "sha256": "9062df5e2879ed9b0071b6b79f5b51075c2c61456f98a7bab8611a9d01da0045",
+      "mtime_ns": 1793488806221808800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "IRR-001 - Groasis - Growboxx Biodegradable Reservoir Datasheet - undated.pdf",
+      "size": 1152857,
+      "sha256": "3d9a9ed2764ec1bf1023668aeb923e896b7ae76bbdecbb201e68d8043e4ad0fb",
+      "mtime_ns": 1793786352659811700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "IRR-002 - Groasis - Waterboxx Reusable Reservoir Datasheet - Version 2.pdf",
+      "size": 924328,
+      "sha256": "3fc0d3cc7ee4a715577c4130e9300e1bd68bfce8b4aae1caf76ba1240f552762",
+      "mtime_ns": 1793786352663806300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "IRR-003 - LIFE NIEBLAS - Technical Manual - 2025.pdf",
+      "size": 29500446,
+      "sha256": "90e6fa5730d2f3d17cc59c2e0bf3a2949ebaf65494ddbd20ed4f214dfda42ec2",
+      "mtime_ns": 1793786352732852700,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "IRR-003"
+      ]
+    },
+    {
+      "path": "IRR-005 - MENAQUA - Cocoon Assessment in Jordan and Lebanon - 2021-12.pdf",
+      "size": 5874703,
+      "sha256": "c2028b3ccb69ba59890ae476c6562c3ef6cb2de82f213ad17302ae592399fc39",
+      "mtime_ns": 1793786352752416400,
+      "origin": "copied",
+      "existing_graph_source_ids": [
+        "IRR-005"
+      ]
+    },
+    {
+      "path": "IRR-008 - LIFE NIEBLAS - D3 Reforestation Execution and Results Monitoring - 2025-03.pdf",
+      "size": 26298745,
+      "sha256": "d886dd7c9aa87a59351c443a7bf79b3023b0996e8d932d9809f2b14366761563",
+      "mtime_ns": 1793786680425229000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LAUJAR-001 - Reserva de Laujar - Mining Exploration Restoration Plan - Permit 40710 - 2025-03.pdf",
+      "size": 16161713,
+      "sha256": "c63c0b78b21ef3ee30e4b9eb1e1059d9bbfd03190a521159b659582c05b1c359",
+      "mtime_ns": 1793036131876217400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-001 - Almeria Restoration - Illustrated Strategy Primer for a Pilot and Organisation - 2026-10-18.pdf",
+      "size": 158934,
+      "sha256": "c4862d8e0093a462ed3495ca6d2f4e285066434217afe89fe3ba85938e4a89a2",
+      "mtime_ns": 1793035831484277700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-002 - Restoration Projects - Career Learning Overview and Research Gaps.md",
+      "size": 20217,
+      "sha256": "aa4c0217f45da8702691dfecaed5f38439757e46302f7be3f43e06d7ce6f51e9",
+      "mtime_ns": 1793036564813206300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-003 - Land Restoration - Seven Land Access Options - Infographic.png",
+      "size": 2116133,
+      "sha256": "301aa919039f8d9590371254f1324be6b3d7a0c4af23536bb2fd20655ad48a69",
+      "mtime_ns": 1792329492532000000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-004 - Almeria Restoration - Illustrative 15-Year Financing and Land Roadmap - Infographic.png",
+      "size": 1980613,
+      "sha256": "8d5baba41ed9372d4556926240ca94a0c77fca8566896ad59a3b04a3ccd516d0",
+      "mtime_ns": 1793085346869000000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-005 - Dryland Restoration - Planting Techniques and Checklist Coverage.md",
+      "size": 40084,
+      "sha256": "932bdacd0606cf588d16132ee4f7828db507712de285c2797ac1abe5940eabfb",
+      "mtime_ns": 1793183751556585100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-007 - Carob Establishment - Soil Preparation and Growth with Limited Water.md",
+      "size": 36773,
+      "sha256": "b28decc6bb42ac492c29fcdf5f57d54e96422430f26110045133e93ea19d6a6d",
+      "mtime_ns": 1793203991426367900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-008 - Carob Restoration - Nursery Buying Guide and Mixed Planting Models.md",
+      "size": 55882,
+      "sha256": "c229f946bbc006ea885c0be1a35daae88aaee5d5dec282da9ec18f634f608de9",
+      "mtime_ns": 1793262665642247900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-009 - Site Designer - Root Ball and Mature Crown Dimension Evidence - 2026-10-29.md",
+      "size": 23685,
+      "sha256": "eb43e56a9ef386fec9dbe0eb5cc0522be0877b0f5ffecbf630025eb70c1ca5e1",
+      "mtime_ns": 1793275957921488300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-010 - AL20 EDLL - Spanish Listening Primer - 2026-11-02.txt",
+      "size": 25081,
+      "sha256": "5d966e3b4a5236e50e3b20fc9cb0cdaba4a8d8d7c8774819c94055b83a4ab06c",
+      "mtime_ns": 1793638050788888300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-011 - AL20 EDLL - Forestry and Restoration Listening Primer - 2026-11-02.txt",
+      "size": 25598,
+      "sha256": "9fbb414567338a46a0e2474a95cc67beca20ef08c823aeef314718613cf37def",
+      "mtime_ns": 1793654116073951500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-012 - AL20 Demonstrator - Goal and Listening Brief - 2026-11-03.txt",
+      "size": 8337,
+      "sha256": "d8672d335f48a41d0a21a3c5aa422cb83d5873c6b4a65765a8697e26ed53bd1c",
+      "mtime_ns": 1793697499222999700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-013 - AL20 3.4 - Cortijo Conjuro Demonstrator Proposal - 2026-11-03.txt",
+      "size": 21584,
+      "sha256": "cf4ae0b92fe3683492a036113227604e80945402f04da311eb72570d210fe615",
+      "mtime_ns": 1793700196316992800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-014 - AL20 - Plan de actividades para superar sesenta puntos - 2026-11-03.txt",
+      "size": 19435,
+      "sha256": "8abc34bc46cb821827cdbc820b312279b2feb5d684fc41b55719b68f75001249",
+      "mtime_ns": 1793704294240474300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-015 - Dryland Recovery - Prediction Science and Forecasting Roadmap - 2026-11-03.md",
+      "size": 93161,
+      "sha256": "4f475ad35142a99b5fec8a1ceafa906f0cc8177b2aeef6986f94026312d8230b",
+      "mtime_ns": 1793703610843482500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-016 - Almeria Restoration - Irrigation Technology and Demonstrator Research - 2026-11-03.md",
+      "size": 80519,
+      "sha256": "e8a420a4ab784cdb01e0f5cd6a4ef2c6ddd705f84b35e09667f062125a266ae3",
+      "mtime_ns": 1793721944433952100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "LEARN-017 - Drone Irrigator - Research Findings and App Knowledge Adoption - 2026-11-04.md",
+      "size": 21622,
+      "sha256": "6d938dc2c38ff3943d114d395a6bb8155cc690f63ec3a3231ad5a2defc9d45d2",
+      "mtime_ns": 1793786972951692000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "NIJAR-001 - Almeria and Campo de Nijar - Works Supervision and Environmental Monitoring - TRAGSATEC 1-2023-ES.pdf",
+      "size": 186615,
+      "sha256": "f00469961a4962481adbfd91164afdf64378cb6c0618744a2b0bcc8e31c73c70",
+      "mtime_ns": 1793036314276771400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "NIJAR-002 - Almeria and Campo de Nijar - River Restoration Works Assignment - TRAGSA 6-2022-ES.pdf",
+      "size": 191954,
+      "sha256": "75e8cecab728e836507e41bdc4694455a7fa3c596fb5f3b910befb7b77131d90",
+      "mtime_ns": 1793036209191799000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "NIJAR-003 - Campo de Nijar - Native Plant Supply Technical Specification - TSA0078436.pdf",
+      "size": 354234,
+      "sha256": "c6d6d436460d34536653c386a7fcb7943b918cc5540c94fca44d3cd0cb213543",
+      "mtime_ns": 1793036197900350300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "POLICY-001 - Spain - National Livestock Route Network Regulation - RD 925-2026 - 2026-10-29.pdf",
+      "size": 3340615,
+      "sha256": "ea976ddf233cffd0f0916d05c3401d9eed1870b7cf8a620447ddfaa9e418aafa",
+      "mtime_ns": 1793436965203103400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "POLICY-002 - Spain - Draft Mining Waste and Site Restoration Rule Amendments - RD 975-2009.pdf",
+      "size": 839917,
+      "sha256": "ae93db511c24101a88d966908387fc5fcb8edbc0a3d7f981a1075b0f5fb6a5ed",
+      "mtime_ns": 1793436952284412200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "POLICY-003 - EASA - Open Category Conditions - FAQ 116450.pdf",
+      "size": 32631,
+      "sha256": "a1081d20b144db9cd233ba477ca79405ce0ec0a1eeecac57bd8052d78ee13cf3",
+      "mtime_ns": 1793786353061675500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "RENAME_LOG.csv",
+      "size": 21830,
+      "sha256": "8578da4c1ab781c511fd99b4b9551c5cbf3fa9a058e6851c25da4a08b6535847",
+      "mtime_ns": 1793787133046902500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "Scientific_Knowledge_Graphs_ElevenReader.epub",
+      "size": 2101032,
+      "sha256": "7c9399754a40a367558532c8d520b7280eabfa1500aefdbc20a76f8388c391d8",
+      "mtime_ns": 1793902248384975700,
+      "origin": "preserved",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "VEGA-001 - Vega del Andarax - Baseline and Territorial Diagnosis.pdf",
+      "size": 46192951,
+      "sha256": "331031ae24e1e93e46161466a3b92d317f409dc80af6914e89a3c1470677902d",
+      "mtime_ns": 1793036103209686700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "VEGA-002 - Vega del Andarax - Action Programme and Delivery Responsibilities.pdf",
+      "size": 5795140,
+      "sha256": "7e9f923cf6c25001923a5810049dc23931e7ce12dde91c59c39825b33297485d",
+      "mtime_ns": 1793036169052526200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "VEGA-003 - Vega del Andarax - Strategic Environmental Assessment.pdf",
+      "size": 20007727,
+      "sha256": "c5ab6edfcf191f944580b5bed3d0ba9ee413231b1b32be6b227f77dee13fe911",
+      "mtime_ns": 1793036118933048900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-goal/Goal.txt",
+      "size": 2833,
+      "sha256": "afcb5a86fe407983570cc194d2511dbf0b3cc3edd6e51eb4d0f823662a774a40",
+      "mtime_ns": 1793697499223998000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-goal/Sources and production notes.txt",
+      "size": 7998,
+      "sha256": "336b53279a1c0314e317db3fbb33967e29b77d655c4b277c4f65e7c0dce6599e",
+      "mtime_ns": 1793697499225000700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Baseline and retained rules.json",
+      "size": 798669,
+      "sha256": "6b8060638b01e00330cc911f1ec879c9c4729b543318b658004354a902c7f74f",
+      "mtime_ns": 1793699297982372000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Completion review.txt",
+      "size": 5862,
+      "sha256": "476e5a484fc23041f95f156125570e1207d7ed58307b1f3b3c0c296911354759",
+      "mtime_ns": 1793700734356803800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Cortijo Conjuro - A Small Trial Before a Park.epub",
+      "size": 17623,
+      "sha256": "969116092a6f5116842a9e94a7bb4a2d5214bcc7b1a9b48516dcb0f05cc2e379",
+      "mtime_ns": 1793700734508229200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Cortijo Conjuro - Review Package.zip",
+      "size": 182283,
+      "sha256": "438bb789c560f77005fa8ac8917a4c41c866f4ef198bc2674abaa4f1fcf3d9c5",
+      "mtime_ns": 1793700802395120700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Delivery checks.json",
+      "size": 552,
+      "sha256": "b8f0fb7258e8d450a9f98b858d75b723b0ba47dc0e86d8f1a8d921f3f29d5151",
+      "mtime_ns": 1793700802356609700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Evidence and review.html",
+      "size": 55038,
+      "sha256": "4b04e4dc6051c7a905d00e4927f50a403294772ad46cd60d0f1effe58f18d8c4",
+      "mtime_ns": 1793700734517743200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Layout review.json",
+      "size": 340,
+      "sha256": "d8cf5639e6b861fd0bed029fba8fb432b607e84c16075d2577a0608ea0fd0e68",
+      "mtime_ns": 1793700569693914900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Publication validation.json",
+      "size": 833,
+      "sha256": "6c08460572c5a43222566d0d054a4129b039ae3f7532d8d8726b4b9087de94ad",
+      "mtime_ns": 1793700734519743700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Research verification.json",
+      "size": 4187,
+      "sha256": "369917b3994f2b3fcfef6a1c96a00197f3abdfa06f17d14f898ffa556bd685d1",
+      "mtime_ns": 1793700734357803200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Scenario and scoring.json",
+      "size": 229001,
+      "sha256": "b12fd3af51738d198b6664e1b9b85c1e294883e04022e29248f61b9acdc96ee7",
+      "mtime_ns": 1793700670260123200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Site and partner evidence.json",
+      "size": 20608,
+      "sha256": "bbc400949c2922b6fe9d5913698b208bbe6428849f16e7cf313bd1e56d61c45f",
+      "mtime_ns": 1793700090549832700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/Sources and evidence notes.txt",
+      "size": 40617,
+      "sha256": "f0a3645ed595be043c4caa5c56b56c0aa383811d3a36e34964f42c070d0395fb",
+      "mtime_ns": 1793700734355804300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/build_publication.py",
+      "size": 14336,
+      "sha256": "96a9c1db09276fdb444f690e77e3ace5422715e16ff358b989b556566838e085",
+      "mtime_ns": 1793700734355804300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/04011A01200011-parcel.gml",
+      "size": 4367,
+      "sha256": "8a4c6c52b3e5528e8315f9bf3e98b8cd7156a0cdea57fc9104d191df25ae1eee",
+      "mtime_ns": 1793700090557345500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/04011A012000110000JM-coordinates.xml",
+      "size": 654,
+      "sha256": "662287cfc086c893e3cf7edd147eee50631b4e0bd8f0eeff4aa1e24559cbfafb",
+      "mtime_ns": 1793700090549832700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/04011A012000110000JM-nonprotected.xml",
+      "size": 1424,
+      "sha256": "fc77fd8d6c8926331cf8122fe01418a6e0e36ac72a282bef84fda9c0745f405d",
+      "mtime_ns": 1793700090551338000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/04011A012000110001KQ-coordinates.xml",
+      "size": 654,
+      "sha256": "662287cfc086c893e3cf7edd147eee50631b4e0bd8f0eeff4aa1e24559cbfafb",
+      "mtime_ns": 1793700090553346500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/04011A012000110001KQ-nonprotected.xml",
+      "size": 1818,
+      "sha256": "bdfc59e8b2c44671db9d51cdb77ccd498c932ed8727ec505d913bfc07de7531b",
+      "mtime_ns": 1793700090554346100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/04011A01200019-parcel.gml",
+      "size": 3670,
+      "sha256": "ad18078e495c8d9fedd539ece33ef16e9d899dec92755c99103ce5557d683679",
+      "mtime_ns": 1793700090558487600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/04011A012000190000JE-coordinates.xml",
+      "size": 654,
+      "sha256": "e364a4d424c83ef3e1f7f43d1ec1d0f6e60c0916236f3ad606ac5e3da1b89540",
+      "mtime_ns": 1793700090555344000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/04011A012000190000JE-nonprotected.xml",
+      "size": 1424,
+      "sha256": "12d74fe9d50e80395292ba6a817055cd76ed6f557b8fed41eb75b16881a288ad",
+      "mtime_ns": 1793700090556344600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/RENPA-capabilities.xml",
+      "size": 46413,
+      "sha256": "bd910aa0ea8098264e9f935b7d3cafeb4b858efd529bdcf9986adce5e7a20cfe",
+      "mtime_ns": 1793700734360133100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/eennpp-parcel-screen.png",
+      "size": 2561,
+      "sha256": "46d8b5571109b214fdbbf786fa89492481871c8980c8638b5af39c332f17f880",
+      "mtime_ns": 1793700734359132500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/public-records/red_natura_2000-parcel-screen.png",
+      "size": 2561,
+      "sha256": "46d8b5571109b214fdbbf786fa89492481871c8980c8638b5af39c332f17f880",
+      "mtime_ns": 1793700734360133100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-demonstrator-proposal/recalculate_scenario.py",
+      "size": 9427,
+      "sha256": "d47f506112a271f35659689d4d40550c96cae06885414ead54d87eeb68d55f3f",
+      "mtime_ns": 1793700564842055700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Apartado para la solicitud.txt",
+      "size": 17962,
+      "sha256": "c26fc5e63e7611f7441e27395cfeddcc007ceb8a5af357d656c9532ac694f272",
+      "mtime_ns": 1793702851370852600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Baseline conservado.json",
+      "size": 798669,
+      "sha256": "6b8060638b01e00330cc911f1ec879c9c4729b543318b658004354a902c7f74f",
+      "mtime_ns": 1793704402304030000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Comprobacion final.json",
+      "size": 2273,
+      "sha256": "b9b43a049e3043c564f9d66037a7a9d5a055bc26fbbca27874335016160b09c4",
+      "mtime_ns": 1793704559334013900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Fuentes y condiciones de puntuacion.txt",
+      "size": 27428,
+      "sha256": "6ebd8dc2cca04d1aa5d82f8c1f84a73019797cafaf0855421c2b4114354a3a00",
+      "mtime_ns": 1793704351134608400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Leeme.txt",
+      "size": 2773,
+      "sha256": "e6f05cff8c0c808b941b20efcf1081177a954f193f074bfc081dc43049bc8083",
+      "mtime_ns": 1793704459857301700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Paquete de revision AL20.zip",
+      "size": 214634,
+      "sha256": "de85cef08e5b42512e11d90b452ceff1d136ad00203b4717260e4ba22a11e793",
+      "mtime_ns": 1793704559378193700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Plan y calculos.json",
+      "size": 661479,
+      "sha256": "5cbb7b9dc07a9dd52d7ea45da4eda5d7e2755d07cfd7790a6ed41f2afd876ef4",
+      "mtime_ns": 1793702852077352100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Presentacion del proyecto.txt",
+      "size": 19435,
+      "sha256": "8abc34bc46cb821827cdbc820b312279b2feb5d684fc41b55719b68f75001249",
+      "mtime_ns": 1793704293798093900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Revision visual.json",
+      "size": 754,
+      "sha256": "4abe8792953200a7607190ec2c05ec02d87308c077a5f780a18f30740e45cff1",
+      "mtime_ns": 1793704468374134100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Revision y puntuacion.html",
+      "size": 77592,
+      "sha256": "8fb2cdd8a4f0376fefc6d4de343d2b795e47b899ef2f781ddb9686db74e52c6a",
+      "mtime_ns": 1793704402301030100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Texto para escuchar.txt",
+      "size": 19563,
+      "sha256": "07363234d80f7867225cf6104296189bcb3750f87ff68c077facc4b93eee8e76",
+      "mtime_ns": 1793704402305030400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Un aula viva antes del parque - Plan AL20.epub",
+      "size": 15103,
+      "sha256": "259c763505824ddffbf029419bebcbf57a18f8827252c0cd98ffa036067685c0",
+      "mtime_ns": 1793704402119327000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Validacion.json",
+      "size": 3410,
+      "sha256": "764942d9fa5dbe3c6d099aa3868c14f271beaf2b7daf31d21ac56171a9df19aa",
+      "mtime_ns": 1793704402308488100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/Version anterior - Enfoque de puntuacion.zip",
+      "size": 58016,
+      "sha256": "df03919725d8e739f3e27d02c75854962c125ceb7278257e6687301800c088a1",
+      "mtime_ns": 1793704159288581300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/build_publication.py",
+      "size": 19165,
+      "sha256": "ba30dd56bee23fb8724447ac609f69ba977a3825377a646d933e9ff555b96b4a",
+      "mtime_ns": 1793704400033854200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/calculate_plan.py",
+      "size": 8699,
+      "sha256": "3374e71705a0e95c1e1843c4a611b0858354c8f7e368d4be1ddfd9563828f461",
+      "mtime_ns": 1793702851369852300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "al20-score-optimisation/review_layout.cjs",
+      "size": 3508,
+      "sha256": "4ab8d095af5f695cb2e2b5ce7763793968aad06fb54e0f1375878005a815cb48",
+      "mtime_ns": 1793704459855297300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/01-carob-landscape-examples.png",
+      "size": 1540368,
+      "sha256": "71ac7e83e4aeb327e3e30bb51d1af1254e6afcaec0b23fbda35607ad931f59c9",
+      "mtime_ns": 1793213837266435000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/02-mixed-oak-carob-dehesa.png",
+      "size": 665558,
+      "sha256": "9e8ce80245f09e56966d262814791753cb1eef01b9e0411569dcff8ea7351473",
+      "mtime_ns": 1793213837648465900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/03-las-labores-albox.png",
+      "size": 510917,
+      "sha256": "c9a5a63213bfb8620006c83e65ec1fba107d7903b7cf3d50e5004c72cffe812a",
+      "mtime_ns": 1793213837959253100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/04-la-alcantarilla-mojacar.png",
+      "size": 645772,
+      "sha256": "73e9c873a228c3d7277776e7f2dea8d3c53158ff47828fa9c4166c6f34deeab4",
+      "mtime_ns": 1793213838331189300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/05-la-tortola-nijar.png",
+      "size": 467908,
+      "sha256": "18df74ad71d5f365e35e5b1556b3f2c235208088bc5e704bca24eeccaaf407be",
+      "mtime_ns": 1793213838613857500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/06-container-and-preparation.png",
+      "size": 83642,
+      "sha256": "dac631d49137f928d53ffa0c9a40e2da557b7d752d8a24673f4bd3dfad296ce0",
+      "mtime_ns": 1793213843746906900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/06-container-and-preparation.svg",
+      "size": 4694,
+      "sha256": "ca9e417de0eb120e27bc4a5c6a9b319e373e4f2f0c8ef93449354540db45c7e2",
+      "mtime_ns": 1793213838616861700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/07-mixed-restoration-mosaic.png",
+      "size": 128676,
+      "sha256": "e00239cf70cd37dbb3f4a04a3a20139fc868abb2dc8795a92e10f95cfc992223",
+      "mtime_ns": 1793213843908784200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/07-mixed-restoration-mosaic.svg",
+      "size": 6423,
+      "sha256": "d3d8cdbe6c5523b2591432ca266e414fa8db2ae4f988aff30be8fc260153cca8",
+      "mtime_ns": 1793213838617887100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/README.md",
+      "size": 4404,
+      "sha256": "1ffb264d2ee849c9a4a47820d17db814a914600dd3f186599ca5d430b4bf2d54",
+      "mtime_ns": 1793213835262127700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/build_assets.py",
+      "size": 8538,
+      "sha256": "5bfcad102ccfc43e29c543ddd633167117c7e601f100c98da6b171b5b7900cb7",
+      "mtime_ns": 1793213835260065700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/manifest.json",
+      "size": 4665,
+      "sha256": "989991302e7c482a1f291a62145926d051303159e08eacde9463f0535a731eb8",
+      "mtime_ns": 1793213843911308500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-restoration-guide/render_schemes.cjs",
+      "size": 2135,
+      "sha256": "d663a0e6d933324089dc59435f509362dbf5599b784a0e27de98447f35800f84",
+      "mtime_ns": 1793213760510013500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/01-soil-profiles.png",
+      "size": 72521,
+      "sha256": "cb86e932ee98df6fedbb7702d70f72e5db42c9358c691bcf824df4d67a1dbec7",
+      "mtime_ns": 1793193047825224900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/01-soil-profiles.svg",
+      "size": 6362,
+      "sha256": "829f49abc701687f33613b53fa4f97a45121bc52238bc80452be6e12cea78f69",
+      "mtime_ns": 1793193043721571800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/02-preparation-and-planting-depth.png",
+      "size": 97096,
+      "sha256": "5e005255cde452d4d9ddad524d0e8ca89cf6184013c3efe74f7016c6abcf8005",
+      "mtime_ns": 1793193048428393200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/02-preparation-and-planting-depth.svg",
+      "size": 5387,
+      "sha256": "6961161e97470cc614c857004dec05d3856302359444b036aee63f49b7be903d",
+      "mtime_ns": 1793193043721571800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/03-backfill-and-interfaces.png",
+      "size": 69520,
+      "sha256": "2fa410a4b84ff330b513fb7e62d5f44f028538d795d6d6dbca18665af251375b",
+      "mtime_ns": 1793193048588565100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/03-backfill-and-interfaces.svg",
+      "size": 5859,
+      "sha256": "33c891214df7a5fa4b6f4da35fcbe4b48f069bd61be24612a35ed685f4b89dfd",
+      "mtime_ns": 1793193043722571900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/04-runoff-capture.png",
+      "size": 94631,
+      "sha256": "eb06d861aec8caf1099d1597b8044f2fe875551ce06567a5f3a36a4b9b811e93",
+      "mtime_ns": 1793193048780725100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/04-runoff-capture.svg",
+      "size": 5050,
+      "sha256": "6bbf6f59a323c4d3b125c8dbcf7b3b58e72a3cdbc54a2980601c3367c5add36e",
+      "mtime_ns": 1793193043722571900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/README.md",
+      "size": 1669,
+      "sha256": "2f8141b32f057126c3f2deb77893b3788a46cade848fb90b472ddf723c3b1c4e",
+      "mtime_ns": 1793192901027858100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "carob-soil-research/manifest.json",
+      "size": 1586,
+      "sha256": "fee3eeb47ace2528feb41adb097cdbbf4e0b1ca18b9a37e5995cc4ee85987ea3",
+      "mtime_ns": 1793193098020578300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "catalog_history/Original research overview.md",
+      "size": 19290,
+      "sha256": "401d9985e6b79b0d1d80aebab47ad6bfc2a649a353db1173e2dd00201e6d267a",
+      "mtime_ns": 1793036082538627500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "edll-listening-primer/Fuentes y notas de lectura.txt",
+      "size": 8531,
+      "sha256": "9e08bbe9e301b6b5893e75d2ae1ade7f8e7a105c606934291afdb5987ac83d50",
+      "mtime_ns": 1793638079252448500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "edll-listening-primer/Guia EDLL AL20.epub",
+      "size": 18544,
+      "sha256": "6c2f50c442bdd825a601408547391e15e2e29dd1fcea4b32c50082743162ac4e",
+      "mtime_ns": 1793638115605658800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "forestry-listening-primer/Fuentes y notas de lectura.txt",
+      "size": 10498,
+      "sha256": "d15f7f537e66358477d611bb81282f0fed398c100d9a70189c22952ab663f4c1",
+      "mtime_ns": 1793654193732023200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "forestry-listening-primer/Guia forestal AL20.epub",
+      "size": 19226,
+      "sha256": "a5748bf9b102e3265682414363c79e901178f10ad0ded6fdd0c12ebd9c431db4",
+      "mtime_ns": 1793654208311922600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/README.md",
+      "size": 3352,
+      "sha256": "a01e5680e54fa65e3feda593ed9f1046a6c5f6d958642841d50061d58483451d",
+      "mtime_ns": 1793722013401943800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/SOURCES.md",
+      "size": 14284,
+      "sha256": "c307b7ede5fb1d2cfd03fe22c7938da252513c6ed574bbabf85cf0591207f8ef",
+      "mtime_ns": 1793721945590736100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/build_diagrams.py",
+      "size": 17838,
+      "sha256": "d6d56d2bdbf05f875662ff2892ed8b56925b7653c06ed7019c7be0c35d54dac1",
+      "mtime_ns": 1793709696497938200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/Acquisition record.json",
+      "size": 18036,
+      "sha256": "8b3ff37e13ee41b95037dede8e77c77fcbc30b7960eefa5d00e37cea9086fd10",
+      "mtime_ns": 1793722115204404700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/Extension checks.json",
+      "size": 602,
+      "sha256": "4c115dea2355a28f0b6573a785c1e0c262f9d44c0f54b8ab4ec49068857c36b9",
+      "mtime_ns": 1793722056104701400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/README.md",
+      "size": 9617,
+      "sha256": "7e03b27b2e98c42b41a0f59e933a229f205f4a135e7e9720e487ffa119837b01",
+      "mtime_ns": 1793722115206400600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/Research verification.json",
+      "size": 7229,
+      "sha256": "29c07d14e290d8024a2c97243fce6318a3619dd362682d9016da7afa68f4063a",
+      "mtime_ns": 1793721945581945300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/add_pictures.py",
+      "size": 7154,
+      "sha256": "9c1ede36ba99ce0ca36cd36f7c1ff4a1949f8c1437d98195fa5c0a6a6e1b13ed",
+      "mtime_ns": 1793722115205406500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/build_figures.py",
+      "size": 13591,
+      "sha256": "2b2fe281c1efc2f4e776e07489358416c158b2fe8e8dccfc7bccf23e57c81fe4",
+      "mtime_ns": 1793721283118010200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/13-drone-roles.png",
+      "size": 119898,
+      "sha256": "b67ccd38c9312c2dfc3a67e011656fc34c537014c657ce943720c262bdc15d69",
+      "mtime_ns": 1793721287573277500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/13-drone-roles.svg",
+      "size": 6336,
+      "sha256": "5c35dc616acc38329d2614d24dac0a01810922bdb866b132692d8379fc4a71c8",
+      "mtime_ns": 1793721287466091500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/14-drone-image-resolution.png",
+      "size": 105557,
+      "sha256": "70a43aa65791892ecf96bda87811dc9dd78fa7aded588dbcaabd5a0ed7f19619",
+      "mtime_ns": 1793721287683009100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/14-drone-image-resolution.svg",
+      "size": 22693,
+      "sha256": "f8aececdf6c6ed80b20e8435e94d9606c37fa7d4ac2e98b079b87f3b2a93b3da",
+      "mtime_ns": 1793721287579254600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/15-drone-moisture-depth.png",
+      "size": 133641,
+      "sha256": "8a4e24c8dfc6a92699a685e12df018bb426e09a6bf6ff5871c284654278cebf1",
+      "mtime_ns": 1793721287792959200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/15-drone-moisture-depth.svg",
+      "size": 8128,
+      "sha256": "30eba87d3dec2f61cc684d4ecc2adf4bb73da602ff79db23520d6596a50c6e0c",
+      "mtime_ns": 1793721287687006300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/16-drone-ground-fusion.png",
+      "size": 133946,
+      "sha256": "38045eca5a7444d99d27f85692775e4f5f1f24982239a32159aaf1d6284a9362",
+      "mtime_ns": 1793721287891270800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/16-drone-ground-fusion.svg",
+      "size": 5792,
+      "sha256": "4dc3ee46059cc5d7dfa700a829a624ffa70cad09c3195326ae1284538ee31efa",
+      "mtime_ns": 1793721287796968200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/17-drone-water-loads.png",
+      "size": 120786,
+      "sha256": "7058b9aac78d52ecbfb9e01595cfcf754790aea518d44c31480a202b14000f98",
+      "mtime_ns": 1793721287987183000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/17-drone-water-loads.svg",
+      "size": 4845,
+      "sha256": "5f071bef46c470453b5ae29d44b78bc66048807c519faf4cd6d60511e91f1607",
+      "mtime_ns": 1793721287894265900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/18-drone-spray-versus-root.png",
+      "size": 120952,
+      "sha256": "2fafe8282e973dda4508a1e8d68b6da12cf0de91a75de2fde8dd2157dee56006",
+      "mtime_ns": 1793721288088316700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/18-drone-spray-versus-root.svg",
+      "size": 5733,
+      "sha256": "a26ddf6eb91e1f4d04f340ce69c139fbe43d1a4bc9d7c1bc1ee93d21e3b3bb08",
+      "mtime_ns": 1793721287990199400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/19-drone-validation-trial.png",
+      "size": 119041,
+      "sha256": "ae656588f7243d3d71a9a2fc61d62f1785817368152ee3e5aab67bedfb631796",
+      "mtime_ns": 1793721288191313000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/19-drone-validation-trial.svg",
+      "size": 6708,
+      "sha256": "3b8433a000f55affd260169a160d62c0535ed73c379ac8e0979e1653e09fae5f",
+      "mtime_ns": 1793721288091324900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/20-drone-demonstrator-gates.png",
+      "size": 125168,
+      "sha256": "8ccaac3c1460467200bad19c42b9b255b1b0db41e785d806313751f4113346f8",
+      "mtime_ns": 1793721288284829300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/20-drone-demonstrator-gates.svg",
+      "size": 4936,
+      "sha256": "18a00ed669b6a1378fcab71d9fb29141bbf6e1f10eb33e4b4d5a78d88f893b6e",
+      "mtime_ns": 1793721288194316500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/figures/contact-sheet.jpg",
+      "size": 456391,
+      "sha256": "9c3c1be46701a2ec0c8697f238b499e89d117269aa1cc97e37a343bd09abc431",
+      "mtime_ns": 1793721288611278700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/inspect_sources.py",
+      "size": 4413,
+      "sha256": "2b4f79ef91e186f35c2b3cb9f144235093a0bbcd86f7316dfaab349f6820238c",
+      "mtime_ns": 1793720940879506300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/drones/picture-contact-sheet.jpg",
+      "size": 163499,
+      "sha256": "f5f94642a3e7984cceb3019b5c36d08ee68d1c2b7fe2ab3d6e609030628c0fcf",
+      "mtime_ns": 1793721945578945800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Browser checks.json",
+      "size": 2016,
+      "sha256": "be378002ae87ba23134e24b799f93ea32b5d83aec8c0307149aebe665b6df156",
+      "mtime_ns": 1793721828477192800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Edition contract.json",
+      "size": 982,
+      "sha256": "f96b3fd9ef05489a0db921c92f34e5876a849f8a7126b0ad58d59de70f852831",
+      "mtime_ns": 1793721792500774200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Irrigation - Illustrated Listening Edition.md",
+      "size": 58509,
+      "sha256": "c47c163d67906a994fa02c04acfaf7c8004bff8a3c287d5beed321726e6997db",
+      "mtime_ns": 1793721792494323800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Irrigation - Narration.txt",
+      "size": 54044,
+      "sha256": "c859d535e39383ad9e8859b4ea1f0a08a767a5a10f2cb0ed1709c7f011611a40",
+      "mtime_ns": 1793722054541164100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Irrigation - Read Along.html",
+      "size": 12667293,
+      "sha256": "fbe0b362428954bff4ef12449aefb03d820fdf8978a94d9766704af6aacf0a86",
+      "mtime_ns": 1793722054249122900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Irrigation for a Native Restoration Park.epub",
+      "size": 8944003,
+      "sha256": "634a0ce7e184bc6f38fc46828fc2ad8cf416fd52f2b2efcd4540be3735bdc85b",
+      "mtime_ns": 1793722053935536800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Photo acquisition.json",
+      "size": 37606,
+      "sha256": "b216c8c2eee0f5fcc26ba24af02b7e87507956aab8f2946e9b6793bf7693aaf9",
+      "mtime_ns": 1793719114135169500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Photo manifest.json",
+      "size": 74808,
+      "sha256": "2ba671b31b2fe84b60c6955e75967c5c085275befb90996603b34f6a97a6a392",
+      "mtime_ns": 1793722115203399500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Picture credits and coverage.md",
+      "size": 22686,
+      "sha256": "4d222f3e8f9e48335379b63f6986b646da3da88e242141abfc87aa7a8781e909",
+      "mtime_ns": 1793722115205406500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Publication checks.json",
+      "size": 20539,
+      "sha256": "fdbfed4b3f2f2b14b42af4d7e8600d750bbb3c3329b0ee5ce9ec0722134f8a07",
+      "mtime_ns": 1793722054588756600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/README.md",
+      "size": 3959,
+      "sha256": "ea8b963740786afbd90819040e5cadfeaf06ca7d30529ad5bc4f3ce8520531e8",
+      "mtime_ns": 1793722013400946900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/Sources and production notes.md",
+      "size": 10357,
+      "sha256": "af7b4f9a89c10787f7b60bac11f6156fdfdf2442bef43241b5074945645fb219",
+      "mtime_ns": 1793722013402944400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/__pycache__/collect_photos.cpython-312.pyc",
+      "size": 20685,
+      "sha256": "266f2b3a6106496ff655fa30595711737a882e647ba68af394b3ea775d5f11bc",
+      "mtime_ns": 1793719113349002800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/archive/Diagram-only edition - 2026-11-03.zip",
+      "size": 2928583,
+      "sha256": "7bf50f9fdb7d0b2d959ce1dc4b397e8f164309cacdde4df8e74b48f9a56cdefc",
+      "mtime_ns": 1793718682650455700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/archive/Illustrated 52-image edition - 2026-11-03.zip",
+      "size": 12710448,
+      "sha256": "dd40d3c9de22d4a9fa8cfa68017404158a6a050e778c440836f4ed686a824f92",
+      "mtime_ns": 1793721184327359700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/build_epub.py",
+      "size": 21732,
+      "sha256": "33bb2b0e288fa89d3cbb3773d3bbd302877756f510040cd9192218ca34163f6b",
+      "mtime_ns": 1793721634203947100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/build_special_pictures.py",
+      "size": 8419,
+      "sha256": "d20a4f66ce9e7dfe5856cf48d3d58ce373e50d0299c4e92c8bbfb168f8387c20",
+      "mtime_ns": 1793718585194540800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/check_read_along.mjs",
+      "size": 6400,
+      "sha256": "4685062c209b23aadb27fe7a2542eedb7850eac1ea9af5f2ad09709910d8b9d8",
+      "mtime_ns": 1793721822689533000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/collect_photos.py",
+      "size": 16193,
+      "sha256": "641d4b954ff51a4130092b27829fb78f881edfd6135c69e8be14dbb4b484a098",
+      "mtime_ns": 1793719112848909100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/contact-sheet.jpg",
+      "size": 686701,
+      "sha256": "d39266f9b4566165458361c0a2dc39bb96594416f2a96b4ccb73eb68c1e7db98",
+      "mtime_ns": 1793719180923507800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p01-agronic.jpg",
+      "size": 113628,
+      "sha256": "f229c3ceae75843a1e6b9cffae9de1c2defe4ebf09c918f9a5216b2661c1d7f6",
+      "mtime_ns": 1793721793751005600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p02-agrobee.jpg",
+      "size": 73984,
+      "sha256": "2c80f91bf0a99dd8316066af400c767f93b847e18dc01d931bb258aa2a3c715e",
+      "mtime_ns": 1793721793893976500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p03-wise.jpg",
+      "size": 249339,
+      "sha256": "613c5dd23d35a6306a4f9a8a7d4094a21937f8223eb9db59b5e05d7f755db29d",
+      "mtime_ns": 1793721794018427000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p04-edagro.jpg",
+      "size": 293034,
+      "sha256": "2619cc66ac24c1c98da6aaa820e1a74d7b64320b096c8ee81ceb28f50d96f5c2",
+      "mtime_ns": 1793721794179583500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p05-uc511.jpg",
+      "size": 41158,
+      "sha256": "52b24557ef91a9d090d9f51119908506e9d9652ce02ffcc82b219df74900741d",
+      "mtime_ns": 1793721794217367500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p06-dragino.jpg",
+      "size": 88128,
+      "sha256": "f7029302585909088141490d2ac3fa374f8d547f78e0646b1a651451dc52684e",
+      "mtime_ns": 1793721794313792300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p07-opensprinkler.jpg",
+      "size": 86078,
+      "sha256": "ca33d3376f1ec59eec8394e263e786d95a79cdb500dbb3da4b0419d7f908111e",
+      "mtime_ns": 1793721794413953000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p08-irrigatia.jpg",
+      "size": 85669,
+      "sha256": "92e83ac72a2064cb2fe2dbea209778f93652cb57f454de0cc55283c4096b92bf",
+      "mtime_ns": 1793721794519722700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p09-blumat.jpg",
+      "size": 73548,
+      "sha256": "ba14ddc16028c41cd6489a3f0cea89ab6df91f43b3cb5816952ee0b3d6683850",
+      "mtime_ns": 1793721794622640400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p10-plantcontrol.jpg",
+      "size": 117045,
+      "sha256": "e95fa79fe01e9bbcc14cc4d3a84e1803a2083a0a0a3eae368cdcf842ead65a22",
+      "mtime_ns": 1793721794702839600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p11-openirr.jpg",
+      "size": 218701,
+      "sha256": "7aadfbbd6dd4c48cf21d08d4dd8d265098d444d6900aff1108f6dedac9713fe6",
+      "mtime_ns": 1793721794866618500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p12-openirr-components.jpg",
+      "size": 233145,
+      "sha256": "927385d3dbdb47c1e57a451fb746873ab84166161457d97f38b482695bf5ed71",
+      "mtime_ns": 1793721795068945300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p13-catwan-layout.png",
+      "size": 76731,
+      "sha256": "0151b5f7a8162d76b3fcf7ae7526dc0aa6236b742f66a2d9ea206eb6b88e407e",
+      "mtime_ns": 1793721795338280800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p14-tank.jpg",
+      "size": 71810,
+      "sha256": "7497758248cf98bbd80cbcf937c44f810a5bfedff6c7c144121effc65c7be537",
+      "mtime_ns": 1793721795420614300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p15-pump.jpg",
+      "size": 83492,
+      "sha256": "8f573a1cf46545a55175840c4859c1d7c6c258a5d85e51efce5de500076747ed",
+      "mtime_ns": 1793721795530772100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p16-filter.jpg",
+      "size": 108017,
+      "sha256": "13a05ba8eb6819763d706e2a0b10e6d51f60ea7926942d05ca188c71a1d46769",
+      "mtime_ns": 1793721795663425500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p17-flowmeter.jpg",
+      "size": 478675,
+      "sha256": "1efe2515c54f6244b00cc2bb883695e20ea99a373da63b999619de41482e69aa",
+      "mtime_ns": 1793721795879285700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p18-valve.jpg",
+      "size": 100450,
+      "sha256": "d8c216fdba2a8bc7b0eff16c4c8c38f8bc5174dee27b5bce13cf45b2a69d91be",
+      "mtime_ns": 1793721795998868800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p19-solenoid.jpg",
+      "size": 86874,
+      "sha256": "0e4f7b1b8e40835de7a287e3f7449294587037641cd0be711ec2fd650eda1b77",
+      "mtime_ns": 1793721796120509800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p20-fittings.jpg",
+      "size": 89687,
+      "sha256": "c8437ed2ab9c8f2d8de091fe2d34dbe63ed9f7489e8b704298ffe5f2304aca36",
+      "mtime_ns": 1793721796228025400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p21-dripper.jpg",
+      "size": 37988,
+      "sha256": "506f6ef4197e07ad3f07f31cbc55718f2116daafda3b76b80c097e0ac80ff620",
+      "mtime_ns": 1793721796284903500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p22-vh400.jpg",
+      "size": 22582,
+      "sha256": "df2f8e2b9b7165bc114afd7abe9fc8af327fcad8bf1493493aa9309a81b622ad",
+      "mtime_ns": 1793721796312339000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p23-tensiometer.jpg",
+      "size": 148479,
+      "sha256": "d9de528440f2f40d6b4b1177c2d23e0aa049b0722ac92120e660ea027feaccc2",
+      "mtime_ns": 1793721796457979300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p24-watermark.jpg",
+      "size": 84333,
+      "sha256": "5476c47808e1c75a4605bd79360f7cb56fee3b3897417f845f4605032f37b049",
+      "mtime_ns": 1793721796546444100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p25-temperature.jpg",
+      "size": 118859,
+      "sha256": "ee508413b31d451127fdc8b8b99ae45af887410f31abf186fbefeabc7f7488f7",
+      "mtime_ns": 1793721796664443200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p26-waterboxx.jpg",
+      "size": 61508,
+      "sha256": "472e2d7d19b25c3c46a9a2cb82c1238d5767f457a322495ff1a28b0977dd2d79",
+      "mtime_ns": 1793721796755442100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p27-cocoon.jpg",
+      "size": 276365,
+      "sha256": "92d9b6529c4749142a626a1ecf288ef1eb426571baf85c1895b9d2e8e069a274",
+      "mtime_ns": 1793721796865586200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p28-olla.jpg",
+      "size": 204661,
+      "sha256": "b1d342e4ced1a405115749262ded684b68328c78aaa9c652487e381cd208d1bf",
+      "mtime_ns": 1793721797011850600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p29-fog-guard.jpg",
+      "size": 174191,
+      "sha256": "31305fd6d22fb4f3f8d777b3462a4640b669afd75ea3b71597985fce21c681cd",
+      "mtime_ns": 1793721797089575100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p30-gateway.jpg",
+      "size": 52448,
+      "sha256": "2e1687e61c605aebab47613668709f3e7bb7815e2a2994facedb6b20bffa4346",
+      "mtime_ns": 1793721797132463800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p31-solar.jpg",
+      "size": 159788,
+      "sha256": "f17c2ef359705b21b88bf26a449b9335b270abec900625ef9cda64c13710dd22",
+      "mtime_ns": 1793721797249416100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p32-charge.jpg",
+      "size": 243255,
+      "sha256": "c988c4930f51241d1ffbb04d4ffa1a9a098f8a230130f009600fb67b5be4e0e4",
+      "mtime_ns": 1793721797389160400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p33-battery.jpg",
+      "size": 104053,
+      "sha256": "9f9fc6b29c33fe57beaf7195b172f6f87350a2ad2054714e0c4eb444afffb4c3",
+      "mtime_ns": 1793721798290430900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p34-level.jpg",
+      "size": 59143,
+      "sha256": "58c8a991a8ccebc611c7fdf9a6c0ee657c61e6059376d811bd2c31bf93f4c7e9",
+      "mtime_ns": 1793721798342069700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p35-ball-valve.jpg",
+      "size": 99347,
+      "sha256": "5cd2cda164e70b47ad92403ab7fda7d98ab8017be2b39d0f0fb6b31c328519fc",
+      "mtime_ns": 1793721798432438800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p37-manual-tap.jpg",
+      "size": 60845,
+      "sha256": "fba325acc18f824eb3b3b6f35ea09034c44504dce0246dea545caa141bb2905d",
+      "mtime_ns": 1793721798528330500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p38-root-delivery.jpg",
+      "size": 100518,
+      "sha256": "c0052bba0aa905b60b2be73b58d6d540c49dbec3706f88a02026ec7ad3275c24",
+      "mtime_ns": 1793721798641385400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p39-budget-probe.jpg",
+      "size": 75254,
+      "sha256": "589bbcac867f91704568749bdc04cd15ee7e478873682253816696e986d6063a",
+      "mtime_ns": 1793721798774301500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p40-tubing.jpg",
+      "size": 99617,
+      "sha256": "8f6afc0d8eb6163adcbe6b51a233d75088bb4f1ac5a6563dcb31b90c1d47d40e",
+      "mtime_ns": 1793721798878810100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p41-battery-pack.jpg",
+      "size": 96414,
+      "sha256": "d5752d62362dded76b0bb9152a5f5a130b9fa45e0d8f0ee0167755f7023b2fe5",
+      "mtime_ns": 1793721799001145600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p42-mavic-aircraft.jpg",
+      "size": 74257,
+      "sha256": "41780ef2c43f98f4f6ec86b2a16ae78923b7068e2b18b45db8890ea7f7ad6e5e",
+      "mtime_ns": 1793721799219674400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p43-mavic-array.jpg",
+      "size": 40077,
+      "sha256": "b8d736a79cc5525e950b0ec8d3a1ad3b80e0c180acab9ab98f6ce3a08744830a",
+      "mtime_ns": 1793721799350181000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p44-mavic-rgb.jpg",
+      "size": 123131,
+      "sha256": "1c32025a18f275dc2039f046d26e28ea24de4ae510d056cf308ac203c238668d",
+      "mtime_ns": 1793721799517546300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p45-altum-pt.jpg",
+      "size": 64107,
+      "sha256": "68bda781ae274d96b22fa8ec7e4b3f11760439f8121188a536762d59d3948280",
+      "mtime_ns": 1793721799636812300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p46-reflectance-calibration.jpg",
+      "size": 149394,
+      "sha256": "ee2cb1bbcbbac5bad9a1c69640c9a0ffeba20c318f7bb2e3513b24505c097030",
+      "mtime_ns": 1793721799769349900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p47-gpr-research.jpg",
+      "size": 133761,
+      "sha256": "ef85dbdd441a3747a944c2ce6270fcf4a0d9679fb86f26a5d3a6809907179a20",
+      "mtime_ns": 1793721799913190300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p48-agras-t50.jpg",
+      "size": 150410,
+      "sha256": "391997137902b5b30e7977f9e7efb1470035e1e1cc19437a521e7ab5d1e9a8b5",
+      "mtime_ns": 1793721800204700200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p49-agras-t100.jpg",
+      "size": 435583,
+      "sha256": "0125bfe26c6bb8225faaaf70db2babfe520e8fae4dcad3a334fcd5cbe0ec16c4",
+      "mtime_ns": 1793721800840299000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p50-hose-prototype.jpg",
+      "size": 219822,
+      "sha256": "4f28840cf4df6a1ab4cf1c58f76b1871d4f8372efb13d9b539c78adacd1c423d",
+      "mtime_ns": 1793721801060434700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p51-hose-field.jpg",
+      "size": 236551,
+      "sha256": "cfad276c49824382467193b81e5b6d2e108770fa81c2af1d1c58c8a2a685ef89",
+      "mtime_ns": 1793721801263475500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p52-hose-ground-support.jpg",
+      "size": 162398,
+      "sha256": "38ee9c287671348558d9071755815096d867f2b18612708552d13823d0d22fc7",
+      "mtime_ns": 1793721801415133900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/ebook/p53-matrice-series.jpg",
+      "size": 48893,
+      "sha256": "afefe18cef111a8935ff4994406d8a3c64177a8e3ce36c648c94cdfcb6904b43",
+      "mtime_ns": 1793721801885006400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p01.png",
+      "size": 409608,
+      "sha256": "605784d53ec5e8d267c6037a7fdd8f1cef5ee7e539a9a598d0e6230525745ab3",
+      "mtime_ns": 1793718496257231800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p02.png",
+      "size": 201433,
+      "sha256": "2635a655488f6d462083c3dab7049d161379923cd0f3d569e791597d8bbacd11",
+      "mtime_ns": 1793718496076726900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p03.png",
+      "size": 600843,
+      "sha256": "cb69bcb7d923170830fc5019c6686606446cd6b399212e02202d2b2e6d844fab",
+      "mtime_ns": 1793718496105082500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p04.jpeg",
+      "size": 179297,
+      "sha256": "023476e383299cdd79d29477a62eee2618148330493e42c93f722a17151990b7",
+      "mtime_ns": 1793718496116119800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p05.png",
+      "size": 127569,
+      "sha256": "327a2d85b1734f66c728f2247d48806b3a9f2ab7f47e4dee166d8d9e0f4cd45f",
+      "mtime_ns": 1793718496958687700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p06.png",
+      "size": 306136,
+      "sha256": "f4a929c45011afd61c7a743c1c2270817db93d5377b2a4fd7f9dc6a58f35d0d8",
+      "mtime_ns": 1793719114132080600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p07.jpeg",
+      "size": 54810,
+      "sha256": "b332de81a371588a29574427e814cfbbc22d977a5d26f0d45e5c53d6cdd0ab7b",
+      "mtime_ns": 1793718495844182900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p08.webp",
+      "size": 41280,
+      "sha256": "051bff2dff3847f19d6f8ebdf9d74eaf9f67c8563676489221e10fcbeb127eb4",
+      "mtime_ns": 1793718495987472000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p09.jpeg",
+      "size": 104554,
+      "sha256": "d08f5e318cbf13b3ea93d3c86918ad36e1aadc50f5f928879b37ec278bd23cc4",
+      "mtime_ns": 1793718496048631500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p10.jpeg",
+      "size": 93579,
+      "sha256": "caa7930742448410b71e1546666d1a65c5740a25b6f739643e237a5ffa6a964d",
+      "mtime_ns": 1793718496016297000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p10.png",
+      "size": 148551,
+      "sha256": "a4d2d18b4655d57d8906b0cbe4bb0465fa14883fe507b096c79953564e6b975a",
+      "mtime_ns": 1793718235668439200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p11.jpeg",
+      "size": 170188,
+      "sha256": "58e8c05ca5d10c32494be98fb1319f0b333c8fd4cb2c50baf5c7520349636790",
+      "mtime_ns": 1793718496437506100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p12.jpeg",
+      "size": 391246,
+      "sha256": "801b060b0bde3c00ccfd933a4fba28b3c97d5c1c60af210e78e913cc329734c5",
+      "mtime_ns": 1793718497018694800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p13.kicad_pcb",
+      "size": 591330,
+      "sha256": "de125cb4bfaee077393393f2aa109d76d7ca3216b245b30132729b53ac77f35f",
+      "mtime_ns": 1793718604962896200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p14.png",
+      "size": 80508,
+      "sha256": "1b25e4888bf7b055122338e62b9eb9e9bc278508aba64beb7fa5c99ae16b226c",
+      "mtime_ns": 1793718497198919900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p15.jpeg",
+      "size": 51660,
+      "sha256": "857177b273e5fd9d6946326b8db66f2b4328a5f94fdb8a180aefd299d8002d28",
+      "mtime_ns": 1793718496271268100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p16.jpeg",
+      "size": 56431,
+      "sha256": "5133bd7926a8480534ae0617aa2701f95cecf45560ee28f9bc26b7fa484c7d95",
+      "mtime_ns": 1793718496402873300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p17.png",
+      "size": 2382662,
+      "sha256": "fd555d983c96bc19f37e9d33550e54faecc6df2398c125aa3b1b231fd3b96999",
+      "mtime_ns": 1793718499181452800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p18.png",
+      "size": 462246,
+      "sha256": "83f418aa0247ee5336214af2efa14b20815b564f5aa722769cf222eca5a32c19",
+      "mtime_ns": 1793718496907020200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p19.png",
+      "size": 335974,
+      "sha256": "15c743d2bb247ec30343f13cc383d3fea3416db8f1c52938ed1a9c6343972204",
+      "mtime_ns": 1793718496873419500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p20.jpeg",
+      "size": 48748,
+      "sha256": "9f6af8dcc03004767cd58c5dd1bf022b75c5d27950fe1b0c26233e135b90369c",
+      "mtime_ns": 1793718496823294900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p21.png",
+      "size": 190962,
+      "sha256": "bc591ab66637c17cbd01f7434e0efda1b0927fb9b8905163540179ecf9160f98",
+      "mtime_ns": 1793718497895963900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p22.jpeg",
+      "size": 23982,
+      "sha256": "a776395319068952421db015ae46eb17789acb6206c89fae5e2e6c2a6e48e8eb",
+      "mtime_ns": 1793718497437369700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p23.png",
+      "size": 577389,
+      "sha256": "56b658319f6742d104b76b801a2572ff8e426976bff2221451d82773133610f1",
+      "mtime_ns": 1793718499192465900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p24.png",
+      "size": 76664,
+      "sha256": "e63bfc96c71c4663386a76541f56c0bd8e3bfcf665630b5449be21d91f4605c7",
+      "mtime_ns": 1793718498064647100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p25.jpeg",
+      "size": 15669,
+      "sha256": "7b6f27a440d80567f763f27912d03987da744650dc315de75991e7b750a46d25",
+      "mtime_ns": 1793718497367545600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p26.png",
+      "size": 47862,
+      "sha256": "f82af2bbb4d90256fc1c6bdc0c8f14ddad5f4dadcae2cf62c66d74e381ee39b2",
+      "mtime_ns": 1793718497401655300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p27.jpeg",
+      "size": 49992,
+      "sha256": "bf65c044e114dd1fac0eb757f466dea8b5e795aa8fcac33d5aa2a7a658f3e8e6",
+      "mtime_ns": 1793718605195365200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p28.jpeg",
+      "size": 102474,
+      "sha256": "56c6488873f0db54f136fd8311a00c4ed6ea2999034c8ac6241c84747cb6894c",
+      "mtime_ns": 1793718497867970300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p29.jpeg",
+      "size": 24440,
+      "sha256": "aa00124cee41595fc87035352ab182a7ebd4530636d2a206f977d831a0fcc778",
+      "mtime_ns": 1793718605268664600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p30.png",
+      "size": 265196,
+      "sha256": "3601f9e9451e9ebc22a6a3b699fae9991e8ef3285a3e6bfb08e18d4fb22891bc",
+      "mtime_ns": 1793718497952636300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p31.png",
+      "size": 609528,
+      "sha256": "6b52949ea58afed66a6b6520a88e92f7bf52e471c779257e99790598911144b4",
+      "mtime_ns": 1793718498063133700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p32.png",
+      "size": 792249,
+      "sha256": "7733262a1ada3250f03758a19efd664f47859370b23068d1ecefde2501a6516a",
+      "mtime_ns": 1793718498347458900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p33.png",
+      "size": 13154089,
+      "sha256": "b7c691127e5c125e3ee622cd665f77fb85e9f213f7190a85d8c828fc9d98fc6e",
+      "mtime_ns": 1793718508409229400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p34.png",
+      "size": 3593,
+      "sha256": "51b0cbf19a0692f9a5041f290c0a38e5112fad8708b51237538f0b234285ac76",
+      "mtime_ns": 1793718498372134300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p35.jpeg",
+      "size": 38893,
+      "sha256": "006c84d8462dbc31aaa101780c15b7532eea1be2f8fdc5032cab115a5fa6eca3",
+      "mtime_ns": 1793718498486799200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p37.jpeg",
+      "size": 38693,
+      "sha256": "6941eaab8a8266056428402aeb4ec8658cff390f70dec449f11afc91ed65cf9b",
+      "mtime_ns": 1793718498269246500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p38.jpeg",
+      "size": 58436,
+      "sha256": "f68cd6947cd58fa399c8477c6d0356cdeb13647e737bd7e89525986c644b473a",
+      "mtime_ns": 1793718498716858900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p39.jpeg",
+      "size": 117623,
+      "sha256": "d32d9ac7093d90087ce3b012ea7e45f4241dbb62c945615db299ad5d4f7a98b2",
+      "mtime_ns": 1793718498895382300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p40.jpeg",
+      "size": 67948,
+      "sha256": "027b36891ee1f3045fe593fe48da33e47be3a703bd769f253eecb36881528edc",
+      "mtime_ns": 1793718498558666100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p41.png",
+      "size": 390980,
+      "sha256": "abceb9869850f05978f3e2609d407fd75ce033d7d988a3a2be8e4120587f9934",
+      "mtime_ns": 1793718498956539100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p42.jpg",
+      "size": 93223,
+      "sha256": "ad8d351db6bf94c43580711b3488d166228405130f807bd82b6af2d353947021",
+      "mtime_ns": 1793721340582566500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p43.jpg",
+      "size": 54209,
+      "sha256": "30d985195164c108cb66cb069dc2654ec73629f00c8b312455a65937cbbb3212",
+      "mtime_ns": 1793721340850662000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p44.jpg",
+      "size": 63306,
+      "sha256": "741bbd9a06fcd351da9c2ff9d53f926608e4c632ec58b631ca29fbffd7ba3605",
+      "mtime_ns": 1793721340980079100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p45.png",
+      "size": 218349,
+      "sha256": "4edd95c9593d12262f79622ddf1af980bf389236f1acd0a99b82deb44a09e362",
+      "mtime_ns": 1793721341456503500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p46.jpg",
+      "size": 70483,
+      "sha256": "1c40c0fa1080a9c7671187001c1a74b6f3cd280eececb31056638b968f237dc3",
+      "mtime_ns": 1793721341683501800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p47.jpeg",
+      "size": 338888,
+      "sha256": "23a2e8868730fb5fe94828c2f4377a1168fa2a7e8758f5c8d7f7d1cfa10f8cbb",
+      "mtime_ns": 1793721341895910900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p48.jpg",
+      "size": 149361,
+      "sha256": "40e473de697d6cae4744de52ca5ec70bcda12005b320a3f1c3b634ea258a3178",
+      "mtime_ns": 1793721342176712300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p49.jpg",
+      "size": 448414,
+      "sha256": "fe86bdd9d21ff39a3c56920129bba7850e19d89b0a2dbfc7907c0310caf47e4c",
+      "mtime_ns": 1793721342824856800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p50.png",
+      "size": 133156,
+      "sha256": "7833481c937e1c61e7bb9659c693818e5d24a6f5d1368567e8834b07b5ba920d",
+      "mtime_ns": 1793721343888720600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p51.png",
+      "size": 281820,
+      "sha256": "b6ac53bfec2c788f55aa296dc0e32f168e79a975e03276e36b3e940f1693416f",
+      "mtime_ns": 1793721343918695200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p52.png",
+      "size": 192364,
+      "sha256": "90132142c82356fe2b6298e48ef66b2d62c0aef8732bc19d6b52eb159adf7e43",
+      "mtime_ns": 1793721343955051400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/originals/p53.jpg",
+      "size": 203644,
+      "sha256": "799f72b9f7f0845f8a56920d2f43cf2f57178e8b52823f0688981d6638fee13f",
+      "mtime_ns": 1793721344118750500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p01-agronic.png",
+      "size": 412312,
+      "sha256": "bfa0d35c4e925ff2f7102c035b346c5d3818c65b20a38f2049f9552fb591a97a",
+      "mtime_ns": 1793718496254724400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p02-agrobee.png",
+      "size": 207679,
+      "sha256": "520edd24f91545ecc90436b64c630dd77b417dd4db003b032bb5d305a3ea1a37",
+      "mtime_ns": 1793718496075729100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p03-wise.png",
+      "size": 440007,
+      "sha256": "a70dcc591eb75742a783cc5a981af60c37fcef285ce0c5aba4910d5c77eaeab4",
+      "mtime_ns": 1793718496102783000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p04-edagro.png",
+      "size": 1063508,
+      "sha256": "5ce364f563c0df8823107ae7e935f3abd4f490c89b22a13c94c381704453e941",
+      "mtime_ns": 1793718496113099900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p05-uc511.png",
+      "size": 143464,
+      "sha256": "b11f6ecb09f1ebf0dd5eea0301ab8738ef8c81cb94d88e8fe7b8de001a3039ad",
+      "mtime_ns": 1793718496951688600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p06-dragino.png",
+      "size": 223292,
+      "sha256": "1b729b37865246079a641c8561c682d5c6ef742d6b15d984ec0327cb9b50966b",
+      "mtime_ns": 1793719114131080400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p07-opensprinkler.png",
+      "size": 172925,
+      "sha256": "bc8e3c5461c1018b8f00d411d4db71866dec6d8ad2f9c22f273f6ba994e5ca58",
+      "mtime_ns": 1793718495842183900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p08-irrigatia.png",
+      "size": 204851,
+      "sha256": "b64aaf91795eece68faaf4ae993599d08cd6b4555cd5d2d155215ce2fc4a9c6c",
+      "mtime_ns": 1793718495986472700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p09-blumat.png",
+      "size": 214265,
+      "sha256": "53508c52e2d09d1796376a9fdcbbf2fda4c4bb7a751ea8dfd24d4512c5cc8f5a",
+      "mtime_ns": 1793718496046616400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p10-plantcontrol.png",
+      "size": 73986,
+      "sha256": "773b2a42d2423ad623a64c1b707646b7406f51ed868ac8917bb3e82382b4bf9c",
+      "mtime_ns": 1793718496015069200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p11-openirr.png",
+      "size": 992026,
+      "sha256": "3ce656f3ef02554e782866285dbec4e2677c3a991c56f00e52c3008139532e13",
+      "mtime_ns": 1793718496436506700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p12-openirr-components.png",
+      "size": 2263120,
+      "sha256": "ddaeb134945bf682f49e5a833c95f52a467ff04d65aab3b0f5c24859a6c2e69b",
+      "mtime_ns": 1793718497014697600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p13-catwan-layout.png",
+      "size": 79877,
+      "sha256": "39b706d66af7d8541d6dd9d57a44c80f2b872d9ac129a7d46d316e31e257794b",
+      "mtime_ns": 1793718605175852400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p14-tank.png",
+      "size": 75219,
+      "sha256": "840973b7dcf8b0da39620fedc2c87e35db5940c645c22ec3ee55d853fbde04d0",
+      "mtime_ns": 1793718497198919900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p15-pump.png",
+      "size": 230133,
+      "sha256": "bd0cb17155157992950878a6220bbea8871394165eed0508d202bde7b9646500",
+      "mtime_ns": 1793718496267287600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p16-filter.png",
+      "size": 340474,
+      "sha256": "67b586d538e8ddc1d27f6c8da881f6dc81657c60b4a860f3c666dbed71d975ba",
+      "mtime_ns": 1793718496401862200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p17-flowmeter.png",
+      "size": 2378582,
+      "sha256": "36482ff1a2cc6fa41edd19b67ceae24885a926714ed21e465e6d607c71299c8c",
+      "mtime_ns": 1793718499175912200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p18-valve.png",
+      "size": 466433,
+      "sha256": "8d90e6d319bbc153b4885307a18af2549d64544c602a2a9e589cf963a313f2de",
+      "mtime_ns": 1793718496905024000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p19-solenoid.png",
+      "size": 348049,
+      "sha256": "010dcc7a8031db9b2e7e7b8f366ff1f26d462b1ab82efbf4dccd27dfb15f4bf1",
+      "mtime_ns": 1793718496871422400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p20-fittings.png",
+      "size": 360779,
+      "sha256": "98986fcb3ad29049f51f913e40fcee5d7130911b4e5dd0bffd9b0b7f48a6bdee",
+      "mtime_ns": 1793718496822297800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p21-dripper.png",
+      "size": 243352,
+      "sha256": "e324aa9e8a3d8dd1b469ccfe274de523d2d4aa25673c09eae236f1066bc2bc16",
+      "mtime_ns": 1793718497893964100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p22-vh400.png",
+      "size": 53259,
+      "sha256": "fc9c77a5435bf0db2d1debccaba8c03ce786e45d92c004c932e992c9b8f4d6b8",
+      "mtime_ns": 1793718497436369600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p23-tensiometer.png",
+      "size": 463651,
+      "sha256": "3066f129c23c60360473e2cf3ec45945a3841944a883ff89dbaa96881cd898fb",
+      "mtime_ns": 1793718499189463100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p24-watermark.png",
+      "size": 63378,
+      "sha256": "19a134dbb4cf45f3020a9f42ac50873ffbe85a49f9f4b7b5ff5fd1c5faa8471e",
+      "mtime_ns": 1793718498064132400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p25-temperature.png",
+      "size": 100920,
+      "sha256": "73e9abdf06046d15e3cad2ede8281ab629dded783c38672414f0039dafeb13bf",
+      "mtime_ns": 1793718497365529700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p26-waterboxx.png",
+      "size": 49334,
+      "sha256": "9d4f4b2b50112f585cc99ae73dc452e3325a6952138e9431ed6a6b56b1c8c640",
+      "mtime_ns": 1793718497399619300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p27-cocoon.png",
+      "size": 376214,
+      "sha256": "92c456b555bb7e9ba5e648f0f8bade162c7d76002978433e28339431c170d937",
+      "mtime_ns": 1793718605248541500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p28-olla.png",
+      "size": 695613,
+      "sha256": "b6b5c86792dd2f5c8c9c0a0cc19651d55281e538548e61fe46eb1ed84855f06b",
+      "mtime_ns": 1793718497866446900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p29-fog-guard.png",
+      "size": 189832,
+      "sha256": "687de724b3b502ba80ac714c6cd812863890f3faf3c428aa6283d0eba29dea76",
+      "mtime_ns": 1793718605293670300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p30-gateway.png",
+      "size": 297950,
+      "sha256": "822e3eab8b9461521a2fa70de7f81a59761dae56681a9457f694250312f1873a",
+      "mtime_ns": 1793718497948299700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p31-solar.png",
+      "size": 607200,
+      "sha256": "8b9196a6a75e168d3d78890bb10ae725696575c4df7c799e1f9fe1e8ea30b86e",
+      "mtime_ns": 1793718498061601200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p32-charge.png",
+      "size": 807297,
+      "sha256": "7609d990b41b0b15b80f71d55b5429f69de28482d36212e28b0dd7008ff80bf1",
+      "mtime_ns": 1793718498343461900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p33-battery.png",
+      "size": 13752892,
+      "sha256": "6f67917f170e972da818027227d85a466745b7c77a3c67b2870b205a8e1d3a30",
+      "mtime_ns": 1793718508398664900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p34-level.png",
+      "size": 3766,
+      "sha256": "1f4610794d5b3b934606f38c18cfc17fdf65c848068ffb0e38a9d6bc8e63de24",
+      "mtime_ns": 1793718498370602800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p35-ball-valve.png",
+      "size": 166261,
+      "sha256": "4f753fcc4ec043ba7bcdbefbaeff5f9f84e12bad2478b7d2b83db42abdbaac0f",
+      "mtime_ns": 1793718498483242200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p37-manual-tap.png",
+      "size": 165190,
+      "sha256": "3e5e2a2ad1a3aacbfc77f9cea0ee3c9b6f9e42a722d16c579b4a07be4adda1ee",
+      "mtime_ns": 1793718498267729000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p38-root-delivery.png",
+      "size": 339531,
+      "sha256": "7ae04644fea5a2bc12ccf3607ae7a2334ec01fcd90822ff58e568c3a47ee8acd",
+      "mtime_ns": 1793718498714859400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p39-budget-probe.png",
+      "size": 439447,
+      "sha256": "7588266baea09289040a1848042bee49b4ae48ec144aa7866dcd848715963cb9",
+      "mtime_ns": 1793718498894381900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p40-tubing.png",
+      "size": 285284,
+      "sha256": "198321704bcdf8e073b9c9115b559b8c5a919c884c049083c33528dc0c07c876",
+      "mtime_ns": 1793718498556146000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p41-battery-pack.png",
+      "size": 391135,
+      "sha256": "1e0e4e4d46b58487099aa0cd1e3deb688e2f8e941d3086e410dce3a5f3456be9",
+      "mtime_ns": 1793718498954544600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p42-mavic-aircraft.png",
+      "size": 477650,
+      "sha256": "b22b062f5d5cb4e62351cfbb3d887ca68cb3a83ae6aa4bbea340eceed7396800",
+      "mtime_ns": 1793721340803746300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p43-mavic-array.png",
+      "size": 233199,
+      "sha256": "40b67d6b21ef83f761c08ec733889760710869c353ca41b11ef778e1973421f7",
+      "mtime_ns": 1793721340949846000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p44-mavic-rgb.png",
+      "size": 382088,
+      "sha256": "c8fd735d6fc7c0be4240a4d729ec0c410df1c110019a763f9fd299d9b75031a2",
+      "mtime_ns": 1793721341123567900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p45-altum-pt.png",
+      "size": 247424,
+      "sha256": "1bf9f20d84adbf4555bf182fd5c5da92d99553bd293b01e530d8e8521a0b7b2a",
+      "mtime_ns": 1793721341508955100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p46-reflectance-calibration.png",
+      "size": 664657,
+      "sha256": "fdd39f1e9c01f3ea9596fb8a39431047c38c0ee4a1de39987061ad36a9ea7c19",
+      "mtime_ns": 1793721341876375100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p47-gpr-research.png",
+      "size": 698108,
+      "sha256": "fcafe87fea2044d4a715379cd3bf12f01c6667028803e1e7215bc8a2516c0a9d",
+      "mtime_ns": 1793721342088752600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p48-agras-t50.png",
+      "size": 1597797,
+      "sha256": "4eb62adeb5cc6d9d7adac6d010103640da505a76f64bc0d7c31038aa3c8951e3",
+      "mtime_ns": 1793721342728096600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p49-agras-t100.png",
+      "size": 5576392,
+      "sha256": "68f4aaf66a88734ef8b3f820bf7956905a6afe86261036a797568f3aaa625333",
+      "mtime_ns": 1793721343869148900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p50-hose-prototype.png",
+      "size": 149839,
+      "sha256": "18279e46d6837de0daf5112f915c341875790d434180e7c33ea537e01f8039dd",
+      "mtime_ns": 1793721343910164600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p51-hose-field.png",
+      "size": 248802,
+      "sha256": "419197bb4309703128ad0cd9c75a43c0898fb3b90be5cf67326bac05db8c7825",
+      "mtime_ns": 1793721343944811600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p52-hose-ground-support.png",
+      "size": 169774,
+      "sha256": "5a7beeb29ad6c23708667e90588d2ee5af1f41cb0bdb12a9b9959d975b340b81",
+      "mtime_ns": 1793721343980625900,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/photos/p53-matrice-series.png",
+      "size": 1070609,
+      "sha256": "d60cdae83ce29e06e221dfb8fcebfe0572b32aa024ae8ee1af159ddc22cae75e",
+      "mtime_ns": 1793721344589606500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/elevenreader/prepare_book_images.py",
+      "size": 1850,
+      "sha256": "7fbedba5a96e6238478722eed61f3a5a1ed8da1397f9e9e25c7ae0d7beabfa82",
+      "mtime_ns": 1793718903275818500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/01-control-levels.png",
+      "size": 99601,
+      "sha256": "367cd4dd27560441b552bac2588b53ed0cc466d72cfbf968d646ef64ada169e1",
+      "mtime_ns": 1793709699361093500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/01-control-levels.svg",
+      "size": 6530,
+      "sha256": "9adeefcdbcb4ace7efccfa2bd9c1dfa7a3141a9cac2a0a737ee15d9e420682bd",
+      "mtime_ns": 1793709699240723100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/02-landscape-water-cells.png",
+      "size": 180189,
+      "sha256": "001f09e2559faf87b93cd144d318f32a0d16137098da8797e094975101c1d6ec",
+      "mtime_ns": 1793709699470163100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/02-landscape-water-cells.svg",
+      "size": 8328,
+      "sha256": "1a4e6e2b62fec2e767a47a229b3e8c87c0a4bd6d8230e4253bb6a783511b4470",
+      "mtime_ns": 1793709699364097300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/03-tank-station-hydraulics.png",
+      "size": 123737,
+      "sha256": "e011db5c529fa6a9c6e99bf3ca17679e1f3c2cccb708a669c317d77c574bdab3",
+      "mtime_ns": 1793709699548183300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/03-tank-station-hydraulics.svg",
+      "size": 7499,
+      "sha256": "1e69db0df5c082d2138f3e1693ba505825b3d7ed1220c8f9419b91be660c5345",
+      "mtime_ns": 1793709699472174000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/04-gravity-pressure-budget.png",
+      "size": 111825,
+      "sha256": "78715414add7fff26b3f8473843d016bb31e05c3be32967040b601c05f419c7f",
+      "mtime_ns": 1793709699615038700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/04-gravity-pressure-budget.svg",
+      "size": 3647,
+      "sha256": "d5bfebe950712c9e5970766e3968ed2183ee20db6e0ebcbf347986875c8c75cb",
+      "mtime_ns": 1793709699550182600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/05-repairable-node.png",
+      "size": 153572,
+      "sha256": "04432b4c007481ad541a49ecea8227a3fc9cb7994c84354853ce092fcd3f4f9e",
+      "mtime_ns": 1793709699678072300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/05-repairable-node.svg",
+      "size": 7257,
+      "sha256": "ddee699b0fc3fc46b2ca92df442ebe3ca1b818b5491f0953ccf9cc23e7f47926",
+      "mtime_ns": 1793709699617038700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/06-sensor-placement.png",
+      "size": 133864,
+      "sha256": "c216fddea6338560a6cfd75ac30884c38f68cb20a89d7997ca0b8fec3b1eda80",
+      "mtime_ns": 1793709699744657300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/06-sensor-placement.svg",
+      "size": 3938,
+      "sha256": "da6a678f9b5c267235a1e73e7c3c4713d09a60b677c108c3b4c2b7989ca0feda",
+      "mtime_ns": 1793709699680072800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/07-passive-per-plant.png",
+      "size": 99076,
+      "sha256": "3a8c3993ba2eca3e02e1c770444f601e38f68d5167bc6ddc30098f014d5e75d3",
+      "mtime_ns": 1793709699807372100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/07-passive-per-plant.svg",
+      "size": 4257,
+      "sha256": "05f26b5bdc9676ca7fe718d2bd88b153b53cf9e91a820eabd838077b9e8eb8c5",
+      "mtime_ns": 1793709699746658400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/08-wireless-and-local-control.png",
+      "size": 149707,
+      "sha256": "d8d8bbea353db71a6f1e7f3d23328ce85937b54d8cd5c11eb65aecaf7460b442",
+      "mtime_ns": 1793709699870984500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/08-wireless-and-local-control.svg",
+      "size": 5743,
+      "sha256": "b4ffd0ef4ff5315576d62efb9a7d405c28f66030f8357d4997050b36602e61b9",
+      "mtime_ns": 1793709699808877100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/09-control-state-diagram.png",
+      "size": 114840,
+      "sha256": "b2042b7fe8a41330310b9e477c1a1753c13467979c00ecaf4887eea0a1bc3831",
+      "mtime_ns": 1793709699932069400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/09-control-state-diagram.svg",
+      "size": 6797,
+      "sha256": "8fc640e640cbd558f16e97bb543953e28ce3120252bb5fb3a67d3c7ea96bb87f",
+      "mtime_ns": 1793709699872986500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/10-water-and-energy-budgets.png",
+      "size": 151566,
+      "sha256": "a9c0b1814c1f246b11d25b34e82c0c6aba12b6f98b53cbc6323f39965e1bdae1",
+      "mtime_ns": 1793709700000378400,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/10-water-and-energy-budgets.svg",
+      "size": 5100,
+      "sha256": "980b1ac44d3934e1bff3baff17a38832e3fb1cf79e48ee5f763571738514aba7",
+      "mtime_ns": 1793709699934070200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/11-repair-and-local-assembly.png",
+      "size": 122343,
+      "sha256": "ac157ccd8c9a72f1243f1cd9917fa0f8e9731b3ca13e05996577186db5f9423b",
+      "mtime_ns": 1793709700065136500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/11-repair-and-local-assembly.svg",
+      "size": 5370,
+      "sha256": "7808e9e86d7457077a9ecd42e2cae0fa5dd641a6801bc36ac9272a5ecba1e84d",
+      "mtime_ns": 1793709700002708800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/12-comparison-trial.png",
+      "size": 108615,
+      "sha256": "a7d2ffda603be0fdc02e0a39e6bb55fd361825ce3ea8698fc5e40acdc91df7a7",
+      "mtime_ns": 1793709700137979000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/12-comparison-trial.svg",
+      "size": 9336,
+      "sha256": "c39bc90c5abcf89567a60113fcd8d27d65354b85b39e22e9d286937df9298843",
+      "mtime_ns": 1793709700067137500,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "irrigation-research/figures/contact-sheet.jpg",
+      "size": 355982,
+      "sha256": "dca3027ed4197f541546652db59769aadb61cb72bd14e65a30f455589f435f60",
+      "mtime_ns": 1793709700445543000,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "planting-explorer-examples/01-algarrobo-planting-poster.png",
+      "size": 2512599,
+      "sha256": "dea94fbec3255000951d97f05eb64d5250aa7720972368ff1f73cc5b91cd1753",
+      "mtime_ns": 1793187839824709700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "planting-explorer-examples/02-palmito-planting-poster.png",
+      "size": 2752191,
+      "sha256": "0e1d8ab5143adfd1e7dc2217c5e743b3a7eda30cf1b491ac5bde3d7bcc913a49",
+      "mtime_ns": 1793188111522774300,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "planting-explorer-examples/03-esparto-planting-poster.png",
+      "size": 2584772,
+      "sha256": "27036d302ea63a06650b2bfaaef60be571b9b0680e52fab2ace88d7fcd1d1b58",
+      "mtime_ns": 1793188147386632700,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "planting-explorer-examples/README.md",
+      "size": 3134,
+      "sha256": "811e7a5cb4254acdc35c79423c197af4e818afeb317b1b15f0ce1fa34da0602f",
+      "mtime_ns": 1793188348909248100,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "planting-explorer-examples/SOURCES_AND_WATERING.md",
+      "size": 8603,
+      "sha256": "20b14f0966170c7ee4a7eeab20d34d33315dfeffcd308a0e7154f49a96b289ab",
+      "mtime_ns": 1793188348910248600,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "planting-explorer-examples/generation-prompts.json",
+      "size": 19400,
+      "sha256": "dead98d34ed487c8110686d8c6b89b6bb5dd1c1540c264c8c6b68147c040208e",
+      "mtime_ns": 1793188348898738200,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    },
+    {
+      "path": "planting-explorer-examples/manifest.json",
+      "size": 1628,
+      "sha256": "e3fd4d6840bc6bedb61b6b41b08a05d16a2ddf121523dcdb0ce84d159be05753",
+      "mtime_ns": 1793188390298523800,
+      "origin": "copied",
+      "existing_graph_source_ids": []
+    }
+  ],
+  "directories": [
+    "al20-demonstrator-goal",
+    "al20-demonstrator-proposal",
+    "al20-demonstrator-proposal/public-records",
+    "al20-score-optimisation",
+    "carob-restoration-guide",
+    "carob-soil-research",
+    "catalog_history",
+    "edll-listening-primer",
+    "forestry-listening-primer",
+    "irrigation-research",
+    "irrigation-research/drones",
+    "irrigation-research/drones/figures",
+    "irrigation-research/elevenreader",
+    "irrigation-research/elevenreader/__pycache__",
+    "irrigation-research/elevenreader/archive",
+    "irrigation-research/elevenreader/photos",
+    "irrigation-research/elevenreader/photos/ebook",
+    "irrigation-research/elevenreader/photos/originals",
+    "irrigation-research/figures",
+    "planting-explorer-examples"
+  ]
+}

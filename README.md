@@ -284,3 +284,16 @@ copies; the simulator is only an intake input. Preserve `media/`, `sources/` and
 Use `python -m backend.cli media-integrity` to verify files, and `python -m backend.cli backup-media`
 for a database snapshot plus companion media archive. See [Plant images](PLANT_IMAGES.md) for exact
 mappings, evidence coverage, source links, limitations and recovery instructions.
+
+
+## Owned document library
+
+The complete old library is now copied locally under `doc_library/`: 378 copied files plus the
+pre-existing knowledge-graph EPUB. This collection is owned storage only; it does not add graph
+knowledge, source registrations or search-index content. Existing registered source paths remain
+unchanged. The document bytes are local and ignored by Git; preserve their verified backup alongside
+the tracked `imports/document-library-inventory.json`.
+
+Run `python scripts/document_library.py verify` for file integrity and
+`python scripts/document_library.py backup` for a separate document-library archive. See
+[Document library ownership](DOCUMENT_LIBRARY.md) for copy commands, recovery and verification.
