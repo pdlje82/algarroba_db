@@ -1,4 +1,12 @@
 import { landscapeGroup, ROOT_GROUPS, type Catalog, type Item } from "./types.ts";
+export type EditorTarget = {kind: 'group' | 'community'; id: string | null; sourceId?: string};
+export function editorTarget(id: string | null | undefined, catalog: Catalog | null): EditorTarget | null {
+  if (!id || !catalog) return null;
+  if (catalog.communities.some(g => g.id === id)) return {kind: 'community', id};
+  if (catalog.browse_groups.some(g => g.id === id) || catalog.organization_roots.some(g => g.id === id)) return {kind: 'group', id};
+  if (catalog.topics.some(t => t.id === id && t.kind === 'habitat')) return {kind: 'community', id: null, sourceId: id};
+  return null;
+}
 export function groupLabel(id: string, catalog?: Catalog | null): string {
   if(!catalog)return id;
   const group=catalog.browse_groups.find(g=>g.id===id) || catalog.organization_roots?.find(g=>g.id===id) || catalog.communities?.find(g=>g.id===id);

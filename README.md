@@ -6,19 +6,117 @@ with one active Layered 3D graph, filters, grouping and a docked inspector.
 
 ## Start
 
-Double-click **Start Knowledge Browser.cmd**. It opens http://127.0.0.1:8765.
-Use **Stop Knowledge Browser.cmd** to stop the local server. Knowledge and saved explorations persist.
-For a fresh checkout run **Setup Knowledge Browser.cmd** once. Existing source PDFs must remain
-at their registered paths. After this upgrade the backend must restart and the browser reload.
+Start the app from a Conda-enabled PowerShell terminal, using the setup and Python commands below.
+Open **Miniforge Prompt** if Conda is not available in your usual terminal; in that Command Prompt,
+use `cd /d` instead of `cd` when changing drives. The commands create and use a dedicated environment
+named `algarroba-db`; if you already have a project Conda environment, use its name consistently instead.
+
+The earlier setup script creates `.venv\Scripts\python.exe` inside the project. That is a standard
+Python virtual environment, not a Conda environment. It does not create `algarroba-db`.
+Create the Conda environment below before selecting it in PyCharm.
+
+### One-time setup
+
+Conda and Node.js/npm must be installed. Check `conda env list` first; if `algarroba-db` is already
+listed, skip only the `conda create` command below. From the project folder, create the environment
+once, activate it and print its actual Python executable path:
+
+```powershell
+cd "C:\Users\JanEngelke\git_private\algarroba_db"
+conda create -n algarroba-db python=3.12 pip
+conda activate algarroba-db
+python -c "import sys; print(sys.executable)"
+```
+
+Save the printed path for PyCharm. Conda's environment location depends on its configuration;
+use the actual output rather than assuming a `miniforge3\envs\algarroba-db` location.
+If activation fails because the environment is missing, complete `conda create` successfully
+before continuing. In the activated environment, install dependencies and build the interface:
+
+```powershell
+python -m pip install -r requirements-lock.txt
+npm ci
+npm run build
+```
+
+For a fresh checkout with no accepted knowledge collection, initialize the database once:
+
+```powershell
+python -m backend.cli bootstrap
+```
+
+Existing source PDFs must remain at their registered paths. An existing database, source collection
+and saved explorations can be reused when switching Python environments.
+
+### Run the app
+
+In each new terminal session, activate the environment and start the server from the project folder:
+
+```powershell
+cd "C:\Users\JanEngelke\git_private\algarroba_db"
+conda activate algarroba-db
+python -m uvicorn backend.app:app --host 127.0.0.1 --port 8765
+```
+
+Keep the terminal open and open [Knowledge Browser](http://127.0.0.1:8765) in your browser.
+Press **Ctrl+C** in that terminal to stop the server. Knowledge and saved explorations persist.
+If a previous launcher instance still occupies port 8765, stop it first with
+`python scripts/launch.py --stop` from the activated environment and project folder.
+After frontend changes, run `npm run build` again; after backend changes, restart the server.
+Reload the browser to see the updated app.
+
+### PyCharm run configuration
+
+Complete the one-time setup above, then open `algarroba_db` as the project in PyCharm.
+
+1. Open **Settings** (`Ctrl+Alt+S`) and the project's Python interpreter settings
+   (**Project Structure** in current versions).
+2. Choose **Add Interpreter > Add Local Interpreter > Conda**, then select the existing
+   `algarroba-db` environment created during setup. Use the Python executable path printed by
+   `python -c "import sys; print(sys.executable)"` after `conda activate algarroba-db`.
+   If the environment is missing, check `conda env list` and complete the creation step above.
+   If Conda is not detected, set its executable to
+   `C:\Users\JanEngelke\miniforge3\Scripts\conda.exe`.
+3. Open **Run > Edit Configurations**, click **+**, and choose **Python**.
+4. Enter these settings, selecting **Module name** in the target dropdown:
+
+   | Setting | Value |
+   | --- | --- |
+   | Name | `Knowledge Browser` |
+   | Module name | `uvicorn` |
+   | Parameters | `backend.app:app --host 127.0.0.1 --port 8765` |
+   | Python interpreter | The `algarroba-db` Conda interpreter selected above |
+   | Working directory | `C:\Users\JanEngelke\git_private\algarroba_db` |
+   | Environment variables | Keep `PYTHONUNBUFFERED=1`; no additional variables are required |
+
+5. Click **Apply**, then **OK**. Select **Knowledge Browser** and click **Run** or **Debug**.
+   Open [Knowledge Browser](http://127.0.0.1:8765) in your browser. Use PyCharm's **Stop** button
+   to stop the server before starting it again elsewhere.
+
+PyCharm uses the selected Conda interpreter directly. Terminal activation alone does not select
+the run configuration's interpreter. The frontend is served from `dist/`, so run `npm run build`
+after frontend edits before reloading the browser.
+See JetBrains' [interpreter setup](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html)
+and [Python run configuration](https://www.jetbrains.com/help/pycharm/run-debug-configuration-python.html)
+documentation for the corresponding dialogs.
 
 ## Explore
 
-**Groups & communities** opens permanent group editing and the community planner.
-Create/rename folders, move or share topics, build communities from existing plants,
-and enter irrigation values per member and lifecycle stage. Source values and user
+**Edit group** and **Edit community** open the controls for the selected group or community.
+Community editing opens directly into its members and irrigation; group editing shows
+organization controls. With no active group or community, use the separate **Manage groups**
+and **Manage communities** buttons to choose or create records. Create/rename folders,
+move or share topics, build communities from existing plants, and enter irrigation
+values per member and lifecycle stage. Source values and user
 adjustments retain separate origins and history. See [Community planning](COMMUNITY_PLANNING.md)
 for controls, maintenance, conflicts, Undo/Redo and recovery. Source-backed topic names
 remain under Codex maintenance; Group by still changes presentation only.
+
+The community editor is a full-window **Evidence desk**: member plants, phase comparison
+and source guidance. Review researched evidence, explicitly adopt a value into the draft,
+then save the plant's changes together. Irrigation numbers cannot be entered freely;
+missing evidence opens a manual research handoff. See [Evidence desk](EVIDENCE_DESK.md)
+for source review, drafts, atomic saves, provenance and recovery.
 
 1. Open one of the nine sidebar groups. Its complete organized contents open in the foreground; the original layer remains darkened behind.
 2. Click a card or line to inspect it. Selection never opens, closes, recentres or rearranges.
@@ -189,7 +287,8 @@ exports and backups are recovery copies, not independently editable masters. Cod
 source manifests, accepted batch inputs and this procedure use ordinary repository history.
 Database, research briefs, extracted text, images and backups stay local and are ignored by Git.
 
-Use the project's Python (`.venv\Scripts\python.exe` on Windows) for these commands:
+From the project folder, activate the project's Conda environment (`conda activate algarroba-db`)
+and use its Python for these commands:
 
 ```
 python -m backend.cli search "algarrobo"
@@ -243,9 +342,11 @@ The frontend uses /api/explore and /api/comparison. /api/routes shares the same 
 /api/view and its perspective branches are retired. Saved views, inspection, source files,
 research and refresh retain their existing endpoints. No database schema migration is required.
 
-Development: npm run build; .venv\Scripts\python.exe -m uvicorn backend.app:app --host 127.0.0.1 --port 8765
-Checks: npm test; .venv\Scripts\python.exe -m pytest -q.
-Browser scenarios: start .venv\Scripts\python.exe scripts/qa-server.py in a separate terminal,
+Development: activate the Conda environment, run `npm run build`, then start the server with
+`python -m uvicorn backend.app:app --host 127.0.0.1 --port 8765` (or the PyCharm configuration above).
+Checks in the activated environment: `npm test` and `python -m pytest -q`.
+Browser scenarios: activate the same Conda environment in a separate terminal and start
+`python scripts/qa-server.py`,
 then run tests/browser-v6.mjs against that isolated QA database on port8769 only.
 Set KGB_PLAYWRIGHT_MODULE to an installed Playwright index.mjs, or make playwright importable,
 and run node tests/browser-v6.mjs with Microsoft Edge installed. This is test tooling, not an app dependency.

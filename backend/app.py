@@ -84,7 +84,7 @@ def create_app(store: Store | None = None):
 
     @app.post('/api/communities/edit')
     def communities_edit(edit: Edit):
-        if not (edit.action.startswith('community-') or edit.action in {'plants-add','plant-remove','plant-edit','stage-set','field-set','revert'}):
+        if not (edit.action.startswith('community-') or edit.action in {'plants-add','plant-remove','plant-edit','plant-plan-set','stage-set','field-set','revert'}):
             raise HTTPException(400,'This endpoint edits working communities only.')
         return save_edit(edit)
 
@@ -230,6 +230,7 @@ Selected topics: {json.dumps(context['topic_labels'],ensure_ascii=False)}
 Species names by stable database ID: {json.dumps({i:{k:n[k] for k in ('spanish_name','english_name','scientific_name','name_status')} for i,n in context['species_names'].items()},ensure_ascii=False)}
 Selected relationships and constituent routes: {json.dumps({'relationship_ids':context.get('selected_relationship_ids',[]),'routes':context.get('routes',[])},ensure_ascii=False)}
 Captured knowledge revision: {original_revision}; current revision: {store.revision()}.
+{('Irrigation evidence request (planning context, not scientific evidence):' + chr(10) + json.dumps(context['irrigation_request'],ensure_ascii=False)) if context.get('irrigation_request') else ''}
 
 Read this brief AND context.json; the live browser is not required. Inspect current records with
 python -m backend.cli search / inspect / export. Reconcile all stable IDs and older view state

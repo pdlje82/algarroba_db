@@ -86,7 +86,7 @@ export function SourcePanel({
                 .
               </p>
               <a href={record.url} target="_blank" rel="noreferrer">
-                Open botanical website ↗
+                Open original website ↗
               </a>
               <p>
                 <a

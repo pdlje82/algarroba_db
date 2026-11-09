@@ -34,7 +34,8 @@ export function ResearchPanel({
   close: () => void;
   complete: (task: any) => void;
 }) {
-  const defaults =
+  const irrigation = context.irrigation_request;
+  const defaults = irrigation ? ['Irrigation', 'Ecosystem conditions', 'Sources'] :
     context.filters?.domain === "funding"
       ? ["Funding", "Requirements", "Sources"]
       : context.filters?.domain === "ecosystem"
@@ -43,9 +44,9 @@ export function ResearchPanel({
           ? ["Irrigation", "Drone technology", "Sources"]
           : ["Sources"];
   const [areas, setAreas] = useState<string[]>(defaults),
-    [custom, setCustom] = useState(""),
-    [instruction, setInstruction] = useState("Find more information"),
-    [scope, setScope] = useState("Library only"),
+    [custom, setCustom] = useState(irrigation ? `${irrigation.community_label} · ${irrigation.plant_label} · ${irrigation.phase_label} · ${irrigation.parameter_label}` : ""),
+    [instruction, setInstruction] = useState(irrigation ? 'Find cited irrigation evidence for this species, phase and site. Check existing nodes and primary external sources; preserve age, soil, climate, method, original units and exact passages. Do not invent values, infer event doses from totals, or change working plans.' : "Find more information"),
+    [scope, setScope] = useState(irrigation ? "Library and web" : "Library only"),
     [extension, setExtension] = useState(""),
     [files, setFiles] = useState<string[]>([]),
     [prompt, setPrompt] = useState(""),

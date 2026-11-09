@@ -223,3 +223,79 @@ def test_group_guidance_metadata_is_validated_inspected_and_preserved(store):
     before=s.snapshot()
     with pytest.raises(ValueError,match='Invalid source page'):s.import_batch(invalid)
     assert s.snapshot()==before
+
+
+def test_plant_plan_set_is_atomic_source_only_and_preserves_legacy_fields(store):
+    s=store;id=community(s);edit(s,'plants-add',id=id,topic_ids=['carob','mastic'])
+    edit(s,'stage-set',id=id,topic_id='carob',stage='settlement',status='configured')
+    edit(s,'field-set',id=id,topic_id='carob',stage='settlement',field='frequency',mode='user',value='Existing manual trigger')
+    evidence(s)
+    before=s.snapshot();revision=s.revision()
+    data=dict(id=id,topic_id='carob',changes=dict(count=5,notes='Local plant notes'),stages={'settlement':'configured','support':'not-applicable'},fields=[dict(stage='settlement',field='amount',mode='source',evidence_id='irrigation-evidence:test',reviewed=True,rationale='Reviewed plant age, source method and site conditions')])
+    assert apply_edit(s,Edit(expected_revision=revision,action='plant-plan-set',data=data),dry_run=True)['status']=='validated'
+    assert s.snapshot()==before
+    result=edit(s,'plant-plan-set',**data)
+    assert result['revision']==revision+1 and result['affected_id']==id
+    plant=member(s,id)
+    assert plant['count']==5 and plant['notes']=='Local plant notes'
+    assert field(s,id)['value']==10 and field(s,id)['origin']=='source'
+    assert field(s,id)['baseline']['units']=='L/plant/watering'
+    assert field(s,id)['rationale']==data['fields'][0]['rationale']
+    assert plant['irrigation']['support']['status']=='not-applicable'
+    assert field(s,id,'frequency')==next(g for g in before['communities'] if g['id']==id)['plants'][0]['irrigation']['settlement']['fields']['frequency']
+    assert len(field_history(s,id,'carob','settlement','amount'))==1
+    assert next(g for g in s.snapshot()['communities'] if g['id']==id)['plants'][1]==next(g for g in before['communities'] if g['id']==id)['plants'][1]
+    for table in ['sources','topics','relationships','findings','coverage','irrigation_evidence','plant_images']:
+        assert before[table]==s.snapshot()[table]
+    stable=s.snapshot()
+    with pytest.raises(Conflict):apply_edit(s,Edit(expected_revision=revision,action='plant-plan-set',data=data))
+    assert s.snapshot()==stable
+    edit(s,'plant-plan-set',id=id,topic_id='carob',fields=[dict(stage='settlement',field='amount',mode='clear')])
+    assert field(s,id)['value'] is None and field(s,id)['baseline']['value']==10
+
+
+@pytest.mark.parametrize('variant',['raw-value','unreviewed','no-reason','generic','range','season','missing','wrong-species','wrong-phase','wrong-parameter','duplicate','inactive'])
+def test_plant_plan_rejects_invalid_adoption_without_partial_writes(store,variant):
+    s=store;id=community(s);edit(s,'plants-add',id=id,topic_ids=['carob'])
+    raw=evidence(s)
+    if variant in {'generic','range','season','wrong-species'}:
+        raw=evidence(s,'irrigation-evidence:other',value='10–20' if variant=='range' else 10,units='L/plant/season' if variant=='season' else 'L/plant/event',species=None if variant=='generic' else 'mastic' if variant=='wrong-species' else 'carob')
+    operation=dict(stage='settlement',field='amount',mode='source',evidence_id=raw['id'],reviewed=True,rationale='Reviewed source context')
+    if variant=='raw-value':operation['value']=999
+    if variant=='unreviewed':operation['reviewed']=False
+    if variant=='no-reason':operation['rationale']='   '
+    if variant=='missing':operation['evidence_id']='irrigation-evidence:missing'
+    if variant=='wrong-phase':operation['stage']='nursery'
+    if variant=='wrong-parameter':operation['field']='frequency'
+    fields=[operation,dict(operation)] if variant=='duplicate' else [operation]
+    data=dict(id=id,topic_id='carob',changes=dict(count=99,notes='Must not persist'),stages={'settlement':'not-applicable' if variant=='inactive' else 'configured','nursery':'configured'},fields=fields)
+    before=s.snapshot()
+    client=TestClient(create_app(s))
+    assert client.post('/api/communities/edit',json=dict(expected_revision=s.revision(),action='plant-plan-set',data=data)).status_code==400
+    assert s.snapshot()==before
+
+
+def test_plant_plan_multi_field_failure_and_write_failure_roll_back(store):
+    s=store;id=community(s);edit(s,'plants-add',id=id,topic_ids=['carob']);evidence(s)
+    data=dict(id=id,topic_id='carob',stages={'settlement':'configured'},fields=[dict(stage='settlement',field='amount',mode='source',evidence_id='irrigation-evidence:test',reviewed=True,rationale='Reviewed context'),dict(stage='settlement',field='frequency',mode='source',evidence_id='irrigation-evidence:missing',reviewed=True,rationale='Reviewed context')])
+    before=s.snapshot()
+    with pytest.raises(ValueError):edit(s,'plant-plan-set',**data)
+    assert s.snapshot()==before
+    data['fields'].pop()
+    with s.connect() as c:
+        event_count=c.execute('SELECT count(*) FROM planning_events').fetchone()[0]
+        c.execute("CREATE TRIGGER fail_plan_save BEFORE UPDATE ON meta WHEN NEW.key='revision' BEGIN SELECT RAISE(ABORT,'Injected atomic save failure'); END")
+    with pytest.raises(sqlite3.IntegrityError):edit(s,'plant-plan-set',**data)
+    assert s.snapshot()==before
+    with s.connect() as c:assert c.execute('SELECT count(*) FROM planning_events').fetchone()[0]==event_count
+
+
+def test_irrigation_research_preview_includes_site_parameter_and_source_boundary(store):
+    client=TestClient(create_app(store))
+    request=dict(community_id='community:qa',community_label='QA community',plant_id='carob',plant_label='Algarrobo',phase='settlement',parameter='amount',site_context='Synthetic site context',missing_parameters=['amount'],evidence_ids=['irrigation-evidence:test'])
+    result=client.post('/api/research/preview',json=dict(context=dict(knowledge_revision=store.revision(),centre='carob',selected_topic_ids=['carob'],irrigation_request=request),source_scope='Library and web',areas=['Irrigation'],instruction='Find cited source evidence; do not invent values.'))
+    assert result.status_code==200
+    data=result.json()
+    assert data['context']['irrigation_request']==request
+    assert 'Synthetic site context' in data['prompt'] and 'missing_parameters' in data['prompt']
+    assert 'Source boundary: Library and web' in data['prompt']

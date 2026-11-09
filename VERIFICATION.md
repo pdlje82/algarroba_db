@@ -1871,3 +1871,62 @@ Passed 58 frontend tests, build, 74 backend tests (one existing skip), and 24 re
 browser checks including correct source pages and preserved community naming.
 No browser exceptions. Reports and baseline: output/irrigation-context/;
 browser screenshots/results: output/irrigation-audit/. Live health reports revision 10.
+
+## Context-specific group and community editors — 9 November 2026
+
+The shared planning implementation now opens in an explicit group or community mode.
+Selected permanent records take precedence over the current layer. Existing working
+communities open directly into their member and irrigation forms; selected groups
+show organization controls only. Source habitat/community references retain the
+explicit working-copy flow. Temporary display groups have no permanent-edit action.
+The Groups/Communities tabs are removed. With no active editable context, the sidebar
+offers separate Manage groups and Manage communities entry points. Each mode retains
+its own session Undo/Redo stack, using the existing revision/conflict checks.
+
+Validation: production TypeScript/Vite build, 58 frontend tests, and 74 backend tests
+passed (one existing skip). The focused planning browser suite passed 27 checks,
+including per-mode control visibility, selection precedence, reopening the exact
+record, source-community copying, retained irrigation decisions, provenance, stale
+saves and Undo/Redo. The source viewer passed 23 browser checks and the navigation
+suite passed 37 browser checks, both with no exceptions.
+Focused editor screenshots were visually reviewed under output/planning-qa/.
+All browser writes used output/context-editor-qa/knowledge.sqlite on port 8769.
+The accepted SQLite file retained its SHA-256 and revision 11; integrity_check is ok.
+No knowledge, source editions, organization records or working plans were migrated.
+
+## Evidence desk community workspace
+
+Implemented the selected full-window Evidence desk: member plants, phase comparison
+and four phase tabs, source guidance, branded Carob & Clay light/dark surfaces,
+original local wordmark/symbol assets and responsive layouts down to 320 px. The
+community workspace remains separate from permanent group organization. Source/node
+inspection and manual research handoffs preserve the plant draft and graph context.
+
+Amount/frequency/period are read-only. Selecting evidence never fills a value;
+explicit source-condition review and an applicability note precede per-parameter
+adoption. General guidance, ranges, totals and incompatible units remain guidance.
+Existing manual/adjusted values and phase notes remain preserved and labeled. One
+plant-plan-set call commits count/notes, phase statuses and evidence-ID/clear operations
+in one transaction, revision and audit event. The server rejects supplied irrigation
+numbers, missing reviews, duplicate operations and incompatible evidence. No database
+schema migration or factual intake was performed. If plant/site context changes,
+refresh retains the draft and requires pending source adoptions to be reviewed again.
+
+Passed 62 frontend tests, 89 backend tests (one existing skip), the production build,
+49 focused editor browser checks, 37 navigation browser checks and 23 source-viewer
+browser checks. Both theme text/semantic color pairs meet 4.5:1 contrast. Visually
+reviewed desktop, phone and dark screenshots under output/planning-qa/evidence-desk/.
+All browser writes used isolated QA copies on port 8769; the current repeatable helper
+is scripts/evidence-desk-qa.py. The production bundle is index-BmKSy-gF.js.
+
+Preservation checks confirmed the accepted SQLite file is byte-identical to its
+revision-11 baseline, all 18 compared table fingerprints are unchanged and SQLite
+integrity_check is ok. Brand asset hashes match the original files. Full reports,
+source/organization snapshot and screenshots are under output/planning-qa/evidence-desk/;
+navigation/source-viewer reports remain under output/consolidation-qa/.
+
+The requested local-server restart was rejected by automatic approval review with
+only "blocked by policy". That command did not execute. The built update is ready;
+the running port-8765 server needs a normal restart to load the latest backend code.
+Unrelated README startup instructions, IDE changes and existing bytecode files were
+preserved. See EVIDENCE_DESK.md for the current UI, API and QA instructions.

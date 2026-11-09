@@ -1,8 +1,15 @@
 # Editable organization and community plans
 
-Open **Groups & communities** in the sidebar. The editor works locally and offline.
-Successful edits are saved in SQLite. Group by, graph movement and topic inspection
-remain presentation actions, separate from permanent organization.
+Select a permanent group or community and choose **Edit group** or **Edit community**
+in the sidebar or inspector. Each editor shows only controls for that record type;
+there is no Groups/Communities tab switch. An existing community opens directly into
+its member and irrigation controls. A selected record takes precedence over the
+opened layer; temporary display groups have no permanent-edit action.
+
+With no active group or community, the sidebar offers separate **Manage groups** and
+**Manage communities** entry points for choosing or creating records. The editors work
+locally and offline. Successful edits are saved in SQLite. Group by, graph movement
+and topic inspection remain presentation actions, separate from permanent organization.
 
 ## Groups
 
@@ -40,25 +47,32 @@ Membership never creates scientific statements or route shortcuts.
 
 ## Irrigation
 
-Choose a plant, lifecycle stage and **Configure values**. Stages are nursery,
-settlement, summer maintenance and support. Unconfigured, configured and not applicable
+The community editor now uses the full-window **Evidence desk** described in
+[EVIDENCE_DESK.md](EVIDENCE_DESK.md). Compare phases in the center, review source
+evidence on the right, then explicitly adopt a parameter into the plant draft.
+Amount, frequency and period are read-only. One **Save changes** action commits the
+plant details and phase decisions atomically. Missing evidence leads to research.
+Existing manual/adjusted values and all provenance remain preserved and labeled.
+
+Choose a plant and phase tab. Stages are nursery, settlement, summer maintenance and
+support. Unconfigured, configured and not applicable
 are distinct. Not applicable retains earlier values for possible reactivation;
 unconfiguring a stage retains previous values in history.
 
 Amounts use L/plant/event: litres per plant for one watering application. Legacy L/plant/watering baselines remain compatible and are preserved unchanged. Frequency/trigger, applicable period and
-notes are text. Blank means unknown. Zero requires explicit entry. There are no plant
+notes are text. Blank means unknown. Zero must be explicit in the adopted evidence. There are no plant
 profiles, inheritance, inferred amounts, schedules or budget calculations.
 
-Each field independently shows Not set, Using source value, User-set or User-adjusted.
-**View evidence & changes** exposes the retained baseline, edition SHA-256 and exact
+Each field independently shows Not set, Researched source, Existing manual value or
+Existing adjusted value. **Source basis & change history** exposes the retained baseline, edition SHA-256 and exact
 passage, source wording/units/context/applicability/limitations, adjustment reason,
 actor, timestamp and change history.
 
-**Use source value** requires compatible, quantified, species-specific evidence.
-Ranges, general guidance and incompatible units remain visible candidates. Select
-such a candidate and save an explicit user value to retain it as the basis of a
-User-adjusted planning decision. A citation to the original does not imply that it
-supports the adjustment. Clear value retains the baseline. Source restoration is
+**Adopt reviewed amount/frequency/period** requires compatible, quantified,
+species-specific evidence and an applicability review. Ranges, general guidance and
+incompatible units remain visible guidance. Existing user-adjusted records retain
+their prior basis; a citation does not imply support for the adjustment. New manual
+irrigation entry is unavailable in this workspace. Clearing retains the baseline. Source restoration is
 explicit; new research never silently replaces an active value or retained baseline.
 
 ## Persistence and recovery
@@ -73,15 +87,16 @@ typed member/irrigation records. `irrigation_evidence` contains immutable candid
 Every mutation requires `expected_revision`, runs atomically and advances the global
 revision once. HTTP 409 preserves the draft when data changed. Refresh the editor,
 review the current records and explicitly save. Unsaved drafts do not survive browser
-reload. Session Undo/Redo survives closing/reopening the editor, is separate from graph
-Back/Forward, and rejects conflicting intervening changes. Audit history stays in SQLite.
+reload. Session Undo/Redo survives closing/reopening the editor, keeps separate group
+and community histories, is separate from graph Back/Forward, and rejects conflicting
+intervening changes. Audit history stays in SQLite.
 
 ## Maintenance interfaces
 
 - `POST /api/organization/edit`: group-create, group-rename, group-move, group-delete,
   members-move, members-share, members-remove, revert.
 - `POST /api/communities/edit`: community-create, community-copy, community-edit,
-  plants-add, plant-remove, plant-edit, stage-set, field-set, revert.
+  plants-add, plant-remove, plant-edit, plant-plan-set, stage-set, field-set, revert.
 - Requests are `{expected_revision, action, data}`. Responses include revision/event ID.
   Field editing identifies community, plant, stage and field; mode is user, source or
   clear, with optional evidence_id and rationale. The browser actor is fixed as Local user.
@@ -114,6 +129,9 @@ test is `npm run test:planning`, against the isolated QA server on port 8769 wit
 Playwright module and synthetic QA evidence. Never point browser writes at 8765. Keep existing
 navigation/source-viewer suites green. Artifacts are in `output/planning-qa/`; synthetic
 amounts must never enter accepted knowledge.
+
+Use the fresh Evidence desk fixture/server helper and atomic API instructions in
+EVIDENCE_DESK.md for the current focused suite; older browser fixtures are historical.
 
 Initial fingerprints and backup location are in `backups/community-editor-baseline.json`.
 Keep SQLite backups with managed sources/media. Verify restoration separately and stop the

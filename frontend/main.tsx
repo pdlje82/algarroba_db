@@ -43,7 +43,7 @@ import { buildScene, previousScenes, isInteractiveRecord } from "./scene";
 import { SceneView, GraphBoundary, type SceneHandle } from "./SceneView";
 import { useAppearance, useFullScreen } from "./workspace";
 import { ResearchPanel, Refs } from "./dialogs";
-import { rootGroup, groupLabel } from "./organization";
+import { rootGroup, groupLabel, editorTarget, type EditorTarget } from "./organization";
 import { PlanningPanel } from './PlanningPanel';
 import { topicNames } from "./speciesNames";
 import { SourcePanel } from "./SourcePanel";
@@ -67,7 +67,7 @@ function App() {
     [saved, setSaved] = useState<any[] | null>(null),
     [saving, setSaving] = useState(false),
     [saveName, setSaveName] = useState("");
-  const [planning,setPlanning]=useState(false),[planningTarget,setPlanningTarget]=useState<string|null>(null);
+  const [planning,setPlanning]=useState(false),[planningTarget,setPlanningTarget]=useState<EditorTarget>({kind:'group',id:null});
   const [loading, setLoading] = useState(true),
     [error, setError] = useState(""),
     [toast, setToast] = useState(""),
@@ -448,6 +448,9 @@ function App() {
     inspectedGroup = catalog?.browse_groups.find(g=>g.id===(selected?.displayGroup ? selected.groupKey : !selected && state.scope==='group' ? state.groupId : null)),
     selectedEdge = catalog?.relationships.find((e) => e.id === selected?.id),
     selectedCard = scene?.cards.find((c) => c.id === selected?.id);
+  const selectedEditor = editorTarget(selected?.displayGroup ? selected.groupKey : selected?.id, catalog);
+  const activeEditor = selectedEditor || (!selected?.displayGroup && state.scope==='group' ? editorTarget(state.groupId,catalog) : null);
+  const openEditor = (target: EditorTarget) => {setPlanningTarget(target);setPlanning(true);};
   const relationshipIds =
     selectedRoute?.edges ||
     selected?.constituent_ids ||
@@ -673,7 +676,10 @@ function App() {
       <div className="app-body">
         <aside className="sidebar">
           <p className="eyebrow">START WITH AN AREA</p>
-          <button className="primary planning-launch" onClick={()=>{setPlanningTarget(state.groupId);setPlanning(true);}}>Groups & communities</button>
+          {activeEditor ? <button className="primary planning-launch" onClick={()=>openEditor(activeEditor)}>{activeEditor.sourceId?'Create editable community':'Edit '+activeEditor.kind}</button> : <>
+            <button className="planning-launch" onClick={()=>openEditor({kind:'group',id:null})}>Manage groups</button>
+            <button className="planning-launch" onClick={()=>openEditor({kind:'community',id:null})}>Manage communities</button>
+          </>}
           {ROOT_GROUPS.map(id=>groupNavigation(id))}
           {catalog.browse_groups.filter(g=>g.parent_id.startsWith('domain:')).map(g=>groupNavigation(g.id))}
           <hr />
@@ -1175,7 +1181,7 @@ function App() {
                   )}
                   {selectedTopic && (
                     <>
-                      {selectedTopic.kind==='habitat'&&<button onClick={()=>{setPlanningTarget(selectedTopic.id);setPlanning(true);}}>Create editable community from this</button>}
+                      {selectedTopic.kind==='habitat'&&<button onClick={()=>openEditor({kind:'community',id:null,sourceId:selectedTopic.id})}>Create editable community from this</button>}
                       <div className="actions">
                         <button
                           className="primary"
@@ -1290,8 +1296,8 @@ function App() {
                         ))}
                     </>
                   )}
-                  {selected?.displayGroup && (
-                    <button onClick={()=>{setPlanningTarget(selected.groupKey);setPlanning(true);}}>Edit group / community</button>
+                  {selectedEditor && !selectedEditor.sourceId && (
+                    <button onClick={()=>openEditor(selectedEditor)}>Edit {selectedEditor.kind}</button>
                   )}
                   {selected?.displayGroup && (
                     <button
@@ -1597,7 +1603,7 @@ function App() {
           }}
         />
       )}
-      <PlanningPanel open={planning} catalog={catalog} initialGroup={planningTarget} close={()=>setPlanning(false)} openSource={ref=>{setPlanning(false);setSource(ref);}} navigate={id=>{setPlanning(false);dispatch({type:'group',id});}} changed={async c=>{setCatalog(c);const h=snapshot();await perform(h.entries[h.index],c,h,'replace',h.index,true);}}/>
+      <PlanningPanel open={planning} catalog={catalog} target={planningTarget} close={()=>setPlanning(false)} openSource={ref=>{setPlanning(false);setSource(ref);}} navigate={id=>{setPlanning(false);dispatch({type:'group',id});}} changed={async c=>{setCatalog(c);const h=snapshot();await perform(h.entries[h.index],c,h,'replace',h.index,true);}} researchContext={getContext} taskCreated={task=>setTasks(tasks=>[task,...tasks.filter(t=>t.id!==task.id)])}/>
       {library && (
         <div className="modal-shade">
           <section className="modal" role="dialog" aria-label="Source library">

@@ -319,3 +319,15 @@ the existing project/method records; never relabel general LIFE evidence as caro
 Use checked new batches and preserve original finding wording and immutable irrigation
 evidence/working plans. Contextual community-to-phase links are curated organization of
 source-backed advice, not a universal planting recipe or inherited dose for companions.
+
+## Evidence desk community workspace (9 November 2026)
+
+The user approved the full-window Evidence desk and source-led irrigation decisions.
+Read EVIDENCE_DESK.md. Keep group organization separate. Amount/frequency/period are
+read-only; explicit applicability review and source adoption precede one atomic plant
+save. Use plant-plan-set with evidence IDs, never client-supplied irrigation numbers.
+Preserve legacy values/baselines and immutable evidence; research and refresh never
+overwrite active decisions. Keep citations, node inspection and manual research handoffs
+inside the workspace without losing the draft. Test mutations only in isolated QA stores.
+Branding is copied into public/branding; runtime never reads the old app. No factual
+intake or database schema migration is part of this interface change.

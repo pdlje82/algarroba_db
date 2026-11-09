@@ -81,6 +81,71 @@ class Edit(Strict):
     data: dict = {}
 
 
+class PlantPlanDetails(Strict):
+    count: int | None = Field(default=None, ge=0, strict=True)
+    notes: str = ''
+
+
+class PlantPlanField(Strict):
+    stage: Literal['nursery', 'settlement', 'summer-maintenance', 'support']
+    field: Literal['amount', 'frequency', 'period']
+    mode: Literal['source', 'clear']
+    evidence_id: str | None = None
+    reviewed: bool = Field(default=False, strict=True)
+    rationale: str = Field(default='', max_length=4000)
+
+
+class PlantPlanSet(Strict):
+    id: str
+    topic_id: str
+    changes: PlantPlanDetails = Field(default_factory=PlantPlanDetails)
+    stages: dict[Literal['nursery', 'settlement', 'summer-maintenance', 'support'], Literal['unconfigured', 'configured', 'not-applicable']] = {}
+    fields: list[PlantPlanField] = []
+
+
+def apply_plant_plan(plant, raw, evidence, actor, stamp):
+    """Patch one plant atomically. Irrigation values are always read from checked evidence."""
+    plan = PlantPlanSet.model_validate(raw)
+    changes = plan.changes.model_dump(exclude_unset=True)
+    if not (changes or plan.stages or plan.fields):
+        raise ValueError('Choose a plant change or adopt researched evidence before saving')
+    plant.update(changes)
+    for stage, status in plan.stages.items():
+        if status == 'unconfigured':
+            plant['irrigation'].pop(stage, None)
+        else:
+            plant['irrigation'].setdefault(stage, IrrigationStage().model_dump())['status'] = status
+    seen = set()
+    for operation in plan.fields:
+        key = (operation.stage, operation.field)
+        if key in seen:
+            raise ValueError('Choose only one operation per phase and parameter')
+        seen.add(key)
+        irrigation = plant['irrigation'].get(operation.stage)
+        if irrigation is None or irrigation['status'] != 'configured':
+            raise ValueError('Configure this phase before changing its values')
+        previous = irrigation['fields'].get(operation.field, PlannedField().model_dump())
+        field = dict(previous, actor=actor, changed_at=stamp, rationale=operation.rationale.strip())
+        if operation.mode == 'clear':
+            if operation.evidence_id is not None:
+                raise ValueError('Clear does not adopt evidence')
+            field.update(value=None, origin='not-set')
+        else:
+            if not operation.reviewed or not field['rationale']:
+                raise ValueError('Review the source conditions and explain applicability before adoption')
+            source = evidence.get(operation.evidence_id)
+            if source is None or source['species_id'] != plant['topic_id'] or source['stage'] != operation.stage or source['field'] != operation.field:
+                raise ValueError('Choose species-specific evidence for this phase and parameter')
+            value = source['value']
+            if operation.field == 'amount':
+                if source['units'] not in EVENT_AMOUNT_UNITS or type(value) not in (int, float) or not math.isfinite(value) or value < 0:
+                    raise ValueError('Adopt a quantified amount in L/plant/event; ranges and other units remain guidance')
+            elif not isinstance(value, str) or not value.strip():
+                raise ValueError('Unquantified evidence remains guidance; research this parameter')
+            field.update(value=value, origin='source', baseline=copy.deepcopy(source))
+        irrigation['fields'][operation.field] = field
+
+
 class Conflict(ValueError):
     pass
 
@@ -369,7 +434,7 @@ def apply_edit(store, edit: Edit, actor='Local user', dry_run=False):
                 community['origin'] = dict(id=origin_id, revision=revision, label=origin['label'], selection='User-defined selection of recorded associations')
             communities[id] = community
             affected = id
-        elif action.startswith('community-') or action in {'plants-add', 'plant-remove', 'plant-edit', 'stage-set', 'field-set'}:
+        elif action.startswith('community-') or action in {'plants-add', 'plant-remove', 'plant-edit', 'plant-plan-set', 'stage-set', 'field-set'}:
             id = data['id']
             community = communities.get(id)
             if community is None or community['kind'] != 'working':
@@ -395,6 +460,9 @@ def apply_edit(store, edit: Edit, actor='Local user', dry_run=False):
                     if not set(data['changes']) <= {'count', 'notes'}:
                         raise ValueError('Unsupported plant changes')
                     plant.update(data['changes'])
+                elif action == 'plant-plan-set':
+                    apply_plant_plan(plant, data, {e['id']: e for e in records(c, 'irrigation_evidence')}, actor, stamp)
+                    affected = id
                 elif action in {'stage-set', 'field-set'}:
                     stage = data['stage']
                     if stage not in STAGES:
