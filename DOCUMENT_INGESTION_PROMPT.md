@@ -24,7 +24,7 @@ The following is a dated observation, not a baseline to hardcode into future run
 
 | Area | What already exists |
 | --- | --- |
-| Owned library | `doc_library/`, verified against the ownership inventory: 379 files, including 49 PDFs. Other formats are outside this prompt's default intake. |
+| Owned library | `doc_library/`, verified against the ownership inventory: 187 files after the 10 November ebook/listening-material cleanup, including all 49 original PDFs. Other formats are outside this prompt's default intake. |
 | Accepted knowledge | `data/knowledge.sqlite`, revision 11 when inspected: 316 topics, 411 relationships, 171 findings, 21 registered sources of mixed kinds, 100 inspected PDF positions and seven persistent browse groups. |
 | Maintenance interface | `backend.cli`: search, inspect, export, groups, backup, import preview/application, source registration and completion of existing research tasks. |
 | Import validation | `backend/store.py` and `imports/CONTRACT.md`: source hashes, page references, coverage, endpoints, groups, immutable batch IDs, revision checks, backups and transactional application. |

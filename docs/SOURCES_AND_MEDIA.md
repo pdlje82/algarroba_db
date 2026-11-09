@@ -35,9 +35,20 @@ new metadata-only batch while preserving source bytes and immutable evidence/sna
 
 The ownership operation completed on 8 November 2026. It copied and preserved files; that operation did not extract, index or ingest their contents. Later knowledge intake has its own page coverage.
 
+### Ebook and listening-material cleanup (10 November 2026)
+
+At the user's request, 192 ebook/listening files were removed from the active library: six EPUBs,
+dedicated listening-primer/illustrated-edition folders, listening texts and ebook delivery archives.
+The collection now contains 187 files. All 49 PDFs retain their original hashes; accepted knowledge
+and registered source copies are unchanged. The catalogue and ownership inventory were reconciled,
+and library verification passed. [The removal record](../imports/document-library-removals-2026-11-10.json)
+lists exact paths, hashes and recoverable copies under `backups/` outside the active library.
+The original 8 November library archive below describes the pre-cleanup collection; restoring it
+also restores the removed materials. Use the current inventory when checking the active collection.
+
 ### Collection and authority
 
-Copied 378 files (601,507,644 bytes) recursively from `C:\Users\JanEngelke\git_private\algarrobos\doc_library` into this project’s `doc_library/`. The existing tracked `Scientific_Knowledge_Graphs_ElevenReader.epub` is preserved, giving 379 files and 603,608,676 bytes in the owned folder.
+The initial ownership operation copied 378 files (601,507,644 bytes) recursively from `C:\Users\JanEngelke\git_private\algarrobos\doc_library` into this project’s `doc_library/`. It also preserved the existing tracked `Scientific_Knowledge_Graphs_ElevenReader.epub`, giving 379 files and 603,608,676 bytes before the later cleanup.
 
 All original filenames, relative directories, catalogue/history files and bytes are preserved. All 378 copied file modification timestamps match their originals on this filesystem. Companion images, EPUBs, scripts, archives, CAD/GIS data and the existing compiled Python file were copied as opaque files. Copied scripts were not executed; embedded archives were not unpacked. Historical absolute paths or external links inside documents remain original text, not automatically rewritten or downloaded.
 
@@ -45,7 +56,7 @@ Ownership metadata is in `imports/document-library-inventory.json`, separately f
 
 Existing registered copies under `sources/library/` and `sources/plant-intake/` remain in place. No deduplication or citation-path changes were made. No new source registrations, graph records, text extraction, OCR, embeddings or search indexing were performed.
 
-New document bytes are ignored by Git under `/doc_library/`. The pre-existing tracked EPUB remains tracked. Git stores the inventory, tooling, tests and this report; a code-only checkout does not carry the local collection.
+Document bytes are ignored by Git under `/doc_library/`. The previously tracked EPUB was removed in the 10 November cleanup. Git stores the inventory, tooling, tests and this report; a code-only checkout does not carry the local collection.
 
 ### Commands
 
