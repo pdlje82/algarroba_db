@@ -1,9 +1,13 @@
 import assert from 'node:assert/strict';
 import {pathToFileURL} from 'node:url';
 import {writeFileSync} from 'node:fs';
+import {buildScene,sceneFrame,sceneRectangles} from '../frontend/scene.ts';
+import {boxesOverlap} from '../frontend/relationshipCircle.ts';
 const {chromium}=await import(pathToFileURL(process.env.KGB_PLAYWRIGHT_MODULE).href);
 const url='http://127.0.0.1:8769';
 assert.ok((await(await fetch(url+'/api/health')).json()).project.replaceAll('\\','/').endsWith('/output/consolidation-qa'));
+const catalog=await(await fetch(url+'/api/catalog')).json();
+const reference=await(await fetch(url+'/api/explore?scope=neighbors&centre=carob-community')).json();
 const browser=await chromium.launch({channel:'msedge',headless:true});
 const page=await browser.newPage({viewport:{width:1600,height:1150},reducedMotion:'reduce'});
 const checks=[],errors=[];page.on('pageerror',e=>errors.push(e.message));page.setDefaultTimeout(18000);
@@ -39,16 +43,13 @@ const circle=s=>{
 };
 try{
   await page.goto(url);await idle();
-  await page.locator('.sidebar').getByRole('button',{name:'Plant communities',exact:true}).click();await idle();
-  await page.locator('.visible-topics summary').click();
-  await page.getByRole('button',{name:'Inspect Carob plant communities',exact:true}).click();
   await page.evaluate(()=>window.__connectionDraws=[]);
-  await page.getByRole('button',{name:'Explore this topic',exact:true}).click();await idle();
+  await page.getByLabel('Centre',{exact:true}).selectOption('carob-community');await idle();
   let s=await state();circle(s);const positions=structuredClone(s.positions);
   let windowBounds=await page.locator('.graph-canvas').boundingBox();
   let renderedFrame=await page.evaluate(()=>window.__layerFrames.at(-1));
   check('The rendered connection frame matches the graph window proportions',renderedFrame&&Math.abs(renderedFrame.width/renderedFrame.height-windowBounds.width/windowBounds.height)<0.00001);
-  check('Nine related topics form four upper and five lower arc positions',s.view.endpoint_ids.length===9&&Object.keys(s.positions).length===10);
+  check('Related topics split evenly across upper and lower arcs',s.view.endpoint_ids.length===reference.endpoint_ids.length&&Object.keys(s.positions).length===reference.endpoint_ids.length+1);
   const draws=await page.evaluate(()=>window.__connectionDraws);
   check('All incoming/outgoing labels are drawn, including all eight companion labels',draws.filter(d=>d.text==='includes companion').length>=8&&draws.some(d=>d.text==='occurs in'));
   check('Canvas text fits its reserved label surface',draws.every(d=>d.width<=d.maxWidth));
@@ -73,19 +74,38 @@ try{
   await page.setViewportSize({width:1100,height:900});await page.getByRole('button',{name:'Fit',exact:true}).click();await idle();
   const resized=await state();circle(resized);assert.notDeepEqual(resized.positions,positions);assert.deepEqual(Object.keys(resized.positions).sort(),Object.keys(positions).sort());check('Resizing adapts the arcs to the window without changing their member topics');
   windowBounds=await page.locator('.graph-canvas').boundingBox();renderedFrame=await page.evaluate(()=>window.__layerFrames.at(-1));
-  check('Topics use most of the resized frame height',(()=>{const points=Object.values(resized.positions);return (Math.max(...points.map(p=>p.y))+62-Math.min(...points.map(p=>p.y))+62)/renderedFrame.height>.85;})());
+  check('Resized topic spacing stays compact',(()=>{const points=Object.values(resized.positions),w=Math.max(...points.map(p=>p.x))-Math.min(...points.map(p=>p.x))+234,h=Math.max(...points.map(p=>p.y))-Math.min(...points.map(p=>p.y))+124;return h/w<1.35&&w/h<1.65;})());
   check('The frame and topic arcs follow the resized window format',renderedFrame&&Math.abs(renderedFrame.width/renderedFrame.height-windowBounds.width/windowBounds.height)<0.00001);
   await page.screenshot({path:'output/consolidation-qa/relationship-circle-portrait-frame.png'});
   await page.setViewportSize({width:1500,height:2100});await page.getByRole('button',{name:'Fit',exact:true}).click();await idle();
   const tall=await state();circle(tall);const tallBounds=await page.locator('.graph-canvas').boundingBox();
   const tallFrame=await page.evaluate(()=>window.__layerFrames.at(-1));
-  check('A tall layer uses four upper and five lower topics across its available height',tallBounds.height>tallBounds.width&&Object.values(tall.positions).filter(p=>p.y<0).length===4&&Object.values(tall.positions).filter(p=>p.y>0).length===5&&(Math.max(...Object.values(tall.positions).map(p=>p.y))-Math.min(...Object.values(tall.positions).map(p=>p.y))+124)/tallFrame.height>.85);
+  check('A tall layer leaves margins instead of stretching its topics',tallBounds.height>tallBounds.width&&(Math.max(...Object.values(tall.positions).map(p=>p.y))-Math.min(...Object.values(tall.positions).map(p=>p.y))+124)/tallFrame.height<.8);
   await page.screenshot({path:'output/consolidation-qa/relationship-circle-tall-arcs.png'});
   await page.setViewportSize({width:1600,height:1150});
   await page.getByRole('button',{name:'Fit',exact:true}).click();await idle();assert.deepEqual((await state()).positions,positions);check('Returning to the original window size restores its deterministic arc layout');
   await page.getByLabel('Centre',{exact:true}).selectOption('carob');await idle();circle(await state());check('A larger carob neighbourhood also forms a complete circle');
   await page.getByLabel('Centre',{exact:true}).selectOption('cocoon');await idle();circle(await state());check('Mixed methods, conditions and equipment remain in one circle');
-  await page.getByLabel('Remove centre',{exact:true}).click();await idle();s=await state();check('Removing the centre keeps neighbours and removes the centre card',!s.centre&&!s.positions.cocoon&&s.view.endpoint_ids.length>0);
+  await page.getByLabel('Centre',{exact:true}).selectOption('carob-community-almeria');await idle();
+  const almeria=await state(),memberIds=Object.keys(almeria.positions).sort(),edgeIds=almeria.view.edges.map(e=>e.id).sort();
+  await page.setViewportSize({width:2000,height:2400});
+  const formatStyle=await page.addStyleTag({content:'.canvas-wrap {width:960px!important;height:540px!important;min-height:0!important;}'});
+  for(const [name,aspect] of [['16-9',16/9],['4-3',4/3],['1-1',1],['3-4',3/4],['9-16',9/16]]){
+    await formatStyle.evaluate((el,aspect)=>el.textContent=`.canvas-wrap {width:960px!important;height:${960/aspect}px!important;min-height:0!important;}`,aspect);
+    await idle();await page.getByRole('button',{name:'Fit',exact:true}).click();await idle();
+    const current=await state(),bounds=await page.locator('.graph-canvas').boundingBox(),scene=buildScene(current,current.view,catalog,bounds.width/bounds.height);
+    circle(current);assert.deepEqual(Object.keys(current.positions).sort(),memberIds);assert.deepEqual(current.view.edges.map(e=>e.id).sort(),edgeIds);
+    const frame=sceneFrame(scene,aspect),rects=sceneRectangles(scene),boxes=rects.map(r=>({...r.position,width:r.width,height:r.height}));
+    for(let i=0;i<boxes.length;i++)for(let j=i+1;j<boxes.length;j++)assert.ok(!boxesOverlap(boxes[i],boxes[j]));
+    assert.ok(Math.abs(bounds.width/bounds.height-aspect)<.002);
+    for(const r of rects){assert.ok(r.position.x-r.width/2>=frame.minX&&r.position.x+r.width/2<=frame.maxX);assert.ok(-r.position.y-r.height/2>=frame.minY&&-r.position.y+r.height/2<=frame.maxY);}
+    const points=Object.values(current.positions),w=Math.max(...points.map(p=>p.x))-Math.min(...points.map(p=>p.x))+234,h=Math.max(...points.map(p=>p.y))-Math.min(...points.map(p=>p.y))+124;
+    assert.ok(h/w<1.35&&w/h<1.65);
+    check('Almería community stays compact with clear labels and all facts at '+name);
+    if(name==='16-9'||name==='9-16')await page.locator('.graph-canvas').screenshot({path:`output/consolidation-qa/compact-almeria-${name}.png`});
+  }
+  await formatStyle.evaluate(el=>el.remove());await page.setViewportSize({width:1600,height:1150});await idle();
+  await page.getByLabel('Remove centre',{exact:true}).click();await idle();s=await state();check('Removing the centre keeps neighbours and removes the centre card',!s.centre&&!s.positions['carob-community-almeria']&&s.view.endpoint_ids.length>0);
   check('No browser JavaScript exceptions',errors.length===0);
 }catch(e){console.error(e.stack);await page.screenshot({path:'output/consolidation-qa/relationship-circle-failure.png'}).catch(()=>{});process.exitCode=1;}
 finally{writeFileSync('output/consolidation-qa/relationship-circle-results.json',JSON.stringify({checks,errors},null,2));await Promise.race([browser.close(),new Promise(resolve=>setTimeout(resolve,2000))]);}

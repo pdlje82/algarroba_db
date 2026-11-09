@@ -45,7 +45,7 @@ import { useAppearance, useFullScreen } from "./workspace";
 import { ResearchPanel, Refs } from "./dialogs";
 import { rootGroup, groupLabel } from "./organization";
 import { PlanningPanel } from './PlanningPanel';
-import { speciesNames } from "./speciesNames";
+import { topicNames } from "./speciesNames";
 import { SourcePanel } from "./SourcePanel";
 import { PlantImages } from "./PlantImages";
 import "./style.css";
@@ -804,6 +804,8 @@ function App() {
               Group by
               <select
                 aria-label="Group by"
+                disabled={state.scope==='group' && catalog.browse_groups.find(g=>g.id===state.groupId)?.member_layout==='vertical'}
+                title={state.scope==='group' && catalog.browse_groups.find(g=>g.id===state.groupId)?.member_layout==='vertical'?'This group follows its top-to-bottom sequence.':undefined}
                 value={state.grouping}
                 onChange={(e) =>
                   dispatch({ type: "grouping", value: e.target.value as any })
@@ -1092,9 +1094,9 @@ function App() {
                         {c.outOfDomain ? " · Outside selected domain" : ""}
                         {pending.includes(c.id) ? " · To research" : ""}
                       </button>
-                      {c.record.kind === "species" && (
+                      {topicNames(c.record).length > 0 && (
                         <div className="species-names">
-                          {speciesNames(c.record).map((name) => (
+                          {topicNames(c.record).map((name) => (
                             <span key={name.label} lang={name.language}>{name.label}: {name.value}</span>
                           ))}
                         </div>
@@ -1199,10 +1201,10 @@ function App() {
                         </button>
                       </div>
                       {selectedTopic.kind === "species" && <PlantImages key={selectedTopic.id} topic={selectedTopic}/>}
-                      {selectedTopic.kind === "species" ? (
+                      {topicNames(selectedTopic).length > 0 ? (
                         <div className="species-name-details">
                           <dl>
-                            {speciesNames(selectedTopic).map((name) => (
+                            {topicNames(selectedTopic).map((name) => (
                               <React.Fragment key={name.label}>
                                 <dt>{name.label === "ES" ? "Spanish" : name.label === "EN" ? "English" : "Scientific name"}</dt>
                                 <dd lang={name.language}>{name.label === "Sci" ? <em>{name.value}</em> : name.value}</dd>
@@ -1210,7 +1212,7 @@ function App() {
                             ))}
                           </dl>
                           <small>Database ID: {selectedTopic.id}</small>
-                          {selectedTopic.name_note && <p>{selectedTopic.name_note}</p>}
+                          {selectedTopic.kind === "species" && selectedTopic.name_note && <p>{selectedTopic.name_note}</p>}
                           {!!selectedTopic.name_references?.length && (
                             <details>
                               <summary>Naming references</summary>
@@ -1220,7 +1222,7 @@ function App() {
                             </details>
                           )}
                         </div>
-                      ) : selectedTopic.scientific_name && <p><em>{selectedTopic.scientific_name}</em></p>}
+                      ) : selectedTopic.kind!=="habitat" && selectedTopic.scientific_name && <p><em>{selectedTopic.scientific_name}</em></p>}
                       {selectedTopic.plant_profile && <details className="plant-profile"><summary>Illustration notes</summary><p>{selectedTopic.plant_profile.identifying_features}</p><p>{selectedTopic.plant_profile.growth_form}</p><small>{selectedTopic.plant_profile.basis}</small></details>}
                       {(selectedTopic.aliases?.length || 0) > 0 && (
                         <p>

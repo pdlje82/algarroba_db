@@ -45,18 +45,21 @@ export function cardPort(card: Pick<SceneCard, 'width' | 'height'>, at: Point, t
 
 function placeLabels(cards: SceneCard[], links: SceneLink[], positions: Record<string, Point>, centre: string) {
   const byId = new Map(cards.map(card => [card.id, card]));
+  const shapes = new Map(links.map(link => [link.id, connectionLabel(link.record.label)]));
   const obstacles: Box[] = cards.map(card => ({ ...positions[card.id], width: card.width, height: card.height }));
   const labels: Record<string, ConnectionLabel> = {};
   const order = [...links].sort((a, b) => {
     const primary = (e: SceneLink) => e.source === centre || e.target === centre;
-    return Number(primary(b)) - Number(primary(a)) || a.id.localeCompare(b.id);
+    const area = (e: SceneLink) => shapes.get(e.id)!.width * shapes.get(e.id)!.height;
+    // Reserve the harder, larger labels first; short labels can use the gaps.
+    return Number(primary(b)) - Number(primary(a)) || area(b) - area(a) || a.id.localeCompare(b.id);
   });
   for (const link of order) {
     const a = byId.get(link.source), b = byId.get(link.target);
     if (!a || !b) throw new Error('A displayed connection endpoint is missing.');
     const start = cardPort(a, positions[a.id], positions[b.id]);
     const end = cardPort(b, positions[b.id], positions[a.id]);
-    const shape = connectionLabel(link.record.label);
+    const shape = shapes.get(link.id)!;
     let placed: ConnectionLabel | undefined;
     // Central spokes stay on their actual lines. Parallel or secondary relationships
     // may use an explicit leader, never over a card or another label.
@@ -64,9 +67,9 @@ function placeLabels(cards: SceneCard[], links: SceneLink[], positions: Record<s
     const distance = Math.hypot(end.x - start.x, end.y - start.y);
     const parallel=links.some(other=>other.id!==link.id&&((other.source===link.source&&other.target===link.target)||(other.source===link.target&&other.target===link.source)));
     const step=Math.min((shape.width+16)/Math.max(0.0001,Math.abs(end.y-start.y)/distance),(shape.height+16)/Math.max(0.0001,Math.abs(end.x-start.x)/distance));
-    const offsets = primary ? parallel?[0,step,-step,step*2,-step*2,step*3,-step*3]:[0] : [0, 28, -28, 56, -56, 90, -90];
+    const offsets = primary && !parallel ? [0] : [0,step,-step,step*2,-step*2,step*3,-step*3];
     for (const offset of offsets) {
-      for (const t of [0.5, 0.6, 0.4, 0.7, 0.3, 0.8, 0.2]) {
+      for (const t of [.5,.65,.35,.8,.2,.575,.425,.725,.275,.875,.125]) {
         const anchor = { x: start.x + (end.x - start.x) * t, y: start.y + (end.y - start.y) * t };
         const position = { x: anchor.x - (end.y - start.y) / distance * offset, y: anchor.y + (end.x - start.x) / distance * offset };
         const box = { ...position, width: shape.width, height: shape.height };
@@ -108,19 +111,22 @@ export function retainedRelationshipArc(cards:SceneCard[],links:SceneLink[],cent
   return labels?{positions,labels}:null;
 }
 
-/** Balanced upper/lower arcs fitted to the layer, with space for complete labels. */
+/** Compact upper/lower arcs: the window guides the shape without stretching it. */
 export function relationshipCircle(cards: SceneCard[], links: SceneLink[], centre: string, aspect=1) {
   if(!Number.isFinite(aspect)||aspect<=0)throw new Error('The graph window dimensions are unavailable.');
   if (!cards.some(card => card.id === centre)) throw new Error('The exploration centre is missing.');
   const neighbours = cards.filter(card => card.id !== centre).sort((a,b) => a.record.label.localeCompare(b.record.label) || a.id.localeCompare(b.id));
   if (!neighbours.length) return { positions: { [centre]: { x: 0, y: 0 } }, labels: {} as Record<string, ConnectionLabel> };
   const angles=arcAngles(neighbours.length);
+  // The frame retains the full viewport ratio. Content can leave margins instead
+  // of becoming a very tall or wide ring; grow only until cards and labels fit.
+  const contentAspect = Math.max(0.8, Math.min(1.5, aspect));
   const extentX=Math.max(...angles.map(a=>Math.abs(Math.cos(a))));
   const extentY=Math.max(...angles.map(a=>Math.abs(Math.sin(a))));
   const paddingX=Math.max(...cards.map(c=>c.width))/2+25,paddingY=Math.max(...cards.map(c=>c.height))/2+25;
   for (let radius = 260; radius <= 12000; radius += 12) {
-    const rx=neighbours.length<3 ? radius*Math.sqrt(aspect) : radius;
-    const ry=neighbours.length<3 ? radius/Math.sqrt(aspect) : ((rx*extentX+paddingX)/aspect-paddingY)/extentY;
+    const rx=neighbours.length<3 ? radius*Math.sqrt(contentAspect) : radius;
+    const ry=neighbours.length<3 ? radius/Math.sqrt(contentAspect) : ((rx*extentX+paddingX)/contentAspect-paddingY)/extentY;
     if(ry<=0)continue;
     const positions: Record<string, Point> = { [centre]: { x: 0, y: 0 } };
     neighbours.forEach((card,i) => {

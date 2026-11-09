@@ -219,7 +219,7 @@ export function buildScene(
     // History retains its membership/layout; names follow the canonical database ID.
     const canonical = topicMap.get(id);
     if(canonical){record.label=canonical.label;record.description=canonical.description;}
-    if (canonical?.kind === "species") {
+    if (canonical?.kind === "species" || canonical?.kind === "habitat") {
       for (const key of ["spanish_name", "english_name", "scientific_name", "name_status", "plant_images"])
         record[key] = canonical[key];
     }

@@ -1,0 +1,3724 @@
+{
+  "batch_id": "irrigation-lifecycle-carob-context-2026-11-08-v1",
+  "base_revision": 6,
+  "summary": "Reader-facing ordered irrigation lifecycle, per-event units, contextual source evidence and Mediterranean/Almería carob communities.",
+  "topics": [
+    {
+      "id": "nursery-irrigation",
+      "label": "Nursery watering",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "Before field planting, maintain suitable substrate moisture and adapt irrigation to the growing stage, stock, climate and hardening programme. LIFE NIEBLAS documents a project nursery regime; the carob handbook does not prescribe a universal numerical nursery dose.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Nursery regime"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Nursery regime"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Tables 4.4/4.5a/4.5b and nursery irrigation caveat"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 73,
+          "locator": "Tables 4.4/4.5a/4.5b and nursery irrigation caveat"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 74,
+          "locator": "Tables 4.4/4.5a/4.5b and nursery irrigation caveat"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Tables 4.4/4.5a/4.5b and nursery irrigation caveat"
+        }
+      ],
+      "aspects": {
+        "Purpose": "Prepare plants before field planting.",
+        "Amount": "LIFE NIEBLAS: approximately 0.3 L/plant/event as an average calculated from 30 L for 100 plants. Carob handbook: Not specified in this source.",
+        "Frequency or trigger": "LIFE: twice weekly. Carob: frequent irrigation during growth; more intense, spaced applications during hardening, adapted to weather.",
+        "Applicable period": "Nursery growth and preconditioning before planting; no universal calendar.",
+        "Age and stock": "Nursery one-season stock (1+0) and two-season grafted stock (1+1) have different programmes. These ages are not years since field planting.",
+        "Limitations": "A 1 L or 3 L pot is container capacity, not water dose. Up to 10% leaching describes drainage, not litres per plant. A batch average is not a measured individual dose."
+      }
+    },
+    {
+      "id": "settlement-irrigation",
+      "label": "Settlement watering",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "The first water supplied immediately after field planting helps settle the planted root zone. Keep this single purpose separate from maintenance and support throughout the following establishment years.",
+      "aliases": [
+        "riego de asiento"
+      ],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Settlement and reservoir filling"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Settlement and reservoir filling"
+        }
+      ],
+      "aspects": {
+        "Purpose": "First watering immediately after field planting.",
+        "Amount": "LIFE: 10–15 L/plant/event; Cocoon also receives a separate 20 L reservoir fill.",
+        "Frequency or trigger": "At planting. Subsequent watering is classified by its purpose.",
+        "Applicable period": "The planting date; a universal month is Not specified in this source.",
+        "Age and stock": "Newly field-planted seedlings, which may already have spent one or more seasons in a nursery.",
+        "Limitations": "LIFE project choices across methods, not a universal carob dose. Tank filling is a separate quantity. “Establishment watering” may span several years and is broader than settlement."
+      }
+    },
+    {
+      "id": "maintenance-irrigation",
+      "label": "Summer maintenance watering",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "Recurring watering during summer or another difficult period follows a documented interval or trigger. Read the method, site, season and establishment period together rather than selecting a dose on its own.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "First-year context, storage planning and maintenance regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "First-year context, storage planning and maintenance regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "First-year context, storage planning and maintenance regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "locator": "First-year context, storage planning and maintenance regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "locator": "First-year context, storage planning and maintenance regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "First-year context, storage planning and maintenance regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "First-year context, storage planning and maintenance regimes"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 96,
+          "locator": "General summer advice and finca practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "General summer advice and finca practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "General summer advice and finca practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "General summer advice and finca practices"
+        }
+      ],
+      "aspects": {
+        "Purpose": "Recurring water during difficult seasonal conditions.",
+        "Amount": "LIFE traditional/Cocoon: 15 L/plant/event; IND: 10 L/plant/event. “SAD”: approximately 15 L/plant/event. Carob examples have their own doses.",
+        "Frequency or trigger": "Traditional/Cocoon/IND: monthly. “SAD”: tank filling triggers discharge; the project describes about every three weeks, not a guaranteed interval.",
+        "Applicable period": "LIFE traditional/Cocoon/IND: July–September inclusive. SAD calendar season: Not specified in this source.",
+        "Age and stock": "LIFE method passages discuss the first field year. Carob examples include the first two summers; this does not establish a universal stopping age.",
+        "Limitations": "The first-year water-network estimate (about 40 L/plant, around 12.5 L/event) is a storage-planning estimate, separate from method-specific schedules. Seasonal totals cannot supply a dose by themselves."
+      }
+    },
+    {
+      "id": "support-irrigation",
+      "label": "Support watering during stress",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "Additional water may be considered when weather, soil moisture or plant condition indicates stress. It can overlap the establishment and maintenance periods; being listed last does not make it a final lifecycle stage.",
+      "aliases": [
+        "emergency watering"
+      ],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Support triggers"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Support triggers"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Emergency practice and MR2 support"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Emergency practice and MR2 support"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Emergency practice and MR2 support"
+        }
+      ],
+      "aspects": {
+        "Purpose": "Respond to unusually dry weather, heat or plant stress.",
+        "Amount": "LIFE: Not specified in this source. MR2: Not specified in this source. El Triguero reports 50 L/plant/event as a site-specific emergency practice.",
+        "Frequency or trigger": "LIFE: monitor forecasts and plant condition; prolonged lack of rain or widespread yellow/dry symptoms can prompt watering. El Triguero reports monthly emergency watering.",
+        "Applicable period": "When the stated conditions occur; no universal seasonal calendar.",
+        "Age and stock": "May overlap the field establishment years and maintenance. No general dose by plant age or automatic stopping age is supplied.",
+        "Limitations": "Unknown amount is not zero. An observed emergency regime at one finca is not a general prescription for all carob or Almería sites."
+      }
+    },
+    {
+      "id": "sad-life-source",
+      "domain": "technology",
+      "aliases": [],
+      "label": "SAD (LIFE maintenance wording)",
+      "kind": "method",
+      "description": "The maintenance passage uses SAD for a fog-water tank system that releases about 15 L/plant/event when full, at a reported interval of about three weeks. The acronym is not expanded there. A correspondence with the AFDS mechanism is curated, not a verified expansion.",
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Maintenance SAD bullet"
+        }
+      ]
+    },
+    {
+      "id": "afds",
+      "label": "Autonomous Fluid Discharge System (AFDS)",
+      "kind": "method",
+      "domain": "technology",
+      "description": "A tank-level-triggered device discharges collected water through an irrigation network without electrical energy. Intervals depend on fog-water supply, tank settings and the network. The source maintenance label SAD is linked by an explicitly curated correspondence.",
+      "aliases": [
+        "AFDS",
+        "Autonomous Fluid Discharge System"
+      ],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 97,
+          "locator": "AFDS definition, operation, maintenance and comparator table"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "locator": "AFDS definition, operation, maintenance and comparator table"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 99,
+          "locator": "AFDS definition, operation, maintenance and comparator table"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "AFDS definition, operation, maintenance and comparator table"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "AFDS definition, operation, maintenance and comparator table"
+        }
+      ],
+      "aspects": {
+        "Water at planting": "10–15 L settlement water mentioned.",
+        "Trial conditions": "LIFE comparator; full description unprocessed.",
+        "Water per surviving tree": "101.4 L in table dated 26 July 2023.",
+        "Reported survival": "0.83 in table dated 26 July 2023."
+      }
+    },
+    {
+      "id": "carob-community",
+      "label": "Mediterranean carob associations",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "General overview of Mediterranean vegetation associated with carob in section 1.2, page 18. The named companions are not one formal botanical association, a worldwide recipe or proof that every species occurs together. Read the Almería examples for local observations.",
+      "aliases": [
+        "carob societies",
+        "plant companions",
+        "associated vegetation",
+        "comunidades de algarrobo",
+        "Carob plant communities",
+        "Comunidades mediterráneas con algarrobo"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "1.2 distribution and companion vegetation"
+        }
+      ],
+      "place_ids": [
+        "mediterranean"
+      ]
+    },
+    {
+      "id": "carob-community-almeria",
+      "domain": "ecosystem",
+      "aliases": [
+        "Comunidades con algarrobo en Almería",
+        "Almeria carob communities"
+      ],
+      "label": "Carob communities in Almería",
+      "kind": "habitat",
+      "description": "Regional examples of carob-associated vegetation in arid and semiarid Almería. Mastic and wild olive are observed at La Alcantarilla and La Tórtola; wider MR2 companions and potential habitats have different evidence. Las Labores is a managed restoration planting replacing almond and olive. These are explanatory regional groupings, not a single formal association.",
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Almería settings and finca observations"
+        }
+      ],
+      "place_ids": [
+        "almeria"
+      ]
+    },
+    {
+      "id": "cornical-scrub",
+      "domain": "ecosystem",
+      "aliases": [
+        "cornicales"
+      ],
+      "label": "Cornical scrub",
+      "kind": "habitat",
+      "description": "Cornicales are named among the arid settings in the MR2 discussion. This habitat label alone does not establish a particular species identification or its occurrence at a finca.",
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Arid phytoclimatic settings"
+        }
+      ]
+    },
+    {
+      "id": "carob-restoration-mr1",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Carob restoration of degraded areas (MR1)",
+      "kind": "method",
+      "description": "MR1 uses carob with other forest species for soil protection and restoration of degraded Mediterranean areas. Restoration layouts, genetic diversity and microsite selection differ from production-oriented plantings.",
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "5.6.1 MR1 and Table 5.14"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 124,
+          "locator": "5.6.1 MR1 and Table 5.14"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 125,
+          "locator": "5.6.1 MR1 and Table 5.14"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "5.6.1 MR1 and Table 5.14"
+        }
+      ]
+    },
+    {
+      "id": "carob-diversification-mr3",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Carob landscape diversification (MR3)",
+      "kind": "method",
+      "description": "The introductory passage describes diversification of low-productivity agricultural landscapes, particularly olive and almond areas, where carob can occur with other forest species and xerophytic shrubs. Only the opening on page 137 is covered here.",
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "5.6.3 opening paragraph"
+        }
+      ]
+    },
+    {
+      "id": "albox",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Albox",
+      "kind": "place",
+      "description": "Municipality of Las Labores, in Almería.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "almeria"
+      ]
+    },
+    {
+      "id": "nijar",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Níjar",
+      "kind": "place",
+      "description": "Municipality of La Tórtola, in Almería.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "almeria"
+      ]
+    },
+    {
+      "id": "las-labores",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Las Labores",
+      "kind": "place",
+      "description": "Restoration demonstration finca in Albox, Almería.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "albox"
+      ]
+    },
+    {
+      "id": "la-tortola",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "La Tórtola",
+      "kind": "place",
+      "description": "Naturalized carob population in Níjar, Almería.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "nijar"
+      ]
+    },
+    {
+      "id": "cadiz",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Cádiz",
+      "kind": "place",
+      "description": "Province named in the finca account.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Finca location"
+        }
+      ]
+    },
+    {
+      "id": "sevilla",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Sevilla",
+      "kind": "place",
+      "description": "Province named in the finca account.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Finca location"
+        }
+      ]
+    },
+    {
+      "id": "cordoba",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Córdoba",
+      "kind": "place",
+      "description": "Province named in the finca account.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Finca location"
+        }
+      ]
+    },
+    {
+      "id": "prado-del-rey",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Prado del Rey",
+      "kind": "place",
+      "description": "Municipality named in the finca account.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "cadiz"
+      ]
+    },
+    {
+      "id": "carmona",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Carmona",
+      "kind": "place",
+      "description": "Municipality named in the finca account.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "sevilla"
+      ]
+    },
+    {
+      "id": "posadas",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Posadas",
+      "kind": "place",
+      "description": "Municipality named in the finca account.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "cordoba"
+      ]
+    },
+    {
+      "id": "gaucin",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Gaucín",
+      "kind": "place",
+      "description": "Municipality named in the finca account.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "malaga"
+      ]
+    },
+    {
+      "id": "ubrique",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Ubrique",
+      "kind": "place",
+      "description": "Municipality named in the finca account.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "cadiz"
+      ]
+    },
+    {
+      "id": "huerta-los-tamayos",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Huerta Los Tamayos",
+      "kind": "place",
+      "description": "Carob finca case; irrigation practices retain their production/restoration context.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "prado-del-rey"
+      ]
+    },
+    {
+      "id": "el-triguero",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "El Triguero",
+      "kind": "place",
+      "description": "Carob finca case; irrigation practices retain their production/restoration context.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "carmona"
+      ]
+    },
+    {
+      "id": "buenavista",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Buenavista",
+      "kind": "place",
+      "description": "Carob finca case; irrigation practices retain their production/restoration context.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "posadas"
+      ]
+    },
+    {
+      "id": "los-lirios",
+      "domain": "ecosystem",
+      "aliases": [],
+      "label": "Los Lirios",
+      "kind": "place",
+      "description": "Carob finca case; irrigation practices retain their production/restoration context.",
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Finca location"
+        }
+      ],
+      "place_ids": [
+        "gaucin"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "life-sad-afds",
+      "source": "sad-life-source",
+      "target": "afds",
+      "label": "operation corresponds to",
+      "explanation": "The SAD maintenance description and the AFDS definition both describe a fog-fed tank whose water level triggers automatic irrigation. The manual does not explicitly expand SAD; this correspondence is interpretive.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "locator": "Compare AFDS operation and SAD maintenance"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Compare AFDS operation and SAD maintenance"
+        }
+      ],
+      "basis": "curated"
+    },
+    {
+      "id": "life-sad-maintenance",
+      "source": "sad-life-source",
+      "target": "maintenance-irrigation",
+      "label": "reported maintenance regime",
+      "explanation": "About 15 L/plant/event at the described tank-full trigger and approximately three-week interval; preserve source spelling SAD.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Maintenance SAD bullet"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "life-afds-fog",
+      "source": "afds",
+      "target": "fog-water-collection",
+      "label": "can use collected water",
+      "explanation": "The source describes irregular fog-water input filling the discharge tank.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 97,
+          "locator": "AFDS operation"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "locator": "AFDS operation"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "life-afds-network",
+      "source": "afds",
+      "target": "pe-pipe-network",
+      "label": "discharges through",
+      "explanation": "Tank level initiates discharge through the irrigation network; changing settings changes the quantity/interval.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "locator": "System operation"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-mediterranean",
+      "source": "carob-community-almeria",
+      "target": "carob-community",
+      "label": "regional examples within",
+      "explanation": "Organizational interpretation of regional cases within the broader Mediterranean overview; not a formal phytosociological classification.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "General overview and regional cases"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "General overview and regional cases"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "General overview and regional cases"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "General overview and regional cases"
+        }
+      ],
+      "basis": "curated"
+    },
+    {
+      "id": "carob-almeria-place",
+      "source": "carob-community-almeria",
+      "target": "almeria",
+      "label": "examples described in",
+      "explanation": "All three named Almería fincas retain their own municipality and case context.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Finca characterizations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Finca characterizations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Finca characterizations"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-carob",
+      "source": "carob",
+      "target": "carob-community-almeria",
+      "label": "occurs in regional examples",
+      "explanation": "Carob is the focal species in the documented Almería examples.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Almería cases"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Almería cases"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Almería cases"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-observed-wild-olive",
+      "source": "carob-community-almeria",
+      "target": "wild-olive",
+      "label": "observed companion",
+      "explanation": "The finca accounts describe establishment of lentisco and acebuche with carob at La Alcantarilla and La Tórtola; do not inherit the entire general Mediterranean companion list.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Observed accompanying vegetation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Observed accompanying vegetation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Observed accompanying vegetation"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-observed-mastic",
+      "source": "carob-community-almeria",
+      "target": "mastic",
+      "label": "observed companion",
+      "explanation": "The finca accounts describe establishment of lentisco and acebuche with carob at La Alcantarilla and La Tórtola; do not inherit the entire general Mediterranean companion list.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Observed accompanying vegetation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Observed accompanying vegetation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Observed accompanying vegetation"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-regional-dwarf-palm",
+      "source": "carob-community-almeria",
+      "target": "dwarf-palm",
+      "label": "named in regional setting",
+      "explanation": "Named in the general arid/semiarid MR2 setting, not confirmed by this passage at every finca.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Área potencial de implantación"
+        }
+      ],
+      "basis": "source",
+      "context": {
+        "scope": "regional model setting"
+      }
+    },
+    {
+      "id": "carob-almeria-regional-aleppo-pine",
+      "source": "carob-community-almeria",
+      "target": "aleppo-pine",
+      "label": "named in regional setting",
+      "explanation": "Named in the general arid/semiarid MR2 setting, not confirmed by this passage at every finca.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Área potencial de implantación"
+        }
+      ],
+      "basis": "source",
+      "context": {
+        "scope": "regional model setting"
+      }
+    },
+    {
+      "id": "carob-almeria-setting-mastic-scrub",
+      "source": "carob-community-almeria",
+      "target": "mastic-scrub",
+      "label": "vegetation setting named",
+      "explanation": "The regional passage distinguishes arid jujube thorn scrub/cornicales and less arid mastic, kermes-oak and wild-olive scrub. Potential vegetation is not a census of current finca vegetation.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Área potencial de implantación"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-setting-wild-olive-scrub",
+      "source": "carob-community-almeria",
+      "target": "wild-olive-scrub",
+      "label": "vegetation setting named",
+      "explanation": "The regional passage distinguishes arid jujube thorn scrub/cornicales and less arid mastic, kermes-oak and wild-olive scrub. Potential vegetation is not a census of current finca vegetation.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Área potencial de implantación"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-setting-kermes-oak-scrub",
+      "source": "carob-community-almeria",
+      "target": "kermes-oak-scrub",
+      "label": "vegetation setting named",
+      "explanation": "The regional passage distinguishes arid jujube thorn scrub/cornicales and less arid mastic, kermes-oak and wild-olive scrub. Potential vegetation is not a census of current finca vegetation.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Área potencial de implantación"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-setting-jujube-thorn-scrub",
+      "source": "carob-community-almeria",
+      "target": "jujube-thorn-scrub",
+      "label": "vegetation setting named",
+      "explanation": "The regional passage distinguishes arid jujube thorn scrub/cornicales and less arid mastic, kermes-oak and wild-olive scrub. Potential vegetation is not a census of current finca vegetation.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Área potencial de implantación"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-setting-cornical-scrub",
+      "source": "carob-community-almeria",
+      "target": "cornical-scrub",
+      "label": "vegetation setting named",
+      "explanation": "The regional passage distinguishes arid jujube thorn scrub/cornicales and less arid mastic, kermes-oak and wild-olive scrub. Potential vegetation is not a census of current finca vegetation.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Área potencial de implantación"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-mr1-restoration",
+      "source": "carob-restoration-mr1",
+      "target": "restoration",
+      "label": "restoration model",
+      "explanation": "MR1 aims to protect soil, reduce erosion and diversify degraded forest ecosystems.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "MR1 objectives"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 124,
+          "locator": "MR1 objectives"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-mr3-restoration",
+      "source": "carob-diversification-mr3",
+      "target": "restoration",
+      "label": "diversifies agricultural landscapes",
+      "explanation": "MR3 opening describes agricultural landscape diversification; later MR3 pages remain outside this intake.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "MR3 opening"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-carob-restoration-mr1",
+      "source": "carob-community-almeria",
+      "target": "carob-restoration-mr1",
+      "label": "examples use restoration model",
+      "explanation": "Las Labores illustrates MR1; La Alcantarilla and La Tórtola appear as MR2 examples. Model membership is not proof of identical practices at every site.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Models and Almería cases"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Models and Almería cases"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-carob-oasification",
+      "source": "carob-community-almeria",
+      "target": "carob-oasification",
+      "label": "examples use restoration model",
+      "explanation": "Las Labores illustrates MR1; La Alcantarilla and La Tórtola appear as MR2 examples. Model membership is not proof of identical practices at every site.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Models and Almería cases"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Models and Almería cases"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-albox-almeria",
+      "source": "albox",
+      "target": "almeria",
+      "label": "located in",
+      "explanation": "Municipality of Las Labores, in Almería.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-nijar-almeria",
+      "source": "nijar",
+      "target": "almeria",
+      "label": "located in",
+      "explanation": "Municipality of La Tórtola, in Almería.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-las-labores-albox",
+      "source": "las-labores",
+      "target": "albox",
+      "label": "located in",
+      "explanation": "Restoration demonstration finca in Albox, Almería.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-la-tortola-nijar",
+      "source": "la-tortola",
+      "target": "nijar",
+      "label": "located in",
+      "explanation": "Naturalized carob population in Níjar, Almería.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-case-las-labores",
+      "source": "carob-community-almeria",
+      "target": "las-labores",
+      "label": "documented example",
+      "explanation": "This finca has its own land-use history, vegetation and management context.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Finca case"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-case-la-alcantarilla",
+      "source": "carob-community-almeria",
+      "target": "la-alcantarilla",
+      "label": "documented example",
+      "explanation": "This finca has its own land-use history, vegetation and management context.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Finca case"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-almeria-case-la-tortola",
+      "source": "carob-community-almeria",
+      "target": "la-tortola",
+      "label": "documented example",
+      "explanation": "This finca has its own land-use history, vegetation and management context.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Finca case"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "mr1-labores",
+      "source": "carob-restoration-mr1",
+      "target": "las-labores",
+      "label": "demonstrated at",
+      "explanation": "The manual identifies Las Labores as its MR1 demonstration.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Parcela demostrativa MR1"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "mr2-tortola",
+      "source": "carob-oasification",
+      "target": "la-tortola",
+      "label": "demonstrated at",
+      "explanation": "The manual labels La Tórtola as an MR2 example, while describing a naturalized population without cultural treatments.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Tórtola account"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "La Tórtola account"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "la-alcantarilla-observed-mastic",
+      "source": "la-alcantarilla",
+      "target": "mastic",
+      "label": "observed with carob",
+      "explanation": "The case describes lentisco and acebuche establishing in the carob population; this is an observation, not proof of quantified pairwise benefit.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Actuaciones and Estado actual"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "la-alcantarilla-observed-wild-olive",
+      "source": "la-alcantarilla",
+      "target": "wild-olive",
+      "label": "observed with carob",
+      "explanation": "The case describes lentisco and acebuche establishing in the carob population; this is an observation, not proof of quantified pairwise benefit.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Actuaciones and Estado actual"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "la-tortola-observed-mastic",
+      "source": "la-tortola",
+      "target": "mastic",
+      "label": "observed with carob",
+      "explanation": "The case describes lentisco and acebuche establishing in the carob population; this is an observation, not proof of quantified pairwise benefit.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Actuaciones and Estado actual"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "la-tortola-observed-wild-olive",
+      "source": "la-tortola",
+      "target": "wild-olive",
+      "label": "observed with carob",
+      "explanation": "The case describes lentisco and acebuche establishing in the carob population; this is an observation, not proof of quantified pairwise benefit.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Actuaciones and Estado actual"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "las-labores-potential-mastic-scrub",
+      "source": "las-labores",
+      "target": "mastic-scrub",
+      "label": "potential vegetation named",
+      "explanation": "Potential vegetation from the environmental characterization, distinct from observed vegetation.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Caracterización ambiental"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "la-tortola-potential-mastic-scrub",
+      "source": "la-tortola",
+      "target": "mastic-scrub",
+      "label": "potential vegetation named",
+      "explanation": "Potential vegetation from the environmental characterization, distinct from observed vegetation.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Caracterización ambiental"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "la-tortola-potential-jujube-thorn-scrub",
+      "source": "la-tortola",
+      "target": "jujube-thorn-scrub",
+      "label": "potential vegetation named",
+      "explanation": "Potential vegetation from the environmental characterization, distinct from observed vegetation.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Caracterización ambiental"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "tortola-current-esparto",
+      "source": "la-tortola",
+      "target": "esparto-grassland",
+      "label": "surrounding landscape dominated by",
+      "explanation": "The current surrounding landscape is dominated by espartales; do not equate this with a complete list of the carob companions.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Environmental characterization"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-prado-del-rey-cadiz",
+      "source": "prado-del-rey",
+      "target": "cadiz",
+      "label": "located in",
+      "explanation": "Municipality named in the finca account.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-carmona-sevilla",
+      "source": "carmona",
+      "target": "sevilla",
+      "label": "located in",
+      "explanation": "Municipality named in the finca account.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-posadas-cordoba",
+      "source": "posadas",
+      "target": "cordoba",
+      "label": "located in",
+      "explanation": "Municipality named in the finca account.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-gaucin-malaga",
+      "source": "gaucin",
+      "target": "malaga",
+      "label": "located in",
+      "explanation": "Municipality named in the finca account.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-ubrique-cadiz",
+      "source": "ubrique",
+      "target": "cadiz",
+      "label": "located in",
+      "explanation": "Municipality named in the finca account.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-huerta-los-tamayos-prado-del-rey",
+      "source": "huerta-los-tamayos",
+      "target": "prado-del-rey",
+      "label": "located in",
+      "explanation": "Carob finca case; irrigation practices retain their production/restoration context.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-case-huerta-los-tamayos",
+      "source": "carob",
+      "target": "huerta-los-tamayos",
+      "label": "cultivated at",
+      "explanation": "Source-described carob case, not evidence of a universal regime.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Finca account"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-el-triguero-carmona",
+      "source": "el-triguero",
+      "target": "carmona",
+      "label": "located in",
+      "explanation": "Carob finca case; irrigation practices retain their production/restoration context.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-case-el-triguero",
+      "source": "carob",
+      "target": "el-triguero",
+      "label": "cultivated at",
+      "explanation": "Source-described carob case, not evidence of a universal regime.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Finca account"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-buenavista-posadas",
+      "source": "buenavista",
+      "target": "posadas",
+      "label": "located in",
+      "explanation": "Carob finca case; irrigation practices retain their production/restoration context.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-case-buenavista",
+      "source": "carob",
+      "target": "buenavista",
+      "label": "cultivated at",
+      "explanation": "Source-described carob case, not evidence of a universal regime.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Finca account"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "place-los-lirios-gaucin",
+      "source": "los-lirios",
+      "target": "gaucin",
+      "label": "located in",
+      "explanation": "Carob finca case; irrigation practices retain their production/restoration context.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Finca location"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-case-los-lirios",
+      "source": "carob",
+      "target": "los-lirios",
+      "label": "cultivated at",
+      "explanation": "Source-described carob case, not evidence of a universal regime.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Finca account"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "el-rano-ubrique",
+      "source": "el-rano",
+      "target": "ubrique",
+      "label": "located in",
+      "explanation": "El Rano is in Ubrique, Cádiz, not Almería.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "Environmental characterization"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-water-phase-huerta-los-tamayos",
+      "source": "huerta-los-tamayos",
+      "target": "maintenance-irrigation",
+      "label": "reported watering practice",
+      "explanation": "50–80 L/plant/event; three summer waterings during the first two years. Young 40–50 cm forest nursery stock in dehesa/olive enrichment; 40 cm holes, shelters and hay mulch. The 2000 L tank is equipment capacity, not a plant dose.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Riegos"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-water-phase-el-triguero",
+      "source": "el-triguero",
+      "target": "support-irrigation",
+      "label": "reported watering practice",
+      "explanation": "50 L/plant/event, monthly emergency watering. MP3 extensive planting at Carmona in autumn 2023; 1 m plants, 4 × 8 m spacing, 312 trees/ha, 30 ha, soil depth <50 cm. Calendar months and duration of this emergency regime are not specified.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Riegos"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-water-phase-buenavista",
+      "source": "buenavista",
+      "target": "maintenance-irrigation",
+      "label": "reported watering practice",
+      "explanation": "100 L/plant/event every 15 days during the first two summers. MP4 intensive phased planting at Posadas, Córdoba; 10 × 6 m, 166 trees/ha; stock and cultivars differ by phase. This is not MR1 or an Almería site.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Riegos"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-water-phase-los-lirios",
+      "source": "los-lirios",
+      "target": "maintenance-irrigation",
+      "label": "reported watering practice",
+      "explanation": "50 L/plant/event three times weekly from April to October. Intensive one-hectare mother-plant plot established in 2023 at Los Lirios; 2 × 4 m, 1250 trees/ha, 1 m stock. The older afforestation on the same finca received no establishment irrigation; preserve both contexts.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Riegos"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "labores-water-phase",
+      "source": "las-labores",
+      "target": "maintenance-irrigation",
+      "label": "reported seasonal watering",
+      "explanation": "400 L/plant over May–September in total; event dose and frequency not specified.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Riegos"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "mr2-support-phase",
+      "source": "carob-oasification",
+      "target": "support-irrigation",
+      "label": "may need support watering",
+      "explanation": "Table 5.19 specifies support watering without a numerical dose.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "MR2 establishment and support"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "MR2 establishment and support"
+        }
+      ],
+      "basis": "source"
+    },
+    {
+      "id": "carob-nursery-phase",
+      "source": "carob",
+      "target": "nursery-irrigation",
+      "label": "nursery watering guidance",
+      "explanation": "The handbook describes moisture and hardening programmes, not a universal numerical dose.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Nursery watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 73,
+          "locator": "Nursery watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 74,
+          "locator": "Nursery watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Nursery watering"
+        }
+      ],
+      "basis": "source"
+    }
+  ],
+  "findings": [
+    {
+      "id": "life-nursery-water",
+      "label": "Nursery batch quantity and its calculated average",
+      "text": "LIFE NIEBLAS describes watering the nursery twice a week with around 30 L for 100 plants. Dividing the documented batch quantity by its plant count gives an average 0.3 L/plant/event; the source does not report individually metered doses or identify this as a carob-specific requirement.",
+      "topic_ids": [
+        "nursery-irrigation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Nursery bullet; original 30L for 100 plants; 30 ÷ 100 = 0.3"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "life-maintenance-water",
+      "label": "LIFE summer schedules retain method and season",
+      "text": "The project choices are 15 L/plant/event monthly July–September for traditional planting and Cocoon, and 10 L/plant/event on that schedule for IND. The passage labelled SAD describes about 15 L/plant/event every three weeks when the fog-water tank fills. Its timing depends on collection, and the passage does not specify its calendar season.",
+      "topic_ids": [
+        "maintenance-irrigation",
+        "cocoon",
+        "traditional-reforestation",
+        "individual-fog-water-collector",
+        "sad-life-source"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Maintenance bullets"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "life-first-year-water",
+      "label": "First field year differs from nursery age",
+      "text": "Traditional, Cocoon and individual fog collector method descriptions discuss irrigation in the first year after field planting, with amounts adapted to site, species and soil moisture. Nursery age or stock format is a different measure. No universal age for stopping irrigation is given.",
+      "topic_ids": [
+        "settlement-irrigation",
+        "maintenance-irrigation",
+        "support-irrigation",
+        "traditional-reforestation",
+        "cocoon",
+        "individual-fog-water-collector"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Amount of water"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Amount of water"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Amount of water"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "life-storage-estimate",
+      "label": "A first-year storage estimate is not a method dose",
+      "text": "The water-network section estimates about 40 L/plant for first-year summer provision, around 12.5 L per irrigation across three important irrigations, and illustrates 120,000 L storage for 3,000 plants. These are approximate storage-planning figures; preserve them separately from the 15/10 L project maintenance regimes and do not force the rounded figures into exact agreement.",
+      "topic_ids": [
+        "maintenance-irrigation",
+        "pe-pipe-network"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "locator": "Water network, storage sizing and Amount of water"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "locator": "Water network, storage sizing and Amount of water"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "carob-nursery-water",
+      "label": "Carob nursery irrigation changes with development",
+      "text": "Tables 4.4–4.5b describe humid germination, frequent early watering without leaching, active growth watering with up to 10% leaching, and spaced intense irrigation during preconditioning to moderate water stress. Page 79 says nursery-specific schedules prevent specific general recommendations. No litres-per-plant dose is supplied.",
+      "topic_ids": [
+        "nursery-irrigation",
+        "carob",
+        "seedling-quality"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Nursery irrigation rows and Otras prácticas culturales"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 73,
+          "locator": "Nursery irrigation rows and Otras prácticas culturales"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 74,
+          "locator": "Nursery irrigation rows and Otras prácticas culturales"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Nursery irrigation rows and Otras prácticas culturales"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "carob-establishment-years",
+      "label": "Carob establishment spans years, not a single settlement event",
+      "text": "The general planting recommendations describe 3–5 years of establishment and advise 1–5 summer waterings during the first five years, without litres per event or an explicit annual allocation. Preserve that wording without inventing a per-year frequency or a universal dose.",
+      "topic_ids": [
+        "maintenance-irrigation",
+        "support-irrigation",
+        "carob",
+        "establishment-water"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 95,
+          "locator": "5.3 recommendations 1 and 7"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 96,
+          "locator": "5.3 recommendations 1 and 7"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "life-afds-operation",
+      "label": "AFDS uses a tank level, not a guaranteed calendar",
+      "text": "AFDS discharges automatically once the tank reaches a level and resets after emptying. Cycle time depends on collection, tank settings and network characteristics. Internal installation is compact but less accessible; external installation permits level adjustment and easier maintenance, with more exposure and blockage risk.",
+      "topic_ids": [
+        "afds",
+        "fog-water-collection",
+        "pe-pipe-network"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 97,
+          "locator": "Definition, operation and inside/outside installation options"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "locator": "Definition, operation and inside/outside installation options"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 99,
+          "locator": "Definition, operation and inside/outside installation options"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "life-irrigation-measurement",
+      "label": "Measure water and plant counts by purpose",
+      "text": "The manual separates nursery, settlement, maintenance, support, waste and other water. Hose watering can be measured from before/after quantities and plant counts; AFDS monitoring records discharge count, frequency and volume. Total water use and water per surviving tree are different metrics from an event dose.",
+      "topic_ids": [
+        "nursery-irrigation",
+        "settlement-irrigation",
+        "maintenance-irrigation",
+        "support-irrigation",
+        "monitoring",
+        "afds"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 152,
+          "locator": "2. Irrigation water monitoring"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "carob-labores-context",
+      "label": "Las Labores: dryland crops and a restoration transition",
+      "text": "Las Labores (Albox) has 200–400 mm annual rainfall, Mediterranean IV1 climate, shallow calcareous soils and rocky outcrops. The landscape is dominated by dryland woody crops. Carob was planted in 2010 at 6 × 6 m in areas of dead almond trees, as almond and olive productivity declined.",
+      "topic_ids": [
+        "las-labores",
+        "albox",
+        "almeria",
+        "carob-restoration-mr1",
+        "almond",
+        "olive",
+        "soil-depth"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Environmental characterization and Actuaciones"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Environmental characterization and Actuaciones"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "las-labores",
+        "albox",
+        "almeria"
+      ]
+    },
+    {
+      "id": "carob-labores-establishment",
+      "label": "Las Labores: planting, protection and grafting",
+      "text": "The case uses nursery plants about 1 m high, manual 40 × 40 × 40 cm holes, perforated 60 cm shelters, tutors, formative pruning and tractor cultivation every three years. It reports grafting local hermaphrodite cultivars in autumn 2024. These are case practices, distinct from the MR1 summary table.",
+      "topic_ids": [
+        "las-labores",
+        "carob",
+        "manual-planting",
+        "planting-holes",
+        "tree-shelters",
+        "grafting",
+        "carob-cultivars"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Actuaciones bullets"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "carob-labores-water",
+      "label": "Las Labores: 400 litres is a seasonal total",
+      "text": "Deficit drip irrigation is reported from May to September, with a total of 400 L/plant over that period. The number of events and dose per event are not specified. The seasonal total must not be imported as 400 L/plant/event.",
+      "topic_ids": [
+        "las-labores",
+        "carob",
+        "maintenance-irrigation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Riegos bullet"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "source amount": "400 L/plant over May–September",
+        "event dose": "Not specified in this source"
+      }
+    },
+    {
+      "id": "carob-labores-outcomes",
+      "label": "Las Labores: reported establishment and fruit observations",
+      "text": "The manual reports low losses, good condition, heights 3–5 m and normal diameters 10–25 cm, with alternate bearing. Table 5.16 (summer 2023) gives pod length 12.40 cm, pod weight 13.56 g, seed yield 16.39% and 100-seed weight 17.73 g. Its claim about production four years after grafting conflicts with the reported autumn-2024 grafting and harvest chronology; retain that unresolved.",
+      "topic_ids": [
+        "las-labores",
+        "carob",
+        "grafting",
+        "carob-cultivars"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Estado actual and Table 5.16"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Estado actual and Table 5.16"
+        }
+      ],
+      "kind": "finding",
+      "dates": [
+        {
+          "value": "2023",
+          "meaning": "reported harvest"
+        }
+      ]
+    },
+    {
+      "id": "carob-alcantarilla-observed",
+      "label": "La Alcantarilla: carob facilitates observed shrub establishment",
+      "text": "A seminatural carob population around houses and a stream has expanded irregularly along paths, irrigation channels and streams. Lentisco and acebuche have established under carob protection. Care is limited mainly to fruit collection. Alternate bearing is moderate, but crops are small or absent in most years. This is not a quantified planting trial.",
+      "topic_ids": [
+        "la-alcantarilla",
+        "carob-community-almeria",
+        "carob",
+        "mastic",
+        "wild-olive",
+        "seasonal-watercourse"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Actuaciones and Estado actual"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Actuaciones and Estado actual"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "carob-alcantarilla-fruit",
+      "label": "La Alcantarilla: fruit table and climatic context",
+      "text": "Table 5.20 gives rainfall 200–300 mm/year, minimum temperature of the coldest month >6°C, maximum of warmest month 28–32°C, mean annual temperature 17–19°C and evapotranspiration 900–1000 mm/year. Table 5.21 (summers 2022/2023) gives pod length 14.2 cm, pod weight 8.66 g, seed yield 16.39% and 100-seed weight 13.90 g; sample size is not supplied.",
+      "topic_ids": [
+        "la-alcantarilla",
+        "carob",
+        "carob-cultivars"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Tables 5.20 and 5.21"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Tables 5.20 and 5.21"
+        }
+      ],
+      "kind": "finding",
+      "dates": [
+        {
+          "value": "2022",
+          "meaning": "reported harvest"
+        },
+        {
+          "value": "2023",
+          "meaning": "reported harvest"
+        }
+      ]
+    },
+    {
+      "id": "carob-tortola-context",
+      "label": "La Tórtola: potential scrub differs from the present landscape",
+      "text": "La Tórtola (Níjar) has Mediterranean IV3 climate, rainfall 200–300 mm/year and potential lentiscares/jujube thorn scrub, while espartales dominate the current surrounding landscape. Table 5.22 gives coldest-month minimum >6°C, warmest-month maximum 28–32°C, annual mean 17–19°C and evapotranspiration 900–1000 mm/year.",
+      "topic_ids": [
+        "la-tortola",
+        "nijar",
+        "almeria",
+        "mastic-scrub",
+        "jujube-thorn-scrub",
+        "esparto-grassland"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Environmental characterization and Table 5.22"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Environmental characterization and Table 5.22"
+        }
+      ],
+      "kind": "finding",
+      "place_ids": [
+        "la-tortola",
+        "nijar",
+        "almeria"
+      ]
+    },
+    {
+      "id": "carob-tortola-observed",
+      "label": "La Tórtola: naturalized vegetation and very low production",
+      "text": "Abandonment of earlier agricultural and livestock activity allowed lentisco and acebuche to establish with carob, creating more luxuriant vegetation than surrounding areas. The population is described as fully naturalized without cultural treatments. Trees range from about 1 to 10 m, with variable diameters, very high alternate bearing and practically no production. Irrigation quantity/frequency is not specified; do not turn absence of a stated regime into zero.",
+      "topic_ids": [
+        "la-tortola",
+        "carob",
+        "carob-community-almeria",
+        "mastic",
+        "wild-olive",
+        "maintenance-irrigation",
+        "support-irrigation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Actuaciones and Estado actual"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "carob-mr1-guidance",
+      "label": "MR1 restoration guidance retains its own assumptions",
+      "text": "MR1 recommends diverse, appropriate-provenance forest material, favourable deeper/moister microsites, autumn planting and low-density restoration layouts. Page 123 describes <350 trees/ha, page 124 gives <100 in generic protective restoration, and Table 5.14 describes enrichment <200. The table says no irrigation; this summary does not negate watering documented at Las Labores.",
+      "topic_ids": [
+        "carob-restoration-mr1",
+        "carob",
+        "local-provenance",
+        "soil-depth",
+        "autumn-planting",
+        "maintenance-irrigation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "MR1 narrative and Table 5.14"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 124,
+          "locator": "MR1 narrative and Table 5.14"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 125,
+          "locator": "MR1 narrative and Table 5.14"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "MR1 narrative and Table 5.14"
+        }
+      ],
+      "kind": "recommendation"
+    },
+    {
+      "id": "carob-mr1-survival",
+      "label": "MR1 reports variable survival in earlier restoration",
+      "text": "The narrative reports survival ranges of 18–30% at Guadiamar, 0–65% in Córdoba and 40–60% in Almería, citing earlier work. These heterogeneous reports are not a prediction for a new site. It recommends using experience from earlier afforestation to identify better microsites.",
+      "topic_ids": [
+        "carob-restoration-mr1",
+        "carob",
+        "almeria",
+        "species-site-fit"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 124,
+          "locator": "Restoration potential and earlier survival reports"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "carob-water-huerta-los-tamayos",
+      "label": "Huerta Los Tamayos: a site-specific watering regime",
+      "text": "50–80 L/plant/event; three summer waterings during the first two years. Young 40–50 cm forest nursery stock in dehesa/olive enrichment; 40 cm holes, shelters and hay mulch. The 2000 L tank is equipment capacity, not a plant dose.",
+      "topic_ids": [
+        "huerta-los-tamayos",
+        "carob",
+        "maintenance-irrigation",
+        "establishment-water"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Riegos / case practice"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "dose": "50–80 L/plant/event",
+        "source context": "Young 40–50 cm forest nursery stock in dehesa/olive enrichment; 40 cm holes, shelters and hay mulch. The 2000 L tank is equipment capacity, not a plant dose."
+      }
+    },
+    {
+      "id": "carob-water-el-triguero",
+      "label": "El Triguero: a site-specific watering regime",
+      "text": "50 L/plant/event, monthly emergency watering. MP3 extensive planting at Carmona in autumn 2023; 1 m plants, 4 × 8 m spacing, 312 trees/ha, 30 ha, soil depth <50 cm. Calendar months and duration of this emergency regime are not specified.",
+      "topic_ids": [
+        "el-triguero",
+        "carob",
+        "support-irrigation",
+        "establishment-water"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Riegos / case practice"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "dose": "50 L/plant/event",
+        "source context": "MP3 extensive planting at Carmona in autumn 2023; 1 m plants, 4 × 8 m spacing, 312 trees/ha, 30 ha, soil depth <50 cm. Calendar months and duration of this emergency regime are not specified."
+      }
+    },
+    {
+      "id": "carob-water-buenavista",
+      "label": "Buenavista: a site-specific watering regime",
+      "text": "100 L/plant/event every 15 days during the first two summers. MP4 intensive phased planting at Posadas, Córdoba; 10 × 6 m, 166 trees/ha; stock and cultivars differ by phase. This is not MR1 or an Almería site.",
+      "topic_ids": [
+        "buenavista",
+        "carob",
+        "maintenance-irrigation",
+        "establishment-water"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Riegos / case practice"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "dose": "100 L/plant/event",
+        "source context": "MP4 intensive phased planting at Posadas, Córdoba; 10 × 6 m, 166 trees/ha; stock and cultivars differ by phase. This is not MR1 or an Almería site."
+      }
+    },
+    {
+      "id": "carob-water-los-lirios",
+      "label": "Los Lirios: a site-specific watering regime",
+      "text": "50 L/plant/event three times weekly from April to October. Intensive one-hectare mother-plant plot established in 2023 at Los Lirios; 2 × 4 m, 1250 trees/ha, 1 m stock. The older afforestation on the same finca received no establishment irrigation; preserve both contexts.",
+      "topic_ids": [
+        "los-lirios",
+        "carob",
+        "maintenance-irrigation",
+        "establishment-water"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Riegos / case practice"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "dose": "50 L/plant/event",
+        "source context": "Intensive one-hectare mother-plant plot established in 2023 at Los Lirios; 2 × 4 m, 1250 trees/ha, 1 m stock. The older afforestation on the same finca received no establishment irrigation; preserve both contexts."
+      }
+    },
+    {
+      "id": "carob-buenavista-context",
+      "label": "Buenavista: intensive production differs from restoration",
+      "text": "The case in Posadas has rainfall 600–800 mm/year and deeper soils, uses 1 m cubic holes with a 50% cured-cow-manure mixture, and phases planted in autumn 2022/2023. Selected cultivars include Sayalonga, Alexia, P14 and P17, with 10% of the two hermaphrodite cultivars for pollination. Production was not yet measured; the source anticipates 3–4 years. These practices are not recommendations for Almería restoration.",
+      "topic_ids": [
+        "buenavista",
+        "carob",
+        "grafting",
+        "carob-pollination",
+        "carob-cultivars"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "MP4 case and continuation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "MP4 case and continuation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "MP4 case and continuation"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "carob-mp4-allocation",
+      "label": "An annual area allocation is not a per-event dose",
+      "text": "Table 5.12 describes establishment/production irrigation below 1500 m³/ha/year for the intensive MP4 model. It is an annual area-based allocation, not L/plant/event; the text does not provide an event count permitting conversion.",
+      "topic_ids": [
+        "buenavista",
+        "carob",
+        "maintenance-irrigation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Table 5.12"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "carob-elrano-context",
+      "label": "El Rano: historical management and inconsistent rainfall",
+      "text": "El Rano (Ubrique, Cádiz) is a longstanding livestock finca with carob, wild olive and family crops. Accessible carobs are grafted and cleared; difficult areas remain seminatural. The narrative gives 800–1200 mm/year rainfall, while Table 5.17 gives 1200–1600. Do not silently choose one or classify it as an Almería case.",
+      "topic_ids": [
+        "el-rano",
+        "ubrique",
+        "cadiz",
+        "carob",
+        "grafting"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "Environmental characterization, management and Table 5.17"
+        }
+      ],
+      "kind": "finding"
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "FOREST-002",
+      "page": 18,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 20,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 72,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 73,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 74,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 79,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 95,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 96,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 97,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 102,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 103,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 112,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 117,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 121,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 122,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 123,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 124,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 125,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 126,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 127,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 128,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 129,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 130,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 131,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 132,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 133,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 134,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 135,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 136,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 137,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 90,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 93,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 95,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 97,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 98,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 99,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 103,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 104,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 142,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 143,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 152,
+      "status": "inspected",
+      "note": "Reviewed complete page for lifecycle/community intake; preserved passage boundaries, original quantities, method/site and age context, tables/captions and unresolved statements. See batch findings and reviewed text/visual audit."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "carob-labores-chronology",
+      "text": "Las Labores reports autumn-2024 grafting, production four years after grafting and a summer-2023 fruit table. These dates cannot be reconciled from the reviewed account; retain source wording without inventing a corrected date.",
+      "topic_ids": [
+        "las-labores",
+        "grafting"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Source inconsistency"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Source inconsistency"
+        }
+      ]
+    },
+    {
+      "id": "carob-elrano-rainfall",
+      "text": "El Rano narrative gives 800–1200 mm/year, but Table 5.17 gives 1200–1600 mm/year. Preserve both as a source discrepancy.",
+      "topic_ids": [
+        "el-rano"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "Source inconsistency"
+        }
+      ]
+    },
+    {
+      "id": "life-sad-acronym",
+      "text": "The manual uses SAD once in its maintenance list but defines AFDS elsewhere. Matching mechanism supports a curated correspondence; the expansion of SAD is not explicitly supplied.",
+      "topic_ids": [
+        "sad-life-source",
+        "afds"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "locator": "AFDS mechanism versus SAD wording"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "AFDS mechanism versus SAD wording"
+        }
+      ]
+    },
+    {
+      "id": "eco-partial-cases",
+      "text": "Historical limitation: initial coverage included only the El Rano ending and La Alcantarilla introduction. This intake extends El Rano to page 129 and La Alcantarilla through 136, and adds Las Labores and La Tórtola. Their reviewed case passages are now covered; other manual pages remain subject to their recorded coverage.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "Extended case coverage"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Extended case coverage"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Extended case coverage"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Extended case coverage"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Extended case coverage"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Extended case coverage"
+        }
+      ],
+      "topic_ids": [
+        "el-rano",
+        "la-alcantarilla"
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:irrigation-lifecycle",
+      "label": "Irrigation lifecycle",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "nursery-irrigation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "settlement-irrigation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "maintenance-irrigation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "support-irrigation",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge.",
+      "description": "Read watering evidence before selecting a planting example.\n\n1. Nursery: watering before field planting, adapted to substrate, stock and growth or hardening stage.\n2. Settlement: the first watering immediately after planting; it is different from all watering over the establishment years.\n3. Summer maintenance: recurring watering during a difficult season, with a stated frequency and applicable period.\n4. Support: extra water prompted by weather, soil moisture or plant stress. Support can overlap establishment and maintenance; it is not a final age stage.\n\nAmounts and timing: L/plant/event means litres per plant for one watering application. Frequency says how often or what triggers it; period says when in the year; age context distinguishes nursery age from years since field planting. Unknown does not mean zero. A range is not a single recommended dose.\n\nRead the context: soil, rainfall, species, nursery stock size, planting method and access to water affect the regime. Source recommendations, project choices and finca observations have different meanings. Generic LIFE NIEBLAS examples are not species-specific carob recommendations. Evidence does not automatically set a working community's values.\n\nCompare like quantities: 30 L for 100 plants equals an average 0.3 L/plant/event. Container sizes in litres are not doses. A 20 L Cocoon reservoir fill is additional to settlement water. A seasonal total (Las Labores: 400 L/plant over May–September), annual allocation or tank capacity cannot become a per-event dose without sufficient information. No automatic age-based dose curve or stopping age is established.\n\nGlossary: IND/IFWC means individual fog water collector. AFDS means Autonomous Fluid Discharge System: collected water fills a tank and its level triggers discharge through an irrigation network. The maintenance passage uses “SAD” without expanding it; its correspondence with AFDS is a curated interpretation of the matching operation, not a verified acronym expansion. MR means restoration model: MR1 recovers degraded areas; MR2 is oasificación, or restoration using runoff harvesting. MP means production model: MP1 enriches dehesas, MP2 improves older afforestation, MP3 establishes extensive production and MP4 uses intensive production.\n\nOpen a phase for quantities, frequency or trigger, season, age context, source limitations and exact-page evidence. Follow its connections to methods and fincas for the practical examples.",
+      "member_layout": "vertical",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Lifecycle, method operation, first-year context and project regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Lifecycle, method operation, first-year context and project regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Lifecycle, method operation, first-year context and project regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 97,
+          "locator": "Lifecycle, method operation, first-year context and project regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "locator": "Lifecycle, method operation, first-year context and project regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "locator": "Lifecycle, method operation, first-year context and project regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "locator": "Lifecycle, method operation, first-year context and project regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Lifecycle, method operation, first-year context and project regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Lifecycle, method operation, first-year context and project regimes"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Nursery stages, planting models, establishment and seasonal total"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 73,
+          "locator": "Nursery stages, planting models, establishment and seasonal total"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 74,
+          "locator": "Nursery stages, planting models, establishment and seasonal total"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Nursery stages, planting models, establishment and seasonal total"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 95,
+          "locator": "Nursery stages, planting models, establishment and seasonal total"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 96,
+          "locator": "Nursery stages, planting models, establishment and seasonal total"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 97,
+          "locator": "Nursery stages, planting models, establishment and seasonal total"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Nursery stages, planting models, establishment and seasonal total"
+        }
+      ]
+    },
+    {
+      "id": "browse:plant-communities",
+      "label": "Plant communities",
+      "parent_id": "ecosystem:habitats",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "acidic-scrub",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carob-community",
+          "role": "shared"
+        },
+        {
+          "topic_id": "cork-oak-woodland",
+          "role": "primary"
+        },
+        {
+          "topic_id": "esparto-grassland",
+          "role": "primary"
+        },
+        {
+          "topic_id": "jujube-thorn-scrub",
+          "role": "primary"
+        },
+        {
+          "topic_id": "kermes-oak-scrub",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mastic-scrub",
+          "role": "primary"
+        },
+        {
+          "topic_id": "pine-woodland",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rosemary-scrub",
+          "role": "primary"
+        },
+        {
+          "topic_id": "seasonal-watercourse",
+          "role": "primary"
+        },
+        {
+          "topic_id": "warm-woodland",
+          "role": "primary"
+        },
+        {
+          "topic_id": "wild-olive-scrub",
+          "role": "primary"
+        },
+        {
+          "topic_id": "xerothermic-scrub",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carob-community-almeria",
+          "role": "shared"
+        },
+        {
+          "topic_id": "cornical-scrub",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge."
+    },
+    {
+      "id": "browse:habitat-types",
+      "label": "Habitats & vegetation types",
+      "parent_id": "ecosystem:habitats",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "coastal-rocky-scrub",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mediterranean-dryland",
+          "role": "primary"
+        },
+        {
+          "topic_id": "semi-arid-shrubland",
+          "role": "primary"
+        },
+        {
+          "topic_id": "acidic-scrub",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob-community",
+          "role": "shared"
+        },
+        {
+          "topic_id": "cork-oak-woodland",
+          "role": "shared"
+        },
+        {
+          "topic_id": "esparto-grassland",
+          "role": "shared"
+        },
+        {
+          "topic_id": "jujube-thorn-scrub",
+          "role": "shared"
+        },
+        {
+          "topic_id": "kermes-oak-scrub",
+          "role": "shared"
+        },
+        {
+          "topic_id": "mastic-scrub",
+          "role": "shared"
+        },
+        {
+          "topic_id": "pine-woodland",
+          "role": "shared"
+        },
+        {
+          "topic_id": "rosemary-scrub",
+          "role": "shared"
+        },
+        {
+          "topic_id": "seasonal-watercourse",
+          "role": "shared"
+        },
+        {
+          "topic_id": "warm-woodland",
+          "role": "shared"
+        },
+        {
+          "topic_id": "wild-olive-scrub",
+          "role": "shared"
+        },
+        {
+          "topic_id": "xerothermic-scrub",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob-community-almeria",
+          "role": "shared"
+        },
+        {
+          "topic_id": "cornical-scrub",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge."
+    },
+    {
+      "id": "browse:places-trials",
+      "label": "Places & field trials",
+      "parent_id": "ecosystem:habitats",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "al-faisal",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al-faisal-pilot",
+          "role": "primary"
+        },
+        {
+          "topic_id": "almeria",
+          "role": "primary"
+        },
+        {
+          "topic_id": "andalusia",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cabo-de-gata",
+          "role": "primary"
+        },
+        {
+          "topic_id": "canal-flooding",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carregal-do-sal",
+          "role": "primary"
+        },
+        {
+          "topic_id": "el-rano",
+          "role": "primary"
+        },
+        {
+          "topic_id": "gran-canaria",
+          "role": "primary"
+        },
+        {
+          "topic_id": "granada",
+          "role": "primary"
+        },
+        {
+          "topic_id": "grazalema",
+          "role": "primary"
+        },
+        {
+          "topic_id": "israel",
+          "role": "primary"
+        },
+        {
+          "topic_id": "jordan",
+          "role": "primary"
+        },
+        {
+          "topic_id": "la-alcantarilla",
+          "role": "primary"
+        },
+        {
+          "topic_id": "la-sagra",
+          "role": "primary"
+        },
+        {
+          "topic_id": "malaga",
+          "role": "primary"
+        },
+        {
+          "topic_id": "maysara",
+          "role": "primary"
+        },
+        {
+          "topic_id": "maysara-carob-trial",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mediterranean",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mojacar",
+          "role": "primary"
+        },
+        {
+          "topic_id": "portugal",
+          "role": "primary"
+        },
+        {
+          "topic_id": "albox",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar",
+          "role": "primary"
+        },
+        {
+          "topic_id": "las-labores",
+          "role": "primary"
+        },
+        {
+          "topic_id": "la-tortola",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cadiz",
+          "role": "primary"
+        },
+        {
+          "topic_id": "sevilla",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cordoba",
+          "role": "primary"
+        },
+        {
+          "topic_id": "prado-del-rey",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carmona",
+          "role": "primary"
+        },
+        {
+          "topic_id": "posadas",
+          "role": "primary"
+        },
+        {
+          "topic_id": "gaucin",
+          "role": "primary"
+        },
+        {
+          "topic_id": "ubrique",
+          "role": "primary"
+        },
+        {
+          "topic_id": "huerta-los-tamayos",
+          "role": "primary"
+        },
+        {
+          "topic_id": "el-triguero",
+          "role": "primary"
+        },
+        {
+          "topic_id": "buenavista",
+          "role": "primary"
+        },
+        {
+          "topic_id": "los-lirios",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge."
+    },
+    {
+      "id": "browse:carob-communities",
+      "label": "Carob plant communities",
+      "parent_id": "browse:plant-communities",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "carob-community",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carob-community-almeria",
+          "role": "primary"
+        }
+      ],
+      "description": "Start with the Mediterranean overview, then inspect the Almería examples. Potential vegetation, observed companions and restoration practices retain separate source context.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "General and regional context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "General and regional context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "General and regional context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "General and regional context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "General and regional context"
+        }
+      ],
+      "maintenance_rule": "Preserve the two stable carob community identities and contextual evidence; organizational membership is not a factual claim or formal botanical classification."
+    }
+  ],
+  "irrigation_evidence": [
+    {
+      "id": "irrigation-evidence:life-nursery-average",
+      "species_id": null,
+      "stage": "nursery",
+      "field": "amount",
+      "value": 0.3,
+      "units": "L/plant/event",
+      "wording": "Calculated average 0.3 L/plant/event; original: around 30 L for 100 plants.",
+      "context": "LIFE nursery; twice weekly; no universal calendar or species-specific identification.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Project reference, not species-specific guidance. Nursery value is an arithmetic average; ranges remain ranges.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Project irrigation choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-settlement-range",
+      "species_id": null,
+      "stage": "settlement",
+      "field": "amount",
+      "value": "10–15",
+      "units": "L/plant/event",
+      "wording": "10–15 L/plant/event immediately after field planting.",
+      "context": "LIFE traditional, IND, AFDS and Cocoon settlement; Cocoon reservoir fill is separate.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Project reference, not species-specific guidance. Nursery value is an arithmetic average; ranges remain ranges.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Project irrigation choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-maintenance-traditional-cocoon",
+      "species_id": null,
+      "stage": "summer-maintenance",
+      "field": "amount",
+      "value": 15,
+      "units": "L/plant/event",
+      "wording": "15 L/plant/event, once monthly July–September.",
+      "context": "LIFE traditional and Cocoon project choices; method descriptions discuss first field year.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Project reference, not species-specific guidance. Nursery value is an arithmetic average; ranges remain ranges.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Project irrigation choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-maintenance-ind",
+      "species_id": null,
+      "stage": "summer-maintenance",
+      "field": "amount",
+      "value": 10,
+      "units": "L/plant/event",
+      "wording": "10 L/plant/event, once monthly July–September.",
+      "context": "LIFE IND/IFWC project choice; first-year method context.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Project reference, not species-specific guidance. Nursery value is an arithmetic average; ranges remain ranges.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Project irrigation choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-maintenance-sad",
+      "species_id": null,
+      "stage": "summer-maintenance",
+      "field": "amount",
+      "value": 15,
+      "units": "L/plant/event",
+      "wording": "About 15 L/plant/event; source label SAD.",
+      "context": "LIFE SAD: when tank fills, about every three weeks; calendar season not specified.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Project reference, not species-specific guidance. Nursery value is an arithmetic average; ranges remain ranges.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Project irrigation choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-nursery-frequency",
+      "species_id": null,
+      "stage": "nursery",
+      "field": "frequency",
+      "value": "Twice weekly",
+      "units": "",
+      "wording": "Twice weekly",
+      "context": "LIFE project regime; method distinctions must be retained.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and choices"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-nursery-period",
+      "species_id": null,
+      "stage": "nursery",
+      "field": "period",
+      "value": "Before field planting; calendar season not specified",
+      "units": "",
+      "wording": "Before field planting; calendar season not specified",
+      "context": "LIFE project regime; no universal calendar inferred.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and choices"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-settlement-frequency",
+      "species_id": null,
+      "stage": "settlement",
+      "field": "frequency",
+      "value": "Once, immediately after field planting",
+      "units": "",
+      "wording": "Once, immediately after field planting",
+      "context": "LIFE project regime; method distinctions must be retained.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and choices"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-settlement-period",
+      "species_id": null,
+      "stage": "settlement",
+      "field": "period",
+      "value": "At planting",
+      "units": "",
+      "wording": "At planting",
+      "context": "LIFE project regime; no universal calendar inferred.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and choices"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-summer-maintenance-frequency",
+      "species_id": null,
+      "stage": "summer-maintenance",
+      "field": "frequency",
+      "value": "Monthly for traditional/Cocoon/IND; SAD uses a tank-full trigger with an approximately three-week interval",
+      "units": "",
+      "wording": "Monthly for traditional/Cocoon/IND; SAD uses a tank-full trigger with an approximately three-week interval",
+      "context": "LIFE project regime; method distinctions must be retained.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and choices"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-summer-maintenance-period",
+      "species_id": null,
+      "stage": "summer-maintenance",
+      "field": "period",
+      "value": "July–September for traditional/Cocoon/IND; SAD season not specified",
+      "units": "",
+      "wording": "July–September for traditional/Cocoon/IND; SAD season not specified",
+      "context": "LIFE project regime; no universal calendar inferred.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and choices"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-support-frequency",
+      "species_id": null,
+      "stage": "support",
+      "field": "frequency",
+      "value": "Consider forecasts, soil moisture and plant drought symptoms",
+      "units": "",
+      "wording": "Consider forecasts, soil moisture and plant drought symptoms",
+      "context": "LIFE project regime; method distinctions must be retained.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and choices"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-support-period",
+      "species_id": null,
+      "stage": "support",
+      "field": "period",
+      "value": "When stress conditions occur",
+      "units": "",
+      "wording": "When stress conditions occur",
+      "context": "LIFE project regime; no universal calendar inferred.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and choices"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and choices"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:life-support-unquantified",
+      "species_id": null,
+      "stage": "support",
+      "field": "amount",
+      "value": null,
+      "units": "L/plant/event",
+      "wording": "Support watering quantity: Not specified in this source.",
+      "context": "Monitor weather and plants; no fixed dose or age-based schedule.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Support irrigation"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:labores-season-total",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "amount",
+      "value": 400,
+      "units": "L/plant/May–September total",
+      "wording": "Las Labores reports 400 L/plant in total from May to September.",
+      "context": "Albox, Almería; deficit drip irrigation; event count and individual dose unspecified.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Seasonal total, incompatible with L/plant/event. Do not divide without a documented event count.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:labores-period",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "period",
+      "value": "May–September",
+      "units": "",
+      "wording": "May–September at Las Labores.",
+      "context": "Albox, Almería; case practice, plant-age dependence not specified.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:mr2-support-unquantified",
+      "species_id": "carob",
+      "stage": "support",
+      "field": "amount",
+      "value": null,
+      "units": "L/plant/event",
+      "wording": "MR2 mentions support watering without a numerical dose.",
+      "context": "Arid/semiarid oasificación; water harvesting, microsite selection and care are part of the setting.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Establishment care and Table 5.19"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Establishment care and Table 5.19"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:huerta-los-tamayos-dose",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "amount",
+      "value": "50–80",
+      "units": "L/plant/event",
+      "wording": "50–80 L/plant/event; three summer waterings during the first two years.",
+      "context": "Young 40–50 cm forest nursery stock in dehesa/olive enrichment; 40 cm holes, shelters and hay mulch. The 2000 L tank is equipment capacity, not a plant dose.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Observed finca practice, not a universal recommendation. A range cannot auto-fill a single value.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:el-triguero-dose",
+      "species_id": "carob",
+      "stage": "support",
+      "field": "amount",
+      "value": 50,
+      "units": "L/plant/event",
+      "wording": "50 L/plant/event, monthly emergency watering.",
+      "context": "MP3 extensive planting at Carmona in autumn 2023; 1 m plants, 4 × 8 m spacing, 312 trees/ha, 30 ha, soil depth <50 cm. Calendar months and duration of this emergency regime are not specified.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Observed finca practice, not a universal recommendation. A range cannot auto-fill a single value.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:buenavista-dose",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "amount",
+      "value": 100,
+      "units": "L/plant/event",
+      "wording": "100 L/plant/event every 15 days during the first two summers.",
+      "context": "MP4 intensive phased planting at Posadas, Córdoba; 10 × 6 m, 166 trees/ha; stock and cultivars differ by phase. This is not MR1 or an Almería site.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Observed finca practice, not a universal recommendation. A range cannot auto-fill a single value.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:los-lirios-dose",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "amount",
+      "value": 50,
+      "units": "L/plant/event",
+      "wording": "50 L/plant/event three times weekly from April to October.",
+      "context": "Intensive one-hectare mother-plant plot established in 2023 at Los Lirios; 2 × 4 m, 1250 trees/ha, 1 m stock. The older afforestation on the same finca received no establishment irrigation; preserve both contexts.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "Observed finca practice, not a universal recommendation. A range cannot auto-fill a single value.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:huerta-los-tamayos-frequency",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "frequency",
+      "value": "Three summer waterings",
+      "units": "",
+      "wording": "Three summer waterings",
+      "context": "Source-described carob finca practice at huerta-los-tamayos; retain the linked dose and site context.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:huerta-los-tamayos-period",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "period",
+      "value": "First two years after planting; summer",
+      "units": "",
+      "wording": "First two years after planting; summer",
+      "context": "Source-described carob finca practice at huerta-los-tamayos; retain the linked dose and site context.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:el-triguero-frequency",
+      "species_id": "carob",
+      "stage": "support",
+      "field": "frequency",
+      "value": "Monthly emergency watering",
+      "units": "",
+      "wording": "Monthly emergency watering",
+      "context": "Source-described carob finca practice at el-triguero; retain the linked dose and site context.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:el-triguero-period",
+      "species_id": "carob",
+      "stage": "support",
+      "field": "period",
+      "value": "Calendar months and duration not specified",
+      "units": "",
+      "wording": "Calendar months and duration not specified",
+      "context": "Source-described carob finca practice at el-triguero; retain the linked dose and site context.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:buenavista-frequency",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "frequency",
+      "value": "Every 15 days",
+      "units": "",
+      "wording": "Every 15 days",
+      "context": "Source-described carob finca practice at buenavista; retain the linked dose and site context.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:buenavista-period",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "period",
+      "value": "First two summers after planting",
+      "units": "",
+      "wording": "First two summers after planting",
+      "context": "Source-described carob finca practice at buenavista; retain the linked dose and site context.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:los-lirios-frequency",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "frequency",
+      "value": "Three times per week",
+      "units": "",
+      "wording": "Three times per week",
+      "context": "Source-described carob finca practice at los-lirios; retain the linked dose and site context.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Riegos"
+        }
+      ]
+    },
+    {
+      "id": "irrigation-evidence:los-lirios-period",
+      "species_id": "carob",
+      "stage": "summer-maintenance",
+      "field": "period",
+      "value": "April–October; mother-plant plot established in 2023",
+      "units": "",
+      "wording": "April–October; mother-plant plot established in 2023",
+      "context": "Source-described carob finca practice at los-lirios; retain the linked dose and site context.",
+      "applicability": "Documented source context; not a universal plant prescription.",
+      "limitations": "",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Riegos"
+        }
+      ]
+    }
+  ]
+}

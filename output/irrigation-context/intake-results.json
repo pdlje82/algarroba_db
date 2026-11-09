@@ -1,0 +1,25 @@
+{
+  "accepted": {
+    "status": "accepted",
+    "revision": 10,
+    "topics": 7,
+    "relationships": 18,
+    "findings": 16,
+    "coverage": 0,
+    "unresolved": 0,
+    "browse_groups": 1,
+    "plant_images": 0,
+    "sources": 0,
+    "communities": 0,
+    "irrigation_evidence": 0
+  },
+  "checks": [
+    "Plant-neutral phase descriptions/findings/connections",
+    "Carob evidence on correct communities",
+    "LIFE quantities stay with LIFE",
+    "Source wording and naming metadata unchanged",
+    "All immutable irrigation evidence and working plans unchanged",
+    "Repeat no-op and stale rejection",
+    "SQLite integrity"
+  ]
+}

@@ -90,3 +90,17 @@ images also require thumbnail. Validate decoded pixels, dimensions, transparency
 association, unique role and complete whole/detail pairs before import. Existing images remain valid
 when later batches change unrelated facts; a species with artwork cannot become a non-species.
 Media records are not graph topics or factual relationships. See PLANT_IMAGES.md.
+
+
+## Reader-facing group guides
+
+BrowseGroup optionally stores description (default empty), source_refs (default empty)
+and member_layout (grid|vertical, default grid). References receive the same registered-
+edition/page/coverage validation as topic references. Vertical groups use member array
+order for graph and keyboard-list presentation; membership remains organizational.
+Group edits must preserve optional metadata. Do not repurpose maintenance_rule as a
+reader-facing explanation.
+
+New irrigation dose candidates use L/plant/event; L/plant/watering remains a compatible
+legacy spelling. Original immutable candidates and retained baselines are not rewritten.
+Do not convert seasonal/area totals to event doses without a documented denominator.

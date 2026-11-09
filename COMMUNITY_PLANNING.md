@@ -45,7 +45,7 @@ settlement, summer maintenance and support. Unconfigured, configured and not app
 are distinct. Not applicable retains earlier values for possible reactivation;
 unconfiguring a stage retains previous values in history.
 
-Amounts are liters per plant per watering. Frequency/trigger, applicable period and
+Amounts use L/plant/event: litres per plant for one watering application. Legacy L/plant/watering baselines remain compatible and are preserved unchanged. Frequency/trigger, applicable period and
 notes are text. Blank means unknown. Zero requires explicit entry. There are no plant
 profiles, inheritance, inferred amounts, schedules or budget calculations.
 
@@ -118,3 +118,45 @@ amounts must never enter accepted knowledge.
 Initial fingerprints and backup location are in `backups/community-editor-baseline.json`.
 Keep SQLite backups with managed sources/media. Verify restoration separately and stop the
 app before replacing live data. Do not modify the old application's library.
+
+
+## Lifecycle guide and carob evidence (8 November 2026)
+
+The Irrigation lifecycle folder has a cited reader outline and the stored sequence
+Nursery, Settlement, Summer maintenance, Support. Its graph and accessible list use
+one vertical column. Support is event-triggered and can overlap earlier field phases.
+Phase descriptions explain purpose, amount, timing, age, context and limitations;
+Source findings and guidance exposes the underlying passages beside each topic.
+
+The Carob plant communities folder separates the Mediterranean overview (same
+carob-community ID) from regional Almería examples. Potential vegetation, observed
+companions and restoration/production practices are distinct. La Alcantarilla,
+Las Labores and La Tórtola retain their municipality and case evidence.
+
+Optional browse-group description, source_refs and member_layout metadata travels
+through checked intake, catalog, inspection and export. member_layout defaults to
+grid; vertical uses stored member-array order and opens without grouping. The generic
+renderer repairs historical layouts in memory and retains offsets/history. Group
+metadata and references survive rename/move/membership edits. Source-backed metadata
+is maintained through the checked importer, not invented from folder membership.
+
+New amount evidence uses L/plant/event. Generic evidence cannot supply a species-
+specific baseline automatically; ranges, unquantified guidance, seasonal totals and
+reservoir capacity remain separate. Every normalized value keeps original wording
+and calculation. Irrigation evidence never configures a working plan during intake.
+
+The SAD maintenance label is retained separately and linked to AFDS by an explicit
+curated operational correspondence. No unverified expansion is assigned to SAD.
+Source inconsistencies and historical coverage limitations remain inspectable.
+See IRRIGATION_LIFECYCLE.md and output/irrigation-audit/ for the intake and checks.
+
+
+## Plant-neutral lifecycle definitions
+
+The lifecycle describes purposes and recording units for any plant. Numerical doses,
+species-specific nursery/age recommendations and finca schedules belong to their
+species/community or project context. The carob community records now hold the carob
+recommendations and site examples; LIFE project schedules remain with LIFE and its
+methods. Context links explain which phase applies without assigning a dose to the
+phase itself. This presentation correction does not change immutable evidence or any
+user-configured irrigation value.

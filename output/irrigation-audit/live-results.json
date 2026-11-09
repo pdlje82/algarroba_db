@@ -1,0 +1,170 @@
+{
+  "revision": 7,
+  "health": {
+    "status": "ready",
+    "revision": 7,
+    "database": "SQLite",
+    "mode": "local",
+    "application": "algarroba-knowledge-browser",
+    "project": "C:\\Users\\JanEngelke\\git_private\\algarroba_db",
+    "pid": 103872
+  },
+  "changes": {
+    "added_topic_ids": [
+      "sad-life-source",
+      "carob-community-almeria",
+      "cornical-scrub",
+      "carob-restoration-mr1",
+      "carob-diversification-mr3",
+      "albox",
+      "nijar",
+      "las-labores",
+      "la-tortola",
+      "cadiz",
+      "sevilla",
+      "cordoba",
+      "prado-del-rey",
+      "carmona",
+      "posadas",
+      "gaucin",
+      "ubrique",
+      "huerta-los-tamayos",
+      "el-triguero",
+      "buenavista",
+      "los-lirios"
+    ],
+    "relationship_ids": [
+      "life-sad-afds",
+      "life-sad-maintenance",
+      "life-afds-fog",
+      "life-afds-network",
+      "carob-almeria-mediterranean",
+      "carob-almeria-place",
+      "carob-almeria-carob",
+      "carob-almeria-observed-wild-olive",
+      "carob-almeria-observed-mastic",
+      "carob-almeria-regional-dwarf-palm",
+      "carob-almeria-regional-aleppo-pine",
+      "carob-almeria-setting-mastic-scrub",
+      "carob-almeria-setting-wild-olive-scrub",
+      "carob-almeria-setting-kermes-oak-scrub",
+      "carob-almeria-setting-jujube-thorn-scrub",
+      "carob-almeria-setting-cornical-scrub",
+      "carob-mr1-restoration",
+      "carob-mr3-restoration",
+      "carob-almeria-carob-restoration-mr1",
+      "carob-almeria-carob-oasification",
+      "place-albox-almeria",
+      "place-nijar-almeria",
+      "place-las-labores-albox",
+      "place-la-tortola-nijar",
+      "carob-almeria-case-las-labores",
+      "carob-almeria-case-la-alcantarilla",
+      "carob-almeria-case-la-tortola",
+      "mr1-labores",
+      "mr2-tortola",
+      "la-alcantarilla-observed-mastic",
+      "la-alcantarilla-observed-wild-olive",
+      "la-tortola-observed-mastic",
+      "la-tortola-observed-wild-olive",
+      "las-labores-potential-mastic-scrub",
+      "la-tortola-potential-mastic-scrub",
+      "la-tortola-potential-jujube-thorn-scrub",
+      "tortola-current-esparto",
+      "place-prado-del-rey-cadiz",
+      "place-carmona-sevilla",
+      "place-posadas-cordoba",
+      "place-gaucin-malaga",
+      "place-ubrique-cadiz",
+      "place-huerta-los-tamayos-prado-del-rey",
+      "carob-case-huerta-los-tamayos",
+      "place-el-triguero-carmona",
+      "carob-case-el-triguero",
+      "place-buenavista-posadas",
+      "carob-case-buenavista",
+      "place-los-lirios-gaucin",
+      "carob-case-los-lirios",
+      "el-rano-ubrique",
+      "carob-water-phase-huerta-los-tamayos",
+      "carob-water-phase-el-triguero",
+      "carob-water-phase-buenavista",
+      "carob-water-phase-los-lirios",
+      "labores-water-phase",
+      "mr2-support-phase",
+      "carob-nursery-phase"
+    ],
+    "finding_ids": [
+      "life-nursery-water",
+      "life-maintenance-water",
+      "life-first-year-water",
+      "life-storage-estimate",
+      "carob-nursery-water",
+      "carob-establishment-years",
+      "life-afds-operation",
+      "life-irrigation-measurement",
+      "carob-labores-context",
+      "carob-labores-establishment",
+      "carob-labores-water",
+      "carob-labores-outcomes",
+      "carob-alcantarilla-observed",
+      "carob-alcantarilla-fruit",
+      "carob-tortola-context",
+      "carob-tortola-observed",
+      "carob-mr1-guidance",
+      "carob-mr1-survival",
+      "carob-water-huerta-los-tamayos",
+      "carob-water-el-triguero",
+      "carob-water-buenavista",
+      "carob-water-los-lirios",
+      "carob-buenavista-context",
+      "carob-mp4-allocation",
+      "carob-elrano-context"
+    ],
+    "browse_group_ids": [
+      "browse:irrigation-lifecycle",
+      "browse:plant-communities",
+      "browse:habitat-types",
+      "browse:places-trials",
+      "browse:carob-communities"
+    ]
+  },
+  "preserved_tables": {
+    "sources": {
+      "count": 21,
+      "sha256": "ebdcb91dd07fe6f7694d2c4d468ea26246f9aaece9122dac4cedee318a7c2ea4"
+    },
+    "plant_images": {
+      "count": 46,
+      "sha256": "9b399b95c4aa552af8738a64776119b68d038345e6fdb4a71b44836b2b134568"
+    },
+    "communities": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "explorations": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "tasks": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "planning_events": {
+      "count": 1,
+      "sha256": "c7ca37ea6d24f4a8cb37df3431dfc863a83625b1d3df3bd9226679c431d69a78"
+    },
+    "organization_roots": {
+      "count": 9,
+      "sha256": "dbc2af4005e72b08496bd52f38a9029d0db7ae75fd830872cc195e43084a9402"
+    },
+    "redirects": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "sqlite_integrity": "ok",
+  "frontend_tests": 57,
+  "backend_passed": 74,
+  "backend_skipped": 1,
+  "browser_checks": 20
+}

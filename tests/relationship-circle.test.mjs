@@ -71,9 +71,9 @@ test('old grid histories translate to circles without rewriting saved offsets or
   assert.ok(frozen.links.every(e=>e.labelPlacement),'A resized preview keeps its safe label positions');
 });
 
-test('topic arcs fill landscape and portrait frames without clipping labels',()=>{
+test('compact topic arcs fit landscape and portrait frames without forced stretching or clipped labels',()=>{
   for(const n of [1,9,21]){
-    for(const aspect of [0.5,0.85,1,1.6,2.4]){
+    for(const aspect of [0.4,9/16,3/4,1,4/3,16/9,2.4]){
       const {cards,links}=fixtures(n),layout=relationshipCircle(cards,links,'centre',aspect);
       const scene={layout:'circle',cards:cards.map(c=>({...c,position:layout.positions[c.id]})),links:links.map(e=>({...e,labelPlacement:layout.labels[e.id]}))};
       const original=structuredClone(scene);
@@ -89,10 +89,29 @@ test('topic arcs fill landscape and portrait frames without clipping labels',()=
       if(n>=3){
         const width=Math.max(...scene.cards.map(c=>c.position.x+c.width/2))-Math.min(...scene.cards.map(c=>c.position.x-c.width/2));
         const height=Math.max(...scene.cards.map(c=>c.position.y+c.height/2))-Math.min(...scene.cards.map(c=>c.position.y-c.height/2));
-        assert.ok(width/(frame.maxX-frame.minX)>.85,'Topics use the available frame width');
-        assert.ok(height/(frame.maxY-frame.minY)>.85,'Topics use the available frame height');
+        assert.ok(height/width<1.35,'Portrait content must not stretch to fill a tall frame');
+        assert.ok(width/height<1.65,'Landscape content must not stretch to fill a wide frame');
+        if(aspect===9/16)assert.ok(height/(frame.maxY-frame.minY)<.8,'Portrait frames allow empty top/bottom margins');
       }
       assert.deepEqual(scene,original);
     }
   }
+});
+
+test('dense cross-connected neighbourhoods remain compact throughout 16:9 to 9:16',()=>{
+  const {cards,links}=fixtures(17);
+  links.forEach((e,i)=>e.record.label=['examples use restoration model','vegetation setting named','documented example','observed companion'][i%4]);
+  for(let i=0;i<24;i++)links.push({id:'cross:'+i,source:'plant:'+(i%17),target:'plant:'+((i+5)%17),record:{label:'recorded regional connection'},relationshipIds:['cross:'+i]});
+  const original=structuredClone(links);
+  for(let step=0;step<=12;step++){
+    const aspect=9/16+(16/9-9/16)*step/12;
+    const result=relationshipCircle(cards,links,'centre',aspect);
+    verifyClear(cards,result);
+    assert.equal(Object.keys(result.labels).length,links.length);
+    const points=Object.values(result.positions);
+    const width=Math.max(...points.map(p=>p.x))-Math.min(...points.map(p=>p.x))+234;
+    const height=Math.max(...points.map(p=>p.y))-Math.min(...points.map(p=>p.y))+124;
+    assert.ok(height/width<1.35&&width/height<1.65,'Dense topics keep a bounded ellipse in every window format');
+  }
+  assert.deepEqual(links,original,'Packing must retain every factual direction and ID');
 });

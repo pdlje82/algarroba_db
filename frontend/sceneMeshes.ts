@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { palettes, type Theme } from "./appearance.ts";
 import type { SceneCard } from "./scene";
-import { speciesNames } from "./speciesNames.ts";
+import { topicNames } from "./speciesNames.ts";
 function texture(canvas: HTMLCanvasElement) {
   const t = new THREE.CanvasTexture(canvas);
   t.colorSpace = THREE.SRGBColorSpace;
@@ -153,9 +153,10 @@ export function cardMesh(
   const nameX = imageUrl ? 264 : 98,
     nameWidth = imageUrl ? 414 : 576,
     labelX = imageUrl ? 210 : 24;
-  if (r.kind === "species") {
-    speciesNames(r).forEach((name, i) => {
-      const y = 88 + i * 74;
+  const names = topicNames(r);
+  if (names.length) {
+    names.forEach((name, i) => {
+      const y = 88 + i * (names.length === 2 ? 106 : 74);
       ctx.fillStyle = p.muted;
       ctx.font = "24px Segoe UI";
       ctx.fillText(name.label, labelX, y);

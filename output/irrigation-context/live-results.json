@@ -1,0 +1,10 @@
+{
+  "revision": 10,
+  "browser_checks": 24,
+  "browser_errors": [],
+  "frontend_passes": 58,
+  "backend_passes": 74,
+  "backend_skips": 1,
+  "source_evidence_and_plans": "unchanged",
+  "sqlite_integrity": "ok"
+}

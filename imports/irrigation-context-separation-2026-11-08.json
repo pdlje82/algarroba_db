@@ -1,0 +1,1220 @@
+{
+  "batch_id": "irrigation-context-separation-2026-11-08-v1",
+  "base_revision": 9,
+  "summary": "Plant-neutral lifecycle definitions; carob doses and age/site recommendations on carob communities; LIFE schedules remain with LIFE methods. Reassociated 10 carob findings and 6 LIFE project findings without changing their source wording or immutable dose evidence.",
+  "topics": [
+    {
+      "id": "nursery-irrigation",
+      "label": "Nursery watering",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "Watering before field planting prepares nursery plants for the next stage. The regime depends on the plant, growing conditions and nursery stage; this phase does not prescribe a dose or frequency.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        }
+      ],
+      "aspects": {
+        "Purpose": "Water plants while they are in the nursery, before field planting.",
+        "Amount": "No universal dose. Record the selected amount in L/plant/event for the particular plant and site.",
+        "Frequency or trigger": "Set the interval or moisture trigger for the species, growing medium, stock and conditions. No universal interval is defined.",
+        "Applicable period": "Before field planting; calendar months depend on the growing programme and location.",
+        "Age and stock": "Record the nursery or propagation stage. Nursery age is different from time since field planting.",
+        "Limitations": "This is a plant-neutral phase definition. Species/community recommendations, project schedules and case observations belong to their own context. Unknown is not zero; seasonal totals and reservoir capacities are not event doses."
+      }
+    },
+    {
+      "id": "settlement-irrigation",
+      "label": "Settlement watering",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "The first watering immediately after field planting is a purpose category that can be used for any plant. Subsequent establishment watering belongs to maintenance or support according to its purpose.",
+      "aliases": [
+        "riego de asiento"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        }
+      ],
+      "aspects": {
+        "Purpose": "The first water application immediately after field planting.",
+        "Amount": "No universal dose. Record the selected amount in L/plant/event for the particular plant and site.",
+        "Frequency or trigger": "At planting. Classify later applications by their purpose rather than calling the whole establishment period settlement.",
+        "Applicable period": "At the planting date; no universal calendar month.",
+        "Age and stock": "Newly field-planted stock can already be of different ages. This phase is defined by the planting event, not a fixed biological age.",
+        "Limitations": "This is a plant-neutral phase definition. Species/community recommendations, project schedules and case observations belong to their own context. Unknown is not zero; seasonal totals and reservoir capacities are not event doses."
+      }
+    },
+    {
+      "id": "maintenance-irrigation",
+      "label": "Summer maintenance watering",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "Recurring watering during summer or another difficult period follows a chosen interval or trigger. Its dose, season and duration must be selected for the plant, site and method.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        }
+      ],
+      "aspects": {
+        "Purpose": "Recurring water during a period when the chosen planting needs maintenance irrigation.",
+        "Amount": "No universal dose. Record the selected amount in L/plant/event for the particular plant and site.",
+        "Frequency or trigger": "Record the chosen interval or trigger separately from the amount. The appropriate interval depends on plant and site conditions.",
+        "Applicable period": "The locally relevant difficult or dry period; no universal months or season length.",
+        "Age and stock": "Record time since field planting and the relevant development stage. There is no universal age-based dose or stopping age.",
+        "Limitations": "This is a plant-neutral phase definition. Species/community recommendations, project schedules and case observations belong to their own context. Unknown is not zero; seasonal totals and reservoir capacities are not event doses."
+      }
+    },
+    {
+      "id": "support-irrigation",
+      "label": "Support watering during stress",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "Additional water may be considered in response to unusual weather, soil moisture or plant stress. Support can overlap establishment and maintenance; it is not a final age stage.",
+      "aliases": [
+        "emergency watering"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        }
+      ],
+      "aspects": {
+        "Purpose": "Respond to stress or exceptional conditions, rather than follow an assumed standard schedule.",
+        "Amount": "No universal dose. Record the selected amount in L/plant/event for the particular plant and site.",
+        "Frequency or trigger": "Monitor forecasts, soil moisture and plant condition. Consider support water when the relevant conditions justify it.",
+        "Applicable period": "When the relevant stress conditions occur; no universal month or recurrence.",
+        "Age and stock": "Can overlap field establishment and maintenance. Assess the particular plant and site instead of using age alone.",
+        "Limitations": "This is a plant-neutral phase definition. Species/community recommendations, project schedules and case observations belong to their own context. Unknown is not zero; seasonal totals and reservoir capacities are not event doses."
+      }
+    },
+    {
+      "id": "carob-community",
+      "label": "Mediterranean carob associations",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "General overview of Mediterranean vegetation associated with carob in section 1.2, page 18. The named companions are not one formal botanical association, a worldwide recipe or proof that every species occurs together. Read the Almería examples for local observations. Carob-specific watering guidance and wider finca examples are recorded here by lifecycle phase; the lifecycle definitions themselves remain plant-neutral.",
+      "aliases": [
+        "carob societies",
+        "plant companions",
+        "associated vegetation",
+        "comunidades de algarrobo",
+        "Carob plant communities",
+        "Comunidades mediterráneas con algarrobo"
+      ],
+      "spanish_name": "Comunidades mediterráneas con algarrobo",
+      "english_name": "Mediterranean carob associations",
+      "scientific_name": null,
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names.",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "1.2 distribution and companion vegetation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 73,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 74,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 95,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 96,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 97,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Carob nursery/establishment guidance and production/restoration case practices"
+        }
+      ],
+      "place_ids": [
+        "mediterranean"
+      ],
+      "aspects": {
+        "Irrigation applicability": "These recommendations and observations concern carob trees in the cited setting, not every companion species or every Mediterranean site. Finca practices are examples, not universal doses.",
+        "Nursery watering — carob": "The handbook describes frequent growth-stage watering and spaced, more intense hardening irrigation, adapted to the nursery. It gives no universal litres-per-plant dose. Nursery programmes for one- and two-season stock are not years since field planting. See the nursery finding and PDF 72–74, 79.",
+        "Settlement watering — carob": "The reviewed carob passages do not supply a single numerical first-watering dose. Do not substitute the LIFE NIEBLAS project’s quantities as a carob recommendation.",
+        "Maintenance watering — carob guidance": "The handbook describes a 3–5-year establishment period and advises 1–5 summer waterings during the first five years, without specifying an event dose or an explicit annual count (PDF 95–96).",
+        "Maintenance watering — finca observations": "Huerta Los Tamayos: 50–80 L/plant/event, three summer waterings during the first two years (PDF 103). Buenavista: 100 L/plant/event every 15 days during the first two summers, in an intensive production planting (PDF 123). Los Lirios: 50 L/plant/event three times weekly, April–October, in an intensive mother-plant plot; its older afforestation received no establishment irrigation (PDF 112). These settings must not be treated as interchangeable.",
+        "Support watering — carob example": "El Triguero reports 50 L/plant/event monthly as emergency watering (PDF 117). Calendar months and the duration of that regime are not specified. This is a finca observation, not a general emergency dose.",
+        "Quantities and age": "Keep L/plant/event, frequency, period and field-establishment age separate. Annual area allocations are not event doses. The reported age windows do not establish a universal stopping age.",
+        "Restoration and production models": "MR1 restores degraded areas; MR2 uses runoff harvesting (oasificación). MP1 enriches dehesas, MP2 improves afforestation, MP3 establishes extensive production and MP4 is intensive production. Their inputs and objectives differ.",
+        "Regional example": "See Carob communities in Almería for Las Labores, La Alcantarilla and La Tórtola. Do not transfer the wider finca doses automatically to arid Almería."
+      }
+    },
+    {
+      "id": "carob-community-almeria",
+      "label": "Carob communities in Almería",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Regional examples of carob-associated vegetation in arid and semiarid Almería. Mastic and wild olive are observed at La Alcantarilla and La Tórtola; wider MR2 companions and potential habitats have different evidence. Las Labores is a managed restoration planting replacing almond and olive. These are explanatory regional groupings, not a single formal association. Carob watering evidence is given here by lifecycle phase, with regional/site-specific limits; no dose is inferred for the accompanying plants.",
+      "aliases": [
+        "Comunidades con algarrobo en Almería",
+        "Almeria carob communities"
+      ],
+      "spanish_name": "Comunidades con algarrobo en Almería",
+      "english_name": "Carob communities in Almería",
+      "scientific_name": null,
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names.",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores seasonal total and MR2 establishment/support care"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Las Labores seasonal total and MR2 establishment/support care"
+        }
+      ],
+      "place_ids": [
+        "almeria"
+      ],
+      "aspects": {
+        "Irrigation applicability": "Carob-specific evidence for the named Almería cases and regional restoration setting. Do not apply these quantities to lentisco, acebuche or other companions without their own evidence.",
+        "Nursery watering — regional evidence": "No Almería nursery dose is documented in these case accounts. The wider carob nursery guidance is available on Mediterranean carob associations; it is not a locally measured regime.",
+        "Settlement watering — regional evidence": "No numerical immediate post-planting dose is specified for these Almería cases. Nursery plant size and planting-hole dimensions do not determine a water dose.",
+        "Maintenance watering — Las Labores": "Deficit drip irrigation from May to September, totalling 400 L/plant over that period (PDF 127). Event count, frequency and L/plant/event dose are not specified. Preserve this as a seasonal total; do not divide by an assumed schedule.",
+        "Support watering — MR2": "The arid/semiarid MR2 model mentions small establishment waterings and support watering, with runoff capture and favourable microsites, but supplies no numerical dose (PDF 132, 134).",
+        "La Alcantarilla and La Tórtola": "The accounts describe little cultural care/naturalized vegetation, but do not quantify an irrigation regime. Do not interpret unspecified amounts as zero (PDF 135–137).",
+        "Age and source limitations": "The regional passages do not establish an age-based watering curve or stopping age. Las Labores’ grafting/production chronology remains unresolved. Its documented watering total does not establish a treatment for every carob in Almería.",
+        "Broader guidance": "The Mediterranean carob node holds carob-wide nursery and establishment guidance and the non-Almería finca examples, with their individual conditions."
+      }
+    },
+    {
+      "id": "life-nieblas",
+      "label": "LIFE NIEBLAS",
+      "kind": "programme",
+      "domain": "technology",
+      "description": "Restoration project documenting fog collection, planting methods, irrigation and monitoring.",
+      "aliases": [
+        "Life Nieblas"
+      ],
+      "group_id": "organizations",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "locator": "Project-specific watering choices and storage estimate"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "locator": "Project-specific watering choices and storage estimate"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Project-specific watering choices and storage estimate"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Project-specific watering choices and storage estimate"
+        }
+      ],
+      "aspects": {
+        "Watering evidence scope": "These are LIFE NIEBLAS project choices and method examples, not universal plant requirements or species-specific carob recommendations.",
+        "Nursery example": "Around 30 L for 100 plants twice weekly, an average calculated 0.3 L/plant/event (PDF 143).",
+        "Settlement example": "10–15 L/plant/event; Cocoon additionally receives a separate 20 L reservoir fill (PDF 143).",
+        "Maintenance examples": "Traditional/Cocoon: 15 L/plant/event monthly July–September; IND: 10 L/plant/event on that schedule. SAD: about 15 L/plant/event, tank-full triggered, reported about every three weeks (PDF 143).",
+        "Support": "Monitor weather and plant condition; a fixed quantity is not specified (PDF 143).",
+        "Storage estimate": "About 40 L/plant for first-year summer provision, around 12.5 L/application, is a separate approximate storage-planning estimate, not a substitute for the method schedules (PDF 103–104)."
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "cocoon-water-caution",
+      "label": "Cocoon is not a no-watering guarantee",
+      "text": "An introductory passage describes reduced regular watering, but the next page includes initial base water,20 L reservoir fill and further irrigation if necessary; management guidance also describes summer watering.",
+      "topic_ids": [
+        "cocoon",
+        "life-nieblas"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 92,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Habitat restoration"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "conditions": [
+        "LIFE implementation",
+        "Moisture and plant condition"
+      ]
+    },
+    {
+      "id": "life-settlement-water",
+      "label": "Settlement water is additional to the reservoir fill",
+      "text": "The LIFE choices describe roughly 10–15 L settlement water per seedling across methods, with a further 20 L reservoir fill for Cocoon.",
+      "topic_ids": [
+        "cocoon",
+        "traditional-reforestation",
+        "individual-fog-water-collector",
+        "afds",
+        "life-nieblas"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Settlement"
+        }
+      ],
+      "aspects": {
+        "Settlement": "Usually 10–15 L/seedling",
+        "Cocoon additional fill": "20 L"
+      }
+    },
+    {
+      "id": "life-maintenance-water",
+      "label": "LIFE summer schedules retain method and season",
+      "text": "The project choices are 15 L/plant/event monthly July–September for traditional planting and Cocoon, and 10 L/plant/event on that schedule for IND. The passage labelled SAD describes about 15 L/plant/event every three weeks when the fog-water tank fills. Its timing depends on collection, and the passage does not specify its calendar season.",
+      "topic_ids": [
+        "cocoon",
+        "traditional-reforestation",
+        "individual-fog-water-collector",
+        "sad-life-source",
+        "life-nieblas"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Maintenance bullets"
+        }
+      ]
+    },
+    {
+      "id": "life-nursery-water",
+      "label": "Nursery batch quantity and its calculated average",
+      "text": "LIFE NIEBLAS describes watering the nursery twice a week with around 30 L for 100 plants. Dividing the documented batch quantity by its plant count gives an average 0.3 L/plant/event; the source does not report individually metered doses or identify this as a carob-specific requirement.",
+      "topic_ids": [
+        "life-nieblas"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Nursery bullet; original 30L for 100 plants; 30 ÷ 100 = 0.3"
+        }
+      ]
+    },
+    {
+      "id": "life-first-year-water",
+      "label": "First field year differs from nursery age",
+      "text": "Traditional, Cocoon and individual fog collector method descriptions discuss irrigation in the first year after field planting, with amounts adapted to site, species and soil moisture. Nursery age or stock format is a different measure. No universal age for stopping irrigation is given.",
+      "topic_ids": [
+        "traditional-reforestation",
+        "cocoon",
+        "individual-fog-water-collector",
+        "life-nieblas"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Amount of water"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 93,
+          "locator": "Amount of water"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 95,
+          "locator": "Amount of water"
+        }
+      ]
+    },
+    {
+      "id": "life-storage-estimate",
+      "label": "A first-year storage estimate is not a method dose",
+      "text": "The water-network section estimates about 40 L/plant for first-year summer provision, around 12.5 L per irrigation across three important irrigations, and illustrates 120,000 L storage for 3,000 plants. These are approximate storage-planning figures; preserve them separately from the 15/10 L project maintenance regimes and do not force the rounded figures into exact agreement.",
+      "topic_ids": [
+        "pe-pipe-network",
+        "life-nieblas"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "locator": "Water network, storage sizing and Amount of water"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "locator": "Water network, storage sizing and Amount of water"
+        }
+      ]
+    },
+    {
+      "id": "carob-nursery-water",
+      "label": "Carob nursery irrigation changes with development",
+      "text": "Tables 4.4–4.5b describe humid germination, frequent early watering without leaching, active growth watering with up to 10% leaching, and spaced intense irrigation during preconditioning to moderate water stress. Page 79 says nursery-specific schedules prevent specific general recommendations. No litres-per-plant dose is supplied.",
+      "topic_ids": [
+        "carob",
+        "seedling-quality",
+        "carob-community"
+      ],
+      "kind": "recommendation",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Nursery irrigation rows and Otras prácticas culturales"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 73,
+          "locator": "Nursery irrigation rows and Otras prácticas culturales"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 74,
+          "locator": "Nursery irrigation rows and Otras prácticas culturales"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Nursery irrigation rows and Otras prácticas culturales"
+        }
+      ]
+    },
+    {
+      "id": "carob-establishment-years",
+      "label": "Carob establishment spans years, not a single settlement event",
+      "text": "The general planting recommendations describe 3–5 years of establishment and advise 1–5 summer waterings during the first five years, without litres per event or an explicit annual allocation. Preserve that wording without inventing a per-year frequency or a universal dose.",
+      "topic_ids": [
+        "carob",
+        "establishment-water",
+        "carob-community"
+      ],
+      "kind": "recommendation",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 95,
+          "locator": "5.3 recommendations 1 and 7"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 96,
+          "locator": "5.3 recommendations 1 and 7"
+        }
+      ]
+    },
+    {
+      "id": "carob-labores-water",
+      "label": "Las Labores: 400 litres is a seasonal total",
+      "text": "Deficit drip irrigation is reported from May to September, with a total of 400 L/plant over that period. The number of events and dose per event are not specified. The seasonal total must not be imported as 400 L/plant/event.",
+      "topic_ids": [
+        "las-labores",
+        "carob",
+        "carob-community-almeria"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Riegos bullet"
+        }
+      ],
+      "aspects": {
+        "source amount": "400 L/plant over May–September",
+        "event dose": "Not specified in this source"
+      }
+    },
+    {
+      "id": "carob-tortola-observed",
+      "label": "La Tórtola: naturalized vegetation and very low production",
+      "text": "Abandonment of earlier agricultural and livestock activity allowed lentisco and acebuche to establish with carob, creating more luxuriant vegetation than surrounding areas. The population is described as fully naturalized without cultural treatments. Trees range from about 1 to 10 m, with variable diameters, very high alternate bearing and practically no production. Irrigation quantity/frequency is not specified; do not turn absence of a stated regime into zero.",
+      "topic_ids": [
+        "la-tortola",
+        "carob",
+        "carob-community-almeria",
+        "mastic",
+        "wild-olive"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Actuaciones and Estado actual"
+        }
+      ]
+    },
+    {
+      "id": "carob-mr1-guidance",
+      "label": "MR1 restoration guidance retains its own assumptions",
+      "text": "MR1 recommends diverse, appropriate-provenance forest material, favourable deeper/moister microsites, autumn planting and low-density restoration layouts. Page 123 describes <350 trees/ha, page 124 gives <100 in generic protective restoration, and Table 5.14 describes enrichment <200. The table says no irrigation; this summary does not negate watering documented at Las Labores.",
+      "topic_ids": [
+        "carob-restoration-mr1",
+        "carob",
+        "local-provenance",
+        "soil-depth",
+        "autumn-planting",
+        "carob-community"
+      ],
+      "kind": "recommendation",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "MR1 narrative and Table 5.14"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 124,
+          "locator": "MR1 narrative and Table 5.14"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 125,
+          "locator": "MR1 narrative and Table 5.14"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "MR1 narrative and Table 5.14"
+        }
+      ]
+    },
+    {
+      "id": "carob-water-huerta-los-tamayos",
+      "label": "Huerta Los Tamayos: a site-specific watering regime",
+      "text": "50–80 L/plant/event; three summer waterings during the first two years. Young 40–50 cm forest nursery stock in dehesa/olive enrichment; 40 cm holes, shelters and hay mulch. The 2000 L tank is equipment capacity, not a plant dose.",
+      "topic_ids": [
+        "huerta-los-tamayos",
+        "carob",
+        "establishment-water",
+        "carob-community"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Riegos / case practice"
+        }
+      ],
+      "aspects": {
+        "dose": "50–80 L/plant/event",
+        "source context": "Young 40–50 cm forest nursery stock in dehesa/olive enrichment; 40 cm holes, shelters and hay mulch. The 2000 L tank is equipment capacity, not a plant dose."
+      }
+    },
+    {
+      "id": "carob-water-el-triguero",
+      "label": "El Triguero: a site-specific watering regime",
+      "text": "50 L/plant/event, monthly emergency watering. MP3 extensive planting at Carmona in autumn 2023; 1 m plants, 4 × 8 m spacing, 312 trees/ha, 30 ha, soil depth <50 cm. Calendar months and duration of this emergency regime are not specified.",
+      "topic_ids": [
+        "el-triguero",
+        "carob",
+        "establishment-water",
+        "carob-community"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Riegos / case practice"
+        }
+      ],
+      "aspects": {
+        "dose": "50 L/plant/event",
+        "source context": "MP3 extensive planting at Carmona in autumn 2023; 1 m plants, 4 × 8 m spacing, 312 trees/ha, 30 ha, soil depth <50 cm. Calendar months and duration of this emergency regime are not specified."
+      }
+    },
+    {
+      "id": "carob-water-buenavista",
+      "label": "Buenavista: a site-specific watering regime",
+      "text": "100 L/plant/event every 15 days during the first two summers. MP4 intensive phased planting at Posadas, Córdoba; 10 × 6 m, 166 trees/ha; stock and cultivars differ by phase. This is not MR1 or an Almería site.",
+      "topic_ids": [
+        "buenavista",
+        "carob",
+        "establishment-water",
+        "carob-community"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Riegos / case practice"
+        }
+      ],
+      "aspects": {
+        "dose": "100 L/plant/event",
+        "source context": "MP4 intensive phased planting at Posadas, Córdoba; 10 × 6 m, 166 trees/ha; stock and cultivars differ by phase. This is not MR1 or an Almería site."
+      }
+    },
+    {
+      "id": "carob-water-los-lirios",
+      "label": "Los Lirios: a site-specific watering regime",
+      "text": "50 L/plant/event three times weekly from April to October. Intensive one-hectare mother-plant plot established in 2023 at Los Lirios; 2 × 4 m, 1250 trees/ha, 1 m stock. The older afforestation on the same finca received no establishment irrigation; preserve both contexts.",
+      "topic_ids": [
+        "los-lirios",
+        "carob",
+        "establishment-water",
+        "carob-community"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Riegos / case practice"
+        }
+      ],
+      "aspects": {
+        "dose": "50 L/plant/event",
+        "source context": "Intensive one-hectare mother-plant plot established in 2023 at Los Lirios; 2 × 4 m, 1250 trees/ha, 1 m stock. The older afforestation on the same finca received no establishment irrigation; preserve both contexts."
+      }
+    },
+    {
+      "id": "carob-mp4-allocation",
+      "label": "An annual area allocation is not a per-event dose",
+      "text": "Table 5.12 describes establishment/production irrigation below 1500 m³/ha/year for the intensive MP4 model. It is an annual area-based allocation, not L/plant/event; the text does not provide an event count permitting conversion.",
+      "topic_ids": [
+        "buenavista",
+        "carob",
+        "carob-community"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Table 5.12"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "carob-water-phase-huerta-los-tamayos",
+      "source": "huerta-los-tamayos",
+      "target": "carob-community",
+      "label": "provides carob watering context",
+      "explanation": "50–80 L/plant/event; three summer waterings during the first two years. Young 40–50 cm forest nursery stock in dehesa/olive enrichment; 40 cm holes, shelters and hay mulch. The 2000 L tank is equipment capacity, not a plant dose. This is a contextual discovery link to the carob evidence; it does not establish a common planting recipe or identical dose across a community.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Riegos"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "carob-water-phase-el-triguero",
+      "source": "el-triguero",
+      "target": "carob-community",
+      "label": "provides carob watering context",
+      "explanation": "50 L/plant/event, monthly emergency watering. MP3 extensive planting at Carmona in autumn 2023; 1 m plants, 4 × 8 m spacing, 312 trees/ha, 30 ha, soil depth <50 cm. Calendar months and duration of this emergency regime are not specified. This is a contextual discovery link to the carob evidence; it does not establish a common planting recipe or identical dose across a community.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Riegos"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "carob-water-phase-buenavista",
+      "source": "buenavista",
+      "target": "carob-community",
+      "label": "provides carob watering context",
+      "explanation": "100 L/plant/event every 15 days during the first two summers. MP4 intensive phased planting at Posadas, Córdoba; 10 × 6 m, 166 trees/ha; stock and cultivars differ by phase. This is not MR1 or an Almería site. This is a contextual discovery link to the carob evidence; it does not establish a common planting recipe or identical dose across a community.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Riegos"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "carob-water-phase-los-lirios",
+      "source": "los-lirios",
+      "target": "carob-community",
+      "label": "provides carob watering context",
+      "explanation": "50 L/plant/event three times weekly from April to October. Intensive one-hectare mother-plant plot established in 2023 at Los Lirios; 2 × 4 m, 1250 trees/ha, 1 m stock. The older afforestation on the same finca received no establishment irrigation; preserve both contexts. This is a contextual discovery link to the carob evidence; it does not establish a common planting recipe or identical dose across a community.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Riegos"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "labores-water-phase",
+      "source": "las-labores",
+      "target": "carob-community-almeria",
+      "label": "provides carob watering context",
+      "explanation": "400 L/plant over May–September in total; event dose and frequency not specified. This is a contextual discovery link to the carob evidence; it does not establish a common planting recipe or identical dose across a community.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Riegos"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "mr2-support-phase",
+      "source": "carob-oasification",
+      "target": "carob-community-almeria",
+      "label": "provides carob watering context",
+      "explanation": "Table 5.19 specifies support watering without a numerical dose. This is a contextual discovery link to the carob evidence; it does not establish a common planting recipe or identical dose across a community.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "MR2 establishment and support"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "MR2 establishment and support"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "carob-nursery-phase",
+      "source": "carob",
+      "target": "carob-community",
+      "label": "provides carob watering context",
+      "explanation": "The handbook describes moisture and hardening programmes, not a universal numerical dose. This is a contextual discovery link to the carob evidence; it does not establish a common planting recipe or identical dose across a community.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Nursery watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 73,
+          "locator": "Nursery watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 74,
+          "locator": "Nursery watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Nursery watering"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "traditional-settlement",
+      "source": "traditional-reforestation",
+      "target": "settlement-irrigation",
+      "label": "starts with",
+      "explanation": "This method includes an immediate post-planting watering. The documented quantity remains with the LIFE project and method evidence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "traditional-maintenance",
+      "source": "traditional-reforestation",
+      "target": "maintenance-irrigation",
+      "label": "received in LIFE NIEBLAS",
+      "explanation": "The LIFE project includes maintenance watering for this method; its particular schedule belongs to that project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "life-sad-maintenance",
+      "source": "sad-life-source",
+      "target": "maintenance-irrigation",
+      "label": "reported maintenance regime",
+      "explanation": "The source classifies tank-triggered watering as maintenance; the particular amount and cycle remain on the SAD/LIFE method evidence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Maintenance SAD bullet"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "carob-community-watering-context-nursery-irrigation",
+      "source": "carob-community",
+      "target": "nursery-irrigation",
+      "label": "watering context by phase",
+      "basis": "curated",
+      "explanation": "The lifecycle phase is plant-neutral. Read this carob community’s cited guidance and examples for its particular plant, site, season and age context; no dose is assigned to the phase itself.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 95,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 96,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        }
+      ]
+    },
+    {
+      "id": "carob-community-watering-context-settlement-irrigation",
+      "source": "carob-community",
+      "target": "settlement-irrigation",
+      "label": "watering context by phase",
+      "basis": "curated",
+      "explanation": "The lifecycle phase is plant-neutral. Read this carob community’s cited guidance and examples for its particular plant, site, season and age context; no dose is assigned to the phase itself.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 95,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 96,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        }
+      ]
+    },
+    {
+      "id": "carob-community-watering-context-maintenance-irrigation",
+      "source": "carob-community",
+      "target": "maintenance-irrigation",
+      "label": "watering context by phase",
+      "basis": "curated",
+      "explanation": "The lifecycle phase is plant-neutral. Read this carob community’s cited guidance and examples for its particular plant, site, season and age context; no dose is assigned to the phase itself.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 95,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 96,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        }
+      ]
+    },
+    {
+      "id": "carob-community-watering-context-support-irrigation",
+      "source": "carob-community",
+      "target": "support-irrigation",
+      "label": "watering context by phase",
+      "basis": "curated",
+      "explanation": "The lifecycle phase is plant-neutral. Read this carob community’s cited guidance and examples for its particular plant, site, season and age context; no dose is assigned to the phase itself.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 72,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 79,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 95,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 96,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        }
+      ]
+    },
+    {
+      "id": "carob-community-almeria-watering-context-nursery-irrigation",
+      "source": "carob-community-almeria",
+      "target": "nursery-irrigation",
+      "label": "watering context by phase",
+      "basis": "curated",
+      "explanation": "The lifecycle phase is plant-neutral. Read this carob community’s cited guidance and examples for its particular plant, site, season and age context; no dose is assigned to the phase itself.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        }
+      ]
+    },
+    {
+      "id": "carob-community-almeria-watering-context-settlement-irrigation",
+      "source": "carob-community-almeria",
+      "target": "settlement-irrigation",
+      "label": "watering context by phase",
+      "basis": "curated",
+      "explanation": "The lifecycle phase is plant-neutral. Read this carob community’s cited guidance and examples for its particular plant, site, season and age context; no dose is assigned to the phase itself.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        }
+      ]
+    },
+    {
+      "id": "carob-community-almeria-watering-context-maintenance-irrigation",
+      "source": "carob-community-almeria",
+      "target": "maintenance-irrigation",
+      "label": "watering context by phase",
+      "basis": "curated",
+      "explanation": "The lifecycle phase is plant-neutral. Read this carob community’s cited guidance and examples for its particular plant, site, season and age context; no dose is assigned to the phase itself.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        }
+      ]
+    },
+    {
+      "id": "carob-community-almeria-watering-context-support-irrigation",
+      "source": "carob-community-almeria",
+      "target": "support-irrigation",
+      "label": "watering context by phase",
+      "basis": "curated",
+      "explanation": "The lifecycle phase is plant-neutral. Read this carob community’s cited guidance and examples for its particular plant, site, season and age context; no dose is assigned to the phase itself.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 132,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Contextual organization of existing carob watering evidence by the general phase framework"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:irrigation-lifecycle",
+      "label": "Irrigation lifecycle",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "nursery-irrigation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "settlement-irrigation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "maintenance-irrigation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "support-irrigation",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Organize existing records by their recorded subject. Preserve source contexts and identities; membership is not factual evidence. Community planning values remain separate from source knowledge.",
+      "description": "The irrigation lifecycle describes why water is applied. It is a framework for any plant, not a watering prescription for a particular species.\n\n1. Nursery: watering before field planting.\n2. Settlement: the first water application immediately after planting.\n3. Summer maintenance: recurring watering during a difficult period.\n4. Support: additional watering prompted by weather, soil moisture or plant stress. Support can overlap establishment and maintenance; it is not a final age stage.\n\nAmounts and timing: L/plant/event means litres per plant for one watering application. Record the amount, frequency or trigger, applicable period and age/stock context separately. Nursery age differs from time since field planting. Do not infer an automatic dose or stopping age from either.\n\nChoose a regime in its own context: soil, rainfall, species, plant size, nursery stock, planting method and water availability affect the decision. Source recommendations, project schedules and case observations have different meanings. A phase label does not supply a universal amount or calendar.\n\nCompare like quantities: a dose per event is different from a batch quantity, seasonal total, annual area allocation or reservoir capacity. Convert only when the denominator and event count are known; preserve the original wording and calculation. Unknown is different from zero, and ranges remain ranges.\n\nRead contextual recommendations on the relevant species or community, and project schedules on the corresponding project or method. Those examples retain their source, location, plant age, season and limitations; they do not become rules for every plant using this phase. Existing working-plan values are independent decisions.\n\nGlossary: IND/IFWC means individual fog water collector. AFDS means Autonomous Fluid Discharge System: a tank level triggers discharge through an irrigation network. The source label SAD is not expanded in its passage; its correspondence with AFDS is an explicit interpretation of the matching operation. A reservoir fill is separate from the water applied directly at settlement.\n\nSelect a phase for its purpose, unit, timing and monitoring considerations. Follow the context links to plant/community recommendations or project methods for specific regimes.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Irrigation purposes and context-dependent regimes; no universal plant dose"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "locator": "AFDS operation and water recording by purpose"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 152,
+          "locator": "AFDS operation and water recording by purpose"
+        }
+      ],
+      "member_layout": "vertical"
+    }
+  ]
+}

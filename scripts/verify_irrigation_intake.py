@@ -1,5 +1,6 @@
 """Apply and audit the accepted proposal against an isolated clone; never write live knowledge."""
 from pathlib import Path
+import argparse
 import copy
 import json
 import sqlite3
@@ -12,14 +13,14 @@ from backend.graph import Graph
 from backend.planning import Edit,apply_edit
 
 
-def verify():
+def verify(database=None):
     qa=ROOT/'output/irrigation-audit';qa.mkdir(exist_ok=True)
-    target=qa/'qa.sqlite'
+    target=Path(database).resolve() if database else qa/'qa-v2.sqlite'
     if target.exists():raise RuntimeError('Use a fresh isolated QA database; do not overwrite prior evidence.')
     with sqlite3.connect((ROOT/'data/knowledge.sqlite').as_uri()+'?mode=ro',uri=True) as source:
         with sqlite3.connect(target) as destination:source.backup(destination)
     store=Store(target);before=store.snapshot()
-    raw=json.loads((ROOT/'imports/irrigation-lifecycle-carob-context-2026-11-08.json').read_text(encoding='utf-8'))
+    raw=json.loads((ROOT/'imports/irrigation-lifecycle-carob-context-2026-11-08-v2.json').read_text(encoding='utf-8'))
     assert store.import_batch(raw,True)['status']=='validated'
     assert store.snapshot()==before
     accepted=store.import_batch(raw);after=store.snapshot()
@@ -70,4 +71,6 @@ def verify():
     print(json.dumps(report,ensure_ascii=False,indent=2))
 
 
-if __name__=='__main__':verify()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--database',type=Path)
+    verify(parser.parse_args().database)

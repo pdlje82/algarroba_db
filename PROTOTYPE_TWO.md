@@ -10,9 +10,12 @@ All central spoke labels are visible, use larger wrapped text, and preserve fact
 direction. Group summaries distinguish relationship wording and direction. Parallel or
 secondary label callouts have explicit leader lines where needed. Labels and cards contribute
 to Fit and layer bounds. Selection, zoom and turn do not change arc geometry.
-The connection-layer frame and arcs match the current graph canvas proportions. Shared
+The connection-layer frame matches the current graph canvas proportions. Shared
 sceneFrame bounds drive its border, title and Fit. Resizing reflows topics and labels into
-the available width/height; semantic layer keys preserve offsets, closing and opening-source
+compact upper/lower arcs whose content aspect stays between 0.8 and 1.5. Grow their
+radius only until cards and labels fit; leave margins in taller/wider frames instead
+of stretching the content. Larger labels are placed first, with intermediate spoke
+positions and size-aware secondary callouts. Semantic layer keys preserve offsets, closing and opening-source
 references while legacy geometry aliases support older saves. Current presentation positions
 are retained in the browser session without appending history or rewriting saved DB payloads.
 Pending domain previews retain their displayed arcs and labels until Update.

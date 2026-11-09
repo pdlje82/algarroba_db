@@ -128,7 +128,8 @@ try {
     s.state.centre === "carob" && s.state.scope === "neighbors",
   );
   const directCount = s.state.view.endpoint_ids.length;
-  check("direct neighbours remain a small complete scope", directCount === 21);
+  const directReference = await (await fetch(url + '/api/explore?scope=neighbors&centre=carob')).json();
+  check("direct neighbours remain a complete scope", directCount === directReference.endpoint_ids.length);
   await page.getByLabel("Zoom out", { exact: true }).click();
   await page.waitForTimeout(600);
   check(

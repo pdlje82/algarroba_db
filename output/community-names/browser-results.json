@@ -1,0 +1,30 @@
+{
+  "checks": [
+    "Alcornocales and English are in the community list",
+    "Cornicales and English are in the community list",
+    "Espartales and English are in the community list",
+    "Espinales de azufaifo and English are in the community list",
+    "Coscojares and English are in the community list",
+    "Lentiscares and English are in the community list",
+    "Pinares and English are in the community list",
+    "Romerales and English are in the community list",
+    "Acebuchales and English are in the community list",
+    "Community list has no scientific-name row",
+    "Community inspector uses Spanish/English only",
+    "carob-community graph card has ES/EN names",
+    "carob-community-almeria graph card has ES/EN names",
+    "cork-oak-woodland graph card has ES/EN names",
+    "cornical-scrub graph card has ES/EN names",
+    "esparto-grassland graph card has ES/EN names",
+    "jujube-thorn-scrub graph card has ES/EN names",
+    "kermes-oak-scrub graph card has ES/EN names",
+    "mastic-scrub graph card has ES/EN names",
+    "pine-woodland graph card has ES/EN names",
+    "rosemary-scrub graph card has ES/EN names",
+    "wild-olive-scrub graph card has ES/EN names",
+    "Community cards have no Latin row and fit their bounds",
+    "Individual species still keep the scientific name",
+    "No browser errors"
+  ],
+  "errors": []
+}

@@ -24,5 +24,5 @@
     "Source dose versus seasonal/general safeguards",
     "SQLite integrity"
   ],
-  "qa_database": "C:\\Users\\JanEngelke\\git_private\\algarroba_db\\output\\irrigation-audit\\qa.sqlite"
+  "qa_database": "C:\\Users\\JanEngelke\\git_private\\algarroba_db\\output\\irrigation-audit\\qa-v2.sqlite"
 }

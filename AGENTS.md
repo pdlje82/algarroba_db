@@ -257,8 +257,12 @@ superseding the universal compact-grid rule for `neighbors` scope with a live ce
 Use relationshipCircle.ts through the same scene builder. Keep unique topics and
 actual factual directions/IDs, stable clockwise order, and clear card/label rectangles.
 The user subsequently requested viewport-adaptive upper/lower arcs: floor(n/2) topics
-above and ceil(n/2) below the centre, fitted to the layer proportions. Preserve that
-member order while reflowing on resize; do not restore a fixed-radius circular ring.
+above and ceil(n/2) below the centre. The later compactness request supersedes filling
+the full frame: use a bounded content aspect (0.8–1.5), with the window guiding its
+shape and the smallest safe radius. Keep the frame at the actual viewport ratio,
+allowing empty margins. Preserve member order while reflowing on resize.
+Place larger labels first, search intermediate spoke positions, and space secondary
+callouts according to their measured size so dense relationships do not inflate the ring.
 Spoke labels are visible without requiring selection and wrap without dropping words.
 Connection-layer frames use sceneFrame with the actual graph canvas aspect ratio. Keep
 the adaptive arcs centred inside that viewport-shaped frame. Resizing reflows their
@@ -275,3 +279,43 @@ keep their positions. No knowledge, organization or community mutations are part
 Run the frontend suite, backend integrity checks, production build and isolated browser
 test:relationship-circle/test:browser. The circle fixture server and artifacts belong
 under output/consolidation-qa, never the accepted database.
+
+
+## Cited group guides and event-unit intake (8 November 2026)
+
+The user authorized the reader-facing group metadata, ordered vertical members,
+canonical L/plant/event displays and checked source intake described in
+IRRIGATION_LIFECYCLE.md. The accepted batch advanced revision 6 to 7; the earlier
+scope freezes do not prohibit this explicitly requested intake. Current preservation
+fingerprints and checked source coverage are recorded in output/irrigation-audit/.
+Keep source-backed guidance separate from organization and working planning values.
+Generic source quantities, ranges, seasonal totals and reservoir fills cannot silently
+become species-specific event doses. Preserve immutable legacy baselines; both event
+and legacy watering unit spellings remain compatible. New corrections require a new
+batch ID/current revision. Renderer behavior follows stored group metadata rather
+than hardcoded topic identities. Preserve the unrelated rendering work in this checkout.
+
+
+## Community common-name presentation (8 November 2026)
+
+The user requested Spanish and English (no Latin name row) for plant-named
+communities with available Spanish community names. Habitat records reuse stored
+spanish_name/english_name metadata; the generic renderer reads those fields in
+cards, lists, inspector and restored layers. Ordinary species keep ES/EN/Sci.
+Do not infer collective community names or Latin association names from a plant
+common name alone. Preserve generic habitat labels where no checked community
+name is available. The checked naming-only batch advanced revision 8 to 9;
+VERIFICATION.md and output/community-names/ record scope and preservation checks.
+
+
+## Separate phase definitions from plant recommendations
+
+The user clarified that irrigation lifecycle nodes are valid for any plant. Keep their
+descriptions, aspects, directly associated findings and connection explanations generic:
+purpose, L/plant/event units, timing/age concepts and monitoring, without concrete plant
+or project doses. Put species/community recommendations and case quantities on their
+proper community records, retaining site and age context. Project schedules belong to
+the existing project/method records; never relabel general LIFE evidence as carob advice.
+Use checked new batches and preserve original finding wording and immutable irrigation
+evidence/working plans. Contextual community-to-phase links are curated organization of
+source-backed advice, not a universal planting recipe or inherited dose for companions.

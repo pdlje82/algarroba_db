@@ -1,0 +1,37 @@
+{
+  "revision": 6,
+  "preserved": {
+    "sources": {
+      "count": 21,
+      "sha256": "ebdcb91dd07fe6f7694d2c4d468ea26246f9aaece9122dac4cedee318a7c2ea4"
+    },
+    "plant_images": {
+      "count": 46,
+      "sha256": "9b399b95c4aa552af8738a64776119b68d038345e6fdb4a71b44836b2b134568"
+    },
+    "communities": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "explorations": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "tasks": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "planning_events": {
+      "count": 1,
+      "sha256": "c7ca37ea6d24f4a8cb37df3431dfc863a83625b1d3df3bd9226679c431d69a78"
+    },
+    "organization_roots": {
+      "count": 9,
+      "sha256": "dbc2af4005e72b08496bd52f38a9029d0db7ae75fd830872cc195e43084a9402"
+    },
+    "redirects": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  }
+}

@@ -1773,3 +1773,101 @@ Final focused layout suite passed 18 checks on the corrected build. The optional
 legacy close-occlusion script could not run unchanged: it hardcodes 36 species,
 while the current fixture has 46, and assumes the older drag calibration. It was
 left unchanged rather than folding a fixture/gesture rewrite into the rendering fix.
+
+
+## Irrigation lifecycle and carob intake — 8 November 2026
+
+Implemented optional group description/source_refs/member_layout, stored-order vertical
+members, inspector reader guidance, contextual phase details and canonical L/plant/event
+displays with unchanged legacy baselines. Existing graph layouts and histories retain
+their identities/offsets; groups without vertical metadata keep normal behavior.
+
+Accepted irrigation-lifecycle-carob-context-2026-11-08-v2 from revision 6 to 7 after
+preview and independent clone verification. The input changes 27 topic records (21 new),
+58 relationships, 25 findings, 41 reviewed PDF coverage entries, four unresolved records,
+five group definitions and 29 immutable irrigation evidence candidates. The carob overview
+retains its identity; the regional node and three Almería finca cases keep local evidence.
+Source inconsistencies and SAD's interpretive correspondence remain explicit.
+
+Passed: 57 frontend tests; full backend suite 74 passed, one pre-existing skip;
+production build; 20 dedicated real Edge browser checks on isolated port 8771.
+Browser checks cover guide opening, vertical order/reload, all four phase descriptions,
+exact LIFE and carob PDF pages, both community topics, the three finca connections,
+no inherited cork-oak claim and dose/unit compatibility safeguards. No page exceptions.
+
+Live import repeat is unchanged. PRAGMA integrity_check is ok; foreign_key_check is
+empty. Before/after row fingerprints match for sources, 46 plant images, communities,
+explorations, tasks, planning_events, organization_roots and redirects. All existing
+species records are identical in the clone audit. Original PDF hashes match registered
+editions. The local server was restarted and health confirms revision 7. Audit reports,
+source renders and screenshots: output/irrigation-audit/. No browser QA wrote live data.
+
+
+## Community common names — 8 November 2026
+
+Accepted community-common-names-es-en-2026-11-08-v1 at revision 8 → 9.
+Eleven existing plant-named habitat/community identities now have cited Spanish
+collective names and their existing English labels in the stored name fields.
+The shared name renderer displays ES and EN for named communities, without a Latin
+name row; ordinary species retain ES/EN/Sci. Cards, accessible lists, inspection and
+historical-layer canonical metadata use the same names. Generic unnamed habitat
+categories retain their labels. No scientific community classifications were invented.
+
+Checked the existing PDF/managed-source editions and Spanish community wording.
+Dry-run, isolated import, bilingual search, repeat no-op and live SQLite integrity
+passed. Factual relationships/findings/coverage, source/media, organization and
+working/saved planning tables matched the isolated baseline after live intake.
+Passed 57 frontend tests, production build, 74 backend tests (one existing skip),
+and 25 focused browser assertions, including actual canvas row text/bounds and
+unchanged individual-species scientific names. Evidence: output/community-names/.
+
+# 8 November 2026 — Compact relationship arcs across landscape/portrait formats
+
+Separated content proportions from the viewport-shaped layer frame. Direct-neighbour
+content follows a bounded aspect of 0.8–1.5, keeping the clockwise upper/lower split
+and growing only to clear cards/labels. Tall and wide frames retain their actual
+canvas ratio with empty margins instead of stretching the content. Label packing
+reserves larger surfaces first, searches additional spoke positions, and gives
+secondary/parallel callouts offsets based on measured dimensions.
+
+For the current Almería community (18 cards, 41 factual connections), the 9:16 node
+bounds decreased from approximately 1975×3517 to 1668×2078 world units (about 15%
+narrower and 41% shorter). Source IDs, factual directions and membership are intact.
+Existing semantic layer keys, offsets, saved cameras, preview freezing and geometry
+aliases remain in use. No renderer, knowledge or organization changes were required.
+
+Validation: 58 frontend tests, 26 backend integrity tests and production TypeScript/
+Vite build passed. The focused browser suite passed 23 checks against an isolated
+copy of current revision 9, including the real Almería community at exact canvas
+formats 16:9, 4:3, 1:1, 3:4 and 9:16. Every card/label rectangle remains clear and
+inside its frame, with all member and edge IDs preserved. Reload, grouping, resize,
+preview and removal checks passed. The existing navigation suite passed 37 checks;
+its old Carob-neighbour count was replaced with the current QA API reference to
+accommodate the accepted source intake. Visually reviewed compact-almeria-16-9.png
+and compact-almeria-9-16.png under output/consolidation-qa. Normal app build:
+index-B6TIYm2k.js. All saves and research handoffs used the isolated QA store.
+
+
+## Plant-neutral lifecycle / contextual watering correction — 8 November 2026
+
+Accepted irrigation-context-separation-2026-11-08-v1 at revision 9 → 10.
+The four lifecycle definitions and their group guide now describe generic purpose,
+L/plant/event recording, timing, age concepts and monitoring, without numerical
+regimes. Ten carob findings were reassociated with the appropriate general/regional
+carob community; six LIFE schedule findings were reassociated with LIFE/methods.
+Carob finca connections point to the carob context and communities link to phases
+without assigning a plant dose to a generic phase. Actual source finding wording,
+Spanish/English names, all 29 immutable evidence candidates, source/media/coverage,
+working communities, saved explorations and planning history were preserved.
+
+The batch updates seven topics, 18 connections, 16 finding associations and the
+lifecycle group. No new source pages, taxa or numeric recommendations were added.
+Isolated preview/apply/repeat/stale checks and live SQLite/row comparisons passed.
+Verified no numeric doses in phase descriptions, linked findings or connection
+explanations. General carob and Almería-specific amounts remain with the correct
+communities, while LIFE rates are not misattributed to carob.
+
+Passed 58 frontend tests, build, 74 backend tests (one existing skip), and 24 real
+browser checks including correct source pages and preserved community naming.
+No browser exceptions. Reports and baseline: output/irrigation-context/;
+browser screenshots/results: output/irrigation-audit/. Live health reports revision 10.

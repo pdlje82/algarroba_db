@@ -1,0 +1,300 @@
+{
+  "batch_id": "community-common-names-es-en-2026-11-08-v1",
+  "base_revision": 8,
+  "summary": "Spanish and English collective names for plant-named communities; no scientific-name rows or ecological changes.",
+  "topics": [
+    {
+      "id": "carob-community",
+      "label": "Mediterranean carob associations",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "General overview of Mediterranean vegetation associated with carob in section 1.2, page 18. The named companions are not one formal botanical association, a worldwide recipe or proof that every species occurs together. Read the Almería examples for local observations.",
+      "aliases": [
+        "carob societies",
+        "plant companions",
+        "associated vegetation",
+        "comunidades de algarrobo",
+        "Carob plant communities",
+        "Comunidades mediterráneas con algarrobo"
+      ],
+      "spanish_name": "Comunidades mediterráneas con algarrobo",
+      "english_name": "Mediterranean carob associations",
+      "scientific_name": null,
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names.",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 18,
+          "locator": "1.2 distribution and companion vegetation"
+        }
+      ],
+      "place_ids": [
+        "mediterranean"
+      ]
+    },
+    {
+      "id": "carob-community-almeria",
+      "label": "Carob communities in Almería",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Regional examples of carob-associated vegetation in arid and semiarid Almería. Mastic and wild olive are observed at La Alcantarilla and La Tórtola; wider MR2 companions and potential habitats have different evidence. Las Labores is a managed restoration planting replacing almond and olive. These are explanatory regional groupings, not a single formal association.",
+      "aliases": [
+        "Comunidades con algarrobo en Almería",
+        "Almeria carob communities"
+      ],
+      "spanish_name": "Comunidades con algarrobo en Almería",
+      "english_name": "Carob communities in Almería",
+      "scientific_name": null,
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names.",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Almería settings and finca observations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Almería settings and finca observations"
+        }
+      ],
+      "place_ids": [
+        "almeria"
+      ]
+    },
+    {
+      "id": "cork-oak-woodland",
+      "label": "Cork-oak woodland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Kermes oak may be a companion or become prominent in regressive management stages.",
+      "aliases": [
+        "alcornocal",
+        "alcornocales",
+        "Alcornocales"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "spanish_name": "Alcornocales",
+      "english_name": "Cork-oak woodland",
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names."
+    },
+    {
+      "id": "esparto-grassland",
+      "label": "Esparto grassland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Current La Alcantarilla landscape, distinct from potential vegetation.",
+      "aliases": [
+        "espartales",
+        "Espartales"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage"
+        }
+      ],
+      "spanish_name": "Espartales",
+      "english_name": "Esparto grassland",
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names."
+    },
+    {
+      "id": "jujube-thorn-scrub",
+      "label": "Jujube thorn scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Named in the arid MR 2 setting and La Alcantarilla potential vegetation.",
+      "aliases": [
+        "espinal de azufaifo",
+        "azufaifos",
+        "Espinales de azufaifo"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ],
+      "spanish_name": "Espinales de azufaifo",
+      "english_name": "Jujube thorn scrub",
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names."
+    },
+    {
+      "id": "kermes-oak-scrub",
+      "label": "Kermes-oak scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Communities dominated by Quercus coccifera.",
+      "aliases": [
+        "coscojares",
+        "coscojar",
+        "Coscojares"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "spanish_name": "Coscojares",
+      "english_name": "Kermes-oak scrub",
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names."
+    },
+    {
+      "id": "mastic-scrub",
+      "label": "Mastic scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Potential vegetation in the arid coastal restoration setting.",
+      "aliases": [
+        "lentiscares",
+        "Lentiscares"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ],
+      "spanish_name": "Lentiscares",
+      "english_name": "Mastic scrub",
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names."
+    },
+    {
+      "id": "pine-woodland",
+      "label": "Mediterranean pine woodland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Factsheet pine communities containing kermes oak.",
+      "aliases": [
+        "pinar",
+        "pinares",
+        "Pinares"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 2,
+          "locator": "Selected passage"
+        }
+      ],
+      "spanish_name": "Pinares",
+      "english_name": "Mediterranean pine woodland",
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names."
+    },
+    {
+      "id": "rosemary-scrub",
+      "label": "Rosemary scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Romerales described in the Tabernas landscape.",
+      "aliases": [
+        "Romerales"
+      ],
+      "spanish_name": "Romerales",
+      "english_name": "Rosemary scrub",
+      "scientific_name": null,
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names.",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0007",
+          "page": null,
+          "locator": "Hábitat 92D0; AZUFAIFAR; SUBDESIERTO DE TABERNAS"
+        }
+      ]
+    },
+    {
+      "id": "wild-olive-scrub",
+      "label": "Wild-olive scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Potential vegetation in the restoration setting.",
+      "aliases": [
+        "acebuchales",
+        "acebuchares",
+        "Acebuchales"
+      ],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Selected passage"
+        }
+      ],
+      "spanish_name": "Acebuchales",
+      "english_name": "Wild-olive scrub",
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names."
+    },
+    {
+      "id": "cornical-scrub",
+      "label": "Cornical scrub",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Cornicales are named among the arid settings in the MR2 discussion. This habitat label alone does not establish a particular species identification or its occurrence at a finca.",
+      "aliases": [
+        "cornicales",
+        "Cornicales"
+      ],
+      "spanish_name": "Cornicales",
+      "english_name": "Cornical scrub",
+      "scientific_name": null,
+      "name_note": "Spanish collective community name from the cited ecological context; English name retains the existing community label. Community cards show Spanish and English only. These are not Latin association names.",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 131,
+          "locator": "Arid phytoclimatic settings"
+        }
+      ]
+    }
+  ]
+}

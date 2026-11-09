@@ -106,9 +106,11 @@ with no camera drift after release.
 Drag empty space to pan. Ctrl/Shift-drag or angle buttons turn up to60 degrees in either
 direction around both X and Y; the initial tilt is25 degrees. Zoom changes magnification only.
 Fit and Reset view frame the current graph. **Explore this topic** without a search places
-the centre in the middle, with its neighbours on upper and lower arcs fitted to the layer.
+the centre in the middle, with its neighbours on compact upper and lower arcs.
 Nine neighbours use four positions above and five below; other counts split as evenly
-as possible. The arcs reflow with the window proportions and reserve clear space for
+as possible. The window guides the ellipse shape without forcing it to stretch across
+the entire frame. Portrait and landscape layers allow empty margins; spacing grows
+only until cards and labels fit. The arcs reflow on resize and reserve clear space for
 cards and readable, wrapped connection labels. Incoming/outgoing arrows
 retain their direction; grouping keeps different relationship meanings and directions
 separate. Parallel or secondary labels can have short leader lines into clear space.
