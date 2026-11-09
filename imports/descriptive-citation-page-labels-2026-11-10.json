@@ -1,0 +1,49 @@
+{
+  "batch_id": "descriptive-citation-page-labels-2026-11-10",
+  "summary": "Verified English page-content labels for six existing handbook citations. Display metadata only; source bytes, facts, evidence and working plans preserved.",
+  "base_revision": 11,
+  "sources": [
+    {
+      "id": "FOREST-002",
+      "filename": "FOREST-002 - Andalusia - Carob Cultivation and Restoration Handbook - 2026.pdf",
+      "pdf_pages": 168,
+      "initial_pdf_page_ranges": [
+        [
+          13,
+          21
+        ],
+        [
+          130,
+          134
+        ]
+      ],
+      "sha256": "75262e343d4d1e2f1d981b08c9e36a73c9a2c5e9130d14af951124d4cc5d84b8",
+      "title": "Andalusia - Carob Cultivation and Restoration Handbook - 2026",
+      "author_issuer": "University of Córdoba",
+      "dates": [
+        {
+          "value": "2026",
+          "meaning": "edition"
+        }
+      ],
+      "availability": "Not checked",
+      "pdf_metadata": {
+        "/CreationDate": "D:20260219080734+01'00'",
+        "/Creator": "Adobe InDesign 21.2 (Macintosh)",
+        "/ModDate": "D:20260219080746+01'00'",
+        "/Producer": "Adobe PDF Library 18.0",
+        "/Trapped": "/False"
+      },
+      "kind": "pdf",
+      "managed_path": "sources/library/FOREST-002 - Andalusia - Carob Cultivation and Restoration Handbook - 2026.pdf",
+      "page_labels": {
+        "126": "Las Labores (MR1): site conditions; protective planting summary (Table 5.14)",
+        "131": "Water harvesting (oasificación): companion plants and potential planting area",
+        "134": "La Alcantarilla (MR2): site conditions; establishment summary (Table 5.19)",
+        "135": "La Alcantarilla (MR2): climate, interventions and current state",
+        "136": "La Tórtola (MR2): site conditions; La Alcantarilla fruit results",
+        "137": "La Tórtola: interventions and current state; MR3 landscape diversification"
+      }
+    }
+  ]
+}

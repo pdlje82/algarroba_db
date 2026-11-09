@@ -255,6 +255,9 @@ connect new discoveries to one another and to relevant existing records wherever
 an explicitly explained curated association justifies it. Do not create isolated task graphs.
 Keep source findings, curated discovery associations and practical recommendations distinct.
 Preserve trial/applicant/territory/date conditions, original species spellings and exact PDF pages.
+Every source link needs a visible, passage-specific heading or keyword (SourceRef.label), plus
+document title and exact page/section. Preserve the precise locator; distinguish links to the same
+document. Use only checked headings or faithful paraphrases; never invent a missing heading.
 Missing connections mean 'No connection recorded', never proof of impossibility.
 
 Follow the ingestion procedure in README.md and imports/CONTRACT.md: verify editions; read and

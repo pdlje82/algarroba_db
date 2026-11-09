@@ -8,11 +8,13 @@ import {
 } from "pdfjs-dist";
 import pdfWorker from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 import { type Ref, type Catalog } from "./types";
+import {citationDetails} from './citations';
 GlobalWorkerOptions.workerSrc = pdfWorker;
 /** A source-viewer failure must never unmount the working exploration. */
 export class PdfBoundary extends React.Component<{
   children: React.ReactNode;
   source: Ref & {page:number};
+  catalog: Catalog;
   close: () => void;
 }, { error: string | null }> {
   state: { error: string | null } = { error: null };
@@ -30,7 +32,7 @@ export class PdfBoundary extends React.Component<{
             <details><summary>Error details</summary>{this.state.error}</details>
             <div className="actions">
               <button onClick={() => this.setState({ error: null })}>Retry source</button>
-              <a href={`/api/sources/${source.source_id}/file#page=${source.page}`} target="_blank" rel="noreferrer">Open PDF ↗</a>
+              <a href={`/api/sources/${source.source_id}/file#page=${source.page}`} target="_blank" rel="noreferrer">Open PDF · {citationDetails(source, this.props.catalog.sources).text} ↗</a>
             </div>
           </div>
         </section>
@@ -156,6 +158,9 @@ export default function PdfPanel({
   const processed = catalog.coverage.find(
     (c) => c.source_id === source.source_id && c.page === page,
   );
+  // A citation's heading belongs to its cited page, not every page visited afterwards.
+  const currentRef = page === source.page ? source : {source_id: source.source_id, page};
+  const citation = citationDetails(currentRef, catalog.sources);
   return (
     <div className="source-shade">
       <section
@@ -169,7 +174,7 @@ export default function PdfPanel({
             <span className="eyebrow">
               ORIGINAL SOURCE · {source.source_id}
             </span>
-            <h2>{record?.filename || source.source_id}</h2>
+            <h2>{record?.title || record?.filename || source.source_id}</h2>
           </div>
           <button onClick={close} className="close" aria-label="Close source">
             ×
@@ -221,7 +226,7 @@ export default function PdfPanel({
             target="_blank"
             rel="noreferrer"
           >
-            Open PDF ↗
+            Open PDF · {citation.caption} · {citation.location} ↗
           </a>
         </div>
         <div className="source-locator">
@@ -233,11 +238,12 @@ export default function PdfPanel({
                 .join(" · ") || "Publication date unknown"}
             </div>
           )}
-          {source.locator && <strong>{source.locator} · </strong>}
+          <strong>{citation.caption} · </strong>
           {processed
             ? `Curated page · ${processed.note}`
             : "Source material only · this page has not been curated."}
           <small>
+            {page === source.page && source.locator && source.locator !== citation.caption && <>Passage locator: {source.locator}. </>}
             PDF positions are one-based and can differ from printed page labels.
             Viewing a page does not import it.
           </small>

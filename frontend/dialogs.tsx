@@ -1,27 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { api, type Ref, type Catalog } from "./types";
-export function Refs({
-  refs,
-  open,
-}: {
-  refs: Ref[];
-  open: (ref: Ref) => void;
-}) {
-  return (
-    <div className="refs">
-      {refs.map((ref, i) => (
-        <button
-          key={i}
-          onClick={() => open(ref)}
-          title={ref.locator || "Open source"}
-        >
-          {ref.source_id}{" "}
-          <span>{ref.page != null ? "p" + ref.page : "Source"} ↗</span>
-        </button>
-      ))}
-    </div>
-  );
-}
+export {CitationLinks as Refs} from './CitationLinks';
 
 export function ResearchPanel({
   context,

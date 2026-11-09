@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import type { Ref, Catalog } from "./types";
 import PdfPanel, { PdfBoundary } from "./PdfPanel";
+import {citationDetails} from './citations';
 
 export function SourcePanel({
   source,
@@ -21,6 +22,7 @@ export function SourcePanel({
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [close]);
+  const citation = citationDetails(source, catalog.sources);
   if (
     record &&
     (record.kind === undefined || record.kind === "pdf") &&
@@ -28,7 +30,7 @@ export function SourcePanel({
   ) {
     const pdfSource = { ...source, page: source.page };
     return (
-      <PdfBoundary source={pdfSource} close={close}>
+      <PdfBoundary source={pdfSource} catalog={catalog} close={close}>
         <PdfPanel source={pdfSource} catalog={catalog} close={close} />
       </PdfBoundary>
     );
@@ -76,7 +78,7 @@ export function SourcePanel({
             </>
           ) : record.kind === "web" ? (
             <>
-              <p>{source.locator}</p>
+              <p>{citation.caption}</p>
               <p>{source.source_text || record.excerpt}</p>
               <p>
                 Retrieved {record.retrieved_on}. Publication date:{" "}
@@ -86,7 +88,7 @@ export function SourcePanel({
                 .
               </p>
               <a href={record.url} target="_blank" rel="noreferrer">
-                Open original website ↗
+                Open original website · {citation.caption} ↗
               </a>
               <p>
                 <a
@@ -94,7 +96,7 @@ export function SourcePanel({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Open archived source text ↗
+                  Open archived source text · {citation.caption} ↗
                 </a>
               </p>
             </>

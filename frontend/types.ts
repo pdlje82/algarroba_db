@@ -5,6 +5,7 @@ export type Ref = {
   source_id: string;
   page?: number | null;
   locator?: string;
+  label?: string;
   source_text?: string;
 };
 export type PlantImage = {

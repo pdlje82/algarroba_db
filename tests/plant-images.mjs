@@ -255,7 +255,7 @@ try {
       has: page.getByRole("heading", { name: poster.id, exact: true }),
     });
   await posterArticle
-    .getByRole("button", { name: "Open source", exact: true })
+    .getByRole("button", { name: /^Open source ·/ })
     .click();
   await page.locator(".source-document img").evaluate((im) => im.decode());
   check(

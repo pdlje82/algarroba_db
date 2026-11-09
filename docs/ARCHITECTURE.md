@@ -1,4 +1,14 @@
-# Consolidated Layered 3D browser — v6
+# Architecture and exploration contracts
+
+Current reference, reconciled 10 November 2026. The v6 workflow approved on 8 November
+replaces the independent-pane and ten-perspective prototypes. Historical proposals and
+acceptance logs are indexed in [Verification](VERIFICATION.md#historical-records).
+
+One offline Windows app uses React/TypeScript, react-force-graph-3d/Three.js,
+FastAPI, authoritative SQLite/FTS5 and bundled PDF.js. Dependency versions belong in
+the lockfiles and [third-party notices](../THIRD_PARTY_NOTICES.md).
+Read [Community planning](COMMUNITY_PLANNING.md) for the Evidence desk and revision-checked
+organization services; [Sources and media](SOURCES_AND_MEDIA.md) covers managed files.
 
 ## Direct-topic circle update
 
@@ -35,19 +45,18 @@ retaining old geometry aliases, moved offsets, closed-state keys and opening ref
 Pending domain previews preserve their current arrangement. No database migration or
 knowledge changes are involved. `npm run test:relationship-circle` verifies the real browser.
 
-Approved8 November2026. This replaces the v5 independent-layer interaction contracts.
-Historical source/build files are preserved in the pre-consolidation backup recorded in VERIFICATION.md.
+Historical source/build recovery snapshots are recorded in the archived verification log.
 
 ## Canonical exploration
 
 State version6 holds scope (overview/group/neighbors/search), groupId, centre, captured query anchor,
-search, domain, kinds, grouping, expandedGroups/expandedRoutes, alternatives, depth, comparison IDs,
+search, domain, kinds, grouping, expandedRoutes, alternatives, depth, comparison IDs,
 positions, camera, revision and the accepted query snapshot. Remove centre removes its card and
 attached lines and repacks the remaining cards on a deterministic grid in the same history entry.
 Preserve camera, layer movement, opening source and backgrounds. The captured anchor retains the
 surrounding query results for refresh and serves as the omitted former centre while centre is
 null. Apply that omission after expanding routes and before grouping, so neither matching itself
-nor route reveal can reinsert it. Direct topic exploration uses the relationship circle described below;
+nor route reveal can reinsert it. Direct topic exploration uses the relationship arcs described above;
 overview, membership and search use ordinary grid slots. Reconcile older
 saved positions containing a removed centre by clearing those stale slots once. Explicit scope
 changes reset the query anchor to the current centre choice.
@@ -132,7 +141,7 @@ SceneView uses the existing react-force-graph-3d/Three renderer with an empty fo
 owned scene group. Ordinary meshes, straight Line2 segments and depth testing replace postprocessing.
 Textures use sRGB. Retired resources are disposed. Camera gestures are pan by default and rotation
 with Ctrl/Shift. Default tilt25; both tilt and sideways are allowed from -60 to +60. Zoom never invokes semantic changes.
-Transitions300ms, immediate with reduced motion. There is no Flat camera or automatic force solver.
+Camera transitions take 600 ms, or zero with reduced motion. There is no Flat camera or automatic force solver.
 
 ## Highlighting opened source nodes
 
@@ -229,18 +238,23 @@ view or edits a task. Evidence/Time/Comparison migrate to panels; other perspect
 
 New research captures foreground context only, including exact factual IDs, routes, sources, filters,
 grouping, revision and version6 state/history. The existing manual prompt workflow and ingestion
-boundaries remain. The consolidation changes no accepted knowledge or organization definitions.
+boundaries remain. Rendering/presentation changes do not authorize factual or organization edits;
+checked intake and explicit user organization edits use their separate maintenance services.
 
 
-## One tight layout for every layer
+## Grid layouts, ordered members and compatibility
 
-All overview, membership, direct-neighbour and search layers, including grouped cards and
-read-only history snapshots, share compactGrid. The centre is a semantic designation on an
-ordinary card, not a reserved coordinate or ring. The scene builder checks the complete visible
+Overview, ordinary membership and search layers, including grouped cards and
+read-only snapshots of those scopes, use compactGrid. Direct-neighbour exploration with a
+live centre uses the adaptive arcs above; removing the centre returns the remaining cards to
+a grid. An ungrouped folder with `member_layout: vertical` follows its stored member order
+in one column. In grid scopes the centre is a semantic designation on an ordinary card,
+not a reserved coordinate. The scene builder checks the complete visible
 card set: reuse an already compact saved grid exactly, otherwise repack all cards in deterministic
 order. Route reveal/hide, filtering and other membership changes therefore fill holes instead
-of appending scattered fallback slots. Turning, zoom, resizing and fullscreen do not move healthy
-local positions. Pending domain previews keep the complete working layout until Update succeeds.
+of appending scattered fallback slots. Turning and zoom do not move local positions. Resizing
+and fullscreen preserve healthy grid slots and reflow responsive arcs. Pending domain previews
+keep the complete working layout until Update succeeds.
 
 Older ring/scattered positions normalize on render/reopen without editing original saved database
 payloads. A previousKey presentation alias derives from the original complete saved geometry;
@@ -258,7 +272,7 @@ Keep the four-pixel drag threshold, pointer cancellation, saved offsets and 25-d
 
 
 Timed transitions use the common camera move helper: framing a new exploration without a saved
-pose, Fit, Reset view, zoom buttons and angle buttons take 600 ms (previously 300 ms). Reduced
+pose, Fit, Reset view, zoom buttons and angle buttons take 600 ms. Reduced
 motion uses zero duration. Saved camera restoration stays immediate. Trackball controls use
 staticMoving=true to stop camera motion with the pointer rather than adding inertial drift.
 Refresh the Trackball canvas dimensions after layout/resize so pointer deltas are measured
@@ -270,14 +284,15 @@ fade/slide/layout animation; their updates are immediate. Do not introduce extra
 ## Species names on canonical topic records
 
 Species naming is stored in SQLite as separate nullable spanish_name, english_name and
-scientific_name fields. The checked naming-only batch updates the existing 34 topic IDs without
-relabeling/merging them or touching organization/relationships/trial claims. name_status marks
+scientific_name fields. Naming-only corrections retain existing topic identities and do not
+change organization, ecological relationships or trial claims. name_status marks
 recorded, source-spelling and genus-only concepts; name_note and HTTPS name_references preserve
 provenance and uncertainty. Two unresolved source-spelling records retain null common names.
 
 One speciesNames helper supplies ES/EN/Sci rows to the graph canvas, inspector and accessible
 list. Scientific text is italic; wrapping and font fitting keep all rows above status/research
-badges within unchanged card dimensions. Non-species cards retain their original layout. Cached
+badges within unchanged card dimensions. Named plant communities show ES/EN without a Latin
+row; generic habitat labels remain generic. Other non-species cards retain their layout. Cached
 history keeps its membership/positions while species name metadata resolves from current catalog
 IDs. FTS indexes the three stored fields alongside legacy aliases. Research contexts include
 names/status/notes/references by stable ID, and prompts include names/status. Original saved
@@ -301,7 +316,7 @@ cleanup ignores late completions and expected cancellations. Repaint waits for t
 cancelled render task to settle before assigning canvas dimensions or reusing the canvas; only
 the active task commits rendered-page/status. The graph, camera, selection, saved exploration,
 knowledge revision and source/ingestion metadata remain unchanged. The focused browser suite
-covers exact citations, actual rendered pixels, all nine editions, retries and forced failures.
+covers exact citations, actual rendered pixels, registered editions, retries and forced failures.
 
 
 ## Plant media intake
@@ -310,4 +325,5 @@ The 8 November plant intake extends the existing source registry with managed PD
 records and a separate SQLite plant_images collection. Media never becomes factual graph edges.
 Catalog/inspection/exploration enrich species with current public image metadata; restored scenes
 resolve it from canonical topic IDs. Cards remain 234×124; async artwork changes only their canvas
-texture. See PLANT_IMAGES.md for storage, endpoints, source contracts, evidence scope and recovery.
+texture. See [Sources and media](SOURCES_AND_MEDIA.md) for storage, endpoints, source contracts,
+evidence scope and recovery. Current check commands are in [Verification](VERIFICATION.md).

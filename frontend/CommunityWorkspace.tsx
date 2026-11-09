@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import {api, type Catalog, type Community, type CommunityPlant, type IrrigationEvidence, type Ref} from './types';
 import {ResearchPanel} from './dialogs';
 import {SourcePanel} from './SourcePanel';
+import {CitationLinks} from './CitationLinks';
 import {groupDomain} from './organization';
 import {PHASES, PARAMETERS, type Phase, type Parameter, type PlantDraft, type PlanSave, type StageStatus, evidenceProblem, fieldKey, fieldText, newPlantDraft, parameterLabel, phaseLabel, plantDraftDirty, plantPlanData, previewField, sourceTitles, stageStatus} from './communityPlan';
 import './communityWorkspace.css';
@@ -18,10 +19,7 @@ const statusLabel = {configured:'Configured',unconfigured:'Not configured','not-
 const originLabel = {'not-set':'Not set',source:'Researched source','user-set':'Existing manual value','user-adjusted':'Existing adjusted value'};
 
 export function FriendlyRefs({refs,catalog,open}: {refs: Ref[];catalog: Catalog;open:(ref:Ref)=>void}) {
-  return <div className="desk-source-links">{refs.map((ref,i)=>{
-    const title=catalog.sources.find(s=>s.id===ref.source_id)?.title || ref.source_id;
-    return <button key={i} type="button" className="desk-text-link" onClick={()=>open(ref)} title={ref.locator} aria-label={`Open ${title}${ref.page ? ', PDF page '+ref.page : ''}`}>{title}{ref.page ? ` · PDF page ${ref.page}` : ''} ↗</button>;
-  })}</div>;
+  return <CitationLinks refs={refs} catalog={catalog} open={open} friendly/>;
 }
 
 export function CommunityWorkspace({community:g,catalog:c,save,refresh,close,manage,copy,busy:mutationBusy,error,status,undo,redo,canUndo,canRedo,researchContext,taskCreated}:Props) {

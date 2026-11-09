@@ -1170,7 +1170,7 @@ function App() {
                       "Select a card to inspect it. Use Explore this topic to follow its direct connections."}
                   </p>
                   {inspectedGroup && <section aria-label="Group guide">
-                    <Refs refs={inspectedGroup.source_refs || []} open={setSource}/>
+                    <Refs catalog={catalog} refs={inspectedGroup.source_refs || []} open={setSource}/>
                     <ol>{inspectedGroup.members.map(m=><li key={m.topic_id}>{topicButton(m.topic_id)}</li>)}</ol>
                   </section>}
                   {selectedTopic?.aspects && <dl className="topic-context">{Object.entries(selectedTopic.aspects).map(([key,value])=><React.Fragment key={key}><dt>{key}</dt><dd style={{whiteSpace:'pre-line'}}>{String(value)}</dd></React.Fragment>)}</dl>}
@@ -1235,7 +1235,7 @@ function App() {
                           Also searchable: {selectedTopic.aliases?.join(" · ")}
                         </p>
                       )}
-                      <Refs
+                      <Refs catalog={catalog}
                         refs={selectedTopic.source_refs || []}
                         open={setSource}
                       />
@@ -1269,7 +1269,7 @@ function App() {
                             </div>
                           </article>
                         ))}
-                      {findings.length>0 && <details className="source-guidance"><summary>Source findings and guidance · {findings.length}</summary>{findings.map(f=><article key={f.id}><small>{f.kind==='recommendation'?'Source guidance':'Source finding'}</small><h3>{f.label}</h3><p>{f.text}</p>{f.conditions?.map((condition:string,i:number)=><p key={i}>Condition: {condition}</p>)}<Refs refs={f.source_refs || []} open={setSource}/></article>)}</details>}
+                      {findings.length>0 && <details className="source-guidance"><summary>Source findings and guidance · {findings.length}</summary>{findings.map(f=><article key={f.id}><small>{f.kind==='recommendation'?'Source guidance':'Source finding'}</small><h3>{f.label}</h3><p>{f.text}</p>{f.conditions?.map((condition:string,i:number)=><p key={i}>Condition: {condition}</p>)}<Refs catalog={catalog} refs={f.source_refs || []} open={setSource}/></article>)}</details>}
                       <h3>Recorded connections</h3>
                       {catalog.relationships
                         .filter((e) =>
@@ -1343,7 +1343,7 @@ function App() {
                                         {e.source === id ? "→" : "←"} {e.label}
                                       </p>
                                       <p>{e.explanation}</p>
-                                      <Refs
+                                      <Refs catalog={catalog}
                                         refs={e.source_refs || []}
                                         open={setSource}
                                       />
@@ -1365,7 +1365,7 @@ function App() {
                       </p>
                       {topicButton(selectedEdge.source)} →{" "}
                       {topicButton(selectedEdge.target)}
-                      <Refs
+                      <Refs catalog={catalog}
                         refs={selectedEdge.source_refs || []}
                         open={setSource}
                       />
@@ -1389,7 +1389,7 @@ function App() {
                             }
                           </p>
                           <p>{e.explanation}</p>
-                          <Refs refs={e.source_refs || []} open={setSource} />
+                          <Refs catalog={catalog} refs={e.source_refs || []} open={setSource} />
                         </article>
                       )
                     );
@@ -1403,13 +1403,7 @@ function App() {
                         const [id, page] = p.id.split(":");
                         return (
                           <article key={p.id}>
-                            <button
-                              onClick={() =>
-                                setSource({ source_id: id, page: Number(page) })
-                              }
-                            >
-                              {id} · PDF p{page}
-                            </button>
+                            <Refs catalog={catalog} open={setSource} refs={[{source_id:id, page:Number(page), label:`Search match: ${p.excerpt}`}]} />
                             <p>{p.excerpt}</p>
                           </article>
                         );
@@ -1444,7 +1438,7 @@ function App() {
                           {typeof c === "string" ? c : JSON.stringify(c)}
                         </p>
                       ))}
-                      <Refs refs={f.source_refs || []} open={setSource} />
+                      <Refs catalog={catalog} refs={f.source_refs || []} open={setSource} />
                     </article>
                   ))}
                   {catalog.sources
@@ -1461,7 +1455,7 @@ function App() {
                             })
                           }
                         >
-                          Open document
+                          Open document · {s.title || s.filename} · Browse source
                         </button>
                       </article>
                     ))}
@@ -1558,7 +1552,7 @@ function App() {
                                 {comparison.topics.map((t: any) => (
                                   <td key={t.id}>
                                     <p>{t.description}</p>
-                                    <Refs
+                                    <Refs catalog={catalog}
                                       refs={t.source_refs || []}
                                       open={setSource}
                                     />
@@ -1627,7 +1621,7 @@ function App() {
                     })
                   }
                 >
-                  Open source
+                  Open source · {s.title || s.filename} · Browse source
                 </button>
               </article>
             ))}

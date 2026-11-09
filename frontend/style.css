@@ -381,6 +381,19 @@ hr {
   font-size: 11px;
   padding: 5px 7px;
 }
+.refs .citation-link, .desk-source-links .citation-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  max-width: 100%;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.citation-heading { font-size: 13px; font-weight: 600; }
+.citation-document { font-size: 11px; }
+.desk-source-links .citation-link { margin-bottom: 8px; }
 .route-controls,
 .visible-topics {
   padding: 10px 14px;

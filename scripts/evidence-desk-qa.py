@@ -37,12 +37,18 @@ def prepare(target):
                     wording='QA '+suffix+' — synthetic test evidence',context='Synthetic Region A, young plants, test-only method',
                     applicability='Test fixture only. Do not use as an irrigation recommendation.',limitations='Synthetic QA evidence. No factual intake.')
         evidence.append(item)
-    store.import_batch(dict(batch_id='evidence-desk-qa-fixtures',summary='Synthetic browser fixtures only',base_revision=store.revision(),irrigation_evidence=evidence))
+    # Stable citation fixture independent of the user's editable communities.
+    citation_refs=[dict(source_id='FOREST-002',page=page,locator='Almería settings and finca observations') for page in [126,131,134,135,136,137]]
+    citation_reference=dict(id='community:citation-links-qa-source',kind='source',label='Citation links QA reference',
+        parent_id='browse:plant-communities',context='Synthetic display fixture only; no planting recommendation.',
+        basis=citation_refs,plants=[dict(topic_id='carob',basis=copy.deepcopy(citation_refs))])
+    store.import_batch(dict(batch_id='evidence-desk-qa-fixtures',summary='Synthetic browser fixtures only',base_revision=store.revision(),irrigation_evidence=evidence,communities=[citation_reference]))
     def edit(action,**data):return apply_edit(store,Edit(expected_revision=store.revision(),action=action,data=data))
     id=edit('community-copy',label='Evidence desk QA',parent_id='browse:plant-communities',origin_id='carob-community',topic_ids=['carob','mastic'])['affected_id']
     edit('stage-set',id=id,topic_id='carob',stage='settlement',status='configured')
     edit('field-set',id=id,topic_id='carob',stage='settlement',field='amount',mode='user',value=7,rationale='Existing unsourced test planning value')
     edit('field-set',id=id,topic_id='carob',stage='settlement',field='frequency',mode='user',value='Existing monitoring trigger')
+    edit('community-copy',label='Citation links QA',parent_id='browse:plant-communities',origin_id=citation_reference['id'],topic_ids=['carob'])
     return {'database':str(target),'community_id':id,'revision':store.revision()}
 
 

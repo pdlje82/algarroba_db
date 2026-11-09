@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 from .plant_media import PlantImage, validate_image, managed_path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,6 +37,16 @@ class SourceRef(BaseModel):
     source_id: str
     page: int | None = Field(default=None, ge=1)
     locator: str = ""
+
+    @model_validator(mode='before')
+    @classmethod
+    def check_optional_label(cls, value):
+        # Keep legacy/snapshot shapes unchanged; new labels are validated when supplied.
+        if isinstance(value, dict) and 'label' in value:
+            label=value['label']
+            if not isinstance(label,str) or not label.strip() or len(label)>240:
+                raise ValueError('Citation label must be a nonempty heading or keyword of at most 240 characters')
+        return value
 
 
 class NameReference(BaseModel):
@@ -220,10 +230,19 @@ class Store:
             from pypdf import PdfReader
             if len(PdfReader(path).pages)!=source.get('pdf_pages') or not source.get('initial_pdf_page_ranges'):
                 raise ValueError('PDF source requires verified pages and inspected ranges')
-        elif source['kind']=='image':
+        if 'page_labels' in source:
+            labels=source['page_labels']
+            if source['kind']!='pdf' or not isinstance(labels,dict):
+                raise ValueError('Source page_labels requires a PDF and a page-to-heading object')
+            for page,label in labels.items():
+                if not isinstance(page,str) or not re.fullmatch(r'[1-9][0-9]*',page) or not 1<=int(page)<=source['pdf_pages']:
+                    raise ValueError('Source page_labels keys must be exact one-based PDF pages')
+                if not isinstance(label,str) or not label.strip() or len(label)>240:
+                    raise ValueError('Source page_labels requires nonempty headings of at most 240 characters')
+        if source['kind']=='image':
             from PIL import Image
             with Image.open(path) as im: im.verify()
-        elif not source.get('url','').startswith('https://') or not source.get('retrieved_on') or not source.get('excerpt'):
+        elif source['kind']=='web' and (not source.get('url','').startswith('https://') or not source.get('retrieved_on') or not source.get('excerpt')):
             raise ValueError('Web source requires HTTPS URL, retrieval date and reviewed excerpt')
 
     def source_path(self, source: dict):

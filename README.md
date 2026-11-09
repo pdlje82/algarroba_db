@@ -1,8 +1,26 @@
 # Algarroba Knowledge Browser
 
-A local, offline browser for connected restoration, water, drone and LEADER knowledge.
-The v6 workflow, approved 8 November 2026, replaces independent panes and ten perspectives
-with one active Layered 3D graph, filters, grouping and a docked inspector.
+A local, offline browser for connected ecosystem, restoration, irrigation, drone and funding
+knowledge. One Layered 3D graph, filters, browsing groups and a docked inspector help readers
+move from overviews to evidence. Community planning uses a separate Evidence desk.
+
+## Documentation
+
+| Need | Read |
+| --- | --- |
+| Install, start and explore | This guide |
+| Ingest all current PDFs or weekly additions | [Reusable ingestion prompt](DOCUMENT_INGESTION_PROMPT.md) |
+| Maintain imports and evidence | [Maintenance procedure](#knowledge-ownership-and-maintenance-procedure) and [import contract](imports/CONTRACT.md) |
+| Understand graph behavior and persistence | [Architecture](docs/ARCHITECTURE.md) |
+| Edit groups, communities and irrigation decisions | [Community planning and Evidence desk](docs/COMMUNITY_PLANNING.md) |
+| Verify sources/media, backups and recovery | [Sources and media](docs/SOURCES_AND_MEDIA.md) |
+| Run checks or find historical acceptance records | [Verification and documentation map](docs/VERIFICATION.md) |
+| Maintain this project with Codex | [Project instructions](AGENTS.md) |
+| Review dependency licences | [Third-party notices](THIRD_PARTY_NOTICES.md) |
+
+The references above describe the current app. Earlier briefs and the chronological verification
+log are preserved under `docs/archive/`; they are historical evidence, not current instructions.
+Commands and code-formatted paths in these guides are relative to the repository root unless stated otherwise.
 
 ## Start
 
@@ -100,320 +118,144 @@ See JetBrains' [interpreter setup](https://www.jetbrains.com/help/pycharm/config
 and [Python run configuration](https://www.jetbrains.com/help/pycharm/run-debug-configuration-python.html)
 documentation for the corresponding dialogs.
 
-## Explore
+## Explore and read
 
-**Edit group** and **Edit community** open the controls for the selected group or community.
-Community editing opens directly into its members and irrigation; group editing shows
-organization controls. With no active group or community, use the separate **Manage groups**
-and **Manage communities** buttons to choose or create records. Create/rename folders,
-move or share topics, build communities from existing plants, and enter irrigation
-values per member and lifecycle stage. Source values and user
-adjustments retain separate origins and history. See [Community planning](COMMUNITY_PLANNING.md)
-for controls, maintenance, conflicts, Undo/Redo and recovery. Source-backed topic names
-remain under Codex maintenance; Group by still changes presentation only.
+1. Open a sidebar group to bring its complete contents into the foreground. The previous layer
+   stays darkened behind it. A single click inspects a card/line; **Open group**, **Members** or
+   double-clicking an eligible group opens its members. Temporary groups keep their exact captured
+   membership and start with Group by None.
+2. Choose **Explore this topic** or the Centre dropdown to open all direct neighbours. The centre
+   sits between compact upper/lower arcs with visible relationship labels. Overview, search and
+   ordinary member layers use a grid; stored ordered folders use a vertical column.
+3. Search for stored names, aliases, findings and curated page text. With a centre, results explain
+   routes through the graph. **Show steps / Hide steps** reveals real intermediate topics; shared
+   steps appear once. Reach starts at six steps; **Look farther** extends to eight with up to three
+   alternatives. A reported search budget limit is not proof that no connection exists.
+4. Filter by Domain or Topic type, and Group by browsing family, type or place. Grouping reorganizes
+   the current layer in place. Changing Domain first previews darkened exclusions; **Update** beside
+   the heading or **Update layer** applies the choice and repacks the same layer. Choosing the applied
+   domain cancels the preview. Centres and necessary route context remain identifiable.
+5. **Remove centre** removes its card/lines and repacks the surrounding results in the same layer.
+   The query origin remains available for refresh without reinserting that card. Opening a member
+   group clears an unrelated centre. **Return to overview** establishes a single-layer boundary,
+   retaining domain/type filters.
 
-The community editor is a full-window **Evidence desk**: member plants, phase comparison
-and source guidance. Review researched evidence, explicitly adopt a value into the draft,
-then save the plant's changes together. Irrigation numbers cannot be entered freely;
-missing evidence opens a manual research handoff. See [Evidence desk](EVIDENCE_DESK.md)
-for source review, drafts, atomic saves, provenance and recovery.
+Hover outlines do not select or navigate. Domain-excluded cards and previous-view snapshots are
+read-only. Place grouping uses recorded place IDs, not guessed geography; **Place not recorded**
+and **Place unavailable** have different meanings. Organization never creates scientific facts.
 
-1. Open one of the nine sidebar groups. Its complete organized contents open in the foreground; the original layer remains darkened behind.
-2. Click a card or line to inspect it. Selection never opens, closes, recentres or rearranges.
-3. Choose **Explore this topic** to make it the centre. Without search, all direct neighbours open.
-   The Centre dropdown invokes the same action. Anchored groups also offer Members / Connections.
-4. Enter a search to find stored matches and explainable routes from the centre. Names, aliases,
-   findings and curated page text are searched; no research starts automatically.
-5. Domain and Topic type filter endpoints. The centre and required connecting context remain visible.
-   Group by None, Browsing family, Topic type or Place. Changing Group by updates the current
-   layer in place, preserving its camera and position. Opening a group is separate: use Open group
-   (or Members) to bring its contents forward and retain the original layer darkened behind it.
-6. Select a route for its explanation; **Show steps / Hide steps** unfolds it. **Show all route steps**
-   uses the same mechanism. Shared intermediate topics appear once. Alternative routes retain
-   source evidence. Reach starts at six steps; **Look farther** extends to eight, with up to three
-   alternatives. Reaching the route work budget is explicitly reported, never treated as proof
-   that a connection does not exist.
+Drag empty space to pan; Ctrl/Shift-drag or angle buttons turn the view. Zoom changes magnification
+only. Drag a layer heading to move its whole layer; Escape cancels. Fit/Reset and camera buttons
+use 600 ms moves, with no animation for reduced motion. Direct-neighbour arcs adapt to the window
+without stretching to fill it. Cards, labels and source highlights remain readable in both themes.
 
-**Remove centre** removes its card and attached lines, then repacks the remaining cards to fill
-its space in the current layer. The surrounding neighbour/search results and captured query
-origin remain available; no extra layer is created. Camera and layer movement stay unchanged.
-The next explicit exploration uses the current centre choice. Opening a membership group clears
-the previous centre and shows only that group's members; an unrelated Drones centre cannot be
-injected into Species. Clearing search returns to direct neighbours,
-or to the overview when no centre exists. Return to overview shows a single layer, keeping the
-selected domain/type filters and centre/search marker. Other-domain centre cards are omitted
-from a domain-filtered overview. Closed layers stay closed when you start exploring again.
+The foreground shows at most two read-only **Previous view** snapshots. Its opening card stays
+highlighted in the source layer. **Close layer** restores the nearest visible predecessor or the
+filtered overview; closing a background snapshot hides only that snapshot. Back/Forward restores
+complete views, with up to 100 history entries. New exploration after Back replaces the forward
+branch. Grouping, pending domain choices, camera and layer offsets are preserved appropriately.
 
-**Place not recorded** means no explicit primary place annotation is stored on that topic.
-Place entries belong to their own place group; other topics use the first recorded place ID,
-with identity redirects resolved. Opening a place group validates its members again, so records
-assigned elsewhere cannot leak into the opened layer. Unknown referenced place IDs are labelled
-Place unavailable, separately from genuinely unrecorded places. Grouping does not infer or write
-geographic facts from a topic's name, source co-occurrence or arbitrary relationships.
+The docked inspector works in normal/fullscreen modes:
 
-Opening a grouped card creates a focused, compact member layer. It contains exactly the topics
-represented by that card, with Group by initially None. Other group cards and previously opened
-groups stay in history, outside the new layer. For example, Event in Habitats & conditions opens
-its three Event records; it does not retain the previously opened Aspect or the Condition/Habitat/
-Place browsing cards. Grouping and domain changes remain within that captured membership.
-Use Back or Close layer to return. Older cumulative group expansions reopen as the last focused
-group, without changing their original saved database payloads.
+- **Details** explains the selection and its actual relationships.
+- **Evidence** shows source findings, recommendations and conditions. Citations open the exact
+  one-based PDF position, which may differ from printed numbering. Loading failures stay in the
+  source panel with **Retry source**, Close and original-PDF access.
+- **Dates** distinguishes experiments/events from publication/edition dates; unknown stays unknown.
+- **Comparison** displays up to four topics with their own conditions and citations. Missing values
+  are Not recorded; the table does not imply a controlled comparison.
 
-**Double-click a group node** to run the same **Open group** action offered in the inspector
-and topic list. A single click still only shows details. Double-clicking an ordinary topic
-keeps inspection; it does not invent a group or change the centre. Darkened/read-only nodes,
-layer labels, modifiers and drag gestures cannot trigger this shortcut. Each double-click
-opens one exploration and retains the original layer behind it.
+Species show stored Spanish, English and scientific names; named plant communities show Spanish
+and English without a Latin row. Original labels and unresolved identifications are retained.
+Illustrated plants offer **View plant images** for whole/detail views, Original size/Fit and botanical
+references. Artwork is representative AI-generated illustration, not to a common scale or ecological
+proof. See [Sources and media](docs/SOURCES_AND_MEDIA.md) for provenance and checked identities.
 
-Clickable foreground topic and group cards show an accent outline and pointer cursor on hover.
-Hovering only previews interaction; it does not select, navigate or enter browsing history.
-Domain-excluded darkened cards cannot be hovered, selected or opened, including through the
-Visible topics list. Cancelling the domain preview restores interaction. Previous-view cards
-remain read-only, including the bright source card of an open child.
+WebGL2 is required for the 3D view; the accessible **Visible topics** list and inspector remain
+available if graphics initialization fails. Appearance offers System/Light/Dark.
 
-Changing **Domain** previews the choice in the current layer: topics outside that domain and
-links attached to them become dark, while all cards stay in place. Click **Update** beside the
-layer heading's X to remove those topics and repack the remaining nodes tightly in this same
-layer. The toolbar has an **Update layer** fallback. Returning to All domains rebuilds the
-complete overview as a compact grid. Older scattered overview layouts are repaired on reopening,
-while preserving the layer movement and camera. This never adds a view or background layer. Choosing the already-applied domain cancels
-the preview; choosing All and Update restores the scope's full membership. Centres and required
-route steps remain as connecting context. Mixed-domain group cards show how many members match.
-Pending choices survive reload and saving; a failed Update retains the working graph and preview.
+## Community plans and research
 
-## Navigation and reading
+**Edit group** opens permanent organization controls. **Edit community** opens the full-window
+Evidence desk: select a plant, compare watering phases, review compatible source evidence and
+explicitly adopt a parameter into the draft. **Save changes** commits the plant edit atomically.
+Amount/frequency/period cannot be freely entered in this workspace. Existing manual/adjusted
+values and provenance remain readable. **Manage groups** and **Manage communities** are separate
+entry points when no record is selected. See [Community planning](docs/COMMUNITY_PLANNING.md)
+for lifecycle meanings, applicability review, drafts, Undo/Redo, conflicts and the API.
 
-Layer headings display the opened group/node name, such as Species & companions or Cocoon planting reservoir.
-The active heading has a subtly tinted background so it stands apart from the window in light and dark themes.
-Use the **× Close layer** button beside a layer heading to close it. The toolbar's **Close layer**
-button closes the foreground when its heading is off screen. Closing a previous-view snapshot
-hides only that snapshot; it does not replace it with an older one. Closing the foreground restores
-its nearest visible previous layer, or the selected-domain overview when none remain. The base
-overview stays open. Browsing history is retained; Back can restore a closed foreground view.
+**Save view** stores exploration scope, filters, grouping, routes, comparison, positions, camera
+and history. Browser sessions use IndexedDB as a localStorage fallback. Older saved formats are
+translated in memory; the original payloads are preserved.
 
-One live foreground graph is accompanied by at most two **Previous view** snapshots behind it.
-These are read-only history, not additional live knowledge. Back/Forward restores complete views;
-a new exploration after Back replaces the forward branch. Up to100 history entries are retained.
-The active layer has a theme-matched background at 70% opacity across its entire frame,
-including connection-layer gaps. Topic cards, headings and connection labels remain opaque.
-
-Drag a layer label to move the entire layer in X–Y, including previous-view snapshots.
-Escape cancels a move. Placements are saved without adding an exploration-history step.
-Mouse dragging uses 12.5% sensitivity for layer movement, panning and rotation,
-with no camera drift after release.
-Drag empty space to pan. Ctrl/Shift-drag or angle buttons turn up to60 degrees in either
-direction around both X and Y; the initial tilt is25 degrees. Zoom changes magnification only.
-Fit and Reset view frame the current graph. **Explore this topic** without a search places
-the centre in the middle, with its neighbours on compact upper and lower arcs.
-Nine neighbours use four positions above and five below; other counts split as evenly
-as possible. The window guides the ellipse shape without forcing it to stretch across
-the entire frame. Portrait and landscape layers allow empty margins; spacing grows
-only until cards and labels fit. The arcs reflow on resize and reserve clear space for
-cards and readable, wrapped connection labels. Incoming/outgoing arrows
-retain their direction; grouping keeps different relationship meanings and directions
-separate. Parallel or secondary labels can have short leader lines into clear space.
-Overview, membership and search scopes retain the compact grid. Removing the centre repacks
-its remaining neighbours as a grid. Topic membership and order stay stable during reload,
-turning and zoom. Resizing and fullscreen adapt the arcs without adding a history entry
-or losing layer offsets. Domain preview retains positions until **Update layer** succeeds.
-Older direct-exploration grids translate to circles in memory while retaining layer offsets,
-opening highlights and closed-layer references; saved database payloads are not rewritten.
-Camera framing, Fit, Reset view, zoom buttons and angle buttons transition over 600 ms.
-Reduced motion removes camera animation. Dense graphs still benefit from
-filters, grouping, zoom and the keyboard-accessible **Visible topics** list.
-
-Foreground cards and labels are opaque. Previous snapshots are darkened65%, except the source node of an open child layer: it stays
-at full brightness with a highlighted outline so the connection to the foreground is visible.
-The highlight follows the chain of open layers and disappears when its child closes; selecting
-another topic in the sidebar does not change it. Selected cards
-use an outline and active lines are stronger. Blur, frosting, transparency controls, Flat mode,
-independent panes, the miniature map and corner pane handles have been removed.
-Layer-label dragging is retained as a simple presentation control.
-
-The inspector stays docked in both normal and full screen. Appearance offers System/Light/Dark.
-
-## Evidence, dates and comparison
-
-- **Details** explains the selection and its real relationships. Group summaries/internal lists
-  preserve the actual constituent IDs. Organizational membership does not establish a fact.
-- **Evidence** shows findings, guidance, conditions and sources for the selection, or the current
-  graph when nothing is selected. Source buttons open exact one-based PDF positions, which can
-  differ from printed page labels. PDF navigation, zoom and rotation remain available.
-  The viewer is bundled with the app so an already open tab does not request an obsolete
-  viewer chunk after a rebuild. Loading/rendering errors stay in a closable source panel;
-  **Retry source** retries without refreshing the graph. The original-PDF link remains available.
-- **Dates** distinguishes topic/event dates from source publication and edition dates. Unknown
-  dates stay unknown. A document date is never assigned to every finding in it.
-- **Comparison** displays up to four chosen topics as a table. Missing values say Not recorded;
-  each topic retains its source and trial context. It is not a controlled head-to-head trial.
-
-The initial collection contains nine registered editions and68 selected PDF positions. The plant
-intake adds twelve sources and three curated PDF positions (21 sources and71 positions in total).
-Other pages can be viewed without being imported. Source findings, source guidance and curated discovery associations
-remain distinct. Drone citrus spraying is not evidence for carob establishment watering, and
-funding connections are not eligibility decisions or awards. Current availability is unverified.
-
-## Save and research
-
-**Save view** stores scope, centre, search, filters, grouping, route expansion, comparison, positions,
-camera and history. **Saved explorations** reopens them. Browser sessions also use IndexedDB when
-localStorage is full. Version1/3/4/5 explorations translate into v6 without modifying originals;
-old multi-pane geometry is not preserved exactly. Legacy evidence/date/comparison choices open
-in their corresponding inspector tabs.
-
-**Research** captures the selection or foreground graph, exact factual IDs and routes, filters,
-grouping, source context and revision. Choose research areas, optional custom topics/documents,
-and Library only (default) or Library and web. Preview/edit/copy/save a static prompt; ask Codex
-Desktop to perform it manually. The app does not dispatch work or call an AI API.
-
-Tasks save brief.md, prompt.txt and context.json under research/<task-id>/. Pending questions appear
-in the task list and topic badges. Reopen context uses the same migration/restore path as saved
-views. Refresh preserves the exploration and highlights added topics. Material domain extensions
-remain explicit questions; normal in-domain discoveries need no individual approval.
+**Research** captures foreground factual IDs/routes, source context, filters, current organization,
+revision and the exploration. Choose Library only or Library and web, preview/edit the static prompt,
+then ask Codex to execute it manually. The app does not dispatch research or call an AI API.
+Tasks retain `brief.md`, `prompt.txt` and `context.json` under `research/<task-id>/`; pending questions
+appear in the task list and topic badges. Refresh preserves the exploration and highlights additions.
+New evidence is never automatically adopted into a working plan.
 
 ## Knowledge ownership and maintenance procedure
 
-Species cards show three stored name rows: **ES** (Spanish), **EN** (English) and **Sci**
-(scientific/Latin). The inspector and keyboard topic list show the same names; all three are
-searchable and research handoffs include them keyed by stable database ID. Original topic
-labels, IDs, source spellings and distinct trial/source concepts remain intact. The 8 November
-2026 naming batch covers all 34 species records: 32 have all three names; the two unresolved
-Chamaespartium/Whitania source spellings show explicit unconfirmed common names. Pine trial
-names stay generic and Citrus is genus-only. Naming references are available in the inspector;
-these name correspondences add no ecology, trial outcomes or extra PDF ingestion.
+**SQLite is authoritative** at `data/knowledge.sqlite`. Import JSON is a proposed mutation, not an
+editable master. Code, schemas and accepted batch inputs are versioned; database, research, raw
+extraction, media and backups stay local. A code-only checkout does not carry the accepted collection.
 
-**SQLite is authoritative**, at `data/knowledge.sqlite`. JSON import batches are proposed changes;
-exports and backups are recovery copies, not independently editable masters. Code, schemas,
-source manifests, accepted batch inputs and this procedure use ordinary repository history.
-Database, research briefs, extracted text, images and backups stay local and are ignored by Git.
+For complete-library and weekly intake, invoke the [reusable ingestion prompt](DOCUMENT_INGESTION_PROMPT.md).
+File ownership, source registration, inspected coverage and full-text indexing are separate states;
+query current SQLite coverage instead of treating historical counts or a copied file as completeness.
+The general importer refreshes topic/finding search but does not automatically extract all new PDF
+page text. Historical bootstrap limits do not replace a later task's explicitly requested review scope.
 
-From the project folder, activate the project's Conda environment (`conda activate algarroba-db`)
-and use its Python for these commands:
+For any checked research/maintenance intake:
 
+1. Read the task brief **and** `context.json`, [import contract](imports/CONTRACT.md), current source
+   registry and current records. Reconcile captured IDs/revision. Inspect groups, memberships,
+   parent paths, anchors and maintenance rules across the wider graph.
+2. Verify editions and inspect the requested material. Extract text, render important tables/image
+   pages, and record exact one-based page coverage, unresolved items and unfinished work.
+3. Capture all useful supported in-domain discoveries from inspected material, including outside
+   the initial question. Reuse identities and explain meaningful old/new connections. Preserve
+   species spellings, conditions, places, dates, units, applicants and territories. Co-occurrence
+   is not a domain relationship; a funding link is not eligibility or an award.
+4. Prepare a coherent batch with the current `base_revision`. Stage new verified managed sources
+   under `sources/`; use the next unused `KGB-SRC-####` IDs for new editions and prefer atomic
+   `sources[]` registration. Follow the current source and batch models.
+   Every new/revised source link needs a checked section heading or descriptive keyword in
+   `source_refs[].label`, plus its precise `locator`. Display label, friendly document title and
+   exact page/section throughout the app. Distinguish links to the same document by passage/table/
+   subject; a page number or "Selected passage" alone is insufficient. Translate faithfully,
+   preserve original identifiers in `locator`, and never invent headings. See the
+   [citation-label contract](imports/CONTRACT.md#descriptive-source-links-all-new-and-revised-intake).
+5. Preview with `--check`, review the evidence and proposed diff, then apply through the importer.
+   Accepted batch IDs are immutable; corrections use new batch IDs and existing record IDs when
+   identity is unchanged. Stale revisions require reconciliation. Imports have transactional
+   protection and pre-import backups.
+6. Report the answer, additional discoveries, wider links, actual/unfinished coverage and unresolved
+   issues. Complete a real task or mark Needs an answer, preserving its exploration for refresh.
+   Ordinary in-domain additions need no per-topic approval; material domain extensions need a decision.
+
+From the project folder, use the activated project Python (add `-X utf8` if Windows console symbols fail):
+
+```powershell
+python -X utf8 -m backend.cli search "algarrobo"
+python -X utf8 -m backend.cli inspect carob
+python -X utf8 -m backend.cli groups
+python -X utf8 -m backend.cli export --output data/current-snapshot.json
+python -X utf8 -m backend.cli import imports/my-batch.json --check
+python -X utf8 -m backend.cli import imports/my-batch.json
+python -X utf8 -m backend.cli backup-media
+# Only for a real supplied task; replace TASK-ID and summary:
+python -X utf8 -m backend.cli task-complete TASK-ID --summary "Answer; discoveries; links; coverage; unresolved"
 ```
-python -m backend.cli search "algarrobo"
-python -m backend.cli inspect carob
-python -m backend.cli export --output data/current-snapshot.json
-python -m backend.cli import imports/my-batch.json --check
-python -m backend.cli import imports/my-batch.json
-python -m backend.cli backup
-python -m backend.cli groups
-python -m backend.cli task-complete TASK-ID --summary "Answer; additional discoveries; links; coverage; unresolved items"
-```
 
-1. Read the task, current scope, `imports/CONTRACT.md`, source inventory and current records.
-   Reconcile old IDs and the task's captured revision. Run `python -m backend.cli groups` and review
-   current group membership/rules before proposing an import. Inspect the wider graph, not just its
-   visible neighbourhood. Reuse checked identities, including scientific-name correspondences.
-2. Verify exact source editions. Inspect the explicitly requested pages. Extract text, render
-   image pages/tables and visually check important rows. Record every inspected page and any
-   unresolved or unfinished coverage. Do not silently skip unreadable material.
-3. Capture **all useful supported in-domain discoveries from material actually inspected**,
-   including discoveries outside the original question. Connect discoveries to one another
-   and to relevant existing records across the graph. A task is a flashlight, not an ingestion filter.
-4. Preserve exact pages, original plant-name usage, places, units, applicant/activity/territory/date
-   context and contrary findings. Curated associations need an explicit basis. Co-occurrence in
-   a document alone is not a domain relationship. New plants are not created from misspellings.
-5. Prepare one batch with `base_revision` set to the current revision. Validate it, then use the
-   importer. An accepted batch ID is immutable. Repeating the same batch is a no-op; a correction
-   uses a new batch ID and the existing record IDs. Imports are transactional, with pre-import
-   backups. A stale or invalid import preserves accepted knowledge.
-6. Return the requested answer, additional discoveries, wider links, actual/unfinished coverage
-   and unresolved items. Complete or mark the task Needs an answer, then refresh its saved view.
+The old `algarrobos/doc_library` is read-only. Preserve current registered copies, source hashes and
+original citation paths. Explicitly web-authorized research uses relevant primary sources; keep
+edition/retrieval context and unknown dates. Source observations, guidance and curated associations
+stay distinct. Species-specific irrigation decisions require compatible evidence and explicit review.
 
-Later web-authorized work uses primary sources. Store new PDFs under this project's `sources/`
-and assign `KGB-SRC-0001` onward. Register a manifest with `python -m backend.cli register-sources
-path/to/manifest.json`; keep filename, title, author/issuer, dates, hash, total pages and explicit
-page scope. Never add or modify files in the old library automatically.
-
-The initial bootstrap combines the three curated batches atomically and verifies their nine
-editions. It never migrates operational data or old application behaviour. Expanded library
-ingestion awaits the user's acceptance of demonstrator comfort. Project tools and hosting remain
-separate future work.
-
-## Architecture and checks
-
-React/TypeScript and a single Three.js scene through react-force-graph-3d; deterministic local
-packing; bundled PDF.js with document/worker loading on demand; FastAPI/Uvicorn; authoritative SQLite/FTS5. All runtime assets
-are bundled. No cloud or AI API is required. WebGL2 must be available; the topic list and inspector
-remain available if graphics initialization fails.
-
-The frontend uses /api/explore and /api/comparison. /api/routes shares the same bounded traversal.
-/api/view and its perspective branches are retired. Saved views, inspection, source files,
-research and refresh retain their existing endpoints. No database schema migration is required.
-
-Development: activate the Conda environment, run `npm run build`, then start the server with
-`python -m uvicorn backend.app:app --host 127.0.0.1 --port 8765` (or the PyCharm configuration above).
-Checks in the activated environment: `npm test` and `python -m pytest -q`.
-Browser scenarios: activate the same Conda environment in a separate terminal and start
-`python scripts/qa-server.py`,
-then run tests/browser-v6.mjs against that isolated QA database on port8769 only.
-Set KGB_PLAYWRIGHT_MODULE to an installed Playwright index.mjs, or make playwright importable,
-and run node tests/browser-v6.mjs with Microsoft Edge installed. This is test tooling, not an app dependency.
-
-See PROTOTYPE_TWO.md for v6 contracts and VERIFICATION.md for actual results and backup details.
-Dependencies are pinned in package-lock.json / requirements-lock.txt; THIRD_PARTY_NOTICES.md
-and third_party/ preserve applicable upstream notices and historical licence archives.
-
-Layer gesture checks: with the isolated QA server running and the same Playwright configuration,
-run npm run test:gestures. These exercise label dragging, cancellation, persistence and both
-Ctrl-drag rotation limits in the actual browser.
-
-Layer closing checks: run npm run test:close-layers against the documented isolated QA server
-with the same Playwright configuration.
-
-Layer close-button depth checks: run npm run test:close-occlusion against the isolated QA server
-with the same Playwright configuration.
-
-Domain preview/update checks: run npm run test:domain-update against the isolated QA server
-with the same Playwright configuration.
-
-Centre removal and group-scope checks: run npm run test:remove-centre against the isolated QA
-server with the same Playwright configuration.
-
-Node hover/domain disabling checks: run npm run test:hover against the isolated QA server
-with the same Playwright configuration.
-
-All-domain overview layout checks: run npm run test:all-domain-layout against the isolated QA
-server with the same Playwright configuration.
-
-Group double-click checks: run npm run test:double-click against the isolated QA server with
-the same Playwright configuration.
-
-Focused group membership checks: run npm run test:focused-group against the isolated QA server
-with the same Playwright configuration.
-
-All-layer packing checks: run `npm run test:tight-layers` against the isolated QA server.
-Unrecorded-place membership/layout checks: run `npm run test:unrecorded-place` against that
-same server with the documented Playwright configuration.
-
-
-Species naming verification: run `npm run test:species-names` against the isolated QA server
-with the accepted naming batch applied there and the documented Playwright configuration.
-
-
-## Plant illustrations
-
-Species cards show compact whole-plant portraits beside their Spanish, English and scientific names.
-Select an illustrated plant and choose **View plant images** for paired whole-plant and botanical-detail
-views, independent Original size/Fit controls and the original botanical references. Missing files show
-explicit errors and Retry controls. Artwork is AI-generated, representative and not to a common scale.
-
-The accepted collection has 46 images for 23 plant identities. The browser owns its media and source
-copies; the simulator is only an intake input. Preserve `media/`, `sources/` and `data/` together.
-Use `python -m backend.cli media-integrity` to verify files, and `python -m backend.cli backup-media`
-for a database snapshot plus companion media archive. See [Plant images](PLANT_IMAGES.md) for exact
-mappings, evidence coverage, source links, limitations and recovery instructions.
-
-
-## Owned document library
-
-The complete old library is now copied locally under `doc_library/`: 378 copied files plus the
-pre-existing knowledge-graph EPUB. This collection is owned storage only; it does not add graph
-knowledge, source registrations or search-index content. Existing registered source paths remain
-unchanged. The document bytes are local and ignored by Git; preserve their verified backup alongside
-the tracked `imports/document-library-inventory.json`.
-
-Run `python scripts/document_library.py verify` for file integrity and
-`python scripts/document_library.py backup` for a separate document-library archive. See
-[Document library ownership](DOCUMENT_LIBRARY.md) for copy commands, recovery and verification.
+The owned `doc_library/` and its ownership inventory have a separate verification/backup workflow
+from registered `sources/`, `media/` and SQLite. See [Sources and media](docs/SOURCES_AND_MEDIA.md).
+Current test commands, QA isolation, last recorded acceptance and historical recovery records are
+centralized in [Verification](docs/VERIFICATION.md). Dependency versions and applicable notices
+remain in the lockfiles, [Third-party notices](THIRD_PARTY_NOTICES.md) and `third_party/`.
