@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-11-10T09:37:09.335577+00:00",
+  "documentation_files_checked": 7,
+  "local_links_checked": 46,
+  "handoff_leads": 10,
+  "handoff_topics_resolve": 13,
+  "captured_revision": 25,
+  "current_revision": 25,
+  "errors": [],
+  "protected_files_checked": 679,
+  "changed_preexisting_files": [
+    "imports/CONTRACT.md"
+  ],
+  "changed_tables_since_initial_baseline": [
+    "batches",
+    "browse_groups",
+    "coverage",
+    "findings",
+    "meta",
+    "relationships",
+    "search",
+    "search_content",
+    "search_data",
+    "search_docsize",
+    "search_idx",
+    "topics",
+    "unresolved"
+  ],
+  "unchanged_tables": 11,
+  "source_library_media_bytes_preserved": true,
+  "concurrent_activity_note": "Accepted state advanced during this documentation task. This task used read-only SQLite connections and ran no importer; do not claim revision 20 remained unchanged."
+}

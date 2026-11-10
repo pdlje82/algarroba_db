@@ -34,6 +34,15 @@ Source reference: {source_id, page (one-based PDF position), locator, label, opt
 Relationship: id, source (topic ID), target (topic ID), label, explanation,
 basis (source|curated), source_refs[], optional context{}, traversable (default true).
 Curated links require a clear explanation and backing source references; no invented trials or eligibility.
+
+For chat/report intake, follow the [claim and proposal procedure](../DOCUMENT_INGESTION_PROMPT.md#chat-claims-proposals-and-synthesis).
+The input classifications live in run sidecars, not new batch fields or source kinds. A proposed
+integration may use an existing method topic with its user origin, assumed parameters and untested
+status explicit in description/aspects; citations support component facts only. Proposed links use
+`basis: curated`. Unsupported proposals remain in the handoff and `unresolved` rather than bypassing
+source requirements. Calculations retain inputs/units/assumptions; none of these supplies adoptable
+irrigation evidence or a measured experimental outcome.
+
 Finding: id, label, text, topic_ids[], kind (finding|recommendation), source_refs[],
 optional conditions[], place_ids[], dates[], aspects{}.
 Date: {value: ISO date or year, meaning: publication|experiment|signature|trial|legal-deposit|period|...}.

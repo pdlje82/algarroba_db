@@ -23,15 +23,24 @@ weekly additions need their own hashes/edition reconciliation and do not automat
 [Verification](VERIFICATION.md). The mappings and source-review details below preserve the
 original intake's scope; the live registry is authoritative for subsequent additions.
 
-Research handoffs with `Source boundary: library-and-official-web` use the prompt's
+Research handoffs with an explicitly web-enabled source boundary use the prompt's
 [official-source acquisition step](../DOCUMENT_INGESTION_PROMPT.md#research-handoff-and-official-source-acquisition).
-Chat reports and monitor JSON are leads to reconcile, not import batches or evidence. Apply runs
+`library-and-official-web` covers official issuer/regulator sources; `library-and-primary-web` also
+covers original research on publisher/author/repository sites, patent documents and manufacturer
+documentation. Inspect originals and keep empirical outcomes, supplier specifications, invention
+proposals and preliminary demonstrations distinct. Chat reports and monitor JSON are leads to
+reconcile, not import batches or scientific evidence. Apply runs
 can acquire relevant verified PDFs into this project's library, prepare managed source copies and
 register supported findings through checked imports. Webpage-only evidence uses managed web sources;
 preview runs stage files without publishing library or knowledge changes. The run's acquisition
 ledger distinguishes download, library addition, source registration, actual review and integration,
 with URLs, hashes, editions, accepted IDs and unresolved items. Preserve historical ownership data
 and report its actual verification differences separately from checks of new additions.
+
+The prompt's [chat-claim procedure](../DOCUMENT_INGESTION_PROMPT.md#chat-claims-proposals-and-synthesis)
+preserves useful user proposals and assumptions without manufacturing a chat/web source or an
+irrigation recommendation. Focused `research-results` intake accounts for its supplied leads and
+selected passages; unread document pages and unrelated library backlog retain their own disposition.
 
 All source links need a visible section heading or descriptive keyword, friendly document title
 and exact page/section. New/revised references supply checked `label` and precise `locator`;

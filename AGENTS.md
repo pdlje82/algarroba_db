@@ -39,6 +39,12 @@ react-rnd or an old executable viewer. Dependency versions are in the lockfiles 
 - Read a saved research task's brief AND context.json. Reconcile captured IDs/revision and current
   stored organization using CLI groups, inspect and export. Follow full memberships, primary/shared
   roles, parents, anchors and maintenance rules generically; no hardcoded subject-specific rules.
+- Chat/report intake follows DOCUMENT_INGESTION_PROMPT.md. Its research-results mode handles the
+  supplied research without resuming unrelated library backlog. Respect the chosen library-only,
+  official-web or primary-web boundary; verify primary papers/patents/manufacturer evidence when
+  authorized. Preserve useful user proposals, assumptions, calculations and scoped knowledge gaps
+  explicitly, separate from empirical findings and adoptable irrigation evidence. Portable handoffs
+  are research inputs, not registered tasks or scientific sources.
 - A task directs priorities, not extraction filters. Capture all useful supported in-domain
   discoveries from material actually inspected, including outside the question/visible graph.
   Reuse checked identities and connect useful old/new topics across the wider graph.

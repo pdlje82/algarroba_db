@@ -270,6 +270,14 @@ evidence, current revision, draft operations and the original exploration. Libra
 suggested; the user can change the boundary and edit the handoff. Preparing it performs no research.
 Checked Codex intake adds evidence; refresh reveals candidates without applying them to plans.
 
+Chat/report intake uses the reusable prompt's
+[claim and proposal procedure](../DOCUMENT_INGESTION_PROMPT.md#chat-claims-proposals-and-synthesis).
+Keep a user's proposed integration and assumptions explicit in its concept description/aspects,
+with verified component citations and curated links; retain unsupported questions as unresolved.
+Conversation prose, manufacturer specifications, patents and theoretical calculations do not become
+measured trial outcomes or species watering recommendations. Research intake never adopts assumed
+parameters into a community plan. Focused research-results mode leaves unrelated library work pending.
+
 ## Plant-neutral irrigation lifecycle
 
 Open the stored **Irrigation lifecycle** folder. Its cited guide and vertical member order are

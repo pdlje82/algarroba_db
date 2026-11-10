@@ -124,6 +124,36 @@ Local evidence is under `output/citation-labels/`, `output/planning-qa/citation-
 `output/consolidation-qa/`. This verifies the built app; it does not assert that an already-running
 accepted server has reloaded backend code. Reload the browser for the new link display.
 
+## Existing project summaries: 10 November 2026
+
+Five checked project-profile batches advanced revision 20 to 25. Nineteen project/study/trial/case
+profiles and two delivery activities now expose source-backed purpose, work, methods, principal
+findings, conditions, status and explicit gaps. The Cocoon Jordan–Lebanon assessment is distinct
+from Menaqua; Hiroshima parents the citrus study; eight observational farm cases have dedicated
+profiles; the nature-credit pilot remains document-stated planned work.
+
+The update adds 17 topics, 81 source-backed relationships, ten findings/guidance records and
+19 inspected PDF positions, while revising 19 existing topics. The resulting graph has 373 topics,
+560 relationships, 195 findings and 130 folders. All 356 previous topic IDs, 479 previous
+relationships, 185 previous finding texts and original attachments, source records and 113 previous
+folder IDs remain. Three direct memberships intentionally move beneath documented parents;
+the manifest records all role, description, citation and placement changes.
+
+Validation: 98 backend passes and one existing skip; all five batches checked, audited, applied to
+an isolated copy and retried idempotently before accepted application. Thirteen browser checks
+cover all 139 root/folder projections, all 21 profiles with findings/connections and keyboard
+exact-page citations, project/study/trial filters, Menaqua search, both project hierarchies, Back,
+refresh/reload, factual arrows and older saved-folder reopening without changing stored payloads.
+Eighteen rendered source pages verify important tables, column boundaries and project credits.
+
+Eleven database tables and all 657 baseline library/source/media/research/import file hashes remain
+unchanged, including working plans, immutable irrigation evidence, tasks and saved explorations.
+Nine mixed-context advisories are reviewed intentional shared references inside named trial/case
+folders; there are no ambiguous placements or crowded branches. Evidence gaps and contradictions
+remain explicit. No API, schema or rendering code changed, so frontend/build suites were not
+repeated. Run records, the full change manifest and continuation report are retained under
+`research/project-summaries-2026-11-10-01/`; the running app reports revision 25.
+
 ## Project ingestion rules: 10 November 2026
 
 The shared policy, project instructions, reusable full-library/incremental prompt, maintenance
@@ -226,6 +256,24 @@ documented tool/reference paths, source-boundary and preview instructions, and `
 The accepted SQLite file and ownership inventory retain their baseline SHA-256 hashes; the library
 and managed-source collections remain at 187 and 47 files. Existing unrelated bytecode files were
 preserved. Application tests/builds were not rerun for these documentation changes.
+
+## Focused chat-research intake: 10 November 2026
+
+The reusable prompt now has a focused `research-results` mode and an explicit
+`library-and-primary-web` boundary for original papers, patent documents and manufacturer sources.
+It preserves user proposals, assumed parameters, calculations and scoped knowledge gaps separately
+from verified findings and plans. Shared maintenance/source/import guidance follows that procedure.
+A portable drone-reservoir handoff with ten source leads and companion context was prepared under
+`research/chat-drone-reservoir-20261110/`; it is not a registered task or scientific source.
+
+Validation checked 46 local links/anchors, referenced workflow/input paths, ten matching lead IDs,
+thirteen current topic IDs, five source editions and `git diff --check`. Original library, managed
+source and media bytes were preserved. Of 679 pre-existing protected files, only the deliberately
+updated import contract changed. No source download, registration, importer or plan save was run by
+this update. Accepted SQLite advanced from revision 20 to 25 through concurrent intake, so no claim
+is made that all accepted tables remained unchanged; the prepared context captures revision 25 and
+requires fresh reconciliation. Check evidence is under `output/chat-research-workflow-20261110-093221Z/`.
+Application tests/builds were not repeated for this documentation and handoff-only update.
 
 ## Historical records
 

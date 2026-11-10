@@ -1,0 +1,102 @@
+{
+  "created_at": "2026-11-10T09:37:09.335577+00:00",
+  "revision": 25,
+  "tables": {
+    "batches": {
+      "rows": 22,
+      "sha256": "97d5d2b8396af19bd5d461fc88cd2f4cbba3e5057fb62efc07be55d919431f85"
+    },
+    "browse_groups": {
+      "rows": 130,
+      "sha256": "9f60091f92cf66e6caf93d80723350b9ed31e514d941fca451a5e06fc411884e"
+    },
+    "communities": {
+      "rows": 1,
+      "sha256": "c9ca9379aa968b7851bb0203377e1a21ee2e34665c1f9161f6210b1af4d617d0"
+    },
+    "coverage": {
+      "rows": 245,
+      "sha256": "5e375797b2c422744e69d7de868755e0c27386a7241410c023fa3ccc2b3854de"
+    },
+    "explorations": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "findings": {
+      "rows": 195,
+      "sha256": "87b1fa39e19df6e6b82a9c3a6aa3682f99f2ae45a60fae8a3c4a21257f66155c"
+    },
+    "irrigation_evidence": {
+      "rows": 29,
+      "sha256": "e35d475e5201ca846e7ce5b050f496a792758b6fe32f834fa809799ab055b051"
+    },
+    "meta": {
+      "rows": 2,
+      "sha256": "c5b22ff22c6c3965311248bb8b303ee56fa95a617ac9a013c6f6466002b89ecd"
+    },
+    "organization_roots": {
+      "rows": 9,
+      "sha256": "3d122767c84802cae9ac5d6f814ae4787f1bd680edb3bdb4c5c5bdebd8e7dc1d"
+    },
+    "page_text": {
+      "rows": 68,
+      "sha256": "1d407ecd5231603e658308439cec16fa515cd86e087c48f41a62fc6bc578d9a9"
+    },
+    "planning_events": {
+      "rows": 3,
+      "sha256": "f57762b928928bc6066bef070984e3ac01c770b4f54b7db9f49863b4499c7a59"
+    },
+    "plant_images": {
+      "rows": 46,
+      "sha256": "09ef4c19819e9ad8c0efad3e6483158d38b371295d759e6b5008e7d1b86320c8"
+    },
+    "redirects": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "relationships": {
+      "rows": 560,
+      "sha256": "4acc4961d57a484a3e2aa24a0854e7f7355ae130a6caeb6cd158d3eb67a933b7"
+    },
+    "search": {
+      "rows": 636,
+      "sha256": "eb5c98a104e9b71b1761512edb1921cf44ecbef656a39e52942f154e29871986"
+    },
+    "search_config": {
+      "rows": 1,
+      "sha256": "afaee2b1562b04a97bf25315b158b426795a3b6f88b13fd85d546090fb141946"
+    },
+    "search_content": {
+      "rows": 636,
+      "sha256": "324f0bd16188af46bf65b1b85b6213d4391e2a80f0046131ac28ec43280a23d7"
+    },
+    "search_data": {
+      "rows": 60,
+      "sha256": "22ab9751f9d5b07d4422ff74c363d7aff8f0e33d775a8e8431b0fdfb90e2740b"
+    },
+    "search_docsize": {
+      "rows": 636,
+      "sha256": "e4a5e1d70348d390256ebc8ce38019d103e310c9e9f8bf155812a09c39c7ed05"
+    },
+    "search_idx": {
+      "rows": 58,
+      "sha256": "c174cbf27307dcde497fb3f526d393489069d14ccfd91e46373f5ca1280acf88"
+    },
+    "sources": {
+      "rows": 36,
+      "sha256": "cb513b6079f0a1bba521eab12971aadfbe74e55a671629c591e6eb186a3bd7dc"
+    },
+    "tasks": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "topics": {
+      "rows": 373,
+      "sha256": "80cd1dc2644bb4097f82d67544a11fc180d5bb3c30b86f6be032cb1316f37d62"
+    },
+    "unresolved": {
+      "rows": 37,
+      "sha256": "eecc4502507dee5096581d17db98536d0cd2b51cae4b1f536ecabba90fb6f88f"
+    }
+  }
+}
