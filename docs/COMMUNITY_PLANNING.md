@@ -26,6 +26,74 @@ Group edits preserve descriptions, citations and member layout. `member_layout: 
 opens members in stored order in one column; the default is a grid. Reader-facing descriptions
 and maintenance rules have separate purposes. Rendering must not hardcode topic-specific groups.
 
+Groups with `presentation: hierarchy` provide folder navigation: open a child folder or inspect
+a direct member. Group by stays at None and the layer draws no connection arrows. The sidebar
+expands the active hierarchy branch. **About [topic]** opens a group's anchored fund, programme
+or authority in the inspector; ordinary topic exploration still shows its recorded relationships.
+Existing groups default to `standard`, retaining their layouts and connections. Shared references
+are counted once in the layer's represented-topic total.
+
+Under **Funding programmes > Funding structure**, separate branches cover FEADER/PEPAC/LEADER,
+NextGenerationEU/PRTR restoration, Fundación Biodiversidad/Doñana, and the prospective Commission
+nature-credit roadmap. LEADER's **Local implementation** contains AL20 and AL30, with their GDRs
+kept distinct. Geographic containment alone does not add a funding authority. Documentary dates,
+provisional proposals and public-contract financing retain their original scope.
+
+## Funding hierarchy maintenance
+
+This is the required organization for future full-library, incremental and task-specific funding
+intake. Discover the current definitions with CLI `groups`, `inspect` and `export` before each
+batch. SQLite is authoritative; extend its live IDs, anchors and memberships rather than replaying
+the original hierarchy batch or recreating the tree from this guide.
+
+Start under **Funding programmes > Funding structure** (`browse:funding-structure`). The established
+branches are:
+
+| Branch entry ID | Documented browsing path |
+| --- | --- |
+| `browse:funding-feader` | FEADER · EU / PEPAC · Spain / LEADER / Andalusian LEADER authority |
+| `browse:funding-nextgenerationeu` | NextGenerationEU · EU / PRTR · Spain / Ecosystem restoration · C4.I3 / Regional delivery · Andalusia |
+| `browse:funding-biodiversidad` | Fundación Biodiversidad · Spain / Doñana restoration grants 2025 |
+| `browse:funding-commission` | European Commission · EU / Nature-credit roadmap · prospective |
+
+- Under the LEADER authority, preserve **Interventions**, **Local implementation** and **Rules and
+  calls**. Add a newly documented ZRL alongside AL20/AL30 under Local implementation, not under a
+  province inferred from a table heading. Under AL20, preserve **Managing GDR**, **Funding lines**
+  and **Local strategy and criteria**, including the existing criteria groups. Other ZRLs receive
+  only their own documented content; never copy AL20's criteria, activities or calls by analogy.
+- Use actual funds, national frameworks, responsible authorities and local delivery participants
+  as anchors or members. Distinguish a ZRL, its managing GDR, strategy, intervention and local
+  funding line. Skip absent levels and begin at the earliest documented participant; do not force
+  every branch through EU, Spain, region, province and ZRL. Keep geographic coverage in territorial
+  context and topic details unless a source establishes a real financing/administrative role.
+- Represent financing, implementation and programme structure with named child groups throughout
+  the funding hierarchy, including groups such as Local implementation or Funding lines. Set
+  `presentation: hierarchy` explicitly on every new funding-structure folder and retain it on
+  updates. A chain of arrow labels alone is not acceptable browsing organization. Keep independently
+  supported factual relationships for details and ordinary topic exploration; never delete them
+  just to hide arrows, or create a factual edge solely from folder membership.
+- Reuse existing branch/group/topic IDs and full current records, preserving descriptions,
+  citations, maintenance rules, member layouts, anchors and complete primary/shared memberships.
+  Each topic has at most one primary custom membership. Use shared references for cross-cutting
+  rules, activities and projects; do not duplicate the underlying records. An anchor may be an
+  explicit parent member represented by its child folder, but never its own group's member.
+- The usual shallow-tree and 4–8-choice targets do not override a documented responsibility chain.
+  Retain necessary single-child levels. Avoid empty placeholder folders; a genuinely different
+  documented financing mechanism may receive its own branch under Funding structure using the
+  same conventions, without inventing intermediaries or forcing it into LEADER/PRTR.
+- Preserve documentary edition, territory, applicant/operation scope and status. A project-specific
+  financing percentage is not a general aid rate; a provisional proposal is not an award; prospective
+  nature finance is not an open grant. Unsupported placement stays explicitly unresolved rather
+  than becoming a fabricated funding path.
+
+Before applying a funding batch, record each new/revised funding concept's intended path, anchor
+or membership role and supporting passage in the run's sidecar audit. Check the proposed tree
+against live definitions: every participating concept is reachable, parents are acyclic, primary
+memberships are unique, existing members/metadata remain, hierarchy presentation is retained,
+and no geographic intermediary or other-ZRL rule was inferred. `import --check` validates the
+schema, not these semantic requirements. Review the affected folder openings and About/source
+links; an unresolved path is reported as a gap, not as completed hierarchy integration.
+
 ## Working and source-described communities
 
 Choose **Edit community** on a working community, or **Manage communities** to choose/create one.

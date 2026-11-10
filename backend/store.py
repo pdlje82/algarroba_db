@@ -117,6 +117,7 @@ class BrowseGroup(Record):
     description: str = ""
     source_refs: list[SourceRef] = []
     member_layout: Literal["grid", "vertical"] = "grid"
+    presentation: Literal["standard", "hierarchy"] = "standard"
 
 class Batch(BaseModel):
     model_config = ConfigDict(extra="forbid")

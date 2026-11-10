@@ -80,6 +80,16 @@ exploration.ts owns the reducer. scene.ts owns projection and deterministic pack
 queries/layouts enter history. Requests use generations plus AbortController. Graph failures retain
 accepted state. History caps100, truncates its forward branch on new actions, and restores camera.
 
+Stored groups optionally set `presentation: hierarchy` (default `standard`). Their projection
+uses the same compact grid with direct members and child folders, suppressing factual links,
+internal-link summaries and stale route expansions only in that hierarchy layer. Grouping is
+normalized to None on open/restore and cannot override the stored organization. A child folder
+also represents its anchor when that topic is an explicit visible parent member. About exposes
+the canonical anchor topic and evidence without inserting it into its own membership. Ordinary
+topic exploration retains real relationships. The sidebar expands the active hierarchy path;
+represented-topic/research accounting deduplicates shared member IDs. No topic-specific renderer
+rules, endpoint changes or saved-history rewrites are involved.
+
 ## Domain preview and in-place Update
 
 State.pendingDomain is an optional staged choice; State.domain remains the applied query domain.

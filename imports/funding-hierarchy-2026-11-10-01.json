@@ -1,0 +1,1353 @@
+{
+  "batch_id": "funding-hierarchy-2026-11-10-01",
+  "base_revision": 18,
+  "summary": "Source-backed funding navigation through named groups: FEADER/PEPAC/LEADER and AL20/AL30, EU recovery/PRTR restoration, Fundación Biodiversidad/Doñana, and prospective Commission nature finance. Preserve existing factual records, original memberships and local criteria.",
+  "topics": [
+    {
+      "id": "nextgenerationeu",
+      "label": "NextGenerationEU",
+      "kind": "programme",
+      "domain": "funding",
+      "group_id": "programmes",
+      "description": "EU recovery-finance framework explicitly credited in the Andarax PRTR contract communication requirements. This identifies the documented financing context, not a currently open grant or a general applicant aid rate.",
+      "aliases": [
+        "Next Generation EU"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax: EU NextGenerationEU funding attribution",
+          "locator": "10. Comunicación: Unión Europea – NextGenerationEU"
+        }
+      ]
+    },
+    {
+      "id": "spain-prtr",
+      "label": "Spain Recovery, Transformation and Resilience Plan (PRTR)",
+      "kind": "programme",
+      "domain": "funding",
+      "group_id": "programmes",
+      "description": "National recovery plan named in the recorded restoration financing. The Andarax justification identifies Component 4, Investment 3; project-specific financing percentages do not establish aid available to another applicant.",
+      "aliases": [
+        "PRTR",
+        "Plan de Recuperación, Transformación y Resiliencia"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing",
+          "locator": "4. Financiación y anualidades"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax: EU NextGenerationEU funding attribution",
+          "locator": "10. Comunicación: Unión Europea – NextGenerationEU"
+        }
+      ]
+    },
+    {
+      "id": "andalusia-leader-authority",
+      "label": "Andalusian Directorate-General for Industries, Innovation and Agri-food Chain",
+      "kind": "organization",
+      "domain": "funding",
+      "group_id": "organizations",
+      "description": "The 13 February 2025 resolution identifies this Directorate-General as responsible for LEADER design, planning, management and control in Andalusia and publishes the recognized GDRs and their assigned zones. The name and role are retained as documented in that edition.",
+      "aliases": [
+        "Dirección General de Industrias, Innovación y Cadena Agroalimentaria"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "Andalusian LEADER authority, recognized GDRs and assigned zones",
+          "locator": "Competencias de la Dirección General; Resuelvo; Anexo: Provincia de Almería"
+        }
+      ]
+    },
+    {
+      "id": "andalusia-water-resources",
+      "label": "Andalusian Directorate-General for Water Resources",
+      "kind": "organization",
+      "domain": "funding",
+      "group_id": "organizations",
+      "description": "The recorded Andarax investment justification identifies the Directorate-General for Water Resources within the Agriculture, Fisheries, Water and Rural Development Department. The Níjar supervision resolution also describes its water-related functions. These are dated documentary responsibilities, not a statement about current office holders.",
+      "aliases": [
+        "Dirección General de Recursos Hídricos"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax: issuing department and Water Resources directorate",
+          "locator": "Encabezamiento: Consejería; Dirección General de Recursos Hídricos; CONTR 2023 152183"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 1,
+          "label": "Níjar supervision: department and Water Resources responsibilities",
+          "locator": "Encabezamiento y antecedentes: Dirección General de Recursos Hídricos; expediente 1/2023/ES"
+        }
+      ]
+    },
+    {
+      "id": "fundacion-biodiversidad",
+      "label": "Fundación Biodiversidad",
+      "kind": "organization",
+      "domain": "funding",
+      "group_id": "organizations",
+      "description": "The foundation named as the grant body in the Doñana 2025 restoration call and 13 October 2026 provisional proposal. A provisional proposal does not itself establish an award or a beneficiary right.",
+      "aliases": [
+        "Fundación Biodiversidad, F.S.P."
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 1,
+          "label": "Fundación Biodiversidad: Doñana 2025 call and provisional proposal",
+          "locator": "Título; antecedentes; Primero"
+        }
+      ]
+    },
+    {
+      "id": "european-commission",
+      "label": "European Commission",
+      "kind": "organization",
+      "domain": "funding",
+      "group_id": "organizations",
+      "description": "Issuer of the 7 July 2025 communication COM(2025) 374 final, Roadmap towards Nature Credits. The roadmap proposes voluntary finance development; its authorship does not establish an open grant or guaranteed nature-credit revenue.",
+      "aliases": [
+        "Comisión Europea"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 1,
+          "label": "European Commission: nature-credit roadmap communication",
+          "locator": "COM(2025) 374 final; 7.7.2025"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "funding-hierarchy-eu-andarax",
+      "source": "nextgenerationeu",
+      "target": "andarax-restoration-2023",
+      "label": "is the stated EU funding source for",
+      "explanation": "The communication requirements explicitly credit EU NextGenerationEU financing for this PRTR contract; no general applicant aid rate is inferred.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax: EU NextGenerationEU funding attribution",
+          "locator": "10. Comunicación: Unión Europea – NextGenerationEU"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing",
+          "locator": "4. Financiación y anualidades"
+        }
+      ]
+    },
+    {
+      "id": "funding-hierarchy-prtr-investment",
+      "source": "spain-prtr",
+      "target": "prtr-ecosystem-restoration",
+      "label": "includes the documented investment",
+      "explanation": "The justification places the restoration investment within PRTR Component 4, Investment 3.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing",
+          "locator": "4. Financiación y anualidades"
+        }
+      ]
+    },
+    {
+      "id": "funding-hierarchy-authority-al20",
+      "source": "andalusia-leader-authority",
+      "target": "al20-gdr",
+      "label": "publishes recognition of",
+      "explanation": "The resolution publishes this recognized association and its assigned AL20 zone; recognition is not an aid award.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "Andalusian LEADER authority, recognized GDRs and assigned zones",
+          "locator": "Competencias de la Dirección General; Resuelvo; Anexo: Provincia de Almería"
+        }
+      ]
+    },
+    {
+      "id": "funding-hierarchy-authority-al30",
+      "source": "andalusia-leader-authority",
+      "target": "al30-gdr",
+      "label": "publishes recognition of",
+      "explanation": "The resolution publishes this recognized association and its assigned AL30 zone; recognition is not an aid award.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "Andalusian LEADER authority, recognized GDRs and assigned zones",
+          "locator": "Competencias de la Dirección General; Resuelvo; Anexo: Provincia de Almería"
+        }
+      ]
+    },
+    {
+      "id": "funding-hierarchy-water-andarax",
+      "source": "andalusia-water-resources",
+      "target": "andarax-restoration-2023",
+      "label": "is named in the investment justification for",
+      "explanation": "The document header identifies the Directorate-General for Water Resources and the same Andarax procurement. This preserves the documentary administrative context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax: issuing department and Water Resources directorate",
+          "locator": "Encabezamiento: Consejería; Dirección General de Recursos Hídricos; CONTR 2023 152183"
+        }
+      ]
+    },
+    {
+      "id": "funding-hierarchy-donana-body",
+      "source": "fundacion-biodiversidad",
+      "target": "donana-restoration-grants-2025",
+      "label": "issues the recorded call and proposal",
+      "explanation": "The foundation is the named grant body in the 2025 call and October 2026 provisional proposal. The proposal creates no beneficiary right.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 1,
+          "label": "Fundación Biodiversidad: Doñana 2025 call and provisional proposal",
+          "locator": "Título; antecedentes; Primero"
+        }
+      ]
+    },
+    {
+      "id": "funding-hierarchy-roadmap-issuer",
+      "source": "european-commission",
+      "target": "nature-credits",
+      "label": "published the roadmap for",
+      "explanation": "The dated Commission communication is a roadmap, not an open grant or established market.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 1,
+          "label": "European Commission: nature-credit roadmap communication",
+          "locator": "COM(2025) 374 final; 7.7.2025"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:funding-structure",
+      "label": "Funding structure",
+      "parent_id": "funding:programmes",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "feader",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nextgenerationeu",
+          "role": "primary"
+        },
+        {
+          "topic_id": "fundacion-biodiversidad",
+          "role": "primary"
+        },
+        {
+          "topic_id": "european-commission",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Browse the recorded funds, national frameworks, responsible authorities and local implementation. These folders explain organization without turning geographic containment into a funding responsibility. Nature credits remain prospective finance; grants, proposals and procurement retain their recorded status.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "label": "LEADER: FEADER, Spain CAP plan and local development",
+          "locator": "Preámbulo: FEADER, PEPAC e intervención 7119 LEADER"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing",
+          "locator": "4. Financiación y anualidades"
+        },
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 1,
+          "label": "Fundación Biodiversidad: Doñana 2025 call and provisional proposal",
+          "locator": "Título; antecedentes; Primero"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 1,
+          "label": "European Commission: nature-credit roadmap communication",
+          "locator": "COM(2025) 374 final; 7.7.2025"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-feader",
+      "label": "FEADER · EU",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "feader",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "pepac",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "EU rural-development funding context for the recorded Spanish CAP / LEADER framework.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "label": "LEADER: FEADER, Spain CAP plan and local development",
+          "locator": "Preámbulo: FEADER, PEPAC e intervención 7119 LEADER"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-pepac",
+      "label": "PEPAC · Spain",
+      "parent_id": "browse:funding-feader",
+      "anchor_topic_id": "pepac",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "leader",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Spain’s CAP Strategic Plan 2023–2027 includes intervention 7119 LEADER.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "label": "LEADER: FEADER, Spain CAP plan and local development",
+          "locator": "Preámbulo: FEADER, PEPAC e intervención 7119 LEADER"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-leader",
+      "label": "LEADER",
+      "parent_id": "browse:funding-pepac",
+      "anchor_topic_id": "leader",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "andalusia-leader-authority",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Open the documented Andalusian delivery structure. The hierarchy is a browsing organization, not a claim that every programme relationship is a money transfer.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "label": "LEADER: FEADER, Spain CAP plan and local development",
+          "locator": "Preámbulo: FEADER, PEPAC e intervención 7119 LEADER"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-leader-andalusia",
+      "label": "Andalusian LEADER authority",
+      "parent_id": "browse:funding-leader",
+      "anchor_topic_id": "andalusia-leader-authority",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "junta-agriculture",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "The recognized-group resolution identifies the responsible Directorate-General. Open Interventions, Local implementation, or Rules and calls.",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "Andalusian LEADER authority, recognized GDRs and assigned zones",
+          "locator": "Competencias de la Dirección General; Resuelvo; Anexo: Provincia de Almería"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-leader-interventions",
+      "label": "Interventions",
+      "parent_id": "browse:funding-leader-andalusia",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "leader-7119-2",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-7119-3",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-7119-4",
+          "role": "primary"
+        },
+        {
+          "topic_id": "edll",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Keep strategy implementation (7119.2), cooperation (7119.3) and management/animation support (7119.4) distinct. The local strategy is a separate recorded concept.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "label": "LEADER: FEADER, Spain CAP plan and local development",
+          "locator": "Preámbulo: FEADER, PEPAC e intervención 7119 LEADER"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "label": "LEADER: strategy implementation, cooperation and management support",
+          "locator": "Preámbulo: intervenciones 7119.2, 7119.3 y 7119.4"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-local-implementation",
+      "label": "Local implementation",
+      "parent_id": "browse:funding-leader-andalusia",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "gdr",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al30",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Recognized rural development groups deliver local strategies in their assigned Zonas Rurales LEADER. AL20 and AL30 are documented zone/framework entries; their managing organizations remain separate.",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "AL20 and AL30: assigned zones and managing GDRs",
+          "locator": "Anexo: Zona Rural Leader asignada AL20 y AL30"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-al20",
+      "label": "AL20 · Alpujarra–Sierra Nevada",
+      "parent_id": "browse:funding-local-implementation",
+      "anchor_topic_id": "al20",
+      "user_created": false,
+      "members": [],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Local LEADER framework / ZRL AL20. Open its managing GDR, selected funding lines, and retained strategy/criteria evidence. The zone and managing association are different records.",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "AL20 and AL30: assigned zones and managing GDRs",
+          "locator": "Anexo: Zona Rural Leader asignada AL20 y AL30"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-al20-gdr",
+      "label": "Managing GDR",
+      "parent_id": "browse:funding-al20",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-gdr",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Recognized association managing the assigned AL20 zone; the association is not the zone itself.",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "AL20 and AL30: assigned zones and managing GDRs",
+          "locator": "Anexo: Zona Rural Leader asignada AL20 y AL30"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-al20-lines",
+      "label": "Funding lines",
+      "parent_id": "browse:funding-al20",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-line-1",
+          "role": "shared"
+        },
+        {
+          "topic_id": "al20-line-2",
+          "role": "shared"
+        },
+        {
+          "topic_id": "al20-line-3",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Three lines from the dated local selection table. Each opens only its selected activity types; scoring and call evidence remain separately available.",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20: selected activity lines and indicative budgets",
+          "locator": "Líneas de ayudas y tipologías de operaciones seleccionadas; 16/02/2026"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-al20-line-1",
+      "label": "AL20 Line 1 · agriculture and forestry",
+      "parent_id": "browse:funding-al20-lines",
+      "anchor_topic_id": "al20-line-1",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "agricultural-holding-competitiveness",
+          "role": "shared"
+        },
+        {
+          "topic_id": "forestry-holding-competitiveness",
+          "role": "shared"
+        },
+        {
+          "topic_id": "agri-food-business-competitiveness",
+          "role": "shared"
+        },
+        {
+          "topic_id": "forest-products-competitiveness",
+          "role": "shared"
+        },
+        {
+          "topic_id": "agri-forestry-business-services",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Selected activity types in the signed February 2026 table. Selection is not a current call, eligibility decision or award.",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20: selected activity lines and indicative budgets",
+          "locator": "Líneas de ayudas y tipologías de operaciones seleccionadas; 16/02/2026"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-al20-line-2",
+      "label": "AL20 Line 2 · rural diversification",
+      "parent_id": "browse:funding-al20-lines",
+      "anchor_topic_id": "al20-line-2",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "rural-business-competitiveness",
+          "role": "shared"
+        },
+        {
+          "topic_id": "rural-business-start-up",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Selected activity types in the signed February 2026 table. Selection is not a current call, eligibility decision or award.",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20: selected activity lines and indicative budgets",
+          "locator": "Líneas de ayudas y tipologías de operaciones seleccionadas; 16/02/2026"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-al20-line-3",
+      "label": "AL20 Line 3 · rural heritage and quality of life",
+      "parent_id": "browse:funding-al20-lines",
+      "anchor_topic_id": "al20-line-3",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "rural-studies",
+          "role": "shared"
+        },
+        {
+          "topic_id": "rural-awareness",
+          "role": "shared"
+        },
+        {
+          "topic_id": "demonstration",
+          "role": "shared"
+        },
+        {
+          "topic_id": "heritage-conservation",
+          "role": "shared"
+        },
+        {
+          "topic_id": "rural-services",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Selected activity types in the signed February 2026 table. Selection is not a current call, eligibility decision or award.",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20: selected activity lines and indicative budgets",
+          "locator": "Líneas de ayudas y tipologías de operaciones seleccionadas; 16/02/2026"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-al30",
+      "label": "AL30 · Filabres–Alhamilla",
+      "parent_id": "browse:funding-local-implementation",
+      "anchor_topic_id": "al30",
+      "user_created": false,
+      "members": [],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "The recognized AL30 zone and indicative allocations are documented. No AL20 criteria, local activity selections or current calls have been inferred for AL30.",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "AL20 and AL30: assigned zones and managing GDRs",
+          "locator": "Anexo: Zona Rural Leader asignada AL20 y AL30"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-al30-gdr",
+      "label": "Managing GDR",
+      "parent_id": "browse:funding-al30",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al30-gdr",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Recognized association managing the assigned AL30 zone.",
+      "source_refs": [
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "AL20 and AL30: assigned zones and managing GDRs",
+          "locator": "Anexo: Zona Rural Leader asignada AL20 y AL30"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-leader-rules",
+      "label": "Rules and calls",
+      "parent_id": "browse:funding-leader-andalusia",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "leader-rules-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-recognition-2025",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-selection-gate",
+          "role": "shared"
+        },
+        {
+          "topic_id": "leader-aid-limits",
+          "role": "shared"
+        },
+        {
+          "topic_id": "leader-nongdr-call-2026",
+          "role": "shared"
+        },
+        {
+          "topic_id": "leader-verification",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nonproductive-demonstration",
+          "role": "shared"
+        },
+        {
+          "topic_id": "open-participation",
+          "role": "shared"
+        },
+        {
+          "topic_id": "public-results",
+          "role": "shared"
+        },
+        {
+          "topic_id": "territory-link",
+          "role": "shared"
+        },
+        {
+          "topic_id": "complete-operation",
+          "role": "shared"
+        },
+        {
+          "topic_id": "relevant-competence",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nonprofit-public-applicants",
+          "role": "shared"
+        },
+        {
+          "topic_id": "travel-justification",
+          "role": "shared"
+        },
+        {
+          "topic_id": "demonstration-novelty",
+          "role": "shared"
+        },
+        {
+          "topic_id": "heritage-public-use",
+          "role": "shared"
+        },
+        {
+          "topic_id": "forest-management-plan",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nonproductive-heritage",
+          "role": "shared"
+        },
+        {
+          "topic_id": "heritage-purchase-exclusion",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Dated governing rules, recognition, call limits and cross-cutting requirements. Requirements retain their own source-specific operation/applicant context. The AL20-specific evidence guide remains in its original group.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "label": "LEADER: FEADER, Spain CAP plan and local development",
+          "locator": "Preámbulo: FEADER, PEPAC e intervención 7119 LEADER"
+        },
+        {
+          "source_id": "FUND-012",
+          "page": 3,
+          "label": "Andalusian LEADER authority, recognized GDRs and assigned zones",
+          "locator": "Competencias de la Dirección General; Resuelvo; Anexo: Provincia de Almería"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:al20-call-rules",
+      "label": "Call, limits and verification",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "leader-selection-gate",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-aid-limits",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-nongdr-call-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-verification",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Read the selection gate, aid ceilings, April 2026 call and September verification guide as distinct parts of an evidence chain. At least 60/100 is required by the governing order, but a qualifying score alone does not establish admissibility or reserve a budget. Public programme cofinancing differs from applicant aid intensity. The call permits local strategy/proposal changes and temporary suspension, so its documentary deadline and the library’s February tables do not prove present availability or the latest applicable local rules.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 38,
+          "locator": "LEADER: minimum score and competent authorities",
+          "label": "LEADER: minimum score and competent authorities"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 27,
+          "locator": "LEADER: aid ceilings and budget constraints",
+          "label": "LEADER: aid ceilings and budget constraints"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "locator": "Call: local annexes, versions and modification suspension",
+          "label": "Call: local annexes, versions and modification suspension"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 5,
+          "locator": "Verification guide: scope and exclusive/cumulative rules",
+          "label": "Verification guide: scope and exclusive/cumulative rules"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:al20-evidence",
+      "label": "Local strategy and criteria",
+      "parent_id": "browse:funding-al20",
+      "anchor_topic_id": "al20",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-line-1",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-line-2",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-line-3",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Start with the three local activity lines, then open Call, limits and verification for selection gates, aid ceilings and the dated call. Use Local priorities and innovation for water, soil and strategy-defined innovation, and the three Line 3 scoring branches for territorial, social and heritage/promoter criteria. A relevant project feature is a reason to inspect a criterion and its evidence, not an eligibility decision. The order requires at least 60/100; admissibility, budget and the applicable local version remain separate checks.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "AL20: selected nonproductive Line 3 activity types",
+          "label": "AL20: selected nonproductive Line 3 activity types"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 38,
+          "locator": "LEADER: 60/100 selection gate",
+          "label": "LEADER: 60/100 selection gate"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "locator": "Call: local version and modification rules",
+          "label": "Call: local version and modification rules"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:al20-heritage-governance",
+      "label": "Line 3: heritage and promoter evidence",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-heritage-value",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-cooperation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-new-beneficiary",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Open heritage value for activity-specific evidence at application and payment, and promoter criteria for association/cooperation and previous LEADER status. Source-reported points are conditional and family-capped. A heritage objective alone does not demonstrate a completed public-use project, an admissible cost or an award.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "AL20: heritage and promoter cooperation weights",
+          "label": "AL20: heritage and promoter cooperation weights"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 20,
+          "locator": "AL20: previous-beneficiary status",
+          "label": "AL20: previous-beneficiary status"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 104,
+          "locator": "Guide: heritage evidence by stage",
+          "label": "Guide: heritage evidence by stage"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 106,
+          "locator": "Guide: promoter membership evidence",
+          "label": "Guide: promoter membership evidence"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:al20-priorities",
+      "label": "Local priorities and innovation",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-local-needs",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-water-priority",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-soil-priority",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-innovation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-precision-agriculture",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Read the prioritized need before considering the project-selection criterion. The strategy separates LEADER-addressable needs from other territorial needs and gives its own priority values. Water management and soil regeneration provide useful starting points. Its precision-agriculture innovation example names drones/sensors with municipal limits, while criterion evidence requires a justified match to the latest applicable local strategy.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "locator": "AL20: water and soil priorities",
+          "label": "AL20: water and soil priorities"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 397,
+          "locator": "AL20: non-LEADER-addressable needs",
+          "label": "AL20: non-LEADER-addressable needs"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 400,
+          "locator": "AL20: precision-agriculture innovation conditions",
+          "label": "AL20: precision-agriculture innovation conditions"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:al20-social-scoring",
+      "label": "Line 3: people and local services",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-gender-leisure",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-womens-associations",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-accessibility",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-rural-youth",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-local-services",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Compare the criteria for women’s participation, adapted structures, youth and proximity services. Continued rows for women’s events and youth businesses/needs are now included. Each family has a local maximum; the guide distinguishes exclusive from cumulative subcriteria. Application claims and evidence of delivered activities remain separate stages.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "AL20: women and mobility criteria",
+          "label": "AL20: women and mobility criteria"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "locator": "AL20: women, accessibility and youth",
+          "label": "AL20: women, accessibility and youth"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "AL20: continued youth criteria",
+          "label": "AL20: continued youth criteria"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 230,
+          "locator": "Guide: youth cumulation/exclusion",
+          "label": "Guide: youth cumulation/exclusion"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:al20-territorial-scoring",
+      "label": "Line 3: territory and climate",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-population",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-territorial-balance",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-renewable-energy",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-sustainable-mobility",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "These existing Line 3 criteria concern settlement population, territorial economic balance, source-listed energy equipment and sustainable mobility. Their local family maxima and the applicable verification edition matter. In particular, February population wording and the September guide differ in data-year and median/mean language; no settlement or project has been scored here.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "AL20 Line 3: territorial and climate criteria",
+          "label": "AL20 Line 3: territorial and climate criteria"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "AL20 Line 3: mobility subcriteria",
+          "label": "AL20 Line 3: mobility subcriteria"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 10,
+          "locator": "Guide: AT.3 data-basis wording",
+          "label": "Guide: AT.3 data-basis wording"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:nature-credit-finance",
+      "label": "Nature-credit roadmap · prospective",
+      "parent_id": "browse:funding-commission",
+      "anchor_topic_id": "nature-credits",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "nature-credit-certification",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nature-credit-integrity",
+          "role": "primary"
+        },
+        {
+          "topic_id": "monitoring",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Distinguish prospective voluntary nature crediting, carbon units, grants and procurement. Do not claim current market readiness, a credit, revenue or eligibility from this dated roadmap. Preserve ecosystem-specific measurement and independent-verification requirements.",
+      "description": "Read the proposed chain from a quality-assessed action to a demonstrated ecological outcome, then inspect integrity and monitoring. The Commission roadmap treats nature credits as a possible complement to public funding. It also explains why biodiversity can matter in dry ecosystems with limited extra carbon storage. Site-specific measures, independent roles, safeguards and usable market rules are still necessary. The recorded 2025–2027 actions are document-stated plans; current implementation, buyers and prices have not been verified.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 5,
+          "locator": "Nature credits: certification and outcome distinction",
+          "label": "Nature credits: certification and outcome distinction"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 6,
+          "locator": "Nature credits: monitoring and governance",
+          "label": "Nature credits: monitoring and governance"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 8,
+          "locator": "Nature credits: dry ecosystems and biodiversity specificity",
+          "label": "Nature credits: dry ecosystems and biodiversity specificity"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-nextgenerationeu",
+      "label": "NextGenerationEU · EU",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "nextgenerationeu",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "spain-prtr",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Documented EU recovery financing. Continue through the Spanish PRTR and its specific ecosystem-restoration investment.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax: EU NextGenerationEU funding attribution",
+          "locator": "10. Comunicación: Unión Europea – NextGenerationEU"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-prtr",
+      "label": "PRTR · Spain",
+      "parent_id": "browse:funding-nextgenerationeu",
+      "anchor_topic_id": "spain-prtr",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "prtr-ecosystem-restoration",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "National recovery framework. Only the documented ecosystem-restoration investment and projects are included here.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing",
+          "locator": "4. Financiación y anualidades"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax: EU NextGenerationEU funding attribution",
+          "locator": "10. Comunicación: Unión Europea – NextGenerationEU"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-prtr-c4i3",
+      "label": "Ecosystem restoration · C4.I3",
+      "parent_id": "browse:funding-prtr",
+      "anchor_topic_id": "prtr-ecosystem-restoration",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "andalusia-water-resources",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Component 4, Investment 3 as identified in the recorded public works. A project’s financing percentage is not an applicant aid rate.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing",
+          "locator": "4. Financiación y anualidades"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-prtr-regional",
+      "label": "Regional delivery · Andalusia",
+      "parent_id": "browse:funding-prtr-c4i3",
+      "anchor_topic_id": "andalusia-water-resources",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "andarax-restoration-2023",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nijar-fluvial-restoration",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "The recorded Water Resources directorate/department context and two restoration projects. These are public-contract/assignment records, not a general open grant.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax: issuing department and Water Resources directorate",
+          "locator": "Encabezamiento: Consejería; Dirección General de Recursos Hídricos; CONTR 2023 152183"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 1,
+          "label": "Níjar supervision: department and Water Resources responsibilities",
+          "locator": "Encabezamiento y antecedentes: Dirección General de Recursos Hídricos; expediente 1/2023/ES"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing",
+          "locator": "4. Financiación y anualidades"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-biodiversidad",
+      "label": "Fundación Biodiversidad · Spain",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "fundacion-biodiversidad",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "donana-restoration-grants-2025",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Recorded grant body for the Doñana 2025 restoration competition. No EU, provincial or local intermediary has been inferred.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 1,
+          "label": "Fundación Biodiversidad: Doñana 2025 call and provisional proposal",
+          "locator": "Título; antecedentes; Primero"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-commission",
+      "label": "European Commission · EU",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "european-commission",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "nature-credits",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "The Commission’s prospective nature-credit policy branch is distinct from the FEADER grant framework.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 1,
+          "label": "European Commission: nature-credit roadmap communication",
+          "locator": "COM(2025) 374 final; 7.7.2025"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy"
+    }
+  ]
+}

@@ -71,6 +71,10 @@ react-rnd or an old executable viewer. Dependency versions are in the lockfiles 
 - Browsing membership is organization, never a factual edge or route shortcut. Distinguish
   permanent groups from temporary display headings. Preserve full definitions, optional cited
   descriptions/layout metadata, unique primary memberships and acyclic parents.
+- Funding intake must extend the live named-folder hierarchy under Funding structure. Follow
+  `docs/COMMUNITY_PLANNING.md#funding-hierarchy-maintenance`: preserve `presentation: hierarchy`,
+  use groups for financing/implementation steps, and include only documented participating levels.
+  Retain necessary single-child levels; geography alone never supplies a funding intermediary.
 - User-requested organization/working-plan edits use the shared revision-checked service. Source
   topics, relationships, findings, source communities and evidence use checked Codex intake.
 - Source communities are read-only and require an explicit working copy. Intake/refresh never

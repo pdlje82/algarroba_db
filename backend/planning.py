@@ -207,6 +207,8 @@ def validate_groups(groups, topic_ids):
         if not group['label'].strip() or len(group['label'])>160 or not group['maintenance_rule'].strip():
             raise ValueError('Group label and maintenance rule are required')
         anchor = group.get('anchor_topic_id')
+        if group.get('presentation', 'standard') not in {'standard', 'hierarchy'}:
+            raise ValueError('Unknown browsing group presentation')
         if anchor is not None and anchor not in topic_ids:
             raise ValueError('Unknown browsing group anchor')
         domain = group_domain(id, groups)

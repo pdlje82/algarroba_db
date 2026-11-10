@@ -35,6 +35,32 @@ def test_exact_scope_evidence_and_safe_repeat(store):
     assert s.snapshot()==snap
 
 
+def test_hierarchy_group_metadata_and_editor_preserve_factual_records(store):
+    from backend.planning import Edit, apply_edit
+    s,_=store
+    before=s.snapshot()
+    group=dict(id='browse:hierarchy-test',label='Hierarchy',parent_id='funding:programmes',anchor_topic_id='leader',members=[dict(topic_id='al20',role='primary')],maintenance_rule='Test organization only',presentation='hierarchy',description='Retained guide',member_layout='vertical')
+    s.import_batch(dict(batch_id='hierarchy-metadata-test',base_revision=s.revision(),summary='Isolated hierarchy metadata',browse_groups=[group]))
+    client=TestClient(create_app(s))
+    assert client.get('/api/catalog').json()['browse_groups'][0]['presentation']=='hierarchy'
+    assert client.get('/api/explore',params=dict(scope='group',group_id=group['id'])).json()['endpoint_ids']==['al20']
+    apply_edit(s,Edit(expected_revision=s.revision(),action='group-rename',data=dict(id=group['id'],label='Renamed hierarchy')))
+    saved=s.snapshot()['browse_groups'][0]
+    assert saved['presentation']=='hierarchy' and saved['member_layout']=='vertical'
+    assert saved['description']=='Retained guide' and saved['members']==group['members']
+    for key in ['topics','relationships','findings','sources','coverage']:
+        assert s.snapshot()[key]==before[key]
+
+
+def test_group_presentation_defaults_and_rejects_unknown_modes():
+    from backend.store import BrowseGroup
+    from backend.planning import validate_groups
+    group=dict(id='browse:default-test',label='Default',parent_id='funding:programmes',members=[],maintenance_rule='Test')
+    assert BrowseGroup.model_validate(group).presentation=='standard'
+    with pytest.raises(ValueError):BrowseGroup.model_validate(dict(group,presentation='unsupported'))
+    with pytest.raises(ValueError,match='presentation'):validate_groups({group['id']:dict(group,presentation='unsupported')},set())
+
+
 def test_species_names_are_stored_searchable_and_keep_source_identities(store):
     s,_=store
     before=s.snapshot()

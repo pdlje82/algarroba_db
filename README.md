@@ -212,6 +212,8 @@ For any checked research/maintenance intake:
 1. Read the task brief **and** `context.json`, [import contract](imports/CONTRACT.md), current source
    registry and current records. Reconcile captured IDs/revision. Inspect groups, memberships,
    parent paths, anchors and maintenance rules across the wider graph.
+   Funding additions must follow [Funding hierarchy maintenance](docs/COMMUNITY_PLANNING.md#funding-hierarchy-maintenance):
+   extend the live named folders, preserve hierarchy presentation and include only documented participants.
 2. Verify editions and inspect the requested material. Extract text, render important tables/image
    pages, and record exact one-based page coverage, unresolved items and unfinished work.
 3. Capture all useful supported in-domain discoveries from inspected material, including outside

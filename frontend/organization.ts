@@ -39,6 +39,10 @@ export function placeLabel(id: string | null, catalog?: Catalog | null) {
         "Place unavailable (" + id + ")";
 }
 export const browseGroups = (catalog: Catalog) => catalog.browse_groups || [];
+export function fixedGroupLayout(id: string | null, catalog?: Catalog | null) {
+  const group = catalog?.browse_groups.find(g => g.id === id);
+  return group?.presentation === 'hierarchy' || group?.member_layout === 'vertical';
+}
 export function primaryGroup(id: string, catalog: Catalog) {
   return browseGroups(catalog).find((g) =>
     g.members.some((m) => m.topic_id === id && m.role === "primary"),

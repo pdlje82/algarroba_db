@@ -54,6 +54,13 @@ running it on a newer collection. In particular `test:close-occlusion` still exp
 button label and is a known historical-fixture limitation, not an unqualified current acceptance
 check. The archived log records its earlier outcome and later limitation.
 
+For funding folders, run `python scripts/funding-qa-server.py --database
+output/funding-hierarchy-qa/knowledge.sqlite`, then `npm run test:funding-hierarchy`.
+The helper copies accepted SQLite only if the destination is absent, validates/applies the
+checked funding batch idempotently, and serves port 8774. Existing QA data is preserved.
+The browser check covers the four branches, every hierarchy folder, AL20/AL30, About,
+ordinary factual exploration, keyboard source opening, Back, refresh and reload.
+
 For the lifecycle scenario, first prepare an isolated SQLite copy with the current accepted intake,
 then serve it with `python scripts/irrigation-qa-server.py --database <isolated.sqlite>` on port 8771.
 The helper requires that copy to exist. `scripts/verify_irrigation_intake.py` is the historical
@@ -110,6 +117,25 @@ The fresh Evidence desk QA helper provides a synthetic citation community indepe
 Local evidence is under `output/citation-labels/`, `output/planning-qa/citation-labels/` and
 `output/consolidation-qa/`. This verifies the built app; it does not assert that an already-running
 accepted server has reloaded backend code. Reload the browser for the new link display.
+
+## Funding hierarchy: 10 November 2026
+
+Accepted `funding-hierarchy-2026-11-10-01` at revision 19 after validation and isolated-browser
+verification. It adds six documented participant topics, seven source-backed relationships and
+22 folders, and reparents/configures seven existing funding groups. The resulting 29 hierarchy
+folders navigate the four funding branches without arrows; ordinary topic exploration retains
+factual connections. No provincial intermediary was introduced into the LEADER chain.
+
+Validation: 75 frontend passes; 93 backend passes and one existing skip; production build;
+13 browser checks, including opening all 29 hierarchy folders, AL20/AL30, About, an exact-page
+keyboard citation, Back, refresh and reload. The existing bundle-size warning remains.
+QA screenshots and the browser report are in `output/funding-hierarchy-qa/`.
+
+Accepted-store verification retains all 350 original topics and 472 original relationships
+exactly, all original group memberships/descriptions/citations/rules, and all 36 registered
+source-file hashes. Thirteen other tables remain identical, including community plans, immutable
+irrigation evidence, media, root IDs, findings, coverage, tasks and saved explorations. The importer
+created the pre-application revision-18 SQLite backup; repeat validation is idempotent.
 
 ## Documentation cleanup: 10 November 2026
 

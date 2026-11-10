@@ -109,8 +109,9 @@ export function buildScene(
   c: Catalog,
   aspect = 1.6,
 ): Scene {
+  const hierarchy = v.scope === 'group' && c.browse_groups.some(g => g.id === s.groupId && g.presentation === 'hierarchy');
   const topicMap = new Map(c.topics.map((t) => [t.id, t])),
-    routes = allRoutes(s, v),
+    routes = hierarchy ? [] : allRoutes(s, v),
     records = new Map(v.nodes.map((t) => [t.id, t])),
     visible = new Set(v.endpoint_ids),
     expanded = routes.filter((r) => s.expandedRoutes.includes(r.id)),
@@ -134,7 +135,8 @@ export function buildScene(
   // Keep the captured query's results, but do not let route reveal or an
   // endpoint match reinsert the centre the user explicitly removed.
   if (!s.centre && s.anchor) visible.delete(s.anchor);
-  if (v.scope !== "search") v.edges.forEach((e) => factIds.add(e.id));
+  if (hierarchy) factIds.clear();
+  else if (v.scope !== "search") v.edges.forEach((e) => factIds.add(e.id));
   else
     for (const r of routes)
       if (r.nodes.length === 2) r.edges.forEach((id) => factIds.add(id));
@@ -142,7 +144,7 @@ export function buildScene(
   for (const id of visible) {
     const t = records.get(id);
     if (!t) continue;
-    if (v.scope !== "overview" && (orderedGroup || s.grouping === "none" || id === centre))
+    if (v.scope !== "overview" && (hierarchy || orderedGroup || s.grouping === "none" || id === centre))
       continue;
     const place = recordedPlaceId(t, c),
       g =
@@ -165,7 +167,7 @@ export function buildScene(
   }
   if(v.scope==='group' && s.groupId && !s.groupId.startsWith('display-group:')) {
     for(const child of c.browse_groups.filter(g=>g.parent_id===s.groupId)){
-      const ids=groupMembers(child.id,c).filter(id=>visible.has(id));
+      const ids=[...new Set([...groupMembers(child.id,c),...(hierarchy && child.anchor_topic_id ? [child.anchor_topic_id] : [])])].filter(id=>visible.has(id));
       if(s.domain!=='all' && !ids.length && groupDomain(child.id,c)!==s.domain) continue;
       for(const [key,existing] of groups){if(existing.permanent)continue;existing.ids=existing.ids.filter(id=>!ids.includes(id));if(!existing.ids.length)groups.delete(key);}
       groups.set(child.id,{label:child.label,ids,permanent:true,domain:groupDomain(child.id,c)});
@@ -189,7 +191,7 @@ export function buildScene(
   for (const key of groupIds) {
     const g = groups.get(key)!,
       id = "display-group:" + key;
-    if (s.expandedGroups.includes(id) && v.scope !== "overview") continue;
+    if (!hierarchy && s.expandedGroups.includes(id) && v.scope !== "overview") continue;
     const record: Item = {
       id,
       label: g.label,

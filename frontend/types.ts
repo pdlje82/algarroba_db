@@ -86,6 +86,7 @@ export type BrowseGroup = {
   description?: string;
   source_refs?: Ref[];
   member_layout?: 'grid' | 'vertical';
+  presentation?: 'standard' | 'hierarchy';
 };
 export type Catalog = {
   revision: number;

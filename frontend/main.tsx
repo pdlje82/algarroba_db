@@ -41,7 +41,7 @@ import { buildScene, previousScenes, isInteractiveRecord } from "./scene";
 import { SceneView, GraphBoundary, type SceneHandle } from "./SceneView";
 import { useAppearance, useFullScreen } from "./workspace";
 import { ResearchPanel, Refs } from "./dialogs";
-import { rootGroup, groupLabel, editorTarget, type EditorTarget } from "./organization";
+import { rootGroup, groupLabel, editorTarget, fixedGroupLayout, type EditorTarget } from "./organization";
 import { PlanningPanel } from './PlanningPanel';
 import { topicNames } from "./speciesNames";
 import { SourcePanel } from "./SourcePanel";
@@ -121,7 +121,8 @@ function App() {
     const loaded = await loadExploration(s, c, signal, force);
     s = loaded.state;
     c = loaded.catalog;
-    if(s.scope==='group' && c.browse_groups.find(g=>g.id===s.groupId)?.member_layout==='vertical')s={...s,grouping:"none"};
+    if(s.scope==='group' && fixedGroupLayout(s.groupId,c))s={...s,grouping:"none"};
+    if(s.scope==='group' && c.browse_groups.find(g=>g.id===s.groupId)?.presentation==='hierarchy')s={...s,expandedGroups:[],expandedRoutes:[],alternatives:[]};
     let v = loaded.view;
     const bounds = canvas.current?.getBoundingClientRect();
     const layoutAspect =
@@ -468,7 +469,7 @@ function App() {
           .filter((e) => [e.source, e.target].includes(selectedTopic.id))
           .map((e) => e.id)
       : [];
-  const visibleIds = scene?.cards.flatMap((c) => c.members) || [],
+  const visibleIds = [...new Set(scene?.cards.flatMap((c) => c.members) || [])],
     scopeIds =
       selectedRoute?.nodes ||
       selectedCard?.members ||
@@ -631,7 +632,14 @@ function App() {
       </button>
     );
   };
-  const groupNavigation=(id:string,depth=0):React.ReactNode=><React.Fragment key={id}><button style={{paddingLeft:12+depth*12}} onClick={()=>dispatch({type:'group',id})}>{groupLabel(id,catalog)}<small>{catalog?.topics.filter(t=>rootGroup(t.id,catalog)===id).length||''}</small></button>{catalog?.browse_groups.filter(g=>g.parent_id===id).map(g=>groupNavigation(g.id,depth+1))}{catalog?.communities?.filter(g=>g.parent_id===id).map(g=><button key={g.id} style={{paddingLeft:24+depth*12}} onClick={()=>dispatch({type:'group',id:g.id})}>{g.label}<small>{g.plants.length}</small></button>)}</React.Fragment>;
+  const groupNavigation=(id:string,depth=0):React.ReactNode=>{
+    const group=catalog?.browse_groups.find(g=>g.id===id);
+    let at=state.scope==='group'?state.groupId:null;
+    const path=new Set<string>();
+    while(at && !path.has(at)){path.add(at);at=catalog?.browse_groups.find(g=>g.id===at)?.parent_id||null;}
+    const expanded=group?.presentation!=='hierarchy'||path.has(id);
+    return <React.Fragment key={id}><button data-group-id={id} style={{paddingLeft:12+depth*12}} onClick={()=>dispatch({type:'group',id})}>{groupLabel(id,catalog)}<small>{catalog?.topics.filter(t=>rootGroup(t.id,catalog)===id).length||''}</small></button>{expanded && catalog?.browse_groups.filter(g=>g.parent_id===id).map(g=>groupNavigation(g.id,depth+1))}{catalog?.communities?.filter(g=>g.parent_id===id).map(g=><button key={g.id} style={{paddingLeft:24+depth*12}} onClick={()=>dispatch({type:'group',id:g.id})}>{g.label}<small>{g.plants.length}</small></button>)}</React.Fragment>;
+  };
   if (!catalog)
     return (
       <main className="boot">
@@ -816,8 +824,8 @@ function App() {
               Group by
               <select
                 aria-label="Group by"
-                disabled={state.scope==='group' && catalog.browse_groups.find(g=>g.id===state.groupId)?.member_layout==='vertical'}
-                title={state.scope==='group' && catalog.browse_groups.find(g=>g.id===state.groupId)?.member_layout==='vertical'?'This group follows its top-to-bottom sequence.':undefined}
+                disabled={state.scope==='group' && fixedGroupLayout(state.groupId,catalog)}
+                title={state.scope==='group' && fixedGroupLayout(state.groupId,catalog)?'This group follows its stored organization.':undefined}
                 value={state.grouping}
                 onChange={(e) =>
                   dispatch({ type: "grouping", value: e.target.value as any })
@@ -1177,6 +1185,7 @@ function App() {
                   </p>
                   {inspectedGroup && <section aria-label="Group guide">
                     <Refs catalog={catalog} refs={inspectedGroup.source_refs || []} open={setSource}/>
+                    {inspectedGroup.anchor_topic_id && <button onClick={()=>select(catalog.topics.find(t=>t.id===inspectedGroup.anchor_topic_id))}>About {catalog.topics.find(t=>t.id===inspectedGroup.anchor_topic_id)?.label || 'this topic'}</button>}
                     <ol>{inspectedGroup.members.map(m=><li key={m.topic_id}>{topicButton(m.topic_id)}</li>)}</ol>
                   </section>}
                   {selectedTopic?.aspects && <dl className="topic-context">{Object.entries(selectedTopic.aspects).map(([key,value])=><React.Fragment key={key}><dt>{key}</dt><dd style={{whiteSpace:'pre-line'}}>{String(value)}</dd></React.Fragment>)}</dl>}

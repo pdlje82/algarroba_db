@@ -100,6 +100,11 @@ organization generically, reusing existing identities and distinguishing permane
 perspective-only headings. Keep shared/general context accessible and preserve wider discoveries.
 Do not invent factual relationships from organization.
 
+All funding intake must follow [Funding hierarchy maintenance](../docs/COMMUNITY_PLANNING.md#funding-hierarchy-maintenance),
+including the live named-folder paths, explicit hierarchy presentation and evidence for participating
+levels. This is a semantic intake requirement in addition to schema validation. Keep placement/path
+audits in run sidecars; they are not new top-level batch fields.
+
 A batch may contain only browse_groups, or organization plus supported factual discoveries.
 Use current `base_revision`, `--check`, then import. Existing accepted batch digests remain
 unchanged. Migration/import backups and stale-revision protection apply. Browser organization
@@ -148,6 +153,13 @@ edition/page/coverage validation as topic references. Vertical groups use member
 order for graph and keyboard-list presentation; membership remains organizational.
 Group edits must preserve optional metadata. Do not repurpose maintenance_rule as a
 reader-facing explanation.
+
+`presentation` is `standard` (default) or `hierarchy`. Hierarchy folders retain child groups
+and direct members, lock Group by to None and omit graph connections without deleting factual
+relationships. Existing anchor_topic_id supports an About action. When an anchor is also an
+explicit member of its parent hierarchy folder, its child folder represents it without a duplicate
+topic card. An anchor remains forbidden in its own group's members. Preserve presentation during
+renames, moves and membership edits; it does not change the meaning of primary/shared roles.
 
 New irrigation dose candidates use L/plant/event; L/plant/watering remains a compatible
 legacy spelling. Original immutable candidates and retained baselines are not rewritten.

@@ -7,7 +7,7 @@ import {
   type Route,
   type Item,
 } from "./types.ts";
-import { placeLabel, groupLabel } from "./organization.ts";
+import { placeLabel, groupLabel, fixedGroupLayout } from "./organization.ts";
 import { hasCompactGridPositions } from "./compactLayout.ts";
 export const initialState = (): State => ({
   version: 6,
@@ -92,7 +92,7 @@ export function reduceExploration(s: State, a: Action, catalog?: Catalog): State
       n.positions = {};
       n.scope = "group";
       n.groupId = a.id;
-      if(catalog?.browse_groups.find(g=>g.id===a.id)?.member_layout==='vertical')n.grouping="none";
+      if(fixedGroupLayout(a.id,catalog))n.grouping="none";
       n.search = "";
       break;
     case "openMembers":
@@ -148,7 +148,7 @@ export function reduceExploration(s: State, a: Action, catalog?: Catalog): State
       n.camera = s.camera;
       break;
     case "grouping":
-      n.grouping = a.value;
+      n.grouping = s.scope === 'group' && fixedGroupLayout(s.groupId,catalog) ? 'none' : a.value;
       n.expandedGroups = [];
       n.positions = {};
       break;

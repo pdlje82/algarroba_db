@@ -24,6 +24,7 @@ playwright-report/
 /output/planning-qa/
 /output/context-editor-qa/
 /output/citation-labels/
+/output/funding-hierarchy-qa/
 
 # Owned document-library bytes are local; inventory and tooling are versioned.
 /doc_library/
