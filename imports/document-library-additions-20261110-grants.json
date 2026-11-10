@@ -1,0 +1,213 @@
+{
+  "record_type": "incremental library additions; not a replacement historical ownership inventory",
+  "run": "grant-handoff-20261110T094406Z",
+  "files": [
+    {
+      "path": "doc_library/FUND-021 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Call - 2026.pdf",
+      "size": 400131,
+      "sha256": "858fe82f5c7c48a140df01e6eac889bf430c1ed7c04e298dd21f45439b6decae",
+      "source_id": "KGB-SRC-0028",
+      "url": "https://fundacion-biodiversidad.es/wp-content/uploads/2026/09/Convocatoria-proyectos-PAEAS-y-DC_2026.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Fundación Biodiversidad",
+      "known_document_date": "2026-09-09",
+      "pdf_pages": 23,
+      "inspected_pdf_positions": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "origin": "official-web acquisition",
+      "managed_path": "sources/grant-handoff-20261110/FUND-021 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Call - 2026.pdf"
+    },
+    {
+      "path": "doc_library/FUND-022 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Submission Guide - 2026.pdf",
+      "size": 1809611,
+      "sha256": "bdc68073422ba417e69103e71fef7c3d41999424a7be3697bb7199a49fadc6eb",
+      "source_id": "KGB-SRC-0029",
+      "url": "https://fundacion-biodiversidad.es/wp-content/uploads/2026/09/Guia-presentacion-proyectos_PAEAS-DC-1.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Fundación Biodiversidad",
+      "known_document_date": "date unverified",
+      "pdf_pages": 17,
+      "inspected_pdf_positions": [
+        5,
+        14,
+        15,
+        17
+      ],
+      "origin": "official-web acquisition",
+      "managed_path": "sources/grant-handoff-20261110/FUND-022 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Submission Guide - 2026.pdf"
+    },
+    {
+      "path": "doc_library/FUND-023 - Biodiversa - BiodivFuture Call Announcement - 2026-2027.pdf",
+      "size": 434558,
+      "sha256": "20d213ea71a3cff239405ce5995414e169eeff8723f5c8197c839cb6574388dd",
+      "source_id": "KGB-SRC-0030",
+      "url": "https://www.biodiversa.eu/wp-content/uploads/2026/09/BiodivFuture_Doc1_Announcement-opportunity.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Biodiversa+",
+      "known_document_date": "date unverified",
+      "pdf_pages": 20,
+      "inspected_pdf_positions": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "origin": "official-web acquisition",
+      "managed_path": "sources/grant-handoff-20261110/FUND-023 - Biodiversa - BiodivFuture Call Announcement - 2026-2027.pdf"
+    },
+    {
+      "path": "doc_library/FUND-024 - Biodiversa - BiodivFuture National Funding Rules - v6 - 2026-11-04.pdf",
+      "size": 1540409,
+      "sha256": "42754e7ca6ba999a21ab3b7a1a3baa5495d23c5ada65216e3029136c858dabd7",
+      "source_id": "KGB-SRC-0031",
+      "url": "https://www.biodiversa.eu/wp-content/uploads/2026/11/BiodivFuture_Funding-Organisation_Rules_V6_04-11-2026.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Biodiversa+",
+      "known_document_date": "2026-11-04",
+      "pdf_pages": 123,
+      "inspected_pdf_positions": [
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "origin": "official-web acquisition",
+      "managed_path": "sources/grant-handoff-20261110/FUND-024 - Biodiversa - BiodivFuture National Funding Rules - v6 - 2026-11-04.pdf"
+    },
+    {
+      "path": "doc_library/FUND-025 - Interreg Euro-MED - Call 8 Thematic Test Project Terms - 2026.pdf",
+      "size": 1112908,
+      "sha256": "ddbe3e7393085f766ea0c3b118aee8abbbae9fcce1f87038104ecd3c74ed1659",
+      "source_id": "KGB-SRC-0032",
+      "url": "https://interreg-euro-med.eu/wp-content/uploads/documents/calls/call-8-thematic-projects/call-euro-med08_tors_en_final.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Interreg Euro-MED",
+      "known_document_date": "date unverified",
+      "pdf_pages": 35,
+      "inspected_pdf_positions": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "origin": "official-web acquisition",
+      "managed_path": "sources/grant-handoff-20261110/FUND-025 - Interreg Euro-MED - Call 8 Thematic Test Project Terms - 2026.pdf"
+    },
+    {
+      "path": "doc_library/FUND-026 - Water4All - Sustainable Water Management Call - v3 - 2026-10-06.pdf",
+      "size": 776969,
+      "sha256": "4cd1c156419fda0c871d75c207ddf37461873eadc1138352643a8d4eadc64428",
+      "source_id": "KGB-SRC-0033",
+      "url": "https://www.water4all-partnership.eu/sites/default/files/2026-09/Call_Announcement_Water4All_JTC2026_20260908.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Water4All",
+      "known_document_date": "2026-10-06",
+      "pdf_pages": 37,
+      "inspected_pdf_positions": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "origin": "official-web acquisition",
+      "managed_path": "sources/grant-handoff-20261110/FUND-026 - Water4All - Sustainable Water Management Call - v3 - 2026-10-06.pdf"
+    },
+    {
+      "path": "doc_library/FUND-027 - Water4All - National Funding Regulations - v8 - 2026-10-28.pdf",
+      "size": 1763859,
+      "sha256": "915b4299b2106d8ae065e8f96b2d437fa9d753163b52d176c1a431ca8382a9be",
+      "source_id": "KGB-SRC-0034",
+      "url": "https://www.water4all-partnership.eu/sites/default/files/2026-06/National_Regulations-Water4All_JTC2026.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Water4All / participating national funders",
+      "known_document_date": "2026-10-28",
+      "pdf_pages": 72,
+      "inspected_pdf_positions": [
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "origin": "official-web acquisition",
+      "managed_path": "sources/grant-handoff-20261110/FUND-027 - Water4All - National Funding Regulations - v8 - 2026-10-28.pdf"
+    },
+    {
+      "path": "doc_library/FUND-028 - Interreg Sudoe - Fifth Call Valorisation Project Rules - 2026-11-04.pdf",
+      "size": 832707,
+      "sha256": "ad7a3c3e12975a7cb1aa11f76c85f914eb0a28c6d75606a533114a88b06f7b76",
+      "source_id": "KGB-SRC-0035",
+      "url": "https://interreg-sudoe.eu/wp-content/uploads/2026/11/Texto_oficial_convocatoria_VALORIZACION_ES.pdf?x53234",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Interreg Sudoe Monitoring Committee",
+      "known_document_date": "2026-11-04",
+      "pdf_pages": 27,
+      "inspected_pdf_positions": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "origin": "official-web acquisition",
+      "managed_path": "sources/grant-handoff-20261110/FUND-028 - Interreg Sudoe - Fifth Call Valorisation Project Rules - 2026-11-04.pdf"
+    }
+  ],
+  "catalogue_update": {
+    "path": "doc_library/CATALOG.md",
+    "before_sha256": "ea9200f3e44a9ae643f6234ae6e514d107204fe25e291ec809bb0c1a01a184c9",
+    "after_sha256": "eac8a6bb08b9aeaf1f8fa66a249125948c5e07254f0df33d37ff8bfca9cd84a0",
+    "original_preserved_at": "research/grant-handoff-20261110T094406Z/CATALOG-before.md"
+  },
+  "historical_inventory_unchanged_sha256": "922e019fc870d168cb16dd98a3a3daef655880bbf77f35322c42a56b0b293e4a",
+  "accepted_batches": [
+    "grant-handoff-20261110-core-v1",
+    "grant-handoff-20261110-status-v1"
+  ]
+}

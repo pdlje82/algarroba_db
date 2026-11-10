@@ -1,0 +1,1913 @@
+{
+  "batch_id": "grant-handoff-20261110-core-v1",
+  "summary": "Official grant handoff: PAEAS education, BiodivFuture Spanish gates, Water4All national routes and Euro-MED Call 8; dated snapshots and checked document editions.",
+  "base_revision": 25,
+  "sources": [
+    {
+      "id": "KGB-SRC-0028",
+      "title": "PAEAS and climate-disinformation call 2026",
+      "kind": "pdf",
+      "filename": "FUND-021 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Call - 2026.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-021 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Call - 2026.pdf",
+      "sha256": "858fe82f5c7c48a140df01e6eac889bf430c1ed7c04e298dd21f45439b6decae",
+      "pdf_pages": 23,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          23
+        ]
+      ],
+      "issuer": "Fundación Biodiversidad",
+      "publication_date": "2026-09-09",
+      "document_date": "2026-09-09",
+      "document_date_meaning": "edition date where known; otherwise issuer publication date",
+      "language": "es",
+      "url": "https://fundacion-biodiversidad.es/wp-content/uploads/2026/09/Convocatoria-proyectos-PAEAS-y-DC_2026.pdf",
+      "retrieved_on": "2026-11-10",
+      "library_path": "doc_library/FUND-021 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Call - 2026.pdf"
+    },
+    {
+      "id": "KGB-SRC-0029",
+      "title": "Project submission guide: PAEAS/DC 2026",
+      "kind": "pdf",
+      "filename": "FUND-022 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Submission Guide - 2026.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-022 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Submission Guide - 2026.pdf",
+      "sha256": "bdc68073422ba417e69103e71fef7c3d41999424a7be3697bb7199a49fadc6eb",
+      "pdf_pages": 17,
+      "initial_pdf_page_ranges": [
+        [
+          5,
+          5
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          17,
+          17
+        ]
+      ],
+      "issuer": "Fundación Biodiversidad",
+      "publication_date": null,
+      "document_date": null,
+      "document_date_meaning": "edition date where known; otherwise issuer publication date",
+      "language": "es",
+      "url": "https://fundacion-biodiversidad.es/wp-content/uploads/2026/09/Guia-presentacion-proyectos_PAEAS-DC-1.pdf",
+      "retrieved_on": "2026-11-10",
+      "library_path": "doc_library/FUND-022 - Fundacion Biodiversidad - PAEAS and Climate Disinformation Submission Guide - 2026.pdf"
+    },
+    {
+      "id": "KGB-SRC-0030",
+      "title": "BiodivFuture: Announcement of Opportunity",
+      "kind": "pdf",
+      "filename": "FUND-023 - Biodiversa - BiodivFuture Call Announcement - 2026-2027.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-023 - Biodiversa - BiodivFuture Call Announcement - 2026-2027.pdf",
+      "sha256": "20d213ea71a3cff239405ce5995414e169eeff8723f5c8197c839cb6574388dd",
+      "pdf_pages": 20,
+      "initial_pdf_page_ranges": [
+        [
+          2,
+          11
+        ]
+      ],
+      "issuer": "Biodiversa+",
+      "publication_date": null,
+      "document_date": null,
+      "document_date_meaning": "edition date where known; otherwise issuer publication date",
+      "language": "en",
+      "url": "https://www.biodiversa.eu/wp-content/uploads/2026/09/BiodivFuture_Doc1_Announcement-opportunity.pdf",
+      "retrieved_on": "2026-11-10",
+      "library_path": "doc_library/FUND-023 - Biodiversa - BiodivFuture Call Announcement - 2026-2027.pdf"
+    },
+    {
+      "id": "KGB-SRC-0031",
+      "title": "BiodivFuture Funding Organisation Rules V6, 4 November 2026",
+      "kind": "pdf",
+      "filename": "FUND-024 - Biodiversa - BiodivFuture National Funding Rules - v6 - 2026-11-04.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-024 - Biodiversa - BiodivFuture National Funding Rules - v6 - 2026-11-04.pdf",
+      "sha256": "42754e7ca6ba999a21ab3b7a1a3baa5495d23c5ada65216e3029136c858dabd7",
+      "pdf_pages": 123,
+      "initial_pdf_page_ranges": [
+        [
+          93,
+          99
+        ]
+      ],
+      "issuer": "Biodiversa+",
+      "publication_date": "2026-11-04",
+      "document_date": "2026-11-04",
+      "document_date_meaning": "edition date where known; otherwise issuer publication date",
+      "language": "en",
+      "url": "https://www.biodiversa.eu/wp-content/uploads/2026/11/BiodivFuture_Funding-Organisation_Rules_V6_04-11-2026.pdf",
+      "retrieved_on": "2026-11-10",
+      "library_path": "doc_library/FUND-024 - Biodiversa - BiodivFuture National Funding Rules - v6 - 2026-11-04.pdf"
+    },
+    {
+      "id": "KGB-SRC-0032",
+      "title": "Euro-MED08 Terms of Reference: Thematic Test Projects",
+      "kind": "pdf",
+      "filename": "FUND-025 - Interreg Euro-MED - Call 8 Thematic Test Project Terms - 2026.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-025 - Interreg Euro-MED - Call 8 Thematic Test Project Terms - 2026.pdf",
+      "sha256": "ddbe3e7393085f766ea0c3b118aee8abbbae9fcce1f87038104ecd3c74ed1659",
+      "pdf_pages": 35,
+      "initial_pdf_page_ranges": [
+        [
+          19,
+          24
+        ]
+      ],
+      "issuer": "Interreg Euro-MED",
+      "publication_date": null,
+      "document_date": null,
+      "document_date_meaning": "edition date where known; otherwise issuer publication date",
+      "language": "en",
+      "url": "https://interreg-euro-med.eu/wp-content/uploads/documents/calls/call-8-thematic-projects/call-euro-med08_tors_en_final.pdf",
+      "retrieved_on": "2026-11-10",
+      "library_path": "doc_library/FUND-025 - Interreg Euro-MED - Call 8 Thematic Test Project Terms - 2026.pdf"
+    },
+    {
+      "id": "KGB-SRC-0033",
+      "title": "Water4All JTC 2026 Call Announcement",
+      "kind": "pdf",
+      "filename": "FUND-026 - Water4All - Sustainable Water Management Call - v3 - 2026-10-06.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-026 - Water4All - Sustainable Water Management Call - v3 - 2026-10-06.pdf",
+      "sha256": "4cd1c156419fda0c871d75c207ddf37461873eadc1138352643a8d4eadc64428",
+      "pdf_pages": 37,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          18,
+          22
+        ]
+      ],
+      "issuer": "Water4All",
+      "publication_date": null,
+      "document_date": "2026-10-06",
+      "document_date_meaning": "edition date where known; otherwise issuer publication date",
+      "language": "en",
+      "url": "https://www.water4all-partnership.eu/sites/default/files/2026-09/Call_Announcement_Water4All_JTC2026_20260908.pdf",
+      "retrieved_on": "2026-11-10",
+      "library_path": "doc_library/FUND-026 - Water4All - Sustainable Water Management Call - v3 - 2026-10-06.pdf"
+    },
+    {
+      "id": "KGB-SRC-0034",
+      "title": "Water4All JTC 2026 National/Regional Regulations",
+      "kind": "pdf",
+      "filename": "FUND-027 - Water4All - National Funding Regulations - v8 - 2026-10-28.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-027 - Water4All - National Funding Regulations - v8 - 2026-10-28.pdf",
+      "sha256": "915b4299b2106d8ae065e8f96b2d437fa9d753163b52d176c1a431ca8382a9be",
+      "pdf_pages": 72,
+      "initial_pdf_page_ranges": [
+        [
+          56,
+          60
+        ]
+      ],
+      "issuer": "Water4All / participating national funders",
+      "publication_date": null,
+      "document_date": "2026-10-28",
+      "document_date_meaning": "edition date where known; otherwise issuer publication date",
+      "language": "en",
+      "url": "https://www.water4all-partnership.eu/sites/default/files/2026-06/National_Regulations-Water4All_JTC2026.pdf",
+      "retrieved_on": "2026-11-10",
+      "library_path": "doc_library/FUND-027 - Water4All - National Funding Regulations - v8 - 2026-10-28.pdf"
+    }
+  ],
+  "topics": [
+    {
+      "id": "fb-paeas-dc-call-2026",
+      "label": "PAEAS / climate-disinformation call · 2026",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Fundación Biodiversidad competitive national call for scientific knowledge, innovation and evidence in environmental education and climate-disinformation research under PAEAS 2026–2032. Line A concerns environmental education; Line B climate disinformation. Total €7m, €3.5m per line; up to €200,000 requested grant per project and 80% of eligible project cost. The call states 10 November 2026 inclusive as the application date limit; exact cutoff time/timezone is unverified. This dated call is a preparation lead for a suitable established organisation, not a personal planting subsidy or a confirmed award. Applicant identity, land access and readiness for Algarrobos remain unconfirmed.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "Purpose, lines and national scope",
+          "locator": "Artículo 1"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "Beneficiary organisations and call allocation",
+          "locator": "Artículos 2–3"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "Grant cap, rate and execution period",
+          "locator": "Artículo 3.2–5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "Application deadline: inclusive date",
+          "locator": "Artículo 8"
+        }
+      ],
+      "aspects": {
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare; conditional urgency only for an already eligible organisation with a ready proposal",
+        "route_context": [
+          "ES-FB-BIODIVERSITY-FORESTS",
+          "LEADER-AL20-3.3",
+          "EU-ERASMUS-EDUCATION"
+        ]
+      }
+    },
+    {
+      "id": "paeas-line-a",
+      "label": "Line A · environmental education",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Supports evidence-building environmental education under PAEAS 2026–2032. Applicant classes: Spanish registered nonprofit legal entities, public research organisations, public universities and professional colleges. Activities can include evaluation of educational effectiveness, citizen-science learning and nature-based educational climate refuges. An ordinary company, individual, municipality or generic restoration project is not thereby an eligible applicant; verify the exact institutional category and governing bases.",
+      "aliases": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "Line A applicant categories",
+          "locator": "Artículo 2.a"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "Education research and illustrative activities",
+          "locator": "Artículo 4.a"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "Educational evaluation and participation",
+          "locator": "Artículo 4.a"
+        }
+      ]
+    },
+    {
+      "id": "paeas-line-b",
+      "label": "Line B · climate-disinformation research",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Multidisciplinary research on climate disinformation and its educational/social response. Restricted by this call to public research organisations and public universities, unlike Line A. No presumed nonprofit or business route.",
+      "aliases": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "Line B: public research and universities",
+          "locator": "Artículo 2.b"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "Climate-disinformation activities",
+          "locator": "Artículo 4.b"
+        }
+      ]
+    },
+    {
+      "id": "paeas-selection-2026",
+      "label": "PAEAS · assessment and selection gates",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Specific criteria total 50: technical 20, economic 5, environmental/social 25. Strategic criteria total 50. The strategic score must exceed 25; 25 exactly does not pass this additional call gate. The general thresholds and tie-breakers also depend on article 17 of the governing bases, not fully reviewed here. This is a source rule, not an executable or calculated project score; provisional proposals confer no award right.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 12,
+          "label": "Specific scoring table and provisional award limitation",
+          "locator": "Artículos 9.8 y 10.1"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 13,
+          "label": "Strategic scoring and strict minimum",
+          "locator": "Artículo 10.1–3"
+        }
+      ],
+      "aspects": {
+        "specific_max": 50,
+        "technical_subcriteria_max": [
+          4,
+          4,
+          3,
+          2,
+          2,
+          5
+        ],
+        "economic_max": 5,
+        "environment_social_subcriteria_max": [
+          6,
+          6,
+          6,
+          5,
+          2
+        ],
+        "strategic_subcriteria_max": [
+          12,
+          6,
+          6,
+          5,
+          7,
+          6,
+          8
+        ],
+        "strategic_gate": "score > 25; governing-bases thresholds remain additional"
+      }
+    },
+    {
+      "id": "paeas-costs-cashflow-2026",
+      "label": "PAEAS · eligible costs and cash flow",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Maximum grant 80% of eligible project cost and €200,000; the remainder must be financed. Main payment follows justification. An advance up to 50% of the awarded grant may be requested; guarantee rules have exemptions, including qualifying nonprofits carrying out environmental programmes. Indirect costs capped at 10% of direct costs. Depreciation/rental may qualify; direct purchase, construction, rehabilitation or improvement of inventoriable assets and land/property purchase are excluded. Recoverable VAT is excluded. Justify the entire project cost, not only the subsidy, within two months of project completion. Exact cost eligibility and guarantee status need institutional review.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "Maximum grant and funding share",
+          "locator": "Artículo 3"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 14,
+          "label": "Advance ceiling",
+          "locator": "Artículo 14"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 15,
+          "label": "Guarantee exemptions",
+          "locator": "Artículo 14.7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "Capital, property and audit costs",
+          "locator": "Artículo 15"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "Indirect costs and payment conditions",
+          "locator": "Artículos 15–16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "Full-project justification and deadline",
+          "locator": "Artículo 16"
+        }
+      ]
+    },
+    {
+      "id": "paeas-submission-2026",
+      "label": "PAEAS · complete and signed submission",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "One proposal per entity per line, with specific official logical-framework, budget, human-resources and schedule templates. Missing/incomplete core templates can be non-remediable. The guide warns that the form does not save drafts or resume sessions. Final signing submits automatically; obtain and preserve the receipt. The guide is procedural support; its article numbering does not override the actual call. No application was submitted by this intake.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "Application identity and prescribed documents",
+          "locator": "Artículo 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "Non-remediable core documents",
+          "locator": "Artículo 7.5"
+        },
+        {
+          "source_id": "KGB-SRC-0029",
+          "page": 5,
+          "label": "No saved or resumed form sessions",
+          "locator": "No saved or resumed form sessions"
+        },
+        {
+          "source_id": "KGB-SRC-0029",
+          "page": 15,
+          "label": "Mandatory technical templates",
+          "locator": "Mandatory technical templates"
+        },
+        {
+          "source_id": "KGB-SRC-0029",
+          "page": 17,
+          "label": "Sign, submit and download receipt",
+          "locator": "Sign, submit and download receipt"
+        }
+      ]
+    },
+    {
+      "id": "biodiversa-partnership",
+      "label": "Biodiversa+",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Transnational biodiversity-research partnership. Its individual calls and each participating funder’s national rules determine access; a programme overview does not establish an open grant.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 4,
+          "label": "Biodiversa research expectations",
+          "locator": "Biodiversa research expectations"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "Participating funders and consortium eligibility",
+          "locator": "Participating funders and consortium eligibility"
+        }
+      ]
+    },
+    {
+      "id": "biodivfuture-2026",
+      "label": "BiodivFuture · Call 2026–2027",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Research call on novel ecosystems and resilient futures, not a general implementation grant for restoring a private site. Themes A ecosystem functioning, B pathways and C benefits/equity. Supports research, experimentation, pilots and evaluation; intensive simplified production systems themselves are outside the stated scope. Mandatory preproposal 10 November 2026 12:00 CET; invited full proposals 16 April 2027 12:00 CEST. At least three eligible partners from three participating countries and three funding organisations, including two EU/associated countries. No prepared consortium is confirmed. The Spanish gate must be checked before thematic fit is promoted.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 3,
+          "label": "Scope and production-system exclusions",
+          "locator": "Scope and production-system exclusions"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 4,
+          "label": "Research and evaluation rather than direct implementation",
+          "locator": "Research and evaluation rather than direct implementation"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 5,
+          "label": "Themes A and B",
+          "locator": "Themes A and B"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 6,
+          "label": "Theme C",
+          "locator": "Theme C"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "Mandatory two-stage submission",
+          "locator": "Mandatory two-stage submission"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "Call timetable with time zones",
+          "locator": "Call timetable with time zones"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "Minimum transnational consortium",
+          "locator": "Minimum transnational consortium"
+        }
+      ],
+      "aspects": {
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare; mandatory first-stage deadline is not a later fresh-entry opportunity",
+        "route_context": [
+          "EU-BIODIVERSA"
+        ]
+      }
+    },
+    {
+      "id": "biodivfuture-spain-gate",
+      "label": "BiodivFuture · Spain AEI / FB conditions",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "V6 national rules, 4 November 2026: AEI covers all environments but Spanish AEI-funded groups may participate only in proposals addressing A/B; Theme C is excluded even when combined with A/B. FB covers marine/coastal environments on A/B/C, so an inland dryland proposal cannot assume FB funding. Beneficiaries are nonprofit research organisations in Spain with previous AEI competitive funding, subject to national PCI/PI rules. One AEI/FB applicant per proposal; two only if one coordinates. National application is due within one week after preproposal submission. Late addition at stage two is normally not allowed, with a narrow low-participation exception requiring funder confirmation. Exact budget-cap graphic and underlying PCI documents remain pending.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "Spanish-applicant count and experimental supplement",
+          "locator": "Spanish-applicant count and experimental supplement"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "AEI theme and FB environment restrictions",
+          "locator": "AEI theme and FB environment restrictions"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "Research institutions and prior AEI funding",
+          "locator": "Research institutions and prior AEI funding"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "National application within one week",
+          "locator": "National application within one week"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "Normally no late Spanish partner addition",
+          "locator": "Normally no late Spanish partner addition"
+        }
+      ]
+    },
+    {
+      "id": "water4all-partnership",
+      "label": "Water4All",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Research and innovation partnership pooling national funding for water security under Horizon Europe. Its joint calls seek transferable knowledge and solutions, with national funding rules; it is distinct from water-authority procurement or a standing parcel-restoration grant.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 7,
+          "label": "Partnership, water security and joint calls",
+          "locator": "Partnership, water security and joint calls"
+        }
+      ]
+    },
+    {
+      "id": "water4all-jtc-2026",
+      "label": "Water4All · Sustainable Water Management 2026",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Joint transnational R&I call. Topic 2 explicitly includes nature-based groundwater, retention, infiltration and river-basin restoration at catchment scale; demonstration is welcomed. Other topics concern integrated monitoring, smart infrastructure and governance. Mandatory preproposal 10 November 2026 15:00 CET; full stage 6 April 2027 15:00 CEST is for invited entrants and remains timetable-dependent. Minimum three funded partners/three countries and two independent EU/associated-country recipients. General maximum seven partners including at most one self-funded; the call allows eight if an undersubscribed-funder partner is included. Duration 36 months. No eligible applicant or ready consortium is confirmed for Algarrobos.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 8,
+          "label": "Water-management R&I objectives",
+          "locator": "Water-management R&I objectives"
+        },
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 10,
+          "label": "Topic 2: nature-based catchment and groundwater research",
+          "locator": "Topic 2: nature-based catchment and groundwater research"
+        },
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 18,
+          "label": "Mandatory first stage and dates",
+          "locator": "Mandatory first stage and dates"
+        },
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 20,
+          "label": "Consortium eligibility and partner ceiling exception",
+          "locator": "Consortium eligibility and partner ceiling exception"
+        },
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 21,
+          "label": "Self-funding, balanced effort and duration",
+          "locator": "Self-funding, balanced effort and duration"
+        }
+      ],
+      "aspects": {
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare; only ready eligible consortia could use the imminent first-stage deadline",
+        "route_context": [
+          "ES-WATER-CATCHMENT",
+          "EU-HORIZON-CL6-BIODIV",
+          "ES-CDTI-ENISA-TECH"
+        ]
+      }
+    },
+    {
+      "id": "water4all-spain-aei",
+      "label": "Water4All · Spain AEI research route",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Spanish nonprofit research organisations, with prior AEI competitive funding at least once since 2015, subject to PCI and PI requirements. Main topic must be 2, 3 or 4 and Spanish activities only those topics. Other partners may address Topic 1 to a minor extent, no more than 30% of total content; the Spanish AEI group must not support those Topic 1 activities. One AEI applicant per proposal, or two if one coordinates. National AEI application within one week of preproposal submission; failing it breaches eligibility. Exact cap graphics and linked PCI rules still require review.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "AEI topics, institutions and previous-funding requirement",
+          "locator": "AEI topics, institutions and previous-funding requirement"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Applicant count, budgets and national submission",
+          "locator": "Applicant count, budgets and national submission"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "label": "National application attachments and consequence",
+          "locator": "National application attachments and consequence"
+        }
+      ]
+    },
+    {
+      "id": "water4all-spain-cdti",
+      "label": "Water4All · Spain CDTI company grant route",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Call-specific route for for-profit companies established and conducting R&D in Spain; universities and nonprofits are not eligible for this funder. Topics 1–4, regular JTC only (not ECR). Technology-based industrial research/experimental development at TRL4–7 implemented in Spain; nontechnological business-model activities excluded. Minimum financeable budget €150,000 (about €200,000 advised). CDTI finances up to 70% through grants; this differs from its general partially repayable PID instrument. Company must also apply through CDTI by the same end date as the international first phase; missing that national process makes it ineligible. National funding commitment €400,000 is a call allocation, not an individual cap. Exact state-aid rate and applicant fit remain subject to CDTI review.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "CDTI companies, topics, costs and TRL gate",
+          "locator": "CDTI companies, topics, costs and TRL gate"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "€150,000 minimum, grant rate and national deadline",
+          "locator": "€150,000 minimum, grant rate and national deadline"
+        }
+      ]
+    },
+    {
+      "id": "interreg-euromed",
+      "label": "Interreg Euro-MED",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Mediterranean transnational cooperation programme. The dated thematic call below has specific partnership, public-lead and territorial readiness requirements; geography alone is not evidence of an award or a responsible provincial intermediary.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Call financial allocation and partnership",
+          "locator": "Call financial allocation and partnership"
+        }
+      ]
+    },
+    {
+      "id": "euromed-call8-2026",
+      "label": "Euro-MED Call 8 · thematic Test projects",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Territorial-resilience pilot call: total allocation about €20m (€16m Interreg plus €4m national co-financing), maximum total project budget €2m and maximum 24 months with no duration extension. Written application due 13 November 2026 13:00 Brussels time (CET); mandatory annexes due 27 November 2026 13:00 Brussels time. Fixed activities 1 June 2027–31 May 2029 include closure. These amounts are total budgets, not a €2m individual grant promise. Only a mature partnership could realistically use this call; none is confirmed for this project.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Allocation, total project ceiling and duration",
+          "locator": "Allocation, total project ceiling and duration"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 21,
+          "label": "Fixed activity period and call calendar",
+          "locator": "Fixed activity period and call calendar"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 23,
+          "label": "Written application deadline and time",
+          "locator": "Written application deadline and time"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 24,
+          "label": "Annex deadline and required evidence",
+          "locator": "Annex deadline and required evidence"
+        }
+      ],
+      "aspects": {
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare; conditional action only through an existing mature consortium",
+        "route_context": [
+          "EU-INTERREG-EUROMED"
+        ]
+      }
+    },
+    {
+      "id": "euromed-call8-readiness",
+      "label": "Euro-MED Call 8 · consortium and site readiness",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "At least five countries within the cooperation area. Lead must be a public body or body governed by public law; partners need competence and implementation capacity. Pilot partners need land/facility ownership or agreement. Associated partners do not count toward the minimum partnership. Annexes require signed declarations, relevant landowner agreement and a feasible procurement calendar; investments bring additional obligations. Programme manual, territorial details, partner rates and payment timing require further review before an eligibility or cash-flow decision.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Minimum countries, lead and land capacity",
+          "locator": "Minimum countries, lead and land capacity"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 21,
+          "label": "Associated partners do not count",
+          "locator": "Associated partners do not count"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 24,
+          "label": "Landowner agreements and procurement calendar",
+          "locator": "Landowner agreements and procurement calendar"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "gh26-paeas-guarantee-correction",
+      "label": "Advance guarantees have exemptions",
+      "text": "The scan’s shorthand “advance with guarantee” omitted the exemptions expressly retained in article 14.7, including nonprofits carrying out environmental programmes. The accepted knowledge records the conditional exemption, not a universal guarantee requirement or a finding that this user qualifies.",
+      "topic_ids": [
+        "fb-paeas-dc-call-2026",
+        "paeas-costs-cashflow-2026"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 14,
+          "label": "Advance-payment conditions",
+          "locator": "Artículo 14"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 15,
+          "label": "Exemption from advance guarantees",
+          "locator": "Artículo 14.7"
+        }
+      ]
+    },
+    {
+      "id": "gh26-biodiv-fb-payment",
+      "label": "BiodivFuture · FB payment differs from general AEI route",
+      "text": "The FB column states payment on completion, possible 40% advance before the mid-term report (a guarantee may be necessary), and default project start 1 April 2028. These conditions apply to that funding route, not automatically to AEI or the separate PAEAS call.",
+      "topic_ids": [
+        "biodivfuture-2026",
+        "biodivfuture-spain-gate"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "FB start date, completion payment and possible advance",
+          "locator": "FB start date, completion payment and possible advance"
+        }
+      ]
+    },
+    {
+      "id": "gh26-water4all-system-scale",
+      "label": "Research fit concerns catchment-scale evidence",
+      "text": "Topic 2 welcomes demonstration and explicitly seeks evidence about both benefits and negative impacts of nature-based measures on recharge, infiltration, retention, groundwater quality and river basins. A small dryland site could only be a conditional research contribution within a suitable consortium; the call does not establish effectiveness of any local water-harvesting method.",
+      "topic_ids": [
+        "water4all-jtc-2026",
+        "water-harvesting",
+        "restoration"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 10,
+          "label": "Nature-based approaches, MAR and river-basin restoration",
+          "locator": "Nature-based approaches, MAR and river-basin restoration"
+        },
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 11,
+          "label": "Integrated assessment, valuation and stakeholder models",
+          "locator": "Integrated assessment, valuation and stakeholder models"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "gh26:fundacion-biodiversidad:fb-paeas-dc-call-2026",
+      "source": "fundacion-biodiversidad",
+      "target": "fb-paeas-dc-call-2026",
+      "label": "issues",
+      "explanation": "Fundación Biodiversidad issues this dated competition.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 1,
+          "label": "Issuing foundation and call title",
+          "locator": "Issuing foundation and call title"
+        }
+      ]
+    },
+    {
+      "id": "gh26:fb-paeas-dc-call-2026:paeas-line-a",
+      "source": "fb-paeas-dc-call-2026",
+      "target": "paeas-line-a",
+      "label": "offers line",
+      "explanation": "These are the specific 2026 call lines or conditions; they do not amend other grant routes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "Line A applicant categories",
+          "locator": "Artículo 2.a"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "Education research and illustrative activities",
+          "locator": "Artículo 4.a"
+        }
+      ]
+    },
+    {
+      "id": "gh26:fb-paeas-dc-call-2026:paeas-line-b",
+      "source": "fb-paeas-dc-call-2026",
+      "target": "paeas-line-b",
+      "label": "offers line",
+      "explanation": "These are the specific 2026 call lines or conditions; they do not amend other grant routes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "Line B: public research and universities",
+          "locator": "Artículo 2.b"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "Climate-disinformation activities",
+          "locator": "Artículo 4.b"
+        }
+      ]
+    },
+    {
+      "id": "gh26:fb-paeas-dc-call-2026:paeas-selection-2026",
+      "source": "fb-paeas-dc-call-2026",
+      "target": "paeas-selection-2026",
+      "label": "has call conditions",
+      "explanation": "These are the specific 2026 call lines or conditions; they do not amend other grant routes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 12,
+          "label": "Specific scoring table and provisional award limitation",
+          "locator": "Artículos 9.8 y 10.1"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 13,
+          "label": "Strategic scoring and strict minimum",
+          "locator": "Artículo 10.1–3"
+        }
+      ]
+    },
+    {
+      "id": "gh26:fb-paeas-dc-call-2026:paeas-costs-cashflow-2026",
+      "source": "fb-paeas-dc-call-2026",
+      "target": "paeas-costs-cashflow-2026",
+      "label": "has call conditions",
+      "explanation": "These are the specific 2026 call lines or conditions; they do not amend other grant routes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "Maximum grant and funding share",
+          "locator": "Artículo 3"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 14,
+          "label": "Advance ceiling",
+          "locator": "Artículo 14"
+        }
+      ]
+    },
+    {
+      "id": "gh26:fb-paeas-dc-call-2026:paeas-submission-2026",
+      "source": "fb-paeas-dc-call-2026",
+      "target": "paeas-submission-2026",
+      "label": "has call conditions",
+      "explanation": "These are the specific 2026 call lines or conditions; they do not amend other grant routes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "Application identity and prescribed documents",
+          "locator": "Artículo 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "Non-remediable core documents",
+          "locator": "Artículo 7.5"
+        }
+      ]
+    },
+    {
+      "id": "gh26:paeas-line-a:rural-awareness",
+      "source": "paeas-line-a",
+      "target": "rural-awareness",
+      "label": "offers a possible educational connection",
+      "explanation": "Curated connection: the call supports environmental education and evidence of its effectiveness. Existing rural-awareness activity is thematically relevant, but its LEADER conditions do not transfer and applicant/project fit is unconfirmed.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "Environmental education research activities",
+          "locator": "Environmental education research activities"
+        }
+      ]
+    },
+    {
+      "id": "gh26:biodiversa-partnership:biodivfuture-2026",
+      "source": "biodiversa-partnership",
+      "target": "biodivfuture-2026",
+      "label": "has dated call",
+      "explanation": "The programme’s 2026–2027 BiodivFuture call has mandatory first-stage entry and national eligibility gates.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture call calendar",
+          "locator": "BiodivFuture call calendar"
+        }
+      ]
+    },
+    {
+      "id": "gh26:biodivfuture-2026:biodivfuture-spain-gate",
+      "source": "biodivfuture-2026",
+      "target": "biodivfuture-spain-gate",
+      "label": "requires national eligibility",
+      "explanation": "General thematic fit does not bypass AEI/FB national restrictions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "Spain: theme and environment restrictions",
+          "locator": "Spain: theme and environment restrictions"
+        }
+      ]
+    },
+    {
+      "id": "gh26:biodivfuture-2026:monitoring",
+      "source": "biodivfuture-2026",
+      "target": "monitoring",
+      "label": "invites research using monitoring",
+      "explanation": "The call welcomes remote sensing, eDNA and other tools for detecting, understanding, monitoring and predicting ecosystem change. This is a research opportunity, not evidence of a successful local trial.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 4,
+          "label": "Monitoring, indicators and novel ecosystem research",
+          "locator": "Monitoring, indicators and novel ecosystem research"
+        }
+      ]
+    },
+    {
+      "id": "gh26:water4all-partnership:water4all-jtc-2026",
+      "source": "water4all-partnership",
+      "target": "water4all-jtc-2026",
+      "label": "has dated call",
+      "explanation": "The sustainable-water-management 2026 JTC belongs to Water4All.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 7,
+          "label": "Water4All joint calls",
+          "locator": "Water4All joint calls"
+        }
+      ]
+    },
+    {
+      "id": "gh26:water4all-jtc-2026:water4all-spain-aei",
+      "source": "water4all-jtc-2026",
+      "target": "water4all-spain-aei",
+      "label": "requires appropriate national route",
+      "explanation": "Different institution, topic, finance and deadline gates apply to Spanish research bodies and companies.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "AEI topics, institutions and previous-funding requirement",
+          "locator": "AEI topics, institutions and previous-funding requirement"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Applicant count, budgets and national submission",
+          "locator": "Applicant count, budgets and national submission"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "label": "National application attachments and consequence",
+          "locator": "National application attachments and consequence"
+        }
+      ]
+    },
+    {
+      "id": "gh26:water4all-jtc-2026:water4all-spain-cdti",
+      "source": "water4all-jtc-2026",
+      "target": "water4all-spain-cdti",
+      "label": "requires appropriate national route",
+      "explanation": "Different institution, topic, finance and deadline gates apply to Spanish research bodies and companies.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "CDTI companies, topics, costs and TRL gate",
+          "locator": "CDTI companies, topics, costs and TRL gate"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "€150,000 minimum, grant rate and national deadline",
+          "locator": "€150,000 minimum, grant rate and national deadline"
+        }
+      ]
+    },
+    {
+      "id": "gh26:water4all-jtc-2026:water-harvesting",
+      "source": "water4all-jtc-2026",
+      "target": "water-harvesting",
+      "label": "offers a possible research connection",
+      "explanation": "Curated connection: catchment-scale retention, infiltration and restoration research overlaps existing water-harvesting knowledge. No method efficacy, applicant eligibility or project-scale fit is inferred.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 10,
+          "label": "Retention, recharge and river-basin research",
+          "locator": "Retention, recharge and river-basin research"
+        }
+      ]
+    },
+    {
+      "id": "gh26:interreg-euromed:euromed-call8-2026",
+      "source": "interreg-euromed",
+      "target": "euromed-call8-2026",
+      "label": "has dated call",
+      "explanation": "Call8 is a specific thematic Test competition under Euro-MED.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Call8 technical data sheet",
+          "locator": "Call8 technical data sheet"
+        }
+      ]
+    },
+    {
+      "id": "gh26:euromed-call8-2026:euromed-call8-readiness",
+      "source": "euromed-call8-2026",
+      "target": "euromed-call8-readiness",
+      "label": "requires",
+      "explanation": "These consortium and site-readiness requirements precede an application.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Call8 partnership structure",
+          "locator": "Call8 partnership structure"
+        }
+      ]
+    },
+    {
+      "id": "gh26:euromed-call8-2026:demonstration",
+      "source": "euromed-call8-2026",
+      "target": "demonstration",
+      "label": "supports mature pilot activity",
+      "explanation": "The terms require capability to implement pilot activities; the generic demonstration topic remains distinct from this specific funding competition.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Pilot implementation capacity",
+          "locator": "Pilot implementation capacity"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 1,
+      "status": "inspected",
+      "note": "Title and contents; national education and climate-disinformation competition."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 4,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 5,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 6,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 7,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 8,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 9,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 10,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 11,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 12,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 13,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 14,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 15,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 16,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 17,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 18,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 19,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 20,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 21,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 22,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0028",
+      "page": 23,
+      "status": "inspected",
+      "note": "Reviewed call provisions, articles 1–22: purpose, applicants, costs, selection, payment, reporting and obligations; scoring table at PDF12–13 also visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0029",
+      "page": 5,
+      "status": "inspected",
+      "note": "Single-session form: no saved drafts or resumed sessions."
+    },
+    {
+      "source_id": "KGB-SRC-0029",
+      "page": 14,
+      "status": "inspected",
+      "note": "Administrative attachments and representation instructions; article-number mismatch reconciled to the call."
+    },
+    {
+      "source_id": "KGB-SRC-0029",
+      "page": 15,
+      "status": "inspected",
+      "note": "Mandatory logical framework, budget, HR, schedule and application declaration."
+    },
+    {
+      "source_id": "KGB-SRC-0029",
+      "page": 17,
+      "status": "inspected",
+      "note": "Final signing submits the application; receipt and no subsequent editing."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 2,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 3,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 4,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 5,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 6,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 7,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 8,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 9,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 10,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0030",
+      "page": 11,
+      "status": "inspected",
+      "note": "Selected passage review: research purpose/themes, mandatory two-stage entry, dates and transnational consortium eligibility; PDF positions differ from printed document pagination."
+    },
+    {
+      "source_id": "KGB-SRC-0031",
+      "page": 93,
+      "status": "inspected",
+      "note": "Spain AEI/FB eligibility, theme/environment gates, national filing and payment conditions. Budget-cap graphic on PDF94 not interpreted; exact caps remain pending."
+    },
+    {
+      "source_id": "KGB-SRC-0031",
+      "page": 94,
+      "status": "inspected",
+      "note": "Spain AEI/FB eligibility, theme/environment gates, national filing and payment conditions. Budget-cap graphic on PDF94 not interpreted; exact caps remain pending."
+    },
+    {
+      "source_id": "KGB-SRC-0031",
+      "page": 95,
+      "status": "inspected",
+      "note": "Spain AEI/FB eligibility, theme/environment gates, national filing and payment conditions. Budget-cap graphic on PDF94 not interpreted; exact caps remain pending."
+    },
+    {
+      "source_id": "KGB-SRC-0031",
+      "page": 96,
+      "status": "inspected",
+      "note": "Spain AEI/FB eligibility, theme/environment gates, national filing and payment conditions. Budget-cap graphic on PDF94 not interpreted; exact caps remain pending."
+    },
+    {
+      "source_id": "KGB-SRC-0031",
+      "page": 97,
+      "status": "inspected",
+      "note": "Spain AEI/FB eligibility, theme/environment gates, national filing and payment conditions. Budget-cap graphic on PDF94 not interpreted; exact caps remain pending."
+    },
+    {
+      "source_id": "KGB-SRC-0031",
+      "page": 98,
+      "status": "inspected",
+      "note": "Spain AEI/FB eligibility, theme/environment gates, national filing and payment conditions. Budget-cap graphic on PDF94 not interpreted; exact caps remain pending."
+    },
+    {
+      "source_id": "KGB-SRC-0031",
+      "page": 99,
+      "status": "inspected",
+      "note": "Spain AEI/FB eligibility, theme/environment gates, national filing and payment conditions. Budget-cap graphic on PDF94 not interpreted; exact caps remain pending."
+    },
+    {
+      "source_id": "KGB-SRC-0032",
+      "page": 19,
+      "status": "inspected",
+      "note": "Technical data sheet, partnership/readiness, dates, written application and mandatory annexes; PDF20 visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0032",
+      "page": 20,
+      "status": "inspected",
+      "note": "Technical data sheet, partnership/readiness, dates, written application and mandatory annexes; PDF20 visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0032",
+      "page": 21,
+      "status": "inspected",
+      "note": "Technical data sheet, partnership/readiness, dates, written application and mandatory annexes; PDF20 visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0032",
+      "page": 22,
+      "status": "inspected",
+      "note": "Technical data sheet, partnership/readiness, dates, written application and mandatory annexes; PDF20 visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0032",
+      "page": 23,
+      "status": "inspected",
+      "note": "Technical data sheet, partnership/readiness, dates, written application and mandatory annexes; PDF20 visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0032",
+      "page": 24,
+      "status": "inspected",
+      "note": "Technical data sheet, partnership/readiness, dates, written application and mandatory annexes; PDF20 visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 1,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 7,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 8,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 9,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 10,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 11,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 12,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 18,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 19,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 20,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 21,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0033",
+      "page": 22,
+      "status": "inspected",
+      "note": "Selected objectives, nature-based catchment research, application dates or consortium eligibility passage reviewed; other sections are not implied reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0034",
+      "page": 56,
+      "status": "inspected",
+      "note": "Spain national annex: AEI nonprofit research and theme gate or CDTI technological-company grant route; budget graphics on PDF57 not interpreted."
+    },
+    {
+      "source_id": "KGB-SRC-0034",
+      "page": 57,
+      "status": "inspected",
+      "note": "Spain national annex: AEI nonprofit research and theme gate or CDTI technological-company grant route; budget graphics on PDF57 not interpreted."
+    },
+    {
+      "source_id": "KGB-SRC-0034",
+      "page": 58,
+      "status": "inspected",
+      "note": "Spain national annex: AEI nonprofit research and theme gate or CDTI technological-company grant route; budget graphics on PDF57 not interpreted."
+    },
+    {
+      "source_id": "KGB-SRC-0034",
+      "page": 59,
+      "status": "inspected",
+      "note": "Spain national annex: AEI nonprofit research and theme gate or CDTI technological-company grant route; budget graphics on PDF57 not interpreted."
+    },
+    {
+      "source_id": "KGB-SRC-0034",
+      "page": 60,
+      "status": "inspected",
+      "note": "Spain national annex: AEI nonprofit research and theme gate or CDTI technological-company grant route; budget graphics on PDF57 not interpreted."
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:funding-biodiversidad",
+      "label": "Fundación Biodiversidad · Spain",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "fundacion-biodiversidad",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "donana-restoration-grants-2025",
+          "role": "primary"
+        },
+        {
+          "topic_id": "fb-paeas-dc-call-2026",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Recorded grant body for the Doñana 2025 restoration competition. No EU, provincial or local intermediary has been inferred.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 1,
+          "locator": "Título; antecedentes; Primero",
+          "label": "Fundación Biodiversidad: Doñana 2025 call and provisional proposal"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 1,
+          "label": "Additional national education call",
+          "locator": "Additional national education call"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:paeas-call-2026",
+      "label": "PAEAS / climate disinformation · Call 2026",
+      "parent_id": "browse:funding-biodiversidad",
+      "anchor_topic_id": "fb-paeas-dc-call-2026",
+      "members": [
+        {
+          "topic_id": "paeas-line-a",
+          "role": "primary"
+        },
+        {
+          "topic_id": "paeas-line-b",
+          "role": "primary"
+        },
+        {
+          "topic_id": "paeas-selection-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "paeas-costs-cashflow-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "paeas-submission-2026",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Read the two applicant routes before the assessment, cost and submission conditions. The grant supports knowledge/education research; it does not certify local eligibility.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "Purpose and two funding lines",
+          "locator": "Purpose and two funding lines"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:biodiversa",
+      "label": "Biodiversa+",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "biodiversa-partnership",
+      "members": [
+        {
+          "topic_id": "biodivfuture-2026",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "A research programme and its dated calls; open the call to inspect national conditions.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "Transnational research and national funding",
+          "locator": "Transnational research and national funding"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:biodivfuture-2026",
+      "label": "BiodivFuture · Call 2026–2027",
+      "parent_id": "browse:biodiversa",
+      "anchor_topic_id": "biodivfuture-2026",
+      "members": [
+        {
+          "topic_id": "biodivfuture-spain-gate",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Spanish theme, institution, national submission and payment gates remain distinct from general consortium criteria.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "Spain national eligibility",
+          "locator": "Spain national eligibility"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:water4all",
+      "label": "Water4All",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "water4all-partnership",
+      "members": [
+        {
+          "topic_id": "water4all-jtc-2026",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Joint research calls, separate from direct grants for landowners and water-authority contracts.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 7,
+          "label": "Programme and joint R&I calls",
+          "locator": "Programme and joint R&I calls"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:water4all-2026",
+      "label": "Sustainable Water Management · Call 2026",
+      "parent_id": "browse:water4all",
+      "anchor_topic_id": "water4all-jtc-2026",
+      "members": [
+        {
+          "topic_id": "water4all-spain-aei",
+          "role": "primary"
+        },
+        {
+          "topic_id": "water4all-spain-cdti",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Choose the documented national applicant route before treating scientific relevance as funding access.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "Spain AEI",
+          "locator": "Spain AEI"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "Spain CDTI",
+          "locator": "Spain CDTI"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:euromed",
+      "label": "Interreg Euro-MED",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "interreg-euromed",
+      "members": [
+        {
+          "topic_id": "euromed-call8-2026",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "A genuine programme branch; no unsupported country/province financing levels are inserted.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Programme funds and call structure",
+          "locator": "Programme funds and call structure"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:euromed-call8",
+      "label": "Thematic Test projects · Call 8",
+      "parent_id": "browse:euromed",
+      "anchor_topic_id": "euromed-call8-2026",
+      "members": [
+        {
+          "topic_id": "euromed-call8-readiness",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Read the five-country/public-lead and site-readiness gates before considering local participation.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Partnership structure and capacity",
+          "locator": "Partnership structure and capacity"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy"
+    },
+    {
+      "id": "browse:funding-structure",
+      "label": "Funding structure",
+      "parent_id": "funding:programmes",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "feader",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nextgenerationeu",
+          "role": "primary"
+        },
+        {
+          "topic_id": "fundacion-biodiversidad",
+          "role": "primary"
+        },
+        {
+          "topic_id": "european-commission",
+          "role": "primary"
+        },
+        {
+          "topic_id": "biodiversa-partnership",
+          "role": "primary"
+        },
+        {
+          "topic_id": "water4all-partnership",
+          "role": "primary"
+        },
+        {
+          "topic_id": "interreg-euromed",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Browse the recorded funds, national frameworks, responsible authorities and local implementation. These folders explain organization without turning geographic containment into a funding responsibility. Nature credits remain prospective finance; grants, proposals and procurement retain their recorded status.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Preámbulo: FEADER, PEPAC e intervención 7119 LEADER",
+          "label": "LEADER: FEADER, Spain CAP plan and local development"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "locator": "4. Financiación y anualidades",
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing"
+        },
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 1,
+          "locator": "Título; antecedentes; Primero",
+          "label": "Fundación Biodiversidad: Doñana 2025 call and provisional proposal"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 1,
+          "locator": "COM(2025) 374 final; 7.7.2025",
+          "label": "European Commission: nature-credit roadmap communication"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "Biodiversa transnational funders",
+          "locator": "Biodiversa transnational funders"
+        },
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 7,
+          "label": "Water4All partnership",
+          "locator": "Water4All partnership"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Euro-MED call structure",
+          "locator": "Euro-MED call structure"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "gh26-paeas-bases-gap",
+      "text": "PAEAS governing Order TED/818/2021 article17 thresholds/tie-breakers and exact electronic closing time/timezone remain unreviewed. Obtain the official bases and current sede notice before a submission/score decision.",
+      "topic_ids": [
+        "fb-paeas-dc-call-2026",
+        "paeas-selection-2026"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 13,
+          "label": "Additional strategic gate and reference to bases",
+          "locator": "Additional strategic gate and reference to bases"
+        }
+      ]
+    },
+    {
+      "id": "gh26-national-cap-gap",
+      "text": "BiodivFuture PDF94 and Water4All PDF57 include graphical Spanish funding caps not extracted reliably. Visually review those graphics and underlying PCI2026_1/PI rules before quoting a Spanish maximum. Do not transfer caps between calls.",
+      "topic_ids": [
+        "biodivfuture-spain-gate",
+        "water4all-spain-aei"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "Spanish direct-cost limits",
+          "locator": "Spanish direct-cost limits"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "AEI funding limits",
+          "locator": "AEI funding limits"
+        }
+      ]
+    },
+    {
+      "id": "gh26-euromed-manual-gap",
+      "text": "Euro-MED Programme Manual v5, partner-specific rate/payment timing and exact territorial eligibility remain to review. Call8 conditions here do not certify an Alhama applicant or land arrangement.",
+      "topic_ids": [
+        "euromed-call8-2026"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 22,
+          "label": "Programme Manual and application documents",
+          "locator": "Programme Manual and application documents"
+        }
+      ]
+    }
+  ]
+}

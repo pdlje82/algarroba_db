@@ -1,0 +1,2306 @@
+{
+  "batch_id": "grant-handoff-20261110-status-v1",
+  "summary": "Dated official-source reconciliation of grant screening; forestry preparation, new restricted SUDOE5, recovered Interreg Europe closure, source contradictions and explicit remaining gaps.",
+  "base_revision": 26,
+  "sources": [
+    {
+      "id": "KGB-SRC-0035",
+      "title": "Interreg Sudoe fifth call: valorisation projects, approved 4 November 2026",
+      "kind": "pdf",
+      "filename": "FUND-028 - Interreg Sudoe - Fifth Call Valorisation Project Rules - 2026-11-04.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-028 - Interreg Sudoe - Fifth Call Valorisation Project Rules - 2026-11-04.pdf",
+      "sha256": "ad7a3c3e12975a7cb1aa11f76c85f914eb0a28c6d75606a533114a88b06f7b76",
+      "pdf_pages": 27,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ]
+      ],
+      "issuer": "Interreg Sudoe Monitoring Committee",
+      "publication_date": null,
+      "language": "es",
+      "library_path": "doc_library/FUND-028 - Interreg Sudoe - Fifth Call Valorisation Project Rules - 2026-11-04.pdf",
+      "url": "https://interreg-sudoe.eu/wp-content/uploads/2026/11/Texto_oficial_convocatoria_VALORIZACION_ES.pdf?x53234",
+      "retrieved_on": "2026-11-10",
+      "document_date": "2026-11-04",
+      "document_date_meaning": "approval by Monitoring Committee"
+    },
+    {
+      "id": "KGB-SRC-0036",
+      "title": "Andalusia forestry nonproductive investment rules, 6881.2 / 6881.4",
+      "kind": "pdf",
+      "filename": "FUND-019 - Andalusia - Nonproductive Forestry Investment Rules - 6881-2 and 6881-4 - 2025-12-05.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-019 - Andalusia - Nonproductive Forestry Investment Rules - 6881-2 and 6881-4 - 2025-12-05.pdf",
+      "sha256": "cbef682d8f49a2e4b9054a5c8a7646c1b9784e5734f601a2919fc8f2ce6e1fb7",
+      "pdf_pages": 53,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "issuer": "Junta de Andalucía",
+      "publication_date": "2025-12-15",
+      "language": "es",
+      "library_path": "doc_library/FUND-019 - Andalusia - Nonproductive Forestry Investment Rules - 6881-2 and 6881-4 - 2025-12-05.pdf"
+    },
+    {
+      "id": "KGB-SRC-0037",
+      "title": "Agrarian and forest ecological restoration grant framework — TED/870/2025",
+      "kind": "pdf",
+      "filename": "FUND-001 - Fundacion Biodiversidad - Agricultural and Forest Restoration Grant Rules - TED-870-2025.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-001 - Fundacion Biodiversidad - Agricultural and Forest Restoration Grant Rules - TED-870-2025.pdf",
+      "sha256": "356fdb46031adb1185e90d5a125b92a1a107525d16e26ab14f1feef3b777fc35",
+      "pdf_pages": 33,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "issuer": "MITECO",
+      "publication_date": "2025-08-08",
+      "language": "es",
+      "library_path": "doc_library/FUND-001 - Fundacion Biodiversidad - Agricultural and Forest Restoration Grant Rules - TED-870-2025.pdf"
+    },
+    {
+      "id": "KGB-SRC-0038",
+      "title": "Draft municipal wildfire-resilience rules — TED/XXX/2026",
+      "kind": "pdf",
+      "filename": "FUND-011 - Spain - Draft Municipal Wildfire Resilience Grant Rules - CIUDEN.pdf",
+      "managed_path": "sources/grant-handoff-20261110/FUND-011 - Spain - Draft Municipal Wildfire Resilience Grant Rules - CIUDEN.pdf",
+      "sha256": "4df93473ebe5e2182591c942482d67b5d5c0e0084da4c8b07ec6dc3ff52da978",
+      "pdf_pages": 18,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "issuer": "MITECO / CIUDEN",
+      "publication_date": null,
+      "language": "es",
+      "library_path": "doc_library/FUND-011 - Spain - Draft Municipal Wildfire Resilience Grant Rules - CIUDEN.pdf"
+    },
+    {
+      "id": "KGB-SRC-0039",
+      "title": "AL20 applications and published call",
+      "kind": "web",
+      "filename": "W01.html",
+      "managed_path": "sources/grant-handoff-20261110/W01.html",
+      "sha256": "42b9553c8ae689662950606550a98928251b0ca61ab48b410b4e58f6806c0387",
+      "url": "https://alpujarraalmeria.es/lineas-de-ayuda-23-27/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "ADR Alpujarra",
+      "publication_date": null,
+      "excerpt": "CONVOCATORIA PUBLICADA ( 22/04/2026)  ABIERTA HASTA EL 31/12/2028\nResolución de 13 de abril de 2026, de la Dirección General de Industrias, Innovación y Cadena Agroalimentaria, por la que se convocan las ayudas para solicitantes que no son Grupos de Desarrollo Rural, previstas en la Orden de 3 de febrero de 2026, por la que se aprueban las bases reguladoras para la concesión de las ayudas en régimen de concurrencia no competitiva, previstas en las Estrategias de Desarrollo Local LEADER de los Grupos de Desarrollo Rural, en el marco del Plan Estratégico de la Política Agrícola Común 2023-2027 (Intervención 7119.2).\nURL BOJA: https://juntadeandalucia.es/eboja/2026/76/BOJA26-076-00061-5258-01_00336495.pdf\nExtracto de la Resolución de 13 de abril de 2026, de la Dirección General de Industrias, Innovación y Cadena Agroalimentaria, por la que se convocan las ayudas para solicitantes que no son Grupos de Desarrollo Rural, previstas en la Orden de 3 de febrero de 2026, por la que se aprueban las bases reguladoras para la concesión de las ayudas en régimen de concurrencia no competitiva, previstas en las Estrategias de Desarrollo Local LEADER de los Grupos de Desarrollo Rural, en el marco del Plan Estratégico de la Política Agrícola Común 2023-2027 (Intervención 7119.2).\nURL BOJA: https://juntadeandalucia.es/eboja/2026/76/BOJA26-076-00002-5259-01_00336496.pdf"
+    },
+    {
+      "id": "KGB-SRC-0040",
+      "title": "AL20 official territory and strategy",
+      "kind": "web",
+      "filename": "W02.html",
+      "managed_path": "sources/grant-handoff-20261110/W02.html",
+      "sha256": "f0f6b913af29a6bb78f6063517a34cbbaefca4b3fa92d818263c09d34ad5a5de",
+      "url": "https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/areas/desarrollo-rural/tramitacion-ayudas-dr-2023-2027/paginas/ayudas-leader-intervencion-7119-2-promotores-al-al20.html",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Junta de Andalucía",
+      "publication_date": null,
+      "excerpt": "Zona Rural Leader. Municipios\nAbla, Alboloduy, Abrucena, Alcolea, Alhabia, Alhama de Almería, Alicún, Almócita, Alsodux, Bayárcal, Beires, Bentarique, Berja, Canjáyar, Dalías, Enix, Felix, Fiñana, Fondón, Huécija, Íllar, Instinción, Las Tres Villas , Laujar de Andarax, Nacimiento, Ohanes, Padules, Paterna del Río, Rágol, Santa Cruz de Marchena, Santa Fe de Mondújar y Terque.\nEstrategia y ayudas previstas\nEstrategia de Desarrollo Local Alpujarra-Sierra Nevada Almeriense 2023-2027. V1 (19-11-2024).\nAnexo I. Líneas de ayudas y tipologías de operaciones subvencionables establecidas en las Estrategias de Desarrollo Local y en las convocatorias de propuestas de los Grupos de Desarrollo Rural\nAnexo VIII. Criterios de selección que se aplicarán a cada línea de ayuda, su puntuación y la puntuación mínima exigida establecidas en las convocatorias de propuestas de los Grupos de Desarrollo Rural\nResolución de la Dirección General de Industrias, Innovación y Cadena Agroalimentaria, por la que se valida la convocatoria de propuesta de ayudas presentada por el Grupo de Desarrollo Rural."
+    },
+    {
+      "id": "KGB-SRC-0041",
+      "title": "BINDIFO preliminary access announcement",
+      "kind": "web",
+      "filename": "W03.html",
+      "managed_path": "sources/grant-handoff-20261110/W03.html",
+      "sha256": "9bce90e25f49514c18b0045efed0a8b6d91950fbe56cbbce7e3fb447d31f32b0",
+      "url": "https://www.juntadeandalucia.es/medioambiente/portal/landing-page/-/asset_publisher/4V1kD5gLiJkq/content/bindifo/20151",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Junta de Andalucía",
+      "publication_date": null,
+      "excerpt": "03 de noviembre de 2026\n -\n (Noticias, Medio forestal)\nComo paso previo a la convocatoria de las ayudas FEADER destinadas a la gestión forestal sostenible prevista en la intervención 6881.4 del PEPAC 23-27, la Consejería de Sostenibilidad y Medio Ambiente pone a disposición de los ciudadanos la versión preliminar del aplicativo BINDIFO\nLa Consejería de Sostenibilidad y Medio Ambiente de la Junta de Andalucía, en su compromiso con la mejora continua de los servicios públicos y con el impulso de una Administración más eficiente, homogénea, accesible y adaptada a las nuevas formas de interacción con la ciudadanía, ha desarrollado la herramienta digital (BINDIFO) destinada a facilitar la cumplimentación y tramitación de las solicitudes de ayuda para actuaciones forestales que se ejecuten conforme a los principios de gestión forestal sostenible.\nDicha herramienta tiene origen en el aplicativo estadístico INDIFO donde se agrupa toda la información gestionada por la REDIAM en materia forestal. Gracias a BINDIFO la información disponible se ha estructurado conforme a los requisitos, y principios de selección, establecidos en las bases reguladoras atendiendo a una solicitud gráfica donde se definen el contorno de la finca forestal y las actuaciones para las cuales se solicita ayuda.\nDe esta manera, es posible incorporar al proceso de solicitud, de forma automática, la siguiente información gráfica:\nValidación gráfica de los recintos incorporados\nSuperficie del recinto finca y de la(s) superficie(s) de actuación.\nConfrontación con los recintos catastrales\nRecintos del Sistema de Información Geográfica de Parcelas Agrícolas clasificados como terrenos forestales, pastizales, pastos arbustivos y pastos con arbolado.\nCoincidencia con los Espacios de la Red Natura 2000.\nCoincidencia con las figuras de protección autonómicas: Parque Natural, Reserva Natural (y zona de protección exterior), Paraje Natural, Paisaje Protegido y Reserva Natural Concertada.\nCoincidencia con los ámbitos correspondientes a los Planes de Recuperación y Conservación de Especies Amenazadas.\nCoincidencia con un municipio con problemas de despoblación, conforme a lo establecido en la I Estrategia frente al Desafío Demográfico en Andalucía 2025-2030.\nCoincidencia con la existencia de un instrumento de ordenación forestal aprobado.\nCon la puesta a disposición del aplicativo, en la página de autenticación, las entidades solicitantes, podrán conocer y manejar dicha herramienta con anterioridad al inicio del plazo para la presentación solicitud de ayuda.\nEsta iniciativa se complementa con el desarrollo de un nuevo aplicativo para la gestión integral de las ayudas y con la actualización de la herramienta AGROFOTO, lo que permitirá optimizar los procedimientos administrativos, mejorar la calidad de la información disponible y agilizar la relación de las personas beneficiarias con la Administración autonómica.\nEn este contexto, la transformación digital de la gestión ambiental se consolida como un instrumento estratégico para compatibilizar la conservación y mejora del patrimonio natural andaluz con un desarrollo social y económico sostenible de la comunidad autónoma, avanzando hacia una administración ambiental más moderna, eficaz y orientada al servicio público.\nLa convocatoria de las ayudas se encuentra prevista para finales del presente ejercicio. El importe destinado para dichas ayudas asciende a 40.057.892 € distribuidos en tres líneas independientes en función de la superficie forestal de la finca."
+    },
+    {
+      "id": "KGB-SRC-0042",
+      "title": "Forestry amendment consultation July 2026",
+      "kind": "web",
+      "filename": "W04.html",
+      "managed_path": "sources/grant-handoff-20261110/W04.html",
+      "sha256": "1a9c6e7033482573ef8eda356f623be7090dceb9c7f456d9b13f11ad6ce52d10",
+      "url": "https://www.juntadeandalucia.es/servicios/participacion/todos-documentos/detalle/670330.html",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Junta de Andalucía",
+      "publication_date": null,
+      "excerpt": "Resolución de 2 de julio de 2026, de la Dirección General de Política Forestal y Biodiversidad, por la que se somete al trámite de información pública el proyecto de Orden por la que se modifica la Orden de 5 de diciembre de 2025, por el que se establecen las bases reguladoras para la concesión de subvenciones a las inversiones forestales no productivas con destino a la prevención de incendios y a la gestión forestal sostenible cofinanciadas por el Fondo Europeo Agrícola de Desarrollo Rural (FEADER) en el marco del Plan Estratégico de la Política Agraria Común para el período 2023-2027\nInformación general\nOrganismo\n Consejería de Sostenibilidad y Medio Ambiente\nPlazo de alegaciones\nPlazo de alegaciones\n 08/07/2026 - 16/07/2026\n Plazo de siete días hábiles a contar a partir del día siguiente al de la publicación de la resolución en el BOJA\nFecha de publicación\n07/07/2026\nDocumentos\n Proyecto de orden que modifica la Orden de 5 de diciembre de 2025, por la que se establecen las bases reguladoras para la concesión de subvenciones a las inversiones forestales no productivas con destino a la prevención de incendios y a la gestión forestal sostenible cofinanciadas por el Fondo Europeo Agrícola de Desarrollo Rural (FEADER) en el marco de las intervenciones 6881.2 y 6881.4 del Plan Estratégico de la Política Agraria Común para el período 2023-2027 \n Resolución de 2 de julio de 2026, de la Dirección General de Política Forestal y Biodiversidad, por la que se somete al trámite de información pública el proyecto de Orden por la que se modifica la Orden de 5 de diciembre de 2025, por el que se establecen las bases reguladoras para la concesión de subvenciones a las inversiones forestales no productivas con destino a la prevención de incendios y a la gestión forestal sostenible cofinanciadas por el Fondo Europeo Agrícola de Desarrollo Rural (FEADER) en el marco del Plan Estratégico de la Política Agraria Común para el período 2023-2027"
+    },
+    {
+      "id": "KGB-SRC-0043",
+      "title": "CAP annual claim 2026 baseline window",
+      "kind": "web",
+      "filename": "W05.html",
+      "managed_path": "sources/grant-handoff-20261110/W05.html",
+      "sha256": "50b711f988593ac4ca01f6b932c485d3715ede088dac904a7389dab83c8d6b34",
+      "url": "https://www.juntadeandalucia.es/boja/2026/20/2",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Junta de Andalucía",
+      "publication_date": null,
+      "excerpt": "Para el año 2026, el plazo se iniciará el 1 de febrero y finalizará el 30 de abril, todo ello sin perjuicio de las modificaciones que pudieran establecerse en la normativa básica en función de las circunstancias de la campaña 2026."
+    },
+    {
+      "id": "KGB-SRC-0044",
+      "title": "PAEAS / climate-disinformation call status",
+      "kind": "web",
+      "filename": "W08.html",
+      "managed_path": "sources/grant-handoff-20261110/W08.html",
+      "sha256": "ea1b0a9e68d1abcf9202e5789ca0d59a5b2e9c1f3ae3a6e6d38f593134aaaa6c",
+      "url": "https://fundacion-biodiversidad.es/otras_convocatorias/convocatoria-para-proyectos-de-educacion-ambiental-para-la-sostenibilidad-e-investigacion-sobre-desinformacion-climatica-2/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Fundación Biodiversidad",
+      "publication_date": null,
+      "excerpt": "Convocatoria para proyectos de Educación Ambiental para la Sostenibilidad e investigación sobre desinformación climática \n Generación y gestión del conocimiento \n Convocatorias MITECO \n Convocatoria abierta \nConvocatoria de subvenciones de la Fundación Biodiversidad F.S.P., en régimen de concurrencia competitiva, para la financiación de proyectos de Educación Ambiental para la sostenibilidad e investigación sobre desinformación climática orientados a fortalecer el conocimiento científico, la innovación y la generación de evidencias en el marco del Plan de Acción de Educación Ambiental para la Sostenibilidad de la Administración General del Estado 2026-2032, publicada en el Anuncio 29360 del BOE Núm. 224 de 2026.\n Correo electrónico de contacto:\n proyectos@fundacion-biodiversidad.es \n Fecha Inicio: 11/09/2026 \n Fecha fin: 10/11/2026 \n Año convocatoria: 2026 \n Importe total de la convocatoria: 7 millones de euros, repartidos en dos líneas: A), y B) de 3,5 millones de euros cada una. \n Importe por proyecto: el máximo de ayuda a solicitar es 200.000,00 € en ambas líneas. \n Fuente de financiación: \n Fundación Biodiversidad \n Presentar solicitud \n Documentación \n Bases reguladoras.\n Convocatoria.\n Registro de antiguas entidades beneficiarias.\n Modelos oficiales PAEAS y DC 2026.\n Guía de presentación de proyectos PAEAS y DC 2026.\n Preguntas frecuentes (FAQ) PAEAS y DC 2026.\n Guía para el cálculo de la huella de carbono.\n Guía para incluir la perspectiva de género."
+    },
+    {
+      "id": "KGB-SRC-0045",
+      "title": "Empleaverde+ call index and resolved 2025 competition",
+      "kind": "web",
+      "filename": "W09.html",
+      "managed_path": "sources/grant-handoff-20261110/W09.html",
+      "sha256": "c8888eeee28d60896ac1efa77fc35e04a411c5ed49ac80d75f9ae8d0fed8581d",
+      "url": "https://empleaverde.es/convocatorias/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Fundación Biodiversidad",
+      "publication_date": null,
+      "excerpt": "En la Fundación Biodiversidad lanzamos una convocatoria para entidades o agrupaciones con proyectos de mejora de competencias vinculadas a la transición ecológica.\n $\n Convocatoria de subvenciones de la Fundación Biodiversidad F.S.P. en régimen de concurrencia competitiva, para la adquisición o mejora de competencias vinculadas a la transición ecológica, en el marco del Programa Empleaverde+, cofinanciado por el Fondo Social Europeo Plus en 2025\n29·May·2025 | \nConvocatoria resuelta\nleer más\n Convocatoria de subvenciones de la Fundación Biodiversidad F.S.P. en régimen de concurrencia competitiva, para la adquisición o mejora de competencias para la transición ecológica, en el marco del Programa Empleaverde Plus, cofinanciado por el Fondo Social Europeo Plus en 2024\n20·Mar·2024 | \nConsulta la resolución de la convocatoria.\nleer más\nl"
+    },
+    {
+      "id": "KGB-SRC-0046",
+      "title": "FEDER city renaturalisation call 2026 status",
+      "kind": "web",
+      "filename": "W12.html",
+      "managed_path": "sources/grant-handoff-20261110/W12.html",
+      "sha256": "f59693f8e92dfa95638a851a682595be2fe0ad1a9e3e0aa6e3f22837f75f66fd",
+      "url": "https://fundacion-biodiversidad.es/convocatorias_feder/convocatoria-de-ayudas-feder-para-el-impulso-de-la-renaturalizacion-de-ciudades-2026/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Fundación Biodiversidad",
+      "publication_date": null,
+      "excerpt": "Convocatoria de ayudas FEDER para el impulso de la renaturalización de ciudades 2026 \n Entornos urbanos \n FEDER \n Convocatoria cerrada \nConvocatoria de subvenciones de la Fundación Biodiversidad F.S.P., en régimen de concurrencia competitiva, para el fomento de actuaciones dirigidas al desarrollo y consolidación de la infraestructura verde para la renaturalización y resiliencia de ciudades españolas correspondiente al año 2026 cofinanciada por el Fondo Europeo de Desarrollo Regional (FEDER), publicada en el Anuncio 25516 del BOE núm. 183 de 2026.\n Correo electrónico de contacto:\n ciudadesfeder@fundacion-biodiversidad.es \n Fecha Inicio: 29/07/2026 \n Fecha fin: 29/10/2026 \n Año convocatoria: 2026 \n Importe total de la convocatoria: 9 millones de euros \n Importe por proyecto: 500.000 € o 1.000.000 € \n Fuente de financiación: \n Fondo Europeo de Desarrollo Regional \n Documentación \n 1_Bases reguladoras \n 2_Convocatoria \n 3_Modelos de documentos \n 4_Guía de indicadores \n 5_Guía para la presentación de solicitudes \n 6_Preguntas frecuentes (FAQs) \n 7_Registro antiguas entidades beneficiarias \n 8_Guía para incorporar la perspectiva de género \n 9_Glosario de términos"
+    },
+    {
+      "id": "KGB-SRC-0047",
+      "title": "Financing Natura 2000 overview",
+      "kind": "web",
+      "filename": "W14.html",
+      "managed_path": "sources/grant-handoff-20261110/W14.html",
+      "sha256": "fdf3f019a461cd163a2966c9c49be81450cf2bc1f31272b8187dfc2f29454c96",
+      "url": "https://environment.ec.europa.eu/topics/nature-and-biodiversity/natura-2000/financing-natura-2000_en",
+      "retrieved_on": "2026-11-10",
+      "issuer": "European Commission",
+      "publication_date": null,
+      "excerpt": "Financing Natura 2000 \nSee how Natura 2000 sites are financed and how EU funding can be used. Learn more about the social and economic benefits of healthy nature.\n Page contents\nPage contents\nOverview\nThe Natura 2000 network provides many environmental, social and economic benefits.\nIt also requires substantial investment to protect, restore and manage the sites. This is estimated at €10.2 billion euro a year. Multiple funding sources are necessary to meet the funding needs of the network and deliver the benefits. The EU funds play a particularly important role in this process. \nPrioritised Action Frameworks\nThe Habitats Directive makes a clear link between the necessary conservation measures and the EU co-financing. To facilitate the process, the EU Member States adopt prioritised action frameworks (PAFs) defining the funding needs and priorities for Natura 2000 at a national or regional level and potential sources of EU contribution.\nAn updated format (available in all EU languages) for prioritised action frameworks was developed in 2018 and has been used by the Member States to prepare their PAFs for current multiannual financial framework (2021-2027).\nBased on the national action frameworks, the Commission has produced one at the EU level. This document follows up on the commitment made in the Biodiversity Strategy for 2030 to update the estimate of the financing needs of the Natura 2000 network.\nAccording to the latest estimates, the costs are\n4.8 billion euro (47%) to maintain and restore the Natura 2000 network\n2.5 billion euro (25%) for additional green infrastructure measures beyond Natura 2000\n2.1 billion euro (20%) for horizontal and administrative measures\n0.8 billion euro (8%) for species-specific measures\nEU funds for Natura 2000\nEach EU country is responsible for funding Natura 2000. Several EU financial instruments are available, however, to complement national funding.\nA guide on “Financing Natura 2000 - EU Funding Opportunities in 2021-2027” can help EU Member States’ authorities identify in the current multiannual financial framework EU funds best adapted to manage and restore their Natura 2000 sites.\nSee also a 2017 analysis on experience with the integrated approach to financing Natura 2000 and wider biodiversity conservation from the EU budget to get an idea on how funding was used in the past.\nLIFE Programme\nThe EU LIFE Programme has been supporting nature conservation projects across the EU since 1992. To date, LIFE has co-financed over 1800 projects to help restore habitats and species across the EU. Over 5400 Natura 2000 sites have benefited from LIFE funding during this period.\nA 2018 study shows that LIFE has had a direct impact on the conservation status of numerous species and habitats such as the bearded vulture, the Iberian lynx and the Saimaa ringed seal."
+    },
+    {
+      "id": "KGB-SRC-0048",
+      "title": "Carbon absorption project registration requirements",
+      "kind": "web",
+      "filename": "W16.html",
+      "managed_path": "sources/grant-handoff-20261110/W16.html",
+      "sha256": "178b631323a85ebec3f831961c3a02e3e7336b2926ea26fe83ef1c96c0ff7737",
+      "url": "https://www.miteco.gob.es/es/cambio-climatico/temas/registro-huella/proyectos-de-absorcioninscripcion.html",
+      "retrieved_on": "2026-11-10",
+      "issuer": "MITECO",
+      "publication_date": null,
+      "excerpt": "Inscripción de proyectos de absorción de dióxido de carbono\n Requisitos\nLos proyectos de absorción deben cumplir, a su vez, con una serie de requisitos:\n- Encajar en una de las dos actuaciones siguientes:\n- Repoblación forestal en zonas donde no ha habido un bosque desde el 31 de diciembre de 1989.\n- Actuaciones en zonas forestales incendiadas para el restablecimiento de la masa forestal existente.\n- Estar ubicado en territorio nacional.\n- Unidad mínima de actuación: 1 ha, donde la cubierta de copas de los árboles mínima sea del 20 % en madurez y la altura potencial de los árboles de 3 m en madurez.\n- Permanencia del proyecto: mínimo 30 años.\n- Antigüedad: puesta en marcha posterior a la campaña de plantación 2012 - 2013.\n- Plan de gestión: el proyecto debe contar con un plan en el que se indiquen las actuaciones previstas.\n- Cálculo de las absorciones: realizado con la calculadora del Registro.\n- Seguimiento: presentación de un informe de seguimiento cada 5 años.\nMás información de detalle en el siguiente documento:\n Documento de apoyo para la inscripción - proyectos de absorción\n ¿Cómo calculo?\nCon esta calculadora puede estimar de manera sencilla las absorciones de dióxido de carbono asociadas a la biomasa de las especies arbóreas forestales españolas.\nEl usuario debe introducir los datos que definen la repoblación (localización, especies, año de plantación, permanencia, etc.) y la calculadora proporciona como resultado una estimación de las absorciones que dicha repoblación generará a futuro.\nRecuerde que el uso de esta calculadora es obligatorio a la hora de inscribirse en la sección de proyectos de absorción.\n Calculadora de proyectos de absorción de dióxido de carbono v8\n Instrucciones calculadora de proyectos de absorción\nAsimismo, se facilita una guía explicativa para la estimación de absorciones de dióxido de carbono.\n Guía para la estimación de absorciones de dióxido de carbono\n Solicitar inscripción\n Repositorio de documentación\nSe pone a disposición de la ciudadanía un folleto explicativo sobre qué documentación es necesario adjuntar a la hora de solicitar la inscripción. Asimismo, también podrá encontrar información detallada sobre los factores a tener en cuenta a la hora de realizar la solicitud.\n Documentación a adjuntar - proyectos de absorción\nA continuación, se facilitan las plantillas de formulario de inscripción, informes y declaraciones que es necesario cumplimentar para solicitar la inscripción en el Registro.\n FORMULARIO de inscripción - Proyectos de absorción\n Anexo I - Resumen participantes\n Anexo II - Cumplimiento legislación\n Certificado de capacidad legal\n Declaración responsable de competencia e independencia\n Declaración responsable autorización proyectos de absorción\n Medio de presentación\n Sede electrónica\nEmplee el certificado digital correspondiente a la organización.\n Registro electrónico de apoderamientos\nSi la inscripción se hace en representación de la organización, es necesaria la inscripción previa en este Registro.\n Proyectos de absorción inscritos\n     A continuación se pueden consultar las inscripciones:\n Proyectos de absorción de CO2 inscritos - Buscador\n Proyectos de absorción de CO2 inscritos - Listado\n Proyectos de absorción de CO2 PREinscritos- Listado\nY algunos de los testimonios de organizaciones que participan en el Registro.\n ENTREVISTAS Y VÍDEOS\n Entrevista a Calzados FAL\n Entrevista a la red de ciudades por el clima\n Entrevista Ayuntamiento de Valladolid"
+    },
+    {
+      "id": "KGB-SRC-0049",
+      "title": "LIFE 2026 call deadlines",
+      "kind": "web",
+      "filename": "W17.html",
+      "managed_path": "sources/grant-handoff-20261110/W17.html",
+      "sha256": "872679d311b203d211b1a7152b646b4ac394d63ebc68a7bf7e6ac69e1566e16c",
+      "url": "https://cinea.ec.europa.eu/life-calls-proposals-2026_en",
+      "retrieved_on": "2026-11-10",
+      "issuer": "CINEA",
+      "publication_date": null,
+      "excerpt": "Submission deadlines\nStandard Action Projects (SAPs) for Circular Economy and Zero Pollution - Environment\nDeadline date: 22 September 2026\nStandard Action Projects (SAPs) for Environmental Governance \nDeadline date: 22 September 2026\nStandard Action Projects (SAPs) for nature and biodiversity - Nature \nDeadline date: 22 September 2026\nStandard Action Projects (SAPs) for nature and biodiversity – Governance and Information\nDeadline date: 22 September 2026\nStandard Action Projects (SAPs) Climate Change Adaptation\nDeadline date: 22 September 2026\nStandard Action Projects (SAPs) Climate Change Mitigation\nDeadline date: 22 September 2026\nStandard Action Projects (SAPs) Climate Governance and Information\nDeadline date: 22 September 2026\nTechnical Assistance for the preparation of SNAPs\nDeadline date: 22 September 2026\nTechnical Assistance for the preparation of SIPs - Environment \nDeadline date: 22 September 2026\nTechnical Assistance for the preparation of SIPs - Climate \nDeadline date: 22 September 2026\nMultilevel climate and energy dialogue to deliver the Governance Regulation and the post–2030 energy and climate policy framework \nDeadline date: 22 September 2026\nEcodesign and energy labelling compliance support facility for suppliers and retailers \nDeadline date: 22 September 2026\nProjects on Legislative and Policy Priorities in the fields of Nature & Biodiversity and Circular Economy & Quality of Life\nDeadline date: 22 September 2026\nStrategic Nature Projects (SNaP)\nConcept notes:  Deadline date: 3 September 2026\nFull proposals: Deadline date: 4 March 2027\nStrategic Integrated Projects – SIP Environment \nConcept notes:  Deadline date: 3 September 2026\nFull proposals: Deadline date: 4 March 2027\nStrategic Integrated Projects – SIP CLIMA\nConcept notes:  Deadline date: 3 September 2026\nFull proposals: Deadline date: 4 March 2027"
+    },
+    {
+      "id": "KGB-SRC-0050",
+      "title": "Horizon NATURE 2027 call calendar",
+      "kind": "web",
+      "filename": "W18.html",
+      "managed_path": "sources/grant-handoff-20261110/W18.html",
+      "sha256": "62a939e53f36dcadc38f3222354d4bfc978eac674a2a1ea586f17e4a8bb441a0",
+      "url": "https://rea.ec.europa.eu/funding-and-grants/horizon-europe-cluster-6-food-bioeconomy-natural-resources-agriculture-and-environment/transformative-change-towards-nature-positive-economy-and-society_en?prefLang=ro",
+      "retrieved_on": "2026-11-10",
+      "issuer": "REA",
+      "publication_date": null,
+      "excerpt": "2027 calls for proposals\nHORIZON-NATURE-2027-01 This call opens on 13 October 2026 \n3 topics PFAS’ effects on biodiversity; clean & digital industries; research for transformative change for biodiversity. \n41.45 million Overall indicative budget\nSee the calls on the Funding and tenders portal\n HORIZON-NATURE-2027-01\n13 October 2026 \nLaunch of the call \nWork programme\n16 October 2026 \nInfo day\n19 October 2026 \nBrokerage event \n14 January 2027 \nDeadline for applicants to submit a proposal \nJune 2027 \nApplicants are informed if their proposal has been selected \nSeptember 2027\nGrant agreement signature for successful projects \nShow 2 more items\nOctober 2027 \nProjects start \nAll funding information and procedures on how to apply are on the Funding and Tenders portal.\nGo to portal\nHORIZON-NATURE-2027-02 This call opens on 13 October 2026 \n5 topics Invertebrates biodiversity decline; living labs for nature restoration; wildlife trafficking; invasive species; cost-effective biodiversity monitoring\n108 million Overall indicative budget\nSee the calls on the Funding and tenders portal\n HORIZON-NATURE-2027-02 \n13 October 2026 \nLaunch of the call \nWork programme\n16 October 2026 \nInfo day\n19 October 2026 \nBrokerage event \n14 January 2027 \nDeadline for applicants to submit a proposal \nJune 2027 \nApplicants are informed if their proposal has been selected \nSeptember 2027\nGrant agreement signature for successful projects \nShow 2 more items\nOctober 2027 \nProjects start \nAll funding information and procedures on how to apply are on the Funding and Tenders portal.\nGo to portal\nWho should apply\nHow to apply\nSupport for applicants\nDisclaimer \nThe content of this page is for information purposes only. The relevant legal instruments and the text of the call shall take precedence over the information contained on this page. The European Commission and the European Research Executive Agency do not accept responsibility for any use made of the information contained therein. \nEuropean Research Executive Agency\nThis site is managed by:"
+    },
+    {
+      "id": "KGB-SRC-0051",
+      "title": "Horizon CL6 BIODIV03 forthcoming call",
+      "kind": "web",
+      "filename": "W22.html",
+      "managed_path": "sources/grant-handoff-20261110/W22.html",
+      "sha256": "994b8f5dd79101f398600d5208ae93b622ece819453f18eeeb53e7ee5d387b68",
+      "url": "https://www.efsa.europa.eu/en/funding-calls/technical-innovation-protect-ecosystems-and-scale-their-restoration",
+      "retrieved_on": "2026-11-10",
+      "issuer": "EFSA",
+      "publication_date": null,
+      "excerpt": "Technical innovation to protect ecosystems and to scale up their restoration | EFSA Skip to main content \nAn official EU website\nAn official website of the European Union\n How do you know? All official European Union website addresses are in the <b>europa.eu</b> domain\n Other sites\n EFSA\n Open EFSA\n EFSA Journal\n Connect\n European Food Safety Authority \n en English \nSelect your language\nMany pages on this website have been translated using automatic translation. All reasonable efforts have been made to provide an accurate translation. The reference text is the English version.\nбългарски[Автоматично]\nespañol[Automático]\nčeština[Automatické]\ndansk[Automatisk]\nDeutsch[Automatisch]\neesti[automaatne]\nελληνικά[Αυτόματα]\nEnglish\nfrançais[Automatique]\nGaeilge[Uathoibríoch]\nhrvatski[Automatski]\nitaliano[Automatico]\nlatviešu[Automātiski]\nlietuvių[Automatinis vertimas]\nmagyar[Automatikus]\nMalti[Awtomatika]\nNederlands[Automatisch]\npolski[Automatyczne]\nportuguês[Automático]\nromână[Automat]\nslovenčina[Automatický]\nslovenščina[Strojno]\nsuomi[Automaattinen]\nsvenska[Automatisk]\nCalendar\n Menu\n About\n About us\n Mission and values\n Transparency\n Working practices\n Trusted science\n External experts\n Governance\n Management Board members\n Executive Director\n Operational Management\n Documents\n Corporate publications\n Partners and networks\n EU Member States\n EU institutions and agencies\n Competent organisations in Member States\n International\n Stakeholder engagement\n Newsroom\n All contents\n Infographics and factsheets\n Interactive Stories and Data\n News\n Videos\n Podcast\n Press Corner\n Campaigns\n Safe2Eat\n PlantHealth4Life\n No bird flu: protect your farm!\n Topics\n All topics\n Animal health\n Animal welfare\n Antimicrobial resistance\n Chemical contaminants in food and feed\n Foodborne zoonotic diseases\n Nutrition\n Pesticides\n Qualified presumption of safety (QPS)\n Glossary\n Resources\n Data reports\n Data standardisation\n Food tracing\n Data collection\n Guidance\n Tools and resources\n Dietary Exposure (DietEx) tool\n Training opportunities\n Publications\n Applications\n Application procedures\n Services for applicants\n SME support services\n Ask a question\n Toolkit\n QPS assessment\n Good Laboratory Practice (GLP)\n Confidentiality and sanitisation\n Engage\n Procurement\n Closed tenders below €140k\n Instructions and forms\n Grants\n Remunerated External Experts (REE)\n Fellowship Programme\n Calls for data\n Consultations\n Observers\n Research Platform\n Stakeholders\n Engagement platforms\n Engagement in risk assessment\n Calls for stakeholders\n Stakeholder registration\n Careers\n Working at EFSA\n Benefits\n Scientists\n Experts\n Staff members\n Traineeships\n How to apply\n Open positions\n Calendar\n Other sites\n Open EFSA\n EFSA Journal\n Connect\n Search \nMain navigation\nAbout\nAbout us\nMission and values\nTransparency\nWorking practices\nTrusted science\nExternal experts\nGovernance\nManagement Board members\nExecutive Director\nOperational Management\nDocuments\nCorporate publications\nPartners and networks\nEU Member States\nEU institutions and agencies\nCompetent organisations in Member States\nInternational\nStakeholder engagement\nNewsroom\nAll contents\nInfographics and factsheets\nInteractive Stories and Data\nNews\nVideos\nPodcast\nPress Corner\nCampaigns\nSafe2Eat\nPlantHealth4Life\nNo bird flu: protect your farm!\nTopics\nAll topics\nAnimal health\nAnimal welfare\nAntimicrobial resistance\nChemical contaminants in food and feed\nFoodborne zoonotic diseases\nNutrition\nPesticides\nQualified presumption of safety (QPS)\nGlossary\nResources\nData reports\nData standardisation\nFood tracing\nData collection\nGuidance\nTools and resources\nDietary Exposure (DietEx) tool\nTraining opportunities\nPublications\nApplications\nApplication procedures\nServices for applicants\nToolkit\nQPS assessment\nGood Laboratory Practice (GLP)\nConfidentiality and sanitisation\nEngage\nProcurement\nClosed tenders below €140k\nInstructions and forms\nGrants\nRemunerated External Experts (REE)\nFellowship Programme\nCalls for data\nConsultations\nObservers\nResearch Platform\nStakeholders\nEngagement platforms\nEngagement in risk assessment\nCalls for stakeholders\nStakeholder registration\nCareers\nWorking at EFSA\nBenefits\nScientists\nExperts\nStaff members\nTraineeships\nHow to apply\nOpen positions\nHome\nResearch Platform\n Upcoming calls\n Technical innovation to protect ecosystems and to scale up their restoration \n Opening date:\n20 April 2027\n Deadline:\n22 September 2027\n Share\n Code:\nHORIZON-CL6-2027-01-BIODIV-03\n Programme:\nHorizon Europe\nGo to the call"
+    },
+    {
+      "id": "KGB-SRC-0052",
+      "title": "Mission Soil 2026 call deadlines",
+      "kind": "web",
+      "filename": "W23.html",
+      "managed_path": "sources/grant-handoff-20261110/W23.html",
+      "sha256": "7dac174176405af2d3cec18309af11072ed3411da590f3f2de420b05c821b20f",
+      "url": "https://rea.ec.europa.eu/funding-and-grants/eu-mission-soil-deal-europe_en",
+      "retrieved_on": "2026-11-10",
+      "issuer": "REA",
+      "publication_date": null,
+      "excerpt": "EU Mission: A Soil Deal for Europe\nSingle-stage - Submit your proposal by 23 September 2026\nTwo-stage - This call closed on 14 April 2026 (First stage)\nTwo stage - Submit your proposal by 15 September 2026 (Second stage)"
+    },
+    {
+      "id": "KGB-SRC-0053",
+      "title": "Mission Adaptation 2026 call calendar",
+      "kind": "web",
+      "filename": "W24.html",
+      "managed_path": "sources/grant-handoff-20261110/W24.html",
+      "sha256": "2d2f06d385a07829b48c7672cb35a2236607dd5a771a010881e489b98b821c51",
+      "url": "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/eu-missions-horizon-europe/adaptation-climate-change_en",
+      "retrieved_on": "2026-11-10",
+      "issuer": "European Commission",
+      "publication_date": null,
+      "excerpt": "Funding\nThese are the current funding opportunities for the Mission under the Horizon Europe 2026-2027 Work Programme:\nHORIZON-MISS-2026-01-CLIMA-01: National Adaptation Hubs - Bringing together the national level with the engaged regional and local levels (multi-level governance)\nHORIZON-MISS-2026-01-CLIMA-02: Facilitating implementation of actionable solutions for climate adaptation of regions and local authorities\nHORIZON-MISS-2026-01-CLIMA-03: Standardising and supporting climate services for climate adaptation\nHORIZON-MISS-2026-01-CLIMA-04: Bridging the gap between disaster risk management and climate adaptation\nHORIZON-MISS-2026-01-CLIMA-05: Demonstrating solutions to protect and preserve cultural heritage from the impacts of climate change\nHORIZON-MISS-2026-01-CLIMA-06: Improving climate resilience of navigable inland waterways, their surroundings and related water infrastructure\nHORIZON-MISS-2026-01-CLIMA-07: Supporting financing of local adaptation actions with combination of public funding and private financing\nHORIZON-MISS-2026-06-CLIMA-SOIL: Joint demonstration of solutions to build soil resilience to extreme weather events and support food security\nThe Calls open on 4 February and close on 23 September 2026."
+    },
+    {
+      "id": "KGB-SRC-0054",
+      "title": "Euro-MED Call8 calendar and documents",
+      "kind": "web",
+      "filename": "W25.html",
+      "managed_path": "sources/grant-handoff-20261110/W25.html",
+      "sha256": "4b52991e3ec409ebab472f46be956815a54eacfbf9dd2343df98b06244a07917",
+      "url": "https://interreg-euro-med.eu/en/call-8-thematic-projects/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Interreg Euro-MED",
+      "publication_date": null,
+      "excerpt": "Call 8\nThematic projects\nThis 8th call for proposals aims to select around 10 thematic projects for an overall budget of approximately €20 million.\nConcerning three of the four missions of the Programme, Green Living Areas, Innovative Sustainable Economy and Natural Heritage, its guiding thread is ‘Advancing Territorial Resilience’.\nAs the projects lifespan will be of 24 months only, proposals should be action-oriented and results-driven. It means that they are expected to:\nHave a narrow defined scope, adressing a specific issue and territorial context;\nPrioritise on-the-ground implementation of pilot activities;\nBe sufficiently mature to ensure that results can be effectively translated into policies or practices and integrate prevention measures.\nProgramme priorities and specific objectives\nProjects must be aligned with the Programme priorities (Priority 1: A Smarter Mediterranean & Priority 2: A Greener Mediterranean) and its specific objectives as follows:\nThe sustainable tourism mission is not open under this call, as it is the subject of a specific call this year.\nMore info on Call 7 – MMM Coordinated Transfer Call.\nApplying to the call\nThe Terms of reference, applicable for the three missions, will set out the specific criteria expected for this 8th Call for projects. They will be approved by the Programme Monitoring Committee in September 2026.\nThis 8th call for proposals will be carried out in a two-phase application process: a written application and an oral presentation.\nWritten applications are possible only during the dates of the call (see calendar below). Outside this period, no application will be considered. Pre-selected projects will then be requested for an oral presentation before the final selection is made. The Programme’s Monitoring Committee decides which projects to approve.\nWritten applications must be submitted online via Jems, the monitoring system developed by Interact. It is available for all applicants and partners at: https://jems.interreg-euro-med.eu/. To help you use Jems, you can read the user manual.\nDOCUMENTS FOR MORE INFORMATION\nThe Terms of reference and the courtesy application form are available below.\nYou may also visit the Documents&Tools section to find more information and documents that will help you in your overall understanding of the Programme and its calls for proposals.\nTERMS OF REFERENCE\nToRs Call 8 – Thematic projects\nREFERENCE DOCUMENTS\nProgramme manual v5\nCourtesy application form\nPPT oral hearing\nCalendar\nHere is the timetable detailing the key stages for submitting your proposals and its assessment :\nKey Steps\nDates\nTerms of Reference approval by the Monitorng Committee\nSeptember 2026\nTransnational informative session\n22/09/2026\nOpening of the written application phase\n01/10/2026 at 13.00 Brussels time\nClosure of the written application phrase\n13/11/2026 at 13:00 Brussels time\nSubmission of mandatory annexes\n27/11/2026\nAssessment of written applications and project partners national validation\nFrom November 2026 to February/March 2027 (depending on number of applications received)\nPre-selection by the Monitoring Committee\nEarly March or April 2027\nOral presentations\nMarch-April 2027\nFinal selection by the Monitoring Committee\nApril-May 2027\nPre-contracting and contracting procedures\nApril-May 2027\nStarting date of the projects\nMay-June 2027\n* Please note that the details of this schedule are subject to change following the number of proposals submitted and should be considered as indicative."
+    },
+    {
+      "id": "KGB-SRC-0055",
+      "title": "SUDOE4 amended deadline notice",
+      "kind": "web",
+      "filename": "W27.html",
+      "managed_path": "sources/grant-handoff-20261110/W27.html",
+      "sha256": "d96f3b3a9775da9784a3410edfcd9b98a7b6293995ca46af1a340a7215d8a64a",
+      "url": "https://www.ccdr-alg.pt/site/info/prorrogacao-4a-convocatoria-interreg-sudoe-projetos-estruturantes",
+      "retrieved_on": "2026-11-10",
+      "issuer": "CCDR Algarve",
+      "publication_date": null,
+      "excerpt": "O Comité de Acompanhamento do Programa Interreg Sudoe decidiu prorrogar por um mês o prazo da convocatória para projetos estruturantes (incêndios – envelhecimento).\nA nova data-limite para a submissão de candidaturas é 30 de outubro de 2026, antes das 12h00 (hora de Espanha continental).\nA data-limite para o envio das traduções das candidaturas nas duas outras línguas da parceria é igualmente adiada para 6 de novembro de 2026, antes das 12h00 (hora de Espanha continental).\nO texto da convocatória está disponível aqui.\nEsta prorrogação aplica-se exclusivamente à 4.ª convocatória relativa aos projetos estruturantes.\nA data-limite de submissão de candidaturas da 3.ª convocatória, dedicada aos projetos de capitalização, permanece inalterada e mantém-se fixada em 30 de setembro de 2026, antes das 12h00 (hora de Espanha continental)."
+    },
+    {
+      "id": "KGB-SRC-0056",
+      "title": "Interreg Europe funds committed",
+      "kind": "web",
+      "filename": "W28.html",
+      "managed_path": "sources/grant-handoff-20261110/W28.html",
+      "sha256": "74e6cb59b0ca91a44e9e5062bccf4bbf86644a6702a4b85528868e99b1d6407f",
+      "url": "https://www.interregeurope.eu/apply-for-the-call",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Interreg Europe",
+      "publication_date": null,
+      "excerpt": "In the 2021-2027 programming period, we allocated our budget through open calls for project proposals. The information below helped you complete the online application process.\nCall for projects\nAll our funds have been committed. We are not planning any more open calls during the 2021-2027 programme."
+    },
+    {
+      "id": "KGB-SRC-0057",
+      "title": "NEXT MED third call dated deadline and stale open heading",
+      "kind": "web",
+      "filename": "W30.html",
+      "managed_path": "sources/grant-handoff-20261110/W30.html",
+      "sha256": "9120d8237c05c5ec74bca74af3acddcfdaac5b05180d226b6f3162da84bf6368",
+      "url": "https://www.interregnextmed.eu/apply-for-funding/third-call-for-proposals/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Interreg NEXT MED",
+      "publication_date": null,
+      "excerpt": "Third call for proposals – OPEN\nThis last call for the 2021-2027 period is dedicated to capitalisation projects in the sustainable tourism sector. With a budget of €8.2 million in EU funding, the call is launched within the framework of the Mediterranean Multi-Programme Mechanism (MMM), a major coordination initiative bringing together 10 Interreg programmes. Deadline for application: 29 October 2026."
+    },
+    {
+      "id": "KGB-SRC-0058",
+      "title": "BiodivFuture schedule and research scope",
+      "kind": "web",
+      "filename": "W31.html",
+      "managed_path": "sources/grant-handoff-20261110/W31.html",
+      "sha256": "3deb683a2f50f3b5306b54a680cb766509a5046a40ac731b72ab20ac0dde70f9",
+      "url": "https://www.biodiversa.eu/2026/06/09/2026-2027-joint-call/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Biodiversa+",
+      "publication_date": null,
+      "excerpt": "Scope of the call\nBiodivFuture focuses on supporting future-looking research and innovation that will address biodiversity and novel ecosystems, as well as their socio-ecological dynamics and consequences relating to the sustainability goals of the Kunming-Montreal Global Biodiversity Framework, and associated future pathways and trajectories of change. The call covers investigating the causes (drivers), effects (biological responses), and outcomes (including opportunities, risks and trade-offs) of current and future trajectories of change in all relevant realms (terrestrial, freshwater, marine and coastal areas), in all regions of the world. It aims at funding novel, high-quality transnational research with potential for societal and political impact that will significantly improve our understanding of novel ecosystems with holistic, systemic, and integrated approaches.\nIn the face of inevitable and potentially irreversible change, knowledge generated under this call should ultimately lead to actions to achieve impacts that sustain resilient, interconnected, diverse and ecologically functioning ecosystems. This could include critical reflection on what constitutes ecosystem states that best preserve or restore natural resources by taking multiple costs and benefits (trade-offs) into account and the diversity of contexts, scales, perspectives and world views. Well-functioning ecosystems should benefit people and protect nature at scales from local to global and emphasise biodiversity, trophic complexity, economic vitality, and societal well-being.\nThemes\nResearch priorities covered by BiodivFuture are structured into three non-mutually exclusive themes. Projects are welcome to address one or several of these themes.\nTHEME A – NOVEL ECOSYSTEM FUNCTIONING: Understanding the functioning of novel ecosystems and their links to socio-cultural and socio-economic dynamics, identifying mechanisms and developing approaches that can facilitate biodiversity gains.\nTHEME B – PATHWAYS TO NOVEL ECOSYSTEMS: Studying robust, plausible, and concrete pathways to novel ecosystems and associated socio-ecological dynamics to prosper under temporal asynchronies and uncertainties.\nTHEME C – BIODIVERSITY BENEFITS AND EQUITY IN THE CONTEXT OF NOVEL ECOSYSTEM: Studying fair and equitable sharing of biodiversity benefits in the context of novel ecosystems, supported by inclusive, collaborative, and investment-oriented pathways for nature-positive socio-ecological transformation.\nNovel ecosystems – A conceptual framework to set the scene\nNovel ecosystems have been defined by Hobbs et al. in 2013 as “a system of abiotic, biotic and social components (and their interactions) that, by virtue of human influence, differ from those that prevailed historically, having a tendency to self-organise, and manifest novel qualities without intensive human management”. Since the publication of this paper, the limits of this definition have been challenged by different disciplines and other definitions have emerged. Overall, the conceptual framework of novel ecosystems usually comprises of (1) new ecological communities (including species living outside their historical native ranges), (2) which present a suite of interactions and processes consistent with a self-organised, functioning ecosystem, and (3) are unlikely to revert to conditions preceding their emergence, with or without human intervention, due to significant biotic and abiotic changes. Building on this framework and acknowledging the plurality of views and definitions, proposals submitted to this call must demonstrate how they are addressing novel ecosystems.\nApplicants must carefully read the announcement of opportunity (Call Document 1) that further details the scope of the call.\nCall schedule\nEPSS\nA two-step application procedure will apply, with a mandatory submission of pre-proposals at the first step and submission of full proposals at the second step, via the Electronic Proposal Submission System (EPSS).\nLaunch of the call: Wednesday 9 September 2026\nDeadline for pre-proposals submission (mandatory): 10 November 2026, 12:00 (noon) CET (11:00 UTC)\nResults of the evaluation of the first step: mid-February 2027\nDeadline for full-proposals submission: 16 April 2027, 12:00 (noon) CEST (10:00 UTC)\nRecommendations for funding: Late September to early October 2027\nStart of the projects: Between 1 December 2027 and 1 April 2028"
+    },
+    {
+      "id": "KGB-SRC-0059",
+      "title": "BiodivFuture funding rules version",
+      "kind": "web",
+      "filename": "W32.html",
+      "managed_path": "sources/grant-handoff-20261110/W32.html",
+      "sha256": "a39053208fd9682cc1ae226d22f47287796891fa1be5cb1a8c1e921e310c5d91",
+      "url": "https://www.biodiversa.eu/biodivfuture-funding-organisations/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Biodiversa+",
+      "publication_date": null,
+      "excerpt": "Funding Organisations Rules\nRules of the Funding Organisations\nWe would like to draw your attention to the specific rules of each Funding Organisation. Compliance with their eligibility criteria and regulations (e.g., eligible budget items) is mandatory. Therefore, applicants are strongly encouraged to contact their respective Funding Organisation Contact Point to ensure full adherence to all applicable requirements.\nDownload the Funding Organisations Rules\nLast update : 4 November 2026\nList of Funding Organisations participating in the BiodivFuture call\nIn the context of the Biodiversa+ 2026-2027 Joint Call (BiodivFuture), 30 funding organisations from 25 countries, together with the European Commission, have provisionally committed their financial support.\nEach participant in a funded project will be funded by his or her national/regional organisation(s) participating in the call.\nPlease ensure that you check the budget request limits specified in the Funding Organisations’ rules."
+    },
+    {
+      "id": "KGB-SRC-0060",
+      "title": "PRIMA 1.1.1-2026 status",
+      "kind": "web",
+      "filename": "W33.html",
+      "managed_path": "sources/grant-handoff-20261110/W33.html",
+      "sha256": "84ae0e7bfd61aef171b4bb407809146f81d49e5fe93133a3fe7d61db30eb1a47",
+      "url": "https://prima-med.org/submit-your-project/water-management-in-the-nexus/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "PRIMA Foundation",
+      "publication_date": null,
+      "excerpt": "Call: Thematic Area 1-Water Management in the Nexus\nTOPIC: 1.1.1-2026 (IA): Decentralised Brackish Water Desalination for Climate-Resilient and Resource-Efficient Mediterranean Agriculture\nTYPE OF ACTION: (IA)  Innovation action\nTOTAL INDICATIVE AMOUNT ALLOCATED TO THIS CALL: EUR 10.815 million\nOPENING DATE:  20.03.2026\nSUBMISSION DEADLINE STAGE 2 : 07.10.2026 (17:00h Central European Time (CET)\nSTATUS: Closed"
+    },
+    {
+      "id": "KGB-SRC-0061",
+      "title": "Erasmus cooperation-partnership application guidance",
+      "kind": "web",
+      "filename": "W34.html",
+      "managed_path": "sources/grant-handoff-20261110/W34.html",
+      "sha256": "529d46728fa0fbdb63f4237230d9cb4a6f0c589f9bd056bb2c0733ad1bac3c44",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/cooperation-partnerships",
+      "retrieved_on": "2026-11-10",
+      "issuer": "European Commission",
+      "publication_date": null,
+      "excerpt": "When to apply?\nFor Partnerships in the fields of education, training and youth submitted by any organisation in these fields, with the exception of European NGOs:\nApplicants have to submit their grant application by 5 March at 12:00:00 (midday Brussels time) for projects starting between 1 September and 31 December of the same year.\nPossible additional deadline in the fields of education, training and youth submitted by any organisation in these fields, with the exception of European NGOs:\nNational Agencies in the field of education, training and youth may organise a second round of applications, for which the rules set out in this Guide will also apply. National Agencies will inform of this possibility via their website\nIf a second round is organised, applicants must submit their grant application by 1 October at 12:00:00 (midday Brussels time) for projects starting between 1 January and 31 August of the following year\nFor Partnerships in the fields of education, training and youth submitted by European NGOs:\nApplicants have to submit their grant application by 5 March at 17:00:00 (Brussels time).\nFor Partnerships in the field of sport:\nApplicants have to submit their grant application by 5 March at 17:00:00 (Brussels time).\nExclusion and selection criteria\nApplicant organisations will be assessed against the relevant exclusion and selection criteria. For more information please consult Part C of this Guide."
+    },
+    {
+      "id": "KGB-SRC-0062",
+      "title": "European Solidarity Corps 2026 deadlines",
+      "kind": "web",
+      "filename": "W35.html",
+      "managed_path": "sources/grant-handoff-20261110/W35.html",
+      "sha256": "4da69da4459c56fa1600bc8e8519fb77561cd8a15ff87dc066fc583829848bca",
+      "url": "https://youth.europa.eu/solidarity/organisations/calls-for-proposals_en",
+      "retrieved_on": "2026-11-10",
+      "issuer": "European Commission",
+      "publication_date": null,
+      "excerpt": "Activity type\nDeadline\nWhere to apply\nVolunteering projects\n18 February 2026\n1 October 2026 (optional round)\nNational Agency\nSolidarity Projects\n18 February 2026\n7 May 2026 (optional round)\n1 October 2026\nNational Agency\nVolunteer teams in high-priority areas\n3 March 2026\nEuropean Education and Culture Executive Agency\nVolunteering under the Humanitarian Aid Corps\n23 April 2026\nEuropean Education and Culture Executive Agency\nApplications for the Quality Labels can be submitted on a continuous basis.\nApplication procedure\nFor the decentralised activities managed by National Agencies please apply using the Erasmus+ and European Solidarity Corps page.  \nYou can find model application forms for information and preparation purposes here: Call 2026 Quality Label (ESC 50) sample, Call 2026 Volunteering projects (ESC 51) sample, Call 2026 Solidarity projects (ESC 30) sample"
+    },
+    {
+      "id": "KGB-SRC-0063",
+      "title": "EIC 2027 programme announcement",
+      "kind": "web",
+      "filename": "W38.html",
+      "managed_path": "sources/grant-handoff-20261110/W38.html",
+      "sha256": "1e563ab04bae5b4ccf024052e6ad53d9e957409e10fda8f0915b3dd069840dff",
+      "url": "https://eic.ec.europa.eu/news/european-innovation-council-launches-eur18-billion-funding-2027-2026-11-05_en",
+      "retrieved_on": "2026-11-10",
+      "issuer": "EISMEA",
+      "publication_date": null,
+      "excerpt": "News article\n5 November 2026\nEuropean Innovation Council and SMEs Executive Agency\n1 min read\nIn 2027, the EIC will continue to support high-potential innovators from early research to commercialisation and scale-up. The new programme also delivers on the EU Startup and Scaleup Strategy and the Competitiveness Compass by making EIC support simpler, faster and more targeted. It will also continue to strengthen support for scaling up through the Scaleup Europe Fund and the EIC STEP Scale Up scheme, including in dual-use and defence technologies. And it will make it easier for innovators to apply for and access funding, while advancing a more challenge-driven, staged approach to supporting high-risk, high-reward innovation. New measures will also help EIC-backed companies win their first customers, including through public procurement."
+    },
+    {
+      "id": "KGB-SRC-0064",
+      "title": "EIT Food call-index leads",
+      "kind": "web",
+      "filename": "W39.html",
+      "managed_path": "sources/grant-handoff-20261110/W39.html",
+      "sha256": "9ca9167e3b487da4899b954a56653ba81dae07aa534d302bb99c54fc81e59409",
+      "url": "https://www.eitfood.eu/open-calls-overview?theme%5B%5D=7969036",
+      "retrieved_on": "2026-11-10",
+      "issuer": "EIT Food",
+      "publication_date": null,
+      "excerpt": "Proof-of-Concept Co-Financing Instrument\n Deadline: November 30, 2026\n Open call\n EIT Food's Co-Financing Instrument aids agrifood startups by de-risking pilot projects and promoting innovation and collaboration with industry leaders.\n Continue reading\n Expression of Interest for Venture Studio Founders\n Deadline: December 07, 2026\n Open call\n EIT Food is seeking ambitious entrepreneurs to build a new generation of agrifood tech venture studios across Europe’s underserved regions.\n Continue reading\n Open Call for Implementing Participants of the Empowering Women in Agrifood (EWA) Programme 2027-2028\n Deadline: January 05, 2027\n Open call\n EIT Food is seeking organisations to implement the 2027-2028 Empowering Women in Agrifood (EWA) Programme, supporting women entrepreneurs through tailored training, mentoring and access to networks and funding.\n Continue reading\n Catalyse NEB Call 2027\n Deadline: January 15, 2027\n Open call\n The Catalyse NEB Call 2027 supports start-ups advancing sustainability, inclusion and beauty through mentoring, business support and access to European networks.\n Continue reading\n Proof of Concept & Technology Validation Call\n Deadline: January 18, 2027\n Open call\n The EIT Food Biotech Proof of Concept call helps biotech start-ups overcome two critical development gaps through Route 1 (Validation) for technologies at TRL 4–6 and Route 2 (Demonstrator) for technologies at TRL 7–9.\n Continue reading\n Seedbed Venture Catalyst Call for Startups\n Deadline: January 27, 2027\n Open call\n This Call is for startup teams created by the Venture Builders in the Seedbed Venture Catalyst programme.\n Continue reading"
+    },
+    {
+      "id": "KGB-SRC-0065",
+      "title": "ENISA participative-loan characteristics",
+      "kind": "web",
+      "filename": "W42.html",
+      "managed_path": "sources/grant-handoff-20261110/W42.html",
+      "sha256": "dc648d5b3ef6792ccb825dc4888c5de868dbb6d5973e58dacef3aaacef268b40",
+      "url": "https://portal-enisa.powerappsportals.com/servicios/financiacion/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "ENISA",
+      "publication_date": null,
+      "excerpt": "Financiación para startups y pymes\n Tu préstamo sin garantías \nOfrecemos la financiación que necesitas, con soluciones adaptadas a las necesidades de tu empresa tanto en fases iniciales como de crecimiento.\nIndependientemente de tu etapa, nuestro objetivo es acompañarte, cofinanciando tu proyecto empresarial.\n Préstamos de 25.000 a 1.500.000 euros. \n Los primeros 2 años sólo pagas intereses. \n Tu proyecto y talento como garantía. \n Iniciar la solicitud \n Conocer detalles \n Algunas características de la financiación de Enisa \n 1 \n Tipo de préstamo \n 2 \n Condiciones generales \n 3 \n Requisitos \nPréstamo participativo.\nNo participamos en la gestión ni en la propiedad de la compañía.\nSin garantías.\nFinanciación entre 25.000 y un máximo de 1.500.000 euros.\nComisión de apertura del 0,5 % y los pagos se realizan de forma trimestral.\nDurante los primeros 2 años solo pagas intereses, no el capital.\nTu empresa debe tener su domicilio social y actividad principal en España.\nPymes con proyectos viables, innovadores y con ventajas competitivas.\nDebes tener fondos propios que, al menos, igualen la cantidad solicitada."
+    },
+    {
+      "id": "KGB-SRC-0066",
+      "title": "Draft municipal wildfire rules consultation",
+      "kind": "web",
+      "filename": "W43.html",
+      "managed_path": "sources/grant-handoff-20261110/W43.html",
+      "sha256": "dd1ccb59084b9fcd6305564bb88b2694554b951c5b021946a25f51b26c22d760",
+      "url": "https://www.miteco.gob.es/es/reto-demografico/participacion-publica.html",
+      "retrieved_on": "2026-11-10",
+      "issuer": "MITECO",
+      "publication_date": null,
+      "excerpt": "Audiencia e información pública sobre el proyecto de Orden por la que se establecen las bases reguladoras para la concesión de subvenciones para fomentar la resiliencia local y los municipios seguros frente a incendios forestales en municipios de reto demográfico.\nConsulta:\nCerrado\nResumen\nEsta orden establece las bases reguladoras para la concesión de subvenciones a los ayuntamientos de municipios de reto demográfico de hasta 5.000 habitantes, destinadas a elaborar, revisar o actualizar su plan de actuación municipal frente al riesgo de incendios forestales (PCI) y a ejecutar medidas previstas en planes vigentes y actualizados.\nSu finalidad es que los municipios con mayor siniestralidad forestal dispongan de un plan conforme con la planificación de protección civil aplicable, con cartografía interoperable, y puedan reforzar la protección de su población y su capacidad de respuesta. Con ello, la orden contribuye a la lucha contra la despoblación, atiende en la planificación de avisos y evacuación a las personas según su edad, discapacidad, responsabilidades de cuidado y movilidad, y contribuye a la adaptación al cambio climático y a su mitigación.\nLas ayudas se concederán en régimen de concurrencia competitiva, priorizando aquellos municipios con mayor exposición al riesgo de incendios forestales. Para ello se aplicarán criterios objetivos basados en la información oficial de la Estadística General de Incendios Forestales. Tendrán prioridad los municipios que hayan registrado más de 500 hectáreas de superficie forestal afectada en la última década y, posteriormente, se valorará el índice de siniestralidad forestal registrado en ese mismo periodo. \nLa futura línea de ayudas contará con una dotación total de 20 millones de euros y estará dirigida a municipios de hasta 5.000 habitantes de todo el territorio nacional. Se estima que permitirá apoyar a alrededor de 1.800 municipios. La cuantía de las ayudas oscilará entre 8.000 y 20.000 euros por municipio, en función del número de entidades singulares de población existentes en cada término municipal."
+    },
+    {
+      "id": "KGB-SRC-0067",
+      "title": "GroundWork call applicant countries and terms",
+      "kind": "web",
+      "filename": "W44.html",
+      "managed_path": "sources/grant-handoff-20261110/W44.html",
+      "sha256": "ede9a4e00abefaf4441f74e80c9f62c4c499390e4fbc03072b2914a328cae64b",
+      "url": "https://groundwork-project.eu/for-farmers/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "GroundWork consortium",
+      "publication_date": null,
+      "excerpt": "Open call!\nGroundWork launches its Open Call to support 33 additional farming projects within the five Living Lab regions to implement Regenerative Livestock Grazing Practices.\nCall Opening: 1st September 2026\nApply now \nObjectives\nExpand the network of experimental farms by selecting 33 additional farms.\nSupport the implementation of Regenerative Livestock Grazing Practices (RLGPs).\nImprove data collection on soil health, grazing management, and environmental performance.\nAccess to finance and business consultation\nElegibilty\nApplicants must be farmers or individual entities established in one of the Living Lab countries: Portugal, Germany, Belgium, Sweden, or Serbia.\nApplicants under EU restrictive measures are ineligible. \nSelected applicants will need to provide documentation proving their agricultural activity.\nDuration and budget\nDeadline submission\n19th November 2026 (15:00 CET)\nMaximum grant \n€27,000 per farm\n(€9,000 per year)\nProgramme duration \n3 years\nApply now \nResources\nOpen Call Terms & Conditions\nOpen Call Poster\nEN | DE | FR | SE | PT | SR\nOpen Call FAQ\nEN\nAny questions about the application process? Let us help you! GroundWork.Help@fundingbox.com"
+    },
+    {
+      "id": "KGB-SRC-0068",
+      "title": "GroundWork regenerative grazing project and call",
+      "kind": "web",
+      "filename": "W45.html",
+      "managed_path": "sources/grant-handoff-20261110/W45.html",
+      "sha256": "5c430480346f314f50f9f7f7f22bdee45ce6c791b60bbdd492ff641992d99cca",
+      "url": "https://mission-soil-platform.ec.europa.eu/index.php/news-events/latest-news/groundwork-open-call-eu27000-farmers-adopting-regenerative-grazing",
+      "retrieved_on": "2026-11-10",
+      "issuer": "European Commission DG AGRI",
+      "publication_date": null,
+      "excerpt": "GroundWork Open Call: Up to €27,000 for Farmers Adopting Regenerative Grazing | Mission Soil Platform\n Skip to main content\n Search\nMission Soil Platform\nMain navigation\n Menu\n Close\nMenu\n Back\n Home\n About\n Mission Soil\n Mission Board\n What are EU Missions?\n Mission Soil Platform\n Contact us\n FAQ\n Project hub\n Project hub\n Funded projects under Mission Soil\n Clusters\n Funding opportunities\n Community\n Mission Soil Manifesto\n Signatories and Friends\n Ambassadors\n Living labs\n Living Labs\n Lighthouses\n Mission Soil dashboard\n News & Events\n Newsletter\n Latest news\n Events\n European Mission Soil Week editions\n Mission Soil Investment Forum 2026\n Resource library\nBreadcrumb\n Home\n News Events\n Latest News\nGroundWork Open Call: Up to €27,000 for Farmers Adopting Regenerative Grazing\nGroundWork Open Call: Up to €27,000 for Farmers Adopting Regenerative Grazing\n Monday, 31 August 2026\nWhat does the support include?\nUp to 33 farming entities will be selected to join GroundWork’s five Living Labs: up to seven farms each in Portugal, Belgium, Serbia and Sweden, and up to five in Germany.\nSelected farms will receive a lump-sum grant of up to €27,000, paid in instalments upon completion of programme milestones over the 36-month programme.\nParticipants will also benefit from:\nA tailored Custom Farm Evolution Plan\nOngoing mentoring and guidance\nAccess to a network of farmers and experts\nOpportunities for knowledge exchange through the Living Labs\nThrough this support, farmers will test and adapt Regenerative Livestock Grazing Practices (RLGPs) under real farming conditions, working with researchers and advisors to develop approaches suited to their local context.\nWho can apply?\nThe Open Call is open to farmers and farming entities legally established in Portugal, Germany, Belgium, Sweden or Serbia, subject to the eligibility requirements of the relevant Living Lab.\nHow and when can you apply?\nApplications open on 1 September 2026 and close on 19 November 2026 at 15:00 Brussels time.\nMore information about the eligibility criteria, funding, Living Labs and application process is available on the GroundWork Website.\nApplications must be submitted in English through the online application portal.\nInformation webinars will also be organised in Portuguese, German, French, Serbian and Swedish to provide prospective applicants with further information about the programme and application process. Follow GroundWork on LinkedIn or check our Event page to be updated. \nAbout the GroundWork project\nGroundWork is a Horizon Europe project supporting the transition to regenerative livestock grazing across Europe. Through five Living Labs, the project brings together farmers, researchers and advisors to co-design, test and share regenerative grazing practices adapted to local farming conditions."
+    },
+    {
+      "id": "KGB-SRC-0069",
+      "title": "Water4All JTC current submission link and document editions",
+      "kind": "web",
+      "filename": "W46.html",
+      "managed_path": "sources/grant-handoff-20261110/W46.html",
+      "sha256": "c6106588d8e1df5e38c54a6432e84ca34e8b63e8f5db127da8c820b903eab7fe",
+      "url": "https://www.water4all-partnership.eu/joint-activities/water4all-2026-joint-transnational-call",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Water4All partnership",
+      "publication_date": null,
+      "excerpt": "DISCLAIMER - October 23, 2026. Following technical issue, the EPSS link to the submission and partnering tools for the 2026 call have changed\n► International Informative webinar\nA general and informative webinar dedicated to the international researchers’ community and presented in English will be organised on 17th September 2026 (14:00-16:00 CEST) to answer your questions regarding the call. \nThe webinar video is available : Link here\n► Online Submission Tool & Partnering Tool\nOnline submission tool and partnering tool are available at a new link here\nTentative timeline\nCall opening: 8 September 2026\nSubmission deadline of preproposals: 10 November 2026, 15:00 CET\nSelection of preproposals: Early February 2027\nSubmission deadline of full proposals: 6 April 2027, 15:00 CEST\nSelection of funded proposals: September 2027\nProjects start: End 2027/beginning 2028\nKick-off meeting of the funded projects: Spring 2028\n Call Topics\nThe general theme of the call is “Sustainable Water Management”. \nResearch & innovation proposals submitted under the Water4All 2026 Joint Transnational Call are required to address at least one of the following topics: \nTopic 1: Integrated Monitoring and Assessment for Sustainable Water Management.\nTopic 2: Nature-Based Approaches for Resilient Water Management at hydrological and hydrogeological system scale.\nTopic 3: Smart, secure and adaptive water infrastructures.\nTopic 4: Resilient Water Systems Through Systemic Change, Policy Coherence and Inclusive governance.\nThe call topics are overlapping and non-exclusive. Thus, proposals must address at least one of the following topics and may integrate multiple topics where relevant.\n Documents to Download, webinar document & video\nNote: You may need to primarily empty your browser (cache) to obtain the last versions of the documents.\nWater4All 2026 JTC Call Announcement (V3 06.10.2026)\nDownload \nAnnex A - NCPs and matrix of topics and modalities  (update 23.10.2026)\nDownload\nAnnex B - List of Water4All beneficiaries that may apply to the 2026 JTC (update 23.10.2026)\nDownload\nNational/Regional Regulations (V8.0. 28.10.2026)\nDownload\nPre-Proposal Template\nDownload\nFrequently Asked Questions (FAQ)\nDownload\nWebinar pdf document \nDownload\nVideo of the webinar: Link: Webinar JTC 2026 Water4All\n Eligibility Criteria\nEach consortium must be composed of \nat least three eligible partners that request funding from participating Funding Partner Organisations from three different countries.\nat least two independent legal entities from two different EU Member States or Horizon Europe associated countries (link here) as recipients of the financial support.\nA maximum of 7 partners (including one self-funded partner)\nEach proposal must respect the general international and national/regional eligibility criteria.\nThe lists of eligibility and evaluation criteria are detailed in the Water4All Call Announcement document.  \n Additional Modalities for Early Career Researchers\nThis call includes an additional modality aiming at Early Career Researchers who have obtained their PhD less than 10 years prior to the call launch i.e. after 8 September 2016, unless the FPOs calculate any exemption (e.g. maternity leave) as specified in the national/regional regulation annex. The other PIs in the Consortium do not need to be early career researchers. The thematic focus of the ECR modality is aligned with the JTC topics."
+    },
+    {
+      "id": "KGB-SRC-0070",
+      "title": "SUDOE5 restricted valorisation call",
+      "kind": "web",
+      "filename": "W47.html",
+      "managed_path": "sources/grant-handoff-20261110/W47.html",
+      "sha256": "d40888646d612eb458dc2ae9a0b0f891de057ce1b7012035a065f869d440e9b8",
+      "url": "https://interreg-sudoe.eu/5a-convocatoria/",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Interreg Sudoe",
+      "publication_date": null,
+      "excerpt": "Dar una segunda vida a los resultados de los proyectos clásicos\n Tras dos convocatorias clásicas que han financiado 76 proyectos, seguidas de una convocatoria de capitalización y una convocatoria para proyectos estructurantes, Interreg Sudoe lanza una convocatoria dedicada íntegramente a la valorización. Está dirigida a los 34 proyectos clásicos de la 1.ª convocatoria cuya ejecución finaliza entre septiembre y diciembre de 2026. \n¿Qué es un proyecto de valorización?\nUn proyecto de valorización parte de una o varias realizaciones ya obtenidas por un proyecto clásico Sudoe 2021-2027 (un piloto, una estrategia, un plan de acción) y organiza su despliegue operativo más allá del territorio y del consorcio de origen.\nDesde el punto de vista administrativo y financiero, constituye una operación autónoma, con su propi consorcio, su propio presupuesto y su propio calendario.\nNo se trata de un proyecto nuevo\nEl proyecto de valorización está directamente vinculado al proyecto clásico del que emana: no puede perseguir otros objetivos ni desarrollar nuevas realizaciones.\nTampoco puede utilizarse para prolongar el proyecto clásico con el fin de terminar realizaciones previstas pero no alcanzadas.\nTres formas de valorizar\n01\nTransferir\nlas realizaciones a nuevos actores\n02\nReplicar\nsu implementación en nuevos contextos\n03\nAmpliar su alcance\npara maximizar su impacto y su contribución a las políticas públicas\nCada proyecto clásico puede presentar una sola candidatura. Corresponde al consorcio elegir, entre sus realizaciones, aquella o aquellas que presenten el mayor potencial de valorización.\nLos 34 proyectos concernidos\nSolo los proyectos clásicos de la 1ª convocatoria listados a continuación pueden presentar una candidatura:\nPrioridad 1\n16 proyectos\nPrioridad 2\n10 proyectos\nPrioridad 3\n8 proyectos\nOE 2.4\nALERT-PFAS | An-Gel Sudoe | BIO4RES | RURAL TRANSITION LABS | SocialForest | USE4FOREST\nOE 2.5\nGestEAUr | I-ReWater | SOLLAGUA | TARGET | ThermEcoWat\nOE 2.7\nCOOPTREE | ECOSPHEREWINES | FLoRE | Phos4Cycle | SHAREDH2 – SUDOE\nOE 1.1\nAQUAPRED | NEWPOWER | REMAIN | RePo-SUDOE | RESINSURF | ROBOTA-SUDOE | SenForFire\nOS 1.4\nFASHION FORWARD | SCAIRA | SMART GREEN WATER\nOE 4.5\nHENKO NET | PreDisc | REVITAL | STOP IATRO\nOS 4.6\nAgroTour SUDOE | Cultur-Monts | HITTS | Ultreia_Sudoe\nLo que se espera de los proyectos\n Favorecer la adopción\nde las realizaciones del proyecto clásico por parte de nuevos actores y/o territorios\n Promover su integración\nen políticas públicas, estrategias territoriales o instrumentos de planificación\n Garantizar la continuidad\ny la ampliación de su impacto tras la finalización del proyecto clásico\nRealizaciones suficientemente maduras\nSolo se pueden valorizar aquellas realizaciones que hayan alcanzado al menos el nivel «versión consolidada con el consorcio». El nivel de madurez de cada realización deberá justificarse en la candidatura.\nNivel 1 · No elegible\nVersión de trabajo / borrador\nEn desarrollo, sin validación interna\nNivel 2 · Umbral mínimo\nVersión consolidada con el consorcio\nFinalizada y validada internamente por los beneficiarios del proyecto clásico\nNivel 3\nValidada por las partes interesadas externas\nProbada por usuarios finales, administraciones o expertos\nNivel 4\nAdoptada o integrada en un marco institucional\nIncorporada en una política, una estrategia o un marco reglamentario\n¿Quién puede presentar una candidatura?\nEl consorcio se compone únicamente de entidades que participan activamente en el despliegue, la transferencia o la adopción de las realizaciones, o que aportan capacidades clave. Por tanto, no todos los beneficiarios del proyecto clásico tienen por qué participar.\nRequisitos obligatorios\nRestricciones\nAl menos un beneficiario del proyecto clásico por Estado miembro (España, Francia, Portugal), como beneficiario principal o beneficiario.\nUn beneficiario principal que haya participado ya en el proyecto clásico. Se recomienda mantener el mismo; cualquier cambio debe estar justificado.\nPara cada beneficiario procedente del proyecto clásico, al menos el 60 % de su presupuesto introducido como gasto en el circuito financiero en el momento de presentar la candidatura.\n× Ninguna empresa nueva (categoría IV) puede integrarse en el consorcio, incluidos los antiguos socios asociados.\n× Las entidades andorranas, las empresas y las entidades francesas establecidas fuera de la zona Sudoe no pueden ser beneficiario principal.\n× Las entidades andorranas participan como «socios de Andorra», sin ayuda FEDER.\nEl consorcio puede evolucionar: nuevos beneficiarios pueden unirse al proyecto y otros retirarse, si ello sirve a los objetivos de valorización. Estos cambios deben justificarse en la candidatura.\nFinanciación\n Presupuesto de la convocatoria\nEl FEDER de esta convocatoria proviene de los remanentes de los proyectos clásicos de la 1ª convocatoria y, en su caso, de los fondos no programados de las 3ª y 4ª convocatorias.\nEl montante FEDER exacto aún no se conoce. Su estimación será comunicada en abril de 2027, antes de la programación por parte del Comité de Seguimiento. \nPara la preparación de los presupuestos de los proyecto, se debe considerar los siguientes elementos: \n 50 000 € presupuesto mínimo por beneficiario que recibe FEDER (37 500 € de FEDER)\n 65 % máximo de costes de personal por beneficiario\n 15 % máximo para el grupo de tareas de gestión y coordinación\n Los gastos de preparación no son elegibles.\n Calendario \n09/11/2026\nApertura de la convocatoria\n15/12/2026\nApertura de eSudoe\n29/01/2027\nCierre de la convocatoria (en el idioma del beneficiario principal)\n05/02/2027\nPresentación de las traducciones en los otros dos idiomas\nAbril 2027\nEstimación del importe FEDER disponible\nMayo 2027\nInicio previsto de los proyectos\n¿Desea presentar un proyecto?\nDocumentos disponibles en español, francés, portugués\n Texto de la convocatoria\n Kit de candidatura"
+    }
+  ],
+  "topics": [
+    {
+      "id": "pepac-6881-2",
+      "label": "PEPAC 6881.2 · forest-damage prevention",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Andalusia nonproductive forestry intervention for preventing forest damage, including fire prevention, under the 5 December 2025 governing order. This framework is not proof of a current call. The November BINDIFO announcement relates to 6881.4 and must not be copied as an opening of 6881.2. Current adopted amendments, detailed eligible land/applicants and call availability remain to verify.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 1,
+          "label": "Forestry governing order title and purpose",
+          "locator": "Forestry governing order title and purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 2,
+          "label": "Separate interventions 6881.2 and 6881.4",
+          "locator": "Separate interventions 6881.2 and 6881.4"
+        },
+        {
+          "source_id": "KGB-SRC-0042",
+          "label": "July amendment remains a consultation reference",
+          "locator": "Forestry amendment consultation July 2026; captured 2026-11-10T09:50:56.166447+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "ES-AND-PEPAC-FOREST-PREVENTION"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "pepac-6881-4",
+      "label": "PEPAC 6881.4 · environmental silviculture",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Andalusia intervention for nonproductive silvicultural actions with environmental objectives, under FEADER/PEPAC. Junta’s 3 November 2026 announcement provides preliminary BINDIFO access before applications and anticipates a call at year-end 2026. Announced allocation €40,057,892 across three independent forest-area lines is a programme/call budget, not an individual grant. No opening, site classification, land rights, minimum area, exact aid rate or applicant eligibility is established here.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 2,
+          "label": "PEPAC environmental silviculture intervention",
+          "locator": "PEPAC environmental silviculture intervention"
+        },
+        {
+          "source_id": "KGB-SRC-0041",
+          "label": "Preliminary BINDIFO and planned year-end call",
+          "locator": "BINDIFO preliminary access announcement; captured 2026-11-10T09:50:56.166447+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "ES-AND-PEPAC-FOREST-ENVIRONMENT"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare"
+      }
+    },
+    {
+      "id": "bindifo-preparation",
+      "label": "BINDIFO · preliminary graphical application tool",
+      "kind": "equipment",
+      "domain": "funding",
+      "description": "Preliminary application-support tool announced 3 November 2026 for 6881.4 forestry applications. It maps parcel boundaries, treatment areas, cadastral/SIGPAC classifications, protected areas, threatened-species plans, depopulation context and approved forest-management instruments. Tool access precedes the application period; a mapped overlap is neither an eligibility decision nor a grant.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0041",
+          "label": "BINDIFO graphical checks and preliminary access",
+          "locator": "BINDIFO preliminary access announcement; captured 2026-11-10T09:50:56.166447+00:00"
+        }
+      ]
+    },
+    {
+      "id": "fb-agriforest-framework-2025",
+      "label": "Agrarian / forest restoration · TED/870/2025 framework",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "MITECO Order TED/870/2025 of 5 August, published 8 August 2025, sets competitive Fundación Biodiversidad grant bases for agrarian and forest renaturalisation and ecological restoration. The introduction emphasises scientifically supported work and monitoring changes against a baseline. A framework and its thematic reach are not an open national call or permission to apply for an Almería parcel. Doñana-specific calls retain their own territorial constraints.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 1,
+          "label": "Grant framework, scientific basis and monitoring",
+          "locator": "Grant framework, scientific basis and monitoring"
+        },
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 2,
+          "label": "Policy and ecosystem context",
+          "locator": "Policy and ecosystem context"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "ES-FB-RENATURALISATION-BASES"
+        ],
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "empleaverde-plus",
+      "label": "Empleaverde+",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "FSE+ co-financed skills and green-transition programme administered by Fundación Biodiversidad. The reviewed official index marks its 2025 skills competition resolved. Its generic “we launch a call” banner is not evidence of a fresh 2026 opening. A future suitable organisation/partnership route requires a dated call and applicant review.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0045",
+          "label": "2025 call resolved; generic banner",
+          "locator": "Empleaverde+ call index and resolved 2025 competition; captured 2026-11-10T09:50:57.086963+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "ES-FB-EMPLEAVERDE"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "fb-feder-cities-2026",
+      "label": "FEDER city renaturalisation · Call 2026",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Fundación Biodiversidad’s 2026 urban green-infrastructure competition is marked closed, with dates 29 July–29 October 2026. It concerns Spanish cities and carries its own municipal/applicant conditions, which were not fully reviewed. Regional FEDER programming does not itself offer a grant to an individual restoration site. Keep this closed call as a dated reference.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0046",
+          "label": "Closed city renaturalisation call and end date",
+          "locator": "FEDER city renaturalisation call 2026 status; captured 2026-11-10T09:50:57.499223+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "ES-FEDER-REGIONAL"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "life-programme",
+      "label": "LIFE programme",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "EU environment and climate programme. CINEA’s 2026 page gives 22 September 2026 for the reviewed standard-action competitions. Strategic Nature / Integrated projects had concept-note deadline 3 September 2026 and full-proposal deadline 4 March 2027. The future full date is not evidence of fresh first-stage entry; consult the relevant topic’s invitation/procedure rules. No suitable ready applicant is confirmed.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0049",
+          "label": "2026 SAP and strategic-project deadlines",
+          "locator": "LIFE 2026 call deadlines; captured 2026-11-10T09:50:58.005498+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-LIFE-NATURE",
+          "EU-LIFE-CLIMATE",
+          "EU-LIFE-GOVERNANCE",
+          "EU-LIFE-STRATEGIC"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "horizon-europe-programme",
+      "label": "Horizon Europe",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "EU research and innovation programme. Research calls require the actual topic, eligible institutions/consortium and financial conditions; general interest in restoration or monitoring does not establish funding eligibility. This branch separates the current NATURE calendar, forthcoming CL6 topic and mission references.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0050",
+          "label": "Horizon NATURE research-call calendar",
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0051",
+          "label": "Horizon Europe CL6 forthcoming topic",
+          "locator": "Horizon CL6 BIODIV03 forthcoming call; captured 2026-11-10T09:50:58.358330+00:00"
+        }
+      ]
+    },
+    {
+      "id": "horizon-nature-2027",
+      "label": "Horizon NATURE · 2027 call calendar",
+      "kind": "event",
+      "domain": "funding",
+      "description": "REA lists NATURE-2027-01 and -02 opening 13 October 2026 and closing 14 January 2027. The second call covers living labs for nature restoration and cost-effective biodiversity monitoring among other subjects. This confirms a call calendar, not exact -02-02/-03/-05 topic conditions: their portal pages returned only an application shell during this intake. Deadline time/timezone, topic budgets, applicants, costs and partner rules remain to recover from the work programme/topic documents. Prepare a research consortium route, not a personal planting request.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0050",
+          "label": "NATURE-2027-02 topics and dates",
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-HORIZON-NATURE-LIVINGLAB-2027",
+          "EU-HORIZON-NATURE-NETWORK-2027",
+          "EU-HORIZON-NATURE-MONITORING-2027"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare"
+      }
+    },
+    {
+      "id": "horizon-cl6-biodiv03-2027",
+      "label": "HORIZON-CL6-2027-01-BIODIV-03 · forthcoming",
+      "kind": "event",
+      "domain": "funding",
+      "description": "EFSA’s research-platform notice identifies “Technical innovation to protect ecosystems and to scale up their restoration”, opening 20 April 2027 and closing 22 September 2027. This is forthcoming, not an open November 2026 call. Exact topic documentation, submission time/timezone, eligible applicants, budget and financial conditions remain unreviewed.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0051",
+          "label": "BIODIV-03 code and forthcoming dates",
+          "locator": "Horizon CL6 BIODIV03 forthcoming call; captured 2026-11-10T09:50:58.358330+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-HORIZON-CL6-BIODIV"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare"
+      }
+    },
+    {
+      "id": "mission-soil-funding",
+      "label": "Mission Soil · 2026 funding reference",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "REA’s Mission Soil page lists 2026 single-stage deadline 23 September, first-stage deadline 14 April and second-stage deadline 15 September. Those dates have passed by this check; the mission’s existence does not establish another open round. Relevant future research or cascade calls need separate documents and territorial verification.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0052",
+          "label": "Mission Soil dated 2026 call deadlines",
+          "locator": "Mission Soil 2026 call deadlines; captured 2026-11-10T09:50:58.483706+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-MISSION-SOIL"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "mission-adaptation-funding",
+      "label": "Mission Adaptation · 2026 funding reference",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The Commission lists several 2026 CLIMA research topics and a joint CLIMA-SOIL demonstration topic, with calls opening 4 February and closing 23 September 2026. These dated research calls are separate from participation in the Mission Community, its Charter and technical assistance; mission membership is not a grant award or a permanently open subsidy.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0053",
+          "label": "Adaptation topics and 2026 application calendar",
+          "locator": "Mission Adaptation 2026 call calendar; captured 2026-11-10T09:50:58.526514+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-MISSION-ADAPT"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "erasmus-cooperation-partnerships",
+      "label": "Erasmus+ · cooperation partnerships",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The action guide gives a regular 5 March noon Brussels-time deadline and possible 1 October additional national-agency round. A guide is not proof of a currently open Spanish opportunity. Applicant organisation must generally have been legally established for at least two years; the applicable agency, consortium, priority, dated round and project fit need review before relying on this route.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0061",
+          "label": "When to apply; optional national-agency round",
+          "locator": "Erasmus cooperation-partnership application guidance; captured 2026-11-10T09:51:00.077778+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-ERASMUS-EDUCATION"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "esc-funding-reference",
+      "label": "European Solidarity Corps · 2026 grant reference",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The official 2026 calendar lists grant deadlines no later than 1 October for the reviewed activities. Quality Label applications are continuous but are not grant awards. The combined catalogue route “EU-CERV-SOLIDARITY” must not be read as a single interchangeable scheme; CERV is separate and no specific applicable CERV call was verified here.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0062",
+          "label": "2026 project deadlines and continuous Quality Labels",
+          "locator": "European Solidarity Corps 2026 deadlines; captured 2026-11-10T09:51:00.122597+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-CERV-SOLIDARITY"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "eic-2027-announcement",
+      "label": "EIC · 2027 programme announcement",
+      "kind": "event",
+      "domain": "funding",
+      "description": "EISMEA announced the 2027 European Innovation Council programme on 5 November 2026, supporting high-potential innovation from research through commercialisation and scale-up. This announcement is a preparation lead, not a verified fit for an ordinary restoration business. Specific instrument, technology maturity, applicant and financial conditions require current programme/call documents.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0063",
+          "label": "5 November announcement: 2027 EIC funding",
+          "locator": "EIC 2027 programme announcement; captured 2026-11-10T09:51:00.860569+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-INNOVATION-SME"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "interreg-sudoe",
+      "label": "Interreg Sudoe",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "South-west European transnational cooperation programme. Its fourth call’s amended main deadline was 30 October 2026 before noon mainland-Spain time; translations 6 November did not create a new entry round. A distinct fifth valorisation call opened 9 November and has narrow legacy-project conditions described below.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0055",
+          "label": "Fourth-call deadline extension",
+          "locator": "SUDOE4 amended deadline notice; captured 2026-11-10T09:50:58.838005+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 3,
+          "label": "Fifth call distinct from earlier competitions",
+          "locator": "Fifth call distinct from earlier competitions"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-INTERREG-SUDOE"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare only for a qualifying legacy-project route; no partner arrangement confirmed"
+      }
+    },
+    {
+      "id": "sudoe-valorisation-call5-2026",
+      "label": "SUDOE Call 5 · valorisation of existing results",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Official text approved 4 November 2026. Open 9 November 2026–29 January 2027; eSudoe form available from 15 December. Main application and annexes before 29 January 2027 12:00:00 UTC+1 (Santander/mainland Spain); translations before 5 February 2027 same time. Restricted to valorisation of one of 34 listed first-call classical projects, one application per original project. Transfer/replication/adoption of completed outputs only, not new objectives or unfinished old outputs. At least one original beneficiary from each of Spain, France and Portugal, and a lead that was an original beneficiary; former beneficiaries need at least 60% of their budget entered in the financial circuit. New for-profit firms cannot join. A new nonprofit/public participant might join only where justified and all conditions are met. No qualifying relationship is established for Algarrobos.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 1,
+          "label": "Approval date and official fifth-call identity",
+          "locator": "Approval date and official fifth-call identity"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 5,
+          "label": "Restricted legacy-project valorisation purpose",
+          "locator": "Restricted legacy-project valorisation purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 10,
+          "label": "Funding and original-beneficiary countries",
+          "locator": "Funding and original-beneficiary countries"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 11,
+          "label": "60% readiness, original lead and no new companies",
+          "locator": "60% readiness, original lead and no new companies"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 13,
+          "label": "Opening, form availability and precise main deadline",
+          "locator": "Opening, form availability and precise main deadline"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 14,
+          "label": "Translation deadline",
+          "locator": "Translation deadline"
+        }
+      ],
+      "aspects": {
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare; restricted partner-dependent possibility, not a fresh stand-alone planting grant"
+      }
+    },
+    {
+      "id": "sudoe5-finance",
+      "label": "SUDOE Call 5 · finance and duration",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "FEDER contribution cannot exceed 75% of eligible total cost. Exact call allocation is unknown at launch, estimate expected April 2027. Each FEDER beneficiary budget at least €50,000 (€37,500 FEDER at 75%); staff no more than 65% of each beneficiary plan, management/coordination no more than 15% of whole project plan. Maximum execution 18 months; eligibility of execution costs from 1 January 2027, planned programming from May 2027. Preparation expenditure excluded. No individual grant or reimbursement schedule is guaranteed; detailed guide, state aid, assessment and cash flow remain to review.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 10,
+          "label": "Unfixed allocation and maximum FEDER share",
+          "locator": "Unfixed allocation and maximum FEDER share"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 15,
+          "label": "Duration and beneficiary budget/cost limits",
+          "locator": "Duration and beneficiary budget/cost limits"
+        }
+      ]
+    },
+    {
+      "id": "interreg-europe",
+      "label": "Interreg Europe",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The official application page was recovered by direct HTTP capture on 10 November 2026. It states all funds are committed and no more open calls are planned in 2021–2027. Browser research still returned 403: this is a method-specific access failure, not contradictory programme status. The managed capture supports this dated statement. Policy Learning Platform support is separate from grant availability.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0056",
+          "label": "All funds committed; no further 2021–2027 calls planned",
+          "locator": "Interreg Europe funds committed; captured 2026-11-10T09:50:59.009003+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-INTERREG-EUROPE"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch; no new call under the stated period"
+      }
+    },
+    {
+      "id": "interreg-nextmed",
+      "label": "Interreg NEXT MED · third-call reference",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Current third-call webpage says sustainable-tourism capitalisation is the last 2021–2027 call and gives 29 October 2026 as application deadline, yet its heading/menu still says OPEN. The 9 November scan’s claim that the specific page said CLOSED was not reproduced on 10 November. Retain the past explicit date and flag the contradictory label; no extension or fresh intake was verified. Exact cutoff time remains unverified.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0057",
+          "label": "Past explicit deadline conflicts with OPEN heading",
+          "locator": "NEXT MED third call dated deadline and stale open heading; captured 2026-11-10T09:50:59.269721+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-INTERREG-NEXT-MED"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch; do not treat stale label as an invitation"
+      }
+    },
+    {
+      "id": "prima-water-2026",
+      "label": "PRIMA · water topic 1.1.1-2026",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Specific topic “Decentralised Brackish Water Desalination for Climate-Resilient and Resource-Efficient Mediterranean Agriculture” is marked closed. The page lists stage-two deadline 7 October 2026 17:00 labelled CET; that historical seasonal timezone label is retained rather than silently corrected. This topic and its expected outcomes do not establish a future general water-management call or evidence of completed restoration results.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0060",
+          "label": "Named PRIMA topic, stage-two deadline and closed status",
+          "locator": "PRIMA 1.1.1-2026 status; captured 2026-11-10T09:50:59.950961+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-PRIMA"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "enisa-participative-loans",
+      "label": "ENISA · participative business loans",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "ENISA’s financing page describes participative loans for Spanish startups/SMEs, not grants. Published headline range €25,000–€1.5m and equity at least equal to the amount requested; business viability and innovation conditions apply. A visible application link does not verify credit availability or the user’s eligibility. Do not transfer these loan terms to CDTI grants or ordinary restoration expenditure.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0065",
+          "label": "Participative loans, equity and Spanish business conditions",
+          "locator": "ENISA participative-loan characteristics; captured 2026-11-10T09:51:01.050515+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "ES-CDTI-ENISA-TECH"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "carbon-absorption-registry",
+      "label": "MITECO · carbon absorption project registry",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Registration mechanism for qualifying Spanish afforestation or restoration of fire-damaged forest. Reviewed webpage requirements include at least 1ha, mature canopy at least 20%, potential mature tree height 3m, minimum 30-year permanence and a management plan. Registration does not itself provide a grant, a carbon buyer, a price or proof a dryland planting qualifies. These documentary conditions are a screening reference, not a validated carbon-income calculation.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0048",
+          "label": "Registry requirements, permanence and project types",
+          "locator": "Carbon absorption project registration requirements; captured 2026-11-10T09:50:57.784812+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "ES-CARBON-REGISTRY"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "municipal-wildfire-draft",
+      "label": "Municipal wildfire resilience · draft rules",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Draft TED/XXX/2026 rules already stored as FUND-011, not a new programme edition or open call. Proposed support concerns municipal wildfire plans and measures in municipalities facing demographic challenges. CIUDEN is the proposed granting foundation. MITECO’s current page still presents a draft-order consultation (now consultation closed); that is not proof of adoption or a grant application window. Municipality status, applicable plan, final order and call are unresolved for Alhama.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 1,
+          "label": "Draft placeholder order and municipal purpose",
+          "locator": "Draft placeholder order and municipal purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 2,
+          "label": "Proposed CIUDEN implementation",
+          "locator": "Proposed CIUDEN implementation"
+        },
+        {
+          "source_id": "KGB-SRC-0066",
+          "label": "Draft-order consultation, not a funding call",
+          "locator": "Draft municipal wildfire rules consultation; captured 2026-11-10T09:51:01.149309+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "ES-LOCAL-MUNICIPAL",
+          "ES-JA-FOREST-REHABILITATION-OTHER"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "natura2000-funding-reference",
+      "label": "Natura 2000 · financing reference",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "Commission overview explains country responsibility, Prioritised Action Frameworks and complementary EU instruments for Natura 2000 management/restoration. It does not identify an open local grant or establish that this site lies in Natura 2000. Protected-area context, the responsible authority and an actual dated funding instrument are still needed.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0047",
+          "label": "Prioritised Action Frameworks and multiple funding instruments",
+          "locator": "Financing Natura 2000 overview; captured 2026-11-10T09:50:57.772857+00:00"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "ES-PARK-NATURA2000-RURAL"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      }
+    },
+    {
+      "id": "groundwork-project",
+      "label": "GroundWork · regenerative grazing project",
+      "kind": "project",
+      "domain": "funding",
+      "description": "Horizon Europe project using five Living Labs to co-design, test and share regenerative livestock grazing practices with farmers, researchers and advisers. Its 2026 cascade call offers selected farms a tailored evolution plan, mentoring, network and milestone-based financial support for on-farm testing. This is a description of intended work, not measured soil-health or biodiversity results. Detailed trial methods, institutional ownership and outcomes remain unreviewed. Published call countries exclude Spain, so no Almería grant route is established.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0068",
+          "label": "GroundWork project purpose and intended on-farm work",
+          "locator": "GroundWork regenerative grazing project and call; captured 2026-11-10T09:51:01.808370+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0067",
+          "label": "Call geography and agricultural-activity requirements",
+          "locator": "GroundWork call applicant countries and terms; captured 2026-11-10T09:51:01.646821+00:00"
+        }
+      ]
+    },
+    {
+      "id": "groundwork-call-2026",
+      "label": "GroundWork · 2026 farm cascade call",
+      "kind": "event",
+      "domain": "funding",
+      "description": "Call for 33 additional farming entities, up to €27,000 per farm over 36 months with milestone-based instalments. Deadline 19 November 2026 15:00 CET / Brussels time. Applicants must be established in Portugal, Germany, Belgium, Sweden or Serbia and meet Living Lab/agricultural-activity conditions. Spain is not listed; out of scope for the current Almería project unless an official exception is established. Retained as a dated reference, not promoted as locally available.",
+      "aliases": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0067",
+          "label": "Applicant countries, amount, duration and deadline",
+          "locator": "GroundWork call applicant countries and terms; captured 2026-11-10T09:51:01.646821+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0068",
+          "label": "Milestone payments and country restrictions",
+          "locator": "GroundWork regenerative grazing project and call; captured 2026-11-10T09:51:01.808370+00:00"
+        }
+      ],
+      "aspects": {
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch; verified geographic exclusion for current project"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "gh26-status:pepac:pepac-6881-2",
+      "source": "pepac",
+      "target": "pepac-6881-2",
+      "label": "contains Andalusian intervention",
+      "explanation": "The 2025 order identifies this distinct PEPAC intervention.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 2,
+          "label": "Andalusia PEPAC territorial interventions",
+          "locator": "Andalusia PEPAC territorial interventions"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:pepac:pepac-6881-4",
+      "source": "pepac",
+      "target": "pepac-6881-4",
+      "label": "contains Andalusian intervention",
+      "explanation": "The 2025 order identifies environmental silviculture separately.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 2,
+          "label": "AND6881.4 environmental actions",
+          "locator": "AND6881.4 environmental actions"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:pepac-6881-4:bindifo-preparation",
+      "source": "pepac-6881-4",
+      "target": "bindifo-preparation",
+      "label": "has preparation tool",
+      "explanation": "The November announcement identifies BINDIFO as preliminary support for this intervention.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0041",
+          "label": "BINDIFO before applications",
+          "locator": "BINDIFO preliminary access announcement; captured 2026-11-10T09:50:56.166447+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:pepac-6881-4:forest-management-plan",
+      "source": "pepac-6881-4",
+      "target": "forest-management-plan",
+      "label": "has a relevant planning connection",
+      "explanation": "Curated link: the framework refers to coherence with sustainable forest management instruments, and BINDIFO checks whether one exists. Exact site obligations remain to review.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 2,
+          "label": "Coherence with sustainable forest management",
+          "locator": "Coherence with sustainable forest management"
+        },
+        {
+          "source_id": "KGB-SRC-0041",
+          "label": "Approved forest-management instrument map check",
+          "locator": "BINDIFO preliminary access announcement; captured 2026-11-10T09:50:56.166447+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:fundacion-biodiversidad:fb-agriforest-framework-2025",
+      "source": "fundacion-biodiversidad",
+      "target": "fb-agriforest-framework-2025",
+      "label": "has governing framework",
+      "explanation": "The published order concerns Fundación Biodiversidad agrarian and forest restoration grants.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 1,
+          "label": "Order TED/870/2025 title",
+          "locator": "Order TED/870/2025 title"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:fb-agriforest-framework-2025:monitoring",
+      "source": "fb-agriforest-framework-2025",
+      "target": "monitoring",
+      "label": "requires results monitoring in its rationale",
+      "explanation": "The framework introduction calls for scientific knowledge and monitoring improvement relative to baseline; this is not a project outcome.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 1,
+          "label": "Scientific support and environmental baseline",
+          "locator": "Scientific support and environmental baseline"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:horizon-europe-programme:horizon-nature-2027",
+      "source": "horizon-europe-programme",
+      "target": "horizon-nature-2027",
+      "label": "has research call",
+      "explanation": "The official notice identifies this specific research programme/call connection.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0050",
+          "label": "Horizon NATURE 2027 call calendar",
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:horizon-europe-programme:horizon-cl6-biodiv03-2027",
+      "source": "horizon-europe-programme",
+      "target": "horizon-cl6-biodiv03-2027",
+      "label": "has forthcoming topic",
+      "explanation": "The official notice identifies this specific research programme/call connection.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0051",
+          "label": "Horizon CL6 BIODIV03 forthcoming call",
+          "locator": "Horizon CL6 BIODIV03 forthcoming call; captured 2026-11-10T09:50:58.358330+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:horizon-europe-programme:mission-adaptation-funding",
+      "source": "horizon-europe-programme",
+      "target": "mission-adaptation-funding",
+      "label": "funds mission topics",
+      "explanation": "The official notice identifies this specific research programme/call connection.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0053",
+          "label": "Mission Adaptation 2026 call calendar",
+          "locator": "Mission Adaptation 2026 call calendar; captured 2026-11-10T09:50:58.526514+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:interreg-sudoe:sudoe-valorisation-call5-2026",
+      "source": "interreg-sudoe",
+      "target": "sudoe-valorisation-call5-2026",
+      "label": "has restricted fifth call",
+      "explanation": "The fifth call is a different dated opportunity from the closed fourth call.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 3,
+          "label": "Fifth call for 34 first-call projects",
+          "locator": "Fifth call for 34 first-call projects"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:sudoe-valorisation-call5-2026:sudoe5-finance",
+      "source": "sudoe-valorisation-call5-2026",
+      "target": "sudoe5-finance",
+      "label": "has finance conditions",
+      "explanation": "These are specific to the valorisation call.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 10,
+          "label": "FEDER ceiling",
+          "locator": "FEDER ceiling"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 15,
+          "label": "Duration and financial limits",
+          "locator": "Duration and financial limits"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:sudoe-valorisation-call5-2026:demonstration",
+      "source": "sudoe-valorisation-call5-2026",
+      "target": "demonstration",
+      "label": "can transfer completed demonstrations",
+      "explanation": "Curated link: the call permits demonstrations/application tests for transfer of existing outputs. It cannot be treated as support to create a new demonstration project with unrelated objectives.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 5,
+          "label": "No new objectives or outputs",
+          "locator": "No new objectives or outputs"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 6,
+          "label": "Demonstrations and training for transfer",
+          "locator": "Demonstrations and training for transfer"
+        }
+      ]
+    },
+    {
+      "id": "gh26-status:groundwork-project:groundwork-call-2026",
+      "source": "groundwork-project",
+      "target": "groundwork-call-2026",
+      "label": "offers restricted cascade call",
+      "explanation": "The project’s support is financial support to third-party farms in its stated Living Lab countries, not a Spanish general restoration grant.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0067",
+          "label": "33 additional farms and country gate",
+          "locator": "GroundWork call applicant countries and terms; captured 2026-11-10T09:51:01.646821+00:00"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "gh26-al20-window",
+      "label": "AL20 · advertised application window checked 10 November",
+      "text": "The administering GDR advertises the 22 April 2026 published non-GDR call open until 31 December 2028; the Junta territory list includes Alhama de Almería. These checks do not verify remaining allocation, absence of all suspensions/amendments, or the user’s applicant/land eligibility. Continue preparation against the exact relevant line and current notices. Applies to the twelve LEADER-AL20 route IDs mapped in the run ledger, not twelve independent grants.",
+      "topic_ids": [
+        "leader-nongdr-call-2026",
+        "al20"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0039",
+          "label": "Published call and advertised end date",
+          "locator": "AL20 applications and published call; captured 2026-11-10T09:50:56.165456+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0040",
+          "label": "AL20 municipalities include Alhama de Almería",
+          "locator": "AL20 official territory and strategy; captured 2026-11-10T09:50:56.165456+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-cap-2026-window",
+      "label": "CAP · 2026 annual-claim baseline is historical",
+      "text": "The January resolution’s application paragraph gives 1 February–30 April 2026, expressly subject to later basic-law amendments. This is a historical baseline, not a November invitation or a verified 2027 call. Specific agroenvironment/organic commitments, extensions and the applicant’s active-farmer status were not fully reviewed.",
+      "topic_ids": [
+        "pepac"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0043",
+          "label": "Baseline annual-claim window with amendment qualification",
+          "locator": "CAP annual claim 2026 baseline window; captured 2026-11-10T09:50:56.166447+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-live-deadline-captures",
+      "label": "November call pages and document editions checked",
+      "text": "The current PAEAS page marks its 10 November inclusive deadline, BiodivFuture gives mandatory noon CET 10 November and full noon CEST 16 April 2027, and Euro-MED gives 13 November 13:00 Brussels for written applications. Water4All’s 23 October notice changed the EPSS submission link to epss.proposals.ee; use the current official page rather than the older PDF glossary link. Water4All identifies call V3 (6 October) and national rules V8 (28 October); BiodivFuture rules page identifies 4 November V6. These are dated source checks, not continuing live status after the deadlines.",
+      "topic_ids": [
+        "fb-paeas-dc-call-2026",
+        "biodivfuture-2026",
+        "water4all-jtc-2026",
+        "euromed-call8-2026"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0044",
+          "label": "PAEAS call window",
+          "locator": "PAEAS / climate-disinformation call status; captured 2026-11-10T09:50:56.819742+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0058",
+          "label": "BiodivFuture mandatory first-stage deadline",
+          "locator": "BiodivFuture schedule and research scope; captured 2026-11-10T09:50:59.596325+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0059",
+          "label": "Funding-rule edition update",
+          "locator": "BiodivFuture funding rules version; captured 2026-11-10T09:50:59.768213+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0054",
+          "label": "Euro-MED written calendar",
+          "locator": "Euro-MED Call8 calendar and documents; captured 2026-11-10T09:50:58.526514+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Changed EPSS link, dates and current PDF editions",
+          "locator": "Water4All JTC current submission link and document editions; captured 2026-11-10T09:51:02.132333+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-nextmed-correction",
+      "label": "NEXT MED scan wording corrected",
+      "text": "The earlier research input reported CLOSED on the specific page. The fresh stored capture and web read instead reproduce an OPEN heading with the past 29 October 2026 deadline. The accepted reference preserves both the explicit date and unresolved label conflict; it does not repeat the earlier CLOSED wording as a verified quote.",
+      "topic_ids": [
+        "interreg-nextmed"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0057",
+          "label": "Conflicting OPEN heading and explicit deadline",
+          "locator": "NEXT MED third call dated deadline and stale open heading; captured 2026-11-10T09:50:59.269721+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-eit-index-leads",
+      "label": "EIT Food index remains a lead",
+      "text": "The official index lists Proof-of-Concept Co-Financing Instrument 30 November 2026 and other future entries. Detailed instruments, geography, applicant conditions and document editions were not reviewed, so the index is retained as a lead under innovation rather than a locally actionable grant.",
+      "topic_ids": [
+        "eic-2027-announcement"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0064",
+          "label": "Index-only proof-of-concept and future deadlines",
+          "locator": "EIT Food call-index leads; captured 2026-11-10T09:51:00.909258+00:00"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 1,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 2,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 3,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 5,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 6,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 10,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 11,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 12,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 13,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 14,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0035",
+      "page": 15,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0036",
+      "page": 1,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0036",
+      "page": 2,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0037",
+      "page": 1,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0037",
+      "page": 2,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0038",
+      "page": 1,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    },
+    {
+      "source_id": "KGB-SRC-0038",
+      "page": 2,
+      "status": "inspected",
+      "note": "Selected introductory, purpose, institutional, timing or applicant-rule passage reviewed; unreviewed pages and tables remain in run ledger."
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:funding-pepac",
+      "label": "PEPAC · Spain",
+      "parent_id": "browse:funding-feader",
+      "anchor_topic_id": "pepac",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "leader",
+          "role": "primary"
+        },
+        {
+          "topic_id": "pepac-6881-2",
+          "role": "primary"
+        },
+        {
+          "topic_id": "pepac-6881-4",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Spain’s CAP Strategic Plan 2023–2027 includes intervention 7119 LEADER.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Preámbulo: FEADER, PEPAC e intervención 7119 LEADER",
+          "label": "LEADER: FEADER, Spain CAP plan and local development"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 2,
+          "label": "Two separate forestry interventions",
+          "locator": "Two separate forestry interventions"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:pepac-6881-4",
+      "label": "Environmental silviculture · 6881.4",
+      "parent_id": "browse:funding-pepac",
+      "anchor_topic_id": "pepac-6881-4",
+      "members": [
+        {
+          "topic_id": "bindifo-preparation",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Prepare spatial and applicant evidence; preliminary software access does not open a call.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0041",
+          "label": "Preliminary application support",
+          "locator": "BINDIFO preliminary access announcement; captured 2026-11-10T09:50:56.166447+00:00"
+        }
+      ],
+      "presentation": "hierarchy",
+      "member_layout": "vertical"
+    },
+    {
+      "id": "browse:funding-biodiversidad",
+      "label": "Fundación Biodiversidad · Spain",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "fundacion-biodiversidad",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "donana-restoration-grants-2025",
+          "role": "primary"
+        },
+        {
+          "topic_id": "fb-paeas-dc-call-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "fb-agriforest-framework-2025",
+          "role": "primary"
+        },
+        {
+          "topic_id": "empleaverde-plus",
+          "role": "primary"
+        },
+        {
+          "topic_id": "fb-feder-cities-2026",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Recorded grant body for the Doñana 2025 restoration competition. No EU, provincial or local intermediary has been inferred.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 1,
+          "locator": "Título; antecedentes; Primero",
+          "label": "Fundación Biodiversidad: Doñana 2025 call and provisional proposal"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 1,
+          "locator": "Additional national education call",
+          "label": "Additional national education call"
+        },
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 1,
+          "label": "Agrarian/forest framework",
+          "locator": "Agrarian/forest framework"
+        },
+        {
+          "source_id": "KGB-SRC-0045",
+          "label": "Empleaverde skills call",
+          "locator": "Empleaverde+ call index and resolved 2025 competition; captured 2026-11-10T09:50:57.086963+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0046",
+          "label": "FEDER urban call",
+          "locator": "FEDER city renaturalisation call 2026 status; captured 2026-11-10T09:50:57.499223+00:00"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:horizon-funding",
+      "label": "Horizon Europe · research calls",
+      "parent_id": "browse:funding-commission",
+      "anchor_topic_id": "horizon-europe-programme",
+      "members": [
+        {
+          "topic_id": "horizon-nature-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "horizon-cl6-biodiv03-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mission-soil-funding",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mission-adaptation-funding",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Call calendar, exact topic eligibility and project fit are different checks. Missions are not permanent grant windows.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0050",
+          "label": "NATURE calendar",
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0051",
+          "label": "CL6 forthcoming topic",
+          "locator": "Horizon CL6 BIODIV03 forthcoming call; captured 2026-11-10T09:50:58.358330+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0053",
+          "label": "Mission funding topics",
+          "locator": "Mission Adaptation 2026 call calendar; captured 2026-11-10T09:50:58.526514+00:00"
+        }
+      ],
+      "presentation": "hierarchy",
+      "member_layout": "vertical"
+    },
+    {
+      "id": "browse:funding-commission",
+      "label": "European Commission · EU",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "european-commission",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "nature-credits",
+          "role": "primary"
+        },
+        {
+          "topic_id": "life-programme",
+          "role": "primary"
+        },
+        {
+          "topic_id": "horizon-europe-programme",
+          "role": "primary"
+        },
+        {
+          "topic_id": "erasmus-cooperation-partnerships",
+          "role": "primary"
+        },
+        {
+          "topic_id": "esc-funding-reference",
+          "role": "primary"
+        },
+        {
+          "topic_id": "eic-2027-announcement",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "The Commission’s prospective nature-credit policy branch is distinct from the FEADER grant framework.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 1,
+          "locator": "COM(2025) 374 final; 7.7.2025",
+          "label": "European Commission: nature-credit roadmap communication"
+        },
+        {
+          "source_id": "KGB-SRC-0049",
+          "label": "LIFE calls",
+          "locator": "LIFE 2026 call deadlines; captured 2026-11-10T09:50:58.005498+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0050",
+          "label": "Horizon research calls",
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0061",
+          "label": "Erasmus action guidance",
+          "locator": "Erasmus cooperation-partnership application guidance; captured 2026-11-10T09:51:00.077778+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0062",
+          "label": "ESC calendar",
+          "locator": "European Solidarity Corps 2026 deadlines; captured 2026-11-10T09:51:00.122597+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0063",
+          "label": "EIC announcement",
+          "locator": "EIC 2027 programme announcement; captured 2026-11-10T09:51:00.860569+00:00"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:sudoe",
+      "label": "Interreg Sudoe",
+      "parent_id": "browse:funding-structure",
+      "anchor_topic_id": "interreg-sudoe",
+      "members": [
+        {
+          "topic_id": "sudoe-valorisation-call5-2026",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Keep fourth-call historical closure distinct from fifth-call valorisation and its legacy-project gate.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 3,
+          "label": "Separate fifth-call purpose",
+          "locator": "Separate fifth-call purpose"
+        }
+      ],
+      "presentation": "hierarchy",
+      "member_layout": "vertical"
+    },
+    {
+      "id": "browse:sudoe5",
+      "label": "Valorisation · Call 5",
+      "parent_id": "browse:sudoe",
+      "anchor_topic_id": "sudoe-valorisation-call5-2026",
+      "members": [
+        {
+          "topic_id": "sudoe5-finance",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "An existing eligible project lineage is required before finance details matter.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 5,
+          "label": "Legacy-project requirement",
+          "locator": "Legacy-project requirement"
+        }
+      ],
+      "presentation": "hierarchy",
+      "member_layout": "vertical"
+    },
+    {
+      "id": "browse:groundwork",
+      "label": "GroundWork · Project and cascade call",
+      "parent_id": "browse:horizon-cascade-projects",
+      "anchor_topic_id": "groundwork-project",
+      "members": [
+        {
+          "topic_id": "groundwork-call-2026",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Project purpose is separated from the dated financial-support call and its geographic exclusion.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0068",
+          "label": "GroundWork project and farm call",
+          "locator": "GroundWork regenerative grazing project and call; captured 2026-11-10T09:51:01.808370+00:00"
+        }
+      ],
+      "presentation": "hierarchy",
+      "member_layout": "vertical"
+    },
+    {
+      "id": "browse:funding-structure",
+      "label": "Funding structure",
+      "parent_id": "funding:programmes",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "feader",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nextgenerationeu",
+          "role": "primary"
+        },
+        {
+          "topic_id": "fundacion-biodiversidad",
+          "role": "primary"
+        },
+        {
+          "topic_id": "european-commission",
+          "role": "primary"
+        },
+        {
+          "topic_id": "biodiversa-partnership",
+          "role": "primary"
+        },
+        {
+          "topic_id": "water4all-partnership",
+          "role": "primary"
+        },
+        {
+          "topic_id": "interreg-euromed",
+          "role": "primary"
+        },
+        {
+          "topic_id": "interreg-sudoe",
+          "role": "primary"
+        },
+        {
+          "topic_id": "interreg-europe",
+          "role": "primary"
+        },
+        {
+          "topic_id": "interreg-nextmed",
+          "role": "primary"
+        },
+        {
+          "topic_id": "prima-water-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "enisa-participative-loans",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carbon-absorption-registry",
+          "role": "primary"
+        },
+        {
+          "topic_id": "municipal-wildfire-draft",
+          "role": "primary"
+        },
+        {
+          "topic_id": "natura2000-funding-reference",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Browse the recorded funds, national frameworks, responsible authorities and local implementation. These folders explain organization without turning geographic containment into a funding responsibility. Nature credits remain prospective finance; grants, proposals and procurement retain their recorded status. This is a peer catalogue of independently documented funding bodies, programmes and finance mechanisms; geographic or financial responsibility is never inferred from placement.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "locator": "Preámbulo: FEADER, PEPAC e intervención 7119 LEADER",
+          "label": "LEADER: FEADER, Spain CAP plan and local development"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "locator": "4. Financiación y anualidades",
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing"
+        },
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 1,
+          "locator": "Título; antecedentes; Primero",
+          "label": "Fundación Biodiversidad: Doñana 2025 call and provisional proposal"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 1,
+          "locator": "COM(2025) 374 final; 7.7.2025",
+          "label": "European Commission: nature-credit roadmap communication"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "locator": "Biodiversa transnational funders",
+          "label": "Biodiversa transnational funders"
+        },
+        {
+          "source_id": "KGB-SRC-0033",
+          "page": 7,
+          "locator": "Water4All partnership",
+          "label": "Water4All partnership"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "locator": "Euro-MED call structure",
+          "label": "Euro-MED call structure"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 3,
+          "label": "SUDOE valorisation",
+          "locator": "SUDOE valorisation"
+        },
+        {
+          "source_id": "KGB-SRC-0056",
+          "label": "Interreg Europe status",
+          "locator": "Interreg Europe funds committed; captured 2026-11-10T09:50:59.009003+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0057",
+          "label": "NEXT MED call",
+          "locator": "NEXT MED third call dated deadline and stale open heading; captured 2026-11-10T09:50:59.269721+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0060",
+          "label": "PRIMA topic",
+          "locator": "PRIMA 1.1.1-2026 status; captured 2026-11-10T09:50:59.950961+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0065",
+          "label": "ENISA loan mechanism",
+          "locator": "ENISA participative-loan characteristics; captured 2026-11-10T09:51:01.050515+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0048",
+          "label": "Carbon registry",
+          "locator": "Carbon absorption project registration requirements; captured 2026-11-10T09:50:57.784812+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 1,
+          "label": "Municipal draft",
+          "locator": "Municipal draft"
+        },
+        {
+          "source_id": "KGB-SRC-0047",
+          "label": "Natura financing overview",
+          "locator": "Financing Natura 2000 overview; captured 2026-11-10T09:50:57.772857+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0068",
+          "label": "GroundWork cascade funding",
+          "locator": "GroundWork regenerative grazing project and call; captured 2026-11-10T09:51:01.808370+00:00"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true
+    },
+    {
+      "id": "browse:horizon-cascade-projects",
+      "label": "Projects offering cascade support",
+      "parent_id": "browse:horizon-funding",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "groundwork-project",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Horizon project examples offering their own restricted third-party support; intended work is not a measured result.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0068",
+          "label": "Horizon Europe GroundWork project and cascade call",
+          "locator": "GroundWork regenerative grazing project and call; captured 2026-11-10T09:51:01.808370+00:00"
+        }
+      ],
+      "presentation": "hierarchy",
+      "member_layout": "vertical"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "gh26-eip-read-failure",
+      "text": "EIP-AGRI procedure 25661 returned zero substantive body. Recover the current dated procedure and BOJA resolution before claiming open, closed or unchanged; previous scan reports evaluation of a 2025 round only.",
+      "topic_ids": [
+        "pepac"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "gh26-local-source-failure",
+      "text": "Diputación Almería source returned only 413 characters, insufficient for a local-call decision. Retry a dated official notice/application source. No open or closed municipal grant inferred.",
+      "topic_ids": [
+        "municipal-wildfire-draft"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "gh26-horizon-topic-shells",
+      "text": "All three supplied HORIZON-NATURE-2027-02-02/-03/-05 portal URLs returned 27-character JavaScript shells. Recover official work-programme/topic documents; REA confirms only the shared calendar and themes.",
+      "topic_ids": [
+        "horizon-nature-2027"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0050",
+          "label": "Call-level calendar only",
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-cdti-read-failure",
+      "text": "General CDTI PID URL returned no substantive body in this intake. The scan’s year-round/€175,000/partially-repayable summary is not freshly verified or transferred to Water4All. Retry the official PID factsheet and application conditions.",
+      "topic_ids": [
+        "water4all-spain-cdti",
+        "enisa-participative-loans"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "gh26-sudoe5-rule-review",
+      "text": "SUDOE5 assessment tables, complete guide, site/partner applicability and payment schedule remain unreviewed. Only an identified eligible first-call project could support a concrete participation review.",
+      "topic_ids": [
+        "sudoe-valorisation-call5-2026"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 11,
+          "label": "Original partners and new-company exclusion",
+          "locator": "Original partners and new-company exclusion"
+        }
+      ]
+    },
+    {
+      "id": "gh26-draft-adoption-review",
+      "text": "Forestry July consultation and municipal draft do not prove adoption. Locate adopted amendments and an actual call before updating eligibility logic or calling these open.",
+      "topic_ids": [
+        "pepac-6881-4",
+        "municipal-wildfire-draft"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0042",
+          "label": "Forestry consultation",
+          "locator": "Forestry amendment consultation July 2026; captured 2026-11-10T09:50:56.166447+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0066",
+          "label": "Municipal draft consultation",
+          "locator": "Draft municipal wildfire rules consultation; captured 2026-11-10T09:51:01.149309+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-innovation-details",
+      "text": "EIT Food detailed calls and Climate-KIC provider-specific conditions remain unreviewed. The EIC announcement/index summaries do not verify a suitable grant.",
+      "topic_ids": [
+        "eic-2027-announcement"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0064",
+          "label": "Index lead only",
+          "locator": "EIT Food call-index leads; captured 2026-11-10T09:51:00.909258+00:00"
+        }
+      ]
+    },
+    {
+      "id": "gh26-monitor-workflow-proposal",
+      "text": "User proposal retained: fortnightly monitoring, grouped official sources, Act now / Prepare / Watch triage and meaningful-change notifications. This is a workflow preference, not scientific evidence or an eligibility rule. No schedule or old simulator catalogue was changed by this ingestion.",
+      "topic_ids": [],
+      "source_refs": []
+    },
+    {
+      "id": "gh26-unreviewed-programme-checks",
+      "text": "PRTR portal, regional FEDER programme, river-restoration strategy and CERV overview were captured but not fully reviewed as call evidence; FB current index/Doñana direct-call coverage and detailed Natura/local route conditions remain incomplete. Preserve last-confirmed existing knowledge and retry dated notices/documents.",
+      "topic_ids": [
+        "spain-prtr",
+        "donana-restoration-grants-2025",
+        "natura2000-funding-reference"
+      ],
+      "source_refs": []
+    },
+    {
+      "id": "gh26-nextmed-status-conflict",
+      "text": "NEXT MED OPEN heading conflicts with past deadline. Ask the official programme’s current notice/extension record on next research run; do not infer a fresh window from the heading.",
+      "topic_ids": [
+        "interreg-nextmed"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0057",
+          "label": "Specific page conflict",
+          "locator": "NEXT MED third call dated deadline and stale open heading; captured 2026-11-10T09:50:59.269721+00:00"
+        }
+      ]
+    }
+  ]
+}

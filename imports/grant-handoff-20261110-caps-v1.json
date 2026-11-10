@@ -1,0 +1,153 @@
+{
+  "batch_id": "grant-handoff-20261110-caps-v1",
+  "summary": "Visual review of Spanish funding-cap graphics in two distinct call editions; underlying PCI eligibility remains unresolved.",
+  "base_revision": 27,
+  "topics": [
+    {
+      "id": "biodivfuture-spain-gate",
+      "label": "BiodivFuture · Spain AEI / FB conditions",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "V6 national rules, 4 November 2026: AEI covers all environments but Spanish AEI-funded groups may participate only in proposals addressing A/B; Theme C is excluded even when combined with A/B. FB covers marine/coastal environments on A/B/C, so an inland dryland proposal cannot assume FB funding. Beneficiaries are nonprofit research organisations in Spain with previous AEI competitive funding, subject to national PCI/PI rules. One AEI/FB applicant per proposal; two only if one coordinates. National application is due within one week after preproposal submission. Late addition at stage two is normally not allowed, with a narrow low-participation exception requiring funder confirmation. The AEI-labelled budget-cap graphic has now been visually checked and is detailed in the attached funding finding; underlying PCI/PI documents still need review.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "locator": "Spanish-applicant count and experimental supplement",
+          "label": "Spanish-applicant count and experimental supplement"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "locator": "AEI theme and FB environment restrictions",
+          "label": "AEI theme and FB environment restrictions"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "locator": "Research institutions and prior AEI funding",
+          "label": "Research institutions and prior AEI funding"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "locator": "National application within one week",
+          "label": "National application within one week"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "locator": "Normally no late Spanish partner addition",
+          "label": "Normally no late Spanish partner addition"
+        }
+      ]
+    },
+    {
+      "id": "water4all-spain-aei",
+      "label": "Water4All · Spain AEI research route",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Spanish nonprofit research organisations, with prior AEI competitive funding at least once since 2015, subject to PCI and PI requirements. Main topic must be 2, 3 or 4 and Spanish activities only those topics. Other partners may address Topic 1 to a minor extent, no more than 30% of total content; the Spanish AEI group must not support those Topic 1 activities. One AEI applicant per proposal, or two if one coordinates. National AEI application within one week of preproposal submission; failing it breaches eligibility. The AEI budget-cap graphic has now been visually checked and is detailed in the attached funding finding; linked PCI/PI rules still require review.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "locator": "AEI topics, institutions and previous-funding requirement",
+          "label": "AEI topics, institutions and previous-funding requirement"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "locator": "Applicant count, budgets and national submission",
+          "label": "Applicant count, budgets and national submission"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "locator": "National application attachments and consequence",
+          "label": "National application attachments and consequence"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "gh26-aei-cap-tables",
+      "label": "Call-specific Spanish AEI caps · visually checked",
+      "text": "The two inspected tables independently show the same AEI-labelled project configurations: one AEI applicant maximum direct costs €140,000 plus €35,000 indirect = €175,000 total; one AEI coordinator €220,000 + €55,000 = €275,000; an AEI coordinator and one other AEI applicant combined €260,000 + €65,000 = €325,000. A justified substantial-experimental-task supplement per project is at most €30,000 direct + €7,500 indirect = €37,500. Existing-data reanalysis alone does not qualify for that supplement. Indirect costs are 25% of direct including subcontracting; direct costs must be rounded to thousands. These are ceilings for the table’s configurations, not an applicant grant-rate promise or a universal AEI rule. The BiodivFuture shared Spain annex uses AEI row labels; do not silently turn them into an independent FB entitlement. These caps are unrelated to Water4All CDTI’s €150,000 minimum financeable budget or the unverified general PID minimum.",
+      "topic_ids": [
+        "biodivfuture-spain-gate",
+        "water4all-spain-aei"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture: Spanish AEI-labelled funding-cap table",
+          "locator": "Spain AEI/FB; Maximum funding per project; DC / IC (25%) / TOTAL"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Water4All: AEI funding-cap table",
+          "locator": "SPAIN AEI; Funding Commitment / Maximum Amount Per Proposal; DC / IC (25%) / TOTAL"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0031",
+      "page": 94,
+      "status": "inspected",
+      "note": "Budget graphic visually inspected: row identities, direct/25% indirect/total columns and experimental supplement checked; underlying PCI national instruments remain pending."
+    },
+    {
+      "source_id": "KGB-SRC-0034",
+      "page": 57,
+      "status": "inspected",
+      "note": "Budget graphic visually inspected: row identities, direct/25% indirect/total columns and experimental supplement checked; underlying PCI national instruments remain pending."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "gh26-national-cap-gap",
+      "text": "Funding-cap graphics on BiodivFuture PDF94 and Water4All PDF57 are now visually reviewed in batch grant-handoff-20261110-caps-v1. Remaining gap: acquire/review underlying PCI2026_1, PCI requirements and PI conditions before an eligibility or final finance decision. Preserve the AEI-specific table labels; no unverified FB equivalence.",
+      "topic_ids": [
+        "biodivfuture-spain-gate",
+        "water4all-spain-aei"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture: Spanish AEI-labelled funding-cap table",
+          "locator": "Spain AEI/FB; Maximum funding per project; DC / IC (25%) / TOTAL"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Water4All: AEI funding-cap table",
+          "locator": "SPAIN AEI; Funding Commitment / Maximum Amount Per Proposal; DC / IC (25%) / TOTAL"
+        }
+      ]
+    }
+  ]
+}
