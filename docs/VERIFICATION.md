@@ -6,6 +6,18 @@ they are not a claim that the application suites were rerun during documentation
 
 ## Current checks
 
+10 November 2026 habitat/community navigation cleanup: revision 28 to 29 through a scoped,
+revision-checked CLI organization edit (event `ca58d655cd3f45ea95a87885475a90ad`). Renamed
+`browse:habitat-types` to **Habitats & site conditions**, added descriptions/maintenance rules
+to it and **Plant communities**, and removed 15 redundant shared references from the habitat
+folder. Its three existing primary members and all community memberships remain intact.
+The organization advisory for removed memberships was reviewed as the intended cleanup;
+pre-existing mixed-context advisories were unchanged. CLI dry-run passed, SQLite integrity was
+`ok`, and the running app's catalog returned both updated definitions at revision 29. Snapshot
+comparison confirmed all other collections unchanged; table fingerprints changed only for
+`browse_groups`, `meta` and the appended `planning_events` history. Backup:
+`backups/knowledge-r28-20261110-111916-081801.sqlite`. No application code changed.
+
 After material code changes, run:
 
 ```powershell

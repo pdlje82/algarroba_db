@@ -82,6 +82,13 @@ and systems have distinct component roles; projects retain their own sites/trial
 territorial coverage stays outside funding responsibility chains. Keep uncertain plant names,
 project status and source wording intact. This policy supplements the funding-specific rules below.
 
+Within **Habitats & conditions**, **Habitats & site conditions** holds broad ecological settings;
+**Plant communities** holds source-described vegetation types and plant associations, with carob
+examples in its existing subfolder. Do not mirror the community catalogue into the habitat folder.
+Detailed soil, climate and planting constraints retain their homes under **Site & establishment
+conditions**. These are browsing distinctions, not new botanical classifications. Source-described
+associations remain separate from editable community plans and do not establish planting recipes.
+
 ## Project intake and summaries
 
 This is a required semantic review for full-library, incremental and task-specific intake in every
