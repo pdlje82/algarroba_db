@@ -1,0 +1,110 @@
+{
+  "batch_id": "full-library-20261110-003912-06",
+  "summary": "Reader-journey check found 11 AL20 overview cards; move four rule/evidence topics into one cited subgroup, retaining every membership and reaching eight overview choices.",
+  "base_revision": 17,
+  "sources": [],
+  "topics": [],
+  "findings": [],
+  "relationships": [],
+  "coverage": [],
+  "unresolved": [],
+  "browse_groups": [
+    {
+      "id": "browse:al20-evidence",
+      "label": "AL20: activities, strategy and evidence",
+      "parent_id": "funding:programmes",
+      "anchor_topic_id": "al20",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-line-1",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-line-2",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-line-3",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Start with the three local activity lines, then open Call, limits and verification for selection gates, aid ceilings and the dated call. Use Local priorities and innovation for water, soil and strategy-defined innovation, and the three Line 3 scoring branches for territorial, social and heritage/promoter criteria. A relevant project feature is a reason to inspect a criterion and its evidence, not an eligibility decision. The order requires at least 60/100; admissibility, budget and the applicable local version remain separate checks.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "locator": "AL20: selected nonproductive Line 3 activity types",
+          "label": "AL20: selected nonproductive Line 3 activity types"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 38,
+          "locator": "LEADER: 60/100 selection gate",
+          "label": "LEADER: 60/100 selection gate"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "locator": "Call: local version and modification rules",
+          "label": "Call: local version and modification rules"
+        }
+      ],
+      "member_layout": "grid"
+    },
+    {
+      "id": "browse:al20-call-rules",
+      "label": "Call, limits and verification",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "leader-selection-gate",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-aid-limits",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-nongdr-call-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-verification",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Read the selection gate, aid ceilings, April 2026 call and September verification guide as distinct parts of an evidence chain. At least 60/100 is required by the governing order, but a qualifying score alone does not establish admissibility or reserve a budget. Public programme cofinancing differs from applicant aid intensity. The call permits local strategy/proposal changes and temporary suspension, so its documentary deadline and the library’s February tables do not prove present availability or the latest applicable local rules.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 38,
+          "label": "LEADER: minimum score and competent authorities",
+          "locator": "LEADER: minimum score and competent authorities"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 27,
+          "label": "LEADER: aid ceilings and budget constraints",
+          "locator": "LEADER: aid ceilings and budget constraints"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "label": "Call: local annexes, versions and modification suspension",
+          "locator": "Call: local annexes, versions and modification suspension"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 5,
+          "label": "Verification guide: scope and exclusive/cumulative rules",
+          "locator": "Verification guide: scope and exclusive/cumulative rules"
+        }
+      ],
+      "member_layout": "vertical"
+    }
+  ]
+}

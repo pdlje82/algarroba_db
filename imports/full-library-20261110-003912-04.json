@@ -1,0 +1,604 @@
+{
+  "batch_id": "full-library-20261110-003912-04",
+  "summary": "Extend existing LIFE manual coverage for AFDS components, storage, network and servicing constraints; retain project quantities and source inconsistencies without plan adoption.",
+  "base_revision": 15,
+  "sources": [],
+  "topics": [
+    {
+      "id": "afds",
+      "label": "Autonomous Fluid Discharge System (AFDS)",
+      "kind": "method",
+      "domain": "technology",
+      "description": "A tank-level-triggered device discharges collected water through an irrigation network without electrical energy. Intervals depend on fog-water supply, tank settings and the network. The source maintenance label SAD is linked by an explicitly curated correspondence. The manual describes discharge pipe, flotation vessel, protection shell and clamping base. Raising/lowering the setting changes the volume accumulated before discharge; cycling depends on supply and network conditions rather than a fixed calendar. Internal installation is compact but less accessible; external installation offers level adjustment and easier access with greater exposure, maintenance and blockage risk. Auxiliary pulse/Wi-Fi monitoring is separate from the unpowered hydraulic trigger. The manual’s method-summary performance and its dated July 2023 table have different counts and denominators and remain separate snapshots.",
+      "aliases": [
+        "AFDS",
+        "Autonomous Fluid Discharge System"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 97,
+          "locator": "AFDS definition, operation, maintenance and comparator table",
+          "label": "AFDS: system overview and supply chain"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "locator": "AFDS definition, operation, maintenance and comparator table",
+          "label": "AFDS: level-triggered operation and components"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 99,
+          "locator": "AFDS definition, operation, maintenance and comparator table",
+          "label": "AFDS: six-step cycle and installation trade-offs"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "AFDS definition, operation, maintenance and comparator table",
+          "label": "LIFE irrigation: settlement, maintenance and SAD wording"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "AFDS definition, operation, maintenance and comparator table",
+          "label": "LIFE: comparison table dated 26 July 2023"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 101,
+          "label": "AFDS: monitoring equipment, location and adjustable volume",
+          "locator": "AFDS: monitoring equipment, location and adjustable volume"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 102,
+          "label": "AFDS: model cost, reuse and method-summary indicators",
+          "locator": "AFDS: model cost, reuse and method-summary indicators"
+        }
+      ],
+      "aspects": {
+        "Water at planting": "10–15 L settlement water mentioned.",
+        "Trial conditions": "LIFE method description reviewed on PDF 97–99; irrigation depends on fog supply, tank settings and network characteristics.",
+        "Water per surviving tree": "101.4 L in table dated 26 July 2023.",
+        "Reported survival": "0.83 in table dated 26 July 2023."
+      }
+    },
+    {
+      "id": "afds-flotation-trigger",
+      "label": "AFDS flotation and discharge trigger",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "The AFDS trigger consists of a discharge pipe, flotation vessel, protective shell and clamping base. The source describes tank filling, vessel flotation, maximum level, discharge start, tank discharge and reset. It operates through buoyancy without an electronic control device. Adjustment changes the amount collected before irrigation; it does not measure a species’ required dose. The manual describes PVC/HDPE fabrication and a separate pulse-meter/Wi-Fi monitoring arrangement. These are source specifications and construction concepts, not a newly validated engineering design or a drone-transfer interface.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "label": "AFDS Diagram 2: flotation/discharge components",
+          "locator": "Concept; Diagram 2"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 99,
+          "label": "AFDS Diagram 3: six-step discharge cycle",
+          "locator": "Diagram 3"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 100,
+          "label": "AFDS: fabrication materials and hydraulic accessories",
+          "locator": "Materials and manufacturing; Table 2"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 101,
+          "label": "AFDS: separate measurement and network equipment",
+          "locator": "Table 3"
+        }
+      ],
+      "group_id": "irrigation",
+      "aliases": []
+    },
+    {
+      "id": "restoration-water-storage",
+      "label": "Restoration water-storage tanks",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "Water tanks buffer supply for restoration areas that are difficult to service. The LIFE manual describes flexible, polyethylene and metal tanks with different installation stability and access requirements. Flexible tanks need a flat protected surface; rigid tanks need stable support, with metal tanks requiring hard ground. Source-described filling and outlet valves are separate from nursery-stock volumes and plant event doses. The manual recommends siting storage to provide gravity flow while matching network pressure, plot demand and refill effort; undersized storage can require frequent servicing. Its flexible-tank capacity is inconsistent between material and cost passages, so no single corrected specification is adopted.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "label": "Restoration tanks: types, stability and fill/outlet access",
+          "locator": "Water network; Water tanks; Material"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "label": "Tank siting: gravity, pressure, demand and refill frequency",
+          "locator": "Location; Amount of water"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 105,
+          "label": "Tank cost examples and different flexible-tank capacity",
+          "locator": "Cost"
+        }
+      ],
+      "group_id": "irrigation",
+      "aliases": []
+    },
+    {
+      "id": "gravity-irrigation-network",
+      "label": "Gravity-fed restoration distribution network",
+      "kind": "method",
+      "domain": "technology",
+      "description": "The LIFE manual routes stored water through main, plot and flexible irrigation pipes, using elevation to generate flow and valves to divide areas with different requirements. Pressure regulators/gauges manage excessive input pressure; fittings maintain leak-tight connections. Source headings specify 40 mm main, 32 mm medium and 19 mm flexible lines, but the prose also prints conflicting centimetre units. Those discrepancies require engineering confirmation rather than silent repair. The manual distinguishes AFDS plots from the described manual-hose network. Neither the shared use of pipes nor a reservoir opening proves compatibility with an aircraft delivery system.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "label": "Storage siting: elevation and pressure trade-offs",
+          "locator": "Location"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 105,
+          "label": "Distribution: main/medium pipe headings and unit conflict",
+          "locator": "Irrigation pipeline"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 106,
+          "label": "Distribution: flexible hoses, sectors, fittings and regulation",
+          "locator": "Irrigation Pipes; Connection fittings; Control fittings"
+        }
+      ],
+      "group_id": "irrigation",
+      "aliases": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "fl04-afds-model-cost",
+      "label": "AFDS model cost and flow are configuration-specific",
+      "text": "The manual gives EUR 855 for an AFDS with a 50 mm discharge pipe and stated output 2,000–6,500 L/hour, including tank interconnections but excluding field installation and water meter. Its adjacent summary reports 2,013 planted trees, 86% survival, EUR 115 per surviving tree and “75 L” need per tree. The summary does not state an event count or observation date there; 75 L is not an event dose. The dated 26 July 2023 table elsewhere instead lists 2,082 planted, 0.83 survival and 101.4 L per surviving tree for AFDS. These different scopes are not averaged or treated as direct replication.",
+      "topic_ids": [
+        "afds",
+        "afds-flotation-trigger",
+        "life-nieblas"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 102,
+          "label": "AFDS: model flow/cost and undated summary",
+          "locator": "Costs; AFDS Performance in Life Nieblas"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "label": "AFDS: dated 26 July 2023 comparison",
+          "locator": "Statistics of methodologies development"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "fl04-storage-budget",
+      "label": "LIFE storage example is a project-specific water budget",
+      "text": "The manual’s storage discussion estimates roughly 40 L per plant for the first year, describes about 12.5 L at each of three important irrigations and illustrates 3,000 plants needing at least 120,000 L storage. The text explicitly allows variation with project and water requirements. Three times 12.5 L is 37.5 L, so the stated 40 L is approximate planning language, not an exact normalized event prescription. No species is assigned by this example; it does not authorize a carob dose, refill schedule or working-plan adoption.",
+      "topic_ids": [
+        "restoration-water-storage",
+        "life-nieblas",
+        "establishment-water"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "label": "LIFE: preliminary summer-storage assumption",
+          "locator": "LIFE: preliminary summer-storage assumption"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "label": "LIFE: three-irrigation/40 L planning example",
+          "locator": "Amount of water"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "fl04-service-reuse",
+      "label": "Storage and network design have servicing and end-of-life costs",
+      "text": "The manual favours matching storage size, gravity head and irrigation demand so refill and watering effort remain practical. AFDS internal mounting makes maintenance harder; external mounting improves access/level adjustment but adds exposure and blockage risk. Tanks, primary lines and AFDS are described as reusable, while secondary self-regulated drip lines can be difficult to recover on steep terrain. Auxiliary monitoring records number, frequency and volume of discharges; the unpowered hydraulic trigger is distinct from that instrumentation.",
+      "topic_ids": [
+        "afds",
+        "restoration-water-storage",
+        "gravity-irrigation-network",
+        "land-access"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 99,
+          "label": "AFDS: internal/external service trade-offs",
+          "locator": "AFDS: internal/external service trade-offs"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 102,
+          "label": "AFDS network: reuse and difficult secondary-line recovery",
+          "locator": "AFDS network: reuse and difficult secondary-line recovery"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "label": "Tanks: pressure, size and repeated refill effort",
+          "locator": "Tanks: pressure, size and repeated refill effort"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 152,
+          "label": "Irrigation monitoring: discharge count, frequency and volume",
+          "locator": "Irrigation monitoring: discharge count, frequency and volume"
+        }
+      ],
+      "kind": "finding"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "fl04-afds-afds-flotation-trigger",
+      "source": "afds",
+      "target": "afds-flotation-trigger",
+      "label": "uses a flotation trigger",
+      "explanation": "The source explicitly describes the AFDS components and cycle.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "label": "AFDS Diagram 2: physical components",
+          "locator": "AFDS Diagram 2: physical components"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl04-afds-restoration-water-storage",
+      "source": "afds",
+      "target": "restoration-water-storage",
+      "label": "releases stored water",
+      "explanation": "The system diagram routes source water to a tank, AFDS and drip network.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 97,
+          "label": "AFDS: fog source, tank and drip-network diagram",
+          "locator": "AFDS: fog source, tank and drip-network diagram"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl04-afds-gravity-irrigation-network",
+      "source": "afds",
+      "target": "gravity-irrigation-network",
+      "label": "feeds an irrigation network",
+      "explanation": "AFDS discharges accumulated tank water into the project-specific drip network.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "label": "AFDS: discharge into irrigation network",
+          "locator": "AFDS: discharge into irrigation network"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl04-restoration-water-storage-gravity-irrigation-network",
+      "source": "restoration-water-storage",
+      "target": "gravity-irrigation-network",
+      "label": "requires compatible head and connections",
+      "explanation": "Tank elevation, distance and compatibility with the irrigation network are explicit siting concerns.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "label": "Storage: gravity head and network compatibility",
+          "locator": "Storage: gravity head and network compatibility"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl04-gravity-irrigation-network-pe-pipe-network",
+      "source": "gravity-irrigation-network",
+      "target": "pe-pipe-network",
+      "label": "uses documented distribution components",
+      "explanation": "The source describes the same project PE distribution network with main, plot and flexible sections, retaining its printed unit inconsistencies.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 105,
+          "label": "LIFE: PE main and medium sections",
+          "locator": "LIFE: PE main and medium sections"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl04-storage-refill-question",
+      "source": "restoration-water-storage",
+      "target": "reservoir-refill-interface",
+      "label": "informs a servicing comparison",
+      "explanation": "Curated comparison: larger restoration tanks and small planting reservoirs both need serviceable fill access and a supply plan, but differ substantially in capacity, pressure and connection design. Source fill valves do not demonstrate a drone-compatible interface or a transferable refill dose.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "label": "LIFE: tank filling/outlet dimensions",
+          "locator": "LIFE: tank filling/outlet dimensions"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "label": "LIFE: storage size and refill burden",
+          "locator": "LIFE: storage size and refill burden"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: capped small-reservoir refill opening",
+          "locator": "Waterboxx: capped small-reservoir refill opening"
+        }
+      ],
+      "traversable": true
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "IRR-003",
+      "page": 97,
+      "status": "inspected",
+      "note": "Visually rechecked explicit AFDS name and fog-source/tank/trigger/drip chain."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 98,
+      "status": "inspected",
+      "note": "Visually rechecked buoyancy concept, four components and adjustable level-triggered cycle."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 99,
+      "status": "inspected",
+      "note": "Visually rechecked six-step diagram and internal/external maintenance trade-offs."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 100,
+      "status": "inspected",
+      "note": "Visually checked materials table; repeated rows retained in extraction, not silently repaired as purchase instructions."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 101,
+      "status": "inspected",
+      "note": "Visually checked network/measurement equipment table and terrain/siting conditions."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 102,
+      "status": "inspected",
+      "note": "Visually checked model flow/cost exclusions, reuse and undated performance summary; denominator/date gap recorded."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 103,
+      "status": "inspected",
+      "note": "Visually checked tank types/fill/outlet access and initial storage assumptions; 12,000 L material listing."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 104,
+      "status": "inspected",
+      "note": "Visually checked siting, gravity/head, refill effort and approximate 40 L project-storage example."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 105,
+      "status": "inspected",
+      "note": "Visually checked 12,500 L cost example and PE-pipe headings versus centimetre prose."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 106,
+      "status": "inspected",
+      "note": "Visually checked hose/fittings/control description, network exception for AFDS and printed 32 cm discrepancy."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 143,
+      "status": "inspected",
+      "note": "Rechecked lifecycle/project watering purposes; settlement, reservoir fill and SAD schedule remain distinct."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 152,
+      "status": "inspected",
+      "note": "Rechecked water-purpose categories and AFDS discharge count/frequency/volume instrumentation."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 155,
+      "status": "inspected",
+      "note": "Rechecked dated 26 July 2023 table and denominators against undated method summary."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "afds-definition-scope",
+      "text": "Definition gap resolved by review of the exact manual edition, PDF 97–102: AFDS is Autonomous Fluid Discharge System, with level-triggered flotation/discharge and documented installation trade-offs. This resolves the old limited-scope acronym question only; SAD expansion, summary-versus-dated-result differences and transfer to other sites remain separate unresolved issues.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Habitat restoration",
+          "label": "LIFE irrigation purposes and SAD maintenance wording"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Habitat restoration",
+          "label": "LIFE dated AFDS comparison table"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 97,
+          "label": "AFDS: explicit full name",
+          "locator": "AFDS: explicit full name"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 98,
+          "label": "AFDS: mechanism and component definition",
+          "locator": "AFDS: mechanism and component definition"
+        }
+      ],
+      "topic_ids": [
+        "afds"
+      ],
+      "status": "resolved-definition-only"
+    },
+    {
+      "id": "fl04-life-tank-pipe-units",
+      "text": "The manual lists a 12,000 L flexible tank on PDF 103 and a 12,500 L flexible-tank cost example on PDF 105. Pipe headings use 40/32/19 mm, while prose on PDFs 105–106 prints 40/32 cm. Preserve these differences and seek verified engineering specifications before procurement or network sizing; no silent unit repair.",
+      "topic_ids": [
+        "restoration-water-storage",
+        "gravity-irrigation-network"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "label": "Flexible tank: 12,000 L material listing",
+          "locator": "Flexible tank: 12,000 L material listing"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 105,
+          "label": "Tank cost: 12,500 L; pipe headings/prose",
+          "locator": "Tank cost: 12,500 L; pipe headings/prose"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 106,
+          "label": "Flexible-line connections: 32 cm prose",
+          "locator": "Flexible-line connections: 32 cm prose"
+        }
+      ]
+    },
+    {
+      "id": "fl04-afds-summary-context",
+      "text": "AFDS summary on PDF 102 (2,013 plants, 86%, 75 L/tree without period) differs from the dated 26 July 2023 table on PDF 155 (2,082 plants, 0.83 survival, 84.1 L/planted tree and 101.4 L/survivor). Observation dates, cohort definitions and the 75 L denominator/period need reconciliation before comparing outcomes.",
+      "topic_ids": [
+        "afds",
+        "life-nieblas"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 102,
+          "label": "AFDS: undated method-summary indicators",
+          "locator": "AFDS: undated method-summary indicators"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "label": "AFDS: dated comparative statistics",
+          "locator": "AFDS: dated comparative statistics"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:water-storage-distribution",
+      "label": "Water storage, distribution and servicing",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "restoration-water-storage",
+          "role": "primary"
+        },
+        {
+          "topic_id": "afds",
+          "role": "primary"
+        },
+        {
+          "topic_id": "afds-flotation-trigger",
+          "role": "primary"
+        },
+        {
+          "topic_id": "gravity-irrigation-network",
+          "role": "primary"
+        },
+        {
+          "topic_id": "pe-pipe-network",
+          "role": "shared"
+        },
+        {
+          "topic_id": "land-access",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Preserve project-specific hydraulic configuration, units, dates and quantity denominators. Generic lifecycle phases remain plant-neutral. Storage, daily release, total water and dose are distinct; no plan adoption or untested drone compatibility from shared components.",
+      "description": "Follow the water chain from storage through a level-triggered AFDS and distribution network to servicing. The LIFE example uses supply-dependent cycles and gravity head; it also documents access, pressure, maintenance and material-recovery limits. Compare this with small planting reservoirs through the refill-access link, retaining their different scale and interfaces. Method-summary outcomes and dated trial tables have different scopes, and printed tank/pipe specifications contain unresolved differences. These examples guide investigation, not a universal plant dose or an automatically compatible drone system.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 97,
+          "label": "AFDS: source-to-root network overview",
+          "locator": "AFDS: source-to-root network overview"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 99,
+          "label": "AFDS: service/installation trade-offs",
+          "locator": "AFDS: service/installation trade-offs"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "label": "Storage: siting, gravity and refill requirements",
+          "locator": "Storage: siting, gravity and refill requirements"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 106,
+          "label": "Network: flexible hoses and control fittings",
+          "locator": "Network: flexible hoses and control fittings"
+        }
+      ],
+      "member_layout": "grid"
+    }
+  ]
+}

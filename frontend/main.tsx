@@ -10,7 +10,6 @@ import {
   ROOT_GROUPS,
   type Catalog,
   type State,
-  type ExploreView,
   type Ref,
 } from "./types";
 import {
@@ -19,7 +18,6 @@ import {
   isInPlaceAction,
   groupOpeningAction,
   moveLayer,
-  query,
   allRoutes,
   reconcile,
   commitHistory,
@@ -30,7 +28,6 @@ import {
 import {
   migrateHistory,
   legacyTab,
-  reconcileIdentities,
   migrateExpandedGroup,
 } from "./migration";
 import {
@@ -38,6 +35,7 @@ import {
   saveBrowserSession,
 } from "./explorationStorage";
 import { openingSource } from "./opening";
+import { loadExploration } from "./explorationQuery";
 import { closeLayer } from "./layerClosing";
 import { buildScene, previousScenes, isInteractiveRecord } from "./scene";
 import { SceneView, GraphBoundary, type SceneHandle } from "./SceneView";
@@ -120,10 +118,11 @@ function App() {
     force = false,
     presentationOffset?: { x: number; y: number },
   ) => {
-    s = reconcileIdentities(s, c);
+    const loaded = await loadExploration(s, c, signal, force);
+    s = loaded.state;
+    c = loaded.catalog;
     if(s.scope==='group' && c.browse_groups.find(g=>g.id===s.groupId)?.member_layout==='vertical')s={...s,grouping:"none"};
-    let v = s.view;
-    if (!v || force) v = await api<ExploreView>(query(s), { signal });
+    let v = loaded.view;
     const bounds = canvas.current?.getBoundingClientRect();
     const layoutAspect =
       bounds && bounds.width > 0 && bounds.height > 0
@@ -134,7 +133,10 @@ function App() {
     if (focused) {
       migratedOffset = buildScene(s, v, c, layoutAspect).offset;
       s = focused;
-      v = await api<ExploreView>(query(s), { signal });
+      const focusedQuery = await loadExploration(s, c, signal, true);
+      s = focusedQuery.state;
+      c = focusedQuery.catalog;
+      v = focusedQuery.view;
     }
     const offset =
       presentationOffset ||
@@ -144,7 +146,7 @@ function App() {
         : undefined);
     const n = reconcile(s, v);
     const scene = buildScene(n, v, c, layoutAspect);
-    return {
+    return { catalog: c, state: {
       ...n,
       positions: scene.positions,
       closedLayers: n.closedLayers?.filter((key) => key !== scene.key),
@@ -156,7 +158,7 @@ function App() {
             },
           }
         : {}),
-    };
+    } };
   };
   const perform = async (
     candidate: State,
@@ -178,7 +180,7 @@ function App() {
       void perform(candidate, c, base, mode, at, force, presentationOffset);
     };
     try {
-      const completed = await prepare(
+      const prepared = await prepare(
         candidate,
         c,
         ctrl.signal,
@@ -186,6 +188,8 @@ function App() {
         presentationOffset,
       );
       if (ctrl.signal.aborted || token !== generation.current) return;
+      const completed = prepared.state;
+      c = prepared.catalog;
       let h: History;
       if (mode === "commit") h = commitHistory(base, completed);
       else {
@@ -199,7 +203,9 @@ function App() {
       );
       for (const i of missing) {
         try {
-          h.entries[i] = await prepare(h.entries[i], c, ctrl.signal);
+          const background = await prepare(h.entries[i], c, ctrl.signal);
+          h.entries[i] = background.state;
+          c = background.catalog;
         } catch (e) {
           if (ctrl.signal.aborted) throw e;
         }

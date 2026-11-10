@@ -47,6 +47,7 @@ import {
 } from "../frontend/explorationStorage.ts";
 import { readFileSync } from "node:fs";
 import { compactGrid } from "../frontend/compactLayout.ts";
+import { loadExploration } from '../frontend/explorationQuery.ts';
 import { relationshipCircle,boxesOverlap } from '../frontend/relationshipCircle.ts';
 const topics = [
   {
@@ -1759,4 +1760,57 @@ test('root labels and historical headings resolve from authoritative organizatio
   assert.equal(contextLabel({...initialState(),expandedGroups:['display-group:ecosystem:species']},c),'My plants');
   const scene=buildScene({...initialState()}, {...view,scope:'overview',centre:null,endpoint_ids:topics.map(t=>t.id),routes:[]},c);
   assert.equal(scene.cards.find(g=>g.record.groupKey==='ecosystem:species').record.label,'My plants');
+});
+
+test('new intake topics refresh the catalog before projection instead of forming a blank unopenable group',async()=>{
+  const added=Array.from({length:34},(_,i)=>({id:`new-${i}`,label:`New topic ${i}`,domain:i%2?'funding':'technology',kind:'condition',group_id:i%2?'requirements':'irrigation'}));
+  const current={...catalog,revision:4,topics:[...topics,...added],browse_groups:[{id:'browse:new',label:'New organization',parent_id:'ecosystem:habitats',members:[{topic_id:'new-0',role:'primary'}]}]};
+  const live={...view,revision:4,scope:'overview',centre:null,nodes:current.topics,endpoint_ids:current.topics.map(t=>t.id),routes:[]};
+  const state=initialState(),before=structuredClone({state,catalog}),calls=[],signal=new AbortController().signal;
+  // The reported 34-topic card comes from projecting a live result against the old catalog.
+  const broken=buildScene(state,live,catalog).cards.find(c=>!c.record.label);
+  assert.equal(broken.members.length,34);
+  assert.equal(groupOpeningAction(state,broken.record,broken.members),null);
+  const loaded=await loadExploration(state,catalog,signal,false,async(url,options)=>{
+    calls.push(url);assert.equal(options.signal,signal);
+    return url==='/api/catalog'?current:live;
+  });
+  const scene=buildScene(loaded.state,loaded.view,loaded.catalog);
+  assert.equal(calls.length,2);assert.equal(calls[1],'/api/catalog');
+  assert.equal(loaded.catalog.revision,loaded.view.revision);
+  assert.ok(scene.cards.every(c=>c.record.label && groupOpeningAction(state,c.record,c.members)));
+  assert.deepEqual(scene.cards.flatMap(c=>c.members).sort(),current.topics.map(t=>t.id).sort());
+  assert.ok(scene.cards.find(c=>c.record.groupKey==='ecosystem:habitats').members.includes('new-0'));
+  assert.deepEqual({state,catalog},before);
+});
+
+test('query catches up if intake advances again between the view and catalog reads',async()=>{
+  const responses=[{...view,revision:4},{...catalog,revision:5},{...view,revision:5}],calls=[];
+  const loaded=await loadExploration(initialState(),catalog,new AbortController().signal,false,async url=>{calls.push(url);return responses.shift();});
+  assert.equal(calls.length,3);assert.equal(calls[1],'/api/catalog');
+  assert.equal(loaded.view.revision,5);assert.equal(loaded.catalog.revision,5);
+});
+
+test('captured older views retain their exact membership without requesting current results',async()=>{
+  const state={...initialState(),view},original=structuredClone(state);
+  const loaded=await loadExploration(state,{...catalog,revision:20},new AbortController().signal,false,async()=>{throw Error('Historical view was re-queried');});
+  assert.equal(loaded.view,view);assert.deepEqual(state,original);
+});
+
+test('a captured newer view refreshes only its catalog and preserves the saved payload',async()=>{
+  const state={...initialState(),view:{...view,revision:4}},original=structuredClone(state),calls=[];
+  const loaded=await loadExploration(state,catalog,new AbortController().signal,false,async url=>{calls.push(url);return {...catalog,revision:4};});
+  assert.deepEqual(calls,['/api/catalog']);assert.equal(loaded.view,state.view);assert.deepEqual(state,original);
+});
+
+test('catalog failure and repeated revision races reject without modifying the accepted exploration',async()=>{
+  const state=initialState(),original=structuredClone(state),signal=new AbortController().signal;
+  await assert.rejects(loadExploration(state,catalog,signal,false,async url=>{
+    if(url==='/api/catalog')throw Error('Catalog unavailable');return {...view,revision:4};
+  }),/Catalog unavailable/);
+  let requests=0;
+  await assert.rejects(loadExploration(state,catalog,signal,false,async url=>{
+    requests++;return url==='/api/catalog'?{...catalog,revision:5}:{...view,revision:4};
+  }),/knowledge changed.*Retry/);
+  assert.equal(requests,6);assert.deepEqual(state,original);
 });

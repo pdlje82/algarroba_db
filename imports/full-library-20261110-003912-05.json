@@ -1,0 +1,432 @@
+{
+  "batch_id": "full-library-20261110-003912-05",
+  "summary": "European Commission nature-credit roadmap as a prospective finance mechanism: certification, verified outcomes, governance and monitoring; no open-grant or revenue promise.",
+  "base_revision": 16,
+  "sources": [
+    {
+      "id": "KGB-SRC-0027",
+      "title": "Roadmap towards Nature Credits — COM(2025) 374 final",
+      "kind": "pdf",
+      "filename": "FUND-014 - European Commission - Roadmap towards Nature Credits - COM-2025-374 - 2025-07-07.pdf",
+      "managed_path": "sources/full-library-20261110/FUND-014 - European Commission - Roadmap towards Nature Credits - COM-2025-374 - 2025-07-07.pdf",
+      "sha256": "bc30e314e1ec0365859eb52067da8c942106bbb502684ca6ecaf54b8b1bdf402",
+      "pdf_pages": 12,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "issuer": "European Commission",
+      "publication_date": null,
+      "language": "en",
+      "document_type": "Commission communication dated 2025-07-07; prospective roadmap",
+      "library_path": "doc_library/FUND-014 - European Commission - Roadmap towards Nature Credits - COM-2025-374 - 2025-07-07.pdf",
+      "document_date": "2025-07-07",
+      "document_date_meaning": "Commission communication date"
+    }
+  ],
+  "topics": [
+    {
+      "id": "nature-credits",
+      "label": "Nature credits: prospective biodiversity finance",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The Commission’s 7 July 2025 communication proposes developing voluntary nature-credit markets to complement public funding. It distinguishes certification of a high-quality nature-positive intervention from credits representing quantified, independently verified outcomes. Outcomes are ecosystem-specific and may involve multiple biodiversity indicators. The roadmap is a policy-development programme, not an open grant, guaranteed buyer, established price or automatic right to sell credits. Its proposed 2025–2027 actions cover expertise, methodology, governance, market readiness and pilots. In this library-only intake those actions remain plans as stated by the document; their present implementation has not been verified.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 1,
+          "label": "Nature-credit roadmap: dated Commission communication",
+          "locator": "COM(2025) 374 final"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 2,
+          "label": "Nature credits: proposed complement to public funding",
+          "locator": "Introduction"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 5,
+          "label": "Certification versus a quantified nature-positive outcome",
+          "locator": "2.1"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 12,
+          "label": "Roadmap: 2027 review and further policy options",
+          "locator": "4.5"
+        }
+      ],
+      "group_id": "programmes",
+      "aliases": [
+        "COM(2025) 374",
+        "Roadmap towards Nature Credits"
+      ]
+    },
+    {
+      "id": "nature-credit-certification",
+      "label": "Nature intervention certification and outcome crediting",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "The roadmap describes a two-step model. Independent certification first assesses intervention design, implementation and achieved/expected effects against agreed criteria; that signal may support upfront finance. Credits would represent demonstrated outcomes quantified through recognized, context-sensitive biodiversity metrics. Progressive issuance may follow validated milestones, rather than a claim at planting. The value chain may include land managers, landscape aggregators, independent certifiers, registries and buyers. A certified plan, purchased planting stock, hectares treated or tree survival alone does not automatically establish a biodiversity credit. Methodologies and accepted claims still require the applicable framework.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 5,
+          "label": "Nature certification: quality assessment versus quantified outcome",
+          "locator": "2.1"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 6,
+          "label": "Certification-to-credit model, milestones and value-chain roles",
+          "locator": "2.1 continuation"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    },
+    {
+      "id": "nature-credit-integrity",
+      "label": "Nature-credit integrity and governance conditions",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "The roadmap seeks measurable, attributable and additional outcomes, permanence, transparent safeguards and no double counting. It stresses separation of project developers, certifiers and registry operators, and governance for ownership, registration, transfer and liability for non-performance or reversal. Biodiversity’s local specificity, measurement difficulty and delayed responses limit simple equivalence with carbon units. Transaction costs, data gaps and uncertain returns can impede small operators. These are proposed integrity and market-development conditions from this communication; they are not proof that a particular project, methodology or buyer currently meets them.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 6,
+          "label": "Integrity: independent roles and anti-double-counting safeguards",
+          "locator": "2.2"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 7,
+          "label": "Emerging principles and early markets",
+          "locator": "2.3"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 8,
+          "label": "Carbon-market lessons and biodiversity-specific measurement limits",
+          "locator": "3"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 10,
+          "label": "Governance: rights, registries, verification and reversal liabilities",
+          "locator": "4.2.2"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "label": "Market readiness, operator costs and possible seed finance",
+          "locator": "4.3–4.4"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "fl05-dry-ecosystem-credit-scope",
+      "label": "Nature outcomes can matter where carbon sequestration is limited",
+      "text": "The roadmap explicitly says nature credits could cover interventions with limited additional carbon sequestration but high biodiversity value, including pollinator support and restoration of dry ecosystems. This provides a reason to investigate ecological outcomes beyond a carbon-only metric. It is a policy framing, not an evaluated dryland project result or evidence that an Almería planting has a saleable credit. Site-specific indicators, independent verification and a usable framework remain necessary.",
+      "topic_ids": [
+        "nature-credits",
+        "nature-credit-integrity",
+        "restoration"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 8,
+          "label": "Nature-credit scope: pollinators and dry ecosystems beyond carbon",
+          "locator": "3. Learning from and building on experience with carbon markets"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "fl05-roadmap-actions",
+      "label": "The 2025 roadmap schedules development, not a current funding call",
+      "text": "The communication plans an expert group in 2025; international cooperation and supply/demand assessment in 2025–2026; first CRCF carbon-farming methodologies with biodiversity co-benefits in 2026; nature-credit criteria/methodology input in mid-2026; governance input and a progress review in 2027; and a publicly supported pilot during 2025–2027. These document-stated intentions are not independently checked completion dates, an application window or a currently open grant. The possible role of LIFE/Horizon, advice and seed finance does not supply project-specific eligibility.",
+      "topic_ids": [
+        "nature-credits"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 9,
+          "label": "Roadmap: expert group, cooperation and pilots",
+          "locator": "4.1"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 10,
+          "label": "Roadmap: planned methodologies and governance",
+          "locator": "4.2"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "label": "Roadmap: market readiness and seed-finance pilot",
+          "locator": "4.3–4.4"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 12,
+          "label": "Roadmap: 2027 review",
+          "locator": "4.5"
+        }
+      ],
+      "kind": "finding"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "fl05-credit-certification",
+      "source": "nature-credits",
+      "target": "nature-credit-certification",
+      "label": "proposes a two-step basis",
+      "explanation": "The communication differentiates certification of action quality from crediting measured outcomes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 5,
+          "label": "Nature action certification and outcome definition",
+          "locator": "Nature action certification and outcome definition"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 6,
+          "label": "Two-step certification and crediting model",
+          "locator": "Two-step certification and crediting model"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl05-credit-integrity",
+      "source": "nature-credits",
+      "target": "nature-credit-integrity",
+      "label": "requires credible governance",
+      "explanation": "The roadmap makes safeguards, independent roles and verification central to market trust.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 6,
+          "label": "Nature-credit integrity and separated roles",
+          "locator": "Nature-credit integrity and separated roles"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 10,
+          "label": "Governance framework and reversal liabilities",
+          "locator": "Governance framework and reversal liabilities"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl05-certification-monitoring",
+      "source": "nature-credit-certification",
+      "target": "monitoring",
+      "label": "depends on demonstrated results",
+      "explanation": "The roadmap’s wetland example monitors outcomes and envisages progressive issuance only as results are demonstrated. It describes the intended model, not a successful trial.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 6,
+          "label": "Nature-credit model: monitoring and progressive issuance",
+          "locator": "Nature-credit model: monitoring and progressive issuance"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl05-local-finance-comparison",
+      "source": "al20-innovation",
+      "target": "nature-credits",
+      "label": "has a distinct finance context",
+      "explanation": "Curated comparison: the local strategy mentions carbon-income innovation and separately classifies carbon-sink income as a non-LEADER-addressable need. The Commission roadmap concerns biodiversity-outcome finance, with different metrics and proposed governance. Neither document makes these mechanisms interchangeable or guarantees LEADER eligibility or nature-credit revenue.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 397,
+          "label": "AL20 NPNL10: carbon-income need boundary",
+          "locator": "AL20 NPNL10: carbon-income need boundary"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 399,
+          "label": "AL20 integrated aspect 3: demonstrated carbon revenue",
+          "locator": "AL20 integrated aspect 3: demonstrated carbon revenue"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 8,
+          "label": "Nature credits: biodiversity outcomes distinct from carbon",
+          "locator": "Nature credits: biodiversity outcomes distinct from carbon"
+        }
+      ],
+      "traversable": true
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 1,
+      "status": "inspected",
+      "note": "Commission communication identity COM(2025)374 final, dated 7 July 2025."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 2,
+      "status": "inspected",
+      "note": "Introduction: ecosystem services, steward remuneration and voluntary finance complement; links are references only."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 3,
+      "status": "inspected",
+      "note": "Broad public/private finance motivation and cited aggregates; no local eligibility or project budget inferred."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 4,
+      "status": "inspected",
+      "note": "Source-reported private-finance incentives and nature risks; cited studies not independently fetched."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 5,
+      "status": "inspected",
+      "note": "Visually checked section 2.1 certification versus quantified outcome-credit distinction and legal-obligation boundary."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 6,
+      "status": "inspected",
+      "note": "Visually checked two-step model, monitoring/milestones, value chain and independent-role safeguards."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 7,
+      "status": "inspected",
+      "note": "Early market initiatives and integrity principles; listed external schemes remain roadmap-reported examples."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 8,
+      "status": "inspected",
+      "note": "Carbon-market lessons, CRCF discussion, site-specific biodiversity limits and dry-ecosystem opportunity framing."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 9,
+      "status": "inspected",
+      "note": "Planned expert group/cooperation, research and pilots; no external initiative fetched."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 10,
+      "status": "inspected",
+      "note": "Visually checked 2026 methodology actions, governance questions and planned expert input."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 11,
+      "status": "inspected",
+      "note": "Visually checked 2027 governance action, supply/demand work, costs and possible seed-finance pilot."
+    },
+    {
+      "source_id": "KGB-SRC-0027",
+      "page": 12,
+      "status": "inspected",
+      "note": "2027 review, possible later demand tools and conclusion; proposals not current open grants."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "fl05-nature-credit-readiness",
+      "text": "The 2025 Commission communication is a roadmap. Present implementation of its 2025–2027 actions, recognized methods, buyer demand, prices, project admission and credit-claim rules were not verified under library-only. No ecological intervention in this intake is certified or assigned a revenue forecast.",
+      "topic_ids": [
+        "nature-credits",
+        "nature-credit-certification"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 10,
+          "label": "Roadmap: methodologies and governance still to develop",
+          "locator": "Roadmap: methodologies and governance still to develop"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "label": "Roadmap: market readiness and seed finance",
+          "locator": "Roadmap: market readiness and seed finance"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 12,
+          "label": "Roadmap: future review",
+          "locator": "Roadmap: future review"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:nature-credit-finance",
+      "label": "Nature credits: action, outcome and integrity",
+      "parent_id": "funding:programmes",
+      "anchor_topic_id": "nature-credits",
+      "members": [
+        {
+          "topic_id": "nature-credit-certification",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nature-credit-integrity",
+          "role": "primary"
+        },
+        {
+          "topic_id": "monitoring",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Distinguish prospective voluntary nature crediting, carbon units, grants and procurement. Do not claim current market readiness, a credit, revenue or eligibility from this dated roadmap. Preserve ecosystem-specific measurement and independent-verification requirements.",
+      "description": "Read the proposed chain from a quality-assessed action to a demonstrated ecological outcome, then inspect integrity and monitoring. The Commission roadmap treats nature credits as a possible complement to public funding. It also explains why biodiversity can matter in dry ecosystems with limited extra carbon storage. Site-specific measures, independent roles, safeguards and usable market rules are still necessary. The recorded 2025–2027 actions are document-stated plans; current implementation, buyers and prices have not been verified.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 5,
+          "label": "Nature credits: certification and outcome distinction",
+          "locator": "Nature credits: certification and outcome distinction"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 6,
+          "label": "Nature credits: monitoring and governance",
+          "locator": "Nature credits: monitoring and governance"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 8,
+          "label": "Nature credits: dry ecosystems and biodiversity specificity",
+          "locator": "Nature credits: dry ecosystems and biodiversity specificity"
+        }
+      ],
+      "member_layout": "vertical"
+    }
+  ]
+}

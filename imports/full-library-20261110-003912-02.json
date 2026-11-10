@@ -1,0 +1,1423 @@
+{
+  "batch_id": "full-library-20261110-003912-02",
+  "summary": "AL20 strategy priorities, innovation conditions, selection gate, dated 2026 call and verification chain; complete omitted Line 3 youth/women rows. No score or eligibility decision.",
+  "base_revision": 13,
+  "sources": [
+    {
+      "id": "KGB-SRC-0021",
+      "title": "EDLL Alpujarra–Sierra Nevada Almeriense 2023–2027 (library edition)",
+      "kind": "pdf",
+      "filename": "FUND-013 - Alpujarra Sierra Nevada Almeriense - EDLL 2023-2027 - v1.pdf",
+      "managed_path": "sources/full-library-20261110/FUND-013 - Alpujarra Sierra Nevada Almeriense - EDLL 2023-2027 - v1.pdf",
+      "sha256": "1c5b293d640dd3c8213aa314d6b791754ba8e82c3a0db32639236402adc4c796",
+      "pdf_pages": 544,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          3
+        ],
+        [
+          393,
+          401
+        ]
+      ],
+      "issuer": "GDR candidato Alpujarra–Sierra Nevada Almeriense",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "local development strategy",
+      "library_path": "doc_library/FUND-013 - Alpujarra Sierra Nevada Almeriense - EDLL 2023-2027 - v1.pdf"
+    },
+    {
+      "id": "KGB-SRC-0022",
+      "title": "LEADER 7119.2 verification guide: version 2, public version 4",
+      "kind": "pdf",
+      "filename": "FUND-010 - Andalusia - LEADER Selection Criteria Verification Guide - v2-4 - 2026-09.pdf",
+      "managed_path": "sources/full-library-20261110/FUND-010 - Andalusia - LEADER Selection Criteria Verification Guide - v2-4 - 2026-09.pdf",
+      "sha256": "1d42e43cd509d13398431b431b91aeed154b601cc8279eabd405b4b9682fd326",
+      "pdf_pages": 231,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          103,
+          106
+        ],
+        [
+          218,
+          219
+        ],
+        [
+          229,
+          231
+        ]
+      ],
+      "issuer": "Junta de Andalucía",
+      "publication_date": "2026-09-11",
+      "language": "es",
+      "document_type": "orientative verification/control guide",
+      "library_path": "doc_library/FUND-010 - Andalusia - LEADER Selection Criteria Verification Guide - v2-4 - 2026-09.pdf"
+    },
+    {
+      "id": "KGB-SRC-0023",
+      "title": "Andalusia LEADER 7119.2: call for non-GDR applicants, 13 April 2026",
+      "kind": "pdf",
+      "filename": "FUND-009 - Andalusia - LEADER Call for Non-GDR Applicants - 2026-04-13.pdf",
+      "managed_path": "sources/full-library-20261110/FUND-009 - Andalusia - LEADER Call for Non-GDR Applicants - 2026-04-13.pdf",
+      "sha256": "ea112609b74de7f24a7933541d2917dfa2b9f2ea61306f6c2dbc3e1099b1c11e",
+      "pdf_pages": 61,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "issuer": "Junta de Andalucía, Dirección General de Industrias, Innovación y Cadena Agroalimentaria",
+      "publication_date": "2026-04-22",
+      "language": "es",
+      "document_type": "call resolution dated 2026-04-13; published 2026-04-22",
+      "library_path": "doc_library/FUND-009 - Andalusia - LEADER Call for Non-GDR Applicants - 2026-04-13.pdf"
+    }
+  ],
+  "topics": [
+    {
+      "id": "leader-selection-gate",
+      "label": "LEADER selection threshold and processing",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "The February 2026 order requires at least 60 points out of a maximum 100 for an operation to be selected. Local groups specify applicable criteria, points and minimums in their validated proposals. Passing this scoring gate does not establish applicant admissibility, eligible costs, a budget reservation or an award. The same order describes a non-competitive procedure, with applications instructed in registration order while budget is available. The GDR’s technical/managerial assessment and proposal are followed by the Delegación Territorial’s mandatory binding final admissibility/subsidisability report. These are documentary rules for this edition, with current applicability unverified.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 38,
+          "label": "Selection: minimum 60/100 and competent authorities",
+          "locator": "Artículos 22–23"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 39,
+          "label": "Processing: registration order, GDR review and final verification",
+          "locator": "Artículo 24"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    },
+    {
+      "id": "leader-aid-limits",
+      "label": "LEADER aid rates, caps and cofinancing",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Article 12 distinguishes reimbursement of actually incurred/paid eligible costs from fixed lump-sum aid. Typology-specific rules apply, subject to ceilings of 100% for non-productive and 65% for productive operations. For Lines 1–3, the order gives a general maximum of EUR 200,000 per operation, or EUR 400,000 for integral operations, without removing applicable minimis or typology conditions. These ceilings are not promised awards. The April call’s 85% FEADER/15% Andalusian split describes public programme financing, not an applicant’s aid intensity or own contribution. Budgets, other finance and eligible expenditure require separate checks.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 26,
+          "label": "Aid calculation: reimbursement versus fixed sums",
+          "locator": "Artículo 12.1–2"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 27,
+          "label": "Aid intensity and operation caps; budget constraints",
+          "locator": "Artículos 12.2–6; 13.1–2"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 28,
+          "label": "Other finance, own contribution and double-financing controls",
+          "locator": "Artículo 13.5–8"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 5,
+          "label": "Call financing: 85/15 public split and programme allocation",
+          "locator": "Séptimo"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    },
+    {
+      "id": "leader-nongdr-call-2026",
+      "label": "LEADER non-GDR call (April 2026 snapshot)",
+      "kind": "event",
+      "domain": "funding",
+      "description": "The resolution dated 13 April and published 22 April 2026 calls Andalusian LEADER 7119.2 aid for applicants other than GDRs, procedure 25647. Applicants must match the beneficiary class of the applicable operation typology; natural persons must be self-employed or commit to that status within three months of a favourable award notification. Its stated application window runs from the day after publication of the required extract to 31 December 2028. That wording does not verify an opening date, current availability or remaining funds. Strategy/proposal modifications can suspend admissions during processing and change the applicable version; older initiated procedures retain their earlier basis. The call refers to detailed local criteria and annexes, so the library’s February AL20 tables are not automatically certified as the latest applicable version.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 1,
+          "label": "Non-GDR call: resolution and publication identity",
+          "locator": "Title"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 4,
+          "label": "Applicant classes, self-employment condition and documentary deadline",
+          "locator": "Segundo; Cuarto"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "label": "Strategy changes: admissions suspension and applicable version",
+          "locator": "Noveno"
+        }
+      ],
+      "group_id": "dates",
+      "aliases": [],
+      "dates": [
+        {
+          "value": "2026-04-13",
+          "meaning": "resolution"
+        },
+        {
+          "value": "2026-04-22",
+          "meaning": "publication"
+        },
+        {
+          "value": "2028-12-31",
+          "meaning": "document-stated application deadline; current status unverified"
+        }
+      ]
+    },
+    {
+      "id": "leader-verification",
+      "label": "LEADER criterion evidence and verification",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "The September 2026 guide, version 2/public version 4, explains how selected LEADER criteria are checked. CadmSA means administrative control of the aid application; CadmSP concerns the payment application. Evidence must match the particular criterion and applicable local strategy. CO.1 requires identifying the operation’s objectives and the prioritized EDLL need, with final territorial verification. IN.1 requires a justified report from the instructing GDR against the latest applicable strategy. PT.1 distinguishes application evidence from proof of actual delivery, including project, completion/acceptance and photographs where relevant. Annex VII distinguishes mutually exclusive from cumulative subcriteria within each criterion; local family caps still matter. This guide is not a complete project score or a replacement for the locally selected rules.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 5,
+          "label": "Guide scope and exclusive/cumulative definitions",
+          "locator": "Presentación y marco normativo"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 16,
+          "label": "CO.1: identify the prioritized EDLL need",
+          "locator": "Criterio CO.1"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 17,
+          "label": "CO.1: mandatory final territorial confirmation",
+          "locator": "CO.1 continuation"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 103,
+          "label": "IN.1: GDR justification against latest EDL",
+          "locator": "Criterio IN.1"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 104,
+          "label": "PT.1: application and payment evidence",
+          "locator": "Criterio PT.1"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 105,
+          "label": "PT.1: completion evidence and applicable EDL",
+          "locator": "PT.1 continuation"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    },
+    {
+      "id": "al20-water-priority",
+      "label": "AL20 NPL1: water-cycle and consumption management",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "NPL1 is the first LEADER-addressable need in the reviewed strategy: improving management of the water cycle and control of consumption, with a prioritization value of 3.28. That value is an output of the strategy’s priority exercise, not grant-selection points. A project would need to explain the actual need addressed and provide the criterion’s required evidence; buying a reservoir or drone does not itself satisfy CO.1. The library edition is a strategy snapshot whose later modifications and currently applicable local rules remain unverified.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "AL20 NPL1: water-cycle and consumption priority",
+          "locator": "4.3; NPL1"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 393,
+          "label": "Strategy priority method: 85% general priority, three 5% links",
+          "locator": "4.2"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 16,
+          "label": "CO.1: operation-to-need justification",
+          "locator": "Criterio CO.1"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    },
+    {
+      "id": "al20-soil-priority",
+      "label": "AL20 NPL4: soil regeneration, erosion and aridity",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "NPL4 in the reviewed AL20 strategy calls for actions regenerating soils and reducing erosion and aridity, with a priority value of 3.16. It sits alongside NPL2 sustainable agriculture and NPL3 rural natural/cultural heritage. These are distinct strategic needs; their prioritization values do not award application points. The same strategy separately classifies broader natural-environment management measures under non-LEADER-addressable NPNL4. A restoration proposal therefore needs a justified mapping to the correct need, activity, applicant and funding rules rather than a blanket assumption that environmental work is eligible.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "AL20 NPL2–4: agriculture, heritage and soil priorities",
+          "locator": "4.3"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 397,
+          "label": "AL20 NPNL4: separate non-LEADER-addressable management need",
+          "locator": "4.3; NPNL4"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    },
+    {
+      "id": "al20-precision-agriculture",
+      "label": "AL20 innovation: technological precision agriculture",
+      "kind": "aspect",
+      "domain": "funding",
+      "description": "Section 4.4 identifies technological precision agriculture, explicitly including drones and sensors, as integrated innovation aspect 11. Its justification focuses on municipalities with low agricultural production. Dalías and Berja are exceptions: there the text only envisages traditional, little-technified agriculture. This strategy example does not mean every drone use, ecological planting or reservoir-refill concept earns innovation points. The applicable operation, agricultural context, local version and GDR justification must be established. The source describes an innovation framing, not an evaluated drone-irrigation result or aviation permission.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 400,
+          "label": "Innovation aspect 11: drones/sensors and Dalías/Berja limitation",
+          "locator": "4.4; Aspecto integrado 11"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 103,
+          "label": "IN.1: instructing GDR must justify local-strategy match",
+          "locator": "Criterio IN.1"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 104,
+          "label": "Innovation uses latest applicable EDL",
+          "locator": "IN.1 continuation"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    },
+    {
+      "id": "al20-local-needs",
+      "label": "Prioritized local-strategy needs",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion CO.1 for non-productive Line 3 operations. CO.1.1: one prioritized EDLL need (10 points); CO.1.2: two (12); CO.1.3: three or more (15). Starred needs depend on the strategy. The September guide marks CO.1.1–3 as mutually exclusive: the 10/12/15 tiers are alternatives, not a cumulative 37 points. Its application evidence must identify the operation and specific prioritized need; the final DT report confirms the fit. The reviewed strategy supplies NPL1 water management, NPL4 soil regeneration and other priorities, but this is not a project score.",
+      "aliases": [
+        "CO.1"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "locator": "Line 3 selection table: CO.1",
+          "label": "AL20 Line 3: CO.1 need-count tiers"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 16,
+          "label": "CO.1: required operation and EDLL-need explanation",
+          "locator": "CO.1: required operation and EDLL-need explanation"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 17,
+          "label": "CO.1: final DT confirmation",
+          "locator": "CO.1: final DT confirmation"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 219,
+          "label": "CO.1: all three need-count tiers are exclusive",
+          "locator": "Anexo VII"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "AL20: LEADER-addressable priority list, NPL1–21",
+          "locator": "4.3"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "15 points"
+      }
+    },
+    {
+      "id": "al20-innovation",
+      "label": "Local-strategy innovation",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion IN.1 for non-productive Line 3 operations. IN.1.1: sector considered innovative in EDLL (0.02 points); IN.1.2: innovative theme (2.49); IN.1.3: innovative aspect (2.49). Family maximum 5. All refer to starred strategy definitions. The reviewed EDLL does not define a list of innovative sectors: it chooses themes and integrated aspects instead. Aspect 11 includes technological precision agriculture with drones/sensors under its stated municipal limits. The September guide marks IN.1 subcriteria cumulative but requires a GDR justification using the latest applicable strategy. Merely naming a new technology does not earn points.",
+      "aliases": [
+        "IN.1"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: IN.1",
+          "label": "AL20 Line 3: IN.1 innovation weights"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 398,
+          "label": "AL20: innovation framed through themes and integrated aspects",
+          "locator": "4.4 introduction"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 400,
+          "label": "AL20: precision-agriculture aspect 11 and municipal limits",
+          "locator": "AL20: precision-agriculture aspect 11 and municipal limits"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 103,
+          "label": "IN.1: GDR justification requirements",
+          "locator": "IN.1: GDR justification requirements"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 230,
+          "label": "IN.1: cumulative subcriteria",
+          "locator": "Anexo VII"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "5 points"
+      }
+    },
+    {
+      "id": "al20-rural-youth",
+      "label": "Positive action for rural youth",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion JR.3 for non-productive Line 3 operations. JR.3.1: courses for youth skills/employability (4 points); JR.3.2: dual vocational education or official youth placements (4); JR.3.3: return of recently qualified young people within 12 months of completing medium/higher education and labour-market incorporation in the zone (3); JR.3.4: awareness/training on youth contribution to local development (2); JR.3.5: rural youth leisure (4); JR.3.6: associations/participation and quality of life (4). Family maximum 4. Complete continuation: JR.3.7 creation/promotion of diversifying businesses providing products/services for young people (4 points); JR.3.8 response to one or more youth needs identified in EDL (2). Family maximum remains 4. In Annex VII of the September guide, JR.3.1/.2/.5/.6/.7 are exclusive; .3/.4/.8 are cumulative within the criterion. No project points are calculated.",
+      "aliases": [
+        "JR.3"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "locator": "Line 3 selection table: JR.3",
+          "label": "AL20 Line 3: JR.3 youth actions"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "label": "AL20 Line 3: JR.3.7–8 youth continuation",
+          "locator": "JR.3.7–8"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 230,
+          "label": "JR.3: exclusive and cumulative classifications",
+          "locator": "Anexo VII"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "4 points"
+      }
+    },
+    {
+      "id": "al20-womens-associations",
+      "label": "Participation and associations among women",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion IG.11 for non-productive Line 3 operations. IG.11.1: rural women associations/federations (2 points); IG.11.2: association maintenance/equipment (2); IG.11.3: association activities (2); IG.11.4: association networks (2); IG.11.5: dissemination about associations, especially young women/women with disabilities (1); IG.11.6: women participation in underrepresented sectors (1). Family maximum 2. Complete continuation: IG.11.7 organization of meetings, conferences, forums or webinars around women’s interests identified in the EDL earns 1 point, within the existing family maximum of 2.",
+      "aliases": [
+        "IG.11"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "locator": "Line 3 selection table: IG.11",
+          "label": "AL20 Line 3: IG.11.1–6 women’s associations"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "label": "AL20 Line 3: IG.11.7 women’s meetings and EDL link",
+          "locator": "IG.11.7"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "2 points"
+      }
+    },
+    {
+      "id": "al20-heritage-value",
+      "label": "Enhancement of rural heritage",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion PT.1 for non-productive Line 3 operations. PT.1.1: natural/monumental/architectural/artistic heritage enhanced for subsequent use through physical work, training, dissemination or awareness (13 points); PT.1.2: traditional trades/gastronomic specialties identified in EDLL (7); PT.1.3: other heritage action identified as of interest in EDLL (2). Family maximum 15. The September verification guide distinguishes proof at application from actual implementation at payment. PT.1.1 investments use a basic project for the intended heritage use; payment evidence can include execution project, final works certificate, reception record and photographs. For strategy-dependent .2/.3, the guide requires GDR justification and the latest applicable EDL. Annex VII marks PT.1 subcriteria cumulative, subject to the AL20 family maximum of 15.",
+      "aliases": [
+        "PT.1"
+      ],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: PT.1",
+          "label": "AL20 Line 3: PT.1 heritage weights"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 104,
+          "label": "PT.1: application versus payment evidence",
+          "locator": "PT.1: application versus payment evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 105,
+          "label": "PT.1: completed works and latest-strategy checks",
+          "locator": "PT.1: completed works and latest-strategy checks"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 230,
+          "label": "PT.1: cumulative subcriteria",
+          "locator": "Anexo VII"
+        }
+      ],
+      "aspects": {
+        "source family maximum": "15 points"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "fl02-strategy-weights",
+      "label": "Strategy priority values differ from project-selection points",
+      "text": "The strategy’s prioritization exercise weights mean general-priority responses at 85%, plus the relative frequency of links to climate, women and youth objectives at 5% each. NPL1 has 3.28; NPL2 sustainable agriculture 3.23; NPL3 rural heritage 3.22; NPL4 soils/erosion/aridity 3.16; NPL8 climate adaptation 3.12. These numbers rank needs within the strategy. CO.1 later awards alternative 10/12/15 application points for addressing 1/2/3-or-more justified prioritized needs; the two scales must not be combined.",
+      "topic_ids": [
+        "al20-local-needs",
+        "al20-water-priority",
+        "al20-soil-priority"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 393,
+          "label": "Priority calculation and weights",
+          "locator": "4.2"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 394,
+          "label": "85/5/5/5 priority-weight table",
+          "locator": "4.2"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "Prioritized needs and their strategy values",
+          "locator": "4.3"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "label": "AL20 CO.1: 10/12/15 application-point tiers",
+          "locator": "AL20 CO.1: 10/12/15 application-point tiers"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "fl02-carbon-strategy-boundary",
+      "label": "Carbon-income innovation is not a LEADER funding entitlement",
+      "text": "The strategy places local initiatives earning income from carbon sinks under non-LEADER-addressable NPNL10 (priority value 2.56), while integrated innovation aspect 3 describes operations demonstrating carbon-sink income as one revenue source. These statements serve different strategy functions and do not establish that carbon-income generation itself is an eligible activity. Aspect 8 separately concerns certified efficient carbon/water footprints communicated to customers. The operation’s funding typology, evidence and current strategy must still be checked.",
+      "topic_ids": [
+        "al20-innovation",
+        "al20-local-needs"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 397,
+          "label": "NPNL10: carbon-sink income outside LEADER-addressable needs",
+          "locator": "4.3"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 399,
+          "label": "Integrated innovation aspect 3: demonstrated carbon income",
+          "locator": "4.4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 400,
+          "label": "Integrated aspect 8: certified carbon/water footprint",
+          "locator": "4.4"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "fl02-call-budget",
+      "label": "Call finance is distinct from AL20 allocation and applicant aid",
+      "text": "The April call gives an overall EUR 97,589,590.75 allocation, divided into EUR 70,589,590.75 for 2026 and EUR 27,000,000 for 2027, with public cofinancing 85% FEADER and 15% Andalucía. The separately signed February AL20 activity/budget sheet lists Line 1 EUR 330,052.59, Line 2 EUR 989,725.78 and Line 3 EUR 710,649.89, totaling EUR 2,030,428.26. These are document-stated programme/line allocations, not remaining funds or an individual grant cap. The applicable later local proposal and balance have not been verified.",
+      "topic_ids": [
+        "leader-nongdr-call-2026",
+        "leader-aid-limits",
+        "al20-line-3"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 5,
+          "label": "April call: annual public allocations and 85/15 split",
+          "locator": "Séptimo"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20: three local line budgets and total",
+          "locator": "Budget column; signed 16/02/2026"
+        }
+      ],
+      "kind": "finding"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "fl02-al20-leader-selection-gate",
+      "source": "al20",
+      "target": "leader-selection-gate",
+      "label": "uses documented selection rules",
+      "explanation": "The library’s governing order supplies the minimum gate; this does not determine a particular application’s admissibility or score.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 38,
+          "label": "LEADER: selection threshold and authority",
+          "locator": "LEADER: selection threshold and authority"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl02-al20-leader-nongdr-call-2026",
+      "source": "al20",
+      "target": "leader-nongdr-call-2026",
+      "label": "has a related 2026 call snapshot",
+      "explanation": "The April call implements the February framework, but later local strategy/proposal versions still require reconciliation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 3,
+          "label": "Call: February order and non-GDR procedure",
+          "locator": "Call: February order and non-GDR procedure"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "label": "Call: local proposal and strategy-version requirements",
+          "locator": "Call: local proposal and strategy-version requirements"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl02-al20-line-3-leader-aid-limits",
+      "source": "al20-line-3",
+      "target": "leader-aid-limits",
+      "label": "is subject to general aid ceilings",
+      "explanation": "Typology-specific conditions and limits remain applicable within the documented general ceilings.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 27,
+          "label": "LEADER: intensity and operation caps",
+          "locator": "LEADER: intensity and operation caps"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl02-al20-local-needs-al20-water-priority",
+      "source": "al20-local-needs",
+      "target": "al20-water-priority",
+      "label": "uses a documented priority",
+      "explanation": "NPL1 is present in the strategy’s prioritized LEADER-addressable list; a project must separately justify that it addresses it.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "AL20 NPL1 water priority",
+          "locator": "AL20 NPL1 water priority"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl02-al20-local-needs-al20-soil-priority",
+      "source": "al20-local-needs",
+      "target": "al20-soil-priority",
+      "label": "uses a documented priority",
+      "explanation": "NPL4 is present in the strategy’s prioritized LEADER-addressable list.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "AL20 NPL4 soil priority",
+          "locator": "AL20 NPL4 soil priority"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl02-al20-soil-priority-soil-erosion",
+      "source": "al20-soil-priority",
+      "target": "soil-erosion",
+      "label": "prioritizes reducing",
+      "explanation": "NPL4 explicitly combines soil regeneration with reducing erosion and aridity; it does not prove any particular intervention works.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "AL20 NPL4: erosion and aridity",
+          "locator": "AL20 NPL4: erosion and aridity"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl02-al20-innovation-al20-precision-agriculture",
+      "source": "al20-innovation",
+      "target": "al20-precision-agriculture",
+      "label": "has a strategy-defined example",
+      "explanation": "The local strategy explicitly lists drones and sensors under integrated precision-agriculture aspect 11, retaining municipal limits.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 400,
+          "label": "AL20 innovation aspect 11",
+          "locator": "AL20 innovation aspect 11"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl02-al20-local-needs-leader-verification",
+      "source": "al20-local-needs",
+      "target": "leader-verification",
+      "label": "requires documented need matching",
+      "explanation": "The guide requires the application to identify the prioritized need and final DT confirmation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 16,
+          "label": "CO.1: application evidence",
+          "locator": "CO.1: application evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 17,
+          "label": "CO.1: final DT confirmation",
+          "locator": "CO.1: final DT confirmation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl02-al20-heritage-value-leader-verification",
+      "source": "al20-heritage-value",
+      "target": "leader-verification",
+      "label": "requires stage-specific evidence",
+      "explanation": "The guide distinguishes intended heritage use at application from delivered works/activity at payment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 104,
+          "label": "PT.1: application and payment evidence",
+          "locator": "PT.1: application and payment evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 105,
+          "label": "PT.1: implementation documents",
+          "locator": "PT.1: implementation documents"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl02-drone-innovation",
+      "source": "drones",
+      "target": "al20-precision-agriculture",
+      "label": "has a conditional strategy comparison",
+      "explanation": "Curated bridge: the strategy names drones within agricultural precision work, while the existing aircraft evidence concerns distinct applications. A restoration-refill idea needs a qualifying agricultural context, local strategy match, applicable rule version and operational evidence; no innovation score, eligibility or successful integration follows automatically.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 400,
+          "label": "AL20: precision agriculture, drones and municipal limits",
+          "locator": "AL20: precision agriculture, drones and municipal limits"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 103,
+          "label": "IN.1: GDR justification",
+          "locator": "IN.1: GDR justification"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "label": "Citrus drone: actual spray-evaluation scope",
+          "locator": "Citrus drone: actual spray-evaluation scope"
+        }
+      ],
+      "traversable": true
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 1,
+      "status": "inspected",
+      "note": "Strategy index; 544-page edition, substantive chapters and annex structure."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 2,
+      "status": "inspected",
+      "note": "EDLL Alpujarra Sierra Nevada Almeriense 2023–2027 title; no publication date inferred."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 3,
+      "status": "inspected",
+      "note": "Candidate GDR and 32-municipality territory list; earlier accepted territory retained."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 393,
+      "status": "inspected",
+      "note": "Priority exercise formula: response-weighted mean plus climate/gender/youth links, 85/5/5/5."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 394,
+      "status": "inspected",
+      "note": "Visually checked 85/5/5/5 weights table; not application selection scoring."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 395,
+      "status": "inspected",
+      "note": "Visually checked NPL1–21 and values; water, agriculture, heritage and soils key priorities represented."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 396,
+      "status": "inspected",
+      "note": "Visually checked NPL22–44; social/services/custody priorities retained in local extraction; fuller graph representation outstanding."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 397,
+      "status": "inspected",
+      "note": "Visually checked NPL45–50 and non-LEADER-addressable NPNL1–12; carbon-income boundary represented."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 398,
+      "status": "inspected",
+      "note": "Strategy selects innovation themes/aspects rather than innovative sectors; five residential/social themes."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 399,
+      "status": "inspected",
+      "note": "Integrated aspects 1–5; carbon-sink revenue and regenerative certification examples; no automatic eligibility."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 400,
+      "status": "inspected",
+      "note": "Visually checked aspects 6–11 and footnotes; precision agriculture includes drones/sensors with municipal limits."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 401,
+      "status": "inspected",
+      "note": "Visually checked aspect 12 logistics and potentiality/innovation mapping; additional detailed mappings remain to represent."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 1,
+      "status": "inspected",
+      "note": "Visually checked guide title/version: v2 public v4, written 11 September 2026."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 5,
+      "status": "inspected",
+      "note": "Guide scope and definition of exclusion/cumulation within one criterion; employment-arrow explanations."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 6,
+      "status": "inspected",
+      "note": "Unselected criteria AT.4/RD.1/CC.9; annex catalogue and update policy; not assumed locally selectable."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 7,
+      "status": "inspected",
+      "note": "Divider introducing criterion instructions; no independent factual rule."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 10,
+      "status": "inspected",
+      "note": "AT.3 evidence and latest-data mean/median wording; preceding AT.2 route-evidence continuation recorded, no numeric route calculation."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 11,
+      "status": "inspected",
+      "note": "AT.3 multi-municipality/settlement checking; AT.4 unselected; AT.5 evidence details remain graph backlog."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 16,
+      "status": "inspected",
+      "note": "CO.1 evidence and strategy-objectivity condition; preceding reuse examples only orientative."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 17,
+      "status": "inspected",
+      "note": "CO.1 final DT report; FE.1/FE.2 additional criterion descriptions outside AL20 focus remain representation backlog."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 103,
+      "status": "inspected",
+      "note": "IN.1 GDR justification against latest applicable strategy; preceding youth guidance retained in extraction."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 104,
+      "status": "inspected",
+      "note": "IN.1 latest-EDL condition and PT.1 application/payment documents."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 105,
+      "status": "inspected",
+      "note": "PT.1 implementation evidence and strategy-dependent justification; PS.1 introduction."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 106,
+      "status": "inspected",
+      "note": "PS.1 active membership/statutes/GDR evidence; PS.2 definitions retained for later representation."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 218,
+      "status": "inspected",
+      "note": "Visually checked Annex VII territorial table, especially exclusive AT.3 rows and 2023/statistic wording discrepancy."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 219,
+      "status": "inspected",
+      "note": "Visually checked exclusive CO.1 tiers; other AT/FE classifications retained for later in-scope representation."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 229,
+      "status": "inspected",
+      "note": "Visually checked DRI.3 cumulative classification; other inclusive/youth families remain representation backlog."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 230,
+      "status": "inspected",
+      "note": "Visually checked JR.3 mixed classifications, cumulative IN.1/PT.1; no project score calculated."
+    },
+    {
+      "source_id": "KGB-SRC-0022",
+      "page": 231,
+      "status": "inspected",
+      "note": "Visually checked cumulative PS.1, exclusive PS.3, mixed SP.1 and EDL-objectivity footnote; further topic-level detail outstanding."
+    },
+    {
+      "source_id": "KGB-SRC-0023",
+      "page": 1,
+      "status": "inspected",
+      "note": "Resolution 13 April, publication 22 April 2026, non-GDR LEADER scope and framework."
+    },
+    {
+      "source_id": "KGB-SRC-0023",
+      "page": 2,
+      "status": "inspected",
+      "note": "48 GDR local proposal validation and requirements; strategies may change."
+    },
+    {
+      "source_id": "KGB-SRC-0023",
+      "page": 3,
+      "status": "inspected",
+      "note": "Change-transition rules, temporary nonadmission and procedure 25647."
+    },
+    {
+      "source_id": "KGB-SRC-0023",
+      "page": 4,
+      "status": "inspected",
+      "note": "Applicant typology/self-employed condition, submission and stated deadline; current status not checked."
+    },
+    {
+      "source_id": "KGB-SRC-0023",
+      "page": 5,
+      "status": "inspected",
+      "note": "Visually checked overall public budget, annualities and 85/15 cofinancing; six-month decision period/negative silence documentary only."
+    },
+    {
+      "source_id": "KGB-SRC-0023",
+      "page": 6,
+      "status": "inspected",
+      "note": "Annex references and change/version/suspension rules; external annex links not fetched."
+    },
+    {
+      "source_id": "KGB-SRC-0023",
+      "page": 7,
+      "status": "inspected",
+      "note": "Voluntary-return/antifraud/remedy procedures are documentary administrative context; continuation beyond p7 pending."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 26,
+      "status": "inspected",
+      "note": "Article 11 exclusions continuation read, full cost rule still partial; Article 12 reimbursement/lump-sum distinction."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 27,
+      "status": "inspected",
+      "note": "Article 12 intensity/operation caps and Article 13 noncompetitive budget limitation."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 28,
+      "status": "inspected",
+      "note": "Article 13 cofinancing/own contribution and duplicate-finance controls; Article 14 control framework."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 38,
+      "status": "inspected",
+      "note": "Article 22 minimum 60/100, Article 23 competent GDR/DT authorities; preceding correction-of-application continuation."
+    },
+    {
+      "source_id": "FUND-008",
+      "page": 39,
+      "status": "inspected",
+      "note": "Article 24 registration order subject to budget, written selection/proposals and binding final verification."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 15,
+      "status": "inspected",
+      "note": "Visually rechecked selected Line 3 types; 3.2 blank and all selected operations nonproductive."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 16,
+      "status": "inspected",
+      "note": "Rechecked AT.3, CO.1, RD.5, CC.2 and CC.7 family cap."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 17,
+      "status": "inspected",
+      "note": "Rechecked CC.7, IG.8 and IG.11.1–6, including family maxima."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 18,
+      "status": "inspected",
+      "note": "Visually checked IG.11.7, DRI.3 and JR.3.1–6."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 19,
+      "status": "inspected",
+      "note": "Visually checked JR.3.7–8 continuation, IN.1/PT.1/PS.1 weights and maxima."
+    },
+    {
+      "source_id": "FUND-004",
+      "page": 20,
+      "status": "inspected",
+      "note": "Visually checked PS.3, SP.1 and total 100. Printed 20 is the PDF page number, not a selection minimum."
+    },
+    {
+      "source_id": "FUND-005",
+      "page": 1,
+      "status": "inspected",
+      "note": "Visually rechecked selected activity marks, blank 3.2, line budgets and total; February dated snapshot."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "fl02-al20-current-version",
+      "text": "The reviewed EDLL has no verified publication date, and the call permits later local strategy/proposal changes with admissions suspension. The February AL20 tables, April call and September guide are related documentary editions, but their current simultaneous applicability and remaining balances are unverified in library-only mode. Do not score a project until the full applicable set and project inputs are established.",
+      "topic_ids": [
+        "al20",
+        "leader-selection-gate",
+        "leader-nongdr-call-2026"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "label": "Call: modifications and applicable proposal",
+          "locator": "Call: modifications and applicable proposal"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 104,
+          "label": "Guide: latest applicable EDL",
+          "locator": "Guide: latest applicable EDL"
+        }
+      ]
+    },
+    {
+      "id": "fl02-population-basis-conflict",
+      "text": "The February AL20 AT.3 table uses INE 2023 and a municipal median. The September guide text refers to latest published data and median or mean, with 2,497 as Andalusian reference; its Annex VII still mentions INE 2023. Preserve these documentary differences. The actual applicable data series, local statistic and settlement must be confirmed before awarding population points.",
+      "topic_ids": [
+        "al20-population"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "label": "AL20 AT.3: INE 2023 median wording",
+          "locator": "AL20 AT.3: INE 2023 median wording"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 10,
+          "label": "Guide AT.3: latest data, mean/median and 2,497 reference",
+          "locator": "Guide AT.3: latest data, mean/median and 2,497 reference"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 218,
+          "label": "Annex VII AT.3: 2023 wording",
+          "locator": "Annex VII AT.3: 2023 wording"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:al20-evidence",
+      "label": "AL20: activities, strategy and evidence",
+      "parent_id": "funding:programmes",
+      "anchor_topic_id": "al20",
+      "members": [
+        {
+          "topic_id": "al20-line-1",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-line-2",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-line-3",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-selection-gate",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-aid-limits",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-nongdr-call-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "leader-verification",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Start with the three local activity lines, then distinguish selection, aid ceilings and the dated call. Use the strategy branch for water, soil and innovation priorities and the scoring branches for Line 3 criteria. A relevant project feature is a reason to inspect a criterion and its evidence; it is not an eligibility decision. The order requires at least 60/100 and the procedure also depends on admissibility, budget and the applicable local version.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "label": "AL20: selected nonproductive Line 3 activity types",
+          "locator": "AL20: selected nonproductive Line 3 activity types"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 38,
+          "label": "LEADER: 60/100 selection gate",
+          "locator": "LEADER: 60/100 selection gate"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "label": "Call: local version and modification rules",
+          "locator": "Call: local version and modification rules"
+        }
+      ],
+      "member_layout": "grid"
+    },
+    {
+      "id": "browse:al20-priorities",
+      "label": "Local priorities and innovation",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "al20-local-needs",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-water-priority",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-soil-priority",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-innovation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-precision-agriculture",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Read the prioritized need before considering the project-selection criterion. The strategy separates LEADER-addressable needs from other territorial needs and gives its own priority values. Water management and soil regeneration provide useful starting points. Its precision-agriculture innovation example names drones/sensors with municipal limits, while criterion evidence requires a justified match to the latest applicable local strategy.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "AL20: water and soil priorities",
+          "locator": "AL20: water and soil priorities"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 397,
+          "label": "AL20: non-LEADER-addressable needs",
+          "locator": "AL20: non-LEADER-addressable needs"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 400,
+          "label": "AL20: precision-agriculture innovation conditions",
+          "locator": "AL20: precision-agriculture innovation conditions"
+        }
+      ],
+      "member_layout": "grid"
+    },
+    {
+      "id": "browse:al20-territorial-scoring",
+      "label": "Line 3: territory and climate",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "al20-population",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-territorial-balance",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-renewable-energy",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-sustainable-mobility",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "These existing Line 3 criteria concern settlement population, territorial economic balance, source-listed energy equipment and sustainable mobility. Their local family maxima and the applicable verification edition matter. In particular, February population wording and the September guide differ in data-year and median/mean language; no settlement or project has been scored here.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 16,
+          "label": "AL20 Line 3: territorial and climate criteria",
+          "locator": "AL20 Line 3: territorial and climate criteria"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "label": "AL20 Line 3: mobility subcriteria",
+          "locator": "AL20 Line 3: mobility subcriteria"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 10,
+          "label": "Guide: AT.3 data-basis wording",
+          "locator": "Guide: AT.3 data-basis wording"
+        }
+      ],
+      "member_layout": "grid"
+    },
+    {
+      "id": "browse:al20-social-scoring",
+      "label": "Line 3: people and local services",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "al20-gender-leisure",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-womens-associations",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-accessibility",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-rural-youth",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-local-services",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Compare the criteria for women’s participation, adapted structures, youth and proximity services. Continued rows for women’s events and youth businesses/needs are now included. Each family has a local maximum; the guide distinguishes exclusive from cumulative subcriteria. Application claims and evidence of delivered activities remain separate stages.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 17,
+          "label": "AL20: women and mobility criteria",
+          "locator": "AL20: women and mobility criteria"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 18,
+          "label": "AL20: women, accessibility and youth",
+          "locator": "AL20: women, accessibility and youth"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "label": "AL20: continued youth criteria",
+          "locator": "AL20: continued youth criteria"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 230,
+          "label": "Guide: youth cumulation/exclusion",
+          "locator": "Guide: youth cumulation/exclusion"
+        }
+      ],
+      "member_layout": "grid"
+    },
+    {
+      "id": "browse:al20-heritage-governance",
+      "label": "Line 3: heritage and promoter evidence",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "al20-heritage-value",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-cooperation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-new-beneficiary",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Open heritage value for activity-specific evidence at application and payment, and promoter criteria for association/cooperation and previous LEADER status. Source-reported points are conditional and family-capped. A heritage objective alone does not demonstrate a completed public-use project, an admissible cost or an award.",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "label": "AL20: heritage and promoter cooperation weights",
+          "locator": "AL20: heritage and promoter cooperation weights"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 20,
+          "label": "AL20: previous-beneficiary status",
+          "locator": "AL20: previous-beneficiary status"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 104,
+          "label": "Guide: heritage evidence by stage",
+          "locator": "Guide: heritage evidence by stage"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 106,
+          "label": "Guide: promoter membership evidence",
+          "locator": "Guide: promoter membership evidence"
+        }
+      ],
+      "member_layout": "grid"
+    }
+  ]
+}

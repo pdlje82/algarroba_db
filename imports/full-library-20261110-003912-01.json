@@ -1,0 +1,1066 @@
+{
+  "batch_id": "full-library-20261110-003912-01",
+  "summary": "Andarax documentary project/evaluation, Q. rotundifolia sheet, provisional Doñana selection and vendor reservoir/refill distinctions. Library-only snapshots; no plan adoption.",
+  "base_revision": 12,
+  "sources": [
+    {
+      "id": "KGB-SRC-0013",
+      "title": "Río Andarax restoration: investment justification (CONTR 2023 152183)",
+      "kind": "pdf",
+      "filename": "ANDARAX-001 - Rio Andarax - Restoration Investment Justification - CONTR-2023-152183.pdf",
+      "managed_path": "sources/full-library-20261110/ANDARAX-001 - Rio Andarax - Restoration Investment Justification - CONTR-2023-152183.pdf",
+      "sha256": "1edc497213a2a0744f7c8587aa7df7c42e4f7161fd78e55b8fc4dfcb0805b2da",
+      "pdf_pages": 8,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "issuer": "Junta de Andalucía, Dirección General de Recursos Hídricos",
+      "publication_date": "2023-06-07",
+      "language": "es",
+      "document_type": "investment justification / proposed works procurement",
+      "library_path": "doc_library/ANDARAX-001 - Rio Andarax - Restoration Investment Justification - CONTR-2023-152183.pdf"
+    },
+    {
+      "id": "KGB-SRC-0014",
+      "title": "Río Andarax: BC3 budget and GIS-layer download-link sheet",
+      "kind": "pdf",
+      "filename": "ANDARAX-002 - Rio Andarax - Download Link for BC3 Budget and GIS Layers.pdf",
+      "managed_path": "sources/full-library-20261110/ANDARAX-002 - Rio Andarax - Download Link for BC3 Budget and GIS Layers.pdf",
+      "sha256": "bdb3ffa747b1bcb14b8d815908d39aae11deabdb7d7c3a7dff4a4c4f12071afa",
+      "pdf_pages": 1,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "issuer": "Junta de Andalucía, Dirección General de Recursos Hídricos",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "download-link sheet",
+      "library_path": "doc_library/ANDARAX-002 - Rio Andarax - Download Link for BC3 Budget and GIS Layers.pdf"
+    },
+    {
+      "id": "KGB-SRC-0015",
+      "title": "Río Andarax restoration: technical tender evaluation",
+      "kind": "pdf",
+      "filename": "ANDARAX-003 - Rio Andarax - Tender Evaluation and Technical Scoring Report.pdf",
+      "managed_path": "sources/full-library-20261110/ANDARAX-003 - Rio Andarax - Tender Evaluation and Technical Scoring Report.pdf",
+      "sha256": "6a9ae29f318bf20d0d8180daabb1c894f10a352d3081d20c31bc609716d7fdcc",
+      "pdf_pages": 6,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "issuer": "Junta de Andalucía, Delegación Territorial en Almería",
+      "publication_date": "2023-10-17",
+      "language": "es",
+      "document_type": "technical tender evaluation",
+      "library_path": "doc_library/ANDARAX-003 - Rio Andarax - Tender Evaluation and Technical Scoring Report.pdf"
+    },
+    {
+      "id": "KGB-SRC-0016",
+      "title": "Encina (Quercus rotundifolia): Umbría de la Virgen botanical sheet",
+      "kind": "pdf",
+      "filename": "FOREST-004 - Almeria - Holm Oak Botanical Factsheet - Quercus rotundifolia - 2025-01.pdf",
+      "managed_path": "sources/full-library-20261110/FOREST-004 - Almeria - Holm Oak Botanical Factsheet - Quercus rotundifolia - 2025-01.pdf",
+      "sha256": "701ca670ffafd20157f5ece7da051a2f099b9bcfafe1e038135e44986a906ee1",
+      "pdf_pages": 1,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "issuer": "Junta de Andalucía, Red Andaluza de Jardines Botánicos",
+      "publication_date": "2025-01",
+      "language": "es",
+      "document_type": "botanical factsheet",
+      "library_path": "doc_library/FOREST-004 - Almeria - Holm Oak Botanical Factsheet - Quercus rotundifolia - 2025-01.pdf"
+    },
+    {
+      "id": "KGB-SRC-0017",
+      "title": "Doñana 2025 restoration grants: provisional award proposal",
+      "kind": "pdf",
+      "filename": "FUND-002 - Donana Restoration Grants - Provisional Award Proposal - 2026-10-13.pdf",
+      "managed_path": "sources/full-library-20261110/FUND-002 - Donana Restoration Grants - Provisional Award Proposal - 2026-10-13.pdf",
+      "sha256": "0238e73724e188a80247142b35137d36d52847185226c9147e3a95d590abf3dc",
+      "pdf_pages": 9,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "issuer": "Fundación Biodiversidad",
+      "publication_date": "2026-10-13",
+      "language": "es",
+      "document_type": "provisional award proposal",
+      "library_path": "doc_library/FUND-002 - Donana Restoration Grants - Provisional Award Proposal - 2026-10-13.pdf"
+    },
+    {
+      "id": "KGB-SRC-0018",
+      "title": "Groasis biodegradable Growboxx: supplier datasheet",
+      "kind": "pdf",
+      "filename": "IRR-001 - Groasis - Growboxx Biodegradable Reservoir Datasheet - undated.pdf",
+      "managed_path": "sources/full-library-20261110/IRR-001 - Groasis - Growboxx Biodegradable Reservoir Datasheet - undated.pdf",
+      "sha256": "3d9a9ed2764ec1bf1023668aeb923e896b7ae76bbdecbb201e68d8043e4ad0fb",
+      "pdf_pages": 5,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "issuer": "Groasis B.V.",
+      "publication_date": null,
+      "language": "en",
+      "document_type": "vendor datasheet",
+      "library_path": "doc_library/IRR-001 - Groasis - Growboxx Biodegradable Reservoir Datasheet - undated.pdf"
+    },
+    {
+      "id": "KGB-SRC-0019",
+      "title": "Groasis reusable Waterboxx: supplier datasheet, version 2",
+      "kind": "pdf",
+      "filename": "IRR-002 - Groasis - Waterboxx Reusable Reservoir Datasheet - Version 2.pdf",
+      "managed_path": "sources/full-library-20261110/IRR-002 - Groasis - Waterboxx Reusable Reservoir Datasheet - Version 2.pdf",
+      "sha256": "3fc0d3cc7ee4a715577c4130e9300e1bd68bfce8b4aae1caf76ba1240f552762",
+      "pdf_pages": 3,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          3
+        ]
+      ],
+      "issuer": "Groasis B.V.",
+      "publication_date": null,
+      "language": "en",
+      "document_type": "vendor datasheet; validity date 2023-12-31",
+      "library_path": "doc_library/IRR-002 - Groasis - Waterboxx Reusable Reservoir Datasheet - Version 2.pdf"
+    },
+    {
+      "id": "KGB-SRC-0020",
+      "title": "EASA FAQ 116450: conditions described for the Open category",
+      "kind": "pdf",
+      "filename": "POLICY-003 - EASA - Open Category Conditions - FAQ 116450.pdf",
+      "managed_path": "sources/full-library-20261110/POLICY-003 - EASA - Open Category Conditions - FAQ 116450.pdf",
+      "sha256": "a1081d20b144db9cd233ba477ca79405ce0ec0a1eeecac57bd8052d78ee13cf3",
+      "pdf_pages": 1,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "issuer": "European Union Aviation Safety Agency",
+      "publication_date": "2024-02-01",
+      "language": "en",
+      "document_type": "regulator FAQ snapshot",
+      "library_path": "doc_library/POLICY-003 - EASA - Open Category Conditions - FAQ 116450.pdf"
+    }
+  ],
+  "topics": [
+    {
+      "id": "andarax-restoration-2023",
+      "label": "Río Andarax restoration works (2023 procurement)",
+      "kind": "activity",
+      "domain": "ecosystem",
+      "description": "A proposed hydrological and ecological restoration works contract for the Río Andarax, covering Alhabia, Santa Fe de Mondújar, Gádor, Rioja and Benahadux. The June 2023 justification combines flood-risk reduction for neighbouring agricultural land with recovery of native river habitats and natural/ethnographic heritage. Measures include restoring conveyance, native vegetation and traditional balates, transverse structures and boqueras, with interpretive access. The document gives an 18-month execution period, a 106.5 ha project scope and a tender budget of EUR 3,416,081.25 including VAT. The October document evaluates bidders’ technical submissions; neither source certifies completed works or ecological outcomes.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax: works purpose, municipalities, duration and tender budget",
+          "locator": "Datos del expediente"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax: flood-risk reduction and native fluvial restoration",
+          "locator": "2. Objeto del contrato"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax: 106.5 ha scope and monthly progress reporting",
+          "locator": "5. Hitos y objetivos"
+        },
+        {
+          "source_id": "KGB-SRC-0015",
+          "page": 1,
+          "label": "Andarax: tender initiation and evaluation chronology",
+          "locator": "1. Antecedentes"
+        }
+      ],
+      "group_id": "restoration-methods",
+      "aliases": [
+        "CONTR 2023 152183",
+        "Restauración del río Andarax"
+      ]
+    },
+    {
+      "id": "prtr-ecosystem-restoration",
+      "label": "PRTR ecosystem restoration investment",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The Andarax justification places its proposed works within Spain’s PRTR Component 4, Investment 3, ecosystem restoration and green infrastructure. Its stated 100% financing concerns that public contract; it is not an aid rate available to another applicant. The document ties delivery to reporting on hectares and expenditure, audit traceability, DNSH, antifraud/conflict-of-interest controls and communication. These are dated project-financing evidence, with current status unverified.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: PRTR Component 4 / Investment 3 financing",
+          "locator": "4. Financiación y anualidades"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax: milestones, green tagging and reporting",
+          "locator": "5–7"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax: DNSH, antifraud and communication duties",
+          "locator": "7–10"
+        }
+      ],
+      "group_id": "programmes",
+      "aliases": []
+    },
+    {
+      "id": "andarax-technical-evaluation",
+      "label": "Andarax technical tender scoring",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "The 17 October 2023 technical commission report evaluates 25 admitted bidders. Compliance ratings award 0%, 50% or 100% of each subcriterion’s allocated points. Its table groups 21 points for the technical report/project understanding, 9 for work programme/materials and 15 for environmental-impact study, giving 45 possible technical points. The highest listed technical result is 40.5, for Construcciones Porman, SA. These are procurement technical scores; the report does not establish the final contract award or a LEADER selection score. The full underlying PCAP subcriterion definitions are referenced but not contained here.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0015",
+          "page": 2,
+          "label": "Andarax: compliance ratings and 25 admitted bidders",
+          "locator": "2.1–2.2"
+        },
+        {
+          "source_id": "KGB-SRC-0015",
+          "page": 4,
+          "label": "Andarax: technical-score weights and bidder assessments",
+          "locator": "Tabla 1"
+        },
+        {
+          "source_id": "KGB-SRC-0015",
+          "page": 6,
+          "label": "Andarax: consolidated technical scores",
+          "locator": "Tabla 2"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    },
+    {
+      "id": "holm-oak-rotundifolia",
+      "label": "Holm oak (Q. rotundifolia source concept)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Quercus rotundifolia is an evergreen Mediterranean oak described in the Umbría de la Virgen sheet as a tree up to 20 m, sometimes shrubby, with leathery leaves and grey felted undersides. It forms dense or open sclerophyll woodland on varied substrates; the stated altitude range is 0–1700 (2000) m. The sheet reports occurrence across all Andalusian provinces, becoming scarcer in low southeastern areas, and adaptation to summer drought and inland weather extremes. Its habitat overview explicitly excepts the most arid zones: drought tolerance does not establish suitability for every semiarid restoration site or a seedling watering dose. This source concept remains separate from the handbook’s Q. ilex identity; existing illustration metadata and community links are retained.",
+      "aliases": [
+        "encina",
+        "Quercus rotundifolia"
+      ],
+      "spanish_name": "Encina",
+      "english_name": "Holm oak",
+      "scientific_name": "Quercus rotundifolia",
+      "name_note": "The factsheet Quercus rotundifolia source concept remains separate from the handbook Quercus ilex concept, despite their shared common names.",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "FOREST-003",
+          "page": 3,
+          "label": "Kermes oak: vegetation series involving Q. rotundifolia",
+          "locator": "Series de vegetación"
+        },
+        {
+          "source_id": "KGB-SRC-0016",
+          "page": 1,
+          "label": "Encina: morphology, habitat, range and drought limits",
+          "locator": "¿Cómo es?; ¿Dónde crece?; ¿Dónde podemos encontrarla?; ¿Sabías qué?"
+        }
+      ],
+      "identification": "Source usage retained; no external synonymy or naming authority inferred.",
+      "plant_profile": {
+        "identifying_features": "Rounded leathery leaves, dark above, grey-white felt beneath; acorns in scaly cups.",
+        "growth_form": "Broad rounded evergreen crown on a sturdy trunk.",
+        "basis": "Illustration review notes; botanical references are attached to the image records."
+      }
+    },
+    {
+      "id": "donana-restoration-grants-2025",
+      "label": "Doñana agricultural and forest restoration grants (2025)",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The library’s 13 October 2026 proposal concerns a 2025 Fundación Biodiversidad competition for agrarian/forest renaturalisation and ecological restoration in Doñana’s area of influence. It proposes beneficiaries, reserves and unsuccessful evaluated applications. The proposal is provisional and expressly creates no beneficiary right before the award resolution is notified or published. Its geography is specific to Doñana; it does not establish an Almería funding route. A total score of 50 alone is insufficient: the source also requires 25 points in each technical and strategic block. Current call and award status remain unverified.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 1,
+          "label": "Doñana: 2025 call and provisional-proposal scope",
+          "locator": "Title; Primero"
+        },
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 2,
+          "label": "Doñana: total and two block thresholds",
+          "locator": "Anexo III explanation"
+        },
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 3,
+          "label": "Doñana: proposal creates no beneficiary right",
+          "locator": "Cuarto"
+        }
+      ],
+      "group_id": "programmes",
+      "aliases": []
+    },
+    {
+      "id": "growboxx",
+      "label": "Groasis Growboxx biodegradable reservoir",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "A supplier-described recycled-paper planting reservoir with a central tree opening and four additional seed pockets. Unlike Groasis Waterboxx, this datasheet specifies no wick: its capillary bottom mediates water release according to soil conditions. The cover has a rain-collecting siphon that also permits refilling. The vendor describes approximately half-year onset of decomposition, a box degrading within a year and a cover lasting five years; these are product claims rather than independently verified Almería outcomes. The sheet does not give a checked storage capacity or a drone docking/interface specification. Its daily release range is not a species-specific event dose. Groasis uses the marketing term plant cocoon; this does not identify the separate Cocoon product already in the graph.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 1,
+          "label": "Growboxx: capillary bottom and four seed pockets",
+          "locator": "Datasheet introduction"
+        },
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 4,
+          "label": "Growboxx: material, mass and no-wick specifications",
+          "locator": "Specification table"
+        },
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "label": "Growboxx: daily release, refill siphon and degradation",
+          "locator": "Specification table continuation"
+        }
+      ],
+      "group_id": "irrigation",
+      "aliases": [
+        "Growboxx plant cocoon"
+      ]
+    },
+    {
+      "id": "waterboxx",
+      "label": "Groasis Waterboxx reusable reservoir (Twinboxx)",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "A supplier-described polypropylene reservoir with a twin central opening, rain/dew collection and a nylon wick. The version-2 datasheet gives approximately 15 L content, 1.4 kg mass and 50 × 22 cm diameter/height. A capped cover opening permits refilling. The vendor describes reuse across planting cycles, removal after roots establish (roughly 6–18 months in its narrative) and wick cleaning/replacement. Stated daily supply varies from 700 to 18 mL, averaging about 50 mL depending on soil; this is not an event dose for carob or either of the possible two plants. Performance and biomass claims are vendor statements with a customer-validation disclaimer. The document’s validity date is 31 December 2023, not a verified publication date or proof of present availability.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 1,
+          "label": "Waterboxx: reuse, wick mechanism and vendor claims",
+          "locator": "Product introduction"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: 15 L content, wick and capped refill opening",
+          "locator": "Specification table"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 3,
+          "label": "Waterboxx: application-validation disclaimer and version",
+          "locator": "Disclaimer; Document validity date; Document version"
+        }
+      ],
+      "group_id": "irrigation",
+      "aliases": [
+        "Waterboxx plant cocoon",
+        "Twinboxx"
+      ]
+    },
+    {
+      "id": "reservoir-refill-interface",
+      "label": "Small-reservoir refill access",
+      "kind": "aspect",
+      "domain": "technology",
+      "description": "Refill access is the opening and servicing arrangement used to add water to a local planting reservoir. The reviewed Groasis sheets describe a siphon in Growboxx and a capped cover opening in Waterboxx. These features establish that additional filling is contemplated, but give no tested autonomous aircraft connection, opening diameter, docking tolerance, automatic cap handling or spill-control protocol. An aerial refill concept therefore needs an independently demonstrated transfer interface and a site/plant-specific refill requirement. Existing citrus-drone evidence concerns canopy spray deposition and cannot validate reservoir filling. Capacity, refill volume, daily release and litres per plant per event must remain distinct.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "label": "Growboxx: siphon permits quick refill",
+          "locator": "Refill row"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: capped opening permits refill",
+          "locator": "Refill row"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "label": "Citrus drone: spray-deposition evaluation",
+          "locator": "Evaluation of watering results with water-sensitive paper"
+        }
+      ],
+      "group_id": "irrigation",
+      "aliases": []
+    },
+    {
+      "id": "uas-open-category-snapshot",
+      "label": "UAS Open-category conditions (EASA FAQ snapshot)",
+      "kind": "condition",
+      "domain": "technology",
+      "description": "The library copy of EASA FAQ 116450, last updated 1 February 2024, describes Open-category entry conditions involving the applicable class/legacy/private-build route, people separation, visual line of sight, maximum 120 m height, no dangerous goods and no material dropping. It is a short dated FAQ, not the complete aviation rule set, an operational authorization or a current legal check. A drone’s payload or nominal positioning capability alone therefore cannot establish that a proposed water delivery or reservoir-refill operation is permitted. The FAQ’s wording must not be used to decide how a specific transfer operation is legally classified.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0020",
+          "page": 1,
+          "label": "Open-category FAQ: VLOS, height, goods and material dropping",
+          "locator": "FAQ 116450; Answer; Last updated 01/02/2024"
+        }
+      ],
+      "group_id": "requirements",
+      "aliases": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "fl01-andarax-costs",
+      "label": "Andarax: tender financing is a project budget",
+      "text": "The June 2023 justification states EUR 3,105,528.41 excluding VAT, EUR 310,552.84 VAT and EUR 3,416,081.25 including VAT. Planned annualities are EUR 300,000 in 2023, EUR 2,500,000 in 2024 and EUR 616,081.25 in 2025. These are design/tender allocations, not verified expenditure or an individual grant cap. The source states 100% PRTR financing and a 106.5 ha scope. Completion of the milestones is not demonstrated here.",
+      "topic_ids": [
+        "andarax-restoration-2023",
+        "prtr-ecosystem-restoration"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: net, VAT and total tender budget",
+          "locator": "3.3–4"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax: annualities and project hectares",
+          "locator": "4–5"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "fl01-donana-provisional",
+      "label": "Doñana: ranked proposal, reserve and separate thresholds",
+      "text": "Annex I proposes EUR 28,499,800.00 in total. Application 114 appears with EUR 35,000 proposed and EUR 178,500 remaining in reserve; its duplication across annexes is explained, not a second full award. Annex III flags applications 139, 97, 215 and 136 despite totals above 50 because at least one 25-point block minimum was not reached. Displayed scores are rounded to two decimals, while calculation uses up to three. These are provisional administrative results, not completed restoration outcomes or evidence that a new project would qualify.",
+      "topic_ids": [
+        "donana-restoration-grants-2025"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 4,
+          "label": "Doñana: score rounding and proposed-beneficiary table",
+          "locator": "Anexo I footnote 1"
+        },
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 6,
+          "label": "Doñana: proposed total and partial application 114",
+          "locator": "Anexo I ending"
+        },
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 7,
+          "label": "Doñana: reserved remainder of application 114",
+          "locator": "Anexo II footnote"
+        },
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 8,
+          "label": "Doñana: above-50 applications missing a block threshold",
+          "locator": "Anexo III"
+        },
+        {
+          "source_id": "KGB-SRC-0017",
+          "page": 9,
+          "label": "Doñana: explanation of block-threshold flags",
+          "locator": "Anexo III footnote"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "fl01-reservoir-quantities",
+      "label": "Reservoir rates and capacity do not supply a species event dose",
+      "text": "Growboxx lists 100–500 mL/day depending on soil characteristics, with no checked storage capacity in this sheet. Waterboxx lists approximately 15 L content and variable 700–18 mL/day, average 50 mL/day, with a possible two-plant opening. These quantities are product specifications: neither document supplies litres per carob plant per watering event or a demonstrated drone refill schedule. Growboxx lists 550 g and 40 × 40 × 20 cm; Waterboxx approximately 1,400 g and 50 × 22 cm. No aircraft compatibility is inferred from these masses.",
+      "topic_ids": [
+        "growboxx",
+        "waterboxx",
+        "reservoir-refill-interface",
+        "establishment-water"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 4,
+          "label": "Growboxx: dimensions, mass and capillary bottom",
+          "locator": "Specification table"
+        },
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "label": "Growboxx: soil-dependent daily water supply",
+          "locator": "Water gift rows"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: capacity, dimensions, mass and variable daily release",
+          "locator": "Specification table"
+        }
+      ],
+      "kind": "finding"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "fl01-andarax-prtr",
+      "source": "andarax-restoration-2023",
+      "target": "prtr-ecosystem-restoration",
+      "label": "has documented financing",
+      "explanation": "The investment justification assigns the proposed Andarax works to PRTR Component 4 Investment 3.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax: PRTR financing attribution",
+          "locator": "4. Financiación y anualidades"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl01-andarax-evaluation",
+      "source": "andarax-restoration-2023",
+      "target": "andarax-technical-evaluation",
+      "label": "has technical tender evaluation",
+      "explanation": "The commission report identifies the same CONTR 2023 152183 procurement; evaluation is not completion.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0015",
+          "page": 1,
+          "label": "Andarax: contract identity and evaluation chronology",
+          "locator": "1. Antecedentes"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl01-andarax-monitoring",
+      "source": "andarax-restoration-2023",
+      "target": "monitoring",
+      "label": "requires delivery reporting",
+      "explanation": "The document requires monthly reports within the first five days, covering prior-month treated area, expenditure and contractor data. This administrative progress requirement does not report measured ecological recovery.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax: monthly area and expenditure reporting",
+          "locator": "5. Hitos y objetivos"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl01-andarax-native",
+      "source": "andarax-restoration-2023",
+      "target": "restoration",
+      "label": "includes native-cover recovery",
+      "explanation": "The planned intervention explicitly initiates native fluvial habitat restoration together with structural flood-risk work; its evidence status remains proposed works.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax: native vegetation and ecofunctional river rehabilitation",
+          "locator": "2. Objeto del contrato"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl01-holm-site",
+      "source": "holm-oak-rotundifolia",
+      "target": "species-site-fit",
+      "label": "requires site-specific interpretation",
+      "explanation": "The botanical sheet describes broad habitat and drought adaptation while excluding the most arid zones from typical encinar climate. This supports reviewing local conditions rather than treating the Mediterranean distribution as universal suitability.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0016",
+          "page": 1,
+          "label": "Encina: broad habitat with most-arid-zone exception",
+          "locator": "¿Dónde crece?; ¿Sabías qué?"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl01-growboxx-refill",
+      "source": "growboxx",
+      "target": "reservoir-refill-interface",
+      "label": "has refill access",
+      "explanation": "The vendor datasheet explicitly describes additional filling through this product’s cover feature. It does not demonstrate drone coupling.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "label": "Growboxx: refill siphon",
+          "locator": "Refill row"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl01-waterboxx-refill",
+      "source": "waterboxx",
+      "target": "reservoir-refill-interface",
+      "label": "has refill access",
+      "explanation": "The vendor datasheet explicitly describes additional filling through this product’s cover feature. It does not demonstrate drone coupling.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: capped refill opening",
+          "locator": "Refill row"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl01-refill-drone",
+      "source": "reservoir-refill-interface",
+      "target": "drones",
+      "label": "poses an untested transfer requirement",
+      "explanation": "Curated design question: refillable ground reservoirs and the existing aerial water-spray trial supply component-level context, but neither establishes a compatible docking/transfer system. Reservoir geometry, delivery losses, servicing access and operating authorization remain to be demonstrated.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "label": "Growboxx: refill access",
+          "locator": "Growboxx: refill access"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: refill access",
+          "locator": "Waterboxx: refill access"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "label": "Citrus experiment: canopy spray evaluation",
+          "locator": "Citrus experiment: canopy spray evaluation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl01-drone-operating-conditions",
+      "source": "drones",
+      "target": "uas-open-category-snapshot",
+      "label": "has documented operating constraints",
+      "explanation": "Curated caution linking the library’s drone concepts to a dated regulatory FAQ. The document is not an authorization for these aircraft or water-delivery operations; current applicability is unverified.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0020",
+          "page": 1,
+          "label": "EASA: dated Open-category entry conditions",
+          "locator": "EASA: dated Open-category entry conditions"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl01-waterboxx-carob",
+      "source": "waterboxx",
+      "target": "carob",
+      "label": "lists as a vendor application",
+      "explanation": "The supplier lists carob among possible agroforestry applications. This is a product application statement without a source-specific carob survival trial or dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 1,
+          "label": "Waterboxx: agroforestry application list including carob",
+          "locator": "Agroforestry applications"
+        }
+      ],
+      "traversable": true
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0013",
+      "page": 1,
+      "status": "inspected",
+      "note": "Expedient identity, five municipalities, 18-month period and tender total; proposed works."
+    },
+    {
+      "source_id": "KGB-SRC-0013",
+      "page": 2,
+      "status": "inspected",
+      "note": "Flood-risk reduction, conveyance, native vegetation and ethnographic works objectives."
+    },
+    {
+      "source_id": "KGB-SRC-0013",
+      "page": 3,
+      "status": "inspected",
+      "note": "Cost-method/indirect-cost justification; procurement background, not restoration results."
+    },
+    {
+      "source_id": "KGB-SRC-0013",
+      "page": 4,
+      "status": "inspected",
+      "note": "Visually checked cost table and PRTR financing; net/VAT/gross budgets remain distinct."
+    },
+    {
+      "source_id": "KGB-SRC-0013",
+      "page": 5,
+      "status": "inspected",
+      "note": "Visually checked annualities; 106.5 ha planned scope, reporting and milestones, not achieved hectares."
+    },
+    {
+      "source_id": "KGB-SRC-0013",
+      "page": 6,
+      "status": "inspected",
+      "note": "DNSH declaration, antifraud/DACI and funding-communication duties."
+    },
+    {
+      "source_id": "KGB-SRC-0013",
+      "page": 7,
+      "status": "inspected",
+      "note": "Audit traceability, tender procedure, guarantee and 18-month period."
+    },
+    {
+      "source_id": "KGB-SRC-0013",
+      "page": 8,
+      "status": "inspected",
+      "note": "Conditional formula 711 price-revision wording; no general present legal conclusion."
+    },
+    {
+      "source_id": "KGB-SRC-0014",
+      "page": 1,
+      "status": "inspected",
+      "note": "Only external BC3/CAPAS download link and contract identity; linked material not reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0015",
+      "page": 1,
+      "status": "inspected",
+      "note": "Procurement and evaluation chronology for identified Andarax contract."
+    },
+    {
+      "source_id": "KGB-SRC-0015",
+      "page": 2,
+      "status": "inspected",
+      "note": "0/50/100% conformity method and 25 admitted bidders."
+    },
+    {
+      "source_id": "KGB-SRC-0015",
+      "page": 3,
+      "status": "inspected",
+      "note": "Bidder list and introduction to technical assessment table."
+    },
+    {
+      "source_id": "KGB-SRC-0015",
+      "page": 4,
+      "status": "inspected",
+      "note": "Visually reviewed rotated table: 21+9+15 technical weights and first bidder assessments; no award claim."
+    },
+    {
+      "source_id": "KGB-SRC-0015",
+      "page": 5,
+      "status": "inspected",
+      "note": "Visually reviewed continuation of technical-assessment table; remaining bidders and qualitative caveats."
+    },
+    {
+      "source_id": "KGB-SRC-0015",
+      "page": 6,
+      "status": "inspected",
+      "note": "Consolidated technical scores; Porman 40.5 highest listed; not final award."
+    },
+    {
+      "source_id": "KGB-SRC-0016",
+      "page": 1,
+      "status": "inspected",
+      "note": "Visually checked morphology, habitat, range, phenology strip and garden map; most-arid-zone exception retained; no oak merge."
+    },
+    {
+      "source_id": "KGB-SRC-0017",
+      "page": 1,
+      "status": "inspected",
+      "note": "2025 Doñana call and 13 October 2026 provisional-proposal scope."
+    },
+    {
+      "source_id": "KGB-SRC-0017",
+      "page": 2,
+      "status": "inspected",
+      "note": "50 total plus 25 technical and 25 strategic minima; reserve/reformulation process."
+    },
+    {
+      "source_id": "KGB-SRC-0017",
+      "page": 3,
+      "status": "inspected",
+      "note": "Provisional proposal creates no beneficiary right before award publication/notification."
+    },
+    {
+      "source_id": "KGB-SRC-0017",
+      "page": 4,
+      "status": "inspected",
+      "note": "Annex I proposed beneficiaries and rounding footnote; no ecological outcomes."
+    },
+    {
+      "source_id": "KGB-SRC-0017",
+      "page": 5,
+      "status": "inspected",
+      "note": "Annex I continuation; application allocations are proposals, not expenditure."
+    },
+    {
+      "source_id": "KGB-SRC-0017",
+      "page": 6,
+      "status": "inspected",
+      "note": "Visually checked EUR 28,499,800 total and partially funded application 114."
+    },
+    {
+      "source_id": "KGB-SRC-0017",
+      "page": 7,
+      "status": "inspected",
+      "note": "Visually checked reserve and EUR 178,500 remainder for application 114."
+    },
+    {
+      "source_id": "KGB-SRC-0017",
+      "page": 8,
+      "status": "inspected",
+      "note": "Visually checked Annex III block-failure flags despite totals over 50."
+    },
+    {
+      "source_id": "KGB-SRC-0017",
+      "page": 9,
+      "status": "inspected",
+      "note": "Annex III continuation and footnote distinguishing total from block thresholds."
+    },
+    {
+      "source_id": "KGB-SRC-0018",
+      "page": 1,
+      "status": "inspected",
+      "note": "Supplier product mechanism, four seed pockets, marketing claims and refill context."
+    },
+    {
+      "source_id": "KGB-SRC-0018",
+      "page": 2,
+      "status": "inspected",
+      "note": "Visually checked cutaway illustrations; central tree versus additional pockets, not field-trial evidence."
+    },
+    {
+      "source_id": "KGB-SRC-0018",
+      "page": 3,
+      "status": "inspected",
+      "note": "Visually checked Prosopis/cassava example photos; demonstration without controlled outcome."
+    },
+    {
+      "source_id": "KGB-SRC-0018",
+      "page": 4,
+      "status": "inspected",
+      "note": "Visually checked specification table: recycled paper, 550 g, dimensions and no wick; marketing use example."
+    },
+    {
+      "source_id": "KGB-SRC-0018",
+      "page": 5,
+      "status": "inspected",
+      "note": "Visually checked daily range, refill siphon, decomposition claims and outbound manual/video links; not fetched."
+    },
+    {
+      "source_id": "KGB-SRC-0019",
+      "page": 1,
+      "status": "inspected",
+      "note": "Supplier wick/reuse narrative and performance claims; carob listed as possible application, not trial."
+    },
+    {
+      "source_id": "KGB-SRC-0019",
+      "page": 2,
+      "status": "inspected",
+      "note": "Visually checked 15 L content, 1.4 kg, Twinboxx, refill cap, variable daily release and maintenance."
+    },
+    {
+      "source_id": "KGB-SRC-0019",
+      "page": 3,
+      "status": "inspected",
+      "note": "Customer-validation disclaimer, version 2, validity date 2023-12-31; external manuals not fetched."
+    },
+    {
+      "source_id": "KGB-SRC-0020",
+      "page": 1,
+      "status": "inspected",
+      "note": "Dated EASA FAQ entry conditions including VLOS, height and no material dropping; current applicability unverified."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "fl01-andarax-linked-budget",
+      "text": "The one-page BC3/CAPAS sheet contains only an external download URL for CONTR/2023 152183. The linked budget/GIS package was not fetched in this library-only PDF intake and supplies no additional evidence. Full PCAP definitions, award, completion and ecological outcomes remain unverified.",
+      "topic_ids": [
+        "andarax-restoration-2023",
+        "andarax-technical-evaluation"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0014",
+          "page": 1,
+          "label": "Andarax: external BC3 and GIS download link only",
+          "locator": "Enlace consigna BC3-CAPAS"
+        },
+        {
+          "source_id": "KGB-SRC-0015",
+          "page": 2,
+          "label": "Andarax: scoring refers to external PCAP annexes",
+          "locator": "2.1"
+        }
+      ]
+    },
+    {
+      "id": "fl01-drone-refill-integration",
+      "text": "The reviewed product sheets describe refill access, while the citrus drone study tests spraying. No reviewed passage establishes a tested autonomous drone-to-reservoir interface, refill accuracy, cap manipulation, transfer losses, species-specific event schedule or operational authorization. Treat aerial refill as an integration question, not a demonstrated outcome.",
+      "topic_ids": [
+        "reservoir-refill-interface",
+        "drones"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "label": "Growboxx: refill siphon",
+          "locator": "Growboxx: refill siphon"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: capped refill opening",
+          "locator": "Waterboxx: capped refill opening"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "label": "Citrus drone: spray deposition",
+          "locator": "Citrus drone: spray deposition"
+        },
+        {
+          "source_id": "KGB-SRC-0020",
+          "page": 1,
+          "label": "EASA: dated operational-category conditions",
+          "locator": "EASA: dated operational-category conditions"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:local-restoration-projects",
+      "label": "Local restoration projects and delivery",
+      "parent_id": "ecosystem:restoration-methods",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "andarax-restoration-2023",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep each project and documentary stage distinct. Add confirmed designs, procurement, implementation and measured outcomes without converting plans into results. Preserve exact places and dates.",
+      "description": "Open the Andarax works case to compare its restoration objectives, tender financing and technical evaluation. Planned hectares, budgets and reporting obligations describe delivery requirements. Follow the project links for the financing mechanism and monitoring distinction; the library passages do not certify completed ecological recovery.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax: works purpose, municipalities, duration and tender budget",
+          "locator": "Datos del expediente"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax: flood-risk reduction and native fluvial restoration",
+          "locator": "2. Objeto del contrato"
+        }
+      ],
+      "member_layout": "grid"
+    },
+    {
+      "id": "browse:planting-reservoirs",
+      "label": "Planting reservoirs and refill access",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": null,
+      "members": [
+        {
+          "topic_id": "growboxx",
+          "role": "primary"
+        },
+        {
+          "topic_id": "waterboxx",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon",
+          "role": "shared"
+        },
+        {
+          "topic_id": "reservoir-refill-interface",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep Groasis product identities separate from Cocoon. Compare source-specific components and quantities; marketing terminology does not establish product equivalence, a plant dose or a tested drone interface.",
+      "description": "Compare biodegradable Growboxx, reusable Waterboxx and the separately documented Cocoon. Start with mechanism and servicing: capillary bottom, wick, cover and refill access describe different systems. Capacity, daily release and event dose have different meanings. The Groasis documents are supplier sheets, including performance claims and application limits; they do not establish an autonomous drone-refill system. Open refill access to inspect that unresolved integration requirement.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 4,
+          "label": "Growboxx: no-wick capillary specification",
+          "locator": "Growboxx: no-wick capillary specification"
+        },
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "label": "Growboxx: refill and daily release",
+          "locator": "Growboxx: refill and daily release"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: wick, capacity and refill cap",
+          "locator": "Waterboxx: wick, capacity and refill cap"
+        }
+      ],
+      "member_layout": "grid"
+    }
+  ]
+}

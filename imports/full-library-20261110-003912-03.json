@@ -1,0 +1,1739 @@
+{
+  "batch_id": "full-library-20261110-003912-03",
+  "summary": "Almería/Campo de Níjar works assignment, separate environmental supervision, native plant procurement roster and stock requirements; preserve documentary discrepancies and date meanings.",
+  "base_revision": 14,
+  "sources": [
+    {
+      "id": "KGB-SRC-0024",
+      "title": "Almería and Campo de Níjar fluvial restoration: TRAGSA works assignment 6/2022/ES",
+      "kind": "pdf",
+      "filename": "NIJAR-002 - Almeria and Campo de Nijar - River Restoration Works Assignment - TRAGSA 6-2022-ES.pdf",
+      "managed_path": "sources/full-library-20261110/NIJAR-002 - Almeria and Campo de Nijar - River Restoration Works Assignment - TRAGSA 6-2022-ES.pdf",
+      "sha256": "75e8cecab728e836507e41bdc4694455a7fa3c596fb5f3b910befb7b77131d90",
+      "pdf_pages": 12,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          12
+        ]
+      ],
+      "issuer": "Junta de Andalucía, Viceconsejería de Agricultura, Pesca, Agua y Desarrollo Rural",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "formal works assignment signed 2022-12-23",
+      "library_path": "doc_library/NIJAR-002 - Almeria and Campo de Nijar - River Restoration Works Assignment - TRAGSA 6-2022-ES.pdf",
+      "document_date": "2022-12-23",
+      "document_date_meaning": "signature"
+    },
+    {
+      "id": "KGB-SRC-0025",
+      "title": "Almería and Campo de Níjar: TRAGSATEC supervision and environmental monitoring assignment 1/2023/ES",
+      "kind": "pdf",
+      "filename": "NIJAR-001 - Almeria and Campo de Nijar - Works Supervision and Environmental Monitoring - TRAGSATEC 1-2023-ES.pdf",
+      "managed_path": "sources/full-library-20261110/NIJAR-001 - Almeria and Campo de Nijar - Works Supervision and Environmental Monitoring - TRAGSATEC 1-2023-ES.pdf",
+      "sha256": "f00469961a4962481adbfd91164afdf64378cb6c0618744a2b0bcc8e31c73c70",
+      "pdf_pages": 14,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          14
+        ]
+      ],
+      "issuer": "Junta de Andalucía, Viceconsejería de Agricultura, Pesca, Agua y Desarrollo Rural",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "formal supervision assignment signed 2023-06-16",
+      "library_path": "doc_library/NIJAR-001 - Almeria and Campo de Nijar - Works Supervision and Environmental Monitoring - TRAGSATEC 1-2023-ES.pdf",
+      "document_date": "2023-06-16",
+      "document_date_meaning": "signature"
+    },
+    {
+      "id": "KGB-SRC-0026",
+      "title": "Campo de Níjar native plant supply: technical specification TSA0078436",
+      "kind": "pdf",
+      "filename": "NIJAR-003 - Campo de Nijar - Native Plant Supply Technical Specification - TSA0078436.pdf",
+      "managed_path": "sources/full-library-20261110/NIJAR-003 - Campo de Nijar - Native Plant Supply Technical Specification - TSA0078436.pdf",
+      "sha256": "c6d6d436460d34536653c386a7fcb7943b918cc5540c94fca44d3cd0cb213543",
+      "pdf_pages": 8,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "issuer": "TRAGSA",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "supply specification dated 2024-08-08",
+      "library_path": "doc_library/NIJAR-003 - Campo de Nijar - Native Plant Supply Technical Specification - TSA0078436.pdf",
+      "document_date": "2024-08-08",
+      "document_date_meaning": "specification date"
+    },
+    {
+      "id": "KGB-SRC-0013",
+      "title": "Río Andarax restoration: investment justification (CONTR 2023 152183)",
+      "kind": "pdf",
+      "filename": "ANDARAX-001 - Rio Andarax - Restoration Investment Justification - CONTR-2023-152183.pdf",
+      "managed_path": "sources/full-library-20261110/ANDARAX-001 - Rio Andarax - Restoration Investment Justification - CONTR-2023-152183.pdf",
+      "sha256": "1edc497213a2a0744f7c8587aa7df7c42e4f7161fd78e55b8fc4dfcb0805b2da",
+      "pdf_pages": 8,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          8
+        ]
+      ],
+      "issuer": "Junta de Andalucía, Dirección General de Recursos Hídricos",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "investment justification / proposed works procurement",
+      "library_path": "doc_library/ANDARAX-001 - Rio Andarax - Restoration Investment Justification - CONTR-2023-152183.pdf",
+      "document_date": "2023-06-07",
+      "document_date_meaning": "signature"
+    },
+    {
+      "id": "KGB-SRC-0015",
+      "title": "Río Andarax restoration: technical tender evaluation",
+      "kind": "pdf",
+      "filename": "ANDARAX-003 - Rio Andarax - Tender Evaluation and Technical Scoring Report.pdf",
+      "managed_path": "sources/full-library-20261110/ANDARAX-003 - Rio Andarax - Tender Evaluation and Technical Scoring Report.pdf",
+      "sha256": "6a9ae29f318bf20d0d8180daabb1c894f10a352d3081d20c31bc609716d7fdcc",
+      "pdf_pages": 6,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "issuer": "Junta de Andalucía, Delegación Territorial en Almería",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "technical tender evaluation",
+      "library_path": "doc_library/ANDARAX-003 - Rio Andarax - Tender Evaluation and Technical Scoring Report.pdf",
+      "document_date": "2023-10-17",
+      "document_date_meaning": "signature"
+    },
+    {
+      "id": "KGB-SRC-0017",
+      "title": "Doñana 2025 restoration grants: provisional award proposal",
+      "kind": "pdf",
+      "filename": "FUND-002 - Donana Restoration Grants - Provisional Award Proposal - 2026-10-13.pdf",
+      "managed_path": "sources/full-library-20261110/FUND-002 - Donana Restoration Grants - Provisional Award Proposal - 2026-10-13.pdf",
+      "sha256": "0238e73724e188a80247142b35137d36d52847185226c9147e3a95d590abf3dc",
+      "pdf_pages": 9,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "issuer": "Fundación Biodiversidad",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "provisional award proposal",
+      "library_path": "doc_library/FUND-002 - Donana Restoration Grants - Provisional Award Proposal - 2026-10-13.pdf",
+      "document_date": "2026-10-13",
+      "document_date_meaning": "signature"
+    },
+    {
+      "id": "KGB-SRC-0020",
+      "title": "EASA FAQ 116450: conditions described for the Open category",
+      "kind": "pdf",
+      "filename": "POLICY-003 - EASA - Open Category Conditions - FAQ 116450.pdf",
+      "managed_path": "sources/full-library-20261110/POLICY-003 - EASA - Open Category Conditions - FAQ 116450.pdf",
+      "sha256": "a1081d20b144db9cd233ba477ca79405ce0ec0a1eeecac57bd8052d78ee13cf3",
+      "pdf_pages": 1,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "issuer": "European Union Aviation Safety Agency",
+      "publication_date": null,
+      "language": "en",
+      "document_type": "regulator FAQ snapshot",
+      "library_path": "doc_library/POLICY-003 - EASA - Open Category Conditions - FAQ 116450.pdf",
+      "document_date": "2024-02-01",
+      "document_date_meaning": "last updated"
+    },
+    {
+      "id": "KGB-SRC-0022",
+      "title": "LEADER 7119.2 verification guide: version 2, public version 4",
+      "kind": "pdf",
+      "filename": "FUND-010 - Andalusia - LEADER Selection Criteria Verification Guide - v2-4 - 2026-09.pdf",
+      "managed_path": "sources/full-library-20261110/FUND-010 - Andalusia - LEADER Selection Criteria Verification Guide - v2-4 - 2026-09.pdf",
+      "sha256": "1d42e43cd509d13398431b431b91aeed154b601cc8279eabd405b4b9682fd326",
+      "pdf_pages": 231,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          103,
+          106
+        ],
+        [
+          218,
+          219
+        ],
+        [
+          229,
+          231
+        ]
+      ],
+      "issuer": "Junta de Andalucía",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "orientative verification/control guide",
+      "library_path": "doc_library/FUND-010 - Andalusia - LEADER Selection Criteria Verification Guide - v2-4 - 2026-09.pdf",
+      "document_date": "2026-09-11",
+      "document_date_meaning": "date written"
+    }
+  ],
+  "topics": [
+    {
+      "id": "nijar-fluvial-restoration",
+      "label": "Almería and Campo de Níjar fluvial restoration",
+      "kind": "activity",
+      "domain": "ecosystem",
+      "description": "A formally assigned restoration works project for 56 ramblas in three sectors: Almería, Campo de Níjar–Artal and Cabo de Gata. The December 2022 assignment to TRAGSA combines removal of agro-waste/construction debris and invasive exotic vegetation, conveyance improvements and bank defence with native riparian planting of certified provenance. It also provides for an interpreted public river path on lower Rambla Morales in the Cabo de Gata–Níjar protected area. The maximum assigned budget is EUR 3,866,930.52, with an initial 24-month period and PRTR C4.I3 financing. These records establish an assignment and delivery obligations, not completed hectares or measured ecological recovery. Separate 2023 supervision and 2024 plant-supply documents retain their own roles and dates.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 8,
+          "label": "Níjar works: assignment and 56-ramblas scope",
+          "locator": "Resuelvo 1–3"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 9,
+          "label": "Níjar works: native planting, Morales path and budget",
+          "locator": "Resuelvo 3–7"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 10,
+          "label": "Níjar works: PRTR financing and monthly certification",
+          "locator": "Financiación; Resuelvo 8"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 11,
+          "label": "Níjar works: initial 24-month period and direction",
+          "locator": "Resuelvo 10–11"
+        }
+      ],
+      "group_id": "restoration-methods",
+      "aliases": [
+        "6/2022/ES",
+        "Restauración de ecosistemas fluviales semiáridos de Almería y Campo de Níjar"
+      ]
+    },
+    {
+      "id": "nijar-environmental-supervision",
+      "label": "Níjar works supervision and environmental surveillance",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "The June 2023 TRAGSATEC assignment separately covers assistance to works direction, health/safety coordination and environmental surveillance for the Almería/Campo de Níjar project. Surveillance must check implementation and effectiveness of protective/corrective measures, investigate unsatisfactory performance, detect unanticipated impacts and report to works direction and the environmental authority. The assignment budget is EUR 151,606.30. Its initial 24-month period starts with the works and can extend through completion and required documentation. Monthly certification and PRTR milestone reports are delivery controls; this document does not provide the monitoring results. Its inconsistent subcontracting statements remain unresolved.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 5,
+          "label": "Níjar: purpose of separate supervision assignment",
+          "locator": "Resuelvo 3"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 6,
+          "label": "Environmental surveillance: protective and corrective measures",
+          "locator": "Programa de Vigilancia Ambiental"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 7,
+          "label": "Environmental surveillance: unexpected impacts and reporting",
+          "locator": "Programa de Vigilancia Ambiental continuation"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 8,
+          "label": "Supervision: EUR 151,606.30 maximum budget",
+          "locator": "Resuelvo 5"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 13,
+          "label": "Supervision: duration and subcontracting statement",
+          "locator": "Resuelvo 10–11"
+        }
+      ],
+      "group_id": "monitoring",
+      "aliases": [
+        "1/2023/ES"
+      ]
+    },
+    {
+      "id": "nijar-native-plant-supply",
+      "label": "Campo de Níjar native plant supply roster",
+      "kind": "activity",
+      "domain": "ecosystem",
+      "description": "The 8 August 2024 TSA0078436 specification requests plants for planting and replacement of failures in the semi-arid fluvial-restoration works. Two lots list 22 named taxa in 23 supply rows, including two container sizes for Populus alba. Carob appears as 1,376 units in 1 L nursery containers; jujube as 9,407 units in 1 L containers. These are requested supply quantities and nursery stock volumes, not confirmed installed plants, an ecological association, reservoir capacity or irrigation doses. Lot 2 is expressly described as native species of the Levante Almeriense. The contract imposes provenance, plant health, root architecture and delivery acceptance requirements. Source spellings and uncertain taxonomy remain visible; no working community or plant count is changed.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Plant supply: purpose and first-lot species/counts",
+          "locator": "1. Objeto; Lote 1"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Plant supply: remaining lot 1 and Levante Almeriense lot 2",
+          "locator": "Lotes 1–2"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 8,
+          "label": "Plant supply: specification date and no variants",
+          "locator": "Madrid, 8 de agosto de 2024"
+        }
+      ],
+      "group_id": "restoration-methods",
+      "aliases": [
+        "TSA0078436"
+      ]
+    },
+    {
+      "id": "nijar-stock-provenance",
+      "label": "Níjar stock provenance and traceability",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "The supply specification requires accredited nursery material from ecologically similar areas, identifying Murciano-Almeriense origin and provenance region 38. For shrub/scrub/climber species without a legally established region, it requires Almeriense district biogeographic provenance in the described collection/propagation circumstances. In the absence of the preferred material, region 36 is exceptionally permitted for Populus alba and Populus nigra; the mention of P. nigra in that exception does not put it in the supply roster. Provenance must be certified to TRAGSA with accompanying documentation/label, and a phytosanitary passport and health check are required. These are project-specification conditions, not a present universal legal determination.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Plant provenance: accredited nursery and region 38",
+          "locator": "2. Prescripciones; Procedencia"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 3,
+          "label": "Provenance exceptions, certification, map and plant passport",
+          "locator": "Procedencia continuation; Figura 1"
+        }
+      ],
+      "group_id": "restoration-methods",
+      "aliases": []
+    },
+    {
+      "id": "nijar-stock-quality",
+      "label": "Níjar nursery-stock quality and acceptance",
+      "kind": "condition",
+      "domain": "ecosystem",
+      "description": "The specification requires balanced healthy shoots/roots and rejects disease, insect damage, dehydration, wounds and strongly deformed roots. Containers must prevent root spiralling and root rebound; stock raised at least 10 cm above ground is specified for aerial root pruning. The document also describes stock age, container/plug integrity and substrate porosity of 60–80%, with relatively moist planting substrate. TRAGSA approves or rejects material on receipt. These procurement requirements explain establishment risk controls; they are not measured effects, species-specific planting recipes or a numerical watering regime. The generic size/age provisions and the specific supply-row container volumes retain their own context.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 4,
+          "label": "Nursery stock: balanced roots/shoots and age",
+          "locator": "Características morfológicas; Sistema radicular; Dimensiones y edad"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 5,
+          "label": "Containers and substrate: anti-spiral features and porosity",
+          "locator": "Características del contenedor y sustrato"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 6,
+          "label": "Aerial root pruning, root rebound and rejection list",
+          "locator": "3. Recepción de las plantas"
+        }
+      ],
+      "group_id": "restoration-methods",
+      "aliases": []
+    },
+    {
+      "id": "dorycnium-pentaphyllum",
+      "label": "Dorycnium pentaphyllum (Níjar supply source)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Dorycnium pentaphyllum is named in the Campo de Níjar plant-supply specification, lot 1. The row requests nursery material for restoration planting/replacement. Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Dorycnium pentaphyllum: specified stock in lot 1",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "group_id": "species",
+      "aliases": [],
+      "scientific_name": "Dorycnium pentaphyllum",
+      "name_status": "recorded",
+      "name_note": "Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row."
+    },
+    {
+      "id": "populus-alba",
+      "label": "Populus alba (Níjar supply source)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Populus alba is named in the Campo de Níjar plant-supply specification, lot 1. The row requests nursery material for restoration planting/replacement. Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Populus alba: specified stock in lot 1",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "group_id": "species",
+      "aliases": [],
+      "scientific_name": "Populus alba",
+      "name_status": "recorded",
+      "name_note": "Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row."
+    },
+    {
+      "id": "rosmarinus-eriocalyx",
+      "label": "Rosmarinus eriocalyx (Níjar supply source)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Rosmarinus eriocalyx is named in the Campo de Níjar plant-supply specification, lot 1. The row requests nursery material for restoration planting/replacement. Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row. This is a separate listed taxon from Rosmarinus officinalis, associated with the existing rosemary identity.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Rosmarinus eriocalyx: specified stock in lot 1",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "group_id": "species",
+      "aliases": [],
+      "scientific_name": "Rosmarinus eriocalyx",
+      "name_status": "recorded",
+      "name_note": "Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row. This is a separate listed taxon from Rosmarinus officinalis, associated with the existing rosemary identity."
+    },
+    {
+      "id": "tetraclinis-articulata",
+      "label": "Tetraclinis articulata (Níjar supply source)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Tetraclinis articulata is named in the Campo de Níjar plant-supply specification, lot 1. The row requests nursery material for restoration planting/replacement. Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Tetraclinis articulata: specified stock in lot 1",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "group_id": "species",
+      "aliases": [],
+      "scientific_name": "Tetraclinis articulata",
+      "name_status": "recorded",
+      "name_note": "Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row."
+    },
+    {
+      "id": "thymelaea-hirsuta",
+      "label": "Thymelaea hirsuta (Níjar supply source)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Thymelaea hirsuta is named in the Campo de Níjar plant-supply specification, lot 1. The row requests nursery material for restoration planting/replacement. Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Thymelaea hirsuta: specified stock in lot 1",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "group_id": "species",
+      "aliases": [],
+      "scientific_name": "Thymelaea hirsuta",
+      "name_status": "recorded",
+      "name_note": "Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row."
+    },
+    {
+      "id": "tripudium-ravennae-source",
+      "label": "Tripudium ravennae (Níjar supply source)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Tripudium ravennae is named in the Campo de Níjar plant-supply specification, lot 1. The row requests nursery material for restoration planting/replacement. Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row. The source joins ravennae to the following Spanish word en; that layout issue is recorded without inferring another taxon.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Tripudium ravennae: specified stock in lot 1",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "group_id": "species",
+      "aliases": [],
+      "scientific_name": "Tripudium ravennae",
+      "name_status": "source-spelling",
+      "name_note": "Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row. The source joins ravennae to the following Spanish word en; that layout issue is recorded without inferring another taxon."
+    },
+    {
+      "id": "withania-somnifera",
+      "label": "Withania somnifera (Níjar supply source)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Withania somnifera is named in the Campo de Níjar plant-supply specification, lot 1. The row requests nursery material for restoration planting/replacement. Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row. This identity is distinct from the existing source spelling Whitania frutescens; no merge is made.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Withania somnifera: specified stock in lot 1",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "group_id": "species",
+      "aliases": [],
+      "scientific_name": "Withania somnifera",
+      "name_status": "recorded",
+      "name_note": "Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row. This identity is distinct from the existing source spelling Whitania frutescens; no merge is made."
+    },
+    {
+      "id": "lavatera-maritima-source",
+      "label": "Lavatera marítima (Níjar supply source)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Lavatera marítima is named in the Campo de Níjar plant-supply specification, lot 2. The row requests nursery material for restoration planting/replacement. Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Lavatera marítima: specified stock in lot 2",
+          "locator": "Lote 2 supply table"
+        }
+      ],
+      "group_id": "species",
+      "aliases": [],
+      "scientific_name": "Lavatera marítima",
+      "name_status": "source-spelling",
+      "name_note": "Name retained from the procurement specification; no nomenclatural reconciliation, detailed ecology or demonstrated planting outcome is supplied by this row."
+    }
+  ],
+  "findings": [
+    {
+      "id": "fl03-supply-roster",
+      "label": "Níjar: requested plant quantities and stock formats",
+      "text": "The two-lot supply roster is retained as 23 rows for 22 taxa. It includes 1,376 Ceratonia siliqua in 1 L containers, 4,800 Pistacia lentiscus in at least 250 cc cells, 7,364 Nerium oleander and 9,407 Ziziphus lotus in 1 L containers. Populus alba has separate 1,356 × 1 L and 912 × 10 L rows. These are procurement quantities, not planting completion or a working-community census. Nursery container volume is not a reservoir refill or irrigation dose. Other rows are preserved in the linked structured aspects and exact source tables.",
+      "topic_ids": [
+        "nijar-native-plant-supply",
+        "carob",
+        "mastic",
+        "oleander",
+        "ziziphus-lotus",
+        "populus-alba"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Níjar supply lot 1: counts and nursery-container sizes",
+          "locator": "Níjar supply lot 1: counts and nursery-container sizes"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Níjar supply: lot 1 continuation and lot 2 counts",
+          "locator": "Níjar supply: lot 1 continuation and lot 2 counts"
+        }
+      ],
+      "kind": "finding",
+      "aspects": {
+        "requested_supply_rows": [
+          {
+            "topic_id": "carob",
+            "source_name": "Ceratonia siliqua",
+            "units_requested": 1376,
+            "nursery_container": "1 L",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "dwarf-palm",
+            "source_name": "Chamaerops humilis",
+            "units_requested": 119,
+            "nursery_container": "1 L",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "dorycnium-pentaphyllum",
+            "source_name": "Dorycnium pentaphyllum",
+            "units_requested": 2500,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "ephedra-fragilis",
+            "source_name": "Ephedra fragilis",
+            "units_requested": 1688,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "lycium-intricatum",
+            "source_name": "Lycium intricatum",
+            "units_requested": 1970,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "phillyrea-angustifolia",
+            "source_name": "Phillyrea angustifolia",
+            "units_requested": 400,
+            "nursery_container": "1 L",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "mastic",
+            "source_name": "Pistacia lentiscus",
+            "units_requested": 4800,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "populus-alba",
+            "source_name": "Populus alba",
+            "units_requested": 1356,
+            "nursery_container": "1 L",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "populus-alba",
+            "source_name": "Populus alba",
+            "units_requested": 912,
+            "nursery_container": "10 L",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "retama-sphaerocarpa",
+            "source_name": "Retama sphaerocarpa",
+            "units_requested": 2553,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "rhamnus-alaternus",
+            "source_name": "Rhamnus alaternus",
+            "units_requested": 500,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "rosmarinus-eriocalyx",
+            "source_name": "Rosmarinus eriocalyx",
+            "units_requested": 160,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "rosemary",
+            "source_name": "Rosmarinus officinalis",
+            "units_requested": 250,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 1
+          },
+          {
+            "topic_id": "salsola-webbii",
+            "source_name": "Salsola webbii",
+            "units_requested": 891,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 2
+          },
+          {
+            "topic_id": "tetraclinis-articulata",
+            "source_name": "Tetraclinis articulata",
+            "units_requested": 255,
+            "nursery_container": "1 L",
+            "lot": 1,
+            "pdf_page": 2
+          },
+          {
+            "topic_id": "thymelaea-hirsuta",
+            "source_name": "Thymelaea hirsuta",
+            "units_requested": 2000,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 2
+          },
+          {
+            "topic_id": "thymus-hyemalis",
+            "source_name": "Thymus hyemalis",
+            "units_requested": 2500,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 2
+          },
+          {
+            "topic_id": "tripudium-ravennae-source",
+            "source_name": "Tripudium ravennae",
+            "units_requested": 60,
+            "nursery_container": "1 L",
+            "lot": 1,
+            "pdf_page": 2
+          },
+          {
+            "topic_id": "withania-somnifera",
+            "source_name": "Withania somnifera",
+            "units_requested": 1600,
+            "nursery_container": "at least 250 cc",
+            "lot": 1,
+            "pdf_page": 2
+          },
+          {
+            "topic_id": "lavatera-maritima-source",
+            "source_name": "Lavatera marítima",
+            "units_requested": 2000,
+            "nursery_container": "at least 250 cc",
+            "lot": 2,
+            "pdf_page": 2
+          },
+          {
+            "topic_id": "oleander",
+            "source_name": "Nerium oleander",
+            "units_requested": 7364,
+            "nursery_container": "1 L",
+            "lot": 2,
+            "pdf_page": 2
+          },
+          {
+            "topic_id": "rhamnus-lycioides",
+            "source_name": "Rhamnus lycioides",
+            "units_requested": 4623,
+            "nursery_container": "at least 250 cc",
+            "lot": 2,
+            "pdf_page": 2
+          },
+          {
+            "topic_id": "ziziphus-lotus",
+            "source_name": "Ziziphus lotus",
+            "units_requested": 9407,
+            "nursery_container": "1 L",
+            "lot": 2,
+            "pdf_page": 2
+          }
+        ],
+        "status": "procurement specification; delivery and planting unverified"
+      }
+    },
+    {
+      "id": "fl03-nijar-budgets",
+      "label": "Níjar: works and supervision are separate assignments",
+      "text": "Works assignment 6/2022/ES gives EUR 3,866,930.52 using non-VAT-subject TRAGSA 2022 tariffs, plus a separate 10% measurement-excess reserve of EUR 386,693.05. The stated works period is 24 months from its resolution. Supervision assignment 1/2023/ES gives EUR 151,606.30 using TRAGSA 2023 tariffs and a period beginning with works, linked to completion/document delivery. Both identify PRTR C4.I3, but their budgets, roles and dates are distinct. The sources do not report actual expenditure or achieved hectares.",
+      "topic_ids": [
+        "nijar-fluvial-restoration",
+        "nijar-environmental-supervision",
+        "prtr-ecosystem-restoration"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 9,
+          "label": "Works: maximum budget and annualities",
+          "locator": "Works: maximum budget and annualities"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 10,
+          "label": "Works: separate 10% reserve and PRTR measure",
+          "locator": "Works: separate 10% reserve and PRTR measure"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 11,
+          "label": "Works: 24-month execution period",
+          "locator": "Works: 24-month execution period"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 8,
+          "label": "Supervision: maximum budget",
+          "locator": "Supervision: maximum budget"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 9,
+          "label": "Supervision: annualities and PRTR financing",
+          "locator": "Supervision: annualities and PRTR financing"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 13,
+          "label": "Supervision: works-linked period",
+          "locator": "Supervision: works-linked period"
+        }
+      ],
+      "kind": "finding"
+    },
+    {
+      "id": "fl03-assignment-comparison",
+      "label": "Cost comparison is an administrative estimate, not field performance",
+      "text": "The works assignment compares its tariff-based EUR 3,866,930.52 cost with a hypothetical tender result of EUR 3,970,645.02 and states 2.68% efficiency relative to the assignment. This is the issuing administration’s economic justification using assumed market/tender coefficients, not an observed competitive award, realized saving or ecological outcome.",
+      "topic_ids": [
+        "nijar-fluvial-restoration"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 6,
+          "label": "TRAGSA tariffs versus hypothetical market costs",
+          "locator": "Análisis comparativo"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 7,
+          "label": "Hypothetical tender comparison and stated 2.68%",
+          "locator": "Análisis comparativo continuation"
+        }
+      ],
+      "kind": "finding"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "fl03-supply-carob",
+      "source": "nijar-native-plant-supply",
+      "target": "carob",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Ceratonia siliqua. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Ceratonia siliqua: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-dwarf-palm",
+      "source": "nijar-native-plant-supply",
+      "target": "dwarf-palm",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Chamaerops humilis. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Chamaerops humilis: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-dorycnium-pentaphyllum",
+      "source": "nijar-native-plant-supply",
+      "target": "dorycnium-pentaphyllum",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Dorycnium pentaphyllum. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Dorycnium pentaphyllum: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-ephedra-fragilis",
+      "source": "nijar-native-plant-supply",
+      "target": "ephedra-fragilis",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Ephedra fragilis. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Ephedra fragilis: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-lycium-intricatum",
+      "source": "nijar-native-plant-supply",
+      "target": "lycium-intricatum",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Lycium intricatum. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Lycium intricatum: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-phillyrea-angustifolia",
+      "source": "nijar-native-plant-supply",
+      "target": "phillyrea-angustifolia",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Phillyrea angustifolia. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Phillyrea angustifolia: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-mastic",
+      "source": "nijar-native-plant-supply",
+      "target": "mastic",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Pistacia lentiscus. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Pistacia lentiscus: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-populus-alba",
+      "source": "nijar-native-plant-supply",
+      "target": "populus-alba",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Populus alba. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Populus alba: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-retama-sphaerocarpa",
+      "source": "nijar-native-plant-supply",
+      "target": "retama-sphaerocarpa",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Retama sphaerocarpa. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Retama sphaerocarpa: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-rhamnus-alaternus",
+      "source": "nijar-native-plant-supply",
+      "target": "rhamnus-alaternus",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Rhamnus alaternus. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Rhamnus alaternus: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-rosmarinus-eriocalyx",
+      "source": "nijar-native-plant-supply",
+      "target": "rosmarinus-eriocalyx",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Rosmarinus eriocalyx. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Rosmarinus eriocalyx: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-rosemary",
+      "source": "nijar-native-plant-supply",
+      "target": "rosemary",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Rosmarinus officinalis. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Rosmarinus officinalis: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-salsola-webbii",
+      "source": "nijar-native-plant-supply",
+      "target": "salsola-webbii",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Salsola webbii. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Salsola webbii: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-tetraclinis-articulata",
+      "source": "nijar-native-plant-supply",
+      "target": "tetraclinis-articulata",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Tetraclinis articulata. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Tetraclinis articulata: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-thymelaea-hirsuta",
+      "source": "nijar-native-plant-supply",
+      "target": "thymelaea-hirsuta",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Thymelaea hirsuta. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Thymelaea hirsuta: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-thymus-hyemalis",
+      "source": "nijar-native-plant-supply",
+      "target": "thymus-hyemalis",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Thymus hyemalis. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Thymus hyemalis: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-tripudium-ravennae-source",
+      "source": "nijar-native-plant-supply",
+      "target": "tripudium-ravennae-source",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Tripudium ravennae. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Tripudium ravennae: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-withania-somnifera",
+      "source": "nijar-native-plant-supply",
+      "target": "withania-somnifera",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Withania somnifera. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Withania somnifera: requested plant material",
+          "locator": "Lote 1 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-lavatera-maritima-source",
+      "source": "nijar-native-plant-supply",
+      "target": "lavatera-maritima-source",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Lavatera marítima. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Lavatera marítima: requested plant material",
+          "locator": "Lote 2 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-oleander",
+      "source": "nijar-native-plant-supply",
+      "target": "oleander",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Nerium oleander. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Nerium oleander: requested plant material",
+          "locator": "Lote 2 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-rhamnus-lycioides",
+      "source": "nijar-native-plant-supply",
+      "target": "rhamnus-lycioides",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Rhamnus lycioides. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Rhamnus lycioides: requested plant material",
+          "locator": "Lote 2 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-supply-ziziphus-lotus",
+      "source": "nijar-native-plant-supply",
+      "target": "ziziphus-lotus",
+      "label": "specifies for supply",
+      "explanation": "The procurement roster includes Ziziphus lotus. Counts and container volumes are requested supply specifications, not installed membership, co-planting benefit or watering doses.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Ziziphus lotus: requested plant material",
+          "locator": "Lote 2 supply table"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-nijar-fluvial-restoration-nijar-environmental-supervision",
+      "source": "nijar-fluvial-restoration",
+      "target": "nijar-environmental-supervision",
+      "label": "has a separate surveillance assignment",
+      "explanation": "The June supervision resolution explicitly names the same fluvial-restoration project and defines a distinct support/surveillance role.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 1,
+          "label": "Supervision: full project/assignment identity",
+          "locator": "Supervision: full project/assignment identity"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 5,
+          "label": "Supervision: purpose and role",
+          "locator": "Supervision: purpose and role"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-nijar-fluvial-restoration-nijar-native-plant-supply",
+      "source": "nijar-fluvial-restoration",
+      "target": "nijar-native-plant-supply",
+      "label": "has related plant procurement",
+      "explanation": "The later supply specification explicitly names plantings and replacement for the Almería/Campo de Níjar semi-arid fluvial work. It does not certify installed counts.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Plant supply: project purpose and TSA0078436",
+          "locator": "Plant supply: project purpose and TSA0078436"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-nijar-native-plant-supply-nijar-stock-provenance",
+      "source": "nijar-native-plant-supply",
+      "target": "nijar-stock-provenance",
+      "label": "requires provenance checks",
+      "explanation": "The procurement specification sets project-specific origin, certification and passport requirements.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Supply: provenance region 38",
+          "locator": "Supply: provenance region 38"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 3,
+          "label": "Supply: exceptions and certification",
+          "locator": "Supply: exceptions and certification"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-nijar-native-plant-supply-nijar-stock-quality",
+      "source": "nijar-native-plant-supply",
+      "target": "nijar-stock-quality",
+      "label": "requires acceptance checks",
+      "explanation": "The supply document rejects poor shoot/root condition and prescribes container/root and receipt checks.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 4,
+          "label": "Supply: root and shoot quality",
+          "locator": "Supply: root and shoot quality"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 6,
+          "label": "Supply: acceptance/rejection requirements",
+          "locator": "Supply: acceptance/rejection requirements"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-nijar-stock-quality-root-health",
+      "source": "nijar-stock-quality",
+      "target": "root-health",
+      "label": "checks root deformation",
+      "explanation": "The source explicitly rejects spiralling roots and root rebound and asks for anti-spiral containers.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 6,
+          "label": "Root quality: spiralling, aerial pruning and rebound",
+          "locator": "Root quality: spiralling, aerial pruning and rebound"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-nijar-stock-provenance-local-provenance",
+      "source": "nijar-stock-provenance",
+      "target": "local-provenance",
+      "label": "specifies project-local origin",
+      "explanation": "The procurement rule gives region/district-specific origin conditions; those are not generalized to other projects.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Supply provenance: Murciano-Almeriense origin",
+          "locator": "Supply provenance: Murciano-Almeriense origin"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-nijar-environmental-supervision-monitoring",
+      "source": "nijar-environmental-supervision",
+      "target": "monitoring",
+      "label": "requires effectiveness review",
+      "explanation": "The surveillance tasks require checking efficacy, diagnosing failures and responding to unanticipated impacts; no actual outcome series is reported.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 6,
+          "label": "Surveillance: check effectiveness",
+          "locator": "Surveillance: check effectiveness"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 7,
+          "label": "Surveillance: impacts and remedies",
+          "locator": "Surveillance: impacts and remedies"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-nijar-fluvial-restoration-prtr-ecosystem-restoration",
+      "source": "nijar-fluvial-restoration",
+      "target": "prtr-ecosystem-restoration",
+      "label": "has documented financing",
+      "explanation": "The works assignment identifies PRTR C4.I3/Objective 71 and 100% financing for this assignment, not a general applicant aid rate.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 10,
+          "label": "Works: PRTR financing and milestone",
+          "locator": "Works: PRTR financing and milestone"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "fl03-nijar-fluvial-restoration-nijar",
+      "source": "nijar-fluvial-restoration",
+      "target": "nijar",
+      "label": "includes the municipality",
+      "explanation": "The separate supervision document identifies Almería, Níjar and Viator as the works municipalities.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 4,
+          "label": "Works location: municipalities and three sectors",
+          "locator": "Works location: municipalities and three sectors"
+        }
+      ],
+      "traversable": true
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 1,
+      "status": "inspected",
+      "note": "Works assignment identity 6/2022/ES, signature 23 December 2022 and issuer."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 2,
+      "status": "inspected",
+      "note": "Legal/instrumental assignment basis; not an open grant to another applicant."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 3,
+      "status": "inspected",
+      "note": "Tariff/control justification and available-resource certification; referenced outside documents not fetched."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 4,
+      "status": "inspected",
+      "note": "Administrative delegation/efficiency rationale; source-reported institutional assertions."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 5,
+      "status": "inspected",
+      "note": "Introduction to hypothetical tariff-versus-tender comparison; table starts on next page."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 6,
+      "status": "inspected",
+      "note": "Visually checked tariff comparison, components and hypothetical market assumptions."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 7,
+      "status": "inspected",
+      "note": "Visually checked hypothetical final prices and source-stated 2.68%; not a realized saving."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 8,
+      "status": "inspected",
+      "note": "Formal assignment to TRAGSA; cleanup/invasives and 56-ramblas/three-sector works scope."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 9,
+      "status": "inspected",
+      "note": "Visually checked native planting/Morales path, EUR 3,866,930.52 maximum and annualities."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 10,
+      "status": "inspected",
+      "note": "Separate 10% reserve, PRTR financing, monthly certification and advance conditions."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 11,
+      "status": "inspected",
+      "note": "Subcontracting controls, 49.62% planned subcontracting, 24-month duration and director."
+    },
+    {
+      "source_id": "KGB-SRC-0024",
+      "page": 12,
+      "status": "inspected",
+      "note": "Receipt/modification/budget and publication conditions; no completion certificate supplied."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 1,
+      "status": "inspected",
+      "note": "Separate supervision assignment 1/2023/ES and signature 16 June 2023."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 2,
+      "status": "inspected",
+      "note": "Instrumental-assignment/tariff and own-resource basis; referenced statutes not fetched."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 3,
+      "status": "inspected",
+      "note": "Administrative delegation and formal approval of separate supervision support."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 4,
+      "status": "inspected",
+      "note": "Almería/Níjar/Viator and three sectors; flood-risk rationale and ARPSI references."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 5,
+      "status": "inspected",
+      "note": "Restoration measures and need for specialist works/environmental supervision."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 6,
+      "status": "inspected",
+      "note": "Works-direction, quality, safety and protective/corrective measure checks."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 7,
+      "status": "inspected",
+      "note": "Unexpected impacts/remedies/reporting; national and departmental hectare targets are goals, not project outcomes."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 8,
+      "status": "inspected",
+      "note": "Administrative efficiency rationale and EUR 151,606.30 maximum supervision budget."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 9,
+      "status": "inspected",
+      "note": "Visually checked supervision annualities and PRTR financing attribution."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 10,
+      "status": "inspected",
+      "note": "PRTR regulatory references and green/digital tagging; no current legal-status verification."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 11,
+      "status": "inspected",
+      "note": "Monthly milestone reports and “0/0%” subcontracting statement; conflict with p13 recorded."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 12,
+      "status": "inspected",
+      "note": "Audit/data/DACI/documentation and monthly certification duties."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 13,
+      "status": "inspected",
+      "note": "Payment/advance/subcontracting and 24-month works-linked duration; 13.64% conflict recorded."
+    },
+    {
+      "source_id": "KGB-SRC-0025",
+      "page": 14,
+      "status": "inspected",
+      "note": "Supervision, acceptance and authorized modification conditions; no delivered outcome evidence."
+    },
+    {
+      "source_id": "KGB-SRC-0026",
+      "page": 1,
+      "status": "inspected",
+      "note": "Visually checked purpose, lot 1 plant quantities and stock volumes; procurement not planted census."
+    },
+    {
+      "source_id": "KGB-SRC-0026",
+      "page": 2,
+      "status": "inspected",
+      "note": "Visually checked remaining lot 1 and Levante-Almeriense lot 2; provenance region 38 requirements."
+    },
+    {
+      "source_id": "KGB-SRC-0026",
+      "page": 3,
+      "status": "inspected",
+      "note": "Visually checked provenance map, region-36 poplar exception and certification/passport duties."
+    },
+    {
+      "source_id": "KGB-SRC-0026",
+      "page": 4,
+      "status": "inspected",
+      "note": "Healthy shoots/roots, rejection of spiralling and source stock-age/size requirements."
+    },
+    {
+      "source_id": "KGB-SRC-0026",
+      "page": 5,
+      "status": "inspected",
+      "note": "Nursery containers and rootball/substrate conditions; 60–80% substrate porosity."
+    },
+    {
+      "source_id": "KGB-SRC-0026",
+      "page": 6,
+      "status": "inspected",
+      "note": "Anti-spiral containers, at-least-10-cm elevation/aerial pruning and receipt rejection list."
+    },
+    {
+      "source_id": "KGB-SRC-0026",
+      "page": 7,
+      "status": "inspected",
+      "note": "Source-listed applicable nursery/legal references; present legal status not verified."
+    },
+    {
+      "source_id": "KGB-SRC-0026",
+      "page": 8,
+      "status": "inspected",
+      "note": "Continuation of source references, no variants and Madrid 8 August 2024 specification date."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "fl03-supervision-subcontracting-conflict",
+      "text": "The TRAGSATEC supervision assignment p11 states expected subcontracting as “(0/0%)”, whereas p13 cites a 26 May 2023 certificate giving 13.64% of the total. Preserve the discrepancy; do not adopt either as a verified actual subcontracting percentage.",
+      "topic_ids": [
+        "nijar-environmental-supervision"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 11,
+          "label": "Supervision: expected subcontracting “(0/0%)”",
+          "locator": "8.2"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 13,
+          "label": "Supervision: 13.64% certificate statement",
+          "locator": "10"
+        }
+      ]
+    },
+    {
+      "id": "fl03-supply-taxonomic-limits",
+      "text": "The procurement list contains Withania somnifera and Rosmarinus eriocalyx, which must not be merged with Whitania frutescens or Rosmarinus officinalis. Lavatera marítima retains its printed accent/name usage; Tripudium ravennae is visually joined to the Spanish “en”. Current accepted nomenclature and actual planting outcomes are not independently verified.",
+      "topic_ids": [
+        "withania-somnifera",
+        "rosmarinus-eriocalyx",
+        "lavatera-maritima-source",
+        "tripudium-ravennae-source"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Supply: separate rosemary taxa",
+          "locator": "Supply: separate rosemary taxa"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Supply: Withania, Tripudium and Lavatera wording",
+          "locator": "Supply: Withania, Tripudium and Lavatera wording"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:local-restoration-projects",
+      "label": "Local restoration projects and delivery",
+      "parent_id": "ecosystem:restoration-methods",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "andarax-restoration-2023",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar-fluvial-restoration",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar-environmental-supervision",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nijar-native-plant-supply",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep each project and documentary stage distinct. Add confirmed designs, procurement, implementation and measured outcomes without converting plans into results. Preserve exact places and dates.",
+      "description": "Compare Andarax procurement with the separately assigned Almería/Campo de Níjar works. Follow each case from objectives and financing to delivery controls. Níjar also links to a later plant-supply specification and a separate environmental-surveillance assignment. Planned budgets, requested plants and required monitoring are different from expenditure, installed counts and ecological outcomes. Use the case-specific source passages to preserve those stages and dates.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "locator": "Datos del expediente",
+          "label": "Andarax: works purpose, municipalities, duration and tender budget"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "locator": "2. Objeto del contrato",
+          "label": "Andarax: flood-risk reduction and native fluvial restoration"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 8,
+          "label": "Níjar: assigned works scope",
+          "locator": "Níjar: assigned works scope"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 5,
+          "label": "Níjar: separate supervision purpose",
+          "locator": "Níjar: separate supervision purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Níjar: later plant-supply specification",
+          "locator": "Níjar: later plant-supply specification"
+        }
+      ],
+      "member_layout": "grid"
+    },
+    {
+      "id": "browse:nijar-delivery",
+      "label": "Níjar: plants, provenance and delivery checks",
+      "parent_id": "browse:local-restoration-projects",
+      "anchor_topic_id": "nijar-fluvial-restoration",
+      "members": [
+        {
+          "topic_id": "nijar-native-plant-supply",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar-stock-provenance",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar-stock-quality",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar-environmental-supervision",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep requested quantities and nursery container volumes distinct from planted counts and irrigation. Preserve named taxa without uncertain merges; source procurement roster is not an ecological association or working-community decision.",
+      "description": "Start with the native-plant roster, then inspect provenance, nursery-stock quality and separate environmental surveillance. The specification requests 22 taxa in two lots and includes carob, mastic, oleander and jujube, alongside distinct source-named taxa. Its container volumes describe nursery stock. Provenance certification and root checks govern delivery acceptance; surveillance requires checking corrective measures and unanticipated impacts. None of these records supplies measured establishment success or an adopted watering plan.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "label": "Níjar supply: first-lot plants and stock",
+          "locator": "Níjar supply: first-lot plants and stock"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "label": "Níjar supply: second lot and provenance",
+          "locator": "Níjar supply: second lot and provenance"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 6,
+          "label": "Níjar: quality and environmental surveillance",
+          "locator": "Níjar: quality and environmental surveillance"
+        }
+      ],
+      "member_layout": "grid"
+    }
+  ]
+}
