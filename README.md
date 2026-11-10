@@ -202,6 +202,10 @@ editable master. Code, schemas and accepted batch inputs are versioned; database
 extraction, media and backups stay local. A code-only checkout does not carry the accepted collection.
 
 For complete-library and weekly intake, invoke the [reusable ingestion prompt](DOCUMENT_INGESTION_PROMPT.md).
+For research from a chat or monitor report, supply `Research inputs: this chat` or explicit handoff
+paths and choose `Source boundary: library-and-official-web` to authorise relevant official-document
+acquisition and current verification. The prompt reconciles leads, library/managed editions and
+graph placement through the same checked imports; `library-only` does not fetch missing sources.
 File ownership, source registration, inspected coverage and full-text indexing are separate states;
 query current SQLite coverage instead of treating historical counts or a copied file as completeness.
 The general importer refreshes topic/finding search but does not automatically extract all new PDF

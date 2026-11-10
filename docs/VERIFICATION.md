@@ -214,6 +214,19 @@ files decreased from 13 to four; five overlapping feature guides became two main
 Application test suites were not rerun for these documentation changes; unrelated concurrent
 application edits are outside this cleanup's verification claim.
 
+## Research-handoff ingestion workflow: 10 November 2026
+
+The reusable prompt now accepts chat/report leads, explicitly web-authorized official-document
+acquisition, managed webpage evidence and per-lead reconciliation through checked imports.
+README and source-maintenance guidance point to the same procedure. This is a documentation-only
+workflow update; no ingestion, source download, source registration or knowledge batch was executed.
+
+Validation checked 33 local links/anchors across the three changed workflow references, the
+documented tool/reference paths, source-boundary and preview instructions, and `git diff --check`.
+The accepted SQLite file and ownership inventory retain their baseline SHA-256 hashes; the library
+and managed-source collections remain at 187 and 47 files. Existing unrelated bytecode files were
+preserved. Application tests/builds were not rerun for these documentation changes.
+
 ## Historical records
 
 These files preserve their original bytes. Their layouts, counts, bundle hashes, permission

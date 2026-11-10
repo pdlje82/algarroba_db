@@ -23,6 +23,16 @@ weekly additions need their own hashes/edition reconciliation and do not automat
 [Verification](VERIFICATION.md). The mappings and source-review details below preserve the
 original intake's scope; the live registry is authoritative for subsequent additions.
 
+Research handoffs with `Source boundary: library-and-official-web` use the prompt's
+[official-source acquisition step](../DOCUMENT_INGESTION_PROMPT.md#research-handoff-and-official-source-acquisition).
+Chat reports and monitor JSON are leads to reconcile, not import batches or evidence. Apply runs
+can acquire relevant verified PDFs into this project's library, prepare managed source copies and
+register supported findings through checked imports. Webpage-only evidence uses managed web sources;
+preview runs stage files without publishing library or knowledge changes. The run's acquisition
+ledger distinguishes download, library addition, source registration, actual review and integration,
+with URLs, hashes, editions, accepted IDs and unresolved items. Preserve historical ownership data
+and report its actual verification differences separately from checks of new additions.
+
 All source links need a visible section heading or descriptive keyword, friendly document title
 and exact page/section. New/revised references supply checked `label` and precise `locator`;
 distinguish links to one document by passage/table/subject. Naming titles and media-reference
