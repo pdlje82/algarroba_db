@@ -1,0 +1,195 @@
+{
+  "batch_id": "project-profiles-2026-11-10-reviewed-05-nature-credit-pilot",
+  "summary": "Explicit prospective nature-credit pilot identity and source-limited summary beneath the existing roadmap; no current availability or implementation claim.",
+  "base_revision": 24,
+  "topics": [
+    {
+      "id": "nature-credit-pilot-2025-roadmap",
+      "label": "Nature-credit pilot proposed in the 2025 roadmap",
+      "kind": "project",
+      "domain": "funding",
+      "group_id": "programmes",
+      "description": "A prospective pilot project is proposed in the European Commission’s 7 July 2025 nature-credit roadmap. Under its public seed-finance section, the document schedules launch and support during 2025–2027 from EU funds available for competitiveness and innovative European projects. The surrounding policy rationale is to help early nature-credit initiatives overcome upfront costs, fragmented information and uncertain returns while attracting private capital.\n\nThis record identifies that particular planned action, separately from the overall roadmap and from other pilot examples it mentions. An official project name, selected operator, site, budget, operational methods, eligibility process and measured results are not reported in the reviewed pilot passage. They are explicit evidence gaps, not assertions that those details do not exist. The descriptive label does not establish a current programme or open call. Its status remains planned as stated in the 2025 document; whether it was subsequently launched or produced outcomes has not been verified in this library-only update.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "locator": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot",
+          "label": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 12,
+          "locator": "Nature-credit roadmap: prospective next steps and review",
+          "label": "Nature-credit roadmap: prospective next steps and review"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2025-07-07",
+          "meaning": "roadmap publication"
+        },
+        {
+          "value": "2025–2027",
+          "meaning": "document-planned action period"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:nature-credit-pilot",
+      "label": "Nature-credit pilot · Planned project",
+      "parent_id": "browse:nature-credit-finance",
+      "anchor_topic_id": "nature-credit-pilot-2025-roadmap",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "nature-credits",
+          "role": "shared"
+        },
+        {
+          "topic_id": "european-commission",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for the specific planned pilot and the details absent from the reviewed roadmap. Shared references identify its policy context and the communication’s issuer; neither is evidence that the pilot has launched or that the Commission is its selected operator.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "locator": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot",
+          "label": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:nature-credit-finance",
+      "label": "Nature-credit roadmap · prospective",
+      "parent_id": "browse:funding-commission",
+      "anchor_topic_id": "nature-credits",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "nature-credit-certification",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nature-credit-integrity",
+          "role": "primary"
+        },
+        {
+          "topic_id": "monitoring",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nature-credit-pilot-2025-roadmap",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Distinguish prospective voluntary nature crediting, carbon units, grants and procurement. Do not claim current market readiness, a credit, revenue or eligibility from this dated roadmap. Preserve ecosystem-specific measurement and independent-verification requirements.",
+      "description": "Read the proposed chain from a quality-assessed action to a demonstrated ecological outcome, then inspect integrity and monitoring. The Commission roadmap treats nature credits as a possible complement to public funding. It also explains why biodiversity can matter in dry ecosystems with limited extra carbon storage. Site-specific measures, independent roles, safeguards and usable market rules are still necessary. The recorded 2025–2027 actions are document-stated plans; current implementation, buyers and prices have not been verified.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 5,
+          "locator": "Nature credits: certification and outcome distinction",
+          "label": "Nature credits: certification and outcome distinction"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 6,
+          "locator": "Nature credits: monitoring and governance",
+          "label": "Nature credits: monitoring and governance"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 8,
+          "locator": "Nature credits: dry ecosystems and biodiversity specificity",
+          "label": "Nature credits: dry ecosystems and biodiversity specificity"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ],
+  "relationships": [
+    {
+      "id": "profiles-nature-pilot-roadmap",
+      "source": "nature-credit-pilot-2025-roadmap",
+      "target": "nature-credits",
+      "label": "is proposed in the roadmap",
+      "explanation": "Section 4.4 proposes this 2025–2027 pilot. The policy context supplies no current availability or completion evidence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "locator": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot",
+          "label": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-nature-pilot-commission",
+      "source": "nature-credit-pilot-2025-roadmap",
+      "target": "european-commission",
+      "label": "is proposed by the Commission communication",
+      "explanation": "This identifies the author of the proposal, not a selected implementing operator or grant award.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "locator": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot",
+          "label": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot"
+        }
+      ],
+      "traversable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "profiles-nature-pilot-planned",
+      "label": "Nature-credit pilot: a document-stated future action",
+      "text": "Section 4.4 of the July-2025 communication proposes a nature-credit pilot during 2025–2027 supported by available EU funds. The passage does not report a launch, selected operator, budget or measured pilot results. Its present implementation remains unverified.",
+      "topic_ids": [
+        "nature-credit-pilot-2025-roadmap",
+        "nature-credits"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "locator": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot",
+          "label": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "profiles-nature-pilot-details",
+      "text": "The roadmap’s planned nature-credit pilot lacks an official project identity beyond its described action, selected operator, site, budget, protocol and measured results in the reviewed passage. Current implementation and availability require a separately requested status check.",
+      "topic_ids": [
+        "nature-credit-pilot-2025-roadmap"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "locator": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot",
+          "label": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot"
+        }
+      ]
+    }
+  ]
+}

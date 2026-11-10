@@ -1,0 +1,3082 @@
+{
+  "batch_id": "project-profiles-2026-11-10-reviewed-03-carob-cases",
+  "summary": "Eight observational carob case-study identities and source-backed summaries, retaining farm places, management phases, conditional findings and existing evidence.",
+  "base_revision": 22,
+  "topics": [
+    {
+      "id": "drip-irrigation",
+      "label": "Drip irrigation",
+      "kind": "method",
+      "domain": "technology",
+      "group_id": "irrigation",
+      "description": "Water delivery by a drip system. The reviewed Las Labores case documents deficit drip irrigation from May to September, with a seasonal total rather than an event dose. That farm example does not define a universal operating schedule, water requirement or establishment prescription for other species, soils or sites.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        }
+      ]
+    },
+    {
+      "id": "huerta-los-tamayos-case-study",
+      "label": "Huerta Los Tamayos · Case study",
+      "kind": "study",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "An observational cultivation case at Huerta Los Tamayos in Prado del Rey, Cádiz, documents carob planting to diversify a traditional olive grove and enrich a sparse holm-oak dehesa alongside sheep grazing. Plantings in 1992 and five years later used nursery stock, manual holes, shelters, formative pruning and subsequent grafting with local cultivars. Establishment watering and hay mulch supported the initial phase; the stated tank capacity is distinct from the amount supplied per plant.\n\nThe account describes the stand in 2024 as mature trees integrated with the older oaks. Production showed alternate bearing, and local cultivars selected for livestock feed favoured pulp rather than seed yield relative to nearby populations. These are observations from a long-managed farm, not a controlled estimate of which intervention caused establishment or production. The wetter Cádiz setting and historical management differ from semi-arid Almería restoration. A quantified initial survival rate and a controlled comparison are not reported in the reviewed material.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "place_ids": [
+        "huerta-los-tamayos"
+      ],
+      "aspects": {
+        "Evidence design": "Source-described observational case; not a controlled experiment"
+      }
+    },
+    {
+      "id": "huerta-los-tamayos",
+      "label": "Huerta Los Tamayos",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "The physical Huerta Los Tamayos site in Prado del Rey, Cádiz, described in the carob handbook. Its source-specific management, observations and limits are summarized separately in Huerta Los Tamayos · Case study. This place record is not itself a controlled experiment.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Finca location",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "place_ids": [
+        "prado-del-rey"
+      ]
+    },
+    {
+      "id": "los-lirios-case-study",
+      "label": "Los Lirios · Case study",
+      "kind": "study",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "An observational case at Los Lirios, Gaucín, distinguishes older carob afforestation and dehesa management from a separate intensive mother-plant plot established in 2023 to provide grafting material. The older planting received no establishment irrigation. In contrast, the one-hectare mother-plant plot used nursery plants, close regular spacing, grafting and frequent irrigation from April to October. These watering histories must remain separate.\n\nThe account describes an established older stand with many male trees intended for later grafting. The young mother-plant plot was reported to have no losses and good growth at the source’s observation point. Expectations for production after further grafting were forecasts, not measured future harvests. Fruit observations compare selected areas and do not establish that intensive irrigation or grafting alone caused the differences. A controlled survival comparison and the date of every observation are not reported in the reviewed material. The intensive mother-plant practice is not a general dryland restoration prescription.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ],
+      "place_ids": [
+        "los-lirios"
+      ],
+      "aspects": {
+        "Evidence design": "Source-described observational case; not a controlled experiment"
+      }
+    },
+    {
+      "id": "los-lirios",
+      "label": "Los Lirios",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "The physical Los Lirios site in Gaucín, Málaga, described in the carob handbook. Its source-specific management, observations and limits are summarized separately in Los Lirios · Case study. This place record is not itself a controlled experiment.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Finca location",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ],
+      "place_ids": [
+        "gaucin"
+      ]
+    },
+    {
+      "id": "el-triguero-case-study",
+      "label": "El Triguero · Case study",
+      "kind": "study",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "An observational establishment case at El Triguero in Carmona, Sevilla, describes conversion of low-productivity rainfed cereal land to extensive carob planting in autumn 2023. Shallow soils and sloping terrain formed the site constraints. Preparation combined ploughing, crossed subsoiling and manual holes; nursery trees received stakes, perforated shelters and monthly emergency watering. Planned grafting and subsequent pruning were intended to develop the plantation.\n\nThe source describes a plantation still developing for grafting, rather than reporting a completed production assessment. Grafting expected in autumn 2024 remains a document-stated plan unless independently evidenced; its calendar date is not proof it occurred. A measured survival percentage, yield and comparative treatment result are not reported in the reviewed material. The emergency water statement does not specify its calendar months or overall duration, so neither a seasonal total nor an ongoing schedule is inferred. This case documents practices and early status, not an experimental demonstration of their effectiveness.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "place_ids": [
+        "el-triguero"
+      ],
+      "aspects": {
+        "Evidence design": "Source-described observational case; not a controlled experiment"
+      }
+    },
+    {
+      "id": "el-triguero",
+      "label": "El Triguero",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "The physical El Triguero site in Carmona, Sevilla, described in the carob handbook. Its source-specific management, observations and limits are summarized separately in El Triguero · Case study. This place record is not itself a controlled experiment.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Finca location",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "place_ids": [
+        "carmona"
+      ]
+    },
+    {
+      "id": "buenavista-case-study",
+      "label": "Buenavista · Case study",
+      "kind": "study",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "An observational intensive-cultivation case at Buenavista in Posadas, Córdoba, documents phased conversion of cereal land to a mechanisable carob plantation. Phases planted in autumn 2022 and 2023 used different stock and grafting arrangements. Soil preparation included large excavated holes and cured cow manure; selected cultivars and hermaphrodite pollinizers were combined with pruning, inter-row management and establishment irrigation during the first two summers.\n\nAt the account’s observation point, the first phase was grafted and the second was in its first year after planting. Production had not yet been measured; entry into production in three to four years was an expectation. The deeper, wetter site and production-oriented inputs distinguish this case from low-input restoration in Almería. The generic MP4 annual area-based irrigation allocation is not a measured Buenavista event dose. Missing event counts cannot be supplied by converting that allocation. No controlled estimate of the separate effects of manure, cultivar choice or irrigation is reported.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "place_ids": [
+        "buenavista"
+      ],
+      "aspects": {
+        "Evidence design": "Source-described observational case; not a controlled experiment"
+      }
+    },
+    {
+      "id": "buenavista",
+      "label": "Buenavista",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "The physical Buenavista site in Posadas, Córdoba, described in the carob handbook. Its source-specific management, observations and limits are summarized separately in Buenavista · Case study. This place record is not itself a controlled experiment.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Finca location",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "place_ids": [
+        "posadas"
+      ]
+    },
+    {
+      "id": "las-labores-case-study",
+      "label": "Las Labores · Case study",
+      "kind": "study",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "An observational restoration case at Las Labores in Albox, Almería, documents carob replacing declining almond and olive in a shallow, rocky and dry setting. Planting began in 2010 in areas of dead almond trees, using manual holes, nursery stock, shelters, formative pruning and later local hermaphrodite grafts. Deficit drip irrigation from May to September is reported as a seasonal total of 400 litres per plant; the number of events and event dose are not supplied.\n\nThe handbook reports few losses, trees in good condition and successful grafting, while retaining alternate bearing. It does not provide a controlled comparison or a quantified survival percentage. Its chronology is inconsistent: autumn-2024 grafting is stated alongside production four years after grafting and a summer-2023 fruit table. Those statements are preserved as unresolved rather than forced into a single timeline. This watered, managed farm example must not be conflated with the separate MR1 model table’s no-irrigation guidance or treated as an adopted watering plan.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "place_ids": [
+        "las-labores"
+      ],
+      "aspects": {
+        "Evidence design": "Source-described observational case; not a controlled experiment"
+      }
+    },
+    {
+      "id": "las-labores",
+      "label": "Las Labores",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "The physical Las Labores site in Albox, Almería, described in the carob handbook. Its source-specific management, observations and limits are summarized separately in Las Labores · Case study. This place record is not itself a controlled experiment.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Finca location",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "place_ids": [
+        "albox"
+      ]
+    },
+    {
+      "id": "el-rano-case-study",
+      "label": "El Rano farm · Case study",
+      "kind": "study",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "An observational cultivation case at El Rano in Ubrique, Cádiz, describes long-standing carob use within a livestock finca. Accessible trees were grafted with local cultivars and surrounding vegetation cleared, while difficult rocky areas remained seminatural. Carob harvest was integrated with grazing, and naturally dispersed young trees were candidates for later grafting. The checked case heading identifies Ubrique; earlier extraction notes that left the municipality open have a narrower historical review scope.\n\nThe account reports irregularly distributed mature trees and broadly stable crops with some alternate bearing. Its summer-2023 grafted/natural fruit comparison describes differing pod and seed characteristics without demonstrating a causal grafting benefit. Rainfall is inconsistent within the source: the narrative gives 800–1200 mm/year and the table 1200–1600. Neither range is silently selected. Irrigation quantities, a controlled establishment comparison and a quantified initial survival rate are not reported in the reviewed material. This is a relatively wetter cultivation case, not an Almería MR2 restoration trial.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "El Rano: Ubrique location, management and conflicting rainfall descriptions",
+          "label": "El Rano: Ubrique location, management and conflicting rainfall descriptions"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "El Rano: observed adult stand and fruit comparison",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        }
+      ],
+      "place_ids": [
+        "el-rano"
+      ],
+      "aspects": {
+        "Evidence design": "Source-described observational case; not a controlled experiment"
+      }
+    },
+    {
+      "id": "el-rano",
+      "label": "El Rano farm",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "The physical El Rano farm site in Ubrique, Cádiz, described in the carob handbook. Its source-specific management, observations and limits are summarized separately in El Rano farm · Case study. This place record is not itself a controlled experiment.",
+      "aliases": [
+        "finca El Rano"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Selected passage",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "El Rano: Ubrique location, management and conflicting rainfall descriptions",
+          "label": "El Rano: Ubrique location, management and conflicting rainfall descriptions"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "El Rano: observed adult stand and fruit comparison",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        }
+      ]
+    },
+    {
+      "id": "la-alcantarilla-case-study",
+      "label": "La Alcantarilla demonstration parcel · Case study",
+      "kind": "study",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "An observational MR2 demonstration case at La Alcantarilla in Mojácar, Almería, describes a seminatural carob population around houses and a stream in an area with low rainfall. Planting extended irregularly along paths, irrigation channels and watercourses. The handbook describes lentisco and acebuche establishing under carob protection, with little management beyond fruit collection.\n\nThe useful result is the observed development of associated vegetation in this setting, rather than a quantified establishment experiment. Fruit production was small or absent in many years despite some good crops and moderate alternate bearing. The fruit table records harvest observations but gives no sample size establishing a general yield effect. A controlled comparison, planting survival percentage, implementation chronology and irrigation regime are not reported in the reviewed material. General MR2 construction, planting and support-water recommendations on the preceding page must not be treated as a verified list of works carried out at this particular site.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla: site context, distinct from general MR2 guidance",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "La Alcantarilla: seminatural stand and observed shrub establishment",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ],
+      "place_ids": [
+        "la-alcantarilla"
+      ],
+      "aspects": {
+        "Evidence design": "Source-described observational case; not a controlled experiment"
+      }
+    },
+    {
+      "id": "la-alcantarilla",
+      "label": "La Alcantarilla demonstration parcel",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "The physical La Alcantarilla demonstration parcel site in Mojácar, Almería, described in the carob handbook. Its source-specific management, observations and limits are summarized separately in La Alcantarilla demonstration parcel · Case study. This place record is not itself a controlled experiment.",
+      "aliases": [
+        "finca La Alcantarilla",
+        "Parcela demostrativa MR 2"
+      ],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Selected passage",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla: site context, distinct from general MR2 guidance",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "La Alcantarilla: seminatural stand and observed shrub establishment",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ]
+    },
+    {
+      "id": "la-tortola-case-study",
+      "label": "La Tórtola · Case study",
+      "kind": "study",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "An observational MR2 case at La Tórtola in Níjar, Almería, describes a naturalized carob population associated with earlier farming and livestock use. After those activities were abandoned, lentisco and acebuche established with the carob, producing vegetation described as more luxuriant than in neighbouring areas. The source characterizes the stand as naturalized and without cultural treatments, rather than documenting a new engineered planting intervention.\n\nTrees varied considerably in size, with very strong alternate bearing and practically no fruit production. The case therefore illustrates a distinction between vegetation development and production objectives; it does not demonstrate that abandonment or any species combination causes a quantified restoration benefit. Potential lentisco/jujube scrub also remains distinct from the surrounding esparto-dominated current landscape. An establishment date, controlled comparison, survival percentage and irrigation quantity/frequency are not reported in the reviewed material. Absence of a stated watering regime must not be converted into a zero-water requirement.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "La Tórtola: naturalized population and very low fruit production",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ],
+      "place_ids": [
+        "la-tortola"
+      ],
+      "aspects": {
+        "Evidence design": "Source-described observational case; not a controlled experiment"
+      }
+    },
+    {
+      "id": "la-tortola",
+      "label": "La Tórtola",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "The physical La Tórtola site in Níjar, Almería, described in the carob handbook. Its source-specific management, observations and limits are summarized separately in La Tórtola · Case study. This place record is not itself a controlled experiment.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Finca location",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "La Tórtola: naturalized population and very low fruit production",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ],
+      "place_ids": [
+        "nijar"
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:irrigation-field-methods",
+      "label": "Field methods and equipment",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "traditional-reforestation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "drip-irrigation",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Browse the existing records by their documented role. Each topic retains its source wording, evidence, dates and applicability; these navigation categories add no scientific or eligibility claim.",
+      "source_refs": [],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:carob-case-studies",
+      "label": "Documented carob cases",
+      "parent_id": "browse:local-restoration-projects",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "huerta-los-tamayos-case-study",
+          "role": "primary"
+        },
+        {
+          "topic_id": "los-lirios-case-study",
+          "role": "primary"
+        },
+        {
+          "topic_id": "el-triguero-case-study",
+          "role": "primary"
+        },
+        {
+          "topic_id": "buenavista-case-study",
+          "role": "primary"
+        },
+        {
+          "topic_id": "las-labores-case-study",
+          "role": "primary"
+        },
+        {
+          "topic_id": "el-rano-case-study",
+          "role": "primary"
+        },
+        {
+          "topic_id": "la-alcantarilla-case-study",
+          "role": "primary"
+        },
+        {
+          "topic_id": "la-tortola-case-study",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Eight source-described farm and demonstration cases. Each About summary separates observed practices, production/restoration purpose, results and evidence limits. These are observational cases, not controlled experiments or interchangeable watering prescriptions.",
+      "source_refs": [],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true
+    },
+    {
+      "id": "browse:huerta-los-tamayos-case-study",
+      "label": "Huerta Los Tamayos · Case study",
+      "parent_id": "browse:carob-case-studies",
+      "anchor_topic_id": "huerta-los-tamayos-case-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "huerta-los-tamayos",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob",
+          "role": "shared"
+        },
+        {
+          "topic_id": "manual-planting",
+          "role": "shared"
+        },
+        {
+          "topic_id": "planting-holes",
+          "role": "shared"
+        },
+        {
+          "topic_id": "tree-shelters",
+          "role": "shared"
+        },
+        {
+          "topic_id": "grafting",
+          "role": "shared"
+        },
+        {
+          "topic_id": "establishment-water",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for this observational case’s purpose, work, findings, conditions and missing evidence. Open the physical place or shared concepts for wider context; their general guidance does not replace the case-specific practices.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:los-lirios-case-study",
+      "label": "Los Lirios · Case study",
+      "parent_id": "browse:carob-case-studies",
+      "anchor_topic_id": "los-lirios-case-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "los-lirios",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob",
+          "role": "shared"
+        },
+        {
+          "topic_id": "grafting",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob-cultivars",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob-pollination",
+          "role": "shared"
+        },
+        {
+          "topic_id": "maintenance-irrigation",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for this observational case’s purpose, work, findings, conditions and missing evidence. Open the physical place or shared concepts for wider context; their general guidance does not replace the case-specific practices.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:el-triguero-case-study",
+      "label": "El Triguero · Case study",
+      "parent_id": "browse:carob-case-studies",
+      "anchor_topic_id": "el-triguero-case-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "el-triguero",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob",
+          "role": "shared"
+        },
+        {
+          "topic_id": "manual-planting",
+          "role": "shared"
+        },
+        {
+          "topic_id": "planting-holes",
+          "role": "shared"
+        },
+        {
+          "topic_id": "tree-shelters",
+          "role": "shared"
+        },
+        {
+          "topic_id": "grafting",
+          "role": "shared"
+        },
+        {
+          "topic_id": "support-irrigation",
+          "role": "shared"
+        },
+        {
+          "topic_id": "soil-depth",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for this observational case’s purpose, work, findings, conditions and missing evidence. Open the physical place or shared concepts for wider context; their general guidance does not replace the case-specific practices.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:buenavista-case-study",
+      "label": "Buenavista · Case study",
+      "parent_id": "browse:carob-case-studies",
+      "anchor_topic_id": "buenavista-case-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "buenavista",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob",
+          "role": "shared"
+        },
+        {
+          "topic_id": "planting-holes",
+          "role": "shared"
+        },
+        {
+          "topic_id": "grafting",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob-cultivars",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob-pollination",
+          "role": "shared"
+        },
+        {
+          "topic_id": "establishment-water",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for this observational case’s purpose, work, findings, conditions and missing evidence. Open the physical place or shared concepts for wider context; their general guidance does not replace the case-specific practices.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:las-labores-case-study",
+      "label": "Las Labores · Case study",
+      "parent_id": "browse:carob-case-studies",
+      "anchor_topic_id": "las-labores-case-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "las-labores",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob",
+          "role": "shared"
+        },
+        {
+          "topic_id": "manual-planting",
+          "role": "shared"
+        },
+        {
+          "topic_id": "planting-holes",
+          "role": "shared"
+        },
+        {
+          "topic_id": "tree-shelters",
+          "role": "shared"
+        },
+        {
+          "topic_id": "grafting",
+          "role": "shared"
+        },
+        {
+          "topic_id": "drip-irrigation",
+          "role": "shared"
+        },
+        {
+          "topic_id": "soil-depth",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for this observational case’s purpose, work, findings, conditions and missing evidence. Open the physical place or shared concepts for wider context; their general guidance does not replace the case-specific practices.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:el-rano-case-study",
+      "label": "El Rano farm · Case study",
+      "parent_id": "browse:carob-case-studies",
+      "anchor_topic_id": "el-rano-case-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "el-rano",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob",
+          "role": "shared"
+        },
+        {
+          "topic_id": "grafting",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob-cultivars",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for this observational case’s purpose, work, findings, conditions and missing evidence. Open the physical place or shared concepts for wider context; their general guidance does not replace the case-specific practices.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "El Rano: Ubrique location, management and conflicting rainfall descriptions",
+          "label": "El Rano: Ubrique location, management and conflicting rainfall descriptions"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "El Rano: observed adult stand and fruit comparison",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:la-alcantarilla-case-study",
+      "label": "La Alcantarilla demonstration parcel · Case study",
+      "parent_id": "browse:carob-case-studies",
+      "anchor_topic_id": "la-alcantarilla-case-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "la-alcantarilla",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob-oasification",
+          "role": "shared"
+        },
+        {
+          "topic_id": "mastic",
+          "role": "shared"
+        },
+        {
+          "topic_id": "wild-olive",
+          "role": "shared"
+        },
+        {
+          "topic_id": "seasonal-watercourse",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for this observational case’s purpose, work, findings, conditions and missing evidence. Open the physical place or shared concepts for wider context; their general guidance does not replace the case-specific practices.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla: site context, distinct from general MR2 guidance",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "La Alcantarilla: seminatural stand and observed shrub establishment",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:la-tortola-case-study",
+      "label": "La Tórtola · Case study",
+      "parent_id": "browse:carob-case-studies",
+      "anchor_topic_id": "la-tortola-case-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "la-tortola",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob",
+          "role": "shared"
+        },
+        {
+          "topic_id": "mastic",
+          "role": "shared"
+        },
+        {
+          "topic_id": "wild-olive",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carob-oasification",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for this observational case’s purpose, work, findings, conditions and missing evidence. Open the physical place or shared concepts for wider context; their general guidance does not replace the case-specific practices.",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "La Tórtola: naturalized population and very low fruit production",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ],
+  "relationships": [
+    {
+      "id": "profiles-huerta-los-tamayos-case-location",
+      "source": "huerta-los-tamayos-case-study",
+      "target": "huerta-los-tamayos",
+      "label": "documents practices and observations at",
+      "explanation": "This links the observational account to its physical site without converting the place into a project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-huerta-los-tamayos-case-carob",
+      "source": "huerta-los-tamayos-case-study",
+      "target": "carob",
+      "label": "documents carob practice",
+      "explanation": "The case concerns carob management or observed vegetation. It does not establish a universal ecological or cultivation rule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-huerta-los-tamayos-manual-planting",
+      "source": "huerta-los-tamayos-case-study",
+      "target": "manual-planting",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-huerta-los-tamayos-planting-holes",
+      "source": "huerta-los-tamayos-case-study",
+      "target": "planting-holes",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-huerta-los-tamayos-tree-shelters",
+      "source": "huerta-los-tamayos-case-study",
+      "target": "tree-shelters",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-huerta-los-tamayos-grafting",
+      "source": "huerta-los-tamayos-case-study",
+      "target": "grafting",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-huerta-los-tamayos-establishment-water",
+      "source": "huerta-los-tamayos-case-study",
+      "target": "establishment-water",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Huerta Los Tamayos: planting, protection and establishment water",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-los-lirios-case-location",
+      "source": "los-lirios-case-study",
+      "target": "los-lirios",
+      "label": "documents practices and observations at",
+      "explanation": "This links the observational account to its physical site without converting the place into a project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-los-lirios-case-carob",
+      "source": "los-lirios-case-study",
+      "target": "carob",
+      "label": "documents carob practice",
+      "explanation": "The case concerns carob management or observed vegetation. It does not establish a universal ecological or cultivation rule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-los-lirios-grafting",
+      "source": "los-lirios-case-study",
+      "target": "grafting",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-los-lirios-carob-cultivars",
+      "source": "los-lirios-case-study",
+      "target": "carob-cultivars",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-los-lirios-carob-pollination",
+      "source": "los-lirios-case-study",
+      "target": "carob-pollination",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-los-lirios-maintenance-irrigation",
+      "source": "los-lirios-case-study",
+      "target": "maintenance-irrigation",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-triguero-case-location",
+      "source": "el-triguero-case-study",
+      "target": "el-triguero",
+      "label": "documents practices and observations at",
+      "explanation": "This links the observational account to its physical site without converting the place into a project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-triguero-case-carob",
+      "source": "el-triguero-case-study",
+      "target": "carob",
+      "label": "documents carob practice",
+      "explanation": "The case concerns carob management or observed vegetation. It does not establish a universal ecological or cultivation rule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-triguero-manual-planting",
+      "source": "el-triguero-case-study",
+      "target": "manual-planting",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-triguero-planting-holes",
+      "source": "el-triguero-case-study",
+      "target": "planting-holes",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-triguero-tree-shelters",
+      "source": "el-triguero-case-study",
+      "target": "tree-shelters",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-triguero-grafting",
+      "source": "el-triguero-case-study",
+      "target": "grafting",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-triguero-support-irrigation",
+      "source": "el-triguero-case-study",
+      "target": "support-irrigation",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-triguero-soil-depth",
+      "source": "el-triguero-case-study",
+      "target": "soil-depth",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-buenavista-case-location",
+      "source": "buenavista-case-study",
+      "target": "buenavista",
+      "label": "documents practices and observations at",
+      "explanation": "This links the observational account to its physical site without converting the place into a project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-buenavista-case-carob",
+      "source": "buenavista-case-study",
+      "target": "carob",
+      "label": "documents carob practice",
+      "explanation": "The case concerns carob management or observed vegetation. It does not establish a universal ecological or cultivation rule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-buenavista-planting-holes",
+      "source": "buenavista-case-study",
+      "target": "planting-holes",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-buenavista-grafting",
+      "source": "buenavista-case-study",
+      "target": "grafting",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-buenavista-carob-cultivars",
+      "source": "buenavista-case-study",
+      "target": "carob-cultivars",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-buenavista-carob-pollination",
+      "source": "buenavista-case-study",
+      "target": "carob-pollination",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-buenavista-establishment-water",
+      "source": "buenavista-case-study",
+      "target": "establishment-water",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "Buenavista: intensive cultivation case and site context",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "Buenavista: phased planting and soil preparation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Buenavista: watering, grafting and unmeasured production",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-las-labores-case-location",
+      "source": "las-labores-case-study",
+      "target": "las-labores",
+      "label": "documents practices and observations at",
+      "explanation": "This links the observational account to its physical site without converting the place into a project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-las-labores-case-carob",
+      "source": "las-labores-case-study",
+      "target": "carob",
+      "label": "documents carob practice",
+      "explanation": "The case concerns carob management or observed vegetation. It does not establish a universal ecological or cultivation rule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-las-labores-manual-planting",
+      "source": "las-labores-case-study",
+      "target": "manual-planting",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-las-labores-planting-holes",
+      "source": "las-labores-case-study",
+      "target": "planting-holes",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-las-labores-tree-shelters",
+      "source": "las-labores-case-study",
+      "target": "tree-shelters",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-las-labores-grafting",
+      "source": "las-labores-case-study",
+      "target": "grafting",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-las-labores-drip-irrigation",
+      "source": "las-labores-case-study",
+      "target": "drip-irrigation",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-las-labores-soil-depth",
+      "source": "las-labores-case-study",
+      "target": "soil-depth",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Las Labores: restoration case and site limitations",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-rano-case-location",
+      "source": "el-rano-case-study",
+      "target": "el-rano",
+      "label": "documents practices and observations at",
+      "explanation": "This links the observational account to its physical site without converting the place into a project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "El Rano: Ubrique location, management and conflicting rainfall descriptions",
+          "label": "El Rano: Ubrique location, management and conflicting rainfall descriptions"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "El Rano: observed adult stand and fruit comparison",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-rano-case-carob",
+      "source": "el-rano-case-study",
+      "target": "carob",
+      "label": "documents carob practice",
+      "explanation": "The case concerns carob management or observed vegetation. It does not establish a universal ecological or cultivation rule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "El Rano: Ubrique location, management and conflicting rainfall descriptions",
+          "label": "El Rano: Ubrique location, management and conflicting rainfall descriptions"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "El Rano: observed adult stand and fruit comparison",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-rano-grafting",
+      "source": "el-rano-case-study",
+      "target": "grafting",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "El Rano: Ubrique location, management and conflicting rainfall descriptions",
+          "label": "El Rano: Ubrique location, management and conflicting rainfall descriptions"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "El Rano: observed adult stand and fruit comparison",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-el-rano-carob-cultivars",
+      "source": "el-rano-case-study",
+      "target": "carob-cultivars",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "El Rano: Ubrique location, management and conflicting rainfall descriptions",
+          "label": "El Rano: Ubrique location, management and conflicting rainfall descriptions"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "El Rano: observed adult stand and fruit comparison",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-alcantarilla-case-location",
+      "source": "la-alcantarilla-case-study",
+      "target": "la-alcantarilla",
+      "label": "documents practices and observations at",
+      "explanation": "This links the observational account to its physical site without converting the place into a project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla: site context, distinct from general MR2 guidance",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "La Alcantarilla: seminatural stand and observed shrub establishment",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-alcantarilla-case-carob",
+      "source": "la-alcantarilla-case-study",
+      "target": "carob",
+      "label": "documents carob practice",
+      "explanation": "The case concerns carob management or observed vegetation. It does not establish a universal ecological or cultivation rule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla: site context, distinct from general MR2 guidance",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "La Alcantarilla: seminatural stand and observed shrub establishment",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-alcantarilla-carob-oasification",
+      "source": "la-alcantarilla-case-study",
+      "target": "carob-oasification",
+      "label": "is presented as an MR2 case",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla: site context, distinct from general MR2 guidance",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "La Alcantarilla: seminatural stand and observed shrub establishment",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-alcantarilla-mastic",
+      "source": "la-alcantarilla-case-study",
+      "target": "mastic",
+      "label": "reports associated vegetation including",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla: site context, distinct from general MR2 guidance",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "La Alcantarilla: seminatural stand and observed shrub establishment",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-alcantarilla-wild-olive",
+      "source": "la-alcantarilla-case-study",
+      "target": "wild-olive",
+      "label": "reports associated vegetation including",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla: site context, distinct from general MR2 guidance",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "La Alcantarilla: seminatural stand and observed shrub establishment",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-alcantarilla-seasonal-watercourse",
+      "source": "la-alcantarilla-case-study",
+      "target": "seasonal-watercourse",
+      "label": "has documented practice or site context",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "La Alcantarilla: site context, distinct from general MR2 guidance",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "La Alcantarilla: seminatural stand and observed shrub establishment",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-tortola-case-location",
+      "source": "la-tortola-case-study",
+      "target": "la-tortola",
+      "label": "documents practices and observations at",
+      "explanation": "This links the observational account to its physical site without converting the place into a project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "La Tórtola: naturalized population and very low fruit production",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-tortola-case-carob",
+      "source": "la-tortola-case-study",
+      "target": "carob",
+      "label": "documents carob practice",
+      "explanation": "The case concerns carob management or observed vegetation. It does not establish a universal ecological or cultivation rule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "La Tórtola: naturalized population and very low fruit production",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-tortola-mastic",
+      "source": "la-tortola-case-study",
+      "target": "mastic",
+      "label": "reports associated vegetation including",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "La Tórtola: naturalized population and very low fruit production",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-tortola-wild-olive",
+      "source": "la-tortola-case-study",
+      "target": "wild-olive",
+      "label": "reports associated vegetation including",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "La Tórtola: naturalized population and very low fruit production",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-la-tortola-carob-oasification",
+      "source": "la-tortola-case-study",
+      "target": "carob-oasification",
+      "label": "is presented as an MR2 case",
+      "explanation": "The cited case account identifies this practice, species or setting. The relationship retains the case’s observational scope and does not imply causal benefit or a prescribed dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "La Alcantarilla: fruit observations; La Tórtola: site context",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "La Tórtola: naturalized population and very low fruit production",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ],
+      "traversable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "carob-water-huerta-los-tamayos",
+      "label": "Huerta Los Tamayos: a site-specific watering regime",
+      "text": "50–80 L/plant/event; three summer waterings during the first two years. Young 40–50 cm forest nursery stock in dehesa/olive enrichment; 40 cm holes, shelters and hay mulch. The 2000 L tank is equipment capacity, not a plant dose.",
+      "topic_ids": [
+        "huerta-los-tamayos",
+        "carob",
+        "establishment-water",
+        "carob-community",
+        "huerta-los-tamayos-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 103,
+          "locator": "Riegos / case practice",
+          "label": "Huerta Los Tamayos: planting, protection and establishment water"
+        }
+      ],
+      "aspects": {
+        "dose": "50–80 L/plant/event",
+        "source context": "Young 40–50 cm forest nursery stock in dehesa/olive enrichment; 40 cm holes, shelters and hay mulch. The 2000 L tank is equipment capacity, not a plant dose."
+      }
+    },
+    {
+      "id": "carob-water-los-lirios",
+      "label": "Los Lirios: a site-specific watering regime",
+      "text": "50 L/plant/event three times weekly from April to October. Intensive one-hectare mother-plant plot established in 2023 at Los Lirios; 2 × 4 m, 1250 trees/ha, 1 m stock. The older afforestation on the same finca received no establishment irrigation; preserve both contexts.",
+      "topic_ids": [
+        "los-lirios",
+        "carob",
+        "establishment-water",
+        "carob-community",
+        "los-lirios-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Riegos / case practice",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        }
+      ],
+      "aspects": {
+        "dose": "50 L/plant/event",
+        "source context": "Intensive one-hectare mother-plant plot established in 2023 at Los Lirios; 2 × 4 m, 1250 trees/ha, 1 m stock. The older afforestation on the same finca received no establishment irrigation; preserve both contexts."
+      }
+    },
+    {
+      "id": "carob-water-el-triguero",
+      "label": "El Triguero: a site-specific watering regime",
+      "text": "50 L/plant/event, monthly emergency watering. MP3 extensive planting at Carmona in autumn 2023; 1 m plants, 4 × 8 m spacing, 312 trees/ha, 30 ha, soil depth <50 cm. Calendar months and duration of this emergency regime are not specified.",
+      "topic_ids": [
+        "el-triguero",
+        "carob",
+        "establishment-water",
+        "carob-community",
+        "el-triguero-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "Riegos / case practice",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        }
+      ],
+      "aspects": {
+        "dose": "50 L/plant/event",
+        "source context": "MP3 extensive planting at Carmona in autumn 2023; 1 m plants, 4 × 8 m spacing, 312 trees/ha, 30 ha, soil depth <50 cm. Calendar months and duration of this emergency regime are not specified."
+      }
+    },
+    {
+      "id": "carob-buenavista-context",
+      "label": "Buenavista: intensive production differs from restoration",
+      "text": "The case in Posadas has rainfall 600–800 mm/year and deeper soils, uses 1 m cubic holes with a 50% cured-cow-manure mixture, and phases planted in autumn 2022/2023. Selected cultivars include Sayalonga, Alexia, P14 and P17, with 10% of the two hermaphrodite cultivars for pollination. Production was not yet measured; the source anticipates 3–4 years. These practices are not recommendations for Almería restoration.",
+      "topic_ids": [
+        "buenavista",
+        "carob",
+        "grafting",
+        "carob-pollination",
+        "carob-cultivars",
+        "buenavista-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 121,
+          "locator": "MP4 case and continuation",
+          "label": "Buenavista: intensive cultivation case and site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 122,
+          "locator": "MP4 case and continuation",
+          "label": "Buenavista: phased planting and soil preparation"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "MP4 case and continuation",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ]
+    },
+    {
+      "id": "carob-water-buenavista",
+      "label": "Buenavista: a site-specific watering regime",
+      "text": "100 L/plant/event every 15 days during the first two summers. MP4 intensive phased planting at Posadas, Córdoba; 10 × 6 m, 166 trees/ha; stock and cultivars differ by phase. This is not MR1 or an Almería site.",
+      "topic_ids": [
+        "buenavista",
+        "carob",
+        "establishment-water",
+        "carob-community",
+        "buenavista-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 123,
+          "locator": "Riegos / case practice",
+          "label": "Buenavista: watering, grafting and unmeasured production"
+        }
+      ],
+      "aspects": {
+        "dose": "100 L/plant/event",
+        "source context": "MP4 intensive phased planting at Posadas, Córdoba; 10 × 6 m, 166 trees/ha; stock and cultivars differ by phase. This is not MR1 or an Almería site."
+      }
+    },
+    {
+      "id": "carob-labores-context",
+      "label": "Las Labores: dryland crops and a restoration transition",
+      "text": "Las Labores (Albox) has 200–400 mm annual rainfall, Mediterranean IV1 climate, coldest-month minimum 2–4°C, warmest-month maximum 32–36°C, annual mean 17–19°C, evapotranspiration 900–1000 mm/year, shallow calcareous soils and rocky outcrops. The landscape is dominated by dryland woody crops. Carob was planted in 2010 at 6 × 6 m in areas of dead almond trees, as almond and olive productivity declined.",
+      "topic_ids": [
+        "las-labores",
+        "albox",
+        "almeria",
+        "carob-restoration-mr1",
+        "almond",
+        "olive",
+        "soil-depth",
+        "las-labores-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 126,
+          "locator": "Environmental characterization, Table 5.15 and Actuaciones",
+          "label": "Las Labores: restoration case and site limitations"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Environmental characterization, Table 5.15 and Actuaciones",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        }
+      ],
+      "place_ids": [
+        "las-labores",
+        "albox",
+        "almeria"
+      ]
+    },
+    {
+      "id": "carob-labores-establishment",
+      "label": "Las Labores: planting, protection and grafting",
+      "text": "The case uses nursery plants about 1 m high, manual 40 × 40 × 40 cm holes, perforated 60 cm shelters, tutors, formative pruning and tractor cultivation every three years. It reports grafting local hermaphrodite cultivars in autumn 2024. These are case practices, distinct from the MR1 summary table.",
+      "topic_ids": [
+        "las-labores",
+        "carob",
+        "manual-planting",
+        "planting-holes",
+        "tree-shelters",
+        "grafting",
+        "carob-cultivars",
+        "las-labores-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Actuaciones bullets",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        }
+      ]
+    },
+    {
+      "id": "carob-labores-outcomes",
+      "label": "Las Labores: reported establishment and fruit observations",
+      "text": "The manual reports low losses, good condition, heights 3–5 m and normal diameters 10–25 cm, with alternate bearing. Table 5.16 (summer 2023) gives pod length 12.40 cm, pod weight 13.56 g, seed yield 16.39% and 100-seed weight 17.73 g. Its claim about production four years after grafting conflicts with the reported autumn-2024 grafting and harvest chronology; retain that unresolved.",
+      "topic_ids": [
+        "las-labores",
+        "carob",
+        "grafting",
+        "carob-cultivars",
+        "las-labores-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Estado actual and Table 5.16",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Estado actual and Table 5.16",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2023",
+          "meaning": "reported harvest"
+        }
+      ]
+    },
+    {
+      "id": "carob-labores-water",
+      "label": "Las Labores: 400 litres is a seasonal total",
+      "text": "Deficit drip irrigation is reported from May to September, with a total of 400 L/plant over that period. The number of events and dose per event are not specified. The seasonal total must not be imported as 400 L/plant/event.",
+      "topic_ids": [
+        "las-labores",
+        "carob",
+        "carob-community-almeria",
+        "las-labores-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Riegos bullet",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        }
+      ],
+      "aspects": {
+        "source amount": "400 L/plant over May–September",
+        "event dose": "Not specified in this source"
+      }
+    },
+    {
+      "id": "carob-elrano-context",
+      "label": "El Rano: historical management and inconsistent rainfall",
+      "text": "El Rano (Ubrique, Cádiz) is a longstanding livestock finca with carob, wild olive and family crops. Accessible carobs are grafted and cleared; difficult areas remain seminatural. The narrative gives 800–1200 mm/year rainfall, while Table 5.17 gives 1200–1600. Do not silently choose one or classify it as an Almería case.",
+      "topic_ids": [
+        "el-rano",
+        "ubrique",
+        "cadiz",
+        "carob",
+        "grafting",
+        "el-rano-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "Environmental characterization, management and Table 5.17",
+          "label": "El Rano: Ubrique location, management and conflicting rainfall descriptions"
+        }
+      ]
+    },
+    {
+      "id": "eco-el-rano-comparison",
+      "label": "Grafted/natural fruit at El Rano, summer 2023",
+      "text": "Table 5.18 gives grafted versus natural fruit: pod length 15.6 vs 9.8 cm; pod weight 7.74 vs 6.56 g; seed yield 14.68 vs 23.95%;100-seed weight 18.09 vs 11.22 g. These are farm/harvest observations, not universal benefits or a controlled causal result.",
+      "topic_ids": [
+        "carob",
+        "el-rano",
+        "grafting",
+        "carob-cultivars",
+        "el-rano-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Table5.18, visually checked",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2023",
+          "meaning": "harvest"
+        }
+      ],
+      "aspects": {
+        "pod length": "grafted 15.6 cm; natural 9.8 cm",
+        "pod weight": "grafted 7.74 g; natural 6.56 g",
+        "seed yield": "grafted 14.68%; natural 23.95%",
+        "100-seed weight": "grafted 18.09 g; natural 11.22 g"
+      }
+    },
+    {
+      "id": "eco-el-rano-mixture",
+      "label": "Almond and olive in an observed mixture",
+      "text": "Figure 5.40 describes carob mixed with almond and olive in easier-to-cultivate parts of El Rano. Harder-to-cultivate areas are dominated by adult carob. The caption does not establish a growth benefit from mixing.",
+      "topic_ids": [
+        "carob",
+        "el-rano",
+        "almond",
+        "olive",
+        "el-rano-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 130,
+          "locator": "Figure5.40 caption",
+          "label": "El Rano: observed adult stand and fruit comparison"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2024",
+          "meaning": "figure attribution"
+        }
+      ]
+    },
+    {
+      "id": "carob-alcantarilla-fruit",
+      "label": "La Alcantarilla: fruit table and climatic context",
+      "text": "Table 5.20 gives rainfall 200–300 mm/year, minimum temperature of the coldest month >6°C, maximum of warmest month 28–32°C, mean annual temperature 17–19°C and evapotranspiration 900–1000 mm/year. Table 5.21 (summers 2022/2023) gives pod length 14.2 cm, pod weight 8.66 g, seed yield 16.39% and 100-seed weight 13.90 g; sample size is not supplied.",
+      "topic_ids": [
+        "la-alcantarilla",
+        "carob",
+        "carob-cultivars",
+        "la-alcantarilla-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Tables 5.20 and 5.21",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Tables 5.20 and 5.21",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2022",
+          "meaning": "reported harvest"
+        },
+        {
+          "value": "2023",
+          "meaning": "reported harvest"
+        }
+      ]
+    },
+    {
+      "id": "carob-alcantarilla-observed",
+      "label": "La Alcantarilla: carob facilitates observed shrub establishment",
+      "text": "A seminatural carob population around houses and a stream has expanded irregularly along paths, irrigation channels and streams. Lentisco and acebuche have established under carob protection. Care is limited mainly to fruit collection. Alternate bearing is moderate, but crops are small or absent in most years. This is not a quantified planting trial.",
+      "topic_ids": [
+        "la-alcantarilla",
+        "carob-community-almeria",
+        "carob",
+        "mastic",
+        "wild-olive",
+        "seasonal-watercourse",
+        "la-alcantarilla-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 135,
+          "locator": "Actuaciones and Estado actual",
+          "label": "La Alcantarilla: seminatural stand and observed shrub establishment"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Actuaciones and Estado actual",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        }
+      ]
+    },
+    {
+      "id": "eco-alcantarilla",
+      "label": "La Alcantarilla connects MR 2 to Mojácar",
+      "text": "The selected page introduces La Alcantarilla in Mojácar, Almería, with mean annual rainfall 200–300 mm. Potential vegetation includes mastic/kermes-oak/wild-olive scrub and jujube thorn scrub. The current landscape includes esparto and lower-area greenhouse crops.",
+      "topic_ids": [
+        "la-alcantarilla",
+        "mojacar",
+        "almeria",
+        "carob-oasification",
+        "mastic-scrub",
+        "kermes-oak-scrub",
+        "wild-olive-scrub",
+        "jujube-thorn-scrub",
+        "esparto-grassland",
+        "la-alcantarilla-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 134,
+          "locator": "Parcela demostrativa MR2, initial characterization",
+          "label": "La Alcantarilla: site context, distinct from general MR2 guidance"
+        }
+      ],
+      "place_ids": [
+        "la-alcantarilla",
+        "mojacar",
+        "almeria"
+      ],
+      "aspects": {
+        "mean annual rainfall": "200–300 mm/year"
+      }
+    },
+    {
+      "id": "carob-tortola-context",
+      "label": "La Tórtola: potential scrub differs from the present landscape",
+      "text": "La Tórtola (Níjar) has Mediterranean IV3 climate, rainfall 200–300 mm/year and potential lentiscares/jujube thorn scrub, while espartales dominate the current surrounding landscape. Table 5.22 gives coldest-month minimum >6°C, warmest-month maximum 28–32°C, annual mean 17–19°C and evapotranspiration 900–1000 mm/year.",
+      "topic_ids": [
+        "la-tortola",
+        "nijar",
+        "almeria",
+        "mastic-scrub",
+        "jujube-thorn-scrub",
+        "esparto-grassland",
+        "la-tortola-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 136,
+          "locator": "Environmental characterization and Table 5.22",
+          "label": "La Alcantarilla: fruit observations; La Tórtola: site context"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Environmental characterization and Table 5.22",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ],
+      "place_ids": [
+        "la-tortola",
+        "nijar",
+        "almeria"
+      ]
+    },
+    {
+      "id": "carob-tortola-observed",
+      "label": "La Tórtola: naturalized vegetation and very low production",
+      "text": "Abandonment of earlier agricultural and livestock activity allowed lentisco and acebuche to establish with carob, creating more luxuriant vegetation than surrounding areas. The population is described as fully naturalized without cultural treatments. Trees range from about 1 to 10 m, with variable diameters, very high alternate bearing and practically no production. Irrigation quantity/frequency is not specified; do not turn absence of a stated regime into zero.",
+      "topic_ids": [
+        "la-tortola",
+        "carob",
+        "carob-community-almeria",
+        "mastic",
+        "wild-olive",
+        "la-tortola-case-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 137,
+          "locator": "Actuaciones and Estado actual",
+          "label": "La Tórtola: naturalized population and very low fruit production"
+        }
+      ]
+    },
+    {
+      "id": "profiles-tamayos-mature-stand",
+      "label": "Huerta Los Tamayos: mature stand with alternate bearing",
+      "text": "The source’s 2024 account describes mature carob integrated with older holm oaks after enrichment plantings in 1992 and five years later. Grafting with local cultivars and minimal maintenance coexist with alternate bearing. The reported state is observational, not a controlled survival comparison or attribution to one intervention.",
+      "topic_ids": [
+        "huerta-los-tamayos-case-study",
+        "huerta-los-tamayos",
+        "carob"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 102,
+          "locator": "Huerta Los Tamayos: diversification and planting history",
+          "label": "Huerta Los Tamayos: diversification and planting history"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 104,
+          "locator": "Huerta Los Tamayos: observed 2024 stand and alternate bearing",
+          "label": "Huerta Los Tamayos: observed 2024 stand and alternate bearing"
+        }
+      ]
+    },
+    {
+      "id": "profiles-lirios-distinct-phases",
+      "label": "Los Lirios: older afforestation and the mother-plant plot differ",
+      "text": "The older plantation received no establishment irrigation, whereas the separate 2023 mother-plant plot was intensively irrigated. The account reports no losses and good growth for the young plot at its observation point. Expected later production from grafting is a forecast. These phases do not provide an otherwise controlled irrigation comparison.",
+      "topic_ids": [
+        "los-lirios-case-study",
+        "los-lirios",
+        "carob"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 112,
+          "locator": "Los Lirios: separate older planting and irrigated mother-plant plot",
+          "label": "Los Lirios: separate older planting and irrigated mother-plant plot"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 113,
+          "locator": "Los Lirios: observed stands and phase-specific production outlook",
+          "label": "Los Lirios: observed stands and phase-specific production outlook"
+        }
+      ]
+    },
+    {
+      "id": "profiles-triguero-development",
+      "label": "El Triguero: developing plantation with planned grafting",
+      "text": "The source describes autumn-2023 establishment and development for grafting, expected in autumn 2024. It does not report a measured production result or quantified survival comparison in these case passages. A forecast date must not be treated as evidence that the work subsequently occurred.",
+      "topic_ids": [
+        "el-triguero-case-study",
+        "el-triguero",
+        "carob"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 117,
+          "locator": "El Triguero: site, autumn-2023 planting and emergency watering",
+          "label": "El Triguero: site, autumn-2023 planting and emergency watering"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 118,
+          "locator": "El Triguero: planned grafting and developing plantation",
+          "label": "El Triguero: planned grafting and developing plantation"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "profiles-case-evidence-limits",
+      "text": "The eight carob cases are observational accounts. Controlled treatment comparisons, complete monitoring histories and some event/season denominators are missing. Las Labores has an unresolved graft/harvest chronology and El Rano has conflicting rainfall ranges. Retain these limits and do not populate watering plans from the summaries.",
+      "topic_ids": [
+        "huerta-los-tamayos-case-study",
+        "los-lirios-case-study",
+        "el-triguero-case-study",
+        "buenavista-case-study",
+        "las-labores-case-study",
+        "el-rano-case-study",
+        "la-alcantarilla-case-study",
+        "la-tortola-case-study"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "page": 127,
+          "locator": "Las Labores: planting, seasonal drip water and grafting date",
+          "label": "Las Labores: planting, seasonal drip water and grafting date"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 128,
+          "locator": "Las Labores: reported establishment and inconsistent production chronology",
+          "label": "Las Labores: reported establishment and inconsistent production chronology"
+        },
+        {
+          "source_id": "FOREST-002",
+          "page": 129,
+          "locator": "El Rano: Ubrique location, management and conflicting rainfall descriptions",
+          "label": "El Rano: Ubrique location, management and conflicting rainfall descriptions"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "FOREST-002",
+      "page": 104,
+      "status": "inspected",
+      "note": "Huerta Los Tamayos: observed 2024 stand and alternate bearing; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 113,
+      "status": "inspected",
+      "note": "Los Lirios: observed stands and phase-specific production outlook; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 118,
+      "status": "inspected",
+      "note": "El Triguero: planned grafting and developing plantation; project/case summary review of the exact registered edition."
+    }
+  ]
+}

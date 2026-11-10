@@ -1,0 +1,296 @@
+{
+  "batch_id": "project-profiles-2026-11-10-reviewed-04-river-projects",
+  "summary": "Andarax and Níjar project summaries and delivery context, retaining procurement/assignment status and separating obligations from evaluated outcomes.",
+  "base_revision": 23,
+  "topics": [
+    {
+      "id": "andarax-restoration-2023",
+      "label": "Río Andarax restoration works (2023 procurement)",
+      "kind": "project",
+      "domain": "ecosystem",
+      "description": "A proposed hydrological and ecological restoration works contract for the Río Andarax, covering Alhabia, Santa Fe de Mondújar, Gádor, Rioja and Benahadux. The June 2023 justification combines flood-risk reduction for neighbouring agricultural land with recovery of native river habitats and natural/ethnographic heritage. Measures include restoring conveyance, native vegetation and traditional balates, transverse structures and boqueras, with interpretive access. The document gives an 18-month execution period, a 106.5 ha project scope and a tender budget of EUR 3,416,081.25 including VAT. The October document evaluates bidders’ technical submissions; neither source certifies completed works or ecological outcomes. Measured restoration outcomes and long-term performance are not reported in the reviewed material.",
+      "aliases": [
+        "CONTR 2023 152183",
+        "Restauración del río Andarax"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "locator": "Datos del expediente",
+          "label": "Andarax: works purpose, municipalities, duration and tender budget"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "locator": "2. Objeto del contrato",
+          "label": "Andarax: flood-risk reduction and native fluvial restoration"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "locator": "5. Hitos y objetivos",
+          "label": "Andarax: 106.5 ha scope and monthly progress reporting"
+        },
+        {
+          "source_id": "KGB-SRC-0015",
+          "page": 1,
+          "locator": "1. Antecedentes",
+          "label": "Andarax: tender initiation and evaluation chronology"
+        }
+      ]
+    },
+    {
+      "id": "nijar-fluvial-restoration",
+      "label": "Almería and Campo de Níjar fluvial restoration",
+      "kind": "project",
+      "domain": "ecosystem",
+      "description": "A formally assigned restoration works project for 56 ramblas in three sectors: Almería, Campo de Níjar–Artal and Cabo de Gata. The December 2022 assignment to TRAGSA combines removal of agro-waste/construction debris and invasive exotic vegetation, conveyance improvements and bank defence with native riparian planting of certified provenance. It also provides for an interpreted public river path on lower Rambla Morales in the Cabo de Gata–Níjar protected area. The maximum assigned budget is EUR 3,866,930.52, with an initial 24-month period and PRTR C4.I3 financing. These records establish an assignment and delivery obligations, not completed hectares or measured ecological recovery. Separate 2023 supervision and 2024 plant-supply documents retain their own roles and dates. Measured restoration outcomes and long-term performance are not reported in the reviewed material.",
+      "aliases": [
+        "6/2022/ES",
+        "Restauración de ecosistemas fluviales semiáridos de Almería y Campo de Níjar"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 8,
+          "locator": "Resuelvo 1–3",
+          "label": "Níjar works: assignment and 56-ramblas scope"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 9,
+          "locator": "Resuelvo 3–7",
+          "label": "Níjar works: native planting, Morales path and budget"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 10,
+          "locator": "Financiación; Resuelvo 8",
+          "label": "Níjar works: PRTR financing and monthly certification"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 11,
+          "locator": "Resuelvo 10–11",
+          "label": "Níjar works: initial 24-month period and direction"
+        }
+      ]
+    },
+    {
+      "id": "nijar-environmental-supervision",
+      "label": "Níjar works supervision and environmental surveillance",
+      "kind": "activity",
+      "domain": "technology",
+      "description": "The June 2023 TRAGSATEC assignment separately covers assistance to works direction, health/safety coordination and environmental surveillance for the Almería/Campo de Níjar project. Surveillance must check implementation and effectiveness of protective/corrective measures, investigate unsatisfactory performance, detect unanticipated impacts and report to works direction and the environmental authority. The assignment budget is EUR 151,606.30. Its initial 24-month period starts with the works and can extend through completion and required documentation. Monthly certification and PRTR milestone reports are delivery controls; this document does not provide the monitoring results. Its inconsistent subcontracting statements remain unresolved. This remains a delivery activity within the restoration project, rather than an independent ecological trial.",
+      "aliases": [
+        "1/2023/ES"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "monitoring",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 5,
+          "locator": "Resuelvo 3",
+          "label": "Níjar: purpose of separate supervision assignment"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 6,
+          "locator": "Programa de Vigilancia Ambiental",
+          "label": "Environmental surveillance: protective and corrective measures"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 7,
+          "locator": "Programa de Vigilancia Ambiental continuation",
+          "label": "Environmental surveillance: unexpected impacts and reporting"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 8,
+          "locator": "Resuelvo 5",
+          "label": "Supervision: EUR 151,606.30 maximum budget"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 13,
+          "locator": "Resuelvo 10–11",
+          "label": "Supervision: duration and subcontracting statement"
+        }
+      ]
+    },
+    {
+      "id": "nijar-native-plant-supply",
+      "label": "Campo de Níjar native plant supply roster",
+      "kind": "activity",
+      "domain": "ecosystem",
+      "description": "The 8 August 2024 TSA0078436 specification requests plants for planting and replacement of failures in the semi-arid fluvial-restoration works. Two lots list 22 named taxa in 23 supply rows, including two container sizes for Populus alba. Carob appears as 1,376 units in 1 L nursery containers; jujube as 9,407 units in 1 L containers. These are requested supply quantities and nursery stock volumes, not confirmed installed plants, an ecological association, reservoir capacity or irrigation doses. Lot 2 is expressly described as native species of the Levante Almeriense. The contract imposes provenance, plant health, root architecture and delivery acceptance requirements. Source spellings and uncertain taxonomy remain visible; no working community or plant count is changed. This remains a delivery activity within the restoration project, rather than an independent ecological trial.",
+      "aliases": [
+        "TSA0078436"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "locator": "1. Objeto; Lote 1",
+          "label": "Plant supply: purpose and first-lot species/counts"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "locator": "Lotes 1–2",
+          "label": "Plant supply: remaining lot 1 and Levante Almeriense lot 2"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 8,
+          "locator": "Madrid, 8 de agosto de 2024",
+          "label": "Plant supply: specification date and no variants"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:andarax-project",
+      "label": "Río Andarax restoration · Project",
+      "parent_id": "browse:local-restoration-projects",
+      "anchor_topic_id": "andarax-restoration-2023",
+      "user_created": false,
+      "members": [],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Read About for purpose, interventions, documentary status and evidence limits. Open the existing procurement, supervision or plant-delivery records for their distinct obligations and dates. These documents do not certify completed ecological outcomes.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "locator": "Datos del expediente",
+          "label": "Andarax: works purpose, municipalities, duration and tender budget"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "locator": "2. Objeto del contrato",
+          "label": "Andarax: flood-risk reduction and native fluvial restoration"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "locator": "5. Hitos y objetivos",
+          "label": "Andarax: 106.5 ha scope and monthly progress reporting"
+        },
+        {
+          "source_id": "KGB-SRC-0015",
+          "page": 1,
+          "locator": "1. Antecedentes",
+          "label": "Andarax: tender initiation and evaluation chronology"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:nijar-delivery",
+      "label": "Almería and Campo de Níjar restoration · Project",
+      "parent_id": "browse:local-restoration-projects",
+      "anchor_topic_id": "nijar-fluvial-restoration",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "nijar-native-plant-supply",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nijar-stock-provenance",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nijar-stock-quality",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nijar-environmental-supervision",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep requested quantities and nursery container volumes distinct from planted counts and irrigation. Preserve named taxa without uncertain merges; source procurement roster is not an ecological association or working-community decision.",
+      "description": "Read About for purpose, interventions, documentary status and evidence limits. Open the existing procurement, supervision or plant-delivery records for their distinct obligations and dates. These documents do not certify completed ecological outcomes.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "locator": "Níjar supply: first-lot plants and stock",
+          "label": "Níjar supply: first-lot plants and stock"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 2,
+          "locator": "Níjar supply: second lot and provenance",
+          "label": "Níjar supply: second lot and provenance"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 6,
+          "locator": "Níjar: quality and environmental surveillance",
+          "label": "Níjar: quality and environmental surveillance"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 8,
+          "locator": "Resuelvo 1–3",
+          "label": "Níjar works: assignment and 56-ramblas scope"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 9,
+          "locator": "Resuelvo 3–7",
+          "label": "Níjar works: native planting, Morales path and budget"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 10,
+          "locator": "Financiación; Resuelvo 8",
+          "label": "Níjar works: PRTR financing and monthly certification"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 11,
+          "locator": "Resuelvo 10–11",
+          "label": "Níjar works: initial 24-month period and direction"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ]
+}

@@ -1,0 +1,721 @@
+{
+  "batch_id": "project-profiles-2026-11-10-reviewed-02-citrus",
+  "summary": "Source-reviewed Hiroshima project, citrus study and automatic/manual trial summaries, preserving water-only evidence and documented hierarchy.",
+  "base_revision": 21,
+  "topics": [
+    {
+      "id": "hiroshima-smart-agriculture",
+      "label": "2023 Hiroshima Smart Agriculture Project",
+      "kind": "project",
+      "domain": "technology",
+      "description": "The 2023 Hiroshima Smart Agriculture Project is the acknowledged parent framework for the recorded citrus drone research in Hiroshima Prefecture. The paper names its purpose as construction of an efficient integrated system for large-scale management of lemon and other crops. Its documented connection here is the water-spraying study, which tested aircraft control and canopy deposition.\n\nThe acknowledgment establishes that project relationship; it does not describe the parent project’s complete work programme, administration, budget, other trials or overall results. Those details are not reported in the reviewed material. Results from the citrus study remain attached to that study and its two trial variants rather than being presented as an evaluation of the entire parent project. This record describes the framework acknowledged in a paper published in March 2024 and does not assess present project activity or funding eligibility.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Acknowledgments",
+          "label": "Citrus study: conclusions and Hiroshima project acknowledgment"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2023",
+          "meaning": "project year"
+        }
+      ],
+      "place_ids": [
+        "hiroshima"
+      ]
+    },
+    {
+      "id": "citrus-spray-trial",
+      "label": "Citrus drone spraying experiment",
+      "kind": "study",
+      "domain": "technology",
+      "description": "A water-only citrus canopy-spraying study evaluated a drone supplied continuously with electricity and water from the ground. It addressed the need for longer, higher-pressure orchard spraying and tested RTK-GNSS positioning with a propeller-tilt mechanism to counter spray recoil. The research was carried out under the 2023 Hiroshima Smart Agriculture Project, with an automatic trial at Innoshima on 19 September and a manual trial at Ikuchijima on 20 September 2023.\n\nThe authors reported stable attitude and accurate position control during spraying. The automatic flight followed its planned route; the manual trial used a crawler vehicle to carry the hose and cable, and water-sensitive paper showed good spray adhesion. These are results for aircraft operation and canopy deposition, not measurements of root-zone wetting, establishment irrigation, carob survival or labour savings. Takeoff and landing remained manual in the automatic trial to avoid entanglement. Published on 21 March 2024, the paper presents pesticide testing and equipment refinement as future work, without establishing later outcomes.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment",
+          "label": "Citrus study: conclusions and Hiroshima project acknowledgment"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus study: purpose, equipment and publication date",
+          "label": "Citrus study: purpose, equipment and publication date"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Ikuchijima: manual spraying, crawler support and deposition evaluation",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2023-09-19",
+          "meaning": "automatic experiment"
+        },
+        {
+          "value": "2023-09-20",
+          "meaning": "manual experiment"
+        },
+        {
+          "value": "2024-03-21",
+          "meaning": "publication"
+        }
+      ],
+      "place_ids": [
+        "innoshima",
+        "ikuchijima"
+      ]
+    },
+    {
+      "id": "innoshima-autopilot-trial",
+      "label": "Innoshima automatic spraying trial",
+      "kind": "trial",
+      "domain": "technology",
+      "description": "The automatic-flight variant of the citrus spraying study was conducted with Sanwa Farm on sloping orchard terrain on Innoshima Island, Hiroshima Prefecture, on 19 September 2023. The wire-supplied drone first took off and moved to the start point under manual PosHold control, then followed an automatic route while spraying water. Landing was also manual because hoses and cables could catch the fence between the operating areas.\n\nThe paper reports good agreement between the planned and actual automatic-flight path, with pitch kept near horizontal during spraying through RTK-GNSS positioning and recoil cancellation. This demonstrates the reported flight-control behaviour in that test; it does not demonstrate fully autonomous operation from takeoff to landing. Water-sensitive-paper deposition results are described for the separate manual trial, and no automatic-trial tree-survival or irrigation-efficiency outcome is reported. Pesticide testing and later operational performance are not established by the reviewed paper.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2023-09-19",
+          "meaning": "experiment"
+        }
+      ],
+      "place_ids": [
+        "innoshima"
+      ]
+    },
+    {
+      "id": "ikuchijima-manual-trial",
+      "label": "Ikuchijima manual spraying trial",
+      "kind": "trial",
+      "domain": "technology",
+      "description": "The manual-flight variant of the citrus spraying study took place with Harada Farm on Ikuchijima Island on 20 September 2023. Takeoff, spraying flight and landing used manual piloting in PosHold mode. A crawler UGV carried the power cable and water hose and was designed to follow the drone when separation exceeded five metres. The experiment tested whether stable water spraying could reach citrus canopies while the tilt mechanism countered recoil.\n\nThe paper reports good pitch tracking and recoil cancellation. Water-sensitive paper placed within the trees recorded deposition, including several adhesion indices of 10; the authors concluded that the water adhered well. This is local canopy-deposition evidence, not proof of uniform coverage of every tree, pesticide effectiveness, root-zone delivery or establishment survival. The article also uses the spelling Ikuchishima. Results belong to this September 2023 trial, published in March 2024; pesticide experiments and later equipment refinement remained future work in that source.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus study: conclusions and Hiroshima project acknowledgment",
+          "label": "Citrus study: conclusions and Hiroshima project acknowledgment"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2023-09-20",
+          "meaning": "experiment"
+        }
+      ],
+      "place_ids": [
+        "ikuchijima"
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:hiroshima-smart-agriculture-project",
+      "label": "Hiroshima Smart Agriculture · Project",
+      "parent_id": "browse:drone-projects",
+      "anchor_topic_id": "hiroshima-smart-agriculture",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "citrus-spray-trial",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for the acknowledged parent project and the limits of the available information. Open its documented citrus study for the actual experiments and results; the paper does not evaluate the whole framework.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus study: conclusions and Hiroshima project acknowledgment",
+          "label": "Citrus study: conclusions and Hiroshima project acknowledgment"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:drone-projects",
+      "label": "Projects and trials",
+      "parent_id": "technology:drones",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "hiroshima-smart-agriculture",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Browse the existing records by their documented role. Each topic retains its source wording, evidence, dates and applicability; these navigation categories add no scientific or eligibility claim.",
+      "source_refs": [],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:citrus-study-framework",
+      "label": "Acknowledged research framework",
+      "parent_id": "browse:citrus-spray-study",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "hiroshima-smart-agriculture",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "The acknowledged research framework retains its recorded status. This folder does not infer funding eligibility or a grant award.",
+      "source_refs": [],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:citrus-spray-study",
+      "label": "Citrus drone spraying · Study",
+      "parent_id": "browse:hiroshima-smart-agriculture-project",
+      "anchor_topic_id": "citrus-spray-trial",
+      "user_created": false,
+      "members": [],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Read About for purpose, equipment, principal findings and limits. Open the automatic/manual trials, locations, participants, framework reference or evaluation context. Water-only spray deposition is distinct from root-zone irrigation and tree establishment.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus study: purpose, equipment and publication date",
+          "label": "Citrus study: purpose, equipment and publication date"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Ikuchijima: manual spraying, crawler support and deposition evaluation",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus study: conclusions and Hiroshima project acknowledgment",
+          "label": "Citrus study: conclusions and Hiroshima project acknowledgment"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:innoshima-autopilot-trial",
+      "label": "Innoshima automatic spraying trial · Trial",
+      "parent_id": "browse:citrus-study-trials",
+      "anchor_topic_id": "innoshima-autopilot-trial",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "wire-supplied-drone",
+          "role": "shared"
+        },
+        {
+          "topic_id": "rtk-gnss",
+          "role": "shared"
+        },
+        {
+          "topic_id": "tilt-mechanism",
+          "role": "shared"
+        },
+        {
+          "topic_id": "innoshima",
+          "role": "shared"
+        },
+        {
+          "topic_id": "sanwa-farm",
+          "role": "shared"
+        },
+        {
+          "topic_id": "hose-cable-entanglement",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for the trial summary and its conditions. Shared equipment, participant and location references expose its documented context; measured results remain in the trial’s cited findings.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:ikuchijima-manual-trial",
+      "label": "Ikuchijima manual spraying trial · Trial",
+      "parent_id": "browse:citrus-study-trials",
+      "anchor_topic_id": "ikuchijima-manual-trial",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "wire-supplied-drone",
+          "role": "shared"
+        },
+        {
+          "topic_id": "rtk-gnss",
+          "role": "shared"
+        },
+        {
+          "topic_id": "tilt-mechanism",
+          "role": "shared"
+        },
+        {
+          "topic_id": "ikuchijima",
+          "role": "shared"
+        },
+        {
+          "topic_id": "harada-farm",
+          "role": "shared"
+        },
+        {
+          "topic_id": "crawler-ugv",
+          "role": "shared"
+        },
+        {
+          "topic_id": "water-sensitive-paper",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for the trial summary and its conditions. Shared equipment, participant and location references expose its documented context; measured results remain in the trial’s cited findings.",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus study: conclusions and Hiroshima project acknowledgment",
+          "label": "Citrus study: conclusions and Hiroshima project acknowledgment"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "drone-recoil-control",
+      "label": "Tilting propellers counter spray recoil",
+      "text": "Propeller surfaces tilt instead of the entire aircraft to produce horizontal thrust. The study reports stable posture and positioning during spraying.",
+      "topic_ids": [
+        "wire-supplied-drone",
+        "tilt-mechanism",
+        "rtk-gnss",
+        "citrus-spray-trial"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus watering experiment",
+          "label": "Citrus study: conclusions and Hiroshima project acknowledgment"
+        }
+      ]
+    },
+    {
+      "id": "drone-deposition-result",
+      "label": "Water-sensitive paper showed spray adhesion",
+      "text": "Paper in the trees recorded spray deposition with several adhesion indices of 10; the authors conclude water adhered well. This does not establish soil wetting, irrigation efficiency or tree survival.",
+      "topic_ids": [
+        "water-sensitive-paper",
+        "ikuchijima-manual-trial",
+        "citrus",
+        "drone-water-delivery",
+        "citrus-spray-trial"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Evaluation and Figures10–12",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Table2 and Conclusion",
+          "label": "Citrus study: conclusions and Hiroshima project acknowledgment"
+        }
+      ]
+    },
+    {
+      "id": "drone-auto-date-place",
+      "label": "Automatic trial: Innoshima,19 September 2023",
+      "text": "With Sanwa Farm the aircraft followed an automatic route on sloping orchard terrain; takeoff/landing were manual to avoid fence/hose/cable entanglement.",
+      "topic_ids": [
+        "innoshima-autopilot-trial",
+        "innoshima",
+        "sanwa-farm",
+        "hose-cable-entanglement",
+        "citrus-spray-trial"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        }
+      ],
+      "place_ids": [
+        "innoshima"
+      ],
+      "dates": [
+        {
+          "value": "2023-09-19",
+          "meaning": "experiment"
+        }
+      ]
+    },
+    {
+      "id": "drone-manual-date-place",
+      "label": "Manual trial: Ikuchijima,20 September 2023",
+      "text": "With Harada Farm, manual PosHold flight sprayed trees. A crawler UGV carried cable/hose and was designed to follow beyond 5 m separation.",
+      "topic_ids": [
+        "ikuchijima-manual-trial",
+        "ikuchijima",
+        "harada-farm",
+        "crawler-ugv",
+        "citrus-spray-trial"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Citrus watering experiment",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Citrus watering experiment",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        }
+      ],
+      "place_ids": [
+        "ikuchijima"
+      ],
+      "dates": [
+        {
+          "value": "2023-09-20",
+          "meaning": "experiment"
+        }
+      ]
+    },
+    {
+      "id": "profiles-innoshima-flight-result",
+      "label": "Innoshima: automatic route and stable spraying attitude",
+      "text": "The automatic flight trajectory agreed well with the planned route, and the paper reports pitch near horizontal during water spraying through RTK-GNSS positioning and recoil cancellation. Takeoff, positioning to the start and landing were manual. No automatic-trial tree-survival result is reported.",
+      "topic_ids": [
+        "innoshima-autopilot-trial",
+        "citrus-spray-trial"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        }
+      ]
+    },
+    {
+      "id": "profiles-ikuchijima-flight-result",
+      "label": "Ikuchijima: reported pitch tracking and recoil cancellation",
+      "text": "In manual PosHold flight, the paper reports good pitch tracking and successful spray-recoil cancellation. A crawler vehicle carried hose and cable. The separate water-sensitive-paper finding measures canopy deposition, not irrigation efficiency or tree survival.",
+      "topic_ids": [
+        "ikuchijima-manual-trial",
+        "citrus-spray-trial"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Ikuchijima: manual spraying, crawler support and deposition evaluation",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "profiles-citrus-rtk-gnss",
+      "source": "citrus-spray-trial",
+      "target": "rtk-gnss",
+      "label": "tested positioning with",
+      "explanation": "The paper explicitly describes this role in the water-only study; the method is not transferred to establishment irrigation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Citrus study: purpose, equipment and publication date",
+          "label": "Citrus study: purpose, equipment and publication date"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-citrus-tilt-mechanism",
+      "source": "citrus-spray-trial",
+      "target": "tilt-mechanism",
+      "label": "tested spray-recoil cancellation with",
+      "explanation": "The paper explicitly describes this role in the water-only study; the method is not transferred to establishment irrigation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 4,
+          "locator": "Citrus study: conclusions and Hiroshima project acknowledgment",
+          "label": "Citrus study: conclusions and Hiroshima project acknowledgment"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-citrus-water-sensitive-paper",
+      "source": "citrus-spray-trial",
+      "target": "water-sensitive-paper",
+      "label": "evaluated manual-trial deposition with",
+      "explanation": "The paper explicitly describes this role in the water-only study; the method is not transferred to establishment irrigation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Ikuchijima: manual spraying, crawler support and deposition evaluation",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-citrus-crawler-ugv",
+      "source": "citrus-spray-trial",
+      "target": "crawler-ugv",
+      "label": "used a crawler in its manual trial",
+      "explanation": "The paper explicitly describes this role in the water-only study; the method is not transferred to establishment irrigation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Ikuchijima: manual spraying, crawler support and deposition evaluation",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-innoshima-autopilot-trial-wire-supplied-drone",
+      "source": "innoshima-autopilot-trial",
+      "target": "wire-supplied-drone",
+      "label": "has documented operating context",
+      "explanation": "The cited trial section identifies this equipment, control method or operating constraint.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-innoshima-autopilot-trial-rtk-gnss",
+      "source": "innoshima-autopilot-trial",
+      "target": "rtk-gnss",
+      "label": "has documented operating context",
+      "explanation": "The cited trial section identifies this equipment, control method or operating constraint.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-innoshima-autopilot-trial-tilt-mechanism",
+      "source": "innoshima-autopilot-trial",
+      "target": "tilt-mechanism",
+      "label": "has documented operating context",
+      "explanation": "The cited trial section identifies this equipment, control method or operating constraint.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-innoshima-autopilot-trial-hose-cable-entanglement",
+      "source": "innoshima-autopilot-trial",
+      "target": "hose-cable-entanglement",
+      "label": "has documented operating context",
+      "explanation": "The cited trial section identifies this equipment, control method or operating constraint.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 2,
+          "locator": "Innoshima: automatic water spraying and flight-control results",
+          "label": "Innoshima: automatic water spraying and flight-control results"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-ikuchijima-manual-trial-wire-supplied-drone",
+      "source": "ikuchijima-manual-trial",
+      "target": "wire-supplied-drone",
+      "label": "has documented operating context",
+      "explanation": "The cited trial section identifies this equipment, control method or operating constraint.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Ikuchijima: manual spraying, crawler support and deposition evaluation",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-ikuchijima-manual-trial-tilt-mechanism",
+      "source": "ikuchijima-manual-trial",
+      "target": "tilt-mechanism",
+      "label": "has documented operating context",
+      "explanation": "The cited trial section identifies this equipment, control method or operating constraint.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Ikuchijima: manual spraying, crawler support and deposition evaluation",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-ikuchijima-manual-trial-crawler-ugv",
+      "source": "ikuchijima-manual-trial",
+      "target": "crawler-ugv",
+      "label": "has documented operating context",
+      "explanation": "The cited trial section identifies this equipment, control method or operating constraint.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Ikuchijima: manual spraying, crawler support and deposition evaluation",
+          "label": "Ikuchijima: manual spraying, crawler support and deposition evaluation"
+        }
+      ],
+      "traversable": true
+    }
+  ]
+}

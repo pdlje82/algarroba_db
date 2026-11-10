@@ -1,0 +1,1453 @@
+{
+  "batch_id": "project-profiles-2026-11-10-reviewed-01-cocoon-life",
+  "summary": "Source-reviewed project summaries and identities for the Cocoon assessment and LIFE NIEBLAS; scoped evidence and documented project homes.",
+  "base_revision": 20,
+  "topics": [
+    {
+      "id": "cocoon-jordan-lebanon-project",
+      "label": "Cocoon field assessment in Jordan and Lebanon",
+      "kind": "project",
+      "domain": "ecosystem",
+      "group_id": "restoration-methods",
+      "description": "A 2019–2021 pilot project tested whether Cocoon planting reservoirs could improve tree establishment and water use compared with local traditional planting in Jordan and Lebanon. Menaqua Land Restoration worked with Jordan’s Ministry of Agriculture and the American University of Beirut, in cooperation with Land Life Company. The design compared planting seasons, species and watering treatments across contrasting sites, and also considered installation, management, monitoring and community participation.\n\nThe report found advantages in selected treatments, rather than a uniform survival benefit. At some sites differences were small or not significant; at harsh sites poor soils and low rainfall obscured any Cocoon effect. The authors suggest that lower supplied water in Jordan may partly reflect inefficient comparison irrigation; comparable supplies in Lebanon did not demonstrate the same water saving. Flood losses, emergency watering, damage and unequal follow-up limit interpretation. The existing Al Faisal and Maysara carob records provide specific trial detail. This is a descriptive project name based on the assessment, not a claim that MENAQUA is its official project title. The December-2021 report includes conclusions dated 11 January 2022; long-term outcomes are not established here.",
+      "aliases": [
+        "Cocoon pilot project in Jordan and Lebanon",
+        "Menaqua Cocoon assessment"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 3,
+          "locator": "Cocoon assessment: executing organization and cooperation",
+          "label": "Cocoon assessment: executing organization and cooperation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 11,
+          "locator": "Cocoon project: Menaqua and the Jordan–Lebanon assessment",
+          "label": "Cocoon project: Menaqua and the Jordan–Lebanon assessment"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 13,
+          "locator": "Cocoon assessment: site selection and planned comparison design",
+          "label": "Cocoon assessment: site selection and planned comparison design"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 98,
+          "locator": "Cocoon assessment: late planting, abandoned sites and floods",
+          "label": "Cocoon assessment: late planting, abandoned sites and floods"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 100,
+          "locator": "Cocoon assessment: community involvement and harsh-site performance",
+          "label": "Cocoon assessment: community involvement and harsh-site performance"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 101,
+          "locator": "Cocoon assessment: comparative outcomes and unequal follow-up",
+          "label": "Cocoon assessment: comparative outcomes and unequal follow-up"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 102,
+          "locator": "Cocoon assessment: inconclusive harsh-site effects and water-saving context",
+          "label": "Cocoon assessment: inconclusive harsh-site effects and water-saving context"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 109,
+          "locator": "Cocoon assessment: refill, damage and further-research guidance",
+          "label": "Cocoon assessment: refill, damage and further-research guidance"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2019–2021",
+          "meaning": "project period"
+        },
+        {
+          "value": "2021-12",
+          "meaning": "report edition"
+        },
+        {
+          "value": "2022-01-11",
+          "meaning": "conclusions date"
+        }
+      ]
+    },
+    {
+      "id": "menaqua-land-restoration",
+      "label": "Menaqua Land Restoration",
+      "kind": "organization",
+      "domain": "ecosystem",
+      "group_id": "organizations",
+      "description": "The Netherlands-based social enterprise identified as executor of the Cocoon assessment in Jordan and Lebanon. The report says Menaqua was established in 2019 to promote land restoration in the MENA region through reforestation, afforestation and agroforestry. Its documented work with Land Life Company and local partners belongs to the 2019–2021 assessment. Menaqua is the organization, distinct from the project, individual trials and the Cocoon technology. Current organizational status is not reported in the reviewed material.",
+      "aliases": [
+        "Menaqua",
+        "MENAQUA"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 3,
+          "locator": "Cocoon assessment: executing organization and cooperation",
+          "label": "Cocoon assessment: executing organization and cooperation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 11,
+          "locator": "Cocoon project: Menaqua and the Jordan–Lebanon assessment",
+          "label": "Cocoon project: Menaqua and the Jordan–Lebanon assessment"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ]
+    },
+    {
+      "id": "land-life-company",
+      "label": "Land Life Company",
+      "kind": "organization",
+      "domain": "ecosystem",
+      "group_id": "organizations",
+      "description": "The Netherlands-based company credited for close cooperation in the Cocoon assessment. The report describes collaboration with Menaqua on tree-planting and monitoring technology. This participant record identifies the company; it is distinct from the Cocoon device and the Jordan–Lebanon assessment. Current activities are not assessed.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 3,
+          "locator": "Cocoon assessment: executing organization and cooperation",
+          "label": "Cocoon assessment: executing organization and cooperation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 11,
+          "locator": "Cocoon project: Menaqua and the Jordan–Lebanon assessment",
+          "label": "Cocoon project: Menaqua and the Jordan–Lebanon assessment"
+        }
+      ]
+    },
+    {
+      "id": "aub-nature-conservation-center",
+      "label": "Nature Conservation Center · American University of Beirut",
+      "kind": "organization",
+      "domain": "ecosystem",
+      "group_id": "organizations",
+      "description": "The Lebanese partner unit identified for the 2019–2021 Cocoon project. The assessment names the Nature Conservation Center of the American University of Beirut as the partner organization in Lebanon. Its role here is source-specific project participation, not ownership of all Lebanese sites or an independent statement of later results.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 3,
+          "locator": "Cocoon assessment: executing organization and cooperation",
+          "label": "Cocoon assessment: executing organization and cooperation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ]
+    },
+    {
+      "id": "jordan-agriculture-land-water-department",
+      "label": "Land and Water Department · Jordan Ministry of Agriculture",
+      "kind": "organization",
+      "domain": "ecosystem",
+      "group_id": "organizations",
+      "description": "The Jordanian partner unit identified for the 2019–2021 Cocoon project. The assessment names the Land and Water Department of Jordan’s Ministry of Agriculture as the local partner. This record distinguishes the responsible organization from the pilot sites and trials; it does not infer present administrative arrangements.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 3,
+          "locator": "Cocoon assessment: executing organization and cooperation",
+          "label": "Cocoon assessment: executing organization and cooperation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ]
+    },
+    {
+      "id": "lebanon",
+      "label": "Lebanon",
+      "kind": "place",
+      "domain": "ecosystem",
+      "group_id": "places",
+      "description": "Country in which the 2019–2021 Cocoon assessment carried out planting and monitoring with the American University of Beirut partner. The project spans Jordan and Lebanon; its country scope does not imply that the existing Jordanian trial records describe the Lebanese sites.",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ]
+    },
+    {
+      "id": "al-faisal-pilot",
+      "label": "Al Faisal planting pilot",
+      "kind": "trial",
+      "domain": "ecosystem",
+      "description": "A planting pilot at Al Faisal in Jordan compared Cocoon reservoirs with local irrigation within the Jordan–Lebanon assessment. Olives and almonds were planted in May 2019, followed by source-described pine and carob in December. Monitoring assessed survival and height, using May 2020 observations for the reported comparisons.\n\nRefilled Cocoons and irrigated controls gave similar olive survival; the unrefilled olive treatment performed worse. Surviving almond comparisons had poor survival, while the replanted pine comparison favoured Cocoons over its short follow-up. These results depend on species and treatment. Canal floods in December 2019 and January 2020 destroyed all carob plants and part of the almond and pine plantings. Pine replacement, extra watering, excluded data and combined scenarios prevent treating the original design as intact. Flood loss is not evidence of Cocoon failure for carob, and the report does not establish long-term establishment success. The assessment’s conclusions retain these limits rather than offering a universal planting or watering prescription.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots",
+          "label": "Al Faisal: planting species and excluded monitoring data"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots",
+          "label": "Al Faisal: flood losses and May 2020 survival (Table 5.1)"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 76,
+          "locator": "Al Faisal: treatment-specific survival interpretation",
+          "label": "Al Faisal: treatment-specific survival interpretation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 77,
+          "locator": "Al Faisal: water supplies and growth assessment (Table 5.2)",
+          "label": "Al Faisal: water supplies and growth assessment (Table 5.2)"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 78,
+          "locator": "Al Faisal: tree heights and comparison limits (Table 5.3)",
+          "label": "Al Faisal: tree heights and comparison limits (Table 5.3)"
+        }
+      ],
+      "place_ids": [
+        "al-faisal"
+      ],
+      "dates": [
+        {
+          "value": "2019-05",
+          "meaning": "spring planting"
+        },
+        {
+          "value": "2019-12",
+          "meaning": "fall planting"
+        },
+        {
+          "value": "2020-01",
+          "meaning": "replacement planting"
+        },
+        {
+          "value": "2020-05",
+          "meaning": "monitoring"
+        }
+      ]
+    },
+    {
+      "id": "maysara-carob-trial",
+      "label": "Maysara carob establishment trial",
+      "kind": "trial",
+      "domain": "ecosystem",
+      "description": "The carob component of the Maysara pilot tested Cocoon-assisted establishment against planting with irrigation in Jordan. Carob was planted in May 2019, shortly before an unusually hot, dry summer, in sandy soils with very poor water retention. Emergency watering refilled Cocoons twice and also altered the nominally unwatered comparison. The report therefore excluded the original no-refill and no-irrigation scenarios.\n\nThe May 2020 comparison reported only 1% survival for refilled Cocoon carob and 2% for irrigated carob, without a significant difference. The authors attributed poor performance chiefly to severe soil-water limitations; Cocoons did not overcome that constraint. January 2021 data were not used for this calculation because watering information was incomplete. Water totals include emergency supplies and are not event doses or recommended schedules. This topic remains specifically the spring carob trial: better fall pine/acacia results at Maysara involved other species, soil improvement and a shorter period without the summer, and must not be presented as a carob result or a controlled seasonal comparison.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots",
+          "label": "Maysara: emergency water and changed comparison scenarios"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots",
+          "label": "Maysara: May 2020 survival and sandy-soil limitations (Table 5.4)"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 81,
+          "locator": "Jordanian pilots",
+          "label": "Maysara: short follow-up and treatment water totals (Table 5.5)"
+        }
+      ],
+      "place_ids": [
+        "maysara"
+      ],
+      "dates": [
+        {
+          "value": "2019-05",
+          "meaning": "planting"
+        },
+        {
+          "value": "2020-05",
+          "meaning": "monitoring"
+        }
+      ]
+    },
+    {
+      "id": "life-nieblas",
+      "label": "LIFE NIEBLAS",
+      "kind": "project",
+      "domain": "ecosystem",
+      "description": "LIFE NIEBLAS is a restoration project launched in July 2020 in Gran Canaria and Portugal, coordinated by GESPLAN. It tested fog-water collection and planting methods to improve water access and habitat recovery in fire-affected landscapes. The manual covers project work between 2020 and 2024 and distinguishes planting targets from results. Traditional planting was compared with Cocoon, individual fog-water collectors and AFDS; the Portuguese sites tested Cocoon and individual collectors, without AFDS because of technical and logistical constraints.\n\nIn the table dated 26 July 2023, the innovative methods used less water per surviving tree than the traditional comparison. Cocoon survival was reported as 0.87 compared with 0.43 for traditional planting, with 57.4 versus 133.5 litres per surviving tree. These are project-specific ratios, not event doses, carob requirements or predictions for another site. Other method summaries use different populations and values and remain separate. Settlement, maintenance and support watering were still part of implementation. The manual’s wider water-saving estimate is control-based and has a retained arithmetic discrepancy; long-term ecological recovery or universal superiority is not established by this snapshot.",
+      "aliases": [
+        "Life Nieblas"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 90,
+          "locator": "Habitat restoration",
+          "label": "LIFE: traditional planting as the comparison control"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "Habitat restoration",
+          "label": "LIFE: comparison as of 26 July 2023"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 103,
+          "locator": "Project-specific watering choices and storage estimate",
+          "label": "LIFE: preliminary summer-storage assumption"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 104,
+          "locator": "Project-specific watering choices and storage estimate",
+          "label": "LIFE: gravity distribution and approximate storage sizing"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 142,
+          "locator": "Project-specific watering choices and storage estimate",
+          "label": "LIFE: irrigation purposes and site-specific regimes"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 143,
+          "locator": "Project-specific watering choices and storage estimate",
+          "label": "LIFE: recorded nursery, settlement and maintenance choices"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 2,
+          "locator": "LIFE NIEBLAS: manual scope and 2020–2024 project work",
+          "label": "LIFE NIEBLAS: manual scope and 2020–2024 project work"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 3,
+          "locator": "LIFE NIEBLAS: coordinating beneficiary and project team",
+          "label": "LIFE NIEBLAS: coordinating beneficiary and project team"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 6,
+          "locator": "LIFE NIEBLAS: project purpose, locations and financing",
+          "label": "LIFE NIEBLAS: project purpose, locations and financing"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 7,
+          "locator": "LIFE NIEBLAS: planting objectives and different Portuguese methods",
+          "label": "LIFE NIEBLAS: planting objectives and different Portuguese methods"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 152,
+          "locator": "LIFE: method-specific water-use monitoring",
+          "label": "LIFE: method-specific water-use monitoring"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 156,
+          "locator": "LIFE: control-based water-saving estimate",
+          "label": "LIFE: control-based water-saving estimate"
+        }
+      ],
+      "aspects": {
+        "Watering evidence scope": "These are LIFE NIEBLAS project choices and method examples, not universal plant requirements or species-specific carob recommendations.",
+        "Nursery example": "Around 30 L for 100 plants twice weekly, an average calculated 0.3 L/plant/event (PDF 143).",
+        "Settlement example": "10–15 L/plant/event; Cocoon additionally receives a separate 20 L reservoir fill (PDF 143).",
+        "Maintenance examples": "Traditional/Cocoon: 15 L/plant/event monthly July–September; IND: 10 L/plant/event on that schedule. SAD: about 15 L/plant/event, tank-full triggered, reported about every three weeks (PDF 143).",
+        "Support": "Monitor weather and plant condition; a fixed quantity is not specified (PDF 143).",
+        "Storage estimate": "About 40 L/plant for first-year summer provision, around 12.5 L/application, is a separate approximate storage-planning estimate, not a substitute for the method schedules (PDF 103–104)."
+      },
+      "dates": [
+        {
+          "value": "2020-07",
+          "meaning": "project launch"
+        },
+        {
+          "value": "2020–2024",
+          "meaning": "manual project-work period"
+        },
+        {
+          "value": "2023-07-26",
+          "meaning": "comparison snapshot"
+        }
+      ]
+    },
+    {
+      "id": "gesplan",
+      "label": "GESPLAN",
+      "kind": "organization",
+      "domain": "ecosystem",
+      "group_id": "organizations",
+      "description": "Gestión y Planeamiento Territorial y Medioambiental, S.A., identified as coordinating beneficiary of LIFE NIEBLAS in the technical manual. This record concerns that documented coordination role and retains the distinction between the organization, the LIFE NIEBLAS project and the EU LIFE programme. It does not assess the company’s current responsibilities.",
+      "aliases": [
+        "Gestión y Planeamiento Territorial y Medioambiental, S.A."
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 3,
+          "locator": "LIFE NIEBLAS: coordinating beneficiary and project team",
+          "label": "LIFE NIEBLAS: coordinating beneficiary and project team"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:geographic-references",
+      "label": "Geographic references",
+      "parent_id": "browse:places-trials",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "albox",
+          "role": "primary"
+        },
+        {
+          "topic_id": "almeria",
+          "role": "primary"
+        },
+        {
+          "topic_id": "andalusia",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cabo-de-gata",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cadiz",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carmona",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carregal-do-sal",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cordoba",
+          "role": "primary"
+        },
+        {
+          "topic_id": "gaucin",
+          "role": "primary"
+        },
+        {
+          "topic_id": "gran-canaria",
+          "role": "primary"
+        },
+        {
+          "topic_id": "granada",
+          "role": "primary"
+        },
+        {
+          "topic_id": "grazalema",
+          "role": "primary"
+        },
+        {
+          "topic_id": "hiroshima",
+          "role": "primary"
+        },
+        {
+          "topic_id": "ikuchijima",
+          "role": "primary"
+        },
+        {
+          "topic_id": "innoshima",
+          "role": "primary"
+        },
+        {
+          "topic_id": "israel",
+          "role": "primary"
+        },
+        {
+          "topic_id": "japan",
+          "role": "primary"
+        },
+        {
+          "topic_id": "jordan",
+          "role": "primary"
+        },
+        {
+          "topic_id": "la-sagra",
+          "role": "primary"
+        },
+        {
+          "topic_id": "malaga",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mediterranean",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mojacar",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar",
+          "role": "primary"
+        },
+        {
+          "topic_id": "portugal",
+          "role": "primary"
+        },
+        {
+          "topic_id": "posadas",
+          "role": "primary"
+        },
+        {
+          "topic_id": "prado-del-rey",
+          "role": "primary"
+        },
+        {
+          "topic_id": "sevilla",
+          "role": "primary"
+        },
+        {
+          "topic_id": "ubrique",
+          "role": "primary"
+        },
+        {
+          "topic_id": "lebanon",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Reference locations from the reviewed sources. This catalogue does not turn geographic containment into project ownership or a funding intermediary.",
+      "source_refs": [],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true
+    },
+    {
+      "id": "browse:life-nieblas-project",
+      "label": "LIFE NIEBLAS · Project",
+      "parent_id": "browse:local-restoration-projects",
+      "anchor_topic_id": "life-nieblas",
+      "user_created": false,
+      "members": [],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Read About for the project’s purpose, compared methods and conditional results. Open method references or coordination/locations. Dated comparison ratios, undated method summaries and practical watering guidance retain their separate scopes.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 6,
+          "locator": "LIFE NIEBLAS: project purpose, locations and financing",
+          "label": "LIFE NIEBLAS: project purpose, locations and financing"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 7,
+          "locator": "LIFE NIEBLAS: planting objectives and different Portuguese methods",
+          "label": "LIFE NIEBLAS: planting objectives and different Portuguese methods"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 155,
+          "locator": "LIFE: comparison as of 26 July 2023",
+          "label": "LIFE: comparison as of 26 July 2023"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:life-project-setting",
+      "label": "Project coordination and locations",
+      "parent_id": "browse:life-nieblas-project",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "gesplan",
+          "role": "primary"
+        },
+        {
+          "topic_id": "gran-canaria",
+          "role": "shared"
+        },
+        {
+          "topic_id": "portugal",
+          "role": "shared"
+        },
+        {
+          "topic_id": "carregal-do-sal",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Identify the coordinating beneficiary and the recorded geographic context. The project’s Gran Canaria and Portuguese implementations used different combinations of methods; site names do not transfer one site’s results to another.",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 3,
+          "locator": "LIFE NIEBLAS: coordinating beneficiary and project team",
+          "label": "LIFE NIEBLAS: coordinating beneficiary and project team"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 6,
+          "locator": "LIFE NIEBLAS: project purpose, locations and financing",
+          "label": "LIFE NIEBLAS: project purpose, locations and financing"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 7,
+          "locator": "LIFE NIEBLAS: planting objectives and different Portuguese methods",
+          "label": "LIFE NIEBLAS: planting objectives and different Portuguese methods"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:cocoon-jordan-lebanon-project",
+      "label": "Cocoon Jordan–Lebanon assessment · Project",
+      "parent_id": "browse:local-restoration-projects",
+      "anchor_topic_id": "cocoon-jordan-lebanon-project",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al-faisal-pilot",
+          "role": "primary"
+        },
+        {
+          "topic_id": "maysara-carob-trial",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Read About for the project summary, then open the specific Jordanian trials. Participants and methods/settings provide context. Results differ by species, site, water treatment and follow-up; the carob trial does not represent all Maysara planting.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 101,
+          "locator": "Cocoon assessment: comparative outcomes and unequal follow-up",
+          "label": "Cocoon assessment: comparative outcomes and unequal follow-up"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 102,
+          "locator": "Cocoon assessment: inconclusive harsh-site effects and water-saving context",
+          "label": "Cocoon assessment: inconclusive harsh-site effects and water-saving context"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:cocoon-project-participants",
+      "label": "Assessment participants",
+      "parent_id": "browse:cocoon-jordan-lebanon-project",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "menaqua-land-restoration",
+          "role": "primary"
+        },
+        {
+          "topic_id": "land-life-company",
+          "role": "primary"
+        },
+        {
+          "topic_id": "aub-nature-conservation-center",
+          "role": "primary"
+        },
+        {
+          "topic_id": "jordan-agriculture-land-water-department",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Organizations credited for execution, local partnership or technical cooperation in the assessment. Their recorded roles do not imply ownership of every site.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 3,
+          "locator": "Cocoon assessment: executing organization and cooperation",
+          "label": "Cocoon assessment: executing organization and cooperation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:cocoon-project-context",
+      "label": "Methods and country context",
+      "parent_id": "browse:cocoon-jordan-lebanon-project",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "cocoon",
+          "role": "shared"
+        },
+        {
+          "topic_id": "monitoring",
+          "role": "shared"
+        },
+        {
+          "topic_id": "jordan",
+          "role": "shared"
+        },
+        {
+          "topic_id": "lebanon",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Follow the shared project-intake policy. Preserve identities, scoped findings, complete primary/shared memberships and citations. Add only documented project/case content; reusable concepts keep their general homes.",
+      "description": "Shared references to the tested technology, monitoring and the two countries. The project summary and trial findings explain actual comparisons and limits.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 11,
+          "locator": "Cocoon project: Menaqua and the Jordan–Lebanon assessment",
+          "label": "Cocoon project: Menaqua and the Jordan–Lebanon assessment"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Al Faisal: planting species and excluded monitoring data",
+          "label": "Al Faisal: planting species and excluded monitoring data"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:local-restoration-projects",
+      "label": "Projects, trials and case studies",
+      "parent_id": "ecosystem:restoration-methods",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "andarax-restoration-2023",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar-fluvial-restoration",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar-environmental-supervision",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nijar-native-plant-supply",
+          "role": "shared"
+        },
+        {
+          "topic_id": "life-nieblas",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon-jordan-lebanon-project",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep each project and documentary stage distinct. Add confirmed designs, procurement, implementation and measured outcomes without converting plans into results. Preserve exact places and dates.",
+      "description": "Explore documented restoration projects and planting assessments, then compare the observational carob cases. Each project’s About summary distinguishes purpose, methods, results, conditions and status. Procurement records describe proposed or assigned work; recorded trial outcomes retain their actual setting and follow-up. Case studies describe observed practice rather than controlled experiments.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "locator": "Datos del expediente",
+          "label": "Andarax: works purpose, municipalities, duration and tender budget"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "locator": "2. Objeto del contrato",
+          "label": "Andarax: flood-risk reduction and native fluvial restoration"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 8,
+          "locator": "Níjar: assigned works scope",
+          "label": "Níjar: assigned works scope"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 5,
+          "locator": "Níjar: separate supervision purpose",
+          "label": "Níjar: separate supervision purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "locator": "Níjar: later plant-supply specification",
+          "label": "Níjar: later plant-supply specification"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:al-faisal-project",
+      "label": "Al Faisal planting pilot · Trial",
+      "parent_id": "browse:cocoon-jordan-lebanon-project",
+      "anchor_topic_id": "al-faisal-pilot",
+      "user_created": false,
+      "members": [],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Read About for the trial’s purpose, main findings and conditions. The child folders expose existing site and method references; detailed evidence remains on the trial and its cited findings.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Jordanian pilots",
+          "label": "Al Faisal: planting species and excluded monitoring data"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 75,
+          "locator": "Jordanian pilots",
+          "label": "Al Faisal: flood losses and May 2020 survival (Table 5.1)"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 76,
+          "locator": "Al Faisal: treatment-specific survival interpretation",
+          "label": "Al Faisal: treatment-specific survival interpretation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 77,
+          "locator": "Al Faisal: water supplies and growth assessment (Table 5.2)",
+          "label": "Al Faisal: water supplies and growth assessment (Table 5.2)"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 78,
+          "locator": "Al Faisal: tree heights and comparison limits (Table 5.3)",
+          "label": "Al Faisal: tree heights and comparison limits (Table 5.3)"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:maysara-project",
+      "label": "Maysara carob establishment trial · Trial",
+      "parent_id": "browse:cocoon-jordan-lebanon-project",
+      "anchor_topic_id": "maysara-carob-trial",
+      "user_created": false,
+      "members": [],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Read About for the trial’s purpose, main findings and conditions. The child folders expose existing site and method references; detailed evidence remains on the trial and its cited findings.",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Jordanian pilots",
+          "label": "Maysara: emergency water and changed comparison scenarios"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Jordanian pilots",
+          "label": "Maysara: May 2020 survival and sandy-soil limitations (Table 5.4)"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 81,
+          "locator": "Jordanian pilots",
+          "label": "Maysara: short follow-up and treatment water totals (Table 5.5)"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ],
+  "relationships": [
+    {
+      "id": "profiles-cocoon-menaqua-land-restoration",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "menaqua-land-restoration",
+      "label": "was executed by",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 3,
+          "locator": "Cocoon assessment: executing organization and cooperation",
+          "label": "Cocoon assessment: executing organization and cooperation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-cocoon-land-life-company",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "land-life-company",
+      "label": "credits cooperation with",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 3,
+          "locator": "Cocoon assessment: executing organization and cooperation",
+          "label": "Cocoon assessment: executing organization and cooperation"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 11,
+          "locator": "Cocoon project: Menaqua and the Jordan–Lebanon assessment",
+          "label": "Cocoon project: Menaqua and the Jordan–Lebanon assessment"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-cocoon-aub-nature-conservation-center",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "aub-nature-conservation-center",
+      "label": "had a Lebanese project partner",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-cocoon-jordan-agriculture-land-water-department",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "jordan-agriculture-land-water-department",
+      "label": "had a Jordanian project partner",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-cocoon-cocoon",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "cocoon",
+      "label": "assessed",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 11,
+          "locator": "Cocoon project: Menaqua and the Jordan–Lebanon assessment",
+          "label": "Cocoon project: Menaqua and the Jordan–Lebanon assessment"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-cocoon-monitoring",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "monitoring",
+      "label": "used survival and growth monitoring",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Al Faisal: planting species and excluded monitoring data",
+          "label": "Al Faisal: planting species and excluded monitoring data"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 100,
+          "locator": "Cocoon assessment: community involvement and harsh-site performance",
+          "label": "Cocoon assessment: community involvement and harsh-site performance"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-cocoon-jordan",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "jordan",
+      "label": "was conducted in",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-cocoon-lebanon",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "lebanon",
+      "label": "was conducted in",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 12,
+          "locator": "Cocoon project: 2019–2021 partners and objectives",
+          "label": "Cocoon project: 2019–2021 partners and objectives"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-cocoon-al-faisal-pilot",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "al-faisal-pilot",
+      "label": "includes the documented pilot",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 74,
+          "locator": "Al Faisal: planting species and excluded monitoring data",
+          "label": "Al Faisal: planting species and excluded monitoring data"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-cocoon-maysara-carob-trial",
+      "source": "cocoon-jordan-lebanon-project",
+      "target": "maysara-carob-trial",
+      "label": "includes the documented carob trial",
+      "explanation": "The cited assessment explicitly identifies this participant, method, country or trial. Roles and results remain specific to the 2019–2021 project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 79,
+          "locator": "Maysara: emergency water and changed comparison scenarios",
+          "label": "Maysara: emergency water and changed comparison scenarios"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 80,
+          "locator": "Maysara: May 2020 survival and sandy-soil limitations (Table 5.4)",
+          "label": "Maysara: May 2020 survival and sandy-soil limitations (Table 5.4)"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-life-gesplan",
+      "source": "life-nieblas",
+      "target": "gesplan",
+      "label": "was coordinated by",
+      "explanation": "The manual records this project role or practice; site-specific methods and results are not assumed identical across locations.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 3,
+          "locator": "LIFE NIEBLAS: coordinating beneficiary and project team",
+          "label": "LIFE NIEBLAS: coordinating beneficiary and project team"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-life-fog-water-collection",
+      "source": "life-nieblas",
+      "target": "fog-water-collection",
+      "label": "tested fog-water collection",
+      "explanation": "The manual records this project role or practice; site-specific methods and results are not assumed identical across locations.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 6,
+          "locator": "LIFE NIEBLAS: project purpose, locations and financing",
+          "label": "LIFE NIEBLAS: project purpose, locations and financing"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-life-gran-canaria",
+      "source": "life-nieblas",
+      "target": "gran-canaria",
+      "label": "includes implementation in",
+      "explanation": "The manual records this project role or practice; site-specific methods and results are not assumed identical across locations.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 6,
+          "locator": "LIFE NIEBLAS: project purpose, locations and financing",
+          "label": "LIFE NIEBLAS: project purpose, locations and financing"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-life-portugal",
+      "source": "life-nieblas",
+      "target": "portugal",
+      "label": "includes implementation in",
+      "explanation": "The manual records this project role or practice; site-specific methods and results are not assumed identical across locations.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 6,
+          "locator": "LIFE NIEBLAS: project purpose, locations and financing",
+          "label": "LIFE NIEBLAS: project purpose, locations and financing"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 7,
+          "locator": "LIFE NIEBLAS: planting objectives and different Portuguese methods",
+          "label": "LIFE NIEBLAS: planting objectives and different Portuguese methods"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-life-carregal-do-sal",
+      "source": "life-nieblas",
+      "target": "carregal-do-sal",
+      "label": "includes a Portuguese intervention site",
+      "explanation": "The manual records this project role or practice; site-specific methods and results are not assumed identical across locations.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 7,
+          "locator": "LIFE NIEBLAS: planting objectives and different Portuguese methods",
+          "label": "LIFE NIEBLAS: planting objectives and different Portuguese methods"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-life-monitoring",
+      "source": "life-nieblas",
+      "target": "monitoring",
+      "label": "recorded method-specific water use",
+      "explanation": "The manual records this project role or practice; site-specific methods and results are not assumed identical across locations.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 152,
+          "locator": "LIFE: method-specific water-use monitoring",
+          "label": "LIFE: method-specific water-use monitoring"
+        }
+      ],
+      "traversable": true
+    },
+    {
+      "id": "profiles-life-commission",
+      "source": "life-nieblas",
+      "target": "european-commission",
+      "label": "reports European Commission LIFE co-financing",
+      "explanation": "The project presentation reports a 55% European Commission LIFE contribution to this project; this is not eligibility or an open-call assessment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 6,
+          "locator": "LIFE NIEBLAS: project purpose, locations and financing",
+          "label": "LIFE NIEBLAS: project purpose, locations and financing"
+        }
+      ],
+      "traversable": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "profiles-cocoon-conditional-results",
+      "label": "Cocoon assessment: benefits vary with trial context",
+      "text": "The assessment reports positive effects in selected treatments, small or non-significant differences in others, and inconclusive effects where low rainfall and poor soil conditions dominated. Spring/fall groups had unequal exposure before May 2020 monitoring, so the report calls for longer monitoring before assessing the best planting season.",
+      "topic_ids": [
+        "cocoon-jordan-lebanon-project",
+        "cocoon"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 101,
+          "locator": "Cocoon assessment: comparative outcomes and unequal follow-up",
+          "label": "Cocoon assessment: comparative outcomes and unequal follow-up"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 102,
+          "locator": "Cocoon assessment: inconclusive harsh-site effects and water-saving context",
+          "label": "Cocoon assessment: inconclusive harsh-site effects and water-saving context"
+        }
+      ],
+      "conditions": [
+        "Source-reported cross-pilot synthesis",
+        "Unequal follow-up and changed watering treatments"
+      ]
+    },
+    {
+      "id": "profiles-cocoon-water-context",
+      "label": "Jordan and Lebanon comparisons do not imply the same water saving",
+      "text": "The assessment distinguishes reduced water needed per surviving tree from lower supplied treatment volumes. Its authors suggest that much lower Cocoon supplies in Jordan may partly reflect inefficient comparison irrigation, while comparable supplies in Lebanon did not yield the same water saving. The suggested explanation is a contextual interpretation, not an established causal result or transferable saving factor.",
+      "topic_ids": [
+        "cocoon-jordan-lebanon-project",
+        "cocoon"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 102,
+          "locator": "Cocoon assessment: inconclusive harsh-site effects and water-saving context",
+          "label": "Cocoon assessment: inconclusive harsh-site effects and water-saving context"
+        }
+      ]
+    },
+    {
+      "id": "profiles-life-project-scope",
+      "label": "LIFE project locations and method deployment differ",
+      "text": "The project presentation describes Gran Canaria and Portuguese restoration sites. Gran Canaria’s planting objective names four methods; Portugal tests Cocoon and individual collectors but not AFDS, for technical and logistical reasons. Areas and planting numbers in that presentation are project scope or objectives, not a certificate of completed restoration.",
+      "topic_ids": [
+        "life-nieblas",
+        "gran-canaria",
+        "portugal",
+        "carregal-do-sal"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 6,
+          "locator": "LIFE NIEBLAS: project purpose, locations and financing",
+          "label": "LIFE NIEBLAS: project purpose, locations and financing"
+        },
+        {
+          "source_id": "IRR-003",
+          "page": 7,
+          "locator": "LIFE NIEBLAS: planting objectives and different Portuguese methods",
+          "label": "LIFE NIEBLAS: planting objectives and different Portuguese methods"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "profiles-cocoon-followup-gap",
+      "text": "The summary reviews the project’s cross-pilot conclusions and the existing Jordanian trials. Long-term follow-up and detailed Lebanese site profiles remain unreviewed; do not infer their results from Al Faisal or Maysara.",
+      "topic_ids": [
+        "cocoon-jordan-lebanon-project"
+      ],
+      "source_refs": [
+        {
+          "source_id": "IRR-005",
+          "page": 101,
+          "locator": "Cocoon assessment: comparative outcomes and unequal follow-up",
+          "label": "Cocoon assessment: comparative outcomes and unequal follow-up"
+        },
+        {
+          "source_id": "IRR-005",
+          "page": 102,
+          "locator": "Cocoon assessment: inconclusive harsh-site effects and water-saving context",
+          "label": "Cocoon assessment: inconclusive harsh-site effects and water-saving context"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "IRR-005",
+      "page": 3,
+      "status": "inspected",
+      "note": "Cocoon assessment: executing organization and cooperation; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 11,
+      "status": "inspected",
+      "note": "Cocoon project: Menaqua and the Jordan–Lebanon assessment; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 12,
+      "status": "inspected",
+      "note": "Cocoon project: 2019–2021 partners and objectives; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 13,
+      "status": "inspected",
+      "note": "Cocoon assessment: site selection and planned comparison design; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 98,
+      "status": "inspected",
+      "note": "Cocoon assessment: late planting, abandoned sites and floods; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 99,
+      "status": "inspected",
+      "note": "Cocoon assessment: damage and slow degradation; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 100,
+      "status": "inspected",
+      "note": "Cocoon assessment: community involvement and harsh-site performance; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 101,
+      "status": "inspected",
+      "note": "Cocoon assessment: comparative outcomes and unequal follow-up; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-005",
+      "page": 102,
+      "status": "inspected",
+      "note": "Cocoon assessment: inconclusive harsh-site effects and water-saving context; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 2,
+      "status": "inspected",
+      "note": "LIFE NIEBLAS: manual scope and 2020–2024 project work; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 3,
+      "status": "inspected",
+      "note": "LIFE NIEBLAS: coordinating beneficiary and project team; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 6,
+      "status": "inspected",
+      "note": "LIFE NIEBLAS: project purpose, locations and financing; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 7,
+      "status": "inspected",
+      "note": "LIFE NIEBLAS: planting objectives and different Portuguese methods; project/case summary review of the exact registered edition."
+    },
+    {
+      "source_id": "IRR-003",
+      "page": 8,
+      "status": "inspected",
+      "note": "LIFE NIEBLAS: water access and habitat-restoration objectives; project/case summary review of the exact registered edition."
+    }
+  ]
+}
