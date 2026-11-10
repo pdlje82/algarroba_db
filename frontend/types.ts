@@ -41,6 +41,8 @@ export type Item = {
   kind: string;
   domain: string;
   description?: string;
+  funding_role?: 'route'|'framework'|'reference'|null;
+  funding_context_ids?: string[];
   aliases?: string[];
   spanish_name?: string | null;
   english_name?: string | null;

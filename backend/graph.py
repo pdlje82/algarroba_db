@@ -140,12 +140,13 @@ class Graph:
                 'notice':"Each value retains its source and trial conditions; these are not controlled head-to-head trials."}
 
     def inspect(self, record_id):
-        from .funding import state as funding_state
+        from .funding import state as funding_state, context as funding_context
         result = self._inspect(record_id)
         ids = set(result.get('member_ids', [])) | {record_id}
-        reviews = [r for r in self.snapshot.get('funding_reviews', []) if r['topic_id'] in ids]
+        context=funding_context(self.snapshot,ids)
+        reviews=context['reviews']
         review_ids = {r['id'] for r in reviews}
-        return dict(result, funding_reviews=reviews,
+        return dict(result, funding_context_topic_ids=context['topic_ids'], funding_reviews=reviews,
                     funding_assessments=[a for a in self.snapshot.get('funding_assessments', []) if a['review_id'] in review_ids],
                     project_ideas=self.snapshot.get('project_ideas', []), funding_state=funding_state(self.snapshot))
 

@@ -56,10 +56,22 @@ outside that idea's scope. Explicit exclusions retain the affected geography, ac
 route. Programme folders count reviewed routes instead of inheriting a child's open/fit verdict.
 Missing reviews remain visible. Source verification failures preserve last-confirmed facts.
 
+Curated funding topics use optional `funding_role: route|framework|reference` and explicit
+`funding_context_ids`. Supporting references show linked, separately named reviews rather than
+their own eligibility verdict. Frameworks count reviewed routes, missing reviews and incomplete
+verification/idea comparisons; they never inherit an open or suitable verdict. These links describe
+context, not eligibility or factual relationships. A route requires its own four-idea comparison.
+Unclassified older data retains its existing presentation. The complete review's initial 128-card
+dispositions, review outcomes and retry actions are in
+[`funding-review-coverage-20261110.json`](../imports/funding-review-coverage-20261110.json).
+
 Project changes increment the profile version and flag previous assessments for review without
 erasing their reasoning. Funding reviews have their own version; assessments bind that version,
 the project version and an evidence fingerprint. These are manual reviews, not scores or automated
 eligibility decisions. Calls, grants, repayable finance, procurement and assistance stay distinct.
+
+Changing only those two presentation fields does not invalidate an assessment. Changing factual
+topic content, a cited edition, the funding-review version or the project version still does.
 
 `POST /api/projects/edit` and `python -m backend.cli project-edit EDIT.json [--check]` accept
 `{expected_revision, action: create|update, id?, changes}`. Changes may contain the editable fields

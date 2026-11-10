@@ -68,6 +68,22 @@ check. The archived log records its earlier outcome and later limitation.
 
 For current funding navigation and project suitability, choose a fresh isolated destination:
 
+The complete-route review has a read-only browser scenario against an isolated copy of the current
+accepted catalogue:
+
+```powershell
+python scripts/funding-review-qa.py --database output/full-funding-review-qa/fresh.sqlite
+# In another terminal with KGB_PLAYWRIGHT_MODULE configured:
+node --experimental-strip-types tests/funding-review-browser.mjs
+```
+
+It serves port 8776; stop any other owned QA fixture on that port first. The test guards the QA
+project identity and makes no database edits. Its full scope walk checks route/reference labels,
+four-idea comparisons, incomplete coverage, linked review navigation, loan/non-cash distinctions,
+NEXT MED's contradiction, keyboard PDF positions and reload. Reports/screenshots are in
+`output/full-funding-review-qa/`. For historical project-editor conflict checks, the earlier fixture
+below remains available; its scenario makes writes only to that isolated store.
+
 ```powershell
 python scripts/funding-suitability-qa.py --database output/funding-suitability-qa/fresh.sqlite
 # In another terminal with KGB_PLAYWRIGHT_MODULE configured:
@@ -351,6 +367,59 @@ details: `research/funding-suitability-20261110/`. The documented identity-check
 the local app after a direct restart command was rejected by automatic approval review; live
 revision 36 returned all three collections and rendered the new funding view. No synthetic UI
 writes were made to accepted port 8765; no commit, push or deployment was performed.
+
+### Complete funding-route review, 10 November 2026
+
+Accepted thirteen exact checked programme-family/classification/hierarchy batches at revisions
+38–50. The original plan baseline was 36; concurrent drone-flight research produced revision 37.
+The funding work was reconciled against that complete snapshot, with unused source IDs reassigned
+before adoption. Superseded QA-only candidates remain in the ignored research archive. Each accepted
+batch passed preview and an exact idempotency retry. Live and isolated accepted snapshots matched.
+
+All 128 initially labelled cards have dispositions in
+[`funding-review-coverage-20261110.json`](../imports/funding-review-coverage-20261110.json).
+The catalogue now has 143 funding topics: 58 routes, 30 frameworks and 55 references. There are
+64 review contexts and 256 four-idea assessments, including the unchanged eight original reviews
+and 32 assessments. Forty-seven contexts have confirmed bounded evidence review; seventeen remain
+explicitly incomplete with retained facts and retry actions. Neither a confirmed review nor a
+context link establishes eligibility, current call access or an applicant arrangement. EIC equity/
+blended-finance representation remains a review proposal; no instrument schema or monetary engine
+was expanded. Other schedules and project profiles were not changed.
+
+Fourteen official PDFs were added as FUND-029–FUND-042; two identical owned editions were reused.
+The additions ledger and catalog record issuers, direct document-download links, exact hashes,
+publication-date limitations and actual reviewed PDF positions. Forty-one new managed sources
+(fourteen PDFs and twenty-seven web editions) were registered. PDF text extraction initially failed
+because pdftotext was absent; retained original bytes were successfully extracted with pypdf and
+focused passages reviewed. The credits HTTP 429 was recovered using official Green Forum evidence;
+Horizon portal shells and other incomplete retrievals remain explicit gaps, not no-change findings.
+
+Validation: 85 frontend tests passed; 111 backend tests passed with one existing Windows symlink
+skip; production build passed (existing bundle-size advisory). Eighteen isolated browser checks
+passed across 66 funding scopes, with no remaining “Project fit unreviewed” labels, no uncaught
+errors and no database edits. They cover national/institutional gates, scoped exclusions, unknown
+applicants, references, framework gaps, repayable/non-cash support and exact source positions.
+Five read-only live checks passed after the identity-checked launcher restart, including rendering
+the newly registered Horizontal Activities PDF at position 14. The first browser run exposed a
+missing explicit incomplete-verification heading, which was corrected and checked again.
+
+Preservation audit: all prior sources, relationships, findings, working communities, irrigation
+evidence, plant media, project ideas and original reviews/assessments retained; original assessments
+remain fresh. Legacy absent name metadata materialised only its existing model defaults during
+topic validation. The only factual addition to a prior topic is two labelled Cluster 6 references
+on the Horizon framework. All 210 pre-existing registered file hashes and all prior library bytes
+except the intentionally extended catalog are unchanged. SQLite integrity/foreign keys passed;
+the nine prior organisation advisories remain, with no new warnings. New Horizon calls were placed
+beneath NATURE/Mission frameworks while original memberships were retained.
+
+Recovery: paired verified database/source-media snapshots
+`backups/knowledge-r50-20261110-171115-085554.sqlite` and `.media.zip`; separate verified 217-file
+library archive `backups/document-library-20261110T161308395101Z.zip`. The old ownership inventory
+still differs by thirty later files and the catalog; these differences include sixteen existing
+additions plus this run's fourteen. No original ownership entry is missing. A dated current-library
+manifest is archived for recovery without rewriting the historical ownership inventory. Audit,
+receipts and manifests are in `research/funding-complete-review-20261110/`; browser reports and
+screenshots are in `output/full-funding-review-qa/`. No commit, push or deployment was performed.
 
 These files preserve their original bytes. Their layouts, counts, bundle hashes, permission
 exceptions and test results describe their dates. Repository-relative names inside historical

@@ -1,0 +1,2532 @@
+{
+  "batch_id": "funding-complete-review-20261110-nature-v2",
+  "summary": "Recover official NATURE work programme; separate living labs, network coordination and biodiversity monitoring with 12 bounded assessments and explicit portal-read limitation.",
+  "base_revision": 38,
+  "sources": [
+    {
+      "id": "KGB-SRC-0089",
+      "title": "Horizon NATURE 2027 official calendar",
+      "issuer": "European Research Executive Agency",
+      "kind": "web",
+      "filename": "nature.html",
+      "managed_path": "sources/funding-complete-review-20261110/nature.html",
+      "sha256": "22390009c65e624f416af7add3ef3fbf758767a1957401f2a22eb4bc141d7777",
+      "url": "https://rea.ec.europa.eu/funding-and-grants/horizon-europe-cluster-6-food-bioeconomy-natural-resources-agriculture-and-environment/transformative-change-towards-nature-positive-economy-and-society_en",
+      "retrieved_on": "2026-11-10",
+      "excerpt": "2027 calls for proposals\nHORIZON-NATURE-2027-01 This call opens on 13 October 2026 \n3 topics PFAS’ effects on biodiversity; clean & digital industries; research for transformative change for biodiversity. \n41.45 million Overall indicative budget\nSee the calls on the Funding and tenders portal\n HORIZON-NATURE-2027-01\n13 October 2026 \nLaunch of the call \nWork programme\n16 October 2026 \nInfo day\n19 October 2026 \nBrokerage event \n14 January 2027 \nDeadline for applicants to submit a proposal \nJune 2027 \nApplicants are informed if their proposal has been selected \nSeptember 2027\nGrant agreement signature for successful projects \nShow 2 more items\nOctober 2027 \nProjects start \nAll funding information and procedures on how to apply are on the Funding and Tenders portal.\nGo to portal\nHORIZON-NATURE-2027-02 This call opens on 13 October 2026 \n5 topics Invertebrates biodiversity decline; living labs for nature restoration; wildlife trafficking; invasive species; cost-effective biodiversity monitoring\n108 million Overall indicative budget\nSee the calls on the Funding and tenders portal\n HORIZON-NATURE-2027-02 \n13 October 2026 \nLaunch of the call \nWork programme\n16 October 2026 \nInfo day\n19 October 2026 \nBrokerage event \n14 January 2027 \nDeadline for applicants to submit a proposal \nJune 2027 \nApplicants are informed if their proposal has been selected \nSeptember 2027\nGrant agreement signature for successful projects \nShow 2 more items\nOctober 2027 \nProjects start \nAll funding information and procedures on how to apply are on the Funding and Tenders portal.\nGo to portal"
+    },
+    {
+      "id": "KGB-SRC-0090",
+      "title": "Horizon Europe General Annexes 2026-2027",
+      "issuer": "European Commission",
+      "kind": "pdf",
+      "filename": "annexes.pdf",
+      "managed_path": "sources/funding-complete-review-20261110/annexes.pdf",
+      "sha256": "5c4337c4984629697d5a073f66862ead9fe291d64c561e003ea5f154df8de78f",
+      "url": "https://research-and-innovation.ec.europa.eu/document/download/7318fc15-13a4-484b-a74e-7c403f88fee2_en",
+      "retrieved_on": "2026-11-10",
+      "publication_date": null,
+      "pdf_pages": 44,
+      "initial_pdf_page_ranges": [
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          31,
+          31
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          33,
+          33
+        ]
+      ]
+    },
+    {
+      "id": "KGB-SRC-0091",
+      "title": "Horizon Europe Horizontal Activities work programme 2026-2027",
+      "issuer": "European Commission",
+      "kind": "pdf",
+      "filename": "horizontal.pdf",
+      "managed_path": "sources/funding-complete-review-20261110/horizontal.pdf",
+      "sha256": "ad0c08695b767e2b1c240f2fcbed608081dd42645f55f5c4c236a46de7700e17",
+      "url": "https://research-and-innovation.ec.europa.eu/document/download/01964d0c-a8eb-4f23-baa4-87d96812dca6_en",
+      "retrieved_on": "2026-11-10",
+      "publication_date": null,
+      "pdf_pages": 160,
+      "initial_pdf_page_ranges": [
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          133,
+          133
+        ],
+        [
+          134,
+          134
+        ],
+        [
+          135,
+          135
+        ],
+        [
+          136,
+          136
+        ],
+        [
+          137,
+          137
+        ]
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "horizon-nature-living-labs-2027",
+      "label": "HORIZON-NATURE-2027-02-02 · Restoration living labs",
+      "description": "Research and Innovation Action; multi-actor approach, three new living labs with 8–15 experimental sites each; distinct ecosystem research fields and portfolio rules apply. No applicant or consortium eligibility is asserted.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 133,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 133"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 134,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 134"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 135,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 135"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 136,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 136"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 137,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 137"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ],
+      "kind": "event",
+      "domain": "funding",
+      "group_id": "programmes",
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "horizon-nature-lab-network-2027",
+      "label": "HORIZON-NATURE-2027-02-03 · Restoration living-lab network",
+      "description": "Coordination and Support Action for networking, common methodologies, capacity building and policy transfer; not a new technical R&D or standalone planting grant. No applicant or consortium eligibility is asserted.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 138,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 138"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 139,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 139"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 140,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 140"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 141,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 141"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ],
+      "kind": "event",
+      "domain": "funding",
+      "group_id": "programmes",
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "horizon-nature-monitoring-2027",
+      "label": "HORIZON-NATURE-2027-02-05 · Cost-effective biodiversity monitoring",
+      "description": "Research and Innovation Action addressing Area A pollinator monitoring under NRR, Area B soil biodiversity, or Area C Water Framework Directive; indicate one area. Satellite/navigation use requires Copernicus/Galileo/EGNOS where specified. No applicant or consortium eligibility is asserted.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 145,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 145"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 146,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 146"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 147,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 147"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 148,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 148"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ],
+      "kind": "event",
+      "domain": "funding",
+      "group_id": "programmes",
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "horizon-nature-2027",
+      "label": "Horizon NATURE · 2027 call calendar",
+      "kind": "event",
+      "domain": "funding",
+      "description": "REA lists NATURE-2027-01 and -02 opening 13 October 2026 and closing 14 January 2027. The second call covers living labs for nature restoration and cost-effective biodiversity monitoring among other subjects. This confirms a call calendar, not exact -02-02/-03/-05 topic conditions: their portal pages returned only an application shell during this intake. Deadline time/timezone, topic budgets, applicants, costs and partner rules remain to recover from the work programme/topic documents. Prepare a research consortium route, not a personal planting request.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0050",
+          "page": null,
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00",
+          "label": "NATURE-2027-02 topics and dates"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-HORIZON-NATURE-LIVINGLAB-2027",
+          "EU-HORIZON-NATURE-NETWORK-2027",
+          "EU-HORIZON-NATURE-MONITORING-2027"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Prepare"
+      },
+      "funding_context_ids": [
+        "horizon-nature-living-labs-2027",
+        "horizon-nature-lab-network-2027",
+        "horizon-nature-monitoring-2027"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0090",
+      "page": 11,
+      "status": "inspected",
+      "note": "Focused funding review: Horizon general eligibility, action types and grant conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0090",
+      "page": 12,
+      "status": "inspected",
+      "note": "Focused funding review: Horizon general eligibility, action types and grant conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0090",
+      "page": 13,
+      "status": "inspected",
+      "note": "Focused funding review: Horizon general eligibility, action types and grant conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0090",
+      "page": 14,
+      "status": "inspected",
+      "note": "Focused funding review: Horizon general eligibility, action types and grant conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0090",
+      "page": 31,
+      "status": "inspected",
+      "note": "Focused funding review: Horizon general eligibility, action types and grant conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0090",
+      "page": 32,
+      "status": "inspected",
+      "note": "Focused funding review: Horizon general eligibility, action types and grant conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0090",
+      "page": 33,
+      "status": "inspected",
+      "note": "Focused funding review: Horizon general eligibility, action types and grant conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 14,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 15,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 133,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 134,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 135,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 136,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 137,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 138,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 139,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 140,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 141,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 145,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 146,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 147,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0091",
+      "page": 148,
+      "status": "inspected",
+      "note": "Focused funding review: NATURE topic scope, calendar and financial conditions. Other pages remain outside this review."
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:horizon-funding",
+      "label": "Horizon Europe · research calls",
+      "parent_id": "browse:funding-commission",
+      "anchor_topic_id": "horizon-europe-programme",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "horizon-nature-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "horizon-cl6-biodiv03-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mission-soil-funding",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mission-adaptation-funding",
+          "role": "primary"
+        },
+        {
+          "topic_id": "horizon-nature-living-labs-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "horizon-nature-lab-network-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "horizon-nature-monitoring-2027",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Call calendar, exact topic eligibility and project fit are different checks. Missions are not permanent grant windows.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0050",
+          "page": null,
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00",
+          "label": "NATURE calendar"
+        },
+        {
+          "source_id": "KGB-SRC-0051",
+          "page": null,
+          "locator": "Horizon CL6 BIODIV03 forthcoming call; captured 2026-11-10T09:50:58.358330+00:00",
+          "label": "CL6 forthcoming topic"
+        },
+        {
+          "source_id": "KGB-SRC-0053",
+          "page": null,
+          "locator": "Mission Adaptation 2026 call calendar; captured 2026-11-10T09:50:58.526514+00:00",
+          "label": "Mission funding topics"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ],
+  "funding_reviews": [
+    {
+      "id": "funding-review:remaining-horizon-nature-living-labs-2027",
+      "topic_id": "horizon-nature-living-labs-2027",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "The published call opened 13 October 2026; the work programme gives 14 January 2027 at 17:00 Brussels time. The portal returned an application shell, so its live status/amendments could not be independently inspected.",
+      "territory": "EU/associated-country framework; Spain is an eligible member state. No specific Alhama parcel, organisation or partner is confirmed.",
+      "applicants": "Eligible legal entities under General Annex B; RIA normally requires three independent entities in different countries including an EU member state; topic-specific multi-actor conditions apply. CSA follows its own consortium rules.",
+      "activities": "Research and Innovation Action; multi-actor approach, three new living labs with 8–15 experimental sites each; distinct ecosystem research fields and portfolio rules apply.",
+      "financial_summary": "Indicative topic €60m, around €10m EU contribution per project, not a site grant. Lump-sum financing; permitted third-party grants up to €60,000 each are future beneficiary-run calls, not open opportunities now.",
+      "deadlines": [
+        {
+          "label": "Full proposal",
+          "value": "2027-01-14T17:00:00+01:00",
+          "timezone": "Europe/Brussels",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "The Funding & Tenders topic page exposed only an application shell. Recover its current status and amendments through the live portal; the official work programme and REA calendar were recovered and reviewed.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 133,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 133"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 134,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 134"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 135,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 135"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 136,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 136"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 137,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 137"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-horizon-nature-lab-network-2027",
+      "topic_id": "horizon-nature-lab-network-2027",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "The published call opened 13 October 2026; the work programme gives 14 January 2027 at 17:00 Brussels time. The portal returned an application shell, so its live status/amendments could not be independently inspected.",
+      "territory": "EU/associated-country framework; Spain is an eligible member state. No specific Alhama parcel, organisation or partner is confirmed.",
+      "applicants": "Eligible legal entities under General Annex B; RIA normally requires three independent entities in different countries including an EU member state; topic-specific multi-actor conditions apply. CSA follows its own consortium rules.",
+      "activities": "Coordination and Support Action for networking, common methodologies, capacity building and policy transfer; not a new technical R&D or standalone planting grant.",
+      "financial_summary": "Indicative topic and expected project contribution around €4m; lump sum. Funding does not establish a €4m allocation for a local pilot.",
+      "deadlines": [
+        {
+          "label": "Full proposal",
+          "value": "2027-01-14T17:00:00+01:00",
+          "timezone": "Europe/Brussels",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "The Funding & Tenders topic page exposed only an application shell. Recover its current status and amendments through the live portal; the official work programme and REA calendar were recovered and reviewed.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 138,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 138"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 139,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 139"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 140,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 140"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 141,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 141"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-horizon-nature-monitoring-2027",
+      "topic_id": "horizon-nature-monitoring-2027",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "The published call opened 13 October 2026; the work programme gives 14 January 2027 at 17:00 Brussels time. The portal returned an application shell, so its live status/amendments could not be independently inspected.",
+      "territory": "EU/associated-country framework; Spain is an eligible member state. No specific Alhama parcel, organisation or partner is confirmed.",
+      "applicants": "Eligible legal entities under General Annex B; RIA normally requires three independent entities in different countries including an EU member state; topic-specific multi-actor conditions apply. CSA follows its own consortium rules.",
+      "activities": "Research and Innovation Action addressing Area A pollinator monitoring under NRR, Area B soil biodiversity, or Area C Water Framework Directive; indicate one area. Satellite/navigation use requires Copernicus/Galileo/EGNOS where specified.",
+      "financial_summary": "Indicative topic €16m and €5–6m EU contribution per project; lump-sum financing. Project-specific payment schedule is determined in the grant agreement.",
+      "deadlines": [
+        {
+          "label": "Full proposal",
+          "value": "2027-01-14T17:00:00+01:00",
+          "timezone": "Europe/Brussels",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "The Funding & Tenders topic page exposed only an application shell. Recover its current status and amendments through the live portal; the official work programme and REA calendar were recovered and reviewed.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 145,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 145"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 146,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 146"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 147,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 147"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 148,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 148"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    }
+  ],
+  "funding_assessments": [
+    {
+      "id": "funding-assessment:remaining-restoration-horizon-nature-living-labs-2027",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-living-labs-2027",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible research consortium with an appropriate Spanish participant",
+      "reasons": [
+        "An Alhama site could become an experimental site in a multi-country restoration living-lab proposal."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 133,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 133"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 134,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 134"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 135,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 135"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 136,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 136"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 137,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 137"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-horizon-nature-living-labs-2027",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-living-labs-2027",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible research consortium with an appropriate Spanish participant",
+      "reasons": [
+        "Drone refill technology could be tested only as an evidenced restoration intervention within the living labs."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 133,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 133"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 134,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 134"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 135,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 135"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 136,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 136"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 137,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 137"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-horizon-nature-living-labs-2027",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-living-labs-2027",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible research consortium with an appropriate Spanish participant",
+      "reasons": [
+        "A research monitoring design can establish baseline, outcomes, risks and comparability across sites."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 133,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 133"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 134,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 134"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 135,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 135"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 136,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 136"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 137,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 137"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-horizon-nature-living-labs-2027",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-living-labs-2027",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Education/engagement partner only where the research work programme needs it",
+      "reasons": [
+        "Education and co-creation can contribute to living-lab learning; no standalone education grant is established."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 133,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 133"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 134,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 134"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 135,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 135"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 136,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 136"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 137,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 137"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-horizon-nature-lab-network-2027",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-lab-network-2027",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible research consortium with an appropriate Spanish participant",
+      "reasons": [
+        "The pilot could engage with a European living-lab network, but the call funds network coordination."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 138,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 138"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 139,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 139"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 140,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 140"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 141,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 141"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-horizon-nature-lab-network-2027",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-lab-network-2027",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Possible technology knowledge-transfer contributor; prototype R&D needs another instrument",
+      "reasons": [
+        "Dissemination of validated practice could contribute; developing the drone prototype is not a CSA research activity."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 138,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 138"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 139,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 139"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 140,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 140"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 141,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 141"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-horizon-nature-lab-network-2027",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-lab-network-2027",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible research consortium with an appropriate Spanish participant",
+      "reasons": [
+        "Shared monitoring standards and impact frameworks are a plausible network contribution."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 138,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 138"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 139,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 139"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 140,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 140"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 141,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 141"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-horizon-nature-lab-network-2027",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-lab-network-2027",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Organisation able to deliver network capacity building and engage living labs",
+      "reasons": [
+        "Capacity building, learning and dissemination are relevant network functions."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 138,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 138"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 139,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 139"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 140,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 140"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 141,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 141"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-horizon-nature-monitoring-2027",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-monitoring-2027",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible research consortium with an appropriate Spanish participant",
+      "reasons": [
+        "The restoration site could provide a validation setting for a legally relevant biodiversity-monitoring method."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 145,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 145"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 146,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 146"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 147,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 147"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 148,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 148"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-horizon-nature-monitoring-2027",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-monitoring-2027",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible research consortium with an appropriate Spanish participant",
+      "reasons": [
+        "Irrigation hardware development alone does not address biodiversity monitoring; a sensing/observation contribution requires a distinct research objective."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 145,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 145"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 146,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 146"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 147,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 147"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 148,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 148"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-horizon-nature-monitoring-2027",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-monitoring-2027",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible research consortium with an appropriate Spanish participant",
+      "reasons": [
+        "A promising research route for imagery plus field measurements if it delivers a specified legally binding biodiversity-monitoring use case."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 145,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 145"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 146,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 146"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 147,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 147"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 148,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 148"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-horizon-nature-monitoring-2027",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-horizon-nature-monitoring-2027",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Education/engagement partner only where the research work programme needs it",
+      "reasons": [
+        "Citizen-science or user training could support method adoption; a standalone education project is not the topic."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying."
+      ],
+      "next_action": "Define the precise topic contribution and research/coordination role, establish the required partners and site arrangements, and verify the live submission page before budgeting or applying.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 145,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 145"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 146,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 146"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 147,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 147"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 148,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 148"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "funding-review-gap:horizon-nature-living-labs-2027",
+      "topic_ids": [
+        "horizon-nature-living-labs-2027"
+      ],
+      "text": "Funding review incomplete: The Funding & Tenders topic page exposed only an application shell. Recover its current status and amendments through the live portal; the official work programme and REA calendar were recovered and reviewed.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 133,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 133"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 134,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 134"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 135,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 135"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 136,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 136"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 137,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 137"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-review-gap:horizon-nature-lab-network-2027",
+      "topic_ids": [
+        "horizon-nature-lab-network-2027"
+      ],
+      "text": "Funding review incomplete: The Funding & Tenders topic page exposed only an application shell. Recover its current status and amendments through the live portal; the official work programme and REA calendar were recovered and reviewed.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 138,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 138"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 139,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 139"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 140,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 140"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 141,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 141"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-review-gap:horizon-nature-monitoring-2027",
+      "topic_ids": [
+        "horizon-nature-monitoring-2027"
+      ],
+      "text": "Funding review incomplete: The Funding & Tenders topic page exposed only an application shell. Recover its current status and amendments through the live portal; the official work programme and REA calendar were recovered and reviewed.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 14,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 15,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 145,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 145"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 146,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 146"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 147,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 147"
+        },
+        {
+          "source_id": "KGB-SRC-0091",
+          "page": 148,
+          "label": "NATURE topic scope, calendar and financial conditions",
+          "locator": "NATURE topic scope, calendar and financial conditions; PDF position 148"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 11,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 12,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 13,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 14,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 31,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon general eligibility, action types and grant conditions",
+          "locator": "Horizon general eligibility, action types and grant conditions; PDF position 33"
+        }
+      ]
+    }
+  ]
+}

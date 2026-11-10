@@ -46,16 +46,22 @@ export function FundingProjectTools({catalog,selected,onSelect,onCatalog}:{catal
 }
 
 export function FundingDetails({catalog,ids,selected,open}:{catalog:Catalog;ids:string[];selected:string;open:(r:Ref)=>void}){
+  const [expanded,setExpanded]=useState<string|null>(null);
   const reviews=fundingReviews(ids,catalog);
+  const topics=catalog.topics.filter(t=>ids.includes(t.id)&&t.domain==='funding');
+  const references=topics.length>0&&topics.every(t=>t.funding_role==='reference');
+  const contexts=[...new Set(topics.flatMap(t=>t.funding_context_ids||[]))];
   if(!ids.some(id=>catalog.topics.some(t=>t.id===id&&t.domain==='funding')))return null;
   const ideas=[...(catalog.project_ideas||[])].sort((a,b)=>Number(b.id===selected)-Number(a.id===selected));
   return <section className="funding-details" aria-label="Project suitability">
-    <h3>Project suitability</h3><p>Reviewed possibilities for your ideas. Applicant, land and partner requirements remain separate from thematic relevance.</p>
-    {!reviews.length&&<p>Project fit and availability have not been reviewed for this option.</p>}
+    <h3>{references?'Supporting reference':'Project suitability'}</h3><p>{references?'This describes a rule, authority, tool or historical context. It is not a standalone application. Linked reviews below belong to their named funding routes.':'Reviewed possibilities for your ideas. Applicant, land and partner requirements remain separate from thematic relevance.'}</p>
+    {contexts.length>0&&<p>Funding contexts: {contexts.map(id=>catalog.topics.find(t=>t.id===id)?.label||id).join(' · ')}. Context links do not establish eligibility.</p>}
+    {references&&reviews.length>0&&<nav className="actions" aria-label="Linked funding reviews">{reviews.map(r=><button key={r.id} onClick={()=>{setExpanded(r.id);requestAnimationFrame(()=>document.getElementById('funding-'+r.id)?.scrollIntoView({block:'nearest'}));}}>{catalog.topics.find(t=>t.id===r.topic_id)?.label||r.topic_id}</button>)}</nav>}
+    {!reviews.length&&<p>{references?'No linked funding review is available yet.':'Project fit and availability have not been reviewed for this option.'}</p>}
     {reviews.length>1&&<p>{reviews.length} reviewed calls or routes. Their dates and conditions differ.</p>}
-    {reviews.map(r=><details className="funding-review" key={r.id} open={reviews.length===1}>
+    {reviews.map(r=><details className="funding-review" id={'funding-'+r.id} key={r.id} open={reviews.length===1||expanded===r.id}>
       <summary><strong>{catalog.topics.find(t=>t.id===r.topic_id)?.label||r.topic_id}</strong></summary>
-      <p><strong>{AVAILABILITY[r.availability]}</strong> · {INSTRUMENT[r.instrument_type]} · Checked {r.checked_on}</p>
+      <p><strong>{AVAILABILITY[r.availability]}</strong> · {INSTRUMENT[r.instrument_type]} · Checked {r.checked_on}{r.verification_state!=='confirmed'&&<> · <strong>Verification {r.verification_state}</strong></>}</p>
       <p>{r.availability_note}</p>
       {r.deadlines.length>0&&<ul>{r.deadlines.map((d,i)=><li key={i}>{d.label}: {d.value}{d.timezone?' · '+d.timezone:''}{d.note?' · '+d.note:''}</li>)}</ul>}
       {(catalog.funding_state?.reviews[r.id]||[]).map((w,i)=><p className="notice" key={i}>{w}</p>)}

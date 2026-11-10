@@ -118,6 +118,13 @@ warnings: project version, review version and evidence-fingerprint changes requi
 Old reasoning remains stored. Availability and relevance stay independent; dates passing never
 manufacture verified closure. The frontend project selector is presentation state, not a graph filter.
 
+Topic `funding_role` and `funding_context_ids` are additive curated presentation metadata.
+Inspection follows explicit transitive contexts with a visited set; neither common source editions
+nor folder membership transfers an assessment. Route summaries require their own review. Reference
+cards show supporting-reference labels and linked-review buttons. Framework summaries expose missing,
+failed and stale project comparisons without inheriting availability. Evidence fingerprints omit
+exactly these two topic metadata fields; factual topic/source changes retain normal staleness checks.
+
 ## Domain preview and in-place Update
 
 State.pendingDomain is an optional staged choice; State.domain remains the applied query domain.

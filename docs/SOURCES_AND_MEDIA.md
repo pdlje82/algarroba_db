@@ -23,6 +23,16 @@ weekly additions need their own hashes/edition reconciliation and do not automat
 [Verification](VERIFICATION.md). The mappings and source-review details below preserve the
 original intake's scope; the live registry is authoritative for subsequent additions.
 
+The complete funding-route intake on 10 November 2026 added fourteen official PDFs as FUND-029
+through FUND-042, preserving earlier editions and the historical ownership inventory. Exact hashes,
+issuers, direct download links, reviewed positions and date limitations are in
+[`document-library-additions-funding-review-20261110.json`](../imports/document-library-additions-funding-review-20261110.json)
+and the library catalog. A dated current-library manifest and verified separate archive are recorded
+in `research/funding-complete-review-20261110/library-verification.json`. The historical ownership
+inventory still differs by the previously added files and catalog updates; this is not a failed hash
+check of the new accession. Use the dated recovery manifest plus provenance ledgers, without resetting
+the historical inventory or deleting additional files to force an old inventory match.
+
 Research handoffs with an explicitly web-enabled source boundary use the prompt's
 [official-source acquisition step](../DOCUMENT_INGESTION_PROMPT.md#research-handoff-and-official-source-acquisition).
 `library-and-official-web` covers official issuer/regulator sources; `library-and-primary-web` also

@@ -1,0 +1,959 @@
+{
+  "batch_id": "funding-complete-review-20261110-contextual-v2",
+  "summary": "Review wildfire draft, carbon registration, prospective nature finance, Natura 2000 financing and historical PRTR delivery without inventing grants or buyer income; 20 comparisons.",
+  "base_revision": 45,
+  "sources": [
+    {
+      "id": "KGB-SRC-0122",
+      "title": "MITECO municipal wildfire draft: hearing dates and draft status",
+      "issuer": "MITECO",
+      "kind": "web",
+      "filename": "wildfire.html",
+      "managed_path": "sources/funding-complete-review-20261110/wildfire.html",
+      "sha256": "daf89ab5a934f949de03ec11e129bb78cf5a129679d2bcb63cda87ae6115010a",
+      "url": "https://www.miteco.gob.es/es/reto-demografico/participacion-publica.html",
+      "retrieved_on": "2026-11-10",
+      "excerpt": "Trámite de audiencia \nLa documentación sometida a audiencia e información pública es la siguiente: \n○    Proyecto de «Orden por la que se establecen las bases reguladoras para la concesión de subvenciones para fomentar la resiliencia local y los municipios seguros frente a incendios forestales en municipios de reto demográfico». \n○    Memoria del Análisis de Impacto Normativo del proyecto.  \nEl plazo de audiencia se ha reducido a siete días hábiles, al amparo del artículo 26.6 de la Ley 50/1997, de 27 de noviembre, del Gobierno, justificado por la especial virulencia de los incendios forestales en la última campaña de verano, quedando vinculada a la necesidad de implantación de los PCI con carácter previo a la temporada de mayor riesgo en municipios de menos de 5.000 habitantes que no cuentan con medios técnicos para su aprobación. Esta motivación que recogida con mayor detalle en la Memoria del Análisis de Impacto Normativo.  \nPlazo de remisión \nPlazo para presentar documentación desde el lunes, 26 de octubre de 2026 hasta el miércoles, 4 de noviembre de 2026 \nPresentación de alegaciones \nLas alegaciones podrán remitirse a la dirección de correo:bzn-comurd@miteco.es \nDeberán indicar las siguientes cuestiones: \n○    Asunto: «Bases resiliencia local incendios forestales».  \n○    Nombre y apellidos / denominación o razón social del participante. \n○    DNI / CIF \n○    Organización o asociación (si corresponde). \n○    Contacto (correo electrónico). \nSólo serán consideradas las respuestas en las que el remitente esté plenamente identificado (nombre completo junto al DNI o CIF en función de la personalidad física o jurídica). \nCon carácter general las respuestas se considerarán no confidenciales y de libre difusión. Las partes que se consideren confidenciales deberán ser específicamente señaladas y delimitadas en los comentarios, motivando las razones de dicha calificación. \nAnexos\n PROYECTO DE ORDEN TED/xxxx/2026, DE XX DE NOVIEMBRE, POR LA QUE SE ESTABLECEN LAS BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES PARA FOMENTAR LA RESILIENCIA LOCAL Y LOS MUNICIPIOS SEGUROS FRENTE A INCENDIOS \n MEMORIA DEL ANÁLISIS DE IMPACTO NORMATIVO DEL PROYECTO DE ORDEN TED/xxxx/2026, DE XX DE NOVIEMBRE, POR LA QUE SE ESTABLECEN LAS BASES REGULADORAS PARA LA CONCESIÓN DE SUBVENCIONES PARA FOMENTAR LA RESILIENCIA LOCAL Y LOS MUNICIPIOS SEGUROS FRENTE A INCENDIOS"
+    },
+    {
+      "id": "KGB-SRC-0123",
+      "title": "MITECO absorption registration requirements: land, scale, permanence and plans",
+      "issuer": "MITECO",
+      "kind": "web",
+      "filename": "carbon.html",
+      "managed_path": "sources/funding-complete-review-20261110/carbon.html",
+      "sha256": "4aa920b5569f61578d700577a01bc61fe83c62f7364f4e7ab112447066ca13db",
+      "url": "https://www.miteco.gob.es/es/cambio-climatico/temas/registro-huella/proyectos-de-absorcioninscripcion.html",
+      "retrieved_on": "2026-11-10",
+      "excerpt": "Requisitos\nLos proyectos de absorción deben cumplir, a su vez, con una serie de requisitos: \n- Encajar en una de las dos actuaciones siguientes: \n- Repoblación forestal en zonas donde no ha habido un bosque desde el 31 de diciembre de 1989. \n- Actuaciones en zonas forestales incendiadas para el restablecimiento de la masa forestal existente. \n- Estar ubicado en territorio nacional. \n- Unidad mínima de actuación: 1 ha, donde la cubierta de copas de los árboles mínima sea del 20 % en madurez y la altura potencial de los árboles de 3 m en madurez. \n- Permanencia del proyecto: mínimo 30 años. \n- Antigüedad: puesta en marcha posterior a la campaña de plantación 2012 - 2013. \n- Plan de gestión: el proyecto debe contar con un plan en el que se indiquen las actuaciones previstas. \n- Cálculo de las absorciones: realizado con la calculadora del Registro. \n- Seguimiento: presentación de un informe de seguimiento cada 5 años. \nMás información de detalle en el siguiente documento: \n Documento de apoyo para la inscripción - proyectos de absorción"
+    },
+    {
+      "id": "KGB-SRC-0124",
+      "title": "Commission nature credits: expert group and distinct Green Assist pilot initiatives",
+      "issuer": "European Commission DG Environment",
+      "kind": "web",
+      "filename": "credits-recovery.html",
+      "managed_path": "sources/funding-complete-review-20261110/credits-recovery.html",
+      "sha256": "71269e2fa4efc5addbcd1da4435ef0c9eadb2ce754fc9d90d0835b2d5967f3ca",
+      "url": "https://green-forum.ec.europa.eu/green-business/nature-credits_en",
+      "retrieved_on": "2026-11-10",
+      "excerpt": "Overview\nIn July 2025, the Commission published a Roadmap towards Nature Credits, setting out a path to increasing private investment in nature-positive actions.\nNature credits are now emerging as a potentially valuable way to complement public funding with private investment, rewarding farmers, foresters, fishers, landowners and local communities who restore and protect natural ecosystems.\nFor private actors, nature credits can strengthen supply-chain resilience and create nature-positive investment opportunities, contributing to long-term economic stability. They aim to create science-based and trustworthy ways to measure improvements in ecosystem conditions.\nTheir purpose is also to help mobilise additional private finance, complementing public funding and supporting the EU’s biodiversity goals.\n© bojanstory | Getty Images\n Page contents\nPage contents\nExpert Group on Nature Credits\nThe Commission established an Expert Group on Nature Credits last year. It provides advice and expertise to the Commission on the preparation of policy initiatives related to nature certification and nature credits.\nThe group facilitates cooperation between the Commission, Member States and stakeholders, gathers scientific and technical information on assessing ecosystem conditions, reviews experience from existing public and private initiatives and examines options for market infrastructure and governance.\nAt the same time, it ensures broad representation of stakeholders, with membership including Member States, individual experts, organisations and other public entities.\nThe Expert Group meets in person and remotely, following Commission guidelines.\nMeetings \n4th meeting of the Expert Group on Nature Credits\nDay 1 (01/10/2026)\nDay 2 (02/10/2026)\n3rd meeting of the Expert Group on Nature credits (22/06/2026)\n3rd meeting video\n2nd meeting of the Expert Group on Nature Credits (18-19/03/2026)\n2nd meeting video\n1st meeting of the Expert Group on Nature Credits (11/12/2025)\n1st meeting videoDocumentation \nExpert Group webpage\nContinuously open call for applications\nPilot initiatives\nEarly experience is being generated, including through Green Assist pilot projects, which are supporting the design and testing of the approach of nature credits in different contexts.\nGreen Assist is supporting work on wetland restoration in France, exploring how nature-positive practices and landscape-level interventions could be structured and recognised to attract additional finance.\nGreen Assist is contributing to the development of investment approaches for biodiversity restoration and conservation in Peru, examining how EU-based actors such as Restore could engage in high-integrity nature-positive action abroad.\nThese pilots provide practical insights into methodologies, governance models, monitoring tools and stakeholder engagement. They also help identify what would be required for credible and scalable approaches to nature credits in the EU."
+    },
+    {
+      "id": "KGB-SRC-0125",
+      "title": "Commission Natura 2000 financing: PAFs and complementary funds",
+      "issuer": "European Commission DG Environment",
+      "kind": "web",
+      "filename": "natura.html",
+      "managed_path": "sources/funding-complete-review-20261110/natura.html",
+      "sha256": "fef3238d9330ed600cd746527744cd787ac267a26645b0ac7e63ac32e5c6b6e2",
+      "url": "https://environment.ec.europa.eu/topics/nature-and-biodiversity/natura-2000/financing-natura-2000_en",
+      "retrieved_on": "2026-11-10",
+      "excerpt": "Overview\nThe Natura 2000 network provides many environmental, social and economic benefits.\nIt also requires substantial investment to protect, restore and manage the sites. This is estimated at €10.2 billion euro a year. Multiple funding sources are necessary to meet the funding needs of the network and deliver the benefits. The EU funds play a particularly important role in this process. \nPrioritised Action Frameworks\nThe Habitats Directive makes a clear link between the necessary conservation measures and the EU co-financing. To facilitate the process, the EU Member States adopt prioritised action frameworks (PAFs) defining the funding needs and priorities for Natura 2000 at a national or regional level and potential sources of EU contribution.\nAn updated format (available in all EU languages) for prioritised action frameworks was developed in 2018 and has been used by the Member States to prepare their PAFs for current multiannual financial framework (2021-2027).\nBased on the national action frameworks, the Commission has produced one at the EU level. This document follows up on the commitment made in the Biodiversity Strategy for 2030 to update the estimate of the financing needs of the Natura 2000 network.\nAccording to the latest estimates, the costs are\n4.8 billion euro (47%) to maintain and restore the Natura 2000 network\n2.5 billion euro (25%) for additional green infrastructure measures beyond Natura 2000\n2.1 billion euro (20%) for horizontal and administrative measures\n0.8 billion euro (8%) for species-specific measures\nEU funds for Natura 2000\nEach EU country is responsible for funding Natura 2000. Several EU financial instruments are available, however, to complement national funding.\nA guide on “Financing Natura 2000 - EU Funding Opportunities in 2021-2027” can help EU Member States’ authorities identify in the current multiannual financial framework EU funds best adapted to manage and restore their Natura 2000 sites.\nSee also a 2017 analysis on experience with the integrated approach to financing Natura 2000 and wider biodiversity conservation from the EU budget to get an idea on how funding was used in the past.\nLIFE Programme\nThe EU LIFE Programme has been supporting nature conservation projects across the EU since 1992. To date, LIFE has co-financed over 1800 projects to help restore habitats and species across the EU. Over 5400 Natura 2000 sites have benefited from LIFE funding during this period.\nA 2018 study shows that LIFE has had a direct impact on the conservation status of numerous species and habitats such as the bearded vulture, the Iberian lynx and the Saimaa ringed seal."
+    }
+  ],
+  "topics": [],
+  "coverage": [],
+  "browse_groups": [],
+  "funding_reviews": [
+    {
+      "id": "funding-review:remaining-municipal-wildfire-draft",
+      "topic_id": "municipal-wildfire-draft",
+      "version": 1,
+      "instrument_type": "framework",
+      "availability": "draft",
+      "availability_note": "The current MITECO page presents a draft-order hearing ending 4 November 2026. Adoption and a grant application window were not established; the consultation deadline is not an application deadline.",
+      "territory": "Proposed Spanish municipalities of demographic challenge under 5,000 residents, subject to final rules; Alhama’s exact qualification is unconfirmed.",
+      "applicants": "Proposed municipal beneficiaries. A business/nonprofit could only have a separately evidenced partner/service role, not an assumed beneficiary right.",
+      "activities": "Proposed local wildfire-prevention plans and preventive measures, not a general post-fire restoration or drone-development fund.",
+      "financial_summary": "Draft amounts/rates/costs/payment conditions are provisional; no adopted grant cap, budget or disbursement entitlement is established.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0122",
+          "label": "MITECO municipal wildfire draft: hearing dates and draft status",
+          "locator": "MITECO municipal wildfire draft: hearing dates and draft status; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 1,
+          "locator": "Draft placeholder order and municipal purpose",
+          "label": "Draft placeholder order and municipal purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 2,
+          "locator": "Proposed CIUDEN implementation",
+          "label": "Proposed CIUDEN implementation"
+        },
+        {
+          "source_id": "KGB-SRC-0066",
+          "page": null,
+          "locator": "Draft municipal wildfire rules consultation; captured 2026-11-10T09:51:01.149309+00:00",
+          "label": "Draft-order consultation, not a funding call"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-carbon-absorption-registry",
+      "topic_id": "carbon-absorption-registry",
+      "version": 1,
+      "instrument_type": "non-cash",
+      "availability": "unknown",
+      "availability_note": "The registration requirements and official route were verified; this is not a grant call or verified carbon sale. Current individual registration acceptance was not independently tested.",
+      "territory": "Spain; qualifying afforestation or fire-damaged forest restoration under the registry’s actual categories.",
+      "applicants": "Project promoter with the required rights, management and permanence commitments; ownership and site status are unconfirmed.",
+      "activities": "Qualifying carbon-absorption project registration, with at least 1 ha, 20% mature canopy, potential 3 m tree height and at least 30-year permanence.",
+      "financial_summary": "Non-cash registration mechanism. No grant payment, carbon price, purchaser or revenue calculation is established; verification/management and long-term obligations require a separate cost plan.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0123",
+          "label": "MITECO absorption registration requirements: land, scale, permanence and plans",
+          "locator": "MITECO absorption registration requirements: land, scale, permanence and plans; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-nature-credits",
+      "topic_id": "nature-credits",
+      "version": 1,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "The official Green Forum documents an expert group and Green Assist examples in France/Peru. These do not establish that the specific planned 2025-roadmap pilot is an open Alhama programme or the same project.",
+      "territory": "Developing EU framework and distinct pilot contexts; no local access or project-specific market qualification verified.",
+      "applicants": "Land managers, organisations and other actors may be relevant to future mechanisms, but actual applicant/participation and verification gates are not established for this site.",
+      "activities": "Develop credible nature-positive certification/outcome-credit methods and governance; market development and advice differ from cash grants.",
+      "financial_summary": "No verified current credit price, purchaser, grant cap, aid rate or payment schedule. Certification/monitoring costs and long-term obligations cannot be assumed covered.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0124",
+          "label": "Commission nature credits: expert group and distinct Green Assist pilot initiatives",
+          "locator": "Commission nature credits: expert group and distinct Green Assist pilot initiatives; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-natura2000-funding-reference",
+      "topic_id": "natura2000-funding-reference",
+      "version": 1,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "This is an official financing overview/PAF framework, not an open local grant. No parcel designation or applicable individual call was established.",
+      "territory": "Natura 2000 and instrument-specific territories; a municipality or provincial location alone does not establish parcel coverage.",
+      "applicants": "Actual beneficiaries depend on the instrument and responsible authority; no land rights, designation or partnership is assumed.",
+      "activities": "Management/restoration of qualifying sites and conservation measures through appropriate complementary funds.",
+      "financial_summary": "Multiple funding sources and PAF priorities; no transferable rate, grant cap, cost entitlement, co-finance or payment schedule is established by the overview.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0125",
+          "label": "Commission Natura 2000 financing: PAFs and complementary funds",
+          "locator": "Commission Natura 2000 financing: PAFs and complementary funds; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-prtr-ecosystem-restoration",
+      "topic_id": "prtr-ecosystem-restoration",
+      "version": 1,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "The library documents historical public-contract financing and delivery requirements. Current award/completion status or a live supplier opportunity was not verified.",
+      "territory": "Documented Andarax/Níjar public restoration delivery sites; this does not grant an Alhama parcel entitlement.",
+      "applicants": "Contracting/assigned public bodies and independently qualified tenderers/suppliers under actual notices; no applicant or supplier arrangement is confirmed.",
+      "activities": "Public restoration works and delivery obligations. Grant, public investment, direct assignment and procurement are distinct.",
+      "financial_summary": "The Andarax justification’s project-specific PRTR financing and €3,416,081.25 tender budget including VAT are not applicant grant rates or available allocations. Current contract payment, supplier qualifications and financial conditions require the relevant notice.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "Current Andarax award and Níjar/TRAGSA supplier opportunity status were not recovered from the inspected public-project evidence. Retry SIREC expediente CONTR 2023 152183 and the exact TRAGSA/Níjar records; do not infer closure, completion or open procurement.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 6"
+        }
+      ]
+    }
+  ],
+  "funding_assessments": [
+    {
+      "id": "funding-assessment:remaining-restoration-municipal-wildfire-draft",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-municipal-wildfire-draft",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Municipality satisfying future final rules",
+      "reasons": [
+        "Prevention-oriented restoration could be considered only if it fits an adopted municipal measure."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Recover an adopted BOE order and CIUDEN call before preparing an application; identify a willing municipality and verify the applicable demographic/risk criteria and prevention plan. No municipality arrangement is confirmed."
+      ],
+      "next_action": "Recover an adopted BOE order and CIUDEN call before preparing an application; identify a willing municipality and verify the applicable demographic/risk criteria and prevention plan. No municipality arrangement is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0122",
+          "label": "MITECO municipal wildfire draft: hearing dates and draft status",
+          "locator": "MITECO municipal wildfire draft: hearing dates and draft status; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 1,
+          "locator": "Draft placeholder order and municipal purpose",
+          "label": "Draft placeholder order and municipal purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 2,
+          "locator": "Proposed CIUDEN implementation",
+          "label": "Proposed CIUDEN implementation"
+        },
+        {
+          "source_id": "KGB-SRC-0066",
+          "page": null,
+          "locator": "Draft municipal wildfire rules consultation; captured 2026-11-10T09:51:01.149309+00:00",
+          "label": "Draft-order consultation, not a funding call"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-municipal-wildfire-draft",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-municipal-wildfire-draft",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Municipality with a justified permitted measure; supplier role would be separate",
+      "reasons": [
+        "A drone irrigation prototype is not established as a permitted municipal prevention cost."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Recover an adopted BOE order and CIUDEN call before preparing an application; identify a willing municipality and verify the applicable demographic/risk criteria and prevention plan. No municipality arrangement is confirmed."
+      ],
+      "next_action": "Recover an adopted BOE order and CIUDEN call before preparing an application; identify a willing municipality and verify the applicable demographic/risk criteria and prevention plan. No municipality arrangement is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0122",
+          "label": "MITECO municipal wildfire draft: hearing dates and draft status",
+          "locator": "MITECO municipal wildfire draft: hearing dates and draft status; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 1,
+          "locator": "Draft placeholder order and municipal purpose",
+          "label": "Draft placeholder order and municipal purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 2,
+          "locator": "Proposed CIUDEN implementation",
+          "label": "Proposed CIUDEN implementation"
+        },
+        {
+          "source_id": "KGB-SRC-0066",
+          "page": null,
+          "locator": "Draft municipal wildfire rules consultation; captured 2026-11-10T09:51:01.149309+00:00",
+          "label": "Draft-order consultation, not a funding call"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-municipal-wildfire-draft",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-municipal-wildfire-draft",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Qualified municipality/competent delivery partner",
+      "reasons": [
+        "Monitoring/risk information could support an adopted prevention measure if eligible."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Recover an adopted BOE order and CIUDEN call before preparing an application; identify a willing municipality and verify the applicable demographic/risk criteria and prevention plan. No municipality arrangement is confirmed."
+      ],
+      "next_action": "Recover an adopted BOE order and CIUDEN call before preparing an application; identify a willing municipality and verify the applicable demographic/risk criteria and prevention plan. No municipality arrangement is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0122",
+          "label": "MITECO municipal wildfire draft: hearing dates and draft status",
+          "locator": "MITECO municipal wildfire draft: hearing dates and draft status; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 1,
+          "locator": "Draft placeholder order and municipal purpose",
+          "label": "Draft placeholder order and municipal purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 2,
+          "locator": "Proposed CIUDEN implementation",
+          "label": "Proposed CIUDEN implementation"
+        },
+        {
+          "source_id": "KGB-SRC-0066",
+          "page": null,
+          "locator": "Draft municipal wildfire rules consultation; captured 2026-11-10T09:51:01.149309+00:00",
+          "label": "Draft-order consultation, not a funding call"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-municipal-wildfire-draft",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-municipal-wildfire-draft",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Qualified municipality and permitted project",
+      "reasons": [
+        "Public awareness might be ancillary to an eligible plan, but standalone education support is not established."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Recover an adopted BOE order and CIUDEN call before preparing an application; identify a willing municipality and verify the applicable demographic/risk criteria and prevention plan. No municipality arrangement is confirmed."
+      ],
+      "next_action": "Recover an adopted BOE order and CIUDEN call before preparing an application; identify a willing municipality and verify the applicable demographic/risk criteria and prevention plan. No municipality arrangement is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0122",
+          "label": "MITECO municipal wildfire draft: hearing dates and draft status",
+          "locator": "MITECO municipal wildfire draft: hearing dates and draft status; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 1,
+          "locator": "Draft placeholder order and municipal purpose",
+          "label": "Draft placeholder order and municipal purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 2,
+          "locator": "Proposed CIUDEN implementation",
+          "label": "Proposed CIUDEN implementation"
+        },
+        {
+          "source_id": "KGB-SRC-0066",
+          "page": null,
+          "locator": "Draft municipal wildfire rules consultation; captured 2026-11-10T09:51:01.149309+00:00",
+          "label": "Draft-order consultation, not a funding call"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-carbon-absorption-registry",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-carbon-absorption-registry",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Promoter with qualifying land rights and permanence capacity",
+      "reasons": [
+        "A qualifying restoration/afforestation project could explore registration if land baseline, species/structure and long-term rights meet the rules."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify the actual parcel and rights, previous land cover and qualifying project category; test the ≥1 ha, mature canopy/height and ≥30-year permanence requirements using the registration guidance. Registration does not establish a buyer or carbon income."
+      ],
+      "next_action": "Identify the actual parcel and rights, previous land cover and qualifying project category; test the ≥1 ha, mature canopy/height and ≥30-year permanence requirements using the registration guidance. Registration does not establish a buyer or carbon income.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0123",
+          "label": "MITECO absorption registration requirements: land, scale, permanence and plans",
+          "locator": "MITECO absorption registration requirements: land, scale, permanence and plans; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-carbon-absorption-registry",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-carbon-absorption-registry",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Technology supplier or project participant, with no presumed registry payment",
+      "reasons": [
+        "The registry does not fund aircraft or establish a drone business; technology could only support a separately qualifying project."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify the actual parcel and rights, previous land cover and qualifying project category; test the ≥1 ha, mature canopy/height and ≥30-year permanence requirements using the registration guidance. Registration does not establish a buyer or carbon income."
+      ],
+      "next_action": "Identify the actual parcel and rights, previous land cover and qualifying project category; test the ≥1 ha, mature canopy/height and ≥30-year permanence requirements using the registration guidance. Registration does not establish a buyer or carbon income.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0123",
+          "label": "MITECO absorption registration requirements: land, scale, permanence and plans",
+          "locator": "MITECO absorption registration requirements: land, scale, permanence and plans; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-carbon-absorption-registry",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-carbon-absorption-registry",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Competent project promoter/monitoring provider",
+      "reasons": [
+        "Monitoring could support a qualifying registered project, but the registry does not itself award a monitoring grant."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify the actual parcel and rights, previous land cover and qualifying project category; test the ≥1 ha, mature canopy/height and ≥30-year permanence requirements using the registration guidance. Registration does not establish a buyer or carbon income."
+      ],
+      "next_action": "Identify the actual parcel and rights, previous land cover and qualifying project category; test the ≥1 ha, mature canopy/height and ≥30-year permanence requirements using the registration guidance. Registration does not establish a buyer or carbon income.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0123",
+          "label": "MITECO absorption registration requirements: land, scale, permanence and plans",
+          "locator": "MITECO absorption registration requirements: land, scale, permanence and plans; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-carbon-absorption-registry",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-carbon-absorption-registry",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Educational participant in a separate qualifying project",
+      "reasons": [
+        "Education may explain a qualifying project but is not itself a carbon-absorption registration."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify the actual parcel and rights, previous land cover and qualifying project category; test the ≥1 ha, mature canopy/height and ≥30-year permanence requirements using the registration guidance. Registration does not establish a buyer or carbon income."
+      ],
+      "next_action": "Identify the actual parcel and rights, previous land cover and qualifying project category; test the ≥1 ha, mature canopy/height and ≥30-year permanence requirements using the registration guidance. Registration does not establish a buyer or carbon income.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0123",
+          "label": "MITECO absorption registration requirements: land, scale, permanence and plans",
+          "locator": "MITECO absorption registration requirements: land, scale, permanence and plans; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-nature-credits",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-nature-credits",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Project promoter with relevant site rights and independently evidenced outcomes",
+      "reasons": [
+        "Restoration outcomes could become relevant to future credible mechanisms; actual rights, baseline, additionality and method are unresolved."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Follow the official pilot/methodology work and identify a real accessible participation or advisory process. Do not infer a buyer, sale price, credit entitlement or Alhama funding window from roadmap/pilot examples."
+      ],
+      "next_action": "Follow the official pilot/methodology work and identify a real accessible participation or advisory process. Do not infer a buyer, sale price, credit entitlement or Alhama funding window from roadmap/pilot examples.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0124",
+          "label": "Commission nature credits: expert group and distinct Green Assist pilot initiatives",
+          "locator": "Commission nature credits: expert group and distinct Green Assist pilot initiatives; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-nature-credits",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-nature-credits",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Possible technology supplier to a separately qualified project",
+      "reasons": [
+        "Drone technology has no verified direct nature-credit funding route."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Follow the official pilot/methodology work and identify a real accessible participation or advisory process. Do not infer a buyer, sale price, credit entitlement or Alhama funding window from roadmap/pilot examples."
+      ],
+      "next_action": "Follow the official pilot/methodology work and identify a real accessible participation or advisory process. Do not infer a buyer, sale price, credit entitlement or Alhama funding window from roadmap/pilot examples.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0124",
+          "label": "Commission nature credits: expert group and distinct Green Assist pilot initiatives",
+          "locator": "Commission nature credits: expert group and distinct Green Assist pilot initiatives; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-nature-credits",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-nature-credits",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Qualified monitoring/verification participant",
+      "reasons": [
+        "Credible outcome monitoring could be a relevant service, but no specific contract or crediting methodology is confirmed."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Follow the official pilot/methodology work and identify a real accessible participation or advisory process. Do not infer a buyer, sale price, credit entitlement or Alhama funding window from roadmap/pilot examples."
+      ],
+      "next_action": "Follow the official pilot/methodology work and identify a real accessible participation or advisory process. Do not infer a buyer, sale price, credit entitlement or Alhama funding window from roadmap/pilot examples.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0124",
+          "label": "Commission nature credits: expert group and distinct Green Assist pilot initiatives",
+          "locator": "Commission nature credits: expert group and distinct Green Assist pilot initiatives; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-nature-credits",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-nature-credits",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Possible engagement partner in a real future mechanism",
+      "reasons": [
+        "Education may support engagement; no independent credit/revenue route for it is verified."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Follow the official pilot/methodology work and identify a real accessible participation or advisory process. Do not infer a buyer, sale price, credit entitlement or Alhama funding window from roadmap/pilot examples."
+      ],
+      "next_action": "Follow the official pilot/methodology work and identify a real accessible participation or advisory process. Do not infer a buyer, sale price, credit entitlement or Alhama funding window from roadmap/pilot examples.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0124",
+          "label": "Commission nature credits: expert group and distinct Green Assist pilot initiatives",
+          "locator": "Commission nature credits: expert group and distinct Green Assist pilot initiatives; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-natura2000-funding-reference",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-natura2000-funding-reference",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible promoter under a specific instrument",
+      "reasons": [
+        "A designated-site conservation/restoration contribution could be relevant after actual site and instrument verification."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a precise proposed site and verify its designation/conservation requirements with official spatial data and the responsible authority; then identify an actual dated funding instrument and its applicant rules."
+      ],
+      "next_action": "Identify a precise proposed site and verify its designation/conservation requirements with official spatial data and the responsible authority; then identify an actual dated funding instrument and its applicant rules.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0125",
+          "label": "Commission Natura 2000 financing: PAFs and complementary funds",
+          "locator": "Commission Natura 2000 financing: PAFs and complementary funds; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-natura2000-funding-reference",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-natura2000-funding-reference",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Possible eligible operator/supplier within a specific funded action",
+      "reasons": [
+        "A drone system is not a Natura 2000 funding instrument; technology expenditure needs a justified eligible conservation action."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a precise proposed site and verify its designation/conservation requirements with official spatial data and the responsible authority; then identify an actual dated funding instrument and its applicant rules."
+      ],
+      "next_action": "Identify a precise proposed site and verify its designation/conservation requirements with official spatial data and the responsible authority; then identify an actual dated funding instrument and its applicant rules.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0125",
+          "label": "Commission Natura 2000 financing: PAFs and complementary funds",
+          "locator": "Commission Natura 2000 financing: PAFs and complementary funds; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-natura2000-funding-reference",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-natura2000-funding-reference",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Competent conservation/monitoring partner",
+      "reasons": [
+        "Conservation monitoring could be relevant to a confirmed designated site and actual funding instrument."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a precise proposed site and verify its designation/conservation requirements with official spatial data and the responsible authority; then identify an actual dated funding instrument and its applicant rules."
+      ],
+      "next_action": "Identify a precise proposed site and verify its designation/conservation requirements with official spatial data and the responsible authority; then identify an actual dated funding instrument and its applicant rules.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0125",
+          "label": "Commission Natura 2000 financing: PAFs and complementary funds",
+          "locator": "Commission Natura 2000 financing: PAFs and complementary funds; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-natura2000-funding-reference",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-natura2000-funding-reference",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible public/nonprofit or other permitted promoter",
+      "reasons": [
+        "Public education could support designated-site management where a specific instrument admits it."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a precise proposed site and verify its designation/conservation requirements with official spatial data and the responsible authority; then identify an actual dated funding instrument and its applicant rules."
+      ],
+      "next_action": "Identify a precise proposed site and verify its designation/conservation requirements with official spatial data and the responsible authority; then identify an actual dated funding instrument and its applicant rules.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0125",
+          "label": "Commission Natura 2000 financing: PAFs and complementary funds",
+          "locator": "Commission Natura 2000 financing: PAFs and complementary funds; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-prtr-ecosystem-restoration",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-prtr-ecosystem-restoration",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Qualified public promoter or contractor under an actual separate notice",
+      "reasons": [
+        "Historical public works illustrate delivery requirements but do not establish an open Alhama restoration grant."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Recover the official SIREC notice/award and any live procurement or TRAGSA supplier notice for the exact project before considering a contractor role. Retain the historical contract amounts without treating them as an available grant."
+      ],
+      "next_action": "Recover the official SIREC notice/award and any live procurement or TRAGSA supplier notice for the exact project before considering a contractor role. Retain the historical contract amounts without treating them as an available grant.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 6"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-prtr-ecosystem-restoration",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-prtr-ecosystem-restoration",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Qualified technology/service provider",
+      "reasons": [
+        "A drone supplier role would require a live procurement and relevant specifications; no contract is established."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Recover the official SIREC notice/award and any live procurement or TRAGSA supplier notice for the exact project before considering a contractor role. Retain the historical contract amounts without treating them as an available grant."
+      ],
+      "next_action": "Recover the official SIREC notice/award and any live procurement or TRAGSA supplier notice for the exact project before considering a contractor role. Retain the historical contract amounts without treating them as an available grant.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 6"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-prtr-ecosystem-restoration",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-prtr-ecosystem-restoration",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Qualified monitoring/service provider",
+      "reasons": [
+        "Monitoring could be a contracted deliverable only under an actual current notice and qualification requirements."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Recover the official SIREC notice/award and any live procurement or TRAGSA supplier notice for the exact project before considering a contractor role. Retain the historical contract amounts without treating them as an available grant."
+      ],
+      "next_action": "Recover the official SIREC notice/award and any live procurement or TRAGSA supplier notice for the exact project before considering a contractor role. Retain the historical contract amounts without treating them as an available grant.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 6"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-prtr-ecosystem-restoration",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-prtr-ecosystem-restoration",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Qualified provider under an actual notice",
+      "reasons": [
+        "Interpretation/education might be a procured deliverable; no independent grant or live notice is established."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Recover the official SIREC notice/award and any live procurement or TRAGSA supplier notice for the exact project before considering a contractor role. Retain the historical contract amounts without treating them as an available grant."
+      ],
+      "next_action": "Recover the official SIREC notice/award and any live procurement or TRAGSA supplier notice for the exact project before considering a contractor role. Retain the historical contract amounts without treating them as an available grant.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 6"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "funding-review-gap:prtr-ecosystem-restoration",
+      "topic_ids": [
+        "prtr-ecosystem-restoration"
+      ],
+      "text": "Funding review incomplete: Current Andarax award and Níjar/TRAGSA supplier opportunity status were not recovered from the inspected public-project evidence. Retry SIREC expediente CONTR 2023 152183 and the exact TRAGSA/Níjar records; do not infer closure, completion or open procurement.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 6"
+        }
+      ]
+    }
+  ]
+}

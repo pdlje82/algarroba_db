@@ -231,3 +231,14 @@ changes to the project, review, funding topic or cited source edition flag earli
 review without replacing their conclusions. Reconsideration requires a new manually checked batch.
 No numerical suitability score, automatic eligibility engine or automatic project-plan adoption
 is provided. Full model fields and validation are defined in `backend/funding.py`.
+
+Funding topics may additionally carry `funding_role: route|framework|reference` and
+`funding_context_ids: string[]` (default empty). Contexts must be unique existing funding topics;
+self-links and explicitly classified reference targets are rejected. These fields are restricted to
+funding topics. They explain navigation/coverage, not applicant eligibility, factual relationships
+or assessment inheritance. A genuine route needs its own review and project comparisons; references
+receive supporting-reference labels. Older unclassified topics retain existing behaviour. Only
+these two presentation fields are excluded from assessment evidence fingerprints.
+
+`funding-review-coverage-20261110.json` and document-library addition ledgers are audit sidecars,
+not checked import payloads. Their disposition/retry fields must not be submitted as new schema fields.

@@ -103,6 +103,26 @@ def test_assessment_only_source_changes_flag_review(fixture):
     assert s.records('funding_assessments')==before
 
 
+def test_funding_metadata_is_checked_context_not_eligibility(fixture):
+    s,b=fixture;s.import_batch(b);before=s.records('funding_assessments');topic=s.records('topics')[0]
+    topic.update(funding_role='route',funding_context_ids=[])
+    s.import_batch(dict(batch_id='funding-role',summary='Curated funding role',topics=[topic]))
+    assert not state(s.snapshot())['assessments'][before[0]['id']]
+    reference=dict(topic,id='rule',kind='condition',label='Supporting rule',funding_role='reference',funding_context_ids=['fund'])
+    s.import_batch(dict(batch_id='context-link',summary='Curated reference link',topics=[reference]))
+    inspected=TestClient(create_app(s)).get('/api/inspect/rule').json()
+    assert inspected['funding_reviews'][0]['topic_id']=='fund'
+    assert len(inspected['funding_assessments'])==1
+    assert s.records('funding_assessments')==before
+    for contexts in [['absent'],['rule'],['fund','fund']]:
+        with pytest.raises(ValueError,match='Funding contexts'):s.import_batch(dict(batch_id='bad-context-'+str(len(contexts))+str(contexts[0]),summary='Invalid link',topics=[dict(reference,funding_context_ids=contexts)]))
+    method=next(t for t in s.records('topics') if t['id']=='method')
+    with pytest.raises(ValueError,match='Funding metadata'):s.import_batch(dict(batch_id='nonfunding-role',summary='Invalid role',topics=[dict(method,funding_role='reference')]))
+    topic['description']='A factual eligibility correction'
+    s.import_batch(dict(batch_id='factual-change',summary='Factual correction',topics=[topic]))
+    assert state(s.snapshot())['assessments'][before[0]['id']]
+
+
 def test_date_precision_and_opening_warnings(fixture):
     s,b=fixture;review=b['funding_reviews'][0]
     review['deadlines']=[dict(label='Opening',value='2026-01-01',kind='opening'),dict(label='Inclusive deadline',value='2026-11-10',note='Time unknown')]

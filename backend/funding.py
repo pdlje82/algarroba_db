@@ -114,9 +114,22 @@ class ProjectEdit(Strict):
 
 
 def fingerprint(review, sources, topic, assessment_refs=()):
+    # Classification/navigation alone does not invalidate an earlier factual assessment.
+    topic={k:v for k,v in topic.items() if k not in {'funding_role','funding_context_ids'}} if topic else topic
     raw = {'review': review, 'topic': topic,
            'editions': {r['source_id']: sources.get(r['source_id']) for r in [*review['source_refs'], *assessment_refs]}}
     return hashlib.sha256(json.dumps(raw, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+
+
+def context(snapshot, topic_ids):
+    """Follow explicit editorial context links; never infer eligibility or shared-PDF matching."""
+    topics={t['id']:t for t in snapshot['topics']}
+    ids=set(topic_ids);pending=list(topic_ids)
+    while pending:
+        for id in topics.get(pending.pop(),{}).get('funding_context_ids',[]):
+            if id not in ids:ids.add(id);pending.append(id)
+    reviews=[r for r in snapshot.get('funding_reviews',[]) if r['topic_id'] in ids]
+    return {'topic_ids':sorted(ids), 'reviews':reviews}
 
 
 def validate_intake(store, connection, review_models, assessment_models, topics, sources, inspected):

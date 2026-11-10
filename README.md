@@ -126,6 +126,11 @@ documentation for the corresponding dialogs.
 
 ## Explore and read
 
+Funding cards compare four exploratory project ideas. Supporting references link to the relevant
+reviews; programme folders show review coverage and unresolved checks. The dated complete-route
+coverage and retry register is [here](imports/funding-review-coverage-20261110.json). Applicant,
+land and partner arrangements remain unconfirmed until edited by the user.
+
 1. Open a sidebar group to bring its complete contents into the foreground. The previous layer
    stays darkened behind it. A single click inspects a card/line; **Open group**, **Members** or
    double-clicking an eligible group opens its members. Temporary groups keep their exact captured

@@ -1,0 +1,99 @@
+{
+  "batch_id": "funding-complete-review-20261110-framework-evidence-v2",
+  "summary": "Add the recovered official Cluster 6 work-programme reference to the Horizon framework; no change to existing individual-call assessments or programme availability.",
+  "base_revision": 48,
+  "sources": [
+    {
+      "id": "KGB-SRC-0127",
+      "title": "Horizon Europe Cluster 6 work programme 2026-2027",
+      "issuer": "European Commission",
+      "kind": "pdf",
+      "filename": "cluster6.pdf",
+      "managed_path": "sources/funding-complete-review-20261110/cluster6.pdf",
+      "sha256": "c2ed3012473adce8777527a75fe42c4b396fa65ef84cb8d0b165094021f4c51f",
+      "url": "https://research-and-innovation.ec.europa.eu/document/download/44106caa-ed7a-42bf-ae57-aaab91778602_en",
+      "retrieved_on": "2026-11-10",
+      "publication_date": null,
+      "pdf_pages": 358,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          35,
+          35
+        ]
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "horizon-europe-programme",
+      "label": "Horizon Europe",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "EU research and innovation programme. Research calls require the actual topic, eligible institutions/consortium and financial conditions; general interest in restoration or monitoring does not establish funding eligibility. This branch separates the current NATURE calendar, forthcoming CL6 topic and mission references.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0050",
+          "page": null,
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00",
+          "label": "Horizon NATURE research-call calendar"
+        },
+        {
+          "source_id": "KGB-SRC-0051",
+          "page": null,
+          "locator": "Horizon CL6 BIODIV03 forthcoming call; captured 2026-11-10T09:50:58.358330+00:00",
+          "label": "Horizon Europe CL6 forthcoming topic"
+        },
+        {
+          "source_id": "KGB-SRC-0127",
+          "page": 1,
+          "label": "Adopted Cluster 6 work programme identity and individual 2027 biodiversity topic types",
+          "locator": "Adopted Cluster 6 work programme identity and individual 2027 biodiversity topic types; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0127",
+          "page": 35,
+          "label": "Adopted Cluster 6 work programme identity and individual 2027 biodiversity topic types",
+          "locator": "Adopted Cluster 6 work programme identity and individual 2027 biodiversity topic types; PDF position 35"
+        }
+      ],
+      "funding_role": "framework",
+      "funding_context_ids": [
+        "horizon-nature-2027",
+        "horizon-cl6-biodiv03-2027",
+        "mission-soil-funding",
+        "mission-adaptation-funding",
+        "groundwork-call-2026"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0127",
+      "page": 1,
+      "status": "inspected",
+      "note": "Focused funding review: Adopted Cluster 6 work programme identity and individual 2027 biodiversity topic types. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0127",
+      "page": 35,
+      "status": "inspected",
+      "note": "Focused funding review: Adopted Cluster 6 work programme identity and individual 2027 biodiversity topic types. Other pages remain outside this review."
+    }
+  ],
+  "browse_groups": [],
+  "funding_reviews": [],
+  "funding_assessments": [],
+  "unresolved": []
+}

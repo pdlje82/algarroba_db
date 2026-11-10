@@ -405,6 +405,16 @@ Distinguish grants, procurement contracts, loans, tax incentives, carbon mechani
 
 ### 8. Prepare bounded, reviewable batches through the existing pipeline
 
+For funding research, reconcile the current curated `funding_role` and `funding_context_ids` before
+adding an assessment. Actual routes retain separate reviews for differing national, applicant,
+activity or mandatory-stage gates. Frameworks and supporting references link explicitly to those
+contexts; a shared document or thematic link cannot transfer eligibility. Follow existing context
+IDs and the coverage register's incomplete/retry actions before creating duplicates. Classify useful
+new supporting material through checked topic metadata and retain prior editions. These presentation
+fields do not themselves invalidate evidence; factual topic/source changes and review/project
+versions do. Keep four independently reviewed idea comparisons per route or an explicit incomplete
+review with a recovery action. Do not clear a verification problem merely because a deadline passed.
+
 Work in coherent sections or themes small enough to inspect and recover. Continue until the requested collection/backlog is handled; a checkpoint is not the end of the task. Keep remaining work explicit if an actual interruption or blocker prevents completion.
 
 Use only supported batch fields: `batch_id`, `summary`, `base_revision`, `sources`, `topics`, `relationships`, `findings`, `coverage`, `unresolved`, `browse_groups` and, when applicable, the other fields supported by the current model such as `communities`, `irrigation_evidence`, `funding_reviews` and `funding_assessments`. User-owned `project_ideas` are not research import payloads. Keep inventory, extraction and workflow statuses in sidecar audit files. Follow the current schema rather than assuming every audit field has a rendered UI.

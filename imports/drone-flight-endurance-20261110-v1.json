@@ -1,0 +1,1162 @@
+{
+  "batch_id": "drone-flight-endurance-20261110-v1",
+  "base_revision": 36,
+  "summary": "Comparable aircraft endurance fields; standard Mavic 2 Pro separated from its watering assembly; observed test durations and explicitly assumed hover-time calculations remain distinct.",
+  "sources": [
+    {
+      "id": "KGB-SRC-0085",
+      "title": "DJI — AGRAS T100 User Manual v1.0 (2025-07)",
+      "kind": "pdf",
+      "filename": "DRONE-007 - DJI - Agras T100 User Manual - Version 1.0 - 2025-07.pdf",
+      "managed_path": "sources/drone-flight-endurance-20261110/DRONE-007 - DJI - Agras T100 User Manual - Version 1.0 - 2025-07.pdf",
+      "sha256": "e0f724e41c23acc71f99bd09b593b6e0f520a8eae0005b14a35d455992d4b835",
+      "pdf_pages": 81,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          29,
+          29
+        ]
+      ],
+      "issuer": "DJI",
+      "publication_date": "2025-07",
+      "url": "https://dl.djicdn.com/downloads/t70_t100/20250926/T100_User_Manual_v1.0_en.pdf",
+      "retrieved_on": "2026-11-10",
+      "page_labels": {
+        "1": "T100 manual: version 1.0, July 2025 cover",
+        "29": "T100: 4.7-minute hover at 175 kg with 41000 mAh battery; test conditions"
+      },
+      "provenance_note": "Reused staged original manufacturer PDF from prior comment review. The cover says July 2025; September hosting path is not publication evidence. Performance values are for the specified 175 kg, one-battery configuration; no transfer to dual-battery or regionally capped variants."
+    },
+    {
+      "id": "KGB-SRC-0086",
+      "title": "DJI — Mavic 2 Pro/Zoom User Manual v2.2 (2020-07)",
+      "kind": "pdf",
+      "filename": "DRONE-008 - DJI - Mavic 2 Pro and Zoom User Manual - Version 2.2 - 2020-07.pdf",
+      "managed_path": "sources/drone-flight-endurance-20261110/DRONE-008 - DJI - Mavic 2 Pro and Zoom User Manual - Version 2.2 - 2020-07.pdf",
+      "sha256": "f16b2b1e64810c7763cc53cc297f27311b704d1529f8753cb498f78fa73d70ec",
+      "pdf_pages": 70,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          63,
+          63
+        ],
+        [
+          66,
+          66
+        ]
+      ],
+      "issuer": "DJI",
+      "publication_date": "2020-07",
+      "url": "https://dl.djicdn.com/downloads/Mavic_2/Mavic_2_Pro_Zoom_User_Manual_v2.2_en.pdf",
+      "retrieved_on": "2026-11-10",
+      "page_labels": {
+        "1": "Mavic 2 manual: version 2.2, July 2020 cover",
+        "63": "Mavic 2: maximum flight, hover and overall flight time; standard aircraft",
+        "66": "Mavic 2: Intelligent Flight Battery specifications"
+      },
+      "provenance_note": "Original manufacturer PDF. Exact PDF positions 63/66 are printed pages 62/65. Manufacturer standard-aircraft reference figures are not watering-payload endurance. Positions 62,64,65 were extracted to locate the specification but are outside this focused factual intake; no camera or compass claims imported."
+    },
+    {
+      "id": "KGB-SRC-0076",
+      "title": "DJI — AGRAS T50/T25 Unmanned Aircraft Flight Manual, v1.0 (2025-01)",
+      "kind": "pdf",
+      "filename": "DRONE-003 - DJI - Agras T50 and T25 Flight Manual - Version 1.0 - 2025-01.pdf",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/DRONE-003 - DJI - Agras T50 and T25 Flight Manual - Version 1.0 - 2025-01.pdf",
+      "sha256": "b2edf94fa1af54f44f717fa1048f960aeee3ba6432f3bea4c41b9ccacea12688",
+      "pdf_pages": 107,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          76,
+          77
+        ],
+        [
+          79,
+          80
+        ]
+      ],
+      "url": "https://dl.djicdn.com/downloads/t50_t25/20250109/T50_T25_User_Manual_v1.0_EN.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "DJI",
+      "publication_date": "2025-01",
+      "page_labels": {
+        "1": "Manual cover: T50/T25 and edition",
+        "76": "T50: mass, RTK hover accuracy and loaded/unloaded hover time",
+        "77": "T50: 40 L spray tank, payload and atomizing spray system",
+        "79": "T50 hover-time test conditions; T25 aircraft specifications",
+        "80": "T25: 20 L tank, payload and atomizing spray system",
+        "82": "T25: hover-test footnotes, sea level, wind below 3 m/s and 25°C"
+      },
+      "provenance_note": "Reused unchanged owned DRONE-003 edition; no new library acquisition. PDF positions 76/77/79/80 are printed pages 74/75/77/78. Strong-GNSS RTK hover accuracy is not nozzle capture accuracy. No current aircraft availability, price or operating permission inferred."
+    },
+    {
+      "id": "KGB-SRC-0074",
+      "title": "Sheshenya — Design and Preliminary Testing of a Drone-Mounted Water-Delivery Prototype for Individual Plants (2026)",
+      "kind": "pdf",
+      "filename": "DRONE-005 - Sheshenya - Individual Plant Water Delivery Prototype - 2026.pdf",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/DRONE-005 - Sheshenya - Individual Plant Water Delivery Prototype - 2026.pdf",
+      "sha256": "72f6f2b0e0b6334d7a80494b0388134e634f68e1d4edb971a0653cc9d0c948f5",
+      "pdf_pages": 13,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "url": "https://nhsjs.com/wp-content/uploads/2026/11/Design-and-Preliminary-Testing-of-a-Drone-Mounted-Water-Delivery-Prototype-for-Individual-Plants.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "The National High School Journal of Science",
+      "publication_date": null,
+      "page_labels": {
+        "1": "Prototype abstract, author and conflicting electronic-access date",
+        "2": "Prototype setting and research objectives",
+        "3": "Prototype design and operating conditions",
+        "4": "Payload assembly and component table",
+        "5": "Soil index and pump control methods",
+        "6": "Measured versus unmeasured outcomes, Table 2",
+        "7": "Flight procedure and estimated dose calculation",
+        "8": "Flight-results table and staged tests",
+        "9": "Ground-control results and pump testing",
+        "10": "Table 6 loaded-flight duration and battery display; payload mass and endurance discussion",
+        "11": "Table 7 estimated discharge, targeting limits and future work"
+      },
+      "provenance_note": "Author Antony Sheshenya, Dubai American Academy. Publisher HTML is dated 3 November 2026; PDF says electronic access 15 November 2026, later than this retrieval. Preserve the discrepancy; no resolved publication date. One aircraft/pump/probe; manually piloted flights, no safe payload or endurance validation."
+    }
+  ],
+  "topics": [
+    {
+      "id": "agras-t25",
+      "label": "DJI AGRAS T25",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "The January 2025 v1.0 manual specifies a 20 L spraying tank and 20 kg operating spray payload for T25. Aircraft mass including battery is 32 kg and sea-level maximum takeoff mass for spraying is 52 kg. Strong-GNSS D-RTK hover accuracy is ±10 cm horizontally and vertically. Its atomizing spray system is not a demonstrated funnel-filling attachment; no current price, regional availability or operational permission is implied. The same manual reports reference hover times of 14.5 minutes without spray payload and 7 minutes at full spray load, with a 15.5 Ah battery. These are reference hover tests, not maximum forward-flight or reservoir-servicing mission durations.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 80,
+          "locator": "Specifications, T25, Dual Atomizing Spraying System, printed p. 78",
+          "label": "T25: 20 L spray tank and 20 kg payload"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 79,
+          "locator": "Specifications, T25, Aircraft, printed p. 77",
+          "label": "T25: aircraft mass and RTK hover accuracy"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 79,
+          "label": "T25: unloaded and loaded hover times",
+          "locator": "Specifications > T25 > Aircraft > Hovering Time [3]; printed p. 77"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 82,
+          "label": "T25: hover-time reference conditions",
+          "locator": "T25 specifications, footnote [3]; printed p. 80"
+        }
+      ],
+      "aspects": {
+        "Manufacturer maximum flight time": "Not verified in the reviewed material; hover time is a separate metric.",
+        "Manufacturer overall flight time": "Not reported in the reviewed performance passage.",
+        "Observed experimental flight duration": "Not recorded for this aircraft in the reviewed trial material.",
+        "Estimated irrigation mission time": "Not yet estimated. Route, servicing time, reserve assumptions and validation are required; see the proposed reservoir-refill scenario.",
+        "Manufacturer hover time without working payload": "14.5 min; no spray payload; 32 kg takeoff mass",
+        "Manufacturer hover time at specified load": "7 min; 20 kg spray payload; 52 kg takeoff mass",
+        "Reference battery configuration": "One 15.5 Ah battery, as specified in the January 2025 manual",
+        "Reference test conditions": "Sea level; wind below 3 m/s; 25°C; reference data, actual results vary.",
+        "Other manufacturer hover figures": "Spreading configuration: 14.5 min without payload; 6 min at 58 kg takeoff mass, 15.5 Ah battery. Different configuration from spraying."
+      }
+    },
+    {
+      "id": "agras-t50",
+      "label": "DJI AGRAS T50",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "The January 2025 v1.0 flight manual specifies a 40 L spraying tank, 40 kg operating spray payload and 92 kg maximum takeoff mass for spraying at sea level, including the 52 kg aircraft/battery mass. Reference hover time is 16.5 minutes unloaded and 7 minutes fully loaded, tested at sea level, wind below 3 m/s and 25°C. Strong-GNSS D-RTK hover accuracy is ±10 cm horizontally and vertically. These are manufacturer conditions, not delivered-water accuracy or route productivity. The standard atomizers spray a swath; precise filling would require an independently designed and validated interface.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 77,
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "label": "T50: 40 L tank and atomizing spray system"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 76,
+          "locator": "Specifications, T50, Aircraft, printed p. 74",
+          "label": "T50: hover accuracy, masses and hover time"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 79,
+          "locator": "Specifications, T50 footnotes [1]–[4], printed p. 77",
+          "label": "T50: reference hover-test conditions"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 76,
+          "label": "T50: unloaded and loaded hover times",
+          "locator": "Specifications > T50 > Aircraft > Hovering Time [3]; printed p. 74"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 79,
+          "label": "T50: hover-time reference conditions",
+          "locator": "T50 specifications, footnote [3]; printed p. 77"
+        }
+      ],
+      "aspects": {
+        "Manufacturer maximum flight time": "Not verified in the reviewed material; hover time is a separate metric.",
+        "Manufacturer overall flight time": "Not reported in the reviewed performance passage.",
+        "Observed experimental flight duration": "Not recorded for this aircraft in the reviewed trial material.",
+        "Estimated irrigation mission time": "Not yet estimated. Route, servicing time, reserve assumptions and validation are required; see the proposed reservoir-refill scenario.",
+        "Manufacturer hover time without working payload": "16.5 min; no spray payload; 52 kg takeoff mass",
+        "Manufacturer hover time at specified load": "7 min; 40 kg spray payload; 92 kg takeoff mass",
+        "Reference battery configuration": "One 30 Ah battery, as specified in the January 2025 manual",
+        "Reference test conditions": "Sea level; wind below 3 m/s; 25°C; reference data, actual results vary.",
+        "Other manufacturer hover figures": "Spreading configuration: 15 min at 53 kg and 5.5 min at 103 kg takeoff mass, 30 Ah battery. Different configuration from spraying."
+      }
+    },
+    {
+      "id": "agras-t100",
+      "label": "DJI AGRAS T100",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "Manufacturer specifications captured on 10 November 2026 distinguish configurations: the standard LS100 spraying system lists a 100 L tank and 100 kg operating payload; LS100-DB dual battery retains a 100 L tank but lists 90 kg operating payload. Tank geometry must not be read as the permitted carried water mass in every configuration. The system is designed for atomizing spraying, not a validated reservoir-filling connection. RTK hover accuracy under strong GNSS does not establish nozzle-to-opening capture. This is a specification record, without a regional availability, purchase or operating-authorisation assessment. The July 2025 manual gives 4.7 minutes of reference hovering at 175 kg takeoff mass with a 41000 mAh battery, corresponding to its 100 kg payload/two-sprinkler configuration. This value is not a dual-battery endurance specification or a mission-time estimate.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0077",
+          "page": null,
+          "locator": "Specifications > Spraying system LS100; Spraying system LS100-DB",
+          "label": "T100: LS100 and dual-battery payload limits"
+        },
+        {
+          "source_id": "KGB-SRC-0077",
+          "page": null,
+          "locator": "Specifications > Aircraft > Hovering Accuracy Range",
+          "label": "T100: hover accuracy under strong GNSS"
+        },
+        {
+          "source_id": "KGB-SRC-0085",
+          "page": 29,
+          "label": "T100: loaded hover time and battery configuration",
+          "locator": "2 Performance and Limitations > 2.1 Performance > Hovering Time [1]; footnote [1]"
+        }
+      ],
+      "aspects": {
+        "Manufacturer maximum flight time": "Not verified in the reviewed material; hover time is a separate metric.",
+        "Manufacturer overall flight time": "Not reported in the reviewed performance passage.",
+        "Observed experimental flight duration": "Not recorded for this aircraft in the reviewed trial material.",
+        "Estimated irrigation mission time": "Not yet estimated. Route, servicing time, reserve assumptions and validation are required; see the proposed reservoir-refill scenario.",
+        "Manufacturer hover time without working payload": "Not verified for the standard unloaded or dual-battery configurations",
+        "Manufacturer hover time at specified load": "4.7 min; 100 kg payload; 175 kg takeoff mass; two sprinklers",
+        "Reference battery configuration": "One 41000 mAh flight battery in the July 2025 performance table",
+        "Reference test conditions": "Sea level; wind below 3 m/s; 25°C; reference data, actual results vary.",
+        "Other configurations": "Dual-battery and regionally restricted-payload endurance not verified; do not reuse the 4.7-minute value for them."
+      }
+    },
+    {
+      "id": "mavic-2-pro",
+      "label": "DJI Mavic 2 Pro (standard aircraft)",
+      "kind": "equipment",
+      "domain": "technology",
+      "group_id": "drones",
+      "description": "The standard DJI Mavic 2 Pro airframe is separate from the school-garden watering assembly. DJI’s July 2020 v2.2 manual lists a 907 g takeoff weight, a maximum flight time of 31 minutes at a consistent 25 km/h without wind, and a maximum hover time of 29 minutes without wind. It separately gives an overall flight time of 25 minutes in normal flight with 15% battery remaining. That last value is a manufacturer reference, not a mission estimate calculated for this project. The standard flight battery is 3850 mAh, 15.4 V and 59.29 Wh. None of these reference times establishes endurance with the added pump, reservoir, auxiliary battery and water. The reviewed manual does not establish a rated watering payload; the prototype’s short loaded tests do not supply one.",
+      "aliases": [
+        "Mavic 2 Pro",
+        "DJI Mavic 2 Pro airframe"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0086",
+          "page": 63,
+          "label": "Mavic 2: 31-minute flight, 29-minute hover and 25-minute overall reference",
+          "locator": "Appendix > Specifications > Aircraft > Max Flight Time; Max Hovering Time; Overall Flight Time; printed p. 62"
+        },
+        {
+          "source_id": "KGB-SRC-0086",
+          "page": 66,
+          "label": "Mavic 2: standard flight battery capacity and energy",
+          "locator": "Appendix > Specifications > Intelligent Flight Battery; printed p. 65"
+        }
+      ],
+      "aspects": {
+        "Manufacturer maximum flight time": "31 min; consistent 25 km/h; no wind; standard aircraft",
+        "Manufacturer hover time without working payload": "29 min; no wind; standard aircraft",
+        "Manufacturer hover time at specified load": "Not verified for a watering payload",
+        "Manufacturer overall flight time": "25 min; normal flight; 15% battery remaining; manufacturer reference",
+        "Reference battery configuration": "Standard Intelligent Flight Battery: 3850 mAh, 15.4 V, 59.29 Wh",
+        "Reference test conditions": "Maximum flight: consistent 25 km/h, no wind. Hover: no wind. Extra water-payload endurance not established.",
+        "Observed experimental flight duration": "See the separate watering assembly and Dubai study; these are short test durations, not standard-aircraft maximum endurance.",
+        "Estimated irrigation mission time": "Not estimated for the modified watering assembly; a rated payload and relevant endurance tests are missing.",
+        "Reference aircraft mass": "907 g takeoff weight in the manufacturer table; not a certified maximum payload or maximum takeoff-mass statement."
+      }
+    },
+    {
+      "id": "mavic-2-pro-water-prototype",
+      "label": "Mavic 2 Pro water-payload prototype",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "The UAE preliminary study used a DJI Mavic 2 Pro with a removable approximately 400 g dry pump/reservoir/control assembly and test water loads of 250, 500 and 750 mL. A ground probe and wireless control switched the pump against an uncalibrated relative moisture index. These reported experimental loads are not a manufacturer payload rating or an approved configuration; the paper itself calls for a rated airframe and mass/load assessment before routine use. The nine loaded flights lasted 2:18–3:54 and the six integrated flights 2:47–3:52. These were completed short tests, not endurance-to-exhaustion measurements. Standard-aircraft manufacturer figures remain on the separate Mavic 2 Pro record.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 3,
+          "locator": "Materials and Methods; prototype and test environment",
+          "label": "Prototype: basil pots, aircraft and test setting"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 4,
+          "locator": "Table 1; dry payload",
+          "label": "Prototype: weighed airborne components"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 11,
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "label": "Prototype: estimated discharge and untested targeting"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 10,
+          "label": "Watering trial: loaded-flight durations and displayed battery values",
+          "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 11,
+          "label": "Watering trial: integrated-flight durations and endurance limitations",
+          "locator": "Table 7, integrated flights (I-series); Limitations and Future Work"
+        }
+      ],
+      "aspects": {
+        "Aircraft basis": "DJI Mavic 2 Pro standard airframe; manufacturer reference endurance is stored separately.",
+        "Working payload configuration": "About 400 g dry assembly plus initial water loads of 250, 500 or 750 mL; experimental configuration, not a verified payload rating.",
+        "Observed loaded-test duration": "F-series: 2 min 18 s to 3 min 54 s, nine flights; not flown to battery exhaustion.",
+        "Observed integrated-test duration": "I-series: 2 min 47 s to 3 min 52 s, six flights; not flown to battery exhaustion.",
+        "Observed tests at 250 mL": "F-series: 2:18–3:07 (3 flights); I-series: 2:47–3:02 (2 flights).",
+        "Observed tests at 500 mL": "F-series: 2:51–3:54 (3 flights); I-series: 3:14–3:39 (2 flights).",
+        "Observed tests at 750 mL": "F-series: 2:37–3:48 (3 flights); I-series: 3:18–3:52 (2 flights).",
+        "Maximum loaded endurance": "Not measured. Displayed battery percentages and short tests do not establish usable endurance or a safe routine load.",
+        "Estimated irrigation mission time": "Not estimated; standard-aircraft 31/29/25-minute figures do not transfer to this water-payload assembly."
+      }
+    },
+    {
+      "id": "dubai-drone-watering-prototype-study",
+      "label": "Study: Dubai individual-plant drone watering prototype (2026)",
+      "kind": "study",
+      "domain": "technology",
+      "description": "Antony Sheshenya’s Dubai American Academy study built a removable pump and tank for a Mavic 2 Pro and a wireless soil-probe link, tested around six potted basil plants in a covered courtyard. Eight bench runs measured pump flow, followed by ground tests, nine loaded flights and six integrated sensor-controlled flights. Loaded test flights lasted 2:18–3:54 and integrated flights 2:47–3:52, without testing maximum endurance. The aircraft was manually piloted; the pump used an uncalibrated relative moisture index with hysteresis. Integrated-flight water quantities were estimated from bench flow multiplied by pump-on time, not collected at the plant. The study demonstrates preliminary payload/control feasibility but did not measure targeting accuracy, root-zone capture fraction, routine safe payload, useful endurance or plant benefit. It calls for a rated airframe and further testing. Publisher HTML is dated 3 November 2026, while the PDF lists electronic access on 15 November 2026; that unresolved date discrepancy is preserved. No autonomous flight or reservoir-filling result is established.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 3,
+          "locator": "Materials and Methods; prototype and test environment",
+          "label": "Prototype: basil pots, aircraft and test setting"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 6,
+          "locator": "Table 2; measured vs unmeasured outcomes",
+          "label": "Prototype: measured and unmeasured metrics"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 11,
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "label": "Prototype: estimated discharge and untested targeting"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 1,
+          "locator": "Title page; electronic access date",
+          "label": "Prototype: author, abstract and electronic-access date"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 10,
+          "label": "Watering trial: loaded-flight durations and displayed battery values",
+          "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+        }
+      ],
+      "aspects": {
+        "evidence_maturity": "preliminary small-scale prototype; manually piloted",
+        "publication_date_discrepancy": "HTML 2026-11-03; PDF electronic access 2026-11-15; retrieved 2026-11-10"
+      }
+    },
+    {
+      "id": "drone-refilled-seedling-reservoir",
+      "label": "Proposed drone-refilled seedling reservoir",
+      "kind": "method",
+      "domain": "technology",
+      "description": "User proposal from the 10 November 2026 chat: plant nursery stock together with a tube or local reservoir, then have a drone visit and refill it. The suggested 0.5 L every couple of days is an assumed design scenario; species, soil, climate, stock size and exact interval are unspecified. Reviewed sources establish separate components: buried pipe/sleeve delivery, passive reservoirs, small manually piloted water-payload tests, an indoor funnel invention, and larger agricultural spray aircraft. Their combination has not been validated in the reviewed evidence. A fill opening, transferred-volume measurement, overflow/loss control and a suitable soil outlet must work together. As a capacity-only calculation, 40 L divided by an assumed 0.5 L gives 80 fills before reserves, losses, travel and time constraints; it is not measured plants per flight or per hour. Component citations support this curated concept, not the assumed dose or an empirical system outcome. A separate illustrative calculation deducts an assumed 20% time allowance from full-load reference hover durations; it is not a flight itinerary, a battery reserve rule or a validated mission estimate.",
+      "aliases": [
+        "drone tube refill",
+        "aerial reservoir replenishment",
+        "0.5 litre drone watering concept"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0071",
+          "page": 1,
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "label": "Irrigasc: sleeve, cup and historical use instructions"
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "page": 3,
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "label": "Deep pipe and buried clay pot: installation"
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "page": 3,
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 11,
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "label": "Prototype: estimated discharge and untested targeting"
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "page": 3,
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "label": "Indoor utility model: plant funnel and control claims"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 77,
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "label": "T50: 40 L tank and atomizing spray system"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 79,
+          "label": "T25: unloaded and loaded hover times",
+          "locator": "Specifications > T25 > Aircraft > Hovering Time [3]; printed p. 77"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 82,
+          "label": "T25: hover-time reference conditions",
+          "locator": "T25 specifications, footnote [3]; printed p. 80"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 76,
+          "label": "T50: unloaded and loaded hover times",
+          "locator": "Specifications > T50 > Aircraft > Hovering Time [3]; printed p. 74"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 79,
+          "label": "T50: hover-time reference conditions",
+          "locator": "T50 specifications, footnote [3]; printed p. 77"
+        },
+        {
+          "source_id": "KGB-SRC-0085",
+          "page": 29,
+          "label": "T100: loaded hover time and battery configuration",
+          "locator": "2 Performance and Limitations > 2.1 Performance > Hovering Time [1]; footnote [1]"
+        }
+      ],
+      "aspects": {
+        "Origin": "User proposal in this chat, 10 November 2026",
+        "Evidence status": "Untested integration; references support separate components",
+        "Assumed refill": "0.5 L per visit; a design assumption",
+        "Assumed interval": "Every couple of days; exact interval unspecified",
+        "Missing context": "Species, site/climate, soil/root depth, stock size, reservoir outlet, route and operating conditions",
+        "Capacity calculation": "40 L tank / assumed 0.5 L per fill = 80 fills before reserves, losses, travel and time; not measured flight productivity",
+        "Planning use": "No adoptable irrigation evidence or watering schedule is supplied by this proposal",
+        "Endurance scenario status": "Illustrative calculation only; no validated irrigation-mission time is established.",
+        "Assumed time allowance": "20% deducted from the full-load reference hover duration, as an arbitrary chat illustration. This is not a 20% battery-state rule or a manufacturer reserve recommendation.",
+        "Illustrative T25 time allowance calculation": "7 min × (1 − 0.20) = 5.6 min under the full-load reference baseline, before allocating travel and servicing.",
+        "Illustrative T50 time allowance calculation": "7 min × (1 − 0.20) = 5.6 min under the full-load reference baseline, before allocating travel and servicing.",
+        "Illustrative T100 time allowance calculation": "4.7 min × (1 − 0.20) = 3.76 min (about 3.8 min), only for the manual’s 175 kg / 41000 mAh configuration, before allocating travel and servicing.",
+        "Estimated irrigation mission time": "Not yet estimated. Need route distance/speed, takeoff/landing/return, positioning, fill dwell, extra equipment mass, wind/altitude/temperature, reserve policy and actual capture performance.",
+        "Calculation limits": "No validated adjustment for water mass decreasing in flight, extra dispensing hardware or environmental derating. No Mavic watering-endurance estimate is inferred from short tests or standard-aircraft figures."
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "endurance26-prototype-airframe",
+      "source": "mavic-2-pro-water-prototype",
+      "target": "mavic-2-pro",
+      "label": "uses standard airframe",
+      "explanation": "The study names Mavic 2 Pro as the aircraft. Added equipment and water make the prototype a separate assembly; baseline endurance is not inherited.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 3,
+          "label": "Watering trial: Mavic 2 Pro airframe and manual flight",
+          "locator": "Methods > Aerial Platform; Research Design"
+        },
+        {
+          "source_id": "KGB-SRC-0086",
+          "page": 63,
+          "label": "Mavic 2: 31-minute flight, 29-minute hover and 25-minute overall reference",
+          "locator": "Appendix > Specifications > Aircraft > Max Flight Time; Max Hovering Time; Overall Flight Time; printed p. 62"
+        }
+      ]
+    },
+    {
+      "id": "endurance26-study-airframe",
+      "source": "dubai-drone-watering-prototype-study",
+      "target": "mavic-2-pro",
+      "label": "used underlying aircraft",
+      "explanation": "The study’s Aerial Platform section identifies the standard model; experimental equipment/durations remain on the assembly and study.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 3,
+          "label": "Watering trial: Mavic 2 Pro airframe and manual flight",
+          "locator": "Methods > Aerial Platform; Research Design"
+        }
+      ]
+    },
+    {
+      "id": "endurance26-drone-model",
+      "source": "drones",
+      "target": "mavic-2-pro",
+      "label": "includes documented aircraft",
+      "explanation": "The manufacturer manual identifies the standard Mavic 2 Pro; no watering payload or mission suitability is inferred.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0086",
+          "page": 63,
+          "label": "Mavic 2: 31-minute flight, 29-minute hover and 25-minute overall reference",
+          "locator": "Appendix > Specifications > Aircraft > Max Flight Time; Max Hovering Time; Overall Flight Time; printed p. 62"
+        }
+      ]
+    },
+    {
+      "id": "endurance26-scenario-agras-t25",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "agras-t25",
+      "label": "uses reference endurance in an illustration",
+      "explanation": "Curated scenario association: the manufacturer hover duration is an input to the assumed 20% time deduction. It does not validate an aircraft conversion, route, reserve policy or reservoir-filling system.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 79,
+          "label": "T25: unloaded and loaded hover times",
+          "locator": "Specifications > T25 > Aircraft > Hovering Time [3]; printed p. 77"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 82,
+          "label": "T25: hover-time reference conditions",
+          "locator": "T25 specifications, footnote [3]; printed p. 80"
+        }
+      ]
+    },
+    {
+      "id": "endurance26-scenario-agras-t100",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "agras-t100",
+      "label": "uses reference endurance in an illustration",
+      "explanation": "Curated scenario association: the manufacturer hover duration is an input to the assumed 20% time deduction. It does not validate an aircraft conversion, route, reserve policy or reservoir-filling system.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0085",
+          "page": 29,
+          "label": "T100: loaded hover time and battery configuration",
+          "locator": "2 Performance and Limitations > 2.1 Performance > Hovering Time [1]; footnote [1]"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "endurance26-t25-reference",
+      "label": "T25 reference hover times depend on payload and configuration",
+      "text": "The January 2025 manual gives 14.5 minutes without spray payload at 32 kg takeoff mass and 7 minutes fully loaded for spraying at 52 kg, both with a 15.5 Ah battery. Footnote [3] specifies sea level, wind below 3 m/s and 25°C. These reference hover tests are not a maximum forward-flight or refill-mission duration.",
+      "topic_ids": [
+        "agras-t25"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 79,
+          "label": "T25: unloaded and loaded hover times",
+          "locator": "Specifications > T25 > Aircraft > Hovering Time [3]; printed p. 77"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 82,
+          "label": "T25: hover-time reference conditions",
+          "locator": "T25 specifications, footnote [3]; printed p. 80"
+        }
+      ]
+    },
+    {
+      "id": "endurance26-t100-reference",
+      "label": "T100 reference hover figure belongs to a specific one-battery configuration",
+      "text": "The July 2025 manual gives 4.7 minutes hovering at 175 kg takeoff mass with a 41000 mAh battery, alongside a 75 kg basic empty weight and 100 kg payload. Footnote [1] gives sea level, wind below 3 m/s and 25°C. Do not transfer that figure to dual-battery, lighter-load or regionally capped configurations.",
+      "topic_ids": [
+        "agras-t100"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0085",
+          "page": 29,
+          "label": "T100: loaded hover time and battery configuration",
+          "locator": "2 Performance and Limitations > 2.1 Performance > Hovering Time [1]; footnote [1]"
+        }
+      ]
+    },
+    {
+      "id": "endurance26-mavic-reference",
+      "label": "Mavic 2 maximum flight, hover and overall flight time are distinct references",
+      "text": "DJI’s v2.2 manual distinguishes 31 minutes maximum flight at a consistent 25 km/h without wind, 29 minutes maximum hovering without wind, and 25 minutes overall normal flight with 15% battery remaining. These standard-aircraft references do not establish endurance with a watering payload.",
+      "topic_ids": [
+        "mavic-2-pro"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0086",
+          "page": 63,
+          "label": "Mavic 2: 31-minute flight, 29-minute hover and 25-minute overall reference",
+          "locator": "Appendix > Specifications > Aircraft > Max Flight Time; Max Hovering Time; Overall Flight Time; printed p. 62"
+        },
+        {
+          "source_id": "KGB-SRC-0086",
+          "page": 66,
+          "label": "Mavic 2: standard flight battery capacity and energy",
+          "locator": "Appendix > Specifications > Intelligent Flight Battery; printed p. 65"
+        }
+      ]
+    },
+    {
+      "id": "endurance26-mavic-observed",
+      "label": "Watering-prototype flights were short tests, not measured maximum endurance",
+      "text": "Nine loaded F-series flights lasted 2:18–3:54; six integrated I-series flights lasted 2:47–3:52. Initial water loads were 250, 500 and 750 mL in addition to the roughly 400 g dry assembly. The reported displayed charge remained at 64–87% after F-series runs and 65–83% after I-series runs. No baseline unloaded flights or endurance-to-exhaustion comparison was performed. These durations and battery display values cannot establish safe payload capacity or maximum watering endurance.",
+      "topic_ids": [
+        "dubai-drone-watering-prototype-study",
+        "mavic-2-pro-water-prototype"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 10,
+          "label": "Watering trial: loaded-flight durations and displayed battery values",
+          "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 11,
+          "label": "Watering trial: integrated-flight durations and endurance limitations",
+          "locator": "Table 7, integrated flights (I-series); Limitations and Future Work"
+        }
+      ],
+      "conditions": [
+        "One aircraft, manually piloted, covered school courtyard",
+        "Flight duration differs from pump-on time",
+        "Battery values are DJI-app displays, not calibrated energy measurements",
+        "Integrated discharge volumes are estimates, not water collected at the root zone"
+      ],
+      "observations": [
+        {
+          "series": "F",
+          "source_row": "F1",
+          "initial_water_mL": 250,
+          "flight_duration_s": 138,
+          "displayed_battery_start_percent": 97,
+          "displayed_battery_end_percent": 87,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 10,
+            "label": "Watering trial: loaded-flight durations and displayed battery values",
+            "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+          }
+        },
+        {
+          "series": "F",
+          "source_row": "F2",
+          "initial_water_mL": 250,
+          "flight_duration_s": 166,
+          "displayed_battery_start_percent": 95,
+          "displayed_battery_end_percent": 82,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 10,
+            "label": "Watering trial: loaded-flight durations and displayed battery values",
+            "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+          }
+        },
+        {
+          "series": "F",
+          "source_row": "F3",
+          "initial_water_mL": 250,
+          "flight_duration_s": 187,
+          "displayed_battery_start_percent": 96,
+          "displayed_battery_end_percent": 80,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 10,
+            "label": "Watering trial: loaded-flight durations and displayed battery values",
+            "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+          }
+        },
+        {
+          "series": "F",
+          "source_row": "F4",
+          "initial_water_mL": 500,
+          "flight_duration_s": 171,
+          "displayed_battery_start_percent": 94,
+          "displayed_battery_end_percent": 77,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 10,
+            "label": "Watering trial: loaded-flight durations and displayed battery values",
+            "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+          }
+        },
+        {
+          "series": "F",
+          "source_row": "F5",
+          "initial_water_mL": 500,
+          "flight_duration_s": 208,
+          "displayed_battery_start_percent": 96,
+          "displayed_battery_end_percent": 74,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 10,
+            "label": "Watering trial: loaded-flight durations and displayed battery values",
+            "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+          }
+        },
+        {
+          "series": "F",
+          "source_row": "F6",
+          "initial_water_mL": 500,
+          "flight_duration_s": 234,
+          "displayed_battery_start_percent": 95,
+          "displayed_battery_end_percent": 69,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 10,
+            "label": "Watering trial: loaded-flight durations and displayed battery values",
+            "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+          }
+        },
+        {
+          "series": "F",
+          "source_row": "F7",
+          "initial_water_mL": 750,
+          "flight_duration_s": 157,
+          "displayed_battery_start_percent": 97,
+          "displayed_battery_end_percent": 78,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 10,
+            "label": "Watering trial: loaded-flight durations and displayed battery values",
+            "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+          }
+        },
+        {
+          "series": "F",
+          "source_row": "F8",
+          "initial_water_mL": 750,
+          "flight_duration_s": 201,
+          "displayed_battery_start_percent": 96,
+          "displayed_battery_end_percent": 70,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 10,
+            "label": "Watering trial: loaded-flight durations and displayed battery values",
+            "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+          }
+        },
+        {
+          "series": "F",
+          "source_row": "F9",
+          "initial_water_mL": 750,
+          "flight_duration_s": 228,
+          "displayed_battery_start_percent": 95,
+          "displayed_battery_end_percent": 64,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 10,
+            "label": "Watering trial: loaded-flight durations and displayed battery values",
+            "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+          }
+        },
+        {
+          "series": "I",
+          "source_row": "Table 7 row 1",
+          "initial_water_mL": 250,
+          "flight_duration_s": 167,
+          "displayed_battery_start_percent": 96,
+          "displayed_battery_end_percent": 83,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 11,
+            "label": "Watering trial: integrated-flight durations and endurance limitations",
+            "locator": "Table 7, integrated flights (I-series); Limitations and Future Work"
+          }
+        },
+        {
+          "series": "I",
+          "source_row": "Table 7 row 2",
+          "initial_water_mL": 250,
+          "flight_duration_s": 182,
+          "displayed_battery_start_percent": 95,
+          "displayed_battery_end_percent": 80,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 11,
+            "label": "Watering trial: integrated-flight durations and endurance limitations",
+            "locator": "Table 7, integrated flights (I-series); Limitations and Future Work"
+          }
+        },
+        {
+          "series": "I",
+          "source_row": "Table 7 row 3",
+          "initial_water_mL": 500,
+          "flight_duration_s": 194,
+          "displayed_battery_start_percent": 96,
+          "displayed_battery_end_percent": 77,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 11,
+            "label": "Watering trial: integrated-flight durations and endurance limitations",
+            "locator": "Table 7, integrated flights (I-series); Limitations and Future Work"
+          }
+        },
+        {
+          "series": "I",
+          "source_row": "Table 7 row 4",
+          "initial_water_mL": 500,
+          "flight_duration_s": 219,
+          "displayed_battery_start_percent": 94,
+          "displayed_battery_end_percent": 71,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 11,
+            "label": "Watering trial: integrated-flight durations and endurance limitations",
+            "locator": "Table 7, integrated flights (I-series); Limitations and Future Work"
+          }
+        },
+        {
+          "series": "I",
+          "source_row": "Table 7 row 5",
+          "initial_water_mL": 750,
+          "flight_duration_s": 198,
+          "displayed_battery_start_percent": 97,
+          "displayed_battery_end_percent": 75,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 11,
+            "label": "Watering trial: integrated-flight durations and endurance limitations",
+            "locator": "Table 7, integrated flights (I-series); Limitations and Future Work"
+          }
+        },
+        {
+          "series": "I",
+          "source_row": "Table 7 row 6",
+          "initial_water_mL": 750,
+          "flight_duration_s": 232,
+          "displayed_battery_start_percent": 95,
+          "displayed_battery_end_percent": 65,
+          "source_ref": {
+            "source_id": "KGB-SRC-0074",
+            "page": 11,
+            "label": "Watering trial: integrated-flight durations and endurance limitations",
+            "locator": "Table 7, integrated flights (I-series); Limitations and Future Work"
+          }
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:drone-systems",
+      "label": "Systems and components",
+      "parent_id": "technology:drones",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "wire-supplied-drone",
+          "role": "primary"
+        },
+        {
+          "topic_id": "agras-t25",
+          "role": "primary"
+        },
+        {
+          "topic_id": "agras-t50",
+          "role": "primary"
+        },
+        {
+          "topic_id": "agras-t100",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mavic-2-pro-water-prototype",
+          "role": "shared"
+        },
+        {
+          "topic_id": "mavic-2-pro",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Manufacturer-described spray aircraft and the study-specific small water-payload assembly have different payload evidence. Tank capacity, configured payload, safe takeoff mass, hover time and actual captured volume are separate quantities. Standard-aircraft endurance is separated from the modified Mavic watering assembly. Comparable fields retain payload, battery and conditions; mission estimates belong to the proposed refill scenario.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 80,
+          "locator": "Specifications, T25, Dual Atomizing Spraying System, printed p. 78",
+          "label": "T25: 20 L spray tank and 20 kg payload"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 77,
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "label": "T50: 40 L tank and atomizing spray system"
+        },
+        {
+          "source_id": "KGB-SRC-0077",
+          "page": null,
+          "locator": "Specifications > Spraying system LS100; Spraying system LS100-DB",
+          "label": "T100: LS100 and dual-battery payload limits"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 11,
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "label": "Prototype: estimated discharge and untested targeting"
+        },
+        {
+          "source_id": "KGB-SRC-0086",
+          "page": 63,
+          "label": "Mavic 2: 31-minute flight, 29-minute hover and 25-minute overall reference",
+          "locator": "Appendix > Specifications > Aircraft > Max Flight Time; Max Hovering Time; Overall Flight Time; printed p. 62"
+        },
+        {
+          "source_id": "KGB-SRC-0085",
+          "page": 29,
+          "label": "T100: loaded hover time and battery configuration",
+          "locator": "2 Performance and Limitations > 2.1 Performance > Hovering Time [1]; footnote [1]"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:dubai-drone-study",
+      "label": "Study: Dubai water-payload prototype",
+      "parent_id": "browse:drone-projects",
+      "anchor_topic_id": "dubai-drone-watering-prototype-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "mavic-2-pro-water-prototype",
+          "role": "primary"
+        },
+        {
+          "topic_id": "basil-ocimum-basilicum",
+          "role": "shared"
+        },
+        {
+          "topic_id": "soil-moisture-monitoring",
+          "role": "shared"
+        },
+        {
+          "topic_id": "mavic-2-pro",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "This is a small manually piloted control/payload test. The linked equipment and sensor concept are shared context, not independently tested operating recommendations. The trial-specific assembly has its primary home here; the standard aircraft is shared context. Tables 6 and 7 record short observed flights, not maximum endurance.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 3,
+          "locator": "Materials and Methods; prototype and test environment",
+          "label": "Prototype: basil pots, aircraft and test setting"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 6,
+          "locator": "Table 2; measured vs unmeasured outcomes",
+          "label": "Prototype: measured and unmeasured metrics"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 11,
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "label": "Prototype: estimated discharge and untested targeting"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 10,
+          "label": "Watering trial: loaded-flight durations and displayed battery values",
+          "locator": "Table 6, Loaded flights (F-series); Payload Mass and Endurance"
+        },
+        {
+          "source_id": "KGB-SRC-0086",
+          "page": 63,
+          "label": "Mavic 2: 31-minute flight, 29-minute hover and 25-minute overall reference",
+          "locator": "Appendix > Specifications > Aircraft > Max Flight Time; Max Hovering Time; Overall Flight Time; printed p. 62"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0085",
+      "page": 1,
+      "status": "inspected",
+      "note": "T100 manual: version 1.0, July 2025 cover. Focused endurance review; other pages not claimed reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0085",
+      "page": 29,
+      "status": "inspected",
+      "note": "T100: 4.7-minute hover at 175 kg with 41000 mAh battery; test conditions. Focused endurance review; other pages not claimed reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0086",
+      "page": 1,
+      "status": "inspected",
+      "note": "Mavic 2 manual: version 2.2, July 2020 cover. Focused endurance review; other pages not claimed reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0086",
+      "page": 63,
+      "status": "inspected",
+      "note": "Mavic 2: maximum flight, hover and overall flight time; standard aircraft. Focused endurance review; other pages not claimed reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0086",
+      "page": 66,
+      "status": "inspected",
+      "note": "Mavic 2: Intelligent Flight Battery specifications. Focused endurance review; other pages not claimed reviewed."
+    },
+    {
+      "source_id": "KGB-SRC-0076",
+      "page": 82,
+      "status": "inspected",
+      "note": "T25 footnote [3], printed page 80: sea level, wind below 3 m/s, 25°C, reference only. Existing source initial-review ranges retained; this explicit coverage extends the actual reviewed positions."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "endurance26-mission-model",
+      "text": "No validated reservoir-refill mission time is established. The 20% time deduction is only a chat illustration. A mission model still needs route/speed, service dwell, actual configuration/extra mass, environmental derating, reserve policy, changing water mass and transfer performance. T100 unloaded/dual-battery endurance and Mavic watering-payload maximum endurance remain unverified in this intake.",
+      "topic_ids": [
+        "drone-refilled-seedling-reservoir",
+        "agras-t25",
+        "agras-t50",
+        "agras-t100",
+        "mavic-2-pro-water-prototype"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 79,
+          "label": "T25: unloaded and loaded hover times",
+          "locator": "Specifications > T25 > Aircraft > Hovering Time [3]; printed p. 77"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 76,
+          "label": "T50: unloaded and loaded hover times",
+          "locator": "Specifications > T50 > Aircraft > Hovering Time [3]; printed p. 74"
+        },
+        {
+          "source_id": "KGB-SRC-0085",
+          "page": 29,
+          "label": "T100: loaded hover time and battery configuration",
+          "locator": "2 Performance and Limitations > 2.1 Performance > Hovering Time [1]; footnote [1]"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 11,
+          "label": "Watering trial: integrated-flight durations and endurance limitations",
+          "locator": "Table 7, integrated flights (I-series); Limitations and Future Work"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2348 @@
+{
+  "batch_id": "funding-complete-review-20261110-education-v2",
+  "summary": "Review education cooperation, organisational Quality Label, youth-led projects and volunteering separately; 16 idea comparisons with Spanish round gaps retained.",
+  "base_revision": 43,
+  "sources": [
+    {
+      "id": "KGB-SRC-0112",
+      "title": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment",
+      "issuer": "European Commission",
+      "kind": "web",
+      "filename": "erasmus.html",
+      "managed_path": "sources/funding-complete-review-20261110/erasmus.html",
+      "sha256": "16aff5ba014f9f47e9a1186d8a26739181d95e3815791a285f895d2e85c37a1a",
+      "url": "https://erasmus-plus.ec.europa.eu/programme-guide/part-b/key-action-2/cooperation-partnerships",
+      "retrieved_on": "2026-11-10",
+      "excerpt": "Which are the criteria to be met to apply for a cooperation partnership? \nTo be eligible for an Erasmus grant, project proposals for Cooperation Partnerships must comply with the following eligibility criteria:\nEligibility criteria\nWho can apply?\nAny participating organisation established in an EU Member State or third country associated to the Programme can be the applicant/coordinator. This organisation applies on behalf of all participating organisations involved in the project.\nIn order to be eligible, applicant/coordinator organisations must have been legally established at least 2 years before the application deadline.  \nFor Partnerships in the fields of education and training or youth, which are submitted by European NGOs and managed by the European Education and Culture Executive Agency (EACEA) the applicant coordinator must be a \n European NGO1\n active in the field of education and training or youth.\nThe European body/secretariat of the European NGO applies on behalf of the European NGO.\nWhich types of organisations are eligible to participate in the project?\nAny public or private organisation, established in an EU Member State or third country associated to the Programme or in any third country not associated to the Programme in regions 1 to 3 (see section “Eligible Countries” in Part A of this Guide) can participate in a Cooperation Partnership\n 2\n.\nException: organisations from Belarus (Region 2) are not eligible to participate in this action.\nOrganisations established in EU Member States and third countries associated to the Programme can either participate as the coordinator of the project or as a partner organisation.\nOrganisations in third countries not associated to the Programme cannot participate as project coordinators.\nIrrespective of the field impacted by the project, Cooperation Partnerships are open to any type of organisation active in any field of education, training, youth, sport or other socio-economic sectors as well as to organisations carrying out activities that are transversal to different fields (e.g. local, regional and national authorities, recognition and validation centres, chambers of commerce, trade organisations, guidance centres, cultural and sport organisations).\nDepending on the priority and the objectives addressed by the project, Cooperation Partnerships should involve the most appropriate and diverse range of partners in order to benefit from their different experiences, profiles and specific expertise and to produce relevant and high quality project results.\nParticipation of associated partner organisations\nIn addition to the organisations formally participating in the project (the coordinator and partner organisations), Cooperation Partnerships may also involve other partners from the public or private sector that contribute to the implementation of specific project tasks/activities or support the promotion and sustainability of the project.\nWithin an Erasmus+ project, these partners will be called “associated partners”. For eligibility and contractual management aspects they are not considered to be project partners, and they do not receive any funding from the Programme as part of the project. However, in order to understand their role within the partnership and have a global picture about the proposal, their involvement in the project and in the different activities needs to be clearly described.\nException: organisations from Belarus and Russia are not eligible to participate as associated partners.\nNumber and profile of participating organisations\nA Cooperation Partnership is a transnational project and must involve minimum three organisations from three different EU Member States or third countries associated to the Programme.\nThere is no maximum number of participating organisations in one partnership.\nAll participating organisations must be identified at the time of applying for a grant.\nFor applications submitted to National Agencies in the fields of school education, vocational education and training, adult education and youth, the same organisation (one OID) cannot be involved in more than 10 applications overall per deadline, \n either as applicant or partner3\n.\nAs a general rule, Cooperation Partnerships target the cooperation between organisations established in EU Member States or third countries associated to the Programme.\nHowever, organisations from third countries not associated to the Programme (regions 1 to 3, with the exception of Belarus) can be involved as partners (not as applicants), if their participation brings an essential added value to the project and as long as the minimum participation from three organisations from three different EU Member States or third countries associated to the Programme is fulfilled.\nPriorities addressed\nTo be considered for funding, Cooperation Partnerships must address:\nat least one horizontal priority\nand/or\nat least one specific priority relevant to the field of education, training, youth and sport that is mostly impacted.\nFor projects in the field of education, training and youth managed by the Erasmus+ National Agencies in indirect management, National Agencies may, among these priorities, give more consideration to those that are particularly relevant in their national context (called \"European priorities in the national context\").\nNational Agencies must duly inform potential applicants through their official websites.\nFor projects in the field of sport only one priority (horizontal or specific) can be addressed.\nVenue of the activities\nAll the activities of a Cooperation Partnership must take place in the countries of the organisations participating in the project, either as full partners or as associated partners.\nIn addition, if duly justified in relation to the objectives or implementation of the project:\nactivities can also take place at the seat of an Institution of the European Union\n 4\n, even if in the project there are no participating organisations from the country that hosts the Institution\nactivities involving sharing of results can also take place in other EU Member States or third countries associated to the Programme or eligible third countries not associated to the Programme\nDuration of project\nBetween 12 and 36 months.\nThe duration has to be chosen at application stage, based on the objectives of the project and on the type of activities planned over time.\nThe duration of a Cooperation Partnership may be extended, upon justified request by the beneficiary and with the agreement of the National or Executive Agency, provided that the total duration does not exceed 36 months. In such a case, the total grant will not change.\nWhere to apply?\nFor Partnerships in the fields of education and training or youth submitted by any organisation in these fields, with the exception of European NGOs:\nTo the National Agency of the country in which the applicant organisation is established.\nFor Partnerships in the fields of education, training and youth submitted by European NGOs\n 5\n:\nTo the European Education, Audiovisual and Cultural Executive Agency, via the EU Funding & Tenders Portal\nEuropean NGOs - Call IDs:\nERASMUS-EDU-2026-PCOOP-ENGO (Education and training)\nERASMUS-YOUTH-2026-PCOOP-ENGO (Youth)\nFor Partnerships in the field of sport:\nTo the European Education and Culture Executive Agency (EACEA)\nSport - Call ID: ERASMUS-SPORT-2026-SCP\nIn all cases, the same consortium of partners can submit only one application and to one Agency only per deadline.\nWhen to apply?\nFor Partnerships in the fields of education, training and youth submitted by any organisation in these fields, with the exception of European NGOs:\nApplicants have to submit their grant application by 5 March at 12:00:00 (midday Brussels time) for projects starting between 1 September and 31 December of the same year.\nPossible additional deadline in the fields of education, training and youth submitted by any organisation in these fields, with the exception of European NGOs:\nNational Agencies in the field of education, training and youth may organise a second round of applications, for which the rules set out in this Guide will also apply. National Agencies will inform of this possibility via their website\nIf a second round is organised, applicants must submit their grant application by 1 October at 12:00:00 (midday Brussels time) for projects starting between 1 January and 31 August of the following year\nFor Partnerships in the fields of education, training and youth submitted by European NGOs:\nApplicants have to submit their grant application by 5 March at 17:00:00 (Brussels time).\nFor Partnerships in the field of sport:\nApplicants have to submit their grant application by 5 March at 17:00:00 (Brussels time).\nExclusion and selection criteria\nApplicant organisations will be assessed against the relevant exclusion and selection criteria. For more information please consult Part C of this Guide.\nSetting up a project\nA Cooperation Partnership project consists of four stages, which start even before the project proposal is selected for funding: planning, preparation, implementation and follow-up. Participating organisations and participants involved in the activities should take an active role in all those stages and thus enhancing their learning experience.\nPlanning (define the needs, objectives, project and learning outcomes, activity formats, schedule etc.);\npreparation (planning of the activities, development of work programme, practical arrangements, confirmation of the target group(s) of envisaged activities, set up of agreements with partners etc.);\nimplementation of activities;\nfollow-up (evaluation of the activities and their impact at different levels, sharing and use of the project's results).\nCooperation Partnerships may include the organisation of transnational learning, teaching and training activities of individuals and groups of individuals, in so far as they bring added value in the achievement of the project's objectives. The format, purpose and the type and number of participants in the proposed activities will be described and justified as part of the project application.\nHorizontal aspects to be considered when designing a project\nIn addition to complying with the formal criteria and setting up sustainable cooperation arrangement with all project partners, the following elements can contribute to increasing the impact and qualitative implementation of Cooperation Partnerships throughout the different project phases. Applicants are encouraged to take these opportunities and dimensions into account when designing Cooperation Partnership projects.  \nInclusion and Diversity\nThe Erasmus+ Programme seeks to promote equal opportunities and access, inclusion and fairness across all its actions. To implement these principles, an Inclusion and Diversity Strategy has been devised to support a better outreach to participants from more diverse backgrounds, in particular those with fewer opportunities facing obstacles to participate in European Projects. Cooperation partnerships are especially suitable to work on inclusion and diversity as the subject of the project, further developing inclusive and diversity-sensitive practices and methods, in accordance with the corresponding policy priority for the action. Also, independently from the thematic of their projects, organisations should design accessible and inclusive project activities, taking into account the views of participants with fewer opportunities and involving them in decision making throughout the whole process.\nEnvironmental sustainability\nProjects should be designed in an eco-friendly way and should incorporate green practices in all its facets. Organisations and participants should have an environmental-friendly approach when designing the project, which will encourage everyone involved in the project to discuss and learn about environmental issues, reflecting about what can be done at different levels and help organisations and participants come up with alternative, greener ways of implementing project activities.\nDigital dimension\nVirtual cooperation and experimentation with virtual and blended learning opportunities are key to successful Cooperation Partnerships. In particular, projects in the field of school education and adult education are strongly encouraged to use the European School Education Platform, (including eTwinning), or the adult learning platform EPALE to work together before, during and after the project activities. Projects in the field of youth are strongly encouraged to use the European Youth Portal and the European Youth Strategy Platform to work together before, during and after the project activities.\nParticipation and civic engagement\nThe Programme supports participation and active engagement throughout all its actions. Cooperation Partnership projects should offer opportunities for people’s participation in democratic life, social and civic engagement. The focus will also be on raising awareness on and understanding the European Union context, notably as regards the common EU values, the principles of unity and diversity, as well as their cultural identity, cultural awareness and their social and historical heritage.\nAward criteria\nRelevance of the project (maximum score 25 points)\nThe extent to which:\nthe proposal is relevant for objectives and priorities of the Action. In addition the proposal will be considered as highly relevant if:\n­it addresses the priority \"inclusion and diversity\"\n­In case of projects managed by the Erasmus+ National Agencies: if it addresses one or more \"European Priorities in the national context\", as announced by the National Agency\n­In case of projects submitted by ENGOs in the fields of education, training or youth to the European Education and Culture Executive Agency: the extent to which the applicant runs activities that support the implementation of EU policies in one of these sectors\nthe proposal is relevant for the respect and promotion of shared EU values, such as respect for human dignity, freedom, democracy, equality, the rule of law and respect for human rights, as well as fighting any sort of discrimination\nthe profile, experience and activities of the participating organisations are relevant for the field of the application\nthe proposal is based on a genuine and adequate needs analysis\nthe proposal is suitable for creating synergies between different fields of education, training, youth and sport or it has potentially a strong impact on one or more of those fields\nthe proposal is innovative\nthe proposal is complementary to other initiatives already carried out by the participating organisations\nthe proposal brings added value at EU level through results that would not be attained by activities carried out in a single country\nQuality of the project design and implementation (maximum score 30 points)\nThe extent to which:\nthe project objectives are clearly defined, realistic and address needs and goals of the participating organisations and the needs of their target groups\nthe proposed methodology is clear, adequate and feasible:\nthe project work plan is clear, complete and effective, including appropriate phases for preparation, implementation and sharing project results\nthe project is cost-effective and allocates appropriate resources to each activity\nthe project proposes appropriate quality control, monitoring and evaluation measures to ensure that the project implementation is of high quality, completed in time and on budget\nthe activities are designed in an accessible and inclusive way and are open to people with fewer opportunities\nthe project incorporates the use of digital tools and learning methods to complement their physical activities, and to improve the cooperation between partner organisations\n­If Erasmus+ online platforms and tools are available in the field(s) of the participating organisations: the extent to which the project makes use of Erasmus+ online platforms and tools, where relevant (European School Education Platform, including eTwinning, EPALE, European Youth Portal, YouthPass) as tools for preparation, implementation and follow-up of the project activities.\nThe project is designed in an eco-friendly way and incorporates green practices in different project phases\nThe project encourages participation and civic engagement\nThe project clearly describes both qualitative and quantitative indicators, that are realistic, feasible, and contribute to strengthening the overall quality of the project\nIf the project plans training, teaching or learning activities:\nthe extent to which these activities are appropriate for the project's objectives and involve the appropriate profile and number of participants\nthe quality of practical arrangements, management and support modalities in  learning, teaching and training activities\nthe quality of arrangements for the recognition and validation of participants' learning outcomes, in line with European transparency and recognition tools and principles\nQuality of the partnership and the cooperation arrangements (maximum score 20 points)\nThe extent to which:\nthe project involves an appropriate mix of participating organisations in terms of profile, including grassroots organisations, past experience in the Programme and expertise to successfully complete all project objectives\nfor partnerships in the fields of education and training or youth submitted by European NGOs: the consortium includes partner organisations outside the applying European NGO, opening it up to cooperation beyond its national organisations/branches\nthe project involves newcomers and less experienced organisations to the Action\nthe proposed allocation of tasks demonstrates the commitment and active contribution of all participating organisations\nthe proposal includes effective mechanisms for coordination and communication between the participating organisations, as well as with other relevant stakeholders\nIf applicable, the extent to which the involvement of a participating organisation from a third country not associated to the Programme brings an essential added value to the project (if this condition is not fulfilled, the participating organisation from a third country not associated to the Programme will be excluded from the project proposal at assessment stage)\nImpact (maximum score 25 points)\nThe extent to which:\nthe project proposal includes concrete and logical steps to integrate the project results in the regular work of participating organisations;\nthe project has the potential to positively impact its participants and participating organisations, as well as their wider communities;\nthe expected project results have the potential to be used outside the organisations participating in the project during and after the project lifetime, and at local, regional, national or European level;\nthe project proposal includes concrete and effective steps to make the results of the project known within the participating organisations, to share the results with other organisations and the public, and to publicly acknowledge the European Union funding;\n­if relevant, the extent to which the proposal describes how the materials, documents and media produced will be made freely available and promoted through open licences, and does not contain disproportionate limitations;\nthe project proposal includes concrete and effective steps to ensure the sustainability of the project, its capacity to continue having an impact and producing results after the EU grant has been used up.\nTo be considered for funding, proposals must score at least 70 points (out of 100 points in total). Furthermore, they must score at least half of the maximum points in each of the categories of award criteria mentioned above (i.e. minimum 13 points\n 6\n for the categories \"relevance of the project\" and \"impact\"; 15 points for the category \"quality of the project design and implementation\" and 10 points for the category \"quality of the partnership and the cooperation arrangements\").\nIn cases where two or more applications have received the same total score (ex aequo cases), priority will be given to highest scores for \"relevance of the project\" and then “impact”.\nWhat are the funding rules? \nThere are three pre-defined lump sums grants available, corresponding to the total grant amount for the project: EUR 120 000, EUR 250 000 and EUR 400 000. Applicants will choose between the 3 pre-defined amounts according to the activities they want to undertake and the results they want to achieve.  \nWhen planning their projects, the applicant organisations - together with their project partners - will need to choose the most appropriate lump sum amount to cover the costs of their projects, based on their needs and objectives.  \nProposals must describe the activities that applicants commit to carry out with the lump sum amount requested and must satisfy the principles of economy, efficiency and effectiveness.\nThe choice of the lump sum amount should be based on the applicant’s estimate for the overall cost of the project. Based on this estimate, applicants must choose the lump sum amount that best suits their needs while ensuring an efficient use of the funds and the respect of the co-financing principle (i.e. projects are expected to be co-financed with other funding sources, therefore the estimated overall cost of the project shall be higher than the fixed lump sum amount requested).\nIn case of doubts between two amounts, applicants can: a) reduce the cost of their project, for instance by finding more cost-effective ways to achieve similar results or by adapting the number/scale of the project activities to the budget; b) increase the scale of their project, for instance by aiming to reach more participants with their activities, increasing the number of activities or producing additional project results.\nIn line with the award criteria described above, the adequacy of the number, scope and complexity of the proposed project activities in relation to the amount requested, and the project objectives, will be important elements of the quality assessment.\nDescription of the project\nEach project proposal must present a clear project management methodology (needs analysis, work plan, clear task allocation and cooperation arrangements between partners, etc.). The applicants should read the award criteria in detail and address all the award criteria elements in the project application.\nIn the application, the applicants will describe their project proposal by splitting it into “work packages”. A work package is defined as a set of activities contributing to the achievement of specific project objectives.\nEach project must include a dedicated work package for project management and a number of implementation work packages (a maximum of 4 implementation work packages per project are recommended). Each implementation work package consists of a set of activities, and it must have a clear set of specific objectives and expected results (also referred to as ‘deliverables’). The project management work package covers monitoring, coordination, communication, evaluation, risk management and other activities necessary for the implementation of the project. A maximum of 20% of the total project budget can be allocated to the project management work package.\nThe assessment of these requirements shall follow the principle of proportionality: the higher the amount requested, the more the project methodology will be expected to be detailed and comprehensive.\nSubcontracting of services is allowed as long as it does not cover core activities on which the achievement of the objectives of the action directly depends. In such cases, the subcontracted tasks and the amount budgeted for them must be clearly described in the project application, unless stated otherwise in the application form.\nFor project submitted to National Agencies, please consult the Handbook on the lump sum funding model for more guidance on lump sum grants awarded under Partnerships for Cooperation.\nPayment arrangements\nThe condition for the full payment of the grant is the completion of all the activities in line with the quality criteria described in the project application. In case one or more activities are not completed, partially completed or assessed as unsatisfactory in the quality assessment, appropriate reductions of the grant amount may be applied at final report stage in cases of poor, partial or late implementation by not accepting single work-packages or activities, or by reducing the overall amount by a flat-rate percentage.\nThe final report assessment is based on the detailed descriptions of each activity carried out, quantitative and qualitative information showing the level of achievement of the project objectives stated in the application, and the quality of project results uploaded in the Erasmus+ Project Results Platform."
+    },
+    {
+      "id": "KGB-SRC-0113",
+      "title": "SEPIE current 2026 national-call index",
+      "issuer": "SEPIE",
+      "kind": "web",
+      "filename": "sepie.html",
+      "managed_path": "sources/funding-complete-review-20261110/sepie.html",
+      "sha256": "b5a7679f97159a0306fbf5d12c6640a53418e8132b2d861687d1e4b1eb6247ba",
+      "url": "https://www.sepie.es/convocatoria/index.html",
+      "retrieved_on": "2026-11-10",
+      "excerpt": "Convocatoria 2026 - Servicio Español para la Internacionalización de la Educación \n Inicio \nConvocatoria 2026 \nConvocatoria 2026 \nConvocatoria \nResoluciones \nEducación Escolar \nKA1 \n KA120-SCH: Acreditaciones Erasmus en Educación Escolar \n KA121-SCH: Proyectos acreditados de movilidad de alumnado y personal de Educación Escolar \n KA122-SCH: Proyectos de corta duración para la movilidad de alumnado y personal de Educación Escolar \nKA2 \n KA210 Asociaciones a pequeña escala \n KA220 Asociaciones para la cooperación \n KA240 Asociaciones europeas para el desarrollo escolar \nFormación Profesional \nKA1 \n KA120-VET: Acreditaciones Erasmus en Formación Profesional \n KA121-VET: Proyectos acreditados de movilidad de estudiantes y personal de Formación Profesional \n KA122-VET: Proyectos de corta duración para la movilidad de estudiantes y personal de Formación Profesional \nKA2 \n KA210 Asociaciones a pequeña escala \n KA220 Asociaciones para la cooperación \nEducación Superior \nKA1 \n KA130-HED: Acreditación Erasmus para consorcios de movilidad de Educación Superior \n KA131-HED: Proyectos de movilidad de estudiantes y personal de Educación Superior financiada con fondos de política interior \n KA171-HED: Proyectos de movilidad de estudiantes y personal de Educación Superior financiada con fondos de política exterior \nKA2 \n KA220 Asociaciones para la cooperación \nEducación de Personas Adultas \nKA1 \n KA120-ADU: Acreditaciones Erasmus en Educación de Personas Adultas \n KA121-ADU: Proyectos acreditados de movilidad de estudiantes y personal de Educación de Personas Adultas \n KA122-ADU: Proyectos de corta duración para la movilidad de estudiantes y personal de Educación de Personas Adultas \nKA2 \n KA210 Asociaciones a pequeña escala \n KA220 Asociaciones para la cooperación \nConvocatorias Anteriores \n2025 \n Convocatoria y Guía del Programa 2025 \n2024 \n Convocatoria y Guía del Programa 2024 \n2023 \n Convocatoria y Guía del Programa 2023 \n2022 \n Convocatoria y Guía del Programa 2022 \n2021 \n Convocatoria y Guía del Programa 2021 \n2020 \n Convocatoria y Guía del Programa 2020 \n2019 \n Convocatoria y Guía del Programa 2019 \n2018 \n Convocatoria y Guía del Programa 2018 \n2017 \n Convocatoria y Guía del Programa 2017 \n2016 \n Convocatoria y Guía del Programa 2016 \n2015 \n Convocatoria y Guía del Programa 2015 \n2014 \n Convocatoria y Guía del Programa 2014"
+    },
+    {
+      "id": "KGB-SRC-0114",
+      "title": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+      "issuer": "European Commission / European Youth Portal",
+      "kind": "web",
+      "filename": "esc.html",
+      "managed_path": "sources/funding-complete-review-20261110/esc.html",
+      "sha256": "9420e2b9bda30f6f16138e1a40a62ae3fb6becbcf0ca9b692018c5c5f12eece5",
+      "url": "https://youth.europa.eu/solidarity/organisations/calls-for-proposals_en",
+      "retrieved_on": "2026-11-10",
+      "excerpt": "2026 call \nThe 2026 call for project proposals has been published. Please consult the documents and tools provided below.  \nNotice in the Official Journal of the European Union\nCALL FOR PROPOSALS 2026 - EAC/A15/2025 European Solidarity Corps (C/2025/06214)\nPrevious versions:\nCall 2025\nCall 2024\nCall 2023\nCall 2022\nCall 2021\nCall 2019\nCall 2018\nEuropean Solidarity Corps Programme Guide for 2026\nThe European Solidarity Corps Programme Guide 2026 is essential reading for anyone interested in applying. It details the conditions governing the projects you can apply for under the general call for proposals. \nPrevious versions: \nVersion 2025\nVersion 2 of 2024, and its Corrigendum\nVersion 1 of 2024\nVersion 2023\nVersion 2022\nVersion 2 of 2021 and its Corrigendum\nVersion 1 of 2021\nVersion 2020\nVersion 2019\nVersion 2018\nActivity type\nDeadline\nWhere to apply\nVolunteering projects\n18 February 2026\n1 October 2026 (optional round)\nNational Agency\nSolidarity Projects\n18 February 2026\n7 May 2026 (optional round)\n1 October 2026\nNational Agency\nVolunteer teams in high-priority areas\n3 March 2026\nEuropean Education and Culture Executive Agency\nVolunteering under the Humanitarian Aid Corps\n23 April 2026\nEuropean Education and Culture Executive Agency\nApplications for the Quality Labels can be submitted on a continuous basis."
+    },
+    {
+      "id": "KGB-SRC-0115",
+      "title": "European Solidarity Corps guide 2026",
+      "issuer": "European Commission / EACEA",
+      "kind": "pdf",
+      "filename": "esc-guide.pdf",
+      "managed_path": "sources/funding-complete-review-20261110/esc-guide.pdf",
+      "sha256": "aee8797fe578c09e2d7209d4facc36dac8f56b39914fca87210f78e17277457e",
+      "url": "https://youth.europa.eu/sites/default/files/inline-files/european_solidarity_corps_guide_2026_EN.pdf",
+      "retrieved_on": "2026-11-10",
+      "publication_date": null,
+      "pdf_pages": 148,
+      "initial_pdf_page_ranges": [
+        [
+          30,
+          30
+        ],
+        [
+          31,
+          31
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          33,
+          33
+        ],
+        [
+          34,
+          34
+        ],
+        [
+          63,
+          63
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          65,
+          65
+        ],
+        [
+          66,
+          66
+        ],
+        [
+          67,
+          67
+        ],
+        [
+          68,
+          68
+        ],
+        [
+          132,
+          132
+        ]
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "esc-quality-label",
+      "label": "ESC · Quality Label for volunteering",
+      "description": "Approval of organisational volunteering quality/capacity. Lead status is subject to host/support requirements and enables a separate funding application. Distinguish organisational approval, volunteering and youth-led project funding.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ],
+      "kind": "event",
+      "domain": "funding",
+      "group_id": "programmes",
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "esc-solidarity-projects-2026",
+      "label": "ESC 2026 · Youth-led solidarity projects",
+      "description": "Youth-led nonprofit local solidarity activity lasting 2–12 months, with environmental/community benefit and genuine initiative by the young people. Distinguish organisational approval, volunteering and youth-led project funding.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ],
+      "kind": "event",
+      "domain": "funding",
+      "group_id": "programmes",
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "esc-volunteering-2026",
+      "label": "ESC 2026 · Volunteering projects",
+      "description": "Organised solidarity volunteering with learning, support and community benefit; volunteers cannot be treated as unsupported labour for a private commercial operation. Distinguish organisational approval, volunteering and youth-led project funding.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ],
+      "kind": "event",
+      "domain": "funding",
+      "group_id": "programmes",
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "esc-funding-reference",
+      "label": "European Solidarity Corps · 2026 grant reference",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The official 2026 calendar lists grant deadlines no later than 1 October for the reviewed activities. Quality Label applications are continuous but are not grant awards. The combined catalogue route “EU-CERV-SOLIDARITY” must not be read as a single interchangeable scheme; CERV is separate and no specific applicable CERV call was verified here.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0062",
+          "page": null,
+          "locator": "European Solidarity Corps 2026 deadlines; captured 2026-11-10T09:51:00.122597+00:00",
+          "label": "2026 project deadlines and continuous Quality Labels"
+        }
+      ],
+      "aspects": {
+        "route_context": [
+          "EU-CERV-SOLIDARITY"
+        ],
+        "checked_on": "2026-11-10",
+        "research_classification": "Watch"
+      },
+      "funding_context_ids": [
+        "esc-quality-label",
+        "esc-solidarity-projects-2026",
+        "esc-volunteering-2026"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 30,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 31,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 32,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 33,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 34,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 63,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 64,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 65,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 66,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 67,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 68,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    },
+    {
+      "source_id": "KGB-SRC-0115",
+      "page": 132,
+      "status": "inspected",
+      "note": "Focused funding review: ESC Quality Label, youth-led solidarity actions, funding and payments. Other pages remain outside this review."
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:esc-funding",
+      "label": "European Solidarity Corps · Separate participation routes",
+      "parent_id": "browse:funding-commission",
+      "anchor_topic_id": "esc-funding-reference",
+      "presentation": "hierarchy",
+      "maintenance_rule": "Keep individual calls and routes distinct; preserve their evidence, stages and applicant restrictions. Context is not eligibility.",
+      "members": [
+        {
+          "topic_id": "esc-quality-label",
+          "role": "primary"
+        },
+        {
+          "topic_id": "esc-solidarity-projects-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "esc-volunteering-2026",
+          "role": "primary"
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        }
+      ]
+    }
+  ],
+  "funding_reviews": [
+    {
+      "id": "funding-review:remaining-erasmus-cooperation-partnerships",
+      "topic_id": "erasmus-cooperation-partnerships",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The official guide and Spanish 2026 index were checked. The regular March date and possible October agency round are past; no current Spanish opening/new round was verified.",
+      "territory": "EU/associated-country partnership; activities and participants must follow the selected education/training/youth action.",
+      "applicants": "Eligible public/private organisations; coordinator generally legally established at least two years, and minimum three organisations in three eligible countries. Individual experts or a new organisation do not automatically qualify to coordinate.",
+      "activities": "Cooperation and innovation in education, training or youth, linked to applicable priorities; no funding for a standalone commercial aircraft development activity.",
+      "financial_summary": "Project lump sums €120,000, €250,000 or €400,000; total estimated cost must respect the co-financing principle and exceed the fixed grant. Payment depends on delivery/quality of work packages and the actual agreement.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "The guide and national index were readable, but a current action/agency-specific open round was not established. Retry SEPIE KA220 and INJUVE where appropriate; retain the past guide dates without declaring a new opening.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0112",
+          "label": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment",
+          "locator": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0113",
+          "label": "SEPIE current 2026 national-call index",
+          "locator": "SEPIE current 2026 national-call index; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-esc-quality-label",
+      "topic_id": "esc-quality-label",
+      "version": 1,
+      "instrument_type": "non-cash",
+      "availability": "open",
+      "availability_note": "The official guide and current call page explicitly allow continuous Quality Label applications. It is a non-budgetary award, not a grant.",
+      "territory": "Eligible countries including Spain; host-site responsibility and participant residence/action rules must be evidenced.",
+      "applicants": "Eligible organisation seeking host/support/lead roles and meeting the relevant quality and capacity conditions; host locations must be under its legal/managerial responsibility.",
+      "activities": "Approval of organisational volunteering quality/capacity. Lead status is subject to host/support requirements and enables a separate funding application.",
+      "financial_summary": "No grant payment is attached to the Quality Label. Hosting, safeguarding, support and management resources must be planned separately.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-esc-solidarity-projects-2026",
+      "topic_id": "esc-solidarity-projects-2026",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The published 2026 first/optional/final entry dates are past. No fresh or extended round was independently verified.",
+      "territory": "Eligible countries including Spain; host-site responsibility and participant residence/action rules must be evidenced.",
+      "applicants": "A group of at least five eligible young people aged 18–30 resident in the same eligible country, or an organisation applying on their behalf under the rules; no ages or group are confirmed.",
+      "activities": "Youth-led nonprofit local solidarity activity lasting 2–12 months, with environmental/community benefit and genuine initiative by the young people.",
+      "financial_summary": "Project management contribution €630/month, with specified coaching and exceptional costs. The guide’s indicative payment table provides 80% pre-finance/20% balance for solidarity projects, subject to the actual grant agreement.",
+      "deadlines": [
+        {
+          "label": "Final listed 2026 national-agency entry date",
+          "value": "2026-10-01",
+          "timezone": null,
+          "note": "Specific action and national-agency round must be verified; not a current opening.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "No current or extended action-specific grant round was verified. Retry the Spanish national agency and preserve the published 2026 calendar.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-esc-volunteering-2026",
+      "topic_id": "esc-volunteering-2026",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The 2026 grant calendar gives February and optional October entry dates. The continuous Quality Label application is not a continuously open grant round.",
+      "territory": "Eligible countries including Spain; host-site responsibility and participant residence/action rules must be evidenced.",
+      "applicants": "Eligible Quality Label lead organisation with appropriate host/support roles, capacity and volunteer arrangements; no such organisation is confirmed.",
+      "activities": "Organised solidarity volunteering with learning, support and community benefit; volunteers cannot be treated as unsupported labour for a private commercial operation.",
+      "financial_summary": "Action-specific participant/day/unit contributions and eligible inclusion/organisational support apply. Exact amounts depend on action, location and duration; the Quality Label itself supplies no cash.",
+      "deadlines": [
+        {
+          "label": "Final listed 2026 national-agency entry date",
+          "value": "2026-10-01",
+          "timezone": null,
+          "note": "Specific action and national-agency round must be verified; not a current opening.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "No current or extended action-specific grant round was verified. Retry the Spanish national agency and preserve the published 2026 calendar.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    }
+  ],
+  "funding_assessments": [
+    {
+      "id": "funding-assessment:remaining-restoration-erasmus-cooperation-partnerships",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-erasmus-cooperation-partnerships",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible education/training organisation and international partners",
+      "reasons": [
+        "A restoration-based learning partnership could contribute if it has genuine education outcomes."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Choose the actual education/training/youth action and competent Spanish agency; establish a two-year-old eligible coordinating organisation and three-country partnership. Verify a dated applicable round rather than assuming the generic guide is open."
+      ],
+      "next_action": "Choose the actual education/training/youth action and competent Spanish agency; establish a two-year-old eligible coordinating organisation and three-country partnership. Verify a dated applicable round rather than assuming the generic guide is open.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0112",
+          "label": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment",
+          "locator": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0113",
+          "label": "SEPIE current 2026 national-call index",
+          "locator": "SEPIE current 2026 national-call index; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-erasmus-cooperation-partnerships",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-erasmus-cooperation-partnerships",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Eligible educational partnership using appropriate technology",
+      "reasons": [
+        "Drone use could be a learning subject; developing a commercial prototype is not established as the educational partnership objective."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Choose the actual education/training/youth action and competent Spanish agency; establish a two-year-old eligible coordinating organisation and three-country partnership. Verify a dated applicable round rather than assuming the generic guide is open."
+      ],
+      "next_action": "Choose the actual education/training/youth action and competent Spanish agency; establish a two-year-old eligible coordinating organisation and three-country partnership. Verify a dated applicable round rather than assuming the generic guide is open.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0112",
+          "label": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment",
+          "locator": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0113",
+          "label": "SEPIE current 2026 national-call index",
+          "locator": "SEPIE current 2026 national-call index; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-erasmus-cooperation-partnerships",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-erasmus-cooperation-partnerships",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible training/research/education partner",
+      "reasons": [
+        "Training in imagery/field monitoring can contribute to a structured education partnership."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Choose the actual education/training/youth action and competent Spanish agency; establish a two-year-old eligible coordinating organisation and three-country partnership. Verify a dated applicable round rather than assuming the generic guide is open."
+      ],
+      "next_action": "Choose the actual education/training/youth action and competent Spanish agency; establish a two-year-old eligible coordinating organisation and three-country partnership. Verify a dated applicable round rather than assuming the generic guide is open.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0112",
+          "label": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment",
+          "locator": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0113",
+          "label": "SEPIE current 2026 national-call index",
+          "locator": "SEPIE current 2026 national-call index; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-erasmus-cooperation-partnerships",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-erasmus-cooperation-partnerships",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible established coordinator and international partners",
+      "reasons": [
+        "Environmental education and public demonstration are promising subjects for a defined learning partnership."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Choose the actual education/training/youth action and competent Spanish agency; establish a two-year-old eligible coordinating organisation and three-country partnership. Verify a dated applicable round rather than assuming the generic guide is open."
+      ],
+      "next_action": "Choose the actual education/training/youth action and competent Spanish agency; establish a two-year-old eligible coordinating organisation and three-country partnership. Verify a dated applicable round rather than assuming the generic guide is open.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0112",
+          "label": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment",
+          "locator": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0113",
+          "label": "SEPIE current 2026 national-call index",
+          "locator": "SEPIE current 2026 national-call index; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-esc-quality-label",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-quality-label",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible organisation seeking host/support/lead roles and meeting the relevant quality and capacity conditions; host locations must be under its legal/managerial responsibility.",
+      "reasons": [
+        "A community restoration activity could be a setting if solidarity, learning and site responsibilities are real."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Prepare the appropriate Quality Label role; pursue a separate dated grant if cash is needed."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Prepare the appropriate Quality Label role; pursue a separate dated grant if cash is needed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-esc-quality-label",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-quality-label",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Eligible organisation seeking host/support/lead roles and meeting the relevant quality and capacity conditions; host locations must be under its legal/managerial responsibility.",
+      "reasons": [
+        "A commercial drone prototype is not the solidarity/volunteering objective; educational engagement would need a different, safe community scope."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Prepare the appropriate Quality Label role; pursue a separate dated grant if cash is needed."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Prepare the appropriate Quality Label role; pursue a separate dated grant if cash is needed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-esc-quality-label",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-quality-label",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible organisation seeking host/support/lead roles and meeting the relevant quality and capacity conditions; host locations must be under its legal/managerial responsibility.",
+      "reasons": [
+        "Community/citizen monitoring could support a nonprofit learning activity, with an actual competent host/group."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Prepare the appropriate Quality Label role; pursue a separate dated grant if cash is needed."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Prepare the appropriate Quality Label role; pursue a separate dated grant if cash is needed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-esc-quality-label",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-quality-label",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible organisation seeking host/support/lead roles and meeting the relevant quality and capacity conditions; host locations must be under its legal/managerial responsibility.",
+      "reasons": [
+        "Environmental learning and public demonstration can be relevant to a real solidarity activity."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Prepare the appropriate Quality Label role; pursue a separate dated grant if cash is needed."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Prepare the appropriate Quality Label role; pursue a separate dated grant if cash is needed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-esc-solidarity-projects-2026",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-solidarity-projects-2026",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "A group of at least five eligible young people aged 18–30 resident in the same eligible country, or an organisation applying on their behalf under the rules; no ages or group are confirmed.",
+      "reasons": [
+        "A community restoration activity could be a setting if solidarity, learning and site responsibilities are real."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-esc-solidarity-projects-2026",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-solidarity-projects-2026",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "A group of at least five eligible young people aged 18–30 resident in the same eligible country, or an organisation applying on their behalf under the rules; no ages or group are confirmed.",
+      "reasons": [
+        "A commercial drone prototype is not the solidarity/volunteering objective; educational engagement would need a different, safe community scope."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-esc-solidarity-projects-2026",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-solidarity-projects-2026",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "A group of at least five eligible young people aged 18–30 resident in the same eligible country, or an organisation applying on their behalf under the rules; no ages or group are confirmed.",
+      "reasons": [
+        "Community/citizen monitoring could support a nonprofit learning activity, with an actual competent host/group."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-esc-solidarity-projects-2026",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-solidarity-projects-2026",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "A group of at least five eligible young people aged 18–30 resident in the same eligible country, or an organisation applying on their behalf under the rules; no ages or group are confirmed.",
+      "reasons": [
+        "Environmental learning and public demonstration can be relevant to a real solidarity activity."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-esc-volunteering-2026",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-volunteering-2026",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible Quality Label lead organisation with appropriate host/support roles, capacity and volunteer arrangements; no such organisation is confirmed.",
+      "reasons": [
+        "A community restoration activity could be a setting if solidarity, learning and site responsibilities are real."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-esc-volunteering-2026",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-volunteering-2026",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Eligible Quality Label lead organisation with appropriate host/support roles, capacity and volunteer arrangements; no such organisation is confirmed.",
+      "reasons": [
+        "A commercial drone prototype is not the solidarity/volunteering objective; educational engagement would need a different, safe community scope."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-esc-volunteering-2026",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-volunteering-2026",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible Quality Label lead organisation with appropriate host/support roles, capacity and volunteer arrangements; no such organisation is confirmed.",
+      "reasons": [
+        "Community/citizen monitoring could support a nonprofit learning activity, with an actual competent host/group."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-esc-volunteering-2026",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-esc-volunteering-2026",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible Quality Label lead organisation with appropriate host/support roles, capacity and volunteer arrangements; no such organisation is confirmed.",
+      "reasons": [
+        "Environmental learning and public demonstration can be relevant to a real solidarity activity."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs."
+      ],
+      "next_action": "Identify a real willing organisation or eligible youth group, participant ages/residence, safe site access and a genuinely community-led activity. Check the competent national agency for the next actual grant round and action-specific costs.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "funding-review-gap:erasmus-cooperation-partnerships",
+      "topic_ids": [
+        "erasmus-cooperation-partnerships"
+      ],
+      "text": "Funding review incomplete: The guide and national index were readable, but a current action/agency-specific open round was not established. Retry SEPIE KA220 and INJUVE where appropriate; retain the past guide dates without declaring a new opening.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0112",
+          "label": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment",
+          "locator": "Erasmus+ cooperation: applicants, partnership, dates, lump sums and payment; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0113",
+          "label": "SEPIE current 2026 national-call index",
+          "locator": "SEPIE current 2026 national-call index; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review-gap:esc-solidarity-projects-2026",
+      "topic_ids": [
+        "esc-solidarity-projects-2026"
+      ],
+      "text": "Funding review incomplete: No current or extended action-specific grant round was verified. Retry the Spanish national agency and preserve the published 2026 calendar.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-review-gap:esc-volunteering-2026",
+      "topic_ids": [
+        "esc-volunteering-2026"
+      ],
+      "text": "Funding review incomplete: No current or extended action-specific grant round was verified. Retry the Spanish national agency and preserve the published 2026 calendar.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    }
+  ]
+}

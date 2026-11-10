@@ -74,6 +74,10 @@ class Topic(Record):
     group_id: str = "other"
     source_refs: list[SourceRef] = Field(min_length=1)
 
+    # Curated browsing context, never an eligibility relationship.
+    funding_role: Literal['route', 'framework', 'reference'] | None = None
+    funding_context_ids: list[str] = []
+
 
 class Relationship(Record):
     source: str
@@ -345,6 +349,15 @@ class Store:
                 raise ValueError('Duplicate plant image IDs')
             topic_records={t['id']:t for t in self.records('topics',c)}
             topic_records.update({t.id:t.model_dump() for t in batch.topics})
+            for topic in topic_records.values():
+                contexts=topic.get('funding_context_ids', [])
+                if topic.get('funding_role') or contexts:
+                    if topic.get('domain')!='funding':
+                        raise ValueError('Funding metadata requires a funding topic')
+                    if len(set(contexts))!=len(contexts) or topic['id'] in contexts:
+                        raise ValueError('Funding contexts must be unique and cannot reference themselves')
+                    if any(topic_records.get(id,{}).get('domain')!='funding' or topic_records[id].get('funding_role')=='reference' for id in contexts):
+                        raise ValueError('Funding contexts must reference existing funding routes or frameworks')
             for image in batch.plant_images:
                 if image.topic_id not in topic_records or topic_records[image.topic_id]['kind'] != 'species':
                     raise ValueError(f'Image must reference an existing species: {image.id}')

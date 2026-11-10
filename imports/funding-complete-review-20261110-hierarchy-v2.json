@@ -1,0 +1,160 @@
+{
+  "batch_id": "funding-complete-review-20261110-hierarchy-v2",
+  "base_revision": 49,
+  "summary": "Place newly reviewed NATURE and Mission calls beneath their documented programme frameworks; retain original Horizon memberships and a shared Adaptation reference.",
+  "browse_groups": [
+    {
+      "id": "browse:horizon-funding",
+      "label": "Horizon Europe · research calls",
+      "parent_id": "browse:funding-commission",
+      "anchor_topic_id": "horizon-europe-programme",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "horizon-nature-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "horizon-cl6-biodiv03-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mission-soil-funding",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mission-adaptation-funding",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Call calendar, exact topic eligibility and project fit are different checks. Missions are not permanent grant windows.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0050",
+          "page": null,
+          "locator": "Horizon NATURE 2027 call calendar; captured 2026-11-10T09:50:58.026826+00:00",
+          "label": "NATURE calendar"
+        },
+        {
+          "source_id": "KGB-SRC-0051",
+          "page": null,
+          "locator": "Horizon CL6 BIODIV03 forthcoming call; captured 2026-11-10T09:50:58.358330+00:00",
+          "label": "CL6 forthcoming topic"
+        },
+        {
+          "source_id": "KGB-SRC-0053",
+          "page": null,
+          "locator": "Mission Adaptation 2026 call calendar; captured 2026-11-10T09:50:58.526514+00:00",
+          "label": "Mission funding topics"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:horizon-nature-calls",
+      "label": "NATURE · individual 2027 topics",
+      "parent_id": "browse:horizon-funding",
+      "anchor_topic_id": "horizon-nature-2027",
+      "presentation": "hierarchy",
+      "member_layout": "vertical",
+      "members": [
+        {
+          "topic_id": "horizon-nature-living-labs-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "horizon-nature-lab-network-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "horizon-nature-monitoring-2027",
+          "role": "primary"
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0089",
+          "page": null,
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0089",
+          "page": null,
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0089",
+          "page": null,
+          "label": "Horizon NATURE 2027 official calendar",
+          "locator": "Horizon NATURE 2027 official calendar; checked 2026-11-10"
+        }
+      ],
+      "description": "Individual dated calls remain distinct from their governing programme. Shared participation is context, not eligibility.",
+      "maintenance_rule": "Keep individual call topics under their documented programme; preserve source editions, primary/shared roles and separate applicant/stage gates."
+    },
+    {
+      "id": "browse:horizon-soil-calls",
+      "label": "Mission Soil · individual calls",
+      "parent_id": "browse:horizon-funding",
+      "anchor_topic_id": "mission-soil-funding",
+      "presentation": "hierarchy",
+      "member_layout": "vertical",
+      "members": [
+        {
+          "topic_id": "mission-soil-forest-labs-2026",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mission-soil-adaptation-demo-2026",
+          "role": "primary"
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0107",
+          "page": null,
+          "label": "Mission Soil official 2026 first-stage closure and call calendar",
+          "locator": "Mission Soil official 2026 first-stage closure and call calendar; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0053",
+          "page": null,
+          "label": "Mission Adaptation official research topics and calendar",
+          "locator": "Mission Adaptation official research topics and calendar; checked 2026-11-10"
+        }
+      ],
+      "description": "Individual dated calls remain distinct from their governing programme. Shared participation is context, not eligibility.",
+      "maintenance_rule": "Keep individual call topics under their documented programme; preserve source editions, primary/shared roles and separate applicant/stage gates."
+    },
+    {
+      "id": "browse:horizon-adaptation-calls",
+      "label": "Mission Adaptation · joint call",
+      "parent_id": "browse:horizon-funding",
+      "anchor_topic_id": "mission-adaptation-funding",
+      "presentation": "hierarchy",
+      "member_layout": "vertical",
+      "members": [
+        {
+          "topic_id": "mission-soil-adaptation-demo-2026",
+          "role": "shared"
+        }
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0053",
+          "page": null,
+          "label": "Mission Adaptation official research topics and calendar",
+          "locator": "Mission Adaptation official research topics and calendar; checked 2026-11-10"
+        }
+      ],
+      "description": "Individual dated calls remain distinct from their governing programme. Shared participation is context, not eligibility.",
+      "maintenance_rule": "Keep individual call topics under their documented programme; preserve source editions, primary/shared roles and separate applicant/stage gates."
+    }
+  ]
+}

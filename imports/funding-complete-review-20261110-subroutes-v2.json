@@ -1,0 +1,2477 @@
+{
+  "batch_id": "funding-complete-review-20261110-subroutes-v2",
+  "summary": "Independently compare PAEAS A/B, Water4All AEI/CDTI and BiodivFuture AEI/FB; preserve institutional, realm, topic, maturity and national submission gates; 24 comparisons.",
+  "base_revision": 46,
+  "sources": [
+    {
+      "id": "KGB-SRC-0126",
+      "title": "PAEAS official 2026 call window and documents",
+      "issuer": "Fundación Biodiversidad",
+      "kind": "web",
+      "filename": "paeas.html",
+      "managed_path": "sources/funding-complete-review-20261110/paeas.html",
+      "sha256": "8af9048987243221f13245696993f0e79ecf288f6c4d58d0a1de97cf813cb055",
+      "url": "https://fundacion-biodiversidad.es/otras_convocatorias/convocatoria-para-proyectos-de-educacion-ambiental-para-la-sostenibilidad-e-investigacion-sobre-desinformacion-climatica-2/",
+      "retrieved_on": "2026-11-10",
+      "excerpt": "Convocatoria de subvenciones de la Fundación Biodiversidad F.S.P., en régimen de concurrencia competitiva, para la financiación de proyectos de Educación Ambiental para la sostenibilidad e investigación sobre desinformación climática orientados a fortalecer el conocimiento científico, la innovación y la generación de evidencias en el marco del Plan de Acción de Educación Ambiental para la Sostenibilidad de la Administración General del Estado 2026-2032, publicada en el Anuncio 29360 del BOE Núm. 224 de 2026.\n Correo electrónico de contacto:\n proyectos@fundacion-biodiversidad.es \n Fecha Inicio: 11/09/2026 \n Fecha fin: 10/11/2026 \n Año convocatoria: 2026 \n Importe total de la convocatoria: 7 millones de euros, repartidos en dos líneas: A), y B) de 3,5 millones de euros cada una. \n Importe por proyecto: el máximo de ayuda a solicitar es 200.000,00 € en ambas líneas. \n Fuente de financiación: \n Fundación Biodiversidad \n Presentar solicitud"
+    }
+  ],
+  "topics": [
+    {
+      "id": "biodivfuture-spain-aei",
+      "label": "BiodivFuture · Spain AEI",
+      "description": "Spanish national funding route. AEI permits Themes A/B but excludes Theme C proposals, even when combined with A/B.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ],
+      "kind": "event",
+      "domain": "funding",
+      "group_id": "programmes",
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "biodivfuture-spain-fb",
+      "label": "BiodivFuture · Spain FB",
+      "description": "Spanish national funding route. Fundación Biodiversidad permits all themes but only marine/coastal environments; not an inland Alhama route.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ],
+      "kind": "event",
+      "domain": "funding",
+      "group_id": "programmes",
+      "funding_role": "route",
+      "funding_context_ids": []
+    }
+  ],
+  "coverage": [],
+  "browse_groups": [
+    {
+      "id": "browse:biodivfuture-2026",
+      "label": "BiodivFuture · Call 2026–2027",
+      "parent_id": "browse:biodiversa",
+      "anchor_topic_id": "biodivfuture-2026",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "biodivfuture-spain-gate",
+          "role": "primary"
+        },
+        {
+          "topic_id": "biodivfuture-spain-aei",
+          "role": "primary"
+        },
+        {
+          "topic_id": "biodivfuture-spain-fb",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Source-backed funding navigation. Keep the actual fund, programme, authority and local-zone identities distinct. Skip unsupported geographic levels. Preserve primary/shared memberships, cited editions, dated status and complete existing group definitions. Folder membership is not a factual edge, eligibility or an award.",
+      "description": "Spanish theme, institution, national submission and payment gates remain distinct from general consortium criteria.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "locator": "Spain national eligibility",
+          "label": "Spain national eligibility"
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ],
+  "funding_reviews": [
+    {
+      "id": "funding-review:remaining-paeas-line-a",
+      "topic_id": "paeas-line-a",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Official call page gives 10 November 2026 as the end date. Exact cutoff/timezone was not established; do not assume it is still possible to submit at a particular time today.",
+      "territory": "Spain under the call’s applicant and activity conditions; no Alhama organisation or delivery site is confirmed.",
+      "applicants": "Spanish registered nonprofit legal entities, public research organisations, public universities and professional colleges under the exact call requirements.",
+      "activities": "Environmental-education research/evidence, evaluation, participation and learning; ordinary planting/equipment purchases are not thereby eligible.",
+      "financial_summary": "Eligible-cost, depreciation, staffing, indirect-cost and advance/guarantee conditions follow the call. Direct purchase of assets must not be substituted for permitted depreciation/services; payment is subject to justification. No ready application or financed organisation is confirmed.",
+      "deadlines": [
+        {
+          "label": "Published application end",
+          "value": "2026-11-10",
+          "timezone": null,
+          "note": "Exact cutoff/timezone unverified; verify the submission system before relying on same-day access.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-paeas-line-b",
+      "topic_id": "paeas-line-b",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Official call page gives 10 November 2026 as the end date. Exact cutoff/timezone was not established; do not assume it is still possible to submit at a particular time today.",
+      "territory": "Spain under the call’s applicant and activity conditions; no Alhama organisation or delivery site is confirmed.",
+      "applicants": "Public research organisations and public universities under the call; the wider Line A nonprofit category cannot be transferred.",
+      "activities": "Multidisciplinary research into climate disinformation and educational/social responses; general environmental learning is not automatically this research.",
+      "financial_summary": "Eligible-cost, depreciation, staffing, indirect-cost and advance/guarantee conditions follow the call. Direct purchase of assets must not be substituted for permitted depreciation/services; payment is subject to justification. No ready application or financed organisation is confirmed.",
+      "deadlines": [
+        {
+          "label": "Published application end",
+          "value": "2026-11-10",
+          "timezone": null,
+          "note": "Exact cutoff/timezone unverified; verify the submission system before relying on same-day access.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-water4all-spain-aei",
+      "topic_id": "water4all-spain-aei",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "Published mandatory international preproposal deadline is 10 November 2026 at 15:00 CET and has passed at this check; no extension or verified portal closure was established.",
+      "territory": "Spain plus the transnational call’s consortium and participant-country rules; R&D activity and applicant conditions apply.",
+      "applicants": "Eligible nonprofit Spanish R&D organisation with the required prior AEI-beneficiary history and eligible PI. Ordinary companies are not this funding route.",
+      "activities": "AEI supports Topics 2–4 and cannot support Topic 1; the national declaration and national submission within one week of the international preproposal are mandatory.",
+      "financial_summary": "PCI national direct-cost limits and permitted experimental increments apply; 25% indirect costs are added under these national rules. Detailed eligible costs and payments require the referenced PCI documents.",
+      "deadlines": [
+        {
+          "label": "Mandatory international preproposal",
+          "value": "2026-11-10T15:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 56"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 57"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 58"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-water4all-spain-cdti",
+      "topic_id": "water4all-spain-cdti",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "Published mandatory international preproposal deadline is 10 November 2026 at 15:00 CET and has passed at this check; no extension or verified portal closure was established.",
+      "territory": "Spain plus the transnational call’s consortium and participant-country rules; R&D activity and applicant conditions apply.",
+      "applicants": "For-profit enterprise established and carrying out eligible technological R&D in Spain; universities/nonprofits are not the CDTI beneficiary route.",
+      "activities": "Technological industrial research/experimental development at TRL4–7; all four topics may be eligible. Non-technological business-model activity is excluded; CDTI national submission is due with the international first stage.",
+      "financial_summary": "Minimum financeable company budget €150,000; around €200,000 recommended by the annex. Grants up to 70% of the eligible project budget, not CDTI PID’s partially repayable finance. Staff, equipment and specified R&D external/other costs have their own caps.",
+      "deadlines": [
+        {
+          "label": "Mandatory international preproposal",
+          "value": "2026-11-10T15:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 59"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 60"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-biodivfuture-spain-aei",
+      "topic_id": "biodivfuture-spain-aei",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The mandatory 10 November noon CET preproposal date has passed at this check. An invited April full proposal is not fresh entry; no extension or independently verified portal closure was established.",
+      "territory": "Spain national funding; no realm restriction, Themes A/B only.",
+      "applicants": "Eligible nonprofit R&D organisations under the PCI/national rules, with prior AEI-beneficiary requirements and eligible PI; an ordinary company or general nonprofit is not automatically eligible.",
+      "activities": "Novel-ecosystem research under the precise national theme/realm restrictions.",
+      "financial_summary": "Direct-cost caps depend on coordinator/partner composition and the national table; justified experimental increment up to €30,000 and 25% indirect costs are specified. National application and payment conditions differ; FB’s stated advance option is conditional, not automatic.",
+      "deadlines": [
+        {
+          "label": "Mandatory preproposal",
+          "value": "2026-11-10T12:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        },
+        {
+          "label": "Invited full proposal",
+          "value": "2027-04-16T12:00:00+02:00",
+          "timezone": "CEST",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-biodivfuture-spain-fb",
+      "topic_id": "biodivfuture-spain-fb",
+      "version": 1,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The mandatory 10 November noon CET preproposal date has passed at this check. An invited April full proposal is not fresh entry; no extension or independently verified portal closure was established.",
+      "territory": "Spain national funding; marine/coastal environments only, all themes.",
+      "applicants": "Eligible nonprofit R&D organisations under the PCI/national rules, with prior AEI-beneficiary requirements and eligible PI; an ordinary company or general nonprofit is not automatically eligible.",
+      "activities": "Novel-ecosystem research under the precise national theme/realm restrictions.",
+      "financial_summary": "Direct-cost caps depend on coordinator/partner composition and the national table; justified experimental increment up to €30,000 and 25% indirect costs are specified. National application and payment conditions differ; FB’s stated advance option is conditional, not automatic.",
+      "deadlines": [
+        {
+          "label": "Mandatory preproposal",
+          "value": "2026-11-10T12:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        },
+        {
+          "label": "Invited full proposal",
+          "value": "2027-04-16T12:00:00+02:00",
+          "timezone": "CEST",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    }
+  ],
+  "funding_assessments": [
+    {
+      "id": "funding-assessment:remaining-restoration-paeas-line-a",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-paeas-line-a",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Spanish registered nonprofit legal entities, public research organisations, public universities and professional colleges under the exact call requirements.",
+      "reasons": [
+        "Restoration can be an educational research setting; direct restoration works alone do not meet this line."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Establish an actual eligible organisation and a clear environmental-education research/evaluation question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed."
+      ],
+      "next_action": "Establish an actual eligible organisation and a clear environmental-education research/evaluation question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-paeas-line-a",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-paeas-line-a",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Spanish registered nonprofit legal entities, public research organisations, public universities and professional colleges under the exact call requirements.",
+      "reasons": [
+        "A drone prototype is not the education/disinformation research objective; an independently justified learning study would need a different scope."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Establish an actual eligible organisation and a clear environmental-education research/evaluation question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed."
+      ],
+      "next_action": "Establish an actual eligible organisation and a clear environmental-education research/evaluation question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-paeas-line-a",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-paeas-line-a",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Spanish registered nonprofit legal entities, public research organisations, public universities and professional colleges under the exact call requirements.",
+      "reasons": [
+        "Research into educational effectiveness or misinformation differs from ordinary ecological field monitoring."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Establish an actual eligible organisation and a clear environmental-education research/evaluation question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed."
+      ],
+      "next_action": "Establish an actual eligible organisation and a clear environmental-education research/evaluation question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-paeas-line-a",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-paeas-line-a",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Spanish registered nonprofit legal entities, public research organisations, public universities and professional colleges under the exact call requirements.",
+      "reasons": [
+        "Environmental education is thematically relevant only with the line’s specific research purpose and institutional eligibility."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Establish an actual eligible organisation and a clear environmental-education research/evaluation question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed."
+      ],
+      "next_action": "Establish an actual eligible organisation and a clear environmental-education research/evaluation question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-paeas-line-b",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-paeas-line-b",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Public research organisations and public universities under the call; the wider Line A nonprofit category cannot be transferred.",
+      "reasons": [
+        "Restoration can be an educational research setting; direct restoration works alone do not meet this line. Line B requires a climate-disinformation research objective, which none of the current ideas has confirmed."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Establish an actual eligible organisation and a clear climate-disinformation research question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed."
+      ],
+      "next_action": "Establish an actual eligible organisation and a clear climate-disinformation research question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-paeas-line-b",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-paeas-line-b",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Public research organisations and public universities under the call; the wider Line A nonprofit category cannot be transferred.",
+      "reasons": [
+        "A drone prototype is not the education/disinformation research objective; an independently justified learning study would need a different scope. Line B requires a climate-disinformation research objective, which none of the current ideas has confirmed."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Establish an actual eligible organisation and a clear climate-disinformation research question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed."
+      ],
+      "next_action": "Establish an actual eligible organisation and a clear climate-disinformation research question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-paeas-line-b",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-paeas-line-b",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Public research organisations and public universities under the call; the wider Line A nonprofit category cannot be transferred.",
+      "reasons": [
+        "Research into educational effectiveness or misinformation differs from ordinary ecological field monitoring. Line B requires a climate-disinformation research objective, which none of the current ideas has confirmed."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Establish an actual eligible organisation and a clear climate-disinformation research question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed."
+      ],
+      "next_action": "Establish an actual eligible organisation and a clear climate-disinformation research question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-paeas-line-b",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-paeas-line-b",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Public research organisations and public universities under the call; the wider Line A nonprofit category cannot be transferred.",
+      "reasons": [
+        "Environmental education is thematically relevant only with the line’s specific research purpose and institutional eligibility. Line B requires a climate-disinformation research objective, which none of the current ideas has confirmed."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Establish an actual eligible organisation and a clear climate-disinformation research question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed."
+      ],
+      "next_action": "Establish an actual eligible organisation and a clear climate-disinformation research question, budget and signed submission. The 2026 date is not a substitute for preparation; no future round is assumed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-water4all-spain-aei",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-water4all-spain-aei",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible nonprofit Spanish R&D organisation with the required prior AEI-beneficiary history and eligible PI. Ordinary companies are not this funding route.",
+      "reasons": [
+        "Restoration can supply a nature-based water-management research contribution if it meets the selected topic."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed."
+      ],
+      "next_action": "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 56"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 57"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 58"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-water4all-spain-aei",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-water4all-spain-aei",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible nonprofit Spanish R&D organisation with the required prior AEI-beneficiary history and eligible PI. Ordinary companies are not this funding route.",
+      "reasons": [
+        "A technological water-delivery/refill experiment could be relevant, but actual prototype maturity and national eligibility remain unconfirmed."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed."
+      ],
+      "next_action": "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 56"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 57"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 58"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-water4all-spain-aei",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-water4all-spain-aei",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible nonprofit Spanish R&D organisation with the required prior AEI-beneficiary history and eligible PI. Ordinary companies are not this funding route.",
+      "reasons": [
+        "Monitoring is relevant to the call, but AEI excludes Topic1 while CDTI has different technological gates."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed."
+      ],
+      "next_action": "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 56"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 57"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 58"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-water4all-spain-aei",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-water4all-spain-aei",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Education/engagement partner only where the research work programme needs it",
+      "reasons": [
+        "Education can support knowledge transfer in qualifying water research; standalone educational delivery is not established."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed."
+      ],
+      "next_action": "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 56"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 57"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 58"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-water4all-spain-cdti",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-water4all-spain-cdti",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "For-profit enterprise established and carrying out eligible technological R&D in Spain; universities/nonprofits are not the CDTI beneficiary route.",
+      "reasons": [
+        "Restoration can supply a nature-based water-management research contribution if it meets the selected topic."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed."
+      ],
+      "next_action": "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 59"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 60"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-water4all-spain-cdti",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-water4all-spain-cdti",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "For-profit enterprise established and carrying out eligible technological R&D in Spain; universities/nonprofits are not the CDTI beneficiary route.",
+      "reasons": [
+        "A technological water-delivery/refill experiment could be relevant, but actual prototype maturity and national eligibility remain unconfirmed."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed."
+      ],
+      "next_action": "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 59"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 60"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-water4all-spain-cdti",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-water4all-spain-cdti",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "For-profit enterprise established and carrying out eligible technological R&D in Spain; universities/nonprofits are not the CDTI beneficiary route.",
+      "reasons": [
+        "Monitoring is relevant to the call, but AEI excludes Topic1 while CDTI has different technological gates."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed."
+      ],
+      "next_action": "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 59"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 60"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-water4all-spain-cdti",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-water4all-spain-cdti",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Education/engagement partner only where the research work programme needs it",
+      "reasons": [
+        "Education can support knowledge transfer in qualifying water research; standalone educational delivery is not established."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed."
+      ],
+      "next_action": "First confirm timely international/national submission and the chosen national route. Then establish the appropriate research organisation/company, permitted topic, technical maturity, costs and consortium; no submission or partner is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 59"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 60"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-biodivfuture-spain-aei",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-biodivfuture-spain-aei",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible nonprofit Spanish R&D organisation and PI under AEI national rules",
+      "reasons": [
+        "A novel-ecosystem restoration experiment might fit Theme A/B; ordinary planting is not research."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Confirm a timely international preproposal and national submission, the eligible Spanish research institution/PI, prior AEI-beneficiary history and the applicable themes/realm; no prepared submission is confirmed."
+      ],
+      "next_action": "Confirm a timely international preproposal and national submission, the eligible Spanish research institution/PI, prior AEI-beneficiary history and the applicable themes/realm; no prepared submission is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-biodivfuture-spain-aei",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-biodivfuture-spain-aei",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible nonprofit Spanish R&D organisation and PI under AEI national rules",
+      "reasons": [
+        "A novel technological contribution requires a real Theme A/B ecosystem research objective."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Confirm a timely international preproposal and national submission, the eligible Spanish research institution/PI, prior AEI-beneficiary history and the applicable themes/realm; no prepared submission is confirmed."
+      ],
+      "next_action": "Confirm a timely international preproposal and national submission, the eligible Spanish research institution/PI, prior AEI-beneficiary history and the applicable themes/realm; no prepared submission is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-biodivfuture-spain-aei",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-biodivfuture-spain-aei",
+      "review_version": 1,
+      "relevance": "conditional",
+      "applicant_route": "Eligible nonprofit Spanish R&D organisation and PI under AEI national rules",
+      "reasons": [
+        "Monitoring ecosystem functioning/change can contribute under permitted themes."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Confirm a timely international preproposal and national submission, the eligible Spanish research institution/PI, prior AEI-beneficiary history and the applicable themes/realm; no prepared submission is confirmed."
+      ],
+      "next_action": "Confirm a timely international preproposal and national submission, the eligible Spanish research institution/PI, prior AEI-beneficiary history and the applicable themes/realm; no prepared submission is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-biodivfuture-spain-aei",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-biodivfuture-spain-aei",
+      "review_version": 1,
+      "relevance": "needs-review",
+      "applicant_route": "Education/engagement partner only where the research work programme needs it",
+      "reasons": [
+        "Education can support research engagement; standalone education is not an AEI R&D proposal."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Confirm a timely international preproposal and national submission, the eligible Spanish research institution/PI, prior AEI-beneficiary history and the applicable themes/realm; no prepared submission is confirmed."
+      ],
+      "next_action": "Confirm a timely international preproposal and national submission, the eligible Spanish research institution/PI, prior AEI-beneficiary history and the applicable themes/realm; no prepared submission is confirmed.",
+      "exclusions": [],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-restoration-biodivfuture-spain-fb",
+      "project_id": "idea:restoration",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-biodivfuture-spain-fb",
+      "review_version": 1,
+      "relevance": "outside-scope",
+      "applicant_route": "Eligible Spanish nonprofit R&D institution undertaking qualifying marine/coastal research",
+      "reasons": [
+        "The FB national annex restricts its funding to marine/coastal environments. None of the four current inland Alhama ideas has that activity/location scope; the AEI national route remains a separate possibility."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Retain this national route as a reference; use AEI only if its separate Theme A/B rules are met, or reconsider FB if the project scope genuinely changes."
+      ],
+      "next_action": "Retain this national route as a reference; use AEI only if its separate Theme A/B rules are met, or reconsider FB if the project scope genuinely changes.",
+      "exclusions": [
+        {
+          "scope": "activity",
+          "reason": "The FB national annex restricts its funding to marine/coastal environments. None of the four current inland Alhama ideas has that activity/location scope; the AEI national route remains a separate possibility."
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-drone-biodivfuture-spain-fb",
+      "project_id": "idea:drone",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-biodivfuture-spain-fb",
+      "review_version": 1,
+      "relevance": "outside-scope",
+      "applicant_route": "Eligible Spanish nonprofit R&D institution undertaking qualifying marine/coastal research",
+      "reasons": [
+        "The FB national annex restricts its funding to marine/coastal environments. None of the four current inland Alhama ideas has that activity/location scope; the AEI national route remains a separate possibility."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Retain this national route as a reference; use AEI only if its separate Theme A/B rules are met, or reconsider FB if the project scope genuinely changes."
+      ],
+      "next_action": "Retain this national route as a reference; use AEI only if its separate Theme A/B rules are met, or reconsider FB if the project scope genuinely changes.",
+      "exclusions": [
+        {
+          "scope": "activity",
+          "reason": "The FB national annex restricts its funding to marine/coastal environments. None of the four current inland Alhama ideas has that activity/location scope; the AEI national route remains a separate possibility."
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-monitoring-biodivfuture-spain-fb",
+      "project_id": "idea:monitoring",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-biodivfuture-spain-fb",
+      "review_version": 1,
+      "relevance": "outside-scope",
+      "applicant_route": "Eligible Spanish nonprofit R&D institution undertaking qualifying marine/coastal research",
+      "reasons": [
+        "The FB national annex restricts its funding to marine/coastal environments. None of the four current inland Alhama ideas has that activity/location scope; the AEI national route remains a separate possibility."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Retain this national route as a reference; use AEI only if its separate Theme A/B rules are met, or reconsider FB if the project scope genuinely changes."
+      ],
+      "next_action": "Retain this national route as a reference; use AEI only if its separate Theme A/B rules are met, or reconsider FB if the project scope genuinely changes.",
+      "exclusions": [
+        {
+          "scope": "activity",
+          "reason": "The FB national annex restricts its funding to marine/coastal environments. None of the four current inland Alhama ideas has that activity/location scope; the AEI national route remains a separate possibility."
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    },
+    {
+      "id": "funding-assessment:remaining-education-biodivfuture-spain-fb",
+      "project_id": "idea:education",
+      "project_version": 1,
+      "review_id": "funding-review:remaining-biodivfuture-spain-fb",
+      "review_version": 1,
+      "relevance": "outside-scope",
+      "applicant_route": "Eligible Spanish nonprofit R&D institution undertaking qualifying marine/coastal research",
+      "reasons": [
+        "The FB national annex restricts its funding to marine/coastal environments. None of the four current inland Alhama ideas has that activity/location scope; the AEI national route remains a separate possibility."
+      ],
+      "requirements": [
+        "Applicant status, site/land access, partners, budget and readiness are unconfirmed.",
+        "Retain this national route as a reference; use AEI only if its separate Theme A/B rules are met, or reconsider FB if the project scope genuinely changes."
+      ],
+      "next_action": "Retain this national route as a reference; use AEI only if its separate Theme A/B rules are met, or reconsider FB if the project scope genuinely changes.",
+      "exclusions": [
+        {
+          "scope": "activity",
+          "reason": "The FB national annex restricts its funding to marine/coastal environments. None of the four current inland Alhama ideas has that activity/location scope; the AEI national route remains a separate possibility."
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    }
+  ],
+  "unresolved": []
+}

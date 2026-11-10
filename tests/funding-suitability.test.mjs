@@ -52,3 +52,31 @@ test('project selection changes presentation in place without filtering canonica
   assert.equal(next.fundingProjectId,'idea:test');assert.deepEqual(next.view,s.view);
   assert.deepEqual(buildScene(s,view,catalog).cards.map(c=>c.id),buildScene(next,view,catalog).cards.map(c=>c.id));
 });
+
+test('curated references show linked context without borrowing a route verdict',()=>{
+  const c=structuredClone(catalog);c.topics.find(t=>t.id==='other').funding_role='reference';c.topics.find(t=>t.id==='other').funding_context_ids=['call'];
+  const summary=fundingSummary(['other'],c);assert.equal(summary.relevance,'Supporting reference');assert.match(summary.availability,/1 linked review/);assert.doesNotMatch(summary.availability,/Open|candidate/);
+  c.topics.find(t=>t.id==='other').funding_role='route';assert.equal(fundingSummary(['other'],c).relevance,'Project fit unreviewed');
+});
+
+test('classified frameworks expose incomplete coverage and never inherit child suitability or availability',()=>{
+  const c=structuredClone(catalog);c.topics.forEach(t=>t.funding_role=t.id==='fund'?'framework':'route');c.topics[0].funding_context_ids=['call','other'];
+  const summary=fundingSummary(['fund'],c);assert.match(summary.relevance,/1 reviewed route.*1 unreviewed/);assert.doesNotMatch(summary.relevance,/candidate|possible/);assert.doesNotMatch(summary.availability,/Open/);
+});
+
+test('framework coverage follows explicit transitive links safely and flags missing or stale idea comparisons',()=>{
+  const c=structuredClone(catalog);c.topics.forEach(t=>t.funding_role=t.id==='call'?'route':t.id==='fund'?'framework':'reference');
+  c.topics[0].funding_context_ids=['call'];c.topics[2].funding_context_ids=['fund'];
+  assert.match(fundingSummary(['other'],c).availability,/1 linked review/);
+  assert.match(fundingSummary(['fund'],c).relevance,/1 reviewed route/);
+  c.project_ideas.push({id:'idea:second',version:1});
+  assert.match(fundingSummary(['fund'],c).relevance,/0 reviewed routes.*1 incomplete/);
+  assert.match(fundingSummary(['fund'],c,'idea:test').relevance,/1 reviewed route/);
+  c.project_ideas.pop();c.project_ideas[0].version=2;
+  assert.match(fundingSummary(['fund'],c).relevance,/1 incomplete/);
+  c.project_ideas[0].version=1;c.funding_reviews[0].verification_state='failed';
+  assert.match(fundingSummary(['fund'],c).relevance,/1 incomplete/);
+  // Legacy explicit context cycles cannot lock up browsing or duplicate the review.
+  c.topics[0].funding_context_ids.push('other');
+  assert.match(fundingSummary(['other'],c).availability,/1 linked review/);
+});
