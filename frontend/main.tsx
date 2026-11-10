@@ -41,7 +41,7 @@ import { buildScene, previousScenes, isInteractiveRecord } from "./scene";
 import { SceneView, GraphBoundary, type SceneHandle } from "./SceneView";
 import { useAppearance, useFullScreen } from "./workspace";
 import { ResearchPanel, Refs } from "./dialogs";
-import { rootGroup, groupLabel, editorTarget, fixedGroupLayout, type EditorTarget } from "./organization";
+import { rootGroup, groupLabel, editorTarget, fixedGroupLayout, isHierarchyGroup, type EditorTarget } from "./organization";
 import { PlanningPanel } from './PlanningPanel';
 import { topicNames } from "./speciesNames";
 import { SourcePanel } from "./SourcePanel";
@@ -121,8 +121,9 @@ function App() {
     const loaded = await loadExploration(s, c, signal, force);
     s = loaded.state;
     c = loaded.catalog;
+    if(s.scope==='overview')s={...s,grouping:'none',expandedGroups:[],expandedRoutes:[],alternatives:[]};
     if(s.scope==='group' && fixedGroupLayout(s.groupId,c))s={...s,grouping:"none"};
-    if(s.scope==='group' && c.browse_groups.find(g=>g.id===s.groupId)?.presentation==='hierarchy')s={...s,expandedGroups:[],expandedRoutes:[],alternatives:[]};
+    if(s.scope==='group' && isHierarchyGroup(s.groupId,c))s={...s,expandedGroups:[],expandedRoutes:[],alternatives:[]};
     let v = loaded.view;
     const bounds = canvas.current?.getBoundingClientRect();
     const layoutAspect =
@@ -453,6 +454,7 @@ function App() {
     selectedRoute = routes.find((r) => r.id === selected?.id),
     selectedTopic = catalog?.topics.find((t) => t.id === selected?.id),
     inspectedGroup = catalog?.browse_groups.find(g=>g.id===(selected?.displayGroup ? selected.groupKey : !selected && state.scope==='group' ? state.groupId : null)),
+    inspectedReview = catalog?.organization_review?.pending_groups.find(g=>g.id===(selected?.displayGroup ? selected.groupKey : !selected && state.scope==='group' ? state.groupId : null)),
     selectedEdge = catalog?.relationships.find((e) => e.id === selected?.id),
     selectedCard = scene?.cards.find((c) => c.id === selected?.id);
   const selectedEditor = editorTarget(selected?.displayGroup ? selected.groupKey : selected?.id, catalog);
@@ -696,6 +698,7 @@ function App() {
           </>}
           {ROOT_GROUPS.map(id=>groupNavigation(id))}
           {catalog.browse_groups.filter(g=>g.parent_id.startsWith('domain:')).map(g=>groupNavigation(g.id))}
+          {catalog.organization_review?.pending_groups.map(g=><button key={g.id} data-group-id={g.id} onClick={()=>dispatch({type:'group',id:g.id})}>{g.label}<small>{g.member_ids.length}</small></button>)}
           <hr />
           <button onClick={() => setLibrary(true)}>
             Source library · {catalog.sources.length}
@@ -824,8 +827,8 @@ function App() {
               Group by
               <select
                 aria-label="Group by"
-                disabled={state.scope==='group' && fixedGroupLayout(state.groupId,catalog)}
-                title={state.scope==='group' && fixedGroupLayout(state.groupId,catalog)?'This group follows its stored organization.':undefined}
+                disabled={state.scope==='overview' || (state.scope==='group' && fixedGroupLayout(state.groupId,catalog))}
+                title={state.scope==='overview' || (state.scope==='group' && fixedGroupLayout(state.groupId,catalog))?'This view follows its stored organization.':undefined}
                 value={state.grouping}
                 onChange={(e) =>
                   dispatch({ type: "grouping", value: e.target.value as any })
@@ -1174,11 +1177,11 @@ function App() {
                   </p>
                   <h2>
                     {(selected?.displayGroup && selected.groupKey ? groupLabel(selected.groupKey,catalog) : selectedTopic?.label) ||
-                      selected?.label || inspectedGroup?.label ||
+                      selected?.label || inspectedGroup?.label || inspectedReview?.label ||
                       "Start with a group or topic."}
                   </h2>
                   <p style={{whiteSpace:"pre-line"}}>
-                    {inspectedGroup?.description || selectedTopic?.description ||
+                    {inspectedGroup?.description || (inspectedReview?'These topics need a documented browsing home. Their placement is unresolved; inspect their evidence before organizing them. This review folder is derived and cannot be edited.':null) || selectedTopic?.description ||
                       selected?.explanation ||
                       selected?.description ||
                       "Select a card to inspect it. Use Explore this topic to follow its direct connections."}

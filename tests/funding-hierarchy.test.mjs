@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {initialState,reduceExploration} from '../frontend/exploration.ts';
 import {buildScene} from '../frontend/scene.ts';
-import {fixedGroupLayout} from '../frontend/organization.ts';
+import {fixedGroupLayout,rootGroup,groupLabel,editorTarget} from '../frontend/organization.ts';
 import {ROOT_GROUPS,GROUP_LABELS} from '../frontend/types.ts';
 
 const topics=['fund','local','direct','outside'].map(id=>({id,label:id,kind:'programme',domain:'funding',group_id:'programmes'}));
@@ -50,4 +50,23 @@ test('hierarchy filters and previews retain shared-member identity and compact g
   const retained=buildScene({...state,positions:scene.positions,pendingDomain:'ecosystem'},filtered,catalog);
   assert.deepEqual(retained.positions,scene.positions);
   assert.ok(retained.cards.every(c=>c.outOfDomain));
+});
+
+test('backend placements govern roots and read-only review folders remain openable',()=>{
+  const c={...catalog,organization_review:{topic_roots:{fund:'review:funding',direct:'funding:programmes'},warnings:[],pending_groups:[{id:'review:funding',label:'Needs organization · Funding',domain:'funding',member_ids:['fund'],readonly:true,presentation:'hierarchy'}]}};
+  assert.equal(rootGroup('fund',c),'review:funding');
+  assert.equal(groupLabel('review:funding',c),'Needs organization · Funding');
+  assert.equal(editorTarget('review:funding',c),null);
+  assert.equal(fixedGroupLayout('review:funding',c),true);
+  const scene=buildScene({...initialState(),scope:'group',groupId:'review:funding'},{...view,endpoint_ids:['fund']},c);
+  assert.deepEqual(scene.cards.map(c=>c.id),['fund']);assert.deepEqual(scene.links,[]);
+});
+
+test('overview and root folder views omit arrows while peer catalogues remain complete',()=>{
+  for(const scope of ['overview','group']){
+    const s={...initialState(),scope,groupId:scope==='group'?'funding:programmes':null};
+    const scene=buildScene(s,{...view,scope},catalog);
+    assert.deepEqual(scene.links,[]);
+    assert.equal(new Set(scene.cards.flatMap(c=>c.members)).size,3);
+  }
 });

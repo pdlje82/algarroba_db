@@ -71,6 +71,18 @@ react-rnd or an old executable viewer. Dependency versions are in the lockfiles 
 - Browsing membership is organization, never a factual edge or route shortcut. Distinguish
   permanent groups from temporary display headings. Preserve full definitions, optional cited
   descriptions/layout metadata, unique primary memberships and acyclic parents.
+- Every intake follows `docs/COMMUNITY_PLANNING.md#knowledge-tree-organization` across all nine
+  areas. Separate general concepts, projects/trials, components, participants, sites and dated
+  events; a shared PDF never establishes ownership. Use hierarchy folders and genuine peer
+  catalogues, retain shared references, and inspect CLI `audit-organization` plus import warnings.
+  Organization warnings are advisory. Unknown placement remains visible in read-only Needs
+  organization and is reported as unfinished, never silently assigned to Monitoring/Requirements.
+- Every intake also follows `docs/COMMUNITY_PLANNING.md#project-intake-and-summaries`. Represent
+  useful project examples explicitly, distinct from implementers; inventory documented umbrellas
+  and trials. Require a cited project summary covering purpose/work, techniques, key findings,
+  conditions/limits and dated status or explicit gaps. Organize meaningful details beneath the
+  project, retain scoped findings, and resolve supported wider-graph links during ingestion.
+  Review these semantic requirements manually; a passing import/organization audit is insufficient.
 - Funding intake must extend the live named-folder hierarchy under Funding structure. Follow
   `docs/COMMUNITY_PLANNING.md#funding-hierarchy-maintenance`: preserve `presentation: hierarchy`,
   use groups for financing/implementation steps, and include only documented participating levels.

@@ -209,6 +209,8 @@ def validate_groups(groups, topic_ids):
         anchor = group.get('anchor_topic_id')
         if group.get('presentation', 'standard') not in {'standard', 'hierarchy'}:
             raise ValueError('Unknown browsing group presentation')
+        if not isinstance(group.get('catalogue',False),bool):
+            raise ValueError('Catalogue must be a boolean')
         if anchor is not None and anchor not in topic_ids:
             raise ValueError('Unknown browsing group anchor')
         domain = group_domain(id, groups)

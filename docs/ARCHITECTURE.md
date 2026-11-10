@@ -90,6 +90,16 @@ topic exploration retains real relationships. The sidebar expands the active hie
 represented-topic/research accounting deduplicates shared member IDs. No topic-specific renderer
 rules, endpoint changes or saved-history rewrites are involved.
 
+Overview and the nine root scopes now use folder presentation as well. Catalogue groups set
+`catalogue: true` to declare genuine peers; this is an advisory-audit exemption, not a display
+limit. `organization_review` in the catalog supplies authoritative `topic_roots`, advisory
+`warnings` and read-only `pending_groups`. The frontend consumes those roots rather than guessing
+from context categories. Legacy catalogs have an explicit base-category compatibility map, with
+unplaced context going to review instead of a catch-all. Existing `/api/explore` group queries
+accept `review:ecosystem|technology|funding`, returning current pending IDs with normal filters.
+These derived scopes never enter stored group definitions or editor destinations. Older saved
+views normalize in memory against the current catalog; working community workflows stay intact.
+
 ## Domain preview and in-place Update
 
 State.pendingDomain is an optional staged choice; State.domain remains the applied query domain.

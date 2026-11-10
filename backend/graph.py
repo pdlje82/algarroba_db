@@ -4,9 +4,9 @@ from collections import defaultdict, deque
 import hashlib
 from .store import Store, normalized
 from .plant_media import enrich_topics
+from .organization import ROOT_GROUPS, REVIEW_IDS, REVIEW_LABELS, organization_review
 
 LIMITS = {"route_steps":6,"extended_steps":8,"alternatives":3,"traversal_expansions":10000}
-ROOT_GROUPS = ["ecosystem:species","ecosystem:habitats","ecosystem:restoration-methods","technology:irrigation","technology:drones","technology:monitoring","funding:programmes","funding:activities","funding:requirements"]
 
 class Graph:
     def __init__(self, store: Store):
@@ -15,6 +15,7 @@ class Graph:
         self.edges={e['id']:e for e in self.snapshot['relationships']}
         self.findings=self.snapshot['findings']; self.groups={g['id']:g for g in self.snapshot.get('browse_groups',[])}
         self.communities={g['id']:g for g in self.snapshot['communities']}
+        self.organization_review=organization_review(self.snapshot)
         self.adj=defaultdict(list)
         for e in self.edges.values():
             if e.get('traversable',True):
@@ -24,17 +25,7 @@ class Graph:
             self.adj[key].sort(key=lambda pair:(self.edges[pair[1]].get('basis')=='curated',self.topics[pair[0]]['label'],pair[1]))
 
     def root_group(self, topic):
-        group=next((g for g in self.groups.values() if any(m['topic_id']==topic['id'] and m['role']=='primary' for m in g['members'])),None)
-        if group:
-            parent=group['parent_id'];seen=set()
-            last=group['id']
-            while parent in self.groups and parent not in seen:
-                seen.add(parent);last=parent;parent=self.groups[parent]['parent_id']
-            return last if parent.startswith('domain:') else parent
-        domain=topic['domain'];g=topic.get('group_id','other')
-        if domain=='ecosystem':return domain+':'+('species' if g=='species' else 'restoration-methods' if g in {'restoration-methods','monitoring'} else 'habitats')
-        if domain=='technology':return domain+':'+('irrigation' if g=='irrigation' else 'drones' if g in {'drones','requirements'} else 'monitoring')
-        return domain+':'+('activities' if g=='activities' else 'requirements' if g in {'requirements','places'} else 'programmes')
+        return self.organization_review['topic_roots'][topic['id']]
 
     def traverse(self, centre, targets, depth=6, count=1):
         """One bounded traversal for shortest routes and alternative simple routes."""
@@ -95,6 +86,7 @@ class Graph:
                     compatible={i for i in endpoints if recorded_place(i)==key}
                     if endpoints-compatible:notices.append(f'{len(endpoints-compatible)} topic(s) no longer match this place group.')
                     endpoints=compatible
+            elif group_id in REVIEW_IDS:endpoints={id for id,root in self.organization_review['topic_roots'].items() if root==group_id}
             elif group_id in self.communities:endpoints={m['topic_id'] for m in self.communities[group_id]['plants']}
             elif group_id in self.groups:endpoints=self.group_members(group_id)
             elif group_id in ROOT_GROUPS:
@@ -145,6 +137,9 @@ class Graph:
 
     def inspect(self, record_id):
         record_id=self.store.resolve(record_id)
+        if record_id in REVIEW_IDS:
+            ids=sorted(id for id,root in self.organization_review['topic_roots'].items() if root==record_id)
+            return dict(record=dict(id=record_id,label=REVIEW_LABELS[record_id.split(':')[1]],readonly=True),relationships=[],findings=[],unresolved=[],member_ids=ids)
         if record_id in self.communities:
             community=self.communities[record_id]
             ids={p['topic_id'] for p in community['plants']}

@@ -17,6 +17,7 @@ from .graph import Graph, ROOT_GROUPS, LIMITS
 from .store import Store, ROOT, now
 from .plant_media import enrich_topics, public_image, managed_path
 from .planning import Edit, Conflict, apply_edit, field_history
+from .organization import organization_review
 
 DOMAIN = "Dryland and Mediterranean restoration, especially carob and associated vegetation; establishment water and irrigation; drone monitoring and water-delivery knowledge; selected Andalusian LEADER funding, with relevant places, organizations, findings, dates and requirements."
 
@@ -74,7 +75,7 @@ def create_app(store: Store | None = None):
         with store.connect() as c:
             imported=[dict(r) for r in c.execute("SELECT id,revision,created FROM batches ORDER BY revision")]
             redirects={r["old_id"]:r["new_id"] for r in c.execute("SELECT old_id,new_id FROM redirects")}
-        return dict(snap,identity_redirects=redirects,root_groups=ROOT_GROUPS,topic_kinds=sorted({t["kind"] for t in snap["topics"]}),limits=LIMITS,domain=DOMAIN,batches=imported)
+        return dict(snap,organization_review=organization_review(snap),identity_redirects=redirects,root_groups=ROOT_GROUPS,topic_kinds=sorted({t["kind"] for t in snap["topics"]}),limits=LIMITS,domain=DOMAIN,batches=imported)
 
     @app.post('/api/organization/edit')
     def organization_edit(edit: Edit):
@@ -246,6 +247,39 @@ Root labels, community plans and irrigation candidates (user decisions are not s
 Review the current group definitions before imports. Reuse their anchors and update primary/shared
 memberships with supported discoveries in the same validated batch. Grouping never creates a factual
 relationship. Reconcile older captured groups with the current revision; keep wider discoveries.
+Follow docs/COMMUNITY_PLANNING.md#knowledge-tree-organization in every domain. Separate reusable
+concepts from project/trial details, components, participants, sites and dated events. Use named
+hierarchy folders and genuine peer catalogues; do not infer ownership from a shared PDF. Run
+python -m backend.cli audit-organization, and review import organization_warnings. Warnings are
+advisory, not a reason to invent a parent. Uncertain placement belongs in Needs organization and
+must be reported as unfinished. Preserve the established funding responsibility chain.
+
+Required project intake: follow docs/COMMUNITY_PLANNING.md#project-intake-and-summaries in every
+domain, including example projects. Inventory each useful project/study/pilot in the run sidecar
+with source passages, existing/new topic IDs, documented umbrella/trial context, summary/finding/link
+disposition and gaps. Reuse a dedicated topic; a company, source registration or folder alone does
+not represent the project. Use project/study/trial kinds as supported, keeping implementers and
+genuine programmes distinct. Never infer an umbrella from an acronym, shared PDF or location.
+Each new or substantively revised project topic needs a concise cited summary in description:
+purpose and work (what and why); techniques and scope; key findings; conditions and limits; dated
+status and evidence gaps. Say 'Not reported in the reviewed material' where evidence is absent.
+Refresh existing summaries in the same intake when new evidence materially changes work, results,
+conditions or status, including projects outside the initial selection.
+Keep planting season, site, species/stock, treatment/comparator, duration and denominators where
+consequential. An observed benefit in one setting does not establish 'only works if'. Preserve
+negative/conflicting findings and distinguish plans from measured outcomes.
+Anchor project folders to the real topic and make Project/Study/Pilot visible in new/revised labels.
+Use meaningful detail folders/topics only when needed; reuse general concepts through shared
+references. Put detailed results in cited findings on the actual project/trial, preserving IDs and
+attachments. Do not create empty template levels, duplicate concepts or a node per result sentence.
+During the same checked intake, search the whole graph for techniques, species, conditions,
+equipment, monitoring, participants, places and documented funding; reuse valid relationships and
+add useful justified missing links with meaning, direction, basis, explanation and exact citations.
+Cross-linking is required during ingestion, never a reason to invent an edge or infer eligibility.
+Before completion reconcile the project inventory, summaries, details, findings and links; inspect
+the folder/About-to-summary-to-evidence journey and report missing evidence or unfinished work.
+These are curator checks: import --check and audit-organization do not verify PDF project coverage
+or summary completeness. Organization warnings remain advisory; no new import blockers.
 
 Agreed domain: {DOMAIN}
 Prioritize the requested areas, but capture ALL useful supported discoveries within the agreed
@@ -253,6 +287,8 @@ domain from the material actually inspected, including discoveries outside the o
 Inspect the wider existing graph, including topics absent from this view. Reuse identities and
 connect new discoveries to one another and to relevant existing records wherever evidence or
 an explicitly explained curated association justifies it. Do not create isolated task graphs.
+Connectivity review during ingestion is required for every new or substantively revised topic
+in all domains; resolve useful supported links now and report evidence gaps explicitly.
 Keep source findings, curated discovery associations and practical recommendations distinct.
 Preserve trial/applicant/territory/date conditions, original species spellings and exact PDF pages.
 Every source link needs a visible, passage-specific heading or keyword (SourceRef.label), plus
@@ -262,8 +298,9 @@ Missing connections mean 'No connection recorded', never proof of impossibility.
 
 Follow the ingestion procedure in README.md and imports/CONTRACT.md: verify editions; read and
 visually inspect the indicated material; record actual page coverage; prepare a validated batch;
-apply through the single importer. Do not change the old source library. Initial coverage is 68
-pages; reading additional pages is an explicit part of this later task and must be recorded.
+apply through the single importer. Do not change the old source library. Read current accepted
+coverage; the original bootstrap's 68 positions are a historical baseline, not a later task limit.
+Reading additional authorized pages must be recorded honestly.
 Library only means no web research. If Library and web is selected, use relevant primary sources,
 save new source files in this project with KGB-SRC IDs and register their metadata before import.
 Ordinary new in-domain topics need no separate approval. Record material domain extensions as
@@ -271,7 +308,8 @@ proposals and ask the user before research/factual ingestion into them; continue
 No AI API integration or autonomous/background agent system.
 
 Return: (1) task answer, (2) additional useful discoveries, (3) links added across existing knowledge,
-(4) inspected and unfinished coverage, (5) unresolved issues and proposed scope extensions.
+(4) inspected and unfinished coverage, (5) unresolved issues and proposed scope extensions,
+(6) project inventory reconciliation: identities, summaries, key findings, links and remaining gaps.
 Complete the task record with python -m backend.cli task-complete {task_id} --summary "...".
 The user can reopen/refresh the original exploration with additions highlighted.
 """

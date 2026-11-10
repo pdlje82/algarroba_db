@@ -54,6 +54,7 @@ def main():
     p=sub.add_parser("export");p.add_argument("--output")
     sub.add_parser("backup")
     sub.add_parser("groups")
+    p=sub.add_parser('audit-organization');p.add_argument('--batch')
     p=sub.add_parser('edit');p.add_argument('file');p.add_argument('--check',action='store_true')
     sub.add_parser("media-integrity")
     sub.add_parser("backup-media")
@@ -71,6 +72,17 @@ def main():
     elif args.command=="media-integrity": result=store.media_integrity()
     elif args.command=="backup-media": result={"backup":str(store.backup_media())}
     elif args.command=="groups": result=store.records("browse_groups")
+    elif args.command=='audit-organization':
+        from .organization import organization_review
+        snapshot=store.snapshot();previous=snapshot
+        if args.batch:
+            candidate=read(args.batch);store.import_batch(candidate,True)
+            snapshot=dict(snapshot)
+            for collection in ['topics','browse_groups']:
+                records={x['id']:x for x in snapshot[collection]}
+                records.update({x['id']:x for x in candidate.get(collection,[])})
+                snapshot[collection]=list(records.values())
+        result=dict(revision=store.revision(),**organization_review(snapshot,previous if args.batch else None))
     elif args.command=='edit':
         from .planning import Edit,apply_edit
         result=apply_edit(store,Edit.model_validate(read(args.file)),actor='Codex',dry_run=args.check)

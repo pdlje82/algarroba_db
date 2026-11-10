@@ -118,6 +118,7 @@ class BrowseGroup(Record):
     source_refs: list[SourceRef] = []
     member_layout: Literal["grid", "vertical"] = "grid"
     presentation: Literal["standard", "hierarchy"] = "standard"
+    catalogue: bool = False
 
 class Batch(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -309,6 +310,9 @@ class Store:
                 sources[source['id']] = source
             existing = {t["id"] for t in self.records("topics", c)}
             ids = existing | {t.id for t in batch.topics}
+            from .organization import REVIEW_IDS, organization_review
+            if ids & REVIEW_IDS:
+                raise ValueError('Topic ID is reserved for read-only organization review')
             for collection in (batch.topics, batch.relationships, batch.findings, batch.browse_groups):
                 if len({x.id for x in collection}) != len(collection):
                     raise ValueError("Duplicate IDs within the candidate batch")
@@ -360,7 +364,8 @@ class Store:
             for old, new in batch.redirects.items():
                 if new not in ids or old == new:
                     raise ValueError("Invalid identity redirect")
-            groups={g["id"]:g for g in self.records("browse_groups",c)}
+            previous_groups=self.records("browse_groups",c)
+            groups={g["id"]:g for g in previous_groups}
             if len({g.id for g in batch.browse_groups}) != len(batch.browse_groups):
                 raise ValueError("Duplicate browsing group IDs")
             groups.update({g.id:g.model_dump() for g in batch.browse_groups})
@@ -370,9 +375,10 @@ class Store:
             inspected={(r['source_id'],r['page']) for r in c.execute("SELECT source_id,page FROM coverage WHERE status='inspected'")}
             inspected.update((r.source_id,r.page) for r in batch.coverage if r.status=='inspected')
             planned_communities, evidence=validate_intake(c,batch.communities,batch.irrigation_evidence,groups,topic_records,sources,inspected)
+            review=organization_review(dict(topics=list(topic_records.values()),browse_groups=list(groups.values())),dict(browse_groups=previous_groups))
             changes = {k: len(getattr(batch, k)) for k in ("topics", "relationships", "findings", "coverage", "unresolved", "browse_groups", "plant_images", "sources", "communities", "irrigation_evidence")}
             if dry_run:
-                return {"status": "validated", "revision": self.revision(c), **changes}
+                return {"status": "validated", "revision": self.revision(c), **changes, "organization_warnings":review['warnings']}
         if self.revision():
             self.backup()
         with self.connect() as c:
@@ -409,7 +415,7 @@ class Store:
             accepted=dict(raw,_changes={"added_topic_ids":[t.id for t in batch.topics if t.id not in existing],"relationship_ids":[e.id for e in batch.relationships],"finding_ids":[f.id for f in batch.findings],"browse_group_ids":[g.id for g in batch.browse_groups]})
             c.execute("INSERT INTO batches VALUES (?,?,?,?,?)", (batch.batch_id,digest,revision,now(),json.dumps(accepted,ensure_ascii=False)))
             self.reindex(c)
-        return {"status": "accepted", "revision": revision, **changes}
+        return {"status": "accepted", "revision": revision, **changes, "organization_warnings":review['warnings']}
 
     def reindex(self, c):
         c.execute("DELETE FROM search")

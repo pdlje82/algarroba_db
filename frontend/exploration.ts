@@ -7,7 +7,7 @@ import {
   type Route,
   type Item,
 } from "./types.ts";
-import { placeLabel, groupLabel, fixedGroupLayout } from "./organization.ts";
+import { placeLabel, groupLabel, fixedGroupLayout, isReviewGroup } from "./organization.ts";
 import { hasCompactGridPositions } from "./compactLayout.ts";
 export const initialState = (): State => ({
   version: 6,
@@ -300,6 +300,7 @@ export function contextLabel(s: State, catalog?: Catalog | null) {
     );
   }
   if (s.scope === "group") {
+    if(isReviewGroup(s.groupId))return groupLabel(s.groupId!,catalog);
     if(s.groupId && (catalog?.browse_groups.some(g=>g.id===s.groupId) || catalog?.organization_roots?.some(g=>g.id===s.groupId) || catalog?.communities?.some(g=>g.id===s.groupId))) return groupLabel(s.groupId,catalog);
     const group = catalog?.browse_groups.find((g) => g.id === s.groupId);
     return (

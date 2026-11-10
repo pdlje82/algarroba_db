@@ -212,6 +212,9 @@ For any checked research/maintenance intake:
 1. Read the task brief **and** `context.json`, [import contract](imports/CONTRACT.md), current source
    registry and current records. Reconcile captured IDs/revision. Inspect groups, memberships,
    parent paths, anchors and maintenance rules across the wider graph.
+   Follow [Knowledge tree organization](docs/COMMUNITY_PLANNING.md#knowledge-tree-organization) in
+   every area. Review `backend.cli audit-organization` and candidate `--batch` results; warnings
+   remain advisory, with uncertain placements visible in Needs organization rather than guessed.
    Funding additions must follow [Funding hierarchy maintenance](docs/COMMUNITY_PLANNING.md#funding-hierarchy-maintenance):
    extend the live named folders, preserve hierarchy presentation and include only documented participants.
 2. Verify editions and inspect the requested material. Extract text, render important tables/image
@@ -220,6 +223,12 @@ For any checked research/maintenance intake:
    the initial question. Reuse identities and explain meaningful old/new connections. Preserve
    species spellings, conditions, places, dates, units, applicants and territories. Co-occurrence
    is not a domain relationship; a funding link is not eligibility or an award.
+   Apply [Project intake and summaries](docs/COMMUNITY_PLANNING.md#project-intake-and-summaries):
+   inventory project/study/trial identities and documented umbrellas; add a cited summary of
+   purpose/work, techniques, key findings, conditions/limits and dated status or explicit gaps.
+   Organize meaningful details beneath the project and review/add supported wider-graph links
+   during the same intake. Reconcile the project inventory before reporting completion; the
+   automated organization audit does not verify these source-dependent requirements.
 4. Prepare a coherent batch with the current `base_revision`. Stage new verified managed sources
    under `sources/`; use the next unused `KGB-SRC-####` IDs for new editions and prefer atomic
    `sources[]` registration. Follow the current source and batch models.

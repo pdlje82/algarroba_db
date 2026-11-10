@@ -87,6 +87,7 @@ export type BrowseGroup = {
   source_refs?: Ref[];
   member_layout?: 'grid' | 'vertical';
   presentation?: 'standard' | 'hierarchy';
+  catalogue?: boolean;
 };
 export type Catalog = {
   revision: number;
@@ -104,6 +105,11 @@ export type Catalog = {
   root_groups: string[];
   topic_kinds: string[];
   identity_redirects?: Record<string, string>;
+  organization_review?: {
+    topic_roots: Record<string,string>;
+    warnings: {code:string;message:string;topic_ids:string[];group_ids:string[]}[];
+    pending_groups: {id:string;label:string;domain:string;member_ids:string[];readonly:true;presentation:'hierarchy'}[];
+  };
 };
 export type PlannedField = {value: number | string | null; origin: "not-set" | "source" | "user-set" | "user-adjusted"; baseline: IrrigationEvidence | null; rationale: string; actor: string; changed_at: string | null};
 export type IrrigationEvidence = {id:string;species_id:string|null;stage:string;field:string;value:number|string|null;units:string;wording:string;context:string;applicability:string;limitations:string;source_refs:Ref[]};
@@ -192,28 +198,10 @@ export const ROOT_GROUPS = [
   "funding:requirements",
 ];
 export function landscapeGroup(t: Item) {
-  const g = t.group_id || "other";
-  return (
-    t.domain +
-    ":" +
-    (t.domain === "ecosystem"
-      ? g === "species"
-        ? "species"
-        : ["restoration-methods", "monitoring"].includes(g)
-          ? "restoration-methods"
-          : "habitats"
-      : t.domain === "technology"
-        ? g === "irrigation"
-          ? "irrigation"
-          : ["drones", "requirements"].includes(g)
-            ? "drones"
-            : "monitoring"
-        : g === "activities"
-          ? "activities"
-          : ["requirements", "places"].includes(g)
-            ? "requirements"
-            : "programmes")
-  );
+  // Compatibility for old catalogues; current catalogues supply canonical roots.
+  const bases:Record<string,Record<string,string>>={ecosystem:{species:'species',habitats:'habitats','restoration-methods':'restoration-methods',monitoring:'restoration-methods',requirements:'habitats'},technology:{irrigation:'irrigation',drones:'drones',monitoring:'monitoring'},funding:{programmes:'programmes',activities:'activities',requirements:'requirements'}};
+  const base=bases[t.domain]?.[t.group_id];
+  return base&&!['place','organization','event'].includes(t.kind)?t.domain+':'+base:'review:'+t.domain;
 }
 export async function api<T = any>(
   url: string,

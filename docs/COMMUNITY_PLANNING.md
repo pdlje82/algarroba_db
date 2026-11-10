@@ -39,6 +39,114 @@ nature-credit roadmap. LEADER's **Local implementation** contains AL20 and AL30,
 kept distinct. Geographic containment alone does not add a funding authority. Documentary dates,
 provisional proposals and public-contract financing retain their original scope.
 
+## Knowledge tree organization
+
+These rules apply to full-library, incremental and task-specific intake in every domain. Before
+editing, inspect the live groups and prepare a placement manifest covering affected topics:
+previous/new primary homes and shared references, classification changes and supporting passages
+or recorded relationship IDs. Preserve stable identities and source-specific applicability.
+
+- Give reusable concepts a canonical general home. Put project-specific trials, participants,
+  locations, components and dated events beneath the actual project or system, using role folders
+  where useful. Use shared references for reusable concepts and for project context available
+  through another route. Neither a shared PDF nor co-occurrence proves ownership or association.
+- Use `presentation: hierarchy` for curated browsing folders. Root and overview browsing also
+  use folders without factual arrows; explicit topic exploration keeps the real connections.
+  Preserve meaningful single-child stages, ordered lifecycle sequences and full memberships.
+- Set `catalogue: true` only for an intentional list of peers, such as species, municipalities,
+  habitats or operation types. Catalogues retain all entries and existing search access; do not
+  invent taxonomy or arbitrary alphabetic folders to meet a size target. Four to eight immediate
+  choices is a review target for decision branches, never a display cap or import blocker.
+- Keep findings on their existing topic IDs and in Evidence panels. Navigation is not permission
+  to rewrite claims, infer ecological associations, transfer another project's results, adopt
+  irrigation evidence or modify working plans. Correct classification metadata deliberately and
+  record it separately from scientific changes.
+
+Run `python -m backend.cli audit-organization` for the current tree, or append `--batch <file>`
+to validate and review a proposed overlay without applying it. Import preview/application also
+returns `organization_warnings`: ambiguous placement, crowded branches, mixed context and potential
+loss of memberships, primary homes or metadata. Warnings are advisory; existing schema, source,
+cycle, endpoint and revision checks remain blocking. Disposition each warning as corrected,
+an intentional reviewed catalogue/context, or unfinished work in the run report.
+
+The backend resolves canonical topic roots from explicit primary folders or recognized base
+categories. Unplaced context categories (places, organizations, events and unknown categories)
+are not routed to Monitoring or Requirements. Non-empty `review:ecosystem`, `review:technology`
+and `review:funding` scopes appear as **Needs organization**. These are read-only derived views:
+they do not create folders, facts, memberships or knowledge revisions and cannot be selected in
+group-edit controls. They disappear when placement is resolved. Do not persist their IDs as
+ordinary group/topic identities or include read-only catalog review data in an import batch.
+
+The existing nine root IDs stay stable. Species and habitat peers remain catalogues; methods
+and systems have distinct component roles; projects retain their own sites/trials/participants;
+territorial coverage stays outside funding responsibility chains. Keep uncertain plant names,
+project status and source wording intact. This policy supplements the funding-specific rules below.
+
+## Project intake and summaries
+
+This is a required semantic review for full-library, incremental and task-specific intake in every
+domain. Apply it to project examples as well as the main subject of a document. Use the current
+topic, description, finding, relationship and browsing-group fields; no new batch fields are needed.
+
+**Identity and completeness.** Inventory each useful source-described project, study and pilot/trial
+in the run sidecar, with its source passages, existing/new topic ID, documented umbrella project,
+summary/finding/link disposition and remaining gaps. Reconcile against the whole graph, including
+previously inspected material with known representation gaps. Reuse stable IDs. Give each distinct
+project a real topic; a source registration, company name, project folder or scattered trial details
+does not substitute for that identity. Use `kind: project`, `study` or `trial` as the evidence supports,
+and explicitly identify its role in the description. Preserve genuine programmes, implementing
+organizations and sites as distinct entities. A pilot/trial has an umbrella only when documented;
+neither a shared PDF, author, acronym nor place establishes one. A descriptive project name is
+acceptable when no official name is recorded; explain that naming limit rather than invent an acronym.
+
+**Required project summary.** Each new or substantively revised project/study/trial topic needs a
+concise, source-backed overview in `description`, normally about 100–250 words where useful:
+
+- Purpose and work: what was done or proposed, why, and the question or problem addressed.
+- Techniques and scope: methods used, treatments/comparators, sites, participants and dates where
+  documented. Connect named techniques and other entities to their canonical topics.
+- Key findings: the most useful results in plain language, including negative or conflicting
+  findings. Give an outline here; retain detailed evidence in cited findings.
+- Conditions and limits: species/stock, site, planting season, treatment, comparison, duration,
+  denominator and uncertainty where consequential. Keep each takeaway within its evidenced scope.
+- Status and evidence gaps: distinguish proposed, tendered, awarded, implemented, monitored and
+  evaluated work, with an as-of date when known. Planned targets are not measured outcomes.
+
+Refresh the summary in the same checked intake whenever new evidence materially changes the
+project's known work, results, conditions or status, even if the topic was not initially selected.
+Use only reviewed evidence and exact passage-specific references. If a summary element is absent,
+say "Not reported in the reviewed material" and record the gap; do not imply it does not exist or
+fill it by analogy. Even a sparsely documented example should explain its known role and limits.
+Conditional results must retain their conditions. A benefit observed for one planting season does
+not justify "only works if" or a general recommendation without evidence for that stronger claim.
+Separate source-reported observations, source guidance and explicitly explained curator interpretation.
+
+**Details inside the project.** Anchor its browsing folder to the real project topic and make the
+role visible in new/revised folder labels, for example "[Name] · Project", "[Name] · Study" or
+"[Name] · Pilot". About exposes the topic summary; the folder description provides navigation.
+Use meaningful child folders for trials, interventions, sites, participants or evaluation only when
+there is actual content. Create independent detail topics when they merit explanation/connections;
+keep small details in the summary or findings. Do not create empty template levels, a node for each
+sentence, or duplicate species/methods/equipment beneath every project. Keep reusable topics in
+their canonical general homes with shared project memberships. Preserve existing finding IDs and
+attachments; put new detailed results on their actual project/trial via `topic_ids`, with conditions
+and exact citations. A project overview must not erase differences between its trials.
+
+**Connections during ingestion.** For every project intake, search the wider graph for existing
+techniques, species, conditions, equipment, monitoring methods, participants, places and documented
+funding. Reuse identities and existing valid edges; add all useful justified missing relationships
+in the same checked intake as the project evidence, rather than postponing cross-linking. Record
+direction, meaning, source/curated basis, explanation, applicability and citations. Folder membership
+is not a factual link. No edge quota applies: when evidence cannot support a useful connection,
+record it as unresolved rather than inventing ownership, ecological transfer, eligibility or success.
+
+Before declaring intake complete, reconcile the project inventory with accepted topics, summaries,
+trial homes, findings and relationships. Review a journey from the project folder through About to
+its summary, key findings, linked techniques and exact source passages. Report missing identities,
+umbrella context, summary elements, unreviewed links and unfinished placements as continuation work.
+This checklist is curator review; `audit-organization` and `import --check` do not read PDFs or verify
+project-summary completeness. Organization warnings remain advisory, not new import blockers.
+
 ## Funding hierarchy maintenance
 
 This is the required organization for future full-library, incremental and task-specific funding

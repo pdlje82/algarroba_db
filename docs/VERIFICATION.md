@@ -61,6 +61,12 @@ checked funding batch idempotently, and serves port 8774. Existing QA data is pr
 The browser check covers the four branches, every hierarchy folder, AL20/AL30, About,
 ordinary factual exploration, keyboard source opening, Back, refresh and reload.
 
+For the complete tree, run `python scripts/tree-organization-qa.py --database
+output/tree-organization-qa/knowledge.sqlite`, then `npm run test:tree-organization` with
+`KGB_PLAYWRIGHT_MODULE` configured. Port 8775 uses a separate database and applies the checked
+organization batch idempotently. The check audits every root/folder projection and representative
+browser journeys, including read-only review folders through a network fixture with no DB writes.
+
 For the lifecycle scenario, first prepare an isolated SQLite copy with the current accepted intake,
 then serve it with `python scripts/irrigation-qa-server.py --database <isolated.sqlite>` on port 8771.
 The helper requires that copy to exist. `scripts/verify_irrigation_intake.py` is the historical
@@ -117,6 +123,45 @@ The fresh Evidence desk QA helper provides a synthetic citation community indepe
 Local evidence is under `output/citation-labels/`, `output/planning-qa/citation-labels/` and
 `output/consolidation-qa/`. This verifies the built app; it does not assert that an already-running
 accepted server has reloaded backend code. Reload the browser for the new link display.
+
+## Project ingestion rules: 10 November 2026
+
+The shared policy, project instructions, reusable full-library/incremental prompt, maintenance
+procedure, import guidance and newly generated research handoffs now require explicit project
+identities, cited summaries, scoped findings, meaningful detail organization and connection review
+during intake. Project/study/trial classifications use the existing string kind field. Source-based
+completeness remains curator review, not an automatic PDF check or a new import blocker.
+
+Validation: three existing backend research/handoff checks passed. An isolated accepted-store copy
+verified both source-boundary choices, the new prompt content, saved brief guidance, exact editable
+prompt/context preservation and unchanged knowledge revision. All 42 local documentation links and
+anchors resolved. All 24 accepted database table fingerprints and 657 library/source/media/research/
+import file hashes remained unchanged. The running app was restarted and its read-only research
+preview confirmed the new guidance at revision 20. Frontend/build/browser suites were not repeated
+for this documentation and prompt-text change; no rendering or database schema changed.
+
+## Complete-tree organization: 10 November 2026
+
+Accepted `knowledge-tree-organization-2026-11-10-01` at revision 20 after isolated verification.
+All 356 topic IDs and their factual content remain; 58 records receive classification-only
+corrections. The tree has 113 hierarchy folders, including 18 genuine peer catalogues. The
+placement manifest records every topic's previous/new home, shared references and source basis.
+
+Validation: 77 frontend passes; 98 backend passes and one existing skip; production build;
+20 browser checks and all 122 root/folder projections. Checks cover the nine roots, nested
+project/system roles, uncapped species catalogues and distinct Rhamnus records, exact-page source
+opening, ordinary factual exploration, Back, refresh and reload. A read-only network fixture
+verifies Needs organization appearance/resolution without modifying knowledge. The current
+accepted catalog has no pending topics or organization warnings. Existing build-size and
+test-client deprecation warnings remain.
+
+Preservation checks retain all 479 relationships, 185 findings, source/citation records,
+coverage, working plans, immutable irrigation evidence, media associations, root IDs, tasks,
+saved explorations and logical search rows. Fifteen tables and all 372 library/source/media
+file hashes remain unchanged. Every previous group member reference remains accessible;
+intentional primary/shared and classification changes are recorded in the manifest. The importer
+created a revision-19 backup and repeat validation is idempotent. The local app was restarted
+with the new placement resolver and advisory ingestion checks.
 
 ## Funding hierarchy: 10 November 2026
 

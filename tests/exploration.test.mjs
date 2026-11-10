@@ -1468,15 +1468,15 @@ test("double-click and Open group buttons resolve to the same canonical action",
 test("opening a type group clears prior expansions and creates a compact exact-members scope", () => {
   const v = {
     ...view,
-    scope: "group",
+    scope: "search",
     centre: null,
     routes: [],
     endpoint_ids: topics.map((t) => t.id),
   };
   const s = {
     ...initialState(),
-    scope: "group",
-    groupId: "ecosystem:habitats",
+    scope: "search",
+    groupId: null,
     grouping: "type",
     expandedGroups: ["display-group:equipment"],
     view: v,

@@ -61,6 +61,27 @@ def test_group_presentation_defaults_and_rejects_unknown_modes():
     with pytest.raises(ValueError,match='presentation'):validate_groups({group['id']:dict(group,presentation='unsupported')},set())
 
 
+def test_advisory_import_review_scope_and_resolution_do_not_create_fake_groups(store):
+    s,_=store
+    before=s.snapshot();farm=copy.deepcopy(next(t for t in before['topics'] if t['id']=='sanwa-farm'))
+    raw=dict(batch_id='organization-warning-test',base_revision=s.revision(),summary='Advisory organization test',topics=[farm])
+    checked=s.import_batch(raw,True)
+    assert s.snapshot()==before
+    assert any(w['code']=='ambiguous_placement' and w['topic_ids']==['sanwa-farm'] for w in checked['organization_warnings'])
+    accepted=s.import_batch(raw)
+    assert accepted['status']=='accepted' and accepted['organization_warnings']==checked['organization_warnings']
+    client=TestClient(create_app(s));catalog=client.get('/api/catalog').json()
+    assert catalog['organization_review']['topic_roots']['sanwa-farm']=='review:technology'
+    result=client.get('/api/explore',params=dict(scope='group',group_id='review:technology')).json()
+    assert 'sanwa-farm' in result['endpoint_ids']
+    assert not any(g['id'].startswith('review:') for g in s.snapshot()['browse_groups'])
+    folder=dict(id='browse:reviewed-participants',label='Participants',parent_id='technology:drones',anchor_topic_id=None,members=[dict(topic_id='sanwa-farm',role='primary')],maintenance_rule='Source-backed participant context',presentation='hierarchy',catalogue=True)
+    s.import_batch(dict(batch_id='resolve-organization-warning',base_revision=s.revision(),summary='Assign documented primary home',browse_groups=[folder]))
+    assert Graph(s).root_group(farm)=='technology:drones'
+    assert 'sanwa-farm' not in Graph(s).explore(scope='group',group_id='review:technology')['endpoint_ids']
+    assert s.snapshot()['relationships']==before['relationships']
+
+
 def test_species_names_are_stored_searchable_and_keep_source_identities(store):
     s,_=store
     before=s.snapshot()
@@ -377,7 +398,8 @@ def test_display_group_members_are_exact_and_do_not_create_organization(store):
 
 def test_unrecorded_place_scope_rejects_placed_topics_and_keeps_filter_universe(store):
     s,_=store;g=Graph(s);parent=g.explore(scope='group',group_id='ecosystem:habitats')
-    all_ids=parent['endpoint_ids']
+    # Explicit captured members can include context now kept outside the root's general concepts.
+    all_ids=[*parent['endpoint_ids'],'al-faisal','al-faisal-pilot','canal-flooding']
     expected={n['id'] for n in parent['nodes'] if n['kind']!='place' and not n.get('place_ids')}
     assert expected and not ({'al-faisal','al-faisal-pilot','canal-flooding','maysara-carob-trial'} & expected)
     v=g.explore(scope='group',group_id='display-group:place:unrecorded',member_ids=all_ids)

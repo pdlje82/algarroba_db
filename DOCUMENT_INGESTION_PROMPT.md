@@ -72,7 +72,7 @@ Local strategies, restoration procurement, aviation constraints and finance mech
 
 ### 2. Inspect the current system before proposing changes
 
-- Read `AGENTS.md`, the maintenance procedure in `README.md`, `imports/CONTRACT.md` and `docs/SOURCES_AND_MEDIA.md`. For funding, community or irrigation evidence, also read `docs/COMMUNITY_PLANNING.md`, including its mandatory funding-hierarchy maintenance rules and Evidence desk/lifecycle contracts. Current QA commands and historical acceptance links are in `docs/VERIFICATION.md`.
+- Read `AGENTS.md`, the maintenance procedure in `README.md`, `imports/CONTRACT.md`, `docs/SOURCES_AND_MEDIA.md` and the graph-wide knowledge-tree organization and project-intake rules in `docs/COMMUNITY_PLANNING.md`. For funding, community or irrigation evidence, also read that guide's funding-hierarchy maintenance rules and Evidence desk/lifecycle contracts. Current QA commands and historical acceptance links are in `docs/VERIFICATION.md`.
 - Use the project's working Python environment. Inspect `backend/cli.py`, the current batch/source models in `backend/store.py`, and relevant validation in `backend/planning.py` when needed. The live schema takes precedence over an old example.
 - Export a current snapshot through `backend.cli`; read source registrations, actual accepted coverage, unresolved items, topics, relationships, findings, communities and browse groups. Run `groups`; inspect relevant topics and anchored groups. Read full memberships, parent paths and maintenance rules.
 - If continuing a real saved research task, read both its `brief.md` and `context.json`, reconcile its captured revision/IDs, and preserve its exploration. A run directory by itself is not a registered task.
@@ -111,7 +111,31 @@ For every useful claim preserve its edition and page, document type, observation
 
 Paraphrase concisely and retain only necessary short source excerpts. Keep raw extraction and rendering artifacts local in the run directory. Do not copy full documents into node descriptions.
 
+Maintain a project inventory in the run sidecar for every useful project, study or pilot/trial
+encountered, including example projects. Record source passages, existing/new topic IDs, documented
+umbrella/child context, summary/finding/link disposition and remaining gaps. Reconcile previously
+inspected material with known representation gaps too. A registered PDF or scattered trial nodes
+does not establish that the project itself is represented. Keep implementers distinct from projects;
+do not infer an umbrella from a filename, acronym, shared source or location.
+
 ### 5. Design progressive discovery within the existing graph
+
+**Mandatory across all areas:** follow [Knowledge tree organization](docs/COMMUNITY_PLANNING.md#knowledge-tree-organization).
+Distinguish reusable concepts from projects/trials, system components, participants, sites and
+dated events before assigning primary and shared homes. A shared source document does not establish
+ownership. Retain an explicit before/after placement manifest; do not flatten a project's details
+into a general root or turn a reference location into a funding intermediary.
+
+Use `presentation: hierarchy` on curated folders and `catalogue: true` on genuine peer lists.
+Catalogues remain complete and searchable; hierarchy depth/choice targets never justify invented
+taxonomy, arbitrary folders or loss of access. Findings stay on their existing topics and Evidence
+panels. Preserve source conditions, all optional metadata, working plans and canonical identities.
+
+Run `backend.cli audit-organization` before intake and `audit-organization --batch <file>` before
+application. Review the same advisory `organization_warnings` in preview/application results.
+Correct them, document an intentional catalogue/context, or report unfinished placement. Imports
+are not blocked by organization warnings. Uncertain topics remain accessible in derived, read-only
+**Needs organization** views; never guess a parent to clear a warning or persist review IDs as facts.
 
 Use the existing domains `ecosystem`, `technology` and `funding`. The tree is a browsing organization over shared knowledge; relationships form the cross-connected graph. Neither requires a duplicate copy of a concept in each branch.
 
@@ -127,9 +151,42 @@ Use the existing domains `ecosystem`, `technology` and `funding`. The tree is a 
 
 Do not implement a new viewer, hardcode subject-specific group logic or change application architecture for this intake. If a useful presentation feature is unsupported, produce the best representation supported by the current models and record the limitation separately.
 
+#### Required project summaries and details
+
+Follow [Project intake and summaries](docs/COMMUNITY_PLANNING.md#project-intake-and-summaries)
+in every domain and intake mode. Reuse or create a real project/study/trial topic, classify its role
+explicitly, and anchor its folder to that topic. Make Project/Study/Pilot recognizable in new/revised
+folder labels. Each new or substantively revised project topic needs a concise, cited `description`:
+what was done or proposed and why; techniques and scope; key findings; conditions and limits; dated
+status and evidence gaps. Use plain language and normally about 100–250 words where useful.
+Say "Not reported in the reviewed material" for missing elements and record unfinished work.
+Refresh an existing summary in the same intake when new evidence materially changes the project's
+work, results, conditions or status, including projects outside the initial selection.
+
+Keep the main takeaways conditional: preserve site, species/stock, planting season, treatment,
+comparator, monitoring period and denominators where consequential. A result observed in one
+setting does not establish "only works if" or a transferable recommendation. Preserve negative
+and conflicting results; planned work is not a measured outcome. Summary references must identify
+the exact supporting passages, not merely the report cover.
+
+Put independently useful trials, interventions, sites, components or evaluation beneath the project
+with meaningful role folders and shared references to canonical general topics. Avoid empty
+template levels, duplicate concepts and a node per result sentence. Store detailed results in
+cited `findings` attached to the actual project/trial, preserving existing IDs and attachments.
+The folder guide explains navigation; the project topic supplies the substantive summary.
+
 ### 6. Discover and explain meaningful cross-connections
 
 Review candidates against the **whole existing graph**, not just the selected neighbourhood or the current PDF. Consider mechanisms and dependencies between site constraints, ecosystem functions, restoration interventions, delivery equipment, monitoring, project evidence and funding requirements.
+
+Connectivity review is required during every intake for all new or substantively revised topics,
+across all domains. Resolve useful supported links now and record evidence gaps explicitly.
+
+For every project intake, explicitly search existing techniques, species, conditions, equipment,
+monitoring methods, participants, places and documented funding. Reuse valid relationships and add
+useful justified missing links in the same checked intake as the project evidence. Cross-linking
+is a required ingestion step, not deferred cleanup. Record reviewed/reused/added links and evidence
+gaps in the project sidecar; an unsupported connection remains unresolved, never a forced edge.
 
 For each edge, make the direction, short relation label, explanation, basis and exact supporting references clear:
 
@@ -234,9 +291,18 @@ Use the repository's configured Python instead if `.venv` is not the working env
 
 Before declaring a batch complete:
 
+- Audit organization in every affected area, including primary/shared ownership, catalogue exceptions,
+  role folders and retained metadata. Inspect the proposed root/folder journeys and compare the
+  placement manifest with accepted results. Pending review topics are unfinished organization work;
+  a successful schema check alone does not establish semantic integration.
 - For funding changes, audit the proposed live folder paths against [Funding hierarchy maintenance](docs/COMMUNITY_PLANNING.md#funding-hierarchy-maintenance), including explicit hierarchy presentation, unique primary memberships, retained existing definitions and source-backed participating levels. Import validation alone does not establish compliance. Review affected folder openings and About/source links, and include unresolved placement in the continuation report.
 - Confirm preview and accepted result, expected revision, actual add/update counts, valid source-file hashes, resolvable citations/pages and recorded coverage. Check the exact same accepted batch can be retried as unchanged; never fabricate an idempotency check by applying a new empty batch.
 - Check new/updated descriptions contain actual useful findings, not just titles. Audit key numerical values and conditional rules against source pages, including contradictory evidence and gaps.
+- Reconcile every project-inventory entry with its dedicated identity, documented umbrella/trial
+  context, cited summary, meaningful detail homes, scoped key findings and reviewed wider-graph
+  links. Open the project folder/About, relevant findings, linked techniques and exact citations.
+  Report missing elements as unfinished; `import --check` and `audit-organization` cannot verify
+  project coverage or summary completeness from PDFs, and do not replace this curator check.
 - Audit every new/revised citation for a meaningful checked label. Review representative visible links, including several from the same document: readers must be able to distinguish their destinations without opening them. Confirm document titles and exact pages/sections remain visible and links open the intended passages; report any display limitation instead of claiming it is complete.
 - Check identities, relation meanings/directions, group cycles, primary/shared memberships and full replacement payloads. Review orphaned topics and noisy hubs without forcing unsupported links.
 - Inspect representative reader journeys through the existing graph/API: overview to a concrete ecological mechanism; restoration project to method/outcome; reservoir to refill constraints/drone evidence; AL20 to an activity, territorial priority, scoring criterion and its verification source. Test only paths supported by the collection; missing paths become reported gaps. Open representative exact-page citations in the existing source viewer when available.
@@ -251,7 +317,7 @@ Save a concise `research/<run-id>/report.md` plus the inventory, ledger, candida
 Report:
 
 1. **Coverage:** every PDF's edition/hash, total pages, reviewed and accepted-inspected pages, unresolved/pending pages, duplicate status and whether useful content is represented. Separate this run's work from carried-forward coverage. Reconcile total page dispositions with the inventory.
-2. **Knowledge changes:** concepts/components, important findings, group guides and subgroups, corrections and accepted batch IDs/revisions. State what was applied versus previewed.
+2. **Knowledge changes:** concepts/components, project identities and summary/finding/link coverage, important findings, group guides and subgroups, corrections and accepted batch IDs/revisions. Reconcile the project inventory and report incomplete project summaries/context/connections. State what was applied versus previewed.
 3. **Reader value:** the principal discoveries for the five goals, useful starting points and a few meaningful paths through the tree, including old-to-new cross-connections.
 4. **Evidence limits:** contradictions, unavailable linked documents, untested drone integrations, unresolved ecological transfer, absent scoring rules or criteria, and funding/legal status needing current verification. Distinguish "not in the reviewed sources" from "does not exist".
 5. **Preservation and checks:** what was verified, any check that could not run, and confirmation that working plans were not automatically changed.

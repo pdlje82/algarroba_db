@@ -8,6 +8,7 @@ export function editorTarget(id: string | null | undefined, catalog: Catalog | n
   return null;
 }
 export function groupLabel(id: string, catalog?: Catalog | null): string {
+  if(isReviewGroup(id))return {'ecosystem':'Needs organization · Ecosystems','technology':'Needs organization · Technology','funding':'Needs organization · Funding'}[id.slice(7)]!;
   if(!catalog)return id;
   const group=catalog.browse_groups.find(g=>g.id===id) || catalog.organization_roots?.find(g=>g.id===id) || catalog.communities?.find(g=>g.id===id);
   if(group)return group.label;
@@ -19,6 +20,7 @@ export function groupMembers(id:string,catalog:Catalog):string[]{
   return [...new Set([...(group?.members.map(m=>m.topic_id)||[]),...catalog.browse_groups.filter(g=>g.parent_id===id).flatMap(g=>groupMembers(g.id,catalog))])];
 }
 export function groupDomain(id:string,catalog:Catalog):string{
+  if(isReviewGroup(id))return id.slice(7);
   let at=id;const seen=new Set<string>();
   while(!seen.has(at)){seen.add(at);const group=catalog.browse_groups.find(g=>g.id===at);if(!group)break;at=group.parent_id;}
   return at.startsWith('domain:')?at.slice(7):at.split(':')[0];
@@ -39,9 +41,15 @@ export function placeLabel(id: string | null, catalog?: Catalog | null) {
         "Place unavailable (" + id + ")";
 }
 export const browseGroups = (catalog: Catalog) => catalog.browse_groups || [];
+export function isReviewGroup(id:string|null|undefined):boolean {
+  return !!id && ['review:ecosystem','review:technology','review:funding'].includes(id);
+}
+export function isHierarchyGroup(id:string|null,catalog?:Catalog|null) {
+  return ROOT_GROUPS.includes(id||'') || isReviewGroup(id) || catalog?.browse_groups.some(g=>g.id===id&&g.presentation==='hierarchy') || false;
+}
 export function fixedGroupLayout(id: string | null, catalog?: Catalog | null) {
   const group = catalog?.browse_groups.find(g => g.id === id);
-  return group?.presentation === 'hierarchy' || group?.member_layout === 'vertical';
+  return isHierarchyGroup(id,catalog) || group?.member_layout === 'vertical';
 }
 export function primaryGroup(id: string, catalog: Catalog) {
   return browseGroups(catalog).find((g) =>
@@ -49,6 +57,7 @@ export function primaryGroup(id: string, catalog: Catalog) {
   );
 }
 export function rootGroup(id: string, catalog: Catalog): string {
+  if(catalog.organization_review?.topic_roots[id])return catalog.organization_review.topic_roots[id];
   const item = catalog.topics.find((t) => t.id === id),
     group = primaryGroup(id, catalog);
   if (!group) return item ? landscapeGroup(item) : "";

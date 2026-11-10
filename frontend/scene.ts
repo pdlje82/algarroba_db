@@ -15,6 +15,7 @@ import {
   groupLabel,
   groupMembers,
   groupDomain,
+  isHierarchyGroup,
 } from "./organization.ts";
 import { allRoutes, contextLabel } from "./exploration.ts";
 import { openingCandidates, highlightOpeningSources } from "./opening.ts";
@@ -109,7 +110,7 @@ export function buildScene(
   c: Catalog,
   aspect = 1.6,
 ): Scene {
-  const hierarchy = v.scope === 'group' && c.browse_groups.some(g => g.id === s.groupId && g.presentation === 'hierarchy');
+  const hierarchy = v.scope === 'overview' || (v.scope === 'group' && isHierarchyGroup(s.groupId,c));
   const topicMap = new Map(c.topics.map((t) => [t.id, t])),
     routes = hierarchy ? [] : allRoutes(s, v),
     records = new Map(v.nodes.map((t) => [t.id, t])),

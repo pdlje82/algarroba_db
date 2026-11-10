@@ -25,7 +25,11 @@ Missing names are null, never invented translations. Optional `name_references[]
 `title`, HTTPS `url`, `fields` (spanish_name|english_name|scientific_name), `accessed` date and
 optional `note`. These naming-only citations supplement existing PDF source_refs; they do not
 authorize importing additional ecology, trial claims, PDF pages or geographic assignments.
-Kinds: species, habitat, method, equipment, place, organization, programme, activity, condition, aspect, event, family.
+Topic `kind` is a string. Curated kinds: species, habitat, method, equipment, place, organization,
+programme, project, study, trial, activity, condition, aspect, event, family. Use project/study/trial
+for explicitly represented examples as supported by the source; keep implementers as organizations
+and genuine funding/programme frameworks as programmes. Reuse IDs when deliberately correcting a
+legacy classification; never relabel all events or programmes automatically.
 Source reference: {source_id, page (one-based PDF position), locator, label, optional source_text}.
 Relationship: id, source (topic ID), target (topic ID), label, explanation,
 basis (source|curated), source_refs[], optional context{}, traversable (default true).
@@ -100,6 +104,18 @@ organization generically, reusing existing identities and distinguishing permane
 perspective-only headings. Keep shared/general context accessible and preserve wider discoveries.
 Do not invent factual relationships from organization.
 
+All project-related intake must follow
+[Project intake and summaries](../docs/COMMUNITY_PLANNING.md#project-intake-and-summaries).
+Represent a project with a topic, not just a folder, source or implementing organization. Its
+`description` carries the cited purpose/work, techniques, key findings, conditions/limits and
+dated status, with explicit gaps where evidence is absent. Detailed results use `findings[]` with
+their actual project/trial `topic_ids` and scope; reusable concepts retain canonical identities.
+Use anchored hierarchy folders for meaningful project details and make Project/Study/Pilot visible
+in their labels. Review and add justified missing `relationships[]` to existing knowledge in the
+same checked intake; no connectivity quota or invented edge is permitted. Keep the project
+inventory, completeness/link review and pending work in run sidecars, not new batch fields.
+These are required curator checks, not automatic PDF/summary validation or new import blockers.
+
 All funding intake must follow [Funding hierarchy maintenance](../docs/COMMUNITY_PLANNING.md#funding-hierarchy-maintenance),
 including the live named-folder paths, explicit hierarchy presentation and evidence for participating
 levels. This is a semantic intake requirement in addition to schema validation. Keep placement/path
@@ -160,6 +176,17 @@ relationships. Existing anchor_topic_id supports an About action. When an anchor
 explicit member of its parent hierarchy folder, its child folder represents it without a duplicate
 topic card. An anchor remains forbidden in its own group's members. Preserve presentation during
 renames, moves and membership edits; it does not change the meaning of primary/shared roles.
+
+`catalogue` is an optional boolean, default false, identifying a genuine peer list. It suppresses
+size-only crowding warnings, not source/identity validation or ambiguous placement. Every intake
+follows [Knowledge tree organization](../docs/COMMUNITY_PLANNING.md#knowledge-tree-organization).
+CLI `audit-organization [--batch <file>]` is read-only. Import check/application returns advisory
+`organization_warnings`; schema/source/cycle/endpoint/revision failures remain blocking.
+
+The catalog's `organization_review` contains computed `topic_roots`, `warnings` and non-empty
+`pending_groups`. Review scopes `review:ecosystem|technology|funding` use the existing exploration
+API but are not accepted browse groups or editable destinations. This review payload and placement
+manifests are read-only/sidecar data, not additional top-level batch fields.
 
 New irrigation dose candidates use L/plant/event; L/plant/watering remains a compatible
 legacy spelling. Original immutable candidates and retained baselines are not rewritten.
