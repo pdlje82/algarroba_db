@@ -100,6 +100,24 @@ accept `review:ecosystem|technology|funding`, returning current pending IDs with
 These derived scopes never enter stored group definitions or editor destinations. Older saved
 views normalize in memory against the current catalog; working community workflows stay intact.
 
+## Funding navigation and project context
+
+An unanchored hierarchy group can explicitly set `navigation: transparent` (default `normal`).
+Its children and direct members appear at its visible parent, with the same identities and evidence.
+This is opt-in presentation metadata, never automatic single-child flattening. Funding structure
+retains its stored ID and metadata as such a container. The shared scene builder and sidebar use
+the same child projection; old group queries resolve to the visible parent. Old saved root/container
+histories normalize and adjacent equivalent steps collapse in memory, retaining cameras and moved
+offsets. Original stored explorations are not rewritten.
+
+Project ideas are editable user plans, not scientific topics. `project_ideas`, `funding_reviews` and
+`funding_assessments` are additive SQLite collections. `/api/projects/edit` uses the global revision
+and records project versions/history separately from community edits. Checked imports own funding
+reviews and curated assessments. Catalog and inspection expose them with computed `funding_state`
+warnings: project version, review version and evidence-fingerprint changes require reconsideration.
+Old reasoning remains stored. Availability and relevance stay independent; dates passing never
+manufacture verified closure. The frontend project selector is presentation state, not a graph filter.
+
 ## Domain preview and in-place Update
 
 State.pendingDomain is an optional staged choice; State.domain remains the applied query domain.

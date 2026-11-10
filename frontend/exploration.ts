@@ -7,7 +7,7 @@ import {
   type Route,
   type Item,
 } from "./types.ts";
-import { placeLabel, groupLabel, fixedGroupLayout, isReviewGroup } from "./organization.ts";
+import { placeLabel, groupLabel, fixedGroupLayout, isReviewGroup, navigationGroup } from "./organization.ts";
 import { hasCompactGridPositions } from "./compactLayout.ts";
 export const initialState = (): State => ({
   version: 6,
@@ -44,7 +44,8 @@ export type Action =
   | { type: "alternatives"; routes: Route[] }
   | { type: "depth" }
   | { type: "compare"; id: string }
-  | { type: "tidy" };
+  | { type: "tidy" }
+  | { type: "fundingProject"; id:string };
 export function reduceExploration(s: State, a: Action, catalog?: Catalog): State {
   const n = structuredClone(s);
   delete n.camera;
@@ -91,7 +92,7 @@ export function reduceExploration(s: State, a: Action, catalog?: Catalog): State
       n.anchor = null;
       n.positions = {};
       n.scope = "group";
-      n.groupId = a.id;
+      n.groupId = navigationGroup(a.id,catalog);
       if(fixedGroupLayout(a.id,catalog))n.grouping="none";
       n.search = "";
       break;
@@ -186,13 +187,17 @@ export function reduceExploration(s: State, a: Action, catalog?: Catalog): State
       n.positions = {};
       n.camera = s.camera;
       break;
+    case 'fundingProject':
+      n.fundingProjectId=a.id;
+      n.camera=s.camera;
+      break;
   }
   if (n.scope === "overview") n.layerRoot = true;
   if (isInPlaceAction(a)) n.camera = s.camera;
   return n;
 }
 export function isInPlaceAction(a: Action) {
-  return ["grouping", "previewDomain", "updateDomain", "clearCentre"].includes(
+  return ["grouping", "previewDomain", "updateDomain", "clearCentre", "fundingProject"].includes(
     a.type,
   );
 }

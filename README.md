@@ -4,6 +4,12 @@ A local, offline browser for connected ecosystem, restoration, irrigation, drone
 knowledge. One Layered 3D graph, filters, browsing groups and a docked inspector help readers
 move from overviews to evidence. Community planning uses a separate Evidence desk.
 
+**Funding programmes** opens directly onto its funding options. Choose **All ideas** or a project
+idea to compare restoration, drone irrigation, monitoring and education possibilities. Cards separate
+project relevance from call availability; the inspector explains applicant routes, conditions, dates
+and sources. **Edit project ideas** keeps your goals and unconfirmed arrangements separate from
+source evidence. Changing an idea flags its earlier funding assessments for review.
+
 ## Documentation
 
 | Need | Read |

@@ -14,6 +14,7 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 from .plant_media import PlantImage, validate_image, managed_path
+from .funding import FundingReview, FundingAssessment
 
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = Path(os.environ.get("KGB_DATABASE", ROOT / "data" / "knowledge.sqlite"))
@@ -119,6 +120,7 @@ class BrowseGroup(Record):
     member_layout: Literal["grid", "vertical"] = "grid"
     presentation: Literal["standard", "hierarchy"] = "standard"
     catalogue: bool = False
+    navigation: Literal['normal', 'transparent'] = 'normal'
 
 class Batch(BaseModel):
     model_config = ConfigDict(extra="forbid")
@@ -136,6 +138,8 @@ class Batch(BaseModel):
     sources: list[dict] = []
     communities: list[dict] = []
     irrigation_evidence: list[dict] = []
+    funding_reviews: list[FundingReview] = []
+    funding_assessments: list[FundingAssessment] = []
 
 
 class Store:
@@ -146,7 +150,7 @@ class Store:
         if self.path.exists() and self.path.stat().st_size:
             with sqlite3.connect(self.path) as migration:
                 tables={row[0] for row in migration.execute("SELECT name FROM sqlite_master WHERE type='table'")}
-            if "meta" in tables and ("browse_groups" not in tables or "plant_images" not in tables):
+            if "meta" in tables and ("browse_groups" not in tables or "plant_images" not in tables or "project_ideas" not in tables):
                 self.backup()
         with self.connect() as c:
             c.executescript("""
@@ -172,6 +176,10 @@ class Store:
                 CREATE TABLE IF NOT EXISTS tasks(id TEXT PRIMARY KEY,status TEXT,created TEXT,data TEXT);
                 CREATE TABLE IF NOT EXISTS browse_groups(id TEXT PRIMARY KEY,data TEXT NOT NULL);
                 CREATE TABLE IF NOT EXISTS plant_images(id TEXT PRIMARY KEY,topic_id TEXT NOT NULL REFERENCES topics(id),role TEXT NOT NULL CHECK(role IN ('whole','detail')),data TEXT NOT NULL,UNIQUE(topic_id,role));
+                CREATE TABLE IF NOT EXISTS project_ideas(id TEXT PRIMARY KEY,data TEXT NOT NULL);
+                CREATE TABLE IF NOT EXISTS funding_reviews(id TEXT PRIMARY KEY,data TEXT NOT NULL);
+                CREATE TABLE IF NOT EXISTS funding_assessments(id TEXT PRIMARY KEY,data TEXT NOT NULL);
+                CREATE TABLE IF NOT EXISTS project_idea_events(id TEXT PRIMARY KEY,data TEXT NOT NULL);
             """)
         from .planning import initialize
         initialize(self)
@@ -197,7 +205,7 @@ class Store:
             return self.revision(connection)
 
     def records(self, table: str, c=None) -> list[dict]:
-        if table not in {"sources", "topics", "relationships", "findings", "unresolved", "browse_groups", "plant_images"}:
+        if table not in {"sources", "topics", "relationships", "findings", "unresolved", "browse_groups", "plant_images", "project_ideas", "funding_reviews", "funding_assessments"}:
             raise ValueError("Unknown record collection")
         if c is not None:
             return [json.loads(r[0]) for r in c.execute(f"SELECT data FROM {table} ORDER BY id")]
@@ -375,8 +383,10 @@ class Store:
             inspected={(r['source_id'],r['page']) for r in c.execute("SELECT source_id,page FROM coverage WHERE status='inspected'")}
             inspected.update((r.source_id,r.page) for r in batch.coverage if r.status=='inspected')
             planned_communities, evidence=validate_intake(c,batch.communities,batch.irrigation_evidence,groups,topic_records,sources,inspected)
+            from .funding import validate_intake as validate_funding
+            funding_reviews, funding_assessments = validate_funding(self,c,batch.funding_reviews,batch.funding_assessments,topic_records,sources,inspected)
             review=organization_review(dict(topics=list(topic_records.values()),browse_groups=list(groups.values())),dict(browse_groups=previous_groups))
-            changes = {k: len(getattr(batch, k)) for k in ("topics", "relationships", "findings", "coverage", "unresolved", "browse_groups", "plant_images", "sources", "communities", "irrigation_evidence")}
+            changes = {k: len(getattr(batch, k)) for k in ("topics", "relationships", "findings", "coverage", "unresolved", "browse_groups", "plant_images", "sources", "communities", "irrigation_evidence", "funding_reviews", "funding_assessments")}
             if dry_run:
                 return {"status": "validated", "revision": self.revision(c), **changes, "organization_warnings":review['warnings']}
         if self.revision():
@@ -403,7 +413,7 @@ class Store:
                 c.execute("INSERT INTO unresolved VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (item["id"], json.dumps(item)))
             for group in batch.browse_groups:
                 c.execute("INSERT INTO browse_groups VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data", (group.id,group.model_dump_json()))
-            for table,items in [('communities',planned_communities),('irrigation_evidence',evidence)]:
+            for table,items in [('communities',planned_communities),('irrigation_evidence',evidence),('funding_reviews',funding_reviews),('funding_assessments',funding_assessments)]:
                 for item in items:
                     c.execute(f'INSERT INTO {table} VALUES (?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data',(item['id'],json.dumps(item,ensure_ascii=False)))
             for image in batch.plant_images:
@@ -450,6 +460,6 @@ class Store:
         from .planning import records
         with self.connect() as c:
             c.execute("BEGIN")
-            return {"revision": self.revision(c), **{t:self.records(t,c) for t in ("topics","relationships","findings","sources","unresolved","browse_groups","plant_images")},
+            return {"revision": self.revision(c), **{t:self.records(t,c) for t in ("topics","relationships","findings","sources","unresolved","browse_groups","plant_images","project_ideas","funding_reviews","funding_assessments")},
                     **{t:records(c,t) for t in ('organization_roots','communities','irrigation_evidence')},
                     "coverage": [dict(r) for r in c.execute("SELECT * FROM coverage ORDER BY source_id,page")]}

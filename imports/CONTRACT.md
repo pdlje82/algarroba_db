@@ -3,7 +3,7 @@
 Current schema reference, reviewed 10 November 2026. Code-formatted paths are relative to the
 repository root. See the [maintenance procedure](../README.md#knowledge-ownership-and-maintenance-procedure)
 and [reusable ingestion prompt](../DOCUMENT_INGESTION_PROMPT.md) for execution, and the current
-models/validation in `backend/store.py` and `backend/planning.py` for exact accepted fields.
+models/validation in `backend/store.py`, `backend/planning.py` and `backend/funding.py` for exact accepted fields.
 
 SQLite is authoritative. JSON batches are proposed mutations, not editable database mirrors.
 Only the backend importer may apply accepted knowledge. The original library is read-only.
@@ -12,6 +12,8 @@ Each candidate has `batch_id`, `summary` and current `base_revision`. Collection
 `topics[]`, `relationships[]`, `findings[]`, `coverage[]`, `unresolved[]`, `sources[]`,
 `browse_groups[]`, `plant_images[]`, `communities[]` and `irrigation_evidence[]`.
 The model also supports checked identity `redirects`; never use them for an uncertain merge.
+It also accepts `funding_reviews[]` and `funding_assessments[]` as described below. User-owned
+project ideas are edited separately, never replaced by a knowledge import.
 Unknown top-level batch fields are rejected. Inventory/workflow fields belong in sidecar audit files.
 Imports replace complete records, not partial patches: preserve existing optional metadata,
 citations and context when updating a record. Accepted batch IDs/digests are immutable.
@@ -187,7 +189,10 @@ topic card. An anchor remains forbidden in its own group's members. Preserve pre
 renames, moves and membership edits; it does not change the meaning of primary/shared roles.
 
 `catalogue` is an optional boolean, default false, identifying a genuine peer list. It suppresses
-size-only crowding warnings, not source/identity validation or ambiguous placement. Every intake
+size-only crowding warnings, not source/identity validation or ambiguous placement. Optional
+`navigation: normal|transparent` defaults to normal. Transparent groups must be unanchored hierarchy
+containers. They retain stored IDs, members and sources while their contents appear at the visible
+parent. Preserve this field on whole-record updates. Every intake
 follows [Knowledge tree organization](../docs/COMMUNITY_PLANNING.md#knowledge-tree-organization).
 CLI `audit-organization [--batch <file>]` is read-only. Import check/application returns advisory
 `organization_warnings`; schema/source/cycle/endpoint/revision failures remain blocking.
@@ -200,3 +205,29 @@ manifests are read-only/sidecar data, not additional top-level batch fields.
 New irrigation dose candidates use L/plant/event; L/plant/watering remains a compatible
 legacy spelling. Original immutable candidates and retained baselines are not rewritten.
 Do not convert seasonal/area totals to event doses without a documented denominator.
+
+## Project ideas and funding reviews
+
+`project_ideas`, `funding_reviews` and `funding_assessments` are typed SQLite collections,
+included in exports, backups, catalog and topic inspection. Older collections default to empty.
+User-owned project ideas are created/edited through revision-checked `/api/projects/edit` or
+`backend.cli project-edit`, never by research imports. All applicant arrangements are exploratory
+until the user confirms them. Profile versions are maintained by the service.
+
+Checked batches may contain `funding_reviews` and `funding_assessments`. A review references an
+existing funding topic and records instrument type, independently verified availability, dated
+conditions, deadlines, verification outcome and labelled source references. Use the same registered
+edition and genuinely inspected page/section validation as other factual records. Increase a
+changed review's version; failed checks preserve last-confirmed facts and identify the problem.
+Timed dates require an offset and timezone; date-only deadlines must not acquire an invented time.
+Use deadline `kind: opening` for an opening date. A passed deadline is a warning, not verified closure.
+
+An assessment references exact project/review versions, contains reviewed reasons, possible
+applicant route, unresolved requirements and a next action. Relevance is `potential`, `conditional`,
+`needs-review` or `outside-scope`, independently of availability. Exclusions require an exact
+location/activity/applicant-route scope supported by evidence; unknown facts are not exclusions.
+One assessment is permitted per project/review pair. The importer binds an evidence fingerprint;
+changes to the project, review, funding topic or cited source edition flag earlier assessments for
+review without replacing their conclusions. Reconsideration requires a new manually checked batch.
+No numerical suitability score, automatic eligibility engine or automatic project-plan adoption
+is provided. Full model fields and validation are defined in `backend/funding.py`.

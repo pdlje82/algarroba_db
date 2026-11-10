@@ -359,13 +359,32 @@ Where compatible with the current schema, add immutable `irrigation_evidence` ca
 
 #### Funding, scoring and territorial priorities
 
+Read the current `project_ideas`, `funding_reviews`, `funding_assessments` and computed funding
+state before funding research. Project ideas are user-owned planning records; never overwrite
+their goals, arrangements or versions from source research. Keep source-described projects separate.
+Checked batches may refresh funding reviews and manually reviewed assessments following
+[the funding import contract](imports/CONTRACT.md#project-ideas-and-funding-reviews). Cite exact
+registered editions and inspected passages. Compare all relevant ideas, preserving uncertainty
+about applicant status, land access, partners, budget and readiness. Keep possible applicant routes
+explicit and distinguish thematic relevance from eligibility. Availability and suitability remain
+separate; programme folders never inherit a verdict from one child call.
+
+Use increasing review versions for changed facts and exact project/review versions for assessments.
+Changed evidence flags dependent assessments for reconsideration; never silently carry forward a
+conclusion as newly reviewed. Unknown facts cannot establish exclusion. Scope verified exclusions
+to the affected location, activity or applicant route. Record deadlines with their actual precision
+and timezone; mark opening dates as `kind: opening`. A passed deadline is a dated warning, not
+proof of closure. A failed verification preserves last-confirmed facts and sources, records the
+attempt/problem and supplies a retry action. Do not turn an unread source into a no-change finding.
+Do not introduce automatic eligibility/scoring or adopt research into user planning records.
+
 **Mandatory future organization:** follow [Funding hierarchy maintenance](docs/COMMUNITY_PLANNING.md#funding-hierarchy-maintenance) for every funding addition or revision, in both full-library and incremental runs. Reconcile the live **Funding programmes > Funding structure** tree first. Extend its FEADER/PEPAC/LEADER, NextGenerationEU/PRTR, Fundación Biodiversidad and prospective Commission nature-finance branches as applicable; a different documented mechanism may receive its own evidenced branch.
 
 Use named folders throughout financing and implementation navigation, with `presentation: hierarchy` on every new funding-structure folder. Under the LEADER authority, retain **Interventions**, **Local implementation** and **Rules and calls**; place documented ZRLs under Local implementation. Retain AL20's **Managing GDR**, **Funding lines** and **Local strategy and criteria** and its existing criteria groups. Keep ZRL and managing GDR identities distinct; do not copy AL20 content into another zone without its own evidence.
 
 Include only levels with documented funding or administrative participation. Geographic headings, municipal coverage or an Almería address do not establish a provincial funding step. Skip unsupported EU/national/regional/provincial/local levels rather than filling a template. Preserve necessary single-child stages instead of flattening this chain to meet general depth targets. Do not substitute structural arrows for folders, delete valid factual relationships to hide arrows, or infer new factual links from membership.
 
-Preserve full live definitions, `presentation`, anchors, layouts, metadata and primary/shared memberships. Record each new/revised funding concept's placement and supporting passage in the run audit, outside the batch schema. Before completion, check reachability, evidence for each level, preservation of existing branches and the absence of invented intermediaries; report uncertain placement as an unresolved integration gap.
+Preserve full live definitions, `presentation`, `navigation`, anchors, layouts, metadata and primary/shared memberships. The internal Funding structure container remains `navigation: transparent`; readers open its contents directly in Funding programmes. Do not collapse other single-child financing stages. Record each new/revised funding concept's placement and supporting passage in the run audit, outside the batch schema. Before completion, check reachability, evidence for each level, preservation of existing branches and the absence of invented intermediaries; report uncertain placement as an unresolved integration gap.
 
 Start with the AL20 evidence chain where present: the local EDLL/territory and priorities, applicable governing rules, call, line/activity definitions, selection criteria and verification guide. Preserve issuer, edition, legal/proposal status and the exact territory and applicant class for every condition. Related documents are not automatically from the same call or mutually applicable; explain any linkage or uncertainty.
 
@@ -388,7 +407,7 @@ Distinguish grants, procurement contracts, loans, tax incentives, carbon mechani
 
 Work in coherent sections or themes small enough to inspect and recover. Continue until the requested collection/backlog is handled; a checkpoint is not the end of the task. Keep remaining work explicit if an actual interruption or blocker prevents completion.
 
-Use only supported batch fields: `batch_id`, `summary`, `base_revision`, `sources`, `topics`, `relationships`, `findings`, `coverage`, `unresolved`, `browse_groups` and, when applicable, the other fields supported by the current model such as `communities` and `irrigation_evidence`. Keep inventory, extraction and workflow statuses in sidecar audit files. Follow the current schema rather than assuming every audit field has a rendered UI.
+Use only supported batch fields: `batch_id`, `summary`, `base_revision`, `sources`, `topics`, `relationships`, `findings`, `coverage`, `unresolved`, `browse_groups` and, when applicable, the other fields supported by the current model such as `communities`, `irrigation_evidence`, `funding_reviews` and `funding_assessments`. User-owned `project_ideas` are not research import payloads. Keep inventory, extraction and workflow statuses in sidecar audit files. Follow the current schema rather than assuming every audit field has a rendered UI.
 
 - Reconcile current IDs, source editions and revision before each candidate. Use globally unique batch IDs and stable record IDs. Avoid duplicate findings/edges for the same claim merely because another PDF repeats it; add evidence to the existing record when appropriate, preserving prior context.
 - Updating a topic, finding, relationship or group replaces the record. Begin with the complete current record and retain its names, aliases, citations, context, memberships and optional metadata unless deliberately correcting them. Preserve contrary findings separately when they describe different circumstances.

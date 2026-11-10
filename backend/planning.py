@@ -209,6 +209,10 @@ def validate_groups(groups, topic_ids):
         anchor = group.get('anchor_topic_id')
         if group.get('presentation', 'standard') not in {'standard', 'hierarchy'}:
             raise ValueError('Unknown browsing group presentation')
+        if group.get('navigation', 'normal') not in {'normal', 'transparent'}:
+            raise ValueError('Unknown browsing group navigation')
+        if group.get('navigation') == 'transparent' and (anchor is not None or group.get('presentation') != 'hierarchy'):
+            raise ValueError('Transparent navigation requires an unanchored hierarchy container')
         if not isinstance(group.get('catalogue',False),bool):
             raise ValueError('Catalogue must be a boolean')
         if anchor is not None and anchor not in topic_ids:

@@ -6,6 +6,7 @@ import {
 } from "./exploration.ts";
 import { buildScene } from "./scene.ts";
 import type { State, CameraPose, Catalog } from "./types.ts";
+import { navigationGroup, navigationContainers } from './organization.ts';
 export const LEGACY_KEYS = [
   "kgb:exploration:v5",
   "kgb:exploration:v4",
@@ -185,7 +186,7 @@ export function reconcileIdentities(state: State, catalog: Catalog): State {
     groupId: state.groupId?.startsWith("display-group:place:")
       ? "display-group:place:" +
         resolve(state.groupId.slice("display-group:place:".length))
-      : state.groupId,
+      : navigationGroup(state.groupId,catalog),
     centre: state.centre ? resolve(state.centre) : null,
     anchor: state.anchor ? resolve(state.anchor) : null,
     compare: state.compare.map(resolve).filter((id) => valid.has(id)),
@@ -196,6 +197,28 @@ export function reconcileIdentities(state: State, catalog: Catalog): State {
       Object.entries(state.positions).map(([id, p]) => [resolve(id), p]),
     ),
   };
+}
+
+/** Presentation-only compatibility; never rewrite a stored exploration to remove a wrapper. */
+export function normalizeNavigationHistory(history:History,catalog:Catalog):History {
+  if(!catalog.browse_groups.some(g=>g.navigation==='transparent'))return history;
+  const legacy={...catalog,browse_groups:catalog.browse_groups.map(g=>({...g,navigation:'normal' as const}))};
+  const entries:State[]=[];let index=0;let previousOriginal:string|null=null;
+  history.entries.forEach((original,i)=>{
+    let s=reconcileIdentities(original,catalog);
+    const affected=original.groupId!==s.groupId||!!s.groupId&&navigationContainers(s.groupId,catalog).some(g=>!!original.positions['display-group:'+g.id]);
+    if(s.view&&s.scope==='group'&&affected){
+      const oldScene=buildScene(original,original.view!,legacy),nextScene=buildScene(s,s.view,catalog);
+      s={...s,view:{...s.view,group_id:s.groupId},layerOffsets:{...s.layerOffsets,[nextScene.key]:oldScene.offset}};
+    }
+    const last=entries.at(-1);
+    const equivalent=last&&s.scope==='group'&&last.scope==='group'&&s.groupId===last.groupId&&previousOriginal!==original.groupId&&JSON.stringify([s.domain,s.kinds,s.search,s.fundingProjectId])===JSON.stringify([last.domain,last.kinds,last.search,last.fundingProjectId]);
+    if(equivalent){if(i<=history.index)entries[entries.length-1]=s;}
+    else entries.push(s);
+    if(i===history.index)index=entries.length-1;
+    previousOriginal=original.groupId;
+  });
+  return {entries,index};
 }
 
 /** Translate the last legacy expanded card into an exact focused membership scope. */

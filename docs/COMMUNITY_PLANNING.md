@@ -33,11 +33,39 @@ or authority in the inspector; ordinary topic exploration still shows its record
 Existing groups default to `standard`, retaining their layouts and connections. Shared references
 are counted once in the layer's represented-topic total.
 
-Under **Funding programmes > Funding structure**, separate branches cover FEADER/PEPAC/LEADER,
+Under **Funding programmes**, separate branches cover FEADER/PEPAC/LEADER,
 NextGenerationEU/PRTR restoration, Fundación Biodiversidad/Doñana, and the prospective Commission
 nature-credit roadmap. LEADER's **Local implementation** contains AL20 and AL30, with their GDRs
 kept distinct. Geographic containment alone does not add a funding authority. Documentary dates,
 provisional proposals and public-contract financing retain their original scope.
+
+The stored Funding structure container uses `navigation: transparent`, so it adds no visible graph,
+sidebar or breadcrumb step. Its memberships, sources and stable ID remain available to maintenance.
+Only explicitly marked unanchored hierarchy containers are skipped; actual funding levels remain.
+
+## Project ideas and funding suitability
+
+Within funding browsing, choose **All ideas** or one idea. **Edit project ideas** opens editable goals,
+linked concepts, proposed geography, applicant options, land access, partners, budget and readiness.
+The initial four ideas are exploratory user plans. Unknown facts remain unconfirmed; choosing an
+applicant arrangement does not establish that an organisation, land agreement or partnership exists.
+
+Funding cards separate project relevance and availability. The inspector provides the source-backed
+call/instrument facts and a curated assessment for each idea: potential, conditional, needs review or
+outside that idea's scope. Explicit exclusions retain the affected geography, activity or applicant
+route. Programme folders count reviewed routes instead of inheriting a child's open/fit verdict.
+Missing reviews remain visible. Source verification failures preserve last-confirmed facts.
+
+Project changes increment the profile version and flag previous assessments for review without
+erasing their reasoning. Funding reviews have their own version; assessments bind that version,
+the project version and an evidence fingerprint. These are manual reviews, not scores or automated
+eligibility decisions. Calls, grants, repayable finance, procurement and assistance stay distinct.
+
+`POST /api/projects/edit` and `python -m backend.cli project-edit EDIT.json [--check]` accept
+`{expected_revision, action: create|update, id?, changes}`. Changes may contain the editable fields
+above; IDs, versions and timestamps cannot be patched. Creation may supply a stable `idea:` ID for
+an explicitly authorized initial intake. Conflicts return 409; the editor preserves the draft,
+supports refreshing, and requires review before overwriting a concurrently changed profile.
 
 ## Knowledge tree organization
 
@@ -161,8 +189,9 @@ intake. Discover the current definitions with CLI `groups`, `inspect` and `expor
 batch. SQLite is authoritative; extend its live IDs, anchors and memberships rather than replaying
 the original hierarchy batch or recreating the tree from this guide.
 
-Start under **Funding programmes > Funding structure** (`browse:funding-structure`). The established
-branches are:
+For maintenance, use **Funding programmes > Funding structure** (`browse:funding-structure`). This
+stored container is transparent in reader navigation; preserve `navigation` during full-record updates.
+The established branches include:
 
 | Branch entry ID | Documented browsing path |
 | --- | --- |

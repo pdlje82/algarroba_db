@@ -88,9 +88,14 @@ export type BrowseGroup = {
   member_layout?: 'grid' | 'vertical';
   presentation?: 'standard' | 'hierarchy';
   catalogue?: boolean;
+  navigation?: 'normal' | 'transparent';
 };
 export type Catalog = {
   revision: number;
+  project_ideas?: import('./funding').ProjectIdea[];
+  funding_reviews?: import('./funding').FundingReview[];
+  funding_assessments?: import('./funding').FundingAssessment[];
+  funding_state?: {assessments:Record<string,string[]>;reviews:Record<string,string[]>};
   topics: Item[];
   relationships: Edge[];
   findings: Item[];
@@ -148,6 +153,7 @@ export type State = {
   scope: Scope;
   groupId: string | null;
   groupMembers?: string[];
+  fundingProjectId?: string;
   centre: string | null;
   anchor: string | null;
   search: string;

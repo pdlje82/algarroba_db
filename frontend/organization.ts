@@ -41,6 +41,22 @@ export function placeLabel(id: string | null, catalog?: Catalog | null) {
         "Place unavailable (" + id + ")";
 }
 export const browseGroups = (catalog: Catalog) => catalog.browse_groups || [];
+/** Explicit navigation containers are skipped; real single-child levels remain. */
+export function navigationGroup(id:string|null,catalog?:Catalog|null):string|null {
+  const seen=new Set<string>();
+  while(id&&!seen.has(id)){
+    seen.add(id);const g=catalog?.browse_groups.find(g=>g.id===id);
+    if(g?.navigation!=='transparent')break;
+    id=g.parent_id;
+  }
+  return id;
+}
+export function navigationChildren(id:string,catalog:Catalog):Catalog['browse_groups'] {
+  return catalog.browse_groups.filter(g=>g.parent_id===id).flatMap(g=>g.navigation==='transparent'?navigationChildren(g.id,catalog):[g]);
+}
+export function navigationContainers(id:string,catalog:Catalog):Catalog['browse_groups'] {
+  return catalog.browse_groups.filter(g=>g.parent_id===id&&g.navigation==='transparent').flatMap(g=>[g,...navigationContainers(g.id,catalog)]);
+}
 export function isReviewGroup(id:string|null|undefined):boolean {
   return !!id && ['review:ecosystem','review:technology','review:funding'].includes(id);
 }

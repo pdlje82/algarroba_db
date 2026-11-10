@@ -66,11 +66,26 @@ running it on a newer collection. In particular `test:close-occlusion` still exp
 button label and is a known historical-fixture limitation, not an unqualified current acceptance
 check. The archived log records its earlier outcome and later limitation.
 
-For funding folders, run `python scripts/funding-qa-server.py --database
+For current funding navigation and project suitability, choose a fresh isolated destination:
+
+```powershell
+python scripts/funding-suitability-qa.py --database output/funding-suitability-qa/fresh.sqlite
+# In another terminal with KGB_PLAYWRIGHT_MODULE configured:
+node tests/funding-suitability-browser.mjs
+```
+
+Port 8776 uses only that copy. The helper prepares the eight reviewed contexts if absent; the
+browser check edits exploratory profiles and creates a QA idea, so use a new database for another
+fresh run. Reports/screenshots are under `output/funding-suitability-qa/`. It covers direct funding
+navigation, the selector, all four assessments, save/reload, both conflict paths, retained drafts,
+scoped exclusions, real financing levels, keyboard navigation and exact PDF pages.
+
+For the earlier, pre-transparent funding-folder fixture, run `python scripts/funding-qa-server.py --database
 output/funding-hierarchy-qa/knowledge.sqlite`, then `npm run test:funding-hierarchy`.
 The helper copies accepted SQLite only if the destination is absent, validates/applies the
 checked funding batch idempotently, and serves port 8774. Existing QA data is preserved.
-The browser check covers the four branches, every hierarchy folder, AL20/AL30, About,
+That historical browser scenario assumes a visible Funding structure step. Use the current
+suitability scenario above for current collections. Its earlier check covers four branches, hierarchy folders, AL20/AL30, About,
 ordinary factual exploration, keyboard source opening, Back, refresh and reload.
 
 For the complete tree, run `python scripts/tree-organization-qa.py --database
@@ -288,6 +303,54 @@ requires fresh reconciliation. Check evidence is under `output/chat-research-wor
 Application tests/builds were not repeated for this documentation and handoff-only update.
 
 ## Historical records
+
+### Funding navigation and project suitability, 10 November 2026
+
+Accepted revision 31 → 36: four versioned user ideas through the revision-checked project service,
+then exact checked batch `funding-suitability-20261110-v1`. Adds one CDTI funding topic, five managed
+official web editions, eight funding reviews and 32 assessments. Three current web editions were
+reused by identical URL/hash. The stored Funding structure container retains its identity and full
+definition, gains transparent navigation and a primary CDTI member; its 16 options open directly.
+All five applicant arrangements remain available; applicant, land, partners, budget and readiness
+are unconfirmed. All other funding options remain visible and explicitly unreviewed. No monitoring
+schedule changed. Ingestion guidance now supports checked review updates and assessment reconsideration.
+
+Official sources were checked on 10 November. LEADER's advertised 2028 end is not a budget guarantee;
+6881.4 remains forthcoming, with BINDIFO preliminary access; CDTI is partially repayable finance.
+Water4All has a timed first-stage gate, Horizon a forthcoming topic, PAEAS a date-only closing date,
+GroundWork an explicit Spain exclusion, and SUDOE5 a restricted original-project lineage. Complete
+conditions, source sections, exact topic/review IDs and next actions are in the accepted batch.
+EFSA and GDR web-reader timeouts were recovered through direct official HTTP captures; the direct
+CDTI body was insufficient and recovered through the official web reader. Its managed excerpt is
+labelled as such. The earlier failed attempts remain in the acquisition audit, not no-change claims.
+
+Existing library PDFs were reused; no PDF or doc_library addition is claimed. Verified direct
+document-download links below returned HTTP 200 and a PDF header on 10 November; this checks link
+availability, not a new edition hash comparison:
+
+- [PAEAS and climate-disinformation call 2026 — official PDF download](https://fundacion-biodiversidad.es/wp-content/uploads/2026/09/Convocatoria-proyectos-PAEAS-y-DC_2026.pdf), Fundación Biodiversidad, 9 September 2026; retained `KGB-SRC-0028`.
+- [Water4All JTC 2026 National/Regional Regulations — official PDF download](https://www.water4all-partnership.eu/sites/default/files/2026-06/National_Regulations-Water4All_JTC2026.pdf), Water4All / participating national funders; retained edition labelled v8, 28 October 2026, `KGB-SRC-0034` (publication date unconfirmed).
+- [SUDOE fifth-call valorisation rules — official PDF download](https://interreg-sudoe.eu/wp-content/uploads/2026/11/Texto_oficial_convocatoria_VALORIZACION_ES.pdf?x53234), Interreg Sudoe Monitoring Committee, approved 4 November 2026; retained `KGB-SRC-0035` (publication date unconfirmed).
+
+Validation: 82 frontend tests; 110 backend tests passed, one existing environment-dependent skip;
+production TypeScript/build passed; 19 isolated browser checks and six read-only live checks passed,
+with no uncaught browser errors. Includes extra assessment-only source changes, old-store migration,
+mixed call states, missing assessments, explicit exclusions, date precision, failed verification,
+stale project/evidence versions and history/camera preservation. Existing bundle-size and test-client
+deprecation warnings remain. A Windows temporary-preview file-handle cleanup error was corrected
+and the preview rerun successfully. A browser test initially omitted parent navigation; the fixture
+journey was corrected and all 19 checks rerun successfully.
+
+Snapshot/table comparisons preserve all previous topics/sources, factual relationships/findings,
+coverage, unresolved records, user communities, irrigation evidence, media, saved tasks/explorations
+and planning history. All 203 previous source/image files retain their hashes; 208 current files
+were verified. SQLite integrity and foreign keys passed; nine pre-existing organization advisories
+are unchanged. Database and CRC/hash-checked media backup share stem
+`backups/knowledge-r36-20261110-121659-607368`. Run receipts, exact before/after exports and recovery
+details: `research/funding-suitability-20261110/`. The documented identity-checked launcher restarted
+the local app after a direct restart command was rejected by automatic approval review; live
+revision 36 returned all three collections and rendered the new funding view. No synthetic UI
+writes were made to accepted port 8765; no commit, push or deployment was performed.
 
 These files preserve their original bytes. Their layouts, counts, bundle hashes, permission
 exceptions and test results describe their dates. Repository-relative names inside historical

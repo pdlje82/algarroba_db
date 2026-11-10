@@ -174,11 +174,17 @@ export function cardMesh(
         .forEach((line, j) => ctx.fillText(line, nameX, y + j * 32, nameWidth));
     });
   } else {
-    ctx.font = "bold 48px Segoe UI";
+    ctx.font = r.fundingSummary ? "bold 40px Segoe UI" : "bold 48px Segoe UI";
     const label = lines(ctx, r.label, 650);
     label
-      .slice(0, 4)
+      .slice(0, r.fundingSummary ? 2 : 4)
       .forEach((line, i) => ctx.fillText(line, 24, 98 + i * 55, 650));
+  }
+  if(r.fundingSummary){
+    ctx.font='27px Segoe UI';ctx.fillStyle=p.text;
+    ctx.fillText(r.fundingSummary.relevance,24,218,650);
+    ctx.fillStyle=p.muted;
+    lines(ctx,r.fundingSummary.availability,650).slice(0,2).forEach((line,i)=>ctx.fillText(line,24,255+i*32,650));
   }
   ctx.font = "25px Segoe UI";
   ctx.fillStyle = p.muted;

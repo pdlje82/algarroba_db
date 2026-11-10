@@ -18,6 +18,7 @@ from .store import Store, ROOT, now
 from .plant_media import enrich_topics, public_image, managed_path
 from .planning import Edit, Conflict, apply_edit, field_history
 from .organization import organization_review
+from .funding import ProjectEdit
 
 DOMAIN = "Dryland and Mediterranean restoration, especially carob and associated vegetation; establishment water and irrigation; drone monitoring and water-delivery knowledge; selected Andalusian LEADER funding, with relevant places, organizations, findings, dates and requirements."
 
@@ -68,6 +69,8 @@ def create_app(store: Store | None = None):
     @app.get("/api/catalog")
     def catalog():
         snap=store.snapshot()
+        from .funding import state as funding_state
+        snap['funding_state'] = funding_state(snap)
         snap["topics"]=enrich_topics(snap["topics"],snap["plant_images"],store.resolve)
         snap["plant_images"]=[public_image(x) for x in snap["plant_images"]]
         for s in snap["sources"]:
@@ -88,6 +91,16 @@ def create_app(store: Store | None = None):
         if not (edit.action.startswith('community-') or edit.action in {'plants-add','plant-remove','plant-edit','plant-plan-set','stage-set','field-set','revert'}):
             raise HTTPException(400,'This endpoint edits working communities only.')
         return save_edit(edit)
+
+    @app.post('/api/projects/edit')
+    def projects_edit(edit: ProjectEdit):
+        from .funding import edit_project
+        try:
+            return edit_project(store, edit)
+        except Conflict as error:
+            raise HTTPException(409, str(error)) from error
+        except (ValueError, KeyError, TypeError) as error:
+            raise HTTPException(400, str(error)) from error
 
     def save_edit(edit):
         try:return apply_edit(store,edit)
@@ -207,6 +220,9 @@ def create_app(store: Store | None = None):
         context['organization_roots']=g.snapshot['organization_roots']
         context['communities']=g.snapshot['communities']
         context['irrigation_evidence']=g.snapshot['irrigation_evidence']
+        context['project_ideas']=g.snapshot['project_ideas']
+        context['funding_reviews']=g.snapshot['funding_reviews']
+        context['funding_assessments']=g.snapshot['funding_assessments']
         context["topic_organization"]={i:g.organization(i) for i in ids if i in g.topics}
         context["selected_relationships"]=[g.edges[e] for e in context.get("selected_relationship_ids",[]) if e in g.edges]
         text=f"""# Research task {task_id}

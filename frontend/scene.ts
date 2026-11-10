@@ -16,8 +16,10 @@ import {
   groupMembers,
   groupDomain,
   isHierarchyGroup,
+  navigationChildren,
 } from "./organization.ts";
 import { allRoutes, contextLabel } from "./exploration.ts";
+import { fundingCardRecord } from './funding.ts';
 import { openingCandidates, highlightOpeningSources } from "./opening.ts";
 import { relationshipCircle, retainedRelationshipArc, samePositions, type ConnectionLabel } from './relationshipCircle.ts';
 import {
@@ -167,7 +169,7 @@ export function buildScene(
     groups.get(g.id)!.ids.push(id);
   }
   if(v.scope==='group' && s.groupId && !s.groupId.startsWith('display-group:')) {
-    for(const child of c.browse_groups.filter(g=>g.parent_id===s.groupId)){
+    for(const child of navigationChildren(s.groupId,c)){
       const ids=[...new Set([...groupMembers(child.id,c),...(hierarchy && child.anchor_topic_id ? [child.anchor_topic_id] : [])])].filter(id=>visible.has(id));
       if(s.domain!=='all' && !ids.length && groupDomain(child.id,c)!==s.domain) continue;
       for(const [key,existing] of groups){if(existing.permanent)continue;existing.ids=existing.ids.filter(id=>!ids.includes(id));if(!existing.ids.length)groups.delete(key);}
@@ -256,6 +258,7 @@ export function buildScene(
         card.record.context = true;
     }
   }
+  if(v.scope==='group')for(const card of cards)card.record=fundingCardRecord(card.record,card.members,c,s.fundingProjectId||'all');
   const saved = cards.map((card) => s.positions[card.id]);
   const complete = saved.every(
     (p) => p && Number.isFinite(p.x) && Number.isFinite(p.y),

@@ -29,6 +29,7 @@ import {
   migrateHistory,
   legacyTab,
   migrateExpandedGroup,
+  normalizeNavigationHistory,
 } from "./migration";
 import {
   restoreBrowserSession,
@@ -41,7 +42,8 @@ import { buildScene, previousScenes, isInteractiveRecord } from "./scene";
 import { SceneView, GraphBoundary, type SceneHandle } from "./SceneView";
 import { useAppearance, useFullScreen } from "./workspace";
 import { ResearchPanel, Refs } from "./dialogs";
-import { rootGroup, groupLabel, editorTarget, fixedGroupLayout, isHierarchyGroup, type EditorTarget } from "./organization";
+import { rootGroup, groupLabel, groupDomain, groupMembers, navigationChildren, navigationContainers, editorTarget, fixedGroupLayout, isHierarchyGroup, type EditorTarget } from "./organization";
+import { FundingProjectTools, FundingDetails } from './FundingPanel';
 import { PlanningPanel } from './PlanningPanel';
 import { topicNames } from "./speciesNames";
 import { SourcePanel } from "./SourcePanel";
@@ -190,7 +192,7 @@ function App() {
         presentationOffset,
       );
       if (ctrl.signal.aborted || token !== generation.current) return;
-      const completed = prepared.state;
+      let completed:State = prepared.state;
       c = prepared.catalog;
       let h: History;
       if (mode === "commit") h = commitHistory(base, completed);
@@ -213,6 +215,8 @@ function App() {
         }
       }
       if (ctrl.signal.aborted || token !== generation.current) return;
+      h=normalizeNavigationHistory(h,c);
+      completed=h.entries[h.index];
       intent.current = null;
       setCatalog(c);
       publish(h);
@@ -404,6 +408,7 @@ function App() {
       state.alternatives,
       state.openedFrom,
       state.pendingDomain,
+      state.fundingProjectId,
       aspect,
     ],
   );
@@ -640,7 +645,7 @@ function App() {
     const path=new Set<string>();
     while(at && !path.has(at)){path.add(at);at=catalog?.browse_groups.find(g=>g.id===at)?.parent_id||null;}
     const expanded=group?.presentation!=='hierarchy'||path.has(id);
-    return <React.Fragment key={id}><button data-group-id={id} style={{paddingLeft:12+depth*12}} onClick={()=>dispatch({type:'group',id})}>{groupLabel(id,catalog)}<small>{catalog?.topics.filter(t=>rootGroup(t.id,catalog)===id).length||''}</small></button>{expanded && catalog?.browse_groups.filter(g=>g.parent_id===id).map(g=>groupNavigation(g.id,depth+1))}{catalog?.communities?.filter(g=>g.parent_id===id).map(g=><button key={g.id} style={{paddingLeft:24+depth*12}} onClick={()=>dispatch({type:'group',id:g.id})}>{g.label}<small>{g.plants.length}</small></button>)}</React.Fragment>;
+    return <React.Fragment key={id}><button data-group-id={id} style={{paddingLeft:12+depth*12}} onClick={()=>dispatch({type:'group',id})}>{groupLabel(id,catalog)}<small>{catalog?.topics.filter(t=>rootGroup(t.id,catalog)===id).length||''}</small></button>{expanded && catalog&&navigationChildren(id,catalog).map(g=>groupNavigation(g.id,depth+1))}{catalog?.communities?.filter(g=>g.parent_id===id).map(g=><button key={g.id} style={{paddingLeft:24+depth*12}} onClick={()=>dispatch({type:'group',id:g.id})}>{g.label}<small>{g.plants.length}</small></button>)}</React.Fragment>;
   };
   if (!catalog)
     return (
@@ -871,6 +876,7 @@ function App() {
               Research
             </button>
           </div>
+          {(state.domain==='funding'||state.scope==='group'&&state.groupId&&groupDomain(state.groupId,catalog)==='funding')&&<FundingProjectTools catalog={catalog} selected={state.fundingProjectId||'all'} onSelect={id=>dispatch({type:'fundingProject',id})} onCatalog={setCatalog}/>}
           <div className="graph-toolbar">
             <div className="actions">
               <button
@@ -1117,6 +1123,7 @@ function App() {
                         {c.outOfDomain ? " · Outside selected domain" : ""}
                         {pending.includes(c.id) ? " · To research" : ""}
                       </button>
+                      {c.record.fundingSummary&&<p className="funding-card-summary"><span>{c.record.fundingSummary.relevance}</span><span>{c.record.fundingSummary.availability}</span></p>}
                       {topicNames(c.record).length > 0 && (
                         <div className="species-names">
                           {topicNames(c.record).map((name) => (
@@ -1192,6 +1199,8 @@ function App() {
                     <ol>{inspectedGroup.members.map(m=><li key={m.topic_id}>{topicButton(m.topic_id)}</li>)}</ol>
                   </section>}
                   {selectedTopic?.aspects && <dl className="topic-context">{Object.entries(selectedTopic.aspects).map(([key,value])=><React.Fragment key={key}><dt>{key}</dt><dd style={{whiteSpace:'pre-line'}}>{String(value)}</dd></React.Fragment>)}</dl>}
+                  {!selected&&state.scope==='group'&&state.groupId&&navigationContainers(state.groupId,catalog).map(g=><details key={g.id} aria-label="Funding overview guide"><summary>Funding overview and sources</summary><p>{g.description}</p><Refs catalog={catalog} refs={g.source_refs||[]} open={setSource}/></details>)}
+                  <FundingDetails catalog={catalog} ids={selectedTopic?[selectedTopic.id]:selected?.displayGroup?(scene?.cards.find(c=>c.id===selected.id)?.members||groupMembers(selected.groupKey,catalog)):state.scope==='group'?(view?.endpoint_ids||[]):[]} selected={state.fundingProjectId||'all'} open={setSource}/>
                   {selected && (
                     <button onClick={() => setSelected(null)}>
                       Clear selection

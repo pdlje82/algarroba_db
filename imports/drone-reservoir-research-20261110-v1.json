@@ -1,0 +1,4074 @@
+{
+  "batch_id": "drone-reservoir-research-20261110-v1",
+  "summary": "Checked chat research: buried seedling delivery, scoped field trials, drone prototype, utility-model proposal, aircraft specifications and an explicitly untested refill concept.",
+  "base_revision": 29,
+  "sources": [
+    {
+      "id": "KGB-SRC-0071",
+      "title": "Irrigasc — inventor-derived technical sheet (undated compilation)",
+      "kind": "pdf",
+      "filename": "IRR-009 - Irrigasc - Inventor Guidance Technical Sheet - undated.pdf",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/IRR-009 - Irrigasc - Inventor Guidance Technical Sheet - undated.pdf",
+      "sha256": "a5975cd64a5674c28eae88971b765bd7f176de9b327fadafbab64ba658fd3674",
+      "pdf_pages": 1,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "url": "https://p8.storage.canalblog.com/88/12/206291/15062679.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Compilation reproducing Irrigasc website text and Jacques Gasc advice; Canalblog-hosted copy",
+      "publication_date": null,
+      "page_labels": {
+        "1": "Irrigasc: buried sleeve, upper cup, installation and historical watering guidance"
+      },
+      "provenance_note": "The sheet attributes its text to irrigasc.com and Jacques Gasc; not an independent field trial. Its reference is dated 2004 and PDF creation metadata 2005; compilation publication date is unverified. The separate May-2011 guidance lead returned HTTP 403."
+    },
+    {
+      "id": "KGB-SRC-0072",
+      "title": "Bainbridge et al. — Irrigation and Mulch Effects on Desert Shrub Transplant Establishment (2001)",
+      "kind": "pdf",
+      "filename": "IRR-010 - Bainbridge et al - Desert Shrub Irrigation and Mulch Trial - 2001.pdf",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/IRR-010 - Bainbridge et al - Desert Shrub Irrigation and Mulch Trial - 2001.pdf",
+      "sha256": "5fe3b997560369f8d3865e366cce5395e6d4133911dbb91b1e9746c512f139d3",
+      "pdf_pages": 5,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          5
+        ]
+      ],
+      "url": "https://npj.uwpress.org/content/wpnpj/2/1/25.full.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Native Plants Journal / University of Wisconsin Press",
+      "publication_date": "2001",
+      "page_labels": {
+        "1": "Honey mesquite trial: abstract and study question",
+        "2": "Site, factorial design and Table 1 survival and height",
+        "3": "Deep-pipe and clay-pot installation; planting and mulch treatments",
+        "4": "Watering schedule, final assessment and herbivory limitations",
+        "5": "Conclusions, references and author information"
+      },
+      "provenance_note": "Original publisher PDF preferred over staged mirror. Publisher download watermark is 10 November 2026; publication remains Spring 2001. DOI 10.3368/npj.2.1.25."
+    },
+    {
+      "id": "KGB-SRC-0073",
+      "title": "Torres et al. — An efficient way of guaranteeing the survival of seedlings in areas under water stress (2026)",
+      "kind": "pdf",
+      "filename": "IRR-011 - Torres et al - Nodriza Seedling Reservoir Field Trials - 2026.pdf",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/IRR-011 - Torres et al - Nodriza Seedling Reservoir Field Trials - 2026.pdf",
+      "sha256": "4a794101de848f3fc8a4377f1300e9d7b286b10890daec578196b1d5bf61a576",
+      "pdf_pages": 14,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          6
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "url": "https://www.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2026.1912225/pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Frontiers in Forests and Global Change",
+      "publication_date": "2026-09-11",
+      "page_labels": {
+        "1": "Nodriza article: publication and abstract",
+        "2": "Nodriza background and integrated design",
+        "3": "Reservoir, ceramic outlet and Las Hazas experiment methods",
+        "4": "Bailén experiment methods and water treatments",
+        "5": "Trial analyses and soil-moisture results",
+        "6": "Experiment A: survival separation and GLM limitation",
+        "9": "Experiment B: nonsignificant survival comparison and growth results",
+        "11": "Discussion: shelter effects and survival interpretation",
+        "12": "Cost-effectiveness hypothesis and long-term research limitations"
+      },
+      "provenance_note": "DOI 10.3389/ffgc.2026.1912225. Published in 2026; experiments occurred in 2012–2014. Interpret the survival GLM limitations in Results rather than treating the title/abstract as a statistical guarantee."
+    },
+    {
+      "id": "KGB-SRC-0074",
+      "title": "Sheshenya — Design and Preliminary Testing of a Drone-Mounted Water-Delivery Prototype for Individual Plants (2026)",
+      "kind": "pdf",
+      "filename": "DRONE-005 - Sheshenya - Individual Plant Water Delivery Prototype - 2026.pdf",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/DRONE-005 - Sheshenya - Individual Plant Water Delivery Prototype - 2026.pdf",
+      "sha256": "72f6f2b0e0b6334d7a80494b0388134e634f68e1d4edb971a0653cc9d0c948f5",
+      "pdf_pages": 13,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "url": "https://nhsjs.com/wp-content/uploads/2026/11/Design-and-Preliminary-Testing-of-a-Drone-Mounted-Water-Delivery-Prototype-for-Individual-Plants.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "The National High School Journal of Science",
+      "publication_date": null,
+      "page_labels": {
+        "1": "Prototype abstract, author and conflicting electronic-access date",
+        "2": "Prototype setting and research objectives",
+        "3": "Prototype design and operating conditions",
+        "4": "Payload assembly and component table",
+        "5": "Soil index and pump control methods",
+        "6": "Measured versus unmeasured outcomes, Table 2",
+        "7": "Flight procedure and estimated dose calculation",
+        "8": "Flight-results table and staged tests",
+        "9": "Ground-control results and pump testing",
+        "10": "Integrated-flight results and discussion",
+        "11": "Table 7 estimated discharge, targeting limits and future work"
+      },
+      "provenance_note": "Author Antony Sheshenya, Dubai American Academy. Publisher HTML is dated 3 November 2026; PDF says electronic access 15 November 2026, later than this retrieval. Preserve the discrepancy; no resolved publication date. One aircraft/pump/probe; manually piloted flights, no safe payload or endurance validation."
+    },
+    {
+      "id": "KGB-SRC-0075",
+      "title": "Freitag — Indoor drone-and-sensor watering system, DE202017003667U1 (2017)",
+      "kind": "pdf",
+      "filename": "DRONE-006 - Freitag - Indoor Drone Watering Utility Model DE202017003667U1 - 2017.pdf",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/DRONE-006 - Freitag - Indoor Drone Watering Utility Model DE202017003667U1 - 2017.pdf",
+      "sha256": "ff086b2ce30d8ae68e9b67458e7fc2c85f075c59f350aef78c5fad0c2a568c34",
+      "pdf_pages": 6,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "url": "https://patentimages.storage.googleapis.com/72/68/a2/67e025f8e6e8fd/DE202017003667U1.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "German utility-model publication / Deutsches Patent- und Markenamt",
+      "publication_date": "2017-10-05",
+      "page_labels": {
+        "1": "Utility-model bibliographic data and proposed indoor system",
+        "2": "Description: drone, central supply and plant sensors",
+        "3": "Plant funnel and automated watering claims",
+        "4": "Claims and drawing references",
+        "5": "Drawing: supply tank and drone/plant components",
+        "6": "Drawing: plant-side funnel and sensor arrangement"
+      },
+      "provenance_note": "Original German utility-model facsimile hosted by Google Patent Images. Inventor Frank Freitag; filed 12 July 2017. A claimed invention, not a demonstrated field trial or commercial product. Current legal status was not assessed."
+    },
+    {
+      "id": "KGB-SRC-0076",
+      "title": "DJI — AGRAS T50/T25 Unmanned Aircraft Flight Manual, v1.0 (2025-01)",
+      "kind": "pdf",
+      "filename": "DRONE-003 - DJI - Agras T50 and T25 Flight Manual - Version 1.0 - 2025-01.pdf",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/DRONE-003 - DJI - Agras T50 and T25 Flight Manual - Version 1.0 - 2025-01.pdf",
+      "sha256": "b2edf94fa1af54f44f717fa1048f960aeee3ba6432f3bea4c41b9ccacea12688",
+      "pdf_pages": 107,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          76,
+          77
+        ],
+        [
+          79,
+          80
+        ]
+      ],
+      "url": "https://dl.djicdn.com/downloads/t50_t25/20250109/T50_T25_User_Manual_v1.0_EN.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "DJI",
+      "publication_date": "2025-01",
+      "page_labels": {
+        "1": "Manual cover: T50/T25 and edition",
+        "76": "T50: mass, RTK hover accuracy and loaded/unloaded hover time",
+        "77": "T50: 40 L spray tank, payload and atomizing spray system",
+        "79": "T50 hover-time test conditions; T25 aircraft specifications",
+        "80": "T25: 20 L tank, payload and atomizing spray system"
+      },
+      "provenance_note": "Reused unchanged owned DRONE-003 edition; no new library acquisition. PDF positions 76/77/79/80 are printed pages 74/75/77/78. Strong-GNSS RTK hover accuracy is not nozzle capture accuracy. No current aircraft availability, price or operating permission inferred."
+    },
+    {
+      "id": "KGB-SRC-0078",
+      "title": "Martínez de Azagra Paredes et al. — Methods for Watering Seedlings in Arid Zones (2022)",
+      "kind": "pdf",
+      "filename": "IRR-012 - Martinez de Azagra Paredes et al - Methods for Watering Seedlings in Arid Zones - 2022.pdf",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/IRR-012 - Martinez de Azagra Paredes et al - Methods for Watering Seedlings in Arid Zones - 2022.pdf",
+      "sha256": "5da5b79f175a68fb5fa046af396e461b69243e2b03a1eeab29dd11e288d998d4",
+      "pdf_pages": 25,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          15,
+          15
+        ]
+      ],
+      "url": "https://mdpi-res.com/d_attachment/forests/forests-13-00351/article_deploy/forests-13-00351.pdf",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Forests / MDPI",
+      "publication_date": "2022-02-19",
+      "page_labels": {
+        "1": "Review purpose, authors and publication",
+        "3": "Four water-transfer mechanisms and illustrative calculations",
+        "4": "Direct infiltration and pipe arrangements",
+        "5": "Capacity, infiltration, clay pots and Irrigasc",
+        "6": "Irrigasc sleeve diagram and pervious walls",
+        "10": "Wick geometry and water-potential-dependent discharge",
+        "11": "Wick devices and Eco Bag review example",
+        "12": "Waterboxx review description and refill context",
+        "15": "Support versus rescue watering; soil and climate constraints"
+      },
+      "provenance_note": "DOI 10.3390/f13020351. Secondary technical review, not independent validation of every device. Duplicated hidden draft text in extracted pages was checked against rendered published page images; citations use actual PDF positions."
+    },
+    {
+      "id": "KGB-SRC-0077",
+      "title": "DJI — AGRAS T100 specifications (captured 10 November 2026)",
+      "kind": "web",
+      "filename": "DJI-T100-specifications-20261110.html",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/DJI-T100-specifications-20261110.html",
+      "sha256": "786172967c7f8d30862459fb1a0cc5699b9ae3940be6d266a86d16f3ff77d26f",
+      "url": "https://ag.dji.com/t100/specs",
+      "retrieved_on": "2026-11-10",
+      "issuer": "DJI",
+      "publication_date": null,
+      "excerpt": "Reviewed paraphrase: the standard LS100 spraying system lists a 100 L tank and 100 kg operating payload; the LS100-DB dual-battery configuration lists a 100 L tank but 90 kg operating payload. RTK hover accuracy is specified with strong GNSS. Atomizing spraying specifications do not measure reservoir filling.",
+      "provenance_note": "Managed original manufacturer HTML; selected specification sections reviewed, not an independent performance test or a current regional availability check."
+    },
+    {
+      "id": "KGB-SRC-0079",
+      "title": "Lund et al. — Waterboxx mineland reclamation study (2024), partial publisher excerpts",
+      "kind": "web",
+      "filename": "Lund-Waterboxx-primary-publisher-excerpts-20261110.txt",
+      "managed_path": "sources/drone-reservoir-research-20261110-01/Lund-Waterboxx-primary-publisher-excerpts-20261110.txt",
+      "sha256": "e7ea9773dea241c727116ac47d7df03e8d59fa2752c43ef2ffd2ac65fa184e67",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/rec.14165",
+      "retrieved_on": "2026-11-10",
+      "issuer": "Restoration Ecology / Wiley",
+      "publication_date": "2024-05-09",
+      "excerpt": "Reviewed paraphrase: a Bingham Canyon mine experiment compared five woody taxa planted in November 2020 or May 2021, with or without Waterboxx. Effects depended on species and season. All seedlings received 3 L initially; devices additionally held 15 L, so the initial water addition and device effects cannot be separated. Publisher PDF acquisition failed (HTTP 403); this record covers reviewed primary-publisher excerpts only.",
+      "provenance_note": "Primary publisher excerpts available via web reader/search cache; direct HTML/PDF returned HTTP 403. No PDF acquired, no page numbers or whole-article coverage claimed. Supplementary tables/figure originals not inspected. Ignore unrelated R10-primary-reader.txt search output; it is not evidence."
+    }
+  ],
+  "topics": [
+    {
+      "id": "deep-pipe-irrigation",
+      "label": "Deep-pipe root-zone irrigation",
+      "kind": "method",
+      "domain": "technology",
+      "description": "Water is poured into a pipe placed beside a transplant so it enters below the evaporating soil surface. In the Sonoran mesquite experiment an open-ended 5 cm diameter pipe had its base 50 cm deep and a reported volume of 2 L. It is a delivery conduit; its nominal internal volume is not proof of slow release or long-term storage. Soil infiltration and the depth of the roots determine where water goes. Keep this general method separate from LIFE NIEBLAS’s project-specific traditional pipe-watering treatment and from the soil-filled Irrigasc sleeve.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Root-zone methods: infiltration, capacity and Irrigasc",
+          "locator": "3.1 Direct Infiltration; Irrigasc; filling and percolation discussion",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "buried-clay-pot-irrigation",
+      "label": "Buried porous clay-pot irrigation",
+      "kind": "method",
+      "domain": "technology",
+      "description": "A buried unglazed pot retains water and releases it through a porous wall into surrounding soil. The mesquite trial used 2.4 L low-fired pots with the drainage hole sealed and the lip at soil level, covered against evaporation. Pot porosity, contact and soil water status affect delivery; a capacity does not specify a universal plant dose or refill interval. This mechanism differs from a freely draining pipe.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Porous-wall delivery mechanisms",
+          "locator": "3.2 Irrigation through Pervious Walls",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "wick-irrigation",
+      "label": "Wick irrigation",
+      "kind": "method",
+      "domain": "technology",
+      "description": "A wetted cord transfers water from a reservoir to soil. The technical review distinguishes downward, upward and mixed wick paths; discharge depends on wick permeability, cross-section, saturated length, slope and water potential. It is not a fixed rate implied by the word wick. Existing Waterboxx and Cocoon records retain their own product-specific descriptions; this general method adds no demonstrated drone compatibility.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Wick irrigation: geometry and water-dependent discharge",
+          "locator": "3.3 Wick Irrigation; Equation (4); Figure 9",
+          "page": 10
+        }
+      ]
+    },
+    {
+      "id": "irrigasc",
+      "label": "Irrigasc buried sleeve and refill cup",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "Inventor-derived guidance describes a perforated polypropylene sleeve filled with soil, buried next to a seedling, with a rigid upper cup left accessible for watering. The illustrated tree version is about 1 m long, distinct from the 50 cm market-garden version. A historical instruction is 1 L three times per week, not the user’s assumed 0.5 L every couple of days and not a verified species-specific requirement. This compilation and a later technical review support the mechanism; promotional survival, autonomy and biodegradation statements are not imported as independent trial results. The original 2006 Mathieu paper remains unavailable for full-text verification.",
+      "aliases": [
+        "Irrigasc gaine",
+        "semi-conduite verticale"
+      ],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0071",
+          "label": "Irrigasc: sleeve, cup and historical use instructions",
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Root-zone methods: infiltration, capacity and Irrigasc",
+          "locator": "3.1 Direct Infiltration; Irrigasc; filling and percolation discussion",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "porous-ceramic-emitter",
+      "label": "Buried porous ceramic emitter",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "A porous ceramic outlet can connect stored water to surrounding soil. Nodriza uses an outlet tube ending in a ceramic cone buried about 20 cm deep. This component controls a different part of the system from the aerial refill opening: a drone would replenish storage, while the emitter transfers stored water to soil. The reviewed study does not establish an interchangeable standard cone or a universal discharge rate.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "nodriza",
+      "label": "Nodriza seedling reservoir and shelter",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "An integrated opaque polyethylene reservoir, ceramic-cone outlet, rain collection and protective mesh for seedlings. The paper distinguishes 48 L nominal capacity from roughly 35 L practical filling volume. The outlet is buried around 20 cm deep. A reported 30–35 L supply over 56 days (about 0.53 L/day) describes the tested setup, not seedling physiological demand or a recommended event dose. Field comparisons used two-year-old Quercus rotundifolia stock at two Spanish sites in 2012–2014. Survival observations and their statistical limitations belong to those trials; independent effects of reservoir and shelter were not separated.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: shelter effects cannot be separated",
+          "locator": "Discussion; comparison with tree shelters and future factorial experiments",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "ecobag-seedling-reservoir",
+      "label": "Eco Bag seedling reservoir (review example)",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "The 2022 review describes Eco Bag as a 20 L flexible surface reservoir releasing water through felt, in its discussion of wick/felt delivery. Its example reports approximately 1 L/day and three-to-four-week refilling, with the filling cap kept accessible. These are secondary reported device figures, not independently checked flow measurements, a current product specification or a species watering recommendation. It is a comparison lead for reservoir servicing, without verified drone access.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Eco Bag: review-described reservoir and felt",
+          "locator": "3.3 Wick Irrigation; Eco Bag example",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "san-felipe-borrow-pit",
+      "label": "Lower San Felipe Creek borrow-pit trial site",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Abandoned highway borrow pit near lower San Felipe Creek in the Sonoran Desert, Imperial Valley, California, near highways 86 and 78. The mesquite experiment describes exposed arid conditions and fine sandy soil containing clay. The site context belongs to the 1995–1999 trial; it supplies no location or soil assignment for a proposed Spanish planting.",
+      "aliases": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "desert-mesquite-irrigation-study",
+      "label": "Study: Sonoran mesquite irrigation and mulch (1995–1999)",
+      "kind": "study",
+      "domain": "technology",
+      "description": "Bainbridge and colleagues tested establishment of 144 nursery-grown honey mesquite seedlings at an abandoned Sonoran Desert borrow pit. Eight blocks compared deep-pipe, buried-clay-pot and surface irrigation, crossed with bark mulch, vertical stem mulch and bare ground. Two seedlings occupied each plot, and tree shelters protected plants. Planted on 16 November 1995 and assessed on 21 June 1999, deep-pipe plants had 71% survival, clay-pot plants 52%, and surface-watered plants 23%; water inputs were comparable across treatments. Neither mulch treatment significantly improved survival or growth. Irrigation changed over establishment and totalled less than 20 L per plant over 3.5 years. Herbivory affected growth and there was no contemporaneous no-water control. Published in 2001, this is field evidence for delivery method in a specific species, soil and climate, without drone delivery or validation of a half-litre frequent-refill schedule.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ],
+      "place_ids": [
+        "san-felipe-borrow-pit"
+      ],
+      "dates": [
+        {
+          "value": "1995-11-16",
+          "meaning": "experiment"
+        },
+        {
+          "value": "1999-06-21",
+          "meaning": "experiment"
+        },
+        {
+          "value": "2001",
+          "meaning": "publication"
+        }
+      ]
+    },
+    {
+      "id": "honey-mesquite",
+      "label": "Honey mesquite (Prosopis glandulosa source usage)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Prosopis glandulosa, recorded as honey mesquite in the Sonoran irrigation experiment. The paper’s abstract specifies var. torreyana; this record preserves the reported name without a taxonomic synonymy decision. Its measured establishment results are scoped to the protected nursery transplants, site and 1995–1999 watering treatments in that study.",
+      "aliases": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Honey mesquite: source name and trial abstract",
+          "locator": "Abstract; nomenclature",
+          "page": 1
+        }
+      ],
+      "scientific_name": "Prosopis glandulosa",
+      "english_name": "Honey mesquite",
+      "spanish_name": null,
+      "name_note": "Name as reported in the 2001 paper; no external modern synonym inferred."
+    },
+    {
+      "id": "nodriza-field-study",
+      "label": "Study: Nodriza reservoir establishment trials (2012–2014)",
+      "kind": "study",
+      "domain": "technology",
+      "description": "Torres and colleagues report two field experiments evaluating the integrated Nodriza reservoir, ceramic outlet and protective shelter for two-year-old Quercus rotundifolia nursery stock grown in approximately 300 cm³ forest trays. Experiment A at Las Hazas compared Nodriza with controls in 2012–2013; Experiment B near Bailén compared Nodriza, Groasis and controls in 2013–2014. The paper reports improved moisture conditions and several growth responses, but its survival observations require care: Experiment A had complete separation and an uninformative GLM, while Experiment B’s survival difference was not statistically significant. Device and shelter effects cannot be independently attributed. Initial watering and summer refills differed between experiments, so they are not a single transferable dose schedule. Published on 11 September 2026, the study supplies historical component and establishment evidence; long-term durability, lifecycle costs and formal cost-effectiveness remain untested, as does any drone refill interface.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: Experiment B installation and water treatments",
+          "locator": "Materials and methods; Experiment B",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: shelter effects cannot be separated",
+          "locator": "Discussion; comparison with tree shelters and future factorial experiments",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: economic and long-term limits",
+          "locator": "Discussion; cost-effectiveness hypothesis and long-term performance",
+          "page": 12
+        }
+      ],
+      "dates": [
+        {
+          "value": "2012–2014",
+          "meaning": "experiment"
+        },
+        {
+          "value": "2026-09-11",
+          "meaning": "publication"
+        }
+      ]
+    },
+    {
+      "id": "las-hazas-cordoba",
+      "label": "Las Hazas trial site, Villanueva de Córdoba",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Las Hazas farm in Villanueva de Córdoba, Córdoba, Spain: location of the 2012–2013 Nodriza Experiment A. The paper describes grazed holm-oak wood pasture with cattle, Iberian pigs and sheep, requiring additional protective mesh. It reports shallow, slightly acidic Cambisol soils with a sandy-loam upper horizon. These conditions belong to that comparison, rather than to all Mediterranean restoration sites.",
+      "aliases": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: wood pasture and soils",
+          "locator": "Experiment A; vegetation and soil context",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "bailen-trial-site",
+      "label": "Bailén Nodriza trial site, Jaén",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Site near Bailén in Jaén, Spain, used for the February 2013–February 2014 comparison of Nodriza, Groasis and controls. The paper locates it on Triassic conglomerates and red sandstone mixed with red clay, and reports a wet spring before summer monitoring. No property ownership or present-day project status is inferred.",
+      "aliases": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: site, experiment dates and installation",
+          "locator": "Materials and methods; Experiment B",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "nodriza-las-hazas-trial",
+      "label": "Trial A: Nodriza at Las Hazas (2012–2013)",
+      "kind": "trial",
+      "domain": "technology",
+      "description": "Experiment A followed Quercus rotundifolia seedlings at Las Hazas from March 2012 to April 2013, comparing 30 Nodriza plants with 11 controls. Methods describe 35 L initial watering and a July 35 L watering, which must be retained alongside the abstract’s description of non-irrigated controls; the exact control-water treatment needs reconciliation. Observed survival was 86.7% with Nodriza and zero in controls. However, Results explicitly report GLM p = 0.99 and complete separation caused by all controls dying, preventing a reliable statistical inference of treatment differences. Moisture and growth observations remain source-scoped. The integrated shelter/reservoir treatment and unequal sample sizes limit attribution and transfer. This completed historical experiment, published in 2026, does not establish guaranteed survival, a minimum irrigation dose, or the effectiveness of drone servicing.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: July additional watering",
+          "locator": "Experiment A; July 2012 watering",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: shelter effects cannot be separated",
+          "locator": "Discussion; comparison with tree shelters and future factorial experiments",
+          "page": 11
+        }
+      ],
+      "place_ids": [
+        "las-hazas-cordoba"
+      ],
+      "dates": [
+        {
+          "value": "2012–2013",
+          "meaning": "trial"
+        }
+      ]
+    },
+    {
+      "id": "nodriza-bailen-trial",
+      "label": "Trial B: Nodriza and Groasis at Bailén (2013–2014)",
+      "kind": "trial",
+      "domain": "technology",
+      "description": "Experiment B ran from February 2013 to February 2014 near Bailén with 15 Nodriza plants, 15 Groasis plants and 10 controls, using two-year-old Quercus rotundifolia stock. Devices were filled at installation and controls received 30 L; the wet spring supplied 289.8 mm rainfall and no additional dry-season refilling was performed. The observed survival proportions were 100%, 87% and 70% respectively, but the reported survival GLM found no significant difference (p = 0.608). Moisture and some growth responses differed, without independently isolating the reservoir from protective shelter effects. This historical field comparison, published in 2026, therefore informs context-dependent establishment performance and servicing questions. It does not prove a statistically reliable survival advantage, validate a universal summer refill interval, or test aerial water transfer.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: treatments, initial watering and wet spring",
+          "locator": "Materials and methods; Experiment B",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: shelter effects cannot be separated",
+          "locator": "Discussion; comparison with tree shelters and future factorial experiments",
+          "page": 11
+        }
+      ],
+      "place_ids": [
+        "bailen-trial-site"
+      ],
+      "dates": [
+        {
+          "value": "2013–2014",
+          "meaning": "trial"
+        }
+      ]
+    },
+    {
+      "id": "mavic-2-pro-water-prototype",
+      "label": "Mavic 2 Pro water-payload prototype",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "The UAE preliminary study used a DJI Mavic 2 Pro with a removable approximately 400 g dry pump/reservoir/control assembly and test water loads of 250, 500 and 750 mL. A ground probe and wireless control switched the pump against an uncalibrated relative moisture index. These reported experimental loads are not a manufacturer payload rating or an approved configuration; the paper itself calls for a rated airframe and mass/load assessment before routine use.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: basil pots, aircraft and test setting",
+          "locator": "Materials and Methods; prototype and test environment",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: weighed airborne components",
+          "locator": "Table 1; dry payload",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "basil-ocimum-basilicum",
+      "label": "Basil (Ocimum basilicum)",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Ocimum basilicum was the potted plant used in the school-courtyard drone watering prototype. The experiment tested pump/control feasibility and short flights, without a survival, growth or water-saving comparison. Its sensor thresholds are not a basil irrigation prescription.",
+      "aliases": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: basil pots, aircraft and test setting",
+          "locator": "Materials and Methods; prototype and test environment",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: measured and unmeasured metrics",
+          "locator": "Table 2; measured vs unmeasured outcomes",
+          "page": 6
+        }
+      ],
+      "scientific_name": "Ocimum basilicum",
+      "english_name": "Basil",
+      "spanish_name": null
+    },
+    {
+      "id": "dubai-drone-watering-prototype-study",
+      "label": "Study: Dubai individual-plant drone watering prototype (2026)",
+      "kind": "study",
+      "domain": "technology",
+      "description": "Antony Sheshenya’s Dubai American Academy study built a removable pump and tank for a Mavic 2 Pro and a wireless soil-probe link, tested around six potted basil plants in a covered courtyard. Eight bench runs measured pump flow, followed by ground tests, nine loaded flights and six integrated sensor-controlled flights. The aircraft was manually piloted; the pump used an uncalibrated relative moisture index with hysteresis. Integrated-flight water quantities were estimated from bench flow multiplied by pump-on time, not collected at the plant. The study demonstrates preliminary payload/control feasibility but did not measure targeting accuracy, root-zone capture fraction, routine safe payload, useful endurance or plant benefit. It calls for a rated airframe and further testing. Publisher HTML is dated 3 November 2026, while the PDF lists electronic access on 15 November 2026; that unresolved date discrepancy is preserved. No autonomous flight or reservoir-filling result is established.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: basil pots, aircraft and test setting",
+          "locator": "Materials and Methods; prototype and test environment",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: measured and unmeasured metrics",
+          "locator": "Table 2; measured vs unmeasured outcomes",
+          "page": 6
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: author, abstract and electronic-access date",
+          "locator": "Title page; electronic access date",
+          "page": 1
+        }
+      ],
+      "aspects": {
+        "evidence_maturity": "preliminary small-scale prototype; manually piloted",
+        "publication_date_discrepancy": "HTML 2026-11-03; PDF electronic access 2026-11-15; retrieved 2026-11-10"
+      }
+    },
+    {
+      "id": "plant-refill-funnel",
+      "label": "Plant-side watering funnel (2017 invention)",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "The 2017 indoor utility model describes an elongated funnel inserted near a plant, with a moisture sensor and a shape intended to make aerial filling easier. Water entering this plant-side funnel proceeds into the soil. It must not be confused with the central supply reservoir that replenishes the drone’s onboard tank. The document does not demonstrate a buried storage reservoir, controlled slow release, outdoor accuracy or a working commercial system.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: central supply and plant arrangement",
+          "locator": "Zeichnung; Bezugszeichen 2, 5 und 9",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "freitag-indoor-drone-watering-concept",
+      "label": "Proposed indoor drone watering system (Freitag, 2017)",
+      "kind": "method",
+      "domain": "technology",
+      "description": "German utility model DE202017003667U1, filed by Frank Freitag on 12 July 2017 and published on 5 October 2017, describes a proposed automated indoor plant-watering system. Plant sensors communicate watering demand, a drone carries small water quantities, and plant-side funnels provide a target. A central supply reservoir replenishes the aircraft, while each plant funnel directs water into soil. The description contemplates learning positions and networked control; it is a disclosure and set of claims rather than experimental validation. No outdoor nursery-establishment trial, buried slow-release reservoir, measured capture accuracy, endurance, economics or present product availability is established by this document. It provides prior technical precedent for aerial replenishment and target geometry, while leaving the user’s integrated planted-reservoir proposal untested. Current legal status and freedom to operate were not assessed.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: title, inventor, filing and publication",
+          "locator": "Deckblatt; bibliografische Daten",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: central supply and plant arrangement",
+          "locator": "Zeichnung; Bezugszeichen 2, 5 und 9",
+          "page": 5
+        }
+      ],
+      "aspects": {
+        "evidence_maturity": "proposed invention; no performance trial in reviewed publication"
+      }
+    },
+    {
+      "id": "agras-t50",
+      "label": "DJI AGRAS T50",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "The January 2025 v1.0 flight manual specifies a 40 L spraying tank, 40 kg operating spray payload and 92 kg maximum takeoff mass for spraying at sea level, including the 52 kg aircraft/battery mass. Reference hover time is 16.5 minutes unloaded and 7 minutes fully loaded, tested at sea level, wind below 3 m/s and 25°C. Strong-GNSS D-RTK hover accuracy is ±10 cm horizontally and vertically. These are manufacturer conditions, not delivered-water accuracy or route productivity. The standard atomizers spray a swath; precise filling would require an independently designed and validated interface.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: 40 L tank and atomizing spray system",
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "page": 77
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: hover accuracy, masses and hover time",
+          "locator": "Specifications, T50, Aircraft, printed p. 74",
+          "page": 76
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: reference hover-test conditions",
+          "locator": "Specifications, T50 footnotes [1]–[4], printed p. 77",
+          "page": 79
+        }
+      ]
+    },
+    {
+      "id": "agras-t25",
+      "label": "DJI AGRAS T25",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "The January 2025 v1.0 manual specifies a 20 L spraying tank and 20 kg operating spray payload for T25. Aircraft mass including battery is 32 kg and sea-level maximum takeoff mass for spraying is 52 kg. Strong-GNSS D-RTK hover accuracy is ±10 cm horizontally and vertically. Its atomizing spray system is not a demonstrated funnel-filling attachment; no current price, regional availability or operational permission is implied.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T25: 20 L spray tank and 20 kg payload",
+          "locator": "Specifications, T25, Dual Atomizing Spraying System, printed p. 78",
+          "page": 80
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T25: aircraft mass and RTK hover accuracy",
+          "locator": "Specifications, T25, Aircraft, printed p. 77",
+          "page": 79
+        }
+      ]
+    },
+    {
+      "id": "agras-t100",
+      "label": "DJI AGRAS T100",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "Manufacturer specifications captured on 10 November 2026 distinguish configurations: the standard LS100 spraying system lists a 100 L tank and 100 kg operating payload; LS100-DB dual battery retains a 100 L tank but lists 90 kg operating payload. Tank geometry must not be read as the permitted carried water mass in every configuration. The system is designed for atomizing spraying, not a validated reservoir-filling connection. RTK hover accuracy under strong GNSS does not establish nozzle-to-opening capture. This is a specification record, without a regional availability, purchase or operating-authorisation assessment.",
+      "aliases": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0077",
+          "label": "T100: LS100 and dual-battery payload limits",
+          "locator": "Specifications > Spraying system LS100; Spraying system LS100-DB"
+        },
+        {
+          "source_id": "KGB-SRC-0077",
+          "label": "T100: hover accuracy under strong GNSS",
+          "locator": "Specifications > Aircraft > Hovering Accuracy Range"
+        }
+      ]
+    },
+    {
+      "id": "drone-refilled-seedling-reservoir",
+      "label": "Proposed drone-refilled seedling reservoir",
+      "kind": "method",
+      "domain": "technology",
+      "description": "User proposal from the 10 November 2026 chat: plant nursery stock together with a tube or local reservoir, then have a drone visit and refill it. The suggested 0.5 L every couple of days is an assumed design scenario; species, soil, climate, stock size and exact interval are unspecified. Reviewed sources establish separate components: buried pipe/sleeve delivery, passive reservoirs, small manually piloted water-payload tests, an indoor funnel invention, and larger agricultural spray aircraft. Their combination has not been validated in the reviewed evidence. A fill opening, transferred-volume measurement, overflow/loss control and a suitable soil outlet must work together. As a capacity-only calculation, 40 L divided by an assumed 0.5 L gives 80 fills before reserves, losses, travel and time constraints; it is not measured plants per flight or per hour. Component citations support this curated concept, not the assumed dose or an empirical system outcome.",
+      "aliases": [
+        "drone tube refill",
+        "aerial reservoir replenishment",
+        "0.5 litre drone watering concept"
+      ],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0071",
+          "label": "Irrigasc: sleeve, cup and historical use instructions",
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: 40 L tank and atomizing spray system",
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "page": 77
+        }
+      ],
+      "aspects": {
+        "origin": "user proposal in this chat, 2026-11-10",
+        "status": "untested curated integration",
+        "assumed_refill_L": 0.5,
+        "assumed_interval": "every couple of days; exact interval not specified",
+        "missing_context": [
+          "species",
+          "site and climate",
+          "soil and rooting depth",
+          "stock size",
+          "reservoir release mechanism",
+          "flight route and operating conditions"
+        ],
+        "calculation": {
+          "formula": "40 L / (0.5 L/fill) = 80 fills",
+          "inputs": "T50 nominal tank; user-assumed fill volume",
+          "qualification": "capacity-only upper bound before all operational deductions; not measured throughput"
+        },
+        "not_adoptable_irrigation_evidence": true
+      }
+    },
+    {
+      "id": "bingham-canyon-mine-site",
+      "label": "Bingham Canyon mine reclamation site, Utah",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Semiarid mine-overburden reclamation site at Bingham Canyon Mine, Utah, used in the 2020–2022 Waterboxx experiment. Soil and seasonal conditions belong to the study; the article is not evidence of suitability for a particular Spanish restoration site.",
+      "aliases": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        }
+      ]
+    },
+    {
+      "id": "bingham-waterboxx-study",
+      "label": "Study: Bingham Canyon Waterboxx establishment (2020–2022)",
+      "kind": "study",
+      "domain": "technology",
+      "description": "Lund and colleagues compared Waterboxx with controls for five woody taxa on semiarid mine overburden in Utah. Ten split blocks contained 400 seedlings in pairs, planted in November 2020 or May 2021 and followed through June 2022. Responses depended on species and season: spring Cercocarpus survival was 30% in controls versus 65% with devices; autumn Pinus edulis was 35% versus 75%. Atriplex survival was high without a detectable device benefit. All seedlings received 3 L initially and each device additionally received 15 L, so device effects and added initial water cannot be separated. Published in 2024, this historical field study is represented from partial primary-publisher excerpts; direct PDF acquisition and supplementary material remain unavailable. It tested establishment, not drone servicing.",
+      "aliases": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: initial-water confounding",
+          "locator": "Discussion > additional 15 L and lack of an independent initial-water treatment"
+        }
+      ],
+      "place_ids": [
+        "bingham-canyon-mine-site"
+      ],
+      "dates": [
+        {
+          "value": "2020–2022",
+          "meaning": "experiment"
+        },
+        {
+          "value": "2024-05-09",
+          "meaning": "publication"
+        }
+      ]
+    },
+    {
+      "id": "cercocarpus-ledifolius",
+      "label": "Cercocarpus ledifolius",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Taxon recorded in the five-species Utah Waterboxx establishment comparison. Trial results remain attached to that study and its planting-season treatments; no wider ecological suitability or watering prescription is inferred.",
+      "aliases": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        }
+      ],
+      "scientific_name": "Cercocarpus ledifolius",
+      "english_name": null,
+      "spanish_name": null,
+      "name_note": "Scientific name as used by the research article; common names and synonymy not independently checked."
+    },
+    {
+      "id": "rhus-glabra",
+      "label": "Rhus glabra",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Taxon recorded in the five-species Utah Waterboxx establishment comparison. Trial results remain attached to that study and its planting-season treatments; no wider ecological suitability or watering prescription is inferred.",
+      "aliases": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        }
+      ],
+      "scientific_name": "Rhus glabra",
+      "english_name": null,
+      "spanish_name": null,
+      "name_note": "Scientific name as used by the research article; common names and synonymy not independently checked."
+    },
+    {
+      "id": "pinus-edulis",
+      "label": "Pinus edulis",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Taxon recorded in the five-species Utah Waterboxx establishment comparison. Trial results remain attached to that study and its planting-season treatments; no wider ecological suitability or watering prescription is inferred.",
+      "aliases": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        }
+      ],
+      "scientific_name": "Pinus edulis",
+      "english_name": null,
+      "spanish_name": null,
+      "name_note": "Scientific name as used by the research article; common names and synonymy not independently checked."
+    },
+    {
+      "id": "atriplex-canescens",
+      "label": "Atriplex canescens",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Taxon recorded in the five-species Utah Waterboxx establishment comparison. Trial results remain attached to that study and its planting-season treatments; no wider ecological suitability or watering prescription is inferred.",
+      "aliases": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        }
+      ],
+      "scientific_name": "Atriplex canescens",
+      "english_name": null,
+      "spanish_name": null,
+      "name_note": "Scientific name as used by the research article; common names and synonymy not independently checked."
+    },
+    {
+      "id": "purshia-tridentata",
+      "label": "Purshia tridentata",
+      "kind": "species",
+      "domain": "ecosystem",
+      "description": "Taxon recorded in the five-species Utah Waterboxx establishment comparison. Trial results remain attached to that study and its planting-season treatments; no wider ecological suitability or watering prescription is inferred.",
+      "aliases": [],
+      "group_id": "species",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        }
+      ],
+      "scientific_name": "Purshia tridentata",
+      "english_name": null,
+      "spanish_name": null,
+      "name_note": "Scientific name as used by the research article; common names and synonymy not independently checked."
+    },
+    {
+      "id": "drones",
+      "label": "Drones",
+      "kind": "equipment",
+      "domain": "technology",
+      "description": "Aircraft described for restoration imagery or a separate citrus water-spraying experiment; these uses have different evidence and purposes. New checked research adds agricultural water-carrying spray aircraft, a small manually piloted individual-plant water prototype and an indoor funnel-watering invention. These are different evidence classes; no reviewed source validates the complete proposed outdoor drone-to-buried-reservoir system.",
+      "aliases": [
+        "drone",
+        "UAV",
+        "dron",
+        "watering drones",
+        "drones de riego"
+      ],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "IRR-003",
+          "page": 84,
+          "locator": "Remote sensing",
+          "label": "Remote sensing"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 1,
+          "locator": "Introduction",
+          "label": "Introduction"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: 40 L tank and atomizing spray system",
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "page": 77
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "reservoir-refill-interface",
+      "label": "Small-reservoir refill access",
+      "kind": "aspect",
+      "domain": "technology",
+      "description": "Refill access is the opening and servicing arrangement used to add water to a local planting reservoir. The reviewed Groasis sheets describe a siphon in Growboxx and a capped cover opening in Waterboxx. These features establish that additional filling is contemplated, but give no tested autonomous aircraft connection, opening diameter, docking tolerance, automatic cap handling or spill-control protocol. An aerial refill concept therefore needs an independently demonstrated transfer interface and a site/plant-specific refill requirement. Existing citrus-drone evidence concerns canopy spray deposition and cannot validate reservoir filling. Capacity, refill volume, daily release and litres per plant per event must remain distinct. Further research describes an accessible Irrigasc cup and a proposed indoor filling funnel, but still supplies no measured autonomous capture performance for these outdoor reservoirs. Manufacturer RTK hover accuracy concerns aircraft position; it does not measure the volume accepted by an opening. Separate filling from release through a wick, porous wall or soil conduit.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "irrigation",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "locator": "Refill row",
+          "label": "Growboxx: siphon permits quick refill"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "locator": "Refill row",
+          "label": "Waterboxx: capped opening permits refill"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "locator": "Evaluation of watering results with water-sensitive paper",
+          "label": "Citrus drone: spray-deposition evaluation"
+        },
+        {
+          "source_id": "KGB-SRC-0071",
+          "label": "Irrigasc: sleeve, cup and historical use instructions",
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: hover accuracy, masses and hover time",
+          "locator": "Specifications, T50, Aircraft, printed p. 74",
+          "page": 76
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "drr26-mesquite-site",
+      "source": "desert-mesquite-irrigation-study",
+      "target": "san-felipe-borrow-pit",
+      "label": "took place at",
+      "explanation": "The experimental site is identified in Study Site.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        }
+      ]
+    },
+    {
+      "id": "drr26-mesquite-honey-mesquite",
+      "source": "desert-mesquite-irrigation-study",
+      "target": "honey-mesquite",
+      "label": "tested with",
+      "explanation": "This relation describes the protected mesquite experiment, not transfer to other species or sites.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "drr26-mesquite-deep-pipe-irrigation",
+      "source": "desert-mesquite-irrigation-study",
+      "target": "deep-pipe-irrigation",
+      "label": "tested with",
+      "explanation": "This relation describes the protected mesquite experiment, not transfer to other species or sites.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "drr26-mesquite-buried-clay-pot-irrigation",
+      "source": "desert-mesquite-irrigation-study",
+      "target": "buried-clay-pot-irrigation",
+      "label": "tested with",
+      "explanation": "This relation describes the protected mesquite experiment, not transfer to other species or sites.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "drr26-mesquite-tree-shelters",
+      "source": "desert-mesquite-irrigation-study",
+      "target": "tree-shelters",
+      "label": "used protection",
+      "explanation": "This relation describes the protected mesquite experiment, not transfer to other species or sites.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "drr26-irrigasc-compare",
+      "source": "irrigasc",
+      "target": "deep-pipe-irrigation",
+      "label": "compare root-zone delivery",
+      "explanation": "Curated comparison: both direct water below the surface, but Irrigasc is soil-filled and perforated while the trial pipe was open-ended. Their storage and flow behaviour are not assumed equivalent.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0071",
+          "label": "Irrigasc: sleeve, cup and historical use instructions",
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Root-zone methods: infiltration, capacity and Irrigasc",
+          "locator": "3.1 Direct Infiltration; Irrigasc; filling and percolation discussion",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "drr26-pot-emitter",
+      "source": "buried-clay-pot-irrigation",
+      "target": "porous-ceramic-emitter",
+      "label": "compare porous-wall release",
+      "explanation": "Curated mechanism comparison; a porous clay wall and a ceramic cone have related transfer principles but are different constructions.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Porous walls: water-transfer mechanism",
+          "locator": "3.2 Irrigation through Pervious Walls",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-emitter",
+      "source": "nodriza",
+      "target": "porous-ceramic-emitter",
+      "label": "releases through",
+      "explanation": "The device outlet terminates in a buried ceramic cone.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-shelter",
+      "source": "nodriza",
+      "target": "tree-shelters",
+      "label": "integrates protection",
+      "explanation": "The integrated mesh/protection is part of the tested device and cannot be analytically separated from the water treatment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: shelter effects cannot be separated",
+          "locator": "Discussion; comparison with tree shelters and future factorial experiments",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-las-hazas-trial",
+      "source": "nodriza-field-study",
+      "target": "nodriza-las-hazas-trial",
+      "label": "includes experiment",
+      "explanation": "Two named experiments have different sites, treatments and watering histories.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-las-hazas-trial-site",
+      "source": "nodriza-las-hazas-trial",
+      "target": "las-hazas-cordoba",
+      "label": "took place at",
+      "explanation": "Keep experimental place and treatment context together.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-las-hazas-trial-nodriza",
+      "source": "nodriza-las-hazas-trial",
+      "target": "nodriza",
+      "label": "tested",
+      "explanation": "Integrated reservoir and shelter treatment; no aerial replenishment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-las-hazas-trial-species",
+      "source": "nodriza-las-hazas-trial",
+      "target": "holm-oak-rotundifolia",
+      "label": "tested seedlings of",
+      "explanation": "The reported stock is Quercus rotundifolia, kept separate from Q. ilex.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-bailen-trial",
+      "source": "nodriza-field-study",
+      "target": "nodriza-bailen-trial",
+      "label": "includes experiment",
+      "explanation": "Two named experiments have different sites, treatments and watering histories.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Experiment B: site and treatments",
+          "locator": "Materials and methods; Experiment B",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-bailen-trial-site",
+      "source": "nodriza-bailen-trial",
+      "target": "bailen-trial-site",
+      "label": "took place at",
+      "explanation": "Keep experimental place and treatment context together.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Experiment B: site and treatments",
+          "locator": "Materials and methods; Experiment B",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-bailen-trial-nodriza",
+      "source": "nodriza-bailen-trial",
+      "target": "nodriza",
+      "label": "tested",
+      "explanation": "Integrated reservoir and shelter treatment; no aerial replenishment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Experiment B: site and treatments",
+          "locator": "Materials and methods; Experiment B",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-bailen-trial-species",
+      "source": "nodriza-bailen-trial",
+      "target": "holm-oak-rotundifolia",
+      "label": "tested seedlings of",
+      "explanation": "The reported stock is Quercus rotundifolia, kept separate from Q. ilex.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Experiment B: site and treatments",
+          "locator": "Materials and methods; Experiment B",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "drr26-bailen-waterboxx",
+      "source": "nodriza-bailen-trial",
+      "target": "waterboxx",
+      "label": "compared Groasis reservoir",
+      "explanation": "Curated product reconciliation: the article identifies a Groasis waterbox comparison, linked to the canonical Waterboxx concept without asserting the supplier-sheet edition is the precise tested configuration.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: Groasis comparison device",
+          "locator": "Experiment B methods",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "drr26-ecobag-wick",
+      "source": "ecobag-seedling-reservoir",
+      "target": "wick-irrigation",
+      "label": "uses related felt transfer",
+      "explanation": "The review groups Eco Bag felt delivery with wick-based systems; it does not establish an identical cord construction. This is secondary evidence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Eco Bag: felt reservoir in wick section",
+          "locator": "3.3 Wick Irrigation; Eco Bag example",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "drr26-waterboxx-wick",
+      "source": "waterboxx",
+      "target": "wick-irrigation",
+      "label": "uses wick release",
+      "explanation": "The review and existing product sheet describe wick delivery; no fixed cross-product flow is implied.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Waterboxx: reviewed wick delivery",
+          "locator": "Waterboxx discussion",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: nylon wick specification",
+          "locator": "Specification table"
+        }
+      ]
+    },
+    {
+      "id": "drr26-prototype-aircraft",
+      "source": "dubai-drone-watering-prototype-study",
+      "target": "mavic-2-pro-water-prototype",
+      "label": "tested assembly",
+      "explanation": "The equipment is the study-specific experimental assembly.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: basil pots, aircraft and test setting",
+          "locator": "Materials and Methods; prototype and test environment",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "drr26-prototype-basil",
+      "source": "dubai-drone-watering-prototype-study",
+      "target": "basil-ocimum-basilicum",
+      "label": "used potted plants of",
+      "explanation": "Six potted basil plants supplied the courtyard test setting, without plant-benefit evaluation.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: basil pots, aircraft and test setting",
+          "locator": "Materials and Methods; prototype and test environment",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "drr26-prototype-monitoring",
+      "source": "dubai-drone-watering-prototype-study",
+      "target": "soil-moisture-monitoring",
+      "label": "used ground-probe feedback",
+      "explanation": "Relative sensor index controlled the pump; it was not calibrated volumetric soil moisture.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: measured and unmeasured metrics",
+          "locator": "Table 2; measured vs unmeasured outcomes",
+          "page": 6
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "drr26-indoor-funnel",
+      "source": "freitag-indoor-drone-watering-concept",
+      "target": "plant-refill-funnel",
+      "label": "proposes filling target",
+      "explanation": "The plant-side funnel is separate from the central aircraft-refilling station.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: central supply and plant arrangement",
+          "locator": "Zeichnung; Bezugszeichen 2, 5 und 9",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "drr26-agras-t50-drones",
+      "source": "drones",
+      "target": "agras-t50",
+      "label": "includes documented aircraft",
+      "explanation": "Manufacturer specifications establish water-carrying spray aircraft, without validating the user’s refill attachment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: hover accuracy, masses and hover time",
+          "locator": "Specifications, T50, Aircraft, printed p. 74",
+          "page": 76
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: 40 L tank and atomizing spray system",
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "page": 77
+        }
+      ]
+    },
+    {
+      "id": "drr26-agras-t25-drones",
+      "source": "drones",
+      "target": "agras-t25",
+      "label": "includes documented aircraft",
+      "explanation": "Manufacturer specifications establish water-carrying spray aircraft, without validating the user’s refill attachment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T25: 20 L spray tank and 20 kg payload",
+          "locator": "Specifications, T25, Dual Atomizing Spraying System, printed p. 78",
+          "page": 80
+        }
+      ]
+    },
+    {
+      "id": "drr26-agras-t100-drones",
+      "source": "drones",
+      "target": "agras-t100",
+      "label": "includes documented aircraft",
+      "explanation": "Manufacturer specifications establish water-carrying spray aircraft, without validating the user’s refill attachment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0077",
+          "label": "T100: LS100 and dual-battery payload limits",
+          "locator": "Specifications > Spraying system LS100; Spraying system LS100-DB"
+        }
+      ]
+    },
+    {
+      "id": "drr26-t50-rtk",
+      "source": "agras-t50",
+      "target": "rtk-gnss",
+      "label": "specifies RTK hover accuracy",
+      "explanation": "Strong-GNSS hovering accuracy is an aircraft positioning specification, not fluid capture accuracy.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: hover accuracy, masses and hover time",
+          "locator": "Specifications, T50, Aircraft, printed p. 74",
+          "page": 76
+        }
+      ]
+    },
+    {
+      "id": "drr26-concept-refill",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "reservoir-refill-interface",
+      "label": "requires water-transfer interface",
+      "explanation": "Curated engineering requirement: the proposed visit must transfer a measured fill into the reservoir; source components do not test the assembled system.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0071",
+          "label": "Irrigasc: sleeve, cup and historical use instructions",
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "drr26-concept-irrigasc",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "irrigasc",
+      "label": "compare component evidence",
+      "explanation": "An accessible cup and buried sleeve are a plant-side comparison, without a tested aircraft coupling.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0071",
+          "label": "Irrigasc: sleeve, cup and historical use instructions",
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "drr26-concept-deep-pipe-irrigation",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "deep-pipe-irrigation",
+      "label": "compare component evidence",
+      "explanation": "A buried pipe is an alternative below-surface delivery mechanism; drainage and target capacity still need testing.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "drr26-concept-nodriza",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "nodriza",
+      "label": "compare component evidence",
+      "explanation": "A larger passive reservoir is a servicing comparison, with different capacity, protection and fill frequency.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: economic and long-term limits",
+          "locator": "Discussion; cost-effectiveness hypothesis and long-term performance",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "id": "drr26-concept-freitag-indoor-drone-watering-concept",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "freitag-indoor-drone-watering-concept",
+      "label": "compare component evidence",
+      "explanation": "Indoor aerial funnel watering supplies an invention precedent, not outdoor establishment validation.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: central supply and plant arrangement",
+          "locator": "Zeichnung; Bezugszeichen 2, 5 und 9",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "drr26-concept-dubai-drone-watering-prototype-study",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "dubai-drone-watering-prototype-study",
+      "label": "compare component evidence",
+      "explanation": "The manually piloted water-payload test supports limited component feasibility, leaving targeting and reservoir filling unmeasured.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "drr26-concept-agras-t50",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "agras-t50",
+      "label": "compare component evidence",
+      "explanation": "A 40 L spray tank supplies a documented capacity input for an explicitly assumed 0.5 L calculation; no productivity claim follows.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: 40 L tank and atomizing spray system",
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "page": 77
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: reference hover-test conditions",
+          "locator": "Specifications, T50 footnotes [1]–[4], printed p. 77",
+          "page": 79
+        }
+      ]
+    },
+    {
+      "id": "drr26-concept-establishment-water",
+      "source": "drone-refilled-seedling-reservoir",
+      "target": "establishment-water",
+      "label": "compare component evidence",
+      "explanation": "The plant-side purpose is transplant establishment; water need remains species-, site- and phase-specific.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "drr26-refill-root-outlet",
+      "source": "reservoir-refill-interface",
+      "target": "porous-ceramic-emitter",
+      "label": "separate filling from soil release",
+      "explanation": "Curated system decomposition: accepting water at the top and releasing water near roots are different functions; emitter trials cannot establish aerial filling success.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "drr26-refill-rtk",
+      "source": "reservoir-refill-interface",
+      "target": "rtk-gnss",
+      "label": "positioning does not measure capture",
+      "explanation": "Curated comparison: aircraft hover specification and measured volume entering a small opening are different quantities. Wind, jet trajectory and opening geometry remain untested.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: hover accuracy, masses and hover time",
+          "locator": "Specifications, T50, Aircraft, printed p. 74",
+          "page": 76
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        }
+      ]
+    },
+    {
+      "id": "drr26-waterboxx-study",
+      "source": "bingham-waterboxx-study",
+      "target": "waterboxx",
+      "label": "tested device",
+      "explanation": "Historical field comparison of device-plus-initial-water treatment; supplier-sheet edition is not asserted.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: initial-water confounding",
+          "locator": "Discussion > additional 15 L and lack of an independent initial-water treatment"
+        }
+      ]
+    },
+    {
+      "id": "drr26-waterboxx-site",
+      "source": "bingham-waterboxx-study",
+      "target": "bingham-canyon-mine-site",
+      "label": "took place at",
+      "explanation": "The site is identified by the study methods.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        }
+      ]
+    },
+    {
+      "id": "drr26-bingham-cercocarpus-ledifolius",
+      "source": "bingham-waterboxx-study",
+      "target": "cercocarpus-ledifolius",
+      "label": "tested taxon",
+      "explanation": "Species identity is recorded in the five-taxon trial, with effects scoped by planting season.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        }
+      ]
+    },
+    {
+      "id": "drr26-bingham-rhus-glabra",
+      "source": "bingham-waterboxx-study",
+      "target": "rhus-glabra",
+      "label": "tested taxon",
+      "explanation": "Species identity is recorded in the five-taxon trial, with effects scoped by planting season.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        }
+      ]
+    },
+    {
+      "id": "drr26-bingham-pinus-edulis",
+      "source": "bingham-waterboxx-study",
+      "target": "pinus-edulis",
+      "label": "tested taxon",
+      "explanation": "Species identity is recorded in the five-taxon trial, with effects scoped by planting season.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        }
+      ]
+    },
+    {
+      "id": "drr26-bingham-atriplex-canescens",
+      "source": "bingham-waterboxx-study",
+      "target": "atriplex-canescens",
+      "label": "tested taxon",
+      "explanation": "Species identity is recorded in the five-taxon trial, with effects scoped by planting season.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        }
+      ]
+    },
+    {
+      "id": "drr26-bingham-purshia-tridentata",
+      "source": "bingham-waterboxx-study",
+      "target": "purshia-tridentata",
+      "label": "tested taxon",
+      "explanation": "Species identity is recorded in the five-taxon trial, with effects scoped by planting season.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        }
+      ]
+    },
+    {
+      "id": "drr26-trial-restoration",
+      "source": "desert-mesquite-irrigation-study",
+      "target": "restoration",
+      "label": "studied transplant establishment",
+      "explanation": "The degraded-site trial is a restoration example, not a universal recommendation for its species elsewhere.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "drr26-reservoir-monitoring",
+      "source": "nodriza-field-study",
+      "target": "soil-moisture-monitoring",
+      "label": "measured soil moisture",
+      "explanation": "Moisture responses and survival responses are distinct outcomes.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: soil-moisture analysis",
+          "locator": "Results; soil moisture",
+          "page": 5
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "drr26-mesquite-survival",
+      "label": "Deep-pipe survival advantage in the mesquite trial",
+      "text": "At the final 3.5-year assessment, survival was 71% with deep pipes, 52% with clay pots and 23% with surface watering (reported irrigation-treatment survival P = 0.001). Mean heights were 55, 32 and 30 cm respectively. These are protected Prosopis transplants at one Sonoran site with comparable water inputs, not evidence for a universal pipe capacity or refill dose.",
+      "topic_ids": [
+        "desert-mesquite-irrigation-study",
+        "honey-mesquite",
+        "deep-pipe-irrigation",
+        "buried-clay-pot-irrigation"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ],
+      "conditions": [
+        "One site and species",
+        "Tree shelters used",
+        "No contemporaneous no-water control"
+      ]
+    },
+    {
+      "id": "drr26-mesquite-schedule",
+      "label": "Trial water totals do not imply a frequent half-litre dose",
+      "text": "The mesquite trial began with 1 L per plant every two weeks for eight weeks directly through shelters, followed by 1.2 L per plant per watering at changing intervals and later small plot-level applications. Total supply was below 20 L per plant over 3.5 years. A cumulative total, plot volume and plant event dose have different denominators; none verifies the user’s proposed 0.5 L every couple of days.",
+      "topic_ids": [
+        "desert-mesquite-irrigation-study",
+        "drone-refilled-seedling-reservoir"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "drr26-mulch-null",
+      "label": "Mulch did not improve mesquite establishment in this trial",
+      "text": "Neither surface bark mulch nor vertical stem mulch significantly improved survival or growth, and the reported irrigation-by-mulch interaction was not significant. This negative result belongs to the exposed Sonoran trial; it is not a general rejection of mulch for all soils and climates.",
+      "topic_ids": [
+        "desert-mesquite-irrigation-study"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "drr26-clay-pot-spacing",
+      "label": "Clay-pot comparison includes a placement limitation",
+      "text": "The authors suggest the clay-pot response may have been reduced because inexperienced crews planted seedlings 10 cm from the pots, too far to obtain the full benefit. The deep-pipe versus clay-pot ranking therefore includes installation context; it does not prove every clay-pot design is intrinsically less effective.",
+      "topic_ids": [
+        "desert-mesquite-irrigation-study",
+        "buried-clay-pot-irrigation"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ]
+    },
+    {
+      "id": "drr26-irrigasc-guidance",
+      "label": "Irrigasc has historical instructions, not a verified universal dose",
+      "text": "The inventor-derived sheet instructs 1 L three times per week for its illustrated use. It is guidance rather than a controlled comparison, and neither this sheet nor the reviewed abstract of Mathieu establishes the proposed half-litre schedule for unspecified nursery stock. Supplier claims of rapid autonomy or biodegradation require independent context.",
+      "topic_ids": [
+        "irrigasc",
+        "drone-refilled-seedling-reservoir"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0071",
+          "label": "Irrigasc: sleeve, cup and historical use instructions",
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Root-zone methods: infiltration, capacity and Irrigasc",
+          "locator": "3.1 Direct Infiltration; Irrigasc; filling and percolation discussion",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-statistics",
+      "label": "Nodriza survival observations require statistical qualifications",
+      "text": "Las Hazas observed 86.7% survival with Nodriza versus zero controls, but Results report complete separation and GLM p = 0.99, preventing a reliable inference of differences from that model. Bailén observed 100%, 87% and 70% for Nodriza, Groasis and controls, with p = 0.608. Do not present these descriptive proportions as statistically established survival advantages or a survival guarantee.",
+      "topic_ids": [
+        "nodriza-field-study",
+        "nodriza-las-hazas-trial",
+        "nodriza-bailen-trial"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-attribution",
+      "label": "Reservoir, protection and costs remain partly confounded",
+      "text": "The Nodriza authors call for experiments separating shelter and water-system effects. Economic benefit is a hypothesis rather than a formal cost-effectiveness result; long-term durability and lifecycle costs need study. A practical fill of roughly 35 L and the reported approximately 0.53 L/day supply in one setup do not specify physiological demand or transferable irrigation evidence.",
+      "topic_ids": [
+        "nodriza",
+        "nodriza-field-study",
+        "porous-ceramic-emitter"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: shelter effects cannot be separated",
+          "locator": "Discussion; comparison with tree shelters and future factorial experiments",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: economic and long-term limits",
+          "locator": "Discussion; cost-effectiveness hypothesis and long-term performance",
+          "page": 12
+        }
+      ]
+    },
+    {
+      "id": "drr26-prototype-limits",
+      "label": "Drone prototype tested control feasibility, not captured root-zone water",
+      "text": "The school-courtyard study measured bench pump flow at 8.58 mL/s (SD 0.15). Integrated-flight quantities of 107–187 mL were estimated from pump time and bench flow, not collected at the plant. The relative moisture index was uncalibrated; target capture, autonomous navigation, safe routine payload, useful endurance and plant benefit were not established.",
+      "topic_ids": [
+        "dubai-drone-watering-prototype-study",
+        "mavic-2-pro-water-prototype",
+        "soil-moisture-monitoring"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: measured and unmeasured metrics",
+          "locator": "Table 2; measured vs unmeasured outcomes",
+          "page": 6
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ]
+    },
+    {
+      "id": "drr26-patent-limit",
+      "label": "Aerial funnel watering is described in a 2017 invention",
+      "text": "DE202017003667U1 describes a sensor-linked indoor drone and plant-side funnel. It is evidence that this integration was proposed, not that an outdoor planted storage tube was tested or a product is available. The central supply reservoir refills the aircraft; the plant funnel delivers into soil.",
+      "topic_ids": [
+        "freitag-indoor-drone-watering-concept",
+        "plant-refill-funnel",
+        "drone-refilled-seedling-reservoir"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: central supply and plant arrangement",
+          "locator": "Zeichnung; Bezugszeichen 2, 5 und 9",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "drr26-aircraft-not-bottleneck-alone",
+      "label": "Water-carrying aircraft exist; precise refill performance remains unverified",
+      "text": "T25/T50 manuals specify 20/40 L spraying tanks, and current-captured T100 specifications distinguish 100 kg standard and 90 kg dual-battery payloads despite a 100 L tank in both configurations. This corrects the chat’s suggestion that no aircraft are available for carrying such water quantities. Manufacturer spraying capacities do not establish a suitable filling attachment, captured dose, route productivity, economics or local operational clearance.",
+      "topic_ids": [
+        "drones",
+        "agras-t25",
+        "agras-t50",
+        "agras-t100",
+        "drone-refilled-seedling-reservoir"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T25: 20 L spray tank and 20 kg payload",
+          "locator": "Specifications, T25, Dual Atomizing Spraying System, printed p. 78",
+          "page": 80
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: 40 L tank and atomizing spray system",
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "page": 77
+        },
+        {
+          "source_id": "KGB-SRC-0077",
+          "label": "T100: LS100 and dual-battery payload limits",
+          "locator": "Specifications > Spraying system LS100; Spraying system LS100-DB"
+        }
+      ]
+    },
+    {
+      "id": "drr26-hover-time",
+      "label": "Loaded hover time constrains a capacity-only estimate",
+      "text": "For T50 the manual gives 16.5 minutes hovering without spray payload versus 7 minutes at full spray load, under reference conditions (sea level, wind below 3 m/s, 25°C). This is not travel-plus-filling endurance. The proposed 80 half-litre fills from 40 L is arithmetic before reserves, losses and time, rather than a demonstrated flight itinerary.",
+      "topic_ids": [
+        "agras-t50",
+        "drone-refilled-seedling-reservoir"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: hover accuracy, masses and hover time",
+          "locator": "Specifications, T50, Aircraft, printed p. 74",
+          "page": 76
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: reference hover-test conditions",
+          "locator": "Specifications, T50 footnotes [1]–[4], printed p. 77",
+          "page": 79
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: 40 L tank and atomizing spray system",
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "page": 77
+        }
+      ]
+    },
+    {
+      "id": "drr26-waterboxx-scope",
+      "label": "Waterboxx effects depend on taxon, season and initial water",
+      "text": "In the Utah study, autumn Pinus and spring Cercocarpus benefited, while Atriplex showed no significant device response. Interpretation includes an extra initial 15 L per device; hardware and initial-water effects were not independently separated. These results do not establish a universal reservoir advantage or refill schedule.",
+      "topic_ids": [
+        "bingham-waterboxx-study",
+        "waterboxx",
+        "pinus-edulis",
+        "cercocarpus-ledifolius",
+        "atriplex-canescens"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: initial-water confounding",
+          "locator": "Discussion > additional 15 L and lack of an independent initial-water treatment"
+        }
+      ]
+    },
+    {
+      "id": "drr26-transfer-mechanisms",
+      "label": "Choose the soil-release mechanism before setting refill frequency",
+      "text": "The review distinguishes direct infiltration, porous-wall delivery, wick transfer and solar distillation. Pipe drainage, soil-filled sleeves, clay walls and wicks should not be treated as identical storage devices. Capacity should accept the intended fill; soil/root depth, percolation, evaporation and emitter behaviour determine retention. Support and rescue watering require project-specific planning rather than one universal schedule.",
+      "topic_ids": [
+        "deep-pipe-irrigation",
+        "buried-clay-pot-irrigation",
+        "wick-irrigation",
+        "reservoir-refill-interface"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Four water-transfer mechanisms",
+          "locator": "Nonconventional Irrigation Systems classification",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Root-zone methods: infiltration, capacity and Irrigasc",
+          "locator": "3.1 Direct Infiltration; Irrigasc; filling and percolation discussion",
+          "page": 5
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Wick irrigation: geometry and water-dependent discharge",
+          "locator": "3.3 Wick Irrigation; Equation (4); Figure 9",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Support and rescue watering require planning",
+          "locator": "4. Comparison of Irrigation Systems",
+          "page": 15
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0071",
+      "page": 1,
+      "status": "inspected",
+      "note": "Irrigasc: buried sleeve, upper cup, installation and historical watering guidance. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0072",
+      "page": 1,
+      "status": "inspected",
+      "note": "Honey mesquite trial: abstract and study question. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0072",
+      "page": 2,
+      "status": "inspected",
+      "note": "Site, factorial design and Table 1 survival and height. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0072",
+      "page": 3,
+      "status": "inspected",
+      "note": "Deep-pipe and clay-pot installation; planting and mulch treatments. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0072",
+      "page": 4,
+      "status": "inspected",
+      "note": "Watering schedule, final assessment and herbivory limitations. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0072",
+      "page": 5,
+      "status": "inspected",
+      "note": "Conclusions, references and author information. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0073",
+      "page": 1,
+      "status": "inspected",
+      "note": "Nodriza article: publication and abstract. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0073",
+      "page": 2,
+      "status": "inspected",
+      "note": "Nodriza background and integrated design. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0073",
+      "page": 3,
+      "status": "inspected",
+      "note": "Reservoir, ceramic outlet and Las Hazas experiment methods. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0073",
+      "page": 4,
+      "status": "inspected",
+      "note": "Bailén experiment methods and water treatments. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0073",
+      "page": 5,
+      "status": "inspected",
+      "note": "Trial analyses and soil-moisture results. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0073",
+      "page": 6,
+      "status": "inspected",
+      "note": "Experiment A: survival separation and GLM limitation. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0073",
+      "page": 9,
+      "status": "inspected",
+      "note": "Experiment B: nonsignificant survival comparison and growth results. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0073",
+      "page": 11,
+      "status": "inspected",
+      "note": "Discussion: shelter effects and survival interpretation. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0073",
+      "page": 12,
+      "status": "inspected",
+      "note": "Cost-effectiveness hypothesis and long-term research limitations. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 1,
+      "status": "inspected",
+      "note": "Prototype abstract, author and conflicting electronic-access date. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 2,
+      "status": "inspected",
+      "note": "Prototype setting and research objectives. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 3,
+      "status": "inspected",
+      "note": "Prototype design and operating conditions. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 4,
+      "status": "inspected",
+      "note": "Payload assembly and component table. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 5,
+      "status": "inspected",
+      "note": "Soil index and pump control methods. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 6,
+      "status": "inspected",
+      "note": "Measured versus unmeasured outcomes, Table 2. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 7,
+      "status": "inspected",
+      "note": "Flight procedure and estimated dose calculation. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 8,
+      "status": "inspected",
+      "note": "Flight-results table and staged tests. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 9,
+      "status": "inspected",
+      "note": "Ground-control results and pump testing. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 10,
+      "status": "inspected",
+      "note": "Integrated-flight results and discussion. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0074",
+      "page": 11,
+      "status": "inspected",
+      "note": "Table 7 estimated discharge, targeting limits and future work. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0075",
+      "page": 1,
+      "status": "inspected",
+      "note": "Utility-model bibliographic data and proposed indoor system. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0075",
+      "page": 2,
+      "status": "inspected",
+      "note": "Description: drone, central supply and plant sensors. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0075",
+      "page": 3,
+      "status": "inspected",
+      "note": "Plant funnel and automated watering claims. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0075",
+      "page": 4,
+      "status": "inspected",
+      "note": "Claims and drawing references. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0075",
+      "page": 5,
+      "status": "inspected",
+      "note": "Drawing: supply tank and drone/plant components. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0075",
+      "page": 6,
+      "status": "inspected",
+      "note": "Drawing: plant-side funnel and sensor arrangement. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0076",
+      "page": 1,
+      "status": "inspected",
+      "note": "Manual cover: T50/T25 and edition. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0076",
+      "page": 76,
+      "status": "inspected",
+      "note": "T50: mass, RTK hover accuracy and loaded/unloaded hover time. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0076",
+      "page": 77,
+      "status": "inspected",
+      "note": "T50: 40 L spray tank, payload and atomizing spray system. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0076",
+      "page": 79,
+      "status": "inspected",
+      "note": "T50 hover-time test conditions; T25 aircraft specifications. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0076",
+      "page": 80,
+      "status": "inspected",
+      "note": "T25: 20 L tank, payload and atomizing spray system. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0078",
+      "page": 1,
+      "status": "inspected",
+      "note": "Review purpose, authors and publication. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0078",
+      "page": 3,
+      "status": "inspected",
+      "note": "Four water-transfer mechanisms and illustrative calculations. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0078",
+      "page": 4,
+      "status": "inspected",
+      "note": "Direct infiltration and pipe arrangements. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0078",
+      "page": 5,
+      "status": "inspected",
+      "note": "Capacity, infiltration, clay pots and Irrigasc. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0078",
+      "page": 6,
+      "status": "inspected",
+      "note": "Irrigasc sleeve diagram and pervious walls. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0078",
+      "page": 10,
+      "status": "inspected",
+      "note": "Wick geometry and water-potential-dependent discharge. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0078",
+      "page": 11,
+      "status": "inspected",
+      "note": "Wick devices and Eco Bag review example. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0078",
+      "page": 12,
+      "status": "inspected",
+      "note": "Waterboxx review description and refill context. Focused passage review; no claim that every reference or incidental product was independently verified."
+    },
+    {
+      "source_id": "KGB-SRC-0078",
+      "page": 15,
+      "status": "inspected",
+      "note": "Support versus rescue watering; soil and climate constraints. Focused passage review; no claim that every reference or incidental product was independently verified."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "fl01-drone-refill-integration",
+      "text": "Checked primary research adds a manually piloted small water-payload prototype and a 2017 indoor funnel-watering utility model, while larger manufacturer-documented spray aircraft can carry water. The reviewed sources still do not establish an autonomous outdoor drone-to-planted-reservoir interface, actual captured volume, cap handling, losses, service throughput, lifecycle cost or species/site refill schedule. Prototype discharge estimates, aircraft hover accuracy and tank capacity cannot substitute for those measurements. The user’s half-litre interval remains an assumption; operating permission was not determined.",
+      "topic_ids": [
+        "reservoir-refill-interface",
+        "drones",
+        "drone-refilled-seedling-reservoir",
+        "dubai-drone-watering-prototype-study",
+        "freitag-indoor-drone-watering-concept"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "label": "Growboxx: refill siphon",
+          "locator": "Growboxx: refill siphon"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "label": "Waterboxx: capped refill opening",
+          "locator": "Waterboxx: capped refill opening"
+        },
+        {
+          "source_id": "DRONE-004",
+          "page": 3,
+          "label": "Citrus drone: spray deposition",
+          "locator": "Citrus drone: spray deposition"
+        },
+        {
+          "source_id": "KGB-SRC-0020",
+          "page": 1,
+          "label": "EASA: dated operational-category conditions",
+          "locator": "EASA: dated operational-category conditions"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: hover accuracy, masses and hover time",
+          "locator": "Specifications, T50, Aircraft, printed p. 74",
+          "page": 76
+        }
+      ]
+    },
+    {
+      "id": "drr26-mathieu-fulltext",
+      "text": "Mathieu (2006), Tropicultura 24(2):120–123: original full PDF timed out and bounded primary searches did not recover a full copy. Abstract/bibliographic lead supports discovery only. Its full methods, species, quantities and trial strength remain unverified; do not treat the Irrigasc guidance or review citation as full-paper ingestion.",
+      "topic_ids": [
+        "irrigasc"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Root-zone methods: infiltration, capacity and Irrigasc",
+          "locator": "3.1 Direct Infiltration; Irrigasc; filling and percolation discussion",
+          "page": 5
+        }
+      ]
+    },
+    {
+      "id": "drr26-nodriza-control-water",
+      "text": "Experiment A methods describe initial and July 35 L watering, while the abstract characterizes controls as non-irrigated. Reconcile actual control-water allocation against author clarification or supplementary protocol before deriving a treatment-specific dose or attributing survival effects.",
+      "topic_ids": [
+        "nodriza-las-hazas-trial"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: July additional watering",
+          "locator": "Experiment A; July 2012 watering",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Abstract: description of control watering",
+          "locator": "Abstract",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        }
+      ]
+    },
+    {
+      "id": "drr26-prototype-date",
+      "text": "Prototype publisher HTML is dated 3 November 2026, but PDF title page states electronic access 15 November 2026, after the 10 November retrieval. Publication/electronic-access date remains unresolved; do not silently substitute the future date.",
+      "topic_ids": [
+        "dubai-drone-watering-prototype-study"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype electronic-access date",
+          "locator": "Title page; Electronic access",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "drr26-waterboxx-access",
+      "text": "The Wiley PDF and direct HTML returned HTTP 403. Reviewed primary publisher excerpts cover methods/results/discussion, but full edition, original figures and supplementary tables remain unavailable. In addition, Results prose gives inconsistent November Purshia tridentata survival interpretation; do not import its exact effect pending Figure 5/Table S1 reconciliation.",
+      "topic_ids": [
+        "bingham-waterboxx-study",
+        "purshia-tridentata"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: initial-water confounding",
+          "locator": "Discussion > additional 15 L and lack of an independent initial-water treatment"
+        }
+      ]
+    },
+    {
+      "id": "drr26-ecological-transfer",
+      "text": "No reviewed trial establishes 0.5 L every couple of days for the unspecified nursery stock/site in the user proposal, or demonstrates transfer to carob in southeastern Spain. Define species, stock, soil, climate and outlet behaviour, then measure moisture, capture, retention and plant outcomes before deriving a schedule.",
+      "topic_ids": [
+        "drone-refilled-seedling-reservoir",
+        "carob",
+        "establishment-water"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: initial-water confounding",
+          "locator": "Discussion > additional 15 L and lack of an independent initial-water treatment"
+        },
+        {
+          "source_id": "KGB-SRC-0078",
+          "label": "Site-specific support-watering design",
+          "locator": "4. Comparison of Irrigation Systems",
+          "page": 15
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:irrigation-field-methods",
+      "label": "Field methods and equipment",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "traditional-reforestation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "drip-irrigation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "deep-pipe-irrigation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "buried-clay-pot-irrigation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "wick-irrigation",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Browse the existing records by their documented role. Each topic retains its source wording, evidence, dates and applicability; these navigation categories add no scientific or eligibility claim.",
+      "source_refs": [],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:planting-reservoirs",
+      "label": "Planting reservoirs and refill access",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "growboxx",
+          "role": "primary"
+        },
+        {
+          "topic_id": "waterboxx",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon",
+          "role": "primary"
+        },
+        {
+          "topic_id": "reservoir-refill-interface",
+          "role": "primary"
+        },
+        {
+          "topic_id": "irrigasc",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nodriza",
+          "role": "primary"
+        },
+        {
+          "topic_id": "ecobag-seedling-reservoir",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep Groasis product identities separate from Cocoon. Compare source-specific components and quantities; marketing terminology does not establish product equivalence, a plant dose or a tested drone interface.",
+      "description": "Compare biodegradable Growboxx, reusable Waterboxx and the separately documented Cocoon. Start with mechanism and servicing: capillary bottom, wick, cover and refill access describe different systems. Capacity, daily release and event dose have different meanings. The Groasis documents are supplier sheets, including performance claims and application limits; they do not establish an autonomous drone-refill system. Open refill access to inspect that unresolved integration requirement. New comparisons add the soil-filled Irrigasc sleeve, integrated Nodriza ceramic-cone reservoir and a review-only Eco Bag example. Read the trial-specific results and limits before interpreting supplier/review capacities as watering requirements.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 4,
+          "locator": "Growboxx: no-wick capillary specification",
+          "label": "Growboxx: no-wick capillary specification"
+        },
+        {
+          "source_id": "KGB-SRC-0018",
+          "page": 5,
+          "locator": "Growboxx: refill and daily release",
+          "label": "Growboxx: refill and daily release"
+        },
+        {
+          "source_id": "KGB-SRC-0019",
+          "page": 2,
+          "locator": "Waterboxx: wick, capacity and refill cap",
+          "label": "Waterboxx: wick, capacity and refill cap"
+        },
+        {
+          "source_id": "KGB-SRC-0071",
+          "label": "Irrigasc: sleeve, cup and historical use instructions",
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:drone-uses",
+      "label": "Uses and methods",
+      "parent_id": "technology:drones",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "drones",
+          "role": "primary"
+        },
+        {
+          "topic_id": "drone-imagery",
+          "role": "primary"
+        },
+        {
+          "topic_id": "drone-water-delivery",
+          "role": "primary"
+        },
+        {
+          "topic_id": "drone-refilled-seedling-reservoir",
+          "role": "primary"
+        },
+        {
+          "topic_id": "freitag-indoor-drone-watering-concept",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Compare imagery, the existing citrus spray experiment, a proposed indoor funnel system and the user’s proposed outdoor reservoir refill. Only the cited experimental use is a measured outcome; invention and integration proposals retain their untested status.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:drone-systems",
+      "label": "Systems and components",
+      "parent_id": "technology:drones",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "wire-supplied-drone",
+          "role": "primary"
+        },
+        {
+          "topic_id": "agras-t25",
+          "role": "primary"
+        },
+        {
+          "topic_id": "agras-t50",
+          "role": "primary"
+        },
+        {
+          "topic_id": "agras-t100",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mavic-2-pro-water-prototype",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Manufacturer-described spray aircraft and the study-specific small water-payload assembly have different payload evidence. Tank capacity, configured payload, safe takeoff mass, hover time and actual captured volume are separate quantities.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T25: 20 L spray tank and 20 kg payload",
+          "locator": "Specifications, T25, Dual Atomizing Spraying System, printed p. 78",
+          "page": 80
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: 40 L tank and atomizing spray system",
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "page": 77
+        },
+        {
+          "source_id": "KGB-SRC-0077",
+          "label": "T100: LS100 and dual-battery payload limits",
+          "locator": "Specifications > Spraying system LS100; Spraying system LS100-DB"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:drone-projects",
+      "label": "Projects and trials",
+      "parent_id": "technology:drones",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "hiroshima-smart-agriculture",
+          "role": "primary"
+        },
+        {
+          "topic_id": "dubai-drone-watering-prototype-study",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Browse the existing records by their documented role. Each topic retains its source wording, evidence, dates and applicability; these navigation categories add no scientific or eligibility claim.",
+      "source_refs": [],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:species-catalogue",
+      "label": "Species catalogue",
+      "parent_id": "ecosystem:species",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "acacia-menaqua",
+          "role": "primary"
+        },
+        {
+          "topic_id": "aleppo-pine",
+          "role": "primary"
+        },
+        {
+          "topic_id": "almond",
+          "role": "primary"
+        },
+        {
+          "topic_id": "almond-menaqua",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carob",
+          "role": "primary"
+        },
+        {
+          "topic_id": "chamaespartium-source",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cistus-crispus",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cistus-ladanifer",
+          "role": "primary"
+        },
+        {
+          "topic_id": "citrus",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cork-oak",
+          "role": "primary"
+        },
+        {
+          "topic_id": "dorycnium-pentaphyllum",
+          "role": "primary"
+        },
+        {
+          "topic_id": "dwarf-palm",
+          "role": "primary"
+        },
+        {
+          "topic_id": "ephedra-fragilis",
+          "role": "primary"
+        },
+        {
+          "topic_id": "erica-australis",
+          "role": "primary"
+        },
+        {
+          "topic_id": "erica-scoparia",
+          "role": "primary"
+        },
+        {
+          "topic_id": "esparto",
+          "role": "primary"
+        },
+        {
+          "topic_id": "fig",
+          "role": "primary"
+        },
+        {
+          "topic_id": "holm-oak",
+          "role": "primary"
+        },
+        {
+          "topic_id": "holm-oak-rotundifolia",
+          "role": "primary"
+        },
+        {
+          "topic_id": "kermes-oak",
+          "role": "primary"
+        },
+        {
+          "topic_id": "lavandula-stoechas",
+          "role": "primary"
+        },
+        {
+          "topic_id": "lavatera-maritima-source",
+          "role": "primary"
+        },
+        {
+          "topic_id": "lycium-intricatum",
+          "role": "primary"
+        },
+        {
+          "topic_id": "maritime-pine",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mastic",
+          "role": "primary"
+        },
+        {
+          "topic_id": "maytenus-senegalensis",
+          "role": "primary"
+        },
+        {
+          "topic_id": "myrtle",
+          "role": "primary"
+        },
+        {
+          "topic_id": "oleander",
+          "role": "primary"
+        },
+        {
+          "topic_id": "olive",
+          "role": "primary"
+        },
+        {
+          "topic_id": "osyris-quadripartita",
+          "role": "primary"
+        },
+        {
+          "topic_id": "periploca-laevigata",
+          "role": "primary"
+        },
+        {
+          "topic_id": "phillyrea-angustifolia",
+          "role": "primary"
+        },
+        {
+          "topic_id": "phillyrea-latifolia",
+          "role": "primary"
+        },
+        {
+          "topic_id": "pine-menaqua",
+          "role": "primary"
+        },
+        {
+          "topic_id": "populus-alba",
+          "role": "primary"
+        },
+        {
+          "topic_id": "retama-sphaerocarpa",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rhamnus-alaternus",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rhamnus-lycioides",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rosemary",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rosmarinus-eriocalyx",
+          "role": "primary"
+        },
+        {
+          "topic_id": "salsola-webbii",
+          "role": "primary"
+        },
+        {
+          "topic_id": "stone-pine",
+          "role": "primary"
+        },
+        {
+          "topic_id": "tamarix",
+          "role": "primary"
+        },
+        {
+          "topic_id": "terebinth",
+          "role": "primary"
+        },
+        {
+          "topic_id": "tetraclinis-articulata",
+          "role": "primary"
+        },
+        {
+          "topic_id": "thymelaea-hirsuta",
+          "role": "primary"
+        },
+        {
+          "topic_id": "thymus-hyemalis",
+          "role": "primary"
+        },
+        {
+          "topic_id": "tripudium-ravennae-source",
+          "role": "primary"
+        },
+        {
+          "topic_id": "whitania-frutescens-source",
+          "role": "primary"
+        },
+        {
+          "topic_id": "wild-olive",
+          "role": "primary"
+        },
+        {
+          "topic_id": "withania-somnifera",
+          "role": "primary"
+        },
+        {
+          "topic_id": "ziziphus-lotus",
+          "role": "primary"
+        },
+        {
+          "topic_id": "honey-mesquite",
+          "role": "primary"
+        },
+        {
+          "topic_id": "basil-ocimum-basilicum",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cercocarpus-ledifolius",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rhus-glabra",
+          "role": "primary"
+        },
+        {
+          "topic_id": "pinus-edulis",
+          "role": "primary"
+        },
+        {
+          "topic_id": "atriplex-canescens",
+          "role": "primary"
+        },
+        {
+          "topic_id": "purshia-tridentata",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Search the recorded species and source-specific plant concepts. Preserve unknown names, source spellings, genus-only records and taxonomic distinctions; inclusion does not imply co-occurrence or a planting recommendation.",
+      "source_refs": [],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true
+    },
+    {
+      "id": "browse:root-zone-components",
+      "label": "Soil-release and filling components",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "porous-ceramic-emitter",
+          "role": "primary"
+        },
+        {
+          "topic_id": "plant-refill-funnel",
+          "role": "primary"
+        },
+        {
+          "topic_id": "reservoir-refill-interface",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "Separate accepting a fill from releasing stored water into soil. The patented funnel is a proposed plant-side target; the ceramic cone is a field-study outlet. Neither alone establishes the combined drone system.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:seedling-irrigation-studies",
+      "label": "Seedling irrigation studies",
+      "parent_id": "technology:irrigation",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "desert-mesquite-irrigation-study",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nodriza-field-study",
+          "role": "primary"
+        },
+        {
+          "topic_id": "bingham-waterboxx-study",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "Open a study for species, site, treatments, results and limits. Historical trials test particular plant-side systems; they do not validate drone replenishment.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true
+    },
+    {
+      "id": "browse:mesquite-study",
+      "label": "Study: Sonoran mesquite irrigation",
+      "parent_id": "browse:seedling-irrigation-studies",
+      "anchor_topic_id": "desert-mesquite-irrigation-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "san-felipe-borrow-pit",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "Read the factorial comparison, changing watering schedule and null mulch result with the exposed desert site and shelter protection. General methods and species remain shared references.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:mesquite-study-components",
+      "label": "Compared methods and protected stock",
+      "parent_id": "browse:mesquite-study",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "honey-mesquite",
+          "role": "shared"
+        },
+        {
+          "topic_id": "deep-pipe-irrigation",
+          "role": "shared"
+        },
+        {
+          "topic_id": "buried-clay-pot-irrigation",
+          "role": "shared"
+        },
+        {
+          "topic_id": "tree-shelters",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "Shared references explain the tested delivery mechanisms, stock and protection; the study supplies the actual outcomes.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: design, site and survival table",
+          "locator": "Study Site; Experimental Design; Table 1, printed p. 26",
+          "page": 2
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Mesquite trial: water schedule and herbivory",
+          "locator": "Planting, Irrigating, and Rating; Results and Discussion, printed p. 28",
+          "page": 4
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:nodriza-study",
+      "label": "Study: Nodriza field comparisons",
+      "parent_id": "browse:seedling-irrigation-studies",
+      "anchor_topic_id": "nodriza-field-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "nodriza-las-hazas-trial",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nodriza-bailen-trial",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "Two experiments used different water histories and sample sizes. Open the trial before reading a survival percentage; the statistical caveats are part of each result.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true
+    },
+    {
+      "id": "browse:nodriza-las-hazas",
+      "label": "Trial A: Las Hazas context",
+      "parent_id": "browse:nodriza-study",
+      "anchor_topic_id": "nodriza-las-hazas-trial",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "las-hazas-cordoba",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nodriza",
+          "role": "shared"
+        },
+        {
+          "topic_id": "holm-oak-rotundifolia",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "The site is specific to Experiment A; general equipment and species are shared. Initial/control watering and complete-separation limitations remain visible in the trial.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Las Hazas: observed survival and separation limitation",
+          "locator": "Results, Experiment A; Seedling survival; GLM p = 0.99 and complete separation",
+          "page": 6
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:nodriza-bailen",
+      "label": "Trial B: Bailén context",
+      "parent_id": "browse:nodriza-study",
+      "anchor_topic_id": "nodriza-bailen-trial",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "bailen-trial-site",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nodriza",
+          "role": "shared"
+        },
+        {
+          "topic_id": "waterboxx",
+          "role": "shared"
+        },
+        {
+          "topic_id": "holm-oak-rotundifolia",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "The wet-spring comparison included Groasis and controls; the survival GLM was not significant. Shared devices are not project-owned identities.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: methods and treatments",
+          "locator": "Experiment B",
+          "page": 4
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Bailén: observed survival and nonsignificant GLM",
+          "locator": "Results, Experiment B; Seedling survival, p = 0.608",
+          "page": 9
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:bingham-study",
+      "label": "Study: Utah Waterboxx comparison",
+      "parent_id": "browse:seedling-irrigation-studies",
+      "anchor_topic_id": "bingham-waterboxx-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "bingham-canyon-mine-site",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "Five taxa and two planting dates produced different responses. Retain the extra initial reservoir water and partial-publisher-access limitations; use the findings rather than a blanket success claim.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: initial-water confounding",
+          "locator": "Discussion > additional 15 L and lack of an independent initial-water treatment"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:bingham-study-species",
+      "label": "Compared woody taxa",
+      "parent_id": "browse:bingham-study",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "cercocarpus-ledifolius",
+          "role": "shared"
+        },
+        {
+          "topic_id": "rhus-glabra",
+          "role": "shared"
+        },
+        {
+          "topic_id": "pinus-edulis",
+          "role": "shared"
+        },
+        {
+          "topic_id": "atriplex-canescens",
+          "role": "shared"
+        },
+        {
+          "topic_id": "purshia-tridentata",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "These five species are experimental peers, with their canonical home in the species catalogue. Inclusion is not a suitability recommendation.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        },
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: species and season results",
+          "locator": "Results > Survival Percentage; Figure 5 caption; Vigor"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true
+    },
+    {
+      "id": "browse:bingham-study-system",
+      "label": "Reservoir and measurements",
+      "parent_id": "browse:bingham-study",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "waterboxx",
+          "role": "shared"
+        },
+        {
+          "topic_id": "soil-moisture-monitoring",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "Waterboxx was the treatment device. Water-potential sensors were installed only under Cercocarpus in three blocks; sensor coverage was narrower than the five-species survival comparison.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0079",
+          "label": "Waterboxx mine study: design and watering treatments",
+          "locator": "Methods > Study Site; Evaluation of Different Woody Species in the Waterboxx Field Trial"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:dubai-drone-study",
+      "label": "Study: Dubai water-payload prototype",
+      "parent_id": "browse:drone-projects",
+      "anchor_topic_id": "dubai-drone-watering-prototype-study",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "mavic-2-pro-water-prototype",
+          "role": "shared"
+        },
+        {
+          "topic_id": "basil-ocimum-basilicum",
+          "role": "shared"
+        },
+        {
+          "topic_id": "soil-moisture-monitoring",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "This is a small manually piloted control/payload test. The linked equipment and sensor concept are shared context, not independently tested operating recommendations.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: basil pots, aircraft and test setting",
+          "locator": "Materials and Methods; prototype and test environment",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: measured and unmeasured metrics",
+          "locator": "Table 2; measured vs unmeasured outcomes",
+          "page": 6
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:drone-refill-proposal",
+      "label": "Proposal: drone-refilled planted reservoir",
+      "parent_id": "browse:drone-uses",
+      "anchor_topic_id": "drone-refilled-seedling-reservoir",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "reservoir-refill-interface",
+          "role": "shared"
+        },
+        {
+          "topic_id": "irrigasc",
+          "role": "shared"
+        },
+        {
+          "topic_id": "deep-pipe-irrigation",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nodriza",
+          "role": "shared"
+        },
+        {
+          "topic_id": "porous-ceramic-emitter",
+          "role": "shared"
+        },
+        {
+          "topic_id": "agras-t50",
+          "role": "shared"
+        },
+        {
+          "topic_id": "dubai-drone-watering-prototype-study",
+          "role": "shared"
+        },
+        {
+          "topic_id": "freitag-indoor-drone-watering-concept",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep general mechanisms/equipment in canonical homes and project-specific places/trials below the study. Shared entries are navigation context, not new evidence. Preserve source-specific species, dates, quantities, contrary results and uncertainty; no inferred dose, project ownership or tested drone compatibility.",
+      "description": "Start with the user’s proposed arrangement and assumed half-litre fill, then inspect component evidence and gaps. These shared comparisons do not imply that the assembled system has been demonstrated.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0071",
+          "label": "Irrigasc: sleeve, cup and historical use instructions",
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "label": "Deep pipe and buried clay pot: installation",
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A",
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "label": "Prototype: estimated discharge and untested targeting",
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "label": "Indoor utility model: plant funnel and control claims",
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "page": 3
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "label": "T50: 40 L tank and atomizing spray system",
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "page": 77
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    }
+  ]
+}

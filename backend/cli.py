@@ -56,6 +56,7 @@ def main():
     sub.add_parser("groups")
     p=sub.add_parser('audit-organization');p.add_argument('--batch')
     p=sub.add_parser('edit');p.add_argument('file');p.add_argument('--check',action='store_true')
+    p=sub.add_parser('project-edit');p.add_argument('file');p.add_argument('--check',action='store_true')
     sub.add_parser("media-integrity")
     sub.add_parser("backup-media")
     p=sub.add_parser("register-sources");p.add_argument("manifest")
@@ -86,6 +87,9 @@ def main():
     elif args.command=='edit':
         from .planning import Edit,apply_edit
         result=apply_edit(store,Edit.model_validate(read(args.file)),actor='Codex',dry_run=args.check)
+    elif args.command=='project-edit':
+        from .funding import ProjectEdit,edit_project
+        result=edit_project(store,ProjectEdit.model_validate(read(args.file)),actor='Codex',dry_run=args.check)
     elif args.command=="backup": result={"backup":str(store.backup())}
     elif args.command=="register-sources": store.register_sources(read(args.manifest));result={"status":"registered"}
     else:

@@ -1,0 +1,73 @@
+{
+  "batch_id": "drone-reservoir-research-20261110-display-v1",
+  "summary": "Make the proposal’s assumptions and capacity calculation readable in the existing topic details; preserve all facts and citations.",
+  "base_revision": 30,
+  "topics": [
+    {
+      "id": "drone-refilled-seedling-reservoir",
+      "label": "Proposed drone-refilled seedling reservoir",
+      "kind": "method",
+      "domain": "technology",
+      "description": "User proposal from the 10 November 2026 chat: plant nursery stock together with a tube or local reservoir, then have a drone visit and refill it. The suggested 0.5 L every couple of days is an assumed design scenario; species, soil, climate, stock size and exact interval are unspecified. Reviewed sources establish separate components: buried pipe/sleeve delivery, passive reservoirs, small manually piloted water-payload tests, an indoor funnel invention, and larger agricultural spray aircraft. Their combination has not been validated in the reviewed evidence. A fill opening, transferred-volume measurement, overflow/loss control and a suitable soil outlet must work together. As a capacity-only calculation, 40 L divided by an assumed 0.5 L gives 80 fills before reserves, losses, travel and time constraints; it is not measured plants per flight or per hour. Component citations support this curated concept, not the assumed dose or an empirical system outcome.",
+      "aliases": [
+        "drone tube refill",
+        "aerial reservoir replenishment",
+        "0.5 litre drone watering concept"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "drones",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0071",
+          "page": 1,
+          "locator": "L’irrigation selon la Méthode Irrigasc; diagramme et Comment utiliser les gaines Irrigasc",
+          "label": "Irrigasc: sleeve, cup and historical use instructions"
+        },
+        {
+          "source_id": "KGB-SRC-0072",
+          "page": 3,
+          "locator": "Irrigation Treatments; Planting, Irrigating, and Rating, printed p. 27",
+          "label": "Deep pipe and buried clay pot: installation"
+        },
+        {
+          "source_id": "KGB-SRC-0073",
+          "page": 3,
+          "locator": "Materials and methods; Nodriza reservoir; Experiment A",
+          "label": "Nodriza: reservoir, ceramic cone and Experiment A"
+        },
+        {
+          "source_id": "KGB-SRC-0074",
+          "page": 11,
+          "locator": "Table 7; Comparison with UAV Spraying and Sensing; Limitations and Future Work",
+          "label": "Prototype: estimated discharge and untested targeting"
+        },
+        {
+          "source_id": "KGB-SRC-0075",
+          "page": 3,
+          "locator": "Beschreibung; Schutzansprüche, insbesondere Anspruch 2",
+          "label": "Indoor utility model: plant funnel and control claims"
+        },
+        {
+          "source_id": "KGB-SRC-0076",
+          "page": 77,
+          "locator": "Specifications, T50, Dual Atomizing Spraying System, printed p. 75",
+          "label": "T50: 40 L tank and atomizing spray system"
+        }
+      ],
+      "aspects": {
+        "Origin": "User proposal in this chat, 10 November 2026",
+        "Evidence status": "Untested integration; references support separate components",
+        "Assumed refill": "0.5 L per visit; a design assumption",
+        "Assumed interval": "Every couple of days; exact interval unspecified",
+        "Missing context": "Species, site/climate, soil/root depth, stock size, reservoir outlet, route and operating conditions",
+        "Capacity calculation": "40 L tank / assumed 0.5 L per fill = 80 fills before reserves, losses, travel and time; not measured flight productivity",
+        "Planning use": "No adoptable irrigation evidence or watering schedule is supplied by this proposal"
+      }
+    }
+  ]
+}

@@ -61,6 +61,10 @@ class Graph:
         if domain not in {'all','ecosystem','technology','funding'}:raise ValueError('Unknown domain.')
         if depth not in {6,8}:raise ValueError('Route depth must be 6 or 8.')
         notices=[];kinds=set(kinds or []);centre=self.store.resolve(centre) if centre and scope!='group' else None
+        seen_groups=set()
+        while group_id in self.groups and self.groups[group_id].get('navigation')=='transparent' and group_id not in seen_groups:
+            seen_groups.add(group_id)
+            group_id=self.groups[group_id]['parent_id']
         if centre and centre not in self.topics:
             notices.append('The previous centre is unavailable. Showing the overview.');centre=None
             if scope=='neighbors':scope='overview'
@@ -136,6 +140,16 @@ class Graph:
                 'notice':"Each value retains its source and trial conditions; these are not controlled head-to-head trials."}
 
     def inspect(self, record_id):
+        from .funding import state as funding_state
+        result = self._inspect(record_id)
+        ids = set(result.get('member_ids', [])) | {record_id}
+        reviews = [r for r in self.snapshot.get('funding_reviews', []) if r['topic_id'] in ids]
+        review_ids = {r['id'] for r in reviews}
+        return dict(result, funding_reviews=reviews,
+                    funding_assessments=[a for a in self.snapshot.get('funding_assessments', []) if a['review_id'] in review_ids],
+                    project_ideas=self.snapshot.get('project_ideas', []), funding_state=funding_state(self.snapshot))
+
+    def _inspect(self, record_id):
         record_id=self.store.resolve(record_id)
         if record_id in REVIEW_IDS:
             ids=sorted(id for id,root in self.organization_review['topic_roots'].items() if root==record_id)
