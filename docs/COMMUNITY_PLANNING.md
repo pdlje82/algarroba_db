@@ -56,6 +56,17 @@ outside that idea's scope. Explicit exclusions retain the affected geography, ac
 route. Programme folders count reviewed routes instead of inheriting a child's open/fit verdict.
 Missing reviews remain visible. Source verification failures preserve last-confirmed facts.
 
+Payment timing is a separate, manually checked heading in the existing `financial_summary`:
+`Payment timing: <concise label>` followed by a newline, the dated conditions and the financial
+detail. Cards and the inspector display that explicit heading; absent headings mean **Payment
+unverified**. No rate, the word “lump sum”, another national route or a parent programme creates
+an advance label. Frameworks direct readers to individual route terms; references receive no
+standalone payment badge. Conditional advances still require eligible delivery and final
+justification, and may require guarantees or a coordinator-to-partner transfer. Loan disbursement,
+start-up instalments, draft provisions and non-cash assistance remain distinct. Current payment
+coverage and retry actions are in
+[`funding-payment-coverage-20261111.json`](../imports/funding-payment-coverage-20261111.json).
+
 Curated funding topics use optional `funding_role: route|framework|reference` and explicit
 `funding_context_ids`. Supporting references show linked, separately named reviews rather than
 their own eligibility verdict. Frameworks count reviewed routes, missing reviews and incomplete

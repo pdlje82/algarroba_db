@@ -28,6 +28,7 @@ playwright-report/
 /output/tree-organization-qa/
 /output/funding-suitability-qa/
 /output/full-funding-review-qa/
+/output/funding-payment-qa/
 
 # Owned document-library bytes are local; inventory and tooling are versioned.
 /doc_library/

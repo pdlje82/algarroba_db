@@ -130,6 +130,10 @@ Funding cards compare four exploratory project ideas. Supporting references link
 reviews; programme folders show review coverage and unresolved checks. The dated complete-route
 coverage and retry register is [here](imports/funding-review-coverage-20261110.json). Applicant,
 land and partner arrangements remain unconfirmed until edited by the user.
+Payment labels distinguish conditional advances, normal prefinancing, start-up instalments,
+reimbursement and unverified terms. Open the finance details for guarantees, timing and settlement.
+The [payment register](imports/funding-payment-coverage-20261111.json) records checked evidence and
+remaining gaps. Payment availability does not establish an open call or project eligibility.
 
 1. Open a sidebar group to bring its complete contents into the foreground. The previous layer
    stays darkened behind it. A single click inspects a card/line; **Open group**, **Members** or

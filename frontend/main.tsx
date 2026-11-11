@@ -1123,7 +1123,7 @@ function App() {
                         {c.outOfDomain ? " · Outside selected domain" : ""}
                         {pending.includes(c.id) ? " · To research" : ""}
                       </button>
-                      {c.record.fundingSummary&&<p className="funding-card-summary"><span>{c.record.fundingSummary.relevance}</span><span>{c.record.fundingSummary.availability}</span></p>}
+                      {c.record.fundingSummary&&<p className="funding-card-summary"><span>{c.record.fundingSummary.relevance}</span><span>{c.record.fundingSummary.availability}</span>{c.record.fundingSummary.payment&&<strong>{c.record.fundingSummary.payment}</strong>}</p>}
                       {topicNames(c.record).length > 0 && (
                         <div className="species-names">
                           {topicNames(c.record).map((name) => (

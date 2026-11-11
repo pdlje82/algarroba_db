@@ -17,6 +17,15 @@ export function fundingContextIds(ids:string[],c:Catalog){
   return [...all];
 }
 export function fundingReviews(ids:string[],c:Catalog,includeContext=true){const all=includeContext?fundingContextIds(ids,c):ids;return (c.funding_reviews||[]).filter(r=>all.includes(r.topic_id));}
+/** Display only a manually checked payment heading, never infer timing from rates or prose. */
+export function paymentTiming(review:FundingReview){return review.financial_summary?.match(/^Payment timing: ([^\r\n]+)\r?\n/)?.[1]||'Payment unverified';}
+export function fundingPaymentSummary(ids:string[],c:Catalog,aggregate=false){
+  const topics=c.topics.filter(t=>ids.includes(t.id)&&t.domain==='funding');
+  if(!topics.length||topics.every(t=>t.funding_role==='reference'))return '';
+  if(aggregate||topics.some(t=>t.funding_role==='framework'))return 'View route payment terms';
+  const reviews=fundingReviews(ids,c,false),labels=[...new Set(reviews.map(paymentTiming))];
+  return labels.length===1?labels[0]:labels.length?'Payment terms differ':'Payment unverified';
+}
 export function fundingSummary(ids:string[],c:Catalog,project='all',aggregate=false):{relevance:string;availability:string}|null{
   const topics=c.topics.filter(t=>ids.includes(t.id)&&t.domain==='funding');
   if(!topics.length)return null;
@@ -48,5 +57,5 @@ export function fundingCardRecord(record:Item,ids:string[],c:Catalog,project='al
   const historical=anchor&&c.topics.find(t=>t.id===anchor&&t.kind==='project'&&t.funding_role==='reference');
   if(historical)ids=[historical.id];
   const summary=fundingSummary(ids,c,project,!!record.displayGroup);
-  return summary?{...record,fundingSummary:summary}:record;
+  return summary?{...record,fundingSummary:{...summary,payment:fundingPaymentSummary(ids,c,!!record.displayGroup)}}:record;
 }

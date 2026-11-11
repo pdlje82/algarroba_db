@@ -219,6 +219,15 @@ existing funding topic and records instrument type, independently verified avail
 conditions, deadlines, verification outcome and labelled source references. Use the same registered
 edition and genuinely inspected page/section validation as other factual records. Increase a
 changed review's version; failed checks preserve last-confirmed facts and identify the problem.
+Payment markings use the existing `financial_summary` field: a manually reviewed first line
+`Payment timing: <label>`, a newline, dated source-backed conditions, then financial details. This
+is editorial text, not an added schema field or computed eligibility rule. Only this explicit first
+line is projected onto cards; missing headings stay unverified. Preserve the previous financial
+detail and availability check date when only payment evidence was checked. Bump the review version;
+dependent project assessments retain their reasoning and flag reconsideration. Do not silently
+rebind all assessments simply to clear these warnings. Show denominators, guarantees, award/start
+gates, coordinator transfers and later recovery; distinguish programme advances from beneficiary
+payments and draft options from adopted rules.
 Timed dates require an offset and timezone; date-only deadlines must not acquire an invented time.
 Use deadline `kind: opening` for an opening date. A passed deadline is a warning, not verified closure.
 

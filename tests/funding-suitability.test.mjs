@@ -4,7 +4,7 @@ import {buildScene} from '../frontend/scene.ts';
 import {initialState,reduceExploration} from '../frontend/exploration.ts';
 import {navigationChildren,navigationGroup} from '../frontend/organization.ts';
 import {normalizeNavigationHistory} from '../frontend/migration.ts';
-import {fundingSummary,assessmentWarnings} from '../frontend/funding.ts';
+import {fundingSummary,assessmentWarnings,paymentTiming,fundingPaymentSummary,fundingCardRecord} from '../frontend/funding.ts';
 
 const topic=(id)=>({id,label:id,kind:'programme',domain:'funding',group_id:'programmes'});
 const group=(id,parent,anchor,members,navigation='normal')=>({id,label:id,parent_id:parent,anchor_topic_id:anchor,members:members.map(topic_id=>({topic_id,role:'primary'})),maintenance_rule:'Synthetic fixture',presentation:'hierarchy',navigation});
@@ -79,4 +79,21 @@ test('framework coverage follows explicit transitive links safely and flags miss
   // Legacy explicit context cycles cannot lock up browsing or duplicate the review.
   c.topics[0].funding_context_ids.push('other');
   assert.match(fundingSummary(['other'],c).availability,/1 linked review/);
+});
+
+test('payment marks use only checked headings and never infer an advance from finance wording or a parent',()=>{
+  const c=structuredClone(catalog),r=c.funding_reviews[0];
+  r.financial_summary='100% rate, lump sum, advance under other instruments.';
+  assert.equal(paymentTiming(r),'Payment unverified');
+  r.financial_summary='Payment timing: Conditional advance available\n50% on request; full guarantee required.';
+  assert.equal(fundingPaymentSummary(['call'],c),'Conditional advance available');
+  assert.equal(fundingPaymentSummary(['other'],c),'Payment unverified');
+  c.topics[0].funding_role='framework';c.topics[0].funding_context_ids=['call'];
+  assert.equal(fundingPaymentSummary(['fund'],c),'View route payment terms');
+  c.topics[2].funding_role='reference';c.topics[2].funding_context_ids=['call'];
+  assert.equal(fundingPaymentSummary(['other'],c),'');
+  const card=fundingCardRecord(c.topics[1],['call'],c);assert.equal(card.fundingSummary.payment,'Conditional advance available');
+  c.funding_reviews.push({...r,id:'different',financial_summary:'Payment timing: Reimbursement; no project advance\nNo prefinancing.'});
+  assert.equal(fundingPaymentSummary(['call'],c),'Payment terms differ');
+  assert.equal(r.availability,'open');
 });

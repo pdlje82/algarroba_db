@@ -184,7 +184,8 @@ export function cardMesh(
     ctx.font='27px Segoe UI';ctx.fillStyle=p.text;
     ctx.fillText(r.fundingSummary.relevance,24,218,650);
     ctx.fillStyle=p.muted;
-    lines(ctx,r.fundingSummary.availability,650).slice(0,2).forEach((line,i)=>ctx.fillText(line,24,255+i*32,650));
+    lines(ctx,r.fundingSummary.availability,650).slice(0,r.fundingSummary.payment?1:2).forEach((line,i)=>ctx.fillText(line,24,255+i*32,650));
+    if(r.fundingSummary.payment){ctx.font='bold 27px Segoe UI';ctx.fillStyle=p.text;ctx.fillText(r.fundingSummary.payment,24,291,650);}
   }
   ctx.font = "25px Segoe UI";
   ctx.fillStyle = p.muted;

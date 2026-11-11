@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import {api,type Catalog,type Ref} from './types';
 import {Refs} from './dialogs';
-import {assessmentWarnings,fundingReviews,RELEVANCE,AVAILABILITY,INSTRUMENT,type ProjectIdea} from './funding';
+import {assessmentWarnings,fundingReviews,paymentTiming,RELEVANCE,AVAILABILITY,INSTRUMENT,type ProjectIdea} from './funding';
 
 const applicantLabels:Record<string,string>={individual:'Individual',business:'Business',nonprofit:'Nonprofit',municipality:'Municipality','research-partnership':'Research partnership'};
 const fields=['applicant_status','land_access','partners','budget','readiness'] as const;
@@ -63,6 +63,7 @@ export function FundingDetails({catalog,ids,selected,open}:{catalog:Catalog;ids:
       <summary><strong>{catalog.topics.find(t=>t.id===r.topic_id)?.label||r.topic_id}</strong></summary>
       <p><strong>{AVAILABILITY[r.availability]}</strong> · {INSTRUMENT[r.instrument_type]} · Checked {r.checked_on}{r.verification_state!=='confirmed'&&<> · <strong>Verification {r.verification_state}</strong></>}</p>
       <p>{r.availability_note}</p>
+      <p className="funding-payment"><strong>Payment timing: {paymentTiming(r)}</strong></p>
       {r.deadlines.length>0&&<ul>{r.deadlines.map((d,i)=><li key={i}>{d.label}: {d.value}{d.timezone?' · '+d.timezone:''}{d.note?' · '+d.note:''}</li>)}</ul>}
       {(catalog.funding_state?.reviews[r.id]||[]).map((w,i)=><p className="notice" key={i}>{w}</p>)}
       {r.verification_note&&<p>{r.verification_note}</p>}

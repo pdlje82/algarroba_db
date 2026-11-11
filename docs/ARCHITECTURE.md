@@ -125,6 +125,13 @@ cards show supporting-reference labels and linked-review buttons. Framework summ
 failed and stale project comparisons without inheriting availability. Evidence fingerprints omit
 exactly these two topic metadata fields; factual topic/source changes retain normal staleness checks.
 
+`paymentTiming` projects only the explicit first-line `Payment timing: …` heading in a review's
+existing `financial_summary`. Unmarked text is unverified; no keyword/rate inference is performed.
+Actual route cards use their own review, framework/folder cards link to route terms and supporting
+references have no cash-payment badge. The 3D texture reserves the third summary line within the
+existing card dimensions, retaining source/camera/history geometry. Payment edits are factual review
+changes and therefore preserve the normal dependent-assessment staleness checks.
+
 ## Domain preview and in-place Update
 
 State.pendingDomain is an optional staged choice; State.domain remains the applied query domain.

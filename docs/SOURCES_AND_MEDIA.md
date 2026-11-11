@@ -33,6 +33,14 @@ inventory still differs by the previously added files and catalog updates; this 
 check of the new accession. Use the dated recovery manifest plus provenance ledgers, without resetting
 the historical inventory or deleting additional files to force an old inventory match.
 
+The 11 November payment review added FUND-043–FUND-046: the Commission's Horizon lump-sum
+guide, PRIMA's 2026 work programme, current SUDOE Fiche 7 and the NEXT MED third-call contract.
+See [`document-library-additions-funding-payment-20261111.json`](../imports/document-library-additions-funding-payment-20261111.json)
+for editions, hashes, exact reviewed positions and downloads. SUDOE's original PDF member was
+acquired inside the official guide ZIP; the ZIP link is explicitly distinguished from a direct PDF
+download. CDTI's original PDF acquisition returned anti-bot HTML; the reviewed official document
+reader response is registered as web evidence, with no claimed PDF library accession.
+
 Research handoffs with an explicitly web-enabled source boundary use the prompt's
 [official-source acquisition step](../DOCUMENT_INGESTION_PROMPT.md#research-handoff-and-official-source-acquisition).
 `library-and-official-web` covers official issuer/regulator sources; `library-and-primary-web` also

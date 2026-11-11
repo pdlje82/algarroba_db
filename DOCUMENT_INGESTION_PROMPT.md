@@ -415,6 +415,16 @@ fields do not themselves invalidate evidence; factual topic/source changes and r
 versions do. Keep four independently reviewed idea comparisons per route or an explicit incomplete
 review with a recovery action. Do not clear a verification problem merely because a deadline passed.
 
+When reviewing payment timing, inspect the specific advance/disbursement clauses as well as cost
+eligibility. Preserve an explicit `Payment timing: <label>` first line in `financial_summary`, with
+dated evidence and conditions below. An advance can coexist with eligible-cost reimbursement and
+later justification; it is not full upfront payment. Record the percentage's denominator, guarantees,
+exceptions, request/award/start gates, coordinator transfers and recovery. Never copy a parent grant's
+cash flow to a cascade recipient, one national funder to another, or CDTI PID finance to a partnership
+grant. Unknown or failed checks remain unverified with a retry action. Keep availability dates and
+project profiles unchanged when only payment terms were checked, and allow versioned evidence
+changes to flag previous assessments for reconsideration.
+
 Work in coherent sections or themes small enough to inspect and recover. Continue until the requested collection/backlog is handled; a checkpoint is not the end of the task. Keep remaining work explicit if an actual interruption or blocker prevents completion.
 
 Use only supported batch fields: `batch_id`, `summary`, `base_revision`, `sources`, `topics`, `relationships`, `findings`, `coverage`, `unresolved`, `browse_groups` and, when applicable, the other fields supported by the current model such as `communities`, `irrigation_evidence`, `funding_reviews` and `funding_assessments`. User-owned `project_ideas` are not research import payloads. Keep inventory, extraction and workflow statuses in sidecar audit files. Follow the current schema rather than assuming every audit field has a rendered UI.

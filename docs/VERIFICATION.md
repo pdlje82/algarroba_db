@@ -421,6 +421,78 @@ manifest is archived for recovery without rewriting the historical ownership inv
 receipts and manifests are in `research/funding-complete-review-20261110/`; browser reports and
 screenshots are in `output/full-funding-review-qa/`. No commit, push or deployment was performed.
 
+### Funding payment timing and nature-credit clarification, 11 November 2026
+
+Accepted six exact checked batches `funding-payment-review-20261111-*-v1` at revisions 51–56.
+Every one of the 64 existing funding contexts has a manually checked payment disposition, covering
+all 58 route topics. All 143 funding topics retain their route/framework/reference role; framework
+and reference cards cannot inherit an advance badge. No schema or automatic eligibility logic was
+added: the existing financial summary carries an explicit heading projected onto cards and details.
+The [payment register](../imports/funding-payment-coverage-20261111.json) records old/new text,
+affected IDs, sources, retained availability dates and eighteen follow-up checks. Eight sources
+were added (four PDFs, four web records); twenty-four newly inspected PDF positions were accepted.
+Acquisition and text search alone did not become inspected coverage.
+
+The nature-credit roadmap explicitly names Horizon Europe and LIFE as research/innovation/pilot
+support and describes pilots already underway. The two existing nature-credit topics now clarify
+that this is not proof of a single first market launch, an accessible Alhama call or an upfront
+credit payment. The distinct planned 2025–2027 pilot retains its identity and evidence limitations.
+
+Validation passed: 86 frontend tests, 111 backend tests with one existing Windows symlink skip,
+production build and thirteen isolated browser checks. Four read-only live checks verified payment
+marks, exact NEXT MED contract options and source position 9, with no writes/errors. The app was
+not running on the initial live-health check; the identity-aware documented launcher started it
+successfully. The first QA attempt used an Inspect button for an anchored call; the corrected About
+navigation passed. No product defect or failed retrieval was converted into a successful check.
+
+Reproduce payment QA on an isolated copy (stop another owned QA fixture on port 8776 first):
+
+```powershell
+python scripts/funding-review-qa.py --database output/funding-payment-qa/fresh.sqlite
+# In another terminal with KGB_PLAYWRIGHT_MODULE configured:
+node --experimental-strip-types tests/funding-payment-browser.mjs
+```
+
+Important distinctions checked: LEADER requested advances/guarantees versus its start-up instalment;
+PAEAS nonprofit exemptions; LIFE normal 30% with exceptions; ESC indicative 80% versus its non-cash
+Quality Label; national AEI/FB/CDTI routes; Euro-MED no implementation advance with preparation-cost
+exception; NEXT MED contract choices, partner risk controls and unresolved availability; historical,
+draft and framework rules that do not establish an available award. The older SUDOE 5%/20% slide
+was excluded; current Fiche 7 documents reimbursement but does not establish an absolute advance ban.
+CDTI direct requests returned challenge/empty content. PID terms were recovered through the official
+document reader; Water4All's distinct CDTI grant payment terms remain unverified. The source/library
+ledger explicitly records this recovery without claiming a CDTI PDF accession. SUDOE's obsolete
+resource URL redirected to its homepage; the current guide was recovered through the correct index.
+
+Preservation passed: existing project ideas, all 256 assessments and their reasoning, relationships,
+findings, working communities, irrigation evidence, media, source editions, saved research/views,
+organisation and availability/deadline facts remain unchanged. The new payment evidence flags
+dependent assessments for reconsideration; none were silently rebound to the new review versions.
+Two topic descriptions gained the sourced nature-credit clarification. The old LEADER overview's
+four duplicate citation entries were coalesced; every distinct original reference remains intact.
+SQLite integrity/foreign keys and source/media hashes passed; no new organisation warnings.
+
+Verified recovery snapshots: `backups/knowledge-r56-20261111-094545-888808.sqlite` with companion
+`.media.zip`, and the separate 221-file library archive
+`backups/document-library-20261111T084614690734Z.zip`. Earlier library bytes are unchanged except
+the extended catalog, which now lists 90 entries/75 PDFs. The historical ownership inventory remains
+unchanged; the current recovery manifest is archived separately. Detailed receipts, source recovery,
+preservation and backup checks are in `research/funding-payment-review-20261111/`; browser evidence
+is in `output/funding-payment-qa/`. No commit, push, deployment or schedule change was made.
+
+### AL20 start-up deadline, 11 November 2026
+
+Accepted `al20-startup-deadline-20261111-v1` at revision 57. The existing 31 December 2028
+deadline is now prominent in `rural-business-start-up` and precisely labelled in its funding
+review, with the registered official call's PDF positions 4–6 for the deadline, budget limits
+and amendment-related suspensions. The AL20 timeout and actionable retry remain explicit;
+current budget/local submission status is not claimed verified. Payment terms, project profiles,
+all assessments, other topics/reviews, memberships and source editions remain unchanged.
+Preview, exact idempotent retry, integrity/foreign keys, source/media integrity, unchanged
+organisation advisories and live catalogue/inspection checks passed. No code/build changes.
+Backup: `backups/knowledge-r57-20261111-101338-891965.sqlite`. Checks and preserved baseline:
+`research/al20-startup-deadline-20261111/verification.json` and `before.json`.
+
 These files preserve their original bytes. Their layouts, counts, bundle hashes, permission
 exceptions and test results describe their dates. Repository-relative names inside historical
 text refer to the repository at that time; use the map above for current documentation.
