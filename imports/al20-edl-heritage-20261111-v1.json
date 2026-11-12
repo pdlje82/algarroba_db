@@ -1,0 +1,2517 @@
+{
+  "batch_id": "al20-edl-heritage-20261111-v1",
+  "summary": "Integrate the local EDL/EDLL layer of patrimonio rural under AL20: current cultural/natural scope, named landscape and living-practice examples, NPL3/OE3.3 and soil links, plus a separate historical 2014–2020 v5 interpretation. Accession the missing historical PDF; retain current edition identity, plans and prior conditions.",
+  "base_revision": 59,
+  "sources": [
+    {
+      "id": "KGB-SRC-0021",
+      "title": "EDLL Alpujarra–Sierra Nevada Almeriense 2023–2027 (library edition)",
+      "kind": "pdf",
+      "filename": "FUND-013 - Alpujarra Sierra Nevada Almeriense - EDLL 2023-2027 - v1.pdf",
+      "managed_path": "sources/full-library-20261110/FUND-013 - Alpujarra Sierra Nevada Almeriense - EDLL 2023-2027 - v1.pdf",
+      "sha256": "1c5b293d640dd3c8213aa314d6b791754ba8e82c3a0db32639236402adc4c796",
+      "pdf_pages": 544,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          3
+        ],
+        [
+          323,
+          329
+        ],
+        [
+          336,
+          336
+        ],
+        [
+          371,
+          371
+        ],
+        [
+          393,
+          401
+        ],
+        [
+          418,
+          418
+        ],
+        [
+          449,
+          449
+        ],
+        [
+          494,
+          494
+        ]
+      ],
+      "issuer": "GDR candidato Alpujarra–Sierra Nevada Almeriense",
+      "publication_date": null,
+      "language": "es",
+      "document_type": "local development strategy",
+      "library_path": "doc_library/FUND-013 - Alpujarra Sierra Nevada Almeriense - EDLL 2023-2027 - v1.pdf",
+      "url": "https://drive.usercontent.google.com/download?id=1OafTeCsmgjmGcOzNumeyZvvFyW6_pLpK&export=download&confirm=t",
+      "retrieved_on": "2026-11-11",
+      "edition_note": "Identical to the PDF linked by the GDR under EDLL version 1 on 11 November 2026. Programme period 2023–2027 is not a publication date; later amendments require their own verification."
+    },
+    {
+      "id": "KGB-SRC-0150",
+      "title": "Alpujarra–Sierra Nevada Almeriense — historical EDL 2014–2020, version 5 (2 November 2023)",
+      "kind": "pdf",
+      "filename": "FUND-055 - Alpujarra Sierra Nevada Almeriense - EDL 2014-2020 - Version 5 - 2023-11-02.pdf",
+      "managed_path": "sources/al20-edl-heritage-20261111/edl2014-version5.pdf",
+      "library_path": "doc_library/FUND-055 - Alpujarra Sierra Nevada Almeriense - EDL 2014-2020 - Version 5 - 2023-11-02.pdf",
+      "sha256": "8570af76ba19783da30430a9f3018df388483100a69538d696d6d3abfbf5d17c",
+      "pdf_pages": 610,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          3
+        ],
+        [
+          217,
+          219
+        ],
+        [
+          292,
+          292
+        ],
+        [
+          344,
+          344
+        ],
+        [
+          422,
+          423
+        ]
+      ],
+      "issuer": "ADR Alpujarra Sierra Nevada de Almería",
+      "edition_date": "2023-11-02",
+      "language": "es",
+      "document_type": "historical local development strategy",
+      "url": "https://drive.usercontent.google.com/download?id=1Syvsv77jtMeWWh2SnDTTBaqImnCBF92I&export=download&confirm=t",
+      "retrieved_on": "2026-11-11",
+      "edition_note": "PDF position 2 records adoption of version 5 by the ADR association assembly on 2 November 2023; this is not a claimed Junta approval date."
+    }
+  ],
+  "topics": [
+    {
+      "id": "al20-edll-2023-2027",
+      "label": "Current EDLL 2023–2027 · local heritage scope",
+      "kind": "programme",
+      "domain": "funding",
+      "group_id": "programmes",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 3,
+          "label": "EDLL 2023–2027: title, GDR and territorial scope",
+          "locator": "Título de la Estrategia de Desarrollo Local Leader; Zona Rural LEADER"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20"
+      ],
+      "description": "This is the Alpujarra–Sierra Nevada Almeriense local strategy for the 2023–2027 programme period, using the 544-page version 1 linked by the GDR and matched byte-for-byte to the existing library edition on 11 November 2026. It identifies cultural and natural rural heritage through a territorial diagnosis, local asset inventories and priorities. Section 3.4.1.10 distinguishes immovable, movable and intangible cultural heritage and cultural landscapes. NPL3 concerns conservation, enhancement and dissemination of cultural/natural heritage; OE3.3 tracks cultural and natural operations separately. Open the named landscapes and living-practice examples for concrete local evidence. Its intervention logic connects soil regeneration and erosion/aridity reduction to the heritage objective. This is documentary identification and strategic alignment, not an award, site-specific designation or automatic eligibility. The general legal definition and the applicable 2026 operation/selection rules remain separate. Version 1 is the currently linked edition checked here; later amendments are not assumed absent.",
+      "aspects": {
+        "documentary role": "Current-period local strategy; GDR-linked version 1, exact existing edition",
+        "programme period": "2023–2027",
+        "publication date": "Unverified; programme period is not a publication date",
+        "evidence limits": "Identification and priorities; not a final grant or individual eligibility decision"
+      }
+    },
+    {
+      "id": "al02-edl-2014-2020",
+      "label": "Historical EDL 2014–2020 · version 5",
+      "kind": "programme",
+      "domain": "funding",
+      "group_id": "programmes",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 1,
+          "label": "Historical EDL 2014–2020: title and version 5",
+          "locator": "Portada: Seguimos haciendo futuro (versión 5)"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 2,
+          "label": "Version 5 adopted by the ADR assembly on 2 November 2023",
+          "locator": "Créditos y aprobación de la versión 5; Laujar de Andarax, 2 de noviembre de 2023"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 217,
+          "label": "Historical cultural-heritage system and IAPH categories",
+          "locator": "4.3.5. Sistema Patrimonial Cultural de la Zona Rural LEADER"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al02-predecessor"
+      ],
+      "description": "This is the earlier Alpujarra–Sierra Nevada Almeriense strategy, titled Seguimos haciendo futuro, for the 2014–2020 programme. Its version 5 was adopted by the association’s extraordinary general assembly on 2 November 2023, as stated at PDF position 2; this records association adoption, not a separate claimed Junta approval. The historical diagnosis distinguishes cultural heritage, cultural landscapes and the natural-heritage system. Proyecto Programado 2 treats landscape as a fundamental heritage element, includes tangible and intangible assets, and discusses heritage infrastructure with or without formal designation, traditions, music, crafts and trovo. These passages show continuity in the local interpretation of rural heritage. They do not replace the current-period EDLL or the 2026 funding rules. Historical beneficiary classes, productive/nonproductive categories, percentages and caps retain their own programme and call context. Named sites and practices are documentary examples, not newly established awards or measured conservation outcomes.",
+      "aspects": {
+        "programme period": "2014–2020",
+        "version": "5",
+        "association adoption date": "2023-11-02",
+        "status": "Historical strategy; not current AL20 call conditions"
+      }
+    },
+    {
+      "id": "al20-npl3-heritage",
+      "label": "AL20 NPL3 · cultural and natural rural heritage",
+      "kind": "condition",
+      "domain": "funding",
+      "group_id": "requirements",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ],
+      "description": "NPL3 is the current-period EDLL need for conservation, enhancement and dissemination of the area’s cultural and natural rural heritage by public and/or private entities. Its recorded prioritization value is 3.22. That number ranks a territorial need; it is not grant-selection points, a subsidy rate or a project score. The strategy’s intervention logic maps NPL3 to OE3.3 together with NPL4 soil regeneration/erosion/aridity and NPL8 climate action. The presence of private entities in this strategy need does not remove the applicant and nonproductive conditions of the particular operation type. Use the asset inventory and exact local priority as evidence, then check the separately applicable activity, applicant, cost and selection rules.",
+      "aspects": {
+        "need code": "NPL3",
+        "priority value": "3.22; strategy prioritization, not application points"
+      }
+    },
+    {
+      "id": "al20-oe33-heritage",
+      "label": "AL20 OE3.3 · enhancement and dissemination of rural heritage",
+      "kind": "condition",
+      "domain": "funding",
+      "group_id": "requirements",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ],
+      "description": "OE3.3 is a strategic objective in the current-period EDLL: enhancement and dissemination of rural heritage. The strategy monitors cultural heritage through IN3.3.1 and natural heritage through IN3.3.2, with other indicators for participants, gender, climate and youth. The page 494 logic table maps NPL3 heritage, NPL4 soil regeneration and NPL8 climate action to this objective and lists operation types 3.1, 3.3, 3.4 and 3.5. This documents strategic coherence rather than an approved application or a prescribed sequence of stages. The code OE3.3 is an objective identifier; operation type 3.3 is a different identifier for promotion, information and awareness.",
+      "aspects": {
+        "objective code": "OE3.3",
+        "code distinction": "OE3.3 strategic objective ≠ operation type 3.3",
+        "indicators": "IN3.3.1 cultural; IN3.3.2 natural heritage; not measured project results"
+      }
+    },
+    {
+      "id": "al20-edll-living-practices",
+      "label": "Living-heritage examples in the current EDLL",
+      "kind": "aspect",
+      "domain": "funding",
+      "group_id": "requirements",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 325,
+          "label": "Local living heritage: Alhabia pottery, Terque crafts and Alhama trades",
+          "locator": "Tabla municipal: bienes protegidos inmuebles–patrimonio inmaterial; Alhabia, Terque y Alhama de Almería"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 326,
+          "label": "Local living heritage: Instinción practices, Ohanes skills and Padules viticulture",
+          "locator": "Tabla municipal: Instinción, Ohanes y Padules"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ],
+      "description": "The current EDLL’s municipal inventory makes intangible heritage concrete. It lists pottery in Alhabia; barilla soap, artisan soap and barrel making in Terque; carpentry and glasswork in Alhama de Almería; viticulture, beehive making and named food preparations in Instinción; lace making, weaving and wine making in Ohanes; and viticulture in Padules. Festivals and other locally named traditions also appear in these rows. Section 3.4.1.10 explains the distinction between immovable, movable and intangible cultural heritage and cultural landscapes. These are source-listed practices and potential subjects for documenting cultural value. An inventory entry does not certify that every practitioner, event or modern commercial activity qualifies, or that any listed practice has received a grant. The activity’s heritage role and the proposed conservation/dissemination operation need their own evidence.",
+      "aspects": {
+        "Alhabia": "Alfarería",
+        "Terque": "Elaboración de jabón de barrilla; jabón artesanal; barriles",
+        "Alhama de Almería": "Carpintería; vidriería",
+        "Instinción": "Viticultura; fabricación de colmenas; elaboración de tarta; roscos de pan dormido",
+        "Ohanes": "Encaje de bolillos; tejeduría; elaboración de vino de mesa",
+        "Padules": "Viticultura en Padules",
+        "status": "EDLL inventory examples, not grant awards"
+      }
+    },
+    {
+      "id": "los-millares-cultural-landscape",
+      "label": "Los Millares · archaeological cultural landscape",
+      "kind": "place",
+      "domain": "funding",
+      "group_id": "places",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Los Millares · archaeological cultural landscape: landscape description and values",
+          "locator": "Paisaje de Los Millares; ficha 1"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical Los Millares landscape and archaeological heritage",
+          "locator": "4.3.5; paisaje de interés cultural de Santa Fe de Mondújar"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ],
+      "description": "The EDLL reproduces an IAPH description of the Los Millares cultural landscape, identifying Santa Fe de Mondújar, Alhama de Almería and Gádor. It describes the settlement between the Andarax and Huéchar, fortifications, a collective necropolis and the interaction between archaeological remains and a semidesert natural setting. This is a landscape-scale cultural example, rather than only a single monument. The historical EDL also describes Los Millares and its cultural-landscape value. The descriptions document heritage characteristics; they do not establish a new conservation project, a funded intervention or current site condition.",
+      "aspects": {
+        "evidence status": "Named heritage landscape in current EDLL; not a funded project",
+        "source attribution": "IAPH landscape description reproduced in the EDLL"
+      },
+      "place_ids": [
+        "santa-fe-de-mondujar",
+        "alhama-de-almeria",
+        "gador"
+      ]
+    },
+    {
+      "id": "bentarique-cultural-landscape",
+      "label": "Bentarique · agrarian cultural landscape",
+      "kind": "place",
+      "domain": "funding",
+      "group_id": "places",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Bentarique · agrarian cultural landscape: landscape description and values",
+          "locator": "Paisaje agrario de Bentarique; ficha 67"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 218,
+          "label": "Historical Bentarique: orchard landscape and settlement pattern",
+          "locator": "4.3.5; paisaje de interés cultural de Bentarique"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ],
+      "description": "The current EDLL identifies Bentarique’s agrarian cultural landscape in the Andarax valley. Its reproduced IAPH account links orchard/fruit-growing land, the settlement and memory of Andalusi urbanism, historic irrigation, parrales and citrus, threshing floors and local agricultural traditions. This illustrates how land use, water systems, settlement and knowledge can form a heritage landscape. The earlier EDL also identifies the Bentarique landscape. The source’s historical and agrarian value is not a measured conservation outcome or an award. Heritage identification does not remove operation 3.5’s separate restrictions on agricultural-production support and the final use of agrarian infrastructure.",
+      "aspects": {
+        "evidence status": "Named heritage landscape in current EDLL; not a funded project",
+        "source attribution": "IAPH landscape description reproduced in the EDLL"
+      },
+      "place_ids": [
+        "bentarique"
+      ]
+    },
+    {
+      "id": "ohanes-viticultural-landscape",
+      "label": "Ohanes · viticultural cultural landscape",
+      "kind": "place",
+      "domain": "funding",
+      "group_id": "places",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Ohanes · viticultural cultural landscape: landscape description and values",
+          "locator": "Paisaje vitivinícola de Ohanes; ficha 60"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 218,
+          "label": "Historical Ohanes: paratas, balates and terraced landscape",
+          "locator": "4.3.5; paisaje de interés cultural de Ohanes"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical Ohanes: landscape continuation and rural buildings",
+          "locator": "4.3.5; continuación de la descripción de Ohanes"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ],
+      "description": "The current EDLL describes Ohanes as a viticultural cultural landscape with terraces (paratas), dry-stone retaining walls (balates), irrigation channels (acequias), stone-working knowledge and the historic culture of the Ohanes/uva de barco grape. These interacting physical structures, land uses and inherited skills explain its landscape and cultural value. The historical EDL likewise discusses the terraced Ohanes landscape. This is a source-described heritage example; it does not establish a currently funded vineyard project, a validated restoration prescription or the condition of an individual parcel. A proposed heritage intervention must still meet applicable activity and agricultural-production exclusions.",
+      "aspects": {
+        "evidence status": "Named heritage landscape in current EDLL; not a funded project",
+        "source attribution": "IAPH landscape description reproduced in the EDLL"
+      },
+      "place_ids": [
+        "ohanes"
+      ]
+    },
+    {
+      "id": "sierra-gador-mining-landscape",
+      "label": "Sierra de Gádor · mining cultural landscape",
+      "kind": "place",
+      "domain": "funding",
+      "group_id": "places",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Sierra de Gádor · mining cultural landscape: landscape description and values",
+          "locator": "Paisaje minero de la Sierra de Gádor; ficha 84"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ],
+      "description": "The current EDLL identifies the Sierra de Gádor mining cultural landscape in Berja. Its reproduced description explains extraction areas, workings and industrial remains from different periods, including galleries, ventilation shafts and hoisting/processing structures, and their relationship with the wider mountain landscape. It names the mining areas of Chirán and Castala and describes landscape traces of mining decline. This provides a documented industrial and cultural-landscape example. It is not a restoration specification, evidence that the remains are safe to visit, a grant award or a measured environmental outcome. Any conservation or public-interpretation proposal needs site-specific evidence and applicable rights and permissions.",
+      "aspects": {
+        "evidence status": "Named heritage landscape in current EDLL; not a funded project",
+        "source attribution": "IAPH landscape description reproduced in the EDLL"
+      },
+      "place_ids": [
+        "berja"
+      ]
+    },
+    {
+      "id": "al02-edl-heritage-interpretation",
+      "label": "Historical heritage interpretation · landscape, traditions and trovo",
+      "kind": "aspect",
+      "domain": "funding",
+      "group_id": "requirements",
+      "aliases": [],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 217,
+          "label": "Historical cultural categories: immovable, movable, intangible and landscapes",
+          "locator": "4.3.5. Sistema Patrimonial Cultural"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical ethnological assets: mills, cortijos, mining and cultural inventories",
+          "locator": "4.3.5 y comienzo de 4.3.6. Sistema Patrimonial Natural"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 292,
+          "label": "Historical territorial synthesis: cultural and natural rural heritage",
+          "locator": "Síntesis de la valoración por áreas temáticas"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 344,
+          "label": "Historical strengths: tangible/intangible and natural/landscape heritage",
+          "locator": "Necesidades, potencialidades y aspectos innovadores; áreas temáticas"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al02-predecessor"
+      ],
+      "description": "The 2014–2020 EDL version 5 uses a broad interpretation of rural heritage. Its cultural diagnosis distinguishes immovable architectural, ethnological and archaeological heritage, movable objects, intangible heritage and cultural landscapes. The strategy identifies cultural and natural heritage as complementary territorial resources. Proyecto Programado 2 treats landscape as fundamental and discusses conservation of heritage infrastructure with or without formal designation, together with recovery of traditions, music, crafts and trovo. It includes festivals or events that bring local historical or traditional values to public attention as possible operations in that former programme. These are historical strategy descriptions and proposed kinds of action, not proof that every example was funded, completed or successful. Their former applicant categories and aid limits do not transfer to today’s AL20 operation types."
+    },
+    {
+      "id": "rural-heritage",
+      "label": "Patrimonio rural · rural heritage",
+      "kind": "family",
+      "domain": "funding",
+      "description": "Rural heritage comprises the rural area’s architectural, historical, artistic, ethnological, ethnographic, cultural, environmental and landscape assets. It includes tangible and intangible heritage. For architectural/historical/artistic/ethnological/ethnographic/cultural assets, Article 3.5 points to official recognition or initiated recognition; a justified identification in the local strategy or an expert technical report can also establish rural-heritage status. A monument designation is therefore not the only evidential route, and private ownership or a rural location alone establishes neither qualification nor exclusion. Document what the asset is and why it matters. The child concepts explain cultural/documentary, living/intangible, environmental/geological, landscape and water/agricultural heritage. Their examples illustrate possible meanings, not automatic eligibility. 3.5 additionally requires the applicable public-interest, cost and dissemination/use conditions. The AL20 local layer is now available in separate Current EDLL 2023–2027 and Historical EDL 2014–2020 branches. The current EDLL explicitly combines cultural and natural heritage, identifies municipal living practices and four named cultural landscapes, and links NPL3 heritage with OE3.3. Its soil-regeneration correlation is strategic evidence, not an individual eligibility decision. The historical strategy separately explains landscapes, traditions, music, crafts and trovo. Keep legal recognition, justified local identification, priority/scoring and the eligibility of a proposed activity distinct.",
+      "aliases": [
+        "patrimonio rural",
+        "rural patrimony"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "locator": "Artículo 3.5. Patrimonio rural",
+          "label": "Rural heritage definition and recognition evidence"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "locator": "Heritage public use, applicants, costs and purchase exclusion",
+          "label": "Heritage public use, applicants, costs and purchase exclusion"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ],
+      "aspects": {
+        "local evidence": "Current EDLL version 1 and historical EDL version 5 have distinct folders and exact citations",
+        "recognition vs activity": "A justified EDL identification can support heritage status; grant eligibility and selection remain separate"
+      }
+    },
+    {
+      "id": "rural-cultural-built-heritage",
+      "label": "Built, artistic and documentary heritage",
+      "kind": "family",
+      "domain": "funding",
+      "description": "Architecture, archaeology, historical structures, artistic works and movable or documentary assets. The Alcolea award combines study of old land/water records with document conservation, while the Santa Fe project funds tower rehabilitation. These actual examples show different asset types; they do not mean every old building, book or object qualifies. The current EDLL’s local diagnosis uses immovable, movable and intangible cultural categories and names mining and archaeological heritage. The older EDL gives architectural, ethnological and archaeological subdivisions, with mills, cortijos and mining-related elements among its examples. These inventories identify heritage characteristics; each asset’s formal protection status must be checked separately.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "locator": "Artículo 3.5. Patrimonio rural",
+          "label": "Rural heritage definition and recognition evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0136",
+          "page": 10,
+          "locator": "Alcolea: historical books, agricultural traditions and document conservation",
+          "label": "Alcolea: historical books, agricultural traditions and document conservation"
+        },
+        {
+          "source_id": "KGB-SRC-0136",
+          "page": 11,
+          "locator": "Santa Fe: tower rehabilitation and professional fees",
+          "label": "Santa Fe: tower rehabilitation and professional fees"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 217,
+          "label": "Historical classification of immovable and movable cultural heritage",
+          "locator": "4.3.5. Sistema Patrimonial Cultural"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical ethnological examples: mills, cortijos and mining",
+          "locator": "4.3.5; descripción de registros patrimoniales"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ]
+    },
+    {
+      "id": "rural-intangible-heritage",
+      "label": "Living culture and intangible heritage",
+      "kind": "family",
+      "domain": "funding",
+      "description": "Knowledge, oral traditions, music, skills and other intangible cultural assets can form rural heritage. The LEADER II trovo school teaches improvised oral poetry through historical discussion, recordings and practical games. The traditional-music festival is a separately documented cultural initiative. Training, awareness and conservation are different operation purposes; historical support does not make AL20 3.2 available. Current EDLL municipal tables supply concrete local practices such as Alhabia pottery, Terque soap/barrel making, Alhama carpentry/glasswork and Ohanes weaving/wine making. The historical EDL explicitly discusses recovery of music, traditions, crafts and trovo. A practice listed as intangible heritage is distinct from a grant-funded event or a particular practitioner’s commercial business.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "locator": "Artículo 3.5. Patrimonio rural",
+          "label": "Rural heritage definition and recognition evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0139",
+          "page": 22,
+          "locator": "Experimental trovo school: purpose, teaching methods and participants",
+          "label": "Experimental trovo school: purpose, teaching methods and participants"
+        },
+        {
+          "source_id": "KGB-SRC-0139",
+          "page": 34,
+          "locator": "Traditional music festival: cultural recovery and exchange",
+          "label": "Traditional music festival: cultural recovery and exchange"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 325,
+          "label": "Local living heritage: Alhabia pottery, Terque crafts and Alhama trades",
+          "locator": "Tabla municipal: bienes protegidos inmuebles–patrimonio inmaterial; Alhabia, Terque y Alhama de Almería"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 326,
+          "label": "Local living heritage: Instinción practices, Ohanes skills and Padules viticulture",
+          "locator": "Tabla municipal: Instinción, Ohanes y Padules"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ]
+    },
+    {
+      "id": "rural-landscape-heritage",
+      "label": "Landscape heritage",
+      "kind": "family",
+      "domain": "funding",
+      "description": "Landscape can reflect interacting natural and human processes. Traditional settlement patterns, terraces, vegetation mosaics and rural views are illustrative investigation subjects, rather than a universal eligible list. Distinguish conserving the landscape’s documented value from commercial landscaping or simply improving private property. The source’s natural-heritage and landscape definitions support discussing ecological and cultural value together, while the funding operation still needs its own evidence. The current AL20 EDLL identifies Los Millares, agrarian Bentarique, viticultural Ohanes and the Sierra de Gádor mining landscape. Their descriptions give concrete archaeological, agrarian, water-system and industrial attributes. The historical EDL also treats landscape as fundamental heritage. These named cases give local documentary grounding beyond generic illustrative landscape examples.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "locator": "Artículo 3.5. Patrimonio rural",
+          "label": "Rural heritage definition and recognition evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0142",
+          "page": 17,
+          "locator": "Artículo 3, apartados 20, 21, 25–27 y 30–32",
+          "label": "Natural heritage, landscapes, habitats and ecosystem restoration"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 327,
+          "label": "Four named cultural landscapes in the AL20 area",
+          "locator": "Los paisajes culturales en los que participan municipios de la ZRL; fichas 01, 67, 60 y 84"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Los Millares and Bentarique: landscape descriptions",
+          "locator": "Fichas 1 y 67"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Ohanes and Sierra de Gádor: landscape descriptions",
+          "locator": "Fichas 60 y 84"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ]
+    },
+    {
+      "id": "rural-water-agrarian-heritage",
+      "label": "Water systems and agrarian heritage",
+      "kind": "family",
+      "domain": "funding",
+      "description": "Historic irrigation channels, cisterns, mills, terraces, threshing floors and associated records or traditional knowledge can be investigated as cultural/landscape assets. These examples require documented heritage value. The Alcolea award explicitly concerns historical records of land allocation, water and acequias, compared with agricultural traditions. Category 3.5 excludes agricultural-production support; conservation of agrarian infrastructure is conditional on its final use not being agricultural production, processing or marketing. Restoring a working productive irrigation system is not automatically heritage funding. The current EDLL gives specific landscape evidence: Bentarique’s historic irrigation/orchard setting and Ohanes’s paratas, balates, acequias and viticultural knowledge. These descriptions establish why an agrarian water/landscape feature may have heritage value, while the quoted final-use restriction remains a separate current funding condition.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "locator": "Artículo 3.5. Patrimonio rural",
+          "label": "Rural heritage definition and recognition evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0136",
+          "page": 10,
+          "locator": "Alcolea: habices, land-allocation and acequia records",
+          "label": "Alcolea: habices, land-allocation and acequia records"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "locator": "3.5: agrarian and forestry production exclusions",
+          "label": "3.5: agrarian and forestry production exclusions"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Bentarique: historic irrigation and agrarian landscape",
+          "locator": "Paisaje agrario de Bentarique; ficha 67"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Ohanes: terraces, balates, acequias and viticultural knowledge",
+          "locator": "Paisaje vitivinícola de Ohanes; ficha 60"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20-line-3"
+      ]
+    },
+    {
+      "id": "natural-heritage",
+      "label": "Environmental and geological heritage",
+      "kind": "family",
+      "domain": "ecosystem",
+      "description": "Natural heritage includes biological and geological resources with relevant environmental, landscape, scientific or cultural value. The Spanish law distinguishes natural/seminatural habitats, species habitats, landscape and ecosystem restoration. Native habitats, ecological corridors, wetlands, significant trees or geological features are possible investigation subjects; a site assessment must establish the actual values and pressures. These are explanatory examples, not a designation of the user’s land or automatic LEADER eligibility. The AL20 EDLL explicitly includes natural heritage within NPL3 and assigns it a separate OE3.3 monitoring indicator. Its diagnostic response supports conservation and land-stewardship initiatives, and its intervention-logic table connects soil regeneration and erosion/aridity reduction to the heritage objective. These are source-stated strategic links; they do not classify every parcel or supply an approved restoration or planting plan.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "locator": "Artículo 3.5. Patrimonio rural",
+          "label": "Rural heritage definition and recognition evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0142",
+          "page": 17,
+          "locator": "Artículo 3, apartados 20, 21, 25–27 y 30–32",
+          "label": "Natural heritage, landscapes, habitats and ecosystem restoration"
+        },
+        {
+          "source_id": "KGB-SRC-0142",
+          "page": 16,
+          "locator": "Biodiversity, traditional knowledge, habitat conservation and stewardship",
+          "label": "Biodiversity, traditional knowledge, habitat conservation and stewardship"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 371,
+          "label": "Natural heritage: conservation and land-stewardship opportunities",
+          "locator": "DAFO_O1 y DAFO_O2; explotar las oportunidades"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ],
+      "funding_role": null,
+      "funding_context_ids": []
+    },
+    {
+      "id": "al20-soil-priority",
+      "label": "AL20 NPL4: soil regeneration, erosion and aridity",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "NPL4 in the reviewed AL20 strategy calls for actions regenerating soils and reducing erosion and aridity, with a priority value of 3.16. It sits alongside NPL2 sustainable agriculture and NPL3 rural natural/cultural heritage. These are distinct strategic needs; their prioritization values do not award application points. The same strategy separately classifies broader natural-environment management measures under non-LEADER-addressable NPNL4. A restoration proposal therefore needs a justified mapping to the correct need, activity, applicant and funding rules rather than a blanket assumption that environmental work is eligible. The EDLL’s page 494 correlation table expressly places NPL4 beside NPL3 cultural/natural heritage and NPL8 climate action under OE3.3, listing operation types 3.1, 3.3, 3.4 and 3.5. This supplies a documented route for explaining strategic coherence while preserving all separate eligibility and non-LEADER-management qualifications above.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "locator": "4.3",
+          "label": "AL20 NPL2–4: agriculture, heritage and soil priorities"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 397,
+          "locator": "4.3; NPNL4",
+          "label": "AL20 NPNL4: separate non-LEADER-addressable management need"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20"
+      ]
+    },
+    {
+      "id": "al20-heritage-value",
+      "label": "Enhancement of rural heritage",
+      "kind": "condition",
+      "domain": "funding",
+      "description": "Source criterion PT.1 for non-productive Line 3 operations. PT.1.1: natural/monumental/architectural/artistic heritage enhanced for subsequent use through physical work, training, dissemination or awareness (13 points); PT.1.2: traditional trades/gastronomic specialties identified in EDLL (7); PT.1.3: other heritage action identified as of interest in EDLL (2). Family maximum 15. The September verification guide distinguishes proof at application from actual implementation at payment. PT.1.1 investments use a basic project for the intended heritage use; payment evidence can include execution project, final works certificate, reception record and photographs. For strategy-dependent .2/.3, the guide requires GDR justification and the latest applicable EDL. Annex VII marks PT.1 subcriteria cumulative, subject to the AL20 family maximum of 15. The EDLL itself also sets out PT.1 at position 449. Use the local heritage inventory to explain the specific asset or practice and retain the latest applicable selection/verification rules separately. NPL3’s priority value and OE3.3’s objective code are not additional PT.1 points.",
+      "aliases": [
+        "PT.1"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-004",
+          "page": 19,
+          "locator": "Line 3 selection table: PT.1",
+          "label": "AL20 Line 3: PT.1 heritage weights"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 104,
+          "locator": "PT.1: application versus payment evidence",
+          "label": "PT.1: application versus payment evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 105,
+          "locator": "PT.1: completed works and latest-strategy checks",
+          "label": "PT.1: completed works and latest-strategy checks"
+        },
+        {
+          "source_id": "KGB-SRC-0022",
+          "page": 230,
+          "locator": "Anexo VII",
+          "label": "PT.1: cumulative subcriteria"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 449,
+          "label": "PT.1 strategy table: heritage actions, traditional trades and EDL identification",
+          "locator": "PT.1.1–PT.1.3; contribución de la operación a la puesta en valor del patrimonio"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20"
+      ],
+      "aspects": {
+        "source family maximum": "15 points"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "edlh-al20-current-strategy",
+      "source": "al20",
+      "target": "al20-edll-2023-2027",
+      "label": "has a current-period local strategy",
+      "explanation": "The strategy identifies the same GDR/ZRL and 2023–2027 period. This is a programme/strategy connection, not an eligibility shortcut.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 3,
+          "label": "GDR, territory and 2023–2027 strategy title",
+          "locator": "Título EDLL y Zona Rural LEADER"
+        }
+      ]
+    },
+    {
+      "id": "edlh-al02-old-strategy",
+      "source": "al02-predecessor",
+      "target": "al02-edl-2014-2020",
+      "label": "has this historical local strategy",
+      "explanation": "The EDL’s title/credits identify the 2014–2020 local strategy; the historical AL02 call document identifies the corresponding EDL and territory.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 2,
+          "label": "2014–2020 strategy programme context and version adoption",
+          "locator": "Créditos y aprobación"
+        },
+        {
+          "source_id": "KGB-SRC-0141",
+          "page": 1,
+          "label": "AL02 historical call identifies the EDL and territory",
+          "locator": "GDR EDL y ZRL; denominación EDL"
+        }
+      ]
+    },
+    {
+      "id": "edlh-strategy-periods",
+      "source": "al02-edl-2014-2020",
+      "target": "al20-edll-2023-2027",
+      "label": "provides earlier local heritage context",
+      "explanation": "Curated comparison of strategies for successive programme periods in the same local area; neither dates alone nor shared assets transfer former funding conditions.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 2,
+          "label": "Earlier strategy title, period and adoption",
+          "locator": "Créditos"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 3,
+          "label": "Current-period strategy title and territory",
+          "locator": "Título EDLL"
+        }
+      ]
+    },
+    {
+      "id": "edlh-current-definition",
+      "source": "al20-edll-2023-2027",
+      "target": "rural-heritage",
+      "label": "identifies local cultural and natural heritage",
+      "explanation": "Its classification, inventories and NPL3 elaborate the local scope used alongside the regional definition.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "label": "Rural heritage: justified EDL identification or professional technical evidence",
+          "locator": "Artículo 3.5. Patrimonio rural; tercer párrafo"
+        }
+      ]
+    },
+    {
+      "id": "edlh-historical-definition",
+      "source": "al02-edl-2014-2020",
+      "target": "al02-edl-heritage-interpretation",
+      "label": "explains historical heritage scope",
+      "explanation": "The older cultural diagnosis and PP2 interpretation retain their dated strategy context.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 217,
+          "label": "Historical cultural system",
+          "locator": "4.3.5"
+        }
+      ]
+    },
+    {
+      "id": "edlh-old-rural-intangible-heritage",
+      "source": "al02-edl-heritage-interpretation",
+      "target": "rural-intangible-heritage",
+      "label": "includes this heritage dimension",
+      "explanation": "PP2 discusses the landscape and intangible cultural traditions explicitly; this does not transfer historical activity conditions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        }
+      ]
+    },
+    {
+      "id": "edlh-old-rural-landscape-heritage",
+      "source": "al02-edl-heritage-interpretation",
+      "target": "rural-landscape-heritage",
+      "label": "includes this heritage dimension",
+      "explanation": "PP2 discusses the landscape and intangible cultural traditions explicitly; this does not transfer historical activity conditions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        }
+      ]
+    },
+    {
+      "id": "edlh-current-practices",
+      "source": "al20-edll-2023-2027",
+      "target": "al20-edll-living-practices",
+      "label": "lists municipal living-heritage examples",
+      "explanation": "Inventory entries give named practices and places rather than grant awards.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 325,
+          "label": "Local living heritage: Alhabia pottery, Terque crafts and Alhama trades",
+          "locator": "Tabla municipal: bienes protegidos inmuebles–patrimonio inmaterial; Alhabia, Terque y Alhama de Almería"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 326,
+          "label": "Local living heritage: Instinción practices, Ohanes skills and Padules viticulture",
+          "locator": "Tabla municipal: Instinción, Ohanes y Padules"
+        }
+      ]
+    },
+    {
+      "id": "edlh-practices-intangible",
+      "source": "al20-edll-living-practices",
+      "target": "rural-intangible-heritage",
+      "label": "provides local intangible-heritage examples",
+      "explanation": "The municipal tables explicitly list these practices under patrimonio inmaterial.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 325,
+          "label": "Local living heritage: Alhabia pottery, Terque crafts and Alhama trades",
+          "locator": "Tabla municipal: bienes protegidos inmuebles–patrimonio inmaterial; Alhabia, Terque y Alhama de Almería"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 326,
+          "label": "Local living heritage: Instinción practices, Ohanes skills and Padules viticulture",
+          "locator": "Tabla municipal: Instinción, Ohanes y Padules"
+        }
+      ]
+    },
+    {
+      "id": "edlh-practices-alhabia",
+      "source": "al20-edll-living-practices",
+      "target": "alhabia",
+      "label": "lists practices in this municipality",
+      "explanation": "Source-listed municipal context, not a grant beneficiary or proof of current practice prevalence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 325,
+          "label": "Local living heritage: Alhabia pottery, Terque crafts and Alhama trades",
+          "locator": "Tabla municipal: bienes protegidos inmuebles–patrimonio inmaterial; Alhabia, Terque y Alhama de Almería"
+        }
+      ]
+    },
+    {
+      "id": "edlh-practices-terque",
+      "source": "al20-edll-living-practices",
+      "target": "terque",
+      "label": "lists practices in this municipality",
+      "explanation": "Source-listed municipal context, not a grant beneficiary or proof of current practice prevalence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 325,
+          "label": "Local living heritage: Alhabia pottery, Terque crafts and Alhama trades",
+          "locator": "Tabla municipal: bienes protegidos inmuebles–patrimonio inmaterial; Alhabia, Terque y Alhama de Almería"
+        }
+      ]
+    },
+    {
+      "id": "edlh-practices-alhama-de-almeria",
+      "source": "al20-edll-living-practices",
+      "target": "alhama-de-almeria",
+      "label": "lists practices in this municipality",
+      "explanation": "Source-listed municipal context, not a grant beneficiary or proof of current practice prevalence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 325,
+          "label": "Local living heritage: Alhabia pottery, Terque crafts and Alhama trades",
+          "locator": "Tabla municipal: bienes protegidos inmuebles–patrimonio inmaterial; Alhabia, Terque y Alhama de Almería"
+        }
+      ]
+    },
+    {
+      "id": "edlh-practices-instincion",
+      "source": "al20-edll-living-practices",
+      "target": "instincion",
+      "label": "lists practices in this municipality",
+      "explanation": "Source-listed municipal context, not a grant beneficiary or proof of current practice prevalence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 326,
+          "label": "Local living heritage: Instinción practices, Ohanes skills and Padules viticulture",
+          "locator": "Tabla municipal: Instinción, Ohanes y Padules"
+        }
+      ]
+    },
+    {
+      "id": "edlh-practices-ohanes",
+      "source": "al20-edll-living-practices",
+      "target": "ohanes",
+      "label": "lists practices in this municipality",
+      "explanation": "Source-listed municipal context, not a grant beneficiary or proof of current practice prevalence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 326,
+          "label": "Local living heritage: Instinción practices, Ohanes skills and Padules viticulture",
+          "locator": "Tabla municipal: Instinción, Ohanes y Padules"
+        }
+      ]
+    },
+    {
+      "id": "edlh-practices-padules",
+      "source": "al20-edll-living-practices",
+      "target": "padules",
+      "label": "lists practices in this municipality",
+      "explanation": "Source-listed municipal context, not a grant beneficiary or proof of current practice prevalence.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 326,
+          "label": "Local living heritage: Instinción practices, Ohanes skills and Padules viticulture",
+          "locator": "Tabla municipal: Instinción, Ohanes y Padules"
+        }
+      ]
+    },
+    {
+      "id": "edlh-identifies-los-millares-cultural-landscape",
+      "source": "al20-edll-2023-2027",
+      "target": "los-millares-cultural-landscape",
+      "label": "identifies this cultural landscape",
+      "explanation": "Named landscape in the local EDLL; not a funded project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Los Millares · archaeological cultural landscape: identified cultural landscape",
+          "locator": "Paisaje de Los Millares; ficha 1"
+        }
+      ]
+    },
+    {
+      "id": "edlh-landscape-los-millares-cultural-landscape",
+      "source": "los-millares-cultural-landscape",
+      "target": "rural-landscape-heritage",
+      "label": "is a documented cultural-landscape example",
+      "explanation": "The landscape combines source-described natural/human features; no parcel-level eligibility is inferred.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Los Millares · archaeological cultural landscape: identified cultural landscape",
+          "locator": "Paisaje de Los Millares; ficha 1"
+        }
+      ]
+    },
+    {
+      "id": "edlh-los-millares-cultural-landscape-santa-fe-de-mondujar",
+      "source": "los-millares-cultural-landscape",
+      "target": "santa-fe-de-mondujar",
+      "label": "is described in this municipal area",
+      "explanation": "Municipalities are those printed in the landscape description; geographic context is not a funding intermediary.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Los Millares · archaeological cultural landscape: identified cultural landscape",
+          "locator": "Paisaje de Los Millares; ficha 1"
+        }
+      ]
+    },
+    {
+      "id": "edlh-los-millares-cultural-landscape-alhama-de-almeria",
+      "source": "los-millares-cultural-landscape",
+      "target": "alhama-de-almeria",
+      "label": "is described in this municipal area",
+      "explanation": "Municipalities are those printed in the landscape description; geographic context is not a funding intermediary.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Los Millares · archaeological cultural landscape: identified cultural landscape",
+          "locator": "Paisaje de Los Millares; ficha 1"
+        }
+      ]
+    },
+    {
+      "id": "edlh-los-millares-cultural-landscape-gador",
+      "source": "los-millares-cultural-landscape",
+      "target": "gador",
+      "label": "is described in this municipal area",
+      "explanation": "Municipalities are those printed in the landscape description; geographic context is not a funding intermediary.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Los Millares · archaeological cultural landscape: identified cultural landscape",
+          "locator": "Paisaje de Los Millares; ficha 1"
+        }
+      ]
+    },
+    {
+      "id": "edlh-older-identifies-los-millares-cultural-landscape",
+      "source": "al02-edl-2014-2020",
+      "target": "los-millares-cultural-landscape",
+      "label": "also describes this landscape historically",
+      "explanation": "The earlier EDL describes the same named landscape; its historical inventory is kept distinct from current eligibility.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical Los Millares landscape and archaeological heritage",
+          "locator": "4.3.5; paisaje de interés cultural de Santa Fe de Mondújar"
+        }
+      ]
+    },
+    {
+      "id": "edlh-identifies-bentarique-cultural-landscape",
+      "source": "al20-edll-2023-2027",
+      "target": "bentarique-cultural-landscape",
+      "label": "identifies this cultural landscape",
+      "explanation": "Named landscape in the local EDLL; not a funded project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Bentarique · agrarian cultural landscape: identified cultural landscape",
+          "locator": "Paisaje agrario de Bentarique; ficha 67"
+        }
+      ]
+    },
+    {
+      "id": "edlh-landscape-bentarique-cultural-landscape",
+      "source": "bentarique-cultural-landscape",
+      "target": "rural-landscape-heritage",
+      "label": "is a documented cultural-landscape example",
+      "explanation": "The landscape combines source-described natural/human features; no parcel-level eligibility is inferred.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Bentarique · agrarian cultural landscape: identified cultural landscape",
+          "locator": "Paisaje agrario de Bentarique; ficha 67"
+        }
+      ]
+    },
+    {
+      "id": "edlh-bentarique-cultural-landscape-bentarique",
+      "source": "bentarique-cultural-landscape",
+      "target": "bentarique",
+      "label": "is described in this municipal area",
+      "explanation": "Municipalities are those printed in the landscape description; geographic context is not a funding intermediary.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Bentarique · agrarian cultural landscape: identified cultural landscape",
+          "locator": "Paisaje agrario de Bentarique; ficha 67"
+        }
+      ]
+    },
+    {
+      "id": "edlh-older-identifies-bentarique-cultural-landscape",
+      "source": "al02-edl-2014-2020",
+      "target": "bentarique-cultural-landscape",
+      "label": "also describes this landscape historically",
+      "explanation": "The earlier EDL describes the same named landscape; its historical inventory is kept distinct from current eligibility.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 218,
+          "label": "Historical Bentarique: orchard landscape and settlement pattern",
+          "locator": "4.3.5; paisaje de interés cultural de Bentarique"
+        }
+      ]
+    },
+    {
+      "id": "edlh-water-bentarique-cultural-landscape",
+      "source": "bentarique-cultural-landscape",
+      "target": "rural-water-agrarian-heritage",
+      "label": "illustrates historic water and agrarian heritage",
+      "explanation": "Historic irrigation, land forms and inherited practices support this heritage interpretation. The current agricultural-production exclusion remains separate.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Bentarique · agrarian cultural landscape: identified cultural landscape",
+          "locator": "Paisaje agrario de Bentarique; ficha 67"
+        }
+      ]
+    },
+    {
+      "id": "edlh-identifies-ohanes-viticultural-landscape",
+      "source": "al20-edll-2023-2027",
+      "target": "ohanes-viticultural-landscape",
+      "label": "identifies this cultural landscape",
+      "explanation": "Named landscape in the local EDLL; not a funded project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Ohanes · viticultural cultural landscape: identified cultural landscape",
+          "locator": "Paisaje vitivinícola de Ohanes; ficha 60"
+        }
+      ]
+    },
+    {
+      "id": "edlh-landscape-ohanes-viticultural-landscape",
+      "source": "ohanes-viticultural-landscape",
+      "target": "rural-landscape-heritage",
+      "label": "is a documented cultural-landscape example",
+      "explanation": "The landscape combines source-described natural/human features; no parcel-level eligibility is inferred.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Ohanes · viticultural cultural landscape: identified cultural landscape",
+          "locator": "Paisaje vitivinícola de Ohanes; ficha 60"
+        }
+      ]
+    },
+    {
+      "id": "edlh-ohanes-viticultural-landscape-ohanes",
+      "source": "ohanes-viticultural-landscape",
+      "target": "ohanes",
+      "label": "is described in this municipal area",
+      "explanation": "Municipalities are those printed in the landscape description; geographic context is not a funding intermediary.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Ohanes · viticultural cultural landscape: identified cultural landscape",
+          "locator": "Paisaje vitivinícola de Ohanes; ficha 60"
+        }
+      ]
+    },
+    {
+      "id": "edlh-older-identifies-ohanes-viticultural-landscape",
+      "source": "al02-edl-2014-2020",
+      "target": "ohanes-viticultural-landscape",
+      "label": "also describes this landscape historically",
+      "explanation": "The earlier EDL describes the same named landscape; its historical inventory is kept distinct from current eligibility.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 218,
+          "label": "Historical Ohanes: paratas, balates and terraced landscape",
+          "locator": "4.3.5; paisaje de interés cultural de Ohanes"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical Ohanes: landscape continuation and rural buildings",
+          "locator": "4.3.5; continuación de la descripción de Ohanes"
+        }
+      ]
+    },
+    {
+      "id": "edlh-water-ohanes-viticultural-landscape",
+      "source": "ohanes-viticultural-landscape",
+      "target": "rural-water-agrarian-heritage",
+      "label": "illustrates historic water and agrarian heritage",
+      "explanation": "Historic irrigation, land forms and inherited practices support this heritage interpretation. The current agricultural-production exclusion remains separate.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Ohanes · viticultural cultural landscape: identified cultural landscape",
+          "locator": "Paisaje vitivinícola de Ohanes; ficha 60"
+        }
+      ]
+    },
+    {
+      "id": "edlh-identifies-sierra-gador-mining-landscape",
+      "source": "al20-edll-2023-2027",
+      "target": "sierra-gador-mining-landscape",
+      "label": "identifies this cultural landscape",
+      "explanation": "Named landscape in the local EDLL; not a funded project.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Sierra de Gádor · mining cultural landscape: identified cultural landscape",
+          "locator": "Paisaje minero de la Sierra de Gádor; ficha 84"
+        }
+      ]
+    },
+    {
+      "id": "edlh-landscape-sierra-gador-mining-landscape",
+      "source": "sierra-gador-mining-landscape",
+      "target": "rural-landscape-heritage",
+      "label": "is a documented cultural-landscape example",
+      "explanation": "The landscape combines source-described natural/human features; no parcel-level eligibility is inferred.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Sierra de Gádor · mining cultural landscape: identified cultural landscape",
+          "locator": "Paisaje minero de la Sierra de Gádor; ficha 84"
+        }
+      ]
+    },
+    {
+      "id": "edlh-sierra-gador-mining-landscape-berja",
+      "source": "sierra-gador-mining-landscape",
+      "target": "berja",
+      "label": "is described in this municipal area",
+      "explanation": "Municipalities are those printed in the landscape description; geographic context is not a funding intermediary.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Sierra de Gádor · mining cultural landscape: identified cultural landscape",
+          "locator": "Paisaje minero de la Sierra de Gádor; ficha 84"
+        }
+      ]
+    },
+    {
+      "id": "edlh-npl3-current",
+      "source": "al20-edll-2023-2027",
+      "target": "al20-npl3-heritage",
+      "label": "prioritizes cultural and natural heritage",
+      "explanation": "NPL3 is a strategy need, not a selection score.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        }
+      ]
+    },
+    {
+      "id": "edlh-oe33-current",
+      "source": "al20-edll-2023-2027",
+      "target": "al20-oe33-heritage",
+      "label": "sets a heritage objective",
+      "explanation": "OE3.3 and its monitoring indicators are strategy structure rather than a new grant category.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        }
+      ]
+    },
+    {
+      "id": "edlh-soil-objective",
+      "source": "al20-soil-priority",
+      "target": "al20-oe33-heritage",
+      "label": "is mapped to this heritage objective",
+      "explanation": "The source correlation table explicitly maps NPL4 beside NPL3/NPL8 to OE3.3; it is strategic alignment, not admissibility.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ]
+    },
+    {
+      "id": "edlh-objective-natural",
+      "source": "al20-oe33-heritage",
+      "target": "natural-heritage",
+      "label": "tracks natural-heritage operations separately",
+      "explanation": "IN3.3.2 is a monitoring category; it is not a measured benefit.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        }
+      ]
+    },
+    {
+      "id": "edlh-npl3-heritage",
+      "source": "al20-npl3-heritage",
+      "target": "rural-heritage",
+      "label": "concerns cultural and natural heritage",
+      "explanation": "Exact scope of NPL3 in the strategy.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        }
+      ]
+    },
+    {
+      "id": "edlh-soil-restoration",
+      "source": "al20-soil-priority",
+      "target": "restoration",
+      "label": "is relevant to restoration planning",
+      "explanation": "Curated bridge from the source-stated soil-regeneration objective to the existing restoration concept; no species prescription, adopted plan or grant eligibility is supplied.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ]
+    },
+    {
+      "id": "edlh-trovo-comparison",
+      "source": "al02-edl-heritage-interpretation",
+      "target": "leaderii-trovo-school",
+      "label": "can be compared with an earlier documented trovo project",
+      "explanation": "Curated cross-period comparison: the EDL discusses trovo as living heritage, while the school belongs to the separately documented earlier LEADER II programme, not an award under the 2014–2020 EDL.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        },
+        {
+          "source_id": "KGB-SRC-0139",
+          "page": 22,
+          "label": "Earlier LEADER II trovo school: teaching activity",
+          "locator": "Escuela Experimental de Trovo"
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "edlh-example-los-millares-cultural-landscape",
+      "label": "Los Millares · archaeological cultural landscape: documented heritage characteristics",
+      "text": "The EDLL reproduces an IAPH description of the Los Millares cultural landscape, identifying Santa Fe de Mondújar, Alhama de Almería and Gádor. It describes the settlement between the Andarax and Huéchar, fortifications, a collective necropolis and the interaction between archaeological remains and a semidesert natural setting. This is a landscape-scale cultural example, rather than only a single monument. The historical EDL also describes Los Millares and its cultural-landscape value. The descriptions document heritage characteristics; they do not establish a new conservation project, a funded intervention or current site condition.",
+      "topic_ids": [
+        "los-millares-cultural-landscape",
+        "rural-landscape-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Los Millares · archaeological cultural landscape: landscape description and values",
+          "locator": "Paisaje de Los Millares; ficha 1"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical Los Millares landscape and archaeological heritage",
+          "locator": "4.3.5; paisaje de interés cultural de Santa Fe de Mondújar"
+        }
+      ]
+    },
+    {
+      "id": "edlh-example-bentarique-cultural-landscape",
+      "label": "Bentarique · agrarian cultural landscape: documented heritage characteristics",
+      "text": "The current EDLL identifies Bentarique’s agrarian cultural landscape in the Andarax valley. Its reproduced IAPH account links orchard/fruit-growing land, the settlement and memory of Andalusi urbanism, historic irrigation, parrales and citrus, threshing floors and local agricultural traditions. This illustrates how land use, water systems, settlement and knowledge can form a heritage landscape. The earlier EDL also identifies the Bentarique landscape. The source’s historical and agrarian value is not a measured conservation outcome or an award. Heritage identification does not remove operation 3.5’s separate restrictions on agricultural-production support and the final use of agrarian infrastructure.",
+      "topic_ids": [
+        "bentarique-cultural-landscape",
+        "rural-landscape-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Bentarique · agrarian cultural landscape: landscape description and values",
+          "locator": "Paisaje agrario de Bentarique; ficha 67"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 218,
+          "label": "Historical Bentarique: orchard landscape and settlement pattern",
+          "locator": "4.3.5; paisaje de interés cultural de Bentarique"
+        }
+      ]
+    },
+    {
+      "id": "edlh-example-ohanes-viticultural-landscape",
+      "label": "Ohanes · viticultural cultural landscape: documented heritage characteristics",
+      "text": "The current EDLL describes Ohanes as a viticultural cultural landscape with terraces (paratas), dry-stone retaining walls (balates), irrigation channels (acequias), stone-working knowledge and the historic culture of the Ohanes/uva de barco grape. These interacting physical structures, land uses and inherited skills explain its landscape and cultural value. The historical EDL likewise discusses the terraced Ohanes landscape. This is a source-described heritage example; it does not establish a currently funded vineyard project, a validated restoration prescription or the condition of an individual parcel. A proposed heritage intervention must still meet applicable activity and agricultural-production exclusions.",
+      "topic_ids": [
+        "ohanes-viticultural-landscape",
+        "rural-landscape-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Ohanes · viticultural cultural landscape: landscape description and values",
+          "locator": "Paisaje vitivinícola de Ohanes; ficha 60"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 218,
+          "label": "Historical Ohanes: paratas, balates and terraced landscape",
+          "locator": "4.3.5; paisaje de interés cultural de Ohanes"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical Ohanes: landscape continuation and rural buildings",
+          "locator": "4.3.5; continuación de la descripción de Ohanes"
+        }
+      ]
+    },
+    {
+      "id": "edlh-example-sierra-gador-mining-landscape",
+      "label": "Sierra de Gádor · mining cultural landscape: documented heritage characteristics",
+      "text": "The current EDLL identifies the Sierra de Gádor mining cultural landscape in Berja. Its reproduced description explains extraction areas, workings and industrial remains from different periods, including galleries, ventilation shafts and hoisting/processing structures, and their relationship with the wider mountain landscape. It names the mining areas of Chirán and Castala and describes landscape traces of mining decline. This provides a documented industrial and cultural-landscape example. It is not a restoration specification, evidence that the remains are safe to visit, a grant award or a measured environmental outcome. Any conservation or public-interpretation proposal needs site-specific evidence and applicable rights and permissions.",
+      "topic_ids": [
+        "sierra-gador-mining-landscape",
+        "rural-landscape-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Sierra de Gádor · mining cultural landscape: landscape description and values",
+          "locator": "Paisaje minero de la Sierra de Gádor; ficha 84"
+        }
+      ]
+    },
+    {
+      "id": "edlh-legal-local-identification",
+      "label": "A justified EDL identification can support rural-heritage status",
+      "text": "Article 3.5 expressly includes a justified definition in an EDL, alongside the separate professional study/report route. The AL20 EDLL’s asset descriptions and cultural/natural interpretation can therefore supply relevant local heritage evidence. Identification of an asset, its relation to a strategy need, a selection criterion and the admissibility of the proposed activity are separate questions. No asset list or strategy alignment alone establishes an award or applicant eligibility.",
+      "topic_ids": [
+        "rural-heritage",
+        "al20-edll-2023-2027"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "label": "Rural heritage: justified EDL identification or professional technical evidence",
+          "locator": "Artículo 3.5. Patrimonio rural; tercer párrafo"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        }
+      ]
+    },
+    {
+      "id": "edlh-current-practices",
+      "label": "Current municipal inventory gives concrete intangible-heritage examples",
+      "text": "The current EDLL’s municipal inventory makes intangible heritage concrete. It lists pottery in Alhabia; barilla soap, artisan soap and barrel making in Terque; carpentry and glasswork in Alhama de Almería; viticulture, beehive making and named food preparations in Instinción; lace making, weaving and wine making in Ohanes; and viticulture in Padules. Festivals and other locally named traditions also appear in these rows. Section 3.4.1.10 explains the distinction between immovable, movable and intangible cultural heritage and cultural landscapes. These are source-listed practices and potential subjects for documenting cultural value. An inventory entry does not certify that every practitioner, event or modern commercial activity qualifies, or that any listed practice has received a grant. The activity’s heritage role and the proposed conservation/dissemination operation need their own evidence.",
+      "topic_ids": [
+        "al20-edll-living-practices",
+        "rural-intangible-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 325,
+          "label": "Local living heritage: Alhabia pottery, Terque crafts and Alhama trades",
+          "locator": "Tabla municipal: bienes protegidos inmuebles–patrimonio inmaterial; Alhabia, Terque y Alhama de Almería"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 326,
+          "label": "Local living heritage: Instinción practices, Ohanes skills and Padules viticulture",
+          "locator": "Tabla municipal: Instinción, Ohanes y Padules"
+        }
+      ]
+    },
+    {
+      "id": "edlh-current-natural",
+      "label": "The current local strategy explicitly includes natural heritage",
+      "text": "NPL3 names rural heritage as cultural and natural; OE3.3 has separate IN3.3.1 cultural and IN3.3.2 natural-heritage indicators. Its diagnosis supports conservation/custodia initiatives. These entries document a natural-heritage interpretation and monitoring structure, not observed results or a designation of a particular parcel.",
+      "topic_ids": [
+        "al20-npl3-heritage",
+        "al20-oe33-heritage",
+        "natural-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 371,
+          "label": "Conservation and stewardship as natural-heritage opportunities",
+          "locator": "DAFO_O1 y DAFO_O2"
+        }
+      ]
+    },
+    {
+      "id": "edlh-soil-correlation",
+      "label": "Soil regeneration has an explicit place in the heritage intervention logic",
+      "text": "The page 494 table aligns NPL3 cultural/natural heritage, NPL4 soil regeneration with reduced erosion/aridity, and NPL8 climate action with objective OE3.3 and operation types 3.1, 3.3, 3.4 and 3.5. This is a strategy correlation, not a mandatory application sequence or proof that any proposed restoration expense is eligible.",
+      "topic_ids": [
+        "al20-soil-priority",
+        "al20-oe33-heritage",
+        "rural-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        }
+      ]
+    },
+    {
+      "id": "edlh-historical-interpretation",
+      "label": "The historical EDL explicitly includes landscape and living traditions",
+      "text": "The 2014–2020 EDL version 5 uses a broad interpretation of rural heritage. Its cultural diagnosis distinguishes immovable architectural, ethnological and archaeological heritage, movable objects, intangible heritage and cultural landscapes. The strategy identifies cultural and natural heritage as complementary territorial resources. Proyecto Programado 2 treats landscape as fundamental and discusses conservation of heritage infrastructure with or without formal designation, together with recovery of traditions, music, crafts and trovo. It includes festivals or events that bring local historical or traditional values to public attention as possible operations in that former programme. These are historical strategy descriptions and proposed kinds of action, not proof that every example was funded, completed or successful. Their former applicant categories and aid limits do not transfer to today’s AL20 operation types.",
+      "topic_ids": [
+        "al02-edl-2014-2020",
+        "al02-edl-heritage-interpretation",
+        "rural-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 217,
+          "label": "Historical cultural classification and inventories",
+          "locator": "4.3.5"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical built/ethnological and natural systems",
+          "locator": "4.3.5–4.3.6"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        }
+      ]
+    },
+    {
+      "id": "edlh-historical-conditions",
+      "label": "Historical PP2 aid conditions remain historical",
+      "text": "The historical EDL version 5 PP2 table states 90% for nonproductive operations, 100% for public administrations and a EUR 50,000 limit, and 75% de minimis for productive operations subject to that former framework. Its table distinguishes productive from nonproductive requests and lists its own former programme timing. These are documented historical strategy conditions, not current AL20 ceilings or applicant rules. Preserve them separately from the current 2026 regulations.",
+      "topic_ids": [
+        "al02-edl-2014-2020"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 423,
+          "label": "Historical PP2: applicant classes, percentages, EUR 50,000 cap and timing",
+          "locator": "Proyecto Programado 2; Productivo/No productivo; Beneficiarios; Porcentaje o cuantía de ayuda; temporalización"
+        }
+      ]
+    },
+    {
+      "id": "edlh-priority-objective-scoring",
+      "label": "Territorial priority, strategic objective and selection points have distinct codes",
+      "text": "NPL3 is a territorial need with priority value 3.22; OE3.3 is a strategic heritage objective; PT.1 is the heritage selection-criterion family. Operation type 3.3 is a different code for promotion/information/awareness. The current EDLL identifies examples and correlations, but these identifiers and values must not be added together as a project score. The separately recorded current selection and verification rules determine any actual scoring review.",
+      "topic_ids": [
+        "al20-npl3-heritage",
+        "al20-oe33-heritage",
+        "al20-heritage-value",
+        "rural-awareness"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 449,
+          "label": "PT.1 is a selection family distinct from NPL3 and OE3.3",
+          "locator": "PT.1.1–PT.1.3"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ]
+    },
+    {
+      "id": "edlh-cultural-diagnosis-context",
+      "label": "The local diagnosis also names cultural movements, publications and events",
+      "text": "Section 3.4.1.10 mentions Centro de Estudios Virgitanos, Farua, El Eco de Alhama, the Festival de Folclore de Las Alpujarras, Festival de Flamenco de Fondón and Festival Murmura as examples of cultural activity. It also discusses tourism themes such as the Camino Mozárabe, mining, ethnographic elements, archaeology and historical settlement. These mentions explain the local cultural context; they do not establish grant awards, completed conservation work or measured outcomes for those initiatives.",
+      "topic_ids": [
+        "al20-edll-2023-2027",
+        "rural-intangible-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 324,
+          "label": "Continuation of local cultural themes: Romans and parral/uva de barco",
+          "locator": "3.4.1.10, continuación"
+        }
+      ]
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:al20-heritage-definition",
+      "label": "Patrimonio rural",
+      "parent_id": "browse:funding-al20",
+      "anchor_topic_id": "rural-heritage",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "rural-cultural-built-heritage",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rural-intangible-heritage",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rural-landscape-heritage",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rural-water-agrarian-heritage",
+          "role": "primary"
+        },
+        {
+          "topic_id": "natural-heritage",
+          "role": "shared"
+        },
+        {
+          "topic_id": "heritage-public-use",
+          "role": "shared"
+        },
+        {
+          "topic_id": "heritage-purchase-exclusion",
+          "role": "shared"
+        },
+        {
+          "topic_id": "al20-edll-2023-2027",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al02-edl-2014-2020",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Preserve source editions, exact project/call status, full memberships and documentary limits. Distinguish navigation from factual relations. Historical analogies never establish present eligibility, subcategory attribution or an award.",
+      "description": "Start with About for the regional definition and its recognition routes. The heritage dimensions below retain the general concepts. Open Current EDLL 2023–2027 for the local cultural/natural scope, named landscapes, living-practice examples and NPL3/OE3.3; open Historical EDL 2014–2020 for version 5’s earlier landscape, traditions and trovo interpretation. Each branch has exact edition/page citations. The current EDLL supplies documentary identification and strategy alignment, while the historical branch preserves former context. Neither an inventory entry nor a priority establishes eligibility, points or an award. Public-use and current production/purchase exclusions remain separate checks.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "locator": "Artículo 3.5. Patrimonio rural",
+          "label": "Rural heritage definition and recognition evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0142",
+          "page": 17,
+          "locator": "Artículo 3, apartados 20, 21, 25–27 y 30–32",
+          "label": "Natural heritage, landscapes, habitats and ecosystem restoration"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "label": "Rural heritage: justified EDL identification or professional technical evidence",
+          "locator": "Artículo 3.5. Patrimonio rural; tercer párrafo"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:al20-current-edll-heritage",
+      "label": "Current EDLL 2023–2027",
+      "parent_id": "browse:al20-heritage-definition",
+      "anchor_topic_id": "al20-edll-2023-2027",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-npl3-heritage",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-oe33-heritage",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-edll-living-practices",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-soil-priority",
+          "role": "shared"
+        },
+        {
+          "topic_id": "al20-heritage-value",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep current and historical strategy editions and exact PDF positions separate. Heritage identification, strategy alignment, selection points and project eligibility are distinct. Preserve full memberships and supported wider links.",
+      "description": "About explains the currently GDR-linked 544-page edition and its limits. Open Named cultural landscapes for four source-identified assets. The direct topics explain municipal living practices, NPL3’s cultural/natural scope, OE3.3’s separate indicators and the documented soil-regeneration link. Heritage selection evidence remains separately named. The strategy’s local inventory and correlations support a justification; they do not prove an individual award or determine an applicant’s eligibility. Historical evidence is in the sibling branch, with shared landscape identities retaining their own citations.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 323,
+          "label": "Cultural heritage: immovable, movable, intangible and cultural landscapes",
+          "locator": "3.4.1.10. El patrimonio cultural de la ZRL Alpujarra-Sierra Nevada Almeriense"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:al20-edll-landscapes",
+      "label": "Named cultural landscapes · EDLL examples",
+      "parent_id": "browse:al20-current-edll-heritage",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "los-millares-cultural-landscape",
+          "role": "primary"
+        },
+        {
+          "topic_id": "bentarique-cultural-landscape",
+          "role": "primary"
+        },
+        {
+          "topic_id": "ohanes-viticultural-landscape",
+          "role": "primary"
+        },
+        {
+          "topic_id": "sierra-gador-mining-landscape",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep current and historical strategy editions and exact PDF positions separate. Heritage identification, strategy alignment, selection points and project eligibility are distinct. Preserve full memberships and supported wider links.",
+      "description": "These four named cultural landscapes are identified in the current EDLL and described through IAPH material reproduced there: Los Millares, agrarian Bentarique, viticultural Ohanes and the Sierra de Gádor mining landscape. Open each asset for its characteristics, municipal setting and exact pages; the first three also have distinct historical EDL citations. They are documentary heritage examples, not a catalogue of grants or restoration projects. In particular, agrarian heritage value and the admissibility/final use of a proposed agricultural-water intervention are separate questions.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 327,
+          "label": "The four cultural landscapes named in the EDLL",
+          "locator": "Relación de paisajes culturales; fichas 01, 67, 60, 84"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 328,
+          "label": "Los Millares and Bentarique descriptions",
+          "locator": "Fichas 1 y 67"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 329,
+          "label": "Ohanes and Sierra de Gádor descriptions",
+          "locator": "Fichas 60 y 84"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:al20-historical-edl-heritage",
+      "label": "Historical EDL 2014–2020 · v5",
+      "parent_id": "browse:al20-heritage-definition",
+      "anchor_topic_id": "al02-edl-2014-2020",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al02-edl-heritage-interpretation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "rural-landscape-heritage",
+          "role": "shared"
+        },
+        {
+          "topic_id": "rural-intangible-heritage",
+          "role": "shared"
+        },
+        {
+          "topic_id": "leaderii-trovo-school",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep current and historical strategy editions and exact PDF positions separate. Heritage identification, strategy alignment, selection points and project eligibility are distinct. Preserve full memberships and supported wider links.",
+      "description": "About identifies the 610-page strategy, its association adoption on 2 November 2023 and the historical 2014–2020 programme. The interpretation topic explains landscape, tangible/intangible assets, traditions and trovo; the shared landscapes retain the older descriptions alongside current-period evidence. The trovo school is an explicitly earlier LEADER II comparison, not an award under this strategy. Historic PP2 applicant classes, rates and ceilings remain attached to their former framework. Current AL20 operation conditions and selection reviews are not replaced.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 2,
+          "label": "Historical version 5: association adoption and programme period",
+          "locator": "Créditos y aprobación"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 218,
+          "label": "Historical Bentarique and Ohanes landscapes",
+          "locator": "4.3.5"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 422,
+          "label": "Historical PP2: landscape, trovo, music, traditions and heritage infrastructure",
+          "locator": "Plan de acción; Proyecto Programado 2; objetivos y descripción del proyecto"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 423,
+          "label": "Historical PP2 conditions retain their former scope",
+          "locator": "PP2; beneficiarios y cuantías"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:al20-priorities",
+      "label": "Local priorities and innovation",
+      "parent_id": "browse:al20-evidence",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "al20-local-needs",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-water-priority",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-soil-priority",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-innovation",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-precision-agriculture",
+          "role": "primary"
+        },
+        {
+          "topic_id": "al20-npl3-heritage",
+          "role": "shared"
+        },
+        {
+          "topic_id": "al20-oe33-heritage",
+          "role": "shared"
+        },
+        {
+          "topic_id": "al20-edll-2023-2027",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Preserve stable AL20 identities, documentary editions and full memberships. Organization does not award points or establish eligibility. Check current local strategy and criterion evidence before project assessment.",
+      "description": "Read the prioritized need before considering the project-selection criterion. The strategy separates LEADER-addressable needs from other territorial needs and gives its own priority values. Water management and soil regeneration provide useful starting points. Its precision-agriculture innovation example names drones/sensors with municipal limits, while criterion evidence requires a justified match to the latest applicable local strategy. NPL3 cultural/natural heritage and objective OE3.3 are linked to the documented soil-regeneration correlation; priority values, objective identifiers and selection points remain distinct.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "locator": "AL20: water and soil priorities",
+          "label": "AL20: water and soil priorities"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 397,
+          "locator": "AL20: non-LEADER-addressable needs",
+          "label": "AL20: non-LEADER-addressable needs"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 400,
+          "locator": "AL20: precision-agriculture innovation conditions",
+          "label": "AL20: precision-agriculture innovation conditions"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators",
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types",
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:al20-historical-edl-landscapes",
+      "label": "Landscape examples in the historical EDL",
+      "parent_id": "browse:al20-historical-edl-heritage",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "los-millares-cultural-landscape",
+          "role": "shared"
+        },
+        {
+          "topic_id": "bentarique-cultural-landscape",
+          "role": "shared"
+        },
+        {
+          "topic_id": "ohanes-viticultural-landscape",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep current and historical strategy editions and exact PDF positions separate. Heritage identification, strategy alignment, selection points and project eligibility are distinct. Preserve full memberships and supported wider links.",
+      "description": "The older EDL describes these three cultural landscapes at positions 218–219. Open a shared asset identity for its separate historical and current-period citations. This catalogue preserves cross-period identification without copying assets or transferring former funding conditions.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 218,
+          "label": "Historical Bentarique and Ohanes landscape descriptions",
+          "locator": "4.3.5"
+        },
+        {
+          "source_id": "KGB-SRC-0150",
+          "page": 219,
+          "label": "Historical Los Millares and continuation of Ohanes",
+          "locator": "4.3.5"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true,
+      "navigation": "normal"
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 323,
+      "status": "inspected",
+      "note": "Read section 3.4.1.10: cultural categories, inventories, cultural initiatives and thematic routes; retain list evidence without inferring awards or outcomes."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 324,
+      "status": "inspected",
+      "note": "Read continuation: Roman theme and the culture of parral/uva de barco as cultural interpretation opportunities."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 325,
+      "status": "inspected",
+      "note": "Visually reviewed municipal protected-property/intangible-heritage table: named sites and practices, especially Alhabia, Terque and Alhama; inventory entries are not awards."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 326,
+      "status": "inspected",
+      "note": "Visually reviewed table continuation: Instinción, Ohanes, Padules and other municipalities; exact craft/food/viticultural examples checked."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 327,
+      "status": "inspected",
+      "note": "Read the four named cultural landscape records and their identifiers."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 328,
+      "status": "inspected",
+      "note": "Visually reviewed IAPH descriptions reproduced for Los Millares and agrarian Bentarique, with municipal setting and heritage characteristics."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 329,
+      "status": "inspected",
+      "note": "Visually reviewed Ohanes viticultural landscape and Sierra de Gádor mining-landscape descriptions; terraces, irrigation, skills and industrial remains."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 336,
+      "status": "inspected",
+      "note": "Read cultural-heritage synthesis, thematic opportunities and four cultural-landscape names."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 371,
+      "status": "inspected",
+      "note": "Read DAFO opportunity responses: conservation, stewardship, natural and rural heritage; strategy guidance, not eligibility."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 418,
+      "status": "inspected",
+      "note": "Read OE3.3 cultural/natural indicators and target methodology; planning targets, not results."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 449,
+      "status": "inspected",
+      "note": "Read PT.1 heritage selection family; distinguish the strategy table from separately applicable current verification/selection rules."
+    },
+    {
+      "source_id": "KGB-SRC-0021",
+      "page": 494,
+      "status": "inspected",
+      "note": "Visually checked merged-cell intervention-logic table: NPL3/NPL4/NPL8 → OE3.3 → 3.1/3.3/3.4/3.5; strategy correlation only."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 1,
+      "status": "inspected",
+      "note": "Read historical 2014–2020 strategy title and version 5 cover."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 2,
+      "status": "inspected",
+      "note": "Read authorship, former programme basis, and explicit association adoption date 2 November 2023; visually checked."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 3,
+      "status": "inspected",
+      "note": "Read contents to locate historical cultural/natural diagnosis and plan of action."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 217,
+      "status": "inspected",
+      "note": "Read historical cultural-system categories and IAPH inventory method; no water-area numbers imported from the incongruous table."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 218,
+      "status": "inspected",
+      "note": "Read Bentarique/Ohanes cultural landscape descriptions and municipal inventory context; no unchecked table counts imported."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 219,
+      "status": "inspected",
+      "note": "Read continuation of Ohanes, Los Millares description, built/ethnological examples and start of natural-system section."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 292,
+      "status": "inspected",
+      "note": "Read synthesis distinguishing cultural and natural heritage, agrarian landscapes and local environmental/recreational role."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 344,
+      "status": "inspected",
+      "note": "Read thematic strengths: recognized-value material/intangible heritage, landscapes, protected spaces and conservation actions."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 422,
+      "status": "inspected",
+      "note": "Read and visually checked historical PP2: landscape, infrastructure with/without designation, traditions, music, crafts, trovo and former operation purposes."
+    },
+    {
+      "source_id": "KGB-SRC-0150",
+      "page": 423,
+      "status": "inspected",
+      "note": "Read historical PP2 productive/nonproductive classes, beneficiary evidence, percentages, EUR 50,000 limit and former timing; visually checked."
+    }
+  ],
+  "unresolved": []
+}

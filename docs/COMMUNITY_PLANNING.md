@@ -27,8 +27,8 @@ opens members in stored order in one column; the default is a grid. Reader-facin
 and maintenance rules have separate purposes. Rendering must not hardcode topic-specific groups.
 
 Groups with `presentation: hierarchy` provide folder navigation: open a child folder or inspect
-a direct member. Group by stays at None and the layer draws no connection arrows. The sidebar
-expands the active hierarchy branch. **About [topic]** opens a group's anchored fund, programme
+a direct member. Group by stays at None and the layer draws no connection arrows. The navigation tree
+reveals the active hierarchy path; its checkboxes change display inclusion without editing membership. **About [topic]** opens a group's anchored fund, programme
 or authority in the inspector; ordinary topic exploration still shows its recorded relationships.
 Existing groups default to `standard`, retaining their layouts and connections. Shared references
 are counted once in the layer's represented-topic total.

@@ -119,7 +119,7 @@ try {
     (await state()).index === before.index,
   );
   await page
-    .getByRole("button", { name: "Explore this topic", exact: true })
+    .getByRole("button", { name: "Show connected topics", exact: true })
     .click();
   await idle();
   let s = await state();

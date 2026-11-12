@@ -1,0 +1,214 @@
+{
+  "batch_id": "funding-numeric-labels-20261112-v1",
+  "summary": "Prefix existing AL20 operation names with their already documented official codes, allowing numeric display order without changing descriptions, eligibility, memberships or evidence.",
+  "base_revision": 60,
+  "topics": [
+    {
+      "id": "agri-food-business-competitiveness",
+      "label": "1.9 · Agricultural processing and marketing competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.9; other governing conditions are outside this row.",
+      "aliases": [
+        "1.9"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026",
+          "label": "AL20 selected operation type 1.9 and line budgets"
+        }
+      ],
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "agri-forestry-business-services",
+      "label": "1.11 · Agriculture and forestry business services",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.11; other governing conditions are outside this row.",
+      "aliases": [
+        "1.11"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026",
+          "label": "AL20 selected operation type 1.11 and line budgets"
+        }
+      ],
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "agricultural-holding-competitiveness",
+      "label": "1.7 · Agricultural holding competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.7; other governing conditions are outside this row.",
+      "aliases": [
+        "1.7"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026",
+          "label": "AL20 selected operation type 1.7 and line budgets"
+        }
+      ],
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "forest-products-competitiveness",
+      "label": "1.10 · Forest-products processing and marketing competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.10; other governing conditions are outside this row.",
+      "aliases": [
+        "1.10"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026",
+          "label": "AL20 selected operation type 1.10 and line budgets"
+        }
+      ],
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "forestry-holding-competitiveness",
+      "label": "1.8 · Forestry holding competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 1.8; other governing conditions are outside this row.",
+      "aliases": [
+        "1.8"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026",
+          "label": "AL20 selected operation type 1.8 and line budgets"
+        }
+      ],
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "rural-business-competitiveness",
+      "label": "2.6 · Rural business competitiveness",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 2.6; other governing conditions are outside this row.",
+      "aliases": [
+        "2.6"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026",
+          "label": "AL20 selected operation type 2.6 and line budgets"
+        }
+      ],
+      "funding_role": "route",
+      "funding_context_ids": []
+    },
+    {
+      "id": "rural-business-start-up",
+      "label": "2.7 · Rural business start-up and development",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 2.7; other governing conditions are outside this row.\n\nPublished application closing date: 31 December 2028, under section four of the LEADER call resolution dated 13 April 2026 (BOJA 76, 22 April 2026). Operation 2.7 is selected for AL20. Awards depend on remaining budget; strategy amendments can temporarily suspend submissions. The official deadline was rechecked on 11 November 2026, but the AL20 website timed out, so current local suspensions, later amendments and remaining budget are unconfirmed. The published date does not guarantee that an application can currently be submitted or funded.",
+      "aliases": [
+        "2.7"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026",
+          "label": "AL20 selected operation type 2.7 and line budgets"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 4,
+          "locator": "Cuarto. Plazo de presentación de solicitudes; PDF position 4",
+          "label": "Application deadline: 31 December 2028"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 5,
+          "locator": "Séptimo. Financiación y régimen aplicable, apartado 2; PDF position 5",
+          "label": "Awards limited by available budget"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "locator": "Noveno. Modificaciones de las Estrategias de Desarrollo Local y de las convocatorias de propuestas; PDF position 6",
+          "label": "Temporary suspension during strategy amendments"
+        }
+      ],
+      "funding_role": "route",
+      "funding_context_ids": []
+    }
+  ]
+}

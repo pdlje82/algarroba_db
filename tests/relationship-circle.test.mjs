@@ -71,7 +71,7 @@ test('old grid histories translate to circles without rewriting saved offsets or
   assert.ok(frozen.links.every(e=>e.labelPlacement),'A resized preview keeps its safe label positions');
 });
 
-test('compact topic arcs fit landscape and portrait frames without forced stretching or clipped labels',()=>{
+test('topic ellipse follows landscape and portrait window proportions without clipped labels',()=>{
   for(const n of [1,9,21]){
     for(const aspect of [0.4,9/16,3/4,1,4/3,16/9,2.4]){
       const {cards,links}=fixtures(n),layout=relationshipCircle(cards,links,'centre',aspect);
@@ -87,18 +87,16 @@ test('compact topic arcs fit landscape and portrait frames without forced stretc
         assert.ok(-r.position.y+r.height/2<=frame.maxY-24.99);
       }
       if(n>=3){
-        const width=Math.max(...scene.cards.map(c=>c.position.x+c.width/2))-Math.min(...scene.cards.map(c=>c.position.x-c.width/2));
-        const height=Math.max(...scene.cards.map(c=>c.position.y+c.height/2))-Math.min(...scene.cards.map(c=>c.position.y-c.height/2));
-        assert.ok(height/width<1.35,'Portrait content must not stretch to fill a tall frame');
-        assert.ok(width/height<1.65,'Landscape content must not stretch to fill a wide frame');
-        if(aspect===9/16)assert.ok(height/(frame.maxY-frame.minY)<.8,'Portrait frames allow empty top/bottom margins');
+        const width=2*Math.max(...scene.cards.map(c=>Math.abs(c.position.x)+c.width/2));
+        const height=2*Math.max(...scene.cards.map(c=>Math.abs(c.position.y)+c.height/2));
+        assert.ok(Math.abs((width+50)/(height+50)-aspect)<.00001,'The card footprint follows the window ratio with equal edge clearance');
       }
       assert.deepEqual(scene,original);
     }
   }
 });
 
-test('dense cross-connected neighbourhoods remain compact throughout 16:9 to 9:16',()=>{
+test('dense cross-connected neighbourhoods follow the window ellipse throughout 16:9 to 9:16',()=>{
   const {cards,links}=fixtures(17);
   links.forEach((e,i)=>e.record.label=['examples use restoration model','vegetation setting named','documented example','observed companion'][i%4]);
   for(let i=0;i<24;i++)links.push({id:'cross:'+i,source:'plant:'+(i%17),target:'plant:'+((i+5)%17),record:{label:'recorded regional connection'},relationshipIds:['cross:'+i]});
@@ -109,9 +107,9 @@ test('dense cross-connected neighbourhoods remain compact throughout 16:9 to 9:1
     verifyClear(cards,result);
     assert.equal(Object.keys(result.labels).length,links.length);
     const points=Object.values(result.positions);
-    const width=Math.max(...points.map(p=>p.x))-Math.min(...points.map(p=>p.x))+234;
-    const height=Math.max(...points.map(p=>p.y))-Math.min(...points.map(p=>p.y))+124;
-    assert.ok(height/width<1.35&&width/height<1.65,'Dense topics keep a bounded ellipse in every window format');
+    const width=2*Math.max(...points.map(p=>Math.abs(p.x)))+234;
+    const height=2*Math.max(...points.map(p=>Math.abs(p.y)))+124;
+    assert.ok(Math.abs((width+50)/(height+50)-aspect)<.00001,'Dense topic ellipse follows the graph window');
   }
   assert.deepEqual(links,original,'Packing must retain every factual direction and ID');
 });

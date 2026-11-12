@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-11",
+  "new_files": [
+    {
+      "source_id": "KGB-SRC-0150",
+      "title": "Alpujarra–Sierra Nevada Almeriense — historical EDL 2014–2020, version 5 (2 November 2023)",
+      "issuer": "ADR Alpujarra Sierra Nevada de Almería",
+      "edition_date": "2023-11-02",
+      "edition_date_meaning": "Association adoption of version 5; PDF position 2",
+      "library_path": "doc_library/FUND-055 - Alpujarra Sierra Nevada Almeriense - EDL 2014-2020 - Version 5 - 2023-11-02.pdf",
+      "managed_path": "sources/al20-edl-heritage-20261111/edl2014-version5.pdf",
+      "sha256": "8570af76ba19783da30430a9f3018df388483100a69538d696d6d3abfbf5d17c",
+      "pdf_pages": 610,
+      "reviewed_pages": [
+        1,
+        2,
+        3,
+        217,
+        218,
+        219,
+        292,
+        344,
+        422,
+        423
+      ],
+      "publisher_landing_url": "https://alpujarraalmeria.es/edll-2014-2020-version-5/",
+      "final_download_url": "https://drive.usercontent.google.com/download?id=1Syvsv77jtMeWWh2SnDTTBaqImnCBF92I&export=download&confirm=t",
+      "accepted_batch": "al20-edl-heritage-20261111-v1"
+    }
+  ],
+  "reused_editions": [
+    {
+      "source_id": "KGB-SRC-0021",
+      "library_path": "doc_library/FUND-013 - Alpujarra Sierra Nevada Almeriense - EDLL 2023-2027 - v1.pdf",
+      "sha256": "1c5b293d640dd3c8213aa314d6b791754ba8e82c3a0db32639236402adc4c796",
+      "final_download_url": "https://drive.usercontent.google.com/download?id=1OafTeCsmgjmGcOzNumeyZvvFyW6_pLpK&export=download&confirm=t",
+      "reason": "Exact existing edition; no duplicate PDF"
+    }
+  ]
+}

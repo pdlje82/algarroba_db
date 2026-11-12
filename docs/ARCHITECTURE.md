@@ -22,13 +22,16 @@ secondary label callouts have explicit leader lines where needed. Labels and car
 to Fit and layer bounds. Selection, zoom and turn do not change arc geometry.
 The connection-layer frame matches the current graph canvas proportions. Shared
 sceneFrame bounds drive its border, title and Fit. Resizing reflows topics and labels into
-compact upper/lower arcs whose content aspect stays between 0.8 and 1.5. Grow their
-radius only until cards and labels fit; leave margins in taller/wider frames instead
-of stretching the content. Larger labels are placed first, with intermediate spoke
+upper/lower ellipse arcs whose card footprint follows the graph canvas aspect ratio.
+Manual Centre selection and Show connected topics use the same layout. Grow the ellipse
+until cards and labels fit, retaining their original dimensions. Larger labels are placed first, with intermediate spoke
 positions and size-aware secondary callouts. Semantic layer keys preserve offsets, closing and opening-source
 references while legacy geometry aliases support older saves. Current presentation positions
 are retained in the browser session without appending history or rewriting saved DB payloads.
 Pending domain previews retain their displayed arcs and labels until Update.
+The Show connected topics action stays below the pinned topic heading, across tabs and while
+scrolling, for a selected topic or a folder's real topic anchor. It opens that topic's direct
+neighbours through the same explore action as the Centre dropdown.
 Every active foreground layer has a theme-matched 70%-opaque background filling its
 sceneFrame bounds, behind all cards, links and labels. Historical snapshots retain their
 existing darkening. The surface follows layer movement and resize, does not write depth,
@@ -86,9 +89,12 @@ internal-link summaries and stale route expansions only in that hierarchy layer.
 normalized to None on open/restore and cannot override the stored organization. A child folder
 also represents its anchor when that topic is an explicit visible parent member. About exposes
 the canonical anchor topic and evidence without inserting it into its own membership. Ordinary
-topic exploration retains real relationships. The sidebar expands the active hierarchy path;
+topic exploration retains real relationships. The navigation tree reveals the active hierarchy path;
 represented-topic/research accounting deduplicates shared member IDs. No topic-specific renderer
 rules, endpoint changes or saved-history rewrites are involved.
+Numbered funding entries use numeric code order across folders and topic cards, including
+two-digit suffixes such as 1.9, 1.10 and 1.11. Other context keeps its existing slots and
+explicit vertical member order remains authoritative. Old alphabetical grids reflow in memory.
 
 Overview and the nine root scopes now use folder presentation as well. Catalogue groups set
 `catalogue: true` to declare genuine peers; this is an advisory-audit exemption, not a display
@@ -99,6 +105,38 @@ unplaced context going to review instead of a catch-all. Existing `/api/explore`
 accept `review:ecosystem|technology|funding`, returning current pending IDs with normal filters.
 These derived scopes never enter stored group definitions or editor destinations. Older saved
 views normalize in memory against the current catalog; working community workflows stay intact.
+
+## Navigation tree and topic visibility
+
+`navigationTree.ts` projects canonical roots, transparent containers, direct/shared memberships,
+group anchors, communities and read-only organization review into a compact tree. Branches represent
+their anchor once; unique descendant IDs determine inclusion counts and tri-state checkboxes.
+Chevron expansion, group navigation, topic inspection and visibility are separate controls.
+Local label/alias search reveals matching paths without changing the full branch-toggle membership
+or saved expansion. The tree supports roving focus, arrows, Home/End, Space and Enter.
+
+Optional v6 `hiddenTopicIds` defaults to empty and follows browsing through the existing reducer.
+Visibility/reset replace the current history entry using its full captured query; no narrower
+request, backend mutation or knowledge revision is made. Saved views and browser sessions carry
+each view's own mask; original historical database payloads remain untouched. Canonical identity
+redirects reconcile masks. Excluding the centre atomically applies Remove centre. Reset clears
+exclusions while retaining the omitted centre; explicit Centre/Show connected topics includes only
+the requested topic again.
+
+The scene builder applies exclusions before grouping and packing, suppresses incident factual edges
+and every route containing a hidden intermediate, and never manufactures a shortcut. Full query
+snapshots, funding review summaries and source-coverage scope are independent of display exclusions.
+Displayed/hidden layer totals are separate. Entirely hidden views have an explicit reset action.
+Visibility commits preserve layer offsets and camera orientation, repack and Fit.
+
+Both sidebars fill the height beneath the app header. The desktop tree is 260 px; the inspector
+starts at 360 px, with an 8 px pointer/keyboard divider, minimum 300 px and maximum min(720 px,
+half the width remaining after the tree). Browser preferences store the desired width and expansion
+outside history; temporary viewport clamps do not overwrite the preference. Divider release fits
+the graph after responsive ellipse reflow; double-click restores default width. The heading,
+connection action and tabs stay above independently scrolling content. Inspection reopens the panel.
+At 850–1199 px navigation is a drawer; below 850 px both panels are exclusive drawers with Escape,
+focus containment and background isolation. Opaque light/dark colours follow the irrigation editor.
 
 ## Funding navigation and project context
 

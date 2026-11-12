@@ -1,0 +1,1159 @@
+{
+  "batch_id": "funding-payment-review-20261111-local-v1",
+  "base_revision": 50,
+  "summary": "Manually review payment timing for local; preserve call availability and previous project reasoning. Changed financial evidence flags dependent assessments for reconsideration.",
+  "sources": [],
+  "coverage": [
+    {
+      "source_id": "FUND-008",
+      "page": 54,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    },
+    {
+      "source_id": "KGB-SRC-0036",
+      "page": 32,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    }
+  ],
+  "topics": [],
+  "funding_reviews": [
+    {
+      "id": "funding-review:remaining-agricultural-holding-competitiveness",
+      "topic_id": "agricultural-holding-competitiveness",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "An agricultural holding operator with evidenced rights and registration",
+      "activities": "Operation 1.7 — Agricultural holding competitiveness. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of eligible incurred and paid costs, 65% rate and €200,000 maximum per operation in the governing rules. The unfunded share, cost restrictions and applicable state-aid/de-minimis limits must be planned; these figures are not an award.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 82,
+          "label": "LEADER operation 1.7: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.7: scope, beneficiaries, costs and caps; PDF position 82"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 83,
+          "label": "LEADER operation 1.7: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.7: scope, beneficiaries, costs and caps; PDF position 83"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 84,
+          "label": "LEADER operation 1.7: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.7: scope, beneficiaries, costs and caps; PDF position 84"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-forestry-holding-competitiveness",
+      "topic_id": "forestry-holding-competitiveness",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "A forest holding operator with evidenced rights and required management plan",
+      "activities": "Operation 1.8 — Forestry holding competitiveness. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of eligible incurred and paid costs, 65% rate and €200,000 maximum per operation in the governing rules. The unfunded share, cost restrictions and applicable state-aid/de-minimis limits must be planned; these figures are not an award.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 85,
+          "label": "LEADER operation 1.8: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.8: scope, beneficiaries, costs and caps; PDF position 85"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 86,
+          "label": "LEADER operation 1.8: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.8: scope, beneficiaries, costs and caps; PDF position 86"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 87,
+          "label": "LEADER operation 1.8: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.8: scope, beneficiaries, costs and caps; PDF position 87"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-agri-food-business-competitiveness",
+      "topic_id": "agri-food-business-competitiveness",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Eligible agricultural-product processing/marketing SME",
+      "activities": "Operation 1.9 — Agricultural processing and marketing competitiveness. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of eligible incurred and paid costs, 65% rate and €200,000 maximum per operation in the governing rules. The unfunded share, cost restrictions and applicable state-aid/de-minimis limits must be planned; these figures are not an award.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 88,
+          "label": "LEADER operation 1.9: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.9: scope, beneficiaries, costs and caps; PDF position 88"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 89,
+          "label": "LEADER operation 1.9: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.9: scope, beneficiaries, costs and caps; PDF position 89"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 90,
+          "label": "LEADER operation 1.9: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.9: scope, beneficiaries, costs and caps; PDF position 90"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-forest-products-competitiveness",
+      "topic_id": "forest-products-competitiveness",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Eligible forest-product processing/marketing SME",
+      "activities": "Operation 1.10 — Forest-products processing and marketing competitiveness. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of eligible incurred and paid costs, 65% rate and €200,000 maximum per operation in the governing rules. The unfunded share, cost restrictions and applicable state-aid/de-minimis limits must be planned; these figures are not an award.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 90,
+          "label": "LEADER operation 1.10: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.10: scope, beneficiaries, costs and caps; PDF position 90"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 91,
+          "label": "LEADER operation 1.10: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.10: scope, beneficiaries, costs and caps; PDF position 91"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 92,
+          "label": "LEADER operation 1.10: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.10: scope, beneficiaries, costs and caps; PDF position 92"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 93,
+          "label": "LEADER operation 1.10: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.10: scope, beneficiaries, costs and caps; PDF position 93"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-agri-forestry-business-services",
+      "topic_id": "agri-forestry-business-services",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Existing or proposed SME supplying agriculture/forestry services; legal and operational conditions must be met",
+      "activities": "Operation 1.11 — Agriculture and forestry business services. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of eligible incurred and paid costs, 65% rate and €200,000 maximum per operation in the governing rules. The unfunded share, cost restrictions and applicable state-aid/de-minimis limits must be planned; these figures are not an award.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 93,
+          "label": "LEADER operation 1.11: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.11: scope, beneficiaries, costs and caps; PDF position 93"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 94,
+          "label": "LEADER operation 1.11: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.11: scope, beneficiaries, costs and caps; PDF position 94"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 95,
+          "label": "LEADER operation 1.11: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 1.11: scope, beneficiaries, costs and caps; PDF position 95"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-rural-business-competitiveness",
+      "topic_id": "rural-business-competitiveness",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Existing or proposed rural SME; sector exclusions and the GDR’s classification apply",
+      "activities": "Operation 2.6 — Rural business competitiveness. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of eligible incurred and paid costs, 65% rate and €200,000 maximum per operation in the governing rules. The unfunded share, cost restrictions and applicable state-aid/de-minimis limits must be planned; these figures are not an award.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 109,
+          "label": "LEADER operation 2.6: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 2.6: scope, beneficiaries, costs and caps; PDF position 109"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 110,
+          "label": "LEADER operation 2.6: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 2.6: scope, beneficiaries, costs and caps; PDF position 110"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-rural-studies",
+      "topic_id": "rural-studies",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Competent public/nonprofit legal entity, public-law body or qualifying publicly participated company",
+      "activities": "Operation 3.1 — Rural heritage studies and plans. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of actually incurred and paid eligible costs; 100% rate and €28,000 maximum per operation in the governing rules. Eligible categories, exclusions, local budget and award/payment conditions still govern; 100% does not remove cash-flow preparation.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 113,
+          "label": "LEADER operation 3.1: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.1: scope, beneficiaries, costs and caps; PDF position 113"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 114,
+          "label": "LEADER operation 3.1: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.1: scope, beneficiaries, costs and caps; PDF position 114"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 115,
+          "label": "LEADER operation 3.1: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.1: scope, beneficiaries, costs and caps; PDF position 115"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-rural-training",
+      "topic_id": "rural-training",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. The inspected 3.2 row is blank; no current AL20 training opening is verified.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Applicant class in the governing rules, but no selected AL20 training row is established",
+      "activities": "Operation 3.2 — Rural heritage training. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of actually incurred and paid eligible costs; 100% rate and €28,000 maximum per operation in the governing rules. Eligible categories, exclusions, local budget and award/payment conditions still govern; 100% does not remove cash-flow preparation.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "Local selection for training operation 3.2 is not established. Retry the GDR/Junta current operation table and amendments.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 115,
+          "label": "LEADER operation 3.2: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.2: scope, beneficiaries, costs and caps; PDF position 115"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 116,
+          "label": "LEADER operation 3.2: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.2: scope, beneficiaries, costs and caps; PDF position 116"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 117,
+          "label": "LEADER operation 3.2: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.2: scope, beneficiaries, costs and caps; PDF position 117"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 118,
+          "label": "LEADER operation 3.2: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.2: scope, beneficiaries, costs and caps; PDF position 118"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-rural-awareness",
+      "topic_id": "rural-awareness",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Competent public/nonprofit legal entity, public-law body or qualifying publicly participated company",
+      "activities": "Operation 3.3 — Rural heritage information and awareness. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of actually incurred and paid eligible costs; 100% rate and €28,000 maximum per operation in the governing rules. Eligible categories, exclusions, local budget and award/payment conditions still govern; 100% does not remove cash-flow preparation.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 118,
+          "label": "LEADER operation 3.3: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.3: scope, beneficiaries, costs and caps; PDF position 118"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 119,
+          "label": "LEADER operation 3.3: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.3: scope, beneficiaries, costs and caps; PDF position 119"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "label": "LEADER operation 3.3: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.3: scope, beneficiaries, costs and caps; PDF position 120"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-demonstration",
+      "topic_id": "demonstration",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Competent public/nonprofit legal entity, public-law body or qualifying publicly participated company",
+      "activities": "Operation 3.4 — Demonstration activities. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of actually incurred and paid eligible costs; 100% rate and €28,000 maximum per operation in the governing rules. Eligible categories, exclusions, local budget and award/payment conditions still govern; 100% does not remove cash-flow preparation.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "label": "LEADER operation 3.4: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.4: scope, beneficiaries, costs and caps; PDF position 120"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 121,
+          "label": "LEADER operation 3.4: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.4: scope, beneficiaries, costs and caps; PDF position 121"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 122,
+          "label": "LEADER operation 3.4: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.4: scope, beneficiaries, costs and caps; PDF position 122"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "label": "LEADER operation 3.4: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.4: scope, beneficiaries, costs and caps; PDF position 123"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-heritage-conservation",
+      "topic_id": "heritage-conservation",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Eligible public/nonprofit or other specifically admitted promoter under the nonproductive heritage conditions",
+      "activities": "Operation 3.5 — Rural and environmental heritage conservation. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of actually incurred and paid eligible costs; 100% rate and €200,000 maximum per operation in the governing rules. Eligible categories, exclusions, local budget and award/payment conditions still govern; 100% does not remove cash-flow preparation.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 123,
+          "label": "LEADER operation 3.5: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.5: scope, beneficiaries, costs and caps; PDF position 123"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "label": "LEADER operation 3.5: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.5: scope, beneficiaries, costs and caps; PDF position 124"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-rural-services",
+      "topic_id": "rural-services",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "Eligible public/nonprofit or specifically admitted promoter delivering nonproductive rural social/sustainable services",
+      "activities": "Operation 3.6 — Rural social infrastructure and services. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nReimbursement of actually incurred and paid eligible costs; 100% rate and €200,000 maximum per operation in the governing rules. Eligible categories, exclusions, local budget and award/payment conditions still govern; 100% does not remove cash-flow preparation.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 124,
+          "label": "LEADER operation 3.6: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.6: scope, beneficiaries, costs and caps; PDF position 124"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 125,
+          "label": "LEADER operation 3.6: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.6: scope, beneficiaries, costs and caps; PDF position 125"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 126,
+          "label": "LEADER operation 3.6: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 3.6: scope, beneficiaries, costs and caps; PDF position 126"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:leader",
+      "topic_id": "leader-nongdr-call-2026",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "GDR advertises applications through 31 December 2028. Remaining budget, suspensions and every amendment were not established.",
+      "territory": "AL20 includes Alhama de Almería; precise site and operation conditions still apply.",
+      "applicants": "Applicant class depends on the selected productive or nonproductive line; no applicant arrangement is confirmed.",
+      "activities": "Selected local operations include studies 3.1, awareness 3.3 and demonstration 3.4. Do not infer that training 3.2 is selected; its inspected table cell is blank.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 37 permits requesting up to 50% of the awarded subsidy with a bank/equivalent guarantee covering 100% of the advance; specified public guarantees/exceptions apply. Public procurement beneficiaries must first formalise the contract. This is a requested advance after award, not full upfront payment; eligible-cost justification, co-finance and recovery obligations remain. For rural training, the blank local selection and incomplete route review remain unresolved.\n\nAid rate and caps depend on operation, applicant, eligible costs and budget; programme co-financing percentages are not the applicant grant rate.",
+      "deadlines": [
+        {
+          "label": "Advertised application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact time/timezone and remaining budget unverified.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "This verifies the stated passages; it is not a complete eligibility audit.",
+      "attempted_on": null,
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0039",
+          "page": null,
+          "label": "AL20 advertised application window",
+          "locator": "AL20 advertised application window; verified 2026-11-10"
+        },
+        {
+          "source_id": "FUND-004",
+          "page": 15,
+          "label": "Line 3: selected operation types and non-productive character",
+          "locator": "Line 3: selected operation types and non-productive character"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "Selected operation types and budgets; signature 16 February 2026",
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 120,
+          "label": "Section 3.4.1: demonstration definition and exclusions",
+          "locator": "Section 3.4.1: demonstration definition and exclusions"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 26,
+          "label": "Aid calculation: reimbursement versus fixed sums",
+          "locator": "Artículo 12.1–2"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 27,
+          "label": "Aid intensity and operation caps; budget constraints",
+          "locator": "Artículos 12.2–6; 13.1–2"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 28,
+          "label": "Other finance, own contribution and double-financing controls",
+          "locator": "Artículo 13.5–8"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 5,
+          "label": "Call financing: 85/15 public split and programme allocation",
+          "locator": "Séptimo"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 54,
+          "label": "Article 37: LEADER advance, full guarantee and public-contract timing",
+          "locator": "Article 37: LEADER advance, full guarantee and public-contract timing; PDF position 54"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-rural-business-start-up",
+      "topic_id": "rural-business-start-up",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "AL20 advertises an application window through 31 December 2028, subject to selected operations and budget. Remaining budget and every subsequent amendment were not established.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "New self-employed person meeting unemployment, prior-activity, residency and exclusive-dedication requirements",
+      "activities": "Operation 2.7 — Rural business start-up and development. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Start-up instalment available\nPayment evidence checked 2026-11-11. Operation 2.7 permits a first EUR 18,500 instalment when business-plan implementation begins (tax registration), after award notification where applicable. Final EUR 18,500 and any permitted supplements depend on completion and the income/other conditions. This is a business-plan lump sum, not reimbursement of equipment invoices or the full grant upfront.\n\nBusiness-plan lump sum €37,000, with specified €13,000 additions up to €50,000. First €18,500 payment can be requested when implementation begins, subject to the stated conditions; later payments depend on objectives. No expense reimbursement calculation applies to this operation.",
+      "deadlines": [
+        {
+          "label": "Advertised local application end",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "Exact cutoff/timezone, remaining budget and suspensions need checking.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 111,
+          "label": "LEADER operation 2.7: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 2.7: scope, beneficiaries, costs and caps; PDF position 111"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 112,
+          "label": "LEADER operation 2.7: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 2.7: scope, beneficiaries, costs and caps; PDF position 112"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 113,
+          "label": "LEADER operation 2.7: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 2.7: scope, beneficiaries, costs and caps; PDF position 113"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 112,
+          "label": "Operation 2.7: first EUR 18500 instalment and conditional final payment",
+          "locator": "Operation 2.7: first EUR 18500 instalment and conditional final payment; PDF position 112"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 113,
+          "label": "Operation 2.7: first EUR 18500 instalment and conditional final payment",
+          "locator": "Operation 2.7: first EUR 18500 instalment and conditional final payment; PDF position 113"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-pepac-6881-2",
+      "topic_id": "pepac-6881-2",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The governing order and an amendment-consultation page were reviewed. A current 6881.2 application opening was not established; neither a consultation nor 6881.4 BINDIFO is proof of one.",
+      "territory": "Andalusian forest land satisfying the applicable risk, management and operation conditions; proposed site unconfirmed.",
+      "applicants": "Landholders or other specifically permitted public/private forest promoters with the required legal rights; exact current call conditions remain unresolved.",
+      "activities": "Nonproductive forest-fire/damage prevention within the governing order; ordinary irrigation development, education or post-fire restoration are not interchangeable purposes.",
+      "financial_summary": "Payment timing: Advance in rules; call unverified\nPayment evidence checked 2026-11-11. Article 32 of the forestry rules allows up to 50% of an awarded and accepted subsidy; the request requires a guarantee for 100% of the advance and must be made within six months of effective final-award notification. Justification and recovery remain. An actual current call/award and its applicable amended conditions are not established by the preliminary BINDIFO route.\n\nGoverning rules allow investment support up to 100% of eligible expenditure, subject to operation limits. Advance/final payment conditions exist and guarantees may be required; the call-specific budget, caps and payment availability must be recovered.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "The current 6881.2 call and adopted amendments were not recovered from the inspected official material. Retry BOJA and the administering-body procedure; preserve the existing framework.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0096",
+          "page": null,
+          "label": "Andalusia forestry rules amendment consultation",
+          "locator": "Andalusia forestry rules amendment consultation; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 1,
+          "label": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions",
+          "locator": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 2,
+          "label": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions",
+          "locator": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 9,
+          "label": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions",
+          "locator": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 10,
+          "label": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions",
+          "locator": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 30,
+          "label": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions",
+          "locator": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 31,
+          "label": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions",
+          "locator": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 41,
+          "label": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions",
+          "locator": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions; PDF position 41"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 42,
+          "label": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions",
+          "locator": "6881.2 governing rules: applicants, prevention operations, investment and payment conditions; PDF position 42"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 30,
+          "label": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement",
+          "locator": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 31,
+          "label": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement",
+          "locator": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 32,
+          "label": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement",
+          "locator": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement; PDF position 32"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:forestry",
+      "topic_id": "pepac-6881-4",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "upcoming",
+      "availability_note": "3 November announcement expects a call at year-end 2026; BINDIFO is preliminary access before applications.",
+      "territory": "Andalusia; forest classification, parcel size, ownership/agreement and final call must be checked.",
+      "applicants": "Eligible landholder/applicant classes depend on final applicable rules; none is confirmed for this idea.",
+      "activities": "Environmental silviculture and nonproductive forest investment, not generic aircraft development or ordinary education.",
+      "financial_summary": "Payment timing: Advance in rules; call unverified\nPayment evidence checked 2026-11-11. Article 32 of the forestry rules allows up to 50% of an awarded and accepted subsidy; the request requires a guarantee for 100% of the advance and must be made within six months of effective final-award notification. Justification and recovery remain. An actual current call/award and its applicable amended conditions are not established by the preliminary BINDIFO route.\n\nAnnounced €40,057,892 is a total allocation across three forest-area lines, not an individual grant.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "This verifies the stated passages; it is not a complete eligibility audit.",
+      "attempted_on": null,
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0080",
+          "page": null,
+          "label": "BINDIFO preliminary access and planned 6881.4 call",
+          "locator": "BINDIFO preliminary access and planned 6881.4 call; verified 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 2,
+          "label": "PEPAC environmental silviculture intervention",
+          "locator": "PEPAC environmental silviculture intervention"
+        },
+        {
+          "source_id": "KGB-SRC-0041",
+          "page": null,
+          "label": "Preliminary BINDIFO and planned year-end call",
+          "locator": "BINDIFO preliminary access announcement; captured 2026-11-10T09:50:56.166447+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 30,
+          "label": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement",
+          "locator": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 31,
+          "label": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement",
+          "locator": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0036",
+          "page": 32,
+          "label": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement",
+          "locator": "Articles 31–33: forestry advance, guarantee, six-month request and final settlement; PDF position 32"
+        }
+      ]
+    }
+  ]
+}

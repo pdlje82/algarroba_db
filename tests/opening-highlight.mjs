@@ -165,7 +165,7 @@ try {
       (await info()).previous[0].openedCardIds.includes(sourceId),
   );
   await page
-    .getByRole("button", { name: "Explore this topic", exact: true })
+    .getByRole("button", { name: "Show connected topics", exact: true })
     .click();
   await idle();
   d = await info();

@@ -7,7 +7,6 @@ import React, {
 import { createRoot } from "react-dom/client";
 import {
   api,
-  ROOT_GROUPS,
   type Catalog,
   type State,
   type Ref,
@@ -42,13 +41,16 @@ import { buildScene, previousScenes, isInteractiveRecord } from "./scene";
 import { SceneView, GraphBoundary, type SceneHandle } from "./SceneView";
 import { useAppearance, useFullScreen } from "./workspace";
 import { ResearchPanel, Refs } from "./dialogs";
-import { rootGroup, groupLabel, groupDomain, groupMembers, navigationChildren, navigationContainers, editorTarget, fixedGroupLayout, isHierarchyGroup, type EditorTarget } from "./organization";
+import { groupLabel, groupDomain, groupMembers, navigationContainers, editorTarget, fixedGroupLayout, isHierarchyGroup, type EditorTarget } from "./organization";
 import { FundingProjectTools, FundingDetails } from './FundingPanel';
 import { PlanningPanel } from './PlanningPanel';
 import { topicNames } from "./speciesNames";
 import { SourcePanel } from "./SourcePanel";
 import { PlantImages } from "./PlantImages";
+import { NavigationTree } from "./KnowledgeTree";
+import { useSidebarLayout } from "./useSidebarLayout";
 import "./style.css";
+import "./sidebars.css";
 
 function App() {
   const [catalog, setCatalog] = useState<Catalog | null>(null),
@@ -85,6 +87,7 @@ function App() {
     persistTimer = useRef<any>(null),
     state = history.entries[history.index],
     view = state.view;
+  const sidebar = useSidebarLayout(() => graph.current?.fit());
   const appearance = useAppearance(),
     message = (s: string) => setToast(s),
     fullscreen = useFullScreen(message);
@@ -223,6 +226,7 @@ function App() {
       setSearchInput(completed.search);
       setSelected((prev: any) => {
         if (!prev) return null;
+        if ((completed.hiddenTopicIds || []).includes(prev.id) && c.topics.some(t => t.id === prev.id)) return prev;
         const scene = buildScene(completed, completed.view!, c, aspect);
         if (!isInteractiveRecord(scene, prev.id)) return null;
         return scene.cards.some((card) => card.id === prev.id) ||
@@ -274,7 +278,10 @@ function App() {
         base.index,
         false,
         offset,
-      );
+      ).then(ok => {
+        if(ok && ['visibility','resetVisibility'].includes(action.type))
+          requestAnimationFrame(() => requestAnimationFrame(() => graph.current?.fit()));
+      });
     } else void perform(candidate, catalog, base);
   };
   const closeGraphLayer = (key: string) => {
@@ -379,6 +386,9 @@ function App() {
     return () => window.removeEventListener("beforeunload", save);
   }, []);
   useEffect(() => {
+    document.querySelector('.inspector-content')?.scrollTo(0, 0);
+  }, [selected?.id, tab, state.groupId]);
+  useEffect(() => {
     if (!catalog) return;
     const ctrl = new AbortController();
     api(
@@ -403,6 +413,7 @@ function App() {
       state.groupId,
       state.groupMembers,
       state.grouping,
+      state.hiddenTopicIds,
       state.expandedGroups,
       state.expandedRoutes,
       state.alternatives,
@@ -434,6 +445,7 @@ function App() {
       s.pendingDomain,
       s.kinds,
       s.grouping,
+      s.hiddenTopicIds,
       s.positions,
       s.expandedRoutes,
       s.expandedGroups,
@@ -455,7 +467,10 @@ function App() {
       state.closedLayers,
     ],
   );
-  const routes = view ? allRoutes(state, view) : [],
+  const completeScene = useMemo(() => catalog && view && state.hiddenTopicIds?.length
+    ? buildScene({...state, hiddenTopicIds: []}, view, catalog, aspect) : scene,
+    [scene, catalog, view, state.hiddenTopicIds, aspect]);
+  const routes = view ? allRoutes(state, view).filter(r => r.nodes.every(id => !state.hiddenTopicIds?.includes(id))) : [],
     selectedRoute = routes.find((r) => r.id === selected?.id),
     selectedTopic = catalog?.topics.find((t) => t.id === selected?.id),
     inspectedGroup = catalog?.browse_groups.find(g=>g.id===(selected?.displayGroup ? selected.groupKey : !selected && state.scope==='group' ? state.groupId : null)),
@@ -463,6 +478,7 @@ function App() {
     selectedEdge = catalog?.relationships.find((e) => e.id === selected?.id),
     selectedCard = scene?.cards.find((c) => c.id === selected?.id);
   const selectedEditor = editorTarget(selected?.displayGroup ? selected.groupKey : selected?.id, catalog);
+  const connectionTopic = selectedTopic || catalog?.topics.find(t=>t.id===inspectedGroup?.anchor_topic_id);
   const activeEditor = selectedEditor || (!selected?.displayGroup && state.scope==='group' ? editorTarget(state.groupId,catalog) : null);
   const openEditor = (target: EditorTarget) => {setPlanningTarget(target);setPlanning(true);};
   const relationshipIds =
@@ -479,7 +495,7 @@ function App() {
   const visibleIds = [...new Set(scene?.cards.flatMap((c) => c.members) || [])],
     scopeIds =
       selectedRoute?.nodes ||
-      selectedCard?.members ||
+      (selectedCard ? completeScene?.cards.find(c => c.id === selectedCard.id)?.members || selectedCard.members : undefined) ||
       (selectedEdge
         ? [selectedEdge.source, selectedEdge.target]
         : relationshipIds.length
@@ -488,7 +504,7 @@ function App() {
               .flatMap((e) => [e.source, e.target])
           : selectedTopic
             ? [selectedTopic.id]
-            : visibleIds),
+            : [...new Set(completeScene?.cards.flatMap(c => c.members) || [])]),
     scopeSet = new Set(scopeIds);
   const findings =
       catalog?.findings.filter((f) =>
@@ -619,6 +635,7 @@ function App() {
     if (!r || (scene && !isInteractiveRecord(scene, r.id))) return;
     setSelected(r);
     setTab("details");
+    sidebar.showInspector();
   };
   const openGroup = (record: any) => {
     if (!scene || loading) return;
@@ -639,14 +656,6 @@ function App() {
       </button>
     );
   };
-  const groupNavigation=(id:string,depth=0):React.ReactNode=>{
-    const group=catalog?.browse_groups.find(g=>g.id===id);
-    let at=state.scope==='group'?state.groupId:null;
-    const path=new Set<string>();
-    while(at && !path.has(at)){path.add(at);at=catalog?.browse_groups.find(g=>g.id===at)?.parent_id||null;}
-    const expanded=group?.presentation!=='hierarchy'||path.has(id);
-    return <React.Fragment key={id}><button data-group-id={id} style={{paddingLeft:12+depth*12}} onClick={()=>dispatch({type:'group',id})}>{groupLabel(id,catalog)}<small>{catalog?.topics.filter(t=>rootGroup(t.id,catalog)===id).length||''}</small></button>{expanded && catalog&&navigationChildren(id,catalog).map(g=>groupNavigation(g.id,depth+1))}{catalog?.communities?.filter(g=>g.parent_id===id).map(g=><button key={g.id} style={{paddingLeft:24+depth*12}} onClick={()=>dispatch({type:'group',id:g.id})}>{g.label}<small>{g.plants.length}</small></button>)}</React.Fragment>;
-  };
   if (!catalog)
     return (
       <main className="boot">
@@ -656,7 +665,7 @@ function App() {
       </main>
     );
   return (
-    <div className="app-shell">
+    <div className={"app-shell sidebar-shell" + (sidebar.resizing ? " is-resizing" : "")} style={{"--inspector-width": sidebar.width + "px"} as React.CSSProperties}>
       <header className="masthead">
         <button
           className="brand"
@@ -694,16 +703,19 @@ function App() {
           </button>
         </div>
       </header>
-      <div className="app-body">
-        <aside className="sidebar">
-          <p className="eyebrow">START WITH AN AREA</p>
-          {activeEditor ? <button className="primary planning-launch" onClick={()=>openEditor(activeEditor)}>{activeEditor.sourceId?'Create editable community':'Edit '+activeEditor.kind}</button> : <>
-            <button className="planning-launch" onClick={()=>openEditor({kind:'group',id:null})}>Manage groups</button>
-            <button className="planning-launch" onClick={()=>openEditor({kind:'community',id:null})}>Manage communities</button>
-          </>}
-          {ROOT_GROUPS.map(id=>groupNavigation(id))}
-          {catalog.browse_groups.filter(g=>g.parent_id.startsWith('domain:')).map(g=>groupNavigation(g.id))}
-          {catalog.organization_review?.pending_groups.map(g=><button key={g.id} data-group-id={g.id} onClick={()=>dispatch({type:'group',id:g.id})}>{g.label}<small>{g.member_ids.length}</small></button>)}
+      <div className={"app-body" + (!sidebar.inspectorOpen ? " inspector-collapsed" : "")}>
+        {(sidebar.viewport < 1200 && sidebar.navigationOpen || sidebar.viewport < 850 && sidebar.inspectorOpen) && <button className="drawer-backdrop" aria-label="Close sidebar" onClick={sidebar.closeDrawers}/>}
+        <aside id="knowledge-navigation" className={"sidebar" + (sidebar.navigationOpen ? " drawer-open" : "")} aria-label="Knowledge navigation panel" role={sidebar.viewport < 1200 && sidebar.navigationOpen ? 'dialog' : undefined} aria-modal={sidebar.viewport < 1200 && sidebar.navigationOpen ? true : undefined}>
+          <div className="sidebar-heading"><strong>Knowledge</strong><button className="navigation-close" aria-label="Close navigation" onClick={sidebar.closeNavigation}>×</button></div>
+          <NavigationTree catalog={catalog} hiddenIds={state.hiddenTopicIds || []} selectedId={selected?.id} groupId={state.scope === 'group' ? state.groupId : null} busy={loading}
+            openGroup={id => {dispatch({type:'group', id}); sidebar.closeNavigation();}}
+            inspect={id => select(catalog.topics.find(t => t.id === id))}
+            toggle={(ids, included) => dispatch({type:'visibility', ids, included})} reset={() => dispatch({type:'resetVisibility'})}/>
+          <div className="sidebar-footer">
+          {activeEditor ? <button onClick={()=>openEditor(activeEditor)}>{activeEditor.sourceId?'Create editable community':'Edit '+activeEditor.kind}</button> : <div className="sidebar-management">
+            <button onClick={()=>openEditor({kind:'group',id:null})}>Manage groups</button>
+            <button onClick={()=>openEditor({kind:'community',id:null})}>Communities</button>
+          </div>}
           <hr />
           <button onClick={() => setLibrary(true)}>
             Source library · {catalog.sources.length}
@@ -725,8 +737,10 @@ function App() {
               </article>
             ))}
           </details>
+          </div>
         </aside>
         <main className="main-workspace">
+          <div className="panel-controls"><button className="navigation-open" aria-controls="knowledge-navigation" aria-expanded={sidebar.navigationOpen} onClick={sidebar.showNavigation}>☰ Navigation</button><button hidden={sidebar.inspectorOpen} aria-controls="topic-inspector" onClick={sidebar.showInspector}>Show details</button></div>
           <section className="controls" aria-label="Exploration controls">
             <label>
               Centre
@@ -1002,6 +1016,7 @@ function App() {
                     />
                   </GraphBoundary>
                 )}
+                {scene && !scene.cards.length && !loading && <div className="graph-empty" role="status"><strong>No topics displayed</strong><p>{state.hiddenTopicIds?.length ? 'Topics are excluded in this exploration.' : 'No topics match this view.'}</p>{!!state.hiddenTopicIds?.length && <button onClick={() => dispatch({type:'resetVisibility'})}>Reset visibility</button>}</div>}
                 {loading && (
                   <div className="loading" role="status">
                     Preparing the complete graph…
@@ -1057,7 +1072,7 @@ function App() {
               <div className="graph-footer">
                 <span>
                   {scene?.cards.length || 0} foreground cards ·{" "}
-                  {visibleIds.length} represented topics ·{" "}
+                  {visibleIds.length} displayed topics · {Math.max(0, new Set(completeScene?.cards.flatMap(c=>c.members)).size - visibleIds.length)} hidden in this layer ·{" "}
                   {scene?.links.length || 0} displayed connections
                 </span>
                 {state.depth === 6 && state.scope === "search" && (
@@ -1160,10 +1175,18 @@ function App() {
                 </div>
               </details>
             </section>
+
+          </div>
+        </main>
+        {sidebar.inspectorOpen && <div className="inspector-divider" {...sidebar.separator}/>}
             <aside
-              className="inspector"
+              id="topic-inspector" hidden={!sidebar.inspectorOpen} className="inspector" role={sidebar.viewport < 850 && sidebar.inspectorOpen ? 'dialog' : undefined} aria-modal={sidebar.viewport < 850 && sidebar.inspectorOpen ? true : undefined}
               aria-label="Topic and connection details"
             >
+              <div className="inspector-header">
+                <div className="inspector-heading"><small>TOPIC DETAILS</small><button aria-label="Collapse topic inspector" onClick={sidebar.closeInspector}>×</button></div>
+                <h2 id="inspector-title">{(selected?.displayGroup && selected.groupKey ? groupLabel(selected.groupKey,catalog) : selectedTopic?.label) || selected?.label || inspectedGroup?.label || inspectedReview?.label || 'Select a topic'}</h2>
+                {connectionTopic && <div className="inspector-topic-actions"><button className="primary" title={`Show topics connected to ${connectionTopic.label}`} onClick={()=>{setTab('details');dispatch({type:'explore',id:connectionTopic.id});}}>Show connected topics</button></div>}
               <nav className="inspector-tabs">
                 {["details", "evidence", "dates", "comparison"].map((name) => (
                   <button
@@ -1175,6 +1198,8 @@ function App() {
                   </button>
                 ))}
               </nav>
+              </div>
+              <div className="inspector-content">
               {tab === "details" && (
                 <>
                   <p className="eyebrow">
@@ -1182,16 +1207,12 @@ function App() {
                       ? "CONNECTING ROUTE"
                       : selected?.kind || "EXPLORE THE KNOWLEDGE"}
                   </p>
-                  <h2>
-                    {(selected?.displayGroup && selected.groupKey ? groupLabel(selected.groupKey,catalog) : selectedTopic?.label) ||
-                      selected?.label || inspectedGroup?.label || inspectedReview?.label ||
-                      "Start with a group or topic."}
-                  </h2>
+
                   <p style={{whiteSpace:"pre-line"}}>
                     {inspectedGroup?.description || (inspectedReview?'These topics need a documented browsing home. Their placement is unresolved; inspect their evidence before organizing them. This review folder is derived and cannot be edited.':null) || selectedTopic?.description ||
                       selected?.explanation ||
                       selected?.description ||
-                      "Select a card to inspect it. Use Explore this topic to follow its direct connections."}
+                      "Select a card to inspect it. Use Show connected topics to follow its direct connections."}
                   </p>
                   {inspectedGroup && <section aria-label="Group guide">
                     <Refs catalog={catalog} refs={inspectedGroup.source_refs || []} open={setSource}/>
@@ -1200,7 +1221,7 @@ function App() {
                   </section>}
                   {selectedTopic?.aspects && <dl className="topic-context">{Object.entries(selectedTopic.aspects).map(([key,value])=><React.Fragment key={key}><dt>{key}</dt><dd style={{whiteSpace:'pre-line'}}>{String(value)}</dd></React.Fragment>)}</dl>}
                   {!selected&&state.scope==='group'&&state.groupId&&navigationContainers(state.groupId,catalog).map(g=><details key={g.id} aria-label="Funding overview guide"><summary>Funding overview and sources</summary><p>{g.description}</p><Refs catalog={catalog} refs={g.source_refs||[]} open={setSource}/></details>)}
-                  <FundingDetails catalog={catalog} ids={selectedTopic?[selectedTopic.id]:selected?.displayGroup?(scene?.cards.find(c=>c.id===selected.id)?.members||groupMembers(selected.groupKey,catalog)):state.scope==='group'?(view?.endpoint_ids||[]):[]} selected={state.fundingProjectId||'all'} open={setSource}/>
+                  <FundingDetails catalog={catalog} ids={selectedTopic?[selectedTopic.id]:selected?.displayGroup?(completeScene?.cards.find(c=>c.id===selected.id)?.members||groupMembers(selected.groupKey,catalog)):state.scope==='group'?(view?.endpoint_ids||[]):[]} selected={state.fundingProjectId||'all'} open={setSource}/>
                   {selected && (
                     <button onClick={() => setSelected(null)}>
                       Clear selection
@@ -1210,14 +1231,6 @@ function App() {
                     <>
                       {selectedTopic.kind==='habitat'&&<button onClick={()=>openEditor({kind:'community',id:null,sourceId:selectedTopic.id})}>Create editable community from this</button>}
                       <div className="actions">
-                        <button
-                          className="primary"
-                          onClick={() =>
-                            dispatch({ type: "explore", id: selectedTopic.id })
-                          }
-                        >
-                          Explore this topic
-                        </button>
                         <button
                           disabled={
                             state.compare.length >= 4 &&
@@ -1594,9 +1607,8 @@ function App() {
                   )}
                 </>
               )}
+              </div>
             </aside>
-          </div>
-        </main>
       </div>
       {toast && (
         <div className="toast" role="status">

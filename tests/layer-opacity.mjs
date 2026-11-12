@@ -95,7 +95,7 @@ try{
  await page.goto(url);await idle();await page.getByLabel('Appearance',{exact:true}).selectOption('dark');
  await page.locator('.sidebar').getByRole('button',{name:'Plant communities',exact:true}).click();await idle();
  await page.locator('.visible-topics summary').click();await page.getByRole('button',{name:'Inspect Carob plant communities',exact:true}).click();
- await page.getByRole('button',{name:'Explore this topic',exact:true}).click();await idle();
+ await page.getByRole('button',{name:'Show connected topics',exact:true}).click();await idle();
  await compare('dark-default');
  await page.getByLabel('Turn right',{exact:true}).click();await page.getByLabel('Tilt up',{exact:true}).click();
  await compare('dark-angled');

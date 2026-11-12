@@ -1,5 +1,6 @@
 import type { Point } from './types.ts';
 import type { SceneCard, SceneLink } from './scene.ts';
+import {orderFundingNumbers} from './organization.ts';
 
 export type ConnectionLabel = {
   position: Point;
@@ -95,7 +96,7 @@ function arcAngles(count:number){
 /** A staged domain preview keeps the already displayed arcs, even during resize. */
 export function retainedRelationshipArc(cards:SceneCard[],links:SceneLink[],centre:string,positions:Record<string,Point>){
   if(!positions[centre]||Math.hypot(positions[centre].x,positions[centre].y)>0.01)return null;
-  const neighbours=cards.filter(c=>c.id!==centre).sort((a,b)=>a.record.label.localeCompare(b.record.label)||a.id.localeCompare(b.id));
+  const neighbours=orderFundingNumbers(cards.filter(c=>c.id!==centre).sort((a,b)=>a.record.label.localeCompare(b.record.label)||a.id.localeCompare(b.id)),c=>c.record.label,c=>c.record.domain==='funding');
   const angles=arcAngles(neighbours.length);
   let rx:number|undefined,ry:number|undefined;
   for(let i=0;i<neighbours.length;i++){
@@ -111,16 +112,16 @@ export function retainedRelationshipArc(cards:SceneCard[],links:SceneLink[],cent
   return labels?{positions,labels}:null;
 }
 
-/** Compact upper/lower arcs: the window guides the shape without stretching it. */
+/** Upper/lower ellipse arcs follow the graph window; cards and labels keep their sizes. */
 export function relationshipCircle(cards: SceneCard[], links: SceneLink[], centre: string, aspect=1) {
   if(!Number.isFinite(aspect)||aspect<=0)throw new Error('The graph window dimensions are unavailable.');
   if (!cards.some(card => card.id === centre)) throw new Error('The exploration centre is missing.');
-  const neighbours = cards.filter(card => card.id !== centre).sort((a,b) => a.record.label.localeCompare(b.record.label) || a.id.localeCompare(b.id));
+  const neighbours = orderFundingNumbers(cards.filter(card => card.id !== centre).sort((a,b) => a.record.label.localeCompare(b.record.label) || a.id.localeCompare(b.id)),c=>c.record.label,c=>c.record.domain==='funding');
   if (!neighbours.length) return { positions: { [centre]: { x: 0, y: 0 } }, labels: {} as Record<string, ConnectionLabel> };
   const angles=arcAngles(neighbours.length);
-  // The frame retains the full viewport ratio. Content can leave margins instead
-  // of becoming a very tall or wide ring; grow only until cards and labels fit.
-  const contentAspect = Math.max(0.8, Math.min(1.5, aspect));
+  // Match the actual window ratio instead of capping it to a nearly circular
+  // footprint. Grow the ellipse until every card and connection label fits.
+  const contentAspect = aspect;
   const extentX=Math.max(...angles.map(a=>Math.abs(Math.cos(a))));
   const extentY=Math.max(...angles.map(a=>Math.abs(Math.sin(a))));
   const paddingX=Math.max(...cards.map(c=>c.width))/2+25,paddingY=Math.max(...cards.map(c=>c.height))/2+25;

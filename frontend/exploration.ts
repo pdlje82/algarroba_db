@@ -19,6 +19,7 @@ export const initialState = (): State => ({
   search: "",
   domain: "all",
   kinds: [],
+  hiddenTopicIds: [],
   grouping: "none",
   expandedGroups: [],
   expandedRoutes: [],
@@ -33,6 +34,8 @@ export type Action =
   | { type: "group"; id: string; sourceId?: string }
   | { type: "overview" }
   | { type: "clearCentre" }
+  | { type: "visibility"; ids: string[]; included: boolean }
+  | { type: "resetVisibility" }
   | { type: "search"; text: string }
   | { type: "filters"; kinds: string[] }
   | { type: "previewDomain"; domain: string }
@@ -79,6 +82,7 @@ export function reduceExploration(s: State, a: Action, catalog?: Catalog): State
   switch (a.type) {
     case "explore":
       reset();
+      n.hiddenTopicIds = (n.hiddenTopicIds || []).filter(id => id !== a.id);
       delete n.groupMembers;
       n.centre = a.id;
       n.anchor = a.id;
@@ -120,6 +124,23 @@ export function reduceExploration(s: State, a: Action, catalog?: Catalog): State
     case "clearCentre":
       n.anchor = s.centre || s.anchor;
       n.centre = null;
+      n.positions = {};
+      n.camera = s.camera;
+      break;
+    case "visibility": {
+      const hidden = new Set(n.hiddenTopicIds || []);
+      for (const id of a.ids) a.included ? hidden.delete(id) : hidden.add(id);
+      n.hiddenTopicIds = [...hidden];
+      if (n.centre && hidden.has(n.centre)) {
+        n.anchor = n.centre;
+        n.centre = null;
+      }
+      n.positions = {};
+      n.camera = s.camera;
+      break;
+    }
+    case "resetVisibility":
+      n.hiddenTopicIds = [];
       n.positions = {};
       n.camera = s.camera;
       break;
@@ -197,7 +218,7 @@ export function reduceExploration(s: State, a: Action, catalog?: Catalog): State
   return n;
 }
 export function isInPlaceAction(a: Action) {
-  return ["grouping", "previewDomain", "updateDomain", "clearCentre", "fundingProject"].includes(
+  return ["grouping", "previewDomain", "updateDomain", "clearCentre", "fundingProject", "visibility", "resetVisibility"].includes(
     a.type,
   );
 }

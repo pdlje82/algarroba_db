@@ -1,0 +1,44 @@
+{
+  "batch_id": "al20-line3-source-edition-20261111-v1",
+  "summary": "Record the verified consolidated-edition date printed on PDF position 7 of Law 42/2007; retain the same source bytes and definitions.",
+  "base_revision": 58,
+  "sources": [
+    {
+      "id": "KGB-SRC-0142",
+      "title": "BOE — Law 42/2007 on Natural Heritage and Biodiversity, consolidated edition",
+      "kind": "pdf",
+      "filename": "POLICY-004 - Spain - Natural Heritage and Biodiversity - Law 42-2007 - Consolidated.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/natural-heritage-law.pdf",
+      "sha256": "6d3d3cae99713d1010581a5b08e3b1e046feeb23634a2d6fad7f2c210ab09bd5",
+      "url": "https://www.boe.es/buscar/pdf/2007/BOE-A-2007-21490-consolidado.pdf",
+      "retrieved_on": "2026-11-11",
+      "pdf_pages": 115,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          15,
+          17
+        ]
+      ],
+      "library_path": "doc_library/POLICY-004 - Spain - Natural Heritage and Biodiversity - Law 42-2007 - Consolidated.pdf",
+      "issuer": "Agencia Estatal Boletín Oficial del Estado",
+      "edition_date": "2020-12-31",
+      "document_type": "official funding or legal document"
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0142",
+      "page": 7,
+      "status": "inspected",
+      "note": "Reviewed the consolidated-edition heading (last modification 31 December 2020) and preamble linking conservation, sustainable use, improvement and restoration. No claim of a 2026 legal amendment."
+    }
+  ]
+}

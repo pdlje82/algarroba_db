@@ -1,0 +1,146 @@
+{
+  "batch_id": "al20-startup-deadline-20261111-v1",
+  "base_revision": 56,
+  "summary": "Make the official AL20 operation 2.7 closing date visible in its topic and funding review, with exact BOJA citations and explicit budget/local-verification limits. Preserve previous payment terms, project reasoning and last-confirmed local availability.",
+  "topics": [
+    {
+      "id": "rural-business-start-up",
+      "label": "Rural business start-up and development",
+      "kind": "activity",
+      "domain": "funding",
+      "description": "Marked operation type 2.7; other governing conditions are outside this row.\n\nPublished application closing date: 31 December 2028, under section four of the LEADER call resolution dated 13 April 2026 (BOJA 76, 22 April 2026). Operation 2.7 is selected for AL20. Awards depend on remaining budget; strategy amendments can temporarily suspend submissions. The official deadline was rechecked on 11 November 2026, but the AL20 website timed out, so current local suspensions, later amendments and remaining budget are unconfirmed. The published date does not guarantee that an application can currently be submitted or funded.",
+      "aliases": [
+        "2.7"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "activities",
+      "source_refs": [
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "locator": "Selected operation types and budgets; signature 16 February 2026"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 4,
+          "label": "Application deadline: 31 December 2028",
+          "locator": "Cuarto. Plazo de presentación de solicitudes; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 5,
+          "label": "Awards limited by available budget",
+          "locator": "Séptimo. Financiación y régimen aplicable, apartado 2; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "label": "Temporary suspension during strategy amendments",
+          "locator": "Noveno. Modificaciones de las Estrategias de Desarrollo Local y de las convocatorias de propuestas; PDF position 6"
+        }
+      ],
+      "funding_role": "route",
+      "funding_context_ids": []
+    }
+  ],
+  "funding_reviews": [
+    {
+      "id": "funding-review:remaining-rural-business-start-up",
+      "topic_id": "rural-business-start-up",
+      "version": 3,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Published application closing date: 31 December 2028 (section four of the official LEADER call, 13 April 2026; published 22 April 2026). The deadline was rechecked on 11 November 2026. Awards are budget-limited and strategy amendments may suspend submissions. AL20’s current local status could not be confirmed because its website timed out; the retained open-at-last-check status is dated 10 November 2026.",
+      "territory": "AL20; proposed Alhama location is within the documented local territory. Actual site and activity rights are unconfirmed.",
+      "applicants": "New self-employed person meeting unemployment, prior-activity, residency and exclusive-dedication requirements",
+      "activities": "Operation 2.7 — Rural business start-up and development. See the cited operation’s requirements and exclusions.",
+      "financial_summary": "Payment timing: Start-up instalment available\nPayment evidence checked 2026-11-11. Operation 2.7 permits a first EUR 18,500 instalment when business-plan implementation begins (tax registration), after award notification where applicable. Final EUR 18,500 and any permitted supplements depend on completion and the income/other conditions. This is a business-plan lump sum, not reimbursement of equipment invoices or the full grant upfront.\n\nBusiness-plan lump sum €37,000, with specified €13,000 additions up to €50,000. First €18,500 payment can be requested when implementation begins, subject to the stated conditions; later payments depend on objectives. No expense reimbursement calculation applies to this operation.",
+      "deadlines": [
+        {
+          "label": "Published application closing date",
+          "value": "2028-12-31",
+          "timezone": null,
+          "note": "BOJA 76 of 22 April 2026, section four. No exact cutoff/timezone was established. Remaining budget, subsequent amendments and any current local suspension remain unverified.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "The official 31 December 2028 deadline is verified against the registered call, PDF position 4; budget limits and amendment-related suspension provisions are at positions 5–6. The AL20 website timed out on 11 November 2026. Retry https://alpujarraalmeria.es/lineas-de-ayuda-23-27/ and check the Junta’s current AL20 strategy/call notices for remaining budget, amendments and any temporary suspension. Preserve the published deadline and last-confirmed local status until those checks succeed. Applicant eligibility remains unconfirmed.",
+      "attempted_on": "2026-11-11",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0092",
+          "page": null,
+          "label": "AL20 advertised call and local selected operations",
+          "locator": "AL20 advertised call and local selected operations; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-005",
+          "page": 1,
+          "label": "AL20 selected operation rows, visually rechecked; 3.2 blank",
+          "locator": "AL20 selected operation rows, visually rechecked; 3.2 blank; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 111,
+          "label": "LEADER operation 2.7: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 2.7: scope, beneficiaries, costs and caps; PDF position 111"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 112,
+          "label": "LEADER operation 2.7: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 2.7: scope, beneficiaries, costs and caps; PDF position 112"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 113,
+          "label": "LEADER operation 2.7: scope, beneficiaries, costs and caps",
+          "locator": "LEADER operation 2.7: scope, beneficiaries, costs and caps; PDF position 113"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 112,
+          "label": "Operation 2.7: first EUR 18500 instalment and conditional final payment",
+          "locator": "Operation 2.7: first EUR 18500 instalment and conditional final payment; PDF position 112"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 113,
+          "label": "Operation 2.7: first EUR 18500 instalment and conditional final payment",
+          "locator": "Operation 2.7: first EUR 18500 instalment and conditional final payment; PDF position 113"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 4,
+          "label": "Application deadline: 31 December 2028",
+          "locator": "Cuarto. Plazo de presentación de solicitudes; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 5,
+          "label": "Awards limited by available budget",
+          "locator": "Séptimo. Financiación y régimen aplicable, apartado 2; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0023",
+          "page": 6,
+          "label": "Temporary suspension during strategy amendments",
+          "locator": "Noveno. Modificaciones de las Estrategias de Desarrollo Local y de las convocatorias de propuestas; PDF position 6"
+        }
+      ]
+    }
+  ]
+}

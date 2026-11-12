@@ -1,0 +1,695 @@
+{
+  "batch_id": "funding-payment-review-20261111-territorial-innovation-v1",
+  "base_revision": 53,
+  "summary": "Manually review payment timing for territorial-innovation; preserve call availability and previous project reasoning. Changed financial evidence flags dependent assessments for reconsideration.",
+  "sources": [
+    {
+      "id": "KGB-SRC-0131",
+      "title": "Euro-MED FAQ: no advance funding and preparation-cost exception",
+      "issuer": "Interreg Euro-MED",
+      "kind": "web",
+      "filename": "euromed-faq.html",
+      "managed_path": "sources/funding-payment-review-20261111/euromed-faq.html",
+      "sha256": "504f32d889dfecff13c52c9c9b6cdb6f8c951f029ecfae59f80c3b4f16353145",
+      "url": "https://interreg-euro-med.eu/en/faq-document/is-there-any-possibility-to-cover-the-20-not-co-financed-budget-with-national-resources-is-pre-financing-available/",
+      "retrieved_on": "2026-11-11",
+      "excerpt": "The Interreg Euro-MED Programme does not provide any advance of funds and operates on reimbursement of costs. Preparation costs may be payable once the Subsidy Contract is signed; this is not implementation prefinancing."
+    },
+    {
+      "id": "KGB-SRC-0132",
+      "title": "Interreg Sudoe 2021–2027 Guide, Fiche 7: financial circuit, 30 April 2025",
+      "issuer": "Interreg SUDOE",
+      "kind": "pdf",
+      "filename": "sudoe-flows.pdf",
+      "managed_path": "sources/funding-payment-review-20261111/sudoe-flows.pdf",
+      "sha256": "3ed535988878d2751bd350bab52e0a8636dd197bd38cc45af13af0b4385d2c82",
+      "url": "https://interreg-sudoe.eu/wp-content/uploads/2026/07/Guia_Sudoe_ES_15_07_2026.zip?x53234",
+      "retrieved_on": "2026-11-11",
+      "pdf_pages": 22,
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    },
+    {
+      "id": "KGB-SRC-0133",
+      "title": "Third call model grant contract, 1 July 2026",
+      "issuer": "Interreg NEXT MED",
+      "kind": "pdf",
+      "filename": "nextmed-contract.pdf",
+      "managed_path": "sources/funding-payment-review-20261111/nextmed-contract.pdf",
+      "sha256": "b57a8a21f9696150d202ec140ec268cf41c652669a8c5e56d38753e10173f1ea",
+      "url": "https://www.interregnextmed.eu/wp-content/uploads/2026/06/1.-Interreg-NEXT-MED_Model-of-Grant-Contract_01.07.2026.pdf",
+      "retrieved_on": "2026-11-11",
+      "pdf_pages": 26,
+      "initial_pdf_page_ranges": [
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ]
+      ]
+    },
+    {
+      "id": "KGB-SRC-0134",
+      "title": "CDTI Proyectos de I+D, 29 January 2026: sections 18–21, official reader recovery",
+      "issuer": "CDTI",
+      "kind": "web",
+      "filename": "cdti-official-reader.txt",
+      "managed_path": "sources/funding-payment-review-20261111/cdti-official-reader.txt",
+      "sha256": "39006c14698fa89bb1b5a734dbe73ce85976b25cce181b596893e8b622cb0cb1",
+      "url": "https://www.cdti.es/sites/default/files/2026-02/1._proyectos_de_id_2026_02_1.pdf",
+      "retrieved_on": "2026-11-11",
+      "excerpt": "Official CDTI 29/01/2026 fiche, sections 18–21: up to 50% of aid, capped EUR300000 without additional guarantees beyond award terms; increase up to 75% subject to guarantees for the increase. Loan-contract formalisation precedes the advance. Remaining disbursements follow technical/economic milestones. Direct original-PDF acquisition returned a challenge page; the official reader recovered the document text, not original bytes."
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0132",
+      "page": 1,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    },
+    {
+      "source_id": "KGB-SRC-0132",
+      "page": 2,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    },
+    {
+      "source_id": "KGB-SRC-0132",
+      "page": 6,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    },
+    {
+      "source_id": "KGB-SRC-0133",
+      "page": 8,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    },
+    {
+      "source_id": "KGB-SRC-0133",
+      "page": 9,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    },
+    {
+      "source_id": "KGB-SRC-0133",
+      "page": 10,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    }
+  ],
+  "topics": [],
+  "funding_reviews": [
+    {
+      "id": "funding-review:remaining-euromed-call8-2026",
+      "topic_id": "euromed-call8-2026",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Official terms and the current call page give an application phase ending 13 November 2026 at 13:00 Brussels time; annexes have a separate deadline.",
+      "territory": "Euro-MED cooperation area; Spanish partner and pilot territorial/national validation still required.",
+      "applicants": "At least five programme-area countries; public/public-law lead, competent partners and confirmed pilot ownership or land agreement.",
+      "activities": "Mature, action-oriented territorial-resilience pilots under the eligible missions; no sustainable-tourism mission in this call.",
+      "financial_summary": "Payment timing: Reimbursement; no project advance\nPayment evidence checked 2026-11-11. The programme FAQ expressly says no advance funds for project implementation: partners pre-finance costs and claim reimbursement. A limited preparation-cost mechanism payable after subsidy-contract signature is a separate exception, not a general advance for restoration works or equipment. Partner cash flow and own co-finance remain necessary.\n\nTotal eligible project budget at most €2m, maximum 24 months. Indicative call allocation €20m (€16m Interreg and €4m national co-finance) is not a per-partner grant. Award/payment and partner cash flow require the programme manual and agreement.",
+      "deadlines": [
+        {
+          "label": "Written Jems application",
+          "value": "2026-11-13T13:00:00+01:00",
+          "timezone": "Europe/Brussels",
+          "note": "",
+          "kind": "deadline"
+        },
+        {
+          "label": "Mandatory annexes",
+          "value": "2026-11-27T13:00:00+01:00",
+          "timezone": "Europe/Brussels",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0088",
+          "page": null,
+          "label": "Euro-MED Call 8: application timetable and mature pilot requirements",
+          "locator": "Euro-MED Call 8: application timetable and mature pilot requirements; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 20,
+          "label": "Euro-MED Call 8 budgets, partnership, Jems and annexes",
+          "locator": "Euro-MED Call 8 budgets, partnership, Jems and annexes; PDF position 20"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 21,
+          "label": "Euro-MED Call 8 budgets, partnership, Jems and annexes",
+          "locator": "Euro-MED Call 8 budgets, partnership, Jems and annexes; PDF position 21"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 22,
+          "label": "Euro-MED Call 8 budgets, partnership, Jems and annexes",
+          "locator": "Euro-MED Call 8 budgets, partnership, Jems and annexes; PDF position 22"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 23,
+          "label": "Euro-MED Call 8 budgets, partnership, Jems and annexes",
+          "locator": "Euro-MED Call 8 budgets, partnership, Jems and annexes; PDF position 23"
+        },
+        {
+          "source_id": "KGB-SRC-0032",
+          "page": 24,
+          "label": "Euro-MED Call 8 budgets, partnership, Jems and annexes",
+          "locator": "Euro-MED Call 8 budgets, partnership, Jems and annexes; PDF position 24"
+        },
+        {
+          "source_id": "KGB-SRC-0131",
+          "label": "Programme FAQ: no advance and limited preparation-cost exception",
+          "locator": "Programme FAQ: no advance and limited preparation-cost exception; payment evidence checked 11 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:sudoe",
+      "topic_id": "sudoe-valorisation-call5-2026",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Restricted fifth call opened 9 November 2026; eSudoe form from 15 December. Applications before 29 January 2027 noon UTC+1.",
+      "territory": "SUDOE cooperation area plus the call’s specific entity and original-project conditions.",
+      "applicants": "Route must derive from one of 34 listed original projects, retain original beneficiaries in Spain/France/Portugal and an original-beneficiary lead. New for-profit firms cannot join.",
+      "activities": "Transfer, replication or adoption of completed original outputs; not unrelated new objectives or unfinished original deliverables.",
+      "financial_summary": "Payment timing: Reimbursement; advance unverified\nPayment evidence checked 2026-11-11. The current 2021–2027 Guide Fiche 7 defines reimbursement of expenditure already incurred and paid, following the programme financial circuit. No project-start advance was established in the reviewed current fiche. A 5% project/20% beneficiary slide from an older programme is not applicable evidence for this call. Retain reimbursement planning unless the current agreement expressly establishes an advance.\n\nUp to 75% FEDER, minimum €50,000 budget per FEDER beneficiary, maximum 18 months. No individual award or payment schedule is promised.",
+      "deadlines": [
+        {
+          "label": "Main application and annexes",
+          "value": "2027-01-29T12:00:00+01:00",
+          "timezone": "Europe/Madrid",
+          "note": "Must be submitted before this time.",
+          "kind": "deadline"
+        },
+        {
+          "label": "Translations",
+          "value": "2027-02-05T12:00:00+01:00",
+          "timezone": "Europe/Madrid",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "This verifies the stated passages; it is not a complete eligibility audit.",
+      "attempted_on": null,
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0070",
+          "page": null,
+          "label": "SUDOE5 original-project requirements and calendar",
+          "locator": "SUDOE5 original-project requirements and calendar; verified 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 1,
+          "label": "Approval date and official fifth-call identity",
+          "locator": "Approval date and official fifth-call identity"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 5,
+          "label": "Restricted legacy-project valorisation purpose",
+          "locator": "Restricted legacy-project valorisation purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 10,
+          "label": "Funding and original-beneficiary countries",
+          "locator": "Funding and original-beneficiary countries"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 11,
+          "label": "60% readiness, original lead and no new companies",
+          "locator": "60% readiness, original lead and no new companies"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 13,
+          "label": "Opening, form availability and precise main deadline",
+          "locator": "Opening, form availability and precise main deadline"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 14,
+          "label": "Translation deadline",
+          "locator": "Translation deadline"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 10,
+          "label": "Unfixed allocation and maximum FEDER share",
+          "locator": "Unfixed allocation and maximum FEDER share"
+        },
+        {
+          "source_id": "KGB-SRC-0035",
+          "page": 15,
+          "label": "Duration and beneficiary budget/cost limits",
+          "locator": "Duration and beneficiary budget/cost limits"
+        },
+        {
+          "source_id": "KGB-SRC-0132",
+          "page": 1,
+          "label": "Sudoe 2021–2027 financial circuit: paid expenditure and reimbursement",
+          "locator": "Sudoe 2021–2027 financial circuit: paid expenditure and reimbursement; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0132",
+          "page": 2,
+          "label": "Sudoe 2021–2027 financial circuit: paid expenditure and reimbursement",
+          "locator": "Sudoe 2021–2027 financial circuit: paid expenditure and reimbursement; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0132",
+          "page": 6,
+          "label": "Sudoe 2021–2027 financial circuit: paid expenditure and reimbursement",
+          "locator": "Sudoe 2021–2027 financial circuit: paid expenditure and reimbursement; PDF position 6"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-interreg-nextmed",
+      "topic_id": "interreg-nextmed",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The formal call text and submission page agree on 29 October 2026 at 13:00 CET. The menu still says OPEN. The specific dated documents take precedence, but a later extension or verified portal closure was not independently established.",
+      "territory": "Programme territory includes Andalucía; eligible regions in other countries and advisory-partner rules are specified in the call.",
+      "applicants": "At least five organisations from at least three eligible countries, including an EU Mediterranean and a Mediterranean partner country; at most two organisations per country and call-specific legal/financial gates.",
+      "activities": "Capitalisation of mature sustainable-tourism outputs, not unrelated new restoration or drone R&D.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. The exact third-call model contract Article 7 offers advance choices of 20%, 25% or 30% of the contract value, fixed in the signed agreement, not automatically 30% of eligible project cost. Bank/state-aid registration and available EU funds govern timing. MA risk analysis can require guarantees, suspend transfer or reduce a partner’s advance to 10%; the lead partner distributes agreed shares. Later payments recover the advance. The contradictory OPEN heading/passed deadline remains unresolved.\n\nEU contribution €920,000–€1.2m, fixed 92% eligible-cost contribution and 8% co-finance; published maximum total eligible cost €1,304,347.83. At least 50% of total eligible cost must be allocated as specified for Mediterranean partner countries. Grant-contract payment terms require confirmation.",
+      "deadlines": [
+        {
+          "label": "Published submission end",
+          "value": "2026-10-29T13:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "Contradictory OPEN navigation remains alongside the past explicit call deadline. Retry the e-form and formal amendment/news register; retain both observed facts without inferring closure.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0118",
+          "page": null,
+          "label": "NEXT MED third-call official deadline and application documents",
+          "locator": "NEXT MED third-call official deadline and application documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0057",
+          "page": null,
+          "label": "NEXT MED third call: conflicting OPEN heading and past dated deadline",
+          "locator": "NEXT MED third call: conflicting OPEN heading and past dated deadline; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0119",
+          "page": 3,
+          "label": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline",
+          "locator": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline; PDF position 3"
+        },
+        {
+          "source_id": "KGB-SRC-0119",
+          "page": 4,
+          "label": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline",
+          "locator": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0119",
+          "page": 5,
+          "label": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline",
+          "locator": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0119",
+          "page": 6,
+          "label": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline",
+          "locator": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0119",
+          "page": 7,
+          "label": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline",
+          "locator": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0119",
+          "page": 8,
+          "label": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline",
+          "locator": "NEXT MED capitalisation: purposes, territory, partners, 92% finance and exact deadline; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 12,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 13,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 14,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 15,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 16,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 17,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 18,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 19,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 20,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 20"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 21,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 21"
+        },
+        {
+          "source_id": "KGB-SRC-0120",
+          "page": 22,
+          "label": "NEXT MED applicant and partnership requirements",
+          "locator": "NEXT MED applicant and partnership requirements; PDF position 22"
+        },
+        {
+          "source_id": "KGB-SRC-0133",
+          "page": 8,
+          "label": "Third-call contract Article 7: advance choices, timing, partner guarantees and recovery",
+          "locator": "Third-call contract Article 7: advance choices, timing, partner guarantees and recovery; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0133",
+          "page": 9,
+          "label": "Third-call contract Article 7: advance choices, timing, partner guarantees and recovery",
+          "locator": "Third-call contract Article 7: advance choices, timing, partner guarantees and recovery; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0133",
+          "page": 10,
+          "label": "Third-call contract Article 7: advance choices, timing, partner guarantees and recovery",
+          "locator": "Third-call contract Article 7: advance choices, timing, partner guarantees and recovery; PDF position 10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:cdti",
+      "topic_id": "cdti-company-rd",
+      "version": 2,
+      "instrument_type": "partially-repayable",
+      "availability": "open",
+      "availability_note": "Official instrument page states applications are open all year; no fixed closing date is asserted.",
+      "territory": "Company R&D context in Spain; this does not establish a particular site’s eligibility.",
+      "applicants": "Companies with a suitable R&D project and financial capacity; individual, nonprofit or municipal status is not interchangeable with this route.",
+      "activities": "Industrial research or experimental development creating or significantly improving products, processes or services.",
+      "financial_summary": "Payment timing: Conditional advance · repayable aid\nPayment evidence checked 2026-11-11. PID terms permit an advance up to 50% of awarded aid, capped at EUR 300,000 without additional guarantees beyond award conditions; up to 75% may be requested with guarantees for the increase. Payment follows loan-contract formalisation; other disbursements follow milestone conditions. The instrument remains partially repayable and may require financial guarantees; this is not a nonrepayable upfront grant or the Water4All CDTI route.\n\nMinimum eligible budget €175,000. Partially repayable assistance; company contribution, repayment and incentive-effect conditions require financial review.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "This verifies the stated passages; it is not a complete eligibility audit.",
+      "attempted_on": null,
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0084",
+          "page": null,
+          "label": "CDTI PID company research: year-round partially repayable funding",
+          "locator": "CDTI PID company research: year-round partially repayable funding; verified 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0134",
+          "label": "Sections 18–21: PID advance after loan-contract formalisation",
+          "locator": "Sections 18–21: PID advance after loan-contract formalisation; payment evidence checked 11 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-enisa-participative-loans",
+      "topic_id": "enisa-participative-loans",
+      "version": 2,
+      "instrument_type": "loan",
+      "availability": "unknown",
+      "availability_note": "The official financing page and general conditions were verified. A visible application button does not establish current credit availability or approval.",
+      "territory": "Company registered office and main activity in Spain.",
+      "applicants": "Viable innovative SME/start-up with competitive advantage and own funds at least matching the requested amount.",
+      "activities": "Company start-up/growth financing; it is a repayable loan, not a grant for a restoration plot or education event.",
+      "financial_summary": "Payment timing: Loan; disbursement unverified\nPayment evidence checked 2026-11-11. This is a repayable company loan with an award-specific disbursement, not expense-reimbursement grant funding. The inspected official financing pages confirm loan conditions but not the date, instalments or release conditions for a particular approved operation. No immediate upfront transfer is promised; obtain the formal loan offer and conditions precedent.\n\nPublished range €25,000–€1.5m; opening fee 0.5%, quarterly payments, generally up to seven years and up to two years capital grace. Interest has fixed-base and results-linked components; exact current product pricing and disbursement need confirmation.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0111",
+          "page": null,
+          "label": "ENISA participative-loan requirements and repayment",
+          "locator": "ENISA participative-loan requirements and repayment; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-biodivfuture-2026",
+      "topic_id": "biodivfuture-2026",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The published mandatory first-stage deadline is 10 November noon CET and has passed at this check. The April full-proposal date is not fresh entry. No extension or independently verified submission closure was established.",
+      "territory": "Participating countries including Spain; FB is marine/coastal, AEI has no environmental-realm restriction.",
+      "applicants": "At least three eligible partners from three participating countries/funders, including two EU/associated countries. Spanish entities must be eligible nonprofit R&D organisations, with prior AEI-beneficiary requirements.",
+      "activities": "Novel ecosystems research under Themes A/B/C; AEI cannot participate in Theme C proposals, even with A/B.",
+      "financial_summary": "Payment timing: National payment terms differ\nPayment evidence checked 2026-11-11. Payment follows the actual national funding route, not the international programme heading. Consult the separately reviewed AEI/FB or AEI/CDTI routes. FB’s 40% BiodivFuture advance and CDTI PID’s advance cannot be generalised across partners.\n\nNational direct-cost caps depend on coordinator/partner composition, not the total partnership allocation. The national rules allow justified experimental increments and 25% indirect costs; payment conditions differ by funder. Inspect the cited tables before budgeting.",
+      "deadlines": [
+        {
+          "label": "Mandatory preproposal",
+          "value": "2026-11-10T12:00:00+01:00",
+          "timezone": "Europe/Brussels",
+          "note": "",
+          "kind": "deadline"
+        },
+        {
+          "label": "Invited full proposal",
+          "value": "2027-04-16T12:00:00+02:00",
+          "timezone": "Europe/Brussels",
+          "note": "Only successful first-stage applicants may proceed.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0058",
+          "page": null,
+          "label": "BiodivFuture official call: mandatory stages and documents",
+          "locator": "BiodivFuture official call: mandatory stages and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0087",
+          "page": null,
+          "label": "BiodivFuture FAQ: mandatory preproposal, later entry and national eligibility",
+          "locator": "BiodivFuture FAQ: mandatory preproposal, later entry and national eligibility; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory stages and consortium eligibility",
+          "locator": "BiodivFuture mandatory stages and consortium eligibility; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory stages and consortium eligibility",
+          "locator": "BiodivFuture mandatory stages and consortium eligibility; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory stages and consortium eligibility",
+          "locator": "BiodivFuture mandatory stages and consortium eligibility; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "Spain AEI and FB national funding rules",
+          "locator": "Spain AEI and FB national funding rules; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "Spain AEI and FB national funding rules",
+          "locator": "Spain AEI and FB national funding rules; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "Spain AEI and FB national funding rules",
+          "locator": "Spain AEI and FB national funding rules; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "Spain AEI and FB national funding rules",
+          "locator": "Spain AEI and FB national funding rules; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "Spain AEI and FB national funding rules",
+          "locator": "Spain AEI and FB national funding rules; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "Spain AEI and FB national funding rules",
+          "locator": "Spain AEI and FB national funding rules; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "Spain AEI and FB national funding rules",
+          "locator": "Spain AEI and FB national funding rules; PDF position 99"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:water",
+      "topic_id": "water4all-jtc-2026",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Mandatory preproposal deadline 10 November 2026 15:00 CET; full stage is for invited entrants. Current submission link changed on 23 October.",
+      "territory": "Transnational consortium and Spanish national rules; Alhama is only a proposed possible research site.",
+      "applicants": "At least three funded partners in three countries; Spanish AEI research-body and CDTI company routes have different gates.",
+      "activities": "Sustainable-water-management R&I, including catchment-scale nature-based approaches and technological infrastructure.",
+      "financial_summary": "Payment timing: National payment terms differ\nPayment evidence checked 2026-11-11. Payment follows the actual national funding route, not the international programme heading. Consult the separately reviewed AEI/FB or AEI/CDTI routes. FB’s 40% BiodivFuture advance and CDTI PID’s advance cannot be generalised across partners.\n\nSpanish CDTI route: €150,000 minimum financeable budget, grants up to 70%, TRL4–7. AEI rules differ; do not substitute general CDTI PID terms.",
+      "deadlines": [
+        {
+          "label": "Mandatory preproposal",
+          "value": "2026-11-10T15:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        },
+        {
+          "label": "Invited full proposal",
+          "value": "2027-04-06T15:00:00+02:00",
+          "timezone": "CEST",
+          "note": "Not a fresh entry window; timetable-dependent.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "This verifies the stated passages; it is not a complete eligibility audit.",
+      "attempted_on": null,
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "page": null,
+          "label": "Water4All current dates and national-rule editions",
+          "locator": "Water4All current dates and national-rule editions; verified 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "AEI topics, institutions and previous-funding requirement",
+          "locator": "AEI topics, institutions and previous-funding requirement"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Applicant count, budgets and national submission",
+          "locator": "Applicant count, budgets and national submission"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "label": "National application attachments and consequence",
+          "locator": "National application attachments and consequence"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "CDTI companies, topics, costs and TRL gate",
+          "locator": "CDTI companies, topics, costs and TRL gate"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "€150,000 minimum, grant rate and national deadline",
+          "locator": "€150,000 minimum, grant rate and national deadline"
+        }
+      ]
+    }
+  ]
+}

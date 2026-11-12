@@ -359,6 +359,14 @@ hr {
 .inspector .actions {
   margin: 12px 0;
 }
+.inspector-topic-actions {
+  position: sticky;
+  top: 31px;
+  z-index: 2;
+  padding: 5px 0 10px;
+  background: var(--panel);
+}
+.inspector-topic-actions button { width: 100%; }
 .inspector h3 {
   margin-top: 17px;
 }

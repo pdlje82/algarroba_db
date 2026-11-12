@@ -9,6 +9,7 @@ import {
 } from "./types.ts";
 import {
   rootGroup,
+  orderFundingNumbers,
   primaryGroup,
   recordedPlaceId,
   placeLabel,
@@ -113,8 +114,9 @@ export function buildScene(
   aspect = 1.6,
 ): Scene {
   const hierarchy = v.scope === 'overview' || (v.scope === 'group' && isHierarchyGroup(s.groupId,c));
+  const hidden = new Set(s.hiddenTopicIds || []);
   const topicMap = new Map(c.topics.map((t) => [t.id, t])),
-    routes = hierarchy ? [] : allRoutes(s, v),
+    routes = hierarchy ? [] : allRoutes(s, v).filter(r => r.nodes.every(id => !hidden.has(id))),
     records = new Map(v.nodes.map((t) => [t.id, t])),
     visible = new Set(v.endpoint_ids),
     expanded = routes.filter((r) => s.expandedRoutes.includes(r.id)),
@@ -138,6 +140,9 @@ export function buildScene(
   // Keep the captured query's results, but do not let route reveal or an
   // endpoint match reinsert the centre the user explicitly removed.
   if (!s.centre && s.anchor) visible.delete(s.anchor);
+  hidden.forEach(id => visible.delete(id));
+  const completeMembers = hidden.size && v.scope === 'group'
+    ? new Map(buildScene({...s, hiddenTopicIds: []},v,c,aspect).cards.map(card=>[card.id,card.members])) : null;
   if (hierarchy) factIds.clear();
   else if (v.scope !== "search") v.edges.forEach((e) => factIds.add(e.id));
   else
@@ -171,19 +176,26 @@ export function buildScene(
   if(v.scope==='group' && s.groupId && !s.groupId.startsWith('display-group:')) {
     for(const child of navigationChildren(s.groupId,c)){
       const ids=[...new Set([...groupMembers(child.id,c),...(hierarchy && child.anchor_topic_id ? [child.anchor_topic_id] : [])])].filter(id=>visible.has(id));
+      const completeIds = [...groupMembers(child.id,c), ...(child.anchor_topic_id ? [child.anchor_topic_id] : [])];
+      if (hidden.size && completeIds.length && completeIds.every(id => hidden.has(id))) continue;
       if(s.domain!=='all' && !ids.length && groupDomain(child.id,c)!==s.domain) continue;
       for(const [key,existing] of groups){if(existing.permanent)continue;existing.ids=existing.ids.filter(id=>!ids.includes(id));if(!existing.ids.length)groups.delete(key);}
       groups.set(child.id,{label:child.label,ids,permanent:true,domain:groupDomain(child.id,c)});
     }
     for(const community of (c.communities||[]).filter(g=>g.parent_id===s.groupId)){
       if(s.domain!=='all' && s.domain!=='ecosystem')continue;
-      groups.set(community.id,{label:community.label,ids:community.plants.map(p=>p.topic_id),permanent:true,domain:'ecosystem'});
+      const ids=community.plants.map(p=>p.topic_id).filter(id=>!hidden.has(id));
+      if(hidden.size && community.plants.length && !ids.length)continue;
+      groups.set(community.id,{label:community.label,ids,permanent:true,domain:'ecosystem'});
     }
   }
   if(v.scope==='overview')for(const group of c.browse_groups.filter(g=>g.parent_id.startsWith('domain:'))){
     const domain=group.parent_id.slice(7);
+    const members=c.topics.filter(t=>rootGroup(t.id,c)===group.id).map(t=>t.id);
+    if(hidden.size && members.length && members.every(id=>hidden.has(id)))continue;
     if(s.domain==='all'||s.domain===domain){const existing=groups.get(group.id);groups.set(group.id,{label:group.label,ids:existing?.ids||[],permanent:true,domain});}
   }
+  if (hidden.size && v.endpoint_ids.length && v.endpoint_ids.every(id=>hidden.has(id)) && (!centre || hidden.has(centre))) groups.clear();
   const cards: SceneCard[] = [],
     representative = new Map<string, string>(),
     groupIds = [...groups.keys()].sort((a, b) =>
@@ -238,6 +250,13 @@ export function buildScene(
     });
     representative.set(id, id);
   }
+  const priorCardOrder=[...cards];
+  let numberOrderChanged=false;
+  if (!orderedGroup && v.scope!=='overview') {
+    const ordered=orderFundingNumbers(cards,card=>card.record.label,card=>card.record.domain==='funding');
+    numberOrderChanged=ordered.some((card,i)=>card!==cards[i]);
+    cards.splice(0,cards.length,...ordered);
+  }
   if (s.pendingDomain && s.pendingDomain !== "all") {
     const context = new Set(centre ? [centre] : []);
     for (const r of expanded) {
@@ -258,7 +277,8 @@ export function buildScene(
         card.record.context = true;
     }
   }
-  if(v.scope==='group')for(const card of cards)card.record=fundingCardRecord(card.record,card.members,c,s.fundingProjectId||'all');
+  if(v.scope==='group')for(const card of cards)card.record=fundingCardRecord(card.record,
+    completeMembers?.get(card.id) || card.members,c,s.fundingProjectId||'all');
   const saved = cards.map((card) => s.positions[card.id]);
   const complete = saved.every(
     (p) => p && Number.isFinite(p.x) && Number.isFinite(p.y),
@@ -336,7 +356,8 @@ export function buildScene(
     (s.pendingDomain&&complete?retainedRelationshipArc(cards,links,centre,s.positions):null)||relationshipCircle(cards,links,centre,aspect) : null;
   const vertical = orderedGroup ? cards.map((_,i)=>({x:0,y:(i-(cards.length-1)/2)*(CARD_HEIGHT+CARD_GAP)})) : null;
   const orderedPositions = vertical && Object.fromEntries(cards.map((card,i)=>[card.id,vertical[i]]));
-  const preserve=complete && (s.pendingDomain || (vertical ? samePositions(cards,s.positions,orderedPositions!) : circle ? samePositions(cards,s.positions,circle.positions) : hasCompactGridPositions(saved)));
+  const fundingOrderMatches=!numberOrderChanged || complete && saved.every((p,i)=>!i||p!.y>saved[i-1]!.y+.01||Math.abs(p!.y-saved[i-1]!.y)<.01&&p!.x>=saved[i-1]!.x);
+  const preserve=complete && (s.pendingDomain || (vertical ? samePositions(cards,s.positions,orderedPositions!) : circle ? samePositions(cards,s.positions,circle.positions) : hasCompactGridPositions(saved) && fundingOrderMatches));
   const grid=vertical || (circle ? null : compactGrid(cards.length,aspect,CARD_WIDTH,CARD_HEIGHT).points);
   const positions:Record<string,Point>={};
   cards.forEach((card,i)=>{
@@ -357,7 +378,7 @@ export function buildScene(
   // their rings/scattered slots cannot lose moved offsets, closed layers or sources.
   const previousKey = complete && (!preserve || circleActive)
     ? scenePresentationKey(JSON.stringify([
-        cards.map((card, i) => [card.id, saved[i]]),
+        priorCardOrder.map(card => [card.id, s.positions[card.id]]),
         links.map((e) => e.id),
       ]))
     : undefined;

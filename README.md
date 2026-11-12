@@ -135,12 +135,13 @@ reimbursement and unverified terms. Open the finance details for guarantees, tim
 The [payment register](imports/funding-payment-coverage-20261111.json) records checked evidence and
 remaining gaps. Payment availability does not establish an open call or project eligibility.
 
-1. Open a sidebar group to bring its complete contents into the foreground. The previous layer
+1. Open a sidebar group to bring its included contents into the foreground. The previous layer
    stays darkened behind it. A single click inspects a card/line; **Open group**, **Members** or
    double-clicking an eligible group opens its members. Temporary groups keep their exact captured
    membership and start with Group by None.
-2. Choose **Explore this topic** or the Centre dropdown to open all direct neighbours. The centre
-   sits between compact upper/lower arcs with visible relationship labels. Overview, search and
+2. Choose **Show connected topics** at the top of the node details, or use the Centre dropdown,
+   to open all direct neighbours. The centre sits between upper/lower ellipse arcs that follow
+   the graph window proportions, with visible relationship labels. Overview, search and
    ordinary member layers use a grid; stored ordered folders use a vertical column.
 3. Search for stored names, aliases, findings and curated page text. With a centre, results explain
    routes through the graph. **Show steps / Hide steps** reveals real intermediate topics; shared
@@ -154,6 +155,20 @@ remaining gaps. Payment availability does not establish an open call or project 
    The query origin remains available for refresh without reinserting that card. Opening a member
    group clears an unrelated centre. **Return to overview** establishes a single-layer boundary,
    retaining domain/type filters.
+
+The left tree separates expansion (chevron), opening a group (name), inspecting a topic (name)
+and graph visibility (checkbox). Branch checkboxes include the anchor and all descendants; a partial
+checkbox selects the whole branch on its next click. Shared references stay synchronized. Counts say
+**included**, independently of which layer is currently drawn. **Find in tree** searches labels and
+aliases without changing visibility. **Collapse all** and **Reset visibility** are separate actions.
+Hidden topics stay inspectable, follow subsequent browsing and are recorded by Save view and history.
+Unticking the centre removes it; explicitly centring a hidden topic includes that topic again.
+
+Drag the divider beside the inspector to resize it; arrow keys resize in 20 px steps and double-click
+restores 360 px. Its preferred width and tree expansion are browser preferences. The heading,
+**Show connected topics** and tabs remain visible above scrolling details. Close/reopen controls
+preserve the inspected topic. Navigation becomes a drawer below 1200 px; below 850 px the inspector
+also becomes a drawer, with only one sidebar open. Escape closes drawers.
 
 Hover outlines do not select or navigate. Domain-excluded cards and previous-view snapshots are
 read-only. Place grouping uses recorded place IDs, not guessed geography; **Place not recorded**
@@ -195,7 +210,7 @@ available if graphics initialization fails. Appearance offers System/Light/Dark.
 Evidence desk: select a plant, compare watering phases, review compatible source evidence and
 explicitly adopt a parameter into the draft. **Save changes** commits the plant edit atomically.
 Amount/frequency/period cannot be freely entered in this workspace. Existing manual/adjusted
-values and provenance remain readable. **Manage groups** and **Manage communities** are separate
+values and provenance remain readable. **Manage groups** and **Communities** are separate
 entry points when no record is selected. See [Community planning](docs/COMMUNITY_PLANNING.md)
 for lifecycle meanings, applicability review, drafts, Undo/Redo, conflicts and the API.
 

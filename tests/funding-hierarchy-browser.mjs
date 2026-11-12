@@ -60,8 +60,8 @@ try{
   check('AL30 opens its own GDR without importing AL20 criteria',(await current()).scene.cards.map(c=>c.id).join(',')==='al30-gdr');
   await sidebar('browse:funding-al20');
   await page.locator('.inspector').getByRole('button',{name:'About '+catalog.topics.find(t=>t.id==='al20').label,exact:true}).click();
-  check('About exposes the original AL20 topic and factual connections',await page.locator('.inspector').getByRole('button',{name:'Explore this topic',exact:true}).isVisible()&&(await page.locator('.inspector').innerText()).includes('served by'));
-  await page.getByRole('button',{name:'Explore this topic',exact:true}).click();await ready();
+  check('About exposes the original AL20 topic and factual connections',await page.locator('.inspector').getByRole('button',{name:'Show connected topics',exact:true}).isVisible()&&(await page.locator('.inspector').innerText()).includes('served by'));
+  await page.getByRole('button',{name:'Show connected topics',exact:true}).click();await ready();
   check('Ordinary topic exploration retains factual arrows',(await current()).scene.links.length>0);
 
   // Every hierarchy folder must open with named content and the same immutable factual snapshot.

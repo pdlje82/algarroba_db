@@ -41,6 +41,10 @@ const circle=s=>{
   assert.equal(neighbours.filter(p=>p.y<0).length,Math.floor(neighbours.length/2));
   assert.equal(neighbours.filter(p=>p.y>0).length,Math.ceil(neighbours.length/2));
 };
+const ellipseMatches=(s,bounds)=>{
+  const points=Object.values(s.positions),w=2*Math.max(...points.map(p=>Math.abs(p.x)))+234,h=2*Math.max(...points.map(p=>Math.abs(p.y)))+124;
+  return Math.abs((w+50)/(h+50)-bounds.width/bounds.height)<.005;
+};
 try{
   await page.goto(url);await idle();
   await page.evaluate(()=>window.__connectionDraws=[]);
@@ -74,13 +78,13 @@ try{
   await page.setViewportSize({width:1100,height:900});await page.getByRole('button',{name:'Fit',exact:true}).click();await idle();
   const resized=await state();circle(resized);assert.notDeepEqual(resized.positions,positions);assert.deepEqual(Object.keys(resized.positions).sort(),Object.keys(positions).sort());check('Resizing adapts the arcs to the window without changing their member topics');
   windowBounds=await page.locator('.graph-canvas').boundingBox();renderedFrame=await page.evaluate(()=>window.__layerFrames.at(-1));
-  check('Resized topic spacing stays compact',(()=>{const points=Object.values(resized.positions),w=Math.max(...points.map(p=>p.x))-Math.min(...points.map(p=>p.x))+234,h=Math.max(...points.map(p=>p.y))-Math.min(...points.map(p=>p.y))+124;return h/w<1.35&&w/h<1.65;})());
+  check('Resized topic ellipse follows the window',ellipseMatches(resized,windowBounds));
   check('The frame and topic arcs follow the resized window format',renderedFrame&&Math.abs(renderedFrame.width/renderedFrame.height-windowBounds.width/windowBounds.height)<0.00001);
   await page.screenshot({path:'output/consolidation-qa/relationship-circle-portrait-frame.png'});
   await page.setViewportSize({width:1500,height:2100});await page.getByRole('button',{name:'Fit',exact:true}).click();await idle();
   const tall=await state();circle(tall);const tallBounds=await page.locator('.graph-canvas').boundingBox();
   const tallFrame=await page.evaluate(()=>window.__layerFrames.at(-1));
-  check('A tall layer leaves margins instead of stretching its topics',tallBounds.height>tallBounds.width&&(Math.max(...Object.values(tall.positions).map(p=>p.y))-Math.min(...Object.values(tall.positions).map(p=>p.y))+124)/tallFrame.height<.8);
+  check('A tall layer uses a tall ellipse',tallBounds.height>tallBounds.width&&ellipseMatches(tall,tallBounds));
   await page.screenshot({path:'output/consolidation-qa/relationship-circle-tall-arcs.png'});
   await page.setViewportSize({width:1600,height:1150});
   await page.getByRole('button',{name:'Fit',exact:true}).click();await idle();assert.deepEqual((await state()).positions,positions);check('Returning to the original window size restores its deterministic arc layout');
@@ -100,8 +104,8 @@ try{
     assert.ok(Math.abs(bounds.width/bounds.height-aspect)<.002);
     for(const r of rects){assert.ok(r.position.x-r.width/2>=frame.minX&&r.position.x+r.width/2<=frame.maxX);assert.ok(-r.position.y-r.height/2>=frame.minY&&-r.position.y+r.height/2<=frame.maxY);}
     const points=Object.values(current.positions),w=Math.max(...points.map(p=>p.x))-Math.min(...points.map(p=>p.x))+234,h=Math.max(...points.map(p=>p.y))-Math.min(...points.map(p=>p.y))+124;
-    assert.ok(h/w<1.35&&w/h<1.65);
-    check('Almería community stays compact with clear labels and all facts at '+name);
+    assert.ok(ellipseMatches(current,bounds));
+    check('Almería community follows the window ellipse with clear labels and all facts at '+name);
     if(name==='16-9'||name==='9-16')await page.locator('.graph-canvas').screenshot({path:`output/consolidation-qa/compact-almeria-${name}.png`});
   }
   await formatStyle.evaluate(el=>el.remove());await page.setViewportSize({width:1600,height:1150});await idle();

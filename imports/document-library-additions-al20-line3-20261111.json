@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-11",
+  "new_files": [
+    {
+      "source_id": "KGB-SRC-0136",
+      "title": "Junta de Andalucía — AL02 heritage awards, 2018 call, decision 14 October 2020",
+      "library_path": "doc_library/FUND-047 - Alpujarra Sierra Nevada Almeriense - AL02 Heritage Awards 2018 Call - 2020-10-14.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/heritage-awards-2018.pdf",
+      "sha256": "16df13077bed0e1d2128c50cc99334c84c29febd4867a4651ae093a1c206cc87",
+      "pdf_pages": 15,
+      "reviewed_pages": [
+        1,
+        4,
+        8,
+        9,
+        10,
+        11
+      ],
+      "publisher_url": "https://www.juntadeandalucia.es/export/drupaljda/RES_AL02_L1C18_2020_10_14.pdf",
+      "final_download_url": "https://www.juntadeandalucia.es/export/drupaljda/RES_AL02_L1C18_2020_10_14.pdf",
+      "retrieved_at": "2026-11-11T21:52:48.215744+00:00",
+      "edition_date": "2020-10-14",
+      "accepted_batch": "al20-line3-research-20261111-v1",
+      "issuer": "Junta de Andalucía / GDR Alpujarra–Sierra Nevada Almeriense"
+    },
+    {
+      "source_id": "KGB-SRC-0137",
+      "title": "Junta de Andalucía — AL02 community infrastructure awards, 2018 call, decision 14 May 2021",
+      "library_path": "doc_library/FUND-048 - Alpujarra Sierra Nevada Almeriense - AL02 Community Infrastructure Awards 2018 Call - 2021-05-14.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/community-awards-2018.pdf",
+      "sha256": "a7692eae6ddaff857ef0aa3ff2008616de9d4770b68bf6b129251157f40dd054",
+      "pdf_pages": 18,
+      "reviewed_pages": [
+        1,
+        4,
+        9
+      ],
+      "publisher_url": "https://www.juntadeandalucia.es/export/drupaljda/RES_AL02_L2_C18.pdf",
+      "final_download_url": "https://www.juntadeandalucia.es/export/drupaljda/RES_AL02_L2_C18.pdf",
+      "retrieved_at": "2026-11-11T21:52:48.217748+00:00",
+      "edition_date": "2021-05-14",
+      "accepted_batch": "al20-line3-research-20261111-v1",
+      "issuer": "Junta de Andalucía / GDR Alpujarra–Sierra Nevada Almeriense"
+    },
+    {
+      "source_id": "KGB-SRC-0138",
+      "title": "Junta de Andalucía — AL02 community infrastructure awards, 2022 call, decision 10 September 2024",
+      "library_path": "doc_library/FUND-049 - Alpujarra Sierra Nevada Almeriense - AL02 Community Infrastructure Awards 2022 Call - 2024-09-10.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/community-awards-2022.pdf",
+      "sha256": "359911c1c358e56edc088c480e4523d9b1ced3a268ccc258356d42cacde3f5d7",
+      "pdf_pages": 42,
+      "reviewed_pages": [
+        1,
+        4,
+        5,
+        10
+      ],
+      "publisher_url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/RESOLUCI%C3%93N%202022_AL02_L1%28F%29.pdf",
+      "final_download_url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/09/RESOLUCI%C3%93N%202022_AL02_L1%28F%29.pdf",
+      "retrieved_at": "2026-11-11T21:52:48.218755+00:00",
+      "edition_date": "2024-09-10",
+      "accepted_batch": "al20-line3-research-20261111-v1",
+      "issuer": "Junta de Andalucía / GDR Alpujarra–Sierra Nevada Almeriense"
+    },
+    {
+      "source_id": "KGB-SRC-0139",
+      "title": "ILASA — LEADER II Alpujarra–Sierra Nevada activity report; publication date unverified",
+      "library_path": "doc_library/FUND-050 - ILASA - LEADER II Alpujarra Sierra Nevada Activity Report - undated.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/leader-ii-report.pdf",
+      "sha256": "10fd5eaf96ba5066194f65e99cd0dc1fb80ec58d82f0de66d33c54b35c9c253d",
+      "pdf_pages": 62,
+      "reviewed_pages": [
+        2,
+        12,
+        13,
+        21,
+        22,
+        34,
+        35,
+        36,
+        56
+      ],
+      "publisher_url": "https://alpujarraalmeria.es/wp-content/uploads/uploads/gdralpujarra_memoriaactividades2017.pdf",
+      "final_download_url": "https://alpujarraalmeria.es/wp-content/uploads/uploads/gdralpujarra_memoriaactividades2017.pdf",
+      "retrieved_at": "2026-11-11T21:52:48.218755+00:00",
+      "edition_date": null,
+      "accepted_batch": "al20-line3-research-20261111-v1",
+      "issuer": "ILASA / ADR Alpujarra"
+    },
+    {
+      "source_id": "KGB-SRC-0140",
+      "title": "Junta de Andalucía — validation of the AL20 proposed call, 2026",
+      "library_path": "doc_library/FUND-051 - Alpujarra Sierra Nevada Almeriense - AL20 Call Validation - 2026-04-08.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/al20-validation-2026.pdf",
+      "sha256": "868cd2ec314e37122c5c9c5f7bda2e824bcf3a73c40d662b009d38ef18fe8b99",
+      "pdf_pages": 3,
+      "reviewed_pages": [
+        1,
+        2,
+        3
+      ],
+      "publisher_url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/04/GDR%20de%20la%20Alpujarra%20_%20Sierra%20Nevada%20Almeriense%20_AL20_%20Resoluci%C3%B3n%20validaci%C3%B3n%20convocato.%20propu.%20de%20GDR%28F%29.pdf",
+      "final_download_url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/04/GDR%20de%20la%20Alpujarra%20_%20Sierra%20Nevada%20Almeriense%20_AL20_%20Resoluci%C3%B3n%20validaci%C3%B3n%20convocato.%20propu.%20de%20GDR%28F%29.pdf",
+      "retrieved_at": "2026-11-11T21:52:48.219695+00:00",
+      "edition_date": "2026-04-08",
+      "accepted_batch": "al20-line3-research-20261111-v1",
+      "issuer": "Junta de Andalucía / GDR Alpujarra–Sierra Nevada Almeriense"
+    },
+    {
+      "source_id": "KGB-SRC-0141",
+      "title": "Junta de Andalucía — AL02 local lines and conditions, 2018 call",
+      "library_path": "doc_library/FUND-052 - Alpujarra Sierra Nevada Almeriense - AL02 Lines and Conditions - 2018 Call.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/al02-typologies-2018.pdf",
+      "sha256": "1a6ca036fe1a055ceb61cab83496a663bde83ba8ee4dc584aa652e330b316228",
+      "pdf_pages": 16,
+      "reviewed_pages": [
+        1,
+        2,
+        3
+      ],
+      "publisher_url": "https://www.juntadeandalucia.es/export/drupaljda/AL02_alpujarra_lineasayudas2018.pdf",
+      "final_download_url": "https://www.juntadeandalucia.es/export/drupaljda/AL02_alpujarra_lineasayudas2018.pdf",
+      "retrieved_at": "2026-11-11T21:52:48.780014+00:00",
+      "edition_date": null,
+      "accepted_batch": "al20-line3-research-20261111-v1",
+      "issuer": "Junta de Andalucía / GDR Alpujarra–Sierra Nevada Almeriense"
+    },
+    {
+      "source_id": "KGB-SRC-0142",
+      "title": "BOE — Law 42/2007 on Natural Heritage and Biodiversity, consolidated edition",
+      "library_path": "doc_library/POLICY-004 - Spain - Natural Heritage and Biodiversity - Law 42-2007 - Consolidated.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/natural-heritage-law.pdf",
+      "sha256": "6d3d3cae99713d1010581a5b08e3b1e046feeb23634a2d6fad7f2c210ab09bd5",
+      "pdf_pages": 115,
+      "reviewed_pages": [
+        1,
+        7,
+        15,
+        16,
+        17
+      ],
+      "publisher_url": "https://www.boe.es/buscar/pdf/2007/BOE-A-2007-21490-consolidado.pdf",
+      "final_download_url": "https://www.boe.es/buscar/pdf/2007/BOE-A-2007-21490-consolidado.pdf",
+      "retrieved_at": "2026-11-11T21:52:48.879007+00:00",
+      "edition_date": "2020-12-31",
+      "accepted_batch": "al20-line3-research-20261111-v1",
+      "issuer": "Agencia Estatal Boletín Oficial del Estado",
+      "metadata_batch": "al20-line3-source-edition-20261111-v1"
+    },
+    {
+      "source_id": "KGB-SRC-0148",
+      "title": "AL20 — provisional grant proposal linked to the 21 October 2026 GDR board meeting",
+      "library_path": "doc_library/FUND-053 - Alpujarra Sierra Nevada Almeriense - AL20 Provisional Grant Proposal - 2026.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/al20-provisional-2026.pdf",
+      "sha256": "cafcff2067e4ac3207e2b06e1c61b963666b755443d43ddfad173f3da2723262",
+      "pdf_pages": 1,
+      "reviewed_pages": [
+        1
+      ],
+      "publisher_url": "https://alpujarraalmeria.es/wp-content/uploads/2026/11/Favorable-Provisional-9_10_26.pdf",
+      "final_download_url": "https://alpujarraalmeria.es/wp-content/uploads/2026/11/Favorable-Provisional-9_10_26.pdf",
+      "retrieved_at": "2026-11-11T21:52:55.551493+00:00",
+      "edition_date": null,
+      "accepted_batch": "al20-line3-research-20261111-v1",
+      "issuer": "Junta de Andalucía / GDR Alpujarra–Sierra Nevada Almeriense"
+    },
+    {
+      "source_id": "KGB-SRC-0149",
+      "title": "AL20 — selected operation types and selection criteria, GDR-published 2026 copy",
+      "library_path": "doc_library/FUND-054 - Alpujarra Sierra Nevada Almeriense - AL20 Selected Types and Criteria - GDR Published Copy - 2026.pdf",
+      "managed_path": "sources/al20-line3-intake-20261111/al20-current-annex.pdf",
+      "sha256": "527ec76137662b4179d87c8fc3495d0faa5c15418c745740c304caef832a1913",
+      "pdf_pages": 20,
+      "reviewed_pages": [
+        1,
+        15
+      ],
+      "publisher_url": "https://alpujarraalmeria.es/wp-content/uploads/2026/04/anexo-I-Tipologia-y-criterios.pdf",
+      "final_download_url": "https://alpujarraalmeria.es/wp-content/uploads/2026/04/anexo-I-Tipologia-y-criterios.pdf",
+      "retrieved_at": "2026-11-11T21:52:55.551493+00:00",
+      "edition_date": null,
+      "accepted_batch": "al20-line3-research-20261111-v1",
+      "issuer": "Junta de Andalucía / GDR Alpujarra–Sierra Nevada Almeriense"
+    }
+  ]
+}

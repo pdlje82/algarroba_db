@@ -1,5 +1,67 @@
 # Verification, acceptance history and documentation map
 
+## Compact tree and resizable inspector — 12 November 2026
+
+Implemented the 260 px navigation tree and 360 px default inspector using the irrigation editor's
+opaque light/dark palette. The tree separates expansion, group opening, inspection and tri-state
+inclusion; local search preserves visibility and expansion/scroll preferences. Shared topics,
+anchors, communities, Needs organization, numeric funding entries and vertical folders use their
+canonical metadata. Inclusion follows the exploration and saved views. Excluding the centre removes
+it atomically; hidden route intermediates suppress the entire displayed route. Complete funding
+reviews and source-coverage scope remain independent of display inclusion.
+
+The inspector has a persistent preferred width, pointer/keyboard divider, responsive clamps,
+collapse/reopen and pinned heading/actions/tabs. Narrow screens use accessible drawers with touch
+targets, Escape, focus containment and background isolation. Dense ellipse reflow retains all
+identities, factual edges, clear labels and camera orientation during resizing.
+
+Checks: **97 frontend tests**, **111 backend tests passed, 1 skipped**, production build and
+**59 isolated Edge/API browser checks** passed. The existing backend deprecation and bundle-size
+advisories remain. SQLite integrity is `ok`; comparison with the isolated pre-change copy confirms
+every table unchanged except the QA-only test explorations. The accepted store remains revision 61;
+no source facts, registrations, memberships, working plans or original saved payloads were edited.
+The live app serves the exact checked production bundle. Results, table fingerprints and desktop,
+dark, dense-resize and phone screenshots: `research/sidebar-redesign-20261112/`.
+
+To repeat the focused browser checks, start the isolated helper in the project Python environment,
+then run the two browser scenarios from another terminal:
+
+```powershell
+.venv/Scripts/python.exe research/sidebar-redesign-20261112/qa.py
+# In another terminal:
+npm run test:sidebars
+npm run test:sidebar-details
+```
+
+The helper guards its separate `qa.sqlite` destination and serves port 8788; the browser scripts
+reject the accepted app and create test saves only in that QA store. `npm test` includes the eight
+new unit regressions. Pre-change copies of touched frontend files are in the evidence folder's
+`before/` directory. Existing unrelated changes remain in the checkout.
+
+## Node navigation and numeric funding order — 12 November 2026
+
+Show connected topics is pinned below the inspector tabs for a selected topic or a folder's
+real topic anchor; it remains available while scrolling and on Evidence/Dates/Comparison.
+The Centre dropdown and this action use the same viewport-shaped ellipse. Cards/labels keep
+their dimensions and clearance in wide, square and portrait windows. Numbered funding folders
+and topic cards use numeric code order, including 1.9 → 1.10 → 1.11 and 7119.2 → 7119.3 → 7119.4;
+explicit vertical member order and unnumbered context slots are retained.
+
+Checks: **89 frontend tests**, **111 backend tests passed, 1 skipped**, production build and
+**20 isolated Edge/API browser checks** passed. Browser coverage includes all three AL20 lines,
+the action from an anchored folder and a long scrolled node on Evidence, identical Centre/button
+geometry, dense-neighbourhood resize through wide/square/portrait, complete identities/edges,
+clear labels, reload and Remove centre. Existing Starlette/httpx deprecation and bundle-size
+advisories remain. Screenshots/results: `research/funding-numeric-order-20261112/`.
+
+Checked batch `funding-numeric-labels-20261112-v1` changes only seven existing labels to show
+their already documented operation codes, plus descriptive labels on the same source citations.
+It was accepted at revision 61 and retries unchanged. SQLite integrity is `ok`; budgets,
+descriptions, factual edges, source editions/coverage, memberships, plans and saved views remain
+unchanged. Official current/historical EDL PDFs FUND-013 and FUND-055 were independently hashed
+against their registrations. Live health/catalog and the served production bundle were verified.
+Subsequent compact-tree and inspector acceptance is recorded above.
+
 Current command reference, reviewed 10 November 2026. Commands run from the repository root
 with the working project Python environment. Dated results below describe previous runs;
 they are not a claim that the application suites were rerun during documentation cleanup.
@@ -503,3 +565,21 @@ text refer to the repository at that time; use the map above for current documen
 
 The original EPUBs remain historical artifacts. Update the relevant current guide in place when
 behavior changes; keep dated verification/recovery evidence separate from current instructions.
+
+
+## AL20 Line 3 research acceptance — 11 November 2026
+
+Content-only intake through checked CLI imports, revision 57 → 58 → 59: nine new library PDFs, five managed webpage captures, 90 new topics, 8 updated topics, 60 new findings, 2 updated findings, 195 new relationships and 39 new inspected positions. The second batch only records the unchanged Law 42/2007 edition's verified 31 December 2020 date and inspected metadata page. Both exact accepted payloads retry unchanged.
+
+Focused backend tests: **67 passed, 1 skipped** (existing Starlette/httpx deprecation warning). Isolated Edge/API browser checks: **16 passed**, no browser errors; AL20 folder navigation, budget/unselected training, patrimonio recognition, historical/provisional project summaries and two exact-page new PDF citations were exercised. Running accepted app health/catalog report revision 59 and all imported groups. No application code changed or rebuild was required.
+
+SQLite integrity is `ok`; all 13 protected tables, all earlier source registrations and every existing library document remain unchanged. Only CATALOG.md was appended; exactly nine expected PDFs were added. Historical ownership verification still reports earlier documented accessions/catalog changes; the original inventory was not overwritten. 9 organization advisories are exactly the pre-existing unrelated ones. Full before/after and preservation evidence: [intake report](../research/al20-line3-intake-20261111/report.md), `preservation-and-integrity.json`, `browser-report.json`, accession ledger and recovery-backups.json in/linked from that run. No working-plan values, funding comparison results or PDF page_text were modified.
+
+
+## AL20 EDL heritage acceptance — 11 November 2026
+
+Checked content-only intake `al20-edl-heritage-20261111-v1`, revision 59 → 60: one new historical EDL PDF (FUND-055 / KGB-SRC-0150), one reused current EDLL edition, 10 new topics, 8 enriched topics, 41 new relationships, 12 findings, 22 new inspected positions and four new hierarchy folders (two existing folders enriched). Exact accepted retry returned unchanged.
+
+**19 isolated Edge/API checks passed**, with exact PDF openings at current positions 494, 325 and 328 and historical position 422. Live catalogue/health show revision 60; both source PDFs match their registered hashes. All 183 new/revised citations have descriptive labels, locators and inspected exact positions. SQLite integrity is `ok`; all 13 protected tables and prior document bytes remain unchanged. One PDF was added and CATALOG.md appended. The nine organization advisories are unchanged. No application code changed, broad suite rerun or rebuild was needed.
+
+The initial preview-store setting was corrected after its read-only revision guard failed; the final full run used the isolated store. [Intake report and coverage](../research/al20-edl-heritage-20261111/report.md), browser-report.json, preservation-and-integrity.json, accession provenance and recovery-backups.json record the actual applied result and recovery checks.

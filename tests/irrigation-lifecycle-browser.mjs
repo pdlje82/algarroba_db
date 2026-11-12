@@ -51,7 +51,7 @@ try{
  await visible.getByRole('button',{name:'Inspect Carob communities in Almería',exact:true}).click();
  const regional=await page.locator('.inspector .topic-context').innerText();
  check('Almería community holds its seasonal total and unknown event dose',regional.includes('400 L/plant')&&regional.includes('Event count')&&!regional.includes('100 L/plant/event'));
- await page.locator('.inspector').getByRole('button',{name:'Explore this topic',exact:true}).click();await idle();
+ await page.locator('.inspector').getByRole('button',{name:'Show connected topics',exact:true}).click();await idle();
  const neighbours=(await current()).view.nodes.map(n=>n.id);check('Regional connections expose the three finca examples',['las-labores','la-tortola','la-alcantarilla'].every(id=>neighbours.includes(id)));check('General cork-oak evidence is not inherited by the region',!neighbours.includes('cork-oak'));
  await page.screenshot({path:'output/irrigation-audit/almeria-examples.png'});
  await page.getByLabel('Centre',{exact:true}).selectOption('life-nieblas');await idle();

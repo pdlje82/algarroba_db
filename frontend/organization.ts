@@ -1,4 +1,11 @@
 import { landscapeGroup, ROOT_GROUPS, type Catalog, type Item } from "./types.ts";
+/** Reorder numbered funding entries in their existing slots; leave other context in place. */
+export function orderFundingNumbers<T>(items:T[], label:(item:T)=>string, funding:(item:T)=>boolean):T[] {
+  const code=(item:T)=>funding(item) ? (label(item).match(/^(\d+(?:\.\d+)*)(?=\s|[·:–-]|$)/)?.[1] || label(item).match(/\b(?:Line|Línea)\s+(\d+(?:\.\d+)*)(?=\s|[·:–-]|$)/i)?.[1] || label(item).match(/\b(\d+(?:\.\d+)+)(?=\s|[·:–-]|$)/)?.[1]) : undefined;
+  const numbered=items.filter(item=>code(item)).sort((a,b)=>code(a)!.localeCompare(code(b)!,undefined,{numeric:true}));
+  let next=0;
+  return items.map(item=>code(item)?numbered[next++]:item);
+}
 export type EditorTarget = {kind: 'group' | 'community'; id: string | null; sourceId?: string};
 export function editorTarget(id: string | null | undefined, catalog: Catalog | null): EditorTarget | null {
   if (!id || !catalog) return null;
@@ -52,7 +59,8 @@ export function navigationGroup(id:string|null,catalog?:Catalog|null):string|nul
   return id;
 }
 export function navigationChildren(id:string,catalog:Catalog):Catalog['browse_groups'] {
-  return catalog.browse_groups.filter(g=>g.parent_id===id).flatMap(g=>g.navigation==='transparent'?navigationChildren(g.id,catalog):[g]);
+  const children=catalog.browse_groups.filter(g=>g.parent_id===id).flatMap(g=>g.navigation==='transparent'?navigationChildren(g.id,catalog):[g]);
+  return orderFundingNumbers(children,g=>g.label,g=>groupDomain(g.id,catalog)==='funding');
 }
 export function navigationContainers(id:string,catalog:Catalog):Catalog['browse_groups'] {
   return catalog.browse_groups.filter(g=>g.parent_id===id&&g.navigation==='transparent').flatMap(g=>[g,...navigationContainers(g.id,catalog)]);

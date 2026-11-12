@@ -1,0 +1,405 @@
+{
+  "batch_id": "funding-payment-review-20261111-eic-confirmation-v1",
+  "base_revision": 55,
+  "summary": "Bind the three EIC payment reviews additionally to their own 2027 Annex G.5 payment provisions. No payment amount, call availability or project conclusion is changed.",
+  "funding_reviews": [
+    {
+      "id": "funding-review:remaining-eic-accelerator-grant-2027",
+      "topic_id": "eic-accelerator-grant-2027",
+      "version": 3,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "2027 work programme and instrument conditions were reviewed. The work programme describes continuous staged submission and 2027 cutoffs; this check did not verify which current portal opening applies to the 2027 grant-only route.",
+      "territory": "Eligible member/associated countries including Spain; specific instrument security, ownership and applicant conditions apply.",
+      "applicants": "Eligible start-up/SME; individuals may apply intending to form an eligible company under the call’s conditions. Grant-only is subject to its own one-time and scale-up conditions.",
+      "activities": "Breakthrough, market-creating/deep-tech commercial innovation; innovation activities at TRL6–8, with all TRL5 aspects completed. Ordinary restoration delivery or an early unvalidated idea does not establish maturity.",
+      "financial_summary": "Payment timing: Advance normally available\nPayment evidence checked 2026-11-11. The EIC 2027 work programme explicitly provides a first prefinancing after the grant agreement is signed, subject to its terms and award preparation. This applies to the grant component; it is not an equity investment or the entire grant upfront. Subsequent grant payments and settlement follow the agreement.\n\nGrant component up to the stated ceiling below €2.5m and maximum 70% eligible-cost support; 30% co-finance from beneficiary resources. This review covers grant-only, not the distinct equity/blended-finance components.",
+      "deadlines": [
+        {
+          "label": "First listed full-proposal cutoff",
+          "value": "2027-01-20T17:00:00+01:00",
+          "timezone": "Europe/Brussels",
+          "note": "Requires a successful short application; later 2027 cutoffs exist.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0109",
+          "page": null,
+          "label": "EIC 2027 official instruments and work programme",
+          "locator": "EIC 2027 official instruments and work programme; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 11,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 72,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 72"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 73,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 73"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 74,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 74"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 75,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 75"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 76,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 76"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 77,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 77"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 78,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 78"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 79,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 79"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 80,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 80"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 80,
+          "label": "EIC Accelerator: grant signature and first prefinancing, separate investment due diligence",
+          "locator": "EIC Accelerator: grant signature and first prefinancing, separate investment due diligence; PDF position 80"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 81,
+          "label": "EIC Accelerator: grant signature and first prefinancing, separate investment due diligence",
+          "locator": "EIC Accelerator: grant signature and first prefinancing, separate investment due diligence; PDF position 81"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement",
+          "locator": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement",
+          "locator": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0128",
+          "page": 1,
+          "label": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments",
+          "locator": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0128",
+          "page": 3,
+          "label": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments",
+          "locator": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments; PDF position 3"
+        },
+        {
+          "source_id": "KGB-SRC-0128",
+          "page": 17,
+          "label": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments",
+          "locator": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 196,
+          "label": "EIC 2027 Annex G.5: normal prefinancing and agreement-specific payment terms",
+          "locator": "Annex G.5 Reporting & payment arrangements; PDF position 196"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-eic-pathfinder-open-2027",
+      "topic_id": "eic-pathfinder-open-2027",
+      "version": 3,
+      "instrument_type": "grant",
+      "availability": "upcoming",
+      "availability_note": "2027 work programme and instrument conditions were reviewed. Scheduled opening is future and may be adjusted by the authority.",
+      "territory": "Eligible member/associated countries including Spain; specific instrument security, ownership and applicant conditions apply.",
+      "applicants": "Research consortium with at least three independent eligible legal entities in different countries, including the required EU member-state presence.",
+      "activities": "High-risk breakthrough scientific/technological proof of principle, aiming at TRL3/4; not routine engineering or buying a known drone.",
+      "financial_summary": "Payment timing: Advance normally available\nPayment evidence checked 2026-11-11. Horizon’s General Annex G normally provides prefinancing after grant signature; exceptionally less or none. Its size depends on the agreement/reporting periods, and 5–8% of the maximum grant is retained for the mutual insurance mechanism. Lump-sum grants retain the prefinancing scheme, while later payments depend on completed/approved work packages. Coordinator-to-partner distribution follows the consortium agreement; a local pilot is not automatically a beneficiary or cash recipient. No fixed upfront percentage is promised.\n\nUp to €4m grant considered appropriate (larger duly justified proposals possible), 100% eligible-cost rate, lump-sum RIA. The indicative call budget €166m is not a project grant.",
+      "deadlines": [
+        {
+          "label": "Scheduled opening",
+          "value": "2026-11-25",
+          "timezone": null,
+          "note": "",
+          "kind": "opening"
+        },
+        {
+          "label": "Mandatory Stage 1",
+          "value": "2027-02-25T17:00:00+01:00",
+          "timezone": "Europe/Brussels",
+          "note": "",
+          "kind": "deadline"
+        },
+        {
+          "label": "Stage 2",
+          "value": "2027-09-16",
+          "timezone": null,
+          "note": "Conditional staged procedure; verify detailed invitation and time.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0109",
+          "page": null,
+          "label": "EIC 2027 official instruments and work programme",
+          "locator": "EIC 2027 official instruments and work programme; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 10,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 26,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 26"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 27,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 27"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 28,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 28"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 29,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 29"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 30,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 31,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement",
+          "locator": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement",
+          "locator": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0128",
+          "page": 1,
+          "label": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments",
+          "locator": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0128",
+          "page": 3,
+          "label": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments",
+          "locator": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments; PDF position 3"
+        },
+        {
+          "source_id": "KGB-SRC-0128",
+          "page": 17,
+          "label": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments",
+          "locator": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 196,
+          "label": "EIC 2027 Annex G.5: normal prefinancing and agreement-specific payment terms",
+          "locator": "Annex G.5 Reporting & payment arrangements; PDF position 196"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-eic-transition-2027",
+      "topic_id": "eic-transition-2027",
+      "version": 3,
+      "instrument_type": "grant",
+      "availability": "upcoming",
+      "availability_note": "2027 work programme and instrument conditions were reviewed. Scheduled opening is future and may be adjusted by the authority.",
+      "territory": "Eligible member/associated countries including Spain; specific instrument security, ownership and applicant conditions apply.",
+      "applicants": "Single eligible start-up, SME or research-performing organisation with a qualifying originating project result and the required rights; prior participation is not mandatory if rights/commitment are evidenced.",
+      "activities": "Develop technology and market readiness from an eligible prior funded research result; completion of TRL3 and evidence/IP rights from the originating project are essential.",
+      "financial_summary": "Payment timing: Advance normally available\nPayment evidence checked 2026-11-11. Horizon’s General Annex G normally provides prefinancing after grant signature; exceptionally less or none. Its size depends on the agreement/reporting periods, and 5–8% of the maximum grant is retained for the mutual insurance mechanism. Lump-sum grants retain the prefinancing scheme, while later payments depend on completed/approved work packages. Coordinator-to-partner distribution follows the consortium agreement; a local pilot is not automatically a beneficiary or cash recipient. No fixed upfront percentage is promised.\n\nRequested EU contribution above €0.5m and below €2.5m and 1–3 years considered appropriate; RIA/lump-sum terms and first-year milestones apply. No originating project or rights are confirmed.",
+      "deadlines": [
+        {
+          "label": "Scheduled opening",
+          "value": "2027-04-30",
+          "timezone": null,
+          "note": "",
+          "kind": "opening"
+        },
+        {
+          "label": "Proposal deadline",
+          "value": "2027-09-14T17:00:00+02:00",
+          "timezone": "Europe/Brussels",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0109",
+          "page": null,
+          "label": "EIC 2027 official instruments and work programme",
+          "locator": "EIC 2027 official instruments and work programme; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 10,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 51,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 51"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 52,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 52"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 53,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 53"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 54,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 54"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 55,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 55"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 56,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 56"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 57,
+          "label": "EIC instrument eligibility, stages, technology maturity and financial terms",
+          "locator": "EIC instrument eligibility, stages, technology maturity and financial terms; PDF position 57"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 32,
+          "label": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement",
+          "locator": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0090",
+          "page": 33,
+          "label": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement",
+          "locator": "Horizon General Annex G: prefinancing, exceptions, insurance retention and settlement; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0128",
+          "page": 1,
+          "label": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments",
+          "locator": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0128",
+          "page": 3,
+          "label": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments",
+          "locator": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments; PDF position 3"
+        },
+        {
+          "source_id": "KGB-SRC-0128",
+          "page": 17,
+          "label": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments",
+          "locator": "Horizon lump-sum guide: same prefinancing scheme and completed work-package payments; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0110",
+          "page": 196,
+          "label": "EIC 2027 Annex G.5: normal prefinancing and agreement-specific payment terms",
+          "locator": "Annex G.5 Reporting & payment arrangements; PDF position 196"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0110",
+      "page": 196,
+      "status": "inspected",
+      "note": "Manually read EIC-specific Annex G.5 prefinancing, insurance retention and agreement terms; confirms direct EIC context separately from the main Horizon annex."
+    }
+  ]
+}

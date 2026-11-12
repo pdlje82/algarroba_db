@@ -1,0 +1,1170 @@
+{
+  "batch_id": "funding-payment-review-20261111-spanish-calls-v1",
+  "base_revision": 51,
+  "summary": "Manually review payment timing for spanish-calls; preserve call availability and previous project reasoning. Changed financial evidence flags dependent assessments for reconsideration.",
+  "sources": [],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0098",
+      "page": 34,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    },
+    {
+      "source_id": "KGB-SRC-0037",
+      "page": 18,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    },
+    {
+      "source_id": "KGB-SRC-0037",
+      "page": 19,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    }
+  ],
+  "topics": [],
+  "funding_reviews": [
+    {
+      "id": "funding-review:paeas",
+      "topic_id": "fb-paeas-dc-call-2026",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Official page marks the call open with end date 10 November 2026 inclusive; exact electronic closing time/timezone remains unverified.",
+      "territory": "Spain; a local site alone does not establish educational/research eligibility.",
+      "applicants": "Line A includes eligible Spanish nonprofits and listed public research/university/professional bodies. Line B is restricted to public research bodies/universities.",
+      "activities": "Evidence-building environmental education / climate-disinformation research; ordinary planting or purchasing a drone is not automatically eligible.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. The 2026 call permits requesting up to 50% of the awarded grant. A guarantee for the advance is normally required; Article 14.7 exempts the specified public entities and nonprofit entities carrying out environmental-action projects/programmes. Tax/social-security compliance and insolvency exclusions apply. This does not establish that the user has an eligible exempt organisation; balance and spending remain subject to justification.\n\nUp to €200,000 and 80% of eligible cost. Payment after justification; possible advance has guarantee conditions and exemptions. Asset purchase exclusions matter.",
+      "deadlines": [
+        {
+          "label": "Inclusive application date",
+          "value": "2026-11-10",
+          "timezone": null,
+          "note": "Exact time/timezone unverified.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "This verifies the stated passages; it is not a complete eligibility audit.",
+      "attempted_on": null,
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0082",
+          "page": null,
+          "label": "PAEAS 2026 official call window",
+          "locator": "PAEAS 2026 official call window; verified 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "Line A applicant categories",
+          "locator": "Artículo 2.a"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "Education research and illustrative activities",
+          "locator": "Artículo 4.a"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "Educational evaluation and participation",
+          "locator": "Artículo 4.a"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "Maximum grant and funding share",
+          "locator": "Artículo 3"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 14,
+          "label": "Advance ceiling",
+          "locator": "Artículo 14"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 15,
+          "label": "Guarantee exemptions",
+          "locator": "Artículo 14.7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "Capital, property and audit costs",
+          "locator": "Artículo 15"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "Indirect costs and payment conditions",
+          "locator": "Artículos 15–16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "Full-project justification and deadline",
+          "locator": "Artículo 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 14,
+          "label": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions",
+          "locator": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 15,
+          "label": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions",
+          "locator": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions; PDF position 15"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-paeas-line-a",
+      "topic_id": "paeas-line-a",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Official call page gives 10 November 2026 as the end date. Exact cutoff/timezone was not established; do not assume it is still possible to submit at a particular time today.",
+      "territory": "Spain under the call’s applicant and activity conditions; no Alhama organisation or delivery site is confirmed.",
+      "applicants": "Spanish registered nonprofit legal entities, public research organisations, public universities and professional colleges under the exact call requirements.",
+      "activities": "Environmental-education research/evidence, evaluation, participation and learning; ordinary planting/equipment purchases are not thereby eligible.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. The 2026 call permits requesting up to 50% of the awarded grant. A guarantee for the advance is normally required; Article 14.7 exempts the specified public entities and nonprofit entities carrying out environmental-action projects/programmes. Tax/social-security compliance and insolvency exclusions apply. This does not establish that the user has an eligible exempt organisation; balance and spending remain subject to justification.\n\nEligible-cost, depreciation, staffing, indirect-cost and advance/guarantee conditions follow the call. Direct purchase of assets must not be substituted for permitted depreciation/services; payment is subject to justification. No ready application or financed organisation is confirmed.",
+      "deadlines": [
+        {
+          "label": "Published application end",
+          "value": "2026-11-10",
+          "timezone": null,
+          "note": "Exact cutoff/timezone unverified; verify the submission system before relying on same-day access.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "page": null,
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 14,
+          "label": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions",
+          "locator": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 15,
+          "label": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions",
+          "locator": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions; PDF position 15"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-paeas-line-b",
+      "topic_id": "paeas-line-b",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Official call page gives 10 November 2026 as the end date. Exact cutoff/timezone was not established; do not assume it is still possible to submit at a particular time today.",
+      "territory": "Spain under the call’s applicant and activity conditions; no Alhama organisation or delivery site is confirmed.",
+      "applicants": "Public research organisations and public universities under the call; the wider Line A nonprofit category cannot be transferred.",
+      "activities": "Multidisciplinary research into climate disinformation and educational/social responses; general environmental learning is not automatically this research.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. The 2026 call permits requesting up to 50% of the awarded grant. A guarantee for the advance is normally required; Article 14.7 exempts the specified public entities and nonprofit entities carrying out environmental-action projects/programmes. Tax/social-security compliance and insolvency exclusions apply. This does not establish that the user has an eligible exempt organisation; balance and spending remain subject to justification.\n\nEligible-cost, depreciation, staffing, indirect-cost and advance/guarantee conditions follow the call. Direct purchase of assets must not be substituted for permitted depreciation/services; payment is subject to justification. No ready application or financed organisation is confirmed.",
+      "deadlines": [
+        {
+          "label": "Published application end",
+          "value": "2026-11-10",
+          "timezone": null,
+          "note": "Exact cutoff/timezone unverified; verify the submission system before relying on same-day access.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0126",
+          "page": null,
+          "label": "PAEAS official 2026 call window and documents",
+          "locator": "PAEAS official 2026 call window and documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 4,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 5,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 6,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 7,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 8,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 9,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 10,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 16,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 17,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 18,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 19,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 20,
+          "label": "PAEAS separate applicant lines, research activities, submission, costs and payment",
+          "locator": "PAEAS separate applicant lines, research activities, submission, costs and payment; PDF position 20"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 14,
+          "label": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions",
+          "locator": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0028",
+          "page": 15,
+          "label": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions",
+          "locator": "Article 14: PAEAS 50 percent advance, guarantee and nonprofit exemptions; PDF position 15"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-fb-feder-cities-2026",
+      "topic_id": "fb-feder-cities-2026",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "closed",
+      "availability_note": "The official administering-body page explicitly marks the 2026 competition closed, with 29 October 2026 as the end date.",
+      "territory": "Spanish cities under the call’s municipal and DEGURBA conditions; groupings require a municipality over 20,000 and specified neighbouring municipalities of at least 5,000. No Alhama parcel/city qualification is assumed.",
+      "applicants": "Provincial capitals or qualifying municipalities/local groupings; certain nonprofit/research/public entities may participate in groupings led by an eligible local authority.",
+      "activities": "Urban green infrastructure and renaturalisation with required governance, engagement and monitoring components; not a general grant for a private rural plot.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 24 allows requesting an advance after the DECA is signed and before project completion: maximum 30% of the FEDER cofinanced amount, calculated per entity in a grouping. A guarantee for the requested amount with the specified increment normally applies, subject to statutory exemptions. Subsequent settlement offsets the advance. The recorded closed call and unconfirmed municipality remain unchanged.\n\nFor Andalusia the call specifies a €500,000 grant amount and maximum 85% FEDER intensity; the remaining share and eligible-cost/justification cash flow must be planned. Other regions’ €1m option must not be transferred to Andalusia.",
+      "deadlines": [
+        {
+          "label": "Application end",
+          "value": "2026-10-29",
+          "timezone": null,
+          "note": "Date confirmed; exact submission cutoff/timezone unverified.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0099",
+          "page": null,
+          "label": "FEDER cities 2026: explicit closed call and dates",
+          "locator": "FEDER cities 2026: explicit closed call and dates; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 5,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 6,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 7,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 9,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 10,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 11,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 12,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 15,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 27,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 27"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 28,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 28"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 29,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 29"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 30,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 31,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 32,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 33,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 34,
+          "label": "FEDER cities: municipal gates, work, finance, costs and payment",
+          "locator": "FEDER cities: municipal gates, work, finance, costs and payment; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 32,
+          "label": "Article 24: cities FEDER advance, denominator, DECA and guarantee",
+          "locator": "Article 24: cities FEDER advance, denominator, DECA and guarantee; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0100",
+          "page": 33,
+          "label": "Article 24: cities FEDER advance, denominator, DECA and guarantee",
+          "locator": "Article 24: cities FEDER advance, denominator, DECA and guarantee; PDF position 33"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-empleaverde-skills-2025",
+      "topic_id": "empleaverde-skills-2025",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "closed",
+      "availability_note": "The official competition index says the 2025 call is resolved and links the 27 April 2026 award resolution. A generic launch banner is not a new opening.",
+      "territory": "Spain, with territorial funding categories and target-participant conditions in the actual call.",
+      "applicants": "Eligible public/private legal entities and groupings delivering qualifying skills projects; an individual participant in training is distinct from a grant beneficiary.",
+      "activities": "Acquisition/improvement of green-transition skills for unemployed people, workers and entrepreneurs; training/employment delivery is distinct from purchasing a prototype or undertaking restoration works.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. Article 19 permits an advance from project start until project end, maximum 50% of the FSE+ cofinanced amount (per grouping member). Guarantee for the requested amount is normally required, with the stated statutory exemptions; requests within groupings go through the coordinator. Later justification/recovery remain. This is a condition of the dated 2025 competition, not a new open call.\n\nCall-specific project amounts and FSE+ co-finance vary by line/region. Eligible staff, delivery, indirect-cost and advance/justification requirements are in the cited call; a financing plan must use the exact action/region rather than programme allocation.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0045",
+          "page": null,
+          "label": "Empleaverde+ official competition index: 2025 resolved",
+          "locator": "Empleaverde+ official competition index: 2025 resolved; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0101",
+          "page": null,
+          "label": "Empleaverde+ 2025 call and final-resolution documents",
+          "locator": "Empleaverde+ 2025 call and final-resolution documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 6,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 7,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 8,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 9,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 10,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 11,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 12,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 13,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 14,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 15,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 16,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 17,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 17"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 18,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 19,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 19"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 20,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 20"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 33,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 34,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 35,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 35"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 36,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 36"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 37,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 37"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 38,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 38"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 39,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 39"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 40,
+          "label": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments",
+          "locator": "Empleaverde+ 2025: entities, skills actions, finance, expenditure and payments; PDF position 40"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 33,
+          "label": "Article 19: Empleaverde advance, FSE+ denominator and guarantee",
+          "locator": "Article 19: Empleaverde advance, FSE+ denominator and guarantee; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0102",
+          "page": 34,
+          "label": "Article 19: Empleaverde advance, FSE+ denominator and guarantee",
+          "locator": "Article 19: Empleaverde advance, FSE+ denominator and guarantee; PDF position 34"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-donana-restoration-grants-2025",
+      "topic_id": "donana-restoration-grants-2025",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "closed",
+      "availability_note": "The administering-body page explicitly marks the 2025 competition closed. Its January 2026 application deadline and later provisional-award documents do not create a new opening.",
+      "territory": "Listed Doñana-area municipalities in Cádiz, Huelva and Sevilla; not Alhama de Almería.",
+      "applicants": "Natural/legal holders with qualifying land rights or specifically allowed representation and Spanish domicile; the call has additional land-use and maintenance duties.",
+      "activities": "Renaturalisation/restoration of qualifying agricultural land and related permitted works, followed by forest maintenance.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. The dated call Article 25 permits an advance up to EUR 14,000/ha only for Article 6.2(a) actions, after award notification and on request. Guarantee and statutory exemptions follow the call; later annual/final settlements offset the advance. The verified Alhama territorial exclusion and closed-call status remain unchanged; this is not an available Almería advance.\n\nPublished maximum €70,000/ha across ten annualities of up to €7,000/ha/year. These are capped call amounts, not an entitlement or an Almería rate. Payment and maintenance obligations follow the call; a provisional proposal is not an award.",
+      "deadlines": [
+        {
+          "label": "Application end",
+          "value": "2026-01-15",
+          "timezone": null,
+          "note": "Exact cutoff/timezone not independently verified.",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0097",
+          "page": null,
+          "label": "Doñana call: closed status, dates and supporting documents",
+          "locator": "Doñana call: closed status, dates and supporting documents; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 9,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 10,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 11,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 12,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 12"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 13,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 13"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 14,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 14"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 15,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 15"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 16,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 16"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 31,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 32,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 33,
+          "label": "Doñana call: land rights, territory, work, funding and payments",
+          "locator": "Doñana call: land rights, territory, work, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 33,
+          "label": "Article 25: Donana scoped EUR14000 per hectare advance and guarantee",
+          "locator": "Article 25: Donana scoped EUR14000 per hectare advance and guarantee; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0098",
+          "page": 34,
+          "label": "Article 25: Donana scoped EUR14000 per hectare advance and guarantee",
+          "locator": "Article 25: Donana scoped EUR14000 per hectare advance and guarantee; PDF position 34"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-fb-agriforest-framework-2025",
+      "topic_id": "fb-agriforest-framework-2025",
+      "version": 2,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "TED/870/2025 provides governing bases. The framework does not establish an open national or Almería call.",
+      "territory": "Territory is determined by the individual call; Almería access is not established by the framework alone.",
+      "applicants": "Permitted natural/legal promoters depend on the actual call and the required rights over the intervention site.",
+      "activities": "Agrarian/forest renaturalisation and ecological restoration, with scientific basis and monitoring; activities and eligible expenditure must be narrowed by the call.",
+      "financial_summary": "Payment timing: Call-specific payment terms\nPayment evidence checked 2026-11-11. Framework Article 9 allows advances only for Article 5.2(a)/(b) actions, with the percentage and conditions set by the implementing call, never above the grant. Normally a guarantee equal to the advance plus the specified increment applies, with statutory exemptions. This framework is not evidence of an Alhama call or a 100% upfront entitlement.\n\nFramework rates, cost limits, co-finance and payment options cannot be transferred without a specific applicable call.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 1,
+          "label": "TED/870/2025 restoration framework; scope and beneficiary conditions",
+          "locator": "TED/870/2025 restoration framework; scope and beneficiary conditions; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 2,
+          "label": "TED/870/2025 restoration framework; scope and beneficiary conditions",
+          "locator": "TED/870/2025 restoration framework; scope and beneficiary conditions; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 5,
+          "label": "TED/870/2025 restoration framework; scope and beneficiary conditions",
+          "locator": "TED/870/2025 restoration framework; scope and beneficiary conditions; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 6,
+          "label": "TED/870/2025 restoration framework; scope and beneficiary conditions",
+          "locator": "TED/870/2025 restoration framework; scope and beneficiary conditions; PDF position 6"
+        },
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 7,
+          "label": "TED/870/2025 restoration framework; scope and beneficiary conditions",
+          "locator": "TED/870/2025 restoration framework; scope and beneficiary conditions; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 8,
+          "label": "TED/870/2025 restoration framework; scope and beneficiary conditions",
+          "locator": "TED/870/2025 restoration framework; scope and beneficiary conditions; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 18,
+          "label": "Article 9: restoration-framework advance delegated to an actual call",
+          "locator": "Article 9: restoration-framework advance delegated to an actual call; PDF position 18"
+        },
+        {
+          "source_id": "KGB-SRC-0037",
+          "page": 19,
+          "label": "Article 9: restoration-framework advance delegated to an actual call",
+          "locator": "Article 9: restoration-framework advance delegated to an actual call; PDF position 19"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-biodivfuture-spain-fb",
+      "topic_id": "biodivfuture-spain-fb",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The mandatory 10 November noon CET preproposal date has passed at this check. An invited April full proposal is not fresh entry; no extension or independently verified portal closure was established.",
+      "territory": "Spain national funding; marine/coastal environments only, all themes.",
+      "applicants": "Eligible nonprofit R&D organisations under the PCI/national rules, with prior AEI-beneficiary requirements and eligible PI; an ordinary company or general nonprofit is not automatically eligible.",
+      "activities": "Novel-ecosystem research under the precise national theme/realm restrictions.",
+      "financial_summary": "Payment timing: Conditional advance available\nPayment evidence checked 2026-11-11. The Spanish FB annex says payment is normally upon project completion but a 40% advance may be requested before the mid-term report; a guarantee could be necessary. The stated default start date is 1 April 2028. This marine/coastal national route remains outside the four current inland ideas; the mandatory preproposal gate is unchanged.\n\nDirect-cost caps depend on coordinator/partner composition and the national table; justified experimental increment up to €30,000 and 25% indirect costs are specified. National application and payment conditions differ; FB’s stated advance option is conditional, not automatic.",
+      "deadlines": [
+        {
+          "label": "Mandatory preproposal",
+          "value": "2026-11-10T12:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        },
+        {
+          "label": "Invited full proposal",
+          "value": "2027-04-16T12:00:00+02:00",
+          "timezone": "CEST",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain annex: national instruments and FB 40 percent advance",
+          "locator": "BiodivFuture Spain annex: national instruments and FB 40 percent advance; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain annex: national instruments and FB 40 percent advance",
+          "locator": "BiodivFuture Spain annex: national instruments and FB 40 percent advance; PDF position 99"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-biodivfuture-spain-aei",
+      "topic_id": "biodivfuture-spain-aei",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "The mandatory 10 November noon CET preproposal date has passed at this check. An invited April full proposal is not fresh entry; no extension or independently verified portal closure was established.",
+      "territory": "Spain national funding; no realm restriction, Themes A/B only.",
+      "applicants": "Eligible nonprofit R&D organisations under the PCI/national rules, with prior AEI-beneficiary requirements and eligible PI; an ordinary company or general nonprofit is not automatically eligible.",
+      "activities": "Novel-ecosystem research under the precise national theme/realm restrictions.",
+      "financial_summary": "Payment timing: Payment unverified\nPayment evidence checked 2026-11-11. The applicable national funding instrument is PCI, but the particular award/payment schedule for this transnational round was not established. Do not transfer FB’s 40% advance or a historical AEI award schedule to it. The international annex is not an award or cash-flow commitment.\n\nDirect-cost caps depend on coordinator/partner composition and the national table; justified experimental increment up to €30,000 and 25% indirect costs are specified. National application and payment conditions differ; FB’s stated advance option is conditional, not automatic.",
+      "deadlines": [
+        {
+          "label": "Mandatory preproposal",
+          "value": "2026-11-10T12:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        },
+        {
+          "label": "Invited full proposal",
+          "value": "2027-04-16T12:00:00+02:00",
+          "timezone": "CEST",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 93,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 93"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 94,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 94"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 95,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 95"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 96,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 96"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 97,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 97"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 98,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 98"
+        },
+        {
+          "source_id": "KGB-SRC-0031",
+          "page": 99,
+          "label": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates",
+          "locator": "BiodivFuture Spain: separate AEI/FB realms, beneficiaries, costs and submission gates; PDF position 99"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 7,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 7"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 8,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 8"
+        },
+        {
+          "source_id": "KGB-SRC-0030",
+          "page": 9,
+          "label": "BiodivFuture mandatory staged submission and partnership",
+          "locator": "BiodivFuture mandatory staged submission and partnership; PDF position 9"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-water4all-spain-aei",
+      "topic_id": "water4all-spain-aei",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "Published mandatory international preproposal deadline is 10 November 2026 at 15:00 CET and has passed at this check; no extension or verified portal closure was established.",
+      "territory": "Spain plus the transnational call’s consortium and participant-country rules; R&D activity and applicant conditions apply.",
+      "applicants": "Eligible nonprofit Spanish R&D organisation with the required prior AEI-beneficiary history and eligible PI. Ordinary companies are not this funding route.",
+      "activities": "AEI supports Topics 2–4 and cannot support Topic 1; the national declaration and national submission within one week of the international preproposal are mandatory.",
+      "financial_summary": "Payment timing: Payment unverified\nPayment evidence checked 2026-11-11. The applicable national funding instrument is PCI, but the particular award/payment schedule for this transnational round was not established. Do not transfer FB’s 40% advance or a historical AEI award schedule to it. The international annex is not an award or cash-flow commitment.\n\nPCI national direct-cost limits and permitted experimental increments apply; 25% indirect costs are added under these national rules. Detailed eligible costs and payments require the referenced PCI documents.",
+      "deadlines": [
+        {
+          "label": "Mandatory international preproposal",
+          "value": "2026-11-10T15:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "page": null,
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 56,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 56"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 57,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 57"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 58,
+          "label": "Water4All Spain AEI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain AEI eligible applicants, topics, costs and national gates; PDF position 58"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-water4all-spain-cdti",
+      "topic_id": "water4all-spain-cdti",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "unknown",
+      "availability_note": "Published mandatory international preproposal deadline is 10 November 2026 at 15:00 CET and has passed at this check; no extension or verified portal closure was established.",
+      "territory": "Spain plus the transnational call’s consortium and participant-country rules; R&D activity and applicant conditions apply.",
+      "applicants": "For-profit enterprise established and carrying out eligible technological R&D in Spain; universities/nonprofits are not the CDTI beneficiary route.",
+      "activities": "Technological industrial research/experimental development at TRL4–7; all four topics may be eligible. Non-technological business-model activity is excluded; CDTI national submission is due with the international first stage.",
+      "financial_summary": "Payment timing: Payment unverified\nPayment evidence checked 2026-11-11. The Water4All annex specifies a grant route, not CDTI PID partially repayable finance. Its advance/guarantee schedule was not recovered; the current direct CDTI page returned an empty/challenge response and the official web reader failed. PID 50%/75% advance rules cannot be transferred to this grant.\n\nMinimum financeable company budget €150,000; around €200,000 recommended by the annex. Grants up to 70% of the eligible project budget, not CDTI PID’s partially repayable finance. Staff, equipment and specified R&D external/other costs have their own caps.",
+      "deadlines": [
+        {
+          "label": "Mandatory international preproposal",
+          "value": "2026-11-10T15:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0069",
+          "page": null,
+          "label": "Water4All 2026 current call documents and stages",
+          "locator": "Water4All 2026 current call documents and stages; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 59"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "Water4All Spain CDTI eligible applicants, topics, costs and national gates",
+          "locator": "Water4All Spain CDTI eligible applicants, topics, costs and national gates; PDF position 60"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 59,
+          "label": "Water4All Spain CDTI grant: distinct instrument and national implementation gate",
+          "locator": "Water4All Spain CDTI grant: distinct instrument and national implementation gate; PDF position 59"
+        },
+        {
+          "source_id": "KGB-SRC-0034",
+          "page": 60,
+          "label": "Water4All Spain CDTI grant: distinct instrument and national implementation gate",
+          "locator": "Water4All Spain CDTI grant: distinct instrument and national implementation gate; PDF position 60"
+        }
+      ]
+    }
+  ]
+}

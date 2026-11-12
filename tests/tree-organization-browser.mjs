@@ -84,7 +84,7 @@ try{
   assert.deepEqual(lifecycle.scene.cards.map(c=>c.id),order);assert.ok(lifecycle.scene.cards.every(c=>c.position.x===0));
   check('Generic lifecycle guidance retains its stored vertical order');
   await sidebar('browse:cocoon-components');await page.locator('.visible-topics').evaluate(e=>{e.open=true;});await page.getByRole('button',{name:'Inspect Cocoon lid',exact:true}).click();
-  await page.locator('.inspector').getByRole('button',{name:'Explore this topic',exact:true}).click();await ready(page);
+  await page.locator('.inspector').getByRole('button',{name:'Show connected topics',exact:true}).click();await ready(page);
   check('Explicit topic exploration still draws factual connections',(await current()).scene.links.length>0);
   await sidebar('browse:citrus-spray-study');await page.getByRole('button',{name:'Refresh',exact:true}).click();await ready(page);await page.reload();await ready(page);
   check('Refresh and reload retain the organized project scope',(await current()).state.groupId==='browse:citrus-spray-study');

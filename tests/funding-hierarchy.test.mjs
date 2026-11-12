@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {initialState,reduceExploration} from '../frontend/exploration.ts';
 import {buildScene} from '../frontend/scene.ts';
-import {fixedGroupLayout,rootGroup,groupLabel,editorTarget} from '../frontend/organization.ts';
+import {fixedGroupLayout,rootGroup,groupLabel,editorTarget,navigationChildren} from '../frontend/organization.ts';
 import {ROOT_GROUPS,GROUP_LABELS} from '../frontend/types.ts';
 
 const topics=['fund','local','direct','outside'].map(id=>({id,label:id,kind:'programme',domain:'funding',group_id:'programmes'}));
@@ -12,6 +12,35 @@ const edge={id:'real-connection',source:'fund',target:'direct',label:'finances',
 const catalog={topics,relationships:[edge],browse_groups:[group,child],organization_roots:ROOT_GROUPS.map(id=>({id,label:GROUP_LABELS[id.split(':')[1]],domain:id.split(':')[0]})),communities:[],findings:[],sources:[],coverage:[],unresolved:[],irrigation_evidence:[],revision:1};
 const view={revision:1,scope:'group',group_id:group.id,centre:null,search:'',domain:'all',kinds:[],depth:6,nodes:topics,edges:[edge],endpoint_ids:['fund','local','direct'],routes:[],matches:[],passages:[],notices:[]};
 const state={...initialState(),scope:'group',groupId:group.id};
+
+test('funding hierarchy interleaves numbered folders and topics and orders two-digit operation codes',()=>{
+  const t=[['one','1.7 · Holdings'],['two','1.9 · Processing'],['ten','1.10 · Forest products'],['eleven','1.11 · Services'],['training','1.8 training · unselected']].map(([id,label])=>({id,label,kind:'activity',domain:'funding',group_id:'activities'}));
+  const parent={...group,members:t.map(v=>({topic_id:v.id,role:'primary'}))};
+  const folder={...child,label:'1.8 training · unselected',anchor_topic_id:null,members:[{topic_id:'training',role:'shared'}]};
+  const c={...catalog,topics:t,browse_groups:[parent,folder],relationships:[]};
+  const v={...view,nodes:t,endpoint_ids:t.map(t=>t.id),edges:[]};
+  const scene=buildScene(state,v,c);
+  assert.deepEqual(scene.cards.map(c=>c.record.label),['1.7 · Holdings','1.8 training · unselected','1.9 · Processing','1.10 · Forest products','1.11 · Services']);
+  assert.deepEqual(scene.links,[]);
+  const oldOrder=['display-group:'+folder.id,'ten','eleven','one','two'];
+  const oldPositions=Object.fromEntries(oldOrder.map((id,i)=>[id,scene.cards[i].position]));
+  const restored=buildScene({...state,positions:oldPositions},v,c);
+  assert.deepEqual(restored.positions,scene.positions,'A saved alphabetical grid reflows to numeric order without rewriting the saved state');
+  const vertical=buildScene(state,v,{...c,browse_groups:[{...parent,member_layout:'vertical',members:[...parent.members].reverse()}]});
+  assert.deepEqual(vertical.cards.map(c=>c.id),[...t].reverse().map(t=>t.id));
+});
+
+test('funding sidebar orders line numbers while preserving unnumbered navigation slots',()=>{
+  const children=[['ten','AL20 Line 10 · Ten'],['guide','Guide'],['two','AL20 Line 2 · Two'],['one','AL20 Line 1 · One']].map(([id,label])=>({...child,id:'browse:'+id,label,parent_id:group.id}));
+  assert.deepEqual(navigationChildren(group.id,{...catalog,browse_groups:[group,...children]}).map(g=>g.label),['AL20 Line 1 · One','Guide','AL20 Line 2 · Two','AL20 Line 10 · Ten']);
+});
+
+test('funding intervention numbers remain ordered when the code follows the name',()=>{
+  const t=[['cooperation','LEADER cooperation · 7119.3'],['management','LEADER management · 7119.4'],['operations','LEADER operations · 7119.2']].map(([id,label])=>({id,label,kind:'programme',domain:'funding',group_id:'programmes'}));
+  const parent={...group,members:t.map(v=>({topic_id:v.id,role:'primary'}))};
+  const scene=buildScene(state,{...view,nodes:t,endpoint_ids:t.map(t=>t.id),edges:[]},{...catalog,topics:t,browse_groups:[parent],relationships:[]});
+  assert.deepEqual(scene.cards.map(c=>c.id),['operations','cooperation','management']);
+});
 
 test('hierarchy shows child folders and direct members without arrows or duplicate anchor cards',()=>{
   const scene=buildScene(state,view,catalog);

@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-11",
+  "new_files": [
+    {
+      "source_id": "KGB-SRC-0128",
+      "title": "Lump sum funding: what do I need to know? v3, 24 June 2024",
+      "issuer": "European Commission DG RTD",
+      "edition_date": "2024-06-24",
+      "library_path": "doc_library/FUND-043 - European Commission - Horizon Europe Lump Sum Funding Guide - Version 3 - 2024-06-24.pdf",
+      "managed_path": "sources/funding-payment-review-20261111/he-lump-guide.pdf",
+      "sha256": "a61ab806c5609169bbf54b8afb07dc7565c900fe4d0f1062bfcb5c05fffd2844",
+      "total_pages": 42,
+      "reviewed_pages": [
+        1,
+        3,
+        17
+      ],
+      "download_url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/ls-funding-what-do-i-need-to-know_he_en.pdf",
+      "direct_pdf_url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/ls-funding-what-do-i-need-to-know_he_en.pdf",
+      "download_type": "Verified direct official PDF",
+      "archive_member": null,
+      "accepted_batch": "funding-payment-review-20261111-eu-direct-v1",
+      "accepted_revision": 53,
+      "final_download_url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/ls-funding-what-do-i-need-to-know_he_en.pdf"
+    },
+    {
+      "source_id": "KGB-SRC-0130",
+      "title": "PRIMA Annual Work Programme 2026, version 6, 6 February 2026",
+      "issuer": "PRIMA / European Commission",
+      "edition_date": "2026-02-06",
+      "library_path": "doc_library/FUND-044 - PRIMA - Annual Work Programme - Version 6 - 2026.pdf",
+      "managed_path": "sources/funding-payment-review-20261111/prima-wp.pdf",
+      "sha256": "169d38cf34a149e2d526a7a97db64727a3dcb29f0412a58dc11664a7bf2d2907",
+      "total_pages": 129,
+      "reviewed_pages": [
+        1,
+        80,
+        81
+      ],
+      "download_url": "https://prima-med.org/wp-content/uploads/2026/03/C_2026_1799_F1_ANNEX_EN_V2_P2_4681089.pdf",
+      "direct_pdf_url": "https://prima-med.org/wp-content/uploads/2026/03/C_2026_1799_F1_ANNEX_EN_V2_P2_4681089.pdf",
+      "download_type": "Verified direct official PDF",
+      "archive_member": null,
+      "accepted_batch": "funding-payment-review-20261111-eu-direct-v1",
+      "accepted_revision": 53,
+      "final_download_url": "https://prima-med.org/wp-content/uploads/2026/03/C_2026_1799_F1_ANNEX_EN_V2_P2_4681089.pdf"
+    },
+    {
+      "source_id": "KGB-SRC-0132",
+      "title": "Interreg Sudoe 2021–2027 Guide, Fiche 7: financial circuit, 30 April 2025",
+      "issuer": "Interreg SUDOE",
+      "edition_date": "2025-04-30",
+      "library_path": "doc_library/FUND-045 - Interreg Sudoe - Financial Circuit Guide Fiche 7 - 2025-04-30.pdf",
+      "managed_path": "sources/funding-payment-review-20261111/sudoe-flows.pdf",
+      "sha256": "3ed535988878d2751bd350bab52e0a8636dd197bd38cc45af13af0b4385d2c82",
+      "total_pages": 22,
+      "reviewed_pages": [
+        1,
+        2,
+        6
+      ],
+      "download_url": "https://interreg-sudoe.eu/wp-content/uploads/2026/07/Guia_Sudoe_ES_15_07_2026.zip?x53234",
+      "direct_pdf_url": null,
+      "download_type": "Official ZIP containing original PDF member",
+      "archive_member": "7_circuito_financiero_ES_30_04_2025.pdf",
+      "accepted_batch": "funding-payment-review-20261111-territorial-innovation-v1",
+      "accepted_revision": 54
+    },
+    {
+      "source_id": "KGB-SRC-0133",
+      "title": "Third call model grant contract, 1 July 2026",
+      "issuer": "Interreg NEXT MED",
+      "edition_date": "2026-07-01",
+      "library_path": "doc_library/FUND-046 - Interreg NEXT MED - Third Call Model Grant Contract - 2026-07-01.pdf",
+      "managed_path": "sources/funding-payment-review-20261111/nextmed-contract.pdf",
+      "sha256": "b57a8a21f9696150d202ec140ec268cf41c652669a8c5e56d38753e10173f1ea",
+      "total_pages": 26,
+      "reviewed_pages": [
+        8,
+        9,
+        10
+      ],
+      "download_url": "https://www.interregnextmed.eu/wp-content/uploads/2026/06/1.-Interreg-NEXT-MED_Model-of-Grant-Contract_01.07.2026.pdf",
+      "direct_pdf_url": "https://www.interregnextmed.eu/wp-content/uploads/2026/06/1.-Interreg-NEXT-MED_Model-of-Grant-Contract_01.07.2026.pdf",
+      "download_type": "Verified direct official PDF",
+      "archive_member": null,
+      "accepted_batch": "funding-payment-review-20261111-territorial-innovation-v1",
+      "accepted_revision": 54,
+      "final_download_url": "https://www.interregnextmed.eu/wp-content/uploads/2026/06/1.-Interreg-NEXT-MED_Model-of-Grant-Contract_01.07.2026.pdf"
+    }
+  ],
+  "status": "accessioned and live source registrations accepted and verified",
+  "notes": [
+    "Only listed PDF positions reviewed; extraction/search was not full-document ingestion.",
+    "Original CDTI PDF download returned an anti-bot HTML response and was not added to the library. The official document reader supplied the reviewed section text as managed web evidence.",
+    "SUDOE inner PDF is unchanged from the official July 2026 guide ZIP; its own edition is 30 April 2025. The ZIP is not labelled a direct PDF download.",
+    "Earlier library editions and historical ownership inventory remain unchanged."
+  ],
+  "final_revision": 56
+}

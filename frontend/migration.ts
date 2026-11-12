@@ -72,6 +72,7 @@ export function migrate(raw: any): State {
     s.positions = Object.fromEntries(
       Object.entries(s.positions || {}).filter(([, p]) => finite(p)),
     );
+    s.hiddenTopicIds = Array.isArray(raw.hiddenTopicIds) ? [...new Set(raw.hiddenTopicIds.filter((id: unknown) => typeof id === 'string'))] : [];
     return s;
   }
   const s = initialState(),
@@ -190,6 +191,7 @@ export function reconcileIdentities(state: State, catalog: Catalog): State {
     centre: state.centre ? resolve(state.centre) : null,
     anchor: state.anchor ? resolve(state.anchor) : null,
     compare: state.compare.map(resolve).filter((id) => valid.has(id)),
+    hiddenTopicIds: [...new Set((state.hiddenTopicIds || []).map(resolve))],
     ...(state.groupMembers
       ? { groupMembers: [...new Set(state.groupMembers.map(resolve))] }
       : {}),
@@ -212,7 +214,7 @@ export function normalizeNavigationHistory(history:History,catalog:Catalog):Hist
       s={...s,view:{...s.view,group_id:s.groupId},layerOffsets:{...s.layerOffsets,[nextScene.key]:oldScene.offset}};
     }
     const last=entries.at(-1);
-    const equivalent=last&&s.scope==='group'&&last.scope==='group'&&s.groupId===last.groupId&&previousOriginal!==original.groupId&&JSON.stringify([s.domain,s.kinds,s.search,s.fundingProjectId])===JSON.stringify([last.domain,last.kinds,last.search,last.fundingProjectId]);
+    const equivalent=last&&s.scope==='group'&&last.scope==='group'&&s.groupId===last.groupId&&previousOriginal!==original.groupId&&JSON.stringify([s.domain,s.kinds,s.search,s.fundingProjectId,s.hiddenTopicIds])===JSON.stringify([last.domain,last.kinds,last.search,last.fundingProjectId,last.hiddenTopicIds]);
     if(equivalent){if(i<=history.index)entries[entries.length-1]=s;}
     else entries.push(s);
     if(i===history.index)index=entries.length-1;

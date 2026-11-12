@@ -155,6 +155,7 @@ export type State = {
   scope: Scope;
   groupId: string | null;
   groupMembers?: string[];
+  hiddenTopicIds?: string[];
   fundingProjectId?: string;
   centre: string | null;
   anchor: string | null;

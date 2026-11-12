@@ -1,0 +1,636 @@
+{
+  "batch_id": "funding-payment-review-20261111-references-gaps-v1",
+  "base_revision": 54,
+  "summary": "Manually review payment timing for references-gaps; preserve call availability and previous project reasoning. Changed financial evidence flags dependent assessments for reconsideration.",
+  "sources": [
+    {
+      "id": "KGB-SRC-0135",
+      "title": "Nature-credit roadmap: Green Assist pilots already underway, 7 July 2025",
+      "issuer": "CINEA",
+      "kind": "web",
+      "filename": "credits-pilots.html",
+      "managed_path": "sources/funding-payment-review-20261111/credits-pilots.html",
+      "sha256": "196cefeb1ad674db49ef1ba6c817b47587164ca0cee0bf50e96760b894635956",
+      "url": "https://cinea.ec.europa.eu/news-events/news/eu-publishes-nature-credits-roadmap-boost-private-investment-nature-positive-actions-2025-07-07_en",
+      "retrieved_on": "2026-11-11",
+      "excerpt": "CINEA reports existing Green Assist nature-credit pilots in France, Estonia and Peru, supporting governance, monitoring/verification and financing strategies; this is not an announcement of a direct Alhama grant."
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "KGB-SRC-0038",
+      "page": 14,
+      "status": "inspected",
+      "note": "Focused manual payment-clause review; text extraction/search alone was not counted as inspection."
+    }
+  ],
+  "topics": [
+    {
+      "id": "nature-credits",
+      "label": "Nature credits: prospective biodiversity finance",
+      "kind": "programme",
+      "domain": "funding",
+      "description": "The Commission’s 7 July 2025 communication proposes developing voluntary nature-credit markets to complement public funding. It distinguishes certification of a high-quality nature-positive intervention from credits representing quantified, independently verified outcomes. Outcomes are ecosystem-specific and may involve multiple biodiversity indicators. The roadmap is a policy-development programme, not an open grant, guaranteed buyer, established price or automatic right to sell credits. Its proposed 2025–2027 actions cover expertise, methodology, governance, market readiness and pilots. In this library-only intake those actions remain plans as stated by the document; their present implementation has not been verified.\n\nClarification checked 11 November 2026: the Commission roadmap explicitly names Horizon Europe and LIFE as supporting research, innovation and pilots in the development of nature-credit markets. It also describes pilots already underway in 2025. This does not establish a single first market launch through those two programmes, an open Alhama application route or a guaranteed upfront credit payment. The separate planned 2025–2027 public-seed pilot remains distinct.",
+      "aliases": [
+        "COM(2025) 374",
+        "Roadmap towards Nature Credits"
+      ],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 1,
+          "locator": "COM(2025) 374 final",
+          "label": "Nature-credit roadmap: dated Commission communication"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 2,
+          "locator": "Introduction",
+          "label": "Nature credits: proposed complement to public funding"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 5,
+          "locator": "2.1",
+          "label": "Certification versus a quantified nature-positive outcome"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 12,
+          "locator": "4.5",
+          "label": "Roadmap: 2027 review and further policy options"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 9,
+          "label": "Horizon/LIFE support and distinct planned nature-credit pilot",
+          "locator": "Horizon/LIFE support and distinct planned nature-credit pilot; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 10,
+          "label": "Horizon/LIFE support and distinct planned nature-credit pilot",
+          "locator": "Horizon/LIFE support and distinct planned nature-credit pilot; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "label": "Horizon/LIFE support and distinct planned nature-credit pilot",
+          "locator": "Horizon/LIFE support and distinct planned nature-credit pilot; PDF position 11"
+        }
+      ],
+      "funding_role": "framework",
+      "funding_context_ids": []
+    },
+    {
+      "id": "nature-credit-pilot-2025-roadmap",
+      "label": "Nature-credit pilot proposed in the 2025 roadmap",
+      "kind": "project",
+      "domain": "funding",
+      "description": "A prospective pilot project is proposed in the European Commission’s 7 July 2025 nature-credit roadmap. Under its public seed-finance section, the document schedules launch and support during 2025–2027 from EU funds available for competitiveness and innovative European projects. The surrounding policy rationale is to help early nature-credit initiatives overcome upfront costs, fragmented information and uncertain returns while attracting private capital.\n\nThis record identifies that particular planned action, separately from the overall roadmap and from other pilot examples it mentions. An official project name, selected operator, site, budget, operational methods, eligibility process and measured results are not reported in the reviewed pilot passage. They are explicit evidence gaps, not assertions that those details do not exist. The descriptive label does not establish a current programme or open call. Its status remains planned as stated in the 2025 document; whether it was subsequently launched or produced outcomes has not been verified in this library-only update.\n\nClarification checked 11 November 2026: the Commission roadmap explicitly names Horizon Europe and LIFE as supporting research, innovation and pilots in the development of nature-credit markets. It also describes pilots already underway in 2025. This does not establish a single first market launch through those two programmes, an open Alhama application route or a guaranteed upfront credit payment. The separate planned 2025–2027 public-seed pilot remains distinct.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "programmes",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "locator": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot",
+          "label": "Nature-credit roadmap: planned 2025–2027 EU-supported pilot"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 12,
+          "locator": "Nature-credit roadmap: prospective next steps and review",
+          "label": "Nature-credit roadmap: prospective next steps and review"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 9,
+          "label": "Horizon/LIFE support and distinct planned nature-credit pilot",
+          "locator": "Horizon/LIFE support and distinct planned nature-credit pilot; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 10,
+          "label": "Horizon/LIFE support and distinct planned nature-credit pilot",
+          "locator": "Horizon/LIFE support and distinct planned nature-credit pilot; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "label": "Horizon/LIFE support and distinct planned nature-credit pilot",
+          "locator": "Horizon/LIFE support and distinct planned nature-credit pilot; PDF position 11"
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "nature-credits"
+      ],
+      "dates": [
+        {
+          "value": "2025-07-07",
+          "meaning": "roadmap publication"
+        },
+        {
+          "value": "2025–2027",
+          "meaning": "document-planned action period"
+        }
+      ]
+    }
+  ],
+  "funding_reviews": [
+    {
+      "id": "funding-review:remaining-carbon-absorption-registry",
+      "topic_id": "carbon-absorption-registry",
+      "version": 2,
+      "instrument_type": "non-cash",
+      "availability": "unknown",
+      "availability_note": "The registration requirements and official route were verified; this is not a grant call or verified carbon sale. Current individual registration acceptance was not independently tested.",
+      "territory": "Spain; qualifying afforestation or fire-damaged forest restoration under the registry’s actual categories.",
+      "applicants": "Project promoter with the required rights, management and permanence commitments; ownership and site status are unconfirmed.",
+      "activities": "Qualifying carbon-absorption project registration, with at least 1 ha, 20% mature canopy, potential 3 m tree height and at least 30-year permanence.",
+      "financial_summary": "Payment timing: No standalone cash payment\nPayment evidence checked 2026-11-11. This reference, registration/label or assistance mechanism does not itself award a cash grant. There is no standalone upfront/reimbursement payment to mark; any separately funded instrument must be reviewed on its own terms.\n\nNon-cash registration mechanism. No grant payment, carbon price, purchaser or revenue calculation is established; verification/management and long-term obligations require a separate cost plan.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0123",
+          "page": null,
+          "label": "MITECO absorption registration requirements: land, scale, permanence and plans",
+          "locator": "MITECO absorption registration requirements: land, scale, permanence and plans; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-esc-quality-label",
+      "topic_id": "esc-quality-label",
+      "version": 2,
+      "instrument_type": "non-cash",
+      "availability": "open",
+      "availability_note": "The official guide and current call page explicitly allow continuous Quality Label applications. It is a non-budgetary award, not a grant.",
+      "territory": "Eligible countries including Spain; host-site responsibility and participant residence/action rules must be evidenced.",
+      "applicants": "Eligible organisation seeking host/support/lead roles and meeting the relevant quality and capacity conditions; host locations must be under its legal/managerial responsibility.",
+      "activities": "Approval of organisational volunteering quality/capacity. Lead status is subject to host/support requirements and enables a separate funding application.",
+      "financial_summary": "Payment timing: No standalone cash payment\nPayment evidence checked 2026-11-11. This reference, registration/label or assistance mechanism does not itself award a cash grant. There is no standalone upfront/reimbursement payment to mark; any separately funded instrument must be reviewed on its own terms.\n\nNo grant payment is attached to the Quality Label. Hosting, safeguarding, support and management resources must be planned separately.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0114",
+          "page": null,
+          "label": "European Solidarity Corps 2026 calendar and continuous Quality Label",
+          "locator": "European Solidarity Corps 2026 calendar and continuous Quality Label; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 30,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 30"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 31,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 31"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 32,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 32"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 33,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 33"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 34,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 34"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 63,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 63"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 64,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 64"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 65,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 65"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 66,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 66"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 67,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 67"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 68,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 68"
+        },
+        {
+          "source_id": "KGB-SRC-0115",
+          "page": 132,
+          "label": "ESC Quality Label, youth-led solidarity actions, funding and payments",
+          "locator": "ESC Quality Label, youth-led solidarity actions, funding and payments; PDF position 132"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-interreg-europe-policy-support",
+      "topic_id": "interreg-europe-policy-support",
+      "version": 2,
+      "instrument_type": "non-cash",
+      "availability": "unknown",
+      "availability_note": "The official platform describes services independently of project participation. Access to a particular requested service was not individually verified.",
+      "territory": "European regional/local policy contexts; no assumed municipal partner in Alhama.",
+      "applicants": "Platform users and policy actors; public-authority peer reviews/matchmaking have specific request requirements.",
+      "activities": "Knowledge exchange, expert advice and policy peer learning; no payment for planting, aircraft or workshops is established.",
+      "financial_summary": "Payment timing: No standalone cash payment\nPayment evidence checked 2026-11-11. This reference, registration/label or assistance mechanism does not itself award a cash grant. There is no standalone upfront/reimbursement payment to mark; any separately funded instrument must be reviewed on its own terms.\n\nNon-cash assistance rather than a grant; no equipment/capital allowance or cash payment is inferred.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0117",
+          "page": null,
+          "label": "Interreg Europe Policy Learning Platform services",
+          "locator": "Interreg Europe Policy Learning Platform services; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-natura2000-funding-reference",
+      "topic_id": "natura2000-funding-reference",
+      "version": 2,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "This is an official financing overview/PAF framework, not an open local grant. No parcel designation or applicable individual call was established.",
+      "territory": "Natura 2000 and instrument-specific territories; a municipality or provincial location alone does not establish parcel coverage.",
+      "applicants": "Actual beneficiaries depend on the instrument and responsible authority; no land rights, designation or partnership is assumed.",
+      "activities": "Management/restoration of qualifying sites and conservation measures through appropriate complementary funds.",
+      "financial_summary": "Payment timing: No standalone cash payment\nPayment evidence checked 2026-11-11. This reference, registration/label or assistance mechanism does not itself award a cash grant. There is no standalone upfront/reimbursement payment to mark; any separately funded instrument must be reviewed on its own terms.\n\nMultiple funding sources and PAF priorities; no transferable rate, grant cap, cost entitlement, co-finance or payment schedule is established by the overview.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0125",
+          "page": null,
+          "label": "Commission Natura 2000 financing: PAFs and complementary funds",
+          "locator": "Commission Natura 2000 financing: PAFs and complementary funds; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-nature-credits",
+      "topic_id": "nature-credits",
+      "version": 2,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "The official Green Forum documents an expert group and Green Assist examples in France/Peru. These do not establish that the specific planned 2025-roadmap pilot is an open Alhama programme or the same project.",
+      "territory": "Developing EU framework and distinct pilot contexts; no local access or project-specific market qualification verified.",
+      "applicants": "Land managers, organisations and other actors may be relevant to future mechanisms, but actual applicant/participation and verification gates are not established for this site.",
+      "activities": "Develop credible nature-positive certification/outcome-credit methods and governance; market development and advice differ from cash grants.",
+      "financial_summary": "Payment timing: No verified grant or credit payment\nPayment evidence checked 2026-11-11. The Commission roadmap identifies Horizon Europe and LIFE research/innovation/pilot support and public seed finance, but does not create an automatic upfront payment, a guaranteed buyer or a directly accessible Alhama grant. Green Assist supported pilots already existed in July 2025. The particular planned 2025–2027 pilot must not be equated with a single first launch through those two programmes.\n\nNo verified current credit price, purchaser, grant cap, aid rate or payment schedule. Certification/monitoring costs and long-term obligations cannot be assumed covered.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0124",
+          "page": null,
+          "label": "Commission nature credits: expert group and distinct Green Assist pilot initiatives",
+          "locator": "Commission nature credits: expert group and distinct Green Assist pilot initiatives; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 9,
+          "label": "Nature-credit roadmap: Horizon/LIFE pilot support, seed finance and planned action",
+          "locator": "Nature-credit roadmap: Horizon/LIFE pilot support, seed finance and planned action; PDF position 9"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 10,
+          "label": "Nature-credit roadmap: Horizon/LIFE pilot support, seed finance and planned action",
+          "locator": "Nature-credit roadmap: Horizon/LIFE pilot support, seed finance and planned action; PDF position 10"
+        },
+        {
+          "source_id": "KGB-SRC-0027",
+          "page": 11,
+          "label": "Nature-credit roadmap: Horizon/LIFE pilot support, seed finance and planned action",
+          "locator": "Nature-credit roadmap: Horizon/LIFE pilot support, seed finance and planned action; PDF position 11"
+        },
+        {
+          "source_id": "KGB-SRC-0135",
+          "label": "Green Assist pilots already underway, 7 July 2025",
+          "locator": "Green Assist pilots already underway, 7 July 2025; payment evidence checked 11 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-al30",
+      "topic_id": "al30",
+      "version": 2,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "The official strategy/territory page was checked; it is not a verified current call. No AL20 conditions or dates were transferred.",
+      "territory": "AL30’s listed municipalities; Alhama de Almería is absent.",
+      "applicants": "Depends on AL30’s own selected operation and current call; no promoter arrangement is confirmed.",
+      "activities": "Only AL30’s own documented local operations; not an interchangeable Almería-wide grant.",
+      "financial_summary": "Payment timing: Payment unverified\nPayment evidence checked 2026-11-11. Only AL30 territory/strategy was verified; its actual operation/call and payment schedule are not established. AL20’s advance cannot be transferred.\n\nCurrent AL30 rates, cost categories, caps, budget and payment conditions require its specific call.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0094",
+          "page": null,
+          "label": "AL30 official municipality list and strategy editions",
+          "locator": "AL30 official municipality list and strategy editions; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-leader-7119-3",
+      "topic_id": "leader-7119-3",
+      "version": 2,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "This intervention is distinct from the non-GDR 7119.2 call. Its current beneficiary/call rules have not been recovered; ordinary external project access cannot be inferred.",
+      "territory": "Andalusia LEADER framework; exact participating territories depend on the intervention.",
+      "applicants": "Unresolved intervention-specific beneficiary class; a GDR link or service-provider role is not an application entitlement.",
+      "activities": "Cooperation",
+      "financial_summary": "Payment timing: Payment unverified\nPayment evidence checked 2026-11-11. GDR cooperation is a separate intervention; no current implementing payment rule or call was established. Do not copy 7119.2 applicant advances or 7119.4 operating reimbursements.\n\nNo transferable rate, cost cap, co-finance or payment schedule verified for this intervention.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "Separate intervention rules/call remain unverified after the official 7119.2 document check. Retry Junta intervention pages and BOJA for the exact intervention; retain existing distinctions.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0093",
+          "page": null,
+          "label": "Andalusia LEADER 7119.2 call: beneficiaries and procedures",
+          "locator": "Andalusia LEADER 7119.2 call: beneficiaries and procedures; checked 2026-11-10"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 1,
+          "label": "LEADER intervention distinctions; cooperation excluded from 7119.2",
+          "locator": "LEADER intervention distinctions; cooperation excluded from 7119.2; PDF position 1"
+        },
+        {
+          "source_id": "FUND-008",
+          "page": 2,
+          "label": "LEADER intervention distinctions; cooperation excluded from 7119.2",
+          "locator": "LEADER intervention distinctions; cooperation excluded from 7119.2; PDF position 2"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:groundwork",
+      "topic_id": "groundwork-call-2026",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "open",
+      "availability_note": "Farm cascade call lists 19 November 2026 at 15:00 CET.",
+      "territory": "Applicant countries listed: Portugal, Germany, Belgium, Sweden, Serbia. Spain is not listed.",
+      "applicants": "Eligible farmers/farming entities in the listed Living Lab areas, with proof of agricultural activity.",
+      "activities": "Regenerative livestock grazing trials and related monitoring/training in the defined Living Labs.",
+      "financial_summary": "Payment timing: Payment unverified\nPayment evidence checked 2026-11-11. The recorded support is milestone-linked; the exact first-month release conditions were not recovered from the inspected official farm page. Parent Horizon prefinancing cannot be inherited by a cascade recipient.\n\nUp to €27,000 over three years with milestone-linked support; this is not locally available funding for an Alhama site.",
+      "deadlines": [
+        {
+          "label": "Application deadline",
+          "value": "2026-11-19T15:00:00+01:00",
+          "timezone": "CET",
+          "note": "",
+          "kind": "deadline"
+        }
+      ],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "This verifies the stated passages; it is not a complete eligibility audit.",
+      "attempted_on": null,
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0083",
+          "page": null,
+          "label": "GroundWork call countries, deadline and farm support",
+          "locator": "GroundWork call countries, deadline and farm support; verified 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0067",
+          "page": null,
+          "label": "Applicant countries, amount, duration and deadline",
+          "locator": "GroundWork call applicant countries and terms; captured 2026-11-10T09:51:01.646821+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0068",
+          "page": null,
+          "label": "Milestone payments and country restrictions",
+          "locator": "GroundWork regenerative grazing project and call; captured 2026-11-10T09:51:01.808370+00:00"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-interreg-europe-project-grants",
+      "topic_id": "interreg-europe-project-grants",
+      "version": 2,
+      "instrument_type": "grant",
+      "availability": "closed",
+      "availability_note": "Official application page: all funds committed and no more open calls planned during 2021–2027.",
+      "territory": "Interregional European policy cooperation; no independent Alhama parcel grant.",
+      "applicants": "Call-specific public/policy actors and eligible partners under the programme, not an ordinary individual project by default.",
+      "activities": "Improving regional policies through interregional cooperation, not direct equipment/planting finance.",
+      "financial_summary": "Payment timing: Payment unverified\nPayment evidence checked 2026-11-11. The recorded programme allocation is fully committed; no new grant is established. The programme’s exact payment/advance rules for an awarded historical project were not recovered.\n\nNo remaining open grant allocation is verified for this programme period; no transferable current rate, cap or payment entitlement.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0116",
+          "page": null,
+          "label": "Interreg Europe official commitment of all 2021–2027 grant funds",
+          "locator": "Interreg Europe official commitment of all 2021–2027 grant funds; checked 2026-11-10"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-prtr-ecosystem-restoration",
+      "topic_id": "prtr-ecosystem-restoration",
+      "version": 2,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "The library documents historical public-contract financing and delivery requirements. Current award/completion status or a live supplier opportunity was not verified.",
+      "territory": "Documented Andarax/Níjar public restoration delivery sites; this does not grant an Alhama parcel entitlement.",
+      "applicants": "Contracting/assigned public bodies and independently qualified tenderers/suppliers under actual notices; no applicant or supplier arrangement is confirmed.",
+      "activities": "Public restoration works and delivery obligations. Grant, public investment, direct assignment and procurement are distinct.",
+      "financial_summary": "Payment timing: Payment unverified\nPayment evidence checked 2026-11-11. Historical public investment/procurement is not a grant to the user. Supplier advances depend on the actual tender/contract; no current contract or upfront payment was verified.\n\nThe Andarax justification’s project-specific PRTR financing and €3,416,081.25 tender budget including VAT are not applicant grant rates or available allocations. Current contract payment, supplier qualifications and financial conditions require the relevant notice.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "incomplete",
+      "verification_note": "Current Andarax award and Níjar/TRAGSA supplier opportunity status were not recovered from the inspected public-project evidence. Retry SIREC expediente CONTR 2023 152183 and the exact TRAGSA/Níjar records; do not infer closure, completion or open procurement.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 1"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 2"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 4,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 4"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 5,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 5"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 6,
+          "label": "Andarax historical works contract and PRTR financing, not applicant aid",
+          "locator": "Andarax historical works contract and PRTR financing, not applicant aid; PDF position 6"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-leader-7119-4",
+      "topic_id": "leader-7119-4",
+      "version": 2,
+      "instrument_type": "framework",
+      "availability": "unknown",
+      "availability_note": "The adopted 24 February 2025 governing order was recovered. A current GDR application window was not verified; the eligible-cost period through 2029 is not an application deadline.",
+      "territory": "Recognised Andalusian GDRs implementing their approved local strategies.",
+      "applicants": "Recognised GDR beneficiaries; ordinary individuals, businesses, municipalities or research partnerships do not qualify merely through local interest.",
+      "activities": "GDR strategy management, monitoring, evaluation and animation; no direct pilot works or technology-development grant.",
+      "financial_summary": "Payment timing: Reimbursement documented\nPayment evidence checked 2026-11-11. The adopted 7119.4 rules Article 26 state payment after justification and administrative checks, with partial requests possible. Article 27 defines realised spending as actually paid. No specific start-up advance was established in these operative payment clauses; generic references to anticipated funds elsewhere do not establish a right to one. This is GDR support, not a direct project grant.\n\nUp to 100% of justified eligible GDR expenditure, subject to annual allocation and a 25% ceiling of the strategy’s total public contribution. These are GDR operating-finance conditions, not project grant rates.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0095",
+          "page": null,
+          "label": "7119.4 adopted rules: GDR management beneficiaries and eligible expenditure",
+          "locator": "7119.4 adopted rules: GDR management beneficiaries and eligible expenditure; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0095",
+          "label": "Articles 26–27: GDR operating aid after justification",
+          "locator": "Articles 26–27: GDR operating aid after justification; payment evidence checked 11 November 2026"
+        }
+      ]
+    },
+    {
+      "id": "funding-review:remaining-municipal-wildfire-draft",
+      "topic_id": "municipal-wildfire-draft",
+      "version": 2,
+      "instrument_type": "framework",
+      "availability": "draft",
+      "availability_note": "The current MITECO page presents a draft-order hearing ending 4 November 2026. Adoption and a grant application window were not established; the consultation deadline is not an application deadline.",
+      "territory": "Proposed Spanish municipalities of demographic challenge under 5,000 residents, subject to final rules; Alhama’s exact qualification is unconfirmed.",
+      "applicants": "Proposed municipal beneficiaries. A business/nonprofit could only have a separately evidenced partner/service role, not an assumed beneficiary right.",
+      "activities": "Proposed local wildfire-prevention plans and preventive measures, not a general post-fire restoration or drone-development fund.",
+      "financial_summary": "Payment timing: Draft advance; not available aid\nPayment evidence checked 2026-11-11. Draft Article 23 proposes a requested 70% advance after award, with municipalities exempt from a guarantee, followed by up to 30% after verification. Adoption and an actual call are not verified; this draft provision cannot be marked as an available upfront grant.\n\nDraft amounts/rates/costs/payment conditions are provisional; no adopted grant cap, budget or disbursement entitlement is established.",
+      "deadlines": [],
+      "checked_on": "2026-11-10",
+      "verification_state": "confirmed",
+      "verification_note": "The cited conditions were manually reviewed. Applicant arrangements and this project’s eligibility remain unconfirmed; this is not an award or application approval.",
+      "attempted_on": "2026-11-10",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0122",
+          "page": null,
+          "label": "MITECO municipal wildfire draft: hearing dates and draft status",
+          "locator": "MITECO municipal wildfire draft: hearing dates and draft status; checked 2026-11-10"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 1,
+          "label": "Draft placeholder order and municipal purpose",
+          "locator": "Draft placeholder order and municipal purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 2,
+          "label": "Proposed CIUDEN implementation",
+          "locator": "Proposed CIUDEN implementation"
+        },
+        {
+          "source_id": "KGB-SRC-0066",
+          "page": null,
+          "label": "Draft-order consultation, not a funding call",
+          "locator": "Draft municipal wildfire rules consultation; captured 2026-11-10T09:51:01.149309+00:00"
+        },
+        {
+          "source_id": "KGB-SRC-0038",
+          "page": 14,
+          "label": "Draft municipal wildfire Article 23: proposed 70 percent advance, not adopted",
+          "locator": "Draft municipal wildfire Article 23: proposed 70 percent advance, not adopted; PDF position 14"
+        }
+      ]
+    }
+  ]
+}

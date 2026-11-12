@@ -270,3 +270,9 @@ Carob viewer was opened and decoded successfully after publication.
 Final validation passed: 43 backend tests, 48 frontend tests, 39 image browser checks,
 20 PDF-viewer checks and 22 hover/picking/domain checks. Production build and file-integrity
 checks passed.
+
+
+The AL20 Line 3 intake on 11 November 2026 added nine byte-preserved PDFs (FUND-047–FUND-054 and POLICY-004), reused the exact FUND-005 budget edition, and registered five reviewed official/GDR web captures. [Accession provenance](../imports/document-library-additions-al20-line3-20261111.json) records hashes, source IDs, known dates, direct downloads and exact inspected positions. [The research report](../research/al20-line3-intake-20261111/report.md) distinguishes historical awards from current provisional proposals, reviewed pages from out-of-scope pages, and library preservation from the historical inventory's expected differences. Accepted knowledge is at revision 59; no original edition, working plan or PDF full-text index was replaced.
+
+
+The AL20 EDL heritage follow-up on 11 November 2026 added FUND-055 / KGB-SRC-0150, the historical EDL 2014–2020 version 5 adopted by the association on 2 November 2023. Existing FUND-013 / KGB-SRC-0021 was matched to the current GDR-linked EDLL v1 and reused. [Accession provenance](../imports/document-library-additions-al20-edl-20261111.json) records the unchanged PDF hashes, exact inspected pages and direct downloads. [The intake report](../research/al20-edl-heritage-20261111/report.md) distinguishes current and historical interpretations and records preservation/recovery checks. Full-PDF indexing and working-plan changes were outside the intake.
