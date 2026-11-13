@@ -39,12 +39,21 @@ export function NavigationTree({catalog, hiddenIds, selectedId, groupId, busy, o
     while (at && !seen.has(at)) {seen.add(at); path.push(at); at = catalog.browse_groups.find(g => g.id === at)?.parent_id || catalog.communities.find(g => g.id === at)?.parent_id;}
     setExpanded(prev => [...new Set([...prev, ...path])]);
   }, [groupId, catalog]);
-  const rows: {node: NavigationNode; depth: number; parent?: string}[] = [];
-  const flatten = (items: NavigationNode[], depth = 0, parent?: string) => items.forEach(node => {
-    rows.push({node, depth, parent});
-    if (searching || expanded.includes(node.key)) flatten(node.children, depth + 1, node.key);
+  const rows: {node: NavigationNode; depth: number; parent?: string; guides: boolean[]; last: boolean}[] = [];
+  const flatten = (items: NavigationNode[], depth = 0, parent?: string, guides: boolean[] = []) => items.forEach((node, index) => {
+    const last = index === items.length - 1;
+    rows.push({node, depth, parent, guides, last});
+    if (searching || expanded.includes(node.key)) flatten(node.children, depth + 1, node.key, depth ? [...guides, !last] : guides);
   });
   flatten(filtered);
+  const isInspected = (node: NavigationNode) => node.kind === 'branch'
+    ? !selectedId && groupId === node.id || !!node.anchor && selectedId === node.anchor : selectedId === node.id;
+  const parents = new Map(rows.map(row => [row.node.key, row.parent]));
+  const inspectedPath = new Set<string>();
+  for (const {node} of rows.filter(row => isInspected(row.node))) {
+    let key: string | undefined = node.key;
+    while (key && !inspectedPath.has(key)) {inspectedPath.add(key); key = parents.get(key);}
+  }
   const focus = (key?: string) => { if (!key) return; setFocusKey(key); tree.current?.querySelector<HTMLElement>(`[data-tree-key="${CSS.escape(key)}"]`)?.focus(); };
   const expand = (key: string, value: boolean) => setExpanded(prev => value ? [...new Set([...prev, key])] : prev.filter(id => id !== key));
   const effectiveFocus = rows.some(r => r.node.key === focusKey) ? focusKey : rows[0]?.node.key;
@@ -55,14 +64,14 @@ export function NavigationTree({catalog, hiddenIds, selectedId, groupId, busy, o
       <small>{catalog.topics.length - hiddenIds.filter(id => catalog.topics.some(t => t.id === id)).length}/{catalog.topics.length} included</small>
     </div>
     <div ref={tree} className="navigation-tree" role="tree" aria-label="Knowledge navigation" aria-multiselectable="true">
-      {rows.map(({node, depth, parent}, index) => {
+      {rows.map(({node, depth, parent, guides, last}, index) => {
         const status = inclusion(node, hidden), isExpanded = searching || expanded.includes(node.key), branch = node.kind === 'branch';
-        const selected = branch ? !selectedId && groupId === node.id || !!node.anchor && selectedId === node.anchor : selectedId === node.id;
+        const selected = isInspected(node);
         const change = () => toggle(node.members, status.mixed || !status.checked);
         return <div key={node.key} role="treeitem" data-tree-key={node.key} data-topic-id={branch ? node.anchor || undefined : node.id}
           aria-label={node.label} aria-level={depth + 1} aria-expanded={branch && node.children.length ? isExpanded : undefined}
           aria-selected={selected} aria-checked={status.mixed ? 'mixed' : status.checked} aria-disabled={busy || !status.total}
-          className={'tree-row' + (selected ? ' inspected' : '') + (!status.checked ? ' excluded' : '')}
+          className={'tree-row' + (selected ? ' inspected' : '') + (inspectedPath.has(node.key) ? ' on-inspected-path' : '') + (!status.checked ? ' excluded' : '')}
           style={{paddingLeft: 6 + depth * 12, minWidth: 244 + depth * 12}} tabIndex={node.key === effectiveFocus ? 0 : -1} onFocus={() => setFocusKey(node.key)}
           onKeyDown={e => {
             if (e.target !== e.currentTarget) return;
@@ -76,6 +85,11 @@ export function NavigationTree({catalog, hiddenIds, selectedId, groupId, busy, o
             if (e.key === ' ' && !busy) change();
             if (e.key === 'Enter' && !busy) branch ? openGroup(node.id) : inspect(node.id);
           }}>
+          {(depth > 0 || branch && isExpanded && node.children.length > 0) && <span className="tree-guides" aria-hidden="true">
+            {guides.map((continues, level) => continues && <span key={level} className="tree-guide" style={{left: 15 + level * 12}}/>)}
+            {depth > 0 && <span className={'tree-guide tree-elbow' + (last ? ' tree-last' : '')} style={{left: 15 + (depth - 1) * 12}}/>}
+            {branch && isExpanded && node.children.length > 0 && <span className="tree-guide tree-stem" style={{left: 15 + depth * 12}}/>}
+          </span>}
           {branch && node.children.length ? <button className="tree-chevron" tabIndex={-1} aria-label={(isExpanded ? 'Collapse ' : 'Expand ') + node.label} disabled={searching} onClick={() => expand(node.key, !isExpanded)}>{isExpanded ? '⌄' : '›'}</button> : <span className="tree-chevron"/>}
           <InclusionBox checked={status.checked} mixed={status.mixed} label={node.label} disabled={busy || !status.total} change={change}/>
           <button className="tree-label" tabIndex={-1} title={node.label + (node.shared ? ' · Shared topic' : '')} data-group-id={branch ? node.id : undefined} disabled={busy}

@@ -114,6 +114,11 @@ their anchor once; unique descendant IDs determine inclusion counts and tri-stat
 Chevron expansion, group navigation, topic inspection and visibility are separate controls.
 Local label/alias search reveals matching paths without changing the full branch-toggle membership
 or saved expansion. The tree supports roving focus, arrows, Home/End, Space and Enter.
+Decorative blue guides follow the currently displayed sibling structure, with parent stems,
+continuations and terminating last-child elbows. They adapt to 32/44 px rows, search and collapse,
+remain hidden from assistive technology and never intercept pointer events. Inspected paths use a
+stronger stroke; excluded rows fade. Both sidebars use the irrigation editor's muted/pale blue for
+headings and source links, alongside warm ivory surfaces and sage selection, with dark equivalents.
 
 Optional v6 `hiddenTopicIds` defaults to empty and follows browsing through the existing reducer.
 Visibility/reset replace the current history entry using its full captured query; no narrower

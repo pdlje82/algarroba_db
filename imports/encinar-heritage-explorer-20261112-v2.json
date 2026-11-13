@@ -1,0 +1,4150 @@
+{
+  "batch_id": "encinar-heritage-explorer-20261112-v2",
+  "base_revision": 61,
+  "summary": "Explorer-only: reviewed encinar formations, three conditional restoration models and stages, Gador history, a documented planting project, carob comparisons, and contextual heritage/funding links. No working-plan, irrigation-evidence or funding-assessment mutations.",
+  "topics": [
+    {
+      "id": "encinar-community",
+      "label": "Encinar · holm-oak woodland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Oak-dominated woodland in the 1996 restoration models. A possible outcome on suitable deeper, cooler or runoff-receiving ground. The paper uses encina as a broad source term; the local Gádor account separately identifies Quercus rotundifolia. This formation is not a formal newly described phytosociological association or a parcel planting prescription.",
+      "aliases": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "record_scope": "source-described vegetation formation; Explorer reference only",
+        "planning_status": "not a planting recipe"
+      }
+    },
+    {
+      "id": "mixed-pine-encina-woodland",
+      "label": "Mixed pine–encina woodland",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Mixed pine and oak stands, with dominance changing during source-described management. They may persist on transitional terrain rather than inevitably becoming pure oak woodland. Pine identity and species mixture require their own site/source evidence.",
+      "aliases": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "record_scope": "source-described vegetation formation; Explorer reference only",
+        "planning_status": "not a planting recipe"
+      }
+    },
+    {
+      "id": "pine-encina-understorey",
+      "label": "Pine woodland with encina understorey",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Pines above an oak shrub layer, distinguished in diagram 3 from oak-dominated woodland and a mixed tree canopy. The source places this structure on relatively dry runoff-exporting ground in its model. It gives no universal species list, canopy target or stocking density.",
+      "aliases": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "record_scope": "source-described vegetation formation; Explorer reference only",
+        "planning_status": "not a planting recipe"
+      }
+    },
+    {
+      "id": "encina-scrub-mosaic",
+      "label": "Encina scrub, oak mats and chaparral",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "The source distinguishes shrubland containing oak stools or mats, encinar with shrub cover, and chaparral/open-oak outcomes. These are broad structures, not one named botanical association. Surviving established roots are a different restoration starting condition from newly introduced seedlings.",
+      "aliases": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "record_scope": "source-described vegetation formation; Explorer reference only",
+        "planning_status": "not a planting recipe"
+      }
+    },
+    {
+      "id": "structured-shrub-restoration-cover",
+      "label": "Structured shrub cover · encinar restoration context",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "Well-conserved or recovering shrub vegetation can shelter young oaks when its composition and structure create a suitable microclimate. Established shrubs can also compete for water and soil resources. The source conditions selective oak introduction on suitable patches; it does not authorize clearing every shrub community or replacing valuable open habitat.",
+      "aliases": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1.1. Consideraciones generales; PDF position 1, printed page 93",
+          "label": "Young encinas: shelter, soils and regeneration",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "aspects": {
+        "record_scope": "source-described vegetation formation; Explorer reference only",
+        "planning_status": "not a planting recipe"
+      }
+    },
+    {
+      "id": "broadleaf-gallery-restoration-context",
+      "label": "Broadleaf galleries · drainage-line context",
+      "kind": "habitat",
+      "domain": "ecosystem",
+      "description": "A broadleaf gallery is one possible source-model outcome in drainage networks, gullies and valley bottoms. The restoration diagrams do not supply a complete tree-species inventory, quantitative planting design or proof that a particular parcel supports gallery woodland.",
+      "aliases": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "record_scope": "source-described vegetation formation; Explorer reference only",
+        "planning_status": "not a planting recipe"
+      }
+    },
+    {
+      "id": "encinar-restoration",
+      "label": "Encinar restoration · conditional models",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Estanislao de Simón Navarrete’s 1996 paper presents restoration models selected by initial vegetation, soil condition and terrain water balance. It distinguishes eroded ground, well-conserved shrub cover and degraded ground with surviving oak mats, alongside special runoff/drainage settings. Pine-assisted restoration is one conditional route; favourable microsites can allow direct oak introduction. Outcomes include oak woodland, pine woodland, mixed stands, oak scrub and broadleaf galleries. Stages describe source guidance rather than measured trials, universal succession or an approved modern field prescription. No fixed duration, irrigation amount, survival percentage or general planting density is established. The Gádor reference is a difficult establishment setting, not a demonstrated whole-mountain treatment.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1.1. Consideraciones generales; PDF position 1, printed page 93",
+          "label": "Young encinas: shelter, soils and regeneration",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "evidence_type": "historical technical guidance, published October 1996; meeting September 1995",
+        "implementation_scope": "Explorer only; no working-community or irrigation adoption"
+      }
+    },
+    {
+      "id": "encinar-model-eroded",
+      "label": "Model 1 · eroded ground",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Starting condition: eroded soils with advanced degraded shrub cover. The source describes pioneer pine cover, oak introduction beneath suitable opened pine cover, mixed-stand management and consolidation according to terrain and moisture. Direct oak establishment remains possible on favourable soil and runoff-receiving patches. Pine, oak and mixed outcomes coexist; this is technical guidance rather than a documented experiment.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "aspects": {
+        "evidence_type": "conditional source model; not an empirical project or trial"
+      }
+    },
+    {
+      "id": "encinar-model-shrubs",
+      "label": "Model 2 · well-conserved shrub cover",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Starting condition: shrub cover in relatively good condition, sometimes sparse. The model improves shrub structure, introduces oaks selectively under shelter, manages competition, organizes the developing stand and retains vegetation appropriate to terrain. Gádor and Filabres are mentioned as difficult settings where supplementary protection can help. Shelter and competition must be considered together. No trial survival or fixed timescale is supplied.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "aspects": {
+        "evidence_type": "conditional source model; not an empirical project or trial"
+      }
+    },
+    {
+      "id": "encinar-model-stools",
+      "label": "Model 3 · surviving oak stools and mats",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Starting condition: eroded, degraded shrubland with significant surviving encina mats. The model combines regeneration of existing oak roots/stools with pioneer cover in gaps, complementary oak introduction and subsequent mixed-stand management. Its diagrams differentiate the final mosaic by terrain. Historical rejuvenation, root and shoot treatments are retained as source context requiring current professional/site review; they are not adopted as present instructions.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "evidence_type": "conditional source model; not an empirical project or trial"
+      }
+    },
+    {
+      "id": "encinar-stage-pioneer-cover",
+      "label": "1 · Establish pioneer cover",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "On the eroded-ground route, pioneer trees provide cover and may improve establishment conditions. Direct oak introduction can bypass this stage on suitable favourable patches. The paper names several possible pines elsewhere; this stage does not assign a generic pine to a species.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "aspects": {
+        "evidence_type": "source guidance; conditional restoration stage",
+        "duration": "not established"
+      }
+    },
+    {
+      "id": "encinar-stage-oak-under-pines",
+      "label": "2 · Introduce oaks beneath suitable pine cover",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "After cover improves the setting, selectively introduce oaks on suitable deeper soils beneath appropriately opened pine cover. Light, water and soil conditions govern applicability.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "evidence_type": "source guidance; conditional restoration stage",
+        "duration": "not established"
+      }
+    },
+    {
+      "id": "encinar-stage-mixed-stand-management",
+      "label": "3 · Manage mixed pine–oak stands",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "The source describes successive management of light and competition, with pine-dominant then oak-dominant mixtures on favourable sites. Pines and mixed stands may persist on poorer or transitional ground.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "evidence_type": "source guidance; conditional restoration stage",
+        "duration": "not established"
+      }
+    },
+    {
+      "id": "encinar-stage-site-consolidation",
+      "label": "Consolidate vegetation according to the site",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Retain a terrain-dependent mosaic: encinar in more favourable moisture-receiving settings; pine or pine with oak understorey in relatively dry settings; mixed woodland in transitions; and gallery or scrub structures in their respective settings. This is a source-model outcome, not a universal endpoint.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "evidence_type": "source guidance; conditional restoration stage",
+        "duration": "not established"
+      }
+    },
+    {
+      "id": "encinar-stage-shrub-recovery",
+      "label": "1 · Improve suitable shrub shelter",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Where the source model starts with relatively well-conserved but insufficiently structured shrub cover, improve its structure and composition before selective oak introduction. A modern habitat appraisal must first determine whether intervention is appropriate.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "aspects": {
+        "evidence_type": "source guidance; conditional restoration stage",
+        "duration": "not established"
+      }
+    },
+    {
+      "id": "encinar-stage-oak-under-shrubs",
+      "label": "2 · Introduce oaks under shrub shelter",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Select patches offering a suitable protective microclimate; the paper also discusses protective tubes in difficult Gádor/Filabres settings. Historical tube recommendations require present site and material review; no irrigation regime is supplied.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "aspects": {
+        "evidence_type": "source guidance; conditional restoration stage",
+        "duration": "not established"
+      }
+    },
+    {
+      "id": "encinar-stage-shrub-competition",
+      "label": "3 · Manage competition around young oaks",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Retain useful shelter while selectively managing established shrubs that compete with slow-growing oaks for water, soil resources and space. This is not blanket shrub clearance.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "aspects": {
+        "evidence_type": "source guidance; conditional restoration stage",
+        "duration": "not established"
+      }
+    },
+    {
+      "id": "encinar-stage-stand-organization",
+      "label": "4 · Organize the developing oak stand",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "The shrub-route model includes subsequent silvicultural organization and maintenance to favour oak persistence, followed by a site-dependent mature vegetation mosaic. Its historic pruning/fruit-production language is not a heritage-funding entitlement.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "aspects": {
+        "evidence_type": "source guidance; conditional restoration stage",
+        "duration": "not established"
+      }
+    },
+    {
+      "id": "encinar-stage-stool-recovery",
+      "label": "1 · Assess and recover surviving oak mats",
+      "kind": "method",
+      "domain": "ecosystem",
+      "description": "Distinguish regeneration of existing oak roots and stools from new seedlings. The paper combines oak-mat rejuvenation with pioneer planting in open eroded gaps. Historical treatments require current ecological and professional assessment before use.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "evidence_type": "source guidance; conditional restoration stage",
+        "duration": "not established"
+      }
+    },
+    {
+      "id": "sierra-gador-encinar-history",
+      "label": "Sierra de Gádor · encinar history and recovery",
+      "kind": "aspect",
+      "domain": "ecosystem",
+      "description": "The Reserva de Laujar baseline describes formerly extensive encinares surviving in less accessible places and identifies Quercus rotundifolia vegetation series over much of the limestone massif. Sheltered, locally more humid sites also retain maple/Portuguese-oak woodland; a peripheral siliceous oak series is separately named. The Andarax baseline reproduces historical mining-clearance estimates, not a stand inventory. Modern pine plantations and valuable open shrub habitats are different parts of the present mosaic. These regional accounts support investigation of ecological and landscape heritage, but do not establish a parcel’s former vegetation, tree ages at felling or current restoration suitability. The existing Gádor mining cultural-landscape entry retains its distinct EDLL identification.",
+      "aliases": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; PDF position 38, printed page 37; retained source footer PÁGINA 38/104",
+          "label": "Former encinares and surviving woodland refuges",
+          "page": 38
+        },
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; biogeografía; PDF position 39, printed page 38; retained source footer PÁGINA 39/104",
+          "label": "Gádor vegetation series: Quercus rotundifolia and sheltered refuges",
+          "page": 39
+        },
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3.1.1. Pinares de repoblación; 3.1.2. Matorral de baja montaña; PDF position 42, printed page 41; retained source footer PÁGINA 42/104",
+          "label": "Pine plantations and valuable open scrub habitats",
+          "page": 42
+        },
+        {
+          "source_id": "KGB-SRC-0153",
+          "locator": "6.3.4. Repercusiones económicas, sociales y ambientales; PDF position 111, printed page 104",
+          "label": "Mining-related clearance: historical area and tree estimates",
+          "page": 111
+        }
+      ],
+      "aspects": {
+        "historical_density": "500000 / 28000 = about 17.9 trees/ha is arithmetic on rounded historical estimates, not an observed density",
+        "felling_ages": "not established by reviewed passages",
+        "geographic_scope": "regional Sierra de Gádor context; not the municipality topic gador"
+      }
+    },
+    {
+      "id": "traditional-carob-heritage",
+      "label": "Traditional carob trees and cultivar heritage",
+      "kind": "aspect",
+      "domain": "ecosystem",
+      "description": "The Andalusian carob handbook treats old trees and traditional cultivars as valuable genetic and cultural resources and describes in-situ conservation/custody work. This supports investigating particular veteran trees, local varieties, practices and cultural landscapes as heritage. A modern productive plantation, or the species name Ceratonia siliqua by itself, does not establish local heritage significance. Nor does this prove ancient carob-dominated woodland in Sierra de Gádor or at Los Millares. A local history, tree inventory and recognition evidence are still needed for a specific heritage proposal.",
+      "aliases": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "locator": "Conservación de recursos genéticos; Andalucía; PDF position 45",
+          "label": "Andalusian traditional dryland carob resources",
+          "page": 45
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "Conservación in situ; árboles longevos y custodia del territorio; PDF position 57",
+          "label": "Old carob trees: genetic and cultural conservation value",
+          "page": 57
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        }
+      ],
+      "aspects": {
+        "heritage_status": "contextual investigation; no parcel designation or eligibility finding"
+      }
+    },
+    {
+      "id": "encinar-heritage-funding-context",
+      "label": "Encinar and carob heritage · funding considerations",
+      "kind": "aspect",
+      "domain": "funding",
+      "description": "Curator synthesis: conserving documented native woodland, a historic vegetation mosaic, a significant old carob tree or associated knowledge can be investigated within environmental and landscape heritage. A restoration design must document the actual asset, habitat suitability, purpose, public benefit, rights and applicable professional evidence. The AL20 strategy links cultural/natural heritage with soil regeneration. Existing operation types 3.1, 3.3, 3.4 and 3.5 offer different kinds of work to examine, subject to their own conditions. Under 3.5, agricultural-production support and forestry productivity are excluded; required forest planning and public-use/dissemination conditions remain separate checks. Under 3.4, novelty and nonproductive demonstration requirements also apply. Neither native status nor a source paper proves eligibility, available funding, selection points or an award.",
+      "aliases": [],
+      "group_id": "requirements",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4; PDF position 395",
+          "label": "NPL3 heritage and NPL4 soil-regeneration priorities",
+          "page": 395
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; PDF position 123",
+          "label": "3.5: heritage recovery and production exclusions",
+          "page": 123
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; condiciones; PDF position 124",
+          "label": "3.5: public use and forest-management conditions",
+          "page": 124
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; PDF position 120",
+          "label": "3.4: demonstration purpose and novelty",
+          "page": 120
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; condiciones; PDF position 121",
+          "label": "3.4: nonproductive character and public results",
+          "page": 121
+        }
+      ],
+      "funding_role": "reference",
+      "funding_context_ids": [
+        "al20"
+      ],
+      "aspects": {
+        "assessment_status": "contextual Explorer reference only; no project review, score or funding assessment created"
+      }
+    },
+    {
+      "id": "natural-heritage",
+      "label": "Environmental and geological heritage",
+      "kind": "family",
+      "domain": "ecosystem",
+      "description": "Natural heritage includes biological and geological resources with relevant environmental, landscape, scientific or cultural value. The Spanish law distinguishes natural/seminatural habitats, species habitats, landscape and ecosystem restoration. Native habitats, ecological corridors, wetlands, significant trees or geological features are possible investigation subjects; a site assessment must establish the actual values and pressures. These are explanatory examples, not a designation of the user’s land or automatic LEADER eligibility. The AL20 EDLL explicitly includes natural heritage within NPL3 and assigns it a separate OE3.3 monitoring indicator. Its diagnostic response supports conservation and land-stewardship initiatives, and its intervention-logic table connects soil regeneration and erosion/aridity reduction to the heritage objective. These are source-stated strategic links; they do not classify every parcel or supply an approved restoration or planting plan. Explorer examples now connect encinar vegetation and conditional restoration models with the Gádor woodland/mining context, and distinguish the genetic/cultural value of particular old carob trees and cultivars. Open the anchored heritage branch for ecological references and conditional funding considerations. These examples require local asset evidence; native status and modern planting alone do not establish recognition or eligibility.",
+      "aliases": [],
+      "spanish_name": null,
+      "english_name": null,
+      "scientific_name": null,
+      "name_note": "",
+      "name_status": "recorded",
+      "name_references": [],
+      "group_id": "habitats",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "page": 9,
+          "locator": "Artículo 3.5. Patrimonio rural",
+          "label": "Rural heritage definition and recognition evidence"
+        },
+        {
+          "source_id": "KGB-SRC-0142",
+          "page": 17,
+          "locator": "Artículo 3, apartados 20, 21, 25–27 y 30–32",
+          "label": "Natural heritage, landscapes, habitats and ecosystem restoration"
+        },
+        {
+          "source_id": "KGB-SRC-0142",
+          "page": 16,
+          "locator": "Biodiversity, traditional knowledge, habitat conservation and stewardship",
+          "label": "Biodiversity, traditional knowledge, habitat conservation and stewardship"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 371,
+          "locator": "DAFO_O1 y DAFO_O2; explotar las oportunidades",
+          "label": "Natural heritage: conservation and land-stewardship opportunities"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 395,
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4",
+          "label": "NPL3 cultural/natural heritage and NPL4 soil-regeneration priorities"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 418,
+          "locator": "OE3.3. Puesta en valor y divulgación del patrimonio rural; IN3.3.1 y IN3.3.2",
+          "label": "OE3.3: separate cultural-heritage and natural-heritage indicators"
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "page": 494,
+          "locator": "Epígrafe 6. Lógica de la intervención; NPL3, NPL4, NPL8 → OE3.3 → 3.1, 3.3, 3.4, 3.5",
+          "label": "OE3.3 links heritage, soil regeneration and climate needs to four operation types"
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; biogeografía; PDF position 39, printed page 38; retained source footer PÁGINA 39/104",
+          "label": "Gádor vegetation series: Quercus rotundifolia and sheltered refuges",
+          "page": 39
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "Conservación in situ; árboles longevos; PDF position 57",
+          "label": "Old carob trees: genetic and cultural conservation value",
+          "page": 57
+        }
+      ],
+      "funding_role": null,
+      "funding_context_ids": []
+    },
+    {
+      "id": "gea-gador-reforestation-2018-2019",
+      "label": "GEA Sierra de Gádor reforestation 2018–19 · Project",
+      "kind": "project",
+      "domain": "ecosystem",
+      "description": "GEA’s 2018–19 volunteer campaign aimed to restore native woodland in northeastern Sierra de Gádor. Its updated report describes four sowing days at La Zarba and Aljibe del Marqués: over 5,000 encina/coscoja acorns across over 2.5 ha beneath previously thinned Aleppo pine. Seeds came mainly from Sierra de Segura. The stated technique used two or three acorns per prepared spot, often already germinated, taking advantage of shelter and soil moisture. The report also records earlier plantings since the 1990s, better-developed plantings receiving care/irrigation, and scarce saplings from a failed administrative planting. These are implementer observations and planting inputs, not a controlled trial or survival census. Long-term survival and funding status remain unreported.",
+      "aliases": [],
+      "group_id": "restoration-methods",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Tenemos algunas experiencias previas; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA: earlier plantings, care and planting setbacks"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; source names and seed provenance; main author post, excluding reader comments",
+          "label": "GEA: seed origin and vegetation observed at the sowing sites"
+        }
+      ],
+      "dates": [
+        {
+          "value": "2018-2019",
+          "meaning": "period"
+        }
+      ],
+      "aspects": {
+        "evidence_type": "implementer report, updated after the post date 2019-01-10 to include 2019-01-20 and final balance",
+        "status": "sowing reported; subsequent survival not established",
+        "source_name_usage": "encina (Quercus ilex), coscoja (Quercus coccifera); no automatic merge with Q. rotundifolia"
+      }
+    },
+    {
+      "id": "gea-andarax",
+      "label": "Grupo Ecologista Andarax (GEA)",
+      "kind": "organization",
+      "domain": "ecosystem",
+      "description": "Local environmental group and named implementer of the 2018–19 Sierra de Gádor volunteer sowing campaign; its report is an implementer account rather than an independent audit.",
+      "aliases": [],
+      "group_id": "organizations",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ]
+    },
+    {
+      "id": "gea-la-zarba",
+      "label": "La Zarba · GEA sowing site",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Named Sierra de Gádor sowing site in the 2018–19 GEA account. No parcel boundary or coordinates are established by this intake.",
+      "aliases": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ]
+    },
+    {
+      "id": "gea-aljibe-marques",
+      "label": "Aljibe del Marqués · GEA sowing site",
+      "kind": "place",
+      "domain": "ecosystem",
+      "description": "Named Sierra de Gádor sowing site in the 2018–19 GEA account. Its cistern name does not establish ownership, precise location or heritage designation.",
+      "aliases": [],
+      "group_id": "places",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "encinar-link-general-restoration",
+      "source": "restoration",
+      "target": "encinar-restoration",
+      "label": "includes a source-described approach",
+      "explanation": "Curated general-to-specific connection: the encinar paper concerns vegetation restoration under soil and site constraints, distinct from carob MR2 and from an actual implementation project.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1.1. Consideraciones generales; PDF position 1, printed page 93",
+          "label": "Young encinas: shelter, soils and regeneration",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-model-eroded",
+      "source": "encinar-restoration",
+      "target": "encinar-model-eroded",
+      "label": "offers conditional model",
+      "explanation": "Starting condition: eroded soils with advanced degraded shrub cover. The source describes pioneer pine cover, oak introduction beneath suitable opened pine cover, mixed-stand management and consolidation according to terrain and moisture. Direct oak establishment remains possible on favourable soil and runoff-receiving patches. Pine, oak and mixed outcomes coexist; this is technical guidance rather than a documented experiment.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {
+        "initial_condition": "eroded"
+      }
+    },
+    {
+      "id": "encinar-link-model-shrubs",
+      "source": "encinar-restoration",
+      "target": "encinar-model-shrubs",
+      "label": "offers conditional model",
+      "explanation": "Starting condition: shrub cover in relatively good condition, sometimes sparse. The model improves shrub structure, introduces oaks selectively under shelter, manages competition, organizes the developing stand and retains vegetation appropriate to terrain. Gádor and Filabres are mentioned as difficult settings where supplementary protection can help. Shelter and competition must be considered together. No trial survival or fixed timescale is supplied.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "initial_condition": "shrubs"
+      }
+    },
+    {
+      "id": "encinar-link-model-stools",
+      "source": "encinar-restoration",
+      "target": "encinar-model-stools",
+      "label": "offers conditional model",
+      "explanation": "Starting condition: eroded, degraded shrubland with significant surviving encina mats. The model combines regeneration of existing oak roots/stools with pioneer cover in gaps, complementary oak introduction and subsequent mixed-stand management. Its diagrams differentiate the final mosaic by terrain. Historical rejuvenation, root and shoot treatments are retained as source context requiring current professional/site review; they are not adopted as present instructions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {
+        "initial_condition": "stools"
+      }
+    },
+    {
+      "id": "encinar-link-eroded-stage-1",
+      "source": "encinar-model-eroded",
+      "target": "encinar-stage-pioneer-cover",
+      "label": "includes conditional stage",
+      "explanation": "Source model eroded, ordered step 1. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {
+        "model": "encinar-model-eroded",
+        "step": 1
+      }
+    },
+    {
+      "id": "encinar-link-eroded-stage-2",
+      "source": "encinar-model-eroded",
+      "target": "encinar-stage-oak-under-pines",
+      "label": "includes conditional stage",
+      "explanation": "Source model eroded, ordered step 2. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {
+        "model": "encinar-model-eroded",
+        "step": 2
+      }
+    },
+    {
+      "id": "encinar-link-eroded-stage-3",
+      "source": "encinar-model-eroded",
+      "target": "encinar-stage-mixed-stand-management",
+      "label": "includes conditional stage",
+      "explanation": "Source model eroded, ordered step 3. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {
+        "model": "encinar-model-eroded",
+        "step": 3
+      }
+    },
+    {
+      "id": "encinar-link-eroded-stage-4",
+      "source": "encinar-model-eroded",
+      "target": "encinar-stage-site-consolidation",
+      "label": "includes conditional stage",
+      "explanation": "Source model eroded, ordered step 4. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {
+        "model": "encinar-model-eroded",
+        "step": 4
+      }
+    },
+    {
+      "id": "encinar-link-eroded-sequence-pioneer-cover",
+      "source": "encinar-stage-pioneer-cover",
+      "target": "encinar-stage-oak-under-pines",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-eroded only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {
+        "model": "encinar-model-eroded",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-eroded-sequence-oak-under-pines",
+      "source": "encinar-stage-oak-under-pines",
+      "target": "encinar-stage-mixed-stand-management",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-eroded only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {
+        "model": "encinar-model-eroded",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-eroded-sequence-mixed-stand-management",
+      "source": "encinar-stage-mixed-stand-management",
+      "target": "encinar-stage-site-consolidation",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-eroded only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {
+        "model": "encinar-model-eroded",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-shrubs-stage-1",
+      "source": "encinar-model-shrubs",
+      "target": "encinar-stage-shrub-recovery",
+      "label": "includes conditional stage",
+      "explanation": "Source model shrubs, ordered step 1. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "model": "encinar-model-shrubs",
+        "step": 1
+      }
+    },
+    {
+      "id": "encinar-link-shrubs-stage-2",
+      "source": "encinar-model-shrubs",
+      "target": "encinar-stage-oak-under-shrubs",
+      "label": "includes conditional stage",
+      "explanation": "Source model shrubs, ordered step 2. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "model": "encinar-model-shrubs",
+        "step": 2
+      }
+    },
+    {
+      "id": "encinar-link-shrubs-stage-3",
+      "source": "encinar-model-shrubs",
+      "target": "encinar-stage-shrub-competition",
+      "label": "includes conditional stage",
+      "explanation": "Source model shrubs, ordered step 3. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "model": "encinar-model-shrubs",
+        "step": 3
+      }
+    },
+    {
+      "id": "encinar-link-shrubs-stage-4",
+      "source": "encinar-model-shrubs",
+      "target": "encinar-stage-stand-organization",
+      "label": "includes conditional stage",
+      "explanation": "Source model shrubs, ordered step 4. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "model": "encinar-model-shrubs",
+        "step": 4
+      }
+    },
+    {
+      "id": "encinar-link-shrubs-stage-5",
+      "source": "encinar-model-shrubs",
+      "target": "encinar-stage-site-consolidation",
+      "label": "includes conditional stage",
+      "explanation": "Source model shrubs, ordered step 5. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "model": "encinar-model-shrubs",
+        "step": 5
+      }
+    },
+    {
+      "id": "encinar-link-shrubs-sequence-shrub-recovery",
+      "source": "encinar-stage-shrub-recovery",
+      "target": "encinar-stage-oak-under-shrubs",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-shrubs only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "model": "encinar-model-shrubs",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-shrubs-sequence-oak-under-shrubs",
+      "source": "encinar-stage-oak-under-shrubs",
+      "target": "encinar-stage-shrub-competition",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-shrubs only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "model": "encinar-model-shrubs",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-shrubs-sequence-shrub-competition",
+      "source": "encinar-stage-shrub-competition",
+      "target": "encinar-stage-stand-organization",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-shrubs only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "model": "encinar-model-shrubs",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-shrubs-sequence-stand-organization",
+      "source": "encinar-stage-stand-organization",
+      "target": "encinar-stage-site-consolidation",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-shrubs only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {
+        "model": "encinar-model-shrubs",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-stools-stage-1",
+      "source": "encinar-model-stools",
+      "target": "encinar-stage-stool-recovery",
+      "label": "includes conditional stage",
+      "explanation": "Source model stools, ordered step 1. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {
+        "model": "encinar-model-stools",
+        "step": 1
+      }
+    },
+    {
+      "id": "encinar-link-stools-stage-2",
+      "source": "encinar-model-stools",
+      "target": "encinar-stage-oak-under-pines",
+      "label": "includes conditional stage",
+      "explanation": "Source model stools, ordered step 2. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {
+        "model": "encinar-model-stools",
+        "step": 2
+      }
+    },
+    {
+      "id": "encinar-link-stools-stage-3",
+      "source": "encinar-model-stools",
+      "target": "encinar-stage-mixed-stand-management",
+      "label": "includes conditional stage",
+      "explanation": "Source model stools, ordered step 3. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {
+        "model": "encinar-model-stools",
+        "step": 3
+      }
+    },
+    {
+      "id": "encinar-link-stools-stage-4",
+      "source": "encinar-model-stools",
+      "target": "encinar-stage-site-consolidation",
+      "label": "includes conditional stage",
+      "explanation": "Source model stools, ordered step 4. Sequence is conditional technical guidance, with no guaranteed transition or duration.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {
+        "model": "encinar-model-stools",
+        "step": 4
+      }
+    },
+    {
+      "id": "encinar-link-stools-sequence-stool-recovery",
+      "source": "encinar-stage-stool-recovery",
+      "target": "encinar-stage-oak-under-pines",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-stools only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {
+        "model": "encinar-model-stools",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-stools-sequence-oak-under-pines",
+      "source": "encinar-stage-oak-under-pines",
+      "target": "encinar-stage-mixed-stand-management",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-stools only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {
+        "model": "encinar-model-stools",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-stools-sequence-mixed-stand-management",
+      "source": "encinar-stage-mixed-stand-management",
+      "target": "encinar-stage-site-consolidation",
+      "label": "precedes in source model",
+      "explanation": "Order within encinar-model-stools only. It is not an inevitable ecological succession, elapsed-time estimate or working schedule.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.3. Etapas de restauración; continuation; PDF position 10, printed page 102",
+          "label": "Surviving oak stools: regeneration and stand management",
+          "page": 10
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {
+        "model": "encinar-model-stools",
+        "relation_scope": "conditional source sequence"
+      }
+    },
+    {
+      "id": "encinar-link-stage-formation-pioneers",
+      "source": "encinar-stage-pioneer-cover",
+      "target": "pine-woodland",
+      "label": "concerns vegetation structure",
+      "explanation": "The model explicitly describes this vegetation structure; the link gives no species inventory, planting quantity or beneficial pairing beyond the cited conditions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-stage-formation-understorey",
+      "source": "encinar-stage-oak-under-pines",
+      "target": "pine-encina-understorey",
+      "label": "concerns vegetation structure",
+      "explanation": "The model explicitly describes this vegetation structure; the link gives no species inventory, planting quantity or beneficial pairing beyond the cited conditions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-stage-formation-mixed",
+      "source": "encinar-stage-mixed-stand-management",
+      "target": "mixed-pine-encina-woodland",
+      "label": "concerns vegetation structure",
+      "explanation": "The model explicitly describes this vegetation structure; the link gives no species inventory, planting quantity or beneficial pairing beyond the cited conditions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-stage-formation-shelter",
+      "source": "encinar-stage-shrub-recovery",
+      "target": "structured-shrub-restoration-cover",
+      "label": "concerns vegetation structure",
+      "explanation": "The model explicitly describes this vegetation structure; the link gives no species inventory, planting quantity or beneficial pairing beyond the cited conditions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-stage-formation-mats",
+      "source": "encinar-stage-stool-recovery",
+      "target": "encina-scrub-mosaic",
+      "label": "concerns vegetation structure",
+      "explanation": "The model explicitly describes this vegetation structure; the link gives no species inventory, planting quantity or beneficial pairing beyond the cited conditions.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-outcome-encinar-community",
+      "source": "encinar-restoration",
+      "target": "encinar-community",
+      "label": "may retain as an outcome",
+      "explanation": "Possible outcome differentiated by initial condition, terrain, soil and moisture. The models do not prescribe oak dominance everywhere.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-outcome-mixed-pine-encina-woodland",
+      "source": "encinar-restoration",
+      "target": "mixed-pine-encina-woodland",
+      "label": "may retain as an outcome",
+      "explanation": "Possible outcome differentiated by initial condition, terrain, soil and moisture. The models do not prescribe oak dominance everywhere.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-outcome-pine-woodland",
+      "source": "encinar-restoration",
+      "target": "pine-woodland",
+      "label": "may retain as an outcome",
+      "explanation": "Possible outcome differentiated by initial condition, terrain, soil and moisture. The models do not prescribe oak dominance everywhere.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-outcome-broadleaf-gallery-restoration-context",
+      "source": "encinar-restoration",
+      "target": "broadleaf-gallery-restoration-context",
+      "label": "may retain as an outcome",
+      "explanation": "Possible outcome differentiated by initial condition, terrain, soil and moisture. The models do not prescribe oak dominance everywhere.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-outcome-encina-scrub-mosaic",
+      "source": "encinar-restoration",
+      "target": "encina-scrub-mosaic",
+      "label": "may retain as an outcome",
+      "explanation": "Possible outcome differentiated by initial condition, terrain, soil and moisture. The models do not prescribe oak dominance everywhere.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-project-implementer",
+      "source": "gea-gador-reforestation-2018-2019",
+      "target": "gea-andarax",
+      "label": "reported as implemented by",
+      "explanation": "GEA describes its own volunteer campaign.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-project-site-zarba",
+      "source": "gea-gador-reforestation-2018-2019",
+      "target": "gea-la-zarba",
+      "label": "sowing reported at",
+      "explanation": "Location named in the implementer account; no invented cadastral extent.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-project-site-marques",
+      "source": "gea-gador-reforestation-2018-2019",
+      "target": "gea-aljibe-marques",
+      "label": "sowing reported at",
+      "explanation": "Location named in the implementer account; no invented cadastral extent.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-project-species-encina",
+      "source": "gea-gador-reforestation-2018-2019",
+      "target": "holm-oak",
+      "label": "sowing or cover species in report",
+      "explanation": "The source explicitly calls the encina Quercus ilex and coscoja Quercus coccifera, and describes existing pinar carrasco. Acorn inputs and cover trees have different roles. No source-concept taxonomic merge is made.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; source names and seed provenance; main author post, excluding reader comments",
+          "label": "GEA: seed origin and vegetation observed at the sowing sites"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ],
+      "context": {
+        "species_role": "sown encina/coscoja acorns; counts not separated by species"
+      }
+    },
+    {
+      "id": "encinar-link-project-species-coscoja",
+      "source": "gea-gador-reforestation-2018-2019",
+      "target": "kermes-oak",
+      "label": "sowing or cover species in report",
+      "explanation": "The source explicitly calls the encina Quercus ilex and coscoja Quercus coccifera, and describes existing pinar carrasco. Acorn inputs and cover trees have different roles. No source-concept taxonomic merge is made.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; source names and seed provenance; main author post, excluding reader comments",
+          "label": "GEA: seed origin and vegetation observed at the sowing sites"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ],
+      "context": {
+        "species_role": "sown encina/coscoja acorns; counts not separated by species"
+      }
+    },
+    {
+      "id": "encinar-link-project-species-pine",
+      "source": "gea-gador-reforestation-2018-2019",
+      "target": "aleppo-pine",
+      "label": "sowing or cover species in report",
+      "explanation": "The source explicitly calls the encina Quercus ilex and coscoja Quercus coccifera, and describes existing pinar carrasco. Acorn inputs and cover trees have different roles. No source-concept taxonomic merge is made.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; source names and seed provenance; main author post, excluding reader comments",
+          "label": "GEA: seed origin and vegetation observed at the sowing sites"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ],
+      "context": {
+        "species_role": "existing nurse canopy"
+      }
+    },
+    {
+      "id": "encinar-link-project-model-comparison",
+      "source": "gea-gador-reforestation-2018-2019",
+      "target": "encinar-stage-oak-under-pines",
+      "label": "illustrates a related restoration approach",
+      "explanation": "Curated comparison: sowing oaks under previously thinned pine cover resembles one approach in the 1996 guidance. There is no evidence that GEA implemented this particular paper or all its stages.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-oak-local-history",
+      "source": "sierra-gador-encinar-history",
+      "target": "holm-oak-rotundifolia",
+      "label": "documents regional encina identity",
+      "explanation": "The local plan explicitly names Quercus rotundifolia in Gádor vegetation series. It does not resolve every other source’s use of Q. ilex or identify an individual tree.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; biogeografía; PDF position 39, printed page 38; retained source footer PÁGINA 39/104",
+          "label": "Gádor vegetation series: Quercus rotundifolia and sheltered refuges",
+          "page": 39
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-history-formation",
+      "source": "sierra-gador-encinar-history",
+      "target": "encinar-community",
+      "label": "documents former woodland context",
+      "explanation": "Former extensive encinares and present refuges are described regionally; no former parcel cover or density is inferred.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; PDF position 38, printed page 37; retained source footer PÁGINA 38/104",
+          "label": "Former encinares and surviving woodland refuges",
+          "page": 38
+        },
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; biogeografía; PDF position 39, printed page 38; retained source footer PÁGINA 39/104",
+          "label": "Gádor vegetation series: Quercus rotundifolia and sheltered refuges",
+          "page": 39
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-history-pine-plantations",
+      "source": "sierra-gador-encinar-history",
+      "target": "pine-woodland",
+      "label": "also describes modern pine plantations",
+      "explanation": "The plan distinguishes relatively recent pine plantations and their altered shrub/soil structure from former encinar and open habitats.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3.1.1. Pinares de repoblación; 3.1.2. Matorral de baja montaña; PDF position 42, printed page 41; retained source footer PÁGINA 42/104",
+          "label": "Pine plantations and valuable open scrub habitats",
+          "page": 42
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-history-mining-landscape",
+      "source": "sierra-gador-encinar-history",
+      "target": "sierra-gador-mining-landscape",
+      "label": "contextualizes landscape history",
+      "explanation": "Curated regional connection between historical woodland loss/mining and the separately EDLL-identified mining landscape. This does not make each encinar patch a legally designated asset.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0153",
+          "locator": "6.3.4. Repercusiones económicas, sociales y ambientales; PDF position 111, printed page 104",
+          "label": "Mining-related clearance: historical area and tree estimates",
+          "page": 111
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "locator": "Paisaje minero de la Sierra de Gádor; ficha 84; PDF position 329",
+          "label": "Gádor mining cultural landscape: local EDLL description",
+          "page": 329
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-encinar-natural",
+      "source": "encinar-community",
+      "target": "natural-heritage",
+      "label": "provides heritage or restoration context",
+      "explanation": "Curated investigation link: the sources support the component facts and thematic connection. This is not an asset designation, proof of ancient local occurrence, project ownership, eligibility or an award.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-gador-landscape",
+      "source": "sierra-gador-encinar-history",
+      "target": "rural-landscape-heritage",
+      "label": "provides heritage or restoration context",
+      "explanation": "Curated investigation link: the sources support the component facts and thematic connection. This is not an asset designation, proof of ancient local occurrence, project ownership, eligibility or an award.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0153",
+          "locator": "6.3.4. Repercusiones económicas, sociales y ambientales; PDF position 111, printed page 104",
+          "label": "Mining-related clearance: historical area and tree estimates",
+          "page": 111
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-carob-natural",
+      "source": "traditional-carob-heritage",
+      "target": "natural-heritage",
+      "label": "provides heritage or restoration context",
+      "explanation": "Curated investigation link: the sources support the component facts and thematic connection. This is not an asset designation, proof of ancient local occurrence, project ownership, eligibility or an award.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "locator": "Conservación in situ; PDF position 57",
+          "label": "Old carob genetic and cultural value",
+          "page": 57
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-carob-agrarian",
+      "source": "traditional-carob-heritage",
+      "target": "rural-water-agrarian-heritage",
+      "label": "provides heritage or restoration context",
+      "explanation": "Curated investigation link: the sources support the component facts and thematic connection. This is not an asset designation, proof of ancient local occurrence, project ownership, eligibility or an award.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "locator": "Recursos genéticos; PDF position 45",
+          "label": "Traditional carob resources in Andalucía",
+          "page": 45
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-carob-species",
+      "source": "traditional-carob-heritage",
+      "target": "carob",
+      "label": "provides heritage or restoration context",
+      "explanation": "Curated investigation link: the sources support the component facts and thematic connection. This is not an asset designation, proof of ancient local occurrence, project ownership, eligibility or an award.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "locator": "Conservación in situ; PDF position 57",
+          "label": "Old carob genetic and cultural value",
+          "page": 57
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-funding-natural",
+      "source": "encinar-heritage-funding-context",
+      "target": "natural-heritage",
+      "label": "provides heritage or restoration context",
+      "explanation": "Curated investigation link: the sources support the component facts and thematic connection. This is not an asset designation, proof of ancient local occurrence, project ownership, eligibility or an award.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4; PDF position 395",
+          "label": "NPL3 heritage and NPL4 soil-regeneration priorities",
+          "page": 395
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-funding-restoration",
+      "source": "encinar-heritage-funding-context",
+      "target": "encinar-restoration",
+      "label": "provides heritage or restoration context",
+      "explanation": "Curated investigation link: the sources support the component facts and thematic connection. This is not an asset designation, proof of ancient local occurrence, project ownership, eligibility or an award.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; PDF position 123",
+          "label": "3.5: heritage recovery and production exclusions",
+          "page": 123
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; condiciones; PDF position 124",
+          "label": "3.5: public use and forest-management conditions",
+          "page": 124
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-heritage-project",
+      "source": "gea-gador-reforestation-2018-2019",
+      "target": "sierra-gador-encinar-history",
+      "label": "provides heritage or restoration context",
+      "explanation": "Curated investigation link: the sources support the component facts and thematic connection. This is not an asset designation, proof of ancient local occurrence, project ownership, eligibility or an award.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        },
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; biogeografía; PDF position 39, printed page 38; retained source footer PÁGINA 39/104",
+          "label": "Gádor vegetation series: Quercus rotundifolia and sheltered refuges",
+          "page": 39
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-funding-rural-studies",
+      "source": "encinar-heritage-funding-context",
+      "target": "rural-studies",
+      "label": "operation type to examine",
+      "explanation": "Investigate a documented inventory or usable heritage plan; construction-only technical designs have distinct exclusions. This is curator context, not an eligibility assessment or open-call verification.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.1; PDF position 113",
+          "label": "3.1: heritage studies and plans",
+          "page": 113
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-funding-rural-awareness",
+      "source": "encinar-heritage-funding-context",
+      "target": "rural-awareness",
+      "label": "operation type to examine",
+      "explanation": "Investigate heritage information and awareness work with a documented public purpose. This is curator context, not an eligibility assessment or open-call verification.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.3; PDF position 118",
+          "label": "3.3: heritage information and awareness",
+          "page": 118
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-funding-demonstration",
+      "source": "encinar-heritage-funding-context",
+      "target": "demonstration",
+      "label": "operation type to examine",
+      "explanation": "A proposal would need the applicable new/locally unknown technique and nonproductive/public-results conditions; ordinary planting is not automatically a demonstration. This is curator context, not an eligibility assessment or open-call verification.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; PDF position 120",
+          "label": "3.4: demonstration purpose and novelty",
+          "page": 120
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; condiciones; PDF position 121",
+          "label": "3.4: nonproductive character and public results",
+          "page": 121
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-funding-heritage-conservation",
+      "source": "encinar-heritage-funding-context",
+      "target": "heritage-conservation",
+      "label": "operation type to examine",
+      "explanation": "A proposal would need documented heritage value and a qualifying nonproductive conservation/recovery purpose; production/forestry exclusions remain. This is curator context, not an eligibility assessment or open-call verification.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; PDF position 123",
+          "label": "3.5: heritage recovery and production exclusions",
+          "page": 123
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; condiciones; PDF position 124",
+          "label": "3.5: public use and forest-management conditions",
+          "page": 124
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-condition-nonproductive-heritage",
+      "source": "encinar-heritage-funding-context",
+      "target": "nonproductive-heritage",
+      "label": "requires separate applicability review",
+      "explanation": "The named condition belongs to its documented operation type and must be checked against a concrete proposal. This intake does not satisfy it.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; PDF position 123",
+          "label": "3.5: heritage recovery and production exclusions",
+          "page": 123
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; condiciones; PDF position 124",
+          "label": "3.5: public use and forest-management conditions",
+          "page": 124
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-condition-heritage-public-use",
+      "source": "encinar-heritage-funding-context",
+      "target": "heritage-public-use",
+      "label": "requires separate applicability review",
+      "explanation": "The named condition belongs to its documented operation type and must be checked against a concrete proposal. This intake does not satisfy it.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; PDF position 123",
+          "label": "3.5: heritage recovery and production exclusions",
+          "page": 123
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; condiciones; PDF position 124",
+          "label": "3.5: public use and forest-management conditions",
+          "page": 124
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-condition-forest-management-plan",
+      "source": "encinar-heritage-funding-context",
+      "target": "forest-management-plan",
+      "label": "requires separate applicability review",
+      "explanation": "The named condition belongs to its documented operation type and must be checked against a concrete proposal. This intake does not satisfy it.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; PDF position 123",
+          "label": "3.5: heritage recovery and production exclusions",
+          "page": 123
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; condiciones; PDF position 124",
+          "label": "3.5: public use and forest-management conditions",
+          "page": 124
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-condition-demonstration-novelty",
+      "source": "encinar-heritage-funding-context",
+      "target": "demonstration-novelty",
+      "label": "requires separate applicability review",
+      "explanation": "The named condition belongs to its documented operation type and must be checked against a concrete proposal. This intake does not satisfy it.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; PDF position 120",
+          "label": "3.4: demonstration purpose and novelty",
+          "page": 120
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; condiciones; PDF position 121",
+          "label": "3.4: nonproductive character and public results",
+          "page": 121
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-condition-public-results",
+      "source": "encinar-heritage-funding-context",
+      "target": "public-results",
+      "label": "requires separate applicability review",
+      "explanation": "The named condition belongs to its documented operation type and must be checked against a concrete proposal. This intake does not satisfy it.",
+      "basis": "curated",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; PDF position 120",
+          "label": "3.4: demonstration purpose and novelty",
+          "page": 120
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; condiciones; PDF position 121",
+          "label": "3.4: nonproductive character and public results",
+          "page": 121
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-ecology-soil-depth",
+      "source": "encinar-restoration",
+      "target": "soil-depth",
+      "label": "depends on site conditions",
+      "explanation": "The model conditions oak establishment and vegetation outcomes on soil, terrain, shelter and available moisture; it supplies no event watering dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1.1. Consideraciones generales; PDF position 1, printed page 93",
+          "label": "Young encinas: shelter, soils and regeneration",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-ecology-runoff",
+      "source": "encinar-restoration",
+      "target": "runoff",
+      "label": "depends on site conditions",
+      "explanation": "The model conditions oak establishment and vegetation outcomes on soil, terrain, shelter and available moisture; it supplies no event watering dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-ecology-seedling-drought-stress",
+      "source": "encinar-restoration",
+      "target": "seedling-drought-stress",
+      "label": "depends on site conditions",
+      "explanation": "The model conditions oak establishment and vegetation outcomes on soil, terrain, shelter and available moisture; it supplies no event watering dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1.1. Consideraciones generales; PDF position 1, printed page 93",
+          "label": "Young encinas: shelter, soils and regeneration",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        }
+      ],
+      "context": {}
+    },
+    {
+      "id": "encinar-link-ecology-species-site-fit",
+      "source": "encinar-restoration",
+      "target": "species-site-fit",
+      "label": "depends on site conditions",
+      "explanation": "The model conditions oak establishment and vegetation outcomes on soil, terrain, shelter and available moisture; it supplies no event watering dose.",
+      "basis": "source",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        }
+      ],
+      "context": {}
+    }
+  ],
+  "findings": [
+    {
+      "id": "encinar-finding-formation-scope",
+      "label": "Formations and models, rather than new botanical associations",
+      "text": "The 1996 paper presents broad woodland/scrub formations and conditional restoration models. Its diagrams should be read as source guidance selected by initial vegetation and site resources, not as descriptions of new formal plant associations or an inevitable pine-to-oak succession.",
+      "topic_ids": [
+        "encinar-restoration",
+        "encinar-community",
+        "mixed-pine-encina-woodland",
+        "pine-encina-understorey",
+        "encina-scrub-mosaic",
+        "structured-shrub-restoration-cover",
+        "broadleaf-gallery-restoration-context"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "aspects": {
+        "claim_class": "curator assessment of the checked source structure"
+      }
+    },
+    {
+      "id": "encinar-finding-gador-identity",
+      "label": "Gádor encina identity and vegetation-series context",
+      "text": "The 2025 local plan identifies Quercus rotundifolia as the encina of the massif’s main vegetation series. It separately names the peripheral siliceous Adenocarpo decorticantis-Querceto rotundifoliae S. and sheltered, more humid maple/quejigo refuges in Daphno latifoliae-Acereto granatensis S. These are source-reported regional vegetation-series concepts, not proof of present stands on a selected parcel. Source Q. ilex and Q. rotundifolia identities remain separate in the graph.",
+      "topic_ids": [
+        "sierra-gador-encinar-history",
+        "holm-oak-rotundifolia",
+        "encinar-community"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; biogeografía; PDF position 39, printed page 38; retained source footer PÁGINA 39/104",
+          "label": "Gádor vegetation series: Quercus rotundifolia and sheltered refuges",
+          "page": 39
+        }
+      ]
+    },
+    {
+      "id": "encinar-finding-clearance-estimate",
+      "label": "Historical mining-clearance estimates have limited quantitative meaning",
+      "text": "The Andarax baseline reproduces an estimate of 28,000 ha of encinar uprooted and about half a million trees, citing Sánchez Picón (1996:169–202). It also reports removal of over 40,000–50,000 ha of esparto vegetation. These are secondary historical estimates of clearance associated with smelting, not a contemporary ecological census; the underlying historical reconstruction has not been independently inspected here.",
+      "topic_ids": [
+        "sierra-gador-encinar-history",
+        "encinar-community",
+        "esparto-grassland"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0153",
+          "locator": "6.3.4. Repercusiones económicas, sociales y ambientales; PDF position 111, printed page 104",
+          "label": "Mining-related clearance: historical area and tree estimates",
+          "page": 111
+        }
+      ],
+      "aspects": {
+        "claim_class": "source-reported historical estimate; secondary citation",
+        "underlying_source_review": "Sánchez Picón 1996 not independently inspected"
+      }
+    },
+    {
+      "id": "encinar-finding-density-calculation",
+      "label": "About 18 trees/ha is a derived ratio, not measured stand density",
+      "text": "Dividing the quoted rounded estimates, 500,000 trees / 28,000 ha = approximately 17.9 trees/ha. This calculation does not establish tree spacing, canopy cover, density within actual stands, density at any parcel or an appropriate planting target. The area and tree estimates may have different reconstruction assumptions.",
+      "topic_ids": [
+        "sierra-gador-encinar-history",
+        "encinar-community"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0153",
+          "locator": "6.3.4. Repercusiones económicas, sociales y ambientales; PDF position 111, printed page 104",
+          "label": "Mining-related clearance: historical area and tree estimates",
+          "page": 111
+        }
+      ],
+      "aspects": {
+        "claim_class": "calculation",
+        "formula": "500000 trees / 28000 ha",
+        "units": "trees/ha",
+        "use_limit": "not an observed or adoptable density"
+      }
+    },
+    {
+      "id": "encinar-finding-ages-not-known",
+      "label": "Felling ages are not established",
+      "text": "The reviewed local woodland and mining-clearance passages give no age distribution for felled encinas. The restoration paper’s capacity for resprouting at advanced ages or persistence as oak mats cannot be used to infer how old Gádor trees were when cut.",
+      "topic_ids": [
+        "sierra-gador-encinar-history",
+        "holm-oak-rotundifolia"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0153",
+          "locator": "6.3.4. Repercusiones económicas, sociales y ambientales; PDF position 111, printed page 104",
+          "label": "Mining-related clearance: historical area and tree estimates",
+          "page": 111
+        },
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; PDF position 38, printed page 37; retained source footer PÁGINA 38/104",
+          "label": "Former encinares and surviving woodland refuges",
+          "page": 38
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1.1. Consideraciones generales; PDF position 1, printed page 93",
+          "label": "Young encinas: shelter, soils and regeneration",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        }
+      ],
+      "aspects": {
+        "claim_class": "documentary limit"
+      }
+    },
+    {
+      "id": "encinar-finding-shelter-and-water",
+      "label": "Shelter can help establishment while shrubs also compete",
+      "text": "The paper recommends suitable cover for young encinas on exposed warm sites, with particular difficulty noted for Gádor and Filabres. It also describes competition for water and soil resources after oak introduction into established shrubs. Shelter, soil and selective competition management must be assessed together; the source gives no litre-per-tree comparison with carob.",
+      "topic_ids": [
+        "encinar-restoration",
+        "encinar-stage-oak-under-shrubs",
+        "encinar-stage-shrub-competition",
+        "seedling-drought-stress"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1.1. Consideraciones generales; PDF position 1, printed page 93",
+          "label": "Young encinas: shelter, soils and regeneration",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        }
+      ]
+    },
+    {
+      "id": "encinar-finding-direct-oak-exception",
+      "label": "Favourable microsites can allow direct oak introduction",
+      "text": "Even within the eroded-ground model, deeper/better soil, runoff reception and well-conserved shrub shelter can permit direct oak establishment. A preliminary pine stage is not a universal prerequisite.",
+      "topic_ids": [
+        "encinar-model-eroded",
+        "encinar-stage-pioneer-cover",
+        "encinar-community"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        }
+      ]
+    },
+    {
+      "id": "encinar-finding-mosaic-outcomes",
+      "label": "Restoration outcomes depend on terrain and moisture",
+      "text": "The models differentiate encinar on favourable runoff-receiving/foot-slope/shady ground, pine or pine-with-oak structures on poorer/drier runoff-exporting settings, mixed stands in transitions, broadleaf galleries in drainage lines, and scrub in exposed/rocky settings. These are qualitative source-model categories; no fixed thresholds, durations or guaranteed outcomes are established.",
+      "topic_ids": [
+        "encinar-restoration",
+        "encinar-community",
+        "mixed-pine-encina-woodland",
+        "pine-encina-understorey",
+        "encina-scrub-mosaic",
+        "structured-shrub-restoration-cover",
+        "broadleaf-gallery-restoration-context",
+        "pine-woodland"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.1, phases 3–4; 8.2, phases 1–2; PDF position 8, printed page 100",
+          "label": "Mixed stands, terrain and shrub-shelter stages",
+          "page": 8
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ]
+    },
+    {
+      "id": "encinar-finding-open-habitat",
+      "label": "Open habitats retain conservation value",
+      "text": "The local plan describes terraced, predominantly Aleppo-pine plantations with reduced shrub development, alongside low-mountain open scrub/esparto habitats valuable to steppe birds. Historic woodland loss alone does not justify afforestation of every present open habitat. Restoration needs a current habitat and conservation-objective assessment.",
+      "topic_ids": [
+        "sierra-gador-encinar-history",
+        "encinar-restoration",
+        "pine-woodland",
+        "esparto-grassland"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3.1.1. Pinares de repoblación; 3.1.2. Matorral de baja montaña; PDF position 42, printed page 41; retained source footer PÁGINA 42/104",
+          "label": "Pine plantations and valuable open scrub habitats",
+          "page": 42
+        }
+      ],
+      "aspects": {
+        "claim_class": "source observation plus explicit curator implication"
+      }
+    },
+    {
+      "id": "encinar-finding-carob-heritage",
+      "label": "Old carob trees can have cultural and genetic heritage value",
+      "text": "The handbook describes conservation of old carob trees and traditional cultivars as genetic and cultural resources, including in-situ conservation and land-custody work. This corrects the categorical idea that carob cannot be rural heritage; significance must be established for the particular trees, practices or landscape.",
+      "topic_ids": [
+        "traditional-carob-heritage",
+        "carob",
+        "natural-heritage"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "locator": "Conservación de recursos genéticos; PDF position 45",
+          "label": "Traditional Andalusian carob resources",
+          "page": 45
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "Conservación in situ; PDF position 57",
+          "label": "Old carob trees: genetic and cultural conservation value",
+          "page": 57
+        }
+      ]
+    },
+    {
+      "id": "encinar-finding-carob-rainfall",
+      "label": "Carob rainfall adaptation is not an establishment watering dose",
+      "text": "The handbook describes adaptation to roughly 250–300 mm annual rainfall, while recommending establishment in areas above about 500–550 mm or with irrigation options. Its MR2 model also addresses sites below 300 mm with appropriate soil and runoff-water harvesting. Annual climatic rainfall, concentrated runoff and an establishment irrigation dose have different denominators and cannot be substituted for one another.",
+      "topic_ids": [
+        "carob",
+        "encinar-restoration",
+        "water-harvesting"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FOREST-002",
+          "locator": "1.3. Características ecológicas; PDF position 20",
+          "label": "Carob rainfall adaptation and establishment conditions",
+          "page": 20
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "Modelo de restauración MR2; PDF position 131",
+          "label": "MR2: dryland restoration and runoff harvesting",
+          "page": 131
+        }
+      ],
+      "aspects": {
+        "claim_class": "source guidance",
+        "irrigation_adoption": "none; no L/plant/event or oak/carob dose ratio inferred"
+      }
+    },
+    {
+      "id": "encinar-finding-growth-context",
+      "label": "Growth comparison depends on age and growing conditions",
+      "text": "The encinar paper calls encina slow-growing and explains why restoration takes a long time. The carob handbook describes relatively slow growth in natural conditions but relatively rapid juvenile/nursery growth. These observations concern different settings; the reviewed sources establish neither a universal oak/carob growth ratio nor comparable cm/year values for dryland Gádor.",
+      "topic_ids": [
+        "encinar-restoration",
+        "encinar-community",
+        "carob"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "1.3. Características ecológicas; PDF position 20",
+          "label": "Carob growth in natural conditions",
+          "page": 20
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "Cultivo de plantas; Fertilización; PDF position 77",
+          "label": "Carob juvenile growth and nursery nutrition",
+          "page": 77
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "Atributos de calidad de las plantas en cultivos de ciclo corto; PDF position 79",
+          "label": "Carob nursery growth and field-response limits",
+          "page": 79
+        }
+      ]
+    },
+    {
+      "id": "encinar-finding-project-evidence",
+      "label": "Reforestation happened; reported inputs are not survival results",
+      "text": "The GEA case provides a concrete encina/coscoja restoration example. Counts are acorns sown, not established trees. The implementer’s earlier-care and failed-planting observations are not controlled causal comparisons or a verified long-term survival rate.",
+      "topic_ids": [
+        "gea-gador-reforestation-2018-2019",
+        "sierra-gador-encinar-history"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Tenemos algunas experiencias previas; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA: earlier plantings, care and planting setbacks"
+        }
+      ]
+    },
+    {
+      "id": "encinar-finding-project-provenance",
+      "label": "Project seed origin and observed companions retain their source scope",
+      "text": "GEA reports seed mainly from Sierra de Segura and lists existing Q. ilex, Q. coccifera, Q. faginea, Lonicera sp., Daphne gnidium, Juniperus oxycedrus and source spelling Rhamnus myrtifolius at the intervention sites. These are reported observations, not a verified complete association or planting recipe. Local-provenance suitability and unreviewed taxonomic spellings are not inferred.",
+      "topic_ids": [
+        "gea-gador-reforestation-2018-2019",
+        "local-provenance",
+        "holm-oak",
+        "kermes-oak"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; source names and seed provenance; main author post, excluding reader comments",
+          "label": "GEA: seed origin and vegetation observed at the sowing sites"
+        }
+      ]
+    },
+    {
+      "id": "encinar-finding-funding-scope",
+      "label": "Ecological value and a funding operation require separate evidence",
+      "text": "The legal definition allows documented environmental/landscape heritage, while AL20’s strategy provides heritage and soil-regeneration context. The 3.5 production exclusions and public/forest-planning conditions, and 3.4 demonstration requirements, remain operation-specific. This synthesis creates no project proposal, eligibility decision, selection points or award.",
+      "topic_ids": [
+        "encinar-heritage-funding-context",
+        "natural-heritage",
+        "heritage-conservation",
+        "demonstration"
+      ],
+      "kind": "finding",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4; PDF position 395",
+          "label": "NPL3 heritage and NPL4 soil-regeneration priorities",
+          "page": 395
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; PDF position 123",
+          "label": "3.5: heritage recovery and production exclusions",
+          "page": 123
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; condiciones; PDF position 124",
+          "label": "3.5: public use and forest-management conditions",
+          "page": 124
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; PDF position 120",
+          "label": "3.4: demonstration purpose and novelty",
+          "page": 120
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; condiciones; PDF position 121",
+          "label": "3.4: nonproductive character and public results",
+          "page": 121
+        }
+      ],
+      "aspects": {
+        "claim_class": "curator synthesis of checked legal/strategy passages"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "source_id": "FOREST-002",
+      "page": 45,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Andalusian traditional dryland carob resources. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 57,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Old carob trees: genetic and cultural conservation value. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "FOREST-002",
+      "page": 77,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Carob juvenile growth and nursery nutrition. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 1,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Young encinas: shelter, soils and regeneration. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 2,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Pioneer vegetation and conditions for mixed stands. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 6,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Historical Ceballos regression model: source context. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 7,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Initial conditions and eroded-ground stages. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 8,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Mixed stands, terrain and shrub-shelter stages. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 9,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Gádor shelter, shrub competition and surviving oak mats. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 10,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Surviving oak stools: regeneration and stand management. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 11,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Diagram 1: eroded-ground restoration and site-dependent outcomes. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 12,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Diagram 2: shrub-covered ground and differentiated outcomes. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0151",
+      "page": 13,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Diagram 3: surviving oak mats and vegetation mosaic. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0152",
+      "page": 38,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Former encinares and surviving woodland refuges. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0152",
+      "page": 39,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Gádor vegetation series: Quercus rotundifolia and sheltered refuges. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0152",
+      "page": 42,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Pine plantations and valuable open scrub habitats. Review limited to cited subject; unread pages are not claimed ingested."
+    },
+    {
+      "source_id": "KGB-SRC-0153",
+      "page": 111,
+      "status": "inspected",
+      "note": "Focused encinar/heritage intake: Mining-related clearance: historical area and tree estimates. Review limited to cited subject; unread pages are not claimed ingested."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "encinar-gap-felling-ages",
+      "text": "Age at felling remains unknown. Seek primary historical forest/mining inventories or dated tree evidence; longevity and resprouting capacity do not supply felling ages.",
+      "topic_ids": [
+        "sierra-gador-encinar-history",
+        "holm-oak-rotundifolia"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0153",
+          "locator": "6.3.4. Repercusiones económicas, sociales y ambientales; PDF position 111, printed page 104",
+          "label": "Mining-related clearance: historical area and tree estimates",
+          "page": 111
+        },
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; PDF position 38, printed page 37; retained source footer PÁGINA 38/104",
+          "label": "Former encinares and surviving woodland refuges",
+          "page": 38
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1.1. Consideraciones generales; PDF position 1, printed page 93",
+          "label": "Young encinas: shelter, soils and regeneration",
+          "page": 1
+        }
+      ]
+    },
+    {
+      "id": "encinar-gap-historical-estimates",
+      "text": "Review Sánchez Picón (1996:169–202) and the definitions/assumptions behind 28,000 ha and half a million trees before quantitative ecological use.",
+      "topic_ids": [
+        "sierra-gador-encinar-history",
+        "encinar-community"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0153",
+          "locator": "6.3.4. Repercusiones económicas, sociales y ambientales; PDF position 111, printed page 104",
+          "label": "Mining-related clearance: historical area and tree estimates",
+          "page": 111
+        }
+      ]
+    },
+    {
+      "id": "encinar-gap-oak-carob-comparison",
+      "text": "No directly comparable local trial establishes oak/carob cm/year, L/plant/event or a universal water-demand ratio. Separate life stage, rooting depth, soil, climate, runoff and management.",
+      "topic_ids": [
+        "encinar-restoration",
+        "carob",
+        "holm-oak-rotundifolia"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1.1. Consideraciones generales; PDF position 1, printed page 93",
+          "label": "Young encinas: shelter, soils and regeneration",
+          "page": 1
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "8.2, phases 2–5; 8.3; PDF position 9, printed page 101",
+          "label": "Gádor shelter, shrub competition and surviving oak mats",
+          "page": 9
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "1.3. Características ecológicas; PDF position 20",
+          "label": "Carob ecological requirements",
+          "page": 20
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "Atributos de calidad; PDF position 79",
+          "label": "Nursery growth and field-response limits",
+          "page": 79
+        }
+      ]
+    },
+    {
+      "id": "encinar-gap-los-millares",
+      "text": "Los Millares has a separately documented cultural-landscape entry. Ancient tree species, abundance and chronology still need reviewed original archaeobotanical evidence; neither the Gádor estimates nor modern carob associations establish prehistoric vegetation there.",
+      "topic_ids": [
+        "los-millares-cultural-landscape",
+        "sierra-gador-encinar-history",
+        "traditional-carob-heritage"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0021",
+          "locator": "Paisaje del yacimiento arqueológico de Los Millares; ficha 1; PDF position 328",
+          "label": "Los Millares: cultural-landscape description",
+          "page": 328
+        }
+      ]
+    },
+    {
+      "id": "encinar-gap-project-followup",
+      "text": "GEA 2018–19: subsequent monitored survival, species-separated established counts, seed-provenance suitability and financing are not established by the reviewed implementer post.",
+      "topic_ids": [
+        "gea-gador-reforestation-2018-2019",
+        "local-provenance"
+      ],
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; source names and seed provenance; main author post, excluding reader comments",
+          "label": "GEA: seed origin and vegetation observed at the sowing sites"
+        }
+      ]
+    },
+    {
+      "id": "encinar-gap-local-heritage-proof",
+      "text": "A particular parcel, old tree or restoration proposal still needs a local asset inventory, historic/ecological evidence, recognition route, conservation objective and operation-specific funding review. No current open-call status is established by this intake.",
+      "topic_ids": [
+        "encinar-heritage-funding-context",
+        "sierra-gador-encinar-history",
+        "traditional-carob-heritage"
+      ],
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4; PDF position 395",
+          "label": "NPL3 heritage and NPL4 soil-regeneration priorities",
+          "page": 395
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; PDF position 123",
+          "label": "3.5: heritage recovery and production exclusions",
+          "page": 123
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; condiciones; PDF position 124",
+          "label": "3.5: public use and forest-management conditions",
+          "page": 124
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "KGB-SRC-0151",
+      "filename": "encinar-restoration-1996.pdf",
+      "kind": "pdf",
+      "managed_path": "sources/encinar-heritage-20261112/encinar-restoration-1996.pdf",
+      "sha256": "30e6b38bba66afc36e639c478909d9b601d0ac356e51c0547ed66f92abed6b5a",
+      "language": "es",
+      "title": "Restauración de encinares. Modelos y técnicas de restauración. Masas mixtas (1996)",
+      "issuer": "Estanislao de Simón Navarrete; Cuadernos de la Sociedad Española de Ciencias Forestales 3",
+      "publication_date": "1996-10",
+      "url": "https://dialnet.unirioja.es/descarga/articulo/8156905.pdf",
+      "library_path": "doc_library/FOREST-005 - Spain - Encinar Restoration Models and Mixed Stands - 1996.pdf",
+      "initial_pdf_page_ranges": [
+        [
+          1,
+          2
+        ],
+        [
+          6,
+          13
+        ]
+      ],
+      "edition_note": "Original downloaded article; Cuadernos SECF 3, October 1996, printed 93–107. Meeting September 1995 is not publication date. Only specified pages reviewed.",
+      "pdf_pages": 15,
+      "page_labels": {
+        "1": "Young encinas: shelter, soils and regeneration",
+        "2": "Pioneer vegetation and conditions for mixed stands",
+        "6": "Historical Ceballos regression model: source context",
+        "7": "Initial conditions and eroded-ground stages",
+        "8": "Mixed stands, terrain and shrub-shelter stages",
+        "9": "Gádor shelter, shrub competition and surviving oak mats",
+        "10": "Surviving oak stools: regeneration and stand management",
+        "11": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+        "12": "Diagram 2: shrub-covered ground and differentiated outcomes",
+        "13": "Diagram 3: surviving oak mats and vegetation mosaic"
+      }
+    },
+    {
+      "id": "KGB-SRC-0152",
+      "filename": "laujar-restoration-2025.pdf",
+      "kind": "pdf",
+      "managed_path": "sources/encinar-heritage-20261112/laujar-restoration-2025.pdf",
+      "sha256": "c63c0b78b21ef3ee30e4b9eb1e1059d9bbfd03190a521159b659582c05b1c359",
+      "language": "es",
+      "title": "Reserva de Laujar 40.710 · restoration-plan adaptation (March 2025)",
+      "issuer": "Promotora de Georecursos, S. L.",
+      "publication_date": "2025-03",
+      "library_path": "doc_library/LAUJAR-001 - Reserva de Laujar - Mining Exploration Restoration Plan - Permit 40710 - 2025-03.pdf",
+      "initial_pdf_page_ranges": [
+        [
+          38,
+          39
+        ],
+        [
+          42,
+          42
+        ]
+      ],
+      "edition_note": "Exact owned-library edition: 93 physical PDF pages; retained signed page footers refer to a 104-page document. PDF positions 38/39/42 were checked directly; no missing-page reconstruction is assumed.",
+      "pdf_pages": 93,
+      "page_labels": {
+        "38": "Former encinares and surviving woodland refuges",
+        "39": "Gádor vegetation series: Quercus rotundifolia and sheltered refuges",
+        "42": "Pine plantations and valuable open scrub habitats"
+      }
+    },
+    {
+      "id": "KGB-SRC-0153",
+      "filename": "andarax-baseline-2024.pdf",
+      "kind": "pdf",
+      "managed_path": "sources/encinar-heritage-20261112/andarax-baseline-2024.pdf",
+      "sha256": "331031ae24e1e93e46161466a3b92d317f409dc80af6914e89a3c1470677902d",
+      "language": "es",
+      "title": "Plan Especial de la Vega del río Andarax · Memoria Informativa",
+      "issuer": "Junta de Andalucía",
+      "publication_date": null,
+      "library_path": "doc_library/VEGA-001 - Vega del Andarax - Baseline and Territorial Diagnosis.pdf",
+      "initial_pdf_page_ranges": [
+        [
+          111,
+          111
+        ]
+      ],
+      "edition_note": "Exact owned-library 308-page edition. Approval 11 July 2024 and signing 12 July 2024 are recorded in the reviewed page, not inferred publication dates.",
+      "pdf_pages": 308,
+      "page_labels": {
+        "111": "Mining-related clearance: historical area and tree estimates"
+      }
+    },
+    {
+      "id": "KGB-SRC-0154",
+      "filename": "gea-reforestation-2019.html",
+      "kind": "web",
+      "managed_path": "sources/encinar-heritage-20261112/gea-reforestation-2019.html",
+      "sha256": "d0488a012e9f90aee1950b527bd2e1f1d5696541213cab48c588e5e28c0f9255",
+      "language": "es",
+      "title": "GEA · Proyecto de reforestación 2018–19",
+      "issuer": "Grupo Ecologista Andarax GEA – Ecologistas en Acción",
+      "publication_date": "2019-01-10",
+      "url": "https://grupoecologistaandarax.blogspot.com/2019/01/proyecto-de-reforestacion-2018-19.html",
+      "retrieved_on": "2026-11-12",
+      "excerpt": "Implementer post reports encina/coscoja sowing under thinned Aleppo pine at La Zarba and Aljibe del Marqués, earlier plantings and care, and a final balance of more than 5,000 acorns over more than 2.5 ha. Main post reviewed; reader comments excluded.",
+      "edition_note": "Original HTML capture. The visible January 10 date precedes the post’s later January 20/final-balance additions; update date unknown. An implementer report, not audited survival evidence."
+    }
+  ],
+  "browse_groups": [
+    {
+      "id": "browse:encinar-communities",
+      "label": "Encinar communities and vegetation structures",
+      "parent_id": "browse:plant-communities",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "encinar-community",
+          "role": "primary"
+        },
+        {
+          "topic_id": "mixed-pine-encina-woodland",
+          "role": "primary"
+        },
+        {
+          "topic_id": "pine-encina-understorey",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encina-scrub-mosaic",
+          "role": "primary"
+        },
+        {
+          "topic_id": "structured-shrub-restoration-cover",
+          "role": "primary"
+        },
+        {
+          "topic_id": "broadleaf-gallery-restoration-context",
+          "role": "primary"
+        },
+        {
+          "topic_id": "pine-woodland",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Broad vegetation structures in the 1996 paper. These are conditional restoration contexts and possible outcomes, not newly defined botanical associations. Open Evidence for terrain, moisture and source limits. Working plant communities remain separate.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        },
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:restoration-models",
+      "label": "Restoration models",
+      "parent_id": "ecosystem:restoration-methods",
+      "anchor_topic_id": "restoration",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "carob-restoration-mr1",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carob-oasification",
+          "role": "primary"
+        },
+        {
+          "topic_id": "carob-diversification-mr3",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-restoration",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Graph-wide source-backed organization. General concepts have one canonical home and shared project references; project-specific context stays below its project. Preserve factual IDs, source conditions and full metadata. Catalogues contain genuine peers. Uncertain placement is reported as Needs organization, never inferred from a shared PDF. Folder membership is not a factual relationship.",
+      "description": "Browse the existing records by their documented role. Each topic retains its source wording, evidence, dates and applicability; these navigation categories add no scientific or eligibility claim.",
+      "source_refs": [],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:encinar-restoration-models",
+      "label": "Encinar restoration models",
+      "parent_id": "browse:restoration-models",
+      "anchor_topic_id": "encinar-restoration",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "encinar-model-eroded",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-model-shrubs",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-model-stools",
+          "role": "primary"
+        },
+        {
+          "topic_id": "gea-gador-reforestation-2018-2019",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Choose by initial condition: eroded ground, well-conserved shrub cover, or surviving oak mats. Each model opens ordered source stages. The GEA project is a separate implementer-reported example, not a trial validating the paper.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "7. Modelos de restauración de encinares; 8.1; PDF position 7, printed page 99",
+          "label": "Initial conditions and eroded-ground stages",
+          "page": 7
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:encinar-model-eroded",
+      "label": "Stages · eroded ground",
+      "parent_id": "browse:encinar-restoration-models",
+      "anchor_topic_id": "encinar-model-eroded",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "encinar-stage-pioneer-cover",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-stage-oak-under-pines",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-stage-mixed-stand-management",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-stage-site-consolidation",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Source sequence, conditional on this initial state and site assessment. Shared stages reuse the same method identity. No timescale, irrigation regime or guaranteed ecological transition is implied.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "1. Etapas de restauración en el piso de la encina; diagram; PDF position 11, printed page 103",
+          "label": "Diagram 1: eroded-ground restoration and site-dependent outcomes",
+          "page": 11
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:encinar-model-shrubs",
+      "label": "Stages · shrub-covered ground",
+      "parent_id": "browse:encinar-restoration-models",
+      "anchor_topic_id": "encinar-model-shrubs",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "encinar-stage-shrub-recovery",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-stage-oak-under-shrubs",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-stage-shrub-competition",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-stage-stand-organization",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-stage-site-consolidation",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Source sequence, conditional on this initial state and site assessment. Shared stages reuse the same method identity. No timescale, irrigation regime or guaranteed ecological transition is implied.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "2. Etapas de restauración en el piso de la encina; diagram; PDF position 12, printed page 104",
+          "label": "Diagram 2: shrub-covered ground and differentiated outcomes",
+          "page": 12
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:encinar-model-stools",
+      "label": "Stages · surviving oak mats",
+      "parent_id": "browse:encinar-restoration-models",
+      "anchor_topic_id": "encinar-model-stools",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "encinar-stage-stool-recovery",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-stage-oak-under-pines",
+          "role": "shared"
+        },
+        {
+          "topic_id": "encinar-stage-mixed-stand-management",
+          "role": "shared"
+        },
+        {
+          "topic_id": "encinar-stage-site-consolidation",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Source sequence, conditional on this initial state and site assessment. Shared stages reuse the same method identity. No timescale, irrigation regime or guaranteed ecological transition is implied.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0151",
+          "locator": "3. Etapas de restauración en el piso de la encina; diagram; PDF position 13, printed page 105",
+          "label": "Diagram 3: surviving oak mats and vegetation mosaic",
+          "page": 13
+        }
+      ],
+      "member_layout": "vertical",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:local-restoration-projects",
+      "label": "Projects, trials and case studies",
+      "parent_id": "ecosystem:restoration-methods",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "andarax-restoration-2023",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar-fluvial-restoration",
+          "role": "primary"
+        },
+        {
+          "topic_id": "nijar-environmental-supervision",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nijar-native-plant-supply",
+          "role": "shared"
+        },
+        {
+          "topic_id": "life-nieblas",
+          "role": "primary"
+        },
+        {
+          "topic_id": "cocoon-jordan-lebanon-project",
+          "role": "primary"
+        },
+        {
+          "topic_id": "gea-gador-reforestation-2018-2019",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep each project and documentary stage distinct. Add confirmed designs, procurement, implementation and measured outcomes without converting plans into results. Preserve exact places and dates.",
+      "description": "Explore documented restoration projects and planting assessments, then compare the observational carob cases. Each project’s About summary distinguishes purpose, methods, results, conditions and status. Procurement records describe proposed or assigned work; recorded trial outcomes retain their actual setting and follow-up. Case studies describe observed practice rather than controlled experiments.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 1,
+          "locator": "Datos del expediente",
+          "label": "Andarax: works purpose, municipalities, duration and tender budget"
+        },
+        {
+          "source_id": "KGB-SRC-0013",
+          "page": 2,
+          "locator": "2. Objeto del contrato",
+          "label": "Andarax: flood-risk reduction and native fluvial restoration"
+        },
+        {
+          "source_id": "KGB-SRC-0024",
+          "page": 8,
+          "locator": "Níjar: assigned works scope",
+          "label": "Níjar: assigned works scope"
+        },
+        {
+          "source_id": "KGB-SRC-0025",
+          "page": 5,
+          "locator": "Níjar: separate supervision purpose",
+          "label": "Níjar: separate supervision purpose"
+        },
+        {
+          "source_id": "KGB-SRC-0026",
+          "page": 1,
+          "locator": "Níjar: later plant-supply specification",
+          "label": "Níjar: later plant-supply specification"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false
+    },
+    {
+      "id": "browse:gea-gador-project",
+      "label": "Project · GEA Gádor 2018–19",
+      "parent_id": "browse:local-restoration-projects",
+      "anchor_topic_id": "gea-gador-reforestation-2018-2019",
+      "user_created": false,
+      "members": [],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Implementer and named sites are project details; species and methods remain shared general references. About and Evidence distinguish sowing inputs, observed vegetation, historical care reports and unknown follow-up. No working planting plan is created.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Tenemos algunas experiencias previas; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA: earlier plantings, care and planting setbacks"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; source names and seed provenance; main author post, excluding reader comments",
+          "label": "GEA: seed origin and vegetation observed at the sowing sites"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:gea-gador-sites",
+      "label": "Project sites",
+      "parent_id": "browse:gea-gador-project",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "gea-la-zarba",
+          "role": "primary"
+        },
+        {
+          "topic_id": "gea-aljibe-marques",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Sites named in the project account; no parcel boundaries inferred.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": true,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:gea-gador-implementer",
+      "label": "Implementer",
+      "parent_id": "browse:gea-gador-project",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "gea-andarax",
+          "role": "primary"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Named implementing organization; the project retains its own identity and results.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:gea-gador-context",
+      "label": "Species and method references",
+      "parent_id": "browse:gea-gador-project",
+      "anchor_topic_id": null,
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "holm-oak",
+          "role": "shared"
+        },
+        {
+          "topic_id": "kermes-oak",
+          "role": "shared"
+        },
+        {
+          "topic_id": "aleppo-pine",
+          "role": "shared"
+        },
+        {
+          "topic_id": "encinar-stage-oak-under-pines",
+          "role": "shared"
+        },
+        {
+          "topic_id": "local-provenance",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Shared general concepts with source-specific planting, cover and provenance roles. This is not a working community or a complete association.",
+      "source_refs": [
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; BALANCE FINAL; main author post, excluding reader comments",
+          "label": "GEA Project 2018–19: sowing and reported final balance"
+        },
+        {
+          "source_id": "KGB-SRC-0154",
+          "locator": "PROYECTO DE REFORESTACIÓN 2018-19; Siembra de bellotas invierno 2018-19; source names and seed provenance; main author post, excluding reader comments",
+          "label": "GEA: seed origin and vegetation observed at the sowing sites"
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:natural-heritage-examples",
+      "label": "Environmental and geological heritage",
+      "parent_id": "browse:al20-heritage-definition",
+      "anchor_topic_id": "natural-heritage",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "sierra-gador-encinar-history",
+          "role": "primary"
+        },
+        {
+          "topic_id": "traditional-carob-heritage",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-heritage-funding-context",
+          "role": "primary"
+        },
+        {
+          "topic_id": "encinar-community",
+          "role": "shared"
+        },
+        {
+          "topic_id": "encinar-restoration",
+          "role": "shared"
+        },
+        {
+          "topic_id": "sierra-gador-mining-landscape",
+          "role": "shared"
+        },
+        {
+          "topic_id": "los-millares-cultural-landscape",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Documented ecological and landscape contexts, traditional carob-tree/cultivar value, and conditions to examine for a heritage operation. Encinar formations and restoration methods retain their canonical ecology homes. Los Millares is cultural-landscape context; prehistoric tree composition remains unresolved. No example automatically qualifies for funding.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0152",
+          "locator": "3. Descripción del medio biótico; biogeografía; PDF position 39, printed page 38; retained source footer PÁGINA 39/104",
+          "label": "Gádor vegetation series: Quercus rotundifolia and sheltered refuges",
+          "page": 39
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4; PDF position 395",
+          "label": "NPL3 heritage and NPL4 soil-regeneration priorities",
+          "page": 395
+        },
+        {
+          "source_id": "FOREST-002",
+          "locator": "Conservación in situ; PDF position 57",
+          "label": "Old carob genetic and cultural value",
+          "page": 57
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    },
+    {
+      "id": "browse:encinar-heritage-operation-context",
+      "label": "Funding considerations · native woodland and old trees",
+      "parent_id": "browse:natural-heritage-examples",
+      "anchor_topic_id": "encinar-heritage-funding-context",
+      "user_created": false,
+      "members": [
+        {
+          "topic_id": "rural-studies",
+          "role": "shared"
+        },
+        {
+          "topic_id": "rural-awareness",
+          "role": "shared"
+        },
+        {
+          "topic_id": "demonstration",
+          "role": "shared"
+        },
+        {
+          "topic_id": "heritage-conservation",
+          "role": "shared"
+        },
+        {
+          "topic_id": "nonproductive-heritage",
+          "role": "shared"
+        },
+        {
+          "topic_id": "heritage-public-use",
+          "role": "shared"
+        },
+        {
+          "topic_id": "forest-management-plan",
+          "role": "shared"
+        },
+        {
+          "topic_id": "al20-edll-2023-2027",
+          "role": "shared"
+        }
+      ],
+      "maintenance_rule": "Keep these source-described concepts distinct from empirical trials, parcel prescriptions and working communities. Preserve source editions, conditional stages, canonical identities and unique primary homes. Shared references are navigation; they establish no planting recipe, factual ownership or grant eligibility.",
+      "description": "Existing operation types and requirements, shared for comparison. 3.1 studies, 3.3 awareness, 3.4 demonstration and 3.5 conservation have different purposes and conditions. Review an actual proposal before concluding eligibility; no grant review, score, award or open-call check has been added.",
+      "source_refs": [
+        {
+          "source_id": "FUND-008",
+          "locator": "Artículo 3.5. Patrimonio rural; PDF position 9",
+          "label": "Rural heritage: evidence for recognition",
+          "page": 9
+        },
+        {
+          "source_id": "KGB-SRC-0021",
+          "locator": "4.3. Necesidades territoriales priorizadas; NPL3 y NPL4; PDF position 395",
+          "label": "NPL3 heritage and NPL4 soil-regeneration priorities",
+          "page": 395
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; PDF position 123",
+          "label": "3.5: heritage recovery and production exclusions",
+          "page": 123
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.5; condiciones; PDF position 124",
+          "label": "3.5: public use and forest-management conditions",
+          "page": 124
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; PDF position 120",
+          "label": "3.4: demonstration purpose and novelty",
+          "page": 120
+        },
+        {
+          "source_id": "FUND-008",
+          "locator": "Anexo I, tipología 3.4; condiciones; PDF position 121",
+          "label": "3.4: nonproductive character and public results",
+          "page": 121
+        }
+      ],
+      "member_layout": "grid",
+      "presentation": "hierarchy",
+      "catalogue": false,
+      "navigation": "normal"
+    }
+  ]
+}

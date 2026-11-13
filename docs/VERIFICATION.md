@@ -1,5 +1,19 @@
 # Verification, acceptance history and documentation map
 
+## Tree guides and blue accents — 12 November 2026
+
+Added continuous parent/child branch guides, terminating last-child elbows and stronger inspected
+paths. Excluded topics fade; decorative strokes preserve checkbox, chevron and keyboard interaction.
+Both sidebar headers now use muted/pale blue from the irrigation editor, with blue inspector section
+headings and source links. Warm ivory and sage selection remain, including dark-mode equivalents.
+
+Checks: **97 frontend tests**, **111 backend tests passed, 1 skipped**, production build and
+**18 isolated Edge/API browser checks** passed. The focused checks cover deep trees, search,
+collapse, guide endpoints, active/hidden styling, checkbox controls and 44 px touch rows. Light/dark
+desktop and phone screenshots plus results are in `research/tree-blue-20261112/`. The accepted
+store remains revision 61; table fingerprints match the QA copy except its prior test explorations.
+The live app serves the exact checked build. Existing backend/build advisories remain unchanged.
+
 ## Compact tree and resizable inspector — 12 November 2026
 
 Implemented the 260 px navigation tree and 360 px default inspector using the irrigation editor's

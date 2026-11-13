@@ -1,0 +1,76 @@
+{
+  "run": "encinar-heritage-20261112",
+  "batch_id": "encinar-heritage-explorer-20261112-v2",
+  "revision": 62,
+  "new_library_accessions": [
+    {
+      "library_id": "FOREST-005",
+      "source_id": "KGB-SRC-0151",
+      "path": "doc_library/FOREST-005 - Spain - Encinar Restoration Models and Mixed Stands - 1996.pdf",
+      "sha256": "30e6b38bba66afc36e639c478909d9b601d0ac356e51c0547ed66f92abed6b5a",
+      "url": "https://dialnet.unirioja.es/descarga/articulo/8156905.pdf",
+      "pdf_pages": 15,
+      "reviewed_pdf_positions": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "existing_library_editions_registered": [
+    {
+      "id": "KGB-SRC-0152",
+      "library_path": "doc_library/LAUJAR-001 - Reserva de Laujar - Mining Exploration Restoration Plan - Permit 40710 - 2025-03.pdf",
+      "sha256": "c63c0b78b21ef3ee30e4b9eb1e1059d9bbfd03190a521159b659582c05b1c359",
+      "pdf_pages": 93,
+      "reviewed_ranges": [
+        [
+          38,
+          39
+        ],
+        [
+          42,
+          42
+        ]
+      ]
+    },
+    {
+      "id": "KGB-SRC-0153",
+      "library_path": "doc_library/VEGA-001 - Vega del Andarax - Baseline and Territorial Diagnosis.pdf",
+      "sha256": "331031ae24e1e93e46161466a3b92d317f409dc80af6914e89a3c1470677902d",
+      "pdf_pages": 308,
+      "reviewed_ranges": [
+        [
+          111,
+          111
+        ]
+      ]
+    }
+  ],
+  "managed_web_captures": [
+    {
+      "id": "KGB-SRC-0154",
+      "filename": "gea-reforestation-2019.html",
+      "kind": "web",
+      "managed_path": "sources/encinar-heritage-20261112/gea-reforestation-2019.html",
+      "sha256": "d0488a012e9f90aee1950b527bd2e1f1d5696541213cab48c588e5e28c0f9255",
+      "language": "es",
+      "title": "GEA · Proyecto de reforestación 2018–19",
+      "issuer": "Grupo Ecologista Andarax GEA – Ecologistas en Acción",
+      "publication_date": "2019-01-10",
+      "url": "https://grupoecologistaandarax.blogspot.com/2019/01/proyecto-de-reforestacion-2018-19.html",
+      "retrieved_on": "2026-11-12",
+      "excerpt": "Implementer post reports encina/coscoja sowing under thinned Aleppo pine at La Zarba and Aljibe del Marqués, earlier plantings and care, and a final balance of more than 5,000 acorns over more than 2.5 ha. Main post reviewed; reader comments excluded.",
+      "edition_note": "Original HTML capture. The visible January 10 date precedes the post’s later January 20/final-balance additions; update date unknown. An implementer report, not audited survival evidence."
+    }
+  ],
+  "source_registry": "four new sources; no existing edition replaced",
+  "ownership_inventory": "Historical document-library-inventory.json retained. One new PDF and catalogue update are expected accession differences, not a full-library review."
+}
